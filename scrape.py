@@ -1,51 +1,31 @@
-import requests, hashlib, json, re, pathlib, datetime
+import requests, hashlib, json, re, pathlib, datetime, logging
 from bs4 import BeautifulSoup
 import pdfplumber
+from requests.exceptions import RequestException
 
-DATA = pathlib.Path("data")
-DATA.mkdir(exist_ok=True)
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
+# ------------- no change -------------
 SITES = {
     "pfizer_gmg": "https://www.pfizer.com/about/programs-policies/grants/competitive-grants",
-    "bayer_g4t":  "https://www.grants4targets.com",
+    "bayer_g4t":  "https://collaboratetocurehubjapan.bayer.co.jp/en/home/researchgrant/grants4targets",
+        "bayer_g4t2":  "https://www.bayer.com/en/innovation/open-innovation-and-collaboration",
+
 }
+# --------------------------------------
 
 def doc_links(url: str):
-    """Yield absolute URLs of all PDF/Word docs on the landing page."""
-    soup = BeautifulSoup(requests.get(url, timeout=15).text, "html.parser")
+    """Yield absolute URLs of all PDF/Word docs on the landing page.
+       Any network error just logs and returns nothing."""
+    try:
+        html = requests.get(url, timeout=30)          # longer timeout
+        html.raise_for_status()
+    except RequestException as e:
+        logging.warning(f"⚠️  Skipping {url}: {e}")
+        return []                                     # nothing yielded, but run continues
+
+    soup = BeautifulSoup(html.text, "html.parser")
     for a in soup.find_all("a", href=True):
         if a["href"].lower().endswith((".pdf", ".doc", ".docx")):
-            yield a["href"] if a["href"].startswith("http") else requests.compat.urljoin(url, a["href"])
-
-def extract_meta(path):
-    with pdfplumber.open(path) as pdf:
-        txt = pdf.pages[0].extract_text()[:1500]
-    date_pat = re.compile(r"(?:Issued|Posted):\s*(\d{1,2}\s*\w+\s*\d{4})", re.I)
-    ddl_pat  = re.compile(r"(?:Deadline|Due):\s*(\d{1,2}\s*\w+\s*\d{4})", re.I)
-    return {
-        "posted":   date_pat.search(txt).group(1) if date_pat.search(txt) else "n/a",
-        "deadline": ddl_pat.search(txt).group(1)  if ddl_pat.search(txt) else "n/a",
-        "snippet":  " ".join(txt.splitlines()[:5])
-    }
-
-def main():
-    out = []
-    seen = {p.stem for p in DATA.glob("*.pdf")}
-
-    for tag, url in SITES.items():
-        for link in doc_links(url):
-            h = hashlib.sha1(link.encode()).hexdigest()
-            if h in seen:
-                continue
-            pdf = DATA / f"{h}.pdf"
-            pdf.write_bytes(requests.get(link, timeout=15).content)
-            meta = extract_meta(pdf) | {"portal": tag, "source": link}
-            out.append(meta)
-
-    # Merge with old JSON (if any) so GPT keeps history
-    store = pathlib.Path("latest_rfps.json")
-    existing = json.loads(store.read_text()) if store.exists() else []
-    store.write_text(json.dumps(out + existing, indent=2))
-
-if __name__ == "__main__":
-    main()
+            yield a["href"] if a["href"].startswith("http") else \
+                  requests.compat.urljoin(url, a["href"])
