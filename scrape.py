@@ -21,9 +21,19 @@ from urllib3.util.retry import Retry
 # 0. Settings
 # ---------------------------------------------------------------------
 SITES = {
-    "pfizer_gmg": "https://www.pfizer.com/about/programs-policies/grants/competitive-grants",
-    "bayer_g4t":  "https://collaboratetocurehubjapan.bayer.co.jp/en/home/researchgrant/grants4targets",
-    "bayer_g4t2": "https://www.bayer.com/en/innovation/open-innovation-and-collaboration",
+    "samsung": "https://sra.samsung.com/collaboration/start/apply/",
+    "amazon":  "https://www.amazon.science/research-awards/call-for-proposals",
+    "nvidia": "https://www.nvidia.com/en-in/industries/higher-education-research/academic-grant-program/",
+    "cisco": "https://research.cisco.com/open-rfps",
+    "google": "https://research.google/programs-and-events/research-scholar-program/",
+    "opentech": "https://www.opentech.fund/funds/",
+    "aisi": "https://www.aisi.gov.uk/grants",
+    "shell": "http://shell.com/what-we-do/technology-and-innovation/innovate-with-shell/shell-gamechanger/call-for-proposals.html#:~:text=Our%20areas%20of%20interest%20,for%20proposals%20are%20now%20open",
+    "darpa": "https://www.darpa.mil/work-with-us/opportunities",
+    "Johnson&Johnson": "https://jnjinnovation.com/innovation-challenges",
+    "M-ERA NET": "https://www.m-era.net/joint-calls",
+    "Boehringer Ingelheim": "https://www.opnme.com/",
+    "Halton Foundation": "https://foundation.halton.com/halton-foundation-grant-application/"
 }
 
 DATA_DIR  = pathlib.Path("data")
