@@ -639,6 +639,12 @@ def main():
             print(f"    score={result['score'] if result else 'n/a'} — skipped")
         time.sleep(0.5)
 
+    # If there were papers to evaluate but ALL failed (e.g. quota exhausted),
+    # abort rather than wiping the sheet.
+    if deduped and not evaluated:
+        print("All evaluations failed — aborting to avoid overwriting sheet with empty data.")
+        return
+
     retained = apply_retention(existing)
     print(f"\nRetention: kept {len(retained)}/{len(existing)} existing, added {len(evaluated)} new.")
 
