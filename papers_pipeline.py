@@ -16,8 +16,6 @@ import re
 import time
 import datetime
 import requests
-from google import genai
-from google.genai import types
 from pathlib import Path
 
 # ── Config ─────────────────────────────────────────────────────────────────────
@@ -51,8 +49,6 @@ SHEET_COLUMNS = [
     "id", "title", "authors", "journal", "date", "url", "source",
     "score", "summary", "opportunity", "fields", "added_date",
 ]
-
-client = genai.Client(api_key=GEMINI_API_KEY)
 
 # ── Google Sheets (no service account) ────────────────────────────────────────
 
@@ -275,11 +271,12 @@ def evaluate_paper(paper):
         fields=json.dumps(FIELD_TAGS),
     )
     try:
-        resp = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=prompt,
-        )
-        text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemma-3-27b-it:generateContent?key={GEMINI_API_KEY}"
+        payload = {"contents": [{"parts": [{"text": prompt}]}]}
+        r = requests.post(url, json=payload, timeout=60)
+        r.raise_for_status()
+        text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+        text = re.sub(r"^```(?:json)?\s*", "", text.strip())
         text = re.sub(r"\s*```$", "", text)
         data = json.loads(text)
         return {
