@@ -16,7 +16,8 @@ import re
 import time
 import datetime
 import requests
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from pathlib import Path
 
 # ── Config ─────────────────────────────────────────────────────────────────────
@@ -51,8 +52,7 @@ SHEET_COLUMNS = [
     "score", "summary", "opportunity", "fields", "added_date",
 ]
 
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+client = genai.Client(api_key=GEMINI_API_KEY)
 
 # ── Google Sheets (no service account) ────────────────────────────────────────
 
@@ -275,7 +275,10 @@ def evaluate_paper(paper):
         fields=json.dumps(FIELD_TAGS),
     )
     try:
-        resp = model.generate_content(prompt)
+        resp = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=prompt,
+        )
         text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
         text = re.sub(r"\s*```$", "", text)
         data = json.loads(text)
@@ -458,6 +461,7 @@ def main():
     known_ids = existing_ids(existing)
     new_papers = []
 
+    fetch_errors = 0
     for fetcher in [fetch_pubmed, fetch_europepmc, fetch_semantic_scholar]:
         try:
             batch = fetcher()
@@ -467,7 +471,12 @@ def main():
             known_ids.update(p["id"] for p in fresh)
         except Exception as e:
             print(f"{fetcher.__name__} error: {e}")
+            fetch_errors += 1
         time.sleep(0.5)
+
+    if fetch_errors == 3:
+        print("All fetchers failed — aborting to avoid overwriting sheet.")
+        return
 
     # Deduplicate by title
     seen, deduped = set(), []
