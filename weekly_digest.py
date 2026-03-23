@@ -400,4 +400,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys, traceback
+    try:
+        main()
+    except Exception:
+        traceback.print_exc()
+        sys.exit(1)
