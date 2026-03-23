@@ -1,12 +1,12 @@
-name: Weekly Research Digest
+name: Bimonthly Cleanup
 
 on:
   schedule:
-    - cron: '0 9 * * 1'   # Monday 09:00 UTC — after the main pipeline (06:00)
-  workflow_dispatch:        # manual trigger
+    - cron: '0 7 1 */2 *'   # 1st of every 2nd month at 07:00 UTC
+  workflow_dispatch:
 
 jobs:
-  digest:
+  cleanup:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -21,16 +21,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate weekly digest PDF
+      - name: Run cleanup
         env:
           GEMINI_API_KEY:  ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-        run: python weekly_digest.py 2>&1 | tee digest_run.log
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+        run: python cleanup.py 2>&1 | tee cleanup_run.log
 
-      - name: Commit PDF
+      - name: Commit updated HTML
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add digests/ digest_run.log || true
-          git diff --cached --quiet || git commit -m "Weekly digest $(date -u +%Y-%m-%d)"
+          git add papers_reader.html papers_data.json cleanup_run.log || true
+          git diff --cached --quiet || git commit -m "chore: bimonthly cleanup $(date -u +%Y-%m-%d)"
           git push

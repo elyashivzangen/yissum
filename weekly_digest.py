@@ -29,8 +29,9 @@ from reportlab.platypus import (
 # ── Config ──────────────────────────────────────────────────────────────────
 GEMINI_API_KEY  = os.environ["GEMINI_API_KEY"]
 GOOGLE_SHEET_ID = os.environ["GOOGLE_SHEET_ID"]
-OUTPUT_PDF      = Path("weekly_digest.pdf")
+DIGESTS_DIR     = Path("digests")
 TOP_N           = 20   # top papers by score sent to Gemini for curation
+DIGEST_WINDOW   = 7    # only include papers added in the last N days
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 DIGEST_MODEL = "gemini-2.5-flash-preview-04-17"  # strongest available on free tier
@@ -45,6 +46,7 @@ def load_top_papers():
     r = requests.get(url, timeout=20)
     r.raise_for_status()
     reader = csv.DictReader(io.StringIO(r.text))
+    cutoff = datetime.date.today() - datetime.timedelta(days=DIGEST_WINDOW)
     papers = []
     for row in reader:
         p = dict(row)
@@ -56,6 +58,13 @@ def load_top_papers():
             p["fields"] = json.loads(p.get("fields", "[]"))
         except Exception:
             p["fields"] = []
+        # Only include papers added within the digest window
+        try:
+            added = datetime.date.fromisoformat(p.get("added_date", ""))
+            if added < cutoff:
+                continue
+        except Exception:
+            pass  # if no added_date, include it anyway
         papers.append(p)
     papers.sort(key=lambda x: x["score"], reverse=True)
     return papers[:TOP_N]
@@ -298,12 +307,16 @@ def paper_block(idx, paper, curation_item, styles):
 
 
 def generate_pdf(papers_by_idx, curation):
+    iso = datetime.date.today().isocalendar()
     today = datetime.date.today().strftime("%B %d, %Y")
-    week = datetime.date.today().isocalendar()[1]
+    week = iso[1]
+    year = iso[0]
+    DIGESTS_DIR.mkdir(exist_ok=True)
+    output_pdf = DIGESTS_DIR / f"HUJI_digest_{year}_W{week:02d}.pdf"
     styles = build_styles()
 
     doc = SimpleDocTemplate(
-        str(OUTPUT_PDF),
+        str(output_pdf),
         pagesize=A4,
         leftMargin=16*mm, rightMargin=16*mm,
         topMargin=16*mm, bottomMargin=16*mm,
@@ -361,7 +374,7 @@ def generate_pdf(papers_by_idx, curation):
     ))
 
     doc.build(story)
-    print(f"PDF written: {OUTPUT_PDF}  ({OUTPUT_PDF.stat().st_size // 1024} KB)")
+    print(f"PDF written: {output_pdf}  ({output_pdf.stat().st_size // 1024} KB)")
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────

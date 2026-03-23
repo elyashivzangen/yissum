@@ -2,8 +2,15 @@ name: Papers Pipeline
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # daily at 06:00 UTC
-  workflow_dispatch:        # allow manual trigger
+    - cron: '0 6 * * 1'   # every Monday at 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      period:
+        description: 'Fetch window'
+        required: false
+        default: 'week'
+        type: choice
+        options: [week, month]
 
 jobs:
   run-pipeline:
@@ -26,7 +33,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-        run: python papers_pipeline.py 2>&1 | tee pipeline_run.log
+        run: python papers_pipeline.py --period ${{ github.event.inputs.period || 'week' }} 2>&1 | tee pipeline_run.log
 
       - name: Commit generated HTML
         run: |

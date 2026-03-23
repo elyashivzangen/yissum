@@ -8,6 +8,7 @@ Hebrew University Paper Evaluation Pipeline
 - Generates standalone papers_reader.html committed to the repo
 """
 
+import argparse
 import csv
 import io
 import json
@@ -27,8 +28,16 @@ APPS_SCRIPT_URL  = os.environ["APPS_SCRIPT_URL"]   # deployed Apps Script web ap
 OUTPUT_HTML      = Path("papers_reader.html")
 OUTPUT_JSON      = Path("papers_data.json")
 MAX_RESULTS      = 50    # per source
-DAYS_BACK        = 7     # fetch window (days)
 KEEP_DAYS        = 90    # keep all papers for this many days
+
+def _parse_args():
+    p = argparse.ArgumentParser()
+    p.add_argument("--period", choices=["week", "month"], default="week",
+                   help="Fetch window: week=7 days, month=30 days")
+    return p.parse_args()
+
+ARGS     = _parse_args()
+DAYS_BACK = 7 if ARGS.period == "week" else 30
 
 HUJI_AFFILIATIONS = [
     "Hebrew University of Jerusalem",
@@ -456,6 +465,12 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     </select>
   </div>
   <div class="row">
+    <label>Period</label>
+    <button class="chip active" data-filter="period" data-val="all">All time</button>
+    <button class="chip" data-filter="period" data-val="7">Last week</button>
+    <button class="chip" data-filter="period" data-val="30">Last month</button>
+  </div>
+  <div class="row">
     <label>Score</label>
     <button class="chip active" data-filter="score" data-val="all">All</button>
     <button class="chip" data-filter="score" data-val="38">38+ / 50</button>
@@ -472,7 +487,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <script>
 const papers = {papers_json};
 document.getElementById('updated').textContent = 'Updated {updated}';
-let activeScore='all', activeField='all', sortBy='score', searchQ='';
+const TODAY=new Date(); TODAY.setHours(0,0,0,0);
+function daysAgo(d){{if(!d)return 9999;const t=new Date(d);t.setHours(0,0,0,0);return Math.round((TODAY-t)/86400000);}}
+let activeScore='all', activeField='all', activePeriod='all', sortBy='score', searchQ='';
 const PARAM_LABELS = {{
   novelty:'Novelty', commercial_potential:'Commercial Potential',
   market_size:'Market Size', trl:'Tech Readiness', ip_strength:'IP Strength'
@@ -495,6 +512,7 @@ function renderBreakdown(bd){{
 function render(){{
   let list=papers.slice();
   if(searchQ){{const q=searchQ.toLowerCase();list=list.filter(p=>(p.title||'').toLowerCase().includes(q)||(p.summary||'').toLowerCase().includes(q)||(p.opportunity||'').toLowerCase().includes(q));}}
+  if(activePeriod!=='all')list=list.filter(p=>daysAgo(p.added_date||p.date)<=parseInt(activePeriod));
   if(activeScore!=='all')list=list.filter(p=>p.score>=parseInt(activeScore));
   if(activeField!=='all')list=list.filter(p=>(p.fields||[]).includes(activeField));
   list.sort(sortBy==='score'?(a,b)=>b.score-a.score:(a,b)=>(b.date||'').localeCompare(a.date||''));
@@ -532,7 +550,7 @@ document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{{
   const f=b.dataset.filter,v=b.dataset.val;
   document.querySelectorAll(`.chip[data-filter="${{f}}"]`).forEach(x=>x.classList.remove('active'));
   b.classList.add('active');
-  if(f==='score')activeScore=v; else activeField=v;
+  if(f==='score')activeScore=v; else if(f==='field')activeField=v; else activePeriod=v;
   render();
 }}));
 document.getElementById('sort').addEventListener('change',e=>{{sortBy=e.target.value;render();}});
@@ -563,6 +581,7 @@ def generate_html(papers):
         "fields":          p.get("fields", []),
         "score_breakdown": p.get("score_breakdown", {}),
         "pi":              p.get("pi", ""),
+        "added_date":      p.get("added_date", ""),
     } for p in papers], key=lambda x: x["score"], reverse=True)
 
     OUTPUT_HTML.write_text(HTML_TEMPLATE.format(
