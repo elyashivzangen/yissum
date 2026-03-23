@@ -1,4 +1,4 @@
-name: Weekly Paper Evaluation Pipeline
+name: Weekly HUJI Paper Evaluation Pipeline
 
 on:
   schedule:
@@ -24,16 +24,18 @@ jobs:
 
       - name: Run paper evaluation pipeline
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY:    ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_SHEET_ID:   ${{ secrets.GOOGLE_SHEET_ID }}
+          GOOGLE_CREDS_JSON: ${{ secrets.GOOGLE_CREDS_JSON }}
         run: python papers_pipeline.py
 
-      - name: Commit & push results
+      - name: Commit & push HTML
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config user.name  "Papers-Bot"
           git config user.email "bot@users.noreply.github.com"
-          git add papers_data.json papers_reader.html
+          git add papers_reader.html
           git diff --staged --quiet || \
-            (git commit -m "Weekly papers update $(date -u '+%Y-%m-%d')" && \
+            (git commit -m "Weekly HUJI papers update $(date -u '+%Y-%m-%d')" && \
              git push "https://${GH_TOKEN}@github.com/${{ github.repository }}.git" HEAD:master)

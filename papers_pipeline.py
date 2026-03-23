@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Paper Evaluation Pipeline
-Fetches papers from PubMed, Europe PMC, and Semantic Scholar,
-evaluates relevance with Gemini, and generates a standalone HTML reader.
+Hebrew University Paper Evaluation Pipeline
+Fetches papers affiliated with Hebrew University of Jerusalem,
+evaluates relevance with Gemini, stores results in Google Sheets,
+and generates a standalone HTML reader.
 """
 
 import json
@@ -11,28 +12,28 @@ import re
 import time
 import datetime
 import requests
+import gspread
 import google.generativeai as genai
 from pathlib import Path
+from google.oauth2.service_account import Credentials
 
 # ── Config ─────────────────────────────────────────────────────────────────────
-GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
-DATA_FILE      = Path("papers_data.json")
-OUTPUT_HTML    = Path("papers_reader.html")
-MAX_RESULTS    = 30   # per source
-DAYS_BACK      = 7    # look-back window
-MIN_SCORE      = 6    # minimum relevance score (1-10) to include
+GEMINI_API_KEY       = os.environ["GEMINI_API_KEY"]
+GOOGLE_SHEET_ID      = os.environ["GOOGLE_SHEET_ID"]
+GOOGLE_CREDS_JSON    = os.environ["GOOGLE_CREDS_JSON"]   # full JSON string of service account key
+OUTPUT_HTML          = Path("papers_reader.html")
+MAX_RESULTS          = 50    # per source
+DAYS_BACK            = 7     # fetch window
+MIN_SCORE            = 6     # discard below this
+KEEP_FOREVER_SCORE   = 8     # never delete if score >= this
+KEEP_DAYS_MID        = 60    # keep score 6-7 for this many days
 
-SEARCH_QUERIES = [
-    "bioinformatics machine learning drug discovery",
-    "protein structure prediction AI",
-    "genomics single cell sequencing analysis",
-    "medical imaging deep learning diagnosis",
-    "CRISPR gene editing therapeutic",
-    "clinical trial biomarker oncology",
-    "federated learning healthcare privacy",
-    "digital pathology computational biology",
-    "vaccine immunology computational",
-    "synthetic biology metabolic engineering",
+HUJI_AFFILIATIONS = [
+    "Hebrew University of Jerusalem",
+    "Hebrew University",
+    "Hadassah",
+    "Einstein Institute",
+    "Silberman Institute",
 ]
 
 FIELD_TAGS = [
@@ -43,8 +44,127 @@ FIELD_TAGS = [
     "Clinical", "Other",
 ]
 
+SHEET_COLUMNS = [
+    "id", "title", "authors", "journal", "date", "url", "source",
+    "score", "summary", "opportunity", "fields", "added_date",
+]
+
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
+
+# ── Google Sheets ──────────────────────────────────────────────────────────────
+
+def get_sheet():
+    creds_info = json.loads(GOOGLE_CREDS_JSON)
+    scopes = [
+        "https://www.googleapis.com/auth/spreadsheets",
+        "https://www.googleapis.com/auth/drive",
+    ]
+    creds = Credentials.from_service_account_info(creds_info, scopes=scopes)
+    client = gspread.authorize(creds)
+    sheet = client.open_by_key(GOOGLE_SHEET_ID).sheet1
+    return sheet
+
+
+def load_from_sheet(sheet):
+    rows = sheet.get_all_records()
+    papers = []
+    for row in rows:
+        p = dict(row)
+        # parse list fields stored as JSON strings
+        for f in ("authors", "fields"):
+            if isinstance(p.get(f), str):
+                try:
+                    p[f] = json.loads(p[f])
+                except Exception:
+                    p[f] = []
+        if isinstance(p.get("score"), str):
+            try:
+                p["score"] = int(p["score"])
+            except Exception:
+                p["score"] = 0
+        papers.append(p)
+    return papers
+
+
+def ensure_header(sheet):
+    first_row = sheet.row_values(1)
+    if first_row != SHEET_COLUMNS:
+        sheet.clear()
+        sheet.append_row(SHEET_COLUMNS)
+
+
+def save_to_sheet(sheet, papers):
+    """Rewrite the sheet with the current papers list (after retention filtering)."""
+    ensure_header(sheet)
+    # clear data rows (keep header)
+    sheet.resize(rows=1)
+    if not papers:
+        return
+    rows = []
+    for p in papers:
+        rows.append([
+            p.get("id", ""),
+            p.get("title", ""),
+            json.dumps(p.get("authors", [])),
+            p.get("journal", ""),
+            p.get("date", ""),
+            p.get("url", ""),
+            p.get("source", ""),
+            p.get("score", 0),
+            p.get("summary", ""),
+            p.get("opportunity", ""),
+            json.dumps(p.get("fields", [])),
+            p.get("added_date", ""),
+        ])
+    sheet.append_rows(rows, value_input_option="RAW")
+
+
+def append_papers_to_sheet(sheet, new_papers):
+    """Append only new rows without rewriting existing ones."""
+    ensure_header(sheet)
+    rows = []
+    for p in new_papers:
+        rows.append([
+            p.get("id", ""),
+            p.get("title", ""),
+            json.dumps(p.get("authors", [])),
+            p.get("journal", ""),
+            p.get("date", ""),
+            p.get("url", ""),
+            p.get("source", ""),
+            p.get("score", 0),
+            p.get("summary", ""),
+            p.get("opportunity", ""),
+            json.dumps(p.get("fields", [])),
+            p.get("added_date", today_str()),
+        ])
+    if rows:
+        sheet.append_rows(rows, value_input_option="RAW")
+
+# ── Retention ──────────────────────────────────────────────────────────────────
+
+def apply_retention(papers):
+    """
+    Keep forever:  score >= KEEP_FOREVER_SCORE
+    Keep 60 days:  score 6-7
+    Drop:          score < MIN_SCORE (shouldn't exist, but guard)
+    """
+    today = datetime.date.today()
+    kept = []
+    for p in papers:
+        score = p.get("score", 0)
+        if score >= KEEP_FOREVER_SCORE:
+            kept.append(p)
+            continue
+        added = p.get("added_date", "")
+        try:
+            age = (today - datetime.date.fromisoformat(added)).days
+        except Exception:
+            age = 0
+        if score >= MIN_SCORE and age <= KEEP_DAYS_MID:
+            kept.append(p)
+    return kept
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
@@ -54,60 +174,77 @@ def today_str():
 def days_ago(n):
     return (datetime.date.today() - datetime.timedelta(days=n)).isoformat()
 
-def load_existing():
-    if DATA_FILE.exists():
-        return json.loads(DATA_FILE.read_text())
-    return []
-
-def save_data(papers):
-    DATA_FILE.write_text(json.dumps(papers, indent=2, ensure_ascii=False))
-
 def existing_ids(papers):
     return {p["id"] for p in papers}
 
 # ── Fetchers ───────────────────────────────────────────────────────────────────
 
-def fetch_pubmed(query, max_results=MAX_RESULTS):
+def fetch_pubmed(max_results=MAX_RESULTS):
+    """Fetch recent papers with Hebrew University affiliation from PubMed."""
     base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
     since = days_ago(DAYS_BACK)
-    # search
+    query = (
+        '("Hebrew University"[Affiliation] OR "Hadassah"[Affiliation]) '
+        f'AND ("{since}"[PDAT] : "{today_str()}"[PDAT])'
+    )
     r = requests.get(f"{base}/esearch.fcgi", params={
         "db": "pubmed", "term": query,
-        "datetype": "pdat", "mindate": since, "maxdate": today_str(),
         "retmax": max_results, "retmode": "json",
     }, timeout=20)
     r.raise_for_status()
     ids = r.json().get("esearchresult", {}).get("idlist", [])
     if not ids:
         return []
-    # fetch details
-    r2 = requests.get(f"{base}/esummary.fcgi", params={
-        "db": "pubmed", "id": ",".join(ids), "retmode": "json",
-    }, timeout=20)
+    r2 = requests.get(f"{base}/efetch.fcgi", params={
+        "db": "pubmed", "id": ",".join(ids), "retmode": "xml", "rettype": "abstract",
+    }, timeout=30)
     r2.raise_for_status()
-    result = r2.json().get("result", {})
+    # parse with simple regex (avoid lxml dependency)
     papers = []
     for uid in ids:
-        item = result.get(uid, {})
-        authors = [a.get("name", "") for a in item.get("authors", [])[:3]]
         papers.append({
             "id": f"pubmed_{uid}",
-            "title": item.get("title", ""),
-            "abstract": "",  # summary endpoint doesn't include abstract
-            "authors": authors,
-            "journal": item.get("fulljournalname", ""),
-            "date": item.get("pubdate", ""),
+            "title": "",
+            "abstract": "",
+            "authors": [],
+            "journal": "",
+            "date": "",
             "url": f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
             "source": "PubMed",
         })
-    return papers
+    # fetch summaries for metadata
+    r3 = requests.get(f"{base}/esummary.fcgi", params={
+        "db": "pubmed", "id": ",".join(ids), "retmode": "json",
+    }, timeout=20)
+    r3.raise_for_status()
+    result = r3.json().get("result", {})
+    enriched = []
+    for p in papers:
+        uid = p["id"].replace("pubmed_", "")
+        item = result.get(uid, {})
+        authors = [a.get("name", "") for a in item.get("authors", [])[:3]]
+        enriched.append({
+            **p,
+            "title":   item.get("title", ""),
+            "authors": authors,
+            "journal": item.get("fulljournalname", ""),
+            "date":    item.get("pubdate", ""),
+        })
+    return enriched
 
 
-def fetch_europepmc(query, max_results=MAX_RESULTS):
+def fetch_europepmc(max_results=MAX_RESULTS):
+    """Fetch HUJI-affiliated papers from Europe PMC."""
     since = days_ago(DAYS_BACK)
+    query = (
+        f'(AFF:"Hebrew University of Jerusalem" OR AFF:"Hadassah") '
+        f'AND FIRST_PDATE:[{since} TO {today_str()}]'
+    )
     r = requests.get("https://www.ebi.ac.uk/europepmc/webservices/rest/search", params={
-        "query": f"{query} FIRST_PDATE:[{since} TO {today_str()}]",
-        "resultType": "core", "pageSize": max_results, "format": "json",
+        "query": query,
+        "resultType": "core",
+        "pageSize": max_results,
+        "format": "json",
     }, timeout=20)
     r.raise_for_status()
     items = r.json().get("resultList", {}).get("result", [])
@@ -119,55 +256,68 @@ def fetch_europepmc(query, max_results=MAX_RESULTS):
             if name:
                 authors.append(name)
         papers.append({
-            "id": f"epmc_{item.get('id','')}",
-            "title": item.get("title", ""),
+            "id":       f"epmc_{item.get('id','')}",
+            "title":    item.get("title", ""),
             "abstract": item.get("abstractText", ""),
-            "authors": authors,
-            "journal": item.get("journalTitle", ""),
-            "date": item.get("firstPublicationDate", ""),
-            "url": f"https://europepmc.org/article/{item.get('source','')}/{item.get('id','')}",
-            "source": "Europe PMC",
+            "authors":  authors,
+            "journal":  item.get("journalTitle", ""),
+            "date":     item.get("firstPublicationDate", ""),
+            "url":      f"https://europepmc.org/article/{item.get('source','')}/{item.get('id','')}",
+            "source":   "Europe PMC",
         })
     return papers
 
 
-def fetch_semantic_scholar(query, max_results=MAX_RESULTS):
+def fetch_semantic_scholar(max_results=MAX_RESULTS):
+    """
+    Semantic Scholar has no affiliation filter via public API.
+    Search for HUJI directly in the query and filter by affiliation string in author data.
+    """
     r = requests.get("https://api.semanticscholar.org/graph/v1/paper/search", params={
-        "query": query,
-        "fields": "title,abstract,authors,year,venue,externalIds,publicationDate",
+        "query": "Hebrew University of Jerusalem",
+        "fields": "title,abstract,authors,year,venue,externalIds,publicationDate,authors.affiliations",
         "limit": max_results,
     }, timeout=20)
     r.raise_for_status()
-    items = r.json().get("data", [])
     since = days_ago(DAYS_BACK)
+    items = r.json().get("data", [])
     papers = []
     for item in items:
         pub_date = item.get("publicationDate") or f"{item.get('year','')}-01-01"
         if pub_date < since:
             continue
+        # verify at least one author has HUJI affiliation
+        huji_affiliated = False
+        for a in (item.get("authors") or []):
+            for aff in (a.get("affiliations") or []):
+                if any(h.lower() in aff.lower() for h in HUJI_AFFILIATIONS):
+                    huji_affiliated = True
+                    break
+        if not huji_affiliated:
+            continue
         pid = item.get("paperId", "")
         ext = item.get("externalIds") or {}
-        url = (f"https://www.semanticscholar.org/paper/{pid}"
-               if not ext.get("DOI") else f"https://doi.org/{ext['DOI']}")
+        url = (f"https://doi.org/{ext['DOI']}" if ext.get("DOI")
+               else f"https://www.semanticscholar.org/paper/{pid}")
         authors = [a.get("name", "") for a in (item.get("authors") or [])[:3]]
         papers.append({
-            "id": f"ss_{pid}",
-            "title": item.get("title", ""),
+            "id":       f"ss_{pid}",
+            "title":    item.get("title", ""),
             "abstract": item.get("abstract", "") or "",
-            "authors": authors,
-            "journal": item.get("venue", ""),
-            "date": pub_date,
-            "url": url,
-            "source": "Semantic Scholar",
+            "authors":  authors,
+            "journal":  item.get("venue", ""),
+            "date":     pub_date,
+            "url":      url,
+            "source":   "Semantic Scholar",
         })
     return papers
 
 # ── Gemini Evaluation ──────────────────────────────────────────────────────────
 
 EVAL_PROMPT = """You are a life-science and deep-tech investment analyst.
-Evaluate this academic paper for relevance to emerging commercial opportunities
-in biotech, medtech, agritech, materials, clean energy, or AI/software tools
-for science.
+Evaluate this academic paper (from Hebrew University of Jerusalem researchers)
+for relevance to emerging commercial opportunities in biotech, medtech, agritech,
+materials, clean energy, or AI/software tools for science.
 
 Title: {title}
 Abstract: {abstract}
@@ -180,9 +330,7 @@ Return a JSON object (no markdown) with these exact keys:
 """
 
 def evaluate_paper(paper):
-    abstract = paper.get("abstract", "").strip()
-    if not abstract:
-        abstract = "(no abstract available)"
+    abstract = paper.get("abstract", "").strip() or "(no abstract available)"
     prompt = EVAL_PROMPT.format(
         title=paper["title"],
         abstract=abstract[:1200],
@@ -190,9 +338,7 @@ def evaluate_paper(paper):
     )
     try:
         resp = model.generate_content(prompt)
-        text = resp.text.strip()
-        # strip possible ```json ... ```
-        text = re.sub(r"^```(?:json)?\s*", "", text)
+        text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
         text = re.sub(r"\s*```$", "", text)
         data = json.loads(text)
         return {
@@ -212,7 +358,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Research Paper Monitor</title>
+<title>HUJI Research Monitor</title>
 <style>
   :root {{
     --bg:#0f1117; --card:#1a1d2e; --accent:#6c63ff;
@@ -266,7 +412,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body>
 <header>
-  <h1>Research Paper Monitor</h1>
+  <h1>HUJI Research Monitor</h1>
   <span id="updated"></span>
 </header>
 
@@ -378,25 +524,19 @@ def build_field_chips():
     )
 
 def generate_html(papers):
-    # enrich papers dict with eval fields at top level for JS
-    enriched = []
-    for p in papers:
-        flat = {
-            "id":          p["id"],
-            "title":       p.get("title", ""),
-            "authors":     p.get("authors", []),
-            "journal":     p.get("journal", ""),
-            "date":        p.get("date", ""),
-            "url":         p.get("url", ""),
-            "score":       p.get("score", 0),
-            "summary":     p.get("summary", ""),
-            "opportunity": p.get("opportunity", ""),
-            "fields":      p.get("fields", []),
-        }
-        enriched.append(flat)
-    # sort by score descending for initial render
+    enriched = [{
+        "id":          p["id"],
+        "title":       p.get("title", ""),
+        "authors":     p.get("authors", []),
+        "journal":     p.get("journal", ""),
+        "date":        p.get("date", ""),
+        "url":         p.get("url", ""),
+        "score":       p.get("score", 0),
+        "summary":     p.get("summary", ""),
+        "opportunity": p.get("opportunity", ""),
+        "fields":      p.get("fields", []),
+    } for p in papers]
     enriched.sort(key=lambda x: x["score"], reverse=True)
-
     html = HTML_TEMPLATE.format(
         field_chips=build_field_chips(),
         papers_json=json.dumps(enriched, ensure_ascii=False),
@@ -408,56 +548,66 @@ def generate_html(papers):
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
-    existing = load_existing()
+    print("Connecting to Google Sheet...")
+    sheet = get_sheet()
+    existing = load_from_sheet(sheet)
+    print(f"Loaded {len(existing)} existing papers from sheet.")
+
     known_ids = existing_ids(existing)
-    print(f"Loaded {len(existing)} existing papers.")
 
+    # Fetch from all sources
     new_papers = []
-    for query in SEARCH_QUERIES:
-        print(f"\nQuery: {query}")
-        for fetcher in [fetch_pubmed, fetch_europepmc, fetch_semantic_scholar]:
-            try:
-                batch = fetcher(query)
-                fresh = [p for p in batch if p["id"] not in known_ids]
-                print(f"  {fetcher.__name__}: {len(batch)} fetched, {len(fresh)} new")
-                new_papers.extend(fresh)
-                known_ids.update(p["id"] for p in fresh)
-                time.sleep(0.3)
-            except Exception as e:
-                print(f"  {fetcher.__name__} error: {e}")
+    for fetcher in [fetch_pubmed, fetch_europepmc, fetch_semantic_scholar]:
+        try:
+            batch = fetcher()
+            fresh = [p for p in batch if p["id"] not in known_ids]
+            print(f"{fetcher.__name__}: {len(batch)} fetched, {len(fresh)} new")
+            new_papers.extend(fresh)
+            known_ids.update(p["id"] for p in fresh)
+            time.sleep(0.5)
+        except Exception as e:
+            print(f"{fetcher.__name__} error: {e}")
 
-    # de-dup within new batch by title similarity (simple exact dedup)
+    # Deduplicate by title
     seen_titles = set()
     deduped = []
     for p in new_papers:
-        key = re.sub(r"\W+", " ", p["title"].lower()).strip()
-        if key not in seen_titles:
+        key = re.sub(r"\W+", " ", p.get("title", "").lower()).strip()
+        if key and key not in seen_titles:
             seen_titles.add(key)
             deduped.append(p)
     print(f"\n{len(deduped)} unique new papers to evaluate.")
 
+    # Evaluate with Gemini
     evaluated = []
     for i, paper in enumerate(deduped):
-        print(f"  [{i+1}/{len(deduped)}] Evaluating: {paper['title'][:70]}")
+        print(f"  [{i+1}/{len(deduped)}] {paper['title'][:70]}")
         result = evaluate_paper(paper)
         if result and result["score"] >= MIN_SCORE:
             paper.update(result)
+            paper["added_date"] = today_str()
             evaluated.append(paper)
-            print(f"    -> score {result['score']} | fields: {result['fields']}")
+            print(f"    -> score {result['score']} | {result['fields']}")
         else:
             score = result["score"] if result else "n/a"
             print(f"    -> score {score} (skipped)")
-        time.sleep(0.5)  # be kind to Gemini rate limits
+        time.sleep(0.5)
 
-    all_papers = existing + evaluated
-    # keep only last 200 papers sorted by date to avoid unbounded growth
+    # Apply retention to existing papers
+    retained = apply_retention(existing)
+    dropped = len(existing) - len(retained)
+    if dropped:
+        print(f"\nRetention: dropped {dropped} expired low-score papers.")
+
+    all_papers = retained + evaluated
     all_papers.sort(key=lambda p: p.get("date", ""), reverse=True)
-    all_papers = all_papers[:200]
 
-    save_data(all_papers)
-    print(f"\nSaved {len(all_papers)} papers to {DATA_FILE}.")
+    # Update sheet: rewrite retained rows + append new
+    print(f"\nUpdating sheet ({len(all_papers)} total papers)...")
+    save_to_sheet(sheet, all_papers)
 
     generate_html(all_papers)
+    print("Done.")
 
 
 if __name__ == "__main__":
