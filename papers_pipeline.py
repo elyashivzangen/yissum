@@ -590,6 +590,13 @@ def main():
         print(f"  Could not read sheet (first run?): {e}")
         existing = []
 
+    # Migrate papers scored on the old 1–10 scale to the new 1–50 scale
+    for p in existing:
+        s = p.get("score", 0)
+        if 0 < s <= 10:
+            p["score"] = s * 5
+            print(f"  Migrated score {s}→{p['score']} for: {p.get('title','')[:60]}")
+
     known_ids = existing_ids(existing)
     new_papers = []
 
