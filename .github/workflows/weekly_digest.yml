@@ -25,7 +25,7 @@ jobs:
         env:
           GEMINI_API_KEY:  ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-        run: touch digest_run.log && python weekly_digest.py 2>&1 | tee digest_run.log
+        run: python weekly_digest.py > digest_run.log 2>&1 || echo "Script failed (exit $?)" >> digest_run.log
 
       - name: Commit results
         if: always()
