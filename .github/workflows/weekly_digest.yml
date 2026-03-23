@@ -32,8 +32,11 @@ jobs:
       - name: Commit results
         if: always()
         run: |
+          echo "=== file check ===" && ls -la digest_run.log 2>&1 || echo "digest_run.log missing"
+          cat digest_run.log 2>/dev/null || echo "(empty)"
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add digests/ digest_run.log || true
+          git status --short
           git diff --cached --quiet || git commit -m "Weekly digest $(date -u +%Y-%m-%d)"
           git push || true
