@@ -27,14 +27,20 @@ jobs:
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
         run: python weekly_digest.py > digest_run.log 2>&1 || echo "Script failed (exit $?)" >> digest_run.log
 
+      - name: Upload debug log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: digest-debug-log
+          path: |
+            digest_run.log
+          if-no-files-found: warn
+
       - name: Commit results
         if: always()
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          ls -la digest_run.log digests/ 2>&1 || true
           git add digests/ digest_run.log || true
-          git status
-          git diff --cached --quiet && echo "NOTHING TO COMMIT" || git commit -m "Weekly digest $(date -u +%Y-%m-%d)"
-          git log --oneline -2
-          git push && echo "PUSH OK" || echo "PUSH FAILED: $?"
+          git diff --cached --quiet || git commit -m "Weekly digest $(date -u +%Y-%m-%d)"
+          git push || true
