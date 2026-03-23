@@ -25,7 +25,13 @@ jobs:
         env:
           GEMINI_API_KEY:  ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-        run: python weekly_digest.py 2>&1 | tee digest_run.log
+        run: |
+          set -eo pipefail
+          python weekly_digest.py 2>&1 | tee digest_run.log
+
+      - name: Show log
+        if: always()
+        run: cat digest_run.log 2>/dev/null || echo "(no log)"
 
       - name: Commit PDF
         run: |
