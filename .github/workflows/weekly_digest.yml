@@ -27,20 +27,32 @@ jobs:
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
         run: python weekly_digest.py > digest_run.log 2>&1 || echo "Script failed (exit $?)" >> digest_run.log
 
-      - name: Upload debug log
+      - name: Publish log via API
         if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: digest-debug-log
-          path: |
-            digest_run.log
-          if-no-files-found: warn
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -f digest_run.log ]; then
+            echo "no_log_file=true" > digest_run.log
+          fi
+          LOG_B64=$(base64 -w0 digest_run.log)
+          EXISTING_SHA=$(gh api repos/elyashivzangen/yissum/contents/digest_run.log --jq '.sha' 2>/dev/null || echo "")
+          if [ -n "$EXISTING_SHA" ]; then
+            gh api repos/elyashivzangen/yissum/contents/digest_run.log --method PUT \
+              --field message="digest log $(date -u +%Y-%m-%d %H:%M)" \
+              --field content="$LOG_B64" \
+              --field sha="$EXISTING_SHA"
+          else
+            gh api repos/elyashivzangen/yissum/contents/digest_run.log --method PUT \
+              --field message="digest log $(date -u +%Y-%m-%d %H:%M)" \
+              --field content="$LOG_B64"
+          fi && echo "Log published via API"
 
-      - name: Commit results
+      - name: Commit PDF
         if: always()
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add digests/ digest_run.log || true
+          git add digests/ || true
           git diff --cached --quiet || git commit -m "Weekly digest $(date -u +%Y-%m-%d)"
           git push || true
