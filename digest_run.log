@@ -5,14 +5,10 @@ Loading top papers from Google Sheet...
   Sample added_date values: ['2026-03-23', '2026-03-23', '2026-03-23']
   20 candidates (top 20 by score).
 Asking Gemini to curate the digest...
-  Trying model: gemini-2.5-flash-preview-05-20
-  gemini-2.5-flash-preview-05-20 failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.5-flash-preview-05-20 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
-  Trying model: gemini-2.5-flash-preview-04-17
-  gemini-2.5-flash-preview-04-17 failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.5-flash-preview-04-17 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 11 papers.
-  Executive summary: This week's digest highlights a diverse portfolio of innovations with strong commercial potential, spanning advanced med...
+  Gemini selected 9 papers.
+  Executive summary: This week's digest highlights groundbreaking advancements across several key sectors, from novel diagnostic tools to rev...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W13.pdf  (15 KB)
+PDF written: digests/HUJI_digest_2026_W13.pdf  (13 KB)
 Done.
