@@ -27,8 +27,8 @@ APPS_SCRIPT_URL  = os.environ["APPS_SCRIPT_URL"]   # deployed Apps Script web ap
 OUTPUT_HTML      = Path("papers_reader.html")
 MAX_RESULTS      = 50    # per source
 DAYS_BACK        = 7     # fetch window (days)
-MIN_SCORE        = 6     # discard below this
-KEEP_FOREVER     = 8     # keep indefinitely if score >= this
+MIN_SCORE        = 28    # discard below this (out of 50)
+KEEP_FOREVER     = 38    # keep indefinitely if score >= this (out of 50)
 KEEP_DAYS_MID    = 60    # keep score 6-7 for this many days
 
 HUJI_AFFILIATIONS = [
@@ -339,7 +339,7 @@ def evaluate_paper(paper):
     if not scores:
         return None
 
-    composite = round(sum(scores) / len(scores))
+    composite = sum(scores)  # total out of 50
     return {
         "score":           composite,
         "summary":         meta.get("summary", ""),
@@ -385,8 +385,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     display:flex;flex-direction:column;gap:10px;transition:border-color .2s}}
   .card:hover{{border-color:var(--accent)}}
   .card-header{{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}}
-  .score{{min-width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;
-    font-weight:700;font-size:.95rem}}
+  .score{{min-width:52px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:.82rem;padding:0 6px;white-space:nowrap}}
   .score-high{{background:#14532d;color:var(--green)}}
   .score-mid{{background:#713f12;color:var(--yellow)}}
   .score-low{{background:#450a0a;color:var(--red)}}
@@ -432,8 +432,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   <div class="row">
     <label>Score</label>
     <button class="chip active" data-filter="score" data-val="all">All</button>
-    <button class="chip" data-filter="score" data-val="8">8+</button>
-    <button class="chip" data-filter="score" data-val="6">6+</button>
+    <button class="chip" data-filter="score" data-val="38">38+ / 50</button>
+    <button class="chip" data-filter="score" data-val="30">30+ / 50</button>
   </div>
   <div class="row">
     <label>Field</label>
@@ -451,7 +451,7 @@ const PARAM_LABELS = {{
   novelty:'Novelty', commercial_potential:'Commercial Potential',
   market_size:'Market Size', trl:'Tech Readiness', ip_strength:'IP Strength'
 }};
-function scoreClass(s){{return s>=8?'score-high':s>=6?'score-mid':'score-low';}}
+function scoreClass(s){{return s>=38?'score-high':s>=28?'score-mid':'score-low';}}
 function barColor(s){{return s>=8?'#22c55e':s>=5?'#eab308':'#ef4444';}}
 function renderBreakdown(bd){{
   if(!bd||!Object.keys(bd).length) return '';
@@ -480,7 +480,7 @@ function render(){{
     const authors=(p.authors||[]).join(', ');
     const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
     return `<div class="card">
-      <div class="card-header"><div class="title">${{p.title}}</div><div class="score ${{scoreClass(p.score)}}">${{p.score}}</div></div>
+      <div class="card-header"><div class="title">${{p.title}}</div><div class="score ${{scoreClass(p.score)}}">${{p.score}}/50</div></div>
       <div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>
       ${{p.summary?`<div class="summary">${{p.summary}}</div>`:''}}
       ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
