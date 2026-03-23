@@ -16,17 +16,20 @@ import re
 import time
 import datetime
 import requests
+from google import genai
+from google.genai import types
 from pathlib import Path
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 GEMINI_API_KEY   = os.environ["GEMINI_API_KEY"]
 GOOGLE_SHEET_ID  = os.environ["GOOGLE_SHEET_ID"]
-APPS_SCRIPT_URL  = os.environ["APPS_SCRIPT_URL"]
+APPS_SCRIPT_URL  = os.environ["APPS_SCRIPT_URL"]   # deployed Apps Script web app URL
 OUTPUT_HTML      = Path("papers_reader.html")
+OUTPUT_JSON      = Path("papers_data.json")
 MAX_RESULTS      = 50    # per source
 DAYS_BACK        = 7     # fetch window (days)
-MIN_SCORE        = 6     # discard below this
-KEEP_FOREVER     = 8     # keep indefinitely if score >= this
+MIN_SCORE        = 28    # discard below this (out of 50)
+KEEP_FOREVER     = 38    # keep indefinitely if score >= this (out of 50)
 KEEP_DAYS_MID    = 60    # keep score 6-7 for this many days
 
 HUJI_AFFILIATIONS = [
@@ -47,8 +50,18 @@ FIELD_TAGS = [
 
 SHEET_COLUMNS = [
     "id", "title", "authors", "journal", "date", "url", "source",
-    "score", "summary", "opportunity", "fields", "added_date",
+    "score", "summary", "opportunity", "fields", "added_date", "score_breakdown", "pi",
 ]
+
+SCORE_PARAMS = [
+    ("novelty",              "Scientific novelty and innovation — how groundbreaking is this research compared to prior art?"),
+    ("commercial_potential", "Commercial opportunity strength — how clearly does this translate to a product, service, or licensable technology?"),
+    ("market_size",          "Market size and addressable demand — how large and valuable is the target market?"),
+    ("trl",                  "Technology readiness — how close is this to real-world application or commercialization (lab-stage vs. near-market)?"),
+    ("ip_strength",          "IP and defensibility — how patentable or otherwise defensible is the underlying innovation?"),
+]
+
+client = genai.Client(api_key=GEMINI_API_KEY)
 
 # ── Google Sheets (no service account) ────────────────────────────────────────
 
@@ -77,6 +90,14 @@ def load_from_sheet():
             p["score"] = int(p.get("score", 0))
         except Exception:
             p["score"] = 0
+        sb = p.get("score_breakdown", "")
+        if isinstance(sb, str) and sb.strip():
+            try:
+                p["score_breakdown"] = json.loads(sb)
+            except Exception:
+                p["score_breakdown"] = {}
+        else:
+            p["score_breakdown"] = {}
         papers.append(p)
     return papers
 
@@ -98,6 +119,8 @@ def save_to_sheet(papers):
             p.get("opportunity", ""),
             json.dumps(p.get("fields", []), ensure_ascii=False),
             p.get("added_date", today_str()),
+            json.dumps(p.get("score_breakdown", {}), ensure_ascii=False),
+            p.get("pi", ""),
         ])
     r = requests.post(
         APPS_SCRIPT_URL,
@@ -163,16 +186,19 @@ def fetch_pubmed(max_results=MAX_RESULTS):
     papers = []
     for uid in ids:
         item = result.get(uid, {})
-        authors = [a.get("name", "") for a in item.get("authors", [])[:3]]
+        all_authors = [a.get("name", "") for a in item.get("authors", [])]
+        # PubMed query already filters by HUJI affiliation; last author is the PI
+        pi = all_authors[-1] if all_authors else ""
         papers.append({
             "id":       f"pubmed_{uid}",
             "title":    item.get("title", ""),
             "abstract": "",
-            "authors":  authors,
+            "authors":  all_authors[:3],
             "journal":  item.get("fulljournalname", ""),
             "date":     item.get("pubdate", ""),
             "url":      f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
             "source":   "PubMed",
+            "pi":       pi,
         })
     return papers
 
@@ -191,20 +217,32 @@ def fetch_europepmc(max_results=MAX_RESULTS):
     items = r.json().get("resultList", {}).get("result", [])
     papers = []
     for item in items:
-        authors = []
-        for a in (item.get("authorList") or {}).get("author", [])[:3]:
+        all_author_objs = (item.get("authorList") or {}).get("author", [])
+        all_authors = []
+        for a in all_author_objs:
             name = f"{a.get('firstName','')} {a.get('lastName','')}".strip()
             if name:
-                authors.append(name)
+                all_authors.append(name)
+        # Find last HUJI-affiliated author as PI
+        pi = ""
+        for a in reversed(all_author_objs):
+            affs = [x.get("affiliation", "") for x in
+                    (a.get("authorAffiliationDetailsList") or {}).get("authorAffiliation", [])]
+            if any(h.lower() in af.lower() for h in HUJI_AFFILIATIONS for af in affs):
+                pi = f"{a.get('firstName','')} {a.get('lastName','')}".strip()
+                break
+        if not pi and all_authors:
+            pi = all_authors[-1]
         papers.append({
             "id":       f"epmc_{item.get('id','')}",
             "title":    item.get("title", ""),
             "abstract": item.get("abstractText", ""),
-            "authors":  authors,
+            "authors":  all_authors[:3],
             "journal":  item.get("journalTitle", ""),
             "date":     item.get("firstPublicationDate", ""),
             "url":      f"https://europepmc.org/article/{item.get('source','')}/{item.get('id','')}",
             "source":   "Europe PMC",
+            "pi":       pi,
         })
     return papers
 
@@ -233,22 +271,34 @@ def fetch_semantic_scholar(max_results=MAX_RESULTS):
         ext = item.get("externalIds") or {}
         url = (f"https://doi.org/{ext['DOI']}" if ext.get("DOI")
                else f"https://www.semanticscholar.org/paper/{pid}")
-        authors = [a.get("name", "") for a in (item.get("authors") or [])[:3]]
+        all_author_objs = item.get("authors") or []
+        all_authors = [a.get("name", "") for a in all_author_objs]
+        # Find last HUJI-affiliated author as PI
+        pi = ""
+        for a in reversed(all_author_objs):
+            if any(h.lower() in (aff or "").lower()
+                   for h in HUJI_AFFILIATIONS
+                   for aff in (a.get("affiliations") or [])):
+                pi = a.get("name", "")
+                break
+        if not pi and all_authors:
+            pi = all_authors[-1]
         papers.append({
             "id":       f"ss_{pid}",
             "title":    item.get("title", ""),
             "abstract": item.get("abstract", "") or "",
-            "authors":  authors,
+            "authors":  all_authors[:3],
             "journal":  item.get("venue", ""),
             "date":     pub_date,
             "url":      url,
             "source":   "Semantic Scholar",
+            "pi":       pi,
         })
     return papers
 
 # ── Gemini Evaluation ──────────────────────────────────────────────────────────
 
-EVAL_PROMPT = """You are a life-science and deep-tech investment analyst.
+META_PROMPT = """You are a life-science and deep-tech investment analyst.
 Evaluate this paper from Hebrew University of Jerusalem researchers
 for relevance to emerging commercial opportunities in biotech, medtech,
 agritech, materials, clean energy, or AI/software tools for science.
@@ -257,37 +307,75 @@ Title: {title}
 Abstract: {abstract}
 
 Return a JSON object (no markdown) with these exact keys:
-- score: integer 1-10 (10 = highly relevant commercial opportunity)
 - summary: 2-sentence plain-English summary
 - opportunity: 1-sentence commercial angle
 - fields: list of 1-4 tags from: {fields}
 """
 
+PARAM_PROMPT = """You are a life-science and deep-tech investment analyst.
+Score this paper on ONE specific dimension only.
+
+Dimension: {param_name}
+Definition: {param_desc}
+
+Title: {title}
+Abstract: {abstract}
+
+Return a JSON object (no markdown) with exactly these keys:
+- score: integer 1-10 (10 = excellent on this dimension)
+- reason: 1-2 sentence explanation for the score on this specific dimension
+"""
+
+def _call_gemini(prompt):
+    resp = client.models.generate_content(
+        model="gemini-2.0-flash",
+        contents=prompt,
+    )
+    text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
+    text = re.sub(r"\s*```$", "", text)
+    return json.loads(text)
+
 def evaluate_paper(paper):
     abstract = paper.get("abstract", "").strip() or "(no abstract available)"
-    prompt = EVAL_PROMPT.format(
-        title=paper["title"],
-        abstract=abstract[:1200],
-        fields=json.dumps(FIELD_TAGS),
-    )
+    truncated = abstract[:1200]
+
+    # 1. Meta: summary, opportunity, fields
     try:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemma-3-27b-it:generateContent?key={GEMINI_API_KEY}"
-        payload = {"contents": [{"parts": [{"text": prompt}]}]}
-        r = requests.post(url, json=payload, timeout=60)
-        r.raise_for_status()
-        text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
-        text = re.sub(r"^```(?:json)?\s*", "", text.strip())
-        text = re.sub(r"\s*```$", "", text)
-        data = json.loads(text)
-        return {
-            "score":       int(data.get("score", 0)),
-            "summary":     data.get("summary", ""),
-            "opportunity": data.get("opportunity", ""),
-            "fields":      data.get("fields", []),
-        }
+        meta = _call_gemini(META_PROMPT.format(
+            title=paper["title"], abstract=truncated, fields=json.dumps(FIELD_TAGS),
+        ))
     except Exception as e:
-        print(f"  Gemini error: {e}")
+        print(f"  Gemini error (meta): {e}")
         return None
+    time.sleep(0.4)
+
+    # 2. Per-parameter scoring (separate call each)
+    breakdown = {}
+    scores = []
+    for param_name, param_desc in SCORE_PARAMS:
+        try:
+            data = _call_gemini(PARAM_PROMPT.format(
+                param_name=param_name, param_desc=param_desc,
+                title=paper["title"], abstract=truncated,
+            ))
+            s = max(1, min(10, int(data.get("score", 5))))
+            breakdown[param_name] = {"score": s, "reason": data.get("reason", "")}
+            scores.append(s)
+        except Exception as e:
+            print(f"  Gemini error ({param_name}): {e}")
+        time.sleep(0.4)
+
+    if not scores:
+        return None
+
+    composite = sum(scores)  # total out of 50
+    return {
+        "score":           composite,
+        "summary":         meta.get("summary", ""),
+        "opportunity":     meta.get("opportunity", ""),
+        "fields":          meta.get("fields", []),
+        "score_breakdown": breakdown,
+    }
 
 # ── HTML Generation ────────────────────────────────────────────────────────────
 
@@ -326,8 +414,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     display:flex;flex-direction:column;gap:10px;transition:border-color .2s}}
   .card:hover{{border-color:var(--accent)}}
   .card-header{{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}}
-  .score{{min-width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;
-    font-weight:700;font-size:.95rem}}
+  .score{{min-width:52px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:.82rem;padding:0 6px;white-space:nowrap}}
   .score-high{{background:#14532d;color:var(--green)}}
   .score-mid{{background:#713f12;color:var(--yellow)}}
   .score-low{{background:#450a0a;color:var(--red)}}
@@ -342,9 +430,21 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .actions{{display:flex;gap:8px;margin-top:4px}}
   .btn{{padding:5px 14px;border-radius:6px;border:1px solid var(--border);background:transparent;
     color:var(--muted);font-size:.75rem;cursor:pointer;transition:all .15s;text-decoration:none;display:inline-block}}
-  .btn:hover{{background:var(--accent);border-color:var(--accent);color:#fff}}
+  .btn:hover,.btn.active{{background:var(--accent);border-color:var(--accent);color:#fff}}
   .count{{font-size:.8rem;color:var(--muted);padding:0 24px 8px}}
   .empty{{text-align:center;padding:60px 24px;color:var(--muted)}}
+  .breakdown{{display:none;flex-direction:column;gap:8px;border-top:1px solid var(--border);padding-top:10px;margin-top:2px}}
+  .breakdown.open{{display:flex}}
+  .bd-row{{display:flex;flex-direction:column;gap:3px}}
+  .bd-label{{display:flex;justify-content:space-between;align-items:center}}
+  .bd-name{{font-size:.72rem;font-weight:600;color:var(--text);text-transform:capitalize}}
+  .bd-score{{font-size:.72rem;font-weight:700}}
+  .bd-bar-bg{{height:5px;background:var(--border);border-radius:3px;overflow:hidden}}
+  .bd-bar{{height:100%;border-radius:3px;transition:width .3s}}
+  .bd-reason{{font-size:.7rem;color:var(--muted);line-height:1.4}}
+  .pi{{display:flex;align-items:center;gap:6px;margin:4px 0 2px}}
+  .pi-label{{font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;flex-shrink:0}}
+  .pi-name{{font-size:.85rem;font-weight:700;color:var(--accent2)}}
   @media(max-width:600px){{.grid{{grid-template-columns:1fr;padding:0 12px 24px}}.controls{{padding:12px}}}}
 </style>
 </head>
@@ -364,8 +464,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   <div class="row">
     <label>Score</label>
     <button class="chip active" data-filter="score" data-val="all">All</button>
-    <button class="chip" data-filter="score" data-val="8">8+</button>
-    <button class="chip" data-filter="score" data-val="6">6+</button>
+    <button class="chip" data-filter="score" data-val="38">38+ / 50</button>
+    <button class="chip" data-filter="score" data-val="30">30+ / 50</button>
   </div>
   <div class="row">
     <label>Field</label>
@@ -379,7 +479,25 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 const papers = {papers_json};
 document.getElementById('updated').textContent = 'Updated {updated}';
 let activeScore='all', activeField='all', sortBy='score', searchQ='';
-function scoreClass(s){{return s>=8?'score-high':s>=6?'score-mid':'score-low';}}
+const PARAM_LABELS = {{
+  novelty:'Novelty', commercial_potential:'Commercial Potential',
+  market_size:'Market Size', trl:'Tech Readiness', ip_strength:'IP Strength'
+}};
+function scoreClass(s){{return s>=38?'score-high':s>=28?'score-mid':'score-low';}}
+function barColor(s){{return s>=8?'#22c55e':s>=5?'#eab308':'#ef4444';}}
+function renderBreakdown(bd){{
+  if(!bd||!Object.keys(bd).length) return '';
+  const rows=Object.entries(bd).map(([k,v])=>{{
+    const label=PARAM_LABELS[k]||k;
+    const pct=(v.score||0)*10;
+    return `<div class="bd-row">
+      <div class="bd-label"><span class="bd-name">${{label}}</span><span class="bd-score" style="color:${{barColor(v.score)}}">${{v.score}}/10</span></div>
+      <div class="bd-bar-bg"><div class="bd-bar" style="width:${{pct}}%;background:${{barColor(v.score)}}"></div></div>
+      ${{v.reason?`<div class="bd-reason">${{v.reason}}</div>`:''}}
+    </div>`;
+  }}).join('');
+  return `<div class="breakdown">${{rows}}</div>`;
+}}
 function render(){{
   let list=papers.slice();
   if(searchQ){{const q=searchQ.toLowerCase();list=list.filter(p=>(p.title||'').toLowerCase().includes(q)||(p.summary||'').toLowerCase().includes(q)||(p.opportunity||'').toLowerCase().includes(q));}}
@@ -389,18 +507,32 @@ function render(){{
   document.getElementById('count').textContent=list.length+' paper'+(list.length!==1?'s':'')+' shown';
   const grid=document.getElementById('grid');
   if(!list.length){{grid.innerHTML='<div class="empty">No papers match.</div>';return;}}
-  grid.innerHTML=list.map(p=>{{
+  grid.innerHTML=list.map((p,i)=>{{
     const tags=(p.fields||[]).map(f=>`<span class="tag">${{f}}</span>`).join('');
     const authors=(p.authors||[]).join(', ');
+    const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
     return `<div class="card">
-      <div class="card-header"><div class="title">${{p.title}}</div><div class="score ${{scoreClass(p.score)}}">${{p.score}}</div></div>
+      <div class="card-header"><div class="title">${{p.title}}</div><div class="score ${{scoreClass(p.score)}}">${{p.score}}/50</div></div>
+      ${{p.pi?`<div class="pi"><span class="pi-label">Main Researcher</span><span class="pi-name">👤 ${{p.pi}}</span></div>`:''}}
       <div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>
       ${{p.summary?`<div class="summary">${{p.summary}}</div>`:''}}
       ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
+      ${{hasBd?renderBreakdown(p.score_breakdown):''}}
       ${{tags?`<div class="tags">${{tags}}</div>`:''}}
-      <div class="actions"><a class="btn" href="${{p.url}}" target="_blank">Open Paper</a></div>
+      <div class="actions">
+        <a class="btn" href="${{p.url}}" target="_blank">Open Paper</a>
+        ${{hasBd?`<button class="btn" onclick="toggleBd(this)">Score Breakdown ▾</button>`:''}}
+      </div>
     </div>`;
   }}).join('');
+}}
+function toggleBd(btn){{
+  const card=btn.closest('.card');
+  const bd=card.querySelector('.breakdown');
+  if(!bd)return;
+  bd.classList.toggle('open');
+  btn.classList.toggle('active');
+  btn.textContent=bd.classList.contains('open')?'Score Breakdown ▴':'Score Breakdown ▾';
 }}
 document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{{
   const f=b.dataset.filter,v=b.dataset.val;
@@ -425,16 +557,18 @@ def build_field_chips():
 
 def generate_html(papers):
     enriched = sorted([{
-        "id":          p["id"],
-        "title":       p.get("title", ""),
-        "authors":     p.get("authors", []),
-        "journal":     p.get("journal", ""),
-        "date":        p.get("date", ""),
-        "url":         p.get("url", ""),
-        "score":       p.get("score", 0),
-        "summary":     p.get("summary", ""),
-        "opportunity": p.get("opportunity", ""),
-        "fields":      p.get("fields", []),
+        "id":              p["id"],
+        "title":           p.get("title", ""),
+        "authors":         p.get("authors", []),
+        "journal":         p.get("journal", ""),
+        "date":            p.get("date", ""),
+        "url":             p.get("url", ""),
+        "score":           p.get("score", 0),
+        "summary":         p.get("summary", ""),
+        "opportunity":     p.get("opportunity", ""),
+        "fields":          p.get("fields", []),
+        "score_breakdown": p.get("score_breakdown", {}),
+        "pi":              p.get("pi", ""),
     } for p in papers], key=lambda x: x["score"], reverse=True)
 
     OUTPUT_HTML.write_text(HTML_TEMPLATE.format(
@@ -442,7 +576,8 @@ def generate_html(papers):
         papers_json=json.dumps(enriched, ensure_ascii=False),
         updated=today_str(),
     ), encoding="utf-8")
-    print(f"Generated {OUTPUT_HTML} with {len(enriched)} papers.")
+    OUTPUT_JSON.write_text(json.dumps(enriched, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Generated {OUTPUT_HTML} and {OUTPUT_JSON} with {len(enriched)} papers.")
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 
