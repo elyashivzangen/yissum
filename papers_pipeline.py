@@ -442,8 +442,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .bd-bar-bg{{height:5px;background:var(--border);border-radius:3px;overflow:hidden}}
   .bd-bar{{height:100%;border-radius:3px;transition:width .3s}}
   .bd-reason{{font-size:.7rem;color:var(--muted);line-height:1.4}}
-  .pi{{font-size:.75rem;color:var(--accent2);display:flex;align-items:center;gap:5px}}
-  .pi-label{{font-size:.65rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}}
+  .pi{{display:flex;align-items:center;gap:6px;margin:4px 0 2px}}
+  .pi-label{{font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;flex-shrink:0}}
+  .pi-name{{font-size:.85rem;font-weight:700;color:var(--accent2)}}
   @media(max-width:600px){{.grid{{grid-template-columns:1fr;padding:0 12px 24px}}.controls{{padding:12px}}}}
 </style>
 </head>
@@ -512,9 +513,8 @@ function render(){{
     const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
     return `<div class="card">
       <div class="card-header"><div class="title">${{p.title}}</div><div class="score ${{scoreClass(p.score)}}">${{p.score}}/50</div></div>
+      ${{p.pi?`<div class="pi"><span class="pi-label">Main Researcher</span><span class="pi-name">👤 ${{p.pi}}</span></div>`:''}}
       <div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>
-      ${{p.pi?`<div class="pi"><span class="pi-label">PI</span>${{p.pi}}</div>`:''}}
-
       ${{p.summary?`<div class="summary">${{p.summary}}</div>`:''}}
       ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
       ${{hasBd?renderBreakdown(p.score_breakdown):''}}
