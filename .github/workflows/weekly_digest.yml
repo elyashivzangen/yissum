@@ -32,6 +32,9 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          ls -la digest_run.log digests/ 2>&1 || true
           git add digests/ digest_run.log || true
-          git diff --cached --quiet || git commit -m "Weekly digest $(date -u +%Y-%m-%d)"
-          git push
+          git status
+          git diff --cached --quiet && echo "NOTHING TO COMMIT" || git commit -m "Weekly digest $(date -u +%Y-%m-%d)"
+          git log --oneline -2
+          git push && echo "PUSH OK" || echo "PUSH FAILED: $?"
