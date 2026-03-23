@@ -36,9 +36,7 @@ DIGEST_WINDOW   = 7    # only include papers added in the last N days
 client = genai.Client(api_key=GEMINI_API_KEY)
 # Model ID candidates — tried in order until one works
 DIGEST_MODEL_CANDIDATES = [
-    "gemini-2.5-flash-preview-05-20",
-    "gemini-2.5-flash-preview-04-17",
-    "gemini-2.5-flash",
+    "gemini-2.5-flash",          # confirmed working
     "gemini-2.0-flash",          # reliable fallback
 ]
 
