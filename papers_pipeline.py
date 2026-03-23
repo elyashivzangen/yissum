@@ -25,6 +25,7 @@ GEMINI_API_KEY   = os.environ["GEMINI_API_KEY"]
 GOOGLE_SHEET_ID  = os.environ["GOOGLE_SHEET_ID"]
 APPS_SCRIPT_URL  = os.environ["APPS_SCRIPT_URL"]   # deployed Apps Script web app URL
 OUTPUT_HTML      = Path("papers_reader.html")
+OUTPUT_JSON      = Path("papers_data.json")
 MAX_RESULTS      = 50    # per source
 DAYS_BACK        = 7     # fetch window (days)
 MIN_SCORE        = 28    # discard below this (out of 50)
@@ -575,7 +576,8 @@ def generate_html(papers):
         papers_json=json.dumps(enriched, ensure_ascii=False),
         updated=today_str(),
     ), encoding="utf-8")
-    print(f"Generated {OUTPUT_HTML} with {len(enriched)} papers.")
+    OUTPUT_JSON.write_text(json.dumps(enriched, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Generated {OUTPUT_HTML} and {OUTPUT_JSON} with {len(enriched)} papers.")
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 
