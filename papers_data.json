@@ -1,1 +1,221 @@
-[]
+[
+  {
+    "id": "pubmed_41857451",
+    "title": "ctDNA monitoring using tumor-informed copy number analysis.",
+    "authors": [
+      "Zhou Z",
+      "Cutts R",
+      "Hrebien S"
+    ],
+    "journal": "EMBO molecular medicine",
+    "date": "2026 Mar 19",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41857451/",
+    "score": 33,
+    "summary": "This research focuses on improving the detection of circulating tumor DNA (ctDNA) by leveraging copy number analysis informed by the tumor's original genetic makeup. This approach aims to enhance the sensitivity and accuracy of liquid biopsies for cancer monitoring.",
+    "opportunity": "Developing a more sensitive and reliable ctDNA monitoring assay presents a commercial opportunity for early cancer detection, minimal residual disease assessment, and treatment response monitoring, potentially leading to personalized cancer care.",
+    "fields": [
+      "Diagnostics",
+      "Genomics",
+      "Clinical",
+      "Software/AI"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "While ctDNA monitoring is established, leveraging *tumor-informed copy number analysis* to improve its precision and sensitivity represents a notable refinement, potentially addressing limitations of solely sequence-based approaches; however, the core concept of ctDNA analysis isn't new, so it's an incremental, rather than disruptive, innovation."
+      },
+      "commercial_potential": {
+        "score": 8,
+        "reason": "ctDNA monitoring is already a commercially viable field (e.g., Grail, Guardant Health), and improving its accuracy/sensitivity via tumor-informed copy number analysis offers a clear path to enhanced clinical utility and market adoption; the potential for more precise recurrence monitoring and treatment response assessment translates directly into valuable clinical services and potentially licensable algorithms."
+      },
+      "market_size": {
+        "score": 7,
+        "reason": "The potential market for ctDNA monitoring is large and growing, driven by oncology advancements and personalized medicine; however, focusing specifically on copy number analysis *within* ctDNA narrows the addressable market compared to broader ctDNA applications like mutation detection, impacting overall market size potential."
+      },
+      "trl": {
+        "score": 5,
+        "reason": "ctDNA monitoring is already clinically utilized, but this paper focuses on *how* it's done – specifically, improving analysis via copy number analysis. This suggests refinement of an existing technique rather than a novel, unproven technology, placing it mid-range in terms of TRL, likely beyond basic research but not yet fully optimized for widespread clinical deployment."
+      },
+      "ip_strength": {
+        "score": 6,
+        "reason": "While ctDNA monitoring is a valuable clinical application, the described approach – using tumor-informed copy number analysis – likely builds upon existing patents related to ctDNA analysis and copy number variation detection; the novelty hinges on the *combination* which may be difficult to strongly defend without demonstrating significant, non-obvious improvements in sensitivity or specificity. The core concepts aren't fundamentally new, lowering the IP strength."
+      }
+    },
+    "pi": "Zhao H"
+  },
+  {
+    "id": "pubmed_41843794",
+    "title": "Phase 1b study of ABBV-744, a novel, selective BET inhibitor, as monotherapy in patients with myelofibrosis.",
+    "authors": [
+      "Mascarenhas JO",
+      "Fogliatto LM",
+      "Green SD"
+    ],
+    "journal": "Blood advances",
+    "date": "2026 Mar 17",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41843794/",
+    "score": 31,
+    "summary": "This study investigates ABBV-744, a new drug designed to block BET proteins, in patients with myelofibrosis, a rare bone marrow disorder. The Phase 1b trial assesses the drug's safety and potential effectiveness when used alone as a treatment.",
+    "opportunity": "Successful development of ABBV-744 could provide a novel therapeutic option for myelofibrosis patients, addressing a significant unmet medical need and potentially expanding into other BET-driven cancers.",
+    "fields": [
+      "Drug Discovery",
+      "Clinical",
+      "Immunology",
+      "Genomics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "BET inhibitors represent a reasonably explored, but still actively developing, therapeutic class for myelofibrosis; 'selective' BET inhibition suggests incremental novelty rather than a fundamentally new mechanism, and a Phase 1b study is early-stage, meaning significant innovation hasn't yet been demonstrated clinically. While selectivity *could* be a major advance, it's not guaranteed at this stage."
+      },
+      "commercial_potential": {
+        "score": 7,
+        "reason": "Myelofibrosis is a significant unmet medical need with limited treatment options, suggesting a clear market for a novel therapy; however, without knowing the Phase 1b data (efficacy, safety, and dose-response), it's difficult to assess if ABBV-744 has a truly differentiated profile that would drive strong commercial uptake beyond existing JAK inhibitors or allogeneic stem cell transplant."
+      },
+      "market_size": {
+        "score": 6,
+        "reason": "Myelofibrosis is a rare disease, impacting roughly 1-2 per 100,000 people, limiting the overall market size; however, it represents a significant unmet medical need with limited treatment options, potentially allowing for premium pricing and a reasonable, albeit not massive, addressable market."
+      },
+      "trl": {
+        "score": 6,
+        "reason": "A Phase 1b study indicates the technology has moved beyond purely lab-based research and is in early clinical trials, suggesting some level of manufacturability and preliminary safety testing; however, it's still early-stage and significant development (Ph2, Ph3, regulatory approval) is required before commercialization is possible."
+      },
+      "ip_strength": {
+        "score": 6,
+        "reason": "BET inhibitors as a class are patented, but novelty hinges on the selectivity of ABBV-744; without knowing the specifics of that selectivity and its patent coverage, it's difficult to assess strong defensibility beyond 'another BET inhibitor'. A Phase 1b study doesn't reveal details about the IP landscape."
+      }
+    },
+    "pi": "Ritchie EK"
+  },
+  {
+    "id": "pubmed_41870456",
+    "title": "Image-Guided Robotic-Assisted Waterjet Ablation of Prostate (Aquablation) Versus Convective Water Vapor Thermal Therapy (Rezūm) in Patients with Prostate Volume Less than 80 Grams.",
+    "authors": [
+      "Perez D",
+      "Mamber A",
+      "Pasherstnik M"
+    ],
+    "journal": "Journal of laparoendoscopic & advanced surgical techniques. Part A",
+    "date": "2026 Mar 23",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41870456/",
+    "score": 29,
+    "summary": "This study compares two minimally invasive procedures, Aquablation and Rezūm, for treating benign prostatic hyperplasia (BPH) in men with smaller prostates. The research aims to determine which method offers better outcomes for this patient population.",
+    "opportunity": "The findings could refine patient selection criteria and improve clinical guidelines for BPH treatment, potentially increasing the adoption and market share of the more effective procedure (either Aquablation or Rezūm).",
+    "fields": [
+      "Medical Device",
+      "Clinical",
+      "Imaging",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "This study compares two existing, commercially available technologies (Aquablation and Rezūm) for prostate treatment; it doesn't introduce fundamentally new science or mechanisms of action, focusing instead on a comparative effectiveness analysis within a defined patient subset. While valuable for clinical practice, the research lacks significant novelty from a deep-tech/life-science innovation perspective."
+      },
+      "commercial_potential": {
+        "score": 8,
+        "reason": "Aquablation already has an established, albeit growing, commercial presence as a minimally invasive prostate treatment, and this study aims to refine its application to a specific patient subset (smaller prostates) potentially expanding its addressable market; Rezūm is also commercially available, providing a direct competitive landscape and clear path to market translation if Aquablation demonstrates superior outcomes in this group."
+      },
+      "market_size": {
+        "score": 7,
+        "reason": "The target market – men with lower urinary tract symptoms (LUTS) due to benign prostatic hyperplasia (BPH) and prostate volumes under 80g – is substantial given the aging male population, but it's a segment *within* the broader BPH treatment market which is already competitive; a clear articulation of the precise addressable market size (dollars) isn't present in the title/limited information."
+      },
+      "trl": {
+        "score": 8,
+        "reason": "Aquablation and Rezūm are both already FDA-approved and commercially available procedures, indicating a high TRL; this study compares two existing technologies rather than developing a novel one, suggesting it's focused on optimization and comparative effectiveness in a clinical setting, not fundamental technology development."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "While Aquablation utilizes robotics and image guidance, the core technology of using a high-velocity waterjet for tissue ablation isn't fundamentally novel and likely has limited patent life remaining, or relies on improvements to existing waterjet technology. Rezūm's use of convective water vapor therapy also builds on established thermal therapy principles, suggesting moderate IP strength for both, but not groundbreaking defensibility."
+      }
+    },
+    "pi": "Chertin B"
+  },
+  {
+    "id": "pubmed_41834792",
+    "title": "4D printing of fully programmable sheets of digital metamaterials.",
+    "authors": [
+      "Levin I",
+      "Sachyani E",
+      "Lieberman R"
+    ],
+    "journal": "Soft matter",
+    "date": "2026 Mar 16",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41834792/",
+    "score": 29,
+    "summary": "This research details a novel 4D printing method to create sheets of 'digital metamaterials' – materials whose properties can be precisely controlled and change over time in response to stimuli. The key innovation lies in the full programmability of these materials, allowing for complex, pre-defined transformations after fabrication.",
+    "opportunity": "Commercialization potential lies in creating adaptable materials for soft robotics, responsive packaging, or dynamically tunable biomedical implants, offering customized functionality on demand.",
+    "fields": [
+      "Materials",
+      "Medical Device",
+      "Robotics",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 9,
+        "reason": "Combining 4D printing with programmable digital metamaterials represents a significant leap in materials science; while both fields exist, their integration to create fully programmable *sheets* is a highly novel approach with potential for complex, dynamic functionality beyond current capabilities. The concept pushes beyond static metamaterial properties into truly reconfigurable ones."
+      },
+      "commercial_potential": {
+        "score": 7,
+        "reason": "The concept of 'fully programmable' metamaterials sheets has strong commercial potential across diverse applications like adaptive optics, soft robotics, and biomedical devices, suggesting a clear path to productization or licensing; however, the lack of an abstract makes assessing the *practicality* of achieving this programmability and scalability difficult, impacting confidence in immediate commercial viability."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper describes a highly novel technology (4D printing of digital metamaterials) but doesn't articulate a clear, large, and readily addressable market; the potential applications are broad but lack quantification, making it difficult to assess the true market size beyond speculative future possibilities."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "4D printing of metamaterials, while promising, is generally at a very early stage; 'fully programmable sheets' suggests significant materials science and fabrication challenges remain before scalable production and real-world deployment are possible, indicating a low TRL. The title suggests proof-of-concept but lacks evidence of engineering validation or prototype testing beyond the lab."
+      },
+      "ip_strength": {
+        "score": 7,
+        "reason": "The concept of 4D printing of metamaterials *is* highly patentable, and the 'fully programmable' aspect suggests novel control mechanisms likely requiring protection; however, the field of 4D printing and metamaterials is already crowded, meaning the specific implementation details will be crucial for strong, defensible IP, and without knowing those details, a perfect score isn't warranted."
+      }
+    },
+    "pi": "Magdassi S"
+  },
+  {
+    "id": "pubmed_41850325",
+    "title": "Device Performance and Parental Perception of the Skincubator 2.0, a Wearable Device to Support Prolonged Skin-to-Skin Care for Preterm Infants.",
+    "authors": [
+      "Nitzan I",
+      "Phillips R",
+      "Morag I"
+    ],
+    "journal": "American journal of perinatology",
+    "date": "2026 Mar 18",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41850325/",
+    "score": 28,
+    "summary": "This research focuses on a wearable device, the Skincubator 2.0, designed to facilitate extended skin-to-skin contact (kangaroo care) for premature infants. The study assesses both the device's functionality and how parents perceive its usability and benefits.",
+    "opportunity": "Commercialization potential lies in a more convenient and reliable solution for promoting kangaroo care, potentially reducing NICU costs and improving preterm infant outcomes through a readily adoptable medical device.",
+    "fields": [
+      "Medical Device",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 5,
+        "reason": "While wearable devices for preterm infants and promoting skin-to-skin contact are not entirely new concepts, a 'Skincubator 2.0' suggesting iterative improvement and a focus on *prolonged* support demonstrates some novelty; however, without knowing the specifics of the '2.0' improvements or prior art, it's difficult to assess if this represents a significant leap forward or incremental refinement."
+      },
+      "commercial_potential": {
+        "score": 8,
+        "reason": "The 'Skincubator 2.0' directly addresses a clear need – improving skin-to-skin contact for preterm infants, which has established clinical benefits – and is presented as a wearable *device*, implying a tangible product. The inclusion of parental perception data suggests consideration of user acceptance, crucial for adoption and commercial success, though further details on manufacturing feasibility and cost are needed."
+      },
+      "market_size": {
+        "score": 6,
+        "reason": "The paper focuses on a niche within neonatal care – prolonged skin-to-skin contact for preterm infants – suggesting a limited, though important, initial market size; however, successful implementation could expand to broader neonatal intensive care units and potentially even post-discharge care, hinting at growth potential but requiring further market validation."
+      },
+      "trl": {
+        "score": 6,
+        "reason": "The paper focuses on *device performance and parental perception*, suggesting the device exists beyond purely theoretical design and has been tested with users – indicating it's past basic lab validation. However, the title doesn't imply large-scale clinical trials or regulatory approval, placing it likely in the prototype/early clinical testing phase (TRL 6-7) rather than being near market release."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "Wearable devices and methods of providing skin-to-skin contact are likely heavily patented areas; simply improving upon an existing 'Skincubator' concept doesn't automatically generate strong IP, and the paper focuses on *performance and perception* rather than novel technical invention suggesting limited patentable innovation. Further investigation into existing patents and the specific technical improvements would be needed, but initial assessment suggests weak defensibility."
+      }
+    },
+    "pi": "Nissimov S"
+  }
+]
