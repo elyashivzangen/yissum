@@ -21,9 +21,9 @@ from google.genai import types
 from pathlib import Path
 
 # ── Config ─────────────────────────────────────────────────────────────────────
-GEMINI_API_KEY   = os.environ["GEMINI_API_KEY"]
-GOOGLE_SHEET_ID  = os.environ["GOOGLE_SHEET_ID"]
-APPS_SCRIPT_URL  = os.environ["APPS_SCRIPT_URL"]   # deployed Apps Script web app URL
+GEMINI_API_KEY   = os.environ.get("GEMINI_API_KEY",   "AIzaSyA_tvstQJ_bVWR0lnTTrfEWDfVy158Llek")
+GOOGLE_SHEET_ID  = os.environ.get("GOOGLE_SHEET_ID",  "1oyewjr_pojhyBJHXw_yLUrWVvVoFPbd352dAXPqpGyM")
+APPS_SCRIPT_URL  = os.environ.get("APPS_SCRIPT_URL",  "https://script.google.com/macros/s/AKfycbzVIm6dwN_2KuQuYxI1Y7LjfEMYFzicdSEn1aMPOXr6n8MHB0LI9jVNkB0QFxRJmJYw/exec")
 OUTPUT_HTML      = Path("papers_reader.html")
 MAX_RESULTS      = 50    # per source
 DAYS_BACK        = 7     # fetch window (days)
