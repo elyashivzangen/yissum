@@ -49,7 +49,7 @@ FIELD_TAGS = [
 
 SHEET_COLUMNS = [
     "id", "title", "authors", "journal", "date", "url", "source",
-    "score", "summary", "opportunity", "fields", "added_date", "score_breakdown",
+    "score", "summary", "opportunity", "fields", "added_date", "score_breakdown", "pi",
 ]
 
 SCORE_PARAMS = [
@@ -119,6 +119,7 @@ def save_to_sheet(papers):
             json.dumps(p.get("fields", []), ensure_ascii=False),
             p.get("added_date", today_str()),
             json.dumps(p.get("score_breakdown", {}), ensure_ascii=False),
+            p.get("pi", ""),
         ])
     r = requests.post(
         APPS_SCRIPT_URL,
@@ -184,16 +185,19 @@ def fetch_pubmed(max_results=MAX_RESULTS):
     papers = []
     for uid in ids:
         item = result.get(uid, {})
-        authors = [a.get("name", "") for a in item.get("authors", [])[:3]]
+        all_authors = [a.get("name", "") for a in item.get("authors", [])]
+        # PubMed query already filters by HUJI affiliation; last author is the PI
+        pi = all_authors[-1] if all_authors else ""
         papers.append({
             "id":       f"pubmed_{uid}",
             "title":    item.get("title", ""),
             "abstract": "",
-            "authors":  authors,
+            "authors":  all_authors[:3],
             "journal":  item.get("fulljournalname", ""),
             "date":     item.get("pubdate", ""),
             "url":      f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
             "source":   "PubMed",
+            "pi":       pi,
         })
     return papers
 
@@ -212,20 +216,32 @@ def fetch_europepmc(max_results=MAX_RESULTS):
     items = r.json().get("resultList", {}).get("result", [])
     papers = []
     for item in items:
-        authors = []
-        for a in (item.get("authorList") or {}).get("author", [])[:3]:
+        all_author_objs = (item.get("authorList") or {}).get("author", [])
+        all_authors = []
+        for a in all_author_objs:
             name = f"{a.get('firstName','')} {a.get('lastName','')}".strip()
             if name:
-                authors.append(name)
+                all_authors.append(name)
+        # Find last HUJI-affiliated author as PI
+        pi = ""
+        for a in reversed(all_author_objs):
+            affs = [x.get("affiliation", "") for x in
+                    (a.get("authorAffiliationDetailsList") or {}).get("authorAffiliation", [])]
+            if any(h.lower() in af.lower() for h in HUJI_AFFILIATIONS for af in affs):
+                pi = f"{a.get('firstName','')} {a.get('lastName','')}".strip()
+                break
+        if not pi and all_authors:
+            pi = all_authors[-1]
         papers.append({
             "id":       f"epmc_{item.get('id','')}",
             "title":    item.get("title", ""),
             "abstract": item.get("abstractText", ""),
-            "authors":  authors,
+            "authors":  all_authors[:3],
             "journal":  item.get("journalTitle", ""),
             "date":     item.get("firstPublicationDate", ""),
             "url":      f"https://europepmc.org/article/{item.get('source','')}/{item.get('id','')}",
             "source":   "Europe PMC",
+            "pi":       pi,
         })
     return papers
 
@@ -254,16 +270,28 @@ def fetch_semantic_scholar(max_results=MAX_RESULTS):
         ext = item.get("externalIds") or {}
         url = (f"https://doi.org/{ext['DOI']}" if ext.get("DOI")
                else f"https://www.semanticscholar.org/paper/{pid}")
-        authors = [a.get("name", "") for a in (item.get("authors") or [])[:3]]
+        all_author_objs = item.get("authors") or []
+        all_authors = [a.get("name", "") for a in all_author_objs]
+        # Find last HUJI-affiliated author as PI
+        pi = ""
+        for a in reversed(all_author_objs):
+            if any(h.lower() in (aff or "").lower()
+                   for h in HUJI_AFFILIATIONS
+                   for aff in (a.get("affiliations") or [])):
+                pi = a.get("name", "")
+                break
+        if not pi and all_authors:
+            pi = all_authors[-1]
         papers.append({
             "id":       f"ss_{pid}",
             "title":    item.get("title", ""),
             "abstract": item.get("abstract", "") or "",
-            "authors":  authors,
+            "authors":  all_authors[:3],
             "journal":  item.get("venue", ""),
             "date":     pub_date,
             "url":      url,
             "source":   "Semantic Scholar",
+            "pi":       pi,
         })
     return papers
 
@@ -413,6 +441,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .bd-bar-bg{{height:5px;background:var(--border);border-radius:3px;overflow:hidden}}
   .bd-bar{{height:100%;border-radius:3px;transition:width .3s}}
   .bd-reason{{font-size:.7rem;color:var(--muted);line-height:1.4}}
+  .pi{{font-size:.75rem;color:var(--accent2);display:flex;align-items:center;gap:5px}}
+  .pi-label{{font-size:.65rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}}
   @media(max-width:600px){{.grid{{grid-template-columns:1fr;padding:0 12px 24px}}.controls{{padding:12px}}}}
 </style>
 </head>
@@ -482,6 +512,8 @@ function render(){{
     return `<div class="card">
       <div class="card-header"><div class="title">${{p.title}}</div><div class="score ${{scoreClass(p.score)}}">${{p.score}}/50</div></div>
       <div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>
+      ${{p.pi?`<div class="pi"><span class="pi-label">PI</span>${{p.pi}}</div>`:''}}
+
       ${{p.summary?`<div class="summary">${{p.summary}}</div>`:''}}
       ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
       ${{hasBd?renderBreakdown(p.score_breakdown):''}}
@@ -535,6 +567,7 @@ def generate_html(papers):
         "opportunity":     p.get("opportunity", ""),
         "fields":          p.get("fields", []),
         "score_breakdown": p.get("score_breakdown", {}),
+        "pi":              p.get("pi", ""),
     } for p in papers], key=lambda x: x["score"], reverse=True)
 
     OUTPUT_HTML.write_text(HTML_TEMPLATE.format(
