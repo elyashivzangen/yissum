@@ -24,12 +24,12 @@ jobs:
 
       - name: Run paper evaluation pipeline
         env:
-          GEMINI_API_KEY:    ${{ secrets.GEMINI_API_KEY }}
-          GOOGLE_SHEET_ID:   ${{ secrets.GOOGLE_SHEET_ID }}
-          GOOGLE_CREDS_JSON: ${{ secrets.GOOGLE_CREDS_JSON }}
+          GEMINI_API_KEY:  ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
         run: python papers_pipeline.py
 
-      - name: Commit & push HTML
+      - name: Commit & push HTML reader
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
