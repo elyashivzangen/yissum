@@ -26,12 +26,12 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-        run: python papers_pipeline.py
+        run: python papers_pipeline.py 2>&1 | tee pipeline_run.log
 
       - name: Commit generated HTML
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add papers_reader.html papers_data.json || true
+          git add papers_reader.html papers_data.json pipeline_run.log || true
           git diff --cached --quiet || git commit -m "chore: update papers [$(date -u +%Y-%m-%d)]"
           git push
