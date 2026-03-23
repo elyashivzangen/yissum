@@ -1,14 +1,14 @@
 Loading top papers from Google Sheet...
-  Sheet response: 200, 213124 bytes
+  Sheet response: 200, 370504 bytes
   Cutoff date: 2026-03-16  (DIGEST_WINDOW=7 days)
-  Rows: 71 total, 0 excluded by date, 71 kept.
+  Rows: 123 total, 0 excluded by date, 123 kept.
   Sample added_date values: ['2026-03-23', '2026-03-23', '2026-03-23']
   20 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
   Gemini selected 9 papers.
-  Executive summary: This week's digest highlights groundbreaking advancements across several key sectors, from novel diagnostic tools to rev...
+  Executive summary: This week's digest highlights a compelling range of innovations from Hebrew University, spanning cutting-edge medical de...
 Generating PDF...
 PDF written: digests/HUJI_digest_2026_W13.pdf  (13 KB)
 Done.
