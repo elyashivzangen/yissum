@@ -25,10 +25,7 @@ jobs:
         env:
           GEMINI_API_KEY:  ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-        shell: bash
-        run: |
-          set -o pipefail
-          python weekly_digest.py 2>&1 | tee digest_run.log
+        run: python weekly_digest.py
 
       - name: Commit results
         if: always()

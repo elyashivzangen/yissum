@@ -400,9 +400,23 @@ def main():
 
 
 if __name__ == "__main__":
-    import sys, traceback
+    import sys, traceback, io
+    buf = io.StringIO()
+    class Tee:
+        def __init__(self, *streams): self.streams = streams
+        def write(self, data):
+            for s in self.streams: s.write(data)
+        def flush(self):
+            for s in self.streams: s.flush()
+    log_file = open("digest_run.log", "w")
+    tee = Tee(sys.stdout, log_file)
+    sys.stdout = tee
+    sys.stderr = tee
     try:
         main()
     except Exception:
         traceback.print_exc()
+        log_file.flush(); log_file.close()
         sys.exit(1)
+    finally:
+        log_file.flush(); log_file.close()
