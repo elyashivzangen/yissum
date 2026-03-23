@@ -6,6 +6,7 @@ When triggering a GitHub Actions workflow:
 1. **Check first** whether the feature branch's changes are merged into the target branch the workflow runs on (`main`).
 2. If not merged, **merge automatically** without asking — resolve conflicts (prefer feature branch for pipeline/product code, prefer target branch for CI/CD plumbing like workflow files), then update the target branch via `gh api` if direct `git push` is blocked (403).
 3. **Trigger the workflow** immediately after.
+4. **Wait** for it to complete (`gh run watch`), then **read `pipeline_run.log`** and verify: papers were fetched, evaluated (score= lines visible), sheet was updated, and no fatal errors. Report the summary to the user.
 
 Do not ask for confirmation for this sequence — just do it.
 
