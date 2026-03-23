@@ -34,7 +34,13 @@ TOP_N           = 20   # top papers by score sent to Gemini for curation
 DIGEST_WINDOW   = 7    # only include papers added in the last N days
 
 client = genai.Client(api_key=GEMINI_API_KEY)
-DIGEST_MODEL = "gemini-2.5-flash-preview-04-17"  # strongest available on free tier
+# Model ID candidates — tried in order until one works
+DIGEST_MODEL_CANDIDATES = [
+    "gemini-2.5-flash-preview-05-20",
+    "gemini-2.5-flash-preview-04-17",
+    "gemini-2.5-flash",
+    "gemini-2.0-flash",          # reliable fallback
+]
 
 # ── Load sheet ───────────────────────────────────────────────────────────────
 
@@ -106,7 +112,18 @@ def curate_with_gemini(papers):
         for i, p in enumerate(papers)
     )
     prompt = CURATION_PROMPT.format(n=len(papers), paper_list=paper_list)
-    resp = client.models.generate_content(model=DIGEST_MODEL, contents=prompt)
+    last_err = None
+    for model_id in DIGEST_MODEL_CANDIDATES:
+        try:
+            print(f"  Trying model: {model_id}")
+            resp = client.models.generate_content(model=model_id, contents=prompt)
+            print(f"  Success with: {model_id}")
+            break
+        except Exception as e:
+            print(f"  {model_id} failed: {e}")
+            last_err = e
+    else:
+        raise RuntimeError(f"All models failed. Last error: {last_err}")
     text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
     text = re.sub(r"\s*```$", "", text)
     return json.loads(text)
