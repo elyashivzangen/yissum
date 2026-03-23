@@ -28,9 +28,7 @@ OUTPUT_HTML      = Path("papers_reader.html")
 OUTPUT_JSON      = Path("papers_data.json")
 MAX_RESULTS      = 50    # per source
 DAYS_BACK        = 7     # fetch window (days)
-MIN_SCORE        = 28    # discard below this (out of 50)
-KEEP_FOREVER     = 38    # keep indefinitely if score >= this (out of 50)
-KEEP_DAYS_MID    = 60    # keep score 6-7 for this many days
+KEEP_DAYS        = 90    # keep all papers for this many days
 
 HUJI_AFFILIATIONS = [
     "Hebrew University of Jerusalem",
@@ -136,15 +134,11 @@ def apply_retention(papers):
     today = datetime.date.today()
     kept = []
     for p in papers:
-        score = p.get("score", 0)
-        if score >= KEEP_FOREVER:
-            kept.append(p)
-            continue
         try:
             age = (today - datetime.date.fromisoformat(p.get("added_date", ""))).days
         except Exception:
             age = 0
-        if score >= MIN_SCORE and age <= KEEP_DAYS_MID:
+        if age <= KEEP_DAYS:
             kept.append(p)
     return kept
 
@@ -630,13 +624,13 @@ def main():
     for i, paper in enumerate(deduped):
         print(f"  [{i+1}/{len(deduped)}] {paper['title'][:70]}")
         result = evaluate_paper(paper)
-        if result and result["score"] >= MIN_SCORE:
+        if result:
             paper.update(result)
             paper["added_date"] = today_str()
             evaluated.append(paper)
             print(f"    score={result['score']} fields={result['fields']}")
         else:
-            print(f"    score={result['score'] if result else 'n/a'} — skipped")
+            print(f"    evaluation failed — skipped")
         time.sleep(0.5)
 
     # If there were papers to evaluate but ALL failed (e.g. quota exhausted),

@@ -30,7 +30,7 @@ from reportlab.platypus import (
 GEMINI_API_KEY  = os.environ["GEMINI_API_KEY"]
 GOOGLE_SHEET_ID = os.environ["GOOGLE_SHEET_ID"]
 OUTPUT_PDF      = Path("weekly_digest.pdf")
-TOP_N           = 30   # candidate papers sent to Gemini for curation
+TOP_N           = 20   # top papers by score sent to Gemini for curation
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 DIGEST_MODEL = "gemini-2.5-flash-preview-04-17"  # strongest available on free tier
