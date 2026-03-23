@@ -1,103 +1,101 @@
 Loading existing papers from Google Sheet...
-  0 existing papers loaded.
-fetch_pubmed: 43 fetched, 43 new
+  5 existing papers loaded.
+fetch_pubmed: 43 fetched, 38 new
 fetch_europepmc: 29 fetched, 29 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-45 unique new papers to evaluate.
-  [1/45] Image-Guided Robotic-Assisted Waterjet Ablation of Prostate (Aquablati
-    score=29 fields=['Medical Device', 'Clinical', 'Imaging', 'Other']
-  [2/45] In vitro fertilization outcomes in young women and their association w
-    score=18 — skipped
-  [3/45] Examining the Role of Dementia Worry in the Caregiver Burden Process.
-    score=10 — skipped
-  [4/45] Wild genes to the rescue: High-throughput genomics reveals the wild so
-    score=26 — skipped
-  [5/45] Investigating user satisfaction, usage characteristics, and early aban
-    score=18 — skipped
-  [6/45] Physiotherapist-led ultrasound-guided visual biofeedback prelabor trai
-    score=18 — skipped
-  [7/45] Distinct roles of cortical layer 5 subtypes in associative learning.
-    score=16 — skipped
-  [8/45] Comment on: Evidence-based functional classification of simultaneous v
-    score=12 — skipped
-  [9/45] Extremity hemorrhage control in urban warfare: A retrospective analysi
-    score=17 — skipped
-  [10/45] Influence of Age in End-of-Life Practices in Worldwide ICUs (ETHICUS-2
-    score=10 — skipped
-  [11/45] ctDNA monitoring using tumor-informed copy number analysis.
-    score=33 fields=['Diagnostics', 'Genomics', 'Clinical', 'Software/AI']
-  [12/45] Thrombotic and Bleeding Complications in Myeloproliferative Neoplasms:
-    score=16 — skipped
-  [13/45] Long term follow-up of functional outcome and quality of life after ad
-    score=12 — skipped
-  [14/45] Functional Impact of Structural Damage in Psoriatic Arthritis: Insight
-    score=13 — skipped
-  [15/45] Carrier Dynamics of Strongly Confined CsPbI(3) Nanowires.
-    score=19 — skipped
-  [16/45] What is new in pleural infections?
-    score=13 — skipped
-  [17/45] The impact of bronchoscopy on the safety of percutaneous tracheostomy:
-    score=19 — skipped
-  [18/45] Ultrasound-guided Morton's neuroma injection: the "three-handed" techn
-    score=16 — skipped
-  [19/45] Lipidomics of allantoic fluid collected by allantocentesis indicates a
-    score=15 — skipped
-  [20/45] InterFeat: a pipeline for finding interesting scientific features.
-    score=20 — skipped
-  [21/45] Device Performance and Parental Perception of the Skincubator 2.0, a W
-    score=28 fields=['Medical Device', 'Clinical', 'Other']
-  [22/45] The disappointing (not hateful) divide: uncovering the negative emotio
-    score=8 — skipped
-  [23/45] Modeling identities among the first-sedentary communities: Emergence o
-    score=8 — skipped
-  [24/45] A single-cell CRISPR screen defines a gene regulatory network governin
-    score=26 — skipped
-  [25/45] The epistemological gatekeeper in the face of cracks in the ivory towe
-    score=7 — skipped
-  [26/45] A novel momentum-based intervention sustains real-life participation i
-    score=16 — skipped
-  [27/45] Matters arising from the food processing and processed foods terminolo
-    score=10 — skipped
-  [28/45] Bias and Its Control in Stochastic Approaches to Electronic-Structure 
-    score=17 — skipped
-  [29/45] Phase 1b study of ABBV-744, a novel, selective BET inhibitor, as monot
-    score=31 fields=['Drug Discovery', 'Clinical', 'Immunology', 'Genomics']
-  [30/45] Adaptation and preliminary validation of the Psychosocial Assessment T
-    score=10 — skipped
-  [31/45] The impact of integrative medicine on quality of life in patients with
-    score=16 — skipped
-  [32/45] Oral health outcomes following early-life exposure to war-related hard
-    score=9 — skipped
-  [33/45] Growth phase-specific induction of a viable but nonculturable (VBNC) s
-    score=19 — skipped
-  [34/45] Commentary on a recent published study on endometrial receptivity asse
-    score=15 — skipped
-  [35/45] Progressive endocannabinoid system dysregulation in autosomal dominant
-    score=16 — skipped
-  [36/45] Synchronous activation of striatal cholinergic interneurons induces lo
-    score=17 — skipped
-  [37/45] Social Functioning of Pre-School Children With and Without Sensory Mod
-    score=11 — skipped
-  [38/45] 4D printing of fully programmable sheets of digital metamaterials.
+44 unique new papers to evaluate.
+  [1/44] In vitro fertilization outcomes in young women and their association w
+    score=18 fields=['Diagnostics', 'Software/AI', 'Clinical', 'Genomics']
+  [2/44] Examining the Role of Dementia Worry in the Caregiver Burden Process.
+    score=10 fields=['Clinical', 'Software/AI', 'Neuroscience', 'Other']
+  [3/44] Wild genes to the rescue: High-throughput genomics reveals the wild so
+    score=26 fields=['AgriTech', 'Genomics', 'Synthetic Biology']
+  [4/44] Investigating user satisfaction, usage characteristics, and early aban
+    score=18 fields=['Medical Device', 'Clinical', 'Software/AI', 'Neuroscience']
+  [5/44] Physiotherapist-led ultrasound-guided visual biofeedback prelabor trai
+    score=18 fields=['Medical Device', 'Clinical', 'Imaging', 'Neuroscience']
+  [6/44] Distinct roles of cortical layer 5 subtypes in associative learning.
+    score=16 fields=['Drug Discovery', 'Neuroscience', 'Software/AI', 'Diagnostics']
+  [7/44] Comment on: Evidence-based functional classification of simultaneous v
+    score=12 fields=['Medical Device', 'Clinical', 'Software/AI', 'Imaging']
+  [8/44] Extremity hemorrhage control in urban warfare: A retrospective analysi
+    score=17 fields=['Medical Device', 'Clinical', 'Imaging', 'Other']
+  [9/44] Influence of Age in End-of-Life Practices in Worldwide ICUs (ETHICUS-2
+    score=10 fields=['Clinical', 'Software/AI', 'Other']
+  [10/44] Thrombotic and Bleeding Complications in Myeloproliferative Neoplasms:
+    score=16 fields=['Drug Discovery', 'Diagnostics', 'Clinical', 'Genomics']
+  [11/44] Long term follow-up of functional outcome and quality of life after ad
+    score=12 fields=['Clinical', 'Software/AI', 'Medical Device', 'Neuroscience']
+  [12/44] Functional Impact of Structural Damage in Psoriatic Arthritis: Insight
+    score=13 fields=['Imaging', 'Clinical', 'Immunology', 'Software/AI']
+  [13/44] Carrier Dynamics of Strongly Confined CsPbI(3) Nanowires.
+    score=19 fields=['Materials', 'Clean Energy', 'Imaging', 'Other']
+  [14/44] What is new in pleural infections?
+    score=13 fields=['Diagnostics', 'Drug Discovery', 'Immunology', 'Clinical']
+  [15/44] The impact of bronchoscopy on the safety of percutaneous tracheostomy:
+    score=19 fields=['Medical Device', 'Clinical', 'Imaging']
+  [16/44] Ultrasound-guided Morton's neuroma injection: the "three-handed" techn
+    score=16 fields=['Medical Device', 'Imaging', 'Clinical', 'Other']
+  [17/44] Lipidomics of allantoic fluid collected by allantocentesis indicates a
+    score=15 fields=['Diagnostics', 'AgriTech', 'Proteomics', 'Clinical']
+  [18/44] InterFeat: a pipeline for finding interesting scientific features.
+    score=20 fields=['Software/AI', 'Genomics', 'Proteomics', 'Drug Discovery']
+  [19/44] The disappointing (not hateful) divide: uncovering the negative emotio
+    score=8 fields=['Software/AI', 'Neuroscience', 'Other']
+  [20/44] Modeling identities among the first-sedentary communities: Emergence o
+    score=8 fields=['Software/AI', 'Other']
+  [21/44] A single-cell CRISPR screen defines a gene regulatory network governin
+    score=26 fields=['Drug Discovery', 'Genomics', 'Synthetic Biology', 'Clinical']
+  [22/44] The epistemological gatekeeper in the face of cracks in the ivory towe
+    score=7 fields=['Software/AI', 'Clinical', 'Other']
+  [23/44] A novel momentum-based intervention sustains real-life participation i
+    score=16 fields=['Software/AI', 'Clinical', 'Neuroscience', 'Other']
+  [24/44] Matters arising from the food processing and processed foods terminolo
+    score=10 fields=['FoodTech', 'Software/AI', 'AgriTech', 'Other']
+  [25/44] Bias and Its Control in Stochastic Approaches to Electronic-Structure 
+    score=17 fields=['Materials', 'Clean Energy', 'Software/AI', 'Quantum']
+  [26/44] Adaptation and preliminary validation of the Psychosocial Assessment T
+    score=10 fields=['Clinical', 'Software/AI', 'Neuroscience', 'Other']
+  [27/44] The impact of integrative medicine on quality of life in patients with
+    score=16 fields=['Clinical', 'Immunology', 'Software/AI', 'Other']
+  [28/44] Oral health outcomes following early-life exposure to war-related hard
+    score=9 fields=['Clinical', 'Other', 'Software/AI']
+  [29/44] Growth phase-specific induction of a viable but nonculturable (VBNC) s
+    score=19 fields=['FoodTech', 'AgriTech', 'Diagnostics', 'Other']
+  [30/44] Commentary on a recent published study on endometrial receptivity asse
+    score=15 fields=['Diagnostics', 'Clinical', 'Reproductive Medicine', 'Software/AI']
+  [31/44] Progressive endocannabinoid system dysregulation in autosomal dominant
+    score=15 fields=['Drug Discovery', 'Clinical', 'Genomics', 'Other']
+  [32/44] Synchronous activation of striatal cholinergic interneurons induces lo
+    score=17 fields=['Drug Discovery', 'Neuroscience', 'Clinical']
+  [33/44] Social Functioning of Pre-School Children With and Without Sensory Mod
+    score=11 fields=['Clinical', 'Neuroscience', 'Software/AI', 'Diagnostics']
+  [34/44] Collective bacterial condensation is fundamentally constrained by the 
+    score=18 fields=['AgriTech', 'Synthetic Biology', 'Materials', 'Other']
+  [35/44] Bipolar cell networks underlying steady-state intensity encoding in in
+    score=17 fields=['Neuroscience', 'Drug Discovery', 'Medical Device', 'Imaging']
+  [36/44] Interplay of Pulmonary Hypertension and the Effects of Panel-Reactive 
+    score=12 fields=['Clinical', 'Immunology', 'Medical Device', 'Diagnostics']
+  [37/44] Imaging mammalian lipids using desorption electrospray ionization mass
+    score=22 fields=['Diagnostics', 'Drug Discovery', 'Imaging', 'Proteomics']
+  [38/44] Mycoplasma pneumoniae-Associated Cardiac Complications Revisited.
+    score=12 fields=['Diagnostics', 'Immunology', 'Clinical']
+  [39/44] Growth phase-specific induction of a viable but nonculturable (VBNC) s
+    score=19 fields=['FoodTech', 'AgriTech', 'Diagnostics', 'Other']
+  [40/44] 4D printing of fully programmable sheets of digital metamaterials.
     score=29 fields=['Materials', 'Medical Device', 'Robotics', 'Other']
-  [39/45] Collective bacterial condensation is fundamentally constrained by the 
-    score=18 — skipped
-  [40/45] Bipolar cell networks underlying steady-state intensity encoding in in
-    score=17 — skipped
-  [41/45] Interplay of Pulmonary Hypertension and the Effects of Panel-Reactive 
-    score=12 — skipped
-  [42/45] Imaging mammalian lipids using desorption electrospray ionization mass
-    score=22 — skipped
-  [43/45] Mycoplasma pneumoniae-Associated Cardiac Complications Revisited.
-    score=12 — skipped
-  [44/45] Growth phase-specific induction of a viable but nonculturable (VBNC) s
-    score=19 — skipped
-  [45/45] Carrier Dynamics of Strongly Confined CsPbI&lt;sub&gt;3&lt;/sub&gt; Na
-    score=21 — skipped
+  [41/44] Device Performance and Parental Perception of the Skincubator 2.0, a W
+    score=28 fields=['Medical Device', 'Clinical', 'Other']
+  [42/44] Carrier Dynamics of Strongly Confined CsPbI&lt;sub&gt;3&lt;/sub&gt; Na
+    score=21 fields=['Materials', 'Clean Energy', 'Imaging']
+  [43/44] ctDNA monitoring using tumor-informed copy number analysis.
+    score=35 fields=['Diagnostics', 'Software/AI', 'Genomics', 'Clinical']
+  [44/44] Phase 1b study of ABBV-744, a novel, selective BET inhibitor, as monot
+    score=30 fields=['Drug Discovery', 'Clinical', 'Immunology', 'Genomics']
 
-Retention: kept 0/0 existing, added 5 new.
-Writing 5 papers to Google Sheet...
-Sheet updated: {"status":"ok","rows":6}
-Generated papers_reader.html and papers_data.json with 5 papers.
+Retention: kept 5/5 existing, added 44 new.
+Writing 49 papers to Google Sheet...
+Sheet updated: {"status":"ok","rows":50}
+Generated papers_reader.html and papers_data.json with 49 papers.
 Done.
