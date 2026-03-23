@@ -45,9 +45,12 @@ def load_top_papers():
     )
     r = requests.get(url, timeout=20)
     r.raise_for_status()
+    print(f"  Sheet response: {r.status_code}, {len(r.text)} bytes")
     reader = csv.DictReader(io.StringIO(r.text))
     cutoff = datetime.date.today() - datetime.timedelta(days=DIGEST_WINDOW)
+    print(f"  Cutoff date: {cutoff}  (DIGEST_WINDOW={DIGEST_WINDOW} days)")
     papers = []
+    excluded = 0
     for row in reader:
         p = dict(row)
         try:
@@ -59,13 +62,18 @@ def load_top_papers():
         except Exception:
             p["fields"] = []
         # Only include papers added within the digest window
+        added_str = p.get("added_date", "").strip()
         try:
-            added = datetime.date.fromisoformat(p.get("added_date", ""))
+            added = datetime.date.fromisoformat(added_str)
             if added < cutoff:
+                excluded += 1
                 continue
         except Exception:
-            pass  # if no added_date, include it anyway
+            pass  # if no/invalid added_date, include it anyway
         papers.append(p)
+    print(f"  Rows: {len(papers)+excluded} total, {excluded} excluded by date, {len(papers)} kept.")
+    if papers:
+        print(f"  Sample added_date values: {[p.get('added_date','') for p in papers[:3]]}")
     papers.sort(key=lambda x: x["score"], reverse=True)
     return papers[:TOP_N]
 
