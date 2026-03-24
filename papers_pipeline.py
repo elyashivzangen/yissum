@@ -416,7 +416,7 @@ Return a JSON object (no markdown) with exactly these keys:
 
 def _call_gemini(prompt):
     resp = client.models.generate_content(
-        model="gemini-2.0-flash",
+        model="gemma-3-27b-it",
         contents=prompt,
     )
     text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
