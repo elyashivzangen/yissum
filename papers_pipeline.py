@@ -537,7 +537,12 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .pi-email{{font-size:.75rem;padding:0 0 4px 0}}
   .pi-email a{{color:var(--accent2);text-decoration:none}}
   .pi-email a:hover{{text-decoration:underline}}
-  @media(max-width:600px){{.grid{{grid-template-columns:1fr;padding:0 12px 24px}}.controls{{padding:12px}}}}
+  .slider{{-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;background:var(--border);outline:none;cursor:pointer;width:140px;vertical-align:middle}}
+  .slider::-webkit-slider-thumb{{-webkit-appearance:none;appearance:none;width:16px;height:16px;border-radius:50%;background:var(--accent);cursor:pointer}}
+  .slider::-moz-range-thumb{{width:16px;height:16px;border-radius:50%;background:var(--accent);cursor:pointer;border:none}}
+  .slider:disabled{{opacity:.3;cursor:not-allowed}}
+  .slider-val{{font-size:.75rem;color:var(--accent2);font-weight:700;min-width:42px;display:inline-block}}
+  @media(max-width:600px){{.grid{{grid-template-columns:1fr;padding:0 12px 24px}}.controls{{padding:12px}}.slider{{width:100px}}}}
 </style>
 </head>
 <body>
@@ -561,9 +566,21 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </div>
   <div class="row">
     <label>Score</label>
-    <button class="chip active" data-filter="score" data-val="all">All</button>
-    <button class="chip" data-filter="score" data-val="38">38+ / 50</button>
-    <button class="chip" data-filter="score" data-val="30">30+ / 50</button>
+    <input type="range" id="score-slider" min="0" max="50" value="0" step="1" class="slider"/>
+    <span id="score-val" class="slider-val">Any</span>
+  </div>
+  <div class="row">
+    <label>Param</label>
+    <select id="param-select" class="sort-select">
+      <option value="">Any parameter</option>
+      <option value="novelty">Novelty</option>
+      <option value="commercial_potential">Commercial Potential</option>
+      <option value="market_size">Market Size</option>
+      <option value="trl">Tech Readiness</option>
+      <option value="ip_strength">IP Strength</option>
+    </select>
+    <input type="range" id="param-slider" min="1" max="10" value="1" step="1" class="slider" disabled/>
+    <span id="param-val" class="slider-val">—</span>
   </div>
   <div class="row">
     <label>Field</label>
@@ -578,7 +595,7 @@ const papers = {papers_json};
 document.getElementById('updated').textContent = 'Updated {updated}';
 const TODAY=new Date(); TODAY.setHours(0,0,0,0);
 function daysAgo(d){{if(!d)return 9999;const t=new Date(d);t.setHours(0,0,0,0);return Math.round((TODAY-t)/86400000);}}
-let activeScore='all', activeField='all', activePeriod='all', sortBy='score', searchQ='';
+let activeScore=0, activeField='all', activePeriod='all', sortBy='score', searchQ='', activeParam='', activeParamMin=1;
 const PARAM_LABELS = {{
   novelty:'Novelty', commercial_potential:'Commercial Potential',
   market_size:'Market Size', trl:'Tech Readiness', ip_strength:'IP Strength'
@@ -602,7 +619,8 @@ function render(){{
   let list=papers.slice();
   if(searchQ){{const q=searchQ.toLowerCase();list=list.filter(p=>(p.title||'').toLowerCase().includes(q)||(p.summary||'').toLowerCase().includes(q)||(p.opportunity||'').toLowerCase().includes(q));}}
   if(activePeriod!=='all')list=list.filter(p=>daysAgo(p.added_date||p.date)<=parseInt(activePeriod));
-  if(activeScore!=='all')list=list.filter(p=>p.score>=parseInt(activeScore));
+  if(activeScore>0)list=list.filter(p=>p.score>=activeScore);
+  if(activeParam)list=list.filter(p=>((p.score_breakdown||{{}})[activeParam]||{{}}).score>=activeParamMin);
   if(activeField!=='all')list=list.filter(p=>(p.fields||[]).includes(activeField));
   list.sort(sortBy==='score'?(a,b)=>b.score-a.score:(a,b)=>(b.date||'').localeCompare(a.date||''));
   document.getElementById('count').textContent=list.length+' paper'+(list.length!==1?'s':'')+' shown';
@@ -647,9 +665,30 @@ document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{{
   const f=b.dataset.filter,v=b.dataset.val;
   document.querySelectorAll(`.chip[data-filter="${{f}}"]`).forEach(x=>x.classList.remove('active'));
   b.classList.add('active');
-  if(f==='score')activeScore=v; else if(f==='field')activeField=v; else activePeriod=v;
+  if(f==='field')activeField=v; else activePeriod=v;
   render();
 }}));
+document.getElementById('score-slider').addEventListener('input',function(){{
+  activeScore=parseInt(this.value);
+  document.getElementById('score-val').textContent=activeScore>0?activeScore+'+ /50':'Any';
+  render();
+}});
+(function(){{
+  const sel=document.getElementById('param-select');
+  const sl=document.getElementById('param-slider');
+  const lbl=document.getElementById('param-val');
+  sel.addEventListener('change',function(){{
+    activeParam=this.value;
+    sl.disabled=!activeParam;
+    lbl.textContent=activeParam?sl.value+'/10':'—';
+    render();
+  }});
+  sl.addEventListener('input',function(){{
+    activeParamMin=parseInt(this.value);
+    lbl.textContent=activeParamMin+'/10';
+    render();
+  }});
+}})();
 document.getElementById('sort').addEventListener('change',e=>{{sortBy=e.target.value;render();}});
 document.getElementById('search').addEventListener('input',e=>{{searchQ=e.target.value.trim();render();}});
 render();
