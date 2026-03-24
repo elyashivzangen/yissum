@@ -170,7 +170,14 @@ def norm_title(t):
 
 
 def is_huji_paper(authors_with_affs):
-    """True if the last author OR the majority of authors are HUJI-affiliated.
+    """True if the paper has sufficient HUJI/Hadassah authorship.
+
+    Rules (in order):
+    - If the last author is HUJI/Hadassah-affiliated → keep.
+    - If the majority of authors are HUJI/Hadassah-affiliated → keep.
+    - If ANY author is Hadassah-affiliated → keep.
+      (Hadassah is the clinical arm of HUJI; clinical papers legitimately
+       have non-HUJI last authors while still being HUJI work.)
 
     authors_with_affs: list (one element per author) of lists of affiliation strings.
     """
@@ -180,10 +187,16 @@ def is_huji_paper(authors_with_affs):
     def has_huji(affs):
         return any(h.lower() in af.lower() for h in HUJI_AFFILIATIONS for af in affs)
 
+    def has_hadassah(affs):
+        return any("hadassah" in af.lower() for af in affs)
+
     if has_huji(authors_with_affs[-1]):
         return True
     huji_count = sum(1 for affs in authors_with_affs if has_huji(affs))
-    return huji_count > len(authors_with_affs) / 2
+    if huji_count > len(authors_with_affs) / 2:
+        return True
+    # Hadassah-specific: keep if any author is from Hadassah
+    return any(has_hadassah(affs) for affs in authors_with_affs)
 
 def existing_ids(papers):
     return {p["id"] for p in papers}
@@ -669,6 +682,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   header{{background:var(--card);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}}
   header h1{{font-size:1.25rem;font-weight:700;color:var(--accent2)}}
   header span{{font-size:.8rem;color:var(--muted)}}
+  .header-links{{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}}
+  .header-link{{padding:5px 12px;border-radius:6px;border:1px solid var(--border);background:var(--tag-bg);
+    color:var(--muted);font-size:.75rem;text-decoration:none;transition:all .15s}}
+  .header-link:hover{{background:var(--accent);border-color:var(--accent);color:#fff}}
   .controls{{padding:16px 24px;display:flex;flex-direction:column;gap:12px}}
   .row{{display:flex;align-items:center;gap:8px;flex-wrap:wrap}}
   .row label{{font-size:.75rem;color:var(--muted);min-width:52px;text-transform:uppercase;letter-spacing:.05em}}
@@ -733,6 +750,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <header>
   <h1>HUJI Research Monitor</h1>
   <span id="updated"></span>
+  <div class="header-links">{header_links}</div>
 </header>
 <div class="controls">
   <div class="row search-row">
@@ -933,10 +951,34 @@ def generate_html(papers):
         "added_date":      p.get("added_date", ""),
     } for p in papers], key=lambda x: x["score"], reverse=True)
 
+    # Build header links: spreadsheet + latest weekly + monthly digests
+    header_links = ""
+    sheet_id = os.environ.get("GOOGLE_SHEET_ID", "")
+    if sheet_id:
+        sheet_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}"
+        header_links += f'<a class="header-link" href="{sheet_url}" target="_blank">📊 Spreadsheet</a>'
+
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    if repo:
+        owner, rname = (repo.split("/") + [""])[:2]
+        base = f"https://{owner}.github.io/{rname}"
+        digests_dir = Path("digests")
+        if digests_dir.is_dir():
+            pdfs = sorted(digests_dir.glob("HUJI_digest_*.pdf"))
+            weeklies  = [p for p in pdfs if "_W" in p.stem]
+            monthlies = [p for p in pdfs if "_M" in p.stem]
+            if weeklies:
+                url = f"{base}/digests/{weeklies[-1].name}"
+                header_links += f'<a class="header-link" href="{url}" target="_blank">📄 Latest Weekly</a>'
+            if monthlies:
+                url = f"{base}/digests/{monthlies[-1].name}"
+                header_links += f'<a class="header-link" href="{url}" target="_blank">📅 Latest Monthly</a>'
+
     OUTPUT_HTML.write_text(HTML_TEMPLATE.format(
         field_chips=build_field_chips(),
         papers_json=json.dumps(enriched, ensure_ascii=False),
         updated=today_str(),
+        header_links=header_links,
     ), encoding="utf-8")
     OUTPUT_JSON.write_text(json.dumps(enriched, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Generated {OUTPUT_HTML} and {OUTPUT_JSON} with {len(enriched)} papers.")
