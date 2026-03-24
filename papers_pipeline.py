@@ -170,14 +170,10 @@ def norm_title(t):
 
 
 def is_huji_paper(authors_with_affs):
-    """True if the paper has sufficient HUJI/Hadassah authorship.
+    """True if the last author OR the majority of authors are HUJI/Hadassah-affiliated.
 
-    Rules (in order):
-    - If the last author is HUJI/Hadassah-affiliated → keep.
-    - If the majority of authors are HUJI/Hadassah-affiliated → keep.
-    - If ANY author is Hadassah-affiliated → keep.
-      (Hadassah is the clinical arm of HUJI; clinical papers legitimately
-       have non-HUJI last authors while still being HUJI work.)
+    Hadassah is the clinical arm of HUJI and is treated identically to HUJI:
+    keep if the last author or >50% of authors are from Hadassah or Hebrew University.
 
     authors_with_affs: list (one element per author) of lists of affiliation strings.
     """
@@ -187,16 +183,10 @@ def is_huji_paper(authors_with_affs):
     def has_huji(affs):
         return any(h.lower() in af.lower() for h in HUJI_AFFILIATIONS for af in affs)
 
-    def has_hadassah(affs):
-        return any("hadassah" in af.lower() for af in affs)
-
     if has_huji(authors_with_affs[-1]):
         return True
     huji_count = sum(1 for affs in authors_with_affs if has_huji(affs))
-    if huji_count > len(authors_with_affs) / 2:
-        return True
-    # Hadassah-specific: keep if any author is from Hadassah
-    return any(has_hadassah(affs) for affs in authors_with_affs)
+    return huji_count > len(authors_with_affs) / 2
 
 def existing_ids(papers):
     return {p["id"] for p in papers}
