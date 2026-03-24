@@ -1,24 +1,9 @@
 Loading existing papers from Google Sheet...
-  82 existing papers loaded.
-  Verifying HUJI affiliation for 79 papers via PubMed efetch...
-  Removed 14 paper(s) with no HUJI last/majority author:
-    - Wild genes to the rescue: High-throughput genomics reveals the wild so
-    - Psychoanalytic Training: Reaching the Promised Land?
-    - Examining the Role of Dementia Worry in the Caregiver Burden Process.
-    - Influence of Age in End-of-Life Practices in Worldwide ICUs (ETHICUS-2
-    - Distinct roles of cortical layer 5 subtypes in associative learning.
-    - ctDNA monitoring using tumor-informed copy number analysis.
-    - Functional Impact of Structural Damage in Psoriatic Arthritis: Insight
-    - Carrier Dynamics of Strongly Confined CsPbI&lt;sub&gt;3&lt;/sub&gt; Na
-    - Modeling identities among the first-sedentary communities: Emergence o
-    - Lipidomics of allantoic fluid collected by allantocentesis indicates a
-    - Device Performance and Parental Perception of the Skincubator 2.0, a W
-    - Adaptation and preliminary validation of the Psychosocial Assessment T
-    - Gracilis transposition for faecal incontinence after damage control su
-    - ADAM9 supports regulatory T cell stability through TGF-ÃÂÃÂÃÂÃÂ
+  68 existing papers loaded.
+  Verifying HUJI affiliation for 65 papers via PubMed efetch...
 fetch_pubmed: 19 fetched, 0 new
 fetch_europepmc: 12 fetched, 0 new
-fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
+fetch_semantic_scholar: 0 fetched, 0 new
 
 0 unique new papers to evaluate.
 Enriching PI contact for 59 existing papers (backfill)...
