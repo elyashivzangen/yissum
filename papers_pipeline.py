@@ -367,7 +367,7 @@ def _orcid_lookup(name):
         )
         if r.status_code != 200:
             return None, None
-        results = r.json().get("result", [])
+        results = r.json().get("result") or []
         for res in results:
             orcid_id = (res.get("orcid-identifier") or {}).get("path")
             if not orcid_id:
