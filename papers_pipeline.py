@@ -560,9 +560,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </div>
   <div class="row">
     <label>Period</label>
-    <button class="chip active" data-filter="period" data-val="all">All time</button>
-    <button class="chip" data-filter="period" data-val="7">Last week</button>
-    <button class="chip" data-filter="period" data-val="30">Last month</button>
+    <button class="chip active" data-filter="period" data-val="all" data-label="All time">All time</button>
+    <button class="chip" data-filter="period" data-val="7" data-label="Last week">Last week</button>
+    <button class="chip" data-filter="period" data-val="30" data-label="Last month">Last month</button>
   </div>
   <div class="row">
     <label>Score</label>
@@ -584,7 +584,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </div>
   <div class="row">
     <label>Field</label>
-    <button class="chip active" data-filter="field" data-val="all">All</button>
+    <button class="chip active" data-filter="field" data-val="all" data-label="All">All</button>
     {field_chips}
   </div>
 </div>
@@ -615,15 +615,30 @@ function renderBreakdown(bd){{
   }}).join('');
   return `<div class="breakdown">${{rows}}</div>`;
 }}
-function render(){{
-  let list=papers.slice();
+function applyFilters(list,{{skipPeriod,skipField}}){{
   if(searchQ){{const q=searchQ.toLowerCase();list=list.filter(p=>(p.title||'').toLowerCase().includes(q)||(p.summary||'').toLowerCase().includes(q)||(p.opportunity||'').toLowerCase().includes(q));}}
-  if(activePeriod!=='all')list=list.filter(p=>daysAgo(p.added_date||p.date)<=parseInt(activePeriod));
+  if(!skipPeriod&&activePeriod!=='all')list=list.filter(p=>daysAgo(p.added_date||p.date)<=parseInt(activePeriod));
   if(activeScore>0)list=list.filter(p=>p.score>=activeScore);
   if(activeParam)list=list.filter(p=>((p.score_breakdown||{{}})[activeParam]||{{}}).score>=activeParamMin);
-  if(activeField!=='all')list=list.filter(p=>(p.fields||[]).includes(activeField));
+  if(!skipField&&activeField!=='all')list=list.filter(p=>(p.fields||[]).includes(activeField));
+  return list;
+}}
+function render(){{
+  let list=applyFilters(papers.slice(),{{}});
   list.sort(sortBy==='score'?(a,b)=>b.score-a.score:(a,b)=>(b.date||'').localeCompare(a.date||''));
-  document.getElementById('count').textContent=list.length+' paper'+(list.length!==1?'s':'')+' shown';
+  const n=list.length;
+  document.getElementById('count').textContent=n+' paper'+(n!==1?'s':'')+' shown';
+  // Update chip counts
+  document.querySelectorAll('.chip').forEach(b=>{{
+    const f=b.dataset.filter,v=b.dataset.val,lbl=b.dataset.label||v;
+    let sub=applyFilters(papers.slice(),{{skipPeriod:f==='period',skipField:f==='field'}});
+    if(f==='period'&&v!=='all')sub=sub.filter(p=>daysAgo(p.added_date||p.date)<=parseInt(v));
+    if(f==='field'&&v!=='all')sub=sub.filter(p=>(p.fields||[]).includes(v));
+    b.textContent=lbl+' ('+sub.length+')';
+  }});
+  // Update slider labels with current result count
+  document.getElementById('score-val').textContent=activeScore>0?activeScore+'+ /50 · '+n:'Any · '+n;
+  if(activeParam)document.getElementById('param-val').textContent=activeParamMin+'/10 · '+n;
   const grid=document.getElementById('grid');
   if(!list.length){{grid.innerHTML='<div class="empty">No papers match.</div>';return;}}
   grid.innerHTML=list.map((p,i)=>{{
@@ -670,7 +685,6 @@ document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{{
 }}));
 document.getElementById('score-slider').addEventListener('input',function(){{
   activeScore=parseInt(this.value);
-  document.getElementById('score-val').textContent=activeScore>0?activeScore+'+ /50':'Any';
   render();
 }});
 (function(){{
@@ -680,12 +694,11 @@ document.getElementById('score-slider').addEventListener('input',function(){{
   sel.addEventListener('change',function(){{
     activeParam=this.value;
     sl.disabled=!activeParam;
-    lbl.textContent=activeParam?sl.value+'/10':'—';
+    if(!activeParam)lbl.textContent='—';
     render();
   }});
   sl.addEventListener('input',function(){{
     activeParamMin=parseInt(this.value);
-    lbl.textContent=activeParamMin+'/10';
     render();
   }});
 }})();
@@ -699,7 +712,7 @@ render();
 
 def build_field_chips():
     return "\n    ".join(
-        f'<button class="chip" data-filter="field" data-val="{f}">{f}</button>'
+        f'<button class="chip" data-filter="field" data-val="{f}" data-label="{f}">{f}</button>'
         for f in FIELD_TAGS
     )
 
