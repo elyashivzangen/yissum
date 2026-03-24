@@ -165,8 +165,40 @@ def today_str():
 def days_ago(n):
     return (datetime.date.today() - datetime.timedelta(days=n)).isoformat()
 
+def norm_title(t):
+    return re.sub(r"\W+", " ", (t or "").lower()).strip()
+
 def existing_ids(papers):
     return {p["id"] for p in papers}
+
+def dedup_by_title(papers):
+    """Deduplicate a list of papers by normalised title.
+
+    When two papers share a title, keep the one with the most data
+    (prefers: has score_breakdown > higher score > has email > PubMed source).
+    Merges email/pi_full_name from the dropped copy into the kept one.
+    """
+    best = {}  # norm_title → paper
+    for p in papers:
+        key = norm_title(p.get("title", ""))
+        if not key:
+            continue
+        if key not in best:
+            best[key] = p
+        else:
+            existing = best[key]
+            # Decide which copy to keep
+            e_bd = bool(existing.get("score_breakdown"))
+            p_bd = bool(p.get("score_breakdown"))
+            keep, drop = (existing, p) if (
+                (e_bd and not p_bd) or
+                (e_bd == p_bd and existing.get("score", 0) >= p.get("score", 0))
+            ) else (p, existing)
+            # Merge contact info from the dropped copy
+            keep.setdefault("pi_full_name", drop.get("pi_full_name", ""))
+            keep.setdefault("pi_email", drop.get("pi_email", ""))
+            best[key] = keep
+    return list(best.values())
 
 # ── PI Contact Enrichment ──────────────────────────────────────────────────────
 
@@ -843,17 +875,27 @@ def main():
                 print(f"  Recalc score {p['score']}→{cat_sum} for: {p.get('title','')[:60]}")
                 p["score"] = cat_sum
 
+    # Deduplicate existing papers by title (catches cross-source dupes already in the sheet)
+    before = len(existing)
+    existing = dedup_by_title(existing)
+    if len(existing) < before:
+        print(f"  Removed {before - len(existing)} duplicate(s) from existing papers.")
+
     known_ids = existing_ids(existing)
+    known_titles = {norm_title(p.get("title", "")) for p in existing}
     new_papers = []
 
     fetch_errors = 0
     for fetcher in [fetch_pubmed, fetch_europepmc, fetch_semantic_scholar]:
         try:
             batch = fetcher()
-            fresh = [p for p in batch if p["id"] not in known_ids]
+            fresh = [p for p in batch
+                     if p["id"] not in known_ids
+                     and norm_title(p.get("title", "")) not in known_titles]
             print(f"{fetcher.__name__}: {len(batch)} fetched, {len(fresh)} new")
             new_papers.extend(fresh)
             known_ids.update(p["id"] for p in fresh)
+            known_titles.update(norm_title(p.get("title", "")) for p in fresh)
         except Exception as e:
             print(f"{fetcher.__name__} error: {e}")
             fetch_errors += 1
@@ -863,13 +905,8 @@ def main():
         print("All fetchers failed — aborting to avoid overwriting sheet.")
         return
 
-    # Deduplicate by title
-    seen, deduped = set(), []
-    for p in new_papers:
-        key = re.sub(r"\W+", " ", p.get("title", "").lower()).strip()
-        if key and key not in seen:
-            seen.add(key)
-            deduped.append(p)
+    # Deduplicate new papers by title (cross-source within this fetch)
+    deduped = dedup_by_title(new_papers)
     print(f"\n{len(deduped)} unique new papers to evaluate.")
 
     # Enrich PI contact info for new papers
