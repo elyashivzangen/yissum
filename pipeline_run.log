@@ -1,26 +1,21 @@
 Loading existing papers from Google Sheet...
-  82 existing papers loaded.
-  Verifying HUJI affiliation for 18 existing PubMed papers...
-fetch_pubmed: 26 fetched, 5 new
-fetch_europepmc: 17 fetched, 0 new
+  87 existing papers loaded.
+  Verifying HUJI affiliation for 23 existing PubMed papers...
+  Removed 5 PubMed paper(s) with no HUJI last/majority author:
+    - Comment on: Evidence-based functional classification of simultaneous v
+    - Phase 1b study of ABBV-744, a novel, selective BET inhibitor, as monot
+    - The impact of integrative medicine on quality of life in patients with
+    - Interplay of Pulmonary Hypertension and the Effects of Panel-Reactive 
+    - Previous Antiplatelet Therapy and Outcomes of Acute Ischemic Stroke Wi
+fetch_pubmed: 19 fetched, 0 new
+fetch_europepmc: 12 fetched, 0 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-5 unique new papers to evaluate.
-Enriching PI contact info for 5 new papers...
+0 unique new papers to evaluate.
 Enriching PI contact for 73 existing papers (backfill)...
-  [1/5] Comment on: Evidence-based functional classification of simultaneous v
-    score=12 fields=['Medical Device', 'Imaging', 'Clinical', 'Software/AI']
-  [2/5] Phase 1b study of ABBV-744, a novel, selective BET inhibitor, as monot
-    score=31 fields=['Drug Discovery', 'Clinical', 'Immunology', 'Genomics']
-  [3/5] The impact of integrative medicine on quality of life in patients with
-    score=16 fields=['Clinical', 'Software/AI', 'Immunology', 'Other']
-  [4/5] Interplay of Pulmonary Hypertension and the Effects of Panel-Reactive 
-    score=12 fields=['Clinical', 'Immunology', 'Medical Device', 'Diagnostics']
-  [5/5] Previous Antiplatelet Therapy and Outcomes of Acute Ischemic Stroke Wi
-    score=17 fields=['Clinical', 'Neuroscience', 'Medical Device', 'Imaging']
 
-Retention: kept 82/82 existing, added 5 new.
-Writing 87 papers to Google Sheet...
-Sheet updated: {"status":"ok","rows":88}
-Generated papers_reader.html and papers_data.json with 87 papers.
+Retention: kept 82/82 existing, added 0 new.
+Writing 82 papers to Google Sheet...
+Sheet updated: {"status":"ok","rows":83}
+Generated papers_reader.html and papers_data.json with 82 papers.
 Done.
