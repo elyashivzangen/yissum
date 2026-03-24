@@ -693,6 +693,20 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <title>HUJI Research Monitor</title>
 <style>
   :root {{
+    --bg:#f5f6fa; --card:#ffffff; --card2:#eef0f7;
+    --accent:#5b50e8; --accent2:#4338ca; --accent3:#0284c7;
+    --text:#1e2130; --muted:#6b7280; --faint:#d1d5db;
+    --border:#dde1ef; --tag-bg:#eef0f8;
+    --green:#16a34a; --yellow:#b45309; --red:#dc2626;
+    --green-bg:#dcfce7; --yellow-bg:#fef9c3; --red-bg:#fee2e2;
+    --shadow:0 4px 24px rgba(0,0,0,.08);
+    --header-bg:linear-gradient(135deg,#4338ca 0%,#5b50e8 100%);
+    --header-border:rgba(255,255,255,.15);
+    --header-shadow:0 2px 16px rgba(67,56,202,.25);
+    --header-h1:#ffffff; --header-subtitle:rgba(255,255,255,.75);
+    --controls-bg:linear-gradient(to bottom,rgba(238,240,247,.95),transparent);
+  }}
+  [data-theme=dark] {{
     --bg:#0b0d18; --card:#13162a; --card2:#1a1d35;
     --accent:#7c6ff7; --accent2:#b39dff; --accent3:#38bdf8;
     --text:#dde4f0; --muted:#7a8499; --faint:#3a3f5c;
@@ -700,37 +714,44 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     --green:#34d399; --yellow:#fbbf24; --red:#f87171;
     --green-bg:#052e1c; --yellow-bg:#2d1f02; --red-bg:#2a0a0a;
     --shadow:0 4px 24px rgba(0,0,0,.45);
+    --header-bg:linear-gradient(135deg,#0f1225 0%,#161a36 100%);
+    --header-border:var(--border);
+    --header-shadow:0 2px 16px rgba(0,0,0,.4);
+    --header-h1:var(--accent2); --header-subtitle:var(--muted);
+    --controls-bg:linear-gradient(to bottom,rgba(22,26,54,.9),transparent);
   }}
   *{{box-sizing:border-box;margin:0;padding:0}}
   body{{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}}
 
   /* ── Header ── */
   header{{
-    background:linear-gradient(135deg,#0f1225 0%,#161a36 100%);
-    border-bottom:1px solid var(--border);
+    background:var(--header-bg);
+    border-bottom:1px solid var(--header-border);
     padding:14px 24px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
-    box-shadow:0 2px 16px rgba(0,0,0,.4);
+    box-shadow:var(--header-shadow);
   }}
   .logo{{width:34px;height:34px;border-radius:8px;
     background:linear-gradient(135deg,var(--accent) 0%,var(--accent3) 100%);
     display:flex;align-items:center;justify-content:center;
     font-size:.75rem;font-weight:900;color:#fff;letter-spacing:-.5px;flex-shrink:0}}
   .header-title{{display:flex;flex-direction:column;gap:1px}}
-  header h1{{font-size:1.1rem;font-weight:700;color:var(--accent2);letter-spacing:-.01em}}
-  header .subtitle{{font-size:.72rem;color:var(--muted)}}
+  header h1{{font-size:1.1rem;font-weight:700;color:var(--header-h1);letter-spacing:-.01em}}
+  header .subtitle{{font-size:.72rem;color:var(--header-subtitle)}}
   .header-links{{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap;align-items:center}}
   .header-link{{
     padding:5px 11px;border-radius:6px;
-    border:1px solid var(--border);background:rgba(255,255,255,.04);
-    color:var(--muted);font-size:.72rem;text-decoration:none;
+    border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);
+    color:rgba(255,255,255,.85);font-size:.72rem;text-decoration:none;
     transition:all .18s;white-space:nowrap
   }}
-  .header-link:hover{{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 0 12px rgba(124,111,247,.4)}}
+  .header-link:hover{{background:rgba(255,255,255,.25);border-color:rgba(255,255,255,.5);color:#fff}}
+  [data-theme=dark] .header-link{{border-color:var(--border);background:rgba(255,255,255,.04);color:var(--muted)}}
+  [data-theme=dark] .header-link:hover{{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 0 12px rgba(124,111,247,.4)}}
 
   /* ── Controls ── */
   .controls{{
     padding:14px 24px 10px;display:flex;flex-direction:column;gap:10px;
-    background:linear-gradient(to bottom,rgba(22,26,54,.9),transparent);
+    background:var(--controls-bg);
     border-bottom:1px solid var(--border);
   }}
   .row{{display:flex;align-items:center;gap:8px;flex-wrap:wrap}}
@@ -848,6 +869,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .slider:disabled{{opacity:.3;cursor:not-allowed}}
   .slider-val{{font-size:.73rem;color:var(--accent2);font-weight:700;min-width:44px;display:inline-block}}
 
+  .theme-toggle{{cursor:pointer;font-size:.72rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.85);padding:5px 11px;border-radius:6px;transition:all .18s;white-space:nowrap}}
+  .theme-toggle:hover{{background:rgba(255,255,255,.25);border-color:rgba(255,255,255,.5);color:#fff}}
+  [data-theme=dark] .theme-toggle{{background:rgba(255,255,255,.04);border-color:var(--border);color:var(--muted)}}
+  [data-theme=dark] .theme-toggle:hover{{background:var(--accent);border-color:var(--accent);color:#fff}}
+
   @media(max-width:600px){{
     .grid{{grid-template-columns:1fr;padding:12px 12px 32px}}
     .controls{{padding:10px 12px}}
@@ -863,7 +889,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <h1>HUJI Research Monitor</h1>
     <span class="subtitle" id="updated"></span>
   </div>
-  <div class="header-links">{header_links}</div>
+  <div class="header-links">{header_links}<button class="header-link theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌙 Dark</button></div>
 </header>
 <div class="controls">
   <div class="row search-row">
@@ -1036,6 +1062,16 @@ document.getElementById('score-slider').addEventListener('input',function(){{
 }})();
 document.getElementById('sort').addEventListener('change',e=>{{sortBy=e.target.value;render();}});
 document.getElementById('search').addEventListener('input',e=>{{searchQ=e.target.value.trim();render();}});
+(function(){{
+  const btn=document.getElementById('themeToggle');
+  const saved=localStorage.getItem('huji-theme');
+  if(saved==='dark'){{document.documentElement.setAttribute('data-theme','dark');btn.textContent='☀️ Light';}}
+  btn.addEventListener('click',function(){{
+    const isDark=document.documentElement.getAttribute('data-theme')==='dark';
+    if(isDark){{document.documentElement.removeAttribute('data-theme');localStorage.setItem('huji-theme','light');btn.textContent='🌙 Dark';}}
+    else{{document.documentElement.setAttribute('data-theme','dark');localStorage.setItem('huji-theme','dark');btn.textContent='☀️ Light';}}
+  }});
+}})();
 render();
 </script>
 </body>
