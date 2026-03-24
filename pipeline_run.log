@@ -1,122 +1,38 @@
 Loading existing papers from Google Sheet...
-  71 existing papers loaded.
-  Migrated score 9→45 for: The disappointing (not hateful) divide: uncovering the negat
-  Migrated score 7→35 for: The epistemological gatekeeper in the face of cracks in the 
-  Migrated score 9→45 for: Oral health outcomes following early-life exposure to war-re
-  Migrated score 10→50 for: Matters arising from the food processing and processed foods
-fetch_pubmed: 50 fetched, 12 new
-fetch_europepmc: 50 fetched, 42 new
+  123 existing papers loaded.
+  Migrated score 7→35 for: Psychoanalytic Training: Reaching the Promised Land?
+  Migrated score 9→45 for: Response to: 'Comment on 'Systemic prostacyclin analogues in
+  Migrated score 10→50 for: Corrigendum to "The paradoxical protective effect of chronic
+  Migrated score 7→35 for: Benign Presacral Tumor Mimicking a Pilonidal Abscess: A Diag
+  Migrated score 9→45 for: [Feeding in End Stage Dementia: A Comparison of Patient Outc
+  Migrated score 7→35 for: Brown tumor of the patella in a long-term hemodialysis patie
+  Migrated score 10→50 for: Children's resource taking varies with experimentally manipu
+  Migrated score 9→45 for: The role of personal values in opinion formation regarding a
+  Migrated score 10→50 for: Substance and Behavioural Addictions Among Evacuees: Finding
+  Migrated score 10→50 for: Carcinomas and Carcinoid Tumors of the Lungs and Bronchi in 
+  Migrated score 9→45 for: Henry Levison, a Giant of Pediatric Respiratory Medicine.
+  Migrated score 7→35 for: Children's rights and needs during war: the case of adolesce
+  Migrated score 6→30 for: When the bed beside you empties: Two long-term ward stories.
+fetch_pubmed: 38 fetched, 1 new
+fetch_europepmc: 27 fetched, 4 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-52 unique new papers to evaluate.
-  [1/52] Transseptal Puncture for Left Atrial Appendage Closure: A Consensus Do
-    score=27 fields=['Medical Device', 'Clinical', 'Imaging']
-  [2/52] A Unified Attention-Based Account of Semantic Impairment in Schizophre
-    score=16 fields=['Neuroscience', 'Software/AI', 'Diagnostics', 'Clinical']
-  [3/52] Henry Levison, a Giant of Pediatric Respiratory Medicine.
-    score=9 fields=['Clinical', 'Immunology', 'Other']
-  [4/52] A feasibility open-label clinical trial utilizing second-generation ar
-    score=31 fields=['Software/AI', 'Neuroscience', 'Clinical', 'Medical Device']
-  [5/52] Feasibility and safety of electrohydraulic acoustic therapy for treatm
-    score=26 fields=['Medical Device', 'Clinical', 'Other']
-  [6/52] Trends and future projections of cancer prevalence in patients with ca
-    score=15 fields=['Clinical', 'Software/AI', 'Diagnostics', 'Immunology']
-  [7/52] Children's rights and needs during war: the case of adolescents in Isr
-    score=7 fields=['Clinical', 'Neuroscience', 'Software/AI', 'Other']
-  [8/52] Ustekinumab therapy for moderately to severely active pediatric Crohn'
-    score=27 fields=['Clinical', 'Immunology', 'Drug Discovery', 'Other']
-  [9/52] Biallelic SUPT4H1 Variants Cause a Multisystem Neurodevelopmental Diso
-    score=17 fields=['Genomics', 'Diagnostics', 'Neuroscience', 'Drug Discovery']
-  [10/52] When the bed beside you empties: Two long-term ward stories.
-    score=6 fields=['Clinical', 'Other', 'Software/AI']
-  [11/52] An interventional pilot study protocol on the effect of extra virgin o
-    score=18 fields=['Clinical', 'FoodTech', 'Other']
-  [12/52] Carcinomas and Carcinoid Tumors of the Lungs and Bronchi in Children a
-    score=10 fields=['Clinical', 'Drug Discovery', 'Diagnostics', 'Immunology']
-  [13/52] Effectiveness of adult zoster vaccination in preventing a first episod
-    score=27 fields=['Vaccines', 'Immunology', 'Clinical', 'Other']
-  [14/52] Benign Presacral Tumor Mimicking a Pilonidal Abscess: A Diagnostic Pit
-    score=7 fields=['Imaging', 'Diagnostics', 'Clinical', 'Software/AI']
-  [15/52] Proteostasis meets signaling: UBE2G1 in hematopoietic stem cell aging.
-    score=20 fields=['Drug Discovery', 'Genomics', 'Immunology', 'Proteomics']
-  [16/52] Response to: 'Comment on 'Systemic prostacyclin analogues in pulmonary
-    score=9 fields=['Drug Discovery', 'Clinical', 'Imaging', 'Other']
-  [17/52] A Personalized, 3D Printed Polymeric Device for the Prevention of Post
-    score=32 fields=['Medical Device', 'Imaging', 'Materials', 'Clinical']
-  [18/52] Corrigendum to "The paradoxical protective effect of chronic stress on
-    score=10 fields=['Drug Discovery', 'Neuroscience', 'Immunology', 'Clinical']
-  [19/52] Acinar Metaplastic Cells Generate Semi-Homogeneous Niches and Interact
-    score=16 fields=['Drug Discovery', 'Immunology', 'Genomics', 'Diagnostics']
-  [20/52] [Cardiology 2030].
-    score=29 fields=['Medical Device', 'Software/AI', 'Clinical']
-  [21/52] Folliculin: A surprising molecular brake in the human hair follicle.
-    score=20 fields=['Drug Discovery', 'Clinical', 'Proteomics']
-  [22/52] Variability in Mediastinal Lymph Node Measurements in Chest Contrast-e
-    score=13 fields=['Imaging', 'Software/AI', 'Diagnostics', 'Clinical']
-  [23/52] Circadian nutrition meets intermittent hypoxia: a timely fix for dysgl
-    score=21 fields=['FoodTech', 'Clinical', 'Neuroscience', 'Other']
-  [24/52] Patient-derived brain organoids reveal divergent neuronal activity acr
-  Gemini error (market_size): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}}
-    score=17 fields=['Drug Discovery', 'Neuroscience', 'Diagnostics', 'Software/AI']
-  [25/52] Depressed individuals want to feel more unpleasant emotions in daily l
-    score=12 fields=['Neuroscience', 'Clinical', 'Software/AI', 'Other']
-  [26/52] Prevalence and risk factors for Salmonella infection in layer flocks i
-    score=13 fields=['AgriTech', 'FoodTech', 'Diagnostics', 'Immunology']
-  [27/52] Statistical learning performance is impacted by a previous learning ex
-    score=15 fields=['Software/AI', 'Neuroscience', 'Other']
-  [28/52] Gracilis transposition for faecal incontinence after damage control su
-    score=13 fields=['Clinical', 'Medical Device', 'Other']
-  [29/52] Gut microbiome and aging-A dynamic interplay of microbes, metabolites,
-    score=26 fields=['Drug Discovery', 'Immunology', 'FoodTech', 'Clinical']
-  [30/52] Intermittent Fasting Enhances Genome Integrity and Cytoprotective Path
-    score=19 fields=['Drug Discovery', 'Neuroscience', 'Genomics', 'Clinical']
-  [31/52] Subsequent Pregnancies After Conservative Placenta Accreta Management:
-    score=12 fields=['Clinical', 'Diagnostics', 'Immunology', 'Software/AI']
-  [32/52] Modeling cooperation: Gendered parenting and its impact on children's 
-    score=13 fields=['Neuroscience', 'Software/AI', 'Other']
-  [33/52] The role of personal values in opinion formation regarding a high-stak
-    score=9 fields=['Software/AI', 'Neuroscience', 'Other']
-  [34/52] [Robotic Colorectal Surgery in Israel - An Institutional Learning Curv
-    score=18 fields=['Medical Device', 'Clinical', 'Software/AI', 'Imaging']
-  [35/52] Children's resource taking varies with experimentally manipulated rela
-    score=10 fields=['Software/AI', 'Neuroscience', 'Other']
-  [36/52] Massive-scale spatial multiplexing of multimode VCSELs with a 3D-print
-    score=32 fields=['Materials', 'Imaging', 'Medical Device', 'Other']
-  [37/52] Assessing Postpartum Readmission Rates and Associated Risk Factors Usi
-    score=13 fields=['Clinical', 'Software/AI', 'Diagnostics']
-  [38/52] Expeditious synthesis of multiglycopeptides with heterogeneous glycan 
-    score=22 fields=['Drug Discovery', 'Immunology', 'Proteomics', 'Diagnostics']
-  [39/52] [Feeding in End Stage Dementia: A Comparison of Patient Outcomes with 
-    score=9 fields=['Clinical', 'Neuroscience', 'Software/AI', 'Medical Device']
-  [40/52] Human DNA levels in feces reflect gut inflammation and associate with 
-    score=25 fields=['Diagnostics', 'Genomics', 'Immunology', 'Clinical']
-  [41/52] Brown tumor of the patella in a long-term hemodialysis patient.
-    score=7 fields=['Clinical', 'Diagnostics', 'Drug Discovery', 'Imaging']
-  [42/52] Substance and Behavioural Addictions Among Evacuees: Findings From Isr
-    score=10 fields=['Clinical', 'Neuroscience', 'Software/AI', 'Other']
-  [43/52] Screening for liver fibrosis in psoriatic arthritis: emphasizing metab
-    score=16 fields=['Diagnostics', 'Clinical', 'Immunology', 'Drug Discovery']
-  [44/52] Vaccination decision-making in children with intellectual and developm
-    score=12 fields=['Clinical', 'Software/AI', 'Immunology', 'Other']
-  [45/52] [Shaare Zedek Medical Center - The Future of Medicine Is Already Here]
-    score=14 fields=['Medical Device', 'Genomics', 'Clinical', 'Software/AI']
-  [46/52] Autoimmune disease prevalence in Ethiopian versus Non-Ethiopian type 1
-    score=14 fields=['Immunology', 'Genomics', 'Diagnostics', 'Clinical']
-  [47/52] Psychoanalytic Training: Reaching the Promised Land?
-    score=7 fields=['Software/AI', 'Neuroscience', 'Clinical', 'Other']
-  [48/52] ADAM9 supports regulatory T cell stability through TGF-β-SMAD signalin
-    score=19 fields=['Drug Discovery', 'Immunology', 'Clinical']
-  [49/52] Nitric Oxide-Mediated S-Nitrosylation of TSC2 Drives mTOR dysregulatio
-    score=22 fields=['Drug Discovery', 'Neuroscience', 'Proteomics', 'Clinical']
-  [50/52] Many-electron systems with fractional electron number and spin: Exact 
-    score=14 fields=['Materials', 'Quantum', 'Software/AI', 'Other']
-  [51/52] Methods for studying the effects of phosphorylation patterns in protei
-    score=17 fields=['Drug Discovery', 'Proteomics', 'Diagnostics', 'Software/AI']
-  [52/52] [ECMO Treatment for CPR in Shaare Zedek Medical Center - A Seven Year 
-    score=18 fields=['Medical Device', 'Clinical', 'Software/AI', 'Imaging']
+5 unique new papers to evaluate.
+Enriching PI contact info for 5 new papers...
+Enriching PI contact for 123 existing papers (backfill)...
+  [1/5] Previous Antiplatelet Therapy and Outcomes of Acute Ischemic Stroke Wi
+    score=17 fields=['Clinical', 'Medical Device', 'Neuroscience', 'Imaging']
+  [2/5] Wild genes to the rescue: High-throughput genomics reveals the wild so
+    score=32 fields=['AgriTech', 'Genomics', 'Software/AI', 'Synthetic Biology']
+  [3/5] Examining the Role of Dementia Worry in the Caregiver Burden Process.
+    score=11 fields=['Clinical', 'Neuroscience', 'Software/AI', 'Other']
+  [4/5] Lipidomics of allantoic fluid collected by allantocentesis indicates a
+    score=16 fields=['Diagnostics', 'AgriTech', 'Proteomics', 'Genomics']
+  [5/5] &lt;i&gt;In vitro&lt;/i&gt; fertilization outcomes in young women and 
+    score=16 fields=['Clinical', 'Diagnostics', 'Genomics', 'Software/AI']
 
-Retention: kept 71/71 existing, added 52 new.
-Writing 123 papers to Google Sheet...
-Sheet updated: {"status":"ok","rows":124}
-Generated papers_reader.html and papers_data.json with 123 papers.
+Retention: kept 123/123 existing, added 5 new.
+Writing 128 papers to Google Sheet...
+Sheet updated: {"status":"ok","rows":129}
+Generated papers_reader.html and papers_data.json with 128 papers.
 Done.
