@@ -168,6 +168,23 @@ def days_ago(n):
 def norm_title(t):
     return re.sub(r"\W+", " ", (t or "").lower()).strip()
 
+
+def is_huji_paper(authors_with_affs):
+    """True if the last author OR the majority of authors are HUJI-affiliated.
+
+    authors_with_affs: list (one element per author) of lists of affiliation strings.
+    """
+    if not authors_with_affs:
+        return False
+
+    def has_huji(affs):
+        return any(h.lower() in af.lower() for h in HUJI_AFFILIATIONS for af in affs)
+
+    if has_huji(authors_with_affs[-1]):
+        return True
+    huji_count = sum(1 for affs in authors_with_affs if has_huji(affs))
+    return huji_count > len(authors_with_affs) / 2
+
 def existing_ids(papers):
     return {p["id"] for p in papers}
 
@@ -199,6 +216,53 @@ def dedup_by_title(papers):
             keep.setdefault("pi_email", drop.get("pi_email", ""))
             best[key] = keep
     return list(best.values())
+
+def _verify_huji_pubmed(papers, batch_size=50):
+    """Remove existing PubMed papers where HUJI is not the last/majority author.
+
+    Uses batch efetch to retrieve per-author affiliations for all PubMed entries
+    in one pass. Non-PubMed papers are kept unchanged.
+    """
+    base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+    pubmed = {p["id"].replace("pubmed_", ""): p for p in papers if p["id"].startswith("pubmed_")}
+    if not pubmed:
+        return papers
+
+    print(f"  Verifying HUJI affiliation for {len(pubmed)} existing PubMed papers...")
+    verified_ids = set()
+    ids = list(pubmed.keys())
+    for i in range(0, len(ids), batch_size):
+        batch = ids[i:i + batch_size]
+        try:
+            r = requests.get(f"{base}/efetch.fcgi", params={
+                "db": "pubmed", "id": ",".join(batch),
+                "rettype": "xml", "retmode": "xml",
+            }, timeout=30)
+            r.raise_for_status()
+            root = ET.fromstring(r.text)
+            for article in root.findall(".//PubmedArticle"):
+                uid = article.findtext(".//PMID", "")
+                author_affs = [
+                    [el.text or "" for el in a.findall(".//AffiliationInfo/Affiliation")]
+                    for a in article.findall(".//AuthorList/Author")
+                ]
+                if is_huji_paper(author_affs):
+                    verified_ids.add(uid)
+        except Exception as e:
+            print(f"  PubMed affiliation check error (batch {i}): {e}")
+            # On error keep the batch so we don't drop papers due to a transient failure
+            verified_ids.update(batch)
+        time.sleep(0.3)
+
+    dropped = [p["title"][:70] for p in papers
+               if p["id"].startswith("pubmed_") and p["id"].replace("pubmed_", "") not in verified_ids]
+    if dropped:
+        print(f"  Removed {len(dropped)} PubMed paper(s) with no HUJI last/majority author:")
+        for t in dropped:
+            print(f"    - {t}")
+    return [p for p in papers
+            if not p["id"].startswith("pubmed_") or p["id"].replace("pubmed_", "") in verified_ids]
+
 
 # ── PI Contact Enrichment ──────────────────────────────────────────────────────
 
@@ -354,25 +418,52 @@ def fetch_pubmed(max_results=MAX_RESULTS):
     if not ids:
         return []
 
-    r2 = requests.get(f"{base}/esummary.fcgi", params={
-        "db": "pubmed", "id": ",".join(ids), "retmode": "json",
-    }, timeout=20)
+    # Use efetch (full XML) so we have per-author affiliations for HUJI validation
+    r2 = requests.get(f"{base}/efetch.fcgi", params={
+        "db": "pubmed", "id": ",".join(ids), "rettype": "xml", "retmode": "xml",
+    }, timeout=30)
     r2.raise_for_status()
-    result = r2.json().get("result", {})
+    root = ET.fromstring(r2.text)
 
     papers = []
-    for uid in ids:
-        item = result.get(uid, {})
-        all_authors = [a.get("name", "") for a in item.get("authors", [])]
-        # PubMed query already filters by HUJI affiliation; last author is the PI
-        pi = all_authors[-1] if all_authors else ""
+    for article in root.findall(".//PubmedArticle"):
+        uid = article.findtext(".//PMID", "")
+        title = article.findtext(".//ArticleTitle", "")
+        journal = article.findtext(".//Journal/Title", "") or article.findtext(".//MedlineTA", "")
+        pub_date = (article.findtext(".//PubDate/Year") or
+                    article.findtext(".//PubDate/MedlineDate", "")[:4])
+
+        # Collect per-author affiliations for HUJI validation
+        author_affs = []
+        all_authors = []
+        for a in article.findall(".//AuthorList/Author"):
+            last = a.findtext("LastName", "")
+            fore = a.findtext("ForeName", "") or a.findtext("Initials", "")
+            name = f"{fore} {last}".strip() if fore else last
+            if name:
+                all_authors.append(name)
+            affs = [el.text or "" for el in a.findall(".//AffiliationInfo/Affiliation")]
+            author_affs.append(affs)
+
+        # Require last author or majority to be HUJI-affiliated
+        if not is_huji_paper(author_affs):
+            continue
+
+        pi = ""
+        for name, affs in reversed(list(zip(all_authors, author_affs))):
+            if any(h.lower() in af.lower() for h in HUJI_AFFILIATIONS for af in affs):
+                pi = name
+                break
+        if not pi and all_authors:
+            pi = all_authors[-1]
+
         papers.append({
             "id":       f"pubmed_{uid}",
-            "title":    item.get("title", ""),
+            "title":    title,
             "abstract": "",
             "authors":  all_authors[:3],
-            "journal":  item.get("fulljournalname", ""),
-            "date":     item.get("pubdate", ""),
+            "journal":  journal,
+            "date":     pub_date,
             "url":      f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
             "source":   "PubMed",
             "pi":       pi,
@@ -400,11 +491,18 @@ def fetch_europepmc(max_results=MAX_RESULTS):
             name = f"{a.get('firstName','')} {a.get('lastName','')}".strip()
             if name:
                 all_authors.append(name)
+        # Build per-author affiliation lists for HUJI validation
+        author_affs = [
+            [x.get("affiliation", "") for x in
+             (a.get("authorAffiliationDetailsList") or {}).get("authorAffiliation", [])]
+            for a in all_author_objs
+        ]
+        if not is_huji_paper(author_affs):
+            continue
+
         # Find last HUJI-affiliated author as PI
         pi = ""
-        for a in reversed(all_author_objs):
-            affs = [x.get("affiliation", "") for x in
-                    (a.get("authorAffiliationDetailsList") or {}).get("authorAffiliation", [])]
+        for a, affs in reversed(list(zip(all_author_objs, author_affs))):
             if any(h.lower() in af.lower() for h in HUJI_AFFILIATIONS for af in affs):
                 pi = f"{a.get('firstName','')} {a.get('lastName','')}".strip()
                 break
@@ -437,25 +535,22 @@ def fetch_semantic_scholar(max_results=MAX_RESULTS):
         pub_date = item.get("publicationDate") or f"{item.get('year','')}-01-01"
         if pub_date < since:
             continue
-        huji = any(
-            any(h.lower() in (aff or "").lower() for h in HUJI_AFFILIATIONS)
-            for a in (item.get("authors") or [])
-            for aff in (a.get("affiliations") or [])
-        )
-        if not huji:
+        all_author_objs = item.get("authors") or []
+        all_authors = [a.get("name", "") for a in all_author_objs]
+        author_affs = [a.get("affiliations") or [] for a in all_author_objs]
+
+        if not is_huji_paper(author_affs):
             continue
+
         pid = item.get("paperId", "")
         ext = item.get("externalIds") or {}
         url = (f"https://doi.org/{ext['DOI']}" if ext.get("DOI")
                else f"https://www.semanticscholar.org/paper/{pid}")
-        all_author_objs = item.get("authors") or []
-        all_authors = [a.get("name", "") for a in all_author_objs]
+
         # Find last HUJI-affiliated author as PI
         pi = ""
-        for a in reversed(all_author_objs):
-            if any(h.lower() in (aff or "").lower()
-                   for h in HUJI_AFFILIATIONS
-                   for aff in (a.get("affiliations") or [])):
+        for a, affs in reversed(list(zip(all_author_objs, author_affs))):
+            if any(h.lower() in (aff or "").lower() for h in HUJI_AFFILIATIONS for aff in affs):
                 pi = a.get("name", "")
                 break
         if not pi and all_authors:
@@ -880,6 +975,9 @@ def main():
     existing = dedup_by_title(existing)
     if len(existing) < before:
         print(f"  Removed {before - len(existing)} duplicate(s) from existing papers.")
+
+    # Verify existing PubMed papers: drop any where HUJI is not last/majority author
+    existing = _verify_huji_pubmed(existing)
 
     known_ids = existing_ids(existing)
     known_titles = {norm_title(p.get("title", "")) for p in existing}
