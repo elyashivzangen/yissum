@@ -224,8 +224,55 @@ def _crossref_pi_email(doi):
     return None
 
 
+def _orcid_lookup(name):
+    """Search ORCID public API for a researcher's public email by name + HUJI affiliation."""
+    parts = name.strip().split()
+    if not parts:
+        return None, None
+    last = parts[-1]
+    first = parts[0] if len(parts) > 1 else ""
+    query = f'family-name:{last} AND affiliation-org-name:"Hebrew University"'
+    if first:
+        query += f" AND given-names:{first}"
+    try:
+        r = requests.get(
+            "https://pub.orcid.org/v3.0/search",
+            params={"q": query, "rows": 3},
+            headers={"Accept": "application/json"},
+            timeout=10,
+        )
+        if r.status_code != 200:
+            return None, None
+        results = r.json().get("result", [])
+        for res in results:
+            orcid_id = (res.get("orcid-identifier") or {}).get("path")
+            if not orcid_id:
+                continue
+            # Try to get a public email for this ORCID profile
+            er = requests.get(
+                f"https://pub.orcid.org/v3.0/{orcid_id}/email",
+                headers={"Accept": "application/json"},
+                timeout=10,
+            )
+            if er.status_code != 200:
+                continue
+            for entry in er.json().get("email", []):
+                addr = entry.get("email")
+                if addr:
+                    return addr, orcid_id
+    except Exception:
+        pass
+    return None, None
+
+
 def enrich_pi_contact(paper):
-    """Resolve full name and email for the PI. Updates paper dict in-place."""
+    """Resolve full name and email for the PI. Updates paper dict in-place.
+
+    Strategy (in order):
+    1. PubMed full-XML efetch  — extracts email from affiliation strings
+    2. CrossRef                — corresponding-author email via DOI
+    3. ORCID public API        — searches by name + institution, reads public email
+    """
     pid = paper.get("id", "")
 
     if pid.startswith("pubmed_"):
@@ -236,15 +283,25 @@ def enrich_pi_contact(paper):
         if email:
             paper.setdefault("pi_email", email)
         if paper.get("pi_full_name") or paper.get("pi_email"):
-            return
+            if paper.get("pi_email"):
+                return  # have both name and email — done
 
-    # For any paper with a DOI URL, try CrossRef for email
+    # CrossRef: try DOI URL for corresponding-author email
     url = paper.get("url", "")
     if "doi.org/" in url and not paper.get("pi_email"):
         doi = url.split("doi.org/", 1)[-1].rstrip("/")
         email = _crossref_pi_email(doi)
         if email:
             paper["pi_email"] = email
+            return
+
+    # ORCID: search by PI name + HUJI affiliation for a public email
+    if not paper.get("pi_email"):
+        name = paper.get("pi_full_name") or paper.get("pi", "")
+        if name:
+            email, _ = _orcid_lookup(name)
+            if email:
+                paper["pi_email"] = email
 
 
 # ── Fetchers ───────────────────────────────────────────────────────────────────
