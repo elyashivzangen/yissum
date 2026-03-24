@@ -18,6 +18,7 @@ import time
 import datetime
 import xml.etree.ElementTree as ET
 import requests
+import ftfy
 from google import genai
 from google.genai import types
 from pathlib import Path
@@ -77,18 +78,10 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 # ── Google Sheets (no service account) ────────────────────────────────────────
 
 def fix_encoding(text):
-    """Repair mojibake — UTF-8 bytes that were decoded as Latin-1 one or more times."""
+    """Repair mojibake using ftfy (handles multi-level UTF-8/Latin-1 mismatches)."""
     if not isinstance(text, str):
         return text
-    for _ in range(3):
-        try:
-            fixed = text.encode("latin-1").decode("utf-8")
-            if fixed == text:
-                break
-            text = fixed
-        except (UnicodeDecodeError, UnicodeEncodeError):
-            break
-    return text
+    return ftfy.fix_text(text)
 
 
 def load_from_sheet():
@@ -678,8 +671,8 @@ def evaluate_paper(paper):
     composite = sum(scores)  # total out of 50
     return {
         "score":           composite,
-        "summary":         meta.get("summary", ""),
-        "opportunity":     meta.get("opportunity", ""),
+        "summary":         fix_encoding(meta.get("summary", "")),
+        "opportunity":     fix_encoding(meta.get("opportunity", "")),
         "fields":          meta.get("fields", []),
         "score_breakdown": breakdown,
     }
