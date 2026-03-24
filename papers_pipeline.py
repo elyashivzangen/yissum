@@ -343,8 +343,8 @@ def _crossref_pi_email(doi):
             email = author.get("email", "")
             if email:
                 return email
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"  CrossRef lookup error: {e}")
     return None
 
 
@@ -384,8 +384,8 @@ def _orcid_lookup(name):
                 addr = entry.get("email")
                 if addr:
                     return addr, orcid_id
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"  ORCID lookup error: {e}")
     return None, None
 
 
@@ -663,6 +663,7 @@ def evaluate_paper(paper):
             scores.append(s)
         except Exception as e:
             print(f"  Gemini error ({param_name}): {e}")
+            continue
         time.sleep(0.4)
 
     if not scores:
@@ -687,89 +688,184 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <title>HUJI Research Monitor</title>
 <style>
   :root {{
-    --bg:#0f1117; --card:#1a1d2e; --accent:#6c63ff;
-    --accent2:#a78bfa; --text:#e2e8f0; --muted:#8892a4;
-    --border:#2d3148; --tag-bg:#23263a; --green:#22c55e;
-    --yellow:#eab308; --red:#ef4444;
+    --bg:#0b0d18; --card:#13162a; --card2:#1a1d35;
+    --accent:#7c6ff7; --accent2:#b39dff; --accent3:#38bdf8;
+    --text:#dde4f0; --muted:#7a8499; --faint:#3a3f5c;
+    --border:#252a45; --tag-bg:#1e2240;
+    --green:#34d399; --yellow:#fbbf24; --red:#f87171;
+    --green-bg:#052e1c; --yellow-bg:#2d1f02; --red-bg:#2a0a0a;
+    --shadow:0 4px 24px rgba(0,0,0,.45);
   }}
   *{{box-sizing:border-box;margin:0;padding:0}}
   body{{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}}
-  header{{background:var(--card);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}}
-  header h1{{font-size:1.25rem;font-weight:700;color:var(--accent2)}}
-  header span{{font-size:.8rem;color:var(--muted)}}
-  .header-links{{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}}
-  .header-link{{padding:5px 12px;border-radius:6px;border:1px solid var(--border);background:var(--tag-bg);
-    color:var(--muted);font-size:.75rem;text-decoration:none;transition:all .15s}}
-  .header-link:hover{{background:var(--accent);border-color:var(--accent);color:#fff}}
-  .controls{{padding:16px 24px;display:flex;flex-direction:column;gap:12px}}
+
+  /* ── Header ── */
+  header{{
+    background:linear-gradient(135deg,#0f1225 0%,#161a36 100%);
+    border-bottom:1px solid var(--border);
+    padding:14px 24px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+    box-shadow:0 2px 16px rgba(0,0,0,.4);
+  }}
+  .logo{{width:34px;height:34px;border-radius:8px;
+    background:linear-gradient(135deg,var(--accent) 0%,var(--accent3) 100%);
+    display:flex;align-items:center;justify-content:center;
+    font-size:.75rem;font-weight:900;color:#fff;letter-spacing:-.5px;flex-shrink:0}}
+  .header-title{{display:flex;flex-direction:column;gap:1px}}
+  header h1{{font-size:1.1rem;font-weight:700;color:var(--accent2);letter-spacing:-.01em}}
+  header .subtitle{{font-size:.72rem;color:var(--muted)}}
+  .header-links{{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap;align-items:center}}
+  .header-link{{
+    padding:5px 11px;border-radius:6px;
+    border:1px solid var(--border);background:rgba(255,255,255,.04);
+    color:var(--muted);font-size:.72rem;text-decoration:none;
+    transition:all .18s;white-space:nowrap
+  }}
+  .header-link:hover{{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 0 12px rgba(124,111,247,.4)}}
+
+  /* ── Controls ── */
+  .controls{{
+    padding:14px 24px 10px;display:flex;flex-direction:column;gap:10px;
+    background:linear-gradient(to bottom,rgba(22,26,54,.9),transparent);
+    border-bottom:1px solid var(--border);
+  }}
   .row{{display:flex;align-items:center;gap:8px;flex-wrap:wrap}}
-  .row label{{font-size:.75rem;color:var(--muted);min-width:52px;text-transform:uppercase;letter-spacing:.05em}}
-  .chip{{padding:4px 12px;border-radius:999px;border:1px solid var(--border);background:var(--tag-bg);
-    color:var(--muted);font-size:.75rem;cursor:pointer;transition:all .15s}}
-  .chip:hover,.chip.active{{background:var(--accent);border-color:var(--accent);color:#fff}}
+  .row label{{font-size:.68rem;color:var(--muted);min-width:48px;text-transform:uppercase;letter-spacing:.07em;font-weight:600}}
+  .chip{{
+    padding:4px 11px;border-radius:999px;border:1px solid var(--border);
+    background:var(--tag-bg);color:var(--muted);font-size:.72rem;cursor:pointer;
+    transition:all .15s;
+  }}
+  .chip:hover{{background:var(--faint);color:var(--text);border-color:var(--accent)}}
+  .chip.active{{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 0 10px rgba(124,111,247,.35)}}
+  .search-wrap{{position:relative;flex:1}}
+  .search-icon{{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:.85rem;pointer-events:none}}
+  input[type=text]{{
+    width:100%;background:var(--card2);border:1px solid var(--border);border-radius:8px;
+    padding:8px 14px 8px 32px;color:var(--text);font-size:.85rem;outline:none;transition:border-color .18s
+  }}
+  input[type=text]:focus{{border-color:var(--accent);box-shadow:0 0 0 3px rgba(124,111,247,.15)}}
+  .sort-select{{
+    background:var(--card2);border:1px solid var(--border);border-radius:8px;
+    padding:8px 12px;color:var(--text);font-size:.82rem;cursor:pointer;outline:none
+  }}
   .search-row{{display:flex;gap:8px}}
-  input[type=text]{{flex:1;background:var(--card);border:1px solid var(--border);border-radius:8px;
-    padding:8px 14px;color:var(--text);font-size:.875rem;outline:none}}
-  input[type=text]:focus{{border-color:var(--accent)}}
-  .sort-select{{background:var(--card);border:1px solid var(--border);border-radius:8px;
-    padding:8px 14px;color:var(--text);font-size:.875rem;cursor:pointer;outline:none}}
-  .grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;padding:0 24px 32px}}
-  .card{{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px;
-    display:flex;flex-direction:column;gap:10px;transition:border-color .2s}}
-  .card:hover{{border-color:var(--accent)}}
-  .card-header{{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}}
-  .score{{min-width:52px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;
-    font-weight:700;font-size:.82rem;padding:0 6px;white-space:nowrap}}
-  .score-high{{background:#14532d;color:var(--green)}}
-  .score-mid{{background:#713f12;color:var(--yellow)}}
-  .score-low{{background:#450a0a;color:var(--red)}}
-  .title{{font-size:.9rem;font-weight:600;line-height:1.4;color:var(--text)}}
-  .meta{{font-size:.75rem;color:var(--muted)}}
-  .summary{{font-size:.8rem;color:#b0bac8;line-height:1.5}}
-  .opportunity{{font-size:.8rem;background:#1e1b4b;border-left:3px solid var(--accent);
-    padding:6px 10px;border-radius:0 6px 6px 0;color:var(--accent2);line-height:1.4}}
-  .tags{{display:flex;flex-wrap:wrap;gap:6px}}
-  .tag{{padding:2px 10px;border-radius:999px;background:var(--tag-bg);border:1px solid var(--border);
-    font-size:.7rem;color:var(--muted)}}
-  .actions{{display:flex;gap:8px;margin-top:4px}}
-  .btn{{padding:5px 14px;border-radius:6px;border:1px solid var(--border);background:transparent;
-    color:var(--muted);font-size:.75rem;cursor:pointer;transition:all .15s;text-decoration:none;display:inline-block}}
-  .btn:hover,.btn.active{{background:var(--accent);border-color:var(--accent);color:#fff}}
-  .count{{font-size:.8rem;color:var(--muted);padding:0 24px 8px}}
-  .empty{{text-align:center;padding:60px 24px;color:var(--muted)}}
-  .breakdown{{display:none;flex-direction:column;gap:8px;border-top:1px solid var(--border);padding-top:10px;margin-top:2px}}
-  .breakdown.open{{display:flex}}
-  .bd-row{{display:flex;flex-direction:column;gap:3px}}
-  .bd-label{{display:flex;justify-content:space-between;align-items:center}}
-  .bd-name{{font-size:.72rem;font-weight:600;color:var(--text);text-transform:capitalize}}
-  .bd-score{{font-size:.72rem;font-weight:700}}
-  .bd-bar-bg{{height:5px;background:var(--border);border-radius:3px;overflow:hidden}}
-  .bd-bar{{height:100%;border-radius:3px;transition:width .3s}}
-  .bd-reason{{font-size:.7rem;color:var(--muted);line-height:1.4}}
-  .pi{{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:4px 0 2px}}
-  .pi-label{{font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;flex-shrink:0}}
-  .pi-name{{font-size:.85rem;font-weight:700;color:var(--accent2)}}
-  .pi-email-btn{{padding:2px 8px;font-size:.68rem;margin-left:2px}}
-  .pi-email{{font-size:.75rem;padding:0 0 4px 0}}
-  .pi-email a{{color:var(--accent2);text-decoration:none}}
+
+  /* ── Grid ── */
+  .grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px;padding:16px 24px 40px}}
+  .count{{font-size:.78rem;color:var(--muted);padding:10px 24px 2px;letter-spacing:.02em}}
+
+  /* ── Card ── */
+  .card{{
+    background:var(--card);border:1px solid var(--border);border-radius:14px;
+    padding:18px;display:flex;flex-direction:column;gap:10px;
+    transition:border-color .2s,box-shadow .2s,transform .15s;
+    position:relative;overflow:hidden;
+  }}
+  .card::before{{
+    content:'';position:absolute;inset:0;border-radius:14px;
+    background:linear-gradient(135deg,rgba(124,111,247,.06) 0%,transparent 60%);
+    opacity:0;transition:opacity .25s;pointer-events:none
+  }}
+  .card:hover{{border-color:var(--accent);box-shadow:0 6px 28px rgba(0,0,0,.5),0 0 0 1px rgba(124,111,247,.2);transform:translateY(-1px)}}
+  .card:hover::before{{opacity:1}}
+
+  .card-header{{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}}
+  .title{{font-size:.88rem;font-weight:600;line-height:1.45;color:var(--text);flex:1}}
+  .score-badge{{
+    flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    min-width:52px;padding:5px 6px;border-radius:10px;font-weight:800;gap:1px
+  }}
+  .score-num{{font-size:1rem;line-height:1}}
+  .score-denom{{font-size:.6rem;opacity:.7;line-height:1}}
+  .score-high{{background:var(--green-bg);color:var(--green);border:1px solid rgba(52,211,153,.25)}}
+  .score-mid{{background:var(--yellow-bg);color:var(--yellow);border:1px solid rgba(251,191,36,.25)}}
+  .score-low{{background:var(--red-bg);color:var(--red);border:1px solid rgba(248,113,113,.25)}}
+
+  .meta-row{{display:flex;align-items:center;gap:6px;flex-wrap:wrap}}
+  .meta{{font-size:.72rem;color:var(--muted)}}
+  .source-badge{{
+    font-size:.62rem;padding:1px 7px;border-radius:4px;font-weight:600;letter-spacing:.03em;
+    background:rgba(56,189,248,.12);color:var(--accent3);border:1px solid rgba(56,189,248,.2)
+  }}
+
+  .summary{{font-size:.8rem;color:#9aa5bc;line-height:1.6}}
+  .opportunity{{
+    font-size:.8rem;
+    background:linear-gradient(135deg,#1a1552 0%,#0f1535 100%);
+    border-left:3px solid var(--accent);
+    padding:8px 12px;border-radius:0 8px 8px 0;
+    color:var(--accent2);line-height:1.5;
+    box-shadow:inset 0 0 20px rgba(124,111,247,.05)
+  }}
+
+  .tags{{display:flex;flex-wrap:wrap;gap:5px}}
+  .tag{{
+    padding:2px 9px;border-radius:999px;
+    background:var(--tag-bg);border:1px solid var(--faint);
+    font-size:.68rem;color:var(--muted);transition:all .12s;cursor:default
+  }}
+  .tag:hover{{border-color:var(--accent);color:var(--accent2)}}
+
+  .pi{{display:flex;align-items:center;flex-wrap:wrap;gap:6px;padding:6px 10px;
+    background:rgba(255,255,255,.03);border-radius:8px;border:1px solid var(--border)}}
+  .pi-label{{font-size:.62rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:700;flex-shrink:0}}
+  .pi-name{{font-size:.83rem;font-weight:700;color:var(--accent2)}}
+  .pi-email-btn{{padding:2px 8px;font-size:.65rem;margin-left:auto}}
+  .pi-email{{font-size:.75rem;padding:2px 0}}
+  .pi-email a{{color:var(--accent3);text-decoration:none}}
   .pi-email a:hover{{text-decoration:underline}}
+
+  .actions{{display:flex;gap:7px;margin-top:2px}}
+  .btn{{
+    padding:5px 13px;border-radius:7px;border:1px solid var(--border);
+    background:transparent;color:var(--muted);font-size:.73rem;cursor:pointer;
+    transition:all .15s;text-decoration:none;display:inline-block
+  }}
+  .btn:hover,.btn.active{{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 0 10px rgba(124,111,247,.3)}}
+
+  .empty{{text-align:center;padding:60px 24px;color:var(--muted)}}
+
+  /* ── Score Breakdown ── */
+  .breakdown{{display:none;flex-direction:column;gap:8px;border-top:1px solid var(--border);padding-top:12px;margin-top:2px}}
+  .breakdown.open{{display:flex}}
+  .bd-row{{display:flex;flex-direction:column;gap:4px}}
+  .bd-label{{display:flex;justify-content:space-between;align-items:center}}
+  .bd-name{{font-size:.7rem;font-weight:600;color:var(--text);text-transform:capitalize;letter-spacing:.02em}}
+  .bd-score{{font-size:.7rem;font-weight:800}}
+  .bd-bar-bg{{height:4px;background:var(--border);border-radius:2px;overflow:hidden}}
+  .bd-bar{{height:100%;border-radius:2px;transition:width .4s cubic-bezier(.4,0,.2,1)}}
+  .bd-reason{{font-size:.68rem;color:var(--muted);line-height:1.4;margin-top:1px}}
+
+  /* ── Slider ── */
   .slider{{-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;background:var(--border);outline:none;cursor:pointer;width:140px;vertical-align:middle}}
-  .slider::-webkit-slider-thumb{{-webkit-appearance:none;appearance:none;width:16px;height:16px;border-radius:50%;background:var(--accent);cursor:pointer}}
-  .slider::-moz-range-thumb{{width:16px;height:16px;border-radius:50%;background:var(--accent);cursor:pointer;border:none}}
+  .slider::-webkit-slider-thumb{{-webkit-appearance:none;appearance:none;width:15px;height:15px;border-radius:50%;background:var(--accent);cursor:pointer;box-shadow:0 0 6px rgba(124,111,247,.5)}}
+  .slider::-moz-range-thumb{{width:15px;height:15px;border-radius:50%;background:var(--accent);cursor:pointer;border:none}}
   .slider:disabled{{opacity:.3;cursor:not-allowed}}
-  .slider-val{{font-size:.75rem;color:var(--accent2);font-weight:700;min-width:42px;display:inline-block}}
-  @media(max-width:600px){{.grid{{grid-template-columns:1fr;padding:0 12px 24px}}.controls{{padding:12px}}.slider{{width:100px}}}}
+  .slider-val{{font-size:.73rem;color:var(--accent2);font-weight:700;min-width:44px;display:inline-block}}
+
+  @media(max-width:600px){{
+    .grid{{grid-template-columns:1fr;padding:12px 12px 32px}}
+    .controls{{padding:10px 12px}}
+    .slider{{width:100px}}
+    .header-links{{gap:4px}}
+  }}
 </style>
 </head>
 <body>
 <header>
-  <h1>HUJI Research Monitor</h1>
-  <span id="updated"></span>
+  <div class="logo">HU</div>
+  <div class="header-title">
+    <h1>HUJI Research Monitor</h1>
+    <span class="subtitle" id="updated"></span>
+  </div>
   <div class="header-links">{header_links}</div>
 </header>
 <div class="controls">
   <div class="row search-row">
-    <input type="text" id="search" placeholder="Search titles, summaries, opportunities..."/>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search" placeholder="Search titles, summaries, opportunities…"/>
+    </div>
     <select class="sort-select" id="sort">
       <option value="score">Score ↓</option>
       <option value="date">Date ↓</option>
@@ -877,9 +973,9 @@ function render(){{
     const authors=(p.authors||[]).join(', ');
     const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
     return `<div class="card">
-      <div class="card-header"><div class="title">${{p.title}}</div><div class="score ${{scoreClass(p.score)}}">${{p.score}}/50</div></div>
+      <div class="card-header"><div class="title">${{p.title}}</div><div class="score-badge ${{scoreClass(p.score)}}"><span class="score-num">${{p.score}}</span><span class="score-denom">/50</span></div></div>
       ${{(p.pi||p.pi_full_name)?`<div class="pi"><span class="pi-label">Main Researcher</span><span class="pi-name">👤 ${{p.pi_full_name||p.pi}}</span>${{p.pi_email?`<button class="btn pi-email-btn" onclick="toggleEmail(this)">Email ▾</button>`:''}} </div>${{p.pi_email?`<div class="pi-email" style="display:none"><a href="mailto:${{p.pi_email}}">${{p.pi_email}}</a></div>`:''}}`:''}}
-      <div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>
+      <div class="meta-row"><div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>${{p.source?`<span class="source-badge">${{p.source}}</span>`:''}}</div>
       ${{p.summary?`<div class="summary">${{p.summary}}</div>`:''}}
       ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
       ${{hasBd?renderBreakdown(p.score_breakdown):''}}
@@ -955,6 +1051,7 @@ def generate_html(papers):
         "journal":         p.get("journal", ""),
         "date":            p.get("date", ""),
         "url":             p.get("url", ""),
+        "source":          p.get("source", ""),
         "score":           p.get("score", 0),
         "summary":         p.get("summary", ""),
         "opportunity":     p.get("opportunity", ""),
@@ -988,6 +1085,10 @@ def generate_html(papers):
             if monthlies:
                 url = f"{base}/digests/{monthlies[-1].name}"
                 header_links += f'<a class="header-link" href="{url}" target="_blank">📅 Latest Monthly</a>'
+        manual = Path("docs/HUJI_Research_Monitor_Guide.pdf")
+        if manual.exists():
+            manual_url = f"{base}/docs/{manual.name}"
+            header_links += f'<a class="header-link" href="{manual_url}" target="_blank">📖 User Guide</a>'
 
     OUTPUT_HTML.write_text(HTML_TEMPLATE.format(
         field_chips=build_field_chips(),
@@ -1071,8 +1172,8 @@ def main():
             enrich_pi_contact(paper)
             time.sleep(0.3)
 
-    # Enrich existing papers that are missing PI contact data
-    to_enrich = [p for p in existing if not p.get("pi_email")]
+    # Enrich existing papers that are missing PI contact data (cap at 25/run)
+    to_enrich = [p for p in existing if not p.get("pi_email")][:25]
     if to_enrich:
         print(f"Enriching PI contact for {len(to_enrich)} existing papers (backfill)...")
         for p in to_enrich:
