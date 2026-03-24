@@ -380,7 +380,12 @@ def _orcid_lookup(name):
             )
             if er.status_code != 200:
                 continue
-            for entry in er.json().get("email", []):
+            email_data = er.json() or {}
+            # ORCID v3 wraps emails under {"email": [...]} or {"emails": {"email": [...]}}
+            entries = email_data.get("email") or (email_data.get("emails") or {}).get("email") or []
+            if not isinstance(entries, list):
+                entries = []
+            for entry in entries:
                 addr = entry.get("email")
                 if addr:
                     return addr, orcid_id
