@@ -594,7 +594,21 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 const papers = {papers_json};
 document.getElementById('updated').textContent = 'Updated {updated}';
 const TODAY=new Date(); TODAY.setHours(0,0,0,0);
-function daysAgo(d){{if(!d)return 9999;const t=new Date(d);t.setHours(0,0,0,0);return Math.round((TODAY-t)/86400000);}}
+function parseDate(d){{
+  if(!d)return null;
+  // Try ISO: 2026-03-19
+  let m=d.match(/^(\d{{4}})-(\d{{2}})-(\d{{2}})/);
+  if(m)return new Date(+m[1],+m[2]-1,+m[3]);
+  // Try: 2026 Mar 19 or 2026 Mar
+  const MONTHS={{Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11}};
+  m=d.match(/^(\d{{4}})\s+([A-Za-z]{{3}})(?:\s+(\d{{1,2}}))?/);
+  if(m)return new Date(+m[1],MONTHS[m[2]]||0,m[3]?+m[3]:1);
+  // Try year only
+  m=d.match(/^(\d{{4}})$/);
+  if(m)return new Date(+m[1],0,1);
+  return null;
+}}
+function daysAgo(d){{const t=parseDate(d);if(!t)return 9999;t.setHours(0,0,0,0);return Math.round((TODAY-t)/86400000);}}
 let activeScore=0, activeField='all', activePeriod='all', sortBy='score', searchQ='', activeParam='', activeParamMin=1;
 const PARAM_LABELS = {{
   novelty:'Novelty', commercial_potential:'Commercial Potential',
@@ -617,7 +631,7 @@ function renderBreakdown(bd){{
 }}
 function applyFilters(list,{{skipPeriod,skipField}}){{
   if(searchQ){{const q=searchQ.toLowerCase();list=list.filter(p=>(p.title||'').toLowerCase().includes(q)||(p.summary||'').toLowerCase().includes(q)||(p.opportunity||'').toLowerCase().includes(q));}}
-  if(!skipPeriod&&activePeriod!=='all')list=list.filter(p=>daysAgo(p.added_date||p.date)<=parseInt(activePeriod));
+  if(!skipPeriod&&activePeriod!=='all')list=list.filter(p=>daysAgo(p.date)<=parseInt(activePeriod));
   if(activeScore>0)list=list.filter(p=>p.score>=activeScore);
   if(activeParam)list=list.filter(p=>((p.score_breakdown||{{}})[activeParam]||{{}}).score>=activeParamMin);
   if(!skipField&&activeField!=='all')list=list.filter(p=>(p.fields||[]).includes(activeField));
@@ -632,7 +646,7 @@ function render(){{
   document.querySelectorAll('.chip').forEach(b=>{{
     const f=b.dataset.filter,v=b.dataset.val,lbl=b.dataset.label||v;
     let sub=applyFilters(papers.slice(),{{skipPeriod:f==='period',skipField:f==='field'}});
-    if(f==='period'&&v!=='all')sub=sub.filter(p=>daysAgo(p.added_date||p.date)<=parseInt(v));
+    if(f==='period'&&v!=='all')sub=sub.filter(p=>daysAgo(p.date)<=parseInt(v));
     if(f==='field'&&v!=='all')sub=sub.filter(p=>(p.fields||[]).includes(v));
     b.textContent=lbl+' ('+sub.length+')';
   }});
@@ -809,7 +823,7 @@ def main():
             time.sleep(0.3)
 
     # Enrich existing papers that are missing PI contact data
-    to_enrich = [p for p in existing if not p.get("pi_email") and not p.get("pi_full_name")]
+    to_enrich = [p for p in existing if not p.get("pi_email")]
     if to_enrich:
         print(f"Enriching PI contact for {len(to_enrich)} existing papers (backfill)...")
         for p in to_enrich:
