@@ -1,14 +1,14 @@
 Loading top papers from Google Sheet...
-  Sheet response: 200, 370504 bytes
-  Cutoff date: 2026-03-16  (DIGEST_WINDOW=7 days)
-  Rows: 123 total, 0 excluded by date, 123 kept.
+  Sheet response: 200, 265674 bytes
+  Cutoff date: 2026-02-21  (DIGEST_WINDOW=31 days)
+  Rows: 68 total, 0 excluded by date, 68 kept.
   Sample added_date values: ['2026-03-23', '2026-03-23', '2026-03-23']
   20 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 9 papers.
-  Executive summary: This week's digest highlights a compelling range of innovations from Hebrew University, spanning cutting-edge medical de...
+  Gemini selected 12 papers.
+  Executive summary: This week's digest highlights a strong pipeline of innovations spanning advanced medical devices and diagnostics. Cuttin...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W13.pdf  (13 KB)
+PDF written: digests/HUJI_digest_2026_M03.pdf  (17 KB)
 Done.
