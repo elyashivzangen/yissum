@@ -1,15 +1,33 @@
 Loading existing papers from Google Sheet...
-  128 existing papers loaded.
-  Removed 29 duplicate(s) from existing papers.
-fetch_pubmed: 38 fetched, 0 new
-fetch_europepmc: 27 fetched, 0 new
-fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
+  99 existing papers loaded.
+  Verifying HUJI affiliation for 35 existing PubMed papers...
+  Removed 17 PubMed paper(s) with no HUJI last/majority author:
+    - Previous Antiplatelet Therapy and Outcomes of Acute Ischemic Stroke Wi
+    - Comment on: Evidence-based functional classification of simultaneous v
+    - Extremity hemorrhage control in urban warfare: A retrospective analysi
+    - Bipolar cell networks underlying steady-state intensity encoding in in
+    - Thrombotic and Bleeding Complications in Myeloproliferative Neoplasms:
+    - Carrier Dynamics of Strongly Confined CsPbI(3) Nanowires.
+    - The impact of integrative medicine on quality of life in patients with
+    - Phase 1b study of ABBV-744, a novel, selective BET inhibitor, as monot
+    - Interplay of Pulmonary Hypertension and the Effects of Panel-Reactive 
+    - Carcinomas and Carcinoid Tumors of the Lungs and Bronchi in Children a
+    - Ustekinumab therapy for moderately to severely active pediatric Crohn'
+    - Physiotherapist-led ultrasound-guided visual biofeedback prelabor trai
+    - Transseptal Puncture for Left Atrial Appendage Closure: A Consensus Do
+    - Henry Levison, a Giant of Pediatric Respiratory Medicine.
+    - Trends and future projections of cancer prevalence in patients with ca
+    - Commentary on a recent published study on endometrial receptivity asse
+    - An interventional pilot study protocol on the effect of extra virgin o
+fetch_pubmed: 19 fetched, 0 new
+fetch_europepmc: 12 fetched, 0 new
+fetch_semantic_scholar: 0 fetched, 0 new
 
 0 unique new papers to evaluate.
-Enriching PI contact for 89 existing papers (backfill)...
+Enriching PI contact for 73 existing papers (backfill)...
 
-Retention: kept 99/99 existing, added 0 new.
-Writing 99 papers to Google Sheet...
-Sheet updated: {"status":"ok","rows":100}
-Generated papers_reader.html and papers_data.json with 99 papers.
+Retention: kept 82/82 existing, added 0 new.
+Writing 82 papers to Google Sheet...
+Sheet updated: {"status":"ok","rows":83}
+Generated papers_reader.html and papers_data.json with 82 papers.
 Done.
