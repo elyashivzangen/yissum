@@ -76,6 +76,21 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 
 # ── Google Sheets (no service account) ────────────────────────────────────────
 
+def fix_encoding(text):
+    """Repair mojibake — UTF-8 bytes that were decoded as Latin-1 one or more times."""
+    if not isinstance(text, str):
+        return text
+    for _ in range(3):
+        try:
+            fixed = text.encode("latin-1").decode("utf-8")
+            if fixed == text:
+                break
+            text = fixed
+        except (UnicodeDecodeError, UnicodeEncodeError):
+            break
+    return text
+
+
 def load_from_sheet():
     """Read all papers from the public Google Sheet via CSV export."""
     url = (
@@ -84,10 +99,11 @@ def load_from_sheet():
     )
     r = requests.get(url, timeout=20)
     r.raise_for_status()
-    reader = csv.DictReader(io.StringIO(r.text))
+    # Force UTF-8 decode — requests may misdetect text/csv as latin-1
+    reader = csv.DictReader(io.StringIO(r.content.decode("utf-8")))
     papers = []
     for row in reader:
-        p = dict(row)
+        p = {k: fix_encoding(v) for k, v in row.items()}
         for f in ("authors", "fields"):
             val = p.get(f, "")
             if isinstance(val, str) and val.strip():
@@ -220,20 +236,37 @@ def dedup_by_title(papers):
             best[key] = keep
     return list(best.values())
 
-def _verify_huji_pubmed(papers, batch_size=50):
-    """Remove existing PubMed papers where HUJI is not the last/majority author.
+def _pmid_from_paper_id(paper_id):
+    """Return the PMID string if paper_id is pubmed_NNNN or epmc_NNNN (numeric = PMID for MED-source papers)."""
+    for prefix in ("pubmed_", "epmc_"):
+        if paper_id.startswith(prefix):
+            suffix = paper_id[len(prefix):]
+            if suffix.isdigit():
+                return suffix
+    return None
 
-    Uses batch efetch to retrieve per-author affiliations for all PubMed entries
-    in one pass. Non-PubMed papers are kept unchanged.
+
+def _verify_huji_pubmed(papers, batch_size=50):
+    """Remove papers where HUJI is not the last/majority author.
+
+    Covers pubmed_* and epmc_* papers (EuropePMC MED-source IDs are PMIDs).
+    Uses batch PubMed efetch for per-author affiliation data.
+    Non-PMID papers (ss_* etc.) are kept unchanged.
     """
     base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
-    pubmed = {p["id"].replace("pubmed_", ""): p for p in papers if p["id"].startswith("pubmed_")}
-    if not pubmed:
+    # Map PMID → paper for all papers with a verifiable PMID
+    pmid_map = {}
+    for p in papers:
+        pmid = _pmid_from_paper_id(p["id"])
+        if pmid and pmid not in pmid_map:
+            pmid_map[pmid] = p
+
+    if not pmid_map:
         return papers
 
-    print(f"  Verifying HUJI affiliation for {len(pubmed)} existing PubMed papers...")
-    verified_ids = set()
-    ids = list(pubmed.keys())
+    print(f"  Verifying HUJI affiliation for {len(pmid_map)} papers via PubMed efetch...")
+    verified_pmids = set()
+    ids = list(pmid_map.keys())
     for i in range(0, len(ids), batch_size):
         batch = ids[i:i + batch_size]
         try:
@@ -250,21 +283,20 @@ def _verify_huji_pubmed(papers, batch_size=50):
                     for a in article.findall(".//AuthorList/Author")
                 ]
                 if is_huji_paper(author_affs):
-                    verified_ids.add(uid)
+                    verified_pmids.add(uid)
         except Exception as e:
             print(f"  PubMed affiliation check error (batch {i}): {e}")
-            # On error keep the batch so we don't drop papers due to a transient failure
-            verified_ids.update(batch)
+            verified_pmids.update(batch)   # keep on transient error
         time.sleep(0.3)
 
-    dropped = [p["title"][:70] for p in papers
-               if p["id"].startswith("pubmed_") and p["id"].replace("pubmed_", "") not in verified_ids]
-    if dropped:
-        print(f"  Removed {len(dropped)} PubMed paper(s) with no HUJI last/majority author:")
-        for t in dropped:
-            print(f"    - {t}")
-    return [p for p in papers
-            if not p["id"].startswith("pubmed_") or p["id"].replace("pubmed_", "") in verified_ids]
+    # Build set of paper IDs to drop
+    drop_ids = {p["id"] for pmid, p in pmid_map.items() if pmid not in verified_pmids}
+    if drop_ids:
+        print(f"  Removed {len(drop_ids)} paper(s) with no HUJI last/majority author:")
+        for p in papers:
+            if p["id"] in drop_ids:
+                print(f"    - {p['title'][:70]}")
+    return [p for p in papers if p["id"] not in drop_ids]
 
 
 # ── PI Contact Enrichment ──────────────────────────────────────────────────────
@@ -374,8 +406,8 @@ def enrich_pi_contact(paper):
     """
     pid = paper.get("id", "")
 
-    if pid.startswith("pubmed_"):
-        pmid = pid.replace("pubmed_", "")
+    pmid = _pmid_from_paper_id(pid)
+    if pmid:
         full_name, email = _pubmed_efetch_pi(pmid)
         if full_name:
             paper.setdefault("pi_full_name", full_name)

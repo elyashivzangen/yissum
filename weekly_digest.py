@@ -329,13 +329,24 @@ def paper_block(idx, paper, curation_item, styles):
     return elements
 
 
-def generate_pdf(papers_by_idx, curation):
-    iso = datetime.date.today().isocalendar()
-    today = datetime.date.today().strftime("%B %d, %Y")
-    week = iso[1]
+def generate_pdf(papers_by_idx, curation, monthly=False):
+    today_dt = datetime.date.today()
+    today = today_dt.strftime("%B %d, %Y")
+    iso = today_dt.isocalendar()
     year = iso[0]
     DIGESTS_DIR.mkdir(exist_ok=True)
-    output_pdf = DIGESTS_DIR / f"HUJI_digest_{year}_W{week:02d}.pdf"
+
+    if monthly:
+        month = today_dt.month
+        output_pdf = DIGESTS_DIR / f"HUJI_digest_{year}_M{month:02d}.pdf"
+        period_label = f"Monthly Digest  ·  {today_dt.strftime('%B %Y')}  ·  {today}"
+        doc_title = f"HUJI Research Digest — {today_dt.strftime('%B %Y')}"
+    else:
+        week = iso[1]
+        output_pdf = DIGESTS_DIR / f"HUJI_digest_{year}_W{week:02d}.pdf"
+        period_label = f"Weekly Digest  ·  Week {week}  ·  {today}"
+        doc_title = f"HUJI Research Digest — Week {week}"
+
     styles = build_styles()
 
     doc = SimpleDocTemplate(
@@ -343,7 +354,7 @@ def generate_pdf(papers_by_idx, curation):
         pagesize=A4,
         leftMargin=16*mm, rightMargin=16*mm,
         topMargin=16*mm, bottomMargin=16*mm,
-        title=f"HUJI Research Digest — Week {week}",
+        title=doc_title,
         author="HUJI Research Monitor",
     )
 
@@ -351,10 +362,7 @@ def generate_pdf(papers_by_idx, curation):
 
     # ── Header ──
     story.append(Paragraph("HUJI Research Monitor", styles["title"]))
-    story.append(Paragraph(
-        f"Weekly Digest  ·  Week {week}  ·  {today}",
-        styles["subtitle"],
-    ))
+    story.append(Paragraph(period_label, styles["subtitle"]))
     story.append(Spacer(1, 6*mm))
     story.append(HRFlowable(width="100%", thickness=1, color=C_BORDER))
     story.append(Spacer(1, 4*mm))
@@ -402,7 +410,7 @@ def generate_pdf(papers_by_idx, curation):
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 
-def main():
+def main(monthly=False):
     print("Loading top papers from Google Sheet...")
     papers = load_top_papers()
     print(f"  {len(papers)} candidates (top {TOP_N} by score).")
@@ -418,14 +426,19 @@ def main():
     print(f"  Executive summary: {curation.get('executive_summary','')[:120]}...")
 
     print("Generating PDF...")
-    generate_pdf(papers, curation)
+    generate_pdf(papers, curation, monthly=monthly)
     print("Done.")
 
 
 if __name__ == "__main__":
-    import sys, traceback
+    import sys, traceback, argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--monthly", action="store_true", help="Generate monthly digest instead of weekly")
+    args = parser.parse_args()
+    if args.monthly:
+        DIGEST_WINDOW = 31
     try:
-        main()
+        main(monthly=args.monthly)
     except Exception:
         traceback.print_exc()
         sys.exit(1)
