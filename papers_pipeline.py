@@ -16,6 +16,7 @@ import os
 import re
 import time
 import datetime
+import xml.etree.ElementTree as ET
 import requests
 from google import genai
 from google.genai import types
@@ -47,6 +48,8 @@ HUJI_AFFILIATIONS = [
     "Silberman Institute",
 ]
 
+EMAIL_RE = re.compile(r'[\w.+\-]+@[\w\-]+\.[\w.\-]+')
+
 FIELD_TAGS = [
     "Drug Discovery", "Medical Device", "Diagnostics", "Vaccines",
     "AgriTech", "FoodTech", "Materials", "Clean Energy",
@@ -58,6 +61,7 @@ FIELD_TAGS = [
 SHEET_COLUMNS = [
     "id", "title", "authors", "journal", "date", "url", "source",
     "score", "summary", "opportunity", "fields", "added_date", "score_breakdown", "pi",
+    "pi_full_name", "pi_email",
 ]
 
 SCORE_PARAMS = [
@@ -128,6 +132,8 @@ def save_to_sheet(papers):
             p.get("added_date", today_str()),
             json.dumps(p.get("score_breakdown", {}), ensure_ascii=False),
             p.get("pi", ""),
+            p.get("pi_full_name", ""),
+            p.get("pi_email", ""),
         ])
     r = requests.post(
         APPS_SCRIPT_URL,
@@ -161,6 +167,85 @@ def days_ago(n):
 
 def existing_ids(papers):
     return {p["id"] for p in papers}
+
+# ── PI Contact Enrichment ──────────────────────────────────────────────────────
+
+def _pubmed_efetch_pi(pmid):
+    """Return (full_name, email) for the HUJI PI from PubMed full XML."""
+    base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+    try:
+        r = requests.get(f"{base}/efetch.fcgi", params={
+            "db": "pubmed", "id": pmid, "rettype": "xml", "retmode": "xml",
+        }, timeout=15)
+        r.raise_for_status()
+        root = ET.fromstring(r.text)
+    except Exception:
+        return None, None
+
+    candidates = []
+    for a in root.findall(".//AuthorList/Author"):
+        last = a.findtext("LastName", "")
+        fore = a.findtext("ForeName", "") or a.findtext("Initials", "")
+        full = f"{fore} {last}".strip() if fore else last
+        affs = [el.text or "" for el in a.findall(".//AffiliationInfo/Affiliation")]
+        is_huji = any(h.lower() in af.lower() for h in HUJI_AFFILIATIONS for af in affs)
+        m = next((EMAIL_RE.search(af) for af in affs if EMAIL_RE.search(af)), None)
+        candidates.append((full, is_huji, m.group() if m else None))
+
+    # Prefer last HUJI author with email, then without, then last author
+    for full, is_huji, email in reversed(candidates):
+        if is_huji and email:
+            return full, email
+    for full, is_huji, email in reversed(candidates):
+        if is_huji and full:
+            return full, None
+    if candidates:
+        full, _, email = candidates[-1]
+        return full, email
+    return None, None
+
+
+def _crossref_pi_email(doi):
+    """Try CrossRef for a corresponding-author email (best-effort)."""
+    try:
+        r = requests.get(
+            f"https://api.crossref.org/works/{doi}",
+            headers={"User-Agent": "HUJI-Pipeline/1.0"},
+            timeout=10,
+        )
+        if r.status_code != 200:
+            return None
+        for author in r.json().get("message", {}).get("author", []):
+            email = author.get("email", "")
+            if email:
+                return email
+    except Exception:
+        pass
+    return None
+
+
+def enrich_pi_contact(paper):
+    """Resolve full name and email for the PI. Updates paper dict in-place."""
+    pid = paper.get("id", "")
+
+    if pid.startswith("pubmed_"):
+        pmid = pid.replace("pubmed_", "")
+        full_name, email = _pubmed_efetch_pi(pmid)
+        if full_name:
+            paper.setdefault("pi_full_name", full_name)
+        if email:
+            paper.setdefault("pi_email", email)
+        if paper.get("pi_full_name") or paper.get("pi_email"):
+            return
+
+    # For any paper with a DOI URL, try CrossRef for email
+    url = paper.get("url", "")
+    if "doi.org/" in url and not paper.get("pi_email"):
+        doi = url.split("doi.org/", 1)[-1].rstrip("/")
+        email = _crossref_pi_email(doi)
+        if email:
+            paper["pi_email"] = email
+
 
 # ── Fetchers ───────────────────────────────────────────────────────────────────
 
@@ -445,9 +530,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .bd-bar-bg{{height:5px;background:var(--border);border-radius:3px;overflow:hidden}}
   .bd-bar{{height:100%;border-radius:3px;transition:width .3s}}
   .bd-reason{{font-size:.7rem;color:var(--muted);line-height:1.4}}
-  .pi{{display:flex;align-items:center;gap:6px;margin:4px 0 2px}}
+  .pi{{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:4px 0 2px}}
   .pi-label{{font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;flex-shrink:0}}
   .pi-name{{font-size:.85rem;font-weight:700;color:var(--accent2)}}
+  .pi-email-btn{{padding:2px 8px;font-size:.68rem;margin-left:2px}}
+  .pi-email{{font-size:.75rem;padding:0 0 4px 0}}
+  .pi-email a{{color:var(--accent2);text-decoration:none}}
+  .pi-email a:hover{{text-decoration:underline}}
   @media(max-width:600px){{.grid{{grid-template-columns:1fr;padding:0 12px 24px}}.controls{{padding:12px}}}}
 </style>
 </head>
@@ -525,7 +614,7 @@ function render(){{
     const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
     return `<div class="card">
       <div class="card-header"><div class="title">${{p.title}}</div><div class="score ${{scoreClass(p.score)}}">${{p.score}}/50</div></div>
-      ${{p.pi?`<div class="pi"><span class="pi-label">Main Researcher</span><span class="pi-name">👤 ${{p.pi}}</span></div>`:''}}
+      ${{(p.pi||p.pi_full_name)?`<div class="pi"><span class="pi-label">Main Researcher</span><span class="pi-name">👤 ${{p.pi_full_name||p.pi}}</span>${{p.pi_email?`<button class="btn pi-email-btn" onclick="toggleEmail(this)">Email ▾</button>`:''}} </div>${{p.pi_email?`<div class="pi-email" style="display:none"><a href="mailto:${{p.pi_email}}">${{p.pi_email}}</a></div>`:''}}`:''}}
       <div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>
       ${{p.summary?`<div class="summary">${{p.summary}}</div>`:''}}
       ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
@@ -545,6 +634,14 @@ function toggleBd(btn){{
   bd.classList.toggle('open');
   btn.classList.toggle('active');
   btn.textContent=bd.classList.contains('open')?'Score Breakdown ▴':'Score Breakdown ▾';
+}}
+function toggleEmail(btn){{
+  const div=btn.closest('.card').querySelector('.pi-email');
+  if(!div)return;
+  const open=div.style.display!=='none';
+  div.style.display=open?'none':'block';
+  btn.textContent=open?'Email ▾':'Email ▴';
+  btn.classList.toggle('active',!open);
 }}
 document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{{
   const f=b.dataset.filter,v=b.dataset.val;
@@ -581,6 +678,8 @@ def generate_html(papers):
         "fields":          p.get("fields", []),
         "score_breakdown": p.get("score_breakdown", {}),
         "pi":              p.get("pi", ""),
+        "pi_full_name":    p.get("pi_full_name", ""),
+        "pi_email":        p.get("pi_email", ""),
         "added_date":      p.get("added_date", ""),
     } for p in papers], key=lambda x: x["score"], reverse=True)
 
@@ -638,6 +737,21 @@ def main():
             seen.add(key)
             deduped.append(p)
     print(f"\n{len(deduped)} unique new papers to evaluate.")
+
+    # Enrich PI contact info for new papers
+    if deduped:
+        print(f"Enriching PI contact info for {len(deduped)} new papers...")
+        for paper in deduped:
+            enrich_pi_contact(paper)
+            time.sleep(0.3)
+
+    # Enrich existing papers that are missing PI contact data
+    to_enrich = [p for p in existing if not p.get("pi_email") and not p.get("pi_full_name")]
+    if to_enrich:
+        print(f"Enriching PI contact for {len(to_enrich)} existing papers (backfill)...")
+        for p in to_enrich:
+            enrich_pi_contact(p)
+            time.sleep(0.3)
 
     evaluated = []
     for i, paper in enumerate(deduped):
