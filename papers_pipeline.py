@@ -416,7 +416,7 @@ Return a JSON object (no markdown) with exactly these keys:
 
 def _call_gemini(prompt):
     resp = client.models.generate_content(
-        model="gemma-3-27b-it",
+        model="gemini-2.0-flash",
         contents=prompt,
     )
     text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
@@ -742,11 +742,22 @@ def main():
         existing = []
 
     # Migrate papers scored on the old 1–10 scale to the new 1–50 scale
+    # Only migrate papers without a score_breakdown (breakdown means already on 1–50 scale)
     for p in existing:
         s = p.get("score", 0)
-        if 0 < s <= 10:
+        if 0 < s <= 10 and not p.get("score_breakdown"):
             p["score"] = s * 5
             print(f"  Migrated score {s}→{p['score']} for: {p.get('title','')[:60]}")
+
+    # Recalculate composite score from breakdown where they don't match
+    # (fixes papers incorrectly migrated in a previous run)
+    for p in existing:
+        bd = p.get("score_breakdown")
+        if bd:
+            cat_sum = sum(v.get("score", 0) for v in bd.values())
+            if cat_sum > 0 and cat_sum != p.get("score", 0):
+                print(f"  Recalc score {p['score']}→{cat_sum} for: {p.get('title','')[:60]}")
+                p["score"] = cat_sum
 
     known_ids = existing_ids(existing)
     new_papers = []
