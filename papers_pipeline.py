@@ -1158,12 +1158,9 @@ def generate_html(papers):
         "added_date":      p.get("added_date", ""),
     } for p in papers], key=lambda x: x["score"], reverse=True)
 
-    # Build header links: spreadsheet + latest weekly + monthly digests
+    # Build header links: latest weekly + monthly digests + spreadsheet + user guide
     header_links = ""
     sheet_id = os.environ.get("GOOGLE_SHEET_ID", "")
-    if sheet_id:
-        sheet_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}"
-        header_links += f'<a class="header-link" href="{sheet_url}" target="_blank">📊 Spreadsheet</a>'
 
     # Build per-branch digest URL map and header links
     digest_urls = {"all": {"weekly": "", "monthly": ""}}
@@ -1201,6 +1198,10 @@ def generate_html(papers):
             if digest_urls["all"]["monthly"]:
                 header_links += (f'<a class="header-link" id="link-monthly" '
                                  f'href="{digest_urls["all"]["monthly"]}" target="_blank">📅 Monthly Report</a>')
+
+        if sheet_id:
+            sheet_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}"
+            header_links += f'<a class="header-link" href="{sheet_url}" target="_blank">📊 All Papers Spreadsheet</a>'
 
         manual = Path("docs/HUJI_Research_Monitor_Guide.pdf")
         if manual.exists():
