@@ -654,7 +654,7 @@
       "Alex Gileles-Hillel"
     ],
     "journal": "",
-    "date": "2026 Mar",
+    "date": "2026 Mar 1",
     "url": "https://europepmc.org/article/MED/41408713",
     "source": "Europe PMC",
     "score": 21,
@@ -1881,6 +1881,52 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "pubmed_41876283",
+    "title": "Empathy as a predictive signal: why we devalue AI empathy.",
+    "authors": [
+      "Anat Perry"
+    ],
+    "journal": "Trends in cognitive sciences",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41876283/",
+    "source": "PubMed",
+    "score": 15,
+    "summary": "This paper explores the human tendency to undervalue displays of empathy from artificial intelligence, suggesting a disconnect between recognizing empathetic *behavior* and attributing genuine empathetic *feeling*. The research likely delves into the psychological factors influencing trust and acceptance of AI in roles requiring emotional intelligence.",
+    "opportunity": "Understanding the barriers to accepting AI empathy can inform the design of more effective and trustworthy AI-driven mental health tools, customer service applications, and human-robot interaction systems.",
+    "fields": [
+      "Software/AI",
+      "Neuroscience",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "The idea of framing perceived 'AI empathy' through a predictive processing lens, and linking devaluation to mismatched expectations about its predictive utility, presents a novel framing within the AI ethics/affective computing space; however, it builds heavily on established concepts in cognitive science and predictive processing, preventing a truly groundbreaking score."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper discusses a *perception* of AI empathy, not the creation of an empathetic AI product itself; while understanding user devaluation is interesting, it doesn't directly translate to a commercially viable technology or service without significant further development and a clear application. It's a behavioral insight, not a technology ready for market."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a *perception* of AI empathy, not a market for empathetic AI itself; without a clear articulation of a quantifiable market benefiting from 'predictive signals' of empathy (even if debunking its value), the addressable market size remains entirely undefined and likely small, limited to academic interest."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "The paper discusses a *concept* – the perceived value of AI empathy – rather than presenting a developed technology; it's fundamentally a theoretical exploration, indicating very early stage research with no demonstrable prototype or path to immediate application. Therefore, the TRL is extremely low, likely residing at the basic research level."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "The paper discusses a *concept* – the devaluation of AI empathy – rather than a novel, technically inventive solution; concepts themselves are not patentable, and the work appears to be observational/theoretical. Without a concrete, protectable invention (e.g., a new algorithm, system architecture, or data processing method) stemming from this observation, IP strength is extremely low."
+      }
+    },
+    "pi": "Anat Perry",
+    "pi_full_name": "Anat Perry",
+    "pi_email": "anat.perry@mail.huji.ac.il.",
+    "added_date": "2026-03-25"
+  },
+  {
     "id": "epmc_41800941",
     "title": "[Shaare Zedek Medical Center - The Future of Medicine Is Already Here].",
     "authors": [
@@ -2076,7 +2122,7 @@
       "Yusef Azraq"
     ],
     "journal": "",
-    "date": "2026 Mar 1",
+    "date": "2026 Mar",
     "url": "https://europepmc.org/article/MED/41103162",
     "source": "Europe PMC",
     "score": 13,
@@ -2525,6 +2571,54 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "pubmed_41872918",
+    "title": "Risk of retinal artery occlusion in patients with primary open-angle glaucoma: a retrospective cohort study.",
+    "authors": [
+      "Nadav Shemesh",
+      "Itay Nitzan",
+      "Shoham Kubovsky"
+    ],
+    "journal": "International journal of retina and vitreous",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41872918/",
+    "source": "PubMed",
+    "score": 11,
+    "summary": "This retrospective study investigates a potential link between primary open-angle glaucoma (POAG) and retinal artery occlusion (RAO), a serious vision-threatening event. Identifying patients with POAG at higher risk of RAO could lead to preventative measures and improved patient outcomes.",
+    "opportunity": "Developing a risk stratification tool or diagnostic test to identify POAG patients susceptible to RAO presents a commercial opportunity for improved patient monitoring and targeted interventions.",
+    "fields": [
+      "Diagnostics",
+      "Clinical",
+      "Imaging",
+      "Neuroscience"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "Retrospective cohort studies establishing associations between existing conditions (glaucoma and retinal artery occlusion) are generally incremental rather than groundbreaking; while clinically valuable, identifying this risk doesn't represent a major leap in fundamental scientific understanding or introduce a novel mechanism."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While identifying a correlation between glaucoma and retinal artery occlusion is scientifically interesting, the paper doesn't suggest a novel intervention, diagnostic, or therapeutic – it's a risk assessment study. Commercial potential hinges on *doing* something with this risk information, which isn't addressed, limiting its direct translatability to a product or service."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This study focuses on a relatively rare complication (retinal artery occlusion) within a specific subpopulation (primary open-angle glaucoma patients). While glaucoma itself has a significant market, the addressable market for *specifically* mitigating this risk is likely small, limiting commercial potential."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This study describes retrospective analysis of existing patient data – it does *not* represent development of a new technology. It's purely observational research, indicating a very low TRL as it doesn't involve any novel technology being advanced towards application."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This study appears to be a retrospective observational analysis of existing data; such work is generally not patentable as it describes observations about naturally occurring phenomena and doesn't present a novel invention. There's no indication of any new technology, method, or composition of matter being developed."
+      }
+    },
+    "pi": "Jaime Levy",
+    "pi_full_name": "Jaime Levy",
+    "pi_email": "levjaime@gmail.com.",
+    "added_date": "2026-03-25"
+  },
+  {
     "id": "epmc_41780426",
     "title": "Corrigendum to \"The paradoxical protective effect of chronic stress on advanced Alzheimer's disease pathology\". [Brain, Behav., Immun. 132 (2026) 106224].",
     "authors": [
@@ -2950,6 +3044,54 @@
     "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "pubmed_41874688",
+    "title": "Intractable dialysis-associated headache: a management dilemma in pediatric hemodialysis.",
+    "authors": [
+      "Aviad Schnapp",
+      "Amir Shimonov",
+      "Ari Simckes"
+    ],
+    "journal": "Pediatric nephrology (Berlin, Germany)",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41874688/",
+    "source": "PubMed",
+    "score": 8,
+    "summary": "This paper addresses a challenging clinical problem – headaches experienced by children undergoing hemodialysis, which are difficult to treat. The research likely explores management strategies for these headaches, given the title's framing as a 'management dilemma'.",
+    "opportunity": "Development of novel, pediatric-specific headache treatments or improved dialysis protocols could represent a niche market opportunity, addressing a significant quality-of-life issue for young patients.",
+    "fields": [
+      "Clinical",
+      "Medical Device",
+      "Neuroscience",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 2,
+        "reason": "The title suggests a clinical *problem* – managing headaches in pediatric hemodialysis – rather than a novel scientific discovery; it's likely a case series or review of existing management strategies. While important for clinical practice, addressing a known complication doesn't inherently demonstrate high scientific novelty."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This paper addresses a painful but niche problem (headaches during pediatric dialysis) and focuses on *management* rather than a novel therapeutic or diagnostic approach; therefore, direct commercialization pathways are limited, likely restricted to potentially improved dialysis protocols or supportive care products with modest market size."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a very specific complication (dialysis-associated headache) within a relatively small patient population (pediatric hemodialysis). While important for those affected, the addressable market for any solution is inherently limited, resulting in a small potential market size."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper describes a clinical *problem* – a headache associated with a medical procedure – and likely discusses management strategies within existing clinical practice. It does not present a new technology; therefore, the Technology Readiness Level (TRL) is extremely low, representing basic research/clinical observation rather than a developed technology."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes a clinical problem and management approaches, not a novel invention; therefore, there is no inherent IP strength or defensibility. It's a report on medical practice, not a patentable technology."
+      }
+    },
+    "pi": "Oded Volovelsky",
+    "pi_full_name": "Oded Volovelsky",
+    "pi_email": "odedvo@hadassah.org.il.",
+    "added_date": "2026-03-25"
   },
   {
     "id": "epmc_41848442",
