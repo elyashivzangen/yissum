@@ -3,7 +3,7 @@
 Branch: All Branches
 Loading top papers from Google Sheet...
   Sheet response: 200, 210479 bytes
-  Cutoff date: 2026-02-22  (DIGEST_WINDOW=31 days)
+  Cutoff date: 2026-03-18  (DIGEST_WINDOW=7 days)
   Rows: 71 total, 0 excluded, 71 kept.
   Sample added_date values: ['2026-03-23', '2026-03-23', '2026-03-23']
   20 candidates (top 20 by score).
@@ -11,56 +11,56 @@ Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
   Gemini selected 12 papers.
-  Executive summary: Hebrew University of Jerusalem presents a compelling digest of research poised for commercialization, spanning critical ...
+  Executive summary: This week's digest highlights a compelling array of innovations, from advanced materials and personalized medical device...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_M03.pdf  (17 KB)
+PDF written: digests/HUJI_digest_2026_W13.pdf  (19 KB)
 
 =======================================================
 Branch: Healthcare
 Loading top papers from Google Sheet...
   Sheet response: 200, 210479 bytes
-  Cutoff date: 2026-02-22  (DIGEST_WINDOW=31 days)
-  Rows: 71 total, 2 excluded, 69 kept.
+  Cutoff date: 2026-03-18  (DIGEST_WINDOW=7 days)
+  Rows: 71 total, 15 excluded, 56 kept.
   Sample added_date values: ['2026-03-23', '2026-03-23', '2026-03-23']
   20 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
   Gemini selected 12 papers.
-  Executive summary: The selected research highlights groundbreaking commercial opportunities spanning advanced medical devices, AI-driven so...
+  Executive summary: This week's digest showcases groundbreaking innovations poised to redefine therapeutic and diagnostic approaches across ...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_M03_Healthcare.pdf  (18 KB)
+PDF written: digests/HUJI_digest_2026_W13_Healthcare.pdf  (17 KB)
 
 =======================================================
 Branch: Agriculture & Food
 Loading top papers from Google Sheet...
   Sheet response: 200, 210479 bytes
-  Cutoff date: 2026-02-22  (DIGEST_WINDOW=31 days)
-  Rows: 71 total, 64 excluded, 7 kept.
+  Cutoff date: 2026-03-18  (DIGEST_WINDOW=7 days)
+  Rows: 71 total, 68 excluded, 3 kept.
   Sample added_date values: ['2026-03-23', '2026-03-23', '2026-03-23']
-  7 candidates (top 20 by score).
+  3 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 7 papers.
-  Executive summary: Hebrew University researchers are pioneering solutions for major global challenges, spanning human health, food security...
+  Gemini selected 3 papers.
+  Executive summary: This week's digest highlights cutting-edge advancements in food technology, addressing crucial challenges from microbial...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_M03_Agriculture_Food.pdf  (11 KB)
+PDF written: digests/HUJI_digest_2026_W13_Agriculture_Food.pdf  (6 KB)
 
 =======================================================
 Branch: Exact & Social Sciences
 Loading top papers from Google Sheet...
   Sheet response: 200, 210479 bytes
-  Cutoff date: 2026-02-22  (DIGEST_WINDOW=31 days)
-  Rows: 71 total, 21 excluded, 50 kept.
+  Cutoff date: 2026-03-18  (DIGEST_WINDOW=7 days)
+  Rows: 71 total, 59 excluded, 12 kept.
   Sample added_date values: ['2026-03-23', '2026-03-23', '2026-03-23']
-  20 candidates (top 20 by score).
+  12 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 12 papers.
-  Executive summary: Hebrew University is showcasing a robust portfolio of innovations, particularly in personalized medicine with a 3D-print...
+  Gemini selected 11 papers.
+  Executive summary: This digest highlights cutting-edge research spanning advanced materials, AI-driven behavioral insights, and critical he...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_M03_Exact_Social_Sciences.pdf  (17 KB)
+PDF written: digests/HUJI_digest_2026_W13_Exact_Social_Sciences.pdf  (15 KB)
 
 All digests done.
