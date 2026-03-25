@@ -53,6 +53,25 @@ DIGEST_MODEL_CANDIDATES = [
 
 # ── Load sheet ───────────────────────────────────────────────────────────────
 
+_MONTHS = {'Jan':1,'Feb':2,'Mar':3,'Apr':4,'May':5,'Jun':6,
+           'Jul':7,'Aug':8,'Sep':9,'Oct':10,'Nov':11,'Dec':12}
+
+def _parse_date(d):
+    """Parse date strings in multiple formats used by the sheet."""
+    if not d:
+        return None
+    m = re.match(r'^(\d{4})-(\d{2})-(\d{2})', d)
+    if m:
+        return datetime.date(int(m[1]), int(m[2]), int(m[3]))
+    m = re.match(r'^(\d{4})\s+([A-Za-z]{3})(?:\s+(\d{1,2}))?', d)
+    if m:
+        return datetime.date(int(m[1]), _MONTHS.get(m[2], 1), int(m[3]) if m[3] else 1)
+    m = re.match(r'^(\d{4})$', d)
+    if m:
+        return datetime.date(int(m[1]), 1, 1)
+    return None
+
+
 def _primary_branch(fields):
     """Return the branch name(s) with the most field-tag matches (exclusive for digest)."""
     best, best_n = None, 0
@@ -88,13 +107,10 @@ def load_top_papers(branch_name=None, top_n=TOP_N):
             p["fields"] = []
         # Only include papers published within the digest window
         pub_str = p.get("date", "").strip()
-        try:
-            pub = datetime.date.fromisoformat(pub_str)
-            if pub < cutoff:
-                excluded += 1
-                continue
-        except Exception:
-            pass  # if no/invalid date, include it anyway
+        pub = _parse_date(pub_str)
+        if pub is not None and pub < cutoff:
+            excluded += 1
+            continue
         # Filter by branch using exclusive primary-branch assignment
         if branch_name and _primary_branch(p.get("fields", [])) != branch_name:
             excluded += 1
