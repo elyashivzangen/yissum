@@ -1,15 +1,22 @@
 Loading existing papers from Google Sheet...
   68 existing papers loaded.
   Verifying HUJI affiliation for 65 papers via PubMed efetch...
-fetch_pubmed: 19 fetched, 0 new
-fetch_europepmc: 12 fetched, 0 new
+fetch_pubmed: 14 fetched, 3 new
+fetch_europepmc: 9 fetched, 0 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-0 unique new papers to evaluate.
+3 unique new papers to evaluate.
+Enriching PI contact info for 3 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
+  [1/3] Empathy as a predictive signal: why we devalue AI empathy.
+    score=15 fields=['Software/AI', 'Neuroscience', 'Clinical', 'Other']
+  [2/3] Intractable dialysis-associated headache: a management dilemma in pedi
+    score=8 fields=['Clinical', 'Medical Device', 'Neuroscience', 'Other']
+  [3/3] Risk of retinal artery occlusion in patients with primary open-angle g
+    score=11 fields=['Diagnostics', 'Clinical', 'Imaging', 'Neuroscience']
 
-Retention: kept 68/68 existing, added 0 new.
-Writing 68 papers to Google Sheet...
-Sheet updated: {"status":"ok","rows":69}
-Generated papers_reader.html and papers_data.json with 68 papers.
+Retention: kept 68/68 existing, added 3 new.
+Writing 71 papers to Google Sheet...
+Sheet updated: {"status":"ok","rows":72}
+Generated papers_reader.html and papers_data.json with 71 papers.
 Done.
