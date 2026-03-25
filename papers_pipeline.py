@@ -59,6 +59,17 @@ FIELD_TAGS = [
     "Clinical", "Other",
 ]
 
+# Three main Yissum TTO branches — each field tag belongs to exactly one branch
+BRANCHES = {
+    "Healthcare": [
+        "Drug Discovery", "Medical Device", "Diagnostics", "Vaccines",
+        "Neuroscience", "Genomics", "Imaging", "Synthetic Biology",
+        "Proteomics", "Immunology", "Clinical",
+    ],
+    "Agriculture & Food": ["AgriTech", "FoodTech"],
+    "Exact & Social Sciences": ["Materials", "Clean Energy", "Software/AI", "Quantum", "Other"],
+}
+
 SHEET_COLUMNS = [
     "id", "title", "authors", "journal", "date", "url", "source",
     "score", "summary", "opportunity", "fields", "added_date", "score_breakdown", "pi",
@@ -874,11 +885,18 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   [data-theme=dark] .theme-toggle{{background:rgba(255,255,255,.04);border-color:var(--border);color:var(--muted)}}
   [data-theme=dark] .theme-toggle:hover{{background:var(--accent);border-color:var(--accent);color:#fff}}
 
+  /* ── Branch Tabs ── */
+  .branch-tabs{{display:flex;gap:0;background:var(--card2);border-bottom:2px solid var(--border);padding:0 24px;overflow-x:auto;flex-shrink:0}}
+  .branch-tab{{padding:10px 18px;border:none;background:transparent;color:var(--muted);font-size:.82rem;font-weight:600;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;transition:all .18s;white-space:nowrap;letter-spacing:.01em}}
+  .branch-tab:hover{{color:var(--text)}}
+  .branch-tab.active{{color:var(--accent);border-bottom-color:var(--accent)}}
+
   @media(max-width:600px){{
     .grid{{grid-template-columns:1fr;padding:12px 12px 32px}}
     .controls{{padding:10px 12px}}
     .slider{{width:100px}}
     .header-links{{gap:4px}}
+    .branch-tab{{padding:8px 12px;font-size:.75rem}}
   }}
 </style>
 </head>
@@ -891,6 +909,12 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </div>
   <div class="header-links">{header_links}<button class="header-link theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌙 Dark</button></div>
 </header>
+<div class="branch-tabs">
+  <button class="branch-tab active" data-branch="all">All Branches</button>
+  <button class="branch-tab" data-branch="Healthcare">🏥 Healthcare</button>
+  <button class="branch-tab" data-branch="Agriculture &amp; Food">🌾 Agriculture &amp; Food</button>
+  <button class="branch-tab" data-branch="Exact &amp; Social Sciences">💡 Exact &amp; Social Sciences</button>
+</div>
 <div class="controls">
   <div class="row search-row">
     <div class="search-wrap">
@@ -936,6 +960,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <div class="grid" id="grid"></div>
 <script>
 const papers = {papers_json};
+const BRANCHES = {branches_json};
 document.getElementById('updated').textContent = 'Updated {updated}';
 const TODAY=new Date(); TODAY.setHours(0,0,0,0);
 function parseDate(d){{
@@ -953,7 +978,7 @@ function parseDate(d){{
   return null;
 }}
 function daysAgo(d){{const t=parseDate(d);if(!t)return 9999;t.setHours(0,0,0,0);return Math.round((TODAY-t)/86400000);}}
-let activeScore=0, activeField='all', activePeriod='all', sortBy='score', searchQ='', activeParam='', activeParamMin=1;
+let activeScore=0, activeField='all', activePeriod='all', activeBranch='all', sortBy='score', searchQ='', activeParam='', activeParamMin=1;
 const PARAM_LABELS = {{
   novelty:'Novelty', commercial_potential:'Commercial Potential',
   market_size:'Market Size', trl:'Tech Readiness', ip_strength:'IP Strength'
@@ -974,6 +999,7 @@ function renderBreakdown(bd){{
   return `<div class="breakdown">${{rows}}</div>`;
 }}
 function applyFilters(list,{{skipPeriod,skipField}}){{
+  if(activeBranch!=='all'){{const bf=BRANCHES[activeBranch]||[];list=list.filter(p=>(p.fields||[]).some(f=>bf.includes(f)));}}
   if(searchQ){{const q=searchQ.toLowerCase();list=list.filter(p=>(p.title||'').toLowerCase().includes(q)||(p.summary||'').toLowerCase().includes(q)||(p.opportunity||'').toLowerCase().includes(q));}}
   if(!skipPeriod&&activePeriod!=='all')list=list.filter(p=>daysAgo(p.date)<=parseInt(activePeriod));
   if(activeScore>0)list=list.filter(p=>p.score>=activeScore);
@@ -1039,6 +1065,16 @@ document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{{
   document.querySelectorAll(`.chip[data-filter="${{f}}"]`).forEach(x=>x.classList.remove('active'));
   b.classList.add('active');
   if(f==='field')activeField=v; else activePeriod=v;
+  render();
+}}));
+document.querySelectorAll('.branch-tab').forEach(tab=>tab.addEventListener('click',()=>{{
+  document.querySelectorAll('.branch-tab').forEach(t=>t.classList.remove('active'));
+  tab.classList.add('active');
+  activeBranch=tab.dataset.branch;
+  // Reset field filter to 'all' when switching branches
+  activeField='all';
+  document.querySelectorAll('.chip[data-filter="field"]').forEach(x=>x.classList.remove('active'));
+  document.querySelector('.chip[data-filter="field"][data-val="all"]').classList.add('active');
   render();
 }}));
 document.getElementById('score-slider').addEventListener('input',function(){{
@@ -1134,6 +1170,7 @@ def generate_html(papers):
     OUTPUT_HTML.write_text(HTML_TEMPLATE.format(
         field_chips=build_field_chips(),
         papers_json=json.dumps(enriched, ensure_ascii=False),
+        branches_json=json.dumps(BRANCHES, ensure_ascii=False),
         updated=today_str(),
         header_links=header_links,
     ), encoding="utf-8")

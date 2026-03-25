@@ -33,6 +33,17 @@ DIGESTS_DIR     = Path("digests")
 TOP_N           = 20   # top papers by score sent to Gemini for curation
 DIGEST_WINDOW   = 7    # only include papers added in the last N days
 
+# Three main Yissum TTO branches (mirrors papers_pipeline.py)
+BRANCHES = {
+    "Healthcare": [
+        "Drug Discovery", "Medical Device", "Diagnostics", "Vaccines",
+        "Neuroscience", "Genomics", "Imaging", "Synthetic Biology",
+        "Proteomics", "Immunology", "Clinical",
+    ],
+    "Agriculture & Food": ["AgriTech", "FoodTech"],
+    "Exact & Social Sciences": ["Materials", "Clean Energy", "Software/AI", "Quantum", "Other"],
+}
+
 client = genai.Client(api_key=GEMINI_API_KEY)
 # Model ID candidates — tried in order until one works
 DIGEST_MODEL_CANDIDATES = [
@@ -42,7 +53,7 @@ DIGEST_MODEL_CANDIDATES = [
 
 # ── Load sheet ───────────────────────────────────────────────────────────────
 
-def load_top_papers():
+def load_top_papers(branch_fields=None):
     url = (
         f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}"
         f"/export?format=csv&gid=0"
@@ -74,8 +85,12 @@ def load_top_papers():
                 continue
         except Exception:
             pass  # if no/invalid added_date, include it anyway
+        # Filter by branch if specified
+        if branch_fields and not any(f in branch_fields for f in p.get("fields", [])):
+            excluded += 1
+            continue
         papers.append(p)
-    print(f"  Rows: {len(papers)+excluded} total, {excluded} excluded by date, {len(papers)} kept.")
+    print(f"  Rows: {len(papers)+excluded} total, {excluded} excluded, {len(papers)} kept.")
     if papers:
         print(f"  Sample added_date values: {[p.get('added_date','') for p in papers[:3]]}")
     papers.sort(key=lambda x: x["score"], reverse=True)
@@ -84,19 +99,20 @@ def load_top_papers():
 # ── Gemini curation ──────────────────────────────────────────────────────────
 
 CURATION_PROMPT = """You are a technology-transfer analyst at Hebrew University of Jerusalem.
-Review these {n} research papers and select the 8-12 most commercially promising ones
-for a weekly digest sent to investors and industry partners.
+Review these {n} research papers and select the most commercially promising ones
+for a digest sent to investors and industry partners.
 
 Papers:
 {paper_list}
 
 Return a JSON object (no markdown) with exactly these keys:
-- executive_summary: 3-4 sentence overview of this week's standout research themes
+- executive_summary: 3-4 sentence overview of the standout research themes
 - selected: list of objects, each with:
     - index: 1-based integer matching the paper number above
     - headline: one punchy sentence on the commercial angle (max 20 words)
     - why_now: 1-2 sentences on timing, market gap, or near-term opportunity
 
+Select up to 12 papers (or all of them if there are 12 or fewer).
 Pick for commercial impact, not just high score. Aim for diversity of fields.
 """
 
@@ -329,23 +345,26 @@ def paper_block(idx, paper, curation_item, styles):
     return elements
 
 
-def generate_pdf(papers_by_idx, curation, monthly=False):
+def generate_pdf(papers_by_idx, curation, monthly=False, branch=None):
     today_dt = datetime.date.today()
     today = today_dt.strftime("%B %d, %Y")
     iso = today_dt.isocalendar()
     year = iso[0]
     DIGESTS_DIR.mkdir(exist_ok=True)
 
+    branch_suffix = f"_{branch.replace(' & ', '_').replace(' ', '_')}" if branch else ""
+    branch_prefix = f"{branch}  ·  " if branch else ""
+
     if monthly:
         month = today_dt.month
-        output_pdf = DIGESTS_DIR / f"HUJI_digest_{year}_M{month:02d}.pdf"
-        period_label = f"Monthly Digest  ·  {today_dt.strftime('%B %Y')}  ·  {today}"
-        doc_title = f"HUJI Research Digest — {today_dt.strftime('%B %Y')}"
+        output_pdf = DIGESTS_DIR / f"HUJI_digest_{year}_M{month:02d}{branch_suffix}.pdf"
+        period_label = f"{branch_prefix}Monthly Digest  ·  {today_dt.strftime('%B %Y')}  ·  {today}"
+        doc_title = f"HUJI Research Digest — {branch + ' — ' if branch else ''}{today_dt.strftime('%B %Y')}"
     else:
         week = iso[1]
-        output_pdf = DIGESTS_DIR / f"HUJI_digest_{year}_W{week:02d}.pdf"
-        period_label = f"Weekly Digest  ·  Week {week}  ·  {today}"
-        doc_title = f"HUJI Research Digest — Week {week}"
+        output_pdf = DIGESTS_DIR / f"HUJI_digest_{year}_W{week:02d}{branch_suffix}.pdf"
+        period_label = f"{branch_prefix}Weekly Digest  ·  Week {week}  ·  {today}"
+        doc_title = f"HUJI Research Digest — {branch + ' — ' if branch else ''}Week {week}"
 
     styles = build_styles()
 
@@ -411,23 +430,37 @@ def generate_pdf(papers_by_idx, curation, monthly=False):
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main(monthly=False):
-    print("Loading top papers from Google Sheet...")
-    papers = load_top_papers()
-    print(f"  {len(papers)} candidates (top {TOP_N} by score).")
+    # Generate one digest per branch + one combined "All" digest
+    branch_cases = [
+        (None, "All Branches"),
+        ("Healthcare", "Healthcare"),
+        ("Agriculture & Food", "Agriculture & Food"),
+        ("Exact & Social Sciences", "Exact & Social Sciences"),
+    ]
 
-    if not papers:
-        print("No papers found — aborting.")
-        return
+    for branch, label in branch_cases:
+        print(f"\n{'='*55}")
+        print(f"Branch: {label}")
+        branch_fields = BRANCHES[branch] if branch else None
 
-    print("Asking Gemini to curate the digest...")
-    curation = curate_with_gemini(papers)
-    selected = curation.get("selected", [])
-    print(f"  Gemini selected {len(selected)} papers.")
-    print(f"  Executive summary: {curation.get('executive_summary','')[:120]}...")
+        print("Loading top papers from Google Sheet...")
+        papers = load_top_papers(branch_fields=branch_fields)
+        print(f"  {len(papers)} candidates (top {TOP_N} by score).")
 
-    print("Generating PDF...")
-    generate_pdf(papers, curation, monthly=monthly)
-    print("Done.")
+        if not papers:
+            print(f"  No papers found for {label} — skipping.")
+            continue
+
+        print("Asking Gemini to curate the digest...")
+        curation = curate_with_gemini(papers)
+        selected = curation.get("selected", [])
+        print(f"  Gemini selected {len(selected)} papers.")
+        print(f"  Executive summary: {curation.get('executive_summary','')[:120]}...")
+
+        print("Generating PDF...")
+        generate_pdf(papers, curation, monthly=monthly, branch=branch)
+
+    print("\nAll digests done.")
 
 
 if __name__ == "__main__":
