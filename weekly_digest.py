@@ -53,7 +53,17 @@ DIGEST_MODEL_CANDIDATES = [
 
 # ── Load sheet ───────────────────────────────────────────────────────────────
 
-def load_top_papers(branch_fields=None):
+def _primary_branch(fields):
+    """Return the branch name(s) with the most field-tag matches (exclusive for digest)."""
+    best, best_n = None, 0
+    for branch, branch_fields in BRANCHES.items():
+        n = sum(1 for f in fields if f in branch_fields)
+        if n > best_n:
+            best_n, best = n, branch
+    return best  # None if no matches
+
+
+def load_top_papers(branch_name=None, top_n=TOP_N):
     url = (
         f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}"
         f"/export?format=csv&gid=0"
@@ -85,8 +95,8 @@ def load_top_papers(branch_fields=None):
                 continue
         except Exception:
             pass  # if no/invalid added_date, include it anyway
-        # Filter by branch if specified
-        if branch_fields and not any(f in branch_fields for f in p.get("fields", [])):
+        # Filter by branch using exclusive primary-branch assignment
+        if branch_name and _primary_branch(p.get("fields", [])) != branch_name:
             excluded += 1
             continue
         papers.append(p)
@@ -94,13 +104,13 @@ def load_top_papers(branch_fields=None):
     if papers:
         print(f"  Sample added_date values: {[p.get('added_date','') for p in papers[:3]]}")
     papers.sort(key=lambda x: x["score"], reverse=True)
-    return papers[:TOP_N]
+    return papers[:top_n]
 
 # ── Gemini curation ──────────────────────────────────────────────────────────
 
 CURATION_PROMPT = """You are a technology-transfer analyst at Hebrew University of Jerusalem.
 Review these {n} research papers and select the most commercially promising ones
-for a digest sent to investors and industry partners.
+for a {period_label} digest sent to investors and industry partners.
 
 Papers:
 {paper_list}
@@ -112,11 +122,11 @@ Return a JSON object (no markdown) with exactly these keys:
     - headline: one punchy sentence on the commercial angle (max 20 words)
     - why_now: 1-2 sentences on timing, market gap, or near-term opportunity
 
-Select up to 12 papers (or all of them if there are 12 or fewer).
+Select up to {max_select} papers (or all if fewer are available).
 Pick for commercial impact, not just high score. Aim for diversity of fields.
 """
 
-def curate_with_gemini(papers):
+def curate_with_gemini(papers, monthly=False):
     paper_list = "\n\n".join(
         f"[{i+1}] Score: {p['score']}/50 | PI: {p.get('pi','—')} | "
         f"Fields: {', '.join(p.get('fields', []))}\n"
@@ -125,7 +135,10 @@ def curate_with_gemini(papers):
         f"Opportunity: {p.get('opportunity','')}"
         for i, p in enumerate(papers)
     )
-    prompt = CURATION_PROMPT.format(n=len(papers), paper_list=paper_list)
+    period_label = "monthly overview" if monthly else "weekly"
+    max_select = 20 if monthly else 12
+    prompt = CURATION_PROMPT.format(n=len(papers), paper_list=paper_list,
+                                    period_label=period_label, max_select=max_select)
     last_err = None
     for model_id in DIGEST_MODEL_CANDIDATES:
         try:
@@ -438,21 +451,22 @@ def main(monthly=False):
         ("Exact & Social Sciences", "Exact & Social Sciences"),
     ]
 
+    top_n = 40 if monthly else 20  # monthly draws from a larger pool
+
     for branch, label in branch_cases:
         print(f"\n{'='*55}")
         print(f"Branch: {label}")
-        branch_fields = BRANCHES[branch] if branch else None
 
         print("Loading top papers from Google Sheet...")
-        papers = load_top_papers(branch_fields=branch_fields)
-        print(f"  {len(papers)} candidates (top {TOP_N} by score).")
+        papers = load_top_papers(branch_name=branch, top_n=top_n)
+        print(f"  {len(papers)} candidates (top {top_n} by score).")
 
         if not papers:
             print(f"  No papers found for {label} — skipping.")
             continue
 
         print("Asking Gemini to curate the digest...")
-        curation = curate_with_gemini(papers)
+        curation = curate_with_gemini(papers, monthly=monthly)
         selected = curation.get("selected", [])
         print(f"  Gemini selected {len(selected)} papers.")
         print(f"  Executive summary: {curation.get('executive_summary','')[:120]}...")

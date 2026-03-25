@@ -999,17 +999,20 @@ function renderBreakdown(bd){{
   }}).join('');
   return `<div class="breakdown">${{rows}}</div>`;
 }}
-function primaryBranch(p){{
-  // Assign paper to the branch with the most matching field tags (exclusive)
-  let best=null,bestN=0;
-  for(const [branch,bFields] of Object.entries(BRANCHES)){{
-    const n=(p.fields||[]).filter(f=>bFields.includes(f)).length;
-    if(n>bestN){{bestN=n;best=branch;}}
-  }}
-  return best;
+function branchMatches(p){{
+  // Returns an object {{branch: bool}} — true if this branch has the highest field-tag match.
+  // Ties: the paper appears in ALL tied branches.
+  const fields=p.fields||[];
+  const counts={{}};
+  for(const [b,bf] of Object.entries(BRANCHES)) counts[b]=fields.filter(f=>bf.includes(f)).length;
+  const best=Math.max(...Object.values(counts));
+  if(best===0)return null; // unclassified — only shows under "All"
+  const result={{}};
+  for(const b of Object.keys(BRANCHES)) result[b]=counts[b]===best;
+  return result;
 }}
 function applyFilters(list,{{skipPeriod,skipField}}){{
-  if(activeBranch!=='all')list=list.filter(p=>primaryBranch(p)===activeBranch);
+  if(activeBranch!=='all')list=list.filter(p=>{{const m=branchMatches(p);return m&&m[activeBranch];}});
   if(searchQ){{const q=searchQ.toLowerCase();list=list.filter(p=>(p.title||'').toLowerCase().includes(q)||(p.summary||'').toLowerCase().includes(q)||(p.opportunity||'').toLowerCase().includes(q));}}
   if(!skipPeriod&&activePeriod!=='all')list=list.filter(p=>daysAgo(p.date)<=parseInt(activePeriod));
   if(activeScore>0)list=list.filter(p=>p.score>=activeScore);

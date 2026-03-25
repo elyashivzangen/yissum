@@ -77,11 +77,12 @@ story += [
     body("The HUJI Research Monitor automatically discovers new academic papers from PubMed, "
          "Europe PMC, and Semantic Scholar that are affiliated with the Hebrew University of Jerusalem "
          "or Hadassah Medical Center. Each paper is evaluated by an AI model (Gemini) across five "
-         "commercial dimensions and the results are surfaced in three outputs:"),
+         "commercial dimensions and the results are surfaced in four outputs:"),
     sp(1),
-    bullet("<b>Interactive HTML viewer</b> (papers_reader.html) — browse, search, and filter all papers."),
-    bullet("<b>Weekly digest PDF</b> — curated 1–2 pager with the most commercially promising papers of the week."),
-    bullet("<b>Monthly digest PDF</b> — broader overview for the past month."),
+    bullet("<b>Interactive HTML viewer</b> (papers_reader.html) — browse, search, and filter all papers "
+           "across three branch dashboards: Healthcare, Agriculture &amp; Food, and Exact &amp; Social Sciences."),
+    bullet("<b>Weekly digest PDFs</b> — four curated PDFs each week: one combined and one per branch."),
+    bullet("<b>Monthly digest PDFs</b> — same four PDFs with a 31-day window and broader selection."),
     bullet("<b>Google Sheet</b> — full database with all papers, scores, and PI contacts."),
     sp(2),
 ]
@@ -94,9 +95,9 @@ story += [
 ]
 tdata = [
     ["Workflow", "Schedule", "What it does"],
-    ["papers_pipeline.yml", "Every Monday 06:00 UTC", "Fetch new papers, score with AI, update sheet & HTML"],
-    ["weekly_digest.yml",   "Every Monday 09:00 UTC", "Generate weekly digest PDF from top papers"],
-    ["monthly_digest.yml",  "1st of each month 10:00 UTC", "Generate monthly digest PDF from past 31 days"],
+    ["papers_pipeline.yml", "Every Monday 06:00 UTC", "Fetch new papers, score with AI, update sheet & HTML viewer"],
+    ["weekly_digest.yml",   "Every Monday 09:00 UTC", "Generate 4 weekly PDFs: All + Healthcare + Agri&Food + Exact&Social"],
+    ["monthly_digest.yml",  "1st of each month 10:00 UTC", "Generate 4 monthly PDFs (31-day window, up to 20 papers each)"],
 ]
 t = Table(tdata, colWidths=[44*mm, 50*mm, 74*mm])
 t.setStyle(TableStyle([
@@ -184,6 +185,37 @@ story += [sl, sp(2),
 # ── 5. HTML Viewer ────────────────────────────────────────────────────────────
 story += [
     h2("5. Using the HTML Viewer"),
+    h3("Branch Dashboards"),
+    body("Four tabs at the top switch between the three Yissum TTO branches plus a combined view:"),
+    sp(1),
+]
+branch_data = [
+    ["Tab", "Covers"],
+    ["All Branches",           "Every paper regardless of field"],
+    ["Healthcare",             "Drug Discovery, Medical Device, Diagnostics, Vaccines, Neuroscience, "
+                               "Genomics, Imaging, Synthetic Biology, Proteomics, Immunology, Clinical"],
+    ["Agriculture & Food",     "AgriTech, FoodTech"],
+    ["Exact & Social Sciences","Materials, Clean Energy, Software/AI, Quantum, Other"],
+]
+bt = Table(branch_data, colWidths=[42*mm, 126*mm])
+bt.setStyle(TableStyle([
+    ("BACKGROUND", (0,0), (-1,0), ACCENT),
+    ("TEXTCOLOR",  (0,0), (-1,0), colors.white),
+    ("FONTNAME",   (0,0), (-1,0), "Helvetica-Bold"),
+    ("FONTSIZE",   (0,0), (-1,-1), 8.5),
+    ("ROWBACKGROUNDS", (0,1), (-1,-1), [LIGHT_BG, colors.white]),
+    ("GRID",       (0,0), (-1,-1), 0.4, MUTED),
+    ("VALIGN",     (0,0), (-1,-1), "TOP"),
+    ("TOPPADDING", (0,0), (-1,-1), 4),
+    ("BOTTOMPADDING", (0,0), (-1,-1), 4),
+    ("LEFTPADDING", (0,0), (-1,-1), 6),
+]))
+story += [bt, sp(1),
+    note("Each paper is assigned to the branch with the most matching field tags. "
+         "If two branches tie, the paper appears in both."),
+    sp(1),
+    body("Switching branch tabs also updates the Latest Weekly and Latest Monthly header links "
+         "to point to that branch's specific digest PDF."),
     h3("Search"),
     body("Type any keyword in the search box to filter by title, summary, or commercial opportunity text."),
     h3("Period Filter"),
@@ -193,7 +225,7 @@ story += [
     h3("Parameter Filter"),
     body("Select a specific scoring dimension (e.g. Novelty) and drag its slider to filter by that sub-score."),
     h3("Field Filter"),
-    body("Click a research field chip to show only papers in that domain."),
+    body("Click a research field chip to show only papers in that domain (within the active branch)."),
     h3("Sort"),
     body("Sort by Score (highest first) or by Date (most recent first)."),
     h3("Score Breakdown"),
@@ -206,10 +238,19 @@ story += [
 # ── 6. Digest PDFs ────────────────────────────────────────────────────────────
 story += [
     h2("6. Digest PDFs"),
-    body("The weekly digest PDF is a curated 1-2 page summary of the 8-12 highest-scoring papers "
-         "from the past 7 days. It includes investor-facing headlines, a brief summary, "
-         "and a 'Why now' context sentence for each paper. The monthly digest covers the past 31 days."),
-    body("Digests are committed to the <b>digests/</b> folder and linked from the HTML viewer header."),
+    body("Each weekly and monthly run generates <b>four PDFs</b> — one combined and one per branch:"),
+    sp(1),
+    bullet("<b>HUJI_digest_YYYY_W##.pdf</b> — all branches, top 12 papers, 7-day window."),
+    bullet("<b>HUJI_digest_YYYY_W##_Healthcare.pdf</b> — Healthcare branch only."),
+    bullet("<b>HUJI_digest_YYYY_W##_Agriculture_Food.pdf</b> — Agriculture &amp; Food branch only."),
+    bullet("<b>HUJI_digest_YYYY_W##_Exact_Social_Sciences.pdf</b> — Exact &amp; Social Sciences branch only."),
+    sp(1),
+    body("Monthly PDFs follow the same naming pattern with <i>_M##</i> instead of <i>_W##</i>, "
+         "cover the past 31 days, and Gemini selects up to 20 papers per digest."),
+    body("Each PDF includes an AI-written executive summary, investor-facing headlines, "
+         "and a 'Why Now' paragraph for each selected paper."),
+    body("Digests are committed to the <b>digests/</b> folder. The HTML viewer header links "
+         "update automatically to the branch-specific digest when you switch tabs."),
     sp(2),
 ]
 
