@@ -961,6 +961,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <script>
 const papers = {papers_json};
 const BRANCHES = {branches_json};
+const DIGEST_URLS = {digest_urls_json};
 document.getElementById('updated').textContent = 'Updated {updated}';
 const TODAY=new Date(); TODAY.setHours(0,0,0,0);
 function parseDate(d){{
@@ -998,8 +999,17 @@ function renderBreakdown(bd){{
   }}).join('');
   return `<div class="breakdown">${{rows}}</div>`;
 }}
+function primaryBranch(p){{
+  // Assign paper to the branch with the most matching field tags (exclusive)
+  let best=null,bestN=0;
+  for(const [branch,bFields] of Object.entries(BRANCHES)){{
+    const n=(p.fields||[]).filter(f=>bFields.includes(f)).length;
+    if(n>bestN){{bestN=n;best=branch;}}
+  }}
+  return best;
+}}
 function applyFilters(list,{{skipPeriod,skipField}}){{
-  if(activeBranch!=='all'){{const bf=BRANCHES[activeBranch]||[];list=list.filter(p=>(p.fields||[]).some(f=>bf.includes(f)));}}
+  if(activeBranch!=='all')list=list.filter(p=>primaryBranch(p)===activeBranch);
   if(searchQ){{const q=searchQ.toLowerCase();list=list.filter(p=>(p.title||'').toLowerCase().includes(q)||(p.summary||'').toLowerCase().includes(q)||(p.opportunity||'').toLowerCase().includes(q));}}
   if(!skipPeriod&&activePeriod!=='all')list=list.filter(p=>daysAgo(p.date)<=parseInt(activePeriod));
   if(activeScore>0)list=list.filter(p=>p.score>=activeScore);
@@ -1075,6 +1085,11 @@ document.querySelectorAll('.branch-tab').forEach(tab=>tab.addEventListener('clic
   activeField='all';
   document.querySelectorAll('.chip[data-filter="field"]').forEach(x=>x.classList.remove('active'));
   document.querySelector('.chip[data-filter="field"][data-val="all"]').classList.add('active');
+  // Update Weekly/Monthly digest links for this branch
+  const urls=(DIGEST_URLS[activeBranch]||DIGEST_URLS['all']||{{}});
+  const wl=document.getElementById('link-weekly'),ml=document.getElementById('link-monthly');
+  if(wl&&urls.weekly)wl.href=urls.weekly;
+  if(ml&&urls.monthly)ml.href=urls.monthly;
   render();
 }}));
 document.getElementById('score-slider').addEventListener('input',function(){{
@@ -1147,21 +1162,43 @@ def generate_html(papers):
         sheet_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}"
         header_links += f'<a class="header-link" href="{sheet_url}" target="_blank">📊 Spreadsheet</a>'
 
+    # Build per-branch digest URL map and header links
+    digest_urls = {"all": {"weekly": "", "monthly": ""}}
+    for _b in BRANCHES:
+        digest_urls[_b] = {"weekly": "", "monthly": ""}
+
     repo = os.environ.get("GITHUB_REPOSITORY", "")
     if repo:
         owner, rname = (repo.split("/") + [""])[:2]
         base = f"https://{owner}.github.io/{rname}"
         digests_dir = Path("digests")
         if digests_dir.is_dir():
-            pdfs = sorted(digests_dir.glob("HUJI_digest_*.pdf"))
-            weeklies  = [p for p in pdfs if "_W" in p.stem]
-            monthlies = [p for p in pdfs if "_M" in p.stem]
-            if weeklies:
-                url = f"{base}/digests/{weeklies[-1].name}"
-                header_links += f'<a class="header-link" href="{url}" target="_blank">📄 Latest Weekly</a>'
-            if monthlies:
-                url = f"{base}/digests/{monthlies[-1].name}"
-                header_links += f'<a class="header-link" href="{url}" target="_blank">📅 Latest Monthly</a>'
+            # Scan PDFs newest-first; assign to branch key by stem suffix
+            for pdf in reversed(sorted(digests_dir.glob("HUJI_digest_*.pdf"))):
+                parts = pdf.stem.split("_")   # ["HUJI","digest","YYYY","W##", ...]
+                if len(parts) < 4:
+                    continue
+                is_weekly = parts[3].startswith("W")
+                suffix = "_".join(parts[4:])  # "" for all-branches, "Healthcare" etc.
+                if not suffix:
+                    key = "all"
+                else:
+                    key = next((b for b in BRANCHES
+                                if b.replace(" & ", "_").replace(" ", "_") == suffix), None)
+                if key is None:
+                    continue
+                field = "weekly" if is_weekly else "monthly"
+                if not digest_urls[key][field]:
+                    digest_urls[key][field] = f"{base}/digests/{pdf.name}"
+
+            # Header links use "all" digest (JS overrides per active branch)
+            if digest_urls["all"]["weekly"]:
+                header_links += (f'<a class="header-link" id="link-weekly" '
+                                 f'href="{digest_urls["all"]["weekly"]}" target="_blank">📄 Latest Weekly</a>')
+            if digest_urls["all"]["monthly"]:
+                header_links += (f'<a class="header-link" id="link-monthly" '
+                                 f'href="{digest_urls["all"]["monthly"]}" target="_blank">📅 Latest Monthly</a>')
+
         manual = Path("docs/HUJI_Research_Monitor_Guide.pdf")
         if manual.exists():
             manual_url = f"{base}/docs/{manual.name}"
@@ -1171,6 +1208,7 @@ def generate_html(papers):
         field_chips=build_field_chips(),
         papers_json=json.dumps(enriched, ensure_ascii=False),
         branches_json=json.dumps(BRANCHES, ensure_ascii=False),
+        digest_urls_json=json.dumps(digest_urls, ensure_ascii=False),
         updated=today_str(),
         header_links=header_links,
     ), encoding="utf-8")
