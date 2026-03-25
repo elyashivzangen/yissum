@@ -1014,7 +1014,7 @@ function branchMatches(p){{
 function applyFilters(list,{{skipPeriod,skipField}}){{
   if(activeBranch!=='all')list=list.filter(p=>{{const m=branchMatches(p);return m&&m[activeBranch];}});
   if(searchQ){{const q=searchQ.toLowerCase();list=list.filter(p=>(p.title||'').toLowerCase().includes(q)||(p.summary||'').toLowerCase().includes(q)||(p.opportunity||'').toLowerCase().includes(q));}}
-  if(!skipPeriod&&activePeriod!=='all')list=list.filter(p=>daysAgo(p.added_date||p.date)<=parseInt(activePeriod));
+  if(!skipPeriod&&activePeriod!=='all')list=list.filter(p=>daysAgo(p.date)<=parseInt(activePeriod));
   if(activeScore>0)list=list.filter(p=>p.score>=activeScore);
   if(activeParam)list=list.filter(p=>((p.score_breakdown||{{}})[activeParam]||{{}}).score>=activeParamMin);
   if(!skipField&&activeField!=='all')list=list.filter(p=>(p.fields||[]).includes(activeField));
@@ -1029,7 +1029,7 @@ function render(){{
   document.querySelectorAll('.chip').forEach(b=>{{
     const f=b.dataset.filter,v=b.dataset.val,lbl=b.dataset.label||v;
     let sub=applyFilters(papers.slice(),{{skipPeriod:f==='period',skipField:f==='field'}});
-    if(f==='period'&&v!=='all')sub=sub.filter(p=>daysAgo(p.added_date||p.date)<=parseInt(v));
+    if(f==='period'&&v!=='all')sub=sub.filter(p=>daysAgo(p.date)<=parseInt(v));
     if(f==='field'&&v!=='all')sub=sub.filter(p=>(p.fields||[]).includes(v));
     b.textContent=lbl+' ('+sub.length+')';
   }});

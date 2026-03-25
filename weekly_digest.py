@@ -86,15 +86,15 @@ def load_top_papers(branch_name=None, top_n=TOP_N):
             p["fields"] = json.loads(p.get("fields", "[]"))
         except Exception:
             p["fields"] = []
-        # Only include papers added within the digest window
-        added_str = p.get("added_date", "").strip()
+        # Only include papers published within the digest window
+        pub_str = p.get("date", "").strip()
         try:
-            added = datetime.date.fromisoformat(added_str)
-            if added < cutoff:
+            pub = datetime.date.fromisoformat(pub_str)
+            if pub < cutoff:
                 excluded += 1
                 continue
         except Exception:
-            pass  # if no/invalid added_date, include it anyway
+            pass  # if no/invalid date, include it anyway
         # Filter by branch using exclusive primary-branch assignment
         if branch_name and _primary_branch(p.get("fields", [])) != branch_name:
             excluded += 1
@@ -102,7 +102,7 @@ def load_top_papers(branch_name=None, top_n=TOP_N):
         papers.append(p)
     print(f"  Rows: {len(papers)+excluded} total, {excluded} excluded, {len(papers)} kept.")
     if papers:
-        print(f"  Sample added_date values: {[p.get('added_date','') for p in papers[:3]]}")
+        print(f"  Sample pub date values: {[p.get('date','') for p in papers[:3]]}")
     papers.sort(key=lambda x: x["score"], reverse=True)
     return papers[:top_n]
 
