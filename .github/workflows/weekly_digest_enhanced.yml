@@ -1,0 +1,35 @@
+name: Weekly Digest (Enhanced Test)
+
+on:
+  workflow_dispatch:   # manual trigger only — does not run on schedule
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate enhanced weekly digest PDF
+        env:
+          GEMINI_API_KEY:  ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+        run: python weekly_digest_enhanced.py > digest_enhanced_run.log 2>&1 || echo "Script failed (exit $?)" >> digest_enhanced_run.log
+
+      - name: Commit PDFs and log
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add digests/*_enhanced.pdf digest_enhanced_run.log || true
+          git diff --cached --quiet || git commit -m "Enhanced digest test $(date -u +%Y-%m-%d)"
+          git push
