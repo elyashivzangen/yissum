@@ -2,58 +2,58 @@
 =======================================================
 Branch: All Branches
 Loading top papers from Google Sheet...
-  Sheet response: 200, 210479 bytes
-  Cutoff date: 2026-03-18  (DIGEST_WINDOW=7 days)
-  Rows: 71 total, 61 excluded, 10 kept.
-  Sample pub date values: ['2026-03-23', '2026 Mar 23', '2026 Mar 23']
-  10 candidates (top 20 by score).
+  Sheet response: 200, 259200 bytes
+  Cutoff date: 2026-03-23  (DIGEST_WINDOW=7 days)
+  Rows: 87 total, 67 excluded, 20 kept.
+  Sample pub date values: ['2026-03-28', '2026-03-28', '2026 Mar 26']
+  20 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 5 papers.
-  Executive summary: This week's digest highlights groundbreaking advancements from Hebrew University poised for significant commercial impac...
+  Gemini selected 12 papers.
+  Executive summary: The latest research digest highlights cutting-edge innovations across AI, diagnostics, and therapeutic development with ...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W13.pdf  (9 KB)
+PDF written: digests/HUJI_digest_2026_W14.pdf  (17 KB)
 
 =======================================================
 Branch: Healthcare
 Loading top papers from Google Sheet...
-  Sheet response: 200, 210479 bytes
-  Cutoff date: 2026-03-18  (DIGEST_WINDOW=7 days)
-  Rows: 71 total, 63 excluded, 8 kept.
-  Sample pub date values: ['2026-03-23', '2026 Mar 23', '2026 Mar 23']
-  8 candidates (top 20 by score).
+  Sheet response: 200, 259200 bytes
+  Cutoff date: 2026-03-23  (DIGEST_WINDOW=7 days)
+  Rows: 87 total, 70 excluded, 17 kept.
+  Sample pub date values: ['2026-03-28', '2026-03-28', '2026 Mar 26']
+  17 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 4 papers.
-  Executive summary: This week's digest highlights groundbreaking advancements across several high-impact fields, with a strong emphasis on a...
+  Gemini selected 12 papers.
+  Executive summary: This weekly digest from Hebrew University highlights cutting-edge research with high commercial potential, focusing on a...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W13_Healthcare.pdf  (7 KB)
+PDF written: digests/HUJI_digest_2026_W14_Healthcare.pdf  (17 KB)
 
 =======================================================
 Branch: Agriculture & Food
 Loading top papers from Google Sheet...
-  Sheet response: 200, 210479 bytes
-  Cutoff date: 2026-03-18  (DIGEST_WINDOW=7 days)
-  Rows: 71 total, 71 excluded, 0 kept.
+  Sheet response: 200, 259200 bytes
+  Cutoff date: 2026-03-23  (DIGEST_WINDOW=7 days)
+  Rows: 87 total, 87 excluded, 0 kept.
   0 candidates (top 20 by score).
   No papers found for Agriculture & Food — skipping.
 
 =======================================================
 Branch: Exact & Social Sciences
 Loading top papers from Google Sheet...
-  Sheet response: 200, 210479 bytes
-  Cutoff date: 2026-03-18  (DIGEST_WINDOW=7 days)
-  Rows: 71 total, 69 excluded, 2 kept.
-  Sample pub date values: ['2026 Mar 18', '2026 Mar 18']
-  2 candidates (top 20 by score).
+  Sheet response: 200, 259200 bytes
+  Cutoff date: 2026-03-23  (DIGEST_WINDOW=7 days)
+  Rows: 87 total, 84 excluded, 3 kept.
+  Sample pub date values: ['2026 Mar 26', '2026 Mar 26', '2026 Mar 25']
+  3 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
   Gemini selected 2 papers.
-  Executive summary: This week's digest spotlights research leveraging AI to address critical societal challenges in human interaction and in...
+  Executive summary: This digest highlights two cutting-edge research areas with significant commercial promise. The first focuses on develop...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W13_Exact_Social_Sciences.pdf  (5 KB)
+PDF written: digests/HUJI_digest_2026_W14_Exact_Social_Sciences.pdf  (4 KB)
 
 All digests done.
