@@ -1,15 +1,48 @@
 Loading existing papers from Google Sheet...
   71 existing papers loaded.
   Verifying HUJI affiliation for 68 papers via PubMed efetch...
-fetch_pubmed: 14 fetched, 0 new
-fetch_europepmc: 9 fetched, 0 new
+fetch_pubmed: 0 fetched, 0 new
+fetch_europepmc: 20 fetched, 16 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-0 unique new papers to evaluate.
+16 unique new papers to evaluate.
+Enriching PI contact info for 16 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
+  [1/16] Cognitive offloading reduces internal memory processing in children.
+    score=15 fields=['Neuroscience', 'Software/AI', 'Clinical', 'Other']
+  [2/16] Broken Promises: Betrayal and Support for Violence in Intergroup Relat
+    score=9 fields=['Software/AI', 'Neuroscience', 'Other']
+  [3/16] Commentary: Should we worry about climate worry? Understanding and pro
+    score=9 fields=['Software/AI', 'Neuroscience', 'Clinical', 'Other']
+  [4/16] Ocular Pharmacokinetics of Topical Chloramphenicol in Dogs: Effects of
+    score=16 fields=['Drug Discovery', 'Clinical', 'Medical Device', 'Other']
+  [5/16] Neural tracking at theta predicts drumming-induced altered states of c
+    score=17 fields=['Neuroscience', 'Software/AI', 'Medical Device', 'Clinical']
+  [6/16] Prediabetes in acute coronary syndrome: an overlooked predictor of adv
+    score=19 fields=['Diagnostics', 'Clinical', 'Drug Discovery']
+  [7/16] Understanding the cognitive and emotional foundations of mathematical 
+    score=13 fields=['Software/AI', 'Neuroscience', 'Clinical', 'Other']
+  [8/16] In defense of social friction.
+    score=17 fields=['Software/AI', 'Neuroscience', 'Other']
+  [9/16] A Bifunctional T3SS-Effector Simultaneously Cleaves Host MAP Kinase an
+    score=22 fields=['Drug Discovery', 'Immunology', 'Proteomics', 'Other']
+  [10/16] The framework and best practices of emergency medical teams: lessons l
+    score=12 fields=['Medical Device', 'Clinical', 'Software/AI', 'Other']
+  [11/16] Stringent selection on kinetics of condensation reactions: early steps
+    score=15 fields=['Synthetic Biology', 'Materials', 'Software/AI', 'Other']
+  [12/16] Beyond One Direction: Revisiting the Fragility Index.
+    score=15 fields=['Software/AI', 'Clinical', 'Drug Discovery']
+  [13/16] Burnout in Oncology Clinical Research Coordinators: Underlying Factors
+    score=9 fields=['Clinical', 'Software/AI', 'Immunology', 'Other']
+  [14/16] Reversible Epsilon Waves in Acute Pulmonary Embolism.
+    score=17 fields=['Diagnostics', 'Clinical', 'Imaging', 'Other']
+  [15/16] Brain malformations, oxidative and nitrosative stress induced prenatal
+    score=14 fields=['Drug Discovery', 'Neuroscience', 'Clinical', 'Other']
+  [16/16] Incidence and outcome of hemorrhagic cystitis after allogeneic hematop
+    score=11 fields=['Clinical', 'Immunology', 'Diagnostics', 'Drug Discovery']
 
-Retention: kept 71/71 existing, added 0 new.
-Writing 71 papers to Google Sheet...
-Sheet updated: {"status":"ok","rows":72}
-Generated papers_reader.html and papers_data.json with 71 papers.
+Retention: kept 71/71 existing, added 16 new.
+Writing 87 papers to Google Sheet...
+Sheet updated: {"status":"ok","rows":88}
+Generated papers_reader.html and papers_data.json with 87 papers.
 Done.

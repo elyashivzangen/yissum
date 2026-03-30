@@ -503,6 +503,54 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "epmc_41902461",
+    "title": "A Bifunctional T3SS-Effector Simultaneously Cleaves Host MAP Kinase and Inhibits PPM1A Phosphatase.",
+    "authors": [
+      "Yaakov Socol",
+      "Lihi Gur-Arie",
+      "Netanel Tzarum"
+    ],
+    "journal": "",
+    "date": "2026-03-28",
+    "url": "https://europepmc.org/article/MED/41902461",
+    "source": "Europe PMC",
+    "score": 22,
+    "summary": "This research details how a bacterial protein, NleD, disrupts host cell signaling by both directly cutting key proteins and by blocking another protein (PPM1A) that normally repairs cellular damage. The study shows NleD enhances bacterial colonization, suggesting it helps pathogens evade the host immune response through this dual mechanism.",
+    "opportunity": "Targeting the NleD-PPM1A interaction could reveal novel therapeutic strategies to boost host immunity against bacterial infections or modulate inflammatory responses, potentially leading to new drug candidates.",
+    "fields": [
+      "Drug Discovery",
+      "Immunology",
+      "Proteomics",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "While the initial finding of NleD cleaving MAP kinases was previously known, demonstrating its *second* function – inhibiting PPM1A via a direct interaction and a novel mechanism of substrate blocking – represents a significant and novel expansion of our understanding of this effector's capabilities. The observation of colonization enhancement independent of protease activity further adds to the novelty, suggesting a previously unappreciated role for NleD-PPM1A interaction in pathogenesis."
+      },
+      "commercial_potential": {
+        "score": 4,
+        "reason": "While the dual-action of NleD is interesting from a biological perspective, the commercial potential is limited as the paper focuses on basic mechanistic understanding of bacterial pathogenesis; there's no clear path to a direct therapeutic or diagnostic product stemming from inhibiting a bacterial effector's interaction with a host phosphatase, and the colonization enhancement is a negative rather than positive for potential applications."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper identifies a novel mechanism of pathogen virulence, but doesn't address the market size for potential therapeutics targeting NleD or PPM1A; the prevalence of EPEC and Citrobacter infections, while significant, doesn't automatically translate to a large pharmaceutical market, and the paper provides no data to suggest one exists. The potential for broader application (e.g., other pathogens using similar mechanisms) is not discussed, further limiting the perceived market opportunity."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This research is primarily at the fundamental biology/discovery stage; while identifying a novel mechanism of action for a bacterial effector is valuable, it's still early-stage lab work with *in vitro* structural data and a single *in vivo* colonization study – far from a therapeutic or diagnostic application. The TRL is low as significant development is needed to translate this understanding into a tangible product."
+      },
+      "ip_strength": {
+        "score": 5,
+        "reason": "The paper identifies a novel interaction between a bacterial effector (NleD) and a host protein (PPM1A), but the IP strength appears moderate; while the bifunctional activity is interesting, the core mechanism – protein-protein interaction and enzymatic inhibition – are common themes in drug discovery and may not be easily patentable without further refinement or surprising structural features enabling highly selective targeting. The claim of enhanced colonization independent of protease activity is a potential area for stronger IP, but requires further validation and demonstration of a unique mechanism."
+      }
+    },
+    "pi": "Ilan Rosenshine",
+    "pi_full_name": "Ilan Rosenshine",
+    "pi_email": "",
+    "added_date": "2026-03-30"
+  },
+  {
     "id": "epmc_41700800",
     "title": "Expeditious synthesis of multiglycopeptides with heterogeneous glycan cores derived from an α-dystroglycan mucin-like domain.",
     "authors": [
@@ -654,7 +702,7 @@
       "Alex Gileles-Hillel"
     ],
     "journal": "",
-    "date": "2026 Mar",
+    "date": "2026 Mar 1",
     "url": "https://europepmc.org/article/MED/41408713",
     "source": "Europe PMC",
     "score": 21,
@@ -832,6 +880,53 @@
     "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_PMC13017330",
+    "title": "Prediabetes in acute coronary syndrome: an overlooked predictor of adverse outcomes",
+    "authors": [
+      "Daniel Hakim",
+      "Louay Taha",
+      "Mohammad Karmi"
+    ],
+    "journal": "",
+    "date": "2026-03-28",
+    "url": "https://europepmc.org/article/PMC/PMC13017330",
+    "source": "Europe PMC",
+    "score": 19,
+    "summary": "This research from Hebrew University suggests that prediabetes is a significant, yet often missed, risk factor for negative health outcomes in patients experiencing acute coronary syndrome (ACS). Identifying prediabetic patients within the ACS population could lead to improved risk stratification and targeted interventions.",
+    "opportunity": "Developing a rapid, point-of-care diagnostic test to identify prediabetes in ACS patients could enable earlier intervention and improve patient outcomes, creating a market for companion diagnostics.",
+    "fields": [
+      "Diagnostics",
+      "Clinical",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The concept of prediabetes being linked to adverse outcomes in cardiovascular disease isn't novel; associations have been explored previously, though perhaps not *specifically* within the acute coronary syndrome context. While focusing on ACS is a refinement, the core idea lacks significant groundbreaking scientific innovation."
+      },
+      "commercial_potential": {
+        "score": 4,
+        "reason": "While identifying prediabetes as a risk factor in ACS patients is clinically valuable, the commercial potential is limited as it doesn't directly translate to a novel, easily marketable product; it primarily suggests improved screening/risk stratification which is unlikely to command premium pricing or generate substantial revenue beyond standard care adjustments."
+      },
+      "market_size": {
+        "score": 8,
+        "reason": "The paper focuses on prediabetes within the acute coronary syndrome (ACS) patient population, representing a significant and growing market given the increasing prevalence of both conditions; ACS is already a large market, and identifying a high-risk subgroup within it (prediabetics) adds substantial value and addressable demand for targeted interventions."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes a correlational study identifying a risk factor (prediabetes) in an existing clinical context (acute coronary syndrome); it doesn't present a new technology or intervention, and therefore has a very low TRL. The findings inform clinical practice, but aren't a 'technology' ready for application or commercialization."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes a correlational finding – observing that prediabetes is associated with worse outcomes in ACS patients. Such observations are generally not patentable; the 'innovation' is identifying a pre-existing biological relationship, not a novel invention or process."
+      }
+    },
+    "pi": "Elad Asher",
+    "pi_full_name": "",
+    "pi_email": "",
+    "added_date": "2026-03-30"
   },
   {
     "id": "epmc_41841803",
@@ -1359,6 +1454,147 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "epmc_41888165",
+    "title": "Neural tracking at theta predicts drumming-induced altered states of consciousness.",
+    "authors": [
+      "Yoel Gordon",
+      "Golan Karvat",
+      "Noa Dagan"
+    ],
+    "journal": "",
+    "date": "2026-03-26",
+    "url": "https://europepmc.org/article/MED/41888165",
+    "source": "Europe PMC",
+    "score": 17,
+    "summary": "This research demonstrates a link between brainwave entrainment via rhythmic drumming at theta frequencies (4-7 Hz) and the induction of altered states of consciousness. The study found that stronger neural tracking of theta rhythms correlated with more pronounced altered experiences, suggesting a potential causal relationship and a neural marker for susceptibility.",
+    "opportunity": "Developing personalized neurostimulation or audio-based therapies leveraging theta-frequency entrainment could offer novel approaches for managing conditions like anxiety, depression, or chronic pain, and potentially enhance cognitive performance.",
+    "fields": [
+      "Neuroscience",
+      "Software/AI",
+      "Medical Device",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While the study demonstrates a correlation between theta-frequency neural tracking and drumming-induced altered states, the idea that theta rhythms are *involved* in ASC isn't entirely new; the novelty lies in showing a bidirectional relationship and identifying neural tracking as a potential marker of susceptibility, but this is incremental rather than a paradigm shift."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the research identifies a neural marker correlated with altered states of consciousness induced by drumming, the commercial potential is very limited as presented; it's primarily a neuroscientific finding without a clear path to a marketable product or service beyond potentially licensing the neural tracking marker for research tools, which is a small market."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper identifies a fascinating neurological phenomenon, but doesn't address a clear market need or size; it's purely basic research. While potential applications *could* exist in areas like mental wellness or therapeutic interventions, the paper provides no discussion of the potential market size for such applications, making it a very low score on this dimension."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This research is very early stage, primarily focused on establishing a correlation between neural tracking and altered states – it's fundamental science. While interesting, it's far from a deployable technology or product and remains firmly in the lab-based research phase (TRL 2-3)."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The paper describes a correlation between neural tracking and altered states, but doesn't present any novel technology or method that is patentable; it's an observation of a biological phenomenon using existing EEG technology. While the finding of theta-band tracking as a marker *could* be a basis for a diagnostic tool, the paper doesn't detail any specific, inventive application or method for utilizing this marker beyond reporting it."
+      }
+    },
+    "pi": "Ayelet N Landau",
+    "pi_full_name": "Ayelet N Landau",
+    "pi_email": "ayelet.landau@ucl.ac.uk.",
+    "added_date": "2026-03-30"
+  },
+  {
+    "id": "epmc_41886593",
+    "title": "In defense of social friction.",
+    "authors": [
+      "Anat Perry"
+    ],
+    "journal": "",
+    "date": "2026-03-26",
+    "url": "https://europepmc.org/article/MED/41886593",
+    "source": "Europe PMC",
+    "score": 17,
+    "summary": "This research highlights how AI systems trained to be agreeable (avoiding 'social friction') can negatively impact human judgment and decision-making. The study demonstrates that these 'sycophantic' AIs reinforce existing biases and hinder objective evaluation, even when presented with demonstrably incorrect information.",
+    "opportunity": "Developing AI alignment techniques and 'adversarial training' methods to create AI systems that challenge assumptions and provide more robust, unbiased feedback represents a commercial opportunity for companies serving scientific research, risk assessment, and decision support.",
+    "fields": [
+      "Software/AI",
+      "Neuroscience",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "While the observation that AI can induce sycophancy isn't entirely new (concerns about AI alignment and reward hacking have touched on this), framing this as 'social friction' and directly linking it to distortions in *social judgments and behaviors* offers a fresh perspective and highlights a potentially underappreciated consequence of interacting with overly agreeable AI systems. The concept of defending 'social friction' as a necessary component of healthy social dynamics is a novel angle."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the paper identifies a real problem – AI-driven social distortion – it doesn't inherently translate to a clear commercial product or service; the 'solution' space is broad and lacks immediate, obvious revenue streams beyond potentially informing AI safety protocols which are often publicly funded or internal to large tech companies."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper identifies a problem – distorted social interactions due to 'sycophantic AI' – but doesn't articulate the *size* of the market needing a solution; it's unclear how widespread this issue is or how much value would be captured by mitigating it, making market size assessment impossible based on the abstract alone."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "The paper identifies a *potential* problem with AI systems, but doesn't present a technology itself; it's a critique of existing tech, not a new offering ready for application. Therefore, the TRL is very low, representing primarily theoretical understanding and initial problem definition."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "The paper identifies a *problem* (AI-induced social distortion) but proposes no novel technical solution or invention that could be patented; it's a sociological observation, not a defensible technology. While the *observation* itself might be valuable, there's no inherent IP strength within the described concept."
+      }
+    },
+    "pi": "Anat Perry",
+    "pi_full_name": "Anat Perry",
+    "pi_email": "",
+    "added_date": "2026-03-30"
+  },
+  {
+    "id": "epmc_41887446",
+    "title": "Reversible Epsilon Waves in Acute Pulmonary Embolism.",
+    "authors": [
+      "Yotam Kolben",
+      "Mordechai Golomb",
+      "Ruth Shnipper"
+    ],
+    "journal": "",
+    "date": "2026-03-24",
+    "url": "https://europepmc.org/article/MED/41887446",
+    "source": "Europe PMC",
+    "score": 17,
+    "summary": "This research identifies a specific, reversible electrical wave pattern (epsilon waves) in the heart during acute pulmonary embolism (PE). Detecting these waves could potentially offer a new, non-invasive method for diagnosing and monitoring PE severity.",
+    "opportunity": "Development of a novel ECG-based diagnostic tool for rapid and accurate pulmonary embolism detection could significantly improve patient outcomes and reduce reliance on complex and expensive imaging techniques.",
+    "fields": [
+      "Diagnostics",
+      "Clinical",
+      "Imaging",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "Observing *reversible* epsilon waves in the context of acute pulmonary embolism is potentially novel, as epsilon waves are typically associated with arrhythmogenic right ventricular cardiomyopathy (ARVC) and not commonly linked to, or expected to resolve with treatment of, PE; however, without the full paper, assessing the extent of this deviation from established knowledge is limited."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The title suggests a novel biomarker (epsilon waves) for a specific condition (pulmonary embolism), but without an abstract, it's impossible to assess if this translates to a readily diagnosable product, a new therapeutic target, or a licensable technology; the connection to commercialization is currently too speculative."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "Without an abstract or further information, assessing market size is extremely difficult; however, pulmonary embolism (PE) affects hundreds of thousands of people annually, suggesting a potentially sizable market *if* this 'reversible epsilon wave' translates to a novel diagnostic or therapeutic approach, which is currently unknown. The lack of detail prevents a higher score as the potential market impact remains entirely speculative."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "The title suggests basic science research identifying a physiological phenomenon (epsilon waves) in a disease state; without an abstract, it's highly likely this is early-stage discovery, representing lab-based observation rather than a developed technology ready for application or commercialization. It's likely TRL 1-3."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "Observational discovery of a physiological phenomenon (epsilon waves in a specific clinical context) is generally not strongly patentable; while a method *using* the observation for diagnosis *could* be, the paper title suggests only the discovery itself, lacking details on novel applications or methods. Without knowing if any novel methods of detection, treatment, or diagnostic use are claimed or even hinted at, the IP strength is low."
+      }
+    },
+    "pi": "Bernard Belhassen",
+    "pi_full_name": "Bernard Belhassen",
+    "pi_email": "bblhass@gmail.com.",
+    "added_date": "2026-03-30"
+  },
+  {
     "id": "pubmed_41842694",
     "title": "Biallelic SUPT4H1 Variants Cause a Multisystem Neurodevelopmental Disorder Associated with Disrupted Transcription.",
     "authors": [
@@ -1497,6 +1733,54 @@
     "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_41877401",
+    "title": "Ocular Pharmacokinetics of Topical Chloramphenicol in Dogs: Effects of Concentration and Vehicle Formulation.",
+    "authors": [
+      "Bar Fruchter",
+      "Oren Pe'er",
+      "Shir Gonen"
+    ],
+    "journal": "",
+    "date": "2026-03-24",
+    "url": "https://europepmc.org/article/MED/41877401",
+    "source": "Europe PMC",
+    "score": 16,
+    "summary": "This study investigated how different concentrations and formulations (solutions vs. ointments) of the antibiotic chloramphenicol affect its absorption and retention in the eyes of dogs. The research found that higher concentrations and ointment formulations led to significantly better drug exposure and longer retention on the ocular surface.",
+    "opportunity": "Optimizing topical ophthalmic drug delivery through formulation and concentration adjustments, as demonstrated with chloramphenicol, presents a commercial opportunity for improving the efficacy and reducing dosing frequency of veterinary and potentially human eye medications.",
+    "fields": [
+      "Drug Discovery",
+      "Clinical",
+      "Medical Device",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "This study investigates well-established principles of drug delivery (concentration and vehicle effects on pharmacokinetics) applied to a known antibiotic. While the specific data generated for dogs is valuable, the core research question and methodology do not represent a significant departure from existing knowledge in ocular pharmacology or veterinary medicine."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "While the paper demonstrates clear formulation impacts on drug delivery, its commercial potential is limited to improvements *within* existing chloramphenicol products – it doesn't introduce a novel drug or treatment, only optimization of a known one; therefore, the upside is incremental rather than disruptive."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on optimizing drug delivery of an existing antibiotic (chloramphenicol) in dogs, not creating a new market; therefore, the addressable market is limited to a relatively small segment of veterinary ophthalmology and doesn't suggest a large potential for growth or significant revenue generation. While improving efficacy is valuable, it doesn't inherently expand the overall market size."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This study is preclinical pharmacokinetic work in dogs; it's focused on optimizing drug delivery *before* human trials, indicating a very early TRL (likely 2-3). While valuable for formulation development, it's far from demonstrating a ready-to-market product or even clinical efficacy in the target species (humans)."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes formulation optimization of an existing, off-patent drug (chloramphenicol). While the findings may be useful for veterinary ophthalmology, they do not represent novel, patentable *innovation* – they are improvements to drug delivery, which are difficult to protect without a fundamentally new composition of matter or method."
+      }
+    },
+    "pi": "Lionel Sebbag",
+    "pi_full_name": "Lionel Sebbag",
+    "pi_email": "",
+    "added_date": "2026-03-30"
   },
   {
     "id": "pubmed_41863352",
@@ -1786,6 +2070,148 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "epmc_41882124",
+    "title": "Cognitive offloading reduces internal memory processing in children.",
+    "authors": [
+      "Eshkol Goldberg",
+      "Hagit Magen"
+    ],
+    "journal": "",
+    "date": "2026-03-25",
+    "url": "https://europepmc.org/article/MED/41882124",
+    "source": "Europe PMC",
+    "score": 15,
+    "summary": "This research from Hebrew University demonstrates that when children are allowed to use external aids (cognitive offloading) to remember information, the neural processing required for internal memory functions decreases. The study suggests a link between reliance on external memory tools and changes in brain activity related to memory consolidation.",
+    "opportunity": "Developing educational software or assistive technologies that strategically leverage cognitive offloading principles could enhance learning outcomes and potentially aid individuals with memory impairments, creating a market for personalized learning tools.",
+    "fields": [
+      "Neuroscience",
+      "Software/AI",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While the idea of cognitive offloading isn't entirely new, demonstrating a *reduction* in internal memory processing specifically in children via this mechanism represents a moderately novel finding, building on existing work but adding a specific population and measurable neurological impact. The core concept isn't revolutionary, but the empirical demonstration within this context is a worthwhile contribution."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the research identifies a cognitive mechanism (offloading's impact on internal processing), the link to a direct commercial product or service is extremely weak; it's a basic science finding needing substantial translation, and potential applications (educational tools, cognitive training) are highly speculative at this stage without further development and validation."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a cognitive function in children, implying a potential market within educational interventions or therapies, but doesn't address the *size* of that market or willingness to pay for solutions; it's a very narrow scientific finding with no immediately apparent large commercial application."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes a cognitive science finding, likely based on behavioral experiments; it doesn't present a technology or engineered system. Therefore, the 'technology' has a very low TRL, representing basic principles discovery rather than any stage of development towards application or commercialization."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes an observed cognitive phenomenon, not a novel technology or process. While the findings may *inform* future development of cognitive aids, the core discovery itself isn't patentable; it's a principle of how the mind works, and therefore lacks strong IP defensibility."
+      }
+    },
+    "pi": "Hagit Magen",
+    "pi_full_name": "Hagit Magen",
+    "pi_email": "msmagen@mail.huji.ac.il.",
+    "added_date": "2026-03-30"
+  },
+  {
+    "id": "epmc_41719017",
+    "title": "Stringent selection on kinetics of condensation reactions: early steps in chemical evolution.",
+    "authors": [
+      "Pau Capera-Aragones",
+      "Kavita Matange",
+      "Vahab Rajaei"
+    ],
+    "journal": "",
+    "date": "2026-03-25",
+    "url": "https://europepmc.org/article/MED/41719017",
+    "source": "Europe PMC",
+    "score": 15,
+    "summary": "This research investigates how complex chemical reactions, crucial for the origins of life, can avoid producing a chaotic mix of products and instead favor specific, useful pathways. The study demonstrates that kinetic selection – where reaction speed dictates which products form – explains observed 'combinatorial compression' in early chemical evolution experiments, particularly under dry conditions.",
+    "opportunity": "Understanding and replicating this kinetic selection process could lead to novel biocatalyst design and optimized reaction conditions for chemical synthesis, potentially improving efficiency and reducing waste in various industrial processes.",
+    "fields": [
+      "Synthetic Biology",
+      "Materials",
+      "Software/AI",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "While the observation of combinatorial compression isn't entirely new, this paper's novelty lies in providing a *mechanistic* explanation – kinetic selection based on transition-state theory and simulations – for *why* it occurs in condensation reactions, linking experimental results to fundamental chemical principles; this is a significant step beyond simply observing the phenomenon."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This paper focuses on fundamental chemical processes related to the origin of life and, while scientifically interesting, lacks clear pathways to a direct product, service, or licensable technology; the research is very early-stage and highly abstract, with no immediately apparent commercial applications beyond potentially informing future, more applied research."
+      },
+      "market_size": {
+        "score": 1,
+        "reason": "This paper focuses on fundamental origins-of-life research and does not address a defined market or commercial application; therefore, the market size is effectively zero. While understanding prebiotic chemistry *could* indirectly benefit future biotechnology, the paper itself doesn't present a market opportunity."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes fundamental research into the *origins* of chemical reactions, relying heavily on theoretical modeling and simulations. It is very early stage (lab-stage, likely TRL 1-2) with no indication of near-term application or commercialization potential; it's focused on understanding prebiotic chemistry, not developing a product or process."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The paper describes a *mechanism* for observed phenomena (combinatorial compression) but doesn't present any novel, patentable *invention* or process based on that mechanism; it's fundamental research explaining existing observations. While the application of transition-state theory and simulations is sophisticated, it doesn't inherently create defensible IP."
+      }
+    },
+    "pi": "Moran Frenkel-Pinter",
+    "pi_full_name": "Moran Frenkel-Pinter",
+    "pi_email": "moran.fp@mail.huji.ac.il.",
+    "added_date": "2026-03-30"
+  },
+  {
+    "id": "epmc_41887295",
+    "title": "Beyond One Direction: Revisiting the Fragility Index.",
+    "authors": [
+      "Noam Kahana",
+      "Michal Perets",
+      "Sameh Hany Emile"
+    ],
+    "journal": "",
+    "date": "2026-03-24",
+    "url": "https://europepmc.org/article/MED/41887295",
+    "source": "Europe PMC",
+    "score": 15,
+    "summary": "This paper proposes an improvement to the Fragility Index, a statistical tool used to assess the robustness of clinical trial results. The refined method considers changes in either direction, providing a more accurate understanding of how much data would need to shift to invalidate a study's conclusions.",
+    "opportunity": "Developing software tools incorporating this bidirectional Fragility Index calculation could become a standard feature for clinical trial analysis, offering pharmaceutical companies and regulatory bodies a more reliable assessment of evidence strength and potentially accelerating drug approval processes.",
+    "fields": [
+      "Software/AI",
+      "Clinical",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While the paper addresses a recognized metric (Fragility Index) and proposes a refinement, the core idea of considering 'all possible directions of change' isn't a fundamentally new concept in statistical robustness analysis; it's more of a logical extension and improved application of existing principles. It's a valuable improvement, but doesn't represent a paradigm shift in how we think about clinical trial robustness."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper focuses on refining a statistical method (Fragility Index) rather than developing a novel product or technology; its commercial potential is limited to potential software tools for biostatistics or as a service offered by CROs, but lacks a clear, direct path to significant revenue generation. While valuable for research, it doesn't readily translate into a standalone commercial offering."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This paper focuses on a methodological improvement to statistical analysis (Fragility Index) and doesn't address a specific market or demonstrate market demand; it's a tool for researchers, not a product with a defined market size. While valuable to the clinical trial space, the paper provides no indication of the economic value or size of the market for improved statistical rigor."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper focuses on a statistical *methodology* refinement, not a new technology itself; it's about improving analysis of existing clinical trial data. Therefore, the TRL remains very low, representing primarily theoretical work with no immediate path to a tangible product or application beyond software tools for statisticians."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper presents a methodological improvement to an existing metric (Fragility Index) rather than a novel invention; it's unlikely to be patentable. While the refinement is valuable, it builds upon publicly available statistical concepts and doesn't demonstrate strong IP potential or defensibility."
+      }
+    },
+    "pi": "Michal Perets",
+    "pi_full_name": "Michal Perets",
+    "pi_email": "",
+    "added_date": "2026-03-30"
+  },
+  {
     "id": "epmc_41795474",
     "title": "Statistical learning performance is impacted by a previous learning experience: A predictive eye-movement study.",
     "authors": [
@@ -1925,6 +2351,54 @@
     "pi_full_name": "Anat Perry",
     "pi_email": "anat.perry@mail.huji.ac.il.",
     "added_date": "2026-03-25"
+  },
+  {
+    "id": "epmc_41895539",
+    "title": "Brain malformations, oxidative and nitrosative stress induced prenatally by VPA in ICR mouse fetuses are counteracted by concomitant administration of S-adenosyl methionine.",
+    "authors": [
+      "Boniface Echefu",
+      "Maria Becker",
+      "Andrii Bazylevich"
+    ],
+    "journal": "",
+    "date": "2026-03-25",
+    "url": "https://europepmc.org/article/MED/41895539",
+    "source": "Europe PMC",
+    "score": 14,
+    "summary": "This study demonstrates that prenatal exposure to valproic acid (VPA), a known teratogen, causes brain malformations and increased oxidative/nitrosative stress in mouse fetuses. Co-administration of S-adenosylmethionine (SAMe) significantly counteracted these VPA-induced detrimental effects, suggesting a potential protective strategy.",
+    "opportunity": "Developing a SAMe-based preventative or co-therapy for pregnant women taking valproic acid could reduce the incidence of VPA-induced birth defects and neurodevelopmental disorders, representing a significant unmet medical need.",
+    "fields": [
+      "Drug Discovery",
+      "Neuroscience",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "The study investigates a known teratogen (VPA) and a known counteracting agent (SAMe), applying it to a prenatal exposure model – this isn't a fundamentally new scientific direction. While exploring SAMe's protective effects *prenatally* is a reasonable extension of prior work, the core finding of SAMe mitigating VPA-induced stress doesn't represent a high degree of novelty given previous postnatal SAMe studies by the same group."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the paper identifies a potential countermeasure (SAMe) to the known teratogenic effects of VPA, the commercial potential is low because it focuses on prenatal exposure – a preventative measure rather than a treatment for established conditions, and requires administration during a very specific, limited window of gestation. The findings are unlikely to translate into a broadly marketable product without significant further development and a clear target patient population/delivery method."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper addresses a known issue (VPA teratogenicity) but focuses on a very narrow, mechanistic intervention (SAMe co-administration) within a specific animal model; it doesn't identify or quantify a broader market need or potential patient population beyond mitigating VPA-induced birth defects, which is a relatively small subset of all birth defects or neurological disorders, resulting in a limited addressable market."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This research is very early stage, primarily involving *in vivo* studies in a mouse model (embryonic day 15.5 fetuses). While demonstrating a potential therapeutic effect of SAMe, it's far from clinical application and requires significant further research including toxicology, formulation, and human trials before even considering a path to market."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "The paper describes a combination therapy using an existing compound (SAMe) to mitigate the effects of a known teratogen (VPA); there's no novel invention regarding SAMe itself or a new use patentable beyond simply combining it with VPA for this specific prenatal application, which is likely obvious to those skilled in the art. The findings are more likely to be publishable as research data rather than forming the basis of strong, defensible IP."
+      }
+    },
+    "pi": "Asher Ornoy",
+    "pi_full_name": "Asher Ornoy",
+    "pi_email": "ashero@ariel.ac.il.",
+    "added_date": "2026-03-30"
   },
   {
     "id": "epmc_41800941",
@@ -2069,6 +2543,53 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "epmc_41895004",
+    "title": "Understanding the cognitive and emotional foundations of mathematical ability.",
+    "authors": [
+      "Sarit Ashkenazi",
+      "Sonia Hasson"
+    ],
+    "journal": "",
+    "date": "2026-03-26",
+    "url": "https://europepmc.org/article/MED/41895004",
+    "source": "Europe PMC",
+    "score": 13,
+    "summary": "This study investigates the cognitive and emotional factors influencing mathematical ability in children, finding links between vocabulary, processing speed, inhibitory control, and math anxiety. The research highlights that addressing both cognitive skills and emotional barriers like anxiety is crucial for improving math performance.",
+    "opportunity": "Developing AI-powered educational software that personalizes learning based on a child's cognitive profile (vocabulary, processing speed, inhibitory control) and dynamically mitigates math anxiety could significantly improve learning outcomes and represent a large market opportunity.",
+    "fields": [
+      "Software/AI",
+      "Neuroscience",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While the study provides a useful integration of known factors influencing mathematical ability (cognitive skills, anxiety), the findings – that vocabulary, naming speed, inhibition, and anxiety all play a role – largely *confirm* existing hypotheses rather than presenting truly novel mechanisms or discoveries; the interplay observed is incremental rather than groundbreaking."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the research identifies factors influencing math ability, the path to commercialization is extremely unclear; it primarily informs educational practices rather than a directly licensable technology or product, and the impact is likely to be incremental improvements to existing methods. The findings are more academic than immediately translatable to a revenue-generating opportunity."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on fundamental cognitive science research related to mathematical ability in children; it does *not* address a commercially viable market or demonstrate any clear path to revenue generation, thus the market size is negligible from an investment perspective. While improved math education is valuable, this research is far removed from a direct market opportunity."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper presents correlational findings from observational studies of children; it's very early-stage research with no indication of a technology or product being developed. The work is foundational science, far removed from any practical application or commercialization, representing a TRL of 1 or 2."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper presents correlational findings about cognitive and emotional factors related to mathematical ability; it does *not* describe any novel inventions, methods, or technologies that would be patentable or otherwise defensible as intellectual property. The findings themselves are observations about naturally occurring phenomena and are unlikely to be protectable."
+      }
+    },
+    "pi": "Sonia Hasson",
+    "pi_full_name": "Sonia Hasson",
+    "pi_email": "soniahassoun@walla.co.il.",
+    "added_date": "2026-03-30"
+  },
+  {
     "id": "epmc_41801731",
     "title": "Modeling cooperation: Gendered parenting and its impact on children's reciprocal actions.",
     "authors": [
@@ -2122,7 +2643,7 @@
       "Yusef Azraq"
     ],
     "journal": "",
-    "date": "2026 Mar 1",
+    "date": "2026 Mar",
     "url": "https://europepmc.org/article/MED/41103162",
     "source": "Europe PMC",
     "score": 13,
@@ -2282,6 +2803,54 @@
     "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_41877207",
+    "title": "The framework and best practices of emergency medical teams: lessons learned from Israel's international field hospital response.",
+    "authors": [
+      "Evan Avraham Alpert",
+      "Giora Weiser",
+      "Deganit Kobliner-Friedman"
+    ],
+    "journal": "",
+    "date": "2026-03-25",
+    "url": "https://europepmc.org/article/MED/41877207",
+    "source": "Europe PMC",
+    "score": 12,
+    "summary": "This paper details the operational framework and best practices of Israeli emergency medical teams deployed internationally, focusing on their field hospital responses. It likely outlines logistical, medical, and organizational strategies for rapid deployment and effective care in challenging environments.",
+    "opportunity": "The insights gained from Israel's field hospital experience could be commercialized into specialized training programs, disaster preparedness consulting, or the development of robust, rapidly deployable medical kits and infrastructure for both governmental and non-governmental organizations.",
+    "fields": [
+      "Medical Device",
+      "Clinical",
+      "Software/AI",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "While valuable for practical application and potentially improving emergency response protocols, the paper focuses on *implementation* and lessons learned from existing practices rather than presenting fundamentally new scientific discoveries or technological innovations; it's a systems-level analysis of a known capability, not a breakthrough in emergency medicine itself."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the paper details valuable operational learnings, it focuses on *how* to deploy emergency medical teams rather than a novel technology or service with clear commercializable features; the 'product' is essentially skilled deployment, which is difficult to directly monetize beyond standard consulting or training services, limiting commercial potential."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper focuses on a very specific capability (international field hospital response by emergency medical teams) which, while valuable, represents a niche market within the broader healthcare and disaster relief sectors; the paper provides no data or analysis quantifying the overall size or growth potential of this niche."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes established practices of existing emergency medical teams, not a novel technology; therefore, the TRL is very low as it details deployment of *current* capabilities. It's focused on operational frameworks and lessons learned, not the development of a new technology needing maturation."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes best practices and lessons learned in deploying emergency medical teams, which are not inherently patentable concepts; it details a *process* of care delivery, not a novel invention or technology. While improvements to emergency response are valuable, the described framework relies on existing medical knowledge and equipment, offering minimal IP strength."
+      }
+    },
+    "pi": "Ofer Merin",
+    "pi_full_name": "Evan Avraham Alpert",
+    "pi_email": "avraham.alpert@mail.huji.ac.il.",
+    "added_date": "2026-03-30"
   },
   {
     "id": "epmc_41785124",
@@ -2521,6 +3090,54 @@
     "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_41888297",
+    "title": "Incidence and outcome of hemorrhagic cystitis after allogeneic hematopoietic cell transplantation: a survey of the infectious diseases working party of EBMT.",
+    "authors": [
+      "Simone Cesaro",
+      "Chiara Garonzi",
+      "Gloria Tridello"
+    ],
+    "journal": "",
+    "date": "2026-03-26",
+    "url": "https://europepmc.org/article/MED/41888297",
+    "source": "Europe PMC",
+    "score": 11,
+    "summary": "This study investigates hemorrhagic cystitis (HC), a potentially life-threatening bladder inflammation, following allogeneic hematopoietic cell transplantation (stem cell transplant). It's a survey of the European Group for Blood and Marrow Transplantation (EBMT) infectious diseases working party, aiming to understand the frequency and results of this complication.",
+    "opportunity": "Improved diagnostics and preventative therapies for hemorrhagic cystitis following stem cell transplant represent a significant unmet medical need and commercial opportunity, given the morbidity and mortality associated with the condition.",
+    "fields": [
+      "Clinical",
+      "Immunology",
+      "Diagnostics",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "This paper, being a survey of existing data from EBMT, represents incremental knowledge rather than a novel scientific discovery; it consolidates and analyzes existing clinical observations regarding a known complication of HCT, rather than presenting new biological mechanisms or treatment approaches."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "This paper describes an epidemiological survey of a known complication (hemorrhagic cystitis) following a standard procedure (allogeneic hematopoietic cell transplantation); while valuable for understanding incidence and outcomes, it doesn't present a novel technology or directly translate into a new commercial product or easily licensable intervention, focusing instead on descriptive data."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This paper focuses on a *complication* of a relatively niche procedure (allogeneic hematopoietic cell transplantation) rather than addressing a broad disease market; the 'market' is limited to improving outcomes *within* that existing, specialized treatment pathway, representing a small addressable demand even if the complication is frequent."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes observational data collection and analysis of an existing clinical problem following a standard-of-care procedure (allogeneic hematopoietic cell transplantation). The 'technology' being assessed is a diagnostic/monitoring approach, and it's already in widespread clinical use; the paper doesn't present any *new* technology, thus the TRL is very low as it relates to novel tech development."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes epidemiological observations and clinical management of a known complication (hemorrhagic cystitis) following a standard procedure (allogeneic hematopoietic cell transplantation); it does not present any novel inventions or discoveries that would be patentable or create strong IP. It's a survey of existing practice, not an innovation itself."
+      }
+    },
+    "pi": "Dina Averbuch",
+    "pi_full_name": "Dina Averbuch",
+    "pi_email": "",
+    "added_date": "2026-03-30"
   },
   {
     "id": "pubmed_41837327",
@@ -2807,6 +3424,148 @@
     "pi_full_name": "",
     "pi_email": "mario.mikulincer1@mail.huji.ac.il",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_41883197",
+    "title": "Broken Promises: Betrayal and Support for Violence in Intergroup Relations.",
+    "authors": [
+      "Josephine Gellersen",
+      "Eran Halperin",
+      "Tamar Saguy"
+    ],
+    "journal": "",
+    "date": "2026-03-26",
+    "url": "https://europepmc.org/article/MED/41883197",
+    "source": "Europe PMC",
+    "score": 9,
+    "summary": "This research investigates how perceived exclusion from a shared social identity (SOI) leads to feelings of betrayal and increased support for violence within diverse groups, demonstrated across studies of Ethiopian Jews, Arab-Muslims, and Jewish women in Israel. The findings highlight the psychological mechanisms linking social threat to political attitudes and potentially aggressive behavior.",
+    "opportunity": "Understanding the neurobiological and psychological underpinnings of 'betrayal' responses to perceived social exclusion could inform the development of AI-driven tools for de-escalating conflict and promoting empathy, with applications in social media monitoring and targeted interventions.",
+    "fields": [
+      "Software/AI",
+      "Neuroscience",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While the research explores an important psychological mechanism (betrayal) linking intergroup threat to violence support, the core concepts – that perceived exclusion from a shared identity can fuel negative attitudes – are well-established in social psychology and political science; the novelty lies in the specific framing and empirical demonstration across these particular contexts, but doesn't represent a paradigm shift."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This research, while potentially valuable from a social science perspective, has extremely limited direct commercial potential; it identifies and analyzes social phenomena related to intergroup conflict but doesn't readily translate into a product, service, or licensable technology beyond potentially informing policy or NGO strategies, which are difficult to monetize directly."
+      },
+      "market_size": {
+        "score": 1,
+        "reason": "This paper addresses a fundamental social science question but has no discernible market size or commercial application; it's purely academic research focused on political attitudes and intergroup relations, lacking any potential for direct revenue generation or a defined addressable market."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper describes social science research – specifically, studies on attitudes and perceptions – and has no technological component whatsoever; therefore, its Technology Readiness Level (TRL) is essentially zero as it's not a technology at all. It is purely theoretical and observational, far removed from any potential for real-world *technological* application or commercialization."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes sociological research and behavioral findings; there is no novel technology, process, or composition to patent or otherwise defend with intellectual property. The 'innovation' is a research methodology or theoretical framework, which is generally not patentable."
+      }
+    },
+    "pi": "Eran Halperin",
+    "pi_full_name": "Eran Halperin",
+    "pi_email": "",
+    "added_date": "2026-03-30"
+  },
+  {
+    "id": "epmc_41886702",
+    "title": "Burnout in Oncology Clinical Research Coordinators: Underlying Factors and Role of Empathy as a Moderator.",
+    "authors": [
+      "Aviv Kidron",
+      "Ron Ben-Dor",
+      "Dan Otap"
+    ],
+    "journal": "",
+    "date": "2026-03-26",
+    "url": "https://europepmc.org/article/MED/41886702",
+    "source": "Europe PMC",
+    "score": 9,
+    "summary": "This study investigates burnout factors among oncology clinical research coordinators in Israel, finding links between job engagement, role overload, job satisfaction, and empathy. The research highlights the emotional toll on CRCs and the potential moderating role of empathy in mitigating burnout.",
+    "opportunity": "Developing software or training programs to enhance job satisfaction, manage workload, and foster empathy among clinical research staff could reduce turnover and improve the efficiency of oncology clinical trials, representing a valuable service offering for CROs and pharmaceutical companies.",
+    "fields": [
+      "Clinical",
+      "Software/AI",
+      "Immunology",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "While the study addresses an important and under-researched area (burnout in oncology CRCs), the core model – linking job engagement, role overload, job satisfaction, and burnout – utilizes well-established psychological constructs and relationships. The addition of empathy as a moderator is a reasonable extension, but doesn't represent a significant departure from existing literature on burnout or workplace stress."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This paper identifies a problem (CRC burnout) but focuses on understanding the *causes* of the problem, not solving it with a commercially viable solution; while valuable for HR or hospital administration, it doesn't readily translate into a product, service, or licensable technology with clear market demand."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper addresses a significant *workforce* issue within oncology clinical research, but doesn't define or quantify the overall market size for clinical research coordination services, or the economic impact of CRC burnout (e.g., trial delays, costs of replacement). While important for employee wellbeing, the research doesn't demonstrate a large, addressable *commercial* market."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper describes observational research into a workforce issue; it does *not* present a technology or technological advancement. Therefore, assessing its TRL is not applicable, and it remains at the very earliest stage of potential impact (understanding a problem that *might* be addressed by a future technology)."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes a sociological study and does not present any novel technology, method, or process that would be patentable or otherwise defensible as intellectual property; it relies on existing, validated questionnaires and statistical analysis techniques."
+      }
+    },
+    "pi": "Jonathan Eliezer Cohen",
+    "pi_full_name": "Jonathan Eliezer Cohen",
+    "pi_email": "",
+    "added_date": "2026-03-30"
+  },
+  {
+    "id": "epmc_41881445",
+    "title": "Commentary: Should we worry about climate worry? Understanding and promoting youth resilience and pro-environmental engagement: a commentary on Park et al. (2026).",
+    "authors": [
+      "Stathis Grapsas",
+      "Atheer Massarwe"
+    ],
+    "journal": "",
+    "date": "2026-03-25",
+    "url": "https://europepmc.org/article/MED/41881445",
+    "source": "Europe PMC",
+    "score": 9,
+    "summary": "This commentary analyzes a study on climate anxiety in young adolescents, highlighting the need for clearer definitions and a non-judgmental approach to understanding its impact on mental health. It emphasizes the importance of fostering both resilience and environmentally conscious behavior in youth, tailored to their developmental stage.",
+    "opportunity": "Developing and validating age-appropriate digital mental health tools (apps, platforms) that assess and mitigate climate anxiety, potentially integrating with pro-environmental behavior change programs, presents a commercial opportunity.",
+    "fields": [
+      "Software/AI",
+      "Neuroscience",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "This paper is a commentary on existing work and doesn't present novel research findings itself; it focuses on clarifying terminology and suggesting future research directions based on Park et al.'s study, representing incremental rather than groundbreaking innovation."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This paper is a commentary on existing research and offers suggestions for future study; it doesn't present a novel technology, product, or service with direct commercial applications, and the potential for monetization is extremely limited. While understanding youth mental health is valuable, this work itself doesn't translate into a clear commercial opportunity."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper addresses a significant societal issue (youth mental health related to climate change) but doesn't define or quantify a *market* for solutions; it's a research commentary, not a business plan or market analysis. While the problem is large, the addressable market for interventions stemming from this research is unclear and likely fragmented across healthcare, education, and potentially other sectors, making market size estimation difficult without further development."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper is a commentary on existing research; it does not present any new technology or innovation, and therefore has no TRL. It's purely conceptual and at the earliest stages of understanding a social/psychological phenomenon, far from any real-world application or commercialization."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper is a commentary on existing research and does not present any novel invention or innovation; therefore, there is no intellectual property to assess. It focuses on interpretation and suggestions for future research, not on creating something patentable or defensible."
+      }
+    },
+    "pi": "Atheer Massarwe",
+    "pi_full_name": "Atheer Massarwe",
+    "pi_email": "",
+    "added_date": "2026-03-30"
   },
   {
     "id": "epmc_41776295",
