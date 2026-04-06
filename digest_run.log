@@ -2,65 +2,51 @@
 =======================================================
 Branch: All Branches
 Loading top papers from Google Sheet...
-  Sheet response: 200, 259200 bytes
-  Cutoff date: 2026-03-01  (DIGEST_WINDOW=31 days)
-  Rows: 87 total, 20 excluded, 67 kept.
-  Sample pub date values: ['2026-03-28', '2026-03-28', '2026 Mar 26']
-  40 candidates (top 40 by score).
+  Sheet response: 200, 344545 bytes
+  Cutoff date: 2026-03-30  (DIGEST_WINDOW=7 days)
+  Rows: 115 total, 109 excluded, 6 kept.
+  Sample pub date values: ['2026-04-01', '2026-04-01', '2026 Apr 1']
+  6 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 20 papers.
-  Executive summary: This month's digest highlights groundbreaking research from Hebrew University poised for significant commercial impact. ...
+  Gemini selected 4 papers.
+  Executive summary: This week's digest highlights promising innovations spanning AI-driven personalized medicine, precision diagnostics, and...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_M04.pdf  (25 KB)
+PDF written: digests/HUJI_digest_2026_W15.pdf  (7 KB)
 
 =======================================================
 Branch: Healthcare
 Loading top papers from Google Sheet...
-  Sheet response: 200, 259200 bytes
-  Cutoff date: 2026-03-01  (DIGEST_WINDOW=31 days)
-  Rows: 87 total, 35 excluded, 52 kept.
-  Sample pub date values: ['2026-03-28', '2026-03-28', '2026 Mar 26']
-  40 candidates (top 40 by score).
+  Sheet response: 200, 344545 bytes
+  Cutoff date: 2026-03-30  (DIGEST_WINDOW=7 days)
+  Rows: 115 total, 109 excluded, 6 kept.
+  Sample pub date values: ['2026-04-01', '2026-04-01', '2026 Apr 1']
+  6 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 20 papers.
-  Executive summary: Hebrew University's latest research overview reveals a robust pipeline of commercially promising innovations, heavily fe...
+  Gemini selected 5 papers.
+  Executive summary: This week's digest highlights advances spanning AI-driven personalized medicine, expanded market potential for existing ...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_M04_Healthcare.pdf  (26 KB)
+PDF written: digests/HUJI_digest_2026_W15_Healthcare.pdf  (8 KB)
 
 =======================================================
 Branch: Agriculture & Food
 Loading top papers from Google Sheet...
-  Sheet response: 200, 259200 bytes
-  Cutoff date: 2026-03-01  (DIGEST_WINDOW=31 days)
-  Rows: 87 total, 84 excluded, 3 kept.
-  Sample pub date values: ['2026 Mar 17', '2026 Mar 17', '2026 Mar 17']
-  3 candidates (top 40 by score).
-Asking Gemini to curate the digest...
-  Trying model: gemini-2.5-flash
-  Success with: gemini-2.5-flash
-  Gemini selected 3 papers.
-  Executive summary: Hebrew University researchers are presenting advancements in food safety, preservation, and data infrastructure. One key...
-Generating PDF...
-PDF written: digests/HUJI_digest_2026_M04_Agriculture_Food.pdf  (7 KB)
+  Sheet response: 200, 344545 bytes
+  Cutoff date: 2026-03-30  (DIGEST_WINDOW=7 days)
+  Rows: 115 total, 115 excluded, 0 kept.
+  0 candidates (top 20 by score).
+  No papers found for Agriculture & Food — skipping.
 
 =======================================================
 Branch: Exact & Social Sciences
 Loading top papers from Google Sheet...
-  Sheet response: 200, 259200 bytes
-  Cutoff date: 2026-03-01  (DIGEST_WINDOW=31 days)
-  Rows: 87 total, 75 excluded, 12 kept.
-  Sample pub date values: ['2026 Mar 26', '2026 Mar 26', '2026 Mar 25']
-  12 candidates (top 40 by score).
-Asking Gemini to curate the digest...
-  Trying model: gemini-2.5-flash
-  Success with: gemini-2.5-flash
-  Gemini selected 9 papers.
-  Executive summary: This month's digest spotlights groundbreaking research from Hebrew University poised for significant commercial impact a...
-Generating PDF...
-PDF written: digests/HUJI_digest_2026_M04_Exact_Social_Sciences.pdf  (14 KB)
+  Sheet response: 200, 344545 bytes
+  Cutoff date: 2026-03-30  (DIGEST_WINDOW=7 days)
+  Rows: 115 total, 115 excluded, 0 kept.
+  0 candidates (top 20 by score).
+  No papers found for Exact & Social Sciences — skipping.
 
 All digests done.
