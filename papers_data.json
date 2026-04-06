@@ -152,7 +152,7 @@
       "Pasherstnik M"
     ],
     "journal": "Journal of laparoendoscopic & advanced surgical techniques. Part A",
-    "date": "2026-03-23",
+    "date": "2026 Mar 23",
     "url": "https://pubmed.ncbi.nlm.nih.gov/41870456/",
     "source": "PubMed",
     "score": 29,
@@ -287,6 +287,54 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "pubmed_41925697",
+    "title": "Recombinant Human Amelogenin Protein Enhances Healing of Osteochondral Injury in a Goat Model.",
+    "authors": [
+      "Omer Helwa-Shalom",
+      "Hani Nevo",
+      "Tarek Nasrawy"
+    ],
+    "journal": "Journal of orthopaedic research : official publication of the Orthopaedic Research Society",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41925697/",
+    "source": "PubMed",
+    "score": 29,
+    "summary": "This study demonstrates that a recombinant form of the amelogenin protein, typically involved in tooth development, significantly improves the healing of osteochondral defects (damage to both bone and cartilage) in a goat model. The research suggests amelogenin can promote tissue regeneration in these complex injuries, offering a potential alternative to current treatments.",
+    "opportunity": "Commercialization could focus on developing a novel biologic therapeutic for cartilage and bone repair, addressing a large unmet need in sports medicine, trauma care, and osteoarthritis treatment.",
+    "fields": [
+      "Drug Discovery",
+      "Medical Device",
+      "Proteomics",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While utilizing amelogenin for bone/cartilage repair isn't entirely new, applying *recombinant* human amelogenin specifically to osteochondral injuries in a large animal model (goat) represents a moderate advancement; the recombinant aspect and the specific injury type add some novelty, but the core concept of amelogenin's regenerative potential has been explored previously."
+      },
+      "commercial_potential": {
+        "score": 7,
+        "reason": "Osteochondral injuries are a significant unmet clinical need with a clear market for improved healing solutions, and a recombinant protein therapy offers a potentially scalable and licensable product; however, the goat model is a significant hurdle to demonstrating clear translational potential to humans, requiring further validation."
+      },
+      "market_size": {
+        "score": 6,
+        "reason": "While osteochondral injuries represent a significant unmet medical need, the paper doesn't provide any data on the *size* of that market (incidence, prevalence, current treatment costs, etc.). A successful goat model is a good first step, but without market sizing information, assessing the commercial potential remains difficult, suggesting a moderate market size potential currently."
+      },
+      "trl": {
+        "score": 4,
+        "reason": "The study demonstrates efficacy in a large animal model (goat), indicating progress beyond *in vitro* studies, but still requires significant pre-clinical and clinical validation before potential commercialization; this places it at a relatively low TRL, likely between 3-4, as it hasn't entered human trials yet."
+      },
+      "ip_strength": {
+        "score": 6,
+        "reason": "While using a recombinant human protein is a step towards manufacturability and potential patentability, the core innovation – using amelogenin for osteochondral repair – likely faces challenges regarding novelty and non-obviousness, as amelogenin's role in tooth/bone development is known; strong IP would depend on *how* it's used and any novel formulations or delivery methods not explicitly mentioned here."
+      }
+    },
+    "pi": "Amir Haze",
+    "pi_full_name": "Amir Haze",
+    "pi_email": "",
+    "added_date": "2026-04-06"
+  },
+  {
     "id": "epmc_41763456",
     "title": "Effectiveness of adult zoster vaccination in preventing a first episode of zoster keratitis: A large-scale database study.",
     "authors": [
@@ -389,7 +437,7 @@
       "Eran Blacher"
     ],
     "journal": "",
-    "date": "2026 Mar 10",
+    "date": "2026 Mar",
     "url": "https://europepmc.org/article/MED/41804973",
     "source": "Europe PMC",
     "score": 26,
@@ -501,6 +549,198 @@
     "pi_full_name": "",
     "pi_email": "moranya@mail.huji.ac.il",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_41486788",
+    "title": "Real-world epidemiological outcomes of biologic therapy for chronic rhinosinusitis with nasal polyps: a big data analysis.",
+    "authors": [
+      "E Zloczower",
+      "G G Nyquist",
+      "A Bebin"
+    ],
+    "journal": "",
+    "date": "2026-04-01",
+    "url": "https://europepmc.org/article/MED/41486788",
+    "source": "Europe PMC",
+    "score": 24,
+    "summary": "This study demonstrates that biologic therapies (dupilumab and mepolizumab) significantly reduce healthcare resource utilization – including antibiotic and steroid use, clinic visits, and repeat surgeries – in patients with chronic rhinosinusitis with nasal polyps (CRSwNP) following endoscopic sinus surgery. The analysis leveraged a large, real-world dataset to show positive clinical and economic outcomes associated with these treatments.",
+    "opportunity": "Development of companion diagnostics or AI-driven patient stratification tools to predict responsiveness to specific biologics in CRSwNP could optimize treatment selection and further reduce healthcare costs.",
+    "fields": [
+      "Clinical",
+      "Immunology",
+      "Software/AI",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "While leveraging 'big data' is increasingly common, the study's core finding – that biologics reduce healthcare utilization in CRSwNP post-ESS – largely confirms existing clinical understanding and prior smaller studies. The novelty lies primarily in the scale of the dataset, but the *results* themselves aren't groundbreaking in terms of scientific discovery."
+      },
+      "commercial_potential": {
+        "score": 7,
+        "reason": "The paper demonstrates clear cost-savings (reduced healthcare utilization & medication use) associated with existing, commercially available biologics (dupilumab & mepolizumab) in a real-world setting, which strengthens their value proposition and supports continued/expanded use – a direct commercial benefit for the manufacturers. However, it's a retrospective analysis of *existing* products, not a novel technology itself, limiting the upside for new commercial ventures beyond reinforcing current market positions."
+      },
+      "market_size": {
+        "score": 4,
+        "reason": "The paper focuses on a relatively niche indication (CRSwNP post-ESS) within a broader respiratory disease market, limiting the overall market size; while demonstrating cost savings through reduced healthcare utilization is positive, the paper doesn't quantify the total addressable market or potential revenue, making a robust market size assessment impossible."
+      },
+      "trl": {
+        "score": 8,
+        "reason": "This study analyzes *real-world* outcomes using a large, existing database (Clalit Health Services) of patients *already receiving* approved biologic therapies. This indicates a high TRL, as it's moved beyond initial clinical trials and is assessing impact in standard clinical practice, though further prospective studies may be needed."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes a retrospective analysis of existing treatment patterns and outcomes; it does not present any novel inventions or discoveries that would be patentable. The study leverages existing biologics (dupilumab, mepolizumab) and analyzes real-world data, offering no new IP."
+      }
+    },
+    "pi": "M Warman",
+    "pi_full_name": "M Warman",
+    "pi_email": "",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_41933200",
+    "title": "A family of endonucleases blocks nanotube-mediated plasmid exchange.",
+    "authors": [
+      "Venkadesaperumal Gopu",
+      "Saurabh Bhattacharya",
+      "Michal Bejerano-Sagie"
+    ],
+    "journal": "Nature microbiology",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41933200/",
+    "source": "PubMed",
+    "score": 24,
+    "summary": "This research identifies a family of enzymes (endonucleases) that can disrupt the transfer of genetic material (plasmids) via nanotubes between bacteria. This suggests a novel mechanism for controlling horizontal gene transfer, a key driver of antibiotic resistance and bacterial evolution.",
+    "opportunity": "Developing these endonucleases as a targeted antibacterial strategy to prevent the spread of antibiotic resistance genes represents a significant commercial opportunity.",
+    "fields": [
+      "Drug Discovery",
+      "Genomics",
+      "Synthetic Biology",
+      "Immunology"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "Blocking horizontal gene transfer via nanotubes is a relatively unexplored area, and utilizing endonucleases for this purpose represents a novel approach to combating antibiotic resistance spread or biocontainment; however, the core concept of enzymatic degradation of DNA isn't new, so the novelty lies in the *application* rather than a fundamental scientific breakthrough."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "The paper describes a novel mechanism to block horizontal gene transfer via nanotubes, which *could* have applications in biosecurity, synthetic biology containment, or even targeted antimicrobial strategies; however, the commercial path isn't immediately obvious and relies heavily on demonstrating scalability, delivery, and cost-effectiveness of these endonucleases in relevant environments."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper describes a technical advancement (blocking plasmid exchange via nanotube inhibition) but provides absolutely no indication of the market need or potential size for such a capability; it's a solution in search of a problem, and therefore has a very limited demonstrable market size at this stage."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "The paper describes a novel enzymatic activity blocking plasmid exchange, suggesting early-stage research likely confined to *in vitro* experiments; without an abstract or further details, it's reasonable to assume a low TRL, indicating significant development is needed before potential application or commercialization."
+      },
+      "ip_strength": {
+        "score": 6,
+        "reason": "Identifying a *family* of endonucleases suggests some breadth to the innovation, potentially allowing for patenting around specific sequences or functionalities; however, the title alone doesn't indicate novelty beyond simply *finding* enzymes that cleave plasmids delivered via nanotubes, which may not be strongly defensible without demonstrating unique enzyme properties or unexpected results."
+      }
+    },
+    "pi": "Sigal Ben-Yehuda",
+    "pi_full_name": "Sigal Ben-Yehuda",
+    "pi_email": "sigalb@ekmd.huji.ac.il.",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_41912874",
+    "title": "Intracellular and dual-site inhibition of a bitter taste GPCR.",
+    "authors": [
+      "Nitsan Dallal",
+      "Gil Daniel Paz",
+      "Noga Nir-Marom"
+    ],
+    "journal": "Cellular and molecular life sciences : CMLS",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41912874/",
+    "source": "PubMed",
+    "score": 24,
+    "summary": "This research details the discovery of how to inhibit a G protein-coupled receptor (GPCR) responsible for bitter taste, both inside cells and at the receptor itself. Understanding and controlling this receptor's activity could have broad implications for modulating taste perception and related physiological responses.",
+    "opportunity": "Targeting bitter taste receptors offers a novel approach to developing palatability enhancers for pharmaceuticals, functional foods, or improving crop acceptance by insects/animals.",
+    "fields": [
+      "Drug Discovery",
+      "FoodTech",
+      "Neuroscience",
+      "AgriTech"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "Identifying both intracellular and a second, distinct extracellular inhibitory site on a GPCR is a novel finding, moving beyond the typical focus on orthosteric or single allosteric modulation; however, GPCRs are extensively studied, so while interesting, it's not a paradigm shift in the field itself."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "Targeting a bitter taste GPCR has potential in food & beverage (masking bitterness) and potentially pharmaceuticals (drug palatability/delivery), but the paper's title doesn't indicate *how* effectively this inhibition is achieved or if it's readily translatable to a scalable process or formulation – crucial for commercial viability. Without knowing the mechanism or potency, it's hard to assess if this is a niche application or a broadly useful technology."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "Without an abstract or further information on the intended application, assessing market size is extremely difficult; bitter taste receptor modulation has niche applications (food science, potentially aversive therapy) that are unlikely to represent a massive market opportunity on their own, and the paper doesn't suggest a broader, high-value use case."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "The paper focuses on intracellular and dual-site *inhibition* of a GPCR, indicating fundamental research into mechanism rather than development of a therapeutic or product. This suggests a very early TRL, likely lab-stage discovery with significant work needed before potential translation to a real-world application."
+      },
+      "ip_strength": {
+        "score": 6,
+        "reason": "Inhibition of a GPCR is a well-trodden area of drug discovery, suggesting potential freedom-to-operate challenges; however, the claim of *dual-site* inhibition and *intracellular* targeting offers a potential avenue for defensibility if the mechanisms are novel and demonstrably distinct from existing modulators, warranting further investigation of patent claims."
+      }
+    },
+    "pi": "Masha Y Niv",
+    "pi_full_name": "Masha Y Niv",
+    "pi_email": "masha.niv@mail.huji.ac.il.",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_41928515",
+    "title": "Identifying maximally informative signal-aware representations of single-cell data using the information bottleneck.",
+    "authors": [
+      "Serafima Dubnov",
+      "Zoe Piran",
+      "Amit Alper"
+    ],
+    "journal": "Cell systems",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41928515/",
+    "source": "PubMed",
+    "score": 23,
+    "summary": "This research focuses on improving how we analyze single-cell data by using a machine learning technique called the 'information bottleneck' to find the most important patterns within complex datasets. The goal is to create simplified representations of single-cell information while retaining crucial biological signals, leading to more accurate and efficient analysis.",
+    "opportunity": "Developing a software tool based on this method could significantly accelerate single-cell data analysis for researchers and companies across multiple life science disciplines, offering a competitive edge in data interpretation and insight generation.",
+    "fields": [
+      "Software/AI",
+      "Genomics",
+      "Immunology",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "Applying the Information Bottleneck principle to single-cell data representation learning, *specifically* with a 'signal-aware' approach, represents a solid incremental advance; while the Information Bottleneck isn't new, its tailored application to address the challenges of noisy and high-dimensional single-cell data, and focusing on preserving biologically relevant 'signals', demonstrates genuine novelty. However, it doesn't appear to fundamentally rewrite core concepts in either information theory or single-cell analysis, suggesting it's a strong refinement rather than a paradigm shift."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "While the paper addresses a clear need in single-cell data analysis (reducing dimensionality while preserving information), the commercial potential hinges on demonstrating superior performance *and* ease of integration into existing single-cell workflows – neither of which is evident from the title alone; it reads as a methodological advance rather than a directly productizable technology."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper focuses on a methodological advancement in single-cell data analysis, but doesn't explicitly address or quantify the market size for this specific improvement; the broad single-cell market is large, but the niche benefiting from 'information bottleneck' approaches is unclear and likely relatively small without further commercialization or application focus."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This paper focuses on a novel representation learning method for single-cell data, indicating it's likely at the algorithm development/validation stage (proof-of-concept in simulations or limited datasets). While potentially impactful, moving from representation learning to a deployable product or clinical application requires significant further development and validation, placing it at a low TRL."
+      },
+      "ip_strength": {
+        "score": 4,
+        "reason": "The paper utilizes a well-established theoretical framework (Information Bottleneck) applied to a growing field (single-cell data analysis), but the core innovation appears to be in the *application* of existing theory rather than a novel algorithmic or compositional matter patentable invention; defensibility would likely rely on specific implementations and datasets used for training, which are generally weak IP positions."
+      }
+    },
+    "pi": "Mor Nitzan",
+    "pi_full_name": "Mor Nitzan",
+    "pi_email": "mor.nitzan@mail.huji.ac.il.",
+    "added_date": "2026-04-06"
   },
   {
     "id": "epmc_41902461",
@@ -742,6 +982,54 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "pubmed_41852511",
+    "title": "An animated educational video is effective for improving treatment outcomes in pediatric patients with atopic dermatitis: A prospective observational trial.",
+    "authors": [
+      "Eve Finkelstein",
+      "Ayelet Ollech",
+      "Irene Unterman"
+    ],
+    "journal": "JAAD international",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41852511/",
+    "source": "PubMed",
+    "score": 21,
+    "summary": "This study investigated whether an animated educational video improved treatment outcomes for children with atopic dermatitis (eczema). The researchers found a positive correlation between video use and better adherence to treatment plans, leading to improved skin condition.",
+    "opportunity": "A commercial opportunity exists in developing and licensing condition-specific animated educational videos as adjunctive therapy to improve patient compliance and treatment efficacy, potentially reducing healthcare costs and improving quality of life.",
+    "fields": [
+      "Clinical",
+      "Immunology",
+      "Software/AI",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "While addressing an important need – improving adherence and outcomes in pediatric atopic dermatitis – using an animated educational video isn't a fundamentally novel intervention; educational materials are common in healthcare. The study's novelty hinges on *demonstrating* effectiveness, but the concept itself doesn't represent a significant scientific breakthrough."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "While demonstrating improved outcomes is positive, the commercial potential hinges on scaling video production/distribution and integrating it into existing clinical workflows – it's not a novel therapeutic itself, but rather a care pathway enhancement with moderate licensing or service revenue possibilities. The 'animated educational video' format is easily replicable, limiting strong IP protection."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "While atopic dermatitis is a common pediatric condition, the market for *animated educational videos* as a treatment adjunct is very niche and likely small; the paper doesn't suggest this intervention replaces existing therapies, limiting its direct market impact and revenue potential."
+      },
+      "trl": {
+        "score": 7,
+        "reason": "This study demonstrates effectiveness of an intervention (educational video) in a real-world clinical setting with patients, indicating it's beyond basic research. However, it's an observational trial, meaning it doesn't prove causation or optimize implementation for scalability, keeping it from a higher TRL score closer to full commercialization."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "The study describes a method of *delivering* education, not a novel technology or process itself; animated videos are not inherently patentable, and the specific content described is unlikely to meet patentability criteria. There's minimal to no IP strength associated with this approach."
+      }
+    },
+    "pi": "Vered Molho-Pessach",
+    "pi_full_name": "Vered Molho-Pessach",
+    "pi_email": "",
+    "added_date": "2026-04-06"
+  },
+  {
     "id": "epmc_41784031",
     "title": "Proteostasis meets signaling: UBE2G1 in hematopoietic stem cell aging.",
     "authors": [
@@ -880,6 +1168,197 @@
     "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "pubmed_41935570",
+    "title": "Surgery for Pain Symptoms in Women with Isolated Superficial Peritoneal Endometriosis.",
+    "authors": [
+      "Maria Maslenko",
+      "Yaara Tabib",
+      "Tal D Saar"
+    ],
+    "journal": "Journal of minimally invasive gynecology",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41935570/",
+    "source": "PubMed",
+    "score": 20,
+    "summary": "This study investigates surgical intervention as a treatment for pain specifically caused by superficial peritoneal endometriosis in women. The research likely assesses the effectiveness of different surgical techniques or approaches in alleviating pain symptoms associated with this condition.",
+    "opportunity": "Improved surgical techniques or minimally invasive tools for endometriosis, coupled with better patient selection criteria, represent a commercial opportunity to reduce chronic pain and improve quality of life for affected women.",
+    "fields": [
+      "Clinical",
+      "Medical Device",
+      "Imaging",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "Surgical intervention for endometriosis, while continually refined, isn't a novel *concept*; the focus on superficial peritoneal endometriosis and pain symptoms specifically is a more targeted approach, but doesn't represent a fundamental shift in the field's understanding or treatment paradigms. The title suggests incremental improvement rather than a breakthrough discovery."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "While addressing a significant patient need (chronic pelvic pain due to endometriosis), the paper focuses on a surgical intervention for a *specific* subset of endometriosis – isolated superficial peritoneal. This limits the total addressable market compared to broader endometriosis treatments, but a focused, effective surgical approach could still be commercially viable, potentially as a specialized procedure or through surgical tool/technique licensing."
+      },
+      "market_size": {
+        "score": 6,
+        "reason": "While endometriosis affects a significant portion of women (estimated 10-15% globally), this paper focuses on a *specific* subset – those with isolated superficial peritoneal endometriosis experiencing pain symptoms, narrowing the Total Addressable Market (TAM). The market size is still substantial given the prevalence of endometriosis, but the focused nature prevents a higher score."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "The paper describes a *surgical* intervention, indicating the technology (the surgical technique itself) has moved beyond basic research and is already being applied in a clinical setting, but likely with variations and ongoing refinement; however, it focuses on symptom management rather than a novel, disruptive technology, suggesting a relatively low TRL regarding fundamental innovation."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "Surgical techniques, even for specific conditions like endometriosis, are generally difficult to patent broadly; improvements are often incremental and may fall into the realm of 'method of treatment' which faces significant hurdles, especially given existing surgical practices. The title suggests a refinement of existing surgery, not a novel technology or composition of matter, indicating weak IP potential."
+      }
+    },
+    "pi": "Uri P Dior",
+    "pi_full_name": "Maria Maslenko",
+    "pi_email": "Dr.maria.maslenko@gmail.com.",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_41922802",
+    "title": "ATF3-dependent formation of inclusion bodies in polyQ-expressing human iPSC-derived neurons confers cellular protection.",
+    "authors": [
+      "Walaa Oweis",
+      "Malka Nissim-Rafinia",
+      "Elad Dvir"
+    ],
+    "journal": "Cell death and differentiation",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41922802/",
+    "source": "PubMed",
+    "score": 20,
+    "summary": "This research demonstrates that neurons derived from induced pluripotent stem cells (iPSCs) expressing mutant huntingtin protein (polyQ) form protective inclusion bodies via the ATF3 pathway. These inclusion bodies appear to shield the cells from the toxic effects of the mutant protein, suggesting a novel cellular defense mechanism.",
+    "opportunity": "Developing therapies to enhance ATF3-dependent inclusion body formation could represent a disease-modifying approach for Huntington's Disease and potentially other polyglutamine expansion disorders.",
+    "fields": [
+      "Drug Discovery",
+      "Neuroscience",
+      "Genomics",
+      "Proteomics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "The finding that ATF3-dependent inclusion body formation is *protective* in polyQ models is a potentially novel twist, as inclusion bodies are often viewed as toxic hallmarks of these diseases; however, the core observation of inclusion body formation itself isn't new, making it less than a truly groundbreaking discovery."
+      },
+      "commercial_potential": {
+        "score": 4,
+        "reason": "While the finding of cellular protection is interesting, the paper focuses on a *mechanism* of protection (inclusion body formation via ATF3) rather than presenting a readily translatable therapeutic target or intervention; commercial potential hinges on identifying a way to *induce* this protective mechanism, which isn't demonstrated here."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a very specific cellular mechanism related to Huntington's Disease and potentially other polyglutamine diseases, indicating a niche market within neurodegenerative disease treatment; however, without knowing the prevalence of these specific disease mechanisms or the potential for a broadly applicable therapy, the addressable market appears limited."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "The research appears to be primarily at the fundamental biology/discovery stage, utilizing iPSC-derived neurons *in vitro*. While demonstrating a protective mechanism is valuable, significant work remains to translate this into a therapeutic – including *in vivo* validation, drug development targeting ATF3, and delivery strategies – indicating a low TRL."
+      },
+      "ip_strength": {
+        "score": 4,
+        "reason": "The paper identifies a correlation between ATF3 and inclusion body formation offering cellular protection, but simply *finding* a correlation isn't inherently patentable; the novelty would lie in a method of *inducing* ATF3 activity or manipulating inclusion body formation for therapeutic benefit, which isn't explicitly claimed or demonstrated as a novel process. Without details on novel compositions of matter or methods, the IP strength appears weak."
+      }
+    },
+    "pi": "Eran Meshorer",
+    "pi_full_name": "Eran Meshorer",
+    "pi_email": "eran.meshorer@mail.huji.ac.il.",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "epmc_41539726",
+    "title": "The Natural History of Deficiency of Adenosine Deaminase 2 Vasculitis in a Large Cohort and Factors Associated With Disease-Related Damage.",
+    "authors": [
+      "Dynne-Noya Kind Engelstein",
+      "David Levartovsky",
+      "Isaiah D Wexler"
+    ],
+    "journal": "",
+    "date": "2026-04-01",
+    "url": "https://europepmc.org/article/MED/41539726",
+    "source": "Europe PMC",
+    "score": 19,
+    "summary": "This study characterizes a large group of patients with DADA2 vasculitis, a rare genetic immune deficiency, revealing that early onset and recurring fever-like symptoms correlate with more severe long-term damage. Treatment with TNF inhibitors showed positive results in patients with severe disease.",
+    "opportunity": "The identification of biomarkers associated with DADA2 disease severity and responsiveness to TNF inhibitors presents an opportunity for developing more targeted therapies and companion diagnostics for this rare genetic condition.",
+    "fields": [
+      "Drug Discovery",
+      "Immunology",
+      "Genomics",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While the study provides valuable clinical characterization of a rare disease (DADA2) in a relatively large cohort, the research primarily represents a detailed natural history study and treatment observation rather than a fundamentally novel scientific discovery; it builds upon established understanding of adenosine deaminase deficiencies and vasculitis pathogenesis."
+      },
+      "commercial_potential": {
+        "score": 7,
+        "reason": "The paper clearly identifies a specific patient population (DADA2) with an unmet need and demonstrates a positive response to existing therapies (TNFi), suggesting a defined, addressable market for continued or improved treatment strategies; however, the commercial potential is limited by the rarity of the disease, which will constrain market size and potentially necessitate high pricing."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a very rare, genetic disease (DADA2) affecting a small patient population (45 individuals studied). While understanding the disease is valuable, the inherently limited prevalence translates to a minuscule addressable market, making it unattractive from a purely market size perspective."
+      },
+      "trl": {
+        "score": 4,
+        "reason": "This paper describes retrospective clinical observations and treatment effectiveness of an existing patient cohort; it doesn't present novel technology development. While identifying biomarkers and treatment responses is valuable, the TRL remains relatively low as it focuses on applying *existing* TNF inhibitors to a defined genetic condition, rather than developing a new therapeutic or diagnostic technology."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes clinical observations and treatment effectiveness in a known genetic disease (DADA2). While valuable for understanding the disease, the work itself doesn't present *new* patentable inventions or defensible IP; it's a study of an existing genetic defect and application of existing therapies (TNFi)."
+      }
+    },
+    "pi": "Reeval Segel",
+    "pi_full_name": "Yackov Berkun",
+    "pi_email": "berkun@hadassah.org.il.",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "epmc_41804915",
+    "title": "Hepatitis B Vaccine Response in Children of Vaccinated Versus Unvaccinated Mothers: A Retrospective Cohort Study.",
+    "authors": [
+      "Safa Shibli",
+      "Mohamad Suki",
+      "Tannous Korzom"
+    ],
+    "journal": "",
+    "date": "2026-04-01",
+    "url": "https://europepmc.org/article/MED/41804915",
+    "source": "Europe PMC",
+    "score": 19,
+    "summary": "This study investigated whether a mother's hepatitis B vaccination status impacts her child's antibody response to the infant HBV vaccine. While overall protection rates were high across all groups, children of vaccinated mothers showed a significantly higher likelihood of achieving very high antibody titers.",
+    "opportunity": "Understanding maternal immune priming could lead to strategies for optimizing infant vaccine schedules or developing novel adjuvants to enhance immune responses in newborns, potentially broadening protection against other infectious diseases.",
+    "fields": [
+      "Vaccines",
+      "Immunology",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While the study addresses an important and previously underexplored question – the impact of maternal vaccination status on infant HBV response – the core finding of no significant difference in seroprotection rates isn't groundbreaking. The observation of higher antibody titers in children of vaccinated mothers is interesting, but represents an incremental addition to existing knowledge rather than a paradigm shift."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the study identifies a potential difference in antibody *level* based on maternal vaccination status, it doesn't translate to a clear commercial opportunity; achieving 'very high' antibody levels isn't currently a clinical need or a basis for a new product, and the overall seroprotection rates are already high with existing vaccination protocols. The findings are interesting from an immunological perspective but lack immediate commercial applicability."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper addresses a refinement *within* an existing, well-established market (HBV vaccination) rather than creating a new one or significantly expanding the overall addressable patient population; therefore, the total market size opportunity is limited to potential changes in vaccination protocols or diagnostic testing related to maternal vaccination status, which is a niche application."
+      },
+      "trl": {
+        "score": 7,
+        "reason": "This study utilizes retrospective data and established clinical practice (HBV vaccination) to investigate an effect on existing vaccine response, indicating it's beyond basic research. However, it doesn't represent a *new* technology itself, but rather an analysis of an existing one, and further prospective studies would be needed to translate findings into altered clinical protocols or new vaccine strategies."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This study describes an *observation* about existing vaccines and doesn't present any novel inventions or processes that would be patentable; it's a retrospective analysis of clinical data. There's no new IP generated, and therefore the defensibility is extremely low."
+      }
+    },
+    "pi": "Rifaat Safadi",
+    "pi_full_name": "Rifaat Safadi",
+    "pi_email": "rifaat.safadi2@gmail.com",
+    "added_date": "2026-04-06"
   },
   {
     "id": "epmc_PMC13017330",
@@ -1118,6 +1597,54 @@
     "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "pubmed_41927562",
+    "title": "Enhanced reward coding and condition-independent dynamics in optogenetically identified corticostriatal neurons in monkeys.",
+    "authors": [
+      "Adi Hovav-Lixenberg",
+      "Yirat Henshke",
+      "Tirzah Kreisel"
+    ],
+    "journal": "Nature communications",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41927562/",
+    "source": "PubMed",
+    "score": 19,
+    "summary": "This research uses optogenetics in monkeys to study how neurons in the cortex and striatum – brain areas crucial for reward-based learning and decision-making – encode rewards and maintain stable activity patterns. The findings suggest a more nuanced understanding of how the brain processes value and potentially adapts to changing circumstances.",
+    "opportunity": "A deeper understanding of corticostriatal circuitry could inform the development of novel therapies and potentially closed-loop neurostimulation devices for treating disorders like Parkinson's disease, addiction, and depression by precisely modulating reward processing.",
+    "fields": [
+      "Neuroscience",
+      "Medical Device",
+      "Software/AI",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "Combining optogenetic identification of corticostriatal neurons *in vivo* with detailed neural recording in monkeys represents a significant technical advance, allowing for a more precise understanding of reward coding than previously possible; however, the core finding of refined reward coding and condition-independent dynamics, while valuable, builds upon established knowledge of corticostriatal function rather than representing a paradigm shift."
+      },
+      "commercial_potential": {
+        "score": 4,
+        "reason": "While the research provides valuable insights into corticostriatal neuron function, the direct path to a commercial product isn't immediately obvious; it's fundamental neuroscience research rather than applied technology development, and relies heavily on optogenetics which has limited translational potential for widespread human application. Potential exists for licensing to companies developing advanced brain-machine interfaces, but this is several steps removed and highly speculative at this stage."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This paper describes basic neuroscience research with a focus on neuronal mechanisms; it doesn't address a clear market need or define a target market for a product or service, resulting in a negligible market size potential in its current form. While the findings *could* inform future applications, those are highly speculative and far removed from commercialization at this stage."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This research is primarily focused on fundamental neuroscience, utilizing optogenetics in monkeys to understand neural coding of reward. While valuable, it's very early-stage and far from a deployable technology or commercial application; it represents basic research with a long path to potential translation, placing it at a low TRL."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The paper describes neuroscientific *discoveries* about neuronal function, not a novel technology or device. While identifying specific neuron types and their dynamics is valuable, it's unlikely to be directly patentable without a concrete application (e.g., a therapeutic intervention or a novel brain-computer interface) and the methods used (optogenetics) are already well-established in the field."
+      }
+    },
+    "pi": "Mati Joshua",
+    "pi_full_name": "Mati Joshua",
+    "pi_email": "mati.joshua@mail.huji.ac.il.",
+    "added_date": "2026-04-06"
   },
   {
     "id": "pubmed_41869927",
@@ -1454,6 +1981,150 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "pubmed_41926011",
+    "title": "Hepatic radiofrequency ablation induces widespread cellular activation throughout the liver.",
+    "authors": [
+      "Matthias Stechele",
+      "Justin Amadi",
+      "Lukas Salvermoser"
+    ],
+    "journal": "European radiology experimental",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41926011/",
+    "source": "PubMed",
+    "score": 18,
+    "summary": "This research demonstrates that radiofrequency ablation (RFA), a common liver cancer treatment, triggers a significant and widespread activation of cells *beyond* the immediate ablation zone. This suggests RFA isn't just a localized treatment, but induces a systemic response within the liver itself.",
+    "opportunity": "Developing therapies to modulate this cellular activation response post-RFA could enhance treatment efficacy, prevent recurrence, or even synergize with immunotherapy for improved cancer outcomes.",
+    "fields": [
+      "Medical Device",
+      "Immunology",
+      "Clinical",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While radiofrequency ablation (RFA) is a well-established clinical procedure, demonstrating *widespread* cellular activation as a systemic response to localized hepatic RFA, rather than just localized effects, represents a potentially novel finding. The novelty hinges on the extent and nature of this activation being previously underappreciated or uncharacterized; without the full paper, it's difficult to assess if this is a truly groundbreaking observation or a more incremental extension of existing knowledge."
+      },
+      "commercial_potential": {
+        "score": 4,
+        "reason": "While demonstrating widespread cellular activation post-ablation is interesting, the paper lacks clear articulation of *how* this activation translates into a commercial benefit – is it improved outcomes, a biomarker for treatment response, or a novel therapeutic target? Without that link, commercial potential remains speculative and relies on significant further research to define a product or service."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper describes a *mechanism* of action for an existing procedure (radiofrequency ablation for liver cancer) but doesn't address a new market or significantly expand the existing one; it's purely a biological finding with no clear indication of novel commercial opportunity related to market size. Without knowing if this cellular activation can be leveraged for a new therapeutic or diagnostic, the addressable market remains limited to the current RFA market for liver cancer, which is well-established and not dramatically impacted by this research."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "Radiofrequency ablation (RFA) is an *existing* clinical procedure, indicating it's beyond basic research; however, this paper focuses on *understanding* the broader cellular effects *of* an existing therapy, not developing a new one, placing it at an early translational stage (investigating mechanisms). Therefore, while the underlying technology is readily applied, the findings themselves aren't immediately commercializable as a new product or process."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The paper describes an *observation* of a biological effect (cellular activation post-RFA) rather than a novel invention; simply discovering a phenomenon isn't patentable. While the *application* of this observation could potentially be patented, the paper itself doesn't present any novel technology or method deserving of strong IP protection."
+      }
+    },
+    "pi": "Shraga Nahum Goldberg",
+    "pi_full_name": "Shraga Nahum Goldberg",
+    "pi_email": "",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_41916758",
+    "title": "Dendro-plexing of Single Input Spikes via Multiple Synaptic Contacts Can Enhance Cortical Neuron Computation and Reduce Axonal Wiring.",
+    "authors": [
+      "David Beniaguev",
+      "Sapir Shapira",
+      "Idan Segev"
+    ],
+    "journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41916758/",
+    "source": "PubMed",
+    "score": 18,
+    "summary": "This research demonstrates a novel neuronal architecture – 'dendro-plexing' – where a single input signal is received through multiple synaptic connections on a neuron's dendrites, enhancing computational power and potentially reducing the need for extensive axonal wiring. The study suggests this configuration improves signal processing efficiency within cortical neurons.",
+    "opportunity": "Understanding and potentially mimicking dendro-plexing could lead to the development of more efficient neuromorphic computing architectures or novel therapeutic strategies for neurological disorders involving synaptic dysfunction.",
+    "fields": [
+      "Neuroscience",
+      "Software/AI",
+      "Medical Device",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 8,
+        "reason": "The concept of 'dendro-plexing' – functionally increasing synaptic input capacity by distributing a single spike across multiple synaptic contacts – represents a potentially significant departure from traditional models of neuronal computation and axonal wiring efficiency; while dendritic integration is well-studied, this specific mechanism of spike distribution for computational enhancement feels genuinely novel."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the research presents an interesting neurobiological mechanism, the path to a commercial product or licensable technology is highly unclear; it's currently very basic science with no immediately obvious application beyond fundamental neuroscience research, and the 'reduced axonal wiring' benefit is a long-term, speculative advantage."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper describes a neuroscientific finding with potential implications for brain-computer interfaces or neuromorphic computing, but doesn't address the market size for these applications or the commercial viability of 'dendro-plexing' as a technology; the potential market is highly speculative and far-future at this stage."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This research appears to be very early-stage, focusing on fundamental neuroscience and computational modeling; it's likely lab-based and far from any practical application or commercialization, suggesting a very low TRL. The concept of 'dendro-plexing' is novel but requires significant validation and engineering before it could be considered for real-world use (e.g., neural interfaces, bio-computing)."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The paper describes a biological principle (dendro-plexing) and a potential architectural improvement for neuromorphic computing, but doesn't inherently present novel *patentable* inventions; it's more a discovery about neuronal function. While applications *built upon* this principle could be patented, the core concept itself appears to be a naturally occurring phenomenon, limiting strong IP potential without significant engineered additions."
+      }
+    },
+    "pi": "Michael London",
+    "pi_full_name": "Michael London",
+    "pi_email": "",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "epmc_41423815",
+    "title": "Safety of Risankizumab during Pregnancy in IBD.",
+    "authors": [
+      "Noa Tsur",
+      "Ami Ben Ya'acov",
+      "Bella Ungar"
+    ],
+    "journal": "",
+    "date": "2026-04-01",
+    "url": "https://europepmc.org/article/MED/41423815",
+    "source": "Europe PMC",
+    "score": 17,
+    "summary": "This study investigates the safety of the drug Risankizumab when used by individuals with Inflammatory Bowel Disease (IBD) during pregnancy. Understanding the effects of IBD medications on fetal development is crucial for patient care and treatment decisions.",
+    "opportunity": "Demonstrating the safety profile of existing biologics like Risankizumab during pregnancy expands their market potential by reassuring patients and physicians, potentially increasing usage and long-term revenue.",
+    "fields": [
+      "Clinical",
+      "Immunology",
+      "Drug Discovery",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "Evaluating the safety of existing biologics like risankizumab in pregnancy is important, but doesn't represent high scientific novelty; it's a necessary clinical investigation rather than a fundamentally new discovery or approach. While data is valuable, it builds upon established therapeutic use and doesn't challenge existing paradigms."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "While demonstrating safety data for an existing drug (Risankizumab) in a specific population (pregnant IBD patients) is valuable, the commercial potential is moderate; it primarily supports current market share and addresses a concern for existing users rather than creating a new market or substantial revenue stream. It could de-risk the drug for a wider patient base, but isn't a breakthrough technology itself."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper focuses on a safety study within an existing market (IBD treatment) and doesn't expand the addressable patient population; therefore, it doesn't inherently *create* significant new market size, but rather aims to support continued use of an existing therapy in a specific sub-population (pregnant women). While important for patient care, it doesn't indicate a large, untapped market opportunity."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This paper focuses on *safety* data during pregnancy for an *already approved* drug (Risankizumab). While valuable, it doesn't advance the core technology itself – the TRL remains tied to the existing commercialized product and is about post-market surveillance, not development of a new technology."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes observational safety data regarding an *existing* drug (risankizumab) used off-label; it doesn't present novel IP. While valuable clinically, demonstrating safety in a specific population doesn't create new defensible intellectual property – the core patent protection resides with the original drug development."
+      }
+    },
+    "pi": "Ariella Bar Gil Shitrit",
+    "pi_full_name": "Ariella Bar Gil Shitrit",
+    "pi_email": "",
+    "added_date": "2026-04-06"
+  },
+  {
     "id": "epmc_41888165",
     "title": "Neural tracking at theta predicts drumming-induced altered states of consciousness.",
     "authors": [
@@ -1462,7 +2133,7 @@
       "Noa Dagan"
     ],
     "journal": "",
-    "date": "2026-03-26",
+    "date": "2026 Mar 26",
     "url": "https://europepmc.org/article/MED/41888165",
     "source": "Europe PMC",
     "score": 17,
@@ -1508,7 +2179,7 @@
       "Anat Perry"
     ],
     "journal": "",
-    "date": "2026-03-26",
+    "date": "2026 Mar 26",
     "url": "https://europepmc.org/article/MED/41886593",
     "source": "Europe PMC",
     "score": 17,
@@ -1555,7 +2226,7 @@
       "Ruth Shnipper"
     ],
     "journal": "",
-    "date": "2026-03-24",
+    "date": "2026 Mar 24",
     "url": "https://europepmc.org/article/MED/41887446",
     "source": "Europe PMC",
     "score": 17,
@@ -1735,52 +2406,52 @@
     "added_date": "2026-03-23"
   },
   {
-    "id": "epmc_41877401",
-    "title": "Ocular Pharmacokinetics of Topical Chloramphenicol in Dogs: Effects of Concentration and Vehicle Formulation.",
+    "id": "pubmed_41919411",
+    "title": "From Simulation to Survival: Managing an Emergency Department Under the Threat of a Ballistic Missile Attack.",
     "authors": [
-      "Bar Fruchter",
-      "Oren Pe'er",
-      "Shir Gonen"
+      "Evan Avraham Alpert",
+      "Ethan Brandler",
+      "Aliza Goldman"
     ],
-    "journal": "",
-    "date": "2026-03-24",
-    "url": "https://europepmc.org/article/MED/41877401",
-    "source": "Europe PMC",
-    "score": 16,
-    "summary": "This study investigated how different concentrations and formulations (solutions vs. ointments) of the antibiotic chloramphenicol affect its absorption and retention in the eyes of dogs. The research found that higher concentrations and ointment formulations led to significantly better drug exposure and longer retention on the ocular surface.",
-    "opportunity": "Optimizing topical ophthalmic drug delivery through formulation and concentration adjustments, as demonstrated with chloramphenicol, presents a commercial opportunity for improving the efficacy and reducing dosing frequency of veterinary and potentially human eye medications.",
+    "journal": "Disaster medicine and public health preparedness",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41919411/",
+    "source": "PubMed",
+    "score": 17,
+    "summary": "This research details a simulation-based approach to optimizing emergency department (ED) workflows under the extreme stress of a ballistic missile attack. The study focuses on resource allocation, patient prioritization, and overall ED resilience in a high-casualty, rapidly escalating crisis scenario.",
+    "opportunity": "The simulation methodology and resulting protocols could be commercialized as a disaster preparedness training platform for hospitals and emergency response teams globally, offering a unique value proposition in a growing market for resilience planning.",
     "fields": [
-      "Drug Discovery",
       "Clinical",
+      "Software/AI",
       "Medical Device",
       "Other"
     ],
     "score_breakdown": {
       "novelty": {
-        "score": 3,
-        "reason": "This study investigates well-established principles of drug delivery (concentration and vehicle effects on pharmacokinetics) applied to a known antibiotic. While the specific data generated for dogs is valuable, the core research question and methodology do not represent a significant departure from existing knowledge in ocular pharmacology or veterinary medicine."
+        "score": 7,
+        "reason": "While emergency preparedness for mass casualty events is established, applying detailed ballistic missile attack simulations *specifically* to ED management workflows represents a novel approach; it moves beyond generalized disaster planning to a highly specific, and unfortunately increasingly relevant, threat scenario. The novelty lies in the granular, simulation-driven focus on this particular type of crisis within a critical healthcare setting."
       },
       "commercial_potential": {
-        "score": 6,
-        "reason": "While the paper demonstrates clear formulation impacts on drug delivery, its commercial potential is limited to improvements *within* existing chloramphenicol products – it doesn't introduce a novel drug or treatment, only optimization of a known one; therefore, the upside is incremental rather than disruptive."
+        "score": 3,
+        "reason": "While addressing a critical need, the paper focuses on *managing* a disaster rather than presenting a novel, commercially viable technology or product; its output is primarily a procedural framework, limiting direct commercialization opportunities beyond potential consulting services or training programs which have limited scalability."
       },
       "market_size": {
         "score": 2,
-        "reason": "The paper focuses on optimizing drug delivery of an existing antibiotic (chloramphenicol) in dogs, not creating a new market; therefore, the addressable market is limited to a relatively small segment of veterinary ophthalmology and doesn't suggest a large potential for growth or significant revenue generation. While improving efficacy is valuable, it doesn't inherently expand the overall market size."
+        "reason": "The paper addresses a highly specific, low-probability event (ballistic missile attack on a hospital ED) with a limited direct commercial market; while preparedness is valuable, the addressable market for *specifically* this simulation/solution is extremely narrow and likely reliant on government funding rather than broad commercial demand."
       },
       "trl": {
         "score": 3,
-        "reason": "This study is preclinical pharmacokinetic work in dogs; it's focused on optimizing drug delivery *before* human trials, indicating a very early TRL (likely 2-3). While valuable for formulation development, it's far from demonstrating a ready-to-market product or even clinical efficacy in the target species (humans)."
+        "reason": "The paper describes a simulation and proposed management strategies, indicating the technology (or rather, the *application* of existing technologies like ED protocols and communication systems) is likely at a very early stage – conceptualization and computational modeling. It's far from demonstrated in a real-world emergency department setting, thus a low TRL."
       },
       "ip_strength": {
         "score": 2,
-        "reason": "This paper describes formulation optimization of an existing, off-patent drug (chloramphenicol). While the findings may be useful for veterinary ophthalmology, they do not represent novel, patentable *innovation* – they are improvements to drug delivery, which are difficult to protect without a fundamentally new composition of matter or method."
+        "reason": "This paper describes a *process* or *method* for emergency department management, likely relying on existing technologies and established medical protocols; processes are generally difficult to strongly defend with IP. While specific software *used* in the simulation might be patented, the core concept of adapting ED procedures for ballistic missile attacks isn't inherently patentable."
       }
     },
-    "pi": "Lionel Sebbag",
-    "pi_full_name": "Lionel Sebbag",
+    "pi": "Ahmad Nama",
+    "pi_full_name": "Ahmad Nama",
     "pi_email": "",
-    "added_date": "2026-03-30"
+    "added_date": "2026-04-06"
   },
   {
     "id": "pubmed_41863352",
@@ -1829,6 +2500,54 @@
     "pi_full_name": "Maril Anat",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_41877401",
+    "title": "Ocular Pharmacokinetics of Topical Chloramphenicol in Dogs: Effects of Concentration and Vehicle Formulation.",
+    "authors": [
+      "Bar Fruchter",
+      "Oren Pe'er",
+      "Shir Gonen"
+    ],
+    "journal": "",
+    "date": "2026 Mar 24",
+    "url": "https://europepmc.org/article/MED/41877401",
+    "source": "Europe PMC",
+    "score": 16,
+    "summary": "This study investigated how different concentrations and formulations (solutions vs. ointments) of the antibiotic chloramphenicol affect its absorption and retention in the eyes of dogs. The research found that higher concentrations and ointment formulations led to significantly better drug exposure and longer retention on the ocular surface.",
+    "opportunity": "Optimizing topical ophthalmic drug delivery through formulation and concentration adjustments, as demonstrated with chloramphenicol, presents a commercial opportunity for improving the efficacy and reducing dosing frequency of veterinary and potentially human eye medications.",
+    "fields": [
+      "Drug Discovery",
+      "Clinical",
+      "Medical Device",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "This study investigates well-established principles of drug delivery (concentration and vehicle effects on pharmacokinetics) applied to a known antibiotic. While the specific data generated for dogs is valuable, the core research question and methodology do not represent a significant departure from existing knowledge in ocular pharmacology or veterinary medicine."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "While the paper demonstrates clear formulation impacts on drug delivery, its commercial potential is limited to improvements *within* existing chloramphenicol products – it doesn't introduce a novel drug or treatment, only optimization of a known one; therefore, the upside is incremental rather than disruptive."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on optimizing drug delivery of an existing antibiotic (chloramphenicol) in dogs, not creating a new market; therefore, the addressable market is limited to a relatively small segment of veterinary ophthalmology and doesn't suggest a large potential for growth or significant revenue generation. While improving efficacy is valuable, it doesn't inherently expand the overall market size."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This study is preclinical pharmacokinetic work in dogs; it's focused on optimizing drug delivery *before* human trials, indicating a very early TRL (likely 2-3). While valuable for formulation development, it's far from demonstrating a ready-to-market product or even clinical efficacy in the target species (humans)."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes formulation optimization of an existing, off-patent drug (chloramphenicol). While the findings may be useful for veterinary ophthalmology, they do not represent novel, patentable *innovation* – they are improvements to drug delivery, which are difficult to protect without a fundamentally new composition of matter or method."
+      }
+    },
+    "pi": "Lionel Sebbag",
+    "pi_full_name": "Lionel Sebbag",
+    "pi_email": "",
+    "added_date": "2026-03-30"
   },
   {
     "id": "epmc_41869927",
@@ -2070,146 +2789,52 @@
     "added_date": "2026-03-23"
   },
   {
-    "id": "epmc_41882124",
-    "title": "Cognitive offloading reduces internal memory processing in children.",
+    "id": "pubmed_41915004",
+    "title": "Evolution and consequences of paternal inheritance of plastid DNA in conifers.",
     "authors": [
-      "Eshkol Goldberg",
-      "Hagit Magen"
+      "Tom de Jong",
+      "Birgit Kersten",
+      "Avi Shmida"
     ],
-    "journal": "",
-    "date": "2026-03-25",
-    "url": "https://europepmc.org/article/MED/41882124",
-    "source": "Europe PMC",
-    "score": 15,
-    "summary": "This research from Hebrew University demonstrates that when children are allowed to use external aids (cognitive offloading) to remember information, the neural processing required for internal memory functions decreases. The study suggests a link between reliance on external memory tools and changes in brain activity related to memory consolidation.",
-    "opportunity": "Developing educational software or assistive technologies that strategically leverage cognitive offloading principles could enhance learning outcomes and potentially aid individuals with memory impairments, creating a market for personalized learning tools.",
+    "journal": "Journal of evolutionary biology",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41915004/",
+    "source": "PubMed",
+    "score": 16,
+    "summary": "This research investigates how conifers (cone-bearing trees) uniquely inherit plastid DNA – the genetic material within chloroplasts – solely from the father, unlike most plants which inherit it from the mother. Understanding this unusual inheritance pattern sheds light on the evolutionary pressures and genetic consequences within these important tree species.",
+    "opportunity": "Selective breeding and genetic engineering of conifers for traits like growth rate, disease resistance, or wood quality could be significantly improved by leveraging knowledge of paternal plastid DNA inheritance, potentially creating higher-value forestry products.",
     "fields": [
-      "Neuroscience",
-      "Software/AI",
-      "Clinical",
-      "Other"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 6,
-        "reason": "While the idea of cognitive offloading isn't entirely new, demonstrating a *reduction* in internal memory processing specifically in children via this mechanism represents a moderately novel finding, building on existing work but adding a specific population and measurable neurological impact. The core concept isn't revolutionary, but the empirical demonstration within this context is a worthwhile contribution."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "While the research identifies a cognitive mechanism (offloading's impact on internal processing), the link to a direct commercial product or service is extremely weak; it's a basic science finding needing substantial translation, and potential applications (educational tools, cognitive training) are highly speculative at this stage without further development and validation."
-      },
-      "market_size": {
-        "score": 2,
-        "reason": "The paper focuses on a cognitive function in children, implying a potential market within educational interventions or therapies, but doesn't address the *size* of that market or willingness to pay for solutions; it's a very narrow scientific finding with no immediately apparent large commercial application."
-      },
-      "trl": {
-        "score": 2,
-        "reason": "This paper describes a cognitive science finding, likely based on behavioral experiments; it doesn't present a technology or engineered system. Therefore, the 'technology' has a very low TRL, representing basic principles discovery rather than any stage of development towards application or commercialization."
-      },
-      "ip_strength": {
-        "score": 2,
-        "reason": "This paper describes an observed cognitive phenomenon, not a novel technology or process. While the findings may *inform* future development of cognitive aids, the core discovery itself isn't patentable; it's a principle of how the mind works, and therefore lacks strong IP defensibility."
-      }
-    },
-    "pi": "Hagit Magen",
-    "pi_full_name": "Hagit Magen",
-    "pi_email": "msmagen@mail.huji.ac.il.",
-    "added_date": "2026-03-30"
-  },
-  {
-    "id": "epmc_41719017",
-    "title": "Stringent selection on kinetics of condensation reactions: early steps in chemical evolution.",
-    "authors": [
-      "Pau Capera-Aragones",
-      "Kavita Matange",
-      "Vahab Rajaei"
-    ],
-    "journal": "",
-    "date": "2026-03-25",
-    "url": "https://europepmc.org/article/MED/41719017",
-    "source": "Europe PMC",
-    "score": 15,
-    "summary": "This research investigates how complex chemical reactions, crucial for the origins of life, can avoid producing a chaotic mix of products and instead favor specific, useful pathways. The study demonstrates that kinetic selection – where reaction speed dictates which products form – explains observed 'combinatorial compression' in early chemical evolution experiments, particularly under dry conditions.",
-    "opportunity": "Understanding and replicating this kinetic selection process could lead to novel biocatalyst design and optimized reaction conditions for chemical synthesis, potentially improving efficiency and reducing waste in various industrial processes.",
-    "fields": [
+      "AgriTech",
+      "Genomics",
       "Synthetic Biology",
-      "Materials",
-      "Software/AI",
-      "Other"
+      "Materials"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 7,
-        "reason": "While the observation of combinatorial compression isn't entirely new, this paper's novelty lies in providing a *mechanistic* explanation – kinetic selection based on transition-state theory and simulations – for *why* it occurs in condensation reactions, linking experimental results to fundamental chemical principles; this is a significant step beyond simply observing the phenomenon."
-      },
-      "commercial_potential": {
-        "score": 2,
-        "reason": "This paper focuses on fundamental chemical processes related to the origin of life and, while scientifically interesting, lacks clear pathways to a direct product, service, or licensable technology; the research is very early-stage and highly abstract, with no immediately apparent commercial applications beyond potentially informing future, more applied research."
-      },
-      "market_size": {
-        "score": 1,
-        "reason": "This paper focuses on fundamental origins-of-life research and does not address a defined market or commercial application; therefore, the market size is effectively zero. While understanding prebiotic chemistry *could* indirectly benefit future biotechnology, the paper itself doesn't present a market opportunity."
-      },
-      "trl": {
-        "score": 2,
-        "reason": "This paper describes fundamental research into the *origins* of chemical reactions, relying heavily on theoretical modeling and simulations. It is very early stage (lab-stage, likely TRL 1-2) with no indication of near-term application or commercialization potential; it's focused on understanding prebiotic chemistry, not developing a product or process."
-      },
-      "ip_strength": {
-        "score": 3,
-        "reason": "The paper describes a *mechanism* for observed phenomena (combinatorial compression) but doesn't present any novel, patentable *invention* or process based on that mechanism; it's fundamental research explaining existing observations. While the application of transition-state theory and simulations is sophisticated, it doesn't inherently create defensible IP."
-      }
-    },
-    "pi": "Moran Frenkel-Pinter",
-    "pi_full_name": "Moran Frenkel-Pinter",
-    "pi_email": "moran.fp@mail.huji.ac.il.",
-    "added_date": "2026-03-30"
-  },
-  {
-    "id": "epmc_41887295",
-    "title": "Beyond One Direction: Revisiting the Fragility Index.",
-    "authors": [
-      "Noam Kahana",
-      "Michal Perets",
-      "Sameh Hany Emile"
-    ],
-    "journal": "",
-    "date": "2026-03-24",
-    "url": "https://europepmc.org/article/MED/41887295",
-    "source": "Europe PMC",
-    "score": 15,
-    "summary": "This paper proposes an improvement to the Fragility Index, a statistical tool used to assess the robustness of clinical trial results. The refined method considers changes in either direction, providing a more accurate understanding of how much data would need to shift to invalidate a study's conclusions.",
-    "opportunity": "Developing software tools incorporating this bidirectional Fragility Index calculation could become a standard feature for clinical trial analysis, offering pharmaceutical companies and regulatory bodies a more reliable assessment of evidence strength and potentially accelerating drug approval processes.",
-    "fields": [
-      "Software/AI",
-      "Clinical",
-      "Drug Discovery"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 6,
-        "reason": "While the paper addresses a recognized metric (Fragility Index) and proposes a refinement, the core idea of considering 'all possible directions of change' isn't a fundamentally new concept in statistical robustness analysis; it's more of a logical extension and improved application of existing principles. It's a valuable improvement, but doesn't represent a paradigm shift in how we think about clinical trial robustness."
+        "reason": "Paternal plastid inheritance is rare in land plants, with maternal inheritance being overwhelmingly dominant; demonstrating this occurs in conifers and detailing its evolutionary consequences represents a significant, though not entirely unforeseen, finding. While plastid inheritance biases have been explored, establishing a clear paternal lineage and tracing its impact is a novel contribution to understanding conifer evolution and potentially plant genetics more broadly."
       },
       "commercial_potential": {
         "score": 3,
-        "reason": "The paper focuses on refining a statistical method (Fragility Index) rather than developing a novel product or technology; its commercial potential is limited to potential software tools for biostatistics or as a service offered by CROs, but lacks a clear, direct path to significant revenue generation. While valuable for research, it doesn't readily translate into a standalone commercial offering."
+        "reason": "While the research reveals a fascinating biological mechanism, the direct commercial applications stemming from paternal plastid DNA inheritance in conifers are currently unclear and likely limited to niche agricultural or forestry applications – potentially for accelerating breeding programs, but this requires significant further development and validation; it doesn't readily translate into a broadly applicable product or easily licensable technology."
       },
       "market_size": {
         "score": 2,
-        "reason": "This paper focuses on a methodological improvement to statistical analysis (Fragility Index) and doesn't address a specific market or demonstrate market demand; it's a tool for researchers, not a product with a defined market size. While valuable to the clinical trial space, the paper provides no indication of the economic value or size of the market for improved statistical rigor."
+        "reason": "This research focuses on a very specific mechanism of genetic inheritance in conifers; while potentially valuable for forestry and conservation genetics, the directly addressable market is extremely narrow and unlikely to generate substantial commercial value without significant downstream applications. The market size is limited to specialized applications within plant breeding/genetics, and doesn't suggest broad applicability."
       },
       "trl": {
         "score": 2,
-        "reason": "This paper focuses on a statistical *methodology* refinement, not a new technology itself; it's about improving analysis of existing clinical trial data. Therefore, the TRL remains very low, representing primarily theoretical work with no immediate path to a tangible product or application beyond software tools for statisticians."
+        "reason": "This research focuses on fundamental biological mechanisms of plastid DNA inheritance, representing very early-stage, discovery science. It's unlikely to have near-term commercial applications and remains firmly within basic research, indicating a very low TRL."
       },
       "ip_strength": {
         "score": 2,
-        "reason": "This paper presents a methodological improvement to an existing metric (Fragility Index) rather than a novel invention; it's unlikely to be patentable. While the refinement is valuable, it builds upon publicly available statistical concepts and doesn't demonstrate strong IP potential or defensibility."
+        "reason": "Discovering a natural phenomenon – even a novel one like paternal plastid DNA inheritance in conifers – is generally not patentable; it's a 'work of nature'. While applications *based* on this discovery might be patentable, the core finding itself lacks strong inherent IP protection."
       }
     },
-    "pi": "Michal Perets",
-    "pi_full_name": "Michal Perets",
+    "pi": "Avi Shmida",
+    "pi_full_name": "Avi Shmida",
     "pi_email": "",
-    "added_date": "2026-03-30"
+    "added_date": "2026-04-06"
   },
   {
     "id": "epmc_41795474",
@@ -2257,6 +2882,148 @@
     "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_41882124",
+    "title": "Cognitive offloading reduces internal memory processing in children.",
+    "authors": [
+      "Eshkol Goldberg",
+      "Hagit Magen"
+    ],
+    "journal": "",
+    "date": "2026 Mar 25",
+    "url": "https://europepmc.org/article/MED/41882124",
+    "source": "Europe PMC",
+    "score": 15,
+    "summary": "This research from Hebrew University demonstrates that when children are allowed to use external aids (cognitive offloading) to remember information, the neural processing required for internal memory functions decreases. The study suggests a link between reliance on external memory tools and changes in brain activity related to memory consolidation.",
+    "opportunity": "Developing educational software or assistive technologies that strategically leverage cognitive offloading principles could enhance learning outcomes and potentially aid individuals with memory impairments, creating a market for personalized learning tools.",
+    "fields": [
+      "Neuroscience",
+      "Software/AI",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While the idea of cognitive offloading isn't entirely new, demonstrating a *reduction* in internal memory processing specifically in children via this mechanism represents a moderately novel finding, building on existing work but adding a specific population and measurable neurological impact. The core concept isn't revolutionary, but the empirical demonstration within this context is a worthwhile contribution."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the research identifies a cognitive mechanism (offloading's impact on internal processing), the link to a direct commercial product or service is extremely weak; it's a basic science finding needing substantial translation, and potential applications (educational tools, cognitive training) are highly speculative at this stage without further development and validation."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a cognitive function in children, implying a potential market within educational interventions or therapies, but doesn't address the *size* of that market or willingness to pay for solutions; it's a very narrow scientific finding with no immediately apparent large commercial application."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes a cognitive science finding, likely based on behavioral experiments; it doesn't present a technology or engineered system. Therefore, the 'technology' has a very low TRL, representing basic principles discovery rather than any stage of development towards application or commercialization."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes an observed cognitive phenomenon, not a novel technology or process. While the findings may *inform* future development of cognitive aids, the core discovery itself isn't patentable; it's a principle of how the mind works, and therefore lacks strong IP defensibility."
+      }
+    },
+    "pi": "Hagit Magen",
+    "pi_full_name": "Hagit Magen",
+    "pi_email": "msmagen@mail.huji.ac.il.",
+    "added_date": "2026-03-30"
+  },
+  {
+    "id": "epmc_41719017",
+    "title": "Stringent selection on kinetics of condensation reactions: early steps in chemical evolution.",
+    "authors": [
+      "Pau Capera-Aragones",
+      "Kavita Matange",
+      "Vahab Rajaei"
+    ],
+    "journal": "",
+    "date": "2026 Mar 25",
+    "url": "https://europepmc.org/article/MED/41719017",
+    "source": "Europe PMC",
+    "score": 15,
+    "summary": "This research investigates how complex chemical reactions, crucial for the origins of life, can avoid producing a chaotic mix of products and instead favor specific, useful pathways. The study demonstrates that kinetic selection – where reaction speed dictates which products form – explains observed 'combinatorial compression' in early chemical evolution experiments, particularly under dry conditions.",
+    "opportunity": "Understanding and replicating this kinetic selection process could lead to novel biocatalyst design and optimized reaction conditions for chemical synthesis, potentially improving efficiency and reducing waste in various industrial processes.",
+    "fields": [
+      "Synthetic Biology",
+      "Materials",
+      "Software/AI",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "While the observation of combinatorial compression isn't entirely new, this paper's novelty lies in providing a *mechanistic* explanation – kinetic selection based on transition-state theory and simulations – for *why* it occurs in condensation reactions, linking experimental results to fundamental chemical principles; this is a significant step beyond simply observing the phenomenon."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This paper focuses on fundamental chemical processes related to the origin of life and, while scientifically interesting, lacks clear pathways to a direct product, service, or licensable technology; the research is very early-stage and highly abstract, with no immediately apparent commercial applications beyond potentially informing future, more applied research."
+      },
+      "market_size": {
+        "score": 1,
+        "reason": "This paper focuses on fundamental origins-of-life research and does not address a defined market or commercial application; therefore, the market size is effectively zero. While understanding prebiotic chemistry *could* indirectly benefit future biotechnology, the paper itself doesn't present a market opportunity."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes fundamental research into the *origins* of chemical reactions, relying heavily on theoretical modeling and simulations. It is very early stage (lab-stage, likely TRL 1-2) with no indication of near-term application or commercialization potential; it's focused on understanding prebiotic chemistry, not developing a product or process."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The paper describes a *mechanism* for observed phenomena (combinatorial compression) but doesn't present any novel, patentable *invention* or process based on that mechanism; it's fundamental research explaining existing observations. While the application of transition-state theory and simulations is sophisticated, it doesn't inherently create defensible IP."
+      }
+    },
+    "pi": "Moran Frenkel-Pinter",
+    "pi_full_name": "Moran Frenkel-Pinter",
+    "pi_email": "moran.fp@mail.huji.ac.il.",
+    "added_date": "2026-03-30"
+  },
+  {
+    "id": "epmc_41887295",
+    "title": "Beyond One Direction: Revisiting the Fragility Index.",
+    "authors": [
+      "Noam Kahana",
+      "Michal Perets",
+      "Sameh Hany Emile"
+    ],
+    "journal": "",
+    "date": "2026 Mar 24",
+    "url": "https://europepmc.org/article/MED/41887295",
+    "source": "Europe PMC",
+    "score": 15,
+    "summary": "This paper proposes an improvement to the Fragility Index, a statistical tool used to assess the robustness of clinical trial results. The refined method considers changes in either direction, providing a more accurate understanding of how much data would need to shift to invalidate a study's conclusions.",
+    "opportunity": "Developing software tools incorporating this bidirectional Fragility Index calculation could become a standard feature for clinical trial analysis, offering pharmaceutical companies and regulatory bodies a more reliable assessment of evidence strength and potentially accelerating drug approval processes.",
+    "fields": [
+      "Software/AI",
+      "Clinical",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While the paper addresses a recognized metric (Fragility Index) and proposes a refinement, the core idea of considering 'all possible directions of change' isn't a fundamentally new concept in statistical robustness analysis; it's more of a logical extension and improved application of existing principles. It's a valuable improvement, but doesn't represent a paradigm shift in how we think about clinical trial robustness."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper focuses on refining a statistical method (Fragility Index) rather than developing a novel product or technology; its commercial potential is limited to potential software tools for biostatistics or as a service offered by CROs, but lacks a clear, direct path to significant revenue generation. While valuable for research, it doesn't readily translate into a standalone commercial offering."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This paper focuses on a methodological improvement to statistical analysis (Fragility Index) and doesn't address a specific market or demonstrate market demand; it's a tool for researchers, not a product with a defined market size. While valuable to the clinical trial space, the paper provides no indication of the economic value or size of the market for improved statistical rigor."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper focuses on a statistical *methodology* refinement, not a new technology itself; it's about improving analysis of existing clinical trial data. Therefore, the TRL remains very low, representing primarily theoretical work with no immediate path to a tangible product or application beyond software tools for statisticians."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper presents a methodological improvement to an existing metric (Fragility Index) rather than a novel invention; it's unlikely to be patentable. While the refinement is valuable, it builds upon publicly available statistical concepts and doesn't demonstrate strong IP potential or defensibility."
+      }
+    },
+    "pi": "Michal Perets",
+    "pi_full_name": "Michal Perets",
+    "pi_email": "",
+    "added_date": "2026-03-30"
   },
   {
     "id": "epmc_41840489",
@@ -2353,6 +3120,102 @@
     "added_date": "2026-03-25"
   },
   {
+    "id": "pubmed_41932681",
+    "title": "Conscious Detection of Spoken Words Depends on Their Valence.",
+    "authors": [
+      "Gal R Chen",
+      "Zaheera Maswadeh",
+      "Leon Deouell"
+    ],
+    "journal": "Psychological science",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41932681/",
+    "source": "PubMed",
+    "score": 15,
+    "summary": "This research from Hebrew University demonstrates that the brain's ability to consciously perceive spoken words is influenced by whether those words carry positive or negative emotional meaning (valence). The study suggests a link between emotional processing and conscious auditory perception, potentially revealing underlying neural mechanisms.",
+    "opportunity": "Developing AI-powered speech analysis tools that incorporate valence detection could improve the accuracy of mental health diagnostics or enhance human-computer interaction for emotionally sensitive applications.",
+    "fields": [
+      "Neuroscience",
+      "Software/AI",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While demonstrating a link between valence and conscious detection of spoken words is interesting and builds on existing research in affective neuroscience and speech processing, the core idea of emotional content influencing perception isn't entirely novel; however, pinpointing this effect *specifically* during conscious detection of *spoken* words adds a layer of specificity that elevates it beyond a simple replication of prior findings."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the finding that valence impacts conscious detection is interesting from a neuroscience perspective, the direct commercial applications are unclear; it doesn't immediately translate into a readily marketable product or easily licensable technology without significant further research and development to connect it to a specific need (e.g., lie detection, marketing response analysis, or mental health diagnostics)."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a very specific neuroscientific finding about valence processing in speech, with no immediately obvious large-scale commercial application; therefore, the directly addressable market size appears extremely limited without significant downstream innovation and a clear path to a product or service. While understanding emotional response *could* inform markets like mental health or advertising, this paper doesn't address those connections."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes a fundamental neuroscience finding about how the brain processes language valence, likely based on EEG or fMRI data. It's very early-stage research with no indication of translation to a product or application; therefore, the TRL is extremely low, representing basic research rather than applied development."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes a *finding* about neural processing, not an *invention*. While the discovery itself is interesting, it's unlikely to be patentable as a method of detection or a device; it's a principle of how the brain works, and principles are not patentable subject matter."
+      }
+    },
+    "pi": "Ran R Hassin",
+    "pi_full_name": "Ran R Hassin",
+    "pi_email": "",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_41925051",
+    "title": "Chronic Oral Inflammation Impairs Female Reproduction in a Murine Model.",
+    "authors": [
+      "P Kles",
+      "S Ameho",
+      "P Wasserzug-Pash"
+    ],
+    "journal": "Journal of dental research",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41925051/",
+    "source": "PubMed",
+    "score": 15,
+    "summary": "This study demonstrates a link between chronic oral inflammation and impaired reproductive function in female mice. The research suggests that systemic inflammation originating in the mouth can negatively impact fertility, potentially through hormonal or immunological mechanisms.",
+    "opportunity": "Developing novel anti-inflammatory therapeutics, or identifying biomarkers for oral inflammation-related infertility, presents a commercial opportunity to address a currently unmet need in women's health.",
+    "fields": [
+      "Drug Discovery",
+      "Immunology",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While the link between systemic inflammation and reproductive health is known, demonstrating that *chronic oral* inflammation specifically impairs female reproduction in a murine model represents a reasonably novel connection, potentially highlighting a previously underappreciated pathway; however, the concept of inflammation impacting reproduction isn't entirely new, limiting a higher score."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper identifies a correlation between oral inflammation and female reproductive issues in mice, but lacks any indication of a clear therapeutic target or diagnostic pathway for commercialization; it's a biological finding needing substantial further research to translate into a product or service."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a very specific biological mechanism (chronic oral inflammation impacting female reproduction in mice) with no clear indication of a direct, large addressable human market; while reproductive health is a large market, linking it to *oral* inflammation requires substantial further research and validation to establish significant demand."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes findings from a murine (mouse) model, indicating very early-stage research – likely proof-of-concept in a lab setting. Translating findings from animal models to human applications typically requires significant further research and development, placing the TRL very low."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "Identifying a correlation between chronic oral inflammation and impaired female reproduction, even in a murine model, is unlikely to be strongly defensible IP; biological correlations are often difficult to patent without a novel mechanism or therapeutic intervention. The study, as described by the title, appears to be purely observational and lacks any disclosed novel compositions of matter or methods."
+      }
+    },
+    "pi": "A Wilensky",
+    "pi_full_name": "A Wilensky",
+    "pi_email": "",
+    "added_date": "2026-04-06"
+  },
+  {
     "id": "epmc_41895539",
     "title": "Brain malformations, oxidative and nitrosative stress induced prenatally by VPA in ICR mouse fetuses are counteracted by concomitant administration of S-adenosyl methionine.",
     "authors": [
@@ -2361,7 +3224,7 @@
       "Andrii Bazylevich"
     ],
     "journal": "",
-    "date": "2026-03-25",
+    "date": "2026 Mar 25",
     "url": "https://europepmc.org/article/MED/41895539",
     "source": "Europe PMC",
     "score": 14,
@@ -2543,6 +3406,99 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "epmc_41678362",
+    "title": "Maternal Diabetes and Early Neurodevelopment: Differential Milestone Attainment in Offspring by Diabetes Type.",
+    "authors": [
+      "Liya Kerem",
+      "Joshua Guedalia",
+      "Michal Lipschuetz"
+    ],
+    "journal": "",
+    "date": "2026-04-01",
+    "url": "https://europepmc.org/article/MED/41678362",
+    "source": "Europe PMC",
+    "score": 13,
+    "summary": "This study demonstrates that maternal diabetes, particularly pregestational type 1 and type 2, is associated with delays in offspring neurodevelopmental milestones across language, social, and motor skills. The risk appears highest for infants born to mothers with type 1 diabetes, suggesting differential impacts based on diabetes type.",
+    "opportunity": "Developing early diagnostic tools or targeted interventions (e.g., specialized therapies, nutritional supplements) for infants at high risk due to maternal diabetes could improve neurodevelopmental outcomes and reduce long-term healthcare costs.",
+    "fields": [
+      "Neuroscience",
+      "Diagnostics",
+      "Clinical",
+      "Software/AI"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While the study investigates an important clinical question and differentiates between types of maternal diabetes, the core concept – that maternal diabetes impacts neurodevelopment – is well-established; the novelty lies in quantifying differences *between* diabetes types, which is incremental rather than groundbreaking. The methodology (retrospective cohort study using existing data) doesn't introduce novel techniques."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the paper identifies a correlation between maternal diabetes type and neurodevelopmental delays, it doesn't inherently translate to a clear commercial product or service; it primarily points to a need for increased monitoring and potentially earlier intervention, which are existing practices, not novel offerings. The research could *inform* development of diagnostic tools or therapies, but the paper itself doesn't present anything directly licensable or productizable."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "While the paper identifies a clear clinical need – understanding neurodevelopmental impacts of maternal diabetes – it doesn't address the *market* size for interventions or diagnostics related to these findings; the study focuses on prevalence and risk association, not commercial opportunity. The total number of mothers with diabetes is known, but the addressable market (e.g., for early intervention programs, specialized testing, or therapies) remains undefined and likely represents a small fraction of the overall diabetic pregnancy population."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes retrospective observational research analyzing existing clinical data; it does *not* represent the development of a new technology or intervention, and therefore has a very low TRL. The 'technology' here is data analysis of established clinical practices, which is already widely applied."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes an observational study identifying correlations between maternal diabetes type and neurodevelopmental milestones; it does not present any novel inventions, methods, or discoveries that would be patentable or otherwise defensible as intellectual property. The work relies on existing data collection and analysis techniques."
+      }
+    },
+    "pi": "Ofer Beharier",
+    "pi_full_name": "Ofer Beharier",
+    "pi_email": "",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "epmc_41801731",
+    "title": "Modeling cooperation: Gendered parenting and its impact on children's reciprocal actions.",
+    "authors": [
+      "Avi Benozio"
+    ],
+    "journal": "",
+    "date": "2026 Mar 9",
+    "url": "https://europepmc.org/article/MED/41801731",
+    "source": "Europe PMC",
+    "score": 13,
+    "summary": "This study investigated how parents' reciprocal behavior (cooperation or selfishness) changes when their children are present, and how this parental modeling influences children's own reciprocal actions. The research found gender-specific parental responses – fathers were more likely to reciprocate selfishness when their sons were present – and that children generally mirrored parental behavior when interacting with cooperative partners.",
+    "opportunity": "Understanding the nuanced development of reciprocal behavior, particularly the influence of parental modeling and gender dynamics, could inform the design of AI-driven educational tools or therapeutic interventions aimed at fostering prosocial behavior and mitigating antisocial tendencies in children.",
+    "fields": [
+      "Neuroscience",
+      "Software/AI",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 5,
+        "reason": "While the study identifies an interesting gendered difference in parental responses to selfishness (higher retaliation with sons), the core concept of social learning and reciprocal behavior is well-established; the novelty lies in the specific contextualization and observation of this dynamic, rather than a fundamentally new scientific principle. The findings are incremental and build upon existing literature rather than representing a paradigm shift."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This research, while potentially insightful for developmental psychology, has extremely limited direct commercial potential; it doesn't readily translate into a product, service, or licensable technology beyond potentially informing parenting advice (a crowded market). The findings are nuanced and context-specific, making broad application difficult."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This research focuses on a fundamental aspect of human behavior (reciprocity) but lacks any clear pathway to a substantial market. While understanding parenting and child development is valuable, the study doesn't address a significant unmet need or suggest a commercially viable application, resulting in a very limited addressable market."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This research is very early stage, representing basic science investigating behavioral patterns; it's far removed from any practical application or commercialization. The study is a lab-based experiment with a limited sample size and focuses on understanding fundamental aspects of social behavior, not developing a technology or product."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes behavioral observations and correlational findings; there's no novel technology, method, or process described that would be patentable. The 'innovation' is an observed behavioral pattern, which is not protectable IP."
+      }
+    },
+    "pi": "Avi Benozio",
+    "pi_full_name": "",
+    "pi_email": "",
+    "added_date": "2026-03-23"
+  },
+  {
     "id": "epmc_41895004",
     "title": "Understanding the cognitive and emotional foundations of mathematical ability.",
     "authors": [
@@ -2550,7 +3506,7 @@
       "Sonia Hasson"
     ],
     "journal": "",
-    "date": "2026-03-26",
+    "date": "2026 Mar 26",
     "url": "https://europepmc.org/article/MED/41895004",
     "source": "Europe PMC",
     "score": 13,
@@ -2588,51 +3544,6 @@
     "pi_full_name": "Sonia Hasson",
     "pi_email": "soniahassoun@walla.co.il.",
     "added_date": "2026-03-30"
-  },
-  {
-    "id": "epmc_41801731",
-    "title": "Modeling cooperation: Gendered parenting and its impact on children's reciprocal actions.",
-    "authors": [
-      "Avi Benozio"
-    ],
-    "journal": "",
-    "date": "2026-03-09",
-    "url": "https://europepmc.org/article/MED/41801731",
-    "source": "Europe PMC",
-    "score": 13,
-    "summary": "This study investigated how parents' reciprocal behavior (cooperation or selfishness) changes when their children are present, and how this parental modeling influences children's own reciprocal actions. The research found gender-specific parental responses – fathers were more likely to reciprocate selfishness when their sons were present – and that children generally mirrored parental behavior when interacting with cooperative partners.",
-    "opportunity": "Understanding the nuanced development of reciprocal behavior, particularly the influence of parental modeling and gender dynamics, could inform the design of AI-driven educational tools or therapeutic interventions aimed at fostering prosocial behavior and mitigating antisocial tendencies in children.",
-    "fields": [
-      "Neuroscience",
-      "Software/AI",
-      "Other"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 5,
-        "reason": "While the study identifies an interesting gendered difference in parental responses to selfishness (higher retaliation with sons), the core concept of social learning and reciprocal behavior is well-established; the novelty lies in the specific contextualization and observation of this dynamic, rather than a fundamentally new scientific principle. The findings are incremental and build upon existing literature rather than representing a paradigm shift."
-      },
-      "commercial_potential": {
-        "score": 2,
-        "reason": "This research, while potentially insightful for developmental psychology, has extremely limited direct commercial potential; it doesn't readily translate into a product, service, or licensable technology beyond potentially informing parenting advice (a crowded market). The findings are nuanced and context-specific, making broad application difficult."
-      },
-      "market_size": {
-        "score": 2,
-        "reason": "This research focuses on a fundamental aspect of human behavior (reciprocity) but lacks any clear pathway to a substantial market. While understanding parenting and child development is valuable, the study doesn't address a significant unmet need or suggest a commercially viable application, resulting in a very limited addressable market."
-      },
-      "trl": {
-        "score": 2,
-        "reason": "This research is very early stage, representing basic science investigating behavioral patterns; it's far removed from any practical application or commercialization. The study is a lab-based experiment with a limited sample size and focuses on understanding fundamental aspects of social behavior, not developing a technology or product."
-      },
-      "ip_strength": {
-        "score": 2,
-        "reason": "This paper describes behavioral observations and correlational findings; there's no novel technology, method, or process described that would be patentable. The 'innovation' is an observed behavioral pattern, which is not protectable IP."
-      }
-    },
-    "pi": "Avi Benozio",
-    "pi_full_name": "",
-    "pi_email": "",
-    "added_date": "2026-03-23"
   },
   {
     "id": "epmc_41103162",
@@ -2805,52 +3716,196 @@
     "added_date": "2026-03-23"
   },
   {
-    "id": "epmc_41877207",
-    "title": "The framework and best practices of emergency medical teams: lessons learned from Israel's international field hospital response.",
+    "id": "pubmed_41934057",
+    "title": "Editorial: TEER in shock states - Promising feasibility, uncertain benefit.",
     "authors": [
-      "Evan Avraham Alpert",
-      "Giora Weiser",
-      "Deganit Kobliner-Friedman"
+      "Gal Sella",
+      "Emanuel Harari",
+      "Dan Haberman"
     ],
-    "journal": "",
-    "date": "2026-03-25",
-    "url": "https://europepmc.org/article/MED/41877207",
-    "source": "Europe PMC",
-    "score": 12,
-    "summary": "This paper details the operational framework and best practices of Israeli emergency medical teams deployed internationally, focusing on their field hospital responses. It likely outlines logistical, medical, and organizational strategies for rapid deployment and effective care in challenging environments.",
-    "opportunity": "The insights gained from Israel's field hospital experience could be commercialized into specialized training programs, disaster preparedness consulting, or the development of robust, rapidly deployable medical kits and infrastructure for both governmental and non-governmental organizations.",
+    "journal": "Cardiovascular revascularization medicine : including molecular interventions",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41934057/",
+    "source": "PubMed",
+    "score": 13,
+    "summary": "This editorial discusses the use of Transendothelial Electrical Resistance (TEER) as a method to assess the integrity of endothelial barriers, particularly in shock states. The authors highlight the technical feasibility of TEER but question whether changes in TEER measurements reliably correlate with clinically meaningful outcomes or predict patient response to treatment.",
+    "opportunity": "Development of improved, real-time endothelial barrier function monitoring tools – potentially integrating TEER with other biomarkers – could enable personalized treatment strategies for critical care patients experiencing shock, representing a niche market within the broader critical care monitoring space.",
     "fields": [
-      "Medical Device",
       "Clinical",
-      "Software/AI",
+      "Medical Device",
+      "Diagnostics",
       "Other"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 3,
-        "reason": "While valuable for practical application and potentially improving emergency response protocols, the paper focuses on *implementation* and lessons learned from existing practices rather than presenting fundamentally new scientific discoveries or technological innovations; it's a systems-level analysis of a known capability, not a breakthrough in emergency medicine itself."
+        "reason": "Editorials, by their nature, rarely present novel research; this piece appears to be a critical assessment of an existing technique (TEER) applied to a specific clinical context (shock states). While thoughtfully questioning the benefit, it doesn't demonstrate groundbreaking scientific innovation itself."
       },
       "commercial_potential": {
         "score": 3,
-        "reason": "While the paper details valuable operational learnings, it focuses on *how* to deploy emergency medical teams rather than a novel technology or service with clear commercializable features; the 'product' is essentially skilled deployment, which is difficult to directly monetize beyond standard consulting or training services, limiting commercial potential."
+        "reason": "The editorial title itself highlights 'uncertain benefit,' immediately suggesting limited commercial viability; while TEER measurement *in shock states* may be feasible, the lack of demonstrated clinical improvement translates to a weak commercial potential as a standalone product or service."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The editorial format and focus on 'uncertain benefit' suggest this paper doesn't *define* or quantify a market size; it questions the clinical value of a technology (TEER monitoring in shock states) rather than assessing its commercial potential. Therefore, there's no information to evaluate the market size or addressable demand."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "The title explicitly states 'promising feasibility, uncertain benefit,' indicating the technology (TEER monitoring in shock states) is likely still in early stages of validation, likely pre-clinical or very early clinical trials – thus a low TRL. The editorial nature suggests a review of existing, but not yet widely adopted, work rather than reporting on a near-market product."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "Editorials, by their nature, do not present novel IP; they comment on existing research. The paper discusses a *method* of measurement (TEER) applied to a clinical scenario, but doesn't describe any new invention or improvement to the TEER technology itself, offering no indication of defensibility."
+      }
+    },
+    "pi": "Dan Haberman",
+    "pi_full_name": "Dan Haberman",
+    "pi_email": "haberdan@gmail.com.",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_41922295",
+    "title": "The lesser the better? A systematic review and meta-analysis of resection strategy in lung neuroendocrine tumors.",
+    "authors": [
+      "Gal Aviel",
+      "Ranin Hojerat",
+      "Islam Idais"
+    ],
+    "journal": "Journal of neuroendocrinology",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41922295/",
+    "source": "PubMed",
+    "score": 13,
+    "summary": "This research systematically reviews and analyzes different surgical approaches (resection strategies) for treating lung neuroendocrine tumors. The study aims to determine if less aggressive surgery is as effective as more extensive surgery in improving patient outcomes.",
+    "opportunity": "Development of AI-powered surgical planning tools that predict optimal resection margins for lung neuroendocrine tumors, potentially reducing unnecessary surgery and improving patient quality of life, represents a commercial opportunity.",
+    "fields": [
+      "Clinical",
+      "Imaging",
+      "Software/AI",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "Systematic reviews and meta-analyses, while valuable, rarely represent *novel* primary research; they synthesize existing knowledge. While this work may refine clinical understanding of resection strategies, it doesn't present fundamentally new scientific discoveries about lung neuroendocrine tumors themselves."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "This paper focuses on *how* to treat a disease (lung neuroendocrine tumors) rather than presenting a novel technology or therapeutic itself; its commercial potential relies on influencing surgical practice, which is a slow and indirect path to revenue, and doesn't lend itself to direct licensing or product development."
       },
       "market_size": {
         "score": 3,
-        "reason": "The paper focuses on a very specific capability (international field hospital response by emergency medical teams) which, while valuable, represents a niche market within the broader healthcare and disaster relief sectors; the paper provides no data or analysis quantifying the overall size or growth potential of this niche."
+        "reason": "The paper focuses on a relatively rare cancer (lung neuroendocrine tumors) and specifically on *treatment strategy* within that population, not the overall incidence or prevalence of the disease itself; this inherently limits the total addressable market for any resulting innovation, even if the improved treatment is widely adopted. While improving outcomes for this patient group is valuable, the market size will likely remain niche, impacting commercial potential."
       },
       "trl": {
         "score": 2,
-        "reason": "This paper describes established practices of existing emergency medical teams, not a novel technology; therefore, the TRL is very low as it details deployment of *current* capabilities. It's focused on operational frameworks and lessons learned, not the development of a new technology needing maturation."
+        "reason": "This paper is a systematic review and meta-analysis of *existing* surgical strategies; it doesn't present a new technology itself, meaning the TRL is inherently low as it concerns established clinical practice. It analyzes what *is* being done, not something novel being developed, placing it firmly at the lower end of the TRL scale."
       },
       "ip_strength": {
         "score": 1,
-        "reason": "This paper describes best practices and lessons learned in deploying emergency medical teams, which are not inherently patentable concepts; it details a *process* of care delivery, not a novel invention or technology. While improvements to emergency response are valuable, the described framework relies on existing medical knowledge and equipment, offering minimal IP strength."
+        "reason": "This paper is a systematic review and meta-analysis; it does *not* present novel innovation or invention, and therefore has no inherent IP strength. It analyzes existing data and clinical practices, offering insights but not creating patentable subject matter."
       }
     },
-    "pi": "Ofer Merin",
-    "pi_full_name": "Evan Avraham Alpert",
-    "pi_email": "avraham.alpert@mail.huji.ac.il.",
-    "added_date": "2026-03-30"
+    "pi": "Ori Wald",
+    "pi_full_name": "Ori Wald",
+    "pi_email": "",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_41920201",
+    "title": "Backboards in prehospital trauma: Assessing long-term neurological and spine-related disability among military personnel.",
+    "authors": [
+      "Mor Rittblat",
+      "Guy Vishnevsky",
+      "Nir Tsur"
+    ],
+    "journal": "The journal of spinal cord medicine",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41920201/",
+    "source": "PubMed",
+    "score": 13,
+    "summary": "This study investigates the long-term neurological and spinal health outcomes of military personnel who underwent prehospital immobilization with backboards following traumatic injuries. The research aims to determine if routine backboarding practices contribute to increased disability rates in the long run.",
+    "opportunity": "Development of alternative, less restrictive prehospital immobilization techniques and associated training programs could reduce long-term disability and healthcare costs for both military and civilian trauma patients, creating a market for improved emergency medical devices and protocols.",
+    "fields": [
+      "Medical Device",
+      "Clinical",
+      "Neuroscience",
+      "Imaging"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The study investigates the long-term effects of a prehospital care practice (backboards) which, while common, hasn't been rigorously assessed for long-term disability – this is a worthwhile investigation, but the *concept* of assessing existing practices isn't fundamentally novel. It's an important clinical question, but not a breakthrough in scientific understanding."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "This study appears to be a retrospective analysis of existing practices, not the development of a novel technology; while valuable for informing protocols, it doesn't inherently create a new commercial product or licensable technology with clear market potential beyond standard medical practice adjustments. The findings would likely influence *how* backboards are used, not *what* is sold."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a very specific sub-population (military personnel experiencing trauma) and a niche application (backboards in prehospital care), indicating a limited total addressable market even within the broader trauma care space. While important for that population, the commercial potential appears small without significant expansion into civilian applications which isn't addressed."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This study assesses the *use* of an existing technology (backboards) in a real-world setting, rather than developing a new technology; therefore, the TRL is relatively low as it focuses on implementation and outcomes analysis, not innovation itself. It's likely past lab-stage but far from commercialization of a novel device or process."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This study appears to be a clinical assessment of an existing practice (using backboards in trauma care) and doesn't describe any novel technology or process. As such, there's virtually no inherent IP strength or defensibility associated with the research itself; it's an evaluation, not an invention."
+      }
+    },
+    "pi": "Tomer Talmy",
+    "pi_full_name": "Tomer Talmy",
+    "pi_email": "",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_41906950",
+    "title": "The Impact of Small-for-Gestational-Age on Pulmonary Function in Infancy, a Retrospective Cohort Study.",
+    "authors": [
+      "Avigdor Hevroni",
+      "Nadav Juven Wetzler",
+      "Alex Gileles-Hillel"
+    ],
+    "journal": "Pediatric pulmonology",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41906950/",
+    "source": "PubMed",
+    "score": 13,
+    "summary": "This retrospective study investigates the relationship between being small-for-gestational-age (SGA) at birth and lung function in infants. Understanding this connection is crucial for identifying infants at risk for long-term respiratory issues and potentially intervening early.",
+    "opportunity": "Development of predictive diagnostics or monitoring tools for infants born SGA could enable proactive respiratory support and improve long-term health outcomes, representing a market opportunity in pediatric pulmonology.",
+    "fields": [
+      "Diagnostics",
+      "Clinical",
+      "Immunology",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "Retrospective cohort studies examining the link between SGA and pulmonary function, while valuable for clinical understanding, are not inherently novel; this association has been explored previously. The study's novelty would depend heavily on the specific cohort, pulmonary function measures used, and any *unexpected* findings, which are not apparent from the title alone."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While identifying a correlation between SGA and pulmonary function is valuable research, the paper as described doesn't immediately suggest a clear path to a commercial product or service; it's a descriptive study lacking a proposed intervention or diagnostic tool. Further research linking this finding to a specific, addressable clinical need would be required to improve commercial potential."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "While the paper addresses a clinically significant issue (SGA infants and pulmonary function), it focuses on a *cohort* – meaning it describes a problem, not a solution with a clear market. The potential market size is tied to the overall incidence of SGA births and subsequent respiratory issues, which is substantial, but the paper doesn't indicate any commercializable technology or intervention to capture that market."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This study is a retrospective cohort analysis, meaning it analyzes *existing* data – it doesn't develop or test a new technology. Therefore, the TRL is very low, representing basic research and far from any commercial application; it informs understanding of a biological phenomenon, but doesn't *create* a technology."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This study appears to be a retrospective observational analysis of existing data; as such, it's unlikely to generate patentable inventions or strong IP. While the *findings* might be novel, the *method* is not, and observing a correlation doesn't create defensible intellectual property."
+      }
+    },
+    "pi": "Oded Breuer",
+    "pi_full_name": "Oded Breuer",
+    "pi_email": "",
+    "added_date": "2026-04-06"
   },
   {
     "id": "epmc_41785124",
@@ -2899,6 +3954,54 @@
     "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_41877207",
+    "title": "The framework and best practices of emergency medical teams: lessons learned from Israel's international field hospital response.",
+    "authors": [
+      "Evan Avraham Alpert",
+      "Giora Weiser",
+      "Deganit Kobliner-Friedman"
+    ],
+    "journal": "",
+    "date": "2026 Mar 25",
+    "url": "https://europepmc.org/article/MED/41877207",
+    "source": "Europe PMC",
+    "score": 12,
+    "summary": "This paper details the operational framework and best practices of Israeli emergency medical teams deployed internationally, focusing on their field hospital responses. It likely outlines logistical, medical, and organizational strategies for rapid deployment and effective care in challenging environments.",
+    "opportunity": "The insights gained from Israel's field hospital experience could be commercialized into specialized training programs, disaster preparedness consulting, or the development of robust, rapidly deployable medical kits and infrastructure for both governmental and non-governmental organizations.",
+    "fields": [
+      "Medical Device",
+      "Clinical",
+      "Software/AI",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "While valuable for practical application and potentially improving emergency response protocols, the paper focuses on *implementation* and lessons learned from existing practices rather than presenting fundamentally new scientific discoveries or technological innovations; it's a systems-level analysis of a known capability, not a breakthrough in emergency medicine itself."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the paper details valuable operational learnings, it focuses on *how* to deploy emergency medical teams rather than a novel technology or service with clear commercializable features; the 'product' is essentially skilled deployment, which is difficult to directly monetize beyond standard consulting or training services, limiting commercial potential."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper focuses on a very specific capability (international field hospital response by emergency medical teams) which, while valuable, represents a niche market within the broader healthcare and disaster relief sectors; the paper provides no data or analysis quantifying the overall size or growth potential of this niche."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes established practices of existing emergency medical teams, not a novel technology; therefore, the TRL is very low as it details deployment of *current* capabilities. It's focused on operational frameworks and lessons learned, not the development of a new technology needing maturation."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes best practices and lessons learned in deploying emergency medical teams, which are not inherently patentable concepts; it details a *process* of care delivery, not a novel invention or technology. While improvements to emergency response are valuable, the described framework relies on existing medical knowledge and equipment, offering minimal IP strength."
+      }
+    },
+    "pi": "Ofer Merin",
+    "pi_full_name": "Evan Avraham Alpert",
+    "pi_email": "avraham.alpert@mail.huji.ac.il.",
+    "added_date": "2026-03-30"
   },
   {
     "id": "pubmed_41855822",
@@ -3100,7 +4203,7 @@
       "Gloria Tridello"
     ],
     "journal": "",
-    "date": "2026-03-26",
+    "date": "2026 Mar 26",
     "url": "https://europepmc.org/article/MED/41888297",
     "source": "Europe PMC",
     "score": 11,
@@ -3234,6 +4337,149 @@
     "pi_full_name": "Jaime Levy",
     "pi_email": "levjaime@gmail.com.",
     "added_date": "2026-03-25"
+  },
+  {
+    "id": "pubmed_41936589",
+    "title": "Association of neovascular glaucoma with increased mortality and cardiovascular risk: a multicenter propensity-matched study.",
+    "authors": [
+      "Yossi Eshel",
+      "Shoham Kubovsky",
+      "Natan Lishinsky-Fischer"
+    ],
+    "journal": "Scientific reports",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41936589/",
+    "source": "PubMed",
+    "score": 11,
+    "summary": "This study investigates the link between neovascular glaucoma (a severe form of glaucoma caused by abnormal blood vessel growth) and increased risk of death and cardiovascular events. Using a large, matched cohort, researchers found a significant association between the two, suggesting glaucoma may be a systemic disease indicator.",
+    "opportunity": "Developing novel diagnostic tools or therapeutic interventions targeting the shared vascular pathology between neovascular glaucoma and cardiovascular disease could offer dual benefits for patient outcomes and represent a significant market opportunity.",
+    "fields": [
+      "Diagnostics",
+      "Clinical",
+      "Drug Discovery",
+      "Imaging"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "While the study's use of propensity matching and a multicenter approach is methodologically sound, the *association* of neovascular glaucoma with mortality and cardiovascular risk isn't a fundamentally novel finding – prior studies have hinted at this link; this appears to be a larger, more rigorous confirmation rather than a discovery of a new biological mechanism or previously unknown relationship."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While identifying a correlation between neovascular glaucoma and increased mortality/cardiovascular risk is interesting from a biological standpoint, the paper doesn't suggest a novel therapeutic intervention or diagnostic tool; it primarily highlights a risk association, offering limited direct commercial potential without further research translating into actionable products or services."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This paper focuses on a relatively rare complication of glaucoma (neovascular glaucoma) and its correlation with mortality/cardiovascular risk, not on a novel therapy or diagnostic with a large addressable market; the market size is limited to managing a secondary condition within an existing glaucoma patient population, and doesn't represent a broad, new commercial opportunity."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This study describes an *observation* about a correlation between a disease state (neovascular glaucoma) and health outcomes; it does not present any new technology or intervention. Therefore, the TRL is very low, representing basic research and far from commercial application."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This study describes an observed correlation, not a novel invention; therefore, there is no inherent IP to protect. Observational studies, even large multicenter ones, are generally not patentable as they describe phenomena rather than new compositions of matter, methods, or machines."
+      }
+    },
+    "pi": "Jaime Levy",
+    "pi_full_name": "Jaime Levy",
+    "pi_email": "levjaime@gmail.com.",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_41936229",
+    "title": "Strategic self-initiated encoding in object-location memory in 8-10-year-old children.",
+    "authors": [
+      "N Gorohovsky",
+      "I R Ben-Harosh",
+      "H Magen"
+    ],
+    "journal": "Journal of experimental child psychology",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41936229/",
+    "source": "PubMed",
+    "score": 11,
+    "summary": "This research investigates how children strategically remember the locations of objects, suggesting an active, rather than passive, process in spatial memory formation. The study focuses on encoding strategies used by 8-10 year olds during a memory task involving object placement.",
+    "opportunity": "Understanding the neural mechanisms of memory formation in children could inform the development of targeted educational interventions or cognitive training programs to improve learning and address learning disabilities.",
+    "fields": [
+      "Neuroscience",
+      "Software/AI",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While investigating cognitive strategies in children is valuable, the concept of strategic encoding in object-location memory isn't entirely novel; prior work has established encoding strategies exist in this age group and in memory generally. The paper's potential lies in *how* it examines this, but without knowing the methodology, it's unlikely to represent a paradigm shift."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This research focuses on a fundamental cognitive process in children and lacks a clear path to direct commercialization as a product or service; while potentially informing educational strategies, the link to a revenue-generating application is extremely tenuous and requires significant further translation and development. The findings are unlikely to be directly licensable in their current form."
+      },
+      "market_size": {
+        "score": 1,
+        "reason": "This research focuses on a very specific cognitive process in a narrow demographic (8-10 year old children). There is no discernible direct market application or addressable demand for understanding strategic encoding in this population, resulting in a negligible market size."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes basic research into cognitive development in children; it's fundamentally at the 'discovery' stage and far removed from any potential product or commercial application. The TRL is very low, representing lab-based research with no clear path to translation."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes behavioral findings in cognitive psychology; as such, the core innovation is unlikely to be patentable. While novel insights into cognitive processes are valuable, they generally fall into the realm of scientific discovery rather than protectable intellectual property."
+      }
+    },
+    "pi": "H Magen",
+    "pi_full_name": "H Magen",
+    "pi_email": "msmagen@mail.huji.ac.il.",
+    "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_41922992",
+    "title": "NSTEMI in the oldest-old: prognosis and impact of invasive management in patients ≥ 85 years.",
+    "authors": [
+      "Abed Qadan",
+      "Louay Taha",
+      "Mohammad Karmi"
+    ],
+    "journal": "BMC geriatrics",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41922992/",
+    "source": "PubMed",
+    "score": 11,
+    "summary": "This study investigates the outcomes and effectiveness of invasive treatments for Non-ST-Elevation Myocardial Infarction (NSTEMI) specifically in patients aged 85 years and older. It aims to understand how age impacts prognosis and the benefits of interventions in this vulnerable population.",
+    "opportunity": "Improved risk stratification tools and tailored treatment protocols for geriatric cardiology patients could reduce adverse events and healthcare costs associated with NSTEMI, creating a market for specialized diagnostic or decision-support software.",
+    "fields": [
+      "Clinical",
+      "Software/AI",
+      "Diagnostics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "While studying NSTEMI in the oldest-old is clinically relevant, the question of prognosis and invasive management impact is a fairly incremental investigation within established cardiology research; it doesn't represent a fundamentally new scientific direction or mechanism. The topic builds upon existing knowledge rather than presenting a novel hypothesis or approach."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "This paper focuses on observational data regarding treatment strategies for a specific patient population (very elderly with NSTEMI) and doesn't present a novel technology or directly suggest a new, commercially viable product; its commercial potential relies on informing clinical guidelines, which is indirect and limited."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper focuses on a very specific sub-population (patients ≥85 with NSTEMI), indicating a niche market; while the prevalence of NSTEMI is significant, the *addressable* market within this age bracket is relatively small and likely faces barriers to aggressive invasive management, limiting overall market size for related interventions."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper describes observational clinical research on existing treatment protocols (invasive management of NSTEMI). The technology readiness level is extremely low as it doesn't introduce a new technology, but rather analyzes the application of *existing* technologies in a specific patient population; it's purely about clinical practice and data analysis, not tech development."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes clinical observations and treatment strategies for a specific patient population; it does not present any novel technology, method, or composition of matter that would be patentable. It's a study of existing medical practice, not an invention."
+      }
+    },
+    "pi": "Elad Asher",
+    "pi_full_name": "Abed Qadan",
+    "pi_email": "Hakim.Qadan@gmail.com.",
+    "added_date": "2026-04-06"
   },
   {
     "id": "epmc_41780426",
@@ -3426,146 +4672,52 @@
     "added_date": "2026-03-23"
   },
   {
-    "id": "epmc_41883197",
-    "title": "Broken Promises: Betrayal and Support for Violence in Intergroup Relations.",
+    "id": "pubmed_41925628",
+    "title": "Pessary-related Content on TikTok: A Cross-Sectional Quality Assessment.",
     "authors": [
-      "Josephine Gellersen",
-      "Eran Halperin",
-      "Tamar Saguy"
+      "Mika Rabinovich",
+      "Hila Rosenberg",
+      "Atar Ben-Shmuel"
     ],
-    "journal": "",
-    "date": "2026-03-26",
-    "url": "https://europepmc.org/article/MED/41883197",
-    "source": "Europe PMC",
-    "score": 9,
-    "summary": "This research investigates how perceived exclusion from a shared social identity (SOI) leads to feelings of betrayal and increased support for violence within diverse groups, demonstrated across studies of Ethiopian Jews, Arab-Muslims, and Jewish women in Israel. The findings highlight the psychological mechanisms linking social threat to political attitudes and potentially aggressive behavior.",
-    "opportunity": "Understanding the neurobiological and psychological underpinnings of 'betrayal' responses to perceived social exclusion could inform the development of AI-driven tools for de-escalating conflict and promoting empathy, with applications in social media monitoring and targeted interventions.",
-    "fields": [
-      "Software/AI",
-      "Neuroscience",
-      "Other"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 4,
-        "reason": "While the research explores an important psychological mechanism (betrayal) linking intergroup threat to violence support, the core concepts – that perceived exclusion from a shared identity can fuel negative attitudes – are well-established in social psychology and political science; the novelty lies in the specific framing and empirical demonstration across these particular contexts, but doesn't represent a paradigm shift."
-      },
-      "commercial_potential": {
-        "score": 2,
-        "reason": "This research, while potentially valuable from a social science perspective, has extremely limited direct commercial potential; it identifies and analyzes social phenomena related to intergroup conflict but doesn't readily translate into a product, service, or licensable technology beyond potentially informing policy or NGO strategies, which are difficult to monetize directly."
-      },
-      "market_size": {
-        "score": 1,
-        "reason": "This paper addresses a fundamental social science question but has no discernible market size or commercial application; it's purely academic research focused on political attitudes and intergroup relations, lacking any potential for direct revenue generation or a defined addressable market."
-      },
-      "trl": {
-        "score": 1,
-        "reason": "This paper describes social science research – specifically, studies on attitudes and perceptions – and has no technological component whatsoever; therefore, its Technology Readiness Level (TRL) is essentially zero as it's not a technology at all. It is purely theoretical and observational, far removed from any potential for real-world *technological* application or commercialization."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "This paper describes sociological research and behavioral findings; there is no novel technology, process, or composition to patent or otherwise defend with intellectual property. The 'innovation' is a research methodology or theoretical framework, which is generally not patentable."
-      }
-    },
-    "pi": "Eran Halperin",
-    "pi_full_name": "Eran Halperin",
-    "pi_email": "",
-    "added_date": "2026-03-30"
-  },
-  {
-    "id": "epmc_41886702",
-    "title": "Burnout in Oncology Clinical Research Coordinators: Underlying Factors and Role of Empathy as a Moderator.",
-    "authors": [
-      "Aviv Kidron",
-      "Ron Ben-Dor",
-      "Dan Otap"
-    ],
-    "journal": "",
-    "date": "2026-03-26",
-    "url": "https://europepmc.org/article/MED/41886702",
-    "source": "Europe PMC",
-    "score": 9,
-    "summary": "This study investigates burnout factors among oncology clinical research coordinators in Israel, finding links between job engagement, role overload, job satisfaction, and empathy. The research highlights the emotional toll on CRCs and the potential moderating role of empathy in mitigating burnout.",
-    "opportunity": "Developing software or training programs to enhance job satisfaction, manage workload, and foster empathy among clinical research staff could reduce turnover and improve the efficiency of oncology clinical trials, representing a valuable service offering for CROs and pharmaceutical companies.",
+    "journal": "Urogynecology (Philadelphia, Pa.)",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41925628/",
+    "source": "PubMed",
+    "score": 10,
+    "summary": "This study analyzes the quality of information regarding pessaries (devices used to support pelvic organs) found on the social media platform TikTok. The research aims to understand the accuracy and potential harm of health information disseminated through this popular channel.",
+    "opportunity": "A commercial opportunity exists in developing and deploying AI-powered tools to moderate and verify health information on social media platforms, specifically targeting women's health topics like pelvic floor health, or creating verified, engaging content to counter misinformation.",
     "fields": [
       "Clinical",
       "Software/AI",
-      "Immunology",
+      "Medical Device",
       "Other"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 3,
-        "reason": "While the study addresses an important and under-researched area (burnout in oncology CRCs), the core model – linking job engagement, role overload, job satisfaction, and burnout – utilizes well-established psychological constructs and relationships. The addition of empathy as a moderator is a reasonable extension, but doesn't represent a significant departure from existing literature on burnout or workplace stress."
+        "reason": "While the application of social media analysis to healthcare topics is growing, assessing content *about* a well-established medical device (pessaries) on TikTok represents incremental, not groundbreaking, novelty; the core research question doesn't introduce a new scientific or technological concept."
       },
       "commercial_potential": {
         "score": 2,
-        "reason": "This paper identifies a problem (CRC burnout) but focuses on understanding the *causes* of the problem, not solving it with a commercially viable solution; while valuable for HR or hospital administration, it doesn't readily translate into a product, service, or licensable technology with clear market demand."
+        "reason": "While identifying a trend in online content *about* a medical device (pessaries) is interesting, the paper itself doesn't present any novel technology, product, or service; it's a quality assessment of existing user-generated content, offering limited direct commercial potential beyond perhaps informing marketing strategies for existing pessary manufacturers. The research doesn't suggest a new application or improvement to the device itself."
       },
       "market_size": {
         "score": 2,
-        "reason": "The paper addresses a significant *workforce* issue within oncology clinical research, but doesn't define or quantify the overall market size for clinical research coordination services, or the economic impact of CRC burnout (e.g., trial delays, costs of replacement). While important for employee wellbeing, the research doesn't demonstrate a large, addressable *commercial* market."
+        "reason": "The paper focuses on content *about* a medical device (pessaries) on TikTok, not the market for the device itself; therefore, it provides no direct assessment of the pessary market size or potential demand. While increased awareness *could* influence demand, this paper doesn't quantify or even address that potential impact."
       },
       "trl": {
-        "score": 1,
-        "reason": "This paper describes observational research into a workforce issue; it does *not* present a technology or technological advancement. Therefore, assessing its TRL is not applicable, and it remains at the very earliest stage of potential impact (understanding a problem that *might* be addressed by a future technology)."
+        "score": 2,
+        "reason": "This paper assesses *content about* an existing medical device (pessary) on a social media platform; it does not describe development *of* a new technology or improvement to an existing one, and therefore has a very low TRL. The work is purely observational and doesn't advance the technology itself towards commercial readiness."
       },
       "ip_strength": {
         "score": 1,
-        "reason": "This paper describes a sociological study and does not present any novel technology, method, or process that would be patentable or otherwise defensible as intellectual property; it relies on existing, validated questionnaires and statistical analysis techniques."
+        "reason": "This paper describes a quality assessment of *content* on TikTok, not a novel invention or technology; therefore, there is no inherent IP to assess. The work itself is an observational study and unlikely to be patentable."
       }
     },
-    "pi": "Jonathan Eliezer Cohen",
-    "pi_full_name": "Jonathan Eliezer Cohen",
+    "pi": "Reut Rotem",
+    "pi_full_name": "Reut Rotem",
     "pi_email": "",
-    "added_date": "2026-03-30"
-  },
-  {
-    "id": "epmc_41881445",
-    "title": "Commentary: Should we worry about climate worry? Understanding and promoting youth resilience and pro-environmental engagement: a commentary on Park et al. (2026).",
-    "authors": [
-      "Stathis Grapsas",
-      "Atheer Massarwe"
-    ],
-    "journal": "",
-    "date": "2026-03-25",
-    "url": "https://europepmc.org/article/MED/41881445",
-    "source": "Europe PMC",
-    "score": 9,
-    "summary": "This commentary analyzes a study on climate anxiety in young adolescents, highlighting the need for clearer definitions and a non-judgmental approach to understanding its impact on mental health. It emphasizes the importance of fostering both resilience and environmentally conscious behavior in youth, tailored to their developmental stage.",
-    "opportunity": "Developing and validating age-appropriate digital mental health tools (apps, platforms) that assess and mitigate climate anxiety, potentially integrating with pro-environmental behavior change programs, presents a commercial opportunity.",
-    "fields": [
-      "Software/AI",
-      "Neuroscience",
-      "Clinical",
-      "Other"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "This paper is a commentary on existing work and doesn't present novel research findings itself; it focuses on clarifying terminology and suggesting future research directions based on Park et al.'s study, representing incremental rather than groundbreaking innovation."
-      },
-      "commercial_potential": {
-        "score": 2,
-        "reason": "This paper is a commentary on existing research and offers suggestions for future study; it doesn't present a novel technology, product, or service with direct commercial applications, and the potential for monetization is extremely limited. While understanding youth mental health is valuable, this work itself doesn't translate into a clear commercial opportunity."
-      },
-      "market_size": {
-        "score": 2,
-        "reason": "The paper addresses a significant societal issue (youth mental health related to climate change) but doesn't define or quantify a *market* for solutions; it's a research commentary, not a business plan or market analysis. While the problem is large, the addressable market for interventions stemming from this research is unclear and likely fragmented across healthcare, education, and potentially other sectors, making market size estimation difficult without further development."
-      },
-      "trl": {
-        "score": 1,
-        "reason": "This paper is a commentary on existing research; it does not present any new technology or innovation, and therefore has no TRL. It's purely conceptual and at the earliest stages of understanding a social/psychological phenomenon, far from any real-world application or commercialization."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "This paper is a commentary on existing research and does not present any novel invention or innovation; therefore, there is no intellectual property to assess. It focuses on interpretation and suggestions for future research, not on creating something patentable or defensible."
-      }
-    },
-    "pi": "Atheer Massarwe",
-    "pi_full_name": "Atheer Massarwe",
-    "pi_email": "",
-    "added_date": "2026-03-30"
+    "added_date": "2026-04-06"
   },
   {
     "id": "epmc_41776295",
@@ -3614,6 +4766,148 @@
     "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_41883197",
+    "title": "Broken Promises: Betrayal and Support for Violence in Intergroup Relations.",
+    "authors": [
+      "Josephine Gellersen",
+      "Eran Halperin",
+      "Tamar Saguy"
+    ],
+    "journal": "",
+    "date": "2026 Mar 26",
+    "url": "https://europepmc.org/article/MED/41883197",
+    "source": "Europe PMC",
+    "score": 9,
+    "summary": "This research investigates how perceived exclusion from a shared social identity (SOI) leads to feelings of betrayal and increased support for violence within diverse groups, demonstrated across studies of Ethiopian Jews, Arab-Muslims, and Jewish women in Israel. The findings highlight the psychological mechanisms linking social threat to political attitudes and potentially aggressive behavior.",
+    "opportunity": "Understanding the neurobiological and psychological underpinnings of 'betrayal' responses to perceived social exclusion could inform the development of AI-driven tools for de-escalating conflict and promoting empathy, with applications in social media monitoring and targeted interventions.",
+    "fields": [
+      "Software/AI",
+      "Neuroscience",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While the research explores an important psychological mechanism (betrayal) linking intergroup threat to violence support, the core concepts – that perceived exclusion from a shared identity can fuel negative attitudes – are well-established in social psychology and political science; the novelty lies in the specific framing and empirical demonstration across these particular contexts, but doesn't represent a paradigm shift."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This research, while potentially valuable from a social science perspective, has extremely limited direct commercial potential; it identifies and analyzes social phenomena related to intergroup conflict but doesn't readily translate into a product, service, or licensable technology beyond potentially informing policy or NGO strategies, which are difficult to monetize directly."
+      },
+      "market_size": {
+        "score": 1,
+        "reason": "This paper addresses a fundamental social science question but has no discernible market size or commercial application; it's purely academic research focused on political attitudes and intergroup relations, lacking any potential for direct revenue generation or a defined addressable market."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper describes social science research – specifically, studies on attitudes and perceptions – and has no technological component whatsoever; therefore, its Technology Readiness Level (TRL) is essentially zero as it's not a technology at all. It is purely theoretical and observational, far removed from any potential for real-world *technological* application or commercialization."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes sociological research and behavioral findings; there is no novel technology, process, or composition to patent or otherwise defend with intellectual property. The 'innovation' is a research methodology or theoretical framework, which is generally not patentable."
+      }
+    },
+    "pi": "Eran Halperin",
+    "pi_full_name": "Eran Halperin",
+    "pi_email": "",
+    "added_date": "2026-03-30"
+  },
+  {
+    "id": "epmc_41886702",
+    "title": "Burnout in Oncology Clinical Research Coordinators: Underlying Factors and Role of Empathy as a Moderator.",
+    "authors": [
+      "Aviv Kidron",
+      "Ron Ben-Dor",
+      "Dan Otap"
+    ],
+    "journal": "",
+    "date": "2026 Mar 26",
+    "url": "https://europepmc.org/article/MED/41886702",
+    "source": "Europe PMC",
+    "score": 9,
+    "summary": "This study investigates burnout factors among oncology clinical research coordinators in Israel, finding links between job engagement, role overload, job satisfaction, and empathy. The research highlights the emotional toll on CRCs and the potential moderating role of empathy in mitigating burnout.",
+    "opportunity": "Developing software or training programs to enhance job satisfaction, manage workload, and foster empathy among clinical research staff could reduce turnover and improve the efficiency of oncology clinical trials, representing a valuable service offering for CROs and pharmaceutical companies.",
+    "fields": [
+      "Clinical",
+      "Software/AI",
+      "Immunology",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "While the study addresses an important and under-researched area (burnout in oncology CRCs), the core model – linking job engagement, role overload, job satisfaction, and burnout – utilizes well-established psychological constructs and relationships. The addition of empathy as a moderator is a reasonable extension, but doesn't represent a significant departure from existing literature on burnout or workplace stress."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This paper identifies a problem (CRC burnout) but focuses on understanding the *causes* of the problem, not solving it with a commercially viable solution; while valuable for HR or hospital administration, it doesn't readily translate into a product, service, or licensable technology with clear market demand."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper addresses a significant *workforce* issue within oncology clinical research, but doesn't define or quantify the overall market size for clinical research coordination services, or the economic impact of CRC burnout (e.g., trial delays, costs of replacement). While important for employee wellbeing, the research doesn't demonstrate a large, addressable *commercial* market."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper describes observational research into a workforce issue; it does *not* present a technology or technological advancement. Therefore, assessing its TRL is not applicable, and it remains at the very earliest stage of potential impact (understanding a problem that *might* be addressed by a future technology)."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes a sociological study and does not present any novel technology, method, or process that would be patentable or otherwise defensible as intellectual property; it relies on existing, validated questionnaires and statistical analysis techniques."
+      }
+    },
+    "pi": "Jonathan Eliezer Cohen",
+    "pi_full_name": "Jonathan Eliezer Cohen",
+    "pi_email": "",
+    "added_date": "2026-03-30"
+  },
+  {
+    "id": "epmc_41881445",
+    "title": "Commentary: Should we worry about climate worry? Understanding and promoting youth resilience and pro-environmental engagement: a commentary on Park et al. (2026).",
+    "authors": [
+      "Stathis Grapsas",
+      "Atheer Massarwe"
+    ],
+    "journal": "",
+    "date": "2026 Mar 25",
+    "url": "https://europepmc.org/article/MED/41881445",
+    "source": "Europe PMC",
+    "score": 9,
+    "summary": "This commentary analyzes a study on climate anxiety in young adolescents, highlighting the need for clearer definitions and a non-judgmental approach to understanding its impact on mental health. It emphasizes the importance of fostering both resilience and environmentally conscious behavior in youth, tailored to their developmental stage.",
+    "opportunity": "Developing and validating age-appropriate digital mental health tools (apps, platforms) that assess and mitigate climate anxiety, potentially integrating with pro-environmental behavior change programs, presents a commercial opportunity.",
+    "fields": [
+      "Software/AI",
+      "Neuroscience",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "This paper is a commentary on existing work and doesn't present novel research findings itself; it focuses on clarifying terminology and suggesting future research directions based on Park et al.'s study, representing incremental rather than groundbreaking innovation."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This paper is a commentary on existing research and offers suggestions for future study; it doesn't present a novel technology, product, or service with direct commercial applications, and the potential for monetization is extremely limited. While understanding youth mental health is valuable, this work itself doesn't translate into a clear commercial opportunity."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper addresses a significant societal issue (youth mental health related to climate change) but doesn't define or quantify a *market* for solutions; it's a research commentary, not a business plan or market analysis. While the problem is large, the addressable market for interventions stemming from this research is unclear and likely fragmented across healthcare, education, and potentially other sectors, making market size estimation difficult without further development."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper is a commentary on existing research; it does not present any new technology or innovation, and therefore has no TRL. It's purely conceptual and at the earliest stages of understanding a social/psychological phenomenon, far from any real-world application or commercialization."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper is a commentary on existing research and does not present any novel invention or innovation; therefore, there is no intellectual property to assess. It focuses on interpretation and suggestions for future research, not on creating something patentable or defensible."
+      }
+    },
+    "pi": "Atheer Massarwe",
+    "pi_full_name": "Atheer Massarwe",
+    "pi_email": "",
+    "added_date": "2026-03-30"
   },
   {
     "id": "epmc_41849724",
@@ -4041,6 +5335,53 @@
     "pi_full_name": "Tali Gal",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "pubmed_41932616",
+    "title": "Tachycardia with Left Bundle Branch Block Morphology in a Patient with Right Bundle Branch Block.",
+    "authors": [
+      "Ayelet Shauer",
+      "Bernard Belhassen"
+    ],
+    "journal": "Indian pacing and electrophysiology journal",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41932616/",
+    "source": "PubMed",
+    "score": 7,
+    "summary": "This case report details an unusual presentation of heart rhythm disturbance (tachycardia with left bundle branch block) occurring in a patient already exhibiting a different type of heart block (right bundle branch block). The observation is clinically interesting due to the rarity of this combined presentation and potential implications for diagnosis and treatment.",
+    "opportunity": "While a single case report doesn't directly translate to a commercial opportunity, improved diagnostic algorithms or novel cardiac monitoring devices could benefit from incorporating such atypical presentations to enhance accuracy and patient outcomes.",
+    "fields": [
+      "Clinical",
+      "Medical Device",
+      "Diagnostics",
+      "Imaging"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 2,
+        "reason": "The title describes an *observation* of an unusual ECG finding – tachycardia with LBBB morphology *in the context of* RBBB – rather than presenting fundamentally new scientific knowledge or a novel mechanism; such atypical presentations are reported in cardiology, and this appears to be a case report of one. It's clinically interesting, but lacks significant novelty from a research perspective."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This paper describes a single, unusual case report; it doesn't present a novel technology, diagnostic, or therapeutic approach with clear commercializable potential. While interesting from a clinical perspective, it's unlikely to directly translate into a product or licensable technology without significant further research and development demonstrating broader applicability."
+      },
+      "market_size": {
+        "score": 1,
+        "reason": "This paper describes a single case report focusing on a specific cardiac arrhythmia presentation; it does not address a broader market or potential commercial applications, and therefore has negligible market size potential. It's a clinical observation, not a product or service targeting a defined market."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper describes a single case report of a specific cardiac arrhythmia; it represents purely observational data and does *not* describe a new technology or advancement in a technology's readiness. It's at the very beginning of the translational pipeline (basic science observation) and far from commercial application."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes a clinical observation – a specific ECG finding in a single patient. Clinical observations, without a novel method, device, composition of matter, or process, are generally not patentable and offer no inherent IP defensibility; it's a case report, not an invention."
+      }
+    },
+    "pi": "Bernard Belhassen",
+    "pi_full_name": "Bernard Belhassen",
+    "pi_email": "bblhass@gmail.com.",
+    "added_date": "2026-04-06"
   },
   {
     "id": "pubmed_41835921",
