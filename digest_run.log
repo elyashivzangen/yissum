@@ -2,50 +2,50 @@
 =======================================================
 Branch: All Branches
 Loading top papers from Google Sheet...
-  Sheet response: 200, 344545 bytes
-  Cutoff date: 2026-03-30  (DIGEST_WINDOW=7 days)
-  Rows: 115 total, 109 excluded, 6 kept.
-  Sample pub date values: ['2026-04-01', '2026-04-01', '2026 Apr 1']
-  6 candidates (top 20 by score).
+  Sheet response: 200, 424045 bytes
+  Cutoff date: 2026-04-06  (DIGEST_WINDOW=7 days)
+  Rows: 141 total, 140 excluded, 1 kept.
+  Sample pub date values: ['2026 Jun 1']
+  1 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 4 papers.
-  Executive summary: This week's digest highlights promising innovations spanning AI-driven personalized medicine, precision diagnostics, and...
+  Gemini selected 1 papers.
+  Executive summary: Hebrew University's latest research highlights significant advancements in AI-driven healthcare, particularly for chroni...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W15.pdf  (7 KB)
+PDF written: digests/HUJI_digest_2026_W16.pdf  (4 KB)
 
 =======================================================
 Branch: Healthcare
 Loading top papers from Google Sheet...
-  Sheet response: 200, 344545 bytes
-  Cutoff date: 2026-03-30  (DIGEST_WINDOW=7 days)
-  Rows: 115 total, 109 excluded, 6 kept.
-  Sample pub date values: ['2026-04-01', '2026-04-01', '2026 Apr 1']
-  6 candidates (top 20 by score).
+  Sheet response: 200, 424045 bytes
+  Cutoff date: 2026-04-06  (DIGEST_WINDOW=7 days)
+  Rows: 141 total, 140 excluded, 1 kept.
+  Sample pub date values: ['2026 Jun 1']
+  1 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 5 papers.
-  Executive summary: This week's digest highlights advances spanning AI-driven personalized medicine, expanded market potential for existing ...
+  Gemini selected 1 papers.
+  Executive summary: This week's digest features a groundbreaking application of artificial intelligence in neurodegenerative disease managem...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W15_Healthcare.pdf  (8 KB)
+PDF written: digests/HUJI_digest_2026_W16_Healthcare.pdf  (4 KB)
 
 =======================================================
 Branch: Agriculture & Food
 Loading top papers from Google Sheet...
-  Sheet response: 200, 344545 bytes
-  Cutoff date: 2026-03-30  (DIGEST_WINDOW=7 days)
-  Rows: 115 total, 115 excluded, 0 kept.
+  Sheet response: 200, 424045 bytes
+  Cutoff date: 2026-04-06  (DIGEST_WINDOW=7 days)
+  Rows: 141 total, 141 excluded, 0 kept.
   0 candidates (top 20 by score).
   No papers found for Agriculture & Food — skipping.
 
 =======================================================
 Branch: Exact & Social Sciences
 Loading top papers from Google Sheet...
-  Sheet response: 200, 344545 bytes
-  Cutoff date: 2026-03-30  (DIGEST_WINDOW=7 days)
-  Rows: 115 total, 115 excluded, 0 kept.
+  Sheet response: 200, 424045 bytes
+  Cutoff date: 2026-04-06  (DIGEST_WINDOW=7 days)
+  Rows: 141 total, 141 excluded, 0 kept.
   0 candidates (top 20 by score).
   No papers found for Exact & Social Sciences — skipping.
 
