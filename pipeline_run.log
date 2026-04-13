@@ -1,72 +1,68 @@
 Loading existing papers from Google Sheet...
-  87 existing papers loaded.
-  Verifying HUJI affiliation for 83 papers via PubMed efetch...
-fetch_pubmed: 23 fetched, 23 new
-fetch_europepmc: 23 fetched, 5 new
-fetch_semantic_scholar: 0 fetched, 0 new
+  115 existing papers loaded.
+  Verifying HUJI affiliation for 111 papers via PubMed efetch...
+fetch_pubmed: 27 fetched, 26 new
+fetch_europepmc: 16 fetched, 0 new
+fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-28 unique new papers to evaluate.
-Enriching PI contact info for 28 new papers...
+26 unique new papers to evaluate.
+Enriching PI contact info for 26 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/28] Association of neovascular glaucoma with increased mortality and cardi
-    score=11 fields=['Diagnostics', 'Clinical', 'Drug Discovery', 'Imaging']
-  [2/28] Strategic self-initiated encoding in object-location memory in 8-10-ye
-    score=11 fields=['Neuroscience', 'Software/AI', 'Clinical', 'Other']
-  [3/28] Surgery for Pain Symptoms in Women with Isolated Superficial Peritonea
-    score=20 fields=['Clinical', 'Medical Device', 'Imaging', 'Other']
-  [4/28] Editorial: TEER in shock states - Promising feasibility, uncertain ben
-    score=13 fields=['Clinical', 'Medical Device', 'Diagnostics', 'Other']
-  [5/28] A family of endonucleases blocks nanotube-mediated plasmid exchange.
-    score=24 fields=['Drug Discovery', 'Genomics', 'Synthetic Biology', 'Immunology']
-  [6/28] Conscious Detection of Spoken Words Depends on Their Valence.
-    score=15 fields=['Neuroscience', 'Software/AI', 'Clinical', 'Other']
-  [7/28] Tachycardia with Left Bundle Branch Block Morphology in a Patient with
-    score=7 fields=['Clinical', 'Medical Device', 'Diagnostics', 'Imaging']
-  [8/28] Identifying maximally informative signal-aware representations of sing
-    score=23 fields=['Software/AI', 'Genomics', 'Immunology', 'Drug Discovery']
-  [9/28] Enhanced reward coding and condition-independent dynamics in optogenet
-    score=19 fields=['Neuroscience', 'Medical Device', 'Software/AI', 'Drug Discovery']
-  [10/28] Hepatic radiofrequency ablation induces widespread cellular activation
-    score=18 fields=['Medical Device', 'Immunology', 'Clinical', 'Drug Discovery']
-  [11/28] Recombinant Human Amelogenin Protein Enhances Healing of Osteochondral
-    score=29 fields=['Drug Discovery', 'Medical Device', 'Proteomics', 'Clinical']
-  [12/28] Pessary-related Content on TikTok: A Cross-Sectional Quality Assessmen
-    score=10 fields=['Clinical', 'Software/AI', 'Medical Device', 'Other']
-  [13/28] Chronic Oral Inflammation Impairs Female Reproduction in a Murine Mode
-    score=15 fields=['Drug Discovery', 'Immunology', 'Clinical', 'Other']
-  [14/28] NSTEMI in the oldest-old: prognosis and impact of invasive management 
-    score=11 fields=['Clinical', 'Software/AI', 'Diagnostics']
-  [15/28] ATF3-dependent formation of inclusion bodies in polyQ-expressing human
-    score=20 fields=['Drug Discovery', 'Neuroscience', 'Genomics', 'Proteomics']
-  [16/28] The lesser the better? A systematic review and meta-analysis of resect
-    score=13 fields=['Clinical', 'Imaging', 'Software/AI', 'Other']
-  [17/28] Backboards in prehospital trauma: Assessing long-term neurological and
-    score=13 fields=['Medical Device', 'Clinical', 'Neuroscience', 'Imaging']
-  [18/28] From Simulation to Survival: Managing an Emergency Department Under th
-    score=17 fields=['Clinical', 'Software/AI', 'Medical Device', 'Other']
-  [19/28] Dendro-plexing of Single Input Spikes via Multiple Synaptic Contacts C
-    score=18 fields=['Neuroscience', 'Software/AI', 'Medical Device', 'Other']
-  [20/28] Evolution and consequences of paternal inheritance of plastid DNA in c
-    score=16 fields=['AgriTech', 'Genomics', 'Synthetic Biology', 'Materials']
-  [21/28] Intracellular and dual-site inhibition of a bitter taste GPCR.
-    score=24 fields=['Drug Discovery', 'FoodTech', 'Neuroscience', 'AgriTech']
-  [22/28] The Impact of Small-for-Gestational-Age on Pulmonary Function in Infan
-    score=13 fields=['Diagnostics', 'Clinical', 'Immunology', 'Other']
-  [23/28] An animated educational video is effective for improving treatment out
-    score=21 fields=['Clinical', 'Immunology', 'Software/AI', 'Other']
-  [24/28] Maternal Diabetes and Early Neurodevelopment: Differential Milestone A
-    score=13 fields=['Neuroscience', 'Diagnostics', 'Clinical', 'Software/AI']
-  [25/28] The Natural History of Deficiency of Adenosine Deaminase 2 Vasculitis 
-    score=19 fields=['Drug Discovery', 'Immunology', 'Genomics', 'Clinical']
-  [26/28] Real-world epidemiological outcomes of biologic therapy for chronic rh
-    score=24 fields=['Clinical', 'Immunology', 'Software/AI', 'Drug Discovery']
-  [27/28] Hepatitis B Vaccine Response in Children of Vaccinated Versus Unvaccin
-    score=19 fields=['Vaccines', 'Immunology', 'Clinical']
-  [28/28] Safety of Risankizumab during Pregnancy in IBD.
-    score=17 fields=['Clinical', 'Immunology', 'Drug Discovery', 'Other']
+  [1/26] The Development of an Integrative Surf Therapy Program for Trauma Surv
+    score=13 fields=['Clinical', 'Neuroscience', 'Software/AI', 'Other']
+  [2/26] Response to Letter to the Editor on "The impact of elective adult circ
+    score=5 fields=['Clinical', 'Other']
+  [3/26] Lipid Desaturation and Cellular Viability: Mechanisms, Stem Cell Insig
+    score=19 fields=['Drug Discovery', 'Genomics', 'Clinical', 'Other']
+  [4/26] Postpartum headache after epidural analgesia: A case of overlapping po
+    score=8 fields=['Clinical', 'Imaging', 'Neuroscience', 'Diagnostics']
+  [5/26] Survey on ICU organization and admission after hematopoietic cell tran
+    score=12 fields=['Clinical', 'Immunology', 'Software/AI', 'Diagnostics']
+  [6/26] Proline-promoted electrophilic dichloromethylation of α-enaminones via
+    score=20 fields=['Drug Discovery', 'Materials', 'Synthetic Biology', 'Other']
+  [7/26] Systematic classification differences across eye movement detection al
+    score=16 fields=['Neuroscience', 'Medical Device', 'Software/AI', 'Diagnostics']
+  [8/26] GI and liver updates in CF: The next frontier.
+    score=18 fields=['Drug Discovery', 'Diagnostics', 'Clinical', 'Genomics']
+  [9/26] Dual-energy and photon-counting computed tomography in critical care.
+    score=29 fields=['Medical Device', 'Diagnostics', 'Imaging', 'Clinical']
+  [10/26] Optimizing topical antibiotic delivery in dogs: Tear film pharmacokine
+    score=20 fields=['Drug Discovery', 'Clinical', 'Veterinary']
+  [11/26] Prevalence and Characteristics of Pill Dysphagia in Adults with Swallo
+    score=13 fields=['Medical Device', 'Clinical', 'Drug Discovery', 'Software/AI']
+  [12/26] One Size Might Not Fit All: A Tailored Approach to Psychological Inter
+    score=14 fields=['Software/AI', 'Neuroscience', 'Clinical', 'Other']
+  [13/26] Distinct distributed neural dynamics predict pallium-dependent social 
+    score=17 fields=['Neuroscience', 'Drug Discovery', 'Diagnostics', 'Software/AI']
+  [14/26] Tailoring heart failure management in cardiac amyloidosis.
+    score=22 fields=['Diagnostics', 'Drug Discovery', 'Clinical', 'Genomics']
+  [15/26] Maternal antibodies regulate the establishment of murine oral and sali
+    score=18 fields=['Vaccines', 'Immunology', 'Drug Discovery', 'Clinical']
+  [16/26] Group A Streptococcus host-pathogen dual crosstalk.
+    score=17 fields=['Drug Discovery', 'Vaccines', 'Immunology', 'Diagnostics']
+  [17/26] Teprotumumab-Associated Hyperglycemia: A Large-Scale Multinational Coh
+    score=21 fields=['Clinical', 'Drug Discovery', 'Immunology', 'Diagnostics']
+  [18/26] Induction of cytochrome P450 2C9 and P-glycoprotein activity by antise
+    score=18 fields=['Drug Discovery', 'Clinical', 'Software/AI', 'Genomics']
+  [19/26] Epigenomic and transcriptomic analyses reveal cnidocyte specialization
+    score=16 fields=['Materials', 'Genomics', 'Synthetic Biology', 'Other']
+  [20/26] Beyond Weight Loss: Association Between Glucagon-like peptide-1 Recept
+    score=19 fields=['Drug Discovery', 'Clinical', 'Medical Device', 'Other']
+  [21/26] Corrigendum to "Genomic insights unveil taxonomic incongruities and ev
+    score=9 fields=['Genomics', 'AgriTech', 'Other']
+  [22/26] Post-thaw embryo culture and the risk of large-for-gestational-age off
+    score=17 fields=['Clinical', 'Genomics', 'Software/AI', 'Other']
+  [23/26] Opioids for management of endometriosis associated pain: balancing eff
+    score=15 fields=['Drug Discovery', 'Clinical', 'Neuroscience', 'Other']
+  [24/26] Exposure to prolonged political violence, self-efficacy, and posttraum
+    score=8 fields=['Clinical', 'Software/AI', 'Neuroscience', 'Other']
+  [25/26] Association between hypoglycemia during glucose challenge and toleranc
+    score=18 fields=['Diagnostics', 'Clinical', 'Software/AI', 'Other']
+  [26/26] mGem: Horses for courses in mapping bacterial small RNA interaction ne
+    score=21 fields=['Drug Discovery', 'Genomics', 'Synthetic Biology', 'AgriTech']
 
-Retention: kept 87/87 existing, added 28 new.
-Writing 115 papers to Google Sheet...
-Sheet updated: {"status":"ok","rows":116}
-Generated papers_reader.html and papers_data.json with 115 papers.
+Retention: kept 115/115 existing, added 26 new.
+Writing 141 papers to Google Sheet...
+Sheet updated: {"status":"ok","rows":142}
+Generated papers_reader.html and papers_data.json with 141 papers.
 Done.
