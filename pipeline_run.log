@@ -1,68 +1,56 @@
 Loading existing papers from Google Sheet...
-  115 existing papers loaded.
-  Verifying HUJI affiliation for 111 papers via PubMed efetch...
-fetch_pubmed: 27 fetched, 26 new
-fetch_europepmc: 16 fetched, 0 new
+  141 existing papers loaded.
+  Verifying HUJI affiliation for 137 papers via PubMed efetch...
+fetch_pubmed: 20 fetched, 19 new
+fetch_europepmc: 17 fetched, 2 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-26 unique new papers to evaluate.
-Enriching PI contact info for 26 new papers...
+20 unique new papers to evaluate.
+Enriching PI contact info for 20 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/26] The Development of an Integrative Surf Therapy Program for Trauma Surv
-    score=13 fields=['Clinical', 'Neuroscience', 'Software/AI', 'Other']
-  [2/26] Response to Letter to the Editor on "The impact of elective adult circ
-    score=5 fields=['Clinical', 'Other']
-  [3/26] Lipid Desaturation and Cellular Viability: Mechanisms, Stem Cell Insig
-    score=19 fields=['Drug Discovery', 'Genomics', 'Clinical', 'Other']
-  [4/26] Postpartum headache after epidural analgesia: A case of overlapping po
-    score=8 fields=['Clinical', 'Imaging', 'Neuroscience', 'Diagnostics']
-  [5/26] Survey on ICU organization and admission after hematopoietic cell tran
-    score=12 fields=['Clinical', 'Immunology', 'Software/AI', 'Diagnostics']
-  [6/26] Proline-promoted electrophilic dichloromethylation of α-enaminones via
-    score=20 fields=['Drug Discovery', 'Materials', 'Synthetic Biology', 'Other']
-  [7/26] Systematic classification differences across eye movement detection al
-    score=16 fields=['Neuroscience', 'Medical Device', 'Software/AI', 'Diagnostics']
-  [8/26] GI and liver updates in CF: The next frontier.
-    score=18 fields=['Drug Discovery', 'Diagnostics', 'Clinical', 'Genomics']
-  [9/26] Dual-energy and photon-counting computed tomography in critical care.
-    score=29 fields=['Medical Device', 'Diagnostics', 'Imaging', 'Clinical']
-  [10/26] Optimizing topical antibiotic delivery in dogs: Tear film pharmacokine
-    score=20 fields=['Drug Discovery', 'Clinical', 'Veterinary']
-  [11/26] Prevalence and Characteristics of Pill Dysphagia in Adults with Swallo
-    score=13 fields=['Medical Device', 'Clinical', 'Drug Discovery', 'Software/AI']
-  [12/26] One Size Might Not Fit All: A Tailored Approach to Psychological Inter
-    score=14 fields=['Software/AI', 'Neuroscience', 'Clinical', 'Other']
-  [13/26] Distinct distributed neural dynamics predict pallium-dependent social 
-    score=17 fields=['Neuroscience', 'Drug Discovery', 'Diagnostics', 'Software/AI']
-  [14/26] Tailoring heart failure management in cardiac amyloidosis.
-    score=22 fields=['Diagnostics', 'Drug Discovery', 'Clinical', 'Genomics']
-  [15/26] Maternal antibodies regulate the establishment of murine oral and sali
-    score=18 fields=['Vaccines', 'Immunology', 'Drug Discovery', 'Clinical']
-  [16/26] Group A Streptococcus host-pathogen dual crosstalk.
-    score=17 fields=['Drug Discovery', 'Vaccines', 'Immunology', 'Diagnostics']
-  [17/26] Teprotumumab-Associated Hyperglycemia: A Large-Scale Multinational Coh
-    score=21 fields=['Clinical', 'Drug Discovery', 'Immunology', 'Diagnostics']
-  [18/26] Induction of cytochrome P450 2C9 and P-glycoprotein activity by antise
-    score=18 fields=['Drug Discovery', 'Clinical', 'Software/AI', 'Genomics']
-  [19/26] Epigenomic and transcriptomic analyses reveal cnidocyte specialization
-    score=16 fields=['Materials', 'Genomics', 'Synthetic Biology', 'Other']
-  [20/26] Beyond Weight Loss: Association Between Glucagon-like peptide-1 Recept
-    score=19 fields=['Drug Discovery', 'Clinical', 'Medical Device', 'Other']
-  [21/26] Corrigendum to "Genomic insights unveil taxonomic incongruities and ev
-    score=9 fields=['Genomics', 'AgriTech', 'Other']
-  [22/26] Post-thaw embryo culture and the risk of large-for-gestational-age off
-    score=17 fields=['Clinical', 'Genomics', 'Software/AI', 'Other']
-  [23/26] Opioids for management of endometriosis associated pain: balancing eff
-    score=15 fields=['Drug Discovery', 'Clinical', 'Neuroscience', 'Other']
-  [24/26] Exposure to prolonged political violence, self-efficacy, and posttraum
-    score=8 fields=['Clinical', 'Software/AI', 'Neuroscience', 'Other']
-  [25/26] Association between hypoglycemia during glucose challenge and toleranc
-    score=18 fields=['Diagnostics', 'Clinical', 'Software/AI', 'Other']
-  [26/26] mGem: Horses for courses in mapping bacterial small RNA interaction ne
-    score=21 fields=['Drug Discovery', 'Genomics', 'Synthetic Biology', 'AgriTech']
+  [1/20] Traumatic brain injury clinical score (TBICS) predicts survival outcom
+    score=21 fields=['Diagnostics', 'Clinical', 'Neuroscience', 'Software/AI']
+  [2/20] Acute kidney injury, secondary to valacyclovir use during pregnancy fo
+    score=14 fields=['Clinical', 'Immunology', 'Drug Discovery', 'Diagnostics']
+  [3/20] Periodontal Diseases and Conditions in Children and Adolescents Associ
+    score=15 fields=['Diagnostics', 'Immunology', 'Clinical', 'Drug Discovery']
+  [4/20] Neural temporal scaling accounts for robust hunting behavior across te
+    score=17 fields=['Neuroscience', 'Software/AI', 'Robotics']
+  [5/20] Complex genotype-phenotype relationships in neurodevelopmental disorde
+    score=13 fields=['Genomics', 'Neuroscience', 'Drug Discovery', 'Software/AI']
+  [6/20] Comparison of dogs with septic peritonitis due to S. lupi aberrant mig
+    score=13 fields=['Diagnostics', 'Immunology', 'Clinical', 'Drug Discovery']
+  [7/20] WWOX maintains epidermal identity and suppresses EMT to prevent aggres
+    score=23 fields=['Drug Discovery', 'Genomics', 'Clinical', 'Immunology']
+  [8/20] RNA dicing promotes the expression of an oncogenic JAK1 isoform.
+    score=21 fields=['Drug Discovery', 'Genomics', 'Immunology', 'Oncology']
+  [9/20] Exact-Factorization Framework for Electron-Nuclear Dynamics in Electro
+    score=21 fields=['Materials', 'Drug Discovery', 'Clean Energy', 'Software/AI']
+  [10/20] A Novel Light-Induced Collective Circular Movement in 
+    score=17 fields=['Materials', 'Medical Device', 'Software/AI', 'Other']
+  [11/20] The genetic basis for DNA methylation variation across tissues and dev
+    score=20 fields=['Drug Discovery', 'Diagnostics', 'Genomics', 'Clinical']
+  [12/20] A dual role for cGAS in shaping cellular and organismal responses to g
+    score=18 fields=['Drug Discovery', 'Immunology', 'Genomics', 'Clinical']
+  [13/20] Associations between prenatal exposure to ambient temperature and birt
+    score=13 fields=['Clinical', 'Software/AI', 'Diagnostics', 'Other']
+  [14/20] Harnessing random peptide mixtures to combat multidrug-resistant funga
+    score=28 fields=['Drug Discovery', 'Immunology', 'Clinical', 'Proteomics']
+  [15/20] Mastery Motivation and Maternal Stress in Typically Developing Childre
+    score=9 fields=['Neuroscience', 'Clinical', 'Software/AI', 'Other']
+  [16/20] sc-rDSeq: a robust and cost-effective full-length total RNA sequencing
+    score=27 fields=['Drug Discovery', 'Genomics', 'Clinical', 'Software/AI']
+  [17/20] Powered mobility acquisition by an adolescent with severe visual and p
+    score=12 fields=['Medical Device', 'Clinical', 'Software/AI', 'Neuroscience']
+  [18/20] Codon bias shapes bacterial small RNA binding sites within protein-cod
+    score=18 fields=['Drug Discovery', 'Synthetic Biology', 'Genomics', 'AgriTech']
+  [19/20] &lt;i&gt;Paenibacillus dendritiformis&lt;/i&gt; C454 as a sustainable 
+    score=25 fields=['AgriTech', 'Synthetic Biology', 'Other']
+  [20/20] A Novel Light-Induced Collective Circular Movement in &lt;i&gt;Armadil
+    score=15 fields=['Software/AI', 'Robotics', 'Other', 'Imaging']
 
-Retention: kept 115/115 existing, added 26 new.
-Writing 141 papers to Google Sheet...
-Sheet updated: {"status":"ok","rows":142}
-Generated papers_reader.html and papers_data.json with 141 papers.
+Retention: kept 141/141 existing, added 20 new.
+Writing 161 papers to Google Sheet...
+Sheet updated: {"status":"ok","rows":162}
+Generated papers_reader.html and papers_data.json with 161 papers.
 Done.
