@@ -581,7 +581,7 @@
       "Eran Blacher"
     ],
     "journal": "",
-    "date": "2026 Mar 1",
+    "date": "2026 Mar",
     "url": "https://europepmc.org/article/MED/41804973",
     "source": "Europe PMC",
     "score": 26,
@@ -647,8 +647,104 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "pubmed_42032110",
+    "title": "Epigenetic adaptation of beta cells across lifespan and disease.",
+    "authors": [
+      "Elisabetta Manduchi",
+      "Hélène C Descamps",
+      "Jinping Liu"
+    ],
+    "journal": "Nature metabolism",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42032110/",
+    "source": "PubMed",
+    "score": 26,
+    "summary": "This research investigates how epigenetic changes – alterations to gene expression without changes to the DNA sequence itself – affect beta cell function throughout life and in the context of disease. Understanding these adaptations could reveal novel targets for preventing or reversing beta cell dysfunction, a key feature of diabetes.",
+    "opportunity": "Developing therapeutics that modulate beta cell epigenetics represents a promising avenue for disease modification in type 1 and type 2 diabetes, potentially offering more effective and durable treatments than current options.",
+    "fields": [
+      "Drug Discovery",
+      "Genomics",
+      "Clinical",
+      "Immunology"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "While the field of epigenetics in beta cells is active, investigating *lifespan* changes and relating them to disease adaptation represents a reasonably novel angle, moving beyond single-disease or static analyses. However, epigenetic studies are becoming increasingly common, so truly groundbreaking novelty requires a completely unforeseen mechanism or application, which isn't apparent from the title alone."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "While the research into epigenetic changes in beta cells is fundamentally important, the paper's title suggests basic science discovery rather than a readily translatable product; commercial potential hinges on *what* specific adaptations are identified and if those can be targeted with drugs or diagnostics, which isn't evident from the title alone."
+      },
+      "market_size": {
+        "score": 7,
+        "reason": "The paper focuses on beta cells, central to both Type 1 and Type 2 Diabetes, representing a massive and growing global market (hundreds of billions USD). However, the focus on *epigenetic adaptation* suggests a potentially niche therapeutic approach initially, rather than addressing the broad symptomatic treatment market, limiting immediate addressable market size."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "Given the focus on 'adaptation' and 'disease' without mention of specific interventions or engineered systems, this research appears to be fundamental biology, likely at a basic research or early translational stage (TRL 2-3). It's characterizing biological processes, not demonstrating a deployable technology."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The title suggests fundamental biological research into epigenetic mechanisms, which are notoriously difficult to patent broadly; identifying a correlation or pathway isn't inherently patentable. While specific epigenetic editing *tools* or novel applications *could* be patentable, the research described appears to focus on understanding natural processes, offering limited inherent IP strength without further development towards a concrete, protectable invention."
+      }
+    },
+    "pi": "Dana Avrahami",
+    "pi_full_name": "Dana Avrahami",
+    "pi_email": "dana.tzfati@mail.huji.ac.il.",
+    "added_date": "2026-04-27"
+  },
+  {
+    "id": "pubmed_42012076",
+    "title": "Dynamic Switchable and Transient DNA Condensates Driven by Aptamer-Ligand or Ion-Nucleobase Bridged Complexes.",
+    "authors": [
+      "Yichen Han",
+      "Yang Sung Sohn",
+      "Rachel Nechushtai"
+    ],
+    "journal": "Small (Weinheim an der Bergstrasse, Germany)",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42012076/",
+    "source": "PubMed",
+    "score": 26,
+    "summary": "This research demonstrates a novel method for controlling DNA condensation – essentially turning DNA structures 'on' and 'off' – using aptamers, ligands, or ion-nucleobase interactions. The ability to dynamically control DNA structure opens possibilities for creating responsive biomaterials and programmable biological systems.",
+    "opportunity": "Controlling DNA condensation could lead to new targeted drug delivery systems where release is triggered by specific environmental cues or the creation of smart biomaterials with switchable properties.",
+    "fields": [
+      "Drug Discovery",
+      "Materials",
+      "Synthetic Biology",
+      "Genomics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 8,
+        "reason": "The concept of dynamically switching and transient DNA condensates *using* aptamer-ligand or ion-nucleobase bridging, rather than relying on typical multivalent cations or crowding agents, represents a significant departure from established methods in the field of biomolecular condensation; this approach offers a level of control and responsiveness not commonly seen, suggesting high novelty."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "The paper describes a novel method for controlling DNA condensate formation, which *could* have applications in targeted drug delivery, synthetic biology, or advanced biomaterials; however, the lack of an abstract and details on specific applications makes it difficult to assess concrete commercial pathways beyond fundamental research tools at this stage."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper describes a novel biophysical phenomenon (dynamic DNA condensates) but doesn't articulate a clear market application or addressable market size; it's currently very fundamental research with potential across many areas, making a market size assessment impossible without significant downstream development and a defined product focus."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "The paper describes a fundamental materials science investigation into DNA condensate behavior, focusing on novel switching mechanisms; this indicates a very early stage of development (likely TRL 2-3, basic research/laboratory-scale proof of concept). Significant engineering and validation would be needed to translate this into a practical application, placing it far from commercialization."
+      },
+      "ip_strength": {
+        "score": 6,
+        "reason": "The paper describes a novel approach to DNA condensate control using aptamers/ligands and ion-nucleobase interactions, which *could* be patentable, but the core concepts (aptamers, DNA condensation, ion effects) are well-established; the strength relies heavily on the specific sequences and combinations used, and demonstrating non-obviousness will be key for strong IP protection."
+      }
+    },
+    "pi": "Itamar Willner",
+    "pi_full_name": "Itamar Willner",
+    "pi_email": "",
+    "added_date": "2026-04-27"
+  },
+  {
     "id": "epmc_41975582",
-    "title": "&lt;i&gt;Paenibacillus dendritiformis&lt;/i&gt; C454 as a sustainable biocontrol agent for management of bacterial plant diseases.",
+    "title": "<i>Paenibacillus dendritiformis</i> C454 as a sustainable biocontrol agent for management of bacterial plant diseases.",
     "authors": [
       "Adi Glass Livneh",
       "Tuang Za Khai",
@@ -1555,6 +1651,100 @@
     "added_date": "2026-04-20"
   },
   {
+    "id": "pubmed_42008338",
+    "title": "Vaccinations: more than prevention of infection.",
+    "authors": [
+      "Ami Schattner"
+    ],
+    "journal": "Postgraduate medical journal",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42008338/",
+    "source": "PubMed",
+    "score": 21,
+    "summary": "This paper, without an abstract, likely explores the broader impacts of vaccination beyond simply preventing infection, potentially focusing on systemic immune modulation or other physiological effects. Understanding these broader effects could unlock new therapeutic avenues and preventative strategies.",
+    "opportunity": "Commercializing insights into vaccination-induced systemic effects could lead to novel immunotherapies for conditions beyond infectious diseases, such as cancer or autoimmune disorders.",
+    "fields": [
+      "Vaccines",
+      "Immunology",
+      "Drug Discovery",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The title 'Vaccinations: more than prevention of infection' suggests a broadening of the understood benefits of vaccination, but without an abstract or paper content, it's impossible to assess *how* novel this broadening is; it could be a restatement of known immunological memory effects or a genuinely new insight, but defaults to low novelty without supporting information."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "The title suggests a broadening of vaccination applications beyond traditional infection prevention, hinting at potential for new therapeutic uses or preventative strategies for non-infectious diseases – a commercially interesting space. However, without an abstract or paper content, it's impossible to assess *how* clearly this translates to a concrete product or licensable technology, limiting the commercial potential score."
+      },
+      "market_size": {
+        "score": 8,
+        "reason": "The paper title, 'Vaccinations: more than prevention of infection,' suggests a broadening of the vaccination market beyond traditional infectious disease prevention – potentially into areas like cancer therapies or autoimmune disease modulation, significantly increasing addressable market size. While the abstract is missing, the framing implies a large and growing market opportunity beyond the already substantial existing vaccine market."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "The title suggests a review or conceptual paper about vaccinations, not the development of a new vaccine technology; therefore, it's likely at a very early, foundational stage with no immediately apparent path to commercialization. Without an abstract, it's impossible to assess any specific technological advancement, reinforcing a low TRL score."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "The title suggests a conceptual shift in understanding vaccinations, likely focusing on mechanisms beyond simply preventing infection – this is unlikely to be strongly patentable as it's more of a biological insight than a novel composition or method. Without knowing the specifics, it's improbable the core idea is defensible via IP; it's more likely to be publishable science."
+      }
+    },
+    "pi": "Ami Schattner",
+    "pi_full_name": "Ami Schattner",
+    "pi_email": "",
+    "added_date": "2026-04-27"
+  },
+  {
+    "id": "pubmed_42003341",
+    "title": "Temperature-Enhanced Coercive Field by Chiral Molecules.",
+    "authors": [
+      "Yael Kapon",
+      "Lilach Brann",
+      "Shira Yochelis"
+    ],
+    "journal": "The journal of physical chemistry letters",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42003341/",
+    "source": "PubMed",
+    "score": 21,
+    "summary": "This research demonstrates that introducing chiral molecules can significantly alter the magnetic properties of materials, specifically enhancing the coercive field at elevated temperatures. This effect is unexpected and suggests a novel method for controlling magnetism using molecular structure and thermal activation.",
+    "opportunity": "The ability to tune magnetic properties with chiral molecules opens possibilities for developing advanced magnetic materials with tailored performance for applications like high-density data storage, novel sensors, and potentially targeted drug delivery systems.",
+    "fields": [
+      "Materials",
+      "Medical Device",
+      "Software/AI",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "The concept of *enhancing* a coercive field – a fundamental magnetic property – via chiral molecule interaction is potentially novel, as manipulating coercivity typically involves compositional or structural changes, not chiral induction. However, without knowing the specifics of the mechanism or prior art in this precise area, a higher score is difficult to justify; it hinges on whether this is a truly new approach to coercivity control."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "Without an abstract or further information, assessing commercial potential is extremely difficult, but the title suggests a fundamental physics discovery; translating a coercive field enhancement via chiral molecules into a marketable product isn't immediately obvious and likely requires significant downstream development and a clear application. The potential is there, but highly speculative at this stage."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a highly specific materials science phenomenon with no immediately obvious large-scale application described; without knowing the downstream applications, assessing market size is impossible, suggesting a very limited initial addressable market."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "The title suggests fundamental materials science research, likely at an early stage (proof-of-concept in a lab). Without an abstract, it's safe to assume this is pre-prototype and far from commercial application, indicating a very low TRL."
+      },
+      "ip_strength": {
+        "score": 6,
+        "reason": "The title suggests a novel *method* utilizing chiral molecules to modify a magnetic property (coercive field), which *could* be patentable if the specific molecular interactions and resulting effect are non-obvious; however, without knowing the specifics of the chiral molecules or the mechanism, it's difficult to assess true defensibility beyond a basic observation of a phenomenon."
+      }
+    },
+    "pi": "Yossi Paltiel",
+    "pi_full_name": "Yossi Paltiel",
+    "pi_email": "paltiel@mail.huji.ac.il",
+    "added_date": "2026-04-27"
+  },
+  {
     "id": "epmc_41784031",
     "title": "Proteostasis meets signaling: UBE2G1 in hematopoietic stem cell aging.",
     "authors": [
@@ -1656,7 +1846,7 @@
       "Yuval Ramot"
     ],
     "journal": "",
-    "date": "2026 Mar",
+    "date": "2026 Mar 1",
     "url": "https://europepmc.org/article/MED/41805269",
     "source": "Europe PMC",
     "score": 20,
@@ -1934,52 +2124,52 @@
     "added_date": "2026-04-20"
   },
   {
-    "id": "epmc_41539726",
-    "title": "The Natural History of Deficiency of Adenosine Deaminase 2 Vasculitis in a Large Cohort and Factors Associated With Disease-Related Damage.",
+    "id": "epmc_42024842",
+    "title": "Comparative Analysis of &lt;i&gt;BRCA&lt;/i&gt; Pathogenic Variant Detection in a Real-World Setting: Population Screening Versus Oncogenetic Clinics.",
     "authors": [
-      "Dynne-Noya Kind Engelstein",
-      "David Levartovsky",
-      "Isaiah D Wexler"
+      "Shunit Armon",
+      "Sari Lieberman",
+      "Rachel Michaelson-Cohen"
     ],
     "journal": "",
-    "date": "2026-04-01",
-    "url": "https://europepmc.org/article/MED/41539726",
+    "date": "2026-04-23",
+    "url": "https://europepmc.org/article/MED/42024842",
     "source": "Europe PMC",
     "score": 19,
-    "summary": "This study characterizes a large group of patients with DADA2 vasculitis, a rare genetic immune deficiency, revealing that early onset and recurring fever-like symptoms correlate with more severe long-term damage. Treatment with TNF inhibitors showed positive results in patients with severe disease.",
-    "opportunity": "The identification of biomarkers associated with DADA2 disease severity and responsiveness to TNF inhibitors presents an opportunity for developing more targeted therapies and companion diagnostics for this rare genetic condition.",
+    "summary": "This study compares the experiences and outcomes of women identified as BRCA mutation carriers through population-wide screening versus traditional oncogenetic clinic referrals in Israel. The research found differences in the types of BRCA mutations detected and satisfaction with the process, particularly regarding result delivery in the population screening group.",
+    "opportunity": "Improved communication strategies and tailored genetic counseling protocols, informed by these findings, could enhance the effectiveness and patient experience of population-level BRCA screening programs, potentially expanding their adoption and impact.",
     "fields": [
-      "Drug Discovery",
-      "Immunology",
+      "Diagnostics",
       "Genomics",
-      "Clinical"
+      "Clinical",
+      "Software/AI"
     ],
     "score_breakdown": {
       "novelty": {
-        "score": 4,
-        "reason": "While the study provides valuable clinical characterization of a rare disease (DADA2) in a relatively large cohort, the research primarily represents a detailed natural history study and treatment observation rather than a fundamentally novel scientific discovery; it builds upon established understanding of adenosine deaminase deficiencies and vasculitis pathogenesis."
+        "score": 3,
+        "reason": "This study presents a comparative analysis of existing BRCA screening methods (population screening vs. oncogenetic clinics) and doesn't introduce fundamentally new scientific or technological advancements in variant detection itself; it focuses on psychosocial outcomes and differences in patient populations identified through these established methods, representing incremental rather than groundbreaking novelty."
       },
       "commercial_potential": {
-        "score": 7,
-        "reason": "The paper clearly identifies a specific patient population (DADA2) with an unmet need and demonstrates a positive response to existing therapies (TNFi), suggesting a defined, addressable market for continued or improved treatment strategies; however, the commercial potential is limited by the rarity of the disease, which will constrain market size and potentially necessitate high pricing."
+        "score": 4,
+        "reason": "While the paper highlights a real-world comparison of BRCA screening approaches, it focuses on *how* screening is delivered (counseling differences) and patient satisfaction, not on a novel technology or improved detection method itself; therefore, the commercial potential stemming directly from this research is limited to potential improvements in genetic counseling service models, which is a relatively small market opportunity."
       },
       "market_size": {
-        "score": 2,
-        "reason": "The paper focuses on a very rare, genetic disease (DADA2) affecting a small patient population (45 individuals studied). While understanding the disease is valuable, the inherently limited prevalence translates to a minuscule addressable market, making it unattractive from a purely market size perspective."
+        "score": 3,
+        "reason": "The paper focuses on a comparison of screening methods and psychosocial outcomes, not on quantifying the overall market for BRCA testing or preventative care; while BRCA testing *is* a sizable market, this paper doesn't address its size or potential growth, limiting its relevance to market size assessment."
       },
       "trl": {
-        "score": 4,
-        "reason": "This paper describes retrospective clinical observations and treatment effectiveness of an existing patient cohort; it doesn't present novel technology development. While identifying biomarkers and treatment responses is valuable, the TRL remains relatively low as it focuses on applying *existing* TNF inhibitors to a defined genetic condition, rather than developing a new therapeutic or diagnostic technology."
+        "score": 7,
+        "reason": "The technology (BRCA variant detection) itself is well-established and clinically available, but this paper focuses on *implementation* of screening programs and associated psychosocial outcomes, not on novel detection methods. The study is conducted in a 'real-world setting' with existing clinical infrastructure, indicating a relatively high TRL – likely between 7-8, focusing on system-level validation and refinement rather than fundamental technology development."
       },
       "ip_strength": {
         "score": 2,
-        "reason": "This paper describes clinical observations and treatment effectiveness in a known genetic disease (DADA2). While valuable for understanding the disease, the work itself doesn't present *new* patentable inventions or defensible IP; it's a study of an existing genetic defect and application of existing therapies (TNFi)."
+        "reason": "This paper focuses on a *comparison of screening methods* and patient outcomes, not on a novel method for *detecting* BRCA variants themselves; therefore, there's no new IP being generated regarding the core detection technology. The study utilizes existing BRCA testing methodologies, and the 'innovation' lies in the public health approach, which is not patentable."
       }
     },
-    "pi": "Reeval Segel",
-    "pi_full_name": "Yackov Berkun",
-    "pi_email": "berkun@hadassah.org.il.",
-    "added_date": "2026-04-06"
+    "pi": "Naama Srebnik",
+    "pi_full_name": "Naama Srebnik",
+    "pi_email": "",
+    "added_date": "2026-04-27"
   },
   {
     "id": "epmc_PMC13017330",
@@ -2220,6 +2410,54 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "epmc_41539726",
+    "title": "The Natural History of Deficiency of Adenosine Deaminase 2 Vasculitis in a Large Cohort and Factors Associated With Disease-Related Damage.",
+    "authors": [
+      "Dynne-Noya Kind Engelstein",
+      "David Levartovsky",
+      "Isaiah D Wexler"
+    ],
+    "journal": "",
+    "date": "2026 Apr 1",
+    "url": "https://europepmc.org/article/MED/41539726",
+    "source": "Europe PMC",
+    "score": 19,
+    "summary": "This study characterizes a large group of patients with DADA2 vasculitis, a rare genetic immune deficiency, revealing that early onset and recurring fever-like symptoms correlate with more severe long-term damage. Treatment with TNF inhibitors showed positive results in patients with severe disease.",
+    "opportunity": "The identification of biomarkers associated with DADA2 disease severity and responsiveness to TNF inhibitors presents an opportunity for developing more targeted therapies and companion diagnostics for this rare genetic condition.",
+    "fields": [
+      "Drug Discovery",
+      "Immunology",
+      "Genomics",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While the study provides valuable clinical characterization of a rare disease (DADA2) in a relatively large cohort, the research primarily represents a detailed natural history study and treatment observation rather than a fundamentally novel scientific discovery; it builds upon established understanding of adenosine deaminase deficiencies and vasculitis pathogenesis."
+      },
+      "commercial_potential": {
+        "score": 7,
+        "reason": "The paper clearly identifies a specific patient population (DADA2) with an unmet need and demonstrates a positive response to existing therapies (TNFi), suggesting a defined, addressable market for continued or improved treatment strategies; however, the commercial potential is limited by the rarity of the disease, which will constrain market size and potentially necessitate high pricing."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a very rare, genetic disease (DADA2) affecting a small patient population (45 individuals studied). While understanding the disease is valuable, the inherently limited prevalence translates to a minuscule addressable market, making it unattractive from a purely market size perspective."
+      },
+      "trl": {
+        "score": 4,
+        "reason": "This paper describes retrospective clinical observations and treatment effectiveness of an existing patient cohort; it doesn't present novel technology development. While identifying biomarkers and treatment responses is valuable, the TRL remains relatively low as it focuses on applying *existing* TNF inhibitors to a defined genetic condition, rather than developing a new therapeutic or diagnostic technology."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes clinical observations and treatment effectiveness in a known genetic disease (DADA2). While valuable for understanding the disease, the work itself doesn't present *new* patentable inventions or defensible IP; it's a study of an existing genetic defect and application of existing therapies (TNFi)."
+      }
+    },
+    "pi": "Reeval Segel",
+    "pi_full_name": "Yackov Berkun",
+    "pi_email": "berkun@hadassah.org.il.",
+    "added_date": "2026-04-06"
+  },
+  {
     "id": "epmc_41804915",
     "title": "Hepatitis B Vaccine Response in Children of Vaccinated Versus Unvaccinated Mothers: A Retrospective Cohort Study.",
     "authors": [
@@ -2409,6 +2647,54 @@
     "pi_full_name": "Zvi Gur",
     "pi_email": "",
     "added_date": "2026-04-13"
+  },
+  {
+    "id": "pubmed_42010622",
+    "title": "Strain-level microbial signatures and inferred functional alterations in infants with food protein-induced allergic proctocolitis.",
+    "authors": [
+      "Chen Goldstein",
+      "Itamar Lavy",
+      "Timothy Sun"
+    ],
+    "journal": "Genome medicine",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42010622/",
+    "source": "PubMed",
+    "score": 19,
+    "summary": "This research identifies specific microbial signatures at the strain level in infants experiencing food protein-induced allergic proctocolitis (FPIAP). The study links these microbial compositions to potential functional changes within the infant gut, suggesting a connection between the microbiome and this allergic condition.",
+    "opportunity": "Developing a diagnostic test or targeted prebiotic/probiotic intervention based on these strain-level microbial signatures could offer a novel approach to preventing or treating FPIAP and potentially other food allergies.",
+    "fields": [
+      "Diagnostics",
+      "Immunology",
+      "Clinical",
+      "FoodTech"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While investigating the gut microbiome in food allergy is a well-trodden area, focusing on *strain-level* resolution and linking it to *inferred* functional alterations represents a moderate advance; moving beyond genus/species level analysis is valuable, but the 'inferred' nature suggests the functional links aren't definitively proven, limiting the novelty."
+      },
+      "commercial_potential": {
+        "score": 4,
+        "reason": "While identifying microbial signatures linked to FPIAP is scientifically interesting, the path to a direct commercial product isn't immediately clear; potential lies in diagnostics (stool tests) or informing probiotic/prebiotic development, but significant further research and validation would be needed to establish commercial viability and market demand."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "While the paper addresses a significant clinical need (food allergies in infants), the directly addressable market for *strain-level microbial signatures* as a diagnostic or therapeutic target is currently small and ill-defined; it's a research tool with uncertain commercial translation without further development into a clear product or service offering. The potential market size hinges on future applications like personalized probiotics or diagnostics, which are not established by this research alone."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This research appears to be early-stage discovery focused on identifying microbial signatures associated with a specific condition; it's likely pre-clinical and far from a deployable diagnostic or therapeutic product. The work establishes correlations but doesn't demonstrate a technology ready for translation or commercialization."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The paper describes correlative findings regarding microbial signatures, which are difficult to patent broadly; identifying a correlation isn't inherently defensible IP. While specific strain combinations *could* be patentable, the abstract suggests discovery rather than invention, and the likelihood of strong, enforceable claims is low without further development demonstrating a novel intervention or process."
+      }
+    },
+    "pi": "Moran Yassour",
+    "pi_full_name": "Moran Yassour",
+    "pi_email": "moranya@mail.huji.ac.il.",
+    "added_date": "2026-04-27"
   },
   {
     "id": "pubmed_41869927",
@@ -3127,6 +3413,101 @@
     "added_date": "2026-04-20"
   },
   {
+    "id": "pubmed_42031744",
+    "title": "Functional characterization of specialized immune cells in a cnidarian reveals an ancestral antiviral program.",
+    "authors": [
+      "Itamar Kozlovski",
+      "Ton Sharoni",
+      "Shani Levy"
+    ],
+    "journal": "Nature communications",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42031744/",
+    "source": "PubMed",
+    "score": 18,
+    "summary": "This research identifies immune cells and antiviral mechanisms in cnidarians (like jellyfish and corals), suggesting these systems are very ancient and predate vertebrates. Understanding these fundamental immune responses could reveal novel targets for boosting immunity across species, including humans.",
+    "opportunity": "Identifying conserved antiviral pathways in early-diverging animals offers a unique opportunity to develop broadly-effective immunomodulatory therapies with potentially fewer resistance issues.",
+    "fields": [
+      "Drug Discovery",
+      "Immunology",
+      "Genomics",
+      "Vaccines"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 8,
+        "reason": "Identifying an ancestral antiviral program in a cnidarian (invertebrate) is highly novel, as antiviral immunity is often considered a vertebrate-specific adaptation; demonstrating functional characterization of immune cells in this early-diverging lineage significantly advances our understanding of immune system evolution. The research suggests a deeper evolutionary history for antiviral defense mechanisms than previously appreciated."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the discovery of an ancestral antiviral program is interesting from a fundamental biology perspective, the paper lacks any clear indication of how this translates into a commercially viable product, service, or licensable technology; it's very early-stage basic research with no immediately apparent application."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This paper focuses on fundamental biology in cnidarians (e.g., jellyfish) and describes an ancestral immune program; it does *not* address a clear, commercially-sized market or demonstrate addressable demand for a product or therapy. While foundational research can *eventually* lead to market opportunities, this paper is extremely early-stage and lacks any indication of a viable market size."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This research is fundamental biology, characterizing an ancestral immune system in cnidarians; it's very early-stage and far from any direct application or commercialization. The work is likely TRL 2-3 (basic research, lab-demonstrated concepts) and doesn't suggest near-term translational potential."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "Discovering an ancestral antiviral program in a cnidarian is a biologically significant finding, but fundamental discoveries about natural systems are generally difficult to directly patent; the IP strength relies on identifying *specific* novel molecules or mechanisms within that program that could be therapeutically targeted or diagnostically utilized, which isn't demonstrated here. The paper focuses on characterization, not invention of a novel, protectable technology."
+      }
+    },
+    "pi": "Yehu Moran",
+    "pi_full_name": "Yehu Moran",
+    "pi_email": "yehu.moran@mail.huji.ac.il.",
+    "added_date": "2026-04-27"
+  },
+  {
+    "id": "pubmed_42014383",
+    "title": "Universal Hamiltonian simulators in one and two dimensions.",
+    "authors": [
+      "Leo Zhou",
+      "Dorit Aharonov"
+    ],
+    "journal": "Nature communications",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42014383/",
+    "source": "PubMed",
+    "score": 18,
+    "summary": "This research details the development of novel simulation methods for Hamiltonian systems – mathematical frameworks describing the evolution of physical systems – in low-dimensional spaces. The work focuses on creating 'universal' simulators, meaning they can efficiently model a wide range of Hamiltonian dynamics without being tailored to specific problems.",
+    "opportunity": "Advancements in Hamiltonian simulation could accelerate materials discovery, drug design, and fundamental research in quantum chemistry by enabling more accurate and efficient modeling of complex molecular interactions.",
+    "fields": [
+      "Materials",
+      "Drug Discovery",
+      "Software/AI",
+      "Quantum"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 8,
+        "reason": "Developing 'universal' Hamiltonian simulators, particularly extending beyond established one-dimensional approaches to two dimensions, represents a significant advance in quantum simulation capabilities; achieving universality broadens the scope of problems these simulators can tackle, moving beyond specialized applications. While Hamiltonian simulation itself isn't *new*, the claim of universality and the 2D extension suggest a notable step forward in the field."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the development of universal Hamiltonian simulators is a significant scientific advance, the paper lacks any discussion of concrete applications or a pathway to commercialization; it's purely fundamental research at this stage, making near-term commercial potential very low. The potential exists *eventually* for impact in materials science or drug discovery, but that's highly speculative based on this paper alone."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This paper describes fundamental research in quantum simulation, a field with *potential* long-term market impact, but doesn't address a clearly defined, currently addressable market; the immediate market size for highly specialized Hamiltonian simulators is extremely limited, primarily academic research and potentially very early-stage materials discovery."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes 'universal Hamiltonian simulators,' indicating fundamental research likely confined to theoretical development and early-stage proof-of-concept experiments – very far from a deployable product or commercial application. The focus on 'one and two dimensions' suggests significant scaling challenges remain before practical utility is achievable, placing it at a very low TRL."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "Simulations, even novel ones, are generally difficult to protect with strong IP; the core concepts of Hamiltonian simulation are well-established, and this work appears to focus on algorithmic improvements rather than fundamentally new, patentable hardware or methods. While specific implementations *could* be patentable, the foundational nature of the work suggests limited defensibility."
+      }
+    },
+    "pi": "Dorit Aharonov",
+    "pi_full_name": "Dorit Aharonov",
+    "pi_email": "",
+    "added_date": "2026-04-27"
+  },
+  {
     "id": "epmc_41888165",
     "title": "Neural tracking at theta predicts drumming-induced altered states of consciousness.",
     "authors": [
@@ -3268,54 +3649,6 @@
     "added_date": "2026-03-30"
   },
   {
-    "id": "pubmed_41842694",
-    "title": "Biallelic SUPT4H1 Variants Cause a Multisystem Neurodevelopmental Disorder Associated with Disrupted Transcription.",
-    "authors": [
-      "Canavati C",
-      "Oppebøen M",
-      "Verma R"
-    ],
-    "journal": "Genetics in medicine : official journal of the American College of Medical Genetics",
-    "date": "2026 Mar 14",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/41842694/",
-    "source": "PubMed",
-    "score": 17,
-    "summary": "This research identifies mutations in the SUPT4H1 gene as causing a new neurodevelopmental disorder affecting multiple organ systems, stemming from problems with gene transcription. Understanding the specific transcriptional disruptions caused by these mutations is key to understanding the disease mechanism.",
-    "opportunity": "Developing a diagnostic test for biallelic SUPT4H1 variants could enable early identification and potential intervention for affected individuals, while also serving as a platform for similar genetic neurodevelopmental disorder diagnostics.",
-    "fields": [
-      "Genomics",
-      "Diagnostics",
-      "Neuroscience",
-      "Drug Discovery"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 7,
-        "reason": "Identifying *biallelic* SUPT4H1 variants as causative for a neurodevelopmental disorder represents a significant, though not entirely unexpected, advance; while SUPT4H1's role in transcription is known, linking loss-of-function to a specific, defined clinical phenotype is novel and expands the landscape of transcription-related neurodevelopmental diseases. The novelty is tempered by the established link between transcriptional dysregulation and neurodevelopment, preventing a higher score."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "While identifying a genetic cause for a neurodevelopmental disorder is valuable, the commercial potential is limited without a clear therapeutic avenue; it primarily points to diagnostic testing, which has a smaller market than a treatment, and the 'disrupted transcription' mechanism is broad and doesn't immediately suggest a drug target. The paper focuses on understanding the *cause* of a disease, not solving it commercially."
-      },
-      "market_size": {
-        "score": 2,
-        "reason": "This paper describes a rare genetic disorder; while devastating for affected individuals, the addressable market is extremely small, limited to patients with this specific SUPT4H1 mutation and their families. The potential patient population is likely in the low hundreds globally, representing a very limited commercial opportunity."
-      },
-      "trl": {
-        "score": 2,
-        "reason": "This paper identifies a genetic cause for a neurodevelopmental disorder, representing very early-stage, discovery research (basic biology). Translation to a therapeutic or diagnostic application is distant, requiring significant further research and development, placing it at a very low TRL."
-      },
-      "ip_strength": {
-        "score": 3,
-        "reason": "Identifying a gene (SUPT4H1) associated with a neurodevelopmental disorder is a biological discovery, not an invention; thus, it's unlikely to be directly patentable as a therapeutic or diagnostic in its current form. While variants *within* the gene are identified, simply discovering a gene-disease association doesn't automatically create strong IP – further innovation like a specific drug target or diagnostic assay would be needed to build defensibility."
-      }
-    },
-    "pi": "Tabach Y",
-    "pi_full_name": "Yuval Tabach",
-    "pi_email": "tabachy@gmail.com.",
-    "added_date": "2026-03-23"
-  },
-  {
     "id": "epmc_41823588",
     "title": "Methods for studying the effects of phosphorylation patterns in proteins.",
     "authors": [
@@ -3361,6 +3694,54 @@
     "pi": "Assaf Friedler",
     "pi_full_name": "",
     "pi_email": "",
+    "added_date": "2026-03-23"
+  },
+  {
+    "id": "pubmed_41842694",
+    "title": "Biallelic SUPT4H1 Variants Cause a Multisystem Neurodevelopmental Disorder Associated with Disrupted Transcription.",
+    "authors": [
+      "Canavati C",
+      "Oppebøen M",
+      "Verma R"
+    ],
+    "journal": "Genetics in medicine : official journal of the American College of Medical Genetics",
+    "date": "2026 Mar",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41842694/",
+    "source": "PubMed",
+    "score": 17,
+    "summary": "This research identifies mutations in the SUPT4H1 gene as causing a new neurodevelopmental disorder affecting multiple organ systems, stemming from problems with gene transcription. Understanding the specific transcriptional disruptions caused by these mutations is key to understanding the disease mechanism.",
+    "opportunity": "Developing a diagnostic test for biallelic SUPT4H1 variants could enable early identification and potential intervention for affected individuals, while also serving as a platform for similar genetic neurodevelopmental disorder diagnostics.",
+    "fields": [
+      "Genomics",
+      "Diagnostics",
+      "Neuroscience",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "Identifying *biallelic* SUPT4H1 variants as causative for a neurodevelopmental disorder represents a significant, though not entirely unexpected, advance; while SUPT4H1's role in transcription is known, linking loss-of-function to a specific, defined clinical phenotype is novel and expands the landscape of transcription-related neurodevelopmental diseases. The novelty is tempered by the established link between transcriptional dysregulation and neurodevelopment, preventing a higher score."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While identifying a genetic cause for a neurodevelopmental disorder is valuable, the commercial potential is limited without a clear therapeutic avenue; it primarily points to diagnostic testing, which has a smaller market than a treatment, and the 'disrupted transcription' mechanism is broad and doesn't immediately suggest a drug target. The paper focuses on understanding the *cause* of a disease, not solving it commercially."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This paper describes a rare genetic disorder; while devastating for affected individuals, the addressable market is extremely small, limited to patients with this specific SUPT4H1 mutation and their families. The potential patient population is likely in the low hundreds globally, representing a very limited commercial opportunity."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper identifies a genetic cause for a neurodevelopmental disorder, representing very early-stage, discovery research (basic biology). Translation to a therapeutic or diagnostic application is distant, requiring significant further research and development, placing it at a very low TRL."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "Identifying a gene (SUPT4H1) associated with a neurodevelopmental disorder is a biological discovery, not an invention; thus, it's unlikely to be directly patentable as a therapeutic or diagnostic in its current form. While variants *within* the gene are identified, simply discovering a gene-disease association doesn't automatically create strong IP – further innovation like a specific drug target or diagnostic assay would be needed to build defensibility."
+      }
+    },
+    "pi": "Tabach Y",
+    "pi_full_name": "Yuval Tabach",
+    "pi_email": "tabachy@gmail.com.",
     "added_date": "2026-03-23"
   },
   {
@@ -3741,6 +4122,102 @@
     "pi_full_name": "Ariel D Chipman",
     "pi_email": "",
     "added_date": "2026-04-20"
+  },
+  {
+    "id": "pubmed_42010670",
+    "title": "Nitric oxide inhibition ameliorates cortical proteomic changes in the Cntnap2",
+    "authors": [
+      "Wisam Bazbaz",
+      "Maryam Kartawy",
+      "Igor Khaliulin"
+    ],
+    "journal": "Molecular autism",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42010670/",
+    "source": "PubMed",
+    "score": 17,
+    "summary": "This research investigates the impact of nitric oxide (NO) inhibition on proteomic changes within the cortex of a Cntnap2 model, likely related to neurological dysfunction. The findings suggest that modulating NO levels can mitigate specific protein alterations associated with this genetic condition.",
+    "opportunity": "Developing a novel therapeutic strategy targeting nitric oxide pathways could offer a new treatment approach for neurodevelopmental disorders linked to Cntnap2 mutations, potentially through repurposing existing NO inhibitors or designing more selective compounds.",
+    "fields": [
+      "Drug Discovery",
+      "Neuroscience",
+      "Proteomics",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While targeting nitric oxide as a potential therapeutic avenue for Cntnap2-related disorders isn't entirely novel (NO's role in neurodevelopment is established), applying it specifically to ameliorate *cortical proteomic changes* in this genetic context suggests a more nuanced and innovative approach than simply addressing behavioral phenotypes; however, without knowing the specifics of those proteomic changes and prior attempts to modulate them, it's hard to assess truly groundbreaking potential."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper focuses on a mechanistic understanding of Cntnap2 deficiency via nitric oxide's role in cortical proteomic changes, lacking any discussion of potential therapeutic interventions or diagnostic applications; therefore, direct commercial translation is unclear and appears distant without significant further research. While understanding disease mechanisms is valuable, this work doesn't present a readily licensable technology or product pathway."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "Without an abstract or further information on the specific disease/condition Cntnap2 relates to, assessing market size is impossible; it's likely a rare genetic disorder with a very limited patient population, suggesting a small addressable market. The paper focuses on a mechanistic study, not a clear path to a commercially viable product targeting a large market."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "Given the focus on cortical proteomic changes and the lack of any mention of *in vivo* studies beyond potentially cell culture (implied by 'cortical'), this research appears very early stage – likely lab-based discovery. A TRL of 3 reflects basic experimental proof of concept, far from any clinical or commercial application."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The paper focuses on a mechanistic understanding of Cntnap2 deficiency using nitric oxide inhibition, a relatively well-known biological pathway. While the *finding* of proteomic changes and their amelioration might be novel, simply using an existing inhibitor doesn't inherently create strong IP; the core innovation lacks a novel composition of matter or a new method with clear patentability beyond the observation itself."
+      }
+    },
+    "pi": "Haitham Amal",
+    "pi_full_name": "Haitham Amal",
+    "pi_email": "Haitham.amal@mail.huji.ac.il.",
+    "added_date": "2026-04-27"
+  },
+  {
+    "id": "epmc_42010670",
+    "title": "Nitric oxide inhibition ameliorates cortical proteomic changes in the Cntnap2&lt;sup&gt;-/-&lt;/sup&gt; and Shank3&lt;sup&gt;Δ4-22&lt;/sup&gt; mouse models of autism spectrum disorder.",
+    "authors": [
+      "Wisam Bazbaz",
+      "Maryam Kartawy",
+      "Igor Khaliulin"
+    ],
+    "journal": "",
+    "date": "2026-04-20",
+    "url": "https://europepmc.org/article/MED/42010670",
+    "source": "Europe PMC",
+    "score": 16,
+    "summary": "This research demonstrates that inhibiting nitric oxide (NO) can improve proteomic markers in mouse models of Autism Spectrum Disorder (ASD) linked to mutations in *Cntnap2* and *Shank3*. The study suggests NO signaling plays a role in the molecular pathology of these ASD models, and modulating it could have therapeutic benefits.",
+    "opportunity": "Developing a novel therapeutic strategy, potentially a small molecule NO inhibitor or a modulator of NO signaling pathways, could address core biological deficits in a subset of ASD patients with relevant genetic profiles.",
+    "fields": [
+      "Drug Discovery",
+      "Neuroscience",
+      "Proteomics",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While the study investigates a potentially interesting therapeutic avenue (nitric oxide inhibition) for ASD-related proteomic changes, applying an existing pharmacological approach to known genetic mouse models of autism doesn't represent a radical departure from existing research; the novelty lies in the *specific* proteomic changes targeted, but the overall strategy is relatively established."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the research identifies a potential therapeutic target (nitric oxide pathway) for ASD-related proteomic changes, the link to a *specific* commercially viable product isn't clear – it's a biological mechanism, not a drug or diagnostic; further development would require identifying or creating a nitric oxide inhibitor with appropriate bioavailability, brain penetration, and safety profiles, representing significant hurdles."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on pre-clinical mouse models of Autism Spectrum Disorder (ASD). While ASD itself represents a significant market, this research is very early-stage and doesn't directly address a defined, commercially viable market for nitric oxide inhibition as a treatment; the potential market size is therefore highly uncertain and likely small initially, requiring substantial further development and validation."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This study appears to be pre-clinical research using mouse models, indicating a very early Technology Readiness Level (TRL). Demonstrating efficacy in animal models is a necessary first step, but is far removed from human application and commercialization; significant hurdles remain before translation to clinical trials or therapies."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The paper describes a *treatment* effect (nitric oxide inhibition) rather than a novel invention itself, meaning patentability is likely limited to the specific application of existing compounds or methods to these ASD models, which is a relatively narrow claim; without knowing details of the specific inhibitor used, or novel formulations/delivery, the IP strength appears weak."
+      }
+    },
+    "pi": "Haitham Amal",
+    "pi_full_name": "Haitham Amal",
+    "pi_email": "Haitham.amal@mail.huji.ac.il.",
+    "added_date": "2026-04-27"
   },
   {
     "id": "pubmed_41863352",
@@ -4222,7 +4699,7 @@
   },
   {
     "id": "epmc_41982399",
-    "title": "A Novel Light-Induced Collective Circular Movement in &lt;i&gt;Armadillo sordidus&lt;/i&gt; Isopods.",
+    "title": "A Novel Light-Induced Collective Circular Movement in <i>Armadillo sordidus</i> Isopods.",
     "authors": [
       "Idan Sheizaf",
       "Eviatar Itzkovich",
@@ -5030,52 +5507,51 @@
     "added_date": "2026-04-20"
   },
   {
-    "id": "epmc_41678362",
-    "title": "Maternal Diabetes and Early Neurodevelopment: Differential Milestone Attainment in Offspring by Diabetes Type.",
+    "id": "pubmed_42019819",
+    "title": "Mitral Leaflet Tear Following Transcatheter Edge-to-Edge Repair: A Case Series and Mechanistic Insights.",
     "authors": [
-      "Liya Kerem",
-      "Joshua Guedalia",
-      "Michal Lipschuetz"
+      "Itshak Amsalem",
+      "Amjad Abu-Salman",
+      "Hodaya Denekamp"
     ],
-    "journal": "",
-    "date": "2026-04-01",
-    "url": "https://europepmc.org/article/MED/41678362",
-    "source": "Europe PMC",
-    "score": 13,
-    "summary": "This study demonstrates that maternal diabetes, particularly pregestational type 1 and type 2, is associated with delays in offspring neurodevelopmental milestones across language, social, and motor skills. The risk appears highest for infants born to mothers with type 1 diabetes, suggesting differential impacts based on diabetes type.",
-    "opportunity": "Developing early diagnostic tools or targeted interventions (e.g., specialized therapies, nutritional supplements) for infants at high risk due to maternal diabetes could improve neurodevelopmental outcomes and reduce long-term healthcare costs.",
+    "journal": "The Canadian journal of cardiology",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42019819/",
+    "source": "PubMed",
+    "score": 14,
+    "summary": "This case series details mitral leaflet tears observed as a complication following a transcatheter edge-to-edge repair (TEER) procedure for mitral regurgitation. The research aims to understand the mechanisms behind these tears to improve procedural safety and outcomes.",
+    "opportunity": "Developing improved mitral valve repair devices or imaging/planning tools to predict and prevent leaflet tears during TEER procedures represents a significant commercial opportunity in the cardiovascular medical device space.",
     "fields": [
-      "Neuroscience",
-      "Diagnostics",
+      "Medical Device",
       "Clinical",
-      "Software/AI"
+      "Imaging"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 4,
-        "reason": "While the study investigates an important clinical question and differentiates between types of maternal diabetes, the core concept – that maternal diabetes impacts neurodevelopment – is well-established; the novelty lies in quantifying differences *between* diabetes types, which is incremental rather than groundbreaking. The methodology (retrospective cohort study using existing data) doesn't introduce novel techniques."
+        "reason": "While leaflet tears following TEER are clinically important to document, a case series primarily *describes* a phenomenon rather than presenting fundamentally new scientific discoveries; mechanistic insights, even if offered, require substantial validation to be considered truly novel in this established field of transcatheter mitral repair."
       },
       "commercial_potential": {
         "score": 3,
-        "reason": "While the paper identifies a correlation between maternal diabetes type and neurodevelopmental delays, it doesn't inherently translate to a clear commercial product or service; it primarily points to a need for increased monitoring and potentially earlier intervention, which are existing practices, not novel offerings. The research could *inform* development of diagnostic tools or therapies, but the paper itself doesn't present anything directly licensable or productizable."
+        "reason": "This paper describes a *problem* with an existing commercial technology (TEER), rather than presenting a novel technology itself; while understanding failure modes is valuable, it doesn't directly translate to a new product or easily licensable technology without further innovation addressing the described tear mechanism."
       },
       "market_size": {
-        "score": 3,
-        "reason": "While the paper identifies a clear clinical need – understanding neurodevelopmental impacts of maternal diabetes – it doesn't address the *market* size for interventions or diagnostics related to these findings; the study focuses on prevalence and risk association, not commercial opportunity. The total number of mothers with diabetes is known, but the addressable market (e.g., for early intervention programs, specialized testing, or therapies) remains undefined and likely represents a small fraction of the overall diabetic pregnancy population."
+        "score": 2,
+        "reason": "This paper focuses on a *complication* of an existing procedure (Mitral Edge-to-Edge Repair - MVAR) rather than introducing a new therapy or diagnostic; therefore, the 'market size' isn't for a primary product, but rather for managing adverse events within the existing MVAR market, which is a small subset of the overall mitral valve disease market. While managing complications is important, it doesn't represent a large, independent market opportunity."
       },
       "trl": {
-        "score": 2,
-        "reason": "This paper describes retrospective observational research analyzing existing clinical data; it does *not* represent the development of a new technology or intervention, and therefore has a very low TRL. The 'technology' here is data analysis of established clinical practices, which is already widely applied."
+        "score": 3,
+        "reason": "This paper details *complications* arising from an *already clinically implemented* procedure (transcatheter edge-to-edge repair - TEEVR). Therefore, the underlying technology (TEEVR itself) is well beyond lab-stage, but this paper addresses a newly observed issue *within* that clinical application, representing early-stage investigation of a problem, not advancement of the core technology's readiness."
       },
       "ip_strength": {
-        "score": 1,
-        "reason": "This paper describes an observational study identifying correlations between maternal diabetes type and neurodevelopmental milestones; it does not present any novel inventions, methods, or discoveries that would be patentable or otherwise defensible as intellectual property. The work relies on existing data collection and analysis techniques."
+        "score": 2,
+        "reason": "This paper describes observed clinical phenomena (leaflet tears) following a *known* procedure (TEER) and proposes mechanistic insights – it doesn't present novel inventions or processes eligible for strong IP protection; it's descriptive science around an existing technology. While the mechanistic insights *could* potentially inform future device design, the paper itself doesn't constitute protectable IP."
       }
     },
-    "pi": "Ofer Beharier",
-    "pi_full_name": "Ofer Beharier",
-    "pi_email": "",
-    "added_date": "2026-04-06"
+    "pi": "Mony Shuvy",
+    "pi_full_name": "Mony Shuvy",
+    "pi_email": "monysh@gmail.com.",
+    "added_date": "2026-04-27"
   },
   {
     "id": "epmc_41801731",
@@ -5178,7 +5654,7 @@
       "Yusef Azraq"
     ],
     "journal": "",
-    "date": "2026 Mar",
+    "date": "2026 Mar 1",
     "url": "https://europepmc.org/article/MED/41103162",
     "source": "Europe PMC",
     "score": 13,
@@ -5338,6 +5814,54 @@
     "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_41678362",
+    "title": "Maternal Diabetes and Early Neurodevelopment: Differential Milestone Attainment in Offspring by Diabetes Type.",
+    "authors": [
+      "Liya Kerem",
+      "Joshua Guedalia",
+      "Michal Lipschuetz"
+    ],
+    "journal": "",
+    "date": "2026 Apr 1",
+    "url": "https://europepmc.org/article/MED/41678362",
+    "source": "Europe PMC",
+    "score": 13,
+    "summary": "This study demonstrates that maternal diabetes, particularly pregestational type 1 and type 2, is associated with delays in offspring neurodevelopmental milestones across language, social, and motor skills. The risk appears highest for infants born to mothers with type 1 diabetes, suggesting differential impacts based on diabetes type.",
+    "opportunity": "Developing early diagnostic tools or targeted interventions (e.g., specialized therapies, nutritional supplements) for infants at high risk due to maternal diabetes could improve neurodevelopmental outcomes and reduce long-term healthcare costs.",
+    "fields": [
+      "Neuroscience",
+      "Diagnostics",
+      "Clinical",
+      "Software/AI"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While the study investigates an important clinical question and differentiates between types of maternal diabetes, the core concept – that maternal diabetes impacts neurodevelopment – is well-established; the novelty lies in quantifying differences *between* diabetes types, which is incremental rather than groundbreaking. The methodology (retrospective cohort study using existing data) doesn't introduce novel techniques."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the paper identifies a correlation between maternal diabetes type and neurodevelopmental delays, it doesn't inherently translate to a clear commercial product or service; it primarily points to a need for increased monitoring and potentially earlier intervention, which are existing practices, not novel offerings. The research could *inform* development of diagnostic tools or therapies, but the paper itself doesn't present anything directly licensable or productizable."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "While the paper identifies a clear clinical need – understanding neurodevelopmental impacts of maternal diabetes – it doesn't address the *market* size for interventions or diagnostics related to these findings; the study focuses on prevalence and risk association, not commercial opportunity. The total number of mothers with diabetes is known, but the addressable market (e.g., for early intervention programs, specialized testing, or therapies) remains undefined and likely represents a small fraction of the overall diabetic pregnancy population."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes retrospective observational research analyzing existing clinical data; it does *not* represent the development of a new technology or intervention, and therefore has a very low TRL. The 'technology' here is data analysis of established clinical practices, which is already widely applied."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes an observational study identifying correlations between maternal diabetes type and neurodevelopmental milestones; it does not present any novel inventions, methods, or discoveries that would be patentable or otherwise defensible as intellectual property. The work relies on existing data collection and analysis techniques."
+      }
+    },
+    "pi": "Ofer Beharier",
+    "pi_full_name": "Ofer Beharier",
+    "pi_email": "",
+    "added_date": "2026-04-06"
   },
   {
     "id": "pubmed_41934057",
@@ -5772,6 +6296,150 @@
     "added_date": "2026-04-20"
   },
   {
+    "id": "pubmed_42029957",
+    "title": "From profiles to precision: incorporating the Psychosocial Assessment Tool (PAT) and the Strengths and Difficulties Questionnaire (SDQ) to inform treatment planning in outpatient psychiatry.",
+    "authors": [
+      "Shirel Dorman-Ilan",
+      "Yaara Sadeh",
+      "Naama de la Fontaine"
+    ],
+    "journal": "European child & adolescent psychiatry",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42029957/",
+    "source": "PubMed",
+    "score": 13,
+    "summary": "This study investigates the use of standardized questionnaires – the Psychosocial Assessment Tool (PAT) and the Strengths and Difficulties Questionnaire (SDQ) – to improve treatment planning for patients in outpatient psychiatric settings. The research aims to move beyond general profiles to more personalized and effective care based on detailed psychosocial and behavioral assessments.",
+    "opportunity": "Development of a software platform integrating PAT and SDQ data with clinical records could offer enhanced patient stratification and personalized treatment recommendations, potentially improving outcomes and reducing healthcare costs.",
+    "fields": [
+      "Clinical",
+      "Software/AI",
+      "Neuroscience",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The paper describes incorporating existing, well-established assessment tools (PAT & SDQ) into treatment planning – this isn't developing new tools or a novel scientific mechanism, but rather a pragmatic application of current methods. While potentially valuable for clinical practice, the novelty from a *scientific* perspective is quite low."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While addressing a clear need in mental healthcare (better treatment planning), the paper focuses on *how* to use existing, freely available tools (PAT & SDQ) rather than presenting a novel, protectable technology; commercial potential relies on building a service *around* these tools, which isn't detailed and faces competition from existing clinical practice."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on improving treatment *planning* within existing outpatient psychiatry, not creating a new market or significantly expanding an existing one; the addressable market is limited to the cost savings/efficiency gains within current mental healthcare spending, which is difficult to quantify and likely modest. While mental healthcare is a large market overall, this paper doesn't address a new segment or unmet need that would create substantial market opportunity."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This paper describes the *incorporation* of existing, validated assessment tools (PAT & SDQ) into a clinical workflow, not the development of a novel technology; therefore, the TRL is low, representing a demonstrated application of existing tools rather than a new technology nearing commercialization. It's likely at the stage of clinical implementation/validation, not invention or significant engineering."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes the *application* of existing, publicly available assessment tools (PAT & SDQ) to a clinical setting, rather than presenting novel technology or a new invention; therefore, there is virtually no patentable IP. While the specific *combination* of tools and resulting treatment planning approach *could* theoretically be documented, it's unlikely to meet the non-obviousness threshold for patent protection."
+      }
+    },
+    "pi": "Shlomit Tsafrir",
+    "pi_full_name": "Shlomit Tsafrir",
+    "pi_email": "",
+    "added_date": "2026-04-27"
+  },
+  {
+    "id": "pubmed_42017499",
+    "title": "Mast Cells in Acute COVID-19 Patients.",
+    "authors": [
+      "Ilan Zaffran",
+      "Hadas Pahima",
+      "Eli Ben-Chetrit"
+    ],
+    "journal": "Allergy",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42017499/",
+    "source": "PubMed",
+    "score": 13,
+    "summary": "This research investigates the role of mast cells in the acute phase of COVID-19 infection. Understanding mast cell involvement could reveal new therapeutic targets or biomarkers for disease severity and progression.",
+    "opportunity": "Developing mast cell-targeted therapies or diagnostic tools could improve treatment outcomes and patient stratification for COVID-19 and potentially other inflammatory conditions.",
+    "fields": [
+      "Drug Discovery",
+      "Immunology",
+      "Clinical",
+      "Diagnostics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "Without an abstract, assessing novelty is extremely difficult, but the topic of mast cell involvement in COVID-19, while explored, isn't fundamentally groundbreaking *now* – initial investigations occurred relatively early in the pandemic. The research would need to demonstrate a truly new mechanism or unexpected finding to score higher."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The title suggests basic research investigating a biological mechanism (mast cell involvement in COVID-19) without indicating any immediately apparent product, service, or licensable technology; further information is needed to assess if this research unlocks a novel therapeutic target or diagnostic approach with commercial viability."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a biological mechanism (mast cell involvement) in COVID-19, not a direct product or therapy addressing a defined market; therefore, the immediately addressable market size is very small, primarily limited to research funding and potentially biomarker development, which are niche areas. While understanding COVID-19 pathology is valuable, this paper doesn't inherently point to a large, commercially viable market."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "The title indicates basic research investigating a biological mechanism (mast cell involvement in COVID-19). Without an abstract, it's highly likely this is early-stage, lab-based research with very limited translational potential currently, placing it at a low TRL."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "Discovering a correlation between mast cells and COVID-19 severity, even if novel, is unlikely to be strongly defensible IP; biological observations of this nature are often difficult to patent broadly without a specific, inventive application or method. The title suggests an observational study, further reducing potential for strong IP protection."
+      }
+    },
+    "pi": "Francesca Levi-Schaffer",
+    "pi_full_name": "Francesca Levi-Schaffer",
+    "pi_email": "",
+    "added_date": "2026-04-27"
+  },
+  {
+    "id": "pubmed_42010000",
+    "title": "Clinical characteristics, laboratory measures, and quality of life as predictors of medication adherence in multiple myeloma.",
+    "authors": [
+      "Nizar Abu Hamdeh",
+      "Mohammad Alnees",
+      "Ibraheem AbuAlrub"
+    ],
+    "journal": "Scientific reports",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42010000/",
+    "source": "PubMed",
+    "score": 13,
+    "summary": "This study from Hebrew University investigates factors influencing whether multiple myeloma patients consistently take their prescribed medications. Understanding these predictors – clinical traits, lab results, and patient-reported quality of life – is crucial for improving treatment outcomes in this challenging cancer.",
+    "opportunity": "Development of a predictive algorithm or digital health tool leveraging these identified factors could personalize adherence interventions and improve medication efficacy in multiple myeloma, potentially reducing healthcare costs and improving patient survival.",
+    "fields": [
+      "Clinical",
+      "Software/AI",
+      "Immunology",
+      "Genomics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "Predicting medication adherence is a well-studied area, and applying this to multiple myeloma, while important for patient care, doesn't represent a significant leap in scientific understanding or methodology; it's largely an application of existing predictive modeling techniques to a specific disease context."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While understanding predictors of medication adherence is valuable, this study appears purely observational and doesn't inherently translate to a novel product, service, or easily licensable technology; it primarily informs existing clinical practice rather than creating a new commercial avenue. Any commercialization would likely be indirect, embedded within adherence programs offered by pharmaceutical companies, representing a small fraction of overall value."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper focuses on improving medication adherence *within* an existing disease (multiple myeloma), not creating a new market or significantly expanding the existing one; while adherence improvements can reduce healthcare costs, the direct addressable market size is limited to cost savings within the existing myeloma treatment market, which isn't quantified and is relatively small compared to broader pharmaceutical markets."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes observational clinical research focused on *predicting* adherence to existing medication, not the development of a new technology or therapeutic. Therefore, the TRL is very low, representing basic research informing clinical practice rather than a technology nearing commercialization."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes observational clinical research and predictive modeling – it does *not* present any novel inventions or processes that would be patentable. The findings relate to correlations between existing data and patient behavior, lacking any inventive step required for strong IP."
+      }
+    },
+    "pi": "Haitham Abu Khadija",
+    "pi_full_name": "Haitham Abu Khadija",
+    "pi_email": "",
+    "added_date": "2026-04-27"
+  },
+  {
     "id": "epmc_41785124",
     "title": "Depressed individuals want to feel more unpleasant emotions in daily life, but try harder to decrease them.",
     "authors": [
@@ -6155,6 +6823,54 @@
     "added_date": "2026-04-20"
   },
   {
+    "id": "pubmed_42025445",
+    "title": "Association of Recent Antibiotic Therapy on Post-Thyroidectomy Wound Complications.",
+    "authors": [
+      "Nir Zontag",
+      "Maya Korem",
+      "Jonathan Zontag"
+    ],
+    "journal": "Surgical infections",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42025445/",
+    "source": "PubMed",
+    "score": 12,
+    "summary": "This study investigates whether recent antibiotic use increases the risk of wound complications following thyroidectomy surgery. Identifying risk factors for post-surgical complications is crucial for improving patient outcomes and reducing healthcare costs.",
+    "opportunity": "Developing a predictive risk assessment tool, potentially incorporating antibiotic history and microbiome data, could allow for prophylactic interventions to minimize wound complications post-thyroidectomy, improving surgical efficiency and patient safety.",
+    "fields": [
+      "Clinical",
+      "Software/AI",
+      "Immunology",
+      "Diagnostics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "Investigating the impact of recent antibiotic use on surgical wound complications is a reasonable clinical question, but the premise isn't particularly novel; antibiotic-complication links are well-studied. The study appears to focus on a specific surgical context (thyroidectomy) which adds *some* nuance, but doesn't represent a fundamental shift in scientific understanding."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper identifies a correlation, but doesn't inherently translate to a direct product or service; it suggests a potential risk factor, which *could* inform clinical practice guidelines or diagnostic testing, but requires significant further development and validation to become commercially viable. The commercial potential relies on others building a solution *around* this finding, rather than being a technology ready for licensing or direct productization."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a *reduction* of a complication (wound issues post-thyroidectomy) potentially linked to antibiotic use, not a new market creation; therefore, the addressable market is limited to cost savings within existing thyroidectomy procedures, which is a relatively small segment of the overall healthcare market. There's no indication of a novel therapeutic or diagnostic being developed to address a large unmet need."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper investigates an *association* between existing treatments (antibiotics) and clinical outcomes (wound complications) – it doesn't present a new technology itself. Therefore, the TRL is very low, representing basic research or observational study findings rather than a developed technology ready for application."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This study appears to be a retrospective association study, identifying a correlation between antibiotic use and wound complications; correlation is not patentable. The finding itself, even if novel, is likely an observation about existing treatments and biological processes, lacking the inventive step needed for strong IP protection."
+      }
+    },
+    "pi": "Nir Hirshoren",
+    "pi_full_name": "Nir Hirshoren",
+    "pi_email": "",
+    "added_date": "2026-04-27"
+  },
+  {
     "id": "epmc_41888297",
     "title": "Incidence and outcome of hemorrhagic cystitis after allogeneic hematopoietic cell transplantation: a survey of the infectious diseases working party of EBMT.",
     "authors": [
@@ -6442,6 +7158,54 @@
     "added_date": "2026-04-06"
   },
   {
+    "id": "epmc_42024844",
+    "title": "Pathways-to-Care Analysis of Non-Hodgkin Lymphoma in Ethiopia: A Mixed-Methods Study.",
+    "authors": [
+      "Obsie T Baissa",
+      "Fozia Abdela",
+      "Fisihatsion Tadesse"
+    ],
+    "journal": "",
+    "date": "2026-04-23",
+    "url": "https://europepmc.org/article/MED/42024844",
+    "source": "Europe PMC",
+    "score": 10,
+    "summary": "This study analyzes the pathways to care and delays experienced by patients with Non-Hodgkin Lymphoma in Ethiopia, revealing significant delays at multiple stages and identifying factors like education level and lymphoma subtype as key determinants. High rates of treatment abandonment and loss to follow-up highlight critical challenges in delivering effective cancer care in resource-limited settings.",
+    "opportunity": "Developing low-cost, AI-powered tools for early symptom triage and patient navigation in low-income countries could improve diagnostic rates and reduce delays in cancer care, potentially improving outcomes and reducing mortality.",
+    "fields": [
+      "Clinical",
+      "Software/AI",
+      "Immunology",
+      "Diagnostics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "While important for understanding healthcare access in Ethiopia, this study primarily *applies* existing frameworks (Andersen's model) and methods (mixed-methods, logistic regression, thematic analysis) to a new geographic context. There's little evidence of novel scientific discovery or methodological innovation; it's a descriptive study of known problems using established techniques."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This study primarily describes a significant clinical problem and identifies barriers to care, but doesn't present a novel technology, diagnostic, or therapeutic approach with clear commercializable potential; it's a needs assessment rather than a solution offering. While the findings could *inform* commercial ventures (e.g., a diagnostic company targeting improved access in similar settings), the paper itself doesn't represent one."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a very specific, geographically limited market (Ethiopia, and even within that, only two referral centers) for a relatively rare cancer (NHL). While understanding care pathways is valuable, the study provides no data on the *total* NHL incidence in Ethiopia or the potential for a commercially viable market for diagnostics or therapeutics; it's purely descriptive of existing, unmet need, not market size."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes an observational study analyzing existing healthcare pathways and barriers to care – it does *not* present a new technology or intervention. Therefore, the TRL is very low, representing basic research and understanding of a current problem, far from commercialization or real-world application of a novel technology."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This study is a descriptive analysis of existing healthcare pathways and does not present any novel technology, method, or discovery that would be patentable or defensible as intellectual property. It's an observational study focused on understanding current practices, not creating new ones."
+      }
+    },
+    "pi": "Ora Paltiel",
+    "pi_full_name": "Ora Paltiel",
+    "pi_email": "",
+    "added_date": "2026-04-27"
+  },
+  {
     "id": "epmc_41780426",
     "title": "Corrigendum to \"The paradoxical protective effect of chronic stress on advanced Alzheimer's disease pathology\". [Brain, Behav., Immun. 132 (2026) 106224].",
     "authors": [
@@ -6678,6 +7442,101 @@
     "pi_full_name": "Reut Rotem",
     "pi_email": "",
     "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_42032566",
+    "title": "Health warnings for electronic cigarette packaging: a rapid scoping review.",
+    "authors": [
+      "Elizabeth Klein",
+      "Yovel Cohen",
+      "Georgia Sasser"
+    ],
+    "journal": "BMC public health",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42032566/",
+    "source": "PubMed",
+    "score": 10,
+    "summary": "This paper is a rapid scoping review of health warnings on electronic cigarette packaging. It likely analyzes the types of warnings used, their effectiveness, and potential gaps in current regulations.",
+    "opportunity": "Development of AI-powered tools to analyze the psychological impact of different warning label designs and messaging on e-cigarette users could provide valuable insights for public health campaigns and regulatory bodies.",
+    "fields": [
+      "Clinical",
+      "Software/AI",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 2,
+        "reason": "Scoping reviews, by their nature, synthesize existing literature rather than presenting new scientific discoveries; this paper's novelty is extremely limited as it focuses on summarizing what is *already known* about health warnings on e-cigarette packaging. While valuable for informing policy, it doesn't represent a groundbreaking advancement in scientific understanding."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the topic addresses a public health concern with existing commercial products (e-cigarettes), the paper itself – being a scoping review – doesn't *create* a commercial opportunity; it summarizes existing knowledge relevant to potential regulatory changes or marketing strategies, which are indirect commercial impacts. The commercial potential relies entirely on how others utilize the review's findings, not on a novel technology or product arising from the research itself."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on *how* to implement health warnings, not the overall market for e-cigarettes or cessation aids; therefore, it provides no information on market size or addressable demand. While e-cigarettes *have* a large market, this paper doesn't address it."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper is a scoping review of *existing* health warnings, meaning the technology (health warnings themselves) is already fully deployed and commercialized; however, the *research* on their effectiveness is at a very early stage of informing potential changes or new implementations, thus a low TRL score reflecting the research's stage, not the warnings themselves."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes a review of existing health warnings, a concept firmly in the public domain and not patentable. The work itself – a scoping review – is also not protectable IP; it's a synthesis of existing knowledge."
+      }
+    },
+    "pi": "Yael Bar-Zeev",
+    "pi_full_name": "Yael Bar-Zeev",
+    "pi_email": "",
+    "added_date": "2026-04-27"
+  },
+  {
+    "id": "pubmed_42029414",
+    "title": "New Onset of Acne Associated With Dietary Supplements Post-Metabolic Bariatric Surgery: A Case Report and Review of the Literature.",
+    "authors": [
+      "Almog Eliyahu Dahan",
+      "Arik Dahan",
+      "Ilanit Mahler"
+    ],
+    "journal": "Journal of pharmacy practice",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42029414/",
+    "source": "PubMed",
+    "score": 10,
+    "summary": "This case report details the unexpected emergence of acne in patients following bariatric surgery, linked to the use of dietary supplements intended to mitigate nutrient deficiencies. The researchers suggest a potential connection between supplement ingredients and hormonal/inflammatory pathways affected by the surgery, leading to acne development.",
+    "opportunity": "A commercial opportunity exists for developing personalized supplement formulations or dietary guidance programs specifically tailored for post-bariatric surgery patients to minimize adverse skin reactions and optimize nutritional status.",
+    "fields": [
+      "Clinical",
+      "FoodTech",
+      "Other",
+      "Immunology"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "While the observation of new-onset acne post-bariatric surgery linked to dietary supplement use is clinically interesting, case reports inherently offer limited novelty; the core idea of nutrient imbalances/supplement effects influencing skin health isn't new, and this appears to be a specific manifestation within a known context."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This case report, while identifying a potential adverse event, has extremely limited commercial potential as it stands; it doesn't suggest a novel therapeutic target, diagnostic, or preventative measure, and is unlikely to drive significant market opportunities beyond potentially informing supplement labeling or post-surgery patient counseling."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This case report focuses on a very specific, niche adverse event (acne post-bariatric surgery linked to supplement use) within the broader bariatric surgery and dietary supplement markets; the addressable market for *solving this specific problem* is extremely limited, representing a small fraction of the overall patient population."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This is a case report identifying a correlation, not a new technology; therefore, the TRL is very low, representing basic research and observation rather than a developed technology ready for application. It doesn't present any novel technology, only a clinical observation related to existing procedures (bariatric surgery) and readily available products (dietary supplements)."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This case report describes a clinical observation, not a novel invention; therefore, there is no inherent IP strength. While a correlation is noted, identifying a link between supplement use and acne post-bariatric surgery is not patentable subject matter."
+      }
+    },
+    "pi": "Carmil Azran",
+    "pi_full_name": "Carmil Azran",
+    "pi_email": "",
+    "added_date": "2026-04-27"
   },
   {
     "id": "epmc_41776295",
@@ -7296,6 +8155,54 @@
     "pi_full_name": "Muhammad M Haj-Yahia",
     "pi_email": "",
     "added_date": "2026-04-13"
+  },
+  {
+    "id": "pubmed_42030175",
+    "title": "The role of geographical proximity to the October 7th, 2023, attack on Israel: Mental health disorders and related risk factors.",
+    "authors": [
+      "Ohad Gilbar",
+      "Ruth Pat-Horenczyk",
+      "Mario Mikulincer"
+    ],
+    "journal": "Journal of traumatic stress",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42030175/",
+    "source": "PubMed",
+    "score": 8,
+    "summary": "This study investigates the correlation between proximity to the October 7th, 2023 attacks in Israel and the prevalence of mental health disorders and associated risk factors. It aims to quantify the psychological impact of the event based on geographical location.",
+    "opportunity": "Development of AI-driven mental health triage and personalized intervention platforms, particularly for trauma survivors, could be accelerated by data generated from studies like this, offering scalable and accessible care.",
+    "fields": [
+      "Clinical",
+      "Software/AI",
+      "Neuroscience",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "While the application of mental health research to a recent, highly impactful geopolitical event is timely, the core concept of trauma and proximity to conflict influencing mental health is well-established; the novelty lies in the *specific* context, not the underlying science itself. The study appears to be descriptive rather than introducing fundamentally new methodologies or theoretical frameworks."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "While the research addresses a significant humanitarian issue, the direct commercial potential is extremely limited; mental health research often relies on public funding or non-profit organizations, and translating this specific study into a marketable product or service is unclear. The focus on a geographically and temporally specific event further restricts broad applicability for commercialization."
+      },
+      "market_size": {
+        "score": 1,
+        "reason": "This paper focuses on a very specific, geographically-limited event (the October 7th attack) and its impact on mental health; the addressable market for solutions directly tied to *this specific* event is extremely narrow and unlikely to represent a substantial commercial opportunity, even within the broader mental health space. While mental health is a large market, this research doesn't indicate a scalable product or service with broad applicability."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper describes an observational study of mental health impacts; it does *not* present a technology or novel intervention, and therefore has no TRL applicable to deep-tech or life-science investment. It's purely a social science/public health observation."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes an observational study of mental health impacts; such observations are not patentable. There is no indication of novel technology, methods, or compositions of matter that would be defensible via IP."
+      }
+    },
+    "pi": "Miriam Schiff",
+    "pi_full_name": "Miriam Schiff",
+    "pi_email": "",
+    "added_date": "2026-04-27"
   },
   {
     "id": "epmc_41848442",

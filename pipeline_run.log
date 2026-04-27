@@ -1,56 +1,54 @@
 Loading existing papers from Google Sheet...
-  141 existing papers loaded.
-  Verifying HUJI affiliation for 137 papers via PubMed efetch...
-fetch_pubmed: 20 fetched, 19 new
-fetch_europepmc: 17 fetched, 2 new
+  161 existing papers loaded.
+  Verifying HUJI affiliation for 156 papers via PubMed efetch...
+fetch_pubmed: 17 fetched, 16 new
+fetch_europepmc: 14 fetched, 3 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-20 unique new papers to evaluate.
-Enriching PI contact info for 20 new papers...
+19 unique new papers to evaluate.
+Enriching PI contact info for 19 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/20] Traumatic brain injury clinical score (TBICS) predicts survival outcom
-    score=21 fields=['Diagnostics', 'Clinical', 'Neuroscience', 'Software/AI']
-  [2/20] Acute kidney injury, secondary to valacyclovir use during pregnancy fo
-    score=14 fields=['Clinical', 'Immunology', 'Drug Discovery', 'Diagnostics']
-  [3/20] Periodontal Diseases and Conditions in Children and Adolescents Associ
-    score=15 fields=['Diagnostics', 'Immunology', 'Clinical', 'Drug Discovery']
-  [4/20] Neural temporal scaling accounts for robust hunting behavior across te
-    score=17 fields=['Neuroscience', 'Software/AI', 'Robotics']
-  [5/20] Complex genotype-phenotype relationships in neurodevelopmental disorde
-    score=13 fields=['Genomics', 'Neuroscience', 'Drug Discovery', 'Software/AI']
-  [6/20] Comparison of dogs with septic peritonitis due to S. lupi aberrant mig
-    score=13 fields=['Diagnostics', 'Immunology', 'Clinical', 'Drug Discovery']
-  [7/20] WWOX maintains epidermal identity and suppresses EMT to prevent aggres
-    score=23 fields=['Drug Discovery', 'Genomics', 'Clinical', 'Immunology']
-  [8/20] RNA dicing promotes the expression of an oncogenic JAK1 isoform.
-    score=21 fields=['Drug Discovery', 'Genomics', 'Immunology', 'Oncology']
-  [9/20] Exact-Factorization Framework for Electron-Nuclear Dynamics in Electro
-    score=21 fields=['Materials', 'Drug Discovery', 'Clean Energy', 'Software/AI']
-  [10/20] A Novel Light-Induced Collective Circular Movement in 
-    score=17 fields=['Materials', 'Medical Device', 'Software/AI', 'Other']
-  [11/20] The genetic basis for DNA methylation variation across tissues and dev
-    score=20 fields=['Drug Discovery', 'Diagnostics', 'Genomics', 'Clinical']
-  [12/20] A dual role for cGAS in shaping cellular and organismal responses to g
-    score=18 fields=['Drug Discovery', 'Immunology', 'Genomics', 'Clinical']
-  [13/20] Associations between prenatal exposure to ambient temperature and birt
-    score=13 fields=['Clinical', 'Software/AI', 'Diagnostics', 'Other']
-  [14/20] Harnessing random peptide mixtures to combat multidrug-resistant funga
-    score=28 fields=['Drug Discovery', 'Immunology', 'Clinical', 'Proteomics']
-  [15/20] Mastery Motivation and Maternal Stress in Typically Developing Childre
-    score=9 fields=['Neuroscience', 'Clinical', 'Software/AI', 'Other']
-  [16/20] sc-rDSeq: a robust and cost-effective full-length total RNA sequencing
-    score=27 fields=['Drug Discovery', 'Genomics', 'Clinical', 'Software/AI']
-  [17/20] Powered mobility acquisition by an adolescent with severe visual and p
-    score=12 fields=['Medical Device', 'Clinical', 'Software/AI', 'Neuroscience']
-  [18/20] Codon bias shapes bacterial small RNA binding sites within protein-cod
-    score=18 fields=['Drug Discovery', 'Synthetic Biology', 'Genomics', 'AgriTech']
-  [19/20] &lt;i&gt;Paenibacillus dendritiformis&lt;/i&gt; C454 as a sustainable 
-    score=25 fields=['AgriTech', 'Synthetic Biology', 'Other']
-  [20/20] A Novel Light-Induced Collective Circular Movement in &lt;i&gt;Armadil
-    score=15 fields=['Software/AI', 'Robotics', 'Other', 'Imaging']
+  [1/19] Health warnings for electronic cigarette packaging: a rapid scoping re
+    score=10 fields=['Clinical', 'Software/AI', 'Other']
+  [2/19] Epigenetic adaptation of beta cells across lifespan and disease.
+    score=26 fields=['Drug Discovery', 'Genomics', 'Clinical', 'Immunology']
+  [3/19] Functional characterization of specialized immune cells in a cnidarian
+    score=18 fields=['Drug Discovery', 'Immunology', 'Genomics', 'Vaccines']
+  [4/19] The role of geographical proximity to the October 7th, 2023, attack on
+    score=8 fields=['Clinical', 'Software/AI', 'Neuroscience', 'Other']
+  [5/19] From profiles to precision: incorporating the Psychosocial Assessment 
+    score=13 fields=['Clinical', 'Software/AI', 'Neuroscience', 'Other']
+  [6/19] New Onset of Acne Associated With Dietary Supplements Post-Metabolic B
+    score=10 fields=['Clinical', 'FoodTech', 'Other', 'Immunology']
+  [7/19] Association of Recent Antibiotic Therapy on Post-Thyroidectomy Wound C
+    score=12 fields=['Clinical', 'Software/AI', 'Immunology', 'Diagnostics']
+  [8/19] Mitral Leaflet Tear Following Transcatheter Edge-to-Edge Repair: A Cas
+    score=14 fields=['Medical Device', 'Clinical', 'Imaging']
+  [9/19] Mast Cells in Acute COVID-19 Patients.
+    score=13 fields=['Drug Discovery', 'Immunology', 'Clinical', 'Diagnostics']
+  [10/19] Universal Hamiltonian simulators in one and two dimensions.
+    score=18 fields=['Materials', 'Drug Discovery', 'Software/AI', 'Quantum']
+  [11/19] Dynamic Switchable and Transient DNA Condensates Driven by Aptamer-Lig
+    score=26 fields=['Drug Discovery', 'Materials', 'Synthetic Biology', 'Genomics']
+  [12/19] Nitric oxide inhibition ameliorates cortical proteomic changes in the 
+    score=17 fields=['Drug Discovery', 'Neuroscience', 'Proteomics', 'Clinical']
+  [13/19] Strain-level microbial signatures and inferred functional alterations 
+    score=19 fields=['Diagnostics', 'Immunology', 'Clinical', 'FoodTech']
+  [14/19] Clinical characteristics, laboratory measures, and quality of life as 
+    score=13 fields=['Clinical', 'Software/AI', 'Immunology', 'Genomics']
+  [15/19] Vaccinations: more than prevention of infection.
+    score=21 fields=['Vaccines', 'Immunology', 'Drug Discovery', 'Clinical']
+  [16/19] Temperature-Enhanced Coercive Field by Chiral Molecules.
+    score=21 fields=['Materials', 'Medical Device', 'Software/AI', 'Other']
+  [17/19] Pathways-to-Care Analysis of Non-Hodgkin Lymphoma in Ethiopia: A Mixed
+    score=10 fields=['Clinical', 'Software/AI', 'Immunology', 'Diagnostics']
+  [18/19] Nitric oxide inhibition ameliorates cortical proteomic changes in the 
+    score=16 fields=['Drug Discovery', 'Neuroscience', 'Proteomics', 'Clinical']
+  [19/19] Comparative Analysis of &lt;i&gt;BRCA&lt;/i&gt; Pathogenic Variant Det
+    score=19 fields=['Diagnostics', 'Genomics', 'Clinical', 'Software/AI']
 
-Retention: kept 141/141 existing, added 20 new.
-Writing 161 papers to Google Sheet...
-Sheet updated: {"status":"ok","rows":162}
-Generated papers_reader.html and papers_data.json with 161 papers.
+Retention: kept 161/161 existing, added 19 new.
+Writing 180 papers to Google Sheet...
+Sheet updated: {"status":"ok","rows":181}
+Generated papers_reader.html and papers_data.json with 180 papers.
 Done.
