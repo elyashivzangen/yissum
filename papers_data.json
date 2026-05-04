@@ -383,6 +383,54 @@
     "added_date": "2026-04-13"
   },
   {
+    "id": "pubmed_42066582",
+    "title": "RNA editing of pathogenic variants causing inherited retinal diseases using endogenous ADAR-current and future perspectives.",
+    "authors": [
+      "Manar Salameh",
+      "Nina Schneider",
+      "Johanna Valensi"
+    ],
+    "journal": "Molecular aspects of medicine",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42066582/",
+    "source": "PubMed",
+    "score": 29,
+    "summary": "This research explores using the body's natural RNA editing machinery (ADAR) to correct genetic defects that cause inherited retinal diseases. By boosting the activity of ADAR, the researchers aim to fix faulty RNA transcripts, potentially restoring vision without permanently altering the DNA.",
+    "opportunity": "Developing an *in vivo* RNA editing therapy for inherited retinal diseases represents a significant commercial opportunity, offering a potentially curative treatment for currently untreatable conditions with a high unmet medical need.",
+    "fields": [
+      "Drug Discovery",
+      "Genomics",
+      "Clinical",
+      "Neuroscience"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "Leveraging endogenous ADAR for precise RNA editing of inherited retinal disease variants is a clever approach, moving beyond simply introducing editing machinery; however, RNA editing itself isn't entirely novel, and the application to retinal diseases, while impactful, builds on existing editing strategies in other tissues."
+      },
+      "commercial_potential": {
+        "score": 7,
+        "reason": "The paper focuses on a clear and significant unmet medical need (inherited retinal diseases) and proposes a potentially transformative therapeutic approach (RNA editing). However, translating ADAR-mediated RNA editing into a widely applicable and commercially viable therapy still faces substantial delivery and specificity challenges, impacting immediate commercialization prospects."
+      },
+      "market_size": {
+        "score": 6,
+        "reason": "Inherited retinal diseases (IRDs) collectively affect a significant number of people, estimated around 1 in 4000, representing a clear, though fragmented, patient population; however, the market is niche and requires highly specialized delivery mechanisms, limiting overall addressable revenue compared to more prevalent diseases."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "The paper focuses on RNA editing as a therapeutic approach for inherited retinal diseases, which is still largely preclinical; demonstrating efficacy *in vivo* and achieving safe, targeted editing in humans represents significant hurdles, placing it at an early TRL. While promising, the technology is likely still in the lab-stage or very early animal studies."
+      },
+      "ip_strength": {
+        "score": 6,
+        "reason": "While RNA editing with ADAR is a promising field, relying on *endogenous* ADAR activity presents IP challenges; simply identifying targets isn't strongly defensible, and boosting endogenous activity may lack strong patentability compared to novel ADAR enzyme engineering or delivery systems. The paper's focus on variant identification and proof-of-concept suggests limited immediate, strong IP, though future work on delivery or ADAR modulation could improve this."
+      }
+    },
+    "pi": "Dror Sharon",
+    "pi_full_name": "Dror Sharon",
+    "pi_email": "dror.sharon1@mail.huji.ac.il.",
+    "added_date": "2026-05-04"
+  },
+  {
     "id": "pubmed_41979352",
     "title": "Harnessing random peptide mixtures to combat multidrug-resistant fungal infections.",
     "authors": [
@@ -429,6 +477,54 @@
     "pi_full_name": "Neta Shlezinger",
     "pi_email": "",
     "added_date": "2026-04-20"
+  },
+  {
+    "id": "epmc_42065370",
+    "title": "RadD from &lt;i&gt;Fusobacterium nucleatum&lt;/i&gt; engages NKp46 to promote antitumor cytotoxicity.",
+    "authors": [
+      "Ahmed Rishiq",
+      "Johanna Galski",
+      "Reem Bsoul"
+    ],
+    "journal": "",
+    "date": "2026-05-01",
+    "url": "https://europepmc.org/article/MED/42065370",
+    "source": "Europe PMC",
+    "score": 27,
+    "summary": "This research identifies a surprising link between the bacterium *Fusobacterium nucleatum* and the human immune system, specifically showing that a bacterial protein called RadD activates NK cells via the NKp46 receptor to kill tumor cells in head and neck cancers. However, this effect is not observed in colorectal cancers, suggesting a tissue-specific interplay between the microbiome, immune response, and cancer progression.",
+    "opportunity": "Developing therapies that enhance NKp46-RadD interaction, or engineer *F. nucleatum* strains with optimized RadD expression, could offer a novel immunotherapeutic approach for specific cancer types like head and neck cancer.",
+    "fields": [
+      "Immunology",
+      "Drug Discovery",
+      "Clinical",
+      "Genomics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "The identification of RadD as a novel ligand for NKp46 is a significant finding, representing a new understanding of how this bacterium can *sometimes* promote antitumor immunity – a surprising twist given its generally pro-tumor reputation; however, the context-dependent effect (benefit in HNSCC but not CRC) suggests the interaction's role isn't universally applicable, limiting the overall groundbreaking nature."
+      },
+      "commercial_potential": {
+        "score": 7,
+        "reason": "The identification of RadD as a ligand for NKp46, and the demonstrated link to anti-tumor cytotoxicity, presents a clear target for immunotherapy development – potentially through RadD-based vaccines or NKp46 agonists. However, the tissue-specific effect (benefit in head/neck cancer but not colorectal) limits broad applicability and necessitates further research to understand and potentially overcome this limitation."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper identifies a novel interaction with potential immunotherapeutic applications, but the addressable market is highly specific (cancers with *F. nucleatum* presence *and* high NKp46 expression, initially demonstrated in head and neck cancers). This limits the overall market size significantly, as it's not a broadly applicable cancer therapy and relies on specific patient stratification."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This research is primarily at a fundamental discovery stage, identifying a novel interaction between a bacterial adhesin (RadD) and an NK cell receptor (NKp46) with implications for anti-tumor immunity; it's largely *in vitro* and *in vivo* mechanistic work in mouse models, far from clinical translation or a defined product pipeline, indicating a very low TRL."
+      },
+      "ip_strength": {
+        "score": 7,
+        "reason": "The identification of RadD as a direct ligand for NKp46 is a strong starting point for IP, and the demonstrated functional impact (enhanced cytotoxicity, tumor growth inhibition) strengthens its potential; however, the IP position relies heavily on the novelty and non-obviousness of RadD itself and the NKp46 interaction, which will require thorough patent landscape analysis to confirm freedom to operate and defensibility."
+      }
+    },
+    "pi": "Ofer Mandelboim",
+    "pi_full_name": "Ofer Mandelboim",
+    "pi_email": "",
+    "added_date": "2026-05-04"
   },
   {
     "id": "epmc_41763456",
@@ -527,6 +623,54 @@
     "added_date": "2026-04-20"
   },
   {
+    "id": "pubmed_42067527",
+    "title": "Addendum: Telomouse-a mouse model with human-length telomeres generated by a single amino acid change in RTEL1.",
+    "authors": [
+      "Riham Smoom",
+      "Catherine Lee May",
+      "Vivian Ortiz"
+    ],
+    "journal": "Nature communications",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42067527/",
+    "source": "PubMed",
+    "score": 27,
+    "summary": "Researchers at Hebrew University have created a mouse model, 'Telomouse', with significantly lengthened telomeres – comparable to human length – through a precise single amino acid alteration in the RTEL1 gene. This model overcomes previous limitations in studying the effects of exceptionally long telomeres, offering a new platform to investigate aging, cancer, and genomic instability.",
+    "opportunity": "The Telomouse model presents a valuable pre-clinical tool for validating novel therapeutic targets and assessing the efficacy of anti-aging or cancer therapies focused on telomere biology, potentially accelerating drug development timelines.",
+    "fields": [
+      "Drug Discovery",
+      "Genomics",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 9,
+        "reason": "Creating a mouse model with truly human-length telomeres is a significant feat, overcoming a long-standing barrier in aging and cancer research; the identification of a single amino acid change in RTEL1 to achieve this is a particularly novel and elegant solution, representing a substantial advance over previous attempts to model human telomere biology in mice."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "While creating a mouse model with human-length telomeres is a significant technical achievement, the immediate commercial potential isn't overwhelmingly clear; its value largely hinges on its utility as a research tool for aging/disease studies, which is a somewhat indirect path to revenue compared to a directly therapeutic application, but still substantial. The RTEL1 modification itself *could* be a licensable technology if it proves broadly applicable to other species or inspires novel telomere maintenance strategies, but that's speculative at this stage."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper describes a novel mouse model, but doesn't articulate any market application or potential commercial use; therefore, the addressable market is currently undefined and appears very small, limited to research tools. While telomere research *has* a market, this paper doesn't demonstrate a path to a substantial, independent market opportunity."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This paper describes the *creation* of a novel mouse model, indicating the technology is still at a very early, lab-based research stage (proof-of-concept). While valuable for fundamental research into telomere biology, significant work remains to translate this into any therapeutic or diagnostic application, placing it far from commercialization."
+      },
+      "ip_strength": {
+        "score": 7,
+        "reason": "The identification of a single amino acid change in RTEL1 capable of generating human-length telomeres in mice is a strong starting point for IP, suggesting a potentially patentable method for creating this model and understanding telomere biology; however, the novelty and non-obviousness of this specific amino acid change will be key determinants of patentability and thus defensibility."
+      }
+    },
+    "pi": "Yehuda Tzfati",
+    "pi_full_name": "Yehuda Tzfati",
+    "pi_email": "tzfati@mail.huji.ac.il.",
+    "added_date": "2026-05-04"
+  },
+  {
     "id": "pubmed_41849350",
     "title": "A single-cell CRISPR screen defines a gene regulatory network governing human pluripotency in primed and naive cells.",
     "authors": [
@@ -581,7 +725,7 @@
       "Eran Blacher"
     ],
     "journal": "",
-    "date": "2026 Mar",
+    "date": "2026 Mar 1",
     "url": "https://europepmc.org/article/MED/41804973",
     "source": "Europe PMC",
     "score": 26,
@@ -743,53 +887,6 @@
     "added_date": "2026-04-27"
   },
   {
-    "id": "epmc_41975582",
-    "title": "<i>Paenibacillus dendritiformis</i> C454 as a sustainable biocontrol agent for management of bacterial plant diseases.",
-    "authors": [
-      "Adi Glass Livneh",
-      "Tuang Za Khai",
-      "Danielle Shitrit"
-    ],
-    "journal": "",
-    "date": "2026-04-13",
-    "url": "https://europepmc.org/article/MED/41975582",
-    "source": "Europe PMC",
-    "score": 25,
-    "summary": "This research demonstrates that the bacterium *Paenibacillus dendritiformis* C454 effectively controls several important bacterial plant diseases in key crops like melon, watermelon, and tomato. The biocontrol activity stems from metabolites produced by the bacteria, offering a potential alternative to traditional chemical pesticides.",
-    "opportunity": "Commercialization could involve developing a bio-pesticide product based on *P. dendritiformis* C454 for preventative treatment of bacterial plant diseases, addressing the growing demand for sustainable agriculture solutions.",
-    "fields": [
-      "AgriTech",
-      "Synthetic Biology",
-      "Other"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 5,
-        "reason": "While the study demonstrates effective biocontrol activity of *Paenibacillus dendritiformis* C454 against specific bacterial plant pathogens, the concept of using *Paenibacillus* species for biocontrol is not entirely novel; however, demonstrating broad-spectrum antagonism *and* plant protection across multiple plant species *is* a moderate advance, but doesn't represent a paradigm shift."
-      },
-      "commercial_potential": {
-        "score": 7,
-        "reason": "The paper demonstrates a clear path to a commercial biocontrol product targeting bacterial plant diseases, a significant market with increasing demand for sustainable solutions; however, the limited spectrum of activity (no antifungal/oomycete control) narrows the potential market size compared to broader-spectrum biocontrol agents."
-      },
-      "market_size": {
-        "score": 5,
-        "reason": "The paper addresses a clear need in agricultural disease management, but the market size discussion is entirely absent; while bacterial plant diseases represent a significant agricultural problem globally, the paper doesn't quantify the market for *biological* control agents specifically, nor does it estimate the portion of that market this specific strain could capture."
-      },
-      "trl": {
-        "score": 4,
-        "reason": "The research demonstrates efficacy in controlled settings (in vitro, greenhouse/nursery trays, and small plant experiments) but hasn't progressed to field trials or formulation/delivery studies, indicating a TRL of 3-4. While promising, significant development is needed to move from lab/small-scale greenhouse results to a commercially viable product."
-      },
-      "ip_strength": {
-        "score": 4,
-        "reason": "The paper identifies a specific bacterial strain with biocontrol properties, but relies on observed antagonism mediated by 'diffusible metabolites' without identifying *what* those metabolites are – a key area for patentability. While the strain itself could be patented, defensibility is weakened without knowing the mechanism of action or unique compounds responsible for the effect, making it easier for competitors to find workarounds."
-      }
-    },
-    "pi": "Yael Helman",
-    "pi_full_name": "Yael Helman",
-    "pi_email": "yael.helman@mail.huji.ac.il.",
-    "added_date": "2026-04-20"
-  },
-  {
     "id": "epmc_41742321",
     "title": "Human DNA levels in feces reflect gut inflammation and associate with presence of gut species in IBD patients across the age spectrum.",
     "authors": [
@@ -836,6 +933,100 @@
     "pi_full_name": "",
     "pi_email": "moranya@mail.huji.ac.il",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_41975582",
+    "title": "<i>Paenibacillus dendritiformis</i> C454 as a sustainable biocontrol agent for management of bacterial plant diseases.",
+    "authors": [
+      "Adi Glass Livneh",
+      "Tuang Za Khai",
+      "Danielle Shitrit"
+    ],
+    "journal": "",
+    "date": "2026 Apr 13",
+    "url": "https://europepmc.org/article/MED/41975582",
+    "source": "Europe PMC",
+    "score": 25,
+    "summary": "This research demonstrates that the bacterium *Paenibacillus dendritiformis* C454 effectively controls several important bacterial plant diseases in key crops like melon, watermelon, and tomato. The biocontrol activity stems from metabolites produced by the bacteria, offering a potential alternative to traditional chemical pesticides.",
+    "opportunity": "Commercialization could involve developing a bio-pesticide product based on *P. dendritiformis* C454 for preventative treatment of bacterial plant diseases, addressing the growing demand for sustainable agriculture solutions.",
+    "fields": [
+      "AgriTech",
+      "Synthetic Biology",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 5,
+        "reason": "While the study demonstrates effective biocontrol activity of *Paenibacillus dendritiformis* C454 against specific bacterial plant pathogens, the concept of using *Paenibacillus* species for biocontrol is not entirely novel; however, demonstrating broad-spectrum antagonism *and* plant protection across multiple plant species *is* a moderate advance, but doesn't represent a paradigm shift."
+      },
+      "commercial_potential": {
+        "score": 7,
+        "reason": "The paper demonstrates a clear path to a commercial biocontrol product targeting bacterial plant diseases, a significant market with increasing demand for sustainable solutions; however, the limited spectrum of activity (no antifungal/oomycete control) narrows the potential market size compared to broader-spectrum biocontrol agents."
+      },
+      "market_size": {
+        "score": 5,
+        "reason": "The paper addresses a clear need in agricultural disease management, but the market size discussion is entirely absent; while bacterial plant diseases represent a significant agricultural problem globally, the paper doesn't quantify the market for *biological* control agents specifically, nor does it estimate the portion of that market this specific strain could capture."
+      },
+      "trl": {
+        "score": 4,
+        "reason": "The research demonstrates efficacy in controlled settings (in vitro, greenhouse/nursery trays, and small plant experiments) but hasn't progressed to field trials or formulation/delivery studies, indicating a TRL of 3-4. While promising, significant development is needed to move from lab/small-scale greenhouse results to a commercially viable product."
+      },
+      "ip_strength": {
+        "score": 4,
+        "reason": "The paper identifies a specific bacterial strain with biocontrol properties, but relies on observed antagonism mediated by 'diffusible metabolites' without identifying *what* those metabolites are – a key area for patentability. While the strain itself could be patented, defensibility is weakened without knowing the mechanism of action or unique compounds responsible for the effect, making it easier for competitors to find workarounds."
+      }
+    },
+    "pi": "Yael Helman",
+    "pi_full_name": "Yael Helman",
+    "pi_email": "yael.helman@mail.huji.ac.il.",
+    "added_date": "2026-04-20"
+  },
+  {
+    "id": "pubmed_42046511",
+    "title": "Plaque Reduction Efficacy of an Advanced Electric Toothbrush Compared with a Manual Toothbrush Among 6- to 10-Year-Old Children: Results From a 4-Week Randomised Controlled Trial.",
+    "authors": [
+      "Avi Zini",
+      "Lital Zecharyahu",
+      "Shirya Teitelbaum"
+    ],
+    "journal": "International journal of paediatric dentistry",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42046511/",
+    "source": "PubMed",
+    "score": 25,
+    "summary": "This study investigated the effectiveness of an electric toothbrush versus a manual toothbrush in reducing dental plaque in children aged 6-10. The randomized controlled trial assessed plaque levels over a four-week period to compare the two methods.",
+    "opportunity": "While incremental, data supporting superior oral hygiene tools can drive market share for electric toothbrush manufacturers and potentially inform future preventative dental care product development.",
+    "fields": [
+      "Medical Device",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "Comparing an electric toothbrush to a manual toothbrush for plaque reduction in children, while valuable for clinical practice, represents incremental rather than groundbreaking innovation; this type of comparative efficacy study is a common approach in dental research and doesn't present a fundamentally new scientific concept."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "The paper demonstrates potential for an improved electric toothbrush for children, a defined market, but relies on incremental improvement over existing products rather than a disruptive technology; commercial potential hinges on marketing and cost-effectiveness versus competitors in the established electric toothbrush space."
+      },
+      "market_size": {
+        "score": 6,
+        "reason": "The target market – children aged 6-10 and their parents – is reasonably large, representing a significant portion of the population with ongoing dental hygiene needs; however, the paper focuses on a specific *improvement* to an existing product category (electric toothbrushes) rather than creating a new market, limiting overall market size potential."
+      },
+      "trl": {
+        "score": 8,
+        "reason": "This study reports results from a randomized controlled trial, indicating the technology (an advanced electric toothbrush) has moved beyond basic lab testing and has demonstrated efficacy in a human population. While further long-term studies and scaling for manufacturing/distribution are needed, the TRL is relatively high as it's moved into clinical validation."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes a clinical trial comparing existing technologies (electric vs. manual toothbrushes) and does not present any novel invention or intellectual property; the toothbrush itself is likely covered by existing patents, but the study doesn't contribute to new defensible IP. The findings relate to *use* of a known technology, not the technology itself."
+      }
+    },
+    "pi": "Esti Davidovich",
+    "pi_full_name": "Esti Davidovich",
+    "pi_email": "",
+    "added_date": "2026-05-04"
   },
   {
     "id": "epmc_41486788",
@@ -980,6 +1171,52 @@
     "pi_full_name": "Masha Y Niv",
     "pi_email": "masha.niv@mail.huji.ac.il.",
     "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_42045761",
+    "title": "Mandibular advancement devices in severe obstructive sleep apnea: a second-line option that deserves greater recognition.",
+    "authors": [
+      "Yaron Haviv"
+    ],
+    "journal": "Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42045761/",
+    "source": "PubMed",
+    "score": 24,
+    "summary": "This paper likely discusses the use of mandibular advancement devices (MADs) – oral appliances that reposition the jaw – as a treatment for severe obstructive sleep apnea (OSA). It argues these devices are underutilized despite potentially offering a viable alternative to more invasive treatments like CPAP.",
+    "opportunity": "Developing improved MAD designs, materials, or personalized fitting/monitoring systems presents a commercial opportunity to address a large and growing market of OSA patients seeking more comfortable and convenient treatment options.",
+    "fields": [
+      "Medical Device",
+      "Clinical",
+      "Neuroscience",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The paper advocates for wider use of an existing technology (mandibular advancement devices) in a specific patient population (severe OSA), rather than presenting fundamentally new science or a novel mechanism; it's a call for practice change based on existing evidence, not a breakthrough discovery."
+      },
+      "commercial_potential": {
+        "score": 6,
+        "reason": "The paper focuses on improving the use of an *existing* technology (MADs) rather than introducing a novel one, limiting upside, but the identified niche – severe OSA where CPAP fails – represents a clear, addressable market with existing reimbursement pathways. Greater recognition and optimized use translates directly to increased sales for current manufacturers and potential for improved clinical protocols/guidelines."
+      },
+      "market_size": {
+        "score": 6,
+        "reason": "While obstructive sleep apnea (OSA) is a significant and growing health concern with a large patient base, the paper focuses on a *second-line* treatment (MADs for *severe* OSA) which inherently limits the addressable market compared to first-line options like CPAP or the broader mild-to-moderate OSA market; however, the prevalence of severe OSA still represents a substantial, and potentially underserved, market opportunity."
+      },
+      "trl": {
+        "score": 7,
+        "reason": "Mandibular advancement devices (MADs) are already clinically used, indicating a relatively high TRL; however, the paper advocates for *greater* recognition, suggesting current usage isn't widespread and further optimization/validation may be needed to become a truly first-line therapy, placing it short of a '10'."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "Mandibular advancement devices (MADs) are well-established technology, and simply advocating for *greater recognition* of their use doesn't represent novel IP; the core technology is likely broadly patented and/or in the public domain. Any incremental improvements would need to be demonstrably patentable to achieve a higher score, and this title suggests a clinical perspective rather than an inventive one."
+      }
+    },
+    "pi": "Yaron Haviv",
+    "pi_full_name": "Yaron Haviv",
+    "pi_email": "yaron.haviv@gmail.com.",
+    "added_date": "2026-05-04"
   },
   {
     "id": "pubmed_41928515",
@@ -1745,6 +1982,54 @@
     "added_date": "2026-04-27"
   },
   {
+    "id": "pubmed_42065428",
+    "title": "IR nanospectroscopy mapping of facet-dependent sulfur poisoning and thermal regeneration on platinum nanocrystals.",
+    "authors": [
+      "Lihi Rikanati",
+      "Yehonatan Hovav",
+      "Elad Gross"
+    ],
+    "journal": "Faraday discussions",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42065428/",
+    "source": "PubMed",
+    "score": 21,
+    "summary": "This research uses infrared nanospectroscopy to study how sulfur contaminants affect the performance of platinum nanocrystals, specifically focusing on different crystal surfaces. The study also demonstrates a method to thermally remove the sulfur contamination and restore the platinum's activity.",
+    "opportunity": "Developing more durable and efficient catalysts for industrial processes (like hydrogen production or pollution control) and fuel cells by understanding and mitigating poisoning effects represents a significant commercial opportunity.",
+    "fields": [
+      "Materials",
+      "Clean Energy",
+      "Imaging",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "Combining IR nanospectroscopy with facet-dependent poisoning studies on platinum nanocrystals represents a solid advance, as spatially resolved vibrational analysis of surface contaminants is not commonplace; however, sulfur poisoning of platinum is a well-studied phenomenon, so the core *problem* isn't novel, it's the *method* of investigation that provides the novelty."
+      },
+      "commercial_potential": {
+        "score": 4,
+        "reason": "While the research identifies a significant problem (catalyst poisoning) and a potential solution (thermal regeneration), the paper focuses heavily on *understanding* the mechanism rather than demonstrating a readily scalable or commercially viable process; the described nanospectroscopy technique itself isn't presented as a product, and the regeneration process needs further development to assess cost-effectiveness and practicality for industrial applications."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a very specific materials science problem (sulfur poisoning of platinum nanocrystals) with no clear indication of a large, direct market application; while platinum catalysts are used broadly, this research addresses a niche issue within that market and doesn't demonstrate a pathway to a substantial, addressable demand beyond fundamental research."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This paper details fundamental materials science research using advanced spectroscopy to understand a catalytic poisoning mechanism; it's likely lab-based and focused on *understanding* a problem, not *solving* it with a readily deployable technology, indicating a low TRL. While important for long-term catalyst development, it's far from commercial application."
+      },
+      "ip_strength": {
+        "score": 5,
+        "reason": "While the use of IR nanospectroscopy is a sophisticated technique, the paper focuses on *characterizing* a known problem (sulfur poisoning of platinum) and a known solution (thermal regeneration) rather than presenting a novel chemical composition or process itself; the IP strength likely resides in the *application* of the technique, which is incremental, not a breakthrough invention."
+      }
+    },
+    "pi": "Elad Gross",
+    "pi_full_name": "Elad Gross",
+    "pi_email": "elad.gross@mail.huji.ac.il.",
+    "added_date": "2026-05-04"
+  },
+  {
     "id": "epmc_41784031",
     "title": "Proteostasis meets signaling: UBE2G1 in hematopoietic stem cell aging.",
     "authors": [
@@ -2125,7 +2410,7 @@
   },
   {
     "id": "epmc_42024842",
-    "title": "Comparative Analysis of &lt;i&gt;BRCA&lt;/i&gt; Pathogenic Variant Detection in a Real-World Setting: Population Screening Versus Oncogenetic Clinics.",
+    "title": "Comparative Analysis of <i>BRCA</i> Pathogenic Variant Detection in a Real-World Setting: Population Screening Versus Oncogenetic Clinics.",
     "authors": [
       "Shunit Armon",
       "Sari Lieberman",
@@ -2695,6 +2980,54 @@
     "pi_full_name": "Moran Yassour",
     "pi_email": "moranya@mail.huji.ac.il.",
     "added_date": "2026-04-27"
+  },
+  {
+    "id": "pubmed_42051017",
+    "title": "Cationic Sulfonium-Based Tripodal Ligand and Its Rh(I) Complexes.",
+    "authors": [
+      "Nitsan Barel",
+      "Shrouq Mujahed",
+      "Kamal Uddin Ansari"
+    ],
+    "journal": "Chemistry (Weinheim an der Bergstrasse, Germany)",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42051017/",
+    "source": "PubMed",
+    "score": 19,
+    "summary": "This research details the creation of a novel ligand – a molecule that binds to metal ions – based on sulfonium chemistry and its application in forming complexes with rhodium. These rhodium complexes exhibit unique structural and potentially reactive properties due to the ligand's specific 'tripodal' design and positive charge.",
+    "opportunity": "The unique catalytic properties of these rhodium complexes could be leveraged for developing more efficient and selective chemical processes, potentially impacting pharmaceutical synthesis or materials science.",
+    "fields": [
+      "Materials",
+      "Drug Discovery",
+      "Other",
+      "Clean Energy"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While Rh(I) complexes are well-studied, the use of a *cationic* sulfonium-based tripodal ligand appears to be a relatively novel structural motif for coordination chemistry; however, without knowing the specific properties or applications demonstrated, it's difficult to assess if this novelty translates to a significant advancement beyond existing ligand designs."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper describes novel ligand and complex chemistry, but lacks any discussion of potential applications or advantages over existing technologies; without a clear path to a product, service, or licensing opportunity, commercial potential is very low. It reads as purely fundamental research at this stage."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on novel ligand and complex synthesis with no mention of applications or the markets those applications would serve; therefore, assessing market size is impossible based on the provided information, indicating a very limited understanding of potential commercial viability at this stage. It's purely fundamental research without demonstrated market pull."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "The paper focuses on the *synthesis and characterization* of novel ligands and their Rh(I) complexes – this is very early-stage, fundamental research. It's likely TRL 2-3 (basic research or lab-scale proof of concept) and far from any demonstrable application or commercialization."
+      },
+      "ip_strength": {
+        "score": 6,
+        "reason": "The title suggests a novel ligand structure (tripodal sulfonium-based) and its application to Rh(I) complexes, which *could* be patentable if the ligand structure and resulting complex properties are truly unique and non-obvious; however, without knowing the specific chemical structures or demonstrated advantages, it's difficult to assess strong IP potential beyond basic complex formation."
+      }
+    },
+    "pi": "Yuri Tulchinsky",
+    "pi_full_name": "Yuri Tulchinsky",
+    "pi_email": "",
+    "added_date": "2026-05-04"
   },
   {
     "id": "pubmed_41869927",
@@ -3705,7 +4038,7 @@
       "Verma R"
     ],
     "journal": "Genetics in medicine : official journal of the American College of Medical Genetics",
-    "date": "2026 Mar",
+    "date": "2026 Mar 1",
     "url": "https://pubmed.ncbi.nlm.nih.gov/41842694/",
     "source": "PubMed",
     "score": 17,
@@ -4172,52 +4505,52 @@
     "added_date": "2026-04-27"
   },
   {
-    "id": "epmc_42010670",
-    "title": "Nitric oxide inhibition ameliorates cortical proteomic changes in the Cntnap2&lt;sup&gt;-/-&lt;/sup&gt; and Shank3&lt;sup&gt;Δ4-22&lt;/sup&gt; mouse models of autism spectrum disorder.",
+    "id": "pubmed_42056101",
+    "title": "Aging-associated modulation of UFMylation impairs proteostasis in C. elegans.",
     "authors": [
-      "Wisam Bazbaz",
-      "Maryam Kartawy",
-      "Igor Khaliulin"
+      "Reut Bruck-Haimson",
+      "Hana Boocholez",
+      "Huadong Zhu"
     ],
-    "journal": "",
-    "date": "2026-04-20",
-    "url": "https://europepmc.org/article/MED/42010670",
-    "source": "Europe PMC",
-    "score": 16,
-    "summary": "This research demonstrates that inhibiting nitric oxide (NO) can improve proteomic markers in mouse models of Autism Spectrum Disorder (ASD) linked to mutations in *Cntnap2* and *Shank3*. The study suggests NO signaling plays a role in the molecular pathology of these ASD models, and modulating it could have therapeutic benefits.",
-    "opportunity": "Developing a novel therapeutic strategy, potentially a small molecule NO inhibitor or a modulator of NO signaling pathways, could address core biological deficits in a subset of ASD patients with relevant genetic profiles.",
+    "journal": "Nature communications",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42056101/",
+    "source": "PubMed",
+    "score": 17,
+    "summary": "This research identifies a decline in UFMylation – a protein modification process – with age in *C. elegans*, leading to impaired proteostasis (protein quality control). The study suggests that reduced UFMylation contributes to age-related protein aggregation and cellular dysfunction.",
+    "opportunity": "Targeting the UFMylation pathway could offer novel therapeutic strategies to improve proteostasis and potentially delay or mitigate age-related diseases and functional decline.",
     "fields": [
       "Drug Discovery",
-      "Neuroscience",
       "Proteomics",
-      "Clinical"
+      "Neuroscience",
+      "Genomics"
     ],
     "score_breakdown": {
       "novelty": {
-        "score": 6,
-        "reason": "While the study investigates a potentially interesting therapeutic avenue (nitric oxide inhibition) for ASD-related proteomic changes, applying an existing pharmacological approach to known genetic mouse models of autism doesn't represent a radical departure from existing research; the novelty lies in the *specific* proteomic changes targeted, but the overall strategy is relatively established."
+        "score": 7,
+        "reason": "Linking UFMylation – a relatively recently discovered ubiquitin-like modification pathway – to age-related proteostasis decline in *C. elegans* represents a novel connection; while proteostasis and aging are well-studied, the specific role of UFMylation hasn't been extensively explored in this context, suggesting a potentially groundbreaking finding. However, the field of ubiquitin-like modifications is rapidly evolving, so the degree of 'groundbreaking' is tempered by the possibility of similar connections being discovered concurrently elsewhere."
       },
       "commercial_potential": {
         "score": 3,
-        "reason": "While the research identifies a potential therapeutic target (nitric oxide pathway) for ASD-related proteomic changes, the link to a *specific* commercially viable product isn't clear – it's a biological mechanism, not a drug or diagnostic; further development would require identifying or creating a nitric oxide inhibitor with appropriate bioavailability, brain penetration, and safety profiles, representing significant hurdles."
+        "reason": "While the paper identifies a novel mechanism (UFMylation impacting proteostasis) linked to aging, the connection to a clear commercial product or service is extremely weak; it's basic science in *C. elegans* with no immediately obvious path to human therapeutics or diagnostics without substantial further research and validation."
       },
       "market_size": {
         "score": 2,
-        "reason": "The paper focuses on pre-clinical mouse models of Autism Spectrum Disorder (ASD). While ASD itself represents a significant market, this research is very early-stage and doesn't directly address a defined, commercially viable market for nitric oxide inhibition as a treatment; the potential market size is therefore highly uncertain and likely small initially, requiring substantial further development and validation."
+        "reason": "The paper focuses on a fundamental biological process (proteostasis and UFMylation) in *C. elegans*, indicating very early-stage research with no immediately apparent large, direct market application; while aging is a large market, this research is far removed from a marketable product or therapy."
       },
       "trl": {
         "score": 2,
-        "reason": "This study appears to be pre-clinical research using mouse models, indicating a very early Technology Readiness Level (TRL). Demonstrating efficacy in animal models is a necessary first step, but is far removed from human application and commercialization; significant hurdles remain before translation to clinical trials or therapies."
+        "reason": "This paper describes fundamental biological research in *C. elegans*, identifying a mechanism related to aging and proteostasis. It is very early-stage, likely proof-of-concept in a model organism, and far from translation to human applications or commercialization; therefore, the TRL is extremely low."
       },
       "ip_strength": {
         "score": 3,
-        "reason": "The paper describes a *treatment* effect (nitric oxide inhibition) rather than a novel invention itself, meaning patentability is likely limited to the specific application of existing compounds or methods to these ASD models, which is a relatively narrow claim; without knowing details of the specific inhibitor used, or novel formulations/delivery, the IP strength appears weak."
+        "reason": "The paper identifies a biological mechanism (UFMylation's role in proteostasis during aging) but doesn't present any novel, patentable *applications* of that mechanism – it's a fundamental biology discovery in *C. elegans*. While the modulation of UFMylation itself *could* be patentable, the paper focuses on observation and correlation, not invention, and the model organism limits direct translational potential without further, inventive steps."
       }
     },
-    "pi": "Haitham Amal",
-    "pi_full_name": "Haitham Amal",
-    "pi_email": "Haitham.amal@mail.huji.ac.il.",
-    "added_date": "2026-04-27"
+    "pi": "Ehud Cohen",
+    "pi_full_name": "Ehud Cohen",
+    "pi_email": "ehudc@ekmd.huji.ac.il.",
+    "added_date": "2026-05-04"
   },
   {
     "id": "pubmed_41863352",
@@ -4412,53 +4745,6 @@
     "added_date": "2026-03-23"
   },
   {
-    "id": "epmc_41834141",
-    "title": "Screening for liver fibrosis in psoriatic arthritis: emphasizing metabolic risk.",
-    "authors": [
-      "Pankti Mehta",
-      "Fadi Kharouf"
-    ],
-    "journal": "",
-    "date": "2026 Mar 15",
-    "url": "https://europepmc.org/article/MED/41834141",
-    "source": "Europe PMC",
-    "score": 16,
-    "summary": "This research investigates the link between psoriatic arthritis and the often-overlooked complication of liver fibrosis, specifically highlighting the role of metabolic risk factors. Identifying liver fibrosis early in these patients is crucial as it impacts disease management and prognosis.",
-    "opportunity": "Developing a non-invasive diagnostic test to screen psoriatic arthritis patients for liver fibrosis, particularly those with metabolic syndrome, presents a commercial opportunity to improve patient outcomes and reduce healthcare costs.",
-    "fields": [
-      "Diagnostics",
-      "Clinical",
-      "Immunology",
-      "Drug Discovery"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 4,
-        "reason": "While investigating liver fibrosis in psoriatic arthritis is a relevant clinical question, focusing on *metabolic* risk as a screening emphasis isn't a fundamentally novel concept; the link between metabolic syndrome and liver disease is well-established, and psoriatic arthritis is known to have comorbidity with metabolic issues. The paper's novelty hinges on whether it reveals a *new* mechanistic link or a significantly improved screening protocol, which isn't apparent from the title alone."
-      },
-      "commercial_potential": {
-        "score": 4,
-        "reason": "The paper identifies a correlation between psoriatic arthritis, metabolic risk, and liver fibrosis, suggesting a potential screening opportunity; however, it lacks detail on *how* this translates into a commercially viable diagnostic or therapeutic approach, beyond simply 'screening'. The commercial potential hinges on developing a specific test or intervention, which isn't addressed."
-      },
-      "market_size": {
-        "score": 3,
-        "reason": "The paper focuses on a niche within a niche (liver fibrosis screening *within* psoriatic arthritis patients, further refined by metabolic risk), suggesting a limited direct market size; while liver fibrosis and psoriatic arthritis are individually large concerns, the intersection is likely relatively small and requires significant justification of prevalence to demonstrate substantial addressable demand."
-      },
-      "trl": {
-        "score": 3,
-        "reason": "The paper focuses on *screening* for a condition (liver fibrosis) within a specific patient population, implying the underlying technology – methods for detecting fibrosis – already exists, but its application to this cohort is novel. This suggests a relatively low TRL, likely still in early validation or clinical study phases, rather than near commercialization."
-      },
-      "ip_strength": {
-        "score": 2,
-        "reason": "The title suggests a *correlation* study linking existing conditions (psoriatic arthritis and metabolic risk) to liver fibrosis screening, rather than a novel invention; correlation studies are generally not patentable. Without an abstract or details on novel biomarkers, methods, or diagnostic tools, the IP strength appears extremely low."
-      }
-    },
-    "pi": "Fadi Kharouf",
-    "pi_full_name": "",
-    "pi_email": "",
-    "added_date": "2026-03-23"
-  },
-  {
     "id": "pubmed_41851449",
     "title": "Ultrasound-guided Morton's neuroma injection: the \"three-handed\" technique and initial outcomes: a retrospective study.",
     "authors": [
@@ -4503,6 +4789,53 @@
     },
     "pi": "Oron A",
     "pi_full_name": "Amir Oron",
+    "pi_email": "",
+    "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_41834141",
+    "title": "Screening for liver fibrosis in psoriatic arthritis: emphasizing metabolic risk.",
+    "authors": [
+      "Pankti Mehta",
+      "Fadi Kharouf"
+    ],
+    "journal": "",
+    "date": "2026 Mar",
+    "url": "https://europepmc.org/article/MED/41834141",
+    "source": "Europe PMC",
+    "score": 16,
+    "summary": "This research investigates the link between psoriatic arthritis and the often-overlooked complication of liver fibrosis, specifically highlighting the role of metabolic risk factors. Identifying liver fibrosis early in these patients is crucial as it impacts disease management and prognosis.",
+    "opportunity": "Developing a non-invasive diagnostic test to screen psoriatic arthritis patients for liver fibrosis, particularly those with metabolic syndrome, presents a commercial opportunity to improve patient outcomes and reduce healthcare costs.",
+    "fields": [
+      "Diagnostics",
+      "Clinical",
+      "Immunology",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While investigating liver fibrosis in psoriatic arthritis is a relevant clinical question, focusing on *metabolic* risk as a screening emphasis isn't a fundamentally novel concept; the link between metabolic syndrome and liver disease is well-established, and psoriatic arthritis is known to have comorbidity with metabolic issues. The paper's novelty hinges on whether it reveals a *new* mechanistic link or a significantly improved screening protocol, which isn't apparent from the title alone."
+      },
+      "commercial_potential": {
+        "score": 4,
+        "reason": "The paper identifies a correlation between psoriatic arthritis, metabolic risk, and liver fibrosis, suggesting a potential screening opportunity; however, it lacks detail on *how* this translates into a commercially viable diagnostic or therapeutic approach, beyond simply 'screening'. The commercial potential hinges on developing a specific test or intervention, which isn't addressed."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper focuses on a niche within a niche (liver fibrosis screening *within* psoriatic arthritis patients, further refined by metabolic risk), suggesting a limited direct market size; while liver fibrosis and psoriatic arthritis are individually large concerns, the intersection is likely relatively small and requires significant justification of prevalence to demonstrate substantial addressable demand."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "The paper focuses on *screening* for a condition (liver fibrosis) within a specific patient population, implying the underlying technology – methods for detecting fibrosis – already exists, but its application to this cohort is novel. This suggests a relatively low TRL, likely still in early validation or clinical study phases, rather than near commercialization."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "The title suggests a *correlation* study linking existing conditions (psoriatic arthritis and metabolic risk) to liver fibrosis screening, rather than a novel invention; correlation studies are generally not patentable. Without an abstract or details on novel biomarkers, methods, or diagnostic tools, the IP strength appears extremely low."
+      }
+    },
+    "pi": "Fadi Kharouf",
+    "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
   },
@@ -4553,6 +4886,54 @@
     "pi_full_name": "",
     "pi_email": "",
     "added_date": "2026-03-23"
+  },
+  {
+    "id": "epmc_42010670",
+    "title": "Nitric oxide inhibition ameliorates cortical proteomic changes in the Cntnap2<sup>-/-</sup> and Shank3<sup>Δ4-22</sup> mouse models of autism spectrum disorder.",
+    "authors": [
+      "Wisam Bazbaz",
+      "Maryam Kartawy",
+      "Igor Khaliulin"
+    ],
+    "journal": "",
+    "date": "2026 Apr 20",
+    "url": "https://europepmc.org/article/MED/42010670",
+    "source": "Europe PMC",
+    "score": 16,
+    "summary": "This research demonstrates that inhibiting nitric oxide (NO) can improve proteomic markers in mouse models of Autism Spectrum Disorder (ASD) linked to mutations in *Cntnap2* and *Shank3*. The study suggests NO signaling plays a role in the molecular pathology of these ASD models, and modulating it could have therapeutic benefits.",
+    "opportunity": "Developing a novel therapeutic strategy, potentially a small molecule NO inhibitor or a modulator of NO signaling pathways, could address core biological deficits in a subset of ASD patients with relevant genetic profiles.",
+    "fields": [
+      "Drug Discovery",
+      "Neuroscience",
+      "Proteomics",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While the study investigates a potentially interesting therapeutic avenue (nitric oxide inhibition) for ASD-related proteomic changes, applying an existing pharmacological approach to known genetic mouse models of autism doesn't represent a radical departure from existing research; the novelty lies in the *specific* proteomic changes targeted, but the overall strategy is relatively established."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the research identifies a potential therapeutic target (nitric oxide pathway) for ASD-related proteomic changes, the link to a *specific* commercially viable product isn't clear – it's a biological mechanism, not a drug or diagnostic; further development would require identifying or creating a nitric oxide inhibitor with appropriate bioavailability, brain penetration, and safety profiles, representing significant hurdles."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on pre-clinical mouse models of Autism Spectrum Disorder (ASD). While ASD itself represents a significant market, this research is very early-stage and doesn't directly address a defined, commercially viable market for nitric oxide inhibition as a treatment; the potential market size is therefore highly uncertain and likely small initially, requiring substantial further development and validation."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This study appears to be pre-clinical research using mouse models, indicating a very early Technology Readiness Level (TRL). Demonstrating efficacy in animal models is a necessary first step, but is far removed from human application and commercialization; significant hurdles remain before translation to clinical trials or therapies."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The paper describes a *treatment* effect (nitric oxide inhibition) rather than a novel invention itself, meaning patentability is likely limited to the specific application of existing compounds or methods to these ASD models, which is a relatively narrow claim; without knowing details of the specific inhibitor used, or novel formulations/delivery, the IP strength appears weak."
+      }
+    },
+    "pi": "Haitham Amal",
+    "pi_full_name": "Haitham Amal",
+    "pi_email": "Haitham.amal@mail.huji.ac.il.",
+    "added_date": "2026-04-27"
   },
   {
     "id": "pubmed_41915004",
@@ -4698,52 +5079,99 @@
     "added_date": "2026-04-13"
   },
   {
-    "id": "epmc_41982399",
-    "title": "A Novel Light-Induced Collective Circular Movement in <i>Armadillo sordidus</i> Isopods.",
+    "id": "pubmed_42061688",
+    "title": "Spermatogenic timing, dose, and route of administration as determinants of paternal transmission of developmental neurotoxicity.",
     "authors": [
-      "Idan Sheizaf",
-      "Eviatar Itzkovich",
-      "Ariel D Chipman"
+      "Issam Rimawi",
+      "Joseph Yanai"
     ],
-    "journal": "",
-    "date": "2026-04-13",
-    "url": "https://europepmc.org/article/MED/41982399",
-    "source": "Europe PMC",
-    "score": 15,
-    "summary": "Researchers at Hebrew University observed thousands of *Armadillo sordidus* isopods forming coordinated circular movements in response to light, a previously undocumented behavior. This aggregation appears to be triggered by light exposure and isn't directly related to reproduction, potentially linked to increasing light pollution.",
-    "opportunity": "Understanding the mechanisms driving this collective behavior could inspire novel bio-inspired robotics or swarm algorithms for environmental monitoring or targeted delivery systems.",
+    "journal": "Neurotoxicology and teratology",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42061688/",
+    "source": "PubMed",
+    "score": 16,
+    "summary": "This research investigates how timing of exposure to neurotoxic substances *before* conception impacts offspring development via effects on sperm. The study suggests that paternal exposure can transmit developmental neurotoxicity, and that the dose and method of exposure influence the severity of these effects.",
+    "opportunity": "Developing pre-conception diagnostics or interventions to assess and mitigate paternal exposure risks to neurotoxicants could offer a novel approach to improving developmental outcomes.",
     "fields": [
-      "Software/AI",
-      "Robotics",
-      "Other",
-      "Imaging"
+      "Neuroscience",
+      "Diagnostics",
+      "Drug Discovery",
+      "Clinical"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 7,
-        "reason": "The observation of collective circular movement in isopods is genuinely novel, as the abstract explicitly states it's the first formal documentation of this behavior in the species and generally rare in terrestrial isopods; however, the underlying mechanism appears to be a relatively simple light-induced aggregation, limiting the depth of the innovation beyond the observation itself."
+        "reason": "Investigating paternal transmission of developmental neurotoxicity via spermatogenesis is a relatively under-explored area, making the core question novel; however, the concept of timing/dose/route impacting toxicity isn't entirely new, lowering the score from higher levels of novelty."
       },
       "commercial_potential": {
-        "score": 2,
-        "reason": "While the discovery is scientifically interesting, the commercial potential is extremely limited; observing a light-induced behavior in isopods doesn't readily translate into a product, service, or licensable technology without significant further research and a compelling application, which is not presented here. The link to anthropogenic light pollution is a potential angle, but still far from a clear commercial pathway."
+        "score": 3,
+        "reason": "While identifying a mechanism for paternal transmission of neurotoxicity is scientifically interesting, the paper doesn't suggest a clear path to a commercial product or service; it's primarily a foundational research finding requiring significant downstream development to translate into a diagnostic, therapeutic, or preventative intervention. The commercial potential is currently very distant and relies on substantial further research and a defined market need."
       },
       "market_size": {
         "score": 2,
-        "reason": "The paper describes a fascinating biological phenomenon, but identifies no clear market application or addressable demand; it's purely a scientific observation. While potential future research *could* uncover applications (e.g., bio-inspired robotics, understanding collective behavior), the current work offers no indication of a commercially viable market size."
+        "reason": "This paper focuses on a very specific biological mechanism (paternal transmission of developmental neurotoxicity via sperm) and doesn't inherently address a large, commercially viable market; the potential market is limited to highly specialized diagnostics or preventative therapies for a narrow set of exposures, if any. Without knowing the prevalence of the neurotoxicity or the feasibility of intervention, the addressable market appears small."
       },
       "trl": {
         "score": 2,
-        "reason": "This research is purely observational and descriptive, representing a very early stage of understanding a biological phenomenon; it's firmly at the discovery/lab-stage with no indication of potential for near-term application or commercialization. While interesting from a biological perspective, there's no pathway to a product or technology suggested within the abstract."
+        "reason": "This research appears to be pre-clinical, likely involving *in vitro* or animal models, focusing on fundamental mechanisms of paternal epigenetic inheritance of toxicity; it is very far from a deployable product or clinical application, representing a very early TRL. The work establishes a biological link, but significant translational research would be needed before considering real-world impact."
       },
       "ip_strength": {
         "score": 2,
-        "reason": "This paper describes a novel *observation* of a natural behavior, but doesn't present any invention or technology that could be patented; it's a purely descriptive biological finding. While the observation itself is interesting, there's no apparent IP strength or defensibility related to the phenomenon itself."
+        "reason": "This paper describes a biological finding regarding paternal transmission of neurotoxicity, likely involving observation and correlation; it doesn't present a novel, patentable *invention* like a new molecule, device, or process, but rather a discovered relationship. While the findings could *inform* future patentable work, the work itself appears to lack inherent IP strength."
       }
     },
-    "pi": "Ariel D Chipman",
-    "pi_full_name": "Ariel D Chipman",
+    "pi": "Joseph Yanai",
+    "pi_full_name": "Joseph Yanai",
+    "pi_email": "yanai@md.huji.ac.il.",
+    "added_date": "2026-05-04"
+  },
+  {
+    "id": "pubmed_42029403",
+    "title": "Photoluminescence line shapes of nanocrystals: Contributions from first- and second-order vibronic couplings.",
+    "authors": [
+      "Kaiyue Peng",
+      "Bokang Hou",
+      "Kailai Lin"
+    ],
+    "journal": "The Journal of chemical physics",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42029403/",
+    "source": "PubMed",
+    "score": 16,
+    "summary": "This research investigates how nanocrystals emit light, specifically focusing on the detailed shape of the emitted light spectrum and how it's influenced by interactions between light and vibrations within the nanocrystal structure. Understanding these interactions (vibronic couplings) is crucial for controlling and predicting nanocrystal optical properties.",
+    "opportunity": "Precise control over nanocrystal photoluminescence opens doors to improved quantum dots for bioimaging, sensing, and potentially advanced display technologies with enhanced color purity and efficiency.",
+    "fields": [
+      "Imaging",
+      "Materials",
+      "Nanotechnology",
+      "Diagnostics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While vibronic coupling in nanocrystals is a known phenomenon, explicitly disentangling and quantifying contributions from *both* first- and second-order couplings to photoluminescence line shapes represents a potentially novel refinement of existing models; however, without the abstract or paper content, it's difficult to assess if the methodology or findings are truly groundbreaking or simply a careful application of established theory."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "This paper focuses on fundamental materials science – specifically, understanding the physics of light emission from nanocrystals. While potentially enabling improvements in optoelectronic devices *eventually*, the work itself doesn't present a clear, direct path to a commercial product, service, or easily licensable technology; it's basic research requiring significant further translation."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This paper is highly theoretical and focused on fundamental physics of nanocrystals; it doesn't address or even hint at potential applications or a target market, making the market size effectively zero from an investment perspective. Without a clear path to commercialization, assessing market size is impossible."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper focuses on fundamental materials science – specifically, understanding the *mechanisms* of light emission from nanocrystals. It's highly unlikely to represent a technology ready for application or commercialization; it's very early-stage, likely lab-based research contributing to a basic scientific understanding."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "This paper focuses on *understanding* a phenomenon (vibronic coupling in nanocrystal photoluminescence) rather than *inventing* something new; while the insights gained could inform future patentable applications, the work itself appears to be primarily fundamental research with limited immediately defensible IP. The described analysis relies on established spectroscopic techniques and theoretical modeling, lacking a novel inventive step in itself."
+      }
+    },
+    "pi": "Eran Rabani",
+    "pi_full_name": "Eran Rabani",
     "pi_email": "",
-    "added_date": "2026-04-20"
+    "added_date": "2026-05-04"
   },
   {
     "id": "epmc_41795474",
@@ -4983,6 +5411,54 @@
     "added_date": "2026-03-23"
   },
   {
+    "id": "epmc_41982399",
+    "title": "A Novel Light-Induced Collective Circular Movement in <i>Armadillo sordidus</i> Isopods.",
+    "authors": [
+      "Idan Sheizaf",
+      "Eviatar Itzkovich",
+      "Ariel D Chipman"
+    ],
+    "journal": "",
+    "date": "2026 Apr 13",
+    "url": "https://europepmc.org/article/MED/41982399",
+    "source": "Europe PMC",
+    "score": 15,
+    "summary": "Researchers at Hebrew University observed thousands of *Armadillo sordidus* isopods forming coordinated circular movements in response to light, a previously undocumented behavior. This aggregation appears to be triggered by light exposure and isn't directly related to reproduction, potentially linked to increasing light pollution.",
+    "opportunity": "Understanding the mechanisms driving this collective behavior could inspire novel bio-inspired robotics or swarm algorithms for environmental monitoring or targeted delivery systems.",
+    "fields": [
+      "Software/AI",
+      "Robotics",
+      "Other",
+      "Imaging"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "The observation of collective circular movement in isopods is genuinely novel, as the abstract explicitly states it's the first formal documentation of this behavior in the species and generally rare in terrestrial isopods; however, the underlying mechanism appears to be a relatively simple light-induced aggregation, limiting the depth of the innovation beyond the observation itself."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "While the discovery is scientifically interesting, the commercial potential is extremely limited; observing a light-induced behavior in isopods doesn't readily translate into a product, service, or licensable technology without significant further research and a compelling application, which is not presented here. The link to anthropogenic light pollution is a potential angle, but still far from a clear commercial pathway."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper describes a fascinating biological phenomenon, but identifies no clear market application or addressable demand; it's purely a scientific observation. While potential future research *could* uncover applications (e.g., bio-inspired robotics, understanding collective behavior), the current work offers no indication of a commercially viable market size."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This research is purely observational and descriptive, representing a very early stage of understanding a biological phenomenon; it's firmly at the discovery/lab-stage with no indication of potential for near-term application or commercialization. While interesting from a biological perspective, there's no pathway to a product or technology suggested within the abstract."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes a novel *observation* of a natural behavior, but doesn't present any invention or technology that could be patented; it's a purely descriptive biological finding. While the observation itself is interesting, there's no apparent IP strength or defensibility related to the phenomenon itself."
+      }
+    },
+    "pi": "Ariel D Chipman",
+    "pi_full_name": "Ariel D Chipman",
+    "pi_email": "",
+    "added_date": "2026-04-20"
+  },
+  {
     "id": "pubmed_41876283",
     "title": "Empathy as a predictive signal: why we devalue AI empathy.",
     "authors": [
@@ -5219,6 +5695,101 @@
     "pi_full_name": "Esti Davidovich",
     "pi_email": "",
     "added_date": "2026-04-20"
+  },
+  {
+    "id": "pubmed_42069104",
+    "title": "Facilitating Thought Progression: A Neurocognitive Framework Linking Thought Dynamics and Mood Disorders.",
+    "authors": [
+      "Moshe Bar",
+      "Shira Baror"
+    ],
+    "journal": "Biological psychiatry",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42069104/",
+    "source": "PubMed",
+    "score": 15,
+    "summary": "This research proposes a neurocognitive framework connecting how thoughts unfold over time with the development of mood disorders. It aims to understand the underlying brain processes that contribute to dysfunctional thought patterns in conditions like depression and anxiety.",
+    "opportunity": "Developing digital therapeutics or neuromodulation techniques based on this framework could offer personalized interventions to reshape thought progression and alleviate mood disorder symptoms.",
+    "fields": [
+      "Neuroscience",
+      "Software/AI",
+      "Clinical",
+      "Medical Device"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While linking thought dynamics to mood disorders is a valuable pursuit, the *concept* of a relationship isn't entirely novel; however, framing it as a 'neurocognitive framework' *facilitating thought progression* suggests a potentially new way to model and investigate these connections, meriting a moderate novelty score. Without the abstract, assessing the specific mechanisms proposed and their departure from existing models is impossible, preventing a higher score."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper describes a neurocognitive *framework*, which is a very early stage output with no immediately apparent productization path; translating this into a commercial offering (diagnostic, therapeutic, or otherwise) requires significant further research and development and isn't clearly articulated here. While understanding thought dynamics is valuable, the link to commercial applications feels distant without more concrete deliverables."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a neurocognitive framework for understanding mood disorders, indicating a potential application in diagnostics or therapeutics, but doesn't articulate *which* specific mood disorder(s) or the size of the affected patient population; therefore, the addressable market is undefined and likely very fragmented across multiple conditions with varying prevalence. Without a clear link to a defined, sizable market, the commercial potential is highly uncertain."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper presents a *framework* linking thought dynamics and mood disorders, indicating very early-stage, conceptual work; it's likely based on observational data and theoretical modeling, far from any demonstrable product or clinical application. The TRL is therefore extremely low, representing basic research rather than technology development."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes a neurocognitive *framework* linking thought dynamics and mood disorders, which is unlikely to be patentable as it presents a way of *thinking* about a problem, not a novel, concrete invention; it's a theoretical model. While the insights *could* potentially inform development of diagnositic tools or therapies, the paper itself doesn't disclose anything patentable."
+      }
+    },
+    "pi": "Shira Baror",
+    "pi_full_name": "Shira Baror",
+    "pi_email": "",
+    "added_date": "2026-05-04"
+  },
+  {
+    "id": "epmc_41490227",
+    "title": "ANTI-VEGF THERAPY SWITCHING RETINAL DISEASES: Characterizing Clinical Manifestations and Common Involved Genes.",
+    "authors": [
+      "Ben Ezra Kahtan",
+      "Rotem Azmon",
+      "Karen Hendler"
+    ],
+    "journal": "",
+    "date": "2026-05-01",
+    "url": "https://europepmc.org/article/MED/41490227",
+    "source": "Europe PMC",
+    "score": 14,
+    "summary": "This study retrospectively analyzed the clinical presentation and genetic causes of inherited retinal diseases (IRDs) in a pediatric cohort, finding nystagmus to be the earliest and most common symptom. The most frequent diagnoses were retinitis pigmentosa, achromatopsia, and congenital stationary night blindness, with specific genes like CNGA3 and TRPM1 frequently implicated.",
+    "opportunity": "Identifying early biomarkers like nystagmus and associated genetic factors could enable earlier diagnosis and potentially gene therapy intervention for IRDs, improving patient outcomes and expanding the addressable market for these treatments.",
+    "fields": [
+      "Genomics",
+      "Drug Discovery",
+      "Clinical",
+      "Diagnostics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "This study is largely descriptive and consolidates existing knowledge about IRD presentation and common causative genes; it doesn't present novel scientific findings or mechanisms, but rather a clinical characterization of a pediatric cohort which is a fairly standard approach. While valuable for clinical practice, the research lacks significant novelty from a deep-tech/life-science innovation perspective."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While the paper identifies potential genetic targets for IRDs, it's primarily a descriptive clinical study focused on diagnosis and characterization, not on developing a novel therapy or diagnostic tool with clear commercial pathways; the mention of anti-VEGF therapy in the title is misleading as the study doesn't investigate it as an intervention."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper focuses on a rare disease area (inherited retinal diseases in children) and while devastating for those affected, the overall patient population is relatively small, limiting the potential market size for therapies. The study doesn't provide any data on prevalence beyond the cohort studied, making it difficult to estimate the addressable market."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "This study is primarily a retrospective clinical characterization; it identifies genes associated with known diseases but doesn't present a new therapeutic intervention or technology. Therefore, the TRL remains low, representing basic research and early-stage understanding of disease mechanisms rather than a technology ready for application or commercialization."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper is a clinical characterization study and does not present any novel inventions or intellectual property; it describes observations of existing genetic causes of known diseases. While identifying common genes is valuable clinically, it doesn't establish any new protectable IP."
+      }
+    },
+    "pi": "Claudia Yahalom",
+    "pi_full_name": "Claudia Yahalom",
+    "pi_email": "",
+    "added_date": "2026-05-04"
   },
   {
     "id": "epmc_41895539",
@@ -5552,6 +6123,54 @@
     "pi_full_name": "Mony Shuvy",
     "pi_email": "monysh@gmail.com.",
     "added_date": "2026-04-27"
+  },
+  {
+    "id": "pubmed_41809114",
+    "title": "Severe eosinophilia and risk of major disease and mortality: A nationwide cohort study of children and adults.",
+    "authors": [
+      "Shay Nemet",
+      "Daniel Elbirt",
+      "Ramon Cohen"
+    ],
+    "journal": "The journal of allergy and clinical immunology. Global",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41809114/",
+    "source": "PubMed",
+    "score": 14,
+    "summary": "This study, analyzing a large nationwide cohort, investigates the correlation between eosinophilia (high eosinophil count) and increased risk of major diseases and mortality in both children and adults. The findings suggest eosinophilia is a significant biomarker for underlying health issues beyond traditionally associated parasitic infections.",
+    "opportunity": "Developing a rapid, accurate, and cost-effective diagnostic test for eosinophilia severity and subtype could enable earlier disease detection and intervention, improving patient outcomes and reducing healthcare costs.",
+    "fields": [
+      "Diagnostics",
+      "Immunology",
+      "Clinical",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While a nationwide cohort study is valuable and can provide robust data, simply observing the correlation between eosinophilia and disease risk isn't inherently novel; eosinophilia's association with various conditions is well-established. The potential lies in *quantifying* the risk across a broad population, but the title doesn't suggest a fundamentally new biological mechanism or unexpected finding."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While identifying a correlation between eosinophilia and adverse outcomes is valuable, the paper doesn't suggest a novel intervention or diagnostic; it primarily highlights a risk factor, offering limited direct commercial potential without further research into *why* this correlation exists and how it can be addressed therapeutically or diagnostically. The study itself is observational and doesn't point to a clear product or licensable technology."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "While the paper identifies a clinical need related to eosinophilia, it doesn't define or quantify the market size for diagnostics, therapeutics, or management strategies; it only establishes a correlation with adverse outcomes. Without knowing the prevalence of severe eosinophilia and associated healthcare spending, assessing the market opportunity is impossible."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This study describes observational findings regarding a biomarker (eosinophilia) and its correlation with health outcomes; it does *not* present a new technology or intervention. As such, the 'technology' readiness level is extremely low, representing basic scientific understanding rather than anything approaching application or commercialization."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This study describes a correlation between a biomarker (eosinophilia) and disease risk, but does not present any novel inventions or processes that would be patentable; it's an observational study identifying a potential clinical association, not a new technology or method of treatment. While the findings *could* inform future diagnostic or therapeutic development, the paper itself lacks inherent IP strength."
+      }
+    },
+    "pi": "Oded Shamriz",
+    "pi_full_name": "Oded Shamriz",
+    "pi_email": "",
+    "added_date": "2026-05-04"
   },
   {
     "id": "epmc_41801731",
@@ -6440,6 +7059,54 @@
     "added_date": "2026-04-27"
   },
   {
+    "id": "pubmed_42060399",
+    "title": "Learning affect norms: Implications for predictions, experiences, and social judgments.",
+    "authors": [
+      "Omri Maor",
+      "Yael Millgram",
+      "Amit Goldenberg"
+    ],
+    "journal": "Journal of experimental psychology. General",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42060399/",
+    "source": "PubMed",
+    "score": 13,
+    "summary": "This paper investigates how humans learn and internalize social norms related to emotional expression (affect), and how these learned norms influence predictions about others' feelings, personal experiences, and social evaluations. The research appears to focus on the cognitive mechanisms underlying affect perception and its impact on social behavior.",
+    "opportunity": "Understanding how affect norms are learned could enable the development of AI-powered tools for improved social-emotional learning, mental health diagnostics, and more effective human-computer interaction, particularly in therapeutic or assistive technologies.",
+    "fields": [
+      "Neuroscience",
+      "Software/AI",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "The title suggests investigating how people learn social norms around emotional expression ('affect norms'), which isn't a completely new area of study in social psychology, but applying machine learning *to* understanding this process could offer a novel approach. Without the abstract, it's difficult to assess if the methods or findings truly break new ground, hence a moderate score."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The title suggests basic research into social psychology and affective science, lacking an immediately obvious path to a commercial product or licensable technology; while understanding affect norms *could* inform applications like AI emotion recognition, the paper itself doesn't demonstrate or suggest such a translation."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on fundamental psychological processes ('affect norms') without clearly articulating a commercial application or target market; therefore, the directly addressable market size appears extremely limited, likely confined to academic research tools or very niche consulting applications. There's no indication of a large, readily monetizable market."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper appears to be focused on fundamental psychological research regarding affect norms and social cognition, indicating very early-stage, lab-based research with no immediately apparent path to commercial application or a tangible product. The TRL is therefore extremely low, likely at the basic research/proof-of-concept stage."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes research into social psychology and affective norms, which are generally not patentable subject matter; the core findings relate to observed human behavior and cognitive processes. While there *might* be defensibility around a novel methodology for *measuring* affect norms, the paper doesn't suggest any such unique, patentable method."
+      }
+    },
+    "pi": "Maya Tamir",
+    "pi_full_name": "Maya Tamir",
+    "pi_email": "",
+    "added_date": "2026-05-04"
+  },
+  {
     "id": "epmc_41785124",
     "title": "Depressed individuals want to feel more unpleasant emotions in daily life, but try harder to decrease them.",
     "authors": [
@@ -6871,6 +7538,54 @@
     "added_date": "2026-04-27"
   },
   {
+    "id": "pubmed_42061571",
+    "title": "Tetracyclines and Risk of Proliferative Vitreoretinopathy Following Rhegmatogenous Retinal Detachment.",
+    "authors": [
+      "Itay Nitzan",
+      "Yossi Eshel",
+      "Tehila Shlomov"
+    ],
+    "journal": "Ophthalmology. Retina",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42061571/",
+    "source": "PubMed",
+    "score": 12,
+    "summary": "This research investigates a potential link between tetracycline antibiotic use and an increased risk of proliferative vitreoretinopathy (PVR) – a major cause of vision loss – following retinal detachment surgery. The study suggests tetracyclines may negatively impact the healing process after retinal repair, potentially worsening outcomes.",
+    "opportunity": "Developing alternative antibiotic regimens or adjunctive therapies to mitigate PVR risk in patients requiring retinal detachment repair presents a commercial opportunity to improve surgical outcomes and reduce vision loss.",
+    "fields": [
+      "Clinical",
+      "Drug Discovery",
+      "Imaging",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "Establishing a correlation between tetracycline use and proliferative vitreoretinopathy (PVR) after retinal detachment surgery, while clinically relevant, isn't inherently groundbreaking scientifically; epidemiological associations of this type are common in medical research and likely build on existing understanding of PVR pathogenesis and tetracycline pharmacology. The novelty hinges on *if* this association hasn't been previously suggested or investigated, but without an abstract, it's assumed to be a relatively incremental observation."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "This paper identifies a correlation, but doesn't present a clear path to a novel therapeutic or diagnostic; it suggests *avoiding* tetracyclines, which isn't a commercial opportunity, and further research would be needed to understand the mechanism and potentially develop an alternative approach to mitigate proliferative vitreoretinopathy, which is a long and uncertain path to commercialization."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a very specific adverse event (Proliferative Vitreoretinopathy) related to an existing, generic drug class (Tetracyclines) used in a defined surgical procedure (Rhegmatogenous Retinal Detachment repair). This represents a niche safety concern, not a large addressable market for a new therapeutic or diagnostic intervention."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper investigates a *correlation* between an existing, widely-used drug (tetracycline) and a complication of a standard surgical procedure (retinal detachment repair). It does not present any new technology or advancement in a technology; therefore, the TRL remains very low, representing basic scientific research rather than technology development."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This paper describes a *correlation* between existing tetracycline use and a clinical outcome, rather than presenting a novel invention; therefore, it's highly unlikely to be patentable as described. Observational studies generally lack the inventive step required for strong IP protection."
+      }
+    },
+    "pi": "Samer Khateb",
+    "pi_full_name": "Itay Nitzan",
+    "pi_email": "itay.nitzan@mail.huji.ac.il.",
+    "added_date": "2026-05-04"
+  },
+  {
     "id": "epmc_41888297",
     "title": "Incidence and outcome of hemorrhagic cystitis after allogeneic hematopoietic cell transplantation: a survey of the infectious diseases working party of EBMT.",
     "authors": [
@@ -6927,7 +7642,7 @@
       "Bar S"
     ],
     "journal": "Physical & occupational therapy in pediatrics",
-    "date": "2026 Mar 1",
+    "date": "2026 Mar",
     "url": "https://pubmed.ncbi.nlm.nih.gov/41837327/",
     "source": "PubMed",
     "score": 11,
@@ -7156,6 +7871,54 @@
     "pi_full_name": "Abed Qadan",
     "pi_email": "Hakim.Qadan@gmail.com.",
     "added_date": "2026-04-06"
+  },
+  {
+    "id": "pubmed_41909183",
+    "title": "Incidence and clinical manifestations of sudden death in young adults: a two-decade, nationwide, retrospective, cross-sectional study.",
+    "authors": [
+      "Yair Maayan",
+      "Koral Yuhter",
+      "Hadasa Sarshevsky"
+    ],
+    "journal": "Resuscitation plus",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41909183/",
+    "source": "PubMed",
+    "score": 11,
+    "summary": "This study analyzes two decades of nationwide data to understand the causes and presentations of sudden death in young adults. Identifying patterns in these deaths could lead to improved risk assessment and preventative measures.",
+    "opportunity": "Developing predictive diagnostics or screening tools based on identified risk factors could create a significant market for early intervention and potentially save lives.",
+    "fields": [
+      "Diagnostics",
+      "Clinical",
+      "Genomics",
+      "Immunology"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "While a large, nationwide study is valuable, retrospective cross-sectional designs examining incidence of known phenomena (sudden death) rarely represent high novelty; the core question addressed has been studied previously, and the methodology doesn't suggest a fundamentally new approach to understanding the problem."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "While identifying incidence and manifestations of sudden death is valuable research, this study, as described by the title, is purely epidemiological and doesn't inherently translate to a direct product, service, or licensable technology; it establishes a problem, but not a solution. Commercial potential would require follow-on work developing diagnostics, preventative measures, or therapies informed by these findings."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "While the paper identifies a tragic and important health problem (sudden death in young adults), it provides *no* data on the market size for potential interventions or diagnostics; it's purely an epidemiological study. Without knowing the prevalence, current costs of care, or potential pricing for solutions, assessing market size is impossible."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This study describes retrospective analysis of existing clinical data – it doesn't *develop* a technology, but rather *observes* clinical outcomes. Therefore, the 'technology' (clinical observation/data analysis methods) is already fully mature, but the findings themselves are very early stage in terms of translating to new interventions or commercial products."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This study is a retrospective, observational analysis of existing clinical data; it does not describe any novel invention, method, or composition of matter and therefore has no patentable subject matter. The findings may be publishable, but offer no IP strength or defensibility."
+      }
+    },
+    "pi": "Sharon Ohayon Cohen",
+    "pi_full_name": "Sharon Ohayon Cohen",
+    "pi_email": "",
+    "added_date": "2026-05-04"
   },
   {
     "id": "epmc_42024844",
@@ -7537,6 +8300,150 @@
     "pi_full_name": "Carmil Azran",
     "pi_email": "",
     "added_date": "2026-04-27"
+  },
+  {
+    "id": "pubmed_42065370",
+    "title": "RadD from ",
+    "authors": [
+      "Ahmed Rishiq",
+      "Johanna Galski",
+      "Reem Bsoul"
+    ],
+    "journal": "eLife",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42065370/",
+    "source": "PubMed",
+    "score": 10,
+    "summary": "Without an abstract, it's impossible to provide a detailed summary. However, 'RadD' likely refers to research related to DNA repair and damage response, given the common usage of 'Rad' prefixes in this field. This suggests the work investigates fundamental biological mechanisms concerning genomic stability.",
+    "opportunity": "Understanding and modulating DNA damage response pathways presents opportunities for developing novel cancer therapies and potentially extending healthy lifespan.",
+    "fields": [
+      "Drug Discovery",
+      "Genomics",
+      "Immunology",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 2,
+        "reason": "Without an abstract or any details about the research presented in 'RadD', assessing novelty is impossible; the title itself is insufficient to determine if the work builds upon or significantly deviates from existing knowledge. The lack of information defaults to assuming minimal novelty beyond potentially being a new application of known principles."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "Without an abstract or any details on the research itself, assessing commercial potential is impossible; the title 'RadD' provides no indication of a product, service, or technology. A score of 2 reflects the complete lack of information to make a meaningful assessment."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "Without an abstract or any details on the technology's application, assessing market size is impossible; the potential market could be incredibly niche or broadly applicable, but there's no information to suggest either way. The complete lack of context defaults to a very low score for market size."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "Without an abstract or any details on the technology itself, it's safe to assume this is very early stage – likely concept or initial lab work. A score of 2 reflects a technology likely at TRL 1-3, far from practical application."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "Without an abstract or any details on the technology, assessing IP strength is impossible; the score reflects a presumption of very limited defensibility. A score above 1 requires *some* indication of novelty, and this is entirely absent."
+      }
+    },
+    "pi": "Ofer Mandelboim",
+    "pi_full_name": "Ofer Mandelboim",
+    "pi_email": "",
+    "added_date": "2026-05-04"
+  },
+  {
+    "id": "pubmed_42059564",
+    "title": "From Survival to Recovery: 25 Years of Paediatric Critical Care Transformation in Israel.",
+    "authors": [
+      "Yael Applbaum",
+      "Shulamit Gordon",
+      "Isaac Manaster"
+    ],
+    "journal": "Acta paediatrica (Oslo, Norway : 1992)",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42059564/",
+    "source": "PubMed",
+    "score": 10,
+    "summary": "This paper details the 25-year evolution of paediatric critical care in Israel, likely outlining improvements in protocols, technologies, and outcomes. Without an abstract, it's presumed to be a retrospective analysis of clinical practice and system-level changes.",
+    "opportunity": "Improvements in paediatric critical care delivery, as highlighted by this study, could inform the development of specialized medical devices or software solutions for resource-constrained settings globally.",
+    "fields": [
+      "Clinical",
+      "Medical Device",
+      "Software/AI",
+      "Imaging"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "A 25-year retrospective on improvements in pediatric critical care within a single country, while potentially valuable for healthcare systems analysis, doesn't present fundamentally *new* scientific discoveries or technological innovations; it's primarily a description of clinical practice evolution and outcomes improvement, not a novel scientific breakthrough."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This paper describes retrospective improvements in healthcare delivery, not a novel technology or product; while valuable for healthcare systems analysis, it doesn't present a clear path to commercialization or licensing opportunities. The 'transformation' itself isn't something that can be sold, only the *results* of that transformation, which aren't patentable or readily translatable to a commercial offering."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a retrospective analysis of pediatric critical care *within Israel* – a single, relatively small country. While critical care is always needed, the described transformation doesn't inherently address a large or globally expanding market opportunity, limiting its commercial potential."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This paper describes a retrospective overview of improvements in pediatric critical care *practices* over 25 years, not a novel technology. It details the evolution of a healthcare system's capabilities, placing the TRL firmly at the level of established operational systems rather than a developing technology."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes a transformation in healthcare *delivery* and organization, not a novel invention; as such, it's highly unlikely to have strong IP protection potential. Improvements in protocols or care pathways are generally not patentable."
+      }
+    },
+    "pi": "Uri Pollak",
+    "pi_full_name": "Uri Pollak",
+    "pi_email": "",
+    "added_date": "2026-05-04"
+  },
+  {
+    "id": "pubmed_41920176",
+    "title": "Sensory Processing Disorders and Emotional Distress Among Young Children Exposed to Traumatic Events.",
+    "authors": [
+      "Lihi Liberman",
+      "Efrat Harel",
+      "Yafit Gilboa"
+    ],
+    "journal": "The American journal of occupational therapy : official publication of the American Occupational Therapy Association",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41920176/",
+    "source": "PubMed",
+    "score": 10,
+    "summary": "This research investigates the link between traumatic experiences in young children and the development of sensory processing disorders and emotional distress. Understanding these connections is crucial for early identification and intervention strategies to improve child wellbeing.",
+    "opportunity": "Development of standardized, objective assessment tools (potentially leveraging AI/machine learning) for early detection of sensory processing disorders in traumatized children could create a significant market for pediatric mental health services and targeted therapies.",
+    "fields": [
+      "Neuroscience",
+      "Clinical",
+      "Software/AI",
+      "Diagnostics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The title suggests an investigation into a correlation between existing phenomena (sensory processing disorders, emotional distress, and trauma exposure) – it doesn't inherently indicate a novel mechanism, discovery, or approach. While important, establishing links between known factors generally scores low on novelty unless a surprising or previously unconsidered link is demonstrated."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper focuses on correlation between trauma exposure, sensory processing, and emotional distress – it identifies a problem, but doesn't present a novel technology, therapeutic, or diagnostic with clear commercial pathways; it's primarily a research finding needing substantial further development to become commercially viable."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on a clinical issue (sensory processing disorders and emotional distress post-trauma in young children) rather than a commercially addressable market; while the *need* is significant, the paper doesn't indicate a clear path to a large, revenue-generating market for a novel product or service, and relies on existing healthcare systems for intervention."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper describes correlational research on a clinical phenomenon; it does not present any new technology or advancement in a technical field. Therefore, the Technology Readiness Level (TRL) is extremely low, representing basic scientific research with no immediate path to technological application."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes a correlation between existing conditions (Sensory Processing Disorders and emotional distress) and exposure to trauma; it does not present novel technology, methods, or compositions of matter that would be patentable or otherwise defensible as intellectual property. The findings relate to observed phenomena, not inventions."
+      }
+    },
+    "pi": "Yafit Gilboa",
+    "pi_full_name": "Lihi Liberman",
+    "pi_email": "lihi.liberman@gmail.com.",
+    "added_date": "2026-05-04"
   },
   {
     "id": "epmc_41776295",
@@ -8013,6 +8920,53 @@
     "added_date": "2026-04-20"
   },
   {
+    "id": "pubmed_42059247",
+    "title": "Racial discrimination and life satisfaction in non-Western contexts: examining the moderating role of migration in Ghana, Indonesia, Kenya, and Ukraine.",
+    "authors": [
+      "Silvana D'Ottone",
+      "Brianna García",
+      "Eyal Peer"
+    ],
+    "journal": "Ethnicity & health",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42059247/",
+    "source": "PubMed",
+    "score": 9,
+    "summary": "This research investigates the relationship between experiences of racial discrimination and overall life satisfaction within Ghana, Indonesia, Kenya, and Ukraine, specifically looking at how migration status influences this connection. The study aims to understand the psychosocial impacts of discrimination in diverse cultural settings, offering insights into well-being and social integration.",
+    "opportunity": "Understanding the psychological impact of discrimination could inform the development of AI-powered mental health support tools tailored to specific cultural contexts and vulnerable populations, potentially creating a market for culturally-sensitive digital therapeutics.",
+    "fields": [
+      "Software/AI",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While examining racial discrimination and life satisfaction cross-culturally is valuable, the core premise – that discrimination impacts well-being – isn't novel; the novelty lies in the *context* (non-Western nations) and the migration moderator, but these are extensions of existing research rather than fundamentally new scientific ground. The study appears to be applying established frameworks to new geographies, representing incremental rather than disruptive innovation."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This paper focuses on social science research regarding the impact of racial discrimination on life satisfaction; it doesn't present a technology, product, or service with clear commercial applications, nor is it readily licensable as a technology. While the findings *could* inform diversity and inclusion training programs, the paper itself doesn't offer a direct path to commercialization."
+      },
+      "market_size": {
+        "score": 1,
+        "reason": "This research focuses on a sociological issue (racial discrimination and life satisfaction) and does not address a commercially viable market; there is no inherent market size to evaluate from an investment perspective. While understanding societal issues is valuable, it doesn't translate to a quantifiable addressable market for a life-science or deep-tech investment."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper describes a sociological study, not a technology. As such, it has no applicable Technology Readiness Level (TRL) in the context of life science or deep tech investment; it's fundamentally not a technology-based innovation."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes a sociological study examining correlations between perceived discrimination, migration status, and life satisfaction; it does not present any novel technology, process, or composition of matter that would be patentable or otherwise defensible as intellectual property. The findings are based on observational data and analysis, not inventive concepts."
+      }
+    },
+    "pi": "Eyal Peer",
+    "pi_full_name": "Eyal Peer",
+    "pi_email": "",
+    "added_date": "2026-05-04"
+  },
+  {
     "id": "pubmed_41874688",
     "title": "Intractable dialysis-associated headache: a management dilemma in pediatric hemodialysis.",
     "authors": [
@@ -8203,6 +9157,54 @@
     "pi_full_name": "Miriam Schiff",
     "pi_email": "",
     "added_date": "2026-04-27"
+  },
+  {
+    "id": "pubmed_41867066",
+    "title": "Comparing the Level of Knowledge on External Ventricular Drain Care: A National Study of Neurosurgical and General ICU Nurses.",
+    "authors": [
+      "Asnath Birnbaum",
+      "Guy Rosenthal",
+      "Alex Furmanov"
+    ],
+    "journal": "Nursing in critical care",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41867066/",
+    "source": "PubMed",
+    "score": 8,
+    "summary": "This study investigates the knowledge levels of nurses regarding the care of external ventricular drains (EVDs), devices used to drain fluid from the brain. The research appears to be a national survey assessing competency gaps in EVD management among neurosurgical and general ICU nurses.",
+    "opportunity": "Identifying knowledge deficits in EVD care presents an opportunity for developing targeted training programs, simulation tools, or improved device designs to reduce complications and improve patient outcomes, potentially leading to cost savings for hospitals.",
+    "fields": [
+      "Medical Device",
+      "Clinical",
+      "Neuroscience",
+      "Software/AI"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 2,
+        "reason": "This study appears to be a descriptive comparison of existing knowledge, rather than presenting new scientific discoveries or innovative approaches to EVD care; it's an important assessment of current practice, but lacks novelty in its core research question or methodology."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This study focuses on knowledge gaps in nursing care, not a novel technology or therapeutic; while identifying a need for improved training is valuable, it doesn't directly translate to a commercial product or licensable technology itself. Any commercial potential would be indirect, relying on a third party to *create* a solution based on these findings (e.g., a training program), making the link very weak."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on knowledge levels of nurses regarding a specific medical procedure (EVD care) and doesn't inherently define a new market or expand an existing one; it addresses a quality-of-care issue within established hospital settings. While improved EVD care *could* reduce complications and associated costs, the paper doesn't quantify the market size impacted by this knowledge gap or potential solutions."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This paper describes a study of *knowledge* regarding an existing medical procedure (EVD care), not the development of a new technology. Therefore, the Technology Readiness Level is extremely low, representing basic research and far from commercial application."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This paper describes a study of existing knowledge, not a novel invention; therefore, there is no inherent IP to assess. The findings relate to healthcare practice and education, which are generally not patentable subject matter."
+      }
+    },
+    "pi": "Julie Benbenishty",
+    "pi_full_name": "Julie Benbenishty",
+    "pi_email": "",
+    "added_date": "2026-05-04"
   },
   {
     "id": "epmc_41848442",
