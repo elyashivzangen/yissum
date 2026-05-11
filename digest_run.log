@@ -3,39 +3,39 @@
 Branch: All Branches
 Loading top papers from Google Sheet...
   Sheet response: 200, 607106 bytes
-  Cutoff date: 2026-04-27  (DIGEST_WINDOW=7 days)
-  Rows: 201 total, 198 excluded, 3 kept.
-  Sample pub date values: ['2026-05-01', '2026-05-01', '2026 Jun 1']
-  3 candidates (top 20 by score).
+  Cutoff date: 2026-05-04  (DIGEST_WINDOW=7 days)
+  Rows: 201 total, 200 excluded, 1 kept.
+  Sample pub date values: ['2026 Jun 1']
+  1 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 3 papers.
-  Executive summary: This week's digest highlights groundbreaking advancements across several key areas of biomedical innovation. We feature ...
+  Gemini selected 1 papers.
+  Executive summary: Hebrew University researchers are advancing cutting-edge artificial intelligence for precision medicine. A standout proj...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W19.pdf  (6 KB)
+PDF written: digests/HUJI_digest_2026_W20.pdf  (3 KB)
 
 =======================================================
 Branch: Healthcare
 Loading top papers from Google Sheet...
   Sheet response: 200, 607106 bytes
-  Cutoff date: 2026-04-27  (DIGEST_WINDOW=7 days)
-  Rows: 201 total, 198 excluded, 3 kept.
-  Sample pub date values: ['2026-05-01', '2026-05-01', '2026 Jun 1']
-  3 candidates (top 20 by score).
+  Cutoff date: 2026-05-04  (DIGEST_WINDOW=7 days)
+  Rows: 201 total, 200 excluded, 1 kept.
+  Sample pub date values: ['2026 Jun 1']
+  1 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 2 papers.
-  Executive summary: This weekly digest highlights groundbreaking advancements in neurodegenerative disease management and novel cancer immun...
+  Gemini selected 1 papers.
+  Executive summary: This week's digest highlights a significant advancement in personalized medicine, specifically targeting neurological di...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W19_Healthcare.pdf  (6 KB)
+PDF written: digests/HUJI_digest_2026_W20_Healthcare.pdf  (4 KB)
 
 =======================================================
 Branch: Agriculture & Food
 Loading top papers from Google Sheet...
   Sheet response: 200, 607106 bytes
-  Cutoff date: 2026-04-27  (DIGEST_WINDOW=7 days)
+  Cutoff date: 2026-05-04  (DIGEST_WINDOW=7 days)
   Rows: 201 total, 201 excluded, 0 kept.
   0 candidates (top 20 by score).
   No papers found for Agriculture & Food — skipping.
@@ -44,7 +44,7 @@ Loading top papers from Google Sheet...
 Branch: Exact & Social Sciences
 Loading top papers from Google Sheet...
   Sheet response: 200, 607106 bytes
-  Cutoff date: 2026-04-27  (DIGEST_WINDOW=7 days)
+  Cutoff date: 2026-05-04  (DIGEST_WINDOW=7 days)
   Rows: 201 total, 201 excluded, 0 kept.
   0 candidates (top 20 by score).
   No papers found for Exact & Social Sciences — skipping.
