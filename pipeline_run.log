@@ -1,58 +1,74 @@
 Loading existing papers from Google Sheet...
-  180 existing papers loaded.
-  Verifying HUJI affiliation for 174 papers via PubMed efetch...
-fetch_pubmed: 23 fetched, 19 new
-fetch_europepmc: 14 fetched, 2 new
+  201 existing papers loaded.
+  Verifying HUJI affiliation for 194 papers via PubMed efetch...
+fetch_pubmed: 22 fetched, 21 new
+fetch_europepmc: 0 fetched, 0 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
 21 unique new papers to evaluate.
 Enriching PI contact info for 21 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/21] Facilitating Thought Progression: A Neurocognitive Framework Linking T
-    score=15 fields=['Neuroscience', 'Software/AI', 'Clinical', 'Medical Device']
-  [2/21] Addendum: Telomouse-a mouse model with human-length telomeres generate
-    score=27 fields=['Drug Discovery', 'Genomics', 'Clinical', 'Other']
-  [3/21] RNA editing of pathogenic variants causing inherited retinal diseases 
-    score=29 fields=['Drug Discovery', 'Genomics', 'Clinical', 'Neuroscience']
-  [4/21] IR nanospectroscopy mapping of facet-dependent sulfur poisoning and th
-    score=21 fields=['Materials', 'Clean Energy', 'Imaging', 'Other']
-  [5/21] RadD from 
-    score=10 fields=['Drug Discovery', 'Genomics', 'Immunology', 'Clinical']
-  [6/21] Spermatogenic timing, dose, and route of administration as determinant
-    score=16 fields=['Neuroscience', 'Diagnostics', 'Drug Discovery', 'Clinical']
-  [7/21] Tetracyclines and Risk of Proliferative Vitreoretinopathy Following Rh
-    score=12 fields=['Clinical', 'Drug Discovery', 'Imaging', 'Other']
-  [8/21] Learning affect norms: Implications for predictions, experiences, and 
-    score=13 fields=['Neuroscience', 'Software/AI', 'Clinical', 'Other']
-  [9/21] From Survival to Recovery: 25 Years of Paediatric Critical Care Transf
-    score=10 fields=['Clinical', 'Medical Device', 'Software/AI', 'Imaging']
-  [10/21] Racial discrimination and life satisfaction in non-Western contexts: e
-    score=9 fields=['Software/AI', 'Clinical', 'Other']
-  [11/21] Aging-associated modulation of UFMylation impairs proteostasis in C. e
-    score=17 fields=['Drug Discovery', 'Proteomics', 'Neuroscience', 'Genomics']
-  [12/21] Cationic Sulfonium-Based Tripodal Ligand and Its Rh(I) Complexes.
-    score=19 fields=['Materials', 'Drug Discovery', 'Other', 'Clean Energy']
-  [13/21] Plaque Reduction Efficacy of an Advanced Electric Toothbrush Compared 
-    score=25 fields=['Medical Device', 'Clinical', 'Other']
-  [14/21] Mandibular advancement devices in severe obstructive sleep apnea: a se
-    score=24 fields=['Medical Device', 'Clinical', 'Neuroscience', 'Other']
-  [15/21] Photoluminescence line shapes of nanocrystals: Contributions from firs
-    score=16 fields=['Imaging', 'Materials', 'Nanotechnology', 'Diagnostics']
-  [16/21] Sensory Processing Disorders and Emotional Distress Among Young Childr
-    score=10 fields=['Neuroscience', 'Clinical', 'Software/AI', 'Diagnostics']
-  [17/21] Incidence and clinical manifestations of sudden death in young adults:
-    score=11 fields=['Diagnostics', 'Clinical', 'Genomics', 'Immunology']
-  [18/21] Comparing the Level of Knowledge on External Ventricular Drain Care: A
-    score=8 fields=['Medical Device', 'Clinical', 'Neuroscience', 'Software/AI']
-  [19/21] Severe eosinophilia and risk of major disease and mortality: A nationw
-    score=14 fields=['Diagnostics', 'Immunology', 'Clinical', 'Drug Discovery']
-  [20/21] ANTI-VEGF THERAPY SWITCHING RETINAL DISEASES: Characterizing Clinical 
-    score=14 fields=['Genomics', 'Drug Discovery', 'Clinical', 'Diagnostics']
-  [21/21] RadD from &lt;i&gt;Fusobacterium nucleatum&lt;/i&gt; engages NKp46 to 
-    score=27 fields=['Immunology', 'Drug Discovery', 'Clinical', 'Genomics']
-
-Retention: kept 180/180 existing, added 21 new.
-Writing 201 papers to Google Sheet...
-Sheet updated: {"status":"ok","rows":202}
-Generated papers_reader.html and papers_data.json with 201 papers.
-Done.
+  [1/21] A deep learning model for automated identification of age-related macu
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [2/21] Correction: Human DNA levels in feces reflect gut inflammation and ass
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [3/21] Single-session transanal minimally invasive surgery (TAMIS) and adjuva
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [4/21] MRD conversion during oral azacitidine maintenance correlates with out
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [5/21] Tire Wear Particles as a Source of Organic Contaminants in the Agroenv
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [6/21] Editorial for exploring understudied inflammatory diseases.
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [7/21] Legume consumption among Israeli adults: results from a national healt
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [8/21] Five Tips for Learning Plastic Surgery in the Artificial Intelligence 
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [9/21] B-cell Maturation Antigen Targeted Chimeric Antigen Receptor T-cell Th
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [10/21] Earthquake magnitudes depend on seismic history, as revealed by a neur
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [11/21] Unraveling the geometry of visual relational reasoning.
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [12/21] Structure-controlled sulfur poisoning and hydrogen-induced regeneratio
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [13/21] The Baladi cattle are a genetic sieve for indicine and African-taurine
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [14/21] Gestational Ketosis Compromises Nephron Endowment and Long-Term Kidney
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [15/21] Characteristics of Unsuccessful Recanalization Following Endovascular 
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [16/21] Individual Participant Data Meta-Analysis Identifies Risk Factors for 
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [17/21] Neighborhood-informed positional information for precise cell identity
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [18/21] Multi-omics-based machine learning model predicts response and guides 
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [19/21] Paradoxical thinking and attitudes toward prostitution: preliminary ex
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [20/21] Impact of donor and recipient EBV serostatus on transplant outcomes in
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [21/21] All-optical electrophysiology reveals behavior-dependent dynamics of e
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+All evaluations failed — aborting to avoid overwriting sheet with empty data.
