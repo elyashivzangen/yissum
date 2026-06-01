@@ -1,56 +1,71 @@
 Loading existing papers from Google Sheet...
   201 existing papers loaded.
   Verifying HUJI affiliation for 194 papers via PubMed efetch...
-fetch_pubmed: 15 fetched, 14 new
-fetch_europepmc: 12 fetched, 1 new
+fetch_pubmed: 16 fetched, 16 new
+fetch_europepmc: 15 fetched, 4 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-15 unique new papers to evaluate.
-Enriching PI contact info for 15 new papers...
+20 unique new papers to evaluate.
+Enriching PI contact info for 20 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/15] Surgical and Endovascular Management of Pseudoaneurysms of the Ascendi
+  [1/20] Universal rhythmic architecture uncovers two modes of neural dynamics.
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [2/15] Neural dissociation of cognitive effort and physiological arousal: Mul
+  [2/20] Effectiveness of written exposure therapy in group therapy for veteran
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [3/15] Evaluating the detectability of randomly acquired characteristics unde
+  [3/20] Risk of postoperative respiratory complications in adults treated with
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [4/15] Glucosamine links hyperglycemia to mTORC1 activation and glucose toxic
+  [4/20] Designed Synthesis of Unsymmetrical (Deuterated) 1,1-Diarylethylenes v
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [5/15] CApEsid biOfilm: a suggested pipeline for clinical phage microbiology 
+  [5/20] EMF2 deficiency disrupts epigenetic and chromatin organization landsca
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [6/15] Binge Eating and Addictive-Like Eating Behaviors Seven Years After Sle
+  [6/20] Sensory impairment and mental health in old age: The moderating role o
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [7/15] The Tinnitus and Hearing Survey-Hebrew and Arabic Translation and Adap
+  [7/20] Is CPX-351 the best path to remission for older patients with treatmen
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [8/15] The effect of collective trauma on craving for cannabis and tobacco.
+  [8/20] Near-infrared OCT imaging for the assessment of anisocoria.
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [9/15] Bioengineering CAR-T cells to function in hostile tumor microenvironme
+  [9/20] Acute COPD Exacerbation and long-term cardiopulmonary outcomes: Real-w
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [10/15] Emergence of cooperation due to opponent-specific responses in Prisone
+  [10/20] Real-time cell viability monitoring for high-throughput drug screening
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [11/15] Mass Spectrometry Imaging Coupled with Pixel-Level Absolute Quantifica
+  [11/20] Tricuspid Transcatheter Edge-to-Edge Repair Device Entrapment on a Rig
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [12/15] Adjustment in immigrant families: The role of parent-adolescent value 
+  [12/20] Plasmon-Induced Hot-State Multiexciton Emission from Quantum Dots Coup
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [13/15] Editorial for exploring understudied inflammatory diseases.
+  [13/20] Virtual Reality and Gamification for Assessing Technical Aptitude, Cog
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [14/15] A deep-time landscape of plant cis-regulatory sequence evolution.
+  [14/20] The Intricate Nonadiabatic Dynamics of NO
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
-  [15/15] Flight in the dark: different responses to darkness in flying insects.
+  [15/20] CD163+ Foamy Histiocytes in the Vitreous of a Patient with West Nile V
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [16/20] Emergence of cooperation due to opponent-specific responses in Prisone
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [17/20] Association between semaglutide use and thyroid eye disease-related ou
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [18/20] Aggression and personal values in immigrant adolescents: A longitudina
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [19/20] The Intricate Nonadiabatic Dynamics of NO&lt;sup&gt;+&lt;/sup&gt; and 
+  Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+    evaluation failed — skipped
+  [20/20] Adapting to the digital age in psychiatry: evaluating change in emerge
   Gemini error (meta): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemma-3-27b-it is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
     evaluation failed — skipped
 All evaluations failed — aborting to avoid overwriting sheet with empty data.
