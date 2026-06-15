@@ -3,39 +3,25 @@
 Branch: All Branches
 Loading top papers from Google Sheet...
   Sheet response: 200, 606305 bytes
-  Cutoff date: 2026-06-01  (DIGEST_WINDOW=7 days)
-  Rows: 201 total, 200 excluded, 1 kept.
-  Sample pub date values: ['2026 Jun 1']
-  1 candidates (top 20 by score).
-Asking Gemini to curate the digest...
-  Trying model: gemini-2.5-flash
-  Success with: gemini-2.5-flash
-  Gemini selected 1 papers.
-  Executive summary: Hebrew University's latest research highlights significant strides in leveraging advanced AI for chronic disease managem...
-Generating PDF...
-PDF written: digests/HUJI_digest_2026_W24.pdf  (4 KB)
+  Cutoff date: 2026-06-08  (DIGEST_WINDOW=7 days)
+  Rows: 201 total, 201 excluded, 0 kept.
+  0 candidates (top 20 by score).
+  No papers found for All Branches — skipping.
 
 =======================================================
 Branch: Healthcare
 Loading top papers from Google Sheet...
   Sheet response: 200, 606305 bytes
-  Cutoff date: 2026-06-01  (DIGEST_WINDOW=7 days)
-  Rows: 201 total, 200 excluded, 1 kept.
-  Sample pub date values: ['2026 Jun 1']
-  1 candidates (top 20 by score).
-Asking Gemini to curate the digest...
-  Trying model: gemini-2.5-flash
-  Success with: gemini-2.5-flash
-  Gemini selected 1 papers.
-  Executive summary: This week's digest highlights a significant advancement in neurological care through cutting-edge artificial intelligenc...
-Generating PDF...
-PDF written: digests/HUJI_digest_2026_W24_Healthcare.pdf  (4 KB)
+  Cutoff date: 2026-06-08  (DIGEST_WINDOW=7 days)
+  Rows: 201 total, 201 excluded, 0 kept.
+  0 candidates (top 20 by score).
+  No papers found for Healthcare — skipping.
 
 =======================================================
 Branch: Agriculture & Food
 Loading top papers from Google Sheet...
   Sheet response: 200, 606305 bytes
-  Cutoff date: 2026-06-01  (DIGEST_WINDOW=7 days)
+  Cutoff date: 2026-06-08  (DIGEST_WINDOW=7 days)
   Rows: 201 total, 201 excluded, 0 kept.
   0 candidates (top 20 by score).
   No papers found for Agriculture & Food — skipping.
@@ -44,7 +30,7 @@ Loading top papers from Google Sheet...
 Branch: Exact & Social Sciences
 Loading top papers from Google Sheet...
   Sheet response: 200, 606305 bytes
-  Cutoff date: 2026-06-01  (DIGEST_WINDOW=7 days)
+  Cutoff date: 2026-06-08  (DIGEST_WINDOW=7 days)
   Rows: 201 total, 201 excluded, 0 kept.
   0 candidates (top 20 by score).
   No papers found for Exact & Social Sciences — skipping.
