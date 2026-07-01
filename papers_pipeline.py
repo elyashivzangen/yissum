@@ -29,8 +29,8 @@ GOOGLE_SHEET_ID  = os.environ["GOOGLE_SHEET_ID"]
 APPS_SCRIPT_URL  = os.environ["APPS_SCRIPT_URL"]   # deployed Apps Script web app URL
 OUTPUT_HTML      = Path("papers_reader.html")
 OUTPUT_JSON      = Path("papers_data.json")
-MAX_RESULTS      = 50    # per source
-KEEP_DAYS        = 90    # keep all papers for this many days
+MAX_RESULTS      = int(os.environ.get("MAX_RESULTS", "50"))    # per source
+KEEP_DAYS        = int(os.environ.get("KEEP_DAYS", "90"))      # keep all papers for this many days
 
 def _parse_args():
     p = argparse.ArgumentParser()
@@ -39,7 +39,7 @@ def _parse_args():
     return p.parse_args()
 
 ARGS     = _parse_args()
-DAYS_BACK = 7 if ARGS.period == "week" else 30
+DAYS_BACK = int(os.environ.get("DAYS_BACK", "7" if ARGS.period == "week" else "30"))
 
 HUJI_AFFILIATIONS = [
     "Hebrew University of Jerusalem",
@@ -637,19 +637,49 @@ Definition: {param_desc}
 Title: {title}
 Abstract: {abstract}
 
+Use the full 1-10 scale. Scores of 8-10 are appropriate for clearly protectable,
+clinically or industrially relevant, platform-enabling, or near-market work;
+do not reserve 8-10 only for already-marketed products.
+
 Return a JSON object (no markdown) with exactly these keys:
 - score: integer 1-10 (10 = excellent on this dimension)
 - reason: 1-2 sentence explanation for the score on this specific dimension
 """
 
+# Tried in order for each call. Free-tier RPM is very tight (~15 for the 31B
+# model), so a 429 or transient error falls through to the next candidate
+# rather than aborting the whole paper. gemini-2.5-flash is kept last as a
+# guaranteed-available safety net (not a Gemma model, but never 404s here).
+EVAL_MODEL_CANDIDATES = [
+    os.environ.get("GEMINI_MODEL", "gemma-4-31b-it"),
+    "gemma-4-26b-a4b-it",
+    "gemma-3-27b-it",
+    "gemini-2.5-flash",
+]
+
+_last_good_model_idx = 0   # remember which model worked last to skip known-bad ones sooner
+
 def _call_gemini(prompt):
-    resp = client.models.generate_content(
-        model="gemma-3-27b-it",
-        contents=prompt,
-    )
-    text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
-    text = re.sub(r"\s*```$", "", text)
-    return json.loads(text)
+    global _last_good_model_idx
+    last_err = None
+    n = len(EVAL_MODEL_CANDIDATES)
+    for offset in range(n):
+        idx = (_last_good_model_idx + offset) % n
+        model_id = EVAL_MODEL_CANDIDATES[idx]
+        try:
+            resp = client.models.generate_content(model=model_id, contents=prompt)
+            text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
+            text = re.sub(r"\s*```$", "", text)
+            data = json.loads(text)
+            _last_good_model_idx = idx
+            return data
+        except Exception as e:
+            last_err = e
+            is_rate_limit = "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e)
+            print(f"    {model_id} failed ({'rate limit' if is_rate_limit else 'error'}): {e}")
+            if is_rate_limit:
+                time.sleep(2)
+    raise last_err
 
 def evaluate_paper(paper):
     abstract = paper.get("abstract", "").strip() or "(no abstract available)"
@@ -1314,10 +1344,11 @@ def main():
         time.sleep(0.5)
 
     # If there were papers to evaluate but ALL failed (e.g. quota exhausted),
-    # abort rather than wiping the sheet.
+    # abort rather than wiping the sheet. Exit non-zero so CI surfaces this
+    # as a failed run instead of a silent green checkmark.
     if deduped and not evaluated:
         print("All evaluations failed — aborting to avoid overwriting sheet with empty data.")
-        return
+        return False
 
     retained = apply_retention(existing)
     print(f"\nRetention: kept {len(retained)}/{len(existing)} existing, added {len(evaluated)} new.")
@@ -1330,7 +1361,9 @@ def main():
 
     generate_html(all_papers)
     print("Done.")
+    return True
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    sys.exit(0 if main() else 1)
