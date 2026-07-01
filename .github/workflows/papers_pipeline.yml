@@ -3,14 +3,34 @@ name: Papers Pipeline
 on:
   schedule:
     - cron: '0 6 * * 1'   # every Monday at 06:00 UTC
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/papers_pipeline.yml'
+      - 'scripts/apply_papers_pipeline_overrides.py'
   workflow_dispatch:
     inputs:
       period:
-        description: 'Fetch window'
+        description: 'Fetch window label used by the pipeline parser'
         required: false
-        default: 'week'
+        default: 'month'
         type: choice
         options: [week, month]
+      days_back:
+        description: 'Actual fetch window in days. Use 180 for multi-month backfill.'
+        required: false
+        default: '180'
+        type: string
+      max_results:
+        description: 'Maximum papers to request per source for backfill.'
+        required: false
+        default: '1000'
+        type: string
+      keep_days:
+        description: 'How long to keep evaluated papers in the sheet/viewer.'
+        required: false
+        default: '3650'
+        type: string
 
 jobs:
   run-pipeline:
@@ -28,17 +48,35 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Resolve run window
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "PIPELINE_PERIOD=week" >> "$GITHUB_ENV"
+            echo "DAYS_BACK=7" >> "$GITHUB_ENV"
+            echo "MAX_RESULTS=50" >> "$GITHUB_ENV"
+            echo "KEEP_DAYS=3650" >> "$GITHUB_ENV"
+          else
+            echo "PIPELINE_PERIOD=${{ github.event.inputs.period || 'month' }}" >> "$GITHUB_ENV"
+            echo "DAYS_BACK=${{ github.event.inputs.days_back || '180' }}" >> "$GITHUB_ENV"
+            echo "MAX_RESULTS=${{ github.event.inputs.max_results || '1000' }}" >> "$GITHUB_ENV"
+            echo "KEEP_DAYS=${{ github.event.inputs.keep_days || '3650' }}" >> "$GITHUB_ENV"
+          fi
+          echo "GEMINI_MODEL=gemma-4-31b-it" >> "$GITHUB_ENV"
+
+      - name: Apply pipeline overrides
+        run: python scripts/apply_papers_pipeline_overrides.py
+
       - name: Run pipeline
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-        run: python papers_pipeline.py --period ${{ github.event.inputs.period || 'week' }} 2>&1 | tee pipeline_run.log
+        run: python papers_pipeline.py --period "$PIPELINE_PERIOD" 2>&1 | tee pipeline_run.log
 
       - name: Commit generated HTML
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add papers_reader.html papers_data.json pipeline_run.log || true
+          git add papers_pipeline.py papers_reader.html papers_data.json index.html pipeline_run.log || true
           git diff --cached --quiet || git commit -m "chore: update papers [$(date -u +%Y-%m-%d)]"
           git push
