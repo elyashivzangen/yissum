@@ -26,7 +26,7 @@ jobs:
           GEMINI_API_KEY:  ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-        run: python cleanup.py 2>&1 | tee cleanup_run.log
+        run: python -u cleanup.py 2>&1 | tee cleanup_run.log
 
       - name: Commit updated HTML
         run: |

@@ -84,7 +84,10 @@ SCORE_PARAMS = [
     ("ip_strength",          "IP and defensibility — how patentable or otherwise defensible is the underlying innovation?"),
 ]
 
-client = genai.Client(api_key=GEMINI_API_KEY)
+client = genai.Client(
+    api_key=GEMINI_API_KEY,
+    http_options=types.HttpOptions(timeout=30_000),  # ms — prevent an indefinite hang on a stalled call
+)
 
 # ── Google Sheets (no service account) ────────────────────────────────────────
 
