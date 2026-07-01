@@ -649,14 +649,17 @@ Return a JSON object (no markdown) with exactly these keys:
 - reason: 1-2 sentence explanation for the score on this specific dimension
 """
 
-# Tried in order for each call. Free-tier RPM is very tight (~15 for the 31B
-# model), so a 429 or transient error falls through to the next candidate
-# rather than aborting the whole paper. gemini-2.5-flash is kept last as a
-# guaranteed-available safety net (not a Gemma model, but never 404s here).
+# Tried in order for each call. gemma-3-27b-it was dropped: it 404s for this
+# project on every call (not transient), so it only added dead latency to
+# every fallback. The three Gemma variants below each carry their own
+# separate free-tier quota (~15 RPM / ~1500 RPD), so a transient 500/504 on
+# one usually still has headroom on the next. gemini-2.5-flash is kept only
+# as an absolute last resort — its free tier is far tighter (~5 RPM / ~20 RPD)
+# and it gets exhausted after a couple dozen papers in a single run.
 EVAL_MODEL_CANDIDATES = [
     os.environ.get("GEMINI_MODEL", "gemma-4-31b-it"),
     "gemma-4-26b-a4b-it",
-    "gemma-3-27b-it",
+    "gemma-4-4b-it",
     "gemini-2.5-flash",
 ]
 
@@ -1333,6 +1336,20 @@ def main():
             enrich_pi_contact(p)
             time.sleep(0.3)
 
+    # Computed once up front so a checkpoint mid-loop can save real progress
+    # even if the job is killed (e.g. a CI timeout) before the loop finishes.
+    retained = apply_retention(existing)
+
+    CHECKPOINT_EVERY = 15  # papers between incremental saves
+
+    def checkpoint(evaluated_so_far, label):
+        all_papers = retained + evaluated_so_far
+        all_papers.sort(key=lambda p: p.get("date", ""), reverse=True)
+        print(f"  [checkpoint: {label}] writing {len(all_papers)} papers "
+              f"({len(retained)} retained + {len(evaluated_so_far)} new)...")
+        save_to_sheet(all_papers)
+        generate_html(all_papers)
+
     evaluated = []
     for i, paper in enumerate(deduped):
         print(f"  [{i+1}/{len(deduped)}] {paper['title'][:70]}")
@@ -1344,6 +1361,8 @@ def main():
             print(f"    score={result['score']} fields={result['fields']}")
         else:
             print(f"    evaluation failed — skipped")
+        if evaluated and len(evaluated) % CHECKPOINT_EVERY == 0:
+            checkpoint(evaluated, f"{i+1}/{len(deduped)}")
         time.sleep(0.5)
 
     # If there were papers to evaluate but ALL failed (e.g. quota exhausted),
@@ -1353,16 +1372,8 @@ def main():
         print("All evaluations failed — aborting to avoid overwriting sheet with empty data.")
         return False
 
-    retained = apply_retention(existing)
     print(f"\nRetention: kept {len(retained)}/{len(existing)} existing, added {len(evaluated)} new.")
-
-    all_papers = retained + evaluated
-    all_papers.sort(key=lambda p: p.get("date", ""), reverse=True)
-
-    print(f"Writing {len(all_papers)} papers to Google Sheet...")
-    save_to_sheet(all_papers)
-
-    generate_html(all_papers)
+    checkpoint(evaluated, "final")
     print("Done.")
     return True
 
