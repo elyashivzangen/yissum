@@ -8,6 +8,7 @@ on:
     paths:
       - '.github/workflows/papers_pipeline.yml'
       - 'scripts/apply_papers_pipeline_overrides.py'
+      - 'scripts/backfill_trigger.txt'
   workflow_dispatch:
     inputs:
       period:
