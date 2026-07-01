@@ -1336,6 +1336,20 @@ def main():
             enrich_pi_contact(p)
             time.sleep(0.3)
 
+    # Computed once up front so a checkpoint mid-loop can save real progress
+    # even if the job is killed (e.g. a CI timeout) before the loop finishes.
+    retained = apply_retention(existing)
+
+    CHECKPOINT_EVERY = 15  # papers between incremental saves
+
+    def checkpoint(evaluated_so_far, label):
+        all_papers = retained + evaluated_so_far
+        all_papers.sort(key=lambda p: p.get("date", ""), reverse=True)
+        print(f"  [checkpoint: {label}] writing {len(all_papers)} papers "
+              f"({len(retained)} retained + {len(evaluated_so_far)} new)...")
+        save_to_sheet(all_papers)
+        generate_html(all_papers)
+
     evaluated = []
     for i, paper in enumerate(deduped):
         print(f"  [{i+1}/{len(deduped)}] {paper['title'][:70]}")
@@ -1347,6 +1361,8 @@ def main():
             print(f"    score={result['score']} fields={result['fields']}")
         else:
             print(f"    evaluation failed — skipped")
+        if evaluated and len(evaluated) % CHECKPOINT_EVERY == 0:
+            checkpoint(evaluated, f"{i+1}/{len(deduped)}")
         time.sleep(0.5)
 
     # If there were papers to evaluate but ALL failed (e.g. quota exhausted),
@@ -1356,16 +1372,8 @@ def main():
         print("All evaluations failed — aborting to avoid overwriting sheet with empty data.")
         return False
 
-    retained = apply_retention(existing)
     print(f"\nRetention: kept {len(retained)}/{len(existing)} existing, added {len(evaluated)} new.")
-
-    all_papers = retained + evaluated
-    all_papers.sort(key=lambda p: p.get("date", ""), reverse=True)
-
-    print(f"Writing {len(all_papers)} papers to Google Sheet...")
-    save_to_sheet(all_papers)
-
-    generate_html(all_papers)
+    checkpoint(evaluated, "final")
     print("Done.")
     return True
 
