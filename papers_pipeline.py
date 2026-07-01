@@ -649,14 +649,17 @@ Return a JSON object (no markdown) with exactly these keys:
 - reason: 1-2 sentence explanation for the score on this specific dimension
 """
 
-# Tried in order for each call. Free-tier RPM is very tight (~15 for the 31B
-# model), so a 429 or transient error falls through to the next candidate
-# rather than aborting the whole paper. gemini-2.5-flash is kept last as a
-# guaranteed-available safety net (not a Gemma model, but never 404s here).
+# Tried in order for each call. gemma-3-27b-it was dropped: it 404s for this
+# project on every call (not transient), so it only added dead latency to
+# every fallback. The three Gemma variants below each carry their own
+# separate free-tier quota (~15 RPM / ~1500 RPD), so a transient 500/504 on
+# one usually still has headroom on the next. gemini-2.5-flash is kept only
+# as an absolute last resort — its free tier is far tighter (~5 RPM / ~20 RPD)
+# and it gets exhausted after a couple dozen papers in a single run.
 EVAL_MODEL_CANDIDATES = [
     os.environ.get("GEMINI_MODEL", "gemma-4-31b-it"),
     "gemma-4-26b-a4b-it",
-    "gemma-3-27b-it",
+    "gemma-4-4b-it",
     "gemini-2.5-flash",
 ]
 
