@@ -2,7 +2,18 @@
 
 An automated system that continuously discovers HUJI-affiliated research papers, evaluates their commercial potential using AI, and delivers curated weekly digests to the Technology Transfer Office.
 
+## Quick Links
+
+| Resource | Link |
+|----------|------|
+| 🌐 **Web App (HTML Viewer)** | https://elyashivzangen.github.io/yissum/papers_reader.html |
+| 📊 **All Papers Spreadsheet** | https://docs.google.com/spreadsheets/d/1oyewjr_pojhyBJHXw_yLUrWVvVoFPbd352dAXPqpGyM |
+| 📁 **Digest PDFs** | https://github.com/elyashivzangen/yissum/tree/main/digests |
+| ⚙️ **GitHub Actions** | https://github.com/elyashivzangen/yissum/actions |
+| 🔧 **Repository** | https://github.com/elyashivzangen/yissum |
+
 ---
+
 
 ## Table of Contents
 
