@@ -253,19 +253,14 @@ Each entry in `latest_rfps.json` includes the portal name, document URL, posted 
 
 ## Retention & Cleanup
 
-### Pipeline Retention (90 days)
+Papers are kept indefinitely — there is no age-based expiry. The only thing
+that removes a paper is score:
 
-At the end of every pipeline run, papers older than **90 days** (by `added_date`) are removed before writing back to the Sheet. This prevents the Sheet from growing without bound.
+### Bimonthly Cleanup (score-based only)
 
-### Bimonthly Cleanup (selective)
-
-On the 1st of every second month, `cleanup.py` runs a more targeted removal:
-
-- Removes papers where: **age > 60 days AND score < 28**
-- Keeps all recent papers regardless of score
-- Keeps all high-scoring papers (≥ 28) regardless of age
-
-This means high-potential papers are retained as long-term references, while older low-scoring papers are pruned sooner.
+On the 1st of every second month, `cleanup.py` removes papers scoring below
+`LOW_SCORE_THRESHOLD` (default **25**, `score < 25` out of 50), regardless of
+how old they are. All papers scoring 25 or above are kept indefinitely.
 
 ---
 

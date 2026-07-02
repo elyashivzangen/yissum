@@ -31,7 +31,6 @@ OUTPUT_HTML      = Path("papers_reader.html")
 OUTPUT_JSON      = Path("papers_data.json")
 RESEARCHERS_JSON = Path("researchers_data.json")  # produced by researcher_pipeline.py
 MAX_RESULTS      = int(os.environ.get("MAX_RESULTS", "50"))    # per source
-KEEP_DAYS        = int(os.environ.get("KEEP_DAYS", "90"))      # keep all papers for this many days
 
 def _parse_args():
     p = argparse.ArgumentParser()
@@ -179,19 +178,6 @@ def save_to_sheet(papers):
                 raise
             print(f"  save_to_sheet attempt {attempt+1} failed ({e}), retrying...")
 
-# ── Retention ──────────────────────────────────────────────────────────────────
-
-def apply_retention(papers):
-    today = datetime.date.today()
-    kept = []
-    for p in papers:
-        try:
-            age = (today - datetime.date.fromisoformat(p.get("added_date", ""))).days
-        except Exception:
-            age = 0
-        if age <= KEEP_DAYS:
-            kept.append(p)
-    return kept
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
@@ -1461,9 +1447,11 @@ def main():
             enrich_pi_contact(p)
             time.sleep(0.3)
 
-    # Computed once up front so a checkpoint mid-loop can save real progress
-    # even if the job is killed (e.g. a CI timeout) before the loop finishes.
-    retained = apply_retention(existing)
+    # No age-based retention: all previously evaluated papers are kept
+    # indefinitely. `retained` is just a stable snapshot so a checkpoint
+    # mid-loop can save real progress even if the job is killed (e.g. a CI
+    # timeout) before the loop finishes.
+    retained = existing
 
     CHECKPOINT_EVERY = 15  # papers between incremental saves
 
@@ -1500,7 +1488,7 @@ def main():
         print("All evaluations failed — aborting to avoid overwriting sheet with empty data.")
         return False
 
-    print(f"\nRetention: kept {len(retained)}/{len(existing)} existing, added {len(evaluated)} new.")
+    print(f"\nKept all {len(retained)} existing papers, added {len(evaluated)} new.")
     checkpoint(evaluated, "final")
     print("Done.")
     return True
