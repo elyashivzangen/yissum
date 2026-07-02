@@ -21,11 +21,6 @@ on:
         required: false
         default: '300'
         type: string
-      keep_days:
-        description: 'How long to keep evaluated papers in the sheet/viewer.'
-        required: false
-        default: '90'
-        type: string
 
 concurrency:
   group: papers-pipeline
@@ -54,12 +49,10 @@ jobs:
             echo "PIPELINE_PERIOD=week" >> "$GITHUB_ENV"
             echo "DAYS_BACK=7" >> "$GITHUB_ENV"
             echo "MAX_RESULTS=50" >> "$GITHUB_ENV"
-            echo "KEEP_DAYS=90" >> "$GITHUB_ENV"
           else
             echo "PIPELINE_PERIOD=${{ github.event.inputs.period || 'month' }}" >> "$GITHUB_ENV"
             echo "DAYS_BACK=${{ github.event.inputs.days_back || '90' }}" >> "$GITHUB_ENV"
             echo "MAX_RESULTS=${{ github.event.inputs.max_results || '300' }}" >> "$GITHUB_ENV"
-            echo "KEEP_DAYS=${{ github.event.inputs.keep_days || '90' }}" >> "$GITHUB_ENV"
           fi
 
       - name: Run pipeline
@@ -68,7 +61,6 @@ jobs:
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
           MAX_RESULTS: ${{ env.MAX_RESULTS }}
-          KEEP_DAYS: ${{ env.KEEP_DAYS }}
           DAYS_BACK: ${{ env.DAYS_BACK }}
         run: |
           set -o pipefail

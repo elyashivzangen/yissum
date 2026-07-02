@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
-Bimonthly cleanup: remove papers older than 60 days with score below LOW_SCORE_THRESHOLD.
-High-scoring papers are kept indefinitely.
+Bimonthly cleanup: remove low-scoring papers (score below LOW_SCORE_THRESHOLD).
+All other papers are kept indefinitely, regardless of age.
 """
 
 import csv
 import io
 import json
 import os
-import datetime
 import requests
 from pathlib import Path
 
@@ -17,8 +16,7 @@ APPS_SCRIPT_URL       = os.environ["APPS_SCRIPT_URL"]
 OUTPUT_HTML           = Path("papers_reader.html")
 OUTPUT_JSON           = Path("papers_data.json")
 
-CLEANUP_AFTER_DAYS    = 60   # remove papers older than this
-LOW_SCORE_THRESHOLD   = 28   # only remove if score is below this
+LOW_SCORE_THRESHOLD   = int(os.environ.get("LOW_SCORE_THRESHOLD", "25"))   # only remove if score is below this
 
 
 # ── Load sheet ────────────────────────────────────────────────────────────────
@@ -64,7 +62,6 @@ def save_to_sheet(papers):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
-    today = datetime.date.today()
     print("Loading papers from sheet...")
     papers = load_from_sheet()
     print(f"  {len(papers)} papers loaded.")
@@ -72,17 +69,12 @@ def main():
     kept, removed = [], []
     for p in papers:
         score = p.get("score", 0)
-        try:
-            age = (today - datetime.date.fromisoformat(p.get("added_date", ""))).days
-        except Exception:
-            age = 0
-
-        if age > CLEANUP_AFTER_DAYS and score < LOW_SCORE_THRESHOLD:
+        if score < LOW_SCORE_THRESHOLD:
             removed.append(p)
         else:
             kept.append(p)
 
-    print(f"  Removing {len(removed)} old low-score papers (>{CLEANUP_AFTER_DAYS} days, score<{LOW_SCORE_THRESHOLD}).")
+    print(f"  Removing {len(removed)} low-score papers (score<{LOW_SCORE_THRESHOLD}).")
     print(f"  Keeping {len(kept)} papers.")
 
     if not removed:

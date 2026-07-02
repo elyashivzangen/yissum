@@ -23,15 +23,16 @@ An automated system that continuously discovers HUJI-affiliated research papers,
 4. [AI Scoring System](#ai-scoring-system)
 5. [PI & Email Enrichment](#pi--email-enrichment)
 6. [Interactive HTML Viewer](#interactive-html-viewer)
-7. [Google Sheet Integration](#google-sheet-integration)
-8. [Weekly Digest PDF](#weekly-digest-pdf)
-9. [RFP Harvester](#rfp-harvester)
-10. [Retention & Cleanup](#retention--cleanup)
-11. [GitHub Actions Workflows](#github-actions-workflows)
-12. [Repository File Reference](#repository-file-reference)
-13. [Required Secrets](#required-secrets)
-14. [Running Manually](#running-manually)
-15. [Architecture Overview](#architecture-overview)
+7. [Researcher Applicability Dataset](#researcher-applicability-dataset)
+8. [Google Sheet Integration](#google-sheet-integration)
+9. [Weekly Digest PDF](#weekly-digest-pdf)
+10. [RFP Harvester](#rfp-harvester)
+11. [Retention & Cleanup](#retention--cleanup)
+12. [GitHub Actions Workflows](#github-actions-workflows)
+13. [Repository File Reference](#repository-file-reference)
+14. [Required Secrets](#required-secrets)
+15. [Running Manually](#running-manually)
+16. [Architecture Overview](#architecture-overview)
 
 ---
 
@@ -46,6 +47,14 @@ Every Monday, the pipeline automatically:
 5. Generates a self-contained interactive HTML viewer (`papers_reader.html`) with full filtering and search.
 6. Generates a curated weekly digest PDF highlighting the 8–12 most commercially promising papers.
 
+Once a month, a second pipeline (`researcher_pipeline.py`) builds researcher-level
+profiles: it identifies the top-scoring HUJI researchers, pulls each one's last
+3 years of publications, grades them with the same scoring method, and produces
+an average applicability score, an AI-written description of their focus area,
+and the full list of graded papers per researcher — surfaced in a second
+"Researchers" tab in the same `papers_reader.html`. See
+[Researcher Applicability Dataset](#researcher-applicability-dataset).
+
 ---
 
 ## Weekly Automation Schedule
@@ -57,7 +66,8 @@ All automation runs on GitHub Actions with no manual intervention required:
 | 02:00 | `rfp_scrape.yml` | Harvests RFP/grant documents from pharma company websites |
 | 06:00 | `papers_pipeline.yml` | Fetches papers, evaluates them, updates Sheet + HTML viewer |
 | 09:00 | `weekly_digest.yml` | Reads top papers from Sheet, generates curated PDF digest |
-| 07:00 (1st of every 2nd month) | `cleanup.yml` | Removes old low-scoring papers to keep the database fresh |
+| 07:00 (1st of every 2nd month) | `cleanup.yml` | Removes low-scoring papers to keep the database focused |
+| 08:00 (1st of every month) | `researcher_pipeline.yml` | Rebuilds researcher applicability profiles (Researchers Sheet tab + dashboard tab) |
 
 The digest workflow is intentionally scheduled 3 hours after the pipeline to ensure it always reads the freshest data.
 
@@ -157,6 +167,11 @@ Note: Most academic APIs do not expose author emails publicly. Only a subset of 
 
 `papers_reader.html` is a fully self-contained single-file dashboard — no server or internet connection required. Open it directly in a browser.
 
+It has two top-level tabs:
+
+- **📄 Papers** — the paper-by-paper view described below.
+- **🧑‍🔬 Researchers** — researcher applicability profiles; see [Researcher Applicability Dataset](#researcher-applicability-dataset).
+
 ### Controls
 
 **Search** — Free-text search across paper titles, AI summaries, and commercial opportunity descriptions. Results update instantly.
@@ -191,15 +206,72 @@ Each card displays:
 
 ---
 
+## Researcher Applicability Dataset
+
+`researcher_pipeline.py` builds a second, researcher-centric dataset on top of
+the paper-level data — for identifying which HUJI researchers consistently
+produce applicable, commercially-relevant work.
+
+### Process
+
+1. Loads the current scored papers from the Sheet.
+2. Groups them by PI (`pi_full_name`, falling back to `pi`) and ranks
+   researchers by their single highest-scoring paper.
+3. Takes the **top 20** researchers (`TOP_N_RESEARCHERS`).
+4. For each one, queries PubMed by author name + HUJI affiliation for their
+   publications from the **last 3 years** (`YEARS_BACK`), capped at
+   `MAX_PAPERS_PER_RESEARCHER` (default 15, most recent first).
+5. Grades every paper with the exact same Gemini scoring method used by
+   `papers_pipeline.py` (`evaluate_paper()` — same five dimensions, same
+   1–50 scale). Papers already scored in the main dataset are reused as-is
+   instead of being re-graded, to save API calls and keep scores consistent.
+6. Computes the researcher's average score across their graded papers, and
+   asks Gemini for a 2–4 sentence description of their research focus and
+   the kind of applied/commercial work it tends to produce.
+7. Writes one profile per researcher — `pi`, `pi_full_name`, `pi_email`,
+   `avg_score`, `paper_count`, `description`, and the full list of graded
+   `papers` — to a separate **Researchers** Sheet tab and to
+   `researchers_data.json`, then regenerates `papers_reader.html` with the
+   Researchers tab populated.
+
+### Where it shows up
+
+- **Google Sheet** — a second tab named `Researchers` (created automatically
+  the first time the pipeline posts to it, via the `sheet_name` field the
+  Apps Script now supports).
+- **`papers_reader.html`** — the "🧑‍🔬 Researchers" tab: one card per
+  researcher with their average score badge, description, and an expandable
+  "Graded Publications ▾" list (title, date, score, link to each paper).
+- **`researchers_data.json`** — the raw JSON, same shape as the Sheet rows.
+
+Because this is a much heavier job than the weekly pipeline (a full
+publication-history fetch + re-scoring per researcher), it runs on its own
+monthly schedule (`researcher_pipeline.yml`) rather than as part of
+`papers_pipeline.yml`. It checkpoints after every researcher, so a killed or
+timed-out run still keeps whatever profiles it finished.
+
+Researcher grouping is a simple string match on `pi_full_name`/`pi` (the same
+approach already used elsewhere in this repo for PI trend analysis) — it does
+not do full author disambiguation, so researchers who publish under
+inconsistent name variants may be split across multiple entries.
+
+---
+
 ## Google Sheet Integration
 
 All paper data is synced to a shared Google Sheet after every pipeline run. This is the canonical data store — `papers_reader.html` and `papers_data.json` are generated *from* the Sheet.
 
-The Sheet columns are:
+The `Sheet1` tab columns are:
 
 `id` · `title` · `authors` · `journal` · `date` · `url` · `source` · `score` · `summary` · `opportunity` · `fields` · `added_date` · `score_breakdown` · `pi` · `pi_full_name` · `pi_email`
 
-The sync is performed via a Google Apps Script web app (`apps_script.js`). The script receives a full data payload, clears the sheet, and rewrites all rows. The deployment URL must be stored as the `APPS_SCRIPT_URL` GitHub secret.
+A second tab, `Researchers`, holds the researcher applicability profiles
+(see [Researcher Applicability Dataset](#researcher-applicability-dataset)),
+with columns:
+
+`pi` · `pi_full_name` · `pi_email` · `avg_score` · `paper_count` · `description` · `papers`
+
+The sync is performed via a Google Apps Script web app (`apps_script.js`). The script receives a full data payload (with an optional `sheet_name`, defaulting to `Sheet1`), clears that sheet (creating it first if it doesn't exist), and rewrites all rows. The deployment URL must be stored as the `APPS_SCRIPT_URL` GitHub secret.
 
 ---
 
@@ -253,19 +325,14 @@ Each entry in `latest_rfps.json` includes the portal name, document URL, posted 
 
 ## Retention & Cleanup
 
-### Pipeline Retention (90 days)
+Papers are kept indefinitely — there is no age-based expiry. The only thing
+that removes a paper is score:
 
-At the end of every pipeline run, papers older than **90 days** (by `added_date`) are removed before writing back to the Sheet. This prevents the Sheet from growing without bound.
+### Bimonthly Cleanup (score-based only)
 
-### Bimonthly Cleanup (selective)
-
-On the 1st of every second month, `cleanup.py` runs a more targeted removal:
-
-- Removes papers where: **age > 60 days AND score < 28**
-- Keeps all recent papers regardless of score
-- Keeps all high-scoring papers (≥ 28) regardless of age
-
-This means high-potential papers are retained as long-term references, while older low-scoring papers are pruned sooner.
+On the 1st of every second month, `cleanup.py` removes papers scoring below
+`LOW_SCORE_THRESHOLD` (default **25**, `score < 25` out of 50), regardless of
+how old they are. All papers scoring 25 or above are kept indefinitely.
 
 ---
 
@@ -299,6 +366,18 @@ secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, APPS_SCRIPT_URL
 outputs: papers_reader.html, papers_data.json, cleanup_run.log
 ```
 
+### `researcher_pipeline.yml`
+
+```yaml
+trigger: schedule (1st of every month, 08:00 UTC) + workflow_dispatch
+inputs:
+  top_n: 20 (default)
+  years_back: 3 (default)
+  max_papers_per_researcher: 15 (default)
+secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, APPS_SCRIPT_URL
+outputs: papers_reader.html, researchers_data.json, researcher_pipeline_run.log
+```
+
 ### `rfp_scrape.yml`
 
 ```yaml
@@ -314,14 +393,17 @@ outputs: latest_rfps.json, data/*.pdf
 | File | Description |
 |------|-------------|
 | `papers_pipeline.py` | Main pipeline: fetch, evaluate, enrich, sync, generate HTML |
+| `researcher_pipeline.py` | Monthly pipeline: builds researcher applicability profiles (Researchers Sheet tab + dashboard tab) |
 | `weekly_digest.py` | Curated PDF digest generator |
 | `scrape.py` | RFP/grant document harvester |
 | `sync_sheet.py` | One-time utility to push local JSON to the Sheet |
-| `cleanup.py` | Bimonthly selective retention cleanup |
-| `apps_script.js` | Google Apps Script for Sheet write access |
-| `papers_reader.html` | **Generated** — interactive viewer (open in browser) |
+| `cleanup.py` | Bimonthly score-based cleanup of low-scoring papers |
+| `apps_script.js` | Google Apps Script for Sheet write access (supports multiple named tabs) |
+| `papers_reader.html` | **Generated** — interactive viewer with Papers + Researchers tabs (open in browser) |
 | `papers_data.json` | **Generated** — raw JSON for all papers |
+| `researchers_data.json` | **Generated** — raw JSON for all researcher applicability profiles |
 | `pipeline_run.log` | **Generated** — log of the last pipeline run |
+| `researcher_pipeline_run.log` | **Generated** — log of the last researcher pipeline run |
 | `digest_run.log` | **Generated** — log of the last digest run |
 | `latest_rfps.json` | **Generated** — latest harvested RFP documents |
 | `digests/` | Folder of all historical digest PDFs |
@@ -338,9 +420,9 @@ Configure these in the GitHub repository under **Settings → Secrets and variab
 
 | Secret | Used by | Description |
 |--------|---------|-------------|
-| `GEMINI_API_KEY` | pipeline, digest, cleanup | Google AI API key for Gemini |
-| `GOOGLE_SHEET_ID` | pipeline, digest, cleanup | ID from the Google Sheet URL |
-| `APPS_SCRIPT_URL` | pipeline, cleanup | Deployed Apps Script web app URL |
+| `GEMINI_API_KEY` | pipeline, researcher pipeline, digest, cleanup | Google AI API key for Gemini |
+| `GOOGLE_SHEET_ID` | pipeline, researcher pipeline, digest, cleanup | ID from the Google Sheet URL |
+| `APPS_SCRIPT_URL` | pipeline, researcher pipeline, cleanup | Deployed Apps Script web app URL |
 | `GH_TOKEN` | rfp_scrape | GitHub token (for pushing scraped data) |
 
 ---
@@ -351,6 +433,8 @@ Configure these in the GitHub repository under **Settings → Secrets and variab
 
 Go to **Actions → Papers Pipeline → Run workflow** and choose `period: week` or `period: month`.
 
+For researcher profiles, go to **Actions → Researcher Pipeline → Run workflow** and optionally override `top_n`, `years_back`, `max_papers_per_researcher`.
+
 ### Run locally
 
 ```bash
@@ -359,6 +443,10 @@ pip install -r requirements.txt
 # Run the main pipeline
 GEMINI_API_KEY=... GOOGLE_SHEET_ID=... APPS_SCRIPT_URL=... \
   python papers_pipeline.py --period week
+
+# Build researcher applicability profiles
+GEMINI_API_KEY=... GOOGLE_SHEET_ID=... APPS_SCRIPT_URL=... \
+  python researcher_pipeline.py
 
 # Generate a digest PDF
 GEMINI_API_KEY=... GOOGLE_SHEET_ID=... \
@@ -369,7 +457,7 @@ GEMINI_API_KEY=... GOOGLE_SHEET_ID=... APPS_SCRIPT_URL=... \
   python cleanup.py
 ```
 
-The `pipeline_run.log` file written after each run contains a full trace of what was fetched, evaluated, and synced — check it first if anything looks wrong.
+The `pipeline_run.log` / `researcher_pipeline_run.log` files written after each run contain a full trace of what was fetched, evaluated, and synced — check them first if anything looks wrong.
 
 ---
 
@@ -411,3 +499,7 @@ The `pipeline_run.log` file written after each run contains a full trace of what
 4. Everything is written to the Google Sheet (shared with TTO team).
 5. An interactive HTML viewer and JSON file are generated and committed to the repo.
 6. Three hours later, the digest script reads the top papers and generates a curated PDF.
+7. Once a month, `researcher_pipeline.py` reads the Sheet, picks the top-scoring
+   researchers, fetches + grades each one's last 3 years of publications, and
+   writes profiles to a second `Researchers` Sheet tab, `researchers_data.json`,
+   and the "Researchers" tab of the same `papers_reader.html`.

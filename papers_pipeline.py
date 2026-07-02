@@ -29,14 +29,16 @@ GOOGLE_SHEET_ID  = os.environ["GOOGLE_SHEET_ID"]
 APPS_SCRIPT_URL  = os.environ["APPS_SCRIPT_URL"]   # deployed Apps Script web app URL
 OUTPUT_HTML      = Path("papers_reader.html")
 OUTPUT_JSON      = Path("papers_data.json")
+RESEARCHERS_JSON = Path("researchers_data.json")  # produced by researcher_pipeline.py
 MAX_RESULTS      = int(os.environ.get("MAX_RESULTS", "50"))    # per source
-KEEP_DAYS        = int(os.environ.get("KEEP_DAYS", "90"))      # keep all papers for this many days
 
 def _parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--period", choices=["week", "month"], default="week",
                    help="Fetch window: week=7 days, month=30 days")
-    return p.parse_args()
+    # parse_known_args so this module stays importable from other scripts
+    # (e.g. researcher_pipeline.py) that define their own unrelated CLI flags.
+    return p.parse_known_args()[0]
 
 ARGS     = _parse_args()
 DAYS_BACK = int(os.environ.get("DAYS_BACK", "7" if ARGS.period == "week" else "30"))
@@ -176,19 +178,6 @@ def save_to_sheet(papers):
                 raise
             print(f"  save_to_sheet attempt {attempt+1} failed ({e}), retrying...")
 
-# ── Retention ──────────────────────────────────────────────────────────────────
-
-def apply_retention(papers):
-    today = datetime.date.today()
-    kept = []
-    for p in papers:
-        try:
-            age = (today - datetime.date.fromisoformat(p.get("added_date", ""))).days
-        except Exception:
-            age = 0
-        if age <= KEEP_DAYS:
-            kept.append(p)
-    return kept
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
@@ -939,6 +928,26 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .branch-tab:hover{{color:var(--text)}}
   .branch-tab.active{{color:var(--accent);border-bottom-color:var(--accent)}}
 
+  /* ── Page Tabs (Papers / Researchers) ── */
+  .page-tabs{{display:flex;gap:8px;background:var(--header-bg);padding:0 24px;overflow-x:auto;flex-shrink:0}}
+  .page-tab{{padding:11px 20px;border:none;background:transparent;color:rgba(255,255,255,.65);font-size:.85rem;font-weight:700;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px;transition:all .18s;white-space:nowrap;letter-spacing:.01em}}
+  .page-tab:hover{{color:#fff}}
+  .page-tab.active{{color:#fff;border-bottom-color:#fff}}
+
+  /* ── Researcher Card ── */
+  .r-card{{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}}
+  .r-card-header{{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}}
+  .r-name{{font-size:1rem;font-weight:700;color:var(--text)}}
+  .r-meta{{font-size:.72rem;color:var(--muted)}}
+  .r-desc{{font-size:.8rem;color:#9aa5bc;line-height:1.6}}
+  .r-papers{{display:none;flex-direction:column;gap:8px;border-top:1px solid var(--border);padding-top:12px;margin-top:2px}}
+  .r-papers.open{{display:flex}}
+  .r-paper-row{{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:.76rem}}
+  .r-paper-title{{color:var(--text);flex:1}}
+  .r-paper-title a{{color:inherit;text-decoration:none}}
+  .r-paper-title a:hover{{text-decoration:underline;color:var(--accent2)}}
+  .r-paper-score{{font-weight:800;flex-shrink:0}}
+
   @media(max-width:600px){{
     .grid{{grid-template-columns:1fr;padding:12px 12px 32px}}
     .controls{{padding:10px 12px}}
@@ -957,6 +966,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </div>
   <div class="header-links">{header_links}<button class="header-link theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌙 Dark</button></div>
 </header>
+<div class="page-tabs">
+  <button class="page-tab active" data-view="papers">📄 Papers</button>
+  <button class="page-tab" data-view="researchers">🧑‍🔬 Researchers</button>
+</div>
+<div id="papers-view">
 <div class="branch-tabs">
   <button class="branch-tab active" data-branch="all">All Branches</button>
   <button class="branch-tab" data-branch="Healthcare">🏥 Healthcare</button>
@@ -1006,8 +1020,27 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </div>
 <div class="count" id="count"></div>
 <div class="grid" id="grid"></div>
+</div>
+<div id="researchers-view" style="display:none">
+  <div class="controls">
+    <div class="row search-row">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="r-search" placeholder="Search researchers, descriptions…"/>
+      </div>
+      <select class="sort-select" id="r-sort">
+        <option value="avg_score">Avg Applicability ↓</option>
+        <option value="paper_count">Paper Count ↓</option>
+        <option value="pi">Name A-Z</option>
+      </select>
+    </div>
+  </div>
+  <div class="count" id="r-count"></div>
+  <div class="grid" id="r-grid"></div>
+</div>
 <script>
 const papers = {papers_json};
+const researchers = {researchers_json};
 const BRANCHES = {branches_json};
 const DIGEST_URLS = {digest_urls_json};
 document.getElementById('updated').textContent = 'Updated {updated}';
@@ -1164,6 +1197,58 @@ document.getElementById('score-slider').addEventListener('input',function(){{
 }})();
 document.getElementById('sort').addEventListener('change',e=>{{sortBy=e.target.value;render();}});
 document.getElementById('search').addEventListener('input',e=>{{searchQ=e.target.value.trim();render();}});
+
+// ── Researchers tab ──
+let rSortBy='avg_score', rSearchQ='';
+function renderResearchers(){{
+  let list=researchers.slice();
+  if(rSearchQ){{const q=rSearchQ.toLowerCase();list=list.filter(r=>(r.pi_full_name||r.pi||'').toLowerCase().includes(q)||(r.description||'').toLowerCase().includes(q));}}
+  if(rSortBy==='pi')list.sort((a,b)=>(a.pi_full_name||a.pi||'').localeCompare(b.pi_full_name||b.pi||''));
+  else list.sort((a,b)=>(b[rSortBy]||0)-(a[rSortBy]||0));
+  const n=list.length;
+  document.getElementById('r-count').textContent=n+' researcher'+(n!==1?'s':'')+' shown';
+  const grid=document.getElementById('r-grid');
+  if(!list.length){{grid.innerHTML='<div class="empty">No researcher profiles yet.</div>';return;}}
+  grid.innerHTML=list.map(r=>{{
+    const name=r.pi_full_name||r.pi||'Unknown';
+    const rows=(r.papers||[]).map(p=>`<div class="r-paper-row">
+        <span class="r-paper-title"><a href="${{p.url}}" target="_blank">${{p.title}}</a>${{p.date?' ('+p.date+')':''}}</span>
+        <span class="r-paper-score ${{scoreClass(p.score)}}">${{p.score}}/50</span>
+      </div>`).join('');
+    return `<div class="r-card">
+      <div class="r-card-header">
+        <div>
+          <div class="r-name">👤 ${{name}}</div>
+          <div class="r-meta">${{r.paper_count||0}} graded paper${{(r.paper_count||0)!==1?'s':''}}${{r.pi_email?` · <a href="mailto:${{r.pi_email}}">${{r.pi_email}}</a>`:''}}</div>
+        </div>
+        <div class="score-badge ${{scoreClass(Math.round(r.avg_score||0))}}"><span class="score-num">${{(r.avg_score||0).toFixed(1)}}</span><span class="score-denom">avg /50</span></div>
+      </div>
+      ${{r.description?`<div class="r-desc">${{r.description}}</div>`:''}}
+      <div class="actions">
+        <button class="btn" onclick="toggleRPapers(this)">Graded Publications ▾</button>
+      </div>
+      <div class="r-papers">${{rows||'<div class="r-paper-row">No papers found.</div>'}}</div>
+    </div>`;
+  }}).join('');
+}}
+function toggleRPapers(btn){{
+  const card=btn.closest('.r-card');
+  const list=card.querySelector('.r-papers');
+  if(!list)return;
+  list.classList.toggle('open');
+  btn.classList.toggle('active');
+  btn.textContent=list.classList.contains('open')?'Graded Publications ▴':'Graded Publications ▾';
+}}
+document.getElementById('r-search').addEventListener('input',e=>{{rSearchQ=e.target.value.trim();renderResearchers();}});
+document.getElementById('r-sort').addEventListener('change',e=>{{rSortBy=e.target.value;renderResearchers();}});
+document.querySelectorAll('.page-tab').forEach(tab=>tab.addEventListener('click',()=>{{
+  document.querySelectorAll('.page-tab').forEach(t=>t.classList.remove('active'));
+  tab.classList.add('active');
+  const view=tab.dataset.view;
+  document.getElementById('papers-view').style.display=view==='papers'?'':'none';
+  document.getElementById('researchers-view').style.display=view==='researchers'?'':'none';
+}}));
+renderResearchers();
 (function(){{
   const btn=document.getElementById('themeToggle');
   const saved=localStorage.getItem('huji-theme');
@@ -1186,7 +1271,19 @@ def build_field_chips():
         for f in FIELD_TAGS
     )
 
-def generate_html(papers):
+def generate_html(papers, researchers=None):
+    if researchers is None:
+        # Weekly pipeline calls generate_html() without knowing about researcher
+        # profiles — carry forward whatever researcher_pipeline.py last produced
+        # instead of wiping the Researchers tab.
+        if RESEARCHERS_JSON.exists():
+            try:
+                researchers = json.loads(RESEARCHERS_JSON.read_text(encoding="utf-8"))
+            except Exception:
+                researchers = []
+        else:
+            researchers = []
+
     enriched = sorted([{
         "id":              p["id"],
         "title":           p.get("title", ""),
@@ -1259,13 +1356,15 @@ def generate_html(papers):
     OUTPUT_HTML.write_text(HTML_TEMPLATE.format(
         field_chips=build_field_chips(),
         papers_json=json.dumps(enriched, ensure_ascii=False),
+        researchers_json=json.dumps(researchers, ensure_ascii=False),
         branches_json=json.dumps(BRANCHES, ensure_ascii=False),
         digest_urls_json=json.dumps(digest_urls, ensure_ascii=False),
         updated=today_str(),
         header_links=header_links,
     ), encoding="utf-8")
     OUTPUT_JSON.write_text(json.dumps(enriched, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Generated {OUTPUT_HTML} and {OUTPUT_JSON} with {len(enriched)} papers.")
+    print(f"Generated {OUTPUT_HTML} and {OUTPUT_JSON} with {len(enriched)} papers "
+          f"and {len(researchers)} researcher profiles.")
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 
@@ -1348,9 +1447,11 @@ def main():
             enrich_pi_contact(p)
             time.sleep(0.3)
 
-    # Computed once up front so a checkpoint mid-loop can save real progress
-    # even if the job is killed (e.g. a CI timeout) before the loop finishes.
-    retained = apply_retention(existing)
+    # No age-based retention: all previously evaluated papers are kept
+    # indefinitely. `retained` is just a stable snapshot so a checkpoint
+    # mid-loop can save real progress even if the job is killed (e.g. a CI
+    # timeout) before the loop finishes.
+    retained = existing
 
     CHECKPOINT_EVERY = 15  # papers between incremental saves
 
@@ -1387,7 +1488,7 @@ def main():
         print("All evaluations failed — aborting to avoid overwriting sheet with empty data.")
         return False
 
-    print(f"\nRetention: kept {len(retained)}/{len(existing)} existing, added {len(evaluated)} new.")
+    print(f"\nKept all {len(retained)} existing papers, added {len(evaluated)} new.")
     checkpoint(evaluated, "final")
     print("Done.")
     return True
