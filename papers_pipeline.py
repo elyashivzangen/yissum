@@ -649,18 +649,20 @@ Return a JSON object (no markdown) with exactly these keys:
 - reason: 1-2 sentence explanation for the score on this specific dimension
 """
 
-# Tried in order for each call. gemma-3-27b-it was dropped: it 404s for this
-# project on every call (not transient), so it only added dead latency to
-# every fallback. The three Gemma variants below each carry their own
-# separate free-tier quota (~15 RPM / ~1500 RPD), so a transient 500/504 on
-# one usually still has headroom on the next. gemini-2.5-flash is kept only
-# as an absolute last resort — its free tier is far tighter (~5 RPM / ~20 RPD)
-# and it gets exhausted after a couple dozen papers in a single run.
+# Tried in order for each call. Both gemma-3-27b-it and gemma-4-4b-it were
+# dropped after confirming via live runs that they 404 for this project on
+# every single call (not transient) — pure dead latency in the chain. The
+# two Gemma models below each carry their own separate free-tier quota
+# (~15 RPM / ~1500 RPD), so a transient 500/504 on one usually still has
+# headroom on the next. gemini-2.5-flash was replaced with
+# gemini-3.1-flash-lite as the last resort: per the live rate-limit
+# dashboard, flash-lite gets ~15 RPM / ~500 RPD vs. 2.5-flash's ~5 RPM /
+# ~20 RPD — strictly better on both axes, so there's no reason to keep
+# 2.5-flash in the chain at all.
 EVAL_MODEL_CANDIDATES = [
     os.environ.get("GEMINI_MODEL", "gemma-4-31b-it"),
     "gemma-4-26b-a4b-it",
-    "gemma-4-4b-it",
-    "gemini-2.5-flash",
+    "gemini-3.1-flash-lite",
 ]
 
 _last_good_model_idx = 0   # remember which model worked last to skip known-bad ones sooner
