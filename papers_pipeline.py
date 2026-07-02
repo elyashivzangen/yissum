@@ -667,6 +667,8 @@ EVAL_MODEL_CANDIDATES = [
 ]
 
 _last_good_model_idx = 0   # remember which model worked last to skip known-bad ones sooner
+_dead_this_run = set()     # models that have failed 3x in a row this run — skip until process restarts
+_fail_streak = {}          # model_id -> consecutive fail count, resets on any success
 
 def _call_gemini(prompt):
     global _last_good_model_idx
@@ -675,12 +677,15 @@ def _call_gemini(prompt):
     for offset in range(n):
         idx = (_last_good_model_idx + offset) % n
         model_id = EVAL_MODEL_CANDIDATES[idx]
+        if model_id in _dead_this_run:
+            continue
         try:
             resp = client.models.generate_content(model=model_id, contents=prompt)
             text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
             text = re.sub(r"\s*```$", "", text)
             data = json.loads(text)
             _last_good_model_idx = idx
+            _fail_streak[model_id] = 0
             return data
         except Exception as e:
             last_err = e
@@ -688,12 +693,20 @@ def _call_gemini(prompt):
             print(f"    {model_id} failed ({'rate limit' if is_rate_limit else 'error'}): {e}")
             if is_rate_limit:
                 time.sleep(2)
+            _fail_streak[model_id] = _fail_streak.get(model_id, 0) + 1
+            if _fail_streak[model_id] >= 3:
+                _dead_this_run.add(model_id)
+                print(f"    {model_id} failed 3x in a row — skipping it for the rest of this run")
     if GROQ_API_KEY:
         try:
-            return _call_groq(prompt)
+            data = _call_groq(prompt)
+            print(f"    {GROQ_MODEL} (groq) succeeded")
+            return data
         except Exception as e:
             print(f"    {GROQ_MODEL} (groq) failed: {e}")
             last_err = e
+    if last_err is None:
+        last_err = RuntimeError("all Gemini models are marked dead this run and Groq is unavailable")
     raise last_err
 
 def _call_groq(prompt):
