@@ -77,7 +77,7 @@ BRANCHES = {
 SHEET_COLUMNS = [
     "id", "title", "authors", "journal", "date", "url", "source",
     "score", "summary", "opportunity", "fields", "added_date", "score_breakdown", "pi",
-    "pi_full_name", "pi_email",
+    "pi_full_name", "pi_email", "pi_affiliation",
 ]
 
 SCORE_PARAMS = [
@@ -161,6 +161,7 @@ def save_to_sheet(papers):
             p.get("pi", ""),
             p.get("pi_full_name", ""),
             p.get("pi_email", ""),
+            p.get("pi_affiliation", ""),
         ])
     backoffs = [3, 8, 15]
     for attempt, delay in enumerate([0] + backoffs):
@@ -450,6 +451,27 @@ def enrich_pi_contact(paper):
 
 # ── Fetchers ───────────────────────────────────────────────────────────────────
 
+_PUBMED_MONTHS = {
+    "jan": "01", "feb": "02", "mar": "03", "apr": "04", "may": "05", "jun": "06",
+    "jul": "07", "aug": "08", "sep": "09", "oct": "10", "nov": "11", "dec": "12",
+}
+
+def _pubmed_pub_date(article):
+    """Build the most precise ISO date available from a PubmedArticle's <PubDate>."""
+    year = article.findtext(".//PubDate/Year", "")
+    month = article.findtext(".//PubDate/Month", "")
+    day = article.findtext(".//PubDate/Day", "")
+    if not year:
+        return article.findtext(".//PubDate/MedlineDate", "")[:4]
+    if month:
+        month = month.strip().lower()
+        month = _PUBMED_MONTHS.get(month[:3], month if month.isdigit() else "")
+    if year and month and day:
+        return f"{year}-{month.zfill(2)}-{day.zfill(2)}"
+    if year and month:
+        return f"{year}-{month.zfill(2)}"
+    return year
+
 def fetch_pubmed(max_results=MAX_RESULTS):
     base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
     since = days_ago(DAYS_BACK)
@@ -478,8 +500,7 @@ def fetch_pubmed(max_results=MAX_RESULTS):
         uid = article.findtext(".//PMID", "")
         title = article.findtext(".//ArticleTitle", "")
         journal = article.findtext(".//Journal/Title", "") or article.findtext(".//MedlineTA", "")
-        pub_date = (article.findtext(".//PubDate/Year") or
-                    article.findtext(".//PubDate/MedlineDate", "")[:4])
+        pub_date = _pubmed_pub_date(article)
 
         # Collect per-author affiliations for HUJI validation
         author_affs = []
@@ -498,12 +519,15 @@ def fetch_pubmed(max_results=MAX_RESULTS):
             continue
 
         pi = ""
+        pi_affiliation = ""
         for name, affs in reversed(list(zip(all_authors, author_affs))):
             if any(h.lower() in af.lower() for h in HUJI_AFFILIATIONS for af in affs):
                 pi = name
+                pi_affiliation = "; ".join(a for a in affs if a)
                 break
         if not pi and all_authors:
             pi = all_authors[-1]
+            pi_affiliation = "; ".join(a for a in author_affs[-1] if a) if author_affs else ""
 
         papers.append({
             "id":       f"pubmed_{uid}",
@@ -515,6 +539,7 @@ def fetch_pubmed(max_results=MAX_RESULTS):
             "url":      f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
             "source":   "PubMed",
             "pi":       pi,
+            "pi_affiliation": pi_affiliation,
         })
     return papers
 
@@ -550,12 +575,15 @@ def fetch_europepmc(max_results=MAX_RESULTS):
 
         # Find last HUJI-affiliated author as PI
         pi = ""
+        pi_affiliation = ""
         for a, affs in reversed(list(zip(all_author_objs, author_affs))):
             if any(h.lower() in af.lower() for h in HUJI_AFFILIATIONS for af in affs):
                 pi = f"{a.get('firstName','')} {a.get('lastName','')}".strip()
+                pi_affiliation = "; ".join(x for x in affs if x)
                 break
         if not pi and all_authors:
             pi = all_authors[-1]
+            pi_affiliation = "; ".join(x for x in author_affs[-1] if x) if author_affs else ""
         papers.append({
             "id":       f"epmc_{item.get('id','')}",
             "title":    item.get("title", ""),
@@ -566,6 +594,7 @@ def fetch_europepmc(max_results=MAX_RESULTS):
             "url":      f"https://europepmc.org/article/{item.get('source','')}/{item.get('id','')}",
             "source":   "Europe PMC",
             "pi":       pi,
+            "pi_affiliation": pi_affiliation,
         })
     return papers
 
@@ -597,12 +626,15 @@ def fetch_semantic_scholar(max_results=MAX_RESULTS):
 
         # Find last HUJI-affiliated author as PI
         pi = ""
+        pi_affiliation = ""
         for a, affs in reversed(list(zip(all_author_objs, author_affs))):
             if any(h.lower() in (aff or "").lower() for h in HUJI_AFFILIATIONS for aff in affs):
                 pi = a.get("name", "")
+                pi_affiliation = "; ".join(aff for aff in affs if aff)
                 break
         if not pi and all_authors:
             pi = all_authors[-1]
+            pi_affiliation = "; ".join(aff for aff in author_affs[-1] if aff) if author_affs else ""
         papers.append({
             "id":       f"ss_{pid}",
             "title":    item.get("title", ""),
@@ -613,6 +645,7 @@ def fetch_semantic_scholar(max_results=MAX_RESULTS):
             "url":      url,
             "source":   "Semantic Scholar",
             "pi":       pi,
+            "pi_affiliation": pi_affiliation,
         })
     return papers
 
@@ -926,6 +959,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .pi-email{{font-size:.75rem;padding:2px 0}}
   .pi-email a{{color:var(--accent3);text-decoration:none}}
   .pi-email a:hover{{text-decoration:underline}}
+  .pi-affiliation{{font-size:.72rem;color:var(--muted);padding:0 2px}}
 
   .actions{{display:flex;gap:7px;margin-top:2px}}
   .btn{{
@@ -1163,7 +1197,7 @@ function render(){{
     const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
     return `<div class="card">
       <div class="card-header"><div class="title">${{p.title}}</div><div class="score-badge ${{scoreClass(p.score)}}"><span class="score-num">${{p.score}}</span><span class="score-denom">/50</span></div></div>
-      ${{(p.pi||p.pi_full_name)?`<div class="pi"><span class="pi-label">Main Researcher</span><span class="pi-name">👤 ${{p.pi_full_name||p.pi}}</span>${{p.pi_email?`<button class="btn pi-email-btn" onclick="toggleEmail(this)">Email ▾</button>`:''}} </div>${{p.pi_email?`<div class="pi-email" style="display:none"><a href="mailto:${{p.pi_email}}">${{p.pi_email}}</a></div>`:''}}`:''}}
+      ${{(p.pi||p.pi_full_name)?`<div class="pi"><span class="pi-label">Main Researcher</span><span class="pi-name">👤 ${{p.pi_full_name||p.pi}}</span>${{p.pi_email?`<button class="btn pi-email-btn" onclick="toggleEmail(this)">Email ▾</button>`:''}} </div>${{p.pi_affiliation?`<div class="pi-affiliation">${{p.pi_affiliation}}</div>`:''}}${{p.pi_email?`<div class="pi-email" style="display:none"><a href="mailto:${{p.pi_email}}">${{p.pi_email}}</a></div>`:''}}`:''}}
       <div class="meta-row"><div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>${{p.source?`<span class="source-badge">${{p.source}}</span>`:''}}</div>
       ${{p.summary?`<div class="summary">${{p.summary}}</div>`:''}}
       ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
@@ -1338,6 +1372,7 @@ def generate_html(papers, researchers=None):
         "pi":              p.get("pi", ""),
         "pi_full_name":    p.get("pi_full_name", ""),
         "pi_email":        p.get("pi_email", ""),
+        "pi_affiliation":  p.get("pi_affiliation", ""),
         "added_date":      p.get("added_date", ""),
     } for p in papers], key=lambda x: x["score"], reverse=True)
 
