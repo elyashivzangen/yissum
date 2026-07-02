@@ -158,13 +158,23 @@ def save_to_sheet(papers):
             p.get("pi_full_name", ""),
             p.get("pi_email", ""),
         ])
-    r = requests.post(
-        APPS_SCRIPT_URL,
-        json={"action": "replace_all", "rows": rows},
-        timeout=120,
-    )
-    r.raise_for_status()
-    print(f"Sheet updated: {r.text[:200]}")
+    backoffs = [3, 8, 15]
+    for attempt, delay in enumerate([0] + backoffs):
+        if delay:
+            time.sleep(delay)
+        try:
+            r = requests.post(
+                APPS_SCRIPT_URL,
+                json={"action": "replace_all", "rows": rows},
+                timeout=120,
+            )
+            r.raise_for_status()
+            print(f"Sheet updated: {r.text[:200]}")
+            return
+        except requests.exceptions.RequestException as e:
+            if attempt == len(backoffs):
+                raise
+            print(f"  save_to_sheet attempt {attempt+1} failed ({e}), retrying...")
 
 # ── Retention ──────────────────────────────────────────────────────────────────
 
@@ -1364,7 +1374,10 @@ def main():
         else:
             print(f"    evaluation failed — skipped")
         if evaluated and len(evaluated) % CHECKPOINT_EVERY == 0:
-            checkpoint(evaluated, f"{i+1}/{len(deduped)}")
+            try:
+                checkpoint(evaluated, f"{i+1}/{len(deduped)}")
+            except Exception as e:
+                print(f"  [checkpoint failed, continuing]: {e}")
         time.sleep(0.5)
 
     # If there were papers to evaluate but ALL failed (e.g. quota exhausted),

@@ -70,7 +70,9 @@ jobs:
           MAX_RESULTS: ${{ env.MAX_RESULTS }}
           KEEP_DAYS: ${{ env.KEEP_DAYS }}
           DAYS_BACK: ${{ env.DAYS_BACK }}
-        run: python -u papers_pipeline.py --period "$PIPELINE_PERIOD" 2>&1 | tee pipeline_run.log
+        run: |
+          set -o pipefail
+          python -u papers_pipeline.py --period "$PIPELINE_PERIOD" 2>&1 | tee pipeline_run.log
 
       - name: Commit generated HTML
         if: always()
