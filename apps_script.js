@@ -21,14 +21,17 @@ const SHEET_NAME = 'Sheet1';
 
 /**
  * Receives POST requests from the Python pipeline.
- * Payload: { action: "replace_all", rows: [[col1, col2, ...], ...] }
+ * Payload: { action: "replace_all", rows: [[col1, col2, ...], ...], sheet_name?: "Sheet1" }
  * The first row in `rows` is always the header.
+ * `sheet_name` is optional (defaults to SHEET_NAME) — used by researcher_pipeline.py
+ * to write to a separate "Researchers" tab, created automatically if missing.
  */
 function doPost(e) {
   try {
     const ss = SpreadsheetApp.getActiveSpreadsheet();
-    const sheet = ss.getSheetByName(SHEET_NAME) || ss.getActiveSheet();
     const payload = JSON.parse(e.postData.contents);
+    const sheetName = payload.sheet_name || SHEET_NAME;
+    const sheet = ss.getSheetByName(sheetName) || ss.insertSheet(sheetName);
 
     if (payload.action === 'replace_all') {
       sheet.clearContents();

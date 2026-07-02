@@ -1,0 +1,349 @@
+#!/usr/bin/env python3
+"""
+HUJI Researcher Applicability Pipeline
+- Selects the top researchers from the existing scored-papers dataset
+- Fetches each researcher's PubMed publication history for the last N years
+- Grades every paper with the same scoring method as papers_pipeline.py
+- Writes a per-researcher profile (avg score, description, graded papers) to
+  a separate "Researchers" Google Sheet tab and researchers_data.json
+- Regenerates papers_reader.html with the Researchers tab populated
+"""
+
+import argparse
+import csv
+import io
+import json
+import os
+import time
+import datetime
+import xml.etree.ElementTree as ET
+import requests
+
+import papers_pipeline as pp
+
+# ── Config ─────────────────────────────────────────────────────────────────────
+GOOGLE_SHEET_ID  = os.environ["GOOGLE_SHEET_ID"]
+APPS_SCRIPT_URL  = os.environ["APPS_SCRIPT_URL"]
+RESEARCHERS_SHEET_NAME = "Researchers"
+OUTPUT_JSON      = pp.RESEARCHERS_JSON
+
+TOP_N_RESEARCHERS         = int(os.environ.get("TOP_N_RESEARCHERS", "20"))
+YEARS_BACK                = int(os.environ.get("YEARS_BACK", "3"))
+MAX_PAPERS_PER_RESEARCHER = int(os.environ.get("MAX_PAPERS_PER_RESEARCHER", "15"))
+
+
+def _parse_args():
+    p = argparse.ArgumentParser()
+    p.add_argument("--top-n", type=int, default=None)
+    return p.parse_known_args()[0]
+
+
+ARGS = _parse_args()
+if ARGS.top_n:
+    TOP_N_RESEARCHERS = ARGS.top_n
+
+RESEARCHER_PROMPT = """You are a life-science and deep-tech investment analyst.
+Below are titles and summaries of recent papers by one Hebrew University of
+Jerusalem researcher.
+
+{paper_list}
+
+Return a JSON object (no markdown) with exactly this key:
+- description: 2-4 sentence description of this researcher's focus area(s)
+  and the kind of applied/commercial work their research tends to produce.
+"""
+
+
+# ── Sheet I/O for the Researchers tab ───────────────────────────────────────────
+
+def load_researchers_from_sheet():
+    """Read existing researcher profiles from the 'Researchers' sheet tab, if any."""
+    url = (
+        f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}"
+        f"/gviz/tq?tqx=out:csv&sheet={RESEARCHERS_SHEET_NAME}"
+    )
+    try:
+        r = requests.get(url, timeout=30)
+        r.raise_for_status()
+        reader = csv.DictReader(io.StringIO(r.text))
+        researchers = []
+        for row in reader:
+            r_ = {k: pp.fix_encoding(v) for k, v in row.items()}
+            try:
+                r_["avg_score"] = float(r_.get("avg_score", 0))
+            except Exception:
+                r_["avg_score"] = 0.0
+            try:
+                r_["paper_count"] = int(r_.get("paper_count", 0))
+            except Exception:
+                r_["paper_count"] = 0
+            papers_raw = r_.get("papers", "")
+            if isinstance(papers_raw, str) and papers_raw.strip():
+                try:
+                    r_["papers"] = json.loads(papers_raw)
+                except Exception:
+                    r_["papers"] = []
+            else:
+                r_["papers"] = []
+            if r_.get("pi"):
+                researchers.append(r_)
+        return researchers
+    except Exception as e:
+        print(f"  Could not read Researchers sheet (first run?): {e}")
+        return []
+
+
+def save_researchers_to_sheet(researchers):
+    columns = ["pi", "pi_full_name", "pi_email", "avg_score", "paper_count",
+               "description", "papers"]
+    rows = [columns]
+    for r in researchers:
+        rows.append([
+            r.get("pi", ""),
+            r.get("pi_full_name", ""),
+            r.get("pi_email", ""),
+            r.get("avg_score", 0),
+            r.get("paper_count", 0),
+            r.get("description", ""),
+            json.dumps(r.get("papers", []), ensure_ascii=False),
+        ])
+    backoffs = [3, 8, 15]
+    for attempt, delay in enumerate([0] + backoffs):
+        if delay:
+            time.sleep(delay)
+        try:
+            resp = requests.post(
+                APPS_SCRIPT_URL,
+                json={"action": "replace_all", "rows": rows, "sheet_name": RESEARCHERS_SHEET_NAME},
+                timeout=120,
+            )
+            resp.raise_for_status()
+            print(f"Researchers sheet updated: {resp.text[:200]}")
+            return
+        except requests.exceptions.RequestException as e:
+            if attempt == len(backoffs):
+                raise
+            print(f"  save_researchers_to_sheet attempt {attempt+1} failed ({e}), retrying...")
+
+
+# ── Researcher selection ─────────────────────────────────────────────────────────
+
+def canonical_pi_key(paper):
+    name = (paper.get("pi_full_name") or paper.get("pi") or "").strip()
+    return name
+
+
+def select_top_researchers(papers, top_n):
+    """Group papers by PI, rank by each PI's single highest-scoring paper."""
+    best_score = {}
+    display_name = {}
+    email = {}
+    for p in papers:
+        key = canonical_pi_key(p)
+        if not key:
+            continue
+        score = p.get("score", 0)
+        if key not in best_score or score > best_score[key]:
+            best_score[key] = score
+        if p.get("pi_full_name") and not display_name.get(key):
+            display_name[key] = p["pi_full_name"]
+        if p.get("pi_email") and not email.get(key):
+            email[key] = p["pi_email"]
+
+    ranked = sorted(best_score.items(), key=lambda kv: kv[1], reverse=True)
+    return [
+        {"pi": key, "pi_full_name": display_name.get(key, key), "pi_email": email.get(key, "")}
+        for key, _score in ranked[:top_n]
+    ]
+
+
+# ── PubMed author-history fetch ───────────────────────────────────────────────────
+
+def fetch_pubmed_for_author(pi_name, years_back=YEARS_BACK, max_results=50):
+    """Fetch this author's HUJI-affiliated papers from the last `years_back` years.
+
+    Includes AbstractText (unlike papers_pipeline.fetch_pubmed, which doesn't need
+    it for the weekly feed) since researcher grading needs real abstracts.
+    """
+    base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+    since = (datetime.date.today() - datetime.timedelta(days=365 * years_back)).isoformat()
+    today = datetime.date.today().isoformat()
+    query = (
+        f'"{pi_name}"[Author] '
+        'AND ("Hebrew University"[Affiliation] OR "Hadassah"[Affiliation]) '
+        f'AND ("{since}"[PDAT] : "{today}"[PDAT])'
+    )
+    r = requests.get(f"{base}/esearch.fcgi", params={
+        "db": "pubmed", "term": query,
+        "retmax": max_results, "retmode": "json",
+    }, timeout=20)
+    r.raise_for_status()
+    ids = r.json().get("esearchresult", {}).get("idlist", [])
+    if not ids:
+        return []
+
+    r2 = requests.get(f"{base}/efetch.fcgi", params={
+        "db": "pubmed", "id": ",".join(ids), "rettype": "xml", "retmode": "xml",
+    }, timeout=30)
+    r2.raise_for_status()
+    root = ET.fromstring(r2.text)
+
+    papers = []
+    for article in root.findall(".//PubmedArticle"):
+        uid = article.findtext(".//PMID", "")
+        title = article.findtext(".//ArticleTitle", "")
+        journal = article.findtext(".//Journal/Title", "") or article.findtext(".//MedlineTA", "")
+        pub_date = (article.findtext(".//PubDate/Year") or
+                    article.findtext(".//PubDate/MedlineDate", "")[:4])
+        abstract = " ".join(
+            (el.text or "") for el in article.findall(".//Abstract/AbstractText")
+        ).strip()
+
+        author_affs = []
+        all_authors = []
+        for a in article.findall(".//AuthorList/Author"):
+            last = a.findtext("LastName", "")
+            fore = a.findtext("ForeName", "") or a.findtext("Initials", "")
+            name = f"{fore} {last}".strip() if fore else last
+            if name:
+                all_authors.append(name)
+            affs = [el.text or "" for el in a.findall(".//AffiliationInfo/Affiliation")]
+            author_affs.append(affs)
+
+        if not pp.is_huji_paper(author_affs):
+            continue
+
+        papers.append({
+            "id":       f"pubmed_{uid}",
+            "title":    title,
+            "abstract": abstract,
+            "authors":  all_authors[:3],
+            "journal":  journal,
+            "date":     pub_date,
+            "url":      f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
+            "source":   "PubMed",
+        })
+    return papers
+
+
+# ── Researcher description ────────────────────────────────────────────────────────
+
+def generate_researcher_description(graded_papers):
+    entries = []
+    for p in graded_papers[:10]:
+        entries.append(f"- {p.get('title', '')}: {p.get('summary', '')}")
+    paper_list = "\n".join(entries) or "(no summaries available)"
+    try:
+        data = pp._call_gemini(RESEARCHER_PROMPT.format(paper_list=paper_list))
+        return pp.fix_encoding(data.get("description", ""))
+    except Exception as e:
+        print(f"  Gemini error (researcher description): {e}")
+        return ""
+
+
+# ── Main ───────────────────────────────────────────────────────────────────────
+
+def build_researcher_profile(candidate, known_papers_by_id):
+    pi_name = candidate["pi"]
+    print(f"Fetching last {YEARS_BACK} years of publications for {pi_name}...")
+    try:
+        history = fetch_pubmed_for_author(pi_name)
+    except Exception as e:
+        print(f"  fetch error for {pi_name}: {e}")
+        return None
+
+    history = pp.dedup_by_title(history)
+    history.sort(key=lambda p: p.get("date", ""), reverse=True)
+    history = history[:MAX_PAPERS_PER_RESEARCHER]
+
+    graded = []
+    for paper in history:
+        existing = known_papers_by_id.get(paper["id"])
+        if existing and existing.get("score_breakdown"):
+            # Already graded by the main pipeline — reuse rather than re-spend Gemini calls.
+            graded.append({
+                "id":              paper["id"],
+                "title":           paper["title"],
+                "date":            paper.get("date", ""),
+                "url":             paper.get("url", ""),
+                "score":           existing.get("score", 0),
+                "summary":         existing.get("summary", ""),
+                "opportunity":     existing.get("opportunity", ""),
+                "fields":          existing.get("fields", []),
+                "score_breakdown": existing.get("score_breakdown", {}),
+            })
+            continue
+
+        print(f"    grading: {paper['title'][:70]}")
+        result = pp.evaluate_paper(paper)
+        if not result:
+            continue
+        print(f"      score={result['score']}")
+        graded.append({
+            "id":              paper["id"],
+            "title":           paper["title"],
+            "date":            paper.get("date", ""),
+            "url":             paper.get("url", ""),
+            "score":           result["score"],
+            "summary":         result["summary"],
+            "opportunity":     result["opportunity"],
+            "fields":          result["fields"],
+            "score_breakdown": result["score_breakdown"],
+        })
+        time.sleep(0.4)
+
+    if not graded:
+        print(f"  No gradable papers found for {pi_name} in the last {YEARS_BACK} years.")
+        return None
+
+    avg_score = round(sum(p["score"] for p in graded) / len(graded), 1)
+    description = generate_researcher_description(graded)
+
+    return {
+        "pi":           pi_name,
+        "pi_full_name": candidate.get("pi_full_name", pi_name),
+        "pi_email":     candidate.get("pi_email", ""),
+        "avg_score":    avg_score,
+        "paper_count":  len(graded),
+        "description":  description,
+        "papers":       graded,
+    }
+
+
+def main():
+    print("Loading existing papers from Google Sheet...")
+    try:
+        papers = pp.load_from_sheet()
+        print(f"  {len(papers)} papers loaded.")
+    except Exception as e:
+        print(f"  Could not read sheet: {e}")
+        return
+
+    known_papers_by_id = {p["id"]: p for p in papers}
+
+    candidates = select_top_researchers(papers, TOP_N_RESEARCHERS)
+    print(f"\nSelected {len(candidates)} researchers to profile.")
+
+    profiles = []
+
+    def checkpoint(label):
+        print(f"  [checkpoint: {label}] writing {len(profiles)} researcher profile(s)...")
+        OUTPUT_JSON.write_text(json.dumps(profiles, ensure_ascii=False, indent=2), encoding="utf-8")
+        try:
+            save_researchers_to_sheet(profiles)
+        except Exception as e:
+            print(f"  checkpoint sheet-save failed (will retry at next checkpoint): {e}")
+        pp.generate_html(papers, researchers=profiles)
+
+    for i, candidate in enumerate(candidates):
+        print(f"\n[{i+1}/{len(candidates)}] {candidate['pi']}")
+        profile = build_researcher_profile(candidate, known_papers_by_id)
+        if profile:
+            profiles.append(profile)
+        checkpoint(f"{i+1}/{len(candidates)}")
+
+    print(f"\nDone. {len(profiles)} researcher profiles written.")
+
+
+if __name__ == "__main__":
+    main()

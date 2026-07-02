@@ -1,0 +1,64 @@
+name: Researcher Pipeline
+
+on:
+  schedule:
+    - cron: '0 8 1 * *'   # 1st of each month at 08:00 UTC (after the monthly digest/cleanup jobs)
+  workflow_dispatch:
+    inputs:
+      top_n:
+        description: 'Number of top researchers to profile (ranked by their best paper score).'
+        required: false
+        default: '20'
+        type: string
+      years_back:
+        description: 'How many years of publication history to fetch per researcher.'
+        required: false
+        default: '3'
+        type: string
+      max_papers_per_researcher:
+        description: 'Cap on graded papers per researcher (bounds Gemini call volume/runtime).'
+        required: false
+        default: '15'
+        type: string
+
+concurrency:
+  group: researcher-pipeline
+  cancel-in-progress: false   # let an in-flight run finish rather than corrupt a half-written sheet
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180   # checkpointing means most progress still saves even if this trips
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run researcher pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          TOP_N_RESEARCHERS: ${{ github.event.inputs.top_n || '20' }}
+          YEARS_BACK: ${{ github.event.inputs.years_back || '3' }}
+          MAX_PAPERS_PER_RESEARCHER: ${{ github.event.inputs.max_papers_per_researcher || '15' }}
+        run: |
+          set -o pipefail
+          python -u researcher_pipeline.py 2>&1 | tee researcher_pipeline_run.log
+
+      - name: Commit generated files
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add papers_reader.html researchers_data.json researcher_pipeline_run.log || true
+          git diff --cached --quiet || git commit -m "chore: update researcher profiles [$(date -u +%Y-%m-%d)]"
+          git push
