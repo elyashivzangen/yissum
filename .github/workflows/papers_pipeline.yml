@@ -21,6 +21,11 @@ on:
         required: false
         default: '300'
         type: string
+      backfill_metadata:
+        description: 'One-off: refresh pi_affiliation/date precision for existing papers only (skips fetching new papers and re-evaluating scores)'
+        required: false
+        default: false
+        type: boolean
 
 concurrency:
   group: papers-pipeline
@@ -54,6 +59,7 @@ jobs:
             echo "DAYS_BACK=${{ github.event.inputs.days_back || '90' }}" >> "$GITHUB_ENV"
             echo "MAX_RESULTS=${{ github.event.inputs.max_results || '300' }}" >> "$GITHUB_ENV"
           fi
+          echo "BACKFILL_METADATA=${{ github.event.inputs.backfill_metadata || 'false' }}" >> "$GITHUB_ENV"
 
       - name: Run pipeline
         env:
@@ -63,9 +69,12 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           MAX_RESULTS: ${{ env.MAX_RESULTS }}
           DAYS_BACK: ${{ env.DAYS_BACK }}
+          BACKFILL_METADATA: ${{ env.BACKFILL_METADATA }}
         run: |
           set -o pipefail
-          python -u papers_pipeline.py --period "$PIPELINE_PERIOD" 2>&1 | tee pipeline_run.log
+          EXTRA_ARGS=""
+          if [ "$BACKFILL_METADATA" = "true" ]; then EXTRA_ARGS="--backfill-metadata"; fi
+          python -u papers_pipeline.py --period "$PIPELINE_PERIOD" $EXTRA_ARGS 2>&1 | tee pipeline_run.log
 
       - name: Commit generated HTML
         if: always()
