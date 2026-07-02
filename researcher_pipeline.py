@@ -159,6 +159,20 @@ def select_top_researchers(papers, top_n):
 
 # ── PubMed author-history fetch ───────────────────────────────────────────────────
 
+def _pubmed_author_search_name(pi_name):
+    """Convert a "First Last" display name into PubMed's expected [Author]
+    search format: "Lastname Initials" (e.g. "Tamar Harel" -> "Harel T").
+    PubMed's [Author] field does not match on "First Last" order at all —
+    querying with the display name as-is silently returns zero results.
+    """
+    parts = pi_name.strip().split()
+    if len(parts) < 2:
+        return pi_name
+    last = parts[-1]
+    initials = "".join(p[0] for p in parts[:-1] if p)
+    return f"{last} {initials}"
+
+
 def fetch_pubmed_for_author(pi_name, years_back=YEARS_BACK, max_results=50):
     """Fetch this author's HUJI-affiliated papers from the last `years_back` years.
 
@@ -168,8 +182,9 @@ def fetch_pubmed_for_author(pi_name, years_back=YEARS_BACK, max_results=50):
     base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
     since = (datetime.date.today() - datetime.timedelta(days=365 * years_back)).isoformat()
     today = datetime.date.today().isoformat()
+    author_term = _pubmed_author_search_name(pi_name)
     query = (
-        f'"{pi_name}"[Author] '
+        f'"{author_term}"[Author] '
         'AND ("Hebrew University"[Affiliation] OR "Hadassah"[Affiliation]) '
         f'AND ("{since}"[PDAT] : "{today}"[PDAT])'
     )
