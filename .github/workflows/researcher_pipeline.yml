@@ -59,6 +59,8 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add papers_reader.html researchers_data.json researcher_pipeline_run.log || true
+          git fetch origin main
+          git reset --soft origin/main
+          git add papers_reader.html papers_data.json researchers_data.json researcher_pipeline_run.log || true
           git diff --cached --quiet || git commit -m "chore: update researcher profiles [$(date -u +%Y-%m-%d)]"
-          git push
+          git push origin HEAD:main

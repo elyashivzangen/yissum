@@ -19,17 +19,33 @@
 
 const SHEET_NAME = 'Sheet1';
 
+// Bumped whenever doPost's request/response contract changes. Callers that
+// depend on newer behavior (e.g. sheet_name routing) MUST check this before
+// sending a payload that would be destructive under the OLD contract — an
+// undeployed update here previously caused a "sheet_name" payload meant for
+// a different tab to silently land in and overwrite Sheet1, because older
+// deployments ignore unknown fields and always target Sheet1.
+const SCRIPT_VERSION = 2;
+
 /**
  * Receives POST requests from the Python pipeline.
  * Payload: { action: "replace_all", rows: [[col1, col2, ...], ...], sheet_name?: "Sheet1" }
+ *       or { action: "ping" } — safe no-op version/health check, never writes.
  * The first row in `rows` is always the header.
  * `sheet_name` is optional (defaults to SHEET_NAME) — used by researcher_pipeline.py
  * to write to a separate "Researchers" tab, created automatically if missing.
  */
 function doPost(e) {
   try {
-    const ss = SpreadsheetApp.getActiveSpreadsheet();
     const payload = JSON.parse(e.postData.contents);
+
+    if (payload.action === 'ping') {
+      return ContentService
+        .createTextOutput(JSON.stringify({ status: 'ok', version: SCRIPT_VERSION }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
     const sheetName = payload.sheet_name || SHEET_NAME;
     const sheet = ss.getSheetByName(sheetName) || ss.insertSheet(sheetName);
 
@@ -44,7 +60,7 @@ function doPost(e) {
     }
 
     return ContentService
-      .createTextOutput(JSON.stringify({ status: 'ok', rows: payload.rows ? payload.rows.length : 0 }))
+      .createTextOutput(JSON.stringify({ status: 'ok', version: SCRIPT_VERSION, sheet_name: sheetName, rows: payload.rows ? payload.rows.length : 0 }))
       .setMimeType(ContentService.MimeType.JSON);
 
   } catch (err) {

@@ -27,6 +27,12 @@ APPS_SCRIPT_URL  = os.environ["APPS_SCRIPT_URL"]
 RESEARCHERS_SHEET_NAME = "Researchers"
 OUTPUT_JSON      = pp.RESEARCHERS_JSON
 
+# apps_script.js must be redeployed to a version that understands sheet_name
+# routing before we're allowed to post anything — older deployments silently
+# ignore sheet_name and always overwrite Sheet1 (the main papers tab) instead
+# of the intended "Researchers" tab. See check_apps_script_version().
+REQUIRED_SCRIPT_VERSION = 2
+
 TOP_N_RESEARCHERS         = int(os.environ.get("TOP_N_RESEARCHERS", "20"))
 YEARS_BACK                = int(os.environ.get("YEARS_BACK", "3"))
 MAX_PAPERS_PER_RESEARCHER = int(os.environ.get("MAX_PAPERS_PER_RESEARCHER", "15"))
@@ -55,6 +61,34 @@ Return a JSON object (no markdown) with exactly this key:
 
 
 # ── Sheet I/O for the Researchers tab ───────────────────────────────────────────
+
+def check_apps_script_version():
+    """Verify the deployed apps_script.js supports sheet_name routing.
+
+    A "ping" action is a safe no-op on every version of the script (old
+    deployments fall through their replace_all check and never touch any
+    sheet), so this is always safe to call. Older deployments respond
+    without a "version" field, or don't understand "ping" at all — in
+    either case we must refuse to write, since a sheet_name payload would
+    otherwise silently overwrite Sheet1 instead of the intended tab.
+    """
+    try:
+        resp = requests.post(APPS_SCRIPT_URL, json={"action": "ping"}, timeout=30)
+        resp.raise_for_status()
+        version = resp.json().get("version", 0)
+    except Exception as e:
+        raise RuntimeError(f"Could not reach APPS_SCRIPT_URL to check its version: {e}")
+
+    if version < REQUIRED_SCRIPT_VERSION:
+        raise RuntimeError(
+            f"apps_script.js at APPS_SCRIPT_URL reports version={version}, but "
+            f"researcher_pipeline.py requires version>={REQUIRED_SCRIPT_VERSION}. "
+            "Redeploy apps_script.js (Extensions > Apps Script > paste latest "
+            "source > Deploy > Manage deployments > Edit > New version) before "
+            "running this pipeline — otherwise its writes will silently land in "
+            "and overwrite Sheet1 instead of the Researchers tab."
+        )
+
 
 def load_researchers_from_sheet():
     """Read existing researcher profiles from the 'Researchers' sheet tab, if any."""
@@ -326,6 +360,10 @@ def build_researcher_profile(candidate, known_papers_by_id):
 
 
 def main():
+    print("Checking apps_script.js deployment version...")
+    check_apps_script_version()
+    print(f"  OK (version >= {REQUIRED_SCRIPT_VERSION}).")
+
     print("Loading existing papers from Google Sheet...")
     try:
         papers = pp.load_from_sheet()
