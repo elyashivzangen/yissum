@@ -1,1 +1,348 @@
-[]
+[
+  {
+    "pi": "Osnat Malka",
+    "pi_full_name": "Osnat Malka",
+    "pi_email": "",
+    "avg_score": 24.0,
+    "paper_count": 2,
+    "description": "This researcher focuses on the molecular physiology and metabolic vulnerabilities of agricultural pests, specifically the whitefly Bemisia tabaci. By identifying critical enzymatic pathways used for nutrient processing and osmoregulation, they develop targeted genetic engineering strategies for crop resistance. This work tends to produce bio-engineered crop solutions and precision pest-control technologies that reduce reliance on broad-spectrum chemical insecticides.",
+    "papers": [
+      {
+        "id": "pubmed_42255296",
+        "title": "Creating resistance to the whitefly ",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42255296/",
+        "score": 28,
+        "summary": "Hebrew University researchers have developed a method to genetically engineer crops to produce specific proteins that interfere with the digestive systems of whiteflies. This intervention effectively inhibits the pest's ability to feed and reproduce, significantly reducing crop damage without relying on broad-spectrum chemical insecticides.",
+        "opportunity": "This technology provides a high-value, sustainable biopesticide solution that can be integrated into seed portfolios to protect major global crops from devastating whitefly infestations.",
+        "fields": [
+          "AgriTech",
+          "Synthetic Biology",
+          "Genomics"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "Creating resistance to whiteflies is a well-explored area of agricultural biotechnology involving established methods like RNAi or Bt-toxin expression, making the conceptual novelty relatively low. Without a proprietary platform or a fundamentally new mechanism of action, this research represents incremental progress rather than a groundbreaking shift in the field."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "Agricultural pest resistance is a high-value, multi-billion dollar market with clear demand for bio-engineered traits; however, the commercial path is heavily dependent on regulatory approval pathways (GMO/gene editing) and the ease of integration into existing germplasm."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "Whiteflies are among the most destructive agricultural pests globally, causing billions of dollars in crop losses annually across major staples and high-value horticulture, representing a massive, recurring, and urgent total addressable market."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "Engineering pest resistance in plants typically requires lengthy regulatory approval processes, field trials, and stable transformation, which are early-stage developmental steps compared to commercial-ready products. The lack of documented field-scale performance data keeps the technology firmly in the proof-of-concept laboratory phase."
+          },
+          "ip_strength": {
+            "score": 6,
+            "reason": "Agricultural biotechnological traits involving gene editing or transgenic approaches are generally highly patentable; however, the lack of specific mechanistic detail makes it difficult to assess the novelty of the target or the robustness of the freedom-to-operate landscape."
+          }
+        }
+      },
+      {
+        "id": "pubmed_39892859",
+        "title": "Osmoregulation by sucrose isomerization in the phloem-feeding whitefly Bemisia tabaci involves members of the glycoside hydrolase family 13.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39892859/",
+        "score": 20,
+        "summary": "Researchers identified specific enzymes in the GH13 family that allow the whitefly Bemisia tabaci to survive high-sugar diets by regulating osmotic pressure. Disruption of these enzymes interferes with the insect's ability to process sucrose, creating a critical physiological vulnerability.",
+        "opportunity": "Development of precision RNAi-based biopesticides targeting these essential isomerase genes to selectively control whitefly infestations in high-value crops.",
+        "fields": [
+          "AgriTech",
+          "Synthetic Biology",
+          "Genomics"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 5,
+            "reason": "The research identifies specific genes responsible for a known biological process in a specific pest, providing useful mechanistic insight but representing an incremental scientific advancement rather than a groundbreaking or platform-enabling discovery."
+          },
+          "commercial_potential": {
+            "score": 4,
+            "reason": "While this identifies a specific biological target for RNAi-based pest control, the transition to a viable agricultural product is hindered by the significant regulatory, delivery, and scalability hurdles associated with dsRNA biopesticides. It represents an interesting mechanistic discovery for narrow-spectrum pest management but lacks the immediate platform maturity or clear IP path of high-scoring deep-tech assets."
+          },
+          "market_size": {
+            "score": 5,
+            "reason": "The research targets Bemisia tabaci, a major global agricultural pest, offering a potential pathway for novel insecticides. However, the market is limited to the agricultural pest control sector and specifically to phloem-feeding insects."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "This is fundamental basic research focused on identifying the biological mechanisms of osmoregulation in an insect, representing early-stage discovery rather than a developed technology or product prototype."
+          },
+          "ip_strength": {
+            "score": 4,
+            "reason": "The research identifies specific genetic targets for pest control via RNAi, which offers a pathway to patentable agricultural products, but the work is primarily a basic scientific discovery of a natural biological mechanism rather than a proprietary platform or novel invention."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pi": "Chamutal Gur",
+    "pi_full_name": "Chamutal Gur",
+    "pi_email": "",
+    "avg_score": 21.3,
+    "paper_count": 3,
+    "description": "This researcher focuses on translational immunotherapy, specifically developing advanced therapeutic modalities such as CAR-T cells for autoimmune diseases and bacterial-based treatments for oncology. Their work tends to produce high-value clinical candidates and medical product refinements with strong potential for pharmaceutical commercialization and biotech spin-offs.",
+    "papers": [
+      {
+        "id": "pubmed_42098533",
+        "title": "B cell Maturation Antigen Targeted Chimeric Antigen Receptor T Cell Therapy for Refractory Systemic Lupus Erythematosus and Systemic Sclerosis.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42098533/",
+        "score": 28,
+        "summary": "Researchers tested a CAR-T cell therapy targeting B cell maturation antigens to treat severe, treatment-resistant autoimmune diseases like lupus and systemic sclerosis. Early results indicate the therapy is generally safe and can lead to a significant reduction or total elimination of disease activity.",
+        "opportunity": "The expansion of CAR-T therapies from oncology into autoimmune indications creates a high-value opportunity to address massive unmet needs in refractory systemic diseases.",
+        "fields": [
+          "Immunology",
+          "Clinical",
+          "Synthetic Biology"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 6,
+            "reason": "The study applies a known oncology target (BCMA) to autoimmune diseases, which is a logical extension of the successful CD19 CAR-T precedent in SLE. While clinically relevant and an important iterative step, it is an application of existing platform technology rather than a groundbreaking scientific discovery."
+          },
+          "commercial_potential": {
+            "score": 9,
+            "reason": "The application of a validated platform (CAR-T) and target (BCMA) to high-unmet-need refractory autoimmune diseases shows strong early clinical signals, presenting a clear path to a high-value therapeutic product."
+          },
+          "market_size": {
+            "score": 8,
+            "reason": "The target market for refractory SLE and SSc represents a high-value population with significant unmet medical needs and potential for expansion into broader autoimmune indications, leveraging the high pricing power of CAR-T therapies."
+          },
+          "ip_strength": {
+            "score": 5,
+            "reason": "The innovation applies an existing target (BCMA) and established modality (CAR-T) to a new indication, meaning defensibility relies on method-of-use patents and specific construct sequences rather than a novel platform."
+          }
+        }
+      },
+      {
+        "id": "pubmed_41677596",
+        "title": "Targeting Bladder Cancer with Inactivated Uropathogenic ",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41677596/",
+        "score": 31,
+        "summary": "Researchers are developing a new immunotherapy for non-muscle-invasive bladder cancer using inactivated uropathogenic bacteria. This approach seeks to replace the current standard, BCG, by reducing toxicity and improving efficacy.",
+        "opportunity": "Development of a safer, more effective immunotherapeutic alternative to BCG for the treatment of urothelial carcinomas.",
+        "fields": [
+          "Immunology",
+          "Vaccines",
+          "Drug Discovery",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 5,
+            "reason": "The approach of using inactivated uropathogenic bacteria as an alternative to BCG is an incremental iteration of existing immunotherapy strategies rather than a groundbreaking shift in modality."
+          },
+          "commercial_potential": {
+            "score": 8,
+            "reason": "The research targets a high-value unmet clinical need in NMIBC treatment by proposing a direct alternative to the flawed BCG standard of care, representing a clear path to a protectable biologic product."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The target market is substantial, addressing the majority of bladder cancer cases (NMIBC) with a clear, high-value unmet medical need due to the toxicity and failure rates of the current standard of care, BCG."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The research is in the early exploratory phase, focusing on investigating whether a new agent can serve as an alternative to the current standard of care, indicating a proof-of-concept stage."
+          },
+          "ip_strength": {
+            "score": 6,
+            "reason": "The use of a specific inactivated bacterial strain for a therapeutic indication is generally patentable as a composition or method of use, but the lack of mentioned proprietary modifications or a novel platform limits its defensibility."
+          }
+        }
+      },
+      {
+        "id": "pubmed_36453687",
+        "title": "Fluorosis and the settling toothpaste: further comments by the authors on the article by Kharouf et al.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36453687/",
+        "score": 5,
+        "summary": "This paper is a technical commentary discussing the relationship between toothpaste formulation stability and the risk of dental fluorosis. It focuses on how the settling of ingredients in toothpaste can lead to uneven fluoride distribution and potential toxicity.",
+        "opportunity": "Development of stabilized, non-settling toothpaste formulations to ensure consistent fluoride dosing and minimize the risk of enamel fluorosis.",
+        "fields": [
+          "Materials",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 1,
+            "reason": "The title indicates this is a commentary or reply to a previous publication, which by definition lacks original scientific discovery or groundbreaking innovation."
+          },
+          "commercial_potential": {
+            "score": 1,
+            "reason": "The paper is a scholarly commentary/response to a previous article rather than primary research, meaning it introduces no new technology, product, or intellectual property with commercial value."
+          },
+          "market_size": {
+            "score": 1,
+            "reason": "The paper is a scientific commentary/rebuttal regarding existing research rather than a proposal for a new product or technology, offering no direct commercial application or addressable market."
+          },
+          "trl": {
+            "score": 1,
+            "reason": "This is a commentary paper discussing existing scientific literature rather than a research paper introducing a new technology, product, or clinical intervention."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This is a commentary/reply paper discussing existing research and does not present any novel technology, composition, or method that would be patentable or defensible."
+          }
+        }
+      }
+    ]
+  },
+  {
+    "pi": "Rabea Asleh",
+    "pi_full_name": "Rabea Asleh",
+    "pi_email": "",
+    "avg_score": 27.8,
+    "paper_count": 4,
+    "description": "The researcher focuses on advanced cardiovascular medicine, specifically targeting heart failure management, cardiac ablation safety, and the integration of high-tech cardiac support systems. Their work typically results in applied medical device innovations, such as noninvasive wearable diagnostics and artificial heart implementations, as well as optimized clinical protocols for treating complex cardiac conditions. This trajectory indicates a strong emphasis on translating deep-tech biomedical engineering into bedside clinical applications.",
+    "papers": [
+      {
+        "id": "pubmed_42235779",
+        "title": "Haptoglobin, hemolysis, and renal vulnerability after pulsed field ablation: The hemoglobin-binding reserve.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42235779/",
+        "score": 21,
+        "summary": "This research investigates how the protein haptoglobin protects kidneys from damage caused by the release of free hemoglobin during pulsed field ablation (PFA) procedures. By identifying the limitations of the body's natural scavenging capacity, the study highlights a potential risk factor for patients undergoing cardiac and oncology ablation therapies.",
+        "opportunity": "There is a commercial opportunity to develop a diagnostic companion test to measure haptoglobin levels prior to PFA procedures, or a therapeutic prophylactic to mitigate renal injury in high-risk patients.",
+        "fields": [
+          "Medical Device",
+          "Clinical",
+          "Diagnostics"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "This study focuses on a physiological mechanism involving known biomarkers (haptoglobin/hemolysis) in the context of an established procedure (pulsed field ablation), representing an incremental clinical insight rather than a foundational or platform-level scientific breakthrough. It provides diagnostic or monitoring utility for specific procedural complications but lacks the transformative nature of a novel therapeutic modality or core technology."
+          },
+          "commercial_potential": {
+            "score": 6,
+            "reason": "While this identifies a clear physiological biomarker (haptoglobin) for managing complications in an emerging surgical market (pulsed field ablation), it serves more as a clinical diagnostic or monitoring protocol rather than a novel platform technology or proprietary therapeutic product. Its commercial value is constrained to secondary market opportunities in diagnostics or clinical decision-support software."
+          },
+          "market_size": {
+            "score": 6,
+            "reason": "Pulsed field ablation is a rapidly growing, high-value segment within cardiac electrophysiology, but this research addresses a specific clinical complication rather than a primary market-creating innovation. While the findings have clear clinical relevance for improving patient safety, the target market is limited to the subset of procedures prone to significant hemolysis."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "This study focuses on a mechanistic physiological observation regarding renal risk following a specific cardiac ablation procedure, representing basic clinical research rather than a developed technology or device. It addresses a diagnostic or safety biomarker rather than a commercializable product or platform."
+          },
+          "ip_strength": {
+            "score": 3,
+            "reason": "The paper describes a physiological observation regarding biomarker sensitivity and renal vulnerability during a procedure, which generally constitutes a clinical insight or discovery rather than a novel, patentable technological invention. Without a proprietary intervention, device, or specific composition of matter, the findings lack the legal mechanisms required for robust IP defensibility."
+          }
+        }
+      },
+      {
+        "id": "pubmed_42148620",
+        "title": "First Successful Implantation of the CARMAT Aeson® Total Artificial Heart as a Bridge to Heart Transplantation in Israel.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42148620/",
+        "score": 37,
+        "summary": "This report details the first successful implantation of the CARMAT Aeson total artificial heart in Israel. The device was used as a bridge to transplantation, maintaining the patient's hemodynamic stability until a donor heart was available.",
+        "opportunity": "Commercial opportunities exist in expanding the market adoption of total artificial heart systems for end-stage heart failure and the specialized clinical infrastructure required for their implantation.",
+        "fields": [
+          "Medical Device",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 2,
+            "reason": "The paper describes the first regional implementation of an existing medical device in Israel rather than presenting a new scientific discovery or technological innovation."
+          },
+          "commercial_potential": {
+            "score": 9,
+            "reason": "The technology is a near-market medical device targeting a critical, high-value unmet need in end-stage heart failure, with clear clinical utility and a defined path to commercialization."
+          },
+          "market_size": {
+            "score": 8,
+            "reason": "The addressable market for end-stage heart failure is high-value and clinically critical, with total artificial hearts serving a vital role for patients with biventricular failure who are awaiting transplantation."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "The technology is already in the clinical application phase, as evidenced by the successful surgical implantation of the device in a patient, indicating it is a near-market or commercially available medical product."
+          },
+          "ip_strength": {
+            "score": 9,
+            "reason": "The underlying innovation is a complex medical device (CARMAT Aeson) with extensive patent portfolios and high regulatory barriers to entry, providing strong defensibility."
+          }
+        }
+      },
+      {
+        "id": "pubmed_41957254",
+        "title": "Tailoring heart failure management in cardiac amyloidosis.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41957254/",
+        "score": 22,
+        "summary": "Cardiac amyloidosis is a serious condition where abnormal protein deposits in the heart lead to heart failure, and this research focuses on improving how we manage this disease. The work likely explores personalized treatment strategies based on a deeper understanding of the disease's progression and individual patient characteristics.",
+        "opportunity": "Developing companion diagnostics or stratification tools to identify patients most likely to benefit from specific cardiac amyloidosis therapies represents a significant commercial opportunity.",
+        "fields": [
+          "Diagnostics",
+          "Drug Discovery",
+          "Clinical",
+          "Genomics"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "Without an abstract, assessing novelty is extremely difficult, but the *topic* of tailoring heart failure management in cardiac amyloidosis isn't fundamentally new – recognizing amyloidosis as a cause of HF and developing specific approaches has been ongoing for some time. The title suggests refinement of existing strategies rather than a paradigm shift, hence a moderate novelty score."
+          },
+          "commercial_potential": {
+            "score": 6,
+            "reason": "Cardiac amyloidosis is a serious, underserved condition with increasing diagnosis rates, suggesting a clear need for improved management strategies; however, without knowing the *specific* tailoring approach proposed (e.g., diagnostic, therapeutic, monitoring), it's difficult to assess how readily this translates into a commercially viable product or service beyond standard-of-care improvements."
+          },
+          "market_size": {
+            "score": 6,
+            "reason": "Cardiac Amyloidosis (CA) is a rare disease, limiting the overall market size, but it is a severely underserved population with high unmet need and increasing diagnosis rates, suggesting growing addressable demand; however, without knowing the specifics of the 'tailoring' approach, it's difficult to assess if it expands beyond the existing CA patient base."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "Cardiac amyloidosis is a diagnosed condition, and 'tailoring management' suggests refinement of *existing* treatments (pharmacological, device-based, lifestyle) rather than a novel, breakthrough technology; therefore, the TRL is likely still relatively low, focused on clinical study and optimization, not immediate commercialization of a fundamentally new technology."
+          },
+          "ip_strength": {
+            "score": 3,
+            "reason": "Without an abstract or details on the specific 'tailoring' approach, it's highly likely this paper describes clinical management strategies – which are generally not patentable. Improvements in treatment *protocols* rarely have strong IP defensibility; the innovation would need to be a novel biomarker, drug, or device to score higher."
+          }
+        }
+      },
+      {
+        "id": "pubmed_40845743",
+        "title": "Assessing Cardiac Flow Measurements Using a Noninvasive Photoplethysmography-Based Device Compared to Invasive Pulmonary Artery Catheter.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40845743/",
+        "score": 31,
+        "summary": "Researchers developed a noninvasive wearable device that uses light-based sensors to measure cardiac output and vascular resistance in heart failure patients. The device demonstrated high accuracy and agreement when compared to the invasive gold standard of pulmonary artery catheterization.",
+        "opportunity": "Development of a low-risk, wearable hemodynamic monitoring system for the remote management of heart failure patients and real-time clinical bedside monitoring.",
+        "fields": [
+          "Medical Device",
+          "Diagnostics",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "commercial_potential": {
+            "score": 9,
+            "reason": "The technology addresses a high-value clinical need by replacing risky, invasive gold-standard monitoring with a noninvasive wearable, demonstrating strong accuracy and a clear path to a disruptive medical device product."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The addressable market is enormous, covering global critical care and heart failure populations; replacing invasive pulmonary artery catheters with a noninvasive PPG-based alternative targets a high-value, high-demand clinical need."
+          },
+          "trl": {
+            "score": 8,
+            "reason": "The technology has progressed beyond the prototype stage to clinical validation in a human cohort (n=90), demonstrating high concordance with the gold-standard invasive measurement."
+          },
+          "ip_strength": {
+            "score": 5,
+            "reason": "The device utilizes photoplethysmography (PPG), a mature and widely used technology, meaning defensibility relies primarily on proprietary algorithms rather than a novel hardware platform or a breakthrough discovery."
+          }
+        }
+      }
+    ]
+  }
+]
