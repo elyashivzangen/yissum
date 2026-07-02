@@ -63,31 +63,38 @@ Return a JSON object (no markdown) with exactly this key:
 # ── Sheet I/O for the Researchers tab ───────────────────────────────────────────
 
 def check_apps_script_version():
-    """Verify the deployed apps_script.js supports sheet_name routing.
+    """Return True if the deployed apps_script.js supports sheet_name routing.
 
     A "ping" action is a safe no-op on every version of the script (old
     deployments fall through their replace_all check and never touch any
     sheet), so this is always safe to call. Older deployments respond
     without a "version" field, or don't understand "ping" at all — in
-    either case we must refuse to write, since a sheet_name payload would
-    otherwise silently overwrite Sheet1 instead of the intended tab.
+    either case Sheet writes must be skipped, since a sheet_name payload
+    would otherwise silently overwrite Sheet1 instead of the intended tab.
+    The rest of the pipeline (researchers_data.json + the dashboard tab)
+    doesn't need the Apps Script at all, so it proceeds either way.
     """
     try:
         resp = requests.post(APPS_SCRIPT_URL, json={"action": "ping"}, timeout=30)
         resp.raise_for_status()
         version = resp.json().get("version", 0)
     except Exception as e:
-        raise RuntimeError(f"Could not reach APPS_SCRIPT_URL to check its version: {e}")
+        print(f"  Could not reach APPS_SCRIPT_URL to check its version: {e}")
+        version = 0
 
     if version < REQUIRED_SCRIPT_VERSION:
-        raise RuntimeError(
-            f"apps_script.js at APPS_SCRIPT_URL reports version={version}, but "
-            f"researcher_pipeline.py requires version>={REQUIRED_SCRIPT_VERSION}. "
-            "Redeploy apps_script.js (Extensions > Apps Script > paste latest "
-            "source > Deploy > Manage deployments > Edit > New version) before "
-            "running this pipeline — otherwise its writes will silently land in "
-            "and overwrite Sheet1 instead of the Researchers tab."
+        print(
+            f"  WARNING: deployed apps_script.js reports version={version} "
+            f"(need >={REQUIRED_SCRIPT_VERSION}). Skipping ALL Google Sheet "
+            "writes this run — the old deployment ignores sheet_name and "
+            "would overwrite Sheet1. researchers_data.json and the dashboard "
+            "Researchers tab will still be built. To also get the Researchers "
+            "sheet tab, redeploy apps_script.js (Extensions > Apps Script > "
+            "paste latest source > Deploy > Manage deployments > Edit > New "
+            "version) and re-run."
         )
+        return False
+    return True
 
 
 def load_researchers_from_sheet():
@@ -361,8 +368,9 @@ def build_researcher_profile(candidate, known_papers_by_id):
 
 def main():
     print("Checking apps_script.js deployment version...")
-    check_apps_script_version()
-    print(f"  OK (version >= {REQUIRED_SCRIPT_VERSION}).")
+    sheet_writes_enabled = check_apps_script_version()
+    if sheet_writes_enabled:
+        print(f"  OK (version >= {REQUIRED_SCRIPT_VERSION}) — Researchers sheet tab will be updated.")
 
     print("Loading existing papers from Google Sheet...")
     try:
@@ -382,10 +390,11 @@ def main():
     def checkpoint(label):
         print(f"  [checkpoint: {label}] writing {len(profiles)} researcher profile(s)...")
         OUTPUT_JSON.write_text(json.dumps(profiles, ensure_ascii=False, indent=2), encoding="utf-8")
-        try:
-            save_researchers_to_sheet(profiles)
-        except Exception as e:
-            print(f"  checkpoint sheet-save failed (will retry at next checkpoint): {e}")
+        if sheet_writes_enabled:
+            try:
+                save_researchers_to_sheet(profiles)
+            except Exception as e:
+                print(f"  checkpoint sheet-save failed (will retry at next checkpoint): {e}")
         pp.generate_html(papers, researchers=profiles)
 
     for i, candidate in enumerate(candidates):
