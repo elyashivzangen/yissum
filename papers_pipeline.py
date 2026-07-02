@@ -27,6 +27,8 @@ from pathlib import Path
 GEMINI_API_KEY   = os.environ["GEMINI_API_KEY"]
 GOOGLE_SHEET_ID  = os.environ["GOOGLE_SHEET_ID"]
 APPS_SCRIPT_URL  = os.environ["APPS_SCRIPT_URL"]   # deployed Apps Script web app URL
+GROQ_API_KEY     = os.environ.get("GROQ_API_KEY", "")  # optional last-resort fallback, runs on Groq's own infra
+GROQ_MODEL       = "llama-3.1-8b-instant"
 OUTPUT_HTML      = Path("papers_reader.html")
 OUTPUT_JSON      = Path("papers_data.json")
 RESEARCHERS_JSON = Path("researchers_data.json")  # produced by researcher_pipeline.py
@@ -686,7 +688,30 @@ def _call_gemini(prompt):
             print(f"    {model_id} failed ({'rate limit' if is_rate_limit else 'error'}): {e}")
             if is_rate_limit:
                 time.sleep(2)
+    if GROQ_API_KEY:
+        try:
+            return _call_groq(prompt)
+        except Exception as e:
+            print(f"    {GROQ_MODEL} (groq) failed: {e}")
+            last_err = e
     raise last_err
+
+def _call_groq(prompt):
+    r = requests.post(
+        "https://api.groq.com/openai/v1/chat/completions",
+        headers={"Authorization": f"Bearer {GROQ_API_KEY}"},
+        json={
+            "model": GROQ_MODEL,
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.3,
+        },
+        timeout=30,
+    )
+    r.raise_for_status()
+    text = r.json()["choices"][0]["message"]["content"].strip()
+    text = re.sub(r"^```(?:json)?\s*", "", text)
+    text = re.sub(r"\s*```$", "", text)
+    return json.loads(text)
 
 def evaluate_paper(paper):
     abstract = paper.get("abstract", "").strip() or "(no abstract available)"
