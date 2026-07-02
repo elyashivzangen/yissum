@@ -38,6 +38,9 @@ def _parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--period", choices=["week", "month"], default="week",
                    help="Fetch window: week=7 days, month=30 days")
+    p.add_argument("--backfill-metadata", action="store_true",
+                   help="One-off: refresh pi_affiliation/date precision for existing "
+                        "papers only, skipping new-paper fetch and evaluation")
     # parse_known_args so this module stays importable from other scripts
     # (e.g. researcher_pipeline.py) that define their own unrelated CLI flags.
     return p.parse_known_args()[0]
@@ -306,6 +309,97 @@ def _verify_huji_pubmed(papers, batch_size=50):
             if p["id"] in drop_ids:
                 print(f"    - {p['title'][:70]}")
     return [p for p in papers if p["id"] not in drop_ids]
+
+
+def backfill_metadata(papers, batch_size=50):
+    """One-off: refresh pi_affiliation and date precision for existing papers
+    that are missing them, without touching score/summary/opportunity."""
+    needs = [p for p in papers if not p.get("pi_affiliation") or len(p.get("date", "")) <= 4]
+    if not needs:
+        print("  No papers need metadata backfill.")
+        return
+    print(f"  Backfilling metadata for {len(needs)} papers...")
+
+    pmid_map = {}
+    for p in needs:
+        pmid = _pmid_from_paper_id(p["id"])
+        if pmid:
+            pmid_map[pmid] = p
+
+    if pmid_map:
+        base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+        ids = list(pmid_map.keys())
+        for i in range(0, len(ids), batch_size):
+            batch = ids[i:i + batch_size]
+            try:
+                r = requests.get(f"{base}/efetch.fcgi", params={
+                    "db": "pubmed", "id": ",".join(batch),
+                    "rettype": "xml", "retmode": "xml",
+                }, timeout=30)
+                r.raise_for_status()
+                root = ET.fromstring(r.text)
+                for article in root.findall(".//PubmedArticle"):
+                    uid = article.findtext(".//PMID", "")
+                    p = pmid_map.get(uid)
+                    if not p:
+                        continue
+                    if len(p.get("date", "")) <= 4:
+                        p["date"] = _pubmed_pub_date(article)
+                    if not p.get("pi_affiliation"):
+                        all_authors, author_affs = [], []
+                        for a in article.findall(".//AuthorList/Author"):
+                            last = a.findtext("LastName", "")
+                            fore = a.findtext("ForeName", "") or a.findtext("Initials", "")
+                            all_authors.append(f"{fore} {last}".strip() if fore else last)
+                            author_affs.append([el.text or "" for el in a.findall(".//AffiliationInfo/Affiliation")])
+                        pi_aff = ""
+                        for name, affs in reversed(list(zip(all_authors, author_affs))):
+                            if any(h.lower() in af.lower() for h in HUJI_AFFILIATIONS for af in affs):
+                                pi_aff = "; ".join(a for a in affs if a)
+                                break
+                        if not pi_aff and author_affs:
+                            pi_aff = "; ".join(a for a in author_affs[-1] if a)
+                        if pi_aff:
+                            p["pi_affiliation"] = pi_aff
+            except Exception as e:
+                print(f"  Metadata backfill PubMed error (batch {i}): {e}")
+            time.sleep(0.3)
+
+    ss_map = {p["id"][3:]: p for p in needs if p["id"].startswith("ss_")}
+    if ss_map:
+        try:
+            r = requests.post(
+                "https://api.semanticscholar.org/graph/v1/paper/batch",
+                params={"fields": "publicationDate,year,authors.name,authors.affiliations"},
+                json={"ids": list(ss_map.keys())},
+                timeout=30,
+            )
+            r.raise_for_status()
+            for item in r.json():
+                if not item:
+                    continue
+                p = ss_map.get(item.get("paperId", ""))
+                if not p:
+                    continue
+                pub_date = item.get("publicationDate") or (f"{item['year']}-01-01" if item.get("year") else "")
+                if pub_date and len(p.get("date", "")) <= 4:
+                    p["date"] = pub_date
+                if not p.get("pi_affiliation"):
+                    all_author_objs = item.get("authors") or []
+                    pi_aff = ""
+                    for a in reversed(all_author_objs):
+                        affs = a.get("affiliations") or []
+                        if any(h.lower() in (aff or "").lower() for h in HUJI_AFFILIATIONS for aff in affs):
+                            pi_aff = "; ".join(aff for aff in affs if aff)
+                            break
+                    if not pi_aff and all_author_objs:
+                        pi_aff = "; ".join(aff for aff in (all_author_objs[-1].get("affiliations") or []) if aff)
+                    if pi_aff:
+                        p["pi_affiliation"] = pi_aff
+        except Exception as e:
+            print(f"  Metadata backfill Semantic Scholar error: {e}")
+
+    print("  Metadata backfill done.")
 
 
 # ── PI Contact Enrichment ──────────────────────────────────────────────────────
@@ -1476,6 +1570,13 @@ def main():
 
     # Verify existing PubMed papers: drop any where HUJI is not last/majority author
     existing = _verify_huji_pubmed(existing)
+
+    if ARGS.backfill_metadata:
+        backfill_metadata(existing)
+        save_to_sheet(existing)
+        generate_html(existing)
+        print("Backfill complete.")
+        return True
 
     known_ids = existing_ids(existing)
     known_titles = {norm_title(p.get("title", "")) for p in existing}
