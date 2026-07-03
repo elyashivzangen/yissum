@@ -6,6 +6,32 @@ into today's session (checkpointing, model fallback, `-u` unbuffered
 output — see `SESSION_HANDOFF.md` for that history). Everything below is
 what changed today.
 
+## [1.2.0] - 2026-07-03
+
+### Added
+- **Scoring provenance (`eval_model`)** — every paper now records which model
+  actually scored it (Gemma vs. `groq:…`), shown as a 🤖 badge on each card
+  (green = Gemma, yellow = Groq).
+- **`--reeval-groq` mode** (CLI flag + `reeval_groq` workflow input) — re-scores
+  Groq-graded papers on Gemma once quota is available; re-fetches abstracts by
+  id and leaves papers untouched if Gemma is still unavailable, so it is safe
+  to run repeatedly.
+- **Enriched Researcher profiles & dashboard tab**: affiliation, email, a
+  distinct AI **applicability** summary (separate from the focus description),
+  aggregated **field-tag chips** and TTO **branches**, per-paper expandable
+  score breakdowns with model badges, and **branch filter tabs** in the
+  Researchers view.
+
+### Fixed
+- `cleanup.py` was POSTing `{"papers": …}` — a payload shape the Apps Script
+  ignores — so its sheet write silently did nothing; it now reuses
+  `papers_pipeline.save_to_sheet` (correct `replace_all` payload + full schema).
+- `sync_sheet.py` had a stale hard-coded column list that would have dropped
+  `pi_full_name`/`pi_email`/`pi_affiliation`/`eval_model` on write; it now
+  reuses `papers_pipeline.save_to_sheet`.
+- `weekly_digest_enhanced.py` read PI-trend data from a non-existent
+  `sheet=Papers` tab (returned nothing); fixed to read `Sheet1` via `gid=0`.
+
 ## [1.1.0] - 2026-07-02
 
 ### Added

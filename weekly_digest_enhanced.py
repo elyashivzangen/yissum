@@ -84,9 +84,12 @@ def _primary_branch(fields):
 
 def load_all_papers_from_sheet():
     """Load ALL papers from the sheet (for PI trend analysis)."""
+    # Read Sheet1 via the CSV export (gid=0) — the papers live on Sheet1, not a
+    # tab named "Papers"; the gviz sheet=Papers URL used previously returned an
+    # error page / no rows.
     url = (
         f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}"
-        "/gviz/tq?tqx=out:csv&sheet=Papers"
+        "/export?format=csv&gid=0"
     )
     r = requests.get(url, timeout=30)
     reader = csv.DictReader(io.StringIO(r.text))
