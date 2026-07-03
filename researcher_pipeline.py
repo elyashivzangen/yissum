@@ -54,9 +54,12 @@ Jerusalem researcher.
 
 {paper_list}
 
-Return a JSON object (no markdown) with exactly this key:
-- description: 2-4 sentence description of this researcher's focus area(s)
-  and the kind of applied/commercial work their research tends to produce.
+Return a JSON object (no markdown) with exactly these keys:
+- description: 2-4 sentence plain-English description of this researcher's
+  focus area(s) and the kind of research they do.
+- applicability: 2-3 sentence assessment of the commercial / translational
+  applicability of their work — what products, licensable technologies, or
+  industry partnerships it could lead to, and how near-term that is.
 """
 
 
@@ -118,14 +121,15 @@ def load_researchers_from_sheet():
                 r_["paper_count"] = int(r_.get("paper_count", 0))
             except Exception:
                 r_["paper_count"] = 0
-            papers_raw = r_.get("papers", "")
-            if isinstance(papers_raw, str) and papers_raw.strip():
-                try:
-                    r_["papers"] = json.loads(papers_raw)
-                except Exception:
-                    r_["papers"] = []
-            else:
-                r_["papers"] = []
+            for jcol in ("papers", "fields", "branches"):
+                raw = r_.get(jcol, "")
+                if isinstance(raw, str) and raw.strip():
+                    try:
+                        r_[jcol] = json.loads(raw)
+                    except Exception:
+                        r_[jcol] = []
+                else:
+                    r_[jcol] = []
             if r_.get("pi"):
                 researchers.append(r_)
         return researchers
@@ -135,17 +139,22 @@ def load_researchers_from_sheet():
 
 
 def save_researchers_to_sheet(researchers):
-    columns = ["pi", "pi_full_name", "pi_email", "avg_score", "paper_count",
-               "description", "papers"]
+    columns = ["pi", "pi_full_name", "pi_email", "pi_affiliation", "avg_score",
+               "paper_count", "description", "applicability", "fields", "branches",
+               "papers"]
     rows = [columns]
     for r in researchers:
         rows.append([
             r.get("pi", ""),
             r.get("pi_full_name", ""),
             r.get("pi_email", ""),
+            r.get("pi_affiliation", ""),
             r.get("avg_score", 0),
             r.get("paper_count", 0),
             r.get("description", ""),
+            r.get("applicability", ""),
+            json.dumps(r.get("fields", []), ensure_ascii=False),
+            json.dumps(r.get("branches", []), ensure_ascii=False),
             json.dumps(r.get("papers", []), ensure_ascii=False),
         ])
     backoffs = [3, 8, 15]
@@ -179,6 +188,7 @@ def select_top_researchers(papers, top_n):
     best_score = {}
     display_name = {}
     email = {}
+    affiliation = {}
     for p in papers:
         key = canonical_pi_key(p)
         if not key:
@@ -190,10 +200,13 @@ def select_top_researchers(papers, top_n):
             display_name[key] = p["pi_full_name"]
         if p.get("pi_email") and not email.get(key):
             email[key] = p["pi_email"]
+        if p.get("pi_affiliation") and not affiliation.get(key):
+            affiliation[key] = p["pi_affiliation"]
 
     ranked = sorted(best_score.items(), key=lambda kv: kv[1], reverse=True)
     return [
-        {"pi": key, "pi_full_name": display_name.get(key, key), "pi_email": email.get(key, "")}
+        {"pi": key, "pi_full_name": display_name.get(key, key),
+         "pi_email": email.get(key, ""), "pi_affiliation": affiliation.get(key, "")}
         for key, _score in ranked[:top_n]
     ]
 
@@ -269,6 +282,17 @@ def fetch_pubmed_for_author(pi_name, years_back=YEARS_BACK, max_results=50):
         if not pp.is_huji_paper(author_affs):
             continue
 
+        # Capture the last HUJI-affiliated author's affiliation string + email
+        pi_affiliation = ""
+        for _name, affs in reversed(list(zip(all_authors, author_affs))):
+            if any(h.lower() in af.lower() for h in pp.HUJI_AFFILIATIONS for af in affs):
+                pi_affiliation = "; ".join(a for a in affs if a)
+                break
+        if not pi_affiliation and author_affs:
+            pi_affiliation = "; ".join(a for a in author_affs[-1] if a)
+        email_match = pp.EMAIL_RE.search(pi_affiliation)
+        pi_email = email_match.group(0) if email_match else ""
+
         papers.append({
             "id":       f"pubmed_{uid}",
             "title":    title,
@@ -278,23 +302,54 @@ def fetch_pubmed_for_author(pi_name, years_back=YEARS_BACK, max_results=50):
             "date":     pub_date,
             "url":      f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
             "source":   "PubMed",
+            "pi_affiliation": pi_affiliation,
+            "pi_email": pi_email,
         })
     return papers
 
 
 # ── Researcher description ────────────────────────────────────────────────────────
 
-def generate_researcher_description(graded_papers):
+def generate_researcher_summary(graded_papers):
+    """One Gemini call → {description, applicability} for a researcher.
+
+    Combined into a single call (rather than two) to conserve the scarce
+    free-tier daily quota. Returns empty strings on failure.
+    """
     entries = []
     for p in graded_papers[:10]:
         entries.append(f"- {p.get('title', '')}: {p.get('summary', '')}")
     paper_list = "\n".join(entries) or "(no summaries available)"
     try:
-        data = pp._call_gemini(RESEARCHER_PROMPT.format(paper_list=paper_list))
-        return pp.fix_encoding(data.get("description", ""))
+        data, _model = pp._call_gemini(RESEARCHER_PROMPT.format(paper_list=paper_list))
+        return {
+            "description": pp.fix_encoding(data.get("description", "")),
+            "applicability": pp.fix_encoding(data.get("applicability", "")),
+        }
     except Exception as e:
-        print(f"  Gemini error (researcher description): {e}")
+        print(f"  Gemini error (researcher summary): {e}")
+        return {"description": "", "applicability": ""}
+
+
+def _most_common(values):
+    """Return the most frequent non-empty string in a list, or ''."""
+    counts = {}
+    for v in values:
+        v = (v or "").strip()
+        if v:
+            counts[v] = counts.get(v, 0) + 1
+    if not counts:
         return ""
+    return max(counts, key=counts.get)
+
+
+def _aggregate_fields(graded_papers):
+    """Union of all field tags across a researcher's papers, most-frequent first."""
+    counts = {}
+    for p in graded_papers:
+        for f in p.get("fields", []) or []:
+            counts[f] = counts.get(f, 0) + 1
+    return [f for f, _ in sorted(counts.items(), key=lambda kv: kv[1], reverse=True)]
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
@@ -322,11 +377,15 @@ def build_researcher_profile(candidate, known_papers_by_id):
                 "title":           paper["title"],
                 "date":            paper.get("date", ""),
                 "url":             paper.get("url", ""),
+                "journal":         paper.get("journal", ""),
                 "score":           existing.get("score", 0),
                 "summary":         existing.get("summary", ""),
                 "opportunity":     existing.get("opportunity", ""),
                 "fields":          existing.get("fields", []),
                 "score_breakdown": existing.get("score_breakdown", {}),
+                "eval_model":      existing.get("eval_model", ""),
+                "pi_affiliation":  paper.get("pi_affiliation", "") or existing.get("pi_affiliation", ""),
+                "pi_email":        paper.get("pi_email", "") or existing.get("pi_email", ""),
             })
             continue
 
@@ -334,17 +393,21 @@ def build_researcher_profile(candidate, known_papers_by_id):
         result = pp.evaluate_paper(paper)
         if not result:
             continue
-        print(f"      score={result['score']}")
+        print(f"      score={result['score']} ({result.get('eval_model','?')})")
         graded.append({
             "id":              paper["id"],
             "title":           paper["title"],
             "date":            paper.get("date", ""),
             "url":             paper.get("url", ""),
+            "journal":         paper.get("journal", ""),
             "score":           result["score"],
             "summary":         result["summary"],
             "opportunity":     result["opportunity"],
             "fields":          result["fields"],
             "score_breakdown": result["score_breakdown"],
+            "eval_model":      result.get("eval_model", ""),
+            "pi_affiliation":  paper.get("pi_affiliation", ""),
+            "pi_email":        paper.get("pi_email", ""),
         })
         time.sleep(0.4)
 
@@ -353,16 +416,29 @@ def build_researcher_profile(candidate, known_papers_by_id):
         return None
 
     avg_score = round(sum(p["score"] for p in graded) / len(graded), 1)
-    description = generate_researcher_description(graded)
+    summary = generate_researcher_summary(graded)
+
+    # Aggregate researcher-level metadata from their papers
+    pi_affiliation = (_most_common([p.get("pi_affiliation", "") for p in graded])
+                      or candidate.get("pi_affiliation", ""))
+    pi_email = (candidate.get("pi_email", "")
+                or _most_common([p.get("pi_email", "") for p in graded]))
+    fields = _aggregate_fields(graded)
+    branches = sorted({b for b, bf in pp.BRANCHES.items()
+                       if any(f in bf for f in fields)})
 
     return {
-        "pi":           pi_name,
-        "pi_full_name": candidate.get("pi_full_name", pi_name),
-        "pi_email":     candidate.get("pi_email", ""),
-        "avg_score":    avg_score,
-        "paper_count":  len(graded),
-        "description":  description,
-        "papers":       graded,
+        "pi":            pi_name,
+        "pi_full_name":  candidate.get("pi_full_name", pi_name),
+        "pi_email":      pi_email,
+        "pi_affiliation": pi_affiliation,
+        "avg_score":     avg_score,
+        "paper_count":   len(graded),
+        "description":   summary["description"],
+        "applicability": summary["applicability"],
+        "fields":        fields,
+        "branches":      branches,
+        "papers":        graded,
     }
 
 

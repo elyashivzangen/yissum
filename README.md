@@ -109,7 +109,23 @@ After fetching from all three sources, papers are deduplicated by normalising th
 
 ## AI Scoring System
 
-Each new paper is evaluated by Gemini AI (`gemma-3-27b-it`) on **five separate dimensions**, each scored from 1 to 10. The composite score is the sum of all five, giving a scale of **1–50**.
+Each new paper is evaluated by Gemini (Gemma) AI on **five separate dimensions**, each scored from 1 to 10. The composite score is the sum of all five, giving a scale of **1–50**.
+
+### Model fallback chain & scoring provenance
+
+Scoring always tries the Gemma models first (they carry the applicability
+calibration we want), falling back through the chain in `EVAL_MODEL_CANDIDATES`
+and only using **Groq** (`llama-3.1-8b-instant`) as a last resort when every
+Gemma model is rate-limited or down. Each paper records which model actually
+scored it in an `eval_model` column, surfaced as a small 🤖 badge on the card
+(green = Gemma, yellow = Groq). Because the free Gemma tier has a ~500
+requests/day quota, busy runs can fall back to Groq for some papers.
+
+To upgrade those later, run the pipeline with **`--reeval-groq`** (or the
+`reeval_groq` workflow input): it re-fetches the abstract and re-scores every
+Groq-scored paper on Gemma only. Papers whose Gemma re-score still fails (quota
+not yet reset) are left untouched, so it is safe to run repeatedly until every
+paper carries a Gemma score.
 
 | Dimension | What it measures | Max |
 |-----------|-----------------|-----|
@@ -226,13 +242,18 @@ produce applicable, commercially-relevant work.
    1–50 scale). Papers already scored in the main dataset are reused as-is
    instead of being re-graded, to save API calls and keep scores consistent.
 6. Computes the researcher's average score across their graded papers, and
-   asks Gemini for a 2–4 sentence description of their research focus and
-   the kind of applied/commercial work it tends to produce.
-7. Writes one profile per researcher — `pi`, `pi_full_name`, `pi_email`,
-   `avg_score`, `paper_count`, `description`, and the full list of graded
-   `papers` — to a separate **Researchers** Sheet tab and to
-   `researchers_data.json`, then regenerates `papers_reader.html` with the
-   Researchers tab populated.
+   asks Gemini (one combined call) for both a **description** of their research
+   focus and a separate **applicability** assessment of the commercial /
+   translational potential of their work.
+7. Aggregates researcher-level metadata: their **affiliation** and **email**
+   (from the paper author records), the union of **field tags** across their
+   papers, and the TTO **branches** those fields map to.
+8. Writes one profile per researcher — `pi`, `pi_full_name`, `pi_email`,
+   `pi_affiliation`, `avg_score`, `paper_count`, `description`, `applicability`,
+   `fields`, `branches`, and the full list of graded `papers` (each with its
+   own score breakdown, field tags, and `eval_model`) — to a separate
+   **Researchers** Sheet tab and to `researchers_data.json`, then regenerates
+   `papers_reader.html` with the Researchers tab populated.
 
 ### Where it shows up
 
@@ -240,8 +261,12 @@ produce applicable, commercially-relevant work.
   the first time the pipeline posts to it, via the `sheet_name` field the
   Apps Script now supports).
 - **`papers_reader.html`** — the "🧑‍🔬 Researchers" tab: one card per
-  researcher with their average score badge, description, and an expandable
-  "Graded Publications ▾" list (title, date, score, link to each paper).
+  researcher showing their average-score badge, affiliation, email, focus
+  description, a highlighted **applicability** summary, aggregated field-tag
+  chips, and an expandable "Graded Publications ▾" list where each paper shows
+  its field tags, scoring model badge, and its own expandable score breakdown.
+  The tab also has **branch filter tabs** (All / Healthcare / Agriculture &
+  Food / Exact & Social Sciences) mirroring the Papers tab.
 - **`researchers_data.json`** — the raw JSON, same shape as the Sheet rows.
 
 Because this is a much heavier job than the weekly pipeline (a full
@@ -263,15 +288,24 @@ All paper data is synced to a shared Google Sheet after every pipeline run. This
 
 The `Sheet1` tab columns are:
 
-`id` · `title` · `authors` · `journal` · `date` · `url` · `source` · `score` · `summary` · `opportunity` · `fields` · `added_date` · `score_breakdown` · `pi` · `pi_full_name` · `pi_email`
+`id` · `title` · `authors` · `journal` · `date` · `url` · `source` · `score` · `summary` · `opportunity` · `fields` · `added_date` · `score_breakdown` · `pi` · `pi_full_name` · `pi_email` · `pi_affiliation` · `eval_model`
 
 A second tab, `Researchers`, holds the researcher applicability profiles
 (see [Researcher Applicability Dataset](#researcher-applicability-dataset)),
 with columns:
 
-`pi` · `pi_full_name` · `pi_email` · `avg_score` · `paper_count` · `description` · `papers`
+`pi` · `pi_full_name` · `pi_email` · `pi_affiliation` · `avg_score` · `paper_count` · `description` · `applicability` · `fields` · `branches` · `papers`
 
 The sync is performed via a Google Apps Script web app (`apps_script.js`). The script receives a full data payload (with an optional `sheet_name`, defaulting to `Sheet1`), clears that sheet (creating it first if it doesn't exist), and rewrites all rows. The deployment URL must be stored as the `APPS_SCRIPT_URL` GitHub secret.
+
+> **Redeploying `apps_script.js`:** because Apps Script runs in your Google
+> account, its web-app deployment can only be updated from the Apps Script
+> editor — not from CI or this repo. After changing `apps_script.js`, open the
+> Sheet → **Extensions → Apps Script**, paste the latest source, then **Deploy →
+> Manage deployments → Edit → New version → Deploy**. The `researcher_pipeline`
+> checks the deployed script's version via a safe `ping` and skips Sheet writes
+> (building the JSON + dashboard only) until it is redeployed, so a stale
+> deployment can never overwrite `Sheet1`.
 
 ---
 

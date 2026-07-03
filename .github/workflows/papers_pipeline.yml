@@ -26,6 +26,11 @@ on:
         required: false
         default: false
         type: boolean
+      reeval_groq:
+        description: 'One-off: re-score papers previously scored by the Groq fallback using Gemma (skips fetching new papers). Safe to repeat.'
+        required: false
+        default: false
+        type: boolean
 
 concurrency:
   group: papers-pipeline
@@ -60,6 +65,7 @@ jobs:
             echo "MAX_RESULTS=${{ github.event.inputs.max_results || '300' }}" >> "$GITHUB_ENV"
           fi
           echo "BACKFILL_METADATA=${{ github.event.inputs.backfill_metadata || 'false' }}" >> "$GITHUB_ENV"
+          echo "REEVAL_GROQ=${{ github.event.inputs.reeval_groq || 'false' }}" >> "$GITHUB_ENV"
 
       - name: Run pipeline
         env:
@@ -70,10 +76,12 @@ jobs:
           MAX_RESULTS: ${{ env.MAX_RESULTS }}
           DAYS_BACK: ${{ env.DAYS_BACK }}
           BACKFILL_METADATA: ${{ env.BACKFILL_METADATA }}
+          REEVAL_GROQ: ${{ env.REEVAL_GROQ }}
         run: |
           set -o pipefail
           EXTRA_ARGS=""
           if [ "$BACKFILL_METADATA" = "true" ]; then EXTRA_ARGS="--backfill-metadata"; fi
+          if [ "$REEVAL_GROQ" = "true" ]; then EXTRA_ARGS="$EXTRA_ARGS --reeval-groq"; fi
           python -u papers_pipeline.py --period "$PIPELINE_PERIOD" $EXTRA_ARGS 2>&1 | tee pipeline_run.log
 
       - name: Commit generated HTML

@@ -41,6 +41,11 @@ def _parse_args():
     p.add_argument("--backfill-metadata", action="store_true",
                    help="One-off: refresh pi_affiliation/date precision for existing "
                         "papers only, skipping new-paper fetch and evaluation")
+    p.add_argument("--reeval-groq", action="store_true",
+                   help="One-off: re-score papers previously scored by the Groq "
+                        "fallback using Gemma (skips new-paper fetch). Papers whose "
+                        "Gemma re-score fails — e.g. daily quota exhausted — are left "
+                        "untouched, so it is safe to run repeatedly.")
     # parse_known_args so this module stays importable from other scripts
     # (e.g. researcher_pipeline.py) that define their own unrelated CLI flags.
     return p.parse_known_args()[0]
@@ -80,7 +85,7 @@ BRANCHES = {
 SHEET_COLUMNS = [
     "id", "title", "authors", "journal", "date", "url", "source",
     "score", "summary", "opportunity", "fields", "added_date", "score_breakdown", "pi",
-    "pi_full_name", "pi_email", "pi_affiliation",
+    "pi_full_name", "pi_email", "pi_affiliation", "eval_model",
 ]
 
 SCORE_PARAMS = [
@@ -165,6 +170,7 @@ def save_to_sheet(papers):
             p.get("pi_full_name", ""),
             p.get("pi_email", ""),
             p.get("pi_affiliation", ""),
+            p.get("eval_model", ""),
         ])
     backoffs = [3, 8, 15]
     for attempt, delay in enumerate([0] + backoffs):
@@ -797,7 +803,15 @@ _last_good_model_idx = 0   # remember which model worked last to skip known-bad 
 _dead_this_run = set()     # models that have failed 3x in a row this run — skip until process restarts
 _fail_streak = {}          # model_id -> consecutive fail count, resets on any success
 
-def _call_gemini(prompt):
+def _call_gemini(prompt, allow_groq=True):
+    """Call the model fallback chain and return (parsed_json, model_id).
+
+    Gemma models are always tried first (they carry the applicability-scoring
+    calibration we want); Groq is only a last resort and only when allow_groq
+    is True. model_id is the identifier of whichever model actually produced
+    the answer — Groq answers are tagged ``groq:<model>`` so callers can tell
+    a Gemma score from a Groq score and later re-score the Groq ones on Gemma.
+    """
     global _last_good_model_idx
     last_err = None
     n = len(EVAL_MODEL_CANDIDATES)
@@ -813,7 +827,7 @@ def _call_gemini(prompt):
             data = json.loads(text)
             _last_good_model_idx = idx
             _fail_streak[model_id] = 0
-            return data
+            return data, model_id
         except Exception as e:
             last_err = e
             is_rate_limit = "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e)
@@ -824,11 +838,11 @@ def _call_gemini(prompt):
             if _fail_streak[model_id] >= 3:
                 _dead_this_run.add(model_id)
                 print(f"    {model_id} failed 3x in a row — skipping it for the rest of this run")
-    if GROQ_API_KEY:
+    if allow_groq and GROQ_API_KEY:
         try:
             data = _call_groq(prompt)
             print(f"    {GROQ_MODEL} (groq) succeeded")
-            return data
+            return data, f"groq:{GROQ_MODEL}"
         except Exception as e:
             print(f"    {GROQ_MODEL} (groq) failed: {e}")
             last_err = e
@@ -853,15 +867,32 @@ def _call_groq(prompt):
     text = re.sub(r"\s*```$", "", text)
     return json.loads(text)
 
-def evaluate_paper(paper):
+def _summarize_eval_model(models):
+    """Collapse the per-call model ids used for one paper into a single label.
+
+    Returns the most common model. If any call fell back to Groq, the paper is
+    labelled with that Groq id so ``--reeval-groq`` can find and re-score it on
+    Gemma once quota is available.
+    """
+    if not models:
+        return ""
+    groq = [m for m in models if m.startswith("groq:")]
+    if groq:
+        return groq[0]
+    return max(set(models), key=models.count)
+
+
+def evaluate_paper(paper, allow_groq=True):
     abstract = paper.get("abstract", "").strip() or "(no abstract available)"
     truncated = abstract[:1200]
+    models_used = []
 
     # 1. Meta: summary, opportunity, fields
     try:
-        meta = _call_gemini(META_PROMPT.format(
+        meta, meta_model = _call_gemini(META_PROMPT.format(
             title=paper["title"], abstract=truncated, fields=json.dumps(FIELD_TAGS),
-        ))
+        ), allow_groq=allow_groq)
+        models_used.append(meta_model)
     except Exception as e:
         print(f"  Gemini error (meta): {e}")
         return None
@@ -872,13 +903,14 @@ def evaluate_paper(paper):
     scores = []
     for param_name, param_desc in SCORE_PARAMS:
         try:
-            data = _call_gemini(PARAM_PROMPT.format(
+            data, param_model = _call_gemini(PARAM_PROMPT.format(
                 param_name=param_name, param_desc=param_desc,
                 title=paper["title"], abstract=truncated,
-            ))
+            ), allow_groq=allow_groq)
             s = max(1, min(10, int(data.get("score", 5))))
             breakdown[param_name] = {"score": s, "reason": data.get("reason", "")}
             scores.append(s)
+            models_used.append(param_model)
         except Exception as e:
             print(f"  Gemini error ({param_name}): {e}")
             continue
@@ -894,6 +926,7 @@ def evaluate_paper(paper):
         "opportunity":     fix_encoding(meta.get("opportunity", "")),
         "fields":          meta.get("fields", []),
         "score_breakdown": breakdown,
+        "eval_model":      _summarize_eval_model(models_used),
     }
 
 # ── HTML Generation ────────────────────────────────────────────────────────────
@@ -1026,6 +1059,12 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     font-size:.62rem;padding:1px 7px;border-radius:4px;font-weight:600;letter-spacing:.03em;
     background:rgba(56,189,248,.12);color:var(--accent3);border:1px solid rgba(56,189,248,.2)
   }}
+  .model-badge{{
+    font-size:.6rem;padding:1px 7px;border-radius:4px;font-weight:600;letter-spacing:.02em;
+    background:var(--tag-bg);color:var(--muted);border:1px solid var(--faint)
+  }}
+  .model-badge.model-groq{{background:var(--yellow-bg);color:var(--yellow);border-color:rgba(251,191,36,.3)}}
+  .model-badge.model-gemma{{background:var(--green-bg);color:var(--green);border-color:rgba(52,211,153,.25)}}
 
   .summary{{font-size:.8rem;color:#9aa5bc;line-height:1.6}}
   .opportunity{{
@@ -1105,14 +1144,29 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .r-card-header{{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}}
   .r-name{{font-size:1rem;font-weight:700;color:var(--text)}}
   .r-meta{{font-size:.72rem;color:var(--muted)}}
+  .r-meta a{{color:var(--accent3);text-decoration:none}}
+  .r-meta a:hover{{text-decoration:underline}}
+  .r-affiliation{{font-size:.72rem;color:var(--muted);line-height:1.4}}
   .r-desc{{font-size:.8rem;color:#9aa5bc;line-height:1.6}}
-  .r-papers{{display:none;flex-direction:column;gap:8px;border-top:1px solid var(--border);padding-top:12px;margin-top:2px}}
+  .r-applic{{
+    font-size:.8rem;
+    background:linear-gradient(135deg,#1a1552 0%,#0f1535 100%);
+    border-left:3px solid var(--accent);
+    padding:8px 12px;border-radius:0 8px 8px 0;
+    color:var(--accent2);line-height:1.5;
+    box-shadow:inset 0 0 20px rgba(124,111,247,.05)
+  }}
+  .r-applic-label{{font-size:.6rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700;opacity:.8;display:block;margin-bottom:3px}}
+  .r-papers{{display:none;flex-direction:column;gap:12px;border-top:1px solid var(--border);padding-top:12px;margin-top:2px}}
   .r-papers.open{{display:flex}}
-  .r-paper-row{{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:.76rem}}
+  .r-paper{{display:flex;flex-direction:column;gap:6px}}
+  .r-paper-row{{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;font-size:.76rem}}
   .r-paper-title{{color:var(--text);flex:1}}
   .r-paper-title a{{color:inherit;text-decoration:none}}
   .r-paper-title a:hover{{text-decoration:underline;color:var(--accent2)}}
   .r-paper-score{{font-weight:800;flex-shrink:0}}
+  .r-paper .breakdown{{display:flex;margin-top:0;padding-top:8px}}
+  .r-paper-toggle{{align-self:flex-start;font-size:.66rem;padding:2px 8px}}
 
   @media(max-width:600px){{
     .grid{{grid-template-columns:1fr;padding:12px 12px 32px}}
@@ -1188,11 +1242,17 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <div class="grid" id="grid"></div>
 </div>
 <div id="researchers-view" style="display:none">
+  <div class="branch-tabs">
+    <button class="branch-tab r-branch-tab active" data-rbranch="all">All Branches</button>
+    <button class="branch-tab r-branch-tab" data-rbranch="Healthcare">🏥 Healthcare</button>
+    <button class="branch-tab r-branch-tab" data-rbranch="Agriculture &amp; Food">🌾 Agriculture &amp; Food</button>
+    <button class="branch-tab r-branch-tab" data-rbranch="Exact &amp; Social Sciences">💡 Exact &amp; Social Sciences</button>
+  </div>
   <div class="controls">
     <div class="row search-row">
       <div class="search-wrap">
         <span class="search-icon">🔍</span>
-        <input type="text" id="r-search" placeholder="Search researchers, descriptions…"/>
+        <input type="text" id="r-search" placeholder="Search researchers, descriptions, fields…"/>
       </div>
       <select class="sort-select" id="r-sort">
         <option value="avg_score">Avg Applicability ↓</option>
@@ -1233,6 +1293,14 @@ const PARAM_LABELS = {{
 }};
 function scoreClass(s){{return s>=38?'score-high':s>=28?'score-mid':'score-low';}}
 function barColor(s){{return s>=8?'#22c55e':s>=5?'#eab308':'#ef4444';}}
+function modelBadge(m){{
+  if(!m)return '';
+  const isGroq=m.indexOf('groq')===0;
+  const cls=isGroq?'model-groq':(m.indexOf('gemma')>=0?'model-gemma':'');
+  const label=isGroq?('groq: '+m.replace('groq:','')):m;
+  const tip=isGroq?'Scored by Groq fallback — pending re-score on Gemma':'Scored by '+m;
+  return `<span class="model-badge ${{cls}}" title="${{tip}}">🤖 ${{label}}</span>`;
+}}
 function renderBreakdown(bd){{
   if(!bd||!Object.keys(bd).length) return '';
   const rows=Object.entries(bd).map(([k,v])=>{{
@@ -1292,7 +1360,7 @@ function render(){{
     return `<div class="card">
       <div class="card-header"><div class="title">${{p.title}}</div><div class="score-badge ${{scoreClass(p.score)}}"><span class="score-num">${{p.score}}</span><span class="score-denom">/50</span></div></div>
       ${{(p.pi||p.pi_full_name)?`<div class="pi"><span class="pi-label">Main Researcher</span><span class="pi-name">👤 ${{p.pi_full_name||p.pi}}</span>${{p.pi_email?`<button class="btn pi-email-btn" onclick="toggleEmail(this)">Email ▾</button>`:''}} </div>${{p.pi_affiliation?`<div class="pi-affiliation">${{p.pi_affiliation}}</div>`:''}}${{p.pi_email?`<div class="pi-email" style="display:none"><a href="mailto:${{p.pi_email}}">${{p.pi_email}}</a></div>`:''}}`:''}}
-      <div class="meta-row"><div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>${{p.source?`<span class="source-badge">${{p.source}}</span>`:''}}</div>
+      <div class="meta-row"><div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>${{p.source?`<span class="source-badge">${{p.source}}</span>`:''}}${{modelBadge(p.eval_model)}}</div>
       ${{p.summary?`<div class="summary">${{p.summary}}</div>`:''}}
       ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
       ${{hasBd?renderBreakdown(p.score_breakdown):''}}
@@ -1305,8 +1373,9 @@ function render(){{
   }}).join('');
 }}
 function toggleBd(btn){{
-  const card=btn.closest('.card');
-  const bd=card.querySelector('.breakdown');
+  const container=btn.closest('.r-paper')||btn.closest('.card');
+  if(!container)return;
+  const bd=container.querySelector('.breakdown');
   if(!bd)return;
   bd.classList.toggle('open');
   btn.classList.toggle('active');
@@ -1365,22 +1434,40 @@ document.getElementById('sort').addEventListener('change',e=>{{sortBy=e.target.v
 document.getElementById('search').addEventListener('input',e=>{{searchQ=e.target.value.trim();render();}});
 
 // ── Researchers tab ──
-let rSortBy='avg_score', rSearchQ='';
+let rSortBy='avg_score', rSearchQ='', rBranch='all';
+function researcherBranches(r){{
+  // Prefer stored branches; otherwise derive from aggregated field tags.
+  if(r.branches&&r.branches.length)return r.branches;
+  const fields=r.fields||[];
+  return Object.keys(BRANCHES).filter(b=>BRANCHES[b].some(f=>fields.includes(f)));
+}}
 function renderResearchers(){{
   let list=researchers.slice();
-  if(rSearchQ){{const q=rSearchQ.toLowerCase();list=list.filter(r=>(r.pi_full_name||r.pi||'').toLowerCase().includes(q)||(r.description||'').toLowerCase().includes(q));}}
+  if(rBranch!=='all')list=list.filter(r=>researcherBranches(r).includes(rBranch));
+  if(rSearchQ){{const q=rSearchQ.toLowerCase();list=list.filter(r=>(r.pi_full_name||r.pi||'').toLowerCase().includes(q)||(r.description||'').toLowerCase().includes(q)||(r.applicability||'').toLowerCase().includes(q)||(r.fields||[]).join(' ').toLowerCase().includes(q));}}
   if(rSortBy==='pi')list.sort((a,b)=>(a.pi_full_name||a.pi||'').localeCompare(b.pi_full_name||b.pi||''));
   else list.sort((a,b)=>(b[rSortBy]||0)-(a[rSortBy]||0));
   const n=list.length;
   document.getElementById('r-count').textContent=n+' researcher'+(n!==1?'s':'')+' shown';
   const grid=document.getElementById('r-grid');
-  if(!list.length){{grid.innerHTML='<div class="empty">No researcher profiles yet.</div>';return;}}
+  if(!list.length){{grid.innerHTML='<div class="empty">No researcher profiles match.</div>';return;}}
   grid.innerHTML=list.map(r=>{{
     const name=r.pi_full_name||r.pi||'Unknown';
-    const rows=(r.papers||[]).map(p=>`<div class="r-paper-row">
-        <span class="r-paper-title"><a href="${{p.url}}" target="_blank">${{p.title}}</a>${{p.date?' ('+p.date+')':''}}</span>
-        <span class="r-paper-score ${{scoreClass(p.score)}}">${{p.score}}/50</span>
-      </div>`).join('');
+    const tags=(r.fields||[]).map(f=>`<span class="tag">${{f}}</span>`).join('');
+    const papers=(r.papers||[]).slice().sort((a,b)=>(b.score||0)-(a.score||0));
+    const rows=papers.map(p=>{{
+      const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
+      const ptags=(p.fields||[]).map(f=>`<span class="tag">${{f}}</span>`).join('');
+      return `<div class="r-paper">
+        <div class="r-paper-row">
+          <span class="r-paper-title"><a href="${{p.url}}" target="_blank">${{p.title}}</a>${{p.date?' ('+p.date+')':''}} ${{modelBadge(p.eval_model)}}</span>
+          <span class="r-paper-score ${{scoreClass(p.score)}}">${{p.score}}/50</span>
+        </div>
+        ${{ptags?`<div class="tags">${{ptags}}</div>`:''}}
+        ${{hasBd?renderBreakdown(p.score_breakdown):''}}
+        ${{hasBd?`<button class="btn r-paper-toggle" onclick="toggleBd(this)">Score Breakdown ▾</button>`:''}}
+      </div>`;
+    }}).join('');
     return `<div class="r-card">
       <div class="r-card-header">
         <div>
@@ -1389,7 +1476,10 @@ function renderResearchers(){{
         </div>
         <div class="score-badge ${{scoreClass(Math.round(r.avg_score||0))}}"><span class="score-num">${{(r.avg_score||0).toFixed(1)}}</span><span class="score-denom">avg /50</span></div>
       </div>
+      ${{r.pi_affiliation?`<div class="r-affiliation">🏛️ ${{r.pi_affiliation}}</div>`:''}}
       ${{r.description?`<div class="r-desc">${{r.description}}</div>`:''}}
+      ${{r.applicability?`<div class="r-applic"><span class="r-applic-label">Applicability</span>${{r.applicability}}</div>`:''}}
+      ${{tags?`<div class="tags">${{tags}}</div>`:''}}
       <div class="actions">
         <button class="btn" onclick="toggleRPapers(this)">Graded Publications ▾</button>
       </div>
@@ -1407,6 +1497,12 @@ function toggleRPapers(btn){{
 }}
 document.getElementById('r-search').addEventListener('input',e=>{{rSearchQ=e.target.value.trim();renderResearchers();}});
 document.getElementById('r-sort').addEventListener('change',e=>{{rSortBy=e.target.value;renderResearchers();}});
+document.querySelectorAll('.r-branch-tab').forEach(tab=>tab.addEventListener('click',()=>{{
+  document.querySelectorAll('.r-branch-tab').forEach(t=>t.classList.remove('active'));
+  tab.classList.add('active');
+  rBranch=tab.dataset.rbranch;
+  renderResearchers();
+}}));
 document.querySelectorAll('.page-tab').forEach(tab=>tab.addEventListener('click',()=>{{
   document.querySelectorAll('.page-tab').forEach(t=>t.classList.remove('active'));
   tab.classList.add('active');
@@ -1467,6 +1563,7 @@ def generate_html(papers, researchers=None):
         "pi_full_name":    p.get("pi_full_name", ""),
         "pi_email":        p.get("pi_email", ""),
         "pi_affiliation":  p.get("pi_affiliation", ""),
+        "eval_model":      p.get("eval_model", ""),
         "added_date":      p.get("added_date", ""),
     } for p in papers], key=lambda x: x["score"], reverse=True)
 
@@ -1533,6 +1630,74 @@ def generate_html(papers, researchers=None):
     print(f"Generated {OUTPUT_HTML} and {OUTPUT_JSON} with {len(enriched)} papers "
           f"and {len(researchers)} researcher profiles.")
 
+# ── Re-evaluation of Groq-scored papers ─────────────────────────────────────────
+
+def _fetch_abstract_for_paper(paper):
+    """Best-effort re-fetch of a paper's abstract from its source, by id.
+
+    Sheet rows don't persist abstracts, so re-scoring needs to fetch them
+    again. Returns the abstract string (may be empty if unavailable).
+    """
+    pid = paper.get("id", "")
+    try:
+        if pid.startswith("pubmed_"):
+            pmid = pid.split("_", 1)[1]
+            r = requests.get(
+                "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi",
+                params={"db": "pubmed", "id": pmid, "rettype": "xml", "retmode": "xml"},
+                timeout=30,
+            )
+            r.raise_for_status()
+            root = ET.fromstring(r.text)
+            return " ".join((el.text or "") for el in root.findall(".//Abstract/AbstractText")).strip()
+        if pid.startswith("epmc_"):
+            eid = pid.split("_", 1)[1]
+            r = requests.get(
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+                params={"query": f"EXT_ID:{eid}", "resultType": "core", "format": "json"},
+                timeout=30,
+            )
+            r.raise_for_status()
+            items = r.json().get("resultList", {}).get("result", [])
+            return (items[0].get("abstractText", "") if items else "").strip()
+        if pid.startswith("ss_"):
+            sid = pid.split("_", 1)[1]
+            r = requests.get(
+                f"https://api.semanticscholar.org/graph/v1/paper/{sid}",
+                params={"fields": "abstract"}, timeout=30,
+            )
+            r.raise_for_status()
+            return (r.json().get("abstract") or "").strip()
+    except Exception as e:
+        print(f"    abstract refetch failed for {pid}: {e}")
+    return ""
+
+
+def reeval_groq_papers(papers):
+    """Re-score papers whose eval_model is a Groq fallback, using Gemma only.
+
+    Papers where the Gemma re-score fails (e.g. daily quota exhausted) are left
+    exactly as they were, so this is safe to run repeatedly until every paper
+    carries a Gemma score. Returns the number of papers actually re-scored.
+    """
+    targets = [p for p in papers if str(p.get("eval_model", "")).startswith("groq:")]
+    print(f"  {len(targets)} Groq-scored papers to re-evaluate on Gemma.")
+    rescored = 0
+    for i, p in enumerate(targets):
+        print(f"  [{i+1}/{len(targets)}] re-eval: {p.get('title','')[:70]}")
+        p["abstract"] = _fetch_abstract_for_paper(p)
+        result = evaluate_paper(p, allow_groq=False)  # Gemma only
+        p.pop("abstract", None)
+        if not result or str(result.get("eval_model", "")).startswith("groq:"):
+            print("      still no Gemma result — leaving as-is")
+            continue
+        p.update(result)
+        rescored += 1
+        print(f"      re-scored {p['score']} via {result['eval_model']}")
+    print(f"  Re-evaluated {rescored}/{len(targets)} Groq papers on Gemma.")
+    return rescored
+
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
@@ -1576,6 +1741,16 @@ def main():
         save_to_sheet(existing)
         generate_html(existing)
         print("Backfill complete.")
+        return True
+
+    if ARGS.reeval_groq:
+        rescored = reeval_groq_papers(existing)
+        if rescored:
+            save_to_sheet(existing)
+            generate_html(existing)
+        else:
+            print("  Nothing re-scored (no Groq papers, or Gemma still unavailable).")
+        print("Re-evaluation complete.")
         return True
 
     known_ids = existing_ids(existing)
