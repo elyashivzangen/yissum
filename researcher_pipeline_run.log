@@ -3,45 +3,283 @@ Checking apps_script.js deployment version...
 Loading existing papers from Google Sheet...
   332 papers loaded.
 
-Selected 3 researchers to profile.
+Selected 20 researchers to profile.
 
-[1/3] Osnat Malka
+[1/20] Osnat Malka
 Fetching last 3 years of publications for Osnat Malka...
     grading: Osmoregulation by sucrose isomerization in the phloem-feeding whitefly
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
       score=16 (gemini-3.1-flash-lite)
-  [checkpoint: 1/3] writing 1 researcher profile(s)...
+  [checkpoint: 1/20] writing 1 researcher profile(s)...
 Generated papers_reader.html and papers_data.json with 332 papers and 1 researcher profiles.
 
-[2/3] Chamutal Gur
+[2/20] Chamutal Gur
 Fetching last 3 years of publications for Chamutal Gur...
     grading: B cell Maturation Antigen Targeted Chimeric Antigen Receptor T Cell Th
-      score=37 (gemini-3.1-flash-lite)
+      score=39 (gemini-3.1-flash-lite)
     grading: Targeting Bladder Cancer with Inactivated Uropathogenic 
-    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 49.538631676s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '49s'}]}}
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 15.830014342s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '15s'}]}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      score=28 (gemini-3.1-flash-lite)
+  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      score=23 (gemini-3.1-flash-lite)
     grading: Fluorosis and the settling toothpaste: further comments by the authors
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 11.250371518s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — skipping it for the rest of this run
       score=15 (gemini-3.1-flash-lite)
-  [checkpoint: 2/3] writing 2 researcher profile(s)...
+  [checkpoint: 2/20] writing 2 researcher profile(s)...
 Generated papers_reader.html and papers_data.json with 332 papers and 2 researcher profiles.
 
-[3/3] Rabea Asleh
+[3/20] Rabea Asleh
 Fetching last 3 years of publications for Rabea Asleh...
     grading: First Successful Implantation of the CARMAT Aeson® Total Artificial He
-      score=39 (gemini-3.1-flash-lite)
+      score=38 (gemini-3.1-flash-lite)
     grading: Assessing Cardiac Flow Measurements Using a Noninvasive Photoplethysmo
-    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 20.545909036s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 6.452180576s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      score=33 (gemini-3.1-flash-lite)
+  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 4.017895357s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '4s'}]}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — skipping it for the rest of this run
+  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      score=21 (gemini-3.1-flash-lite)
     grading: Endomyocardial biopsy in clinical practice: the diagnostic yield and i
-    gemma-4-26b-a4b-it failed (error): The read operation timed out
-      score=17 (gemini-3.1-flash-lite)
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 59.079605824s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — skipping it for the rest of this run
+  Gemini error (meta): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 59.079605824s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}
     grading: Reversibility of precapillary pulmonary hypertension and outcomes afte
-      score=18 (gemini-3.1-flash-lite)
-  [checkpoint: 3/3] writing 3 researcher profile(s)...
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Human Gut Microbiota in Cardiovascular Disease.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+  Gemini error (researcher summary): all Gemini models are marked dead this run and Groq is unavailable
+  [checkpoint: 3/20] writing 3 researcher profile(s)...
 Generated papers_reader.html and papers_data.json with 332 papers and 3 researcher profiles.
 
-Done. 3 researcher profiles written.
+[4/20] Tamar Harel
+Fetching last 3 years of publications for Tamar Harel...
+    grading: CRISPR knockout screens reveal genes and pathways essential for neuron
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Reconsidering a silent variant: SGCA's role in atypical cardiomyopathy
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: High Concordance of Copy Number Variants Detected by Chromosomal Micro
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: A Confirmatory Case of Severe Spondylocostal Dysostosis Caused by Bial
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Homozygous Deletion of the Epigenetic Regulator 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Inherent variability limits clinical utility of reproducible Parkinson
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Intronic IGF1R variant causing aberrant splicing, short stature, and n
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Exploring the unique characteristics of genes with dual autosomal domi
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Long-Read Whole-Genome Sequencing Uncovers a Deletion Upstream to HOXD
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: RNA Analysis Enables Resolution and Reclassification of Reportedly Ben
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Transcriptome analysis of atad3-null zebrafish embryos elucidates poss
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Expanding the SIAH1-Associated Phenotypic Spectrum: Insights From Loss
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Low prevalence of SCA27B in adult-onset cerebellar ataxia cohort of Je
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+  Gemini error (researcher summary): all Gemini models are marked dead this run and Groq is unavailable
+  [checkpoint: 4/20] writing 4 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 4 researcher profiles.
+
+[5/20] Zohar Kerem
+Fetching last 3 years of publications for Zohar Kerem...
+  fetch error for Zohar Kerem: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42353344%2C41199649%2C40767039%2C39200455&rettype=xml&retmode=xml
+  [checkpoint: 5/20] writing 4 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 4 researcher profiles.
+
+[6/20] Avi Priel
+Fetching last 3 years of publications for Avi Priel...
+    grading: The psychoactive cannabinoid THC inhibits peripheral nociceptors by ta
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: The analgesic paracetamol metabolite AM404 acts peripherally to direct
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Identification of the TRPA1 cannabinoid-binding site.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: TRPM5 activation depends on a synergistic effect of calcium and PKC ph
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+  Gemini error (researcher summary): all Gemini models are marked dead this run and Groq is unavailable
+  [checkpoint: 6/20] writing 5 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 5 researcher profiles.
+
+[7/20] Sharon Schlesinger
+Fetching last 3 years of publications for Sharon Schlesinger...
+  fetch error for Sharon Schlesinger: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%22Schlesinger+S%22%5BAuthor%5D+AND+%28%22Hebrew+University%22%5BAffiliation%5D+OR+%22Hadassah%22%5BAffiliation%5D%29+AND+%28%222023-07-05%22%5BPDAT%5D+%3A+%222026-07-04%22%5BPDAT%5D%29&retmax=50&retmode=json
+  [checkpoint: 7/20] writing 5 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 5 researcher profiles.
+
+[8/20] Sheera Adar
+Fetching last 3 years of publications for Sheera Adar...
+  fetch error for Sheera Adar: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42072663%2C40513340%2C39933696%2C39154022%2C39146802%2C38600235%2C38246411%2C38167611%2C38034403%2C37566959&rettype=xml&retmode=xml
+  [checkpoint: 8/20] writing 5 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 5 researcher profiles.
+
+[9/20] Oren Ram
+Fetching last 3 years of publications for Oren Ram...
+    grading: Three lncRNAs promote PUM protein condensation and germline differenti
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Distinct roles of TET-mediated cytosine oxidation in neural stem cell 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Genome-wide screening reveals essential roles for HOX genes and imprin
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: The killifish germline regulates longevity and somatic repair in a sex
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+  Gemini error (researcher summary): all Gemini models are marked dead this run and Groq is unavailable
+  [checkpoint: 9/20] writing 6 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 6 researcher profiles.
+
+[10/20] A Yaacov
+Fetching last 3 years of publications for A Yaacov...
+  fetch error for A Yaacov: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%22Yaacov+A%22%5BAuthor%5D+AND+%28%22Hebrew+University%22%5BAffiliation%5D+OR+%22Hadassah%22%5BAffiliation%5D%29+AND+%28%222023-07-05%22%5BPDAT%5D+%3A+%222026-07-04%22%5BPDAT%5D%29&retmax=50&retmode=json
+  [checkpoint: 10/20] writing 6 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 6 researcher profiles.
+
+[11/20] Oren Zimhony
+Fetching last 3 years of publications for Oren Zimhony...
+    grading: Månsson et al. conclusion that Piperacillin/tazobactam(PTZ) is non inf
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Hyperimmune Globulins in COVID-19.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: The Role of Varicella Zoster Virus (VZV) in Central Nervous System Inf
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Reply to Focosi et al.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: A Randomized Controlled Study Assessing Convalescent Immunoglobulins v
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+  Gemini error (researcher summary): all Gemini models are marked dead this run and Groq is unavailable
+  [checkpoint: 11/20] writing 7 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 7 researcher profiles.
+
+[12/20] Itamar Harel
+Fetching last 3 years of publications for Itamar Harel...
+  fetch error for Itamar Harel: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42230577%2C41980769%2C40664504%2C38810654%2C38810650%2C38750187%2C37872843%2C37734585%2C37321215&rettype=xml&retmode=xml
+  [checkpoint: 12/20] writing 7 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 7 researcher profiles.
+
+[13/20] Asaf Levy
+Fetching last 3 years of publications for Asaf Levy...
+    grading: Spinal Epidural Empyema Associated with Bite Wounds in an Indian Crest
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Genomic and structural analysis of major antigenic proteins' variabili
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: The point of subjective equality as a tool for accurate and robust ana
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: A comprehensive catalogue of receptor-binding domains in extracellular
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Plasmids, prophages, and defense systems are depleted from plant micro
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Cdc48 plays a crucial role in redox homeostasis through dynamic reshap
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Author Correction: Systematic discovery of antibacterial and antifunga
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Deciphering bacterial protein functions with innovative computational 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Lyrics do matter: how "coping songs" relate to well-being goals. The C
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Systematic discovery of antibacterial and antifungal bacterial toxins.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Identification of novel toxins associated with the extracellular contr
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Hand movement trajectories illustrate the mechanism underlying Kurt Le
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Widespread horizontal gene transfer between plants and bacteria.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+  Gemini error (researcher summary): all Gemini models are marked dead this run and Groq is unavailable
+  [checkpoint: 13/20] writing 8 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 8 researcher profiles.
+
+[14/20] Ofra Benny
+Fetching last 3 years of publications for Ofra Benny...
+  fetch error for Ofra Benny: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42339006%2C41624518%2C41415833%2C41373676%2C41265860%2C41226746%2C39683280%2C39039076%2C38809990%2C38127403%2C37957280%2C37861446%2C37770729%2C37315950&rettype=xml&retmode=xml
+  [checkpoint: 14/20] writing 8 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 8 researcher profiles.
+
+[15/20] Dror Mevorach
+Fetching last 3 years of publications for Dror Mevorach...
+    grading: B cell Maturation Antigen Targeted Chimeric Antigen Receptor T Cell Th
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Clinical use of inpatient FDG-PET/CT in internal medicine.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Apoptotic Cell-Based Therapy for the Modification of the Inflammatory 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Pathogenic Variants of Scavenger Receptor 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: HLA binding-groove motifs are associated with myocarditis induction af
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Complement-membrane regulatory proteins are absent from the nodes of R
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Apoptotic cells for treatment of acute respiratory distress syndrome a
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+  Gemini error (researcher summary): all Gemini models are marked dead this run and Groq is unavailable
+  [checkpoint: 15/20] writing 9 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 9 researcher profiles.
+
+[16/20] Johnathan Arnon
+Fetching last 3 years of publications for Johnathan Arnon...
+  fetch error for Johnathan Arnon: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42212120%2C41301020%2C40743912%2C40662350%2C40095892%2C39980610%2C39800380%2C38743206%2C38601442%2C37835426&rettype=xml&retmode=xml
+  [checkpoint: 16/20] writing 9 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 9 researcher profiles.
+
+[17/20] Maisa Haiek
+Fetching last 3 years of publications for Maisa Haiek...
+    grading: Bacterial Volatile Organic Compounds as Potential Caries and Periodont
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+  Gemini error (researcher summary): all Gemini models are marked dead this run and Groq is unavailable
+  [checkpoint: 17/20] writing 10 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 10 researcher profiles.
+
+[18/20] Tamir Ben-Hur
+Fetching last 3 years of publications for Tamir Ben-Hur...
+  fetch error for Tamir Ben-Hur: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%22Ben-Hur+T%22%5BAuthor%5D+AND+%28%22Hebrew+University%22%5BAffiliation%5D+OR+%22Hadassah%22%5BAffiliation%5D%29+AND+%28%222023-07-05%22%5BPDAT%5D+%3A+%222026-07-04%22%5BPDAT%5D%29&retmax=50&retmode=json
+  [checkpoint: 18/20] writing 10 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 10 researcher profiles.
+
+[19/20] Amir Haze
+Fetching last 3 years of publications for Amir Haze...
+  fetch error for Amir Haze: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41925697%2C41607093%2C40682253%2C40513526%2C39740667%2C38510331%2C37783468&rettype=xml&retmode=xml
+  [checkpoint: 19/20] writing 10 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 10 researcher profiles.
+
+[20/20] Sharon Einav
+Fetching last 3 years of publications for Sharon Einav...
+    grading: Long term follow-up of functional outcome and quality of life after ad
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Real World Human-LLM Interactions - Prospective blinded versus unblind
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: How large language models can help us write a systematic review.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Utilizing Point-of-Care Ultrasound and Tourniquet Placement for Expedi
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Evaluating the performance of large language models versus human resea
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Evaluating the o1 reasoning large language model for cognitive bias: a
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Primer on large language models: an educational overview for intensivi
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: [EMERGING THERAPIES FOR LI-FRAUMENI SYNDROME AND RHABDOMYOSARCOMA: CAN
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: [LORENZO'S OIL AND ADRENOLEUKODYSTROPHY EXAMINING AN ARTIFICIAL INTELL
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Intensive care for the long-term.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Using augmented intelligence to improve long term outcomes.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Correction: Anesthetic approach to pregnant patients with malaria: a n
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: Anesthetic approach to pregnant patients with malaria: a narrative rev
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    grading: The effect of ionic redistributions on the microwave dielectric respon
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+  Gemini error (researcher summary): all Gemini models are marked dead this run and Groq is unavailable
+  [checkpoint: 20/20] writing 11 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 11 researcher profiles.
+
+Done. 11 researcher profiles written.
