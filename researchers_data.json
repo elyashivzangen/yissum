@@ -4,10 +4,10 @@
     "pi_full_name": "Osnat Malka",
     "pi_email": "osnat226@gmail.com.",
     "pi_affiliation": "The Institute of Environmental Sciences, The Hebrew University of Jerusalem, Rehovot, Israel.; Katif Research and Development Center, Sdot Negev Regional Council, Netivot, Israel.",
-    "avg_score": 23.0,
+    "avg_score": 22.0,
     "paper_count": 2,
-    "description": "This researcher specializes in agricultural biotechnology and insect physiology, specifically focusing on the molecular mechanisms whiteflies use to process plant sap. By identifying critical digestive and osmoregulatory enzymes in these pests, the researcher develops targeted genetic interventions that disrupt the insects' biological functions. This work seeks to create pest-resistant crops that eliminate the need for traditional chemical insecticides.",
-    "applicability": "The technology is highly applicable for the development of transgenic, pest-resistant seed varieties, representing a significant commercial opportunity for large-scale agricultural biotech firms. By licensing these genetic traits, the research could lead to near-to-mid-term partnerships with crop science companies focused on sustainable pest management and yield protection.",
+    "description": "This researcher specializes in agricultural biotechnology, specifically focusing on the molecular interactions between phloem-feeding pests like the whitefly and their host plants. By identifying the physiological mechanisms that allow these insects to thrive—such as digestive processes and osmoregulation—the researcher develops targeted genetic interventions to disrupt these survival pathways. Their work aims to create sustainable crop protection strategies that minimize reliance on broad-spectrum chemical insecticides.",
+    "applicability": "The research has high translational potential for the development of biopesticides, RNAi-based crop protection products, and genetically modified resistant plant varieties. These technologies offer a clear pathway for licensing to major agricultural biotech firms, though commercialization timelines remain medium-term due to the necessary regulatory hurdles associated with GMO and biopesticide development.",
     "fields": [
       "AgriTech",
       "Synthetic Biology",
@@ -64,33 +64,34 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39892859/",
         "journal": "Insect biochemistry and molecular biology",
-        "score": 18,
-        "summary": "Researchers identified specific enzymes in the whitefly that are essential for managing osmotic pressure while feeding on sugar-rich plant sap. Inhibiting these enzymes disrupts the insect's water balance, preventing them from properly processing sucrose and increasing their vulnerability.",
-        "opportunity": "Development of highly specific RNAi-based biopesticides or small-molecule inhibitors targeting these GH13 enzymes to control whitefly infestations in crops.",
+        "score": 16,
+        "summary": "Researchers identified specific enzymes that allow the whitefly pest to regulate its internal sugar levels and prevent dehydration while feeding on plants. Disrupting these enzymes through gene silencing interferes with the insect's ability to manage osmotic pressure.",
+        "opportunity": "This discovery provides a specific molecular target for developing highly selective RNAi-based biopesticides to control whitefly populations in high-value crops.",
         "fields": [
           "AgriTech",
-          "Synthetic Biology"
+          "Synthetic Biology",
+          "Genomics"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 5,
-            "reason": "The study provides an incremental advancement by identifying the specific GH13 family genes responsible for sucrose isomerization in a specific pest species, filling a known knowledge gap. However, it does not introduce a new biological paradigm or a platform-enabling technology."
+            "score": 4,
+            "reason": "While the research provides mechanistic insight into insect physiology, it represents an incremental advance in entomological biochemistry rather than a disruptive platform technology. The findings have limited immediate industrial scalability or broad protectability outside of specific niche pest control applications."
           },
           "commercial_potential": {
             "score": 4,
-            "reason": "While this study identifies a potential molecular target for pest control, the transition from gene knockdown in a lab setting to a scalable, commercially viable insecticide application remains speculative and technically challenging. The findings offer a starting point for basic biological research, but lack a clear path toward a proprietary product or platform-enabling technology."
+            "reason": "While this study identifies potential molecular targets for controlling a major agricultural pest (whitefly), the transition from gene knockdown in an artificial diet to a field-ready commercial product or viable RNAi-based biopesticide remains distant and technically challenging. The research is fundamentally academic and lacks the proof-of-concept for a delivery mechanism or commercial scalability required for higher investment potential."
           },
           "market_size": {
-            "score": 4,
-            "reason": "While this research provides a target for controlling a significant agricultural pest, the application is limited to a specific biological mechanism (osmoregulation) rather than a broad, high-value commercial platform. The market potential is constrained by the niche nature of RNAi-based biocontrol, which currently faces significant regulatory and delivery hurdles in large-scale agriculture."
+            "score": 3,
+            "reason": "While whiteflies are significant agricultural pests, this paper describes fundamental biological research into insect osmoregulation rather than a proprietary technology or scalable intervention. The lack of a clear commercial application or platform technology limits its current addressable market value."
           },
           "trl": {
             "score": 2,
-            "reason": "This is fundamental biological research aimed at characterizing gene function in an agricultural pest; while it provides insights into insect physiology, it is far from an industrial application or a commercialized technology."
+            "reason": "This is fundamental biological research aimed at characterizing gene function in an agricultural pest; it lacks a validated technological application, prototype, or proof-of-concept for commercial pest control."
           },
           "ip_strength": {
             "score": 3,
-            "reason": "This is fundamental biological research identifying gene functions in an insect pest, which describes natural biological processes rather than a novel, patentable invention or technical solution. While the target genes could theoretically serve as RNAi targets for pest control, the underlying discovery is scientific characterization rather than a proprietary technological platform."
+            "reason": "This is fundamental biological research identifying gene functions in an insect pest, which lacks immediate industrial utility or a clear path to patentable compositions of matter. While target identification is a prerequisite for R&D, this specific study provides no proprietary technology, novel chemical scaffolds, or protectable methodologies."
           }
         },
         "eval_model": "gemini-3.1-flash-lite",
@@ -104,10 +105,10 @@
     "pi_full_name": "Chamutal Gur",
     "pi_email": "",
     "pi_affiliation": "Department of Rheumatology, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
-    "avg_score": 24.3,
+    "avg_score": 25.3,
     "paper_count": 3,
-    "description": "This researcher focuses on the intersection of advanced immunotherapy and clinical pharmacology, specifically exploring novel applications for CAR-T cell therapies and bacterial-based treatments. Their work spans high-stakes biotechnology, such as treating severe autoimmune disorders and oncology, as well as applied pharmaceutical formulation research regarding product stability and safety.",
-    "applicability": "The CAR-T and bacterial immunotherapy projects represent high-value, near-to-mid-term translational opportunities suitable for biotech spin-offs or partnerships with major pharmaceutical firms. While these therapeutic assets have significant commercial potential for complex diseases, the dental research remains in the domain of established consumer healthcare manufacturing and quality control standards.",
+    "description": "This researcher focuses on the intersection of advanced immunotherapy and clinical pharmacology, specifically exploring novel applications for CAR-T cell technology and bacterial-based therapeutic interventions. Their work bridges immunology and oncology to address complex, treatment-resistant conditions like systemic autoimmune diseases and urological cancers. Additionally, they engage in applied research related to chemical stability in pharmaceutical and dental product formulations.",
+    "applicability": "The CAR-T and bacterial immunotherapy projects hold high commercial potential for the biopharma sector, representing potential platform technologies for autoimmune disease and oncology that could lead to lucrative licensing deals or spin-out ventures. These clinical-stage research areas offer strong translational prospects over a 3-to-7-year horizon, while the dental formulation research represents a more near-term, incremental innovation suitable for partnership with consumer healthcare or oral hygiene firms.",
     "fields": [
       "Clinical",
       "Immunology",
@@ -126,32 +127,32 @@
         "url": "https://pubmed.ncbi.nlm.nih.gov/42098533/",
         "journal": "Arthritis & rheumatology (Hoboken, N.J.)",
         "score": 36,
-        "summary": "Researchers at Hebrew University tested a BCMA-targeted CAR-T therapy, HBI0101, in patients with severe, treatment-resistant systemic lupus erythematosus and systemic sclerosis. The study reported promising clinical responses with manageable side effects, suggesting that this CAR-T approach could provide a powerful new therapeutic option for complex autoimmune diseases.",
-        "opportunity": "This therapy represents a major commercial opportunity to expand CAR-T applications beyond oncology into the multi-billion dollar autoimmune disease market, potentially establishing a new standard of care for refractory systemic conditions.",
+        "summary": "This study demonstrates that HBI0101, a BCMA-targeted CAR-T cell therapy, shows early promise in safely inducing clinical remission in patients with severe, treatment-resistant systemic lupus erythematosus and systemic sclerosis. By effectively resetting the immune system in autoimmune conditions, this approach highlights a potential breakthrough in moving CAR-T applications beyond oncology.",
+        "opportunity": "This research provides a high-value commercial opportunity to expand CAR-T therapies into the multi-billion dollar autoimmune disease market, establishing a new therapeutic paradigm for refractory inflammatory conditions.",
         "fields": [
           "Immunology",
           "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 9,
-            "reason": "This research represents a highly innovative expansion of CAR-T cell therapy from oncology into severe autoimmune indications, demonstrating clinical proof-of-concept for a new target (BCMA) in systemic lupus and scleroderma. The successful translation of this platform technology into refractory autoimmune disease creates a significant and protectable new therapeutic paradigm with clear industrial scalability."
+            "score": 8,
+            "reason": "This study represents a high-impact translational shift by repurposing BCMA-targeted CAR-T, a proven oncology platform, to address severe autoimmune conditions like SLE and systemic sclerosis. It is highly novel in its clinical application, demonstrating strong potential for a new therapeutic paradigm that is both industrially relevant and readily translatable."
           },
           "commercial_potential": {
             "score": 9,
-            "reason": "This study demonstrates strong clinical proof-of-concept for a high-value, patentable cell therapy platform targeting autoimmune diseases with high unmet medical need. The results indicate clear therapeutic efficacy in refractory patients, positioning the asset as a prime candidate for rapid clinical advancement and high-value licensing or acquisition."
+            "reason": "This study demonstrates strong commercial potential by applying a proven therapeutic modality (CAR-T) to high-unmet-need autoimmune indications with clear clinical endpoints and preliminary efficacy. The established clinical framework and the potential for a new blockbuster indication make this a highly attractive, scalable, and licensable asset."
           },
           "market_size": {
             "score": 8,
-            "reason": "Systemic Lupus Erythematosus and Systemic Sclerosis represent high-unmet-need autoimmune indications with significant prevalence and a multi-billion dollar addressable market for disease-modifying therapies. The potential for a 'functional cure' through CAR-T intervention creates an extremely high-value market opportunity for refractory patient segments."
+            "reason": "Systemic Lupus Erythematosus and Systemic Sclerosis represent high-unmet-need conditions with massive global prevalence and significant healthcare spending, creating a highly lucrative target market for a disease-modifying, potentially curative CAR-T therapy. The ability to address refractory patient populations justifies a substantial premium price, positioning this as a high-value commercial opportunity."
           },
           "trl": {
-            "score": 6,
-            "reason": "The therapy is in a clinical-stage (Phase 1) trial with human subjects, representing a significant advancement beyond preclinical development but still requiring further trials to prove long-term safety and efficacy before market authorization."
+            "score": 7,
+            "reason": "The therapy is in a clinical-stage human trial (Phase 1) demonstrating preliminary safety and efficacy in patients, placing it clearly beyond laboratory research but still requiring further trials to prove clinical utility and commercial viability."
           },
           "ip_strength": {
             "score": 4,
-            "reason": "While HBI0101 represents a clinical application, BCMA-targeted CAR-T is a well-characterized and crowded field with significant prior art, making proprietary 'composition of matter' claims extremely narrow and difficult to defend against established players. The value is driven more by clinical execution and regulatory positioning than by a novel or highly defensible underlying IP foundation."
+            "reason": "While HBI0101 represents a clinical application, the use of BCMA-targeted CAR-T cells is a well-trodden therapeutic modality with extensive existing IP landscapes, making the novelty and defensibility of the core construct potentially limited. The innovation here is focused on clinical repositioning rather than a novel compositional or platform-enabling breakthrough."
           }
         },
         "eval_model": "gemini-3.1-flash-lite",
@@ -164,9 +165,9 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/41677596/",
         "journal": "Cells",
-        "score": 23,
-        "summary": "Researchers are investigating the use of inactivated uropathogenic bacteria as a safer, more effective alternative to the current BCG immunotherapy standard for treating non-muscle-invasive bladder cancer. This approach aims to minimize the toxicity and recurrence rates associated with existing treatments while providing a more accessible clinical option.",
-        "opportunity": "This technology presents an opportunity to develop a next-generation bacterial-based immunotherapy that addresses the significant unmet market need for improved non-muscle-invasive bladder cancer treatments.",
+        "score": 25,
+        "summary": "Researchers at the Hebrew University are investigating the use of inactivated uropathogenic bacteria as a safer and more effective alternative to the current gold-standard BCG immunotherapy for non-muscle-invasive bladder cancer. This approach aims to address the significant toxicity and recurrence issues currently limiting the treatment of urothelial carcinomas.",
+        "opportunity": "Developing a novel bacterial-based immunotherapy candidate to disrupt the multi-billion dollar NMIBC market by providing a superior safety and efficacy profile compared to BCG.",
         "fields": [
           "Immunology",
           "Clinical",
@@ -175,19 +176,23 @@
         "score_breakdown": {
           "novelty": {
             "score": 4,
-            "reason": "While repurposing uropathogenic bacteria for immunotherapy is a logical progression from BCG, it represents an incremental improvement on an established biological mechanism rather than a breakthrough innovation. The novelty is limited by the similarity to existing therapeutic approaches, lacking the transformative architecture of next-generation platform technologies."
+            "reason": "While repurposing uropathogenic bacteria is a logical extension of the BCG immunotherapy paradigm, it represents an incremental improvement rather than a paradigm shift in cancer immunology. The approach faces significant regulatory and safety hurdles and lacks the platform-level innovation typically associated with high-impact therapeutic breakthroughs."
           },
           "commercial_potential": {
             "score": 8,
-            "reason": "The technology addresses a clearly defined, high-value unmet clinical need in an established market where the current standard-of-care (BCG) faces persistent supply chain and toxicity issues. The use of a modified biological agent as an immunotherapy represents a highly actionable and protectable therapeutic development path with a clear regulatory and commercial roadmap."
+            "reason": "The technology addresses a major, well-defined clinical need with a clear path to market as an improved successor to the current standard of care (BCG). It offers high commercial potential due to the large existing NMIBC patient population, established regulatory pathways for oncology immunotherapies, and clear clinical differentiation."
           },
           "market_size": {
             "score": 7,
-            "reason": "The market addresses a high-need, well-defined clinical space in non-muscle-invasive bladder cancer (NMIBC) with a massive existing patient base currently reliant on the aging and supply-constrained BCG standard of care. While the addressable market is large and economically attractive, it is currently a specialty oncology segment rather than a mass-market platform, keeping it just shy of the highest tier."
+            "reason": "The market addresses a significant clinical need in the large NMIBC population, where current BCG shortages and toxicity profiles create a clear and urgent demand for safer alternatives. While the market is substantial and high-value, it remains a therapeutic niche compared to broader oncology markets, limiting the potential for a top-tier score."
           },
           "trl": {
+            "score": 2,
+            "reason": "The text describes an early-stage investigation into a hypothesis to find an alternative to BCG, indicating the work is at the basic research or proof-of-concept stage rather than a developed product."
+          },
+          "ip_strength": {
             "score": 4,
-            "reason": "The research focuses on a pre-clinical assessment of an inactivated bacterial alternative to an existing standard of care, placing it at the early experimental or proof-of-concept stage. While it addresses a clear clinical need, it lacks the established safety profiles, manufacturing scalability, or human clinical trial data required for a higher TRL score."
+            "reason": "Repurposing an existing pathogen (Uropathogenic E. coli) as an immunotherapeutic agent faces significant hurdles in establishing novel composition-of-matter patents, as the approach relies on well-characterized biological materials. The strategy lacks a strong proprietary moat and would likely struggle to achieve broad freedom-to-operate or effective barriers against competitors compared to synthetic or novel biological platforms."
           }
         },
         "eval_model": "gemini-3.1-flash-lite",
@@ -200,9 +205,9 @@
         "date": "2023",
         "url": "https://pubmed.ncbi.nlm.nih.gov/36453687/",
         "journal": "Arthritis care & research",
-        "score": 14,
-        "summary": "This paper is a follow-up commentary discussing the stability of toothpaste formulations and their relationship to dental fluorosis. It focuses on how the settling of ingredients within the toothpaste tube can lead to inconsistent fluoride dosing.",
-        "opportunity": "Development of stabilized, homogeneous oral care formulations to ensure consistent active ingredient delivery and reduce toxicity risks.",
+        "score": 15,
+        "summary": "This paper is a technical correspondence regarding the chemical stability and formulation dynamics of fluoride-containing dental hygiene products. It focuses on clarifying previous debates concerning ingredient settling and the resultant clinical implications for fluorosis prevention.",
+        "opportunity": "The findings offer limited commercial potential, primarily serving as a reference for dental product formulation stability and quality control standards in the consumer health sector.",
         "fields": [
           "Clinical",
           "Other"
@@ -210,26 +215,26 @@
         "score_breakdown": {
           "novelty": {
             "score": 1,
-            "reason": "The paper is a commentary/response to a previous article rather than primary research, meaning it provides academic clarification rather than new scientific discoveries or innovations."
+            "reason": "This paper is a correspondence or letter to the editor regarding previously published work, rather than original research, and therefore contains no scientific novelty or new experimental findings."
           },
           "commercial_potential": {
             "score": 1,
-            "reason": "The paper is a scholarly commentary on a previous article rather than original research presenting a new product, technology, or patentable invention."
+            "reason": "This paper is a piece of correspondence responding to a previous academic article rather than an innovation, original research, or a novel technology. It contains no patentable intellectual property, product development pathway, or actionable commercial utility."
           },
           "market_size": {
-            "score": 1,
-            "reason": "This paper is a niche academic correspondence regarding specific chemical formulations in oral care, offering no commercial scalability or potential to address a significant market beyond academic discourse."
+            "score": 2,
+            "reason": "The paper addresses a niche, highly specific technical correction regarding laboratory methodology for fluorosis studies, which lacks significant commercial scalability or broad industrial application. Its impact is confined to a narrow academic debate rather than identifying or serving a substantial market opportunity."
           },
           "trl": {
             "score": 10,
-            "reason": "This paper discusses a nuance of a product that is already a staple in the global consumer health market, representing a technology that is fully commercialized and in widespread real-world use."
+            "reason": "This paper discusses dental hygiene formulations that are already widely manufactured and commercialized, representing an established, market-ready consumer health technology."
           },
           "ip_strength": {
             "score": 1,
-            "reason": "This paper is a commentary on existing dental clinical research and does not present novel, patentable technological innovations or proprietary methods. It lacks any intellectual property potential, as it serves as academic discourse rather than an invention disclosure."
+            "reason": "This paper is a commentary on existing dental literature rather than a presentation of novel, proprietary technology. It contains no original technical methodology or experimental findings that would constitute protectable intellectual property."
           }
         },
-        "eval_model": "gemma-4-31b-it",
+        "eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Hadassah Medical Center and Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": ""
       }
@@ -240,20 +245,22 @@
     "pi_full_name": "Rabea Asleh",
     "pi_email": "rasleh@hadassah.org.il.",
     "pi_affiliation": "Heart Institute, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 24.6,
+    "avg_score": 24.1,
     "paper_count": 7,
-    "description": "This researcher specializes in advanced cardiovascular medicine, focusing on the intersection of mechanical circulatory support, heart failure management, and hemodynamic monitoring. Their work spans the clinical implementation of novel medical devices, the investigation of physiological responses to cardiac interventions, and the exploration of emerging systemic drivers of heart disease, such as the gut microbiome. By bridging retrospective clinical data with the validation of new diagnostic technologies, they aim to refine treatment protocols for complex, high-acuity cardiac conditions.",
-    "applicability": "The research has high translational potential, particularly in the validation of noninvasive wearable hemodynamic monitors and the optimization of mechanical heart support systems, both of which offer near-term commercial pathways for med-tech partnerships. Furthermore, the identification of biological risk markers—such as haptoglobin depletion during ablation or microbiome-derived metabolites—presents opportunities for developing diagnostic screening tools and targeted pharmacological interventions.",
+    "description": "This researcher specializes in advanced clinical cardiology, with a primary focus on heart failure management, mechanical circulatory support, and interventional device safety. Their work bridges clinical practice and translational research, investigating both cutting-edge prosthetic technologies like artificial hearts and noninvasive diagnostic tools to improve patient monitoring and outcomes in complex cardiac conditions.",
+    "applicability": "The research has high translational potential, particularly in the development of noninvasive hemodynamic monitoring wearables and the optimization of clinical protocols for mechanical assist devices. Near-term opportunities include the commercialization of sensor-based diagnostic platforms and the licensing of risk-stratification models for patients undergoing invasive cardiac procedures.",
     "fields": [
       "Clinical",
       "Medical Device",
       "Diagnostics",
       "Drug Discovery",
-      "Genomics",
       "Imaging",
+      "Genomics",
+      "Software/AI",
       "Immunology"
     ],
     "branches": [
+      "Exact & Social Sciences",
       "Healthcare"
     ],
     "papers": [
@@ -303,33 +310,33 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/42148620/",
         "journal": "The Israel Medical Association journal : IMAJ",
-        "score": 38,
-        "summary": "This paper documents the first successful clinical deployment of the CARMAT Aeson total artificial heart in Israel, serving as a life-sustaining bridge for a patient awaiting a heart transplant. The report validates the clinical viability and operational integration of advanced, pulsatile mechanical circulatory support systems within high-acuity cardiovascular care centers.",
-        "opportunity": "The successful implementation highlights a maturing market for next-generation, hemodynamically responsive artificial organs that address the critical global shortage of donor hearts.",
+        "score": 39,
+        "summary": "This report details the first clinical implantation of the CARMAT Aeson® Total Artificial Heart in Israel, serving as a life-saving bridge to heart transplantation for a patient with end-stage biventricular heart failure. The procedure validates the adoption of advanced, hemocompatible prosthetic technology in regional clinical practices to address the chronic shortage of donor organs.",
+        "opportunity": "The successful clinical implementation of this device signals a growing market opportunity for high-end mechanical circulatory support systems and provides a reference site for expanded adoption of permanent or bridge-to-transplant bio-prosthetic heart solutions.",
         "fields": [
           "Medical Device",
           "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 2,
-            "reason": "This report describes a clinical case study of an existing, regulatory-approved medical device (CARMAT Aeson) being used in a new geographic setting, which constitutes a localized operational milestone rather than a scientific or technological innovation. It does not introduce new intellectual property, novel mechanical engineering, or breakthrough clinical methodology compared to the established body of prior art."
+            "score": 3,
+            "reason": "This paper represents a clinical case report of an existing, regulatory-approved medical device (CARMAT Aeson) being used in a new geographic setting, which provides operational validation rather than scientific or technological innovation. It does not introduce novel engineering, biological breakthroughs, or new platform capabilities."
           },
           "commercial_potential": {
             "score": 9,
-            "reason": "The technology is already CE-marked and FDA-approved for specific clinical indications, representing a de-risked, high-value asset that directly addresses the critical unmet need for bridge-to-transplant solutions in patients with end-stage biventricular heart failure."
+            "reason": "The technology is a fully realized, CE-marked medical device that addresses a critical unmet need in end-stage heart failure, demonstrating clear clinical utility and an established pathway for high-value commercial adoption."
           },
           "market_size": {
             "score": 9,
-            "reason": "The Total Artificial Heart (TAH) addresses a massive, underserved global market of end-stage heart failure patients who are ineligible for or waiting on heart transplants, representing a high-value, critical care medical need. The clinical validation of the Aeson® device as a bridge-to-transplant confirms a clear, multi-billion dollar addressable market within the established cardiac surgical landscape."
+            "reason": "The Total Artificial Heart (TAH) addresses the massive, high-acuity market of end-stage heart failure patients who are ineligible for or waiting on transplant lists, representing a multi-billion dollar unmet clinical need with significant pricing power and insurance reimbursement potential."
           },
           "trl": {
             "score": 9,
-            "reason": "The technology has already achieved regulatory approval (CE Mark) and is currently being deployed in clinical settings as a bridge-to-transplant therapy, representing a mature, near-market medical device."
+            "reason": "The technology has already achieved regulatory approval (CE Mark) and is currently being deployed in clinical settings as a bridge-to-transplant therapy, demonstrating advanced real-world readiness."
           },
           "ip_strength": {
             "score": 9,
-            "reason": "The CARMAT Aeson® represents a highly complex, multi-disciplinary engineering feat protected by a robust global patent portfolio covering its unique self-regulating physiological control system and proprietary biocompatible materials. Its extreme technical barriers to entry and established regulatory pathways provide significant long-term competitive defensibility."
+            "reason": "The CARMAT Aeson® device represents a highly complex, capital-intensive medical technology protected by an extensive portfolio of patents covering its unique biomaterials, physiological sensors, and adaptive motor control systems, creating significant barriers to entry for competitors."
           }
         },
         "eval_model": "gemini-3.1-flash-lite",
@@ -383,37 +390,37 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40845743/",
         "journal": "JACC. Advances",
-        "score": 32,
-        "summary": "This study validates a noninvasive, wearable photoplethysmography (PPG) device for measuring hemodynamic parameters like cardiac output and systemic vascular resistance in heart failure patients. The results demonstrate that the device achieves clinical agreement comparable to the invasive pulmonary artery catheter gold standard.",
-        "opportunity": "This technology provides a scalable, low-risk alternative for continuous cardiac monitoring in both hospital and remote settings, offering a high-value commercial opportunity to replace invasive, costly catheterization procedures.",
+        "score": 29,
+        "summary": "Researchers evaluated a noninvasive photoplethysmography (PPG) wearable device against the clinical gold-standard invasive pulmonary artery catheter for monitoring hemodynamic parameters like cardiac output. The study demonstrates that the PPG device achieves high concordance with invasive thermodilution methods, offering a safer alternative for cardiac monitoring in heart failure patients.",
+        "opportunity": "This technology enables a high-margin opportunity to replace or augment invasive bedside monitoring in intensive care and outpatient heart failure management with a cost-effective, continuous wearable solution.",
         "fields": [
           "Medical Device",
           "Clinical",
-          "Diagnostics"
+          "Imaging"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 3,
-            "reason": "This study serves as a standard clinical validation of an existing monitoring modality rather than introducing a novel sensing mechanism or groundbreaking technological innovation. It follows a conventional comparative methodology that adds to the body of clinical evidence for PPG-based monitoring but does not represent a significant shift in scientific paradigms or underlying deep-tech IP."
+            "reason": "This study is a validation trial of an existing technology rather than an innovation, as PPG-based hemodynamic monitoring is a well-established area of clinical research. The findings provide incremental clinical evidence for concordance but do not introduce novel methodologies, sensors, or transformative diagnostic approaches."
           },
           "commercial_potential": {
-            "score": 9,
-            "reason": "The technology addresses a high-value clinical need by replacing invasive, high-risk procedures with a noninvasive wearable, and the demonstrated concordance with the thermodilution gold standard suggests a clear, actionable path toward clinical adoption and regulatory approval."
+            "score": 6,
+            "reason": "The study presents a comparison of a noninvasive photoplethysmography-based device to an invasive pulmonary artery catheter, but the commercial potential is limited by the lack of clear product development or market relevance in the abstract, suggesting that the focus is on research validation rather than commercialization."
           },
           "market_size": {
             "score": 9,
-            "reason": "Hemodynamic monitoring is a massive, essential market within the multi-billion dollar critical care and cardiology monitoring space, where replacing invasive, high-risk procedures (like Swan-Ganz catheters) with noninvasive PPG-based solutions addresses a significant, high-value clinical pain point."
+            "reason": "The technology addresses the massive, high-acuity market for hemodynamic monitoring, which is currently dominated by invasive, high-risk procedures that drive significant hospital costs and patient morbidity. A noninvasive alternative with high clinical concordance has the potential for immediate, widespread adoption across both critical care units and outpatient heart failure management."
           },
           "trl": {
             "score": 8,
-            "reason": "The technology has been tested on a substantial patient cohort (n=90) in a clinical setting against the clinical gold standard, demonstrating it has moved well beyond the prototype phase and is ready for regulatory validation and clinical integration."
+            "reason": "The technology has been tested in a substantial clinical cohort (n=90) against the clinical gold standard, demonstrating statistical validation that typically precedes regulatory clearance and near-market deployment."
           },
           "ip_strength": {
             "score": 3,
-            "reason": "The study evaluates an application of existing photoplethysmography (PPG) technology rather than a novel hardware invention or proprietary composition of matter, making the IP position weak and likely limited to specific software algorithms. Without a unique sensor architecture or proprietary signal processing breakthrough, the approach is highly susceptible to competition from established wearable medical device manufacturers."
+            "reason": "The study evaluates a standard sensing modality (PPG) to derive established physiological metrics, suggesting the innovation likely relies on algorithmic refinements rather than novel, composition-of-matter, or disruptive device architecture. Without evidence of unique sensor hardware or proprietary machine-learning architectures, the defensibility of such 'non-invasive CO monitoring' approaches is typically limited by the crowded landscape of existing patents and the ease of 'design-around' for signal processing techniques."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
+        "eval_model": "groq:llama-3.1-8b-instant",
         "pi_affiliation": "Heart Institute, Hadassah Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel. Electronic address: Rasleh@hadassah.org.il.",
         "pi_email": "Rasleh@hadassah.org.il."
       },
@@ -424,8 +431,8 @@
         "url": "https://pubmed.ncbi.nlm.nih.gov/38479703/",
         "journal": "Hellenic journal of cardiology : HJC = Hellenike kardiologike epitheorese",
         "score": 17,
-        "summary": "This retrospective study evaluates the diagnostic utility of endomyocardial biopsies (EMB) over five years, highlighting their role in managing cardiac conditions and post-transplant rejection. It underscores the ongoing reliance on invasive biopsy procedures despite improvements in noninvasive cardiac imaging techniques.",
-        "opportunity": "The persistence of invasive biopsy requirements presents a commercial opportunity for developing high-fidelity, non-invasive 'liquid biopsy' or advanced AI-driven imaging biomarkers that can reliably replace tissue sampling for myocarditis and transplant monitoring.",
+        "summary": "This study evaluates the diagnostic effectiveness and safety of endomyocardial biopsies performed over a five-year period at a major medical center. The findings highlight the procedure's enduring role as the definitive diagnostic standard for cardiac conditions and transplant rejection, despite the increasing use of noninvasive imaging.",
+        "opportunity": "The persistent reliance on invasive biopsies suggests a significant market opportunity for developing AI-driven imaging software or novel molecular biomarkers that can achieve diagnostic accuracy comparable to histological tissue analysis.",
         "fields": [
           "Medical Device",
           "Diagnostics",
@@ -435,23 +442,23 @@
         "score_breakdown": {
           "novelty": {
             "score": 1,
-            "reason": "This is a retrospective observational study of established clinical procedures and provides no new methodologies, technologies, or scientific breakthroughs. It serves as a standard internal audit of existing practice rather than an innovation."
+            "reason": "This is a retrospective clinical audit of existing diagnostic procedures rather than original scientific research or technological innovation. It offers no new methodology, device, or groundbreaking insight that would alter clinical practice or provide a competitive advantage."
           },
           "commercial_potential": {
             "score": 2,
-            "reason": "This paper is a retrospective clinical audit of an existing medical procedure rather than the development of a novel technology, product, or proprietary diagnostic method. It offers zero commercial utility, as it does not propose a new intervention or intellectual property that could be licensed or brought to market."
+            "reason": "This paper is a retrospective clinical audit of an existing, established diagnostic procedure and offers no new proprietary technology, novel diagnostic markers, or innovative intellectual property. It serves as a clinical performance review rather than a product or platform development opportunity."
           },
           "market_size": {
             "score": 3,
-            "reason": "The paper focuses on a niche, procedural diagnostic methodology with limited scalability, addressing a small patient cohort that is increasingly managed by non-invasive imaging. It lacks the platform-level or broad therapeutic utility required to represent a high-growth, high-value investment opportunity."
+            "reason": "The paper focuses on a niche clinical procedural audit rather than a scalable technology or platform, resulting in a very limited and stagnant total addressable market. The diagnostic utility is restricted to specific institutional heart transplant protocols and specialized cardiology centers, lacking significant commercial growth potential."
           },
           "trl": {
             "score": 10,
-            "reason": "Endomyocardial biopsy is already the established gold-standard clinical procedure for post-transplant surveillance and cardiac diagnostics, representing maximum technological readiness."
+            "reason": "Endomyocardial biopsy is already the established gold-standard clinical procedure for cardiac diagnostics and transplant rejection surveillance, meaning this technology is fully matured and currently integrated into standard clinical practice."
           },
           "ip_strength": {
             "score": 1,
-            "reason": "This is a retrospective clinical study evaluating the diagnostic yield of an existing standard-of-care procedure, containing no novel technology, device, or patentable method."
+            "reason": "This paper is a retrospective clinical analysis of an existing, well-established diagnostic procedure (Endomyocardial biopsy) and offers no novel technology, methodology, or proprietary invention to protect. It lacks any basis for intellectual property as it describes standard clinical practice rather than an innovation."
           }
         },
         "eval_model": "gemini-3.1-flash-lite",
@@ -465,33 +472,33 @@
         "url": "https://pubmed.ncbi.nlm.nih.gov/38452886/",
         "journal": "The Journal of thoracic and cardiovascular surgery",
         "score": 18,
-        "summary": "This study analyzes whether pulmonary hypertension can be reversed in patients using left ventricular assist devices (LVADs) as a bridge to heart transplantation. It identifies specific risk factors, such as female sex and inotrope use, and protective factors, like longer LVAD duration, that influence pulmonary vascular resistance.",
-        "opportunity": "The findings suggest a commercial need for precision diagnostic tools and targeted pharmacological therapies to reduce pulmonary vascular resistance in high-risk heart transplant candidates.",
+        "summary": "This study analyzes clinical data from over 2,000 heart transplant recipients to determine factors influencing the reversal of pulmonary hypertension when using left ventricular assist devices (LVADs). The findings identify specific demographic and mechanical variables that predict whether a patient will successfully normalize pulmonary vascular resistance prior to transplantation.",
+        "opportunity": "The identified predictive markers for PVR normalization could be integrated into clinical decision-support software to optimize LVAD management strategies and patient selection for heart transplantation, potentially improving post-operative survival rates.",
         "fields": [
           "Medical Device",
-          "Diagnostics",
-          "Clinical"
+          "Clinical",
+          "Software/AI"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 3,
-            "reason": "This is a retrospective observational study using existing registry data to refine clinical risk stratification, which provides incremental utility for transplant protocols rather than fundamental scientific or technological innovation. It lacks the groundbreaking, platform-enabling, or inventive characteristics required for a higher novelty score."
+            "reason": "This is a retrospective registry analysis that provides incremental clinical validation of existing clinical guidelines rather than introducing novel therapeutic approaches, biomarkers, or groundbreaking scientific mechanisms. It serves as a useful observational update for transplant protocols but lacks the transformative innovation or platform-level impact associated with high-novelty research."
           },
           "commercial_potential": {
             "score": 2,
-            "reason": "This is a retrospective clinical observational study using registry data, which offers no novel technology, diagnostic tool, or proprietary therapeutic intervention to commercialize. Its value is limited to informing clinical practice guidelines rather than creating a product or licensable asset."
+            "reason": "This is an observational clinical study utilizing existing database registries rather than developing new proprietary technology, therapeutics, or diagnostics. It provides retrospective clinical insights that may influence surgical decision-making, but it lacks the patentable IP or product-oriented innovation required for high commercial potential."
           },
           "market_size": {
             "score": 3,
-            "reason": "The study addresses a narrow, highly specialized clinical sub-niche involving a subset of heart transplant candidates on LVAD support, representing a very small patient population. While clinically important for surgical decision-making, it does not represent a significant or scalable commercial market opportunity for deep-tech investment."
+            "reason": "The study addresses a highly niche subset of heart transplant candidates (LVAD-bridged patients with precapillary pulmonary hypertension), representing a very small patient population that limits the overall market size and commercial scalability for any related intervention."
           },
           "trl": {
             "score": 9,
-            "reason": "This study uses real-world clinical data from a national registry to evaluate standard-of-care medical devices (LVADs) in a surgical transplantation context, providing direct actionable insights for clinical decision-making and patient risk stratification. The findings are immediately applicable to current hospital protocols and transplant guidelines, representing a high level of clinical readiness."
+            "reason": "This study analyzes real-world longitudinal data from a major national registry (UNOS) to inform clinical decision-making for standard-of-care heart transplantation and LVAD bridge therapies. Its findings directly impact current surgical and transplant protocols, placing it at a high level of clinical readiness."
           },
           "ip_strength": {
             "score": 1,
-            "reason": "This is a retrospective clinical outcomes study based on existing database registries and offers no novel technology, composition of matter, or proprietary method eligible for patent protection. It provides clinical insights rather than protectable intellectual property."
+            "reason": "This is a retrospective clinical outcomes study utilizing public registry data, which does not generate novel, patentable technology or proprietary IP. The findings provide clinical insights into medical practice but lack the technical novelty or proprietary components required for commercial defensibility."
           }
         },
         "eval_model": "gemini-3.1-flash-lite",
@@ -504,9 +511,9 @@
         "date": "2024",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39109979/",
         "journal": "Comprehensive Physiology",
-        "score": 24,
-        "summary": "This paper explores how the human gut microbiome influences cardiovascular health through the production of metabolites like TMAO and short-chain fatty acids. It highlights the bidirectional relationship between gut health and systemic disease, suggesting that microbiome modulation could serve as a novel therapeutic strategy for heart-related conditions.",
-        "opportunity": "The findings support the development of precision microbiome-based therapeutics, such as engineered probiotics or small-molecule inhibitors, to target metabolite production and mitigate cardiovascular risk.",
+        "score": 23,
+        "summary": "This paper explores how the human gut microbiome influences cardiovascular disease through the production of metabolites like TMAO and short-chain fatty acids. It highlights the bidirectional relationship between gut health and systemic vascular conditions, proposing that microbiome modulation is a viable strategy for reducing cardiovascular risk.",
+        "opportunity": "Developing microbiome-targeted therapeutics, including precision probiotics or small-molecule inhibitors of microbial metabolic pathways, offers a novel approach to treating atherosclerosis and cardiometabolic syndromes.",
         "fields": [
           "Drug Discovery",
           "Clinical",
@@ -515,23 +522,23 @@
         "score_breakdown": {
           "novelty": {
             "score": 2,
-            "reason": "This paper is a review article summarizing well-established associations between the gut microbiome and cardiovascular risk factors like TMAO and SCFAs, offering no original experimental data or novel therapeutic mechanisms. It serves as a pedagogical overview of prior art rather than a groundbreaking advancement in the field."
+            "reason": "This paper is a review article that summarizes well-established associations between the gut microbiome and cardiovascular disease, providing no new experimental data, novel mechanisms, or proprietary technological interventions. It synthesizes existing literature rather than introducing an innovative scientific breakthrough."
           },
           "commercial_potential": {
             "score": 7,
-            "reason": "While the identification of specific metabolic pathways (like TMAO) offers a clear roadmap for diagnostic biomarkers and therapeutic intervention, the field remains crowded and early-stage regarding clinical validation of microbiome-based products. It functions as a strong platform-enabling area for drug discovery, but the inherent complexity of host-microbe interactions poses significant regulatory and delivery hurdles for a direct path to market."
+            "reason": "The paper identifies clear therapeutic and diagnostic targets like TMAO and SCFAs, which possess high clinical relevance and platform potential, but it lacks specific, novel intellectual property or a defined proprietary intervention strategy."
           },
           "market_size": {
             "score": 10,
-            "reason": "Cardiovascular disease remains the leading cause of mortality globally, and addressing it via the gut microbiome creates a massive, multi-billion dollar addressable market spanning diagnostics, therapeutics, and personalized nutrition."
+            "reason": "Cardiovascular disease remains the leading cause of mortality globally, representing a massive addressable market that encompasses secondary indications like hypertension, obesity, and diabetes. The potential to modulate the gut microbiome as a therapeutic intervention for such a high-prevalence condition offers immense commercial and clinical scale."
           },
           "trl": {
             "score": 2,
-            "reason": "This paper is a review article summarizing biological associations and mechanistic hypotheses rather than presenting a novel, validated therapeutic or diagnostic technology. It identifies potential areas for future intervention but does not describe a concrete, ready-to-test prototype or clinical candidate."
+            "reason": "This paper is a review article summarizing biological mechanisms and associations rather than presenting a novel, validated therapeutic or diagnostic prototype. It explores conceptual potential for intervention but lacks the proprietary data or experimental maturity required to move toward clinical or commercial application."
           },
           "ip_strength": {
-            "score": 3,
-            "reason": "This paper provides a broad academic review of existing biological mechanisms rather than detailing a novel, proprietary therapeutic intervention or diagnostic platform. The foundational observations regarding microbiota-derived metabolites like TMAO are already well-characterized in the public domain, making it difficult to establish significant IP defensibility without a specific, non-obvious composition-of-matter or proprietary delivery mechanism."
+            "score": 2,
+            "reason": "This paper is a review article summarizing established scientific associations rather than presenting a novel, proprietary composition of matter or specific therapeutic method. As a landscape overview, it lacks the specific, actionable intellectual property or unique technical differentiation required for meaningful patentability."
           }
         },
         "eval_model": "gemini-3.1-flash-lite",
@@ -543,20 +550,23 @@
   {
     "pi": "Tamar Harel",
     "pi_full_name": "Tamar Harel",
-    "pi_email": "sagiv.shifman@mail.huji.ac.il.",
-    "pi_affiliation": "Department of Dermatology, The Faculty of Medicine, Hebrew University of Jerusalem, Hadassah Medical Center, Jerusalem, Israel.",
-    "avg_score": 20.3,
-    "paper_count": 3,
-    "description": "",
-    "applicability": "",
+    "pi_email": "tamarhe@hadassah.org.il.",
+    "pi_affiliation": "Department of Genetics, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "avg_score": 16.2,
+    "paper_count": 15,
+    "description": "This researcher specializes in human medical genetics and genomics, focusing on the identification and characterization of rare genetic variants linked to developmental, neurological, and cardiovascular disorders. They utilize advanced functional genomics techniques—such as CRISPR screening, transcriptomics, and clinical sequencing validation—to bridge the gap between genotype and phenotype. Their work is fundamentally translational, aiming to elucidate the molecular mechanisms of disease to improve diagnostic accuracy and enable precision therapeutic strategies.",
+    "applicability": "The researcher's focus on allele-specific antisense oligonucleotides and the identification of novel therapeutic targets (e.g., PEDS1) holds high potential for drug development partnerships in the genetic medicine sector. Their work on streamlining clinical diagnostic workflows via exome sequencing and redefining the interpretation of 'silent' variants is immediately applicable to the diagnostics industry, offering clear paths for commercial integration in genetic testing services and clinical decision support tools.",
     "fields": [
       "Genomics",
       "Clinical",
-      "Drug Discovery",
+      "Diagnostics",
       "Neuroscience",
-      "Diagnostics"
+      "Drug Discovery",
+      "Software/AI",
+      "Immunology"
     ],
     "branches": [
+      "Exact & Social Sciences",
       "Healthcare"
     ],
     "papers": [
@@ -646,32 +656,526 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/41491239/",
         "journal": "Nature neuroscience",
-        "score": 19,
-        "summary": "Researchers utilized genome-wide CRISPR screening in embryonic stem cells to map the genetic architecture of neuronal differentiation and identify genes linked to neurodevelopmental disorders. The study highlights PEDS1, a metabolic enzyme involved in plasmalogen biosynthesis, as a critical driver of brain development whose deficiency leads to microcephaly and developmental delays.",
-        "opportunity": "This discovery validates metabolic enzyme pathways as high-value targets for developing precision diagnostics and therapeutic interventions for rare pediatric neurodevelopmental conditions.",
+        "score": 25,
+        "summary": "Hebrew University researchers utilized genome-wide CRISPR screens to map essential genes involved in neuronal differentiation, uncovering a significant number of previously unidentified neurodevelopmental disorder (NDD) candidates. The study specifically links the plasmalogen biosynthesis enzyme PEDS1 to microcephaly and developmental delays, offering new genetic targets for therapeutic intervention.",
+        "opportunity": "This genetic framework enables high-precision diagnostic panel development and provides a robust pipeline for validating novel therapeutic targets for neurodevelopmental and metabolic brain disorders.",
         "fields": [
           "Genomics",
           "Neuroscience",
-          "Drug Discovery",
-          "Diagnostics"
+          "Diagnostics",
+          "Drug Discovery"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 7,
-            "reason": "The paper provides a highly systematic and robust functional genomics pipeline that effectively bridges the gap between high-throughput CRISPR screens and clinical relevance; however, it builds upon established methodological frameworks rather than introducing a transformative technological paradigm."
+            "score": 6,
+            "reason": "While the study provides a robust, high-throughput functional genomics framework for NDD discovery, the approach is an incremental application of established CRISPR screening technology to developmental biology. The identification of PEDS1 is a high-quality clinical validation, but it represents a classic gene-to-phenotype discovery rather than a fundamentally disruptive technological or conceptual innovation."
           },
           "commercial_potential": {
             "score": 6,
-            "reason": "While the paper establishes a valuable target discovery platform and identifies a clinically relevant gene (PEDS1), it is primarily a foundational academic study rather than a de-risked therapeutic or diagnostic product. The commercial value lies in the discovery engine and potential drug targets, but these are at a very early stage of validation requiring significant downstream development."
+            "reason": "While the paper provides a high-quality discovery platform for identifying NDD-related drug targets and potential biomarkers, it remains in the early stages of target validation rather than offering a concrete therapeutic modality or a proprietary screening asset. The commercial value is primarily as a foundational biological discovery that would require significant additional R&D to translate into actionable diagnostics or drug discovery programs."
           },
           "market_size": {
-            "score": 6,
-            "reason": "While the research addresses a high-need clinical area with significant morbidity (neurodevelopmental disorders), the market potential is currently limited by the early stage of target identification and the high difficulty of drug development for central nervous system disorders. Its value lies primarily in the platform-like utility of the screening methodology to identify novel high-confidence therapeutic targets."
+            "score": 7,
+            "reason": "The study addresses the significant and high-unmet-need market of neurodevelopmental disorders (NDDs), which affects a large global population, though it is currently in the early discovery/target-validation phase rather than near-market clinical application."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "This is fundamental discovery science focused on mapping genetic pathways and validating phenotypic associations in mouse models, which is several steps removed from clinical application or commercial development. While it provides high-value biological insights for target discovery, it lacks the therapeutic validation or translational framework required for a higher TRL."
+          },
+          "ip_strength": {
+            "score": 3,
+            "reason": "This is a foundational academic discovery paper identifying gene-disease associations, which generally offers low IP defensibility as the underlying gene-phenotype correlations are naturally occurring biological facts. While the experimental methodology (CRISPR screening platform) has some utility, the core scientific findings are diagnostic insights that lack the composition-of-matter or specific method-of-use claims required for strong commercial defensibility."
           }
         },
         "eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Genetics, The Alexander Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel. sagiv.shifman@mail.huji.ac.il.",
         "pi_email": "sagiv.shifman@mail.huji.ac.il."
+      },
+      {
+        "id": "pubmed_41345255",
+        "title": "Reconsidering a silent variant: SGCA's role in atypical cardiomyopathy.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41345255/",
+        "journal": "European journal of human genetics : EJHG",
+        "score": 14,
+        "summary": "Researchers discovered that a previously ignored 'silent' genetic mutation in the SGCA gene causes severe, life-threatening heart conditions rather than just muscle weakness. This finding highlights a new clinical pathway for diagnosing atypical cardiomyopathy by re-evaluating synonymous variants that disrupt RNA splicing.",
+        "opportunity": "This research creates a commercial opportunity for AI-driven diagnostic platforms and specialized genetic screening services to identify occult splice-site mutations in patients with undiagnosed dilated cardiomyopathy.",
+        "fields": [
+          "Genomics",
+          "Diagnostics",
+          "Clinical",
+          "Software/AI"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 5,
+            "reason": "The study provides useful clinical expansion of the LGMDR3 phenotype and identifies a specific pathogenic variant, but the mechanism of synonymous variants causing splice disruption is well-established in genetics."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "The paper is a mechanistic genetic discovery for a rare condition, which primarily informs diagnostic panels rather than offering a scalable product or a near-market therapeutic."
+          },
+          "market_size": {
+            "score": 2,
+            "reason": "The research focuses on LGMDR3, an ultra-rare genetic disorder, meaning the addressable patient population is extremely small and limited to a niche orphan disease market."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "This is basic clinical discovery research that identifies a genetic mechanism; it does not present a developed technology, therapeutic candidate, or diagnostic tool ready for commercialization."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "This paper reports a clinical observation of a naturally occurring genetic variant, which is considered a discovery of nature and is generally ineligible for patent protection. While the diagnostic application might be patentable as a method, the fundamental finding lacks the novel composition of matter or proprietary technical barrier required for high defensibility."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "pi_affiliation": "Department of Genetics, Hadassah Hebrew University Medical Center, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_41014177",
+        "title": "High Concordance of Copy Number Variants Detected by Chromosomal Microarray and Exome Sequencing in Clinical Diagnostics.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41014177/",
+        "journal": "Clinical genetics",
+        "score": 32,
+        "summary": "This study validates that exome sequencing can reliably detect copy number variants with nearly 99% concordance compared to traditional chromosomal microarray analysis. The findings support replacing multi-test diagnostic workflows with a single, streamlined exome sequencing process to improve efficiency and reduce costs in clinical genetics.",
+        "opportunity": "There is a significant commercial opportunity for developers of clinical diagnostic software to integrate automated CNV-detection algorithms into exome sequencing pipelines, enabling labs to replace legacy microarray hardware and unify genetic testing workflows.",
+        "fields": [
+          "Diagnostics",
+          "Genomics",
+          "Software/AI",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "This study is an incremental validation exercise that confirms the utility of established bioinformatics pipelines rather than introducing a novel diagnostic methodology or proprietary technology. While clinically useful for standardizing diagnostics, the work represents a performance benchmark rather than a groundbreaking innovation in genomic detection."
+          },
+          "commercial_potential": {
+            "score": 9,
+            "reason": "This study provides strong clinical validation for consolidating diagnostic workflows, offering a clear value proposition for clinical genetics labs to replace two expensive tests with a single, more efficient exome-based platform. The findings facilitate direct commercial implementation by diagnostic service providers looking to streamline operations and reduce turnaround times while maintaining high clinical sensitivity."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The paper addresses a massive clinical diagnostic market by validating a platform-level shift from legacy chromosomal microarray (CMA) to integrated exome sequencing (ES). This represents a high-value opportunity to consolidate testing workflows and expand the total addressable market for comprehensive genetic diagnostics."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "The technology is already in active clinical use as a diagnostic tool, with the paper providing validation data from over 6,000 real-world clinical cases. It represents an established, near-market application where the methodology is actively replacing or augmenting the current gold standard (CMA) in clinical settings."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "The paper describes a validation study comparing existing clinical diagnostic modalities rather than presenting a novel, proprietary technological invention. The methodology relies on standard bioinformatics pipelines and existing sequencing technologies, offering negligible opportunity for unique intellectual property protection."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "pi_affiliation": "Department of Genetics, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_41014130",
+        "title": "A Confirmatory Case of Severe Spondylocostal Dysostosis Caused by Biallelic Loss-of-Function of DMRT2.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41014130/",
+        "journal": "American journal of medical genetics. Part A",
+        "score": 7,
+        "summary": "Researchers at the Hebrew University of Jerusalem have confirmed that biallelic loss-of-function variants in the DMRT2 gene cause a severe form of spondylocostal dysostosis (SCDO). This study expands the clinical understanding of the condition by identifying a new connection between DMRT2 mutations and associated immunodeficiency symptoms like thymic aplasia.",
+        "opportunity": "This discovery provides a validated genetic target for expanded panel-based diagnostic testing and creates a foundation for future development of targeted therapeutic interventions for congenital axial skeleton and immune-related developmental disorders.",
+        "fields": [
+          "Genomics",
+          "Clinical",
+          "Immunology"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 2,
+            "reason": "This is a clinical case report providing confirmatory evidence for a previously established genetic association, offering no new mechanistic insights, therapeutic platforms, or novel diagnostic technologies. It functions as a incremental validation of existing literature rather than an innovative discovery."
+          },
+          "commercial_potential": {
+            "score": 2,
+            "reason": "This is a descriptive clinical case report confirming a rare genetic etiology and lacks any development of a diagnostic, therapeutic, or technological platform. It provides incremental academic knowledge for rare disease diagnostics but does not offer a path toward a commercializable product or service."
+          },
+          "market_size": {
+            "score": 1,
+            "reason": "The paper focuses on a ultra-rare genetic disorder (Spondylocostal dysostosis) with a very small patient population, offering no immediate or scalable commercial market opportunity."
+          },
+          "trl": {
+            "score": 1,
+            "reason": "This is a clinical case report describing a genotype-phenotype correlation for a rare genetic disorder, which contributes to diagnostic knowledge but does not involve the development or validation of a technology, therapeutic, or commercializable platform."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This paper reports a basic scientific finding (a genotype-phenotype correlation) regarding a rare genetic disorder and does not present a novel therapeutic, diagnostic tool, or proprietary process that could be patented. The identification of a naturally occurring human gene variant is generally not subject to intellectual property protection under current patent law."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "pi_affiliation": "Department of Genetics, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_41438488",
+        "title": "Homozygous Deletion of the Epigenetic Regulator ",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41438488/",
+        "journal": "Human mutation",
+        "score": 14,
+        "summary": "This research investigates the functional consequences of homozygous deletions in a specific epigenetic regulator, identifying how these genomic losses disrupt gene expression patterns. The study provides critical insights into the molecular mechanisms of disease, potentially highlighting new targets for therapeutic intervention in cancers or developmental disorders.",
+        "opportunity": "The identified regulator represents a high-value druggable target for precision oncology, offering an opportunity to develop synthetic lethality-based therapies for patients harboring specific epigenetic deletions.",
+        "fields": [
+          "Drug Discovery",
+          "Genomics",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "The title suggests a study of a specific genetic deletion in an epigenetic regulator, which is a standard approach in molecular biology and functional genomics. Without evidence of a novel mechanism, therapeutic modality, or platform innovation, this represents incremental characterization rather than a groundbreaking technological leap."
+          },
+          "commercial_potential": {
+            "score": 4,
+            "reason": "While identifying a homozygous deletion in an epigenetic regulator suggests a potential therapeutic target, the lack of an abstract or defined mechanism makes the translational path highly speculative. Without evidence of druggability or a clear clinical application, it remains a foundational discovery far from a commercially viable asset."
+          },
+          "market_size": {
+            "score": 1,
+            "reason": "The title is incomplete and there is no abstract provided, making it impossible to identify the specific target or disease indication required to assess market size."
+          },
+          "trl": {
+            "score": 4,
+            "reason": "The paper focuses on a specific epigenetic regulator and its homozygous deletion, which suggests a lab-stage discovery with potential for future research and development, but it is unclear how close this is to real-world application or commercialization."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "The title is extremely generic and describes a standard genetic technique applied to a broad class of proteins, providing no evidence of a specific, novel, or protectable innovation."
+          }
+        },
+        "eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "Department of Genetics, Hadassah Medical Center, Jerusalem, Israel, hadassah.org.il.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel, huji.ac.il.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_41413077",
+        "title": "Inherent variability limits clinical utility of reproducible Parkinson's transcriptomics signatures.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41413077/",
+        "journal": "NPJ Parkinson's disease",
+        "score": 9,
+        "summary": "Researchers from Hebrew University demonstrate that existing blood-based gene expression signatures for Parkinson's disease lack the diagnostic accuracy needed for clinical adoption due to high biological variability. The findings suggest that a universal transcriptomic test is unlikely to succeed, shifting the focus toward more complex, disease-specific subtypes like GBA1-associated Parkinson's.",
+        "opportunity": "This research invalidates a long-standing diagnostic approach, signaling a commercial pivot toward multi-omic or protein-based biomarker platforms that move beyond simple RNA transcriptomics to achieve clinical-grade specificity.",
+        "fields": [
+          "Diagnostics",
+          "Genomics",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "This study is a negative result paper that serves as a necessary 'reality check' for the field by refuting the clinical viability of previously established biomarkers rather than introducing a novel discovery or methodology. While scientifically rigorous and important for de-risking translational investment, it lacks the constructive innovation required for a high novelty score."
+          },
+          "commercial_potential": {
+            "score": 1,
+            "reason": "The study concludes that the investigated diagnostic approach lacks clinical utility due to inherent biological variability, effectively debunking the commercial viability of blood-based transcriptomic signatures for Parkinson's disease. It serves as a negative result that discourages further commercial investment in this specific technological path."
+          },
+          "market_size": {
+            "score": 2,
+            "reason": "The paper concludes that blood-based transcriptomic signatures for Parkinson's disease lack the necessary clinical utility for diagnostic adoption, effectively nullifying the market potential for this specific therapeutic/diagnostic approach. By identifying inherent biological variability as a barrier to performance, the research undermines rather than enables the commercialization of this diagnostic modality."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "The paper functions as a negative validation study that systematically refutes the clinical readiness of previously proposed transcriptomic biomarkers, effectively de-risking the field by establishing that these signatures are currently unsuitable for real-world diagnostic application."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "The paper is a negative-result study that concludes a widely researched diagnostic approach is inherently limited in clinical utility, making the findings essentially unpatentable and strategically prohibitive for commercialization."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "pi_affiliation": "Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_41042543",
+        "title": "Intronic IGF1R variant causing aberrant splicing, short stature, and neurological impairments.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41042543/",
+        "journal": "Journal of molecular endocrinology",
+        "score": 12,
+        "summary": "Hebrew University researchers identified a rare intronic mutation in the IGF1R gene that causes abnormal splicing, resulting in a condition characterized by short stature and neurological deficits. This study clarifies the molecular mechanism of this variant, providing a clear genetic pathway for the observed patient phenotype.",
+        "opportunity": "This research provides a target for developing precision diagnostic panels for growth-related disorders and potential future RNA-targeted therapies to correct the splicing error.",
+        "fields": [
+          "Genomics",
+          "Clinical",
+          "Neuroscience"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "This study is a standard clinical case report identifying a known gene (IGF1R) variant using established diagnostic workflows (WES and cDNA analysis), which lacks the systemic innovation or platform-level breakthrough required for a high novelty score. While clinically valuable for the specific family, the methodology and findings represent incremental diagnostic refinement rather than groundbreaking or transformative research."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "This study is a descriptive genetic characterization of a rare variant, which lacks a clear path to a novel therapeutic or diagnostic product beyond standard clinical genetic testing. The findings provide limited commercial leverage as they identify a specific pathology rather than a scalable technology or platform."
+          },
+          "market_size": {
+            "score": 2,
+            "reason": "The paper describes a single family study of a rare genetic variant, which represents an extremely niche ultra-orphan disease market rather than a scalable commercial opportunity. The target addressable market is limited to a negligible patient population, offering little potential for significant market size or commercial return."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "This is a fundamental clinical genetics and diagnostic characterization study that identifies a novel pathogenic variant; it lacks any therapeutic intervention, platform technology, or commercial development component."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "This is a fundamental clinical genetics case report describing a naturally occurring genetic variant, which lacks the novelty and inventive step required for patentability. The findings are primarily diagnostic and academic in nature, offering no proprietary platform, composition of matter, or novel therapeutic methodology that could be effectively protected."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "pi_affiliation": "Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.; Department of Genetics, Hadassah Medical Organization, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_40769572",
+        "title": "Exploring the unique characteristics of genes with dual autosomal dominant and recessive inheritance: mechanisms, phenotypes and candidate identification.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40769572/",
+        "journal": "Journal of medical genetics",
+        "score": 16,
+        "summary": "Hebrew University researchers have characterized a unique subset of genes that cause disease through both dominant and recessive inheritance patterns, driven by complex molecular mechanisms like dosage sensitivity. By defining the bioinformatic signatures of these 'AD/AR' genes, the study provides a framework for predicting disease risk in patients with atypical clinical presentations.",
+        "opportunity": "This discovery enables the development of AI-driven diagnostic tools that improve variant interpretation and precision medicine for patients with ambiguous genetic results.",
+        "fields": [
+          "Genomics",
+          "Software/AI",
+          "Clinical",
+          "Diagnostics"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "While the study provides a useful bioinformatic characterization of a known biological phenomenon, it acts primarily as a systematic review and cataloging effort rather than introducing a breakthrough discovery or a novel platform technology. The findings offer incremental insight into genotype-phenotype correlations but lack the disruptive innovation characteristic of highly novel research."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "This is a foundational academic study focused on characterizing gene inheritance patterns, which lacks a clear path to a specific product or a proprietary platform technology. While the insights have clinical utility for diagnostics, the work is currently descriptive and bioinformatic rather than a direct commercial application."
+          },
+          "market_size": {
+            "score": 3,
+            "reason": "This paper represents foundational academic research on gene inheritance patterns rather than a commercial product or platform, limiting its immediate market size to a niche segment of the genetic diagnostic and variant interpretation software sector. While important for clinical genomics, the findings are primarily analytical and lack the direct industrial applicability or high-value therapeutic target potential required for a higher market-size score."
+          },
+          "trl": {
+            "score": 4,
+            "reason": "The paper presents a bioinformatic analysis of genes with dual autosomal dominant and recessive inheritance, but the work appears to be at an early stage of research, with no clear indication of near-market application or commercialization. The study's focus on understanding mechanisms and proposing candidate genes suggests a lab-stage focus rather than a near-market one."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "This is a foundational academic study providing bioinformatic insights into genetic inheritance patterns rather than a novel, proprietary therapeutic or diagnostic platform. It lacks specific composition-of-matter or method-of-use claims that could form the basis of a defensible IP moat."
+          }
+        },
+        "eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "Department of Genetics, Hadassah Medical Organization, Jerusalem, Israel tamarhe@hadassah.org.il.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+        "pi_email": "tamarhe@hadassah.org.il."
+      },
+      {
+        "id": "pubmed_40444971",
+        "title": "Long-Read Whole-Genome Sequencing Uncovers a Deletion Upstream to HOXD13 Causing Synpolydactyly.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40444971/",
+        "journal": "American journal of medical genetics. Part A",
+        "score": 15,
+        "summary": "Hebrew University researchers successfully identified a previously undiagnosed genetic cause of synpolydactyly by utilizing long-read whole-genome sequencing to pinpoint a specific noncoding regulatory deletion. This study highlights the clinical power of long-read sequencing technologies to resolve complex genetic disorders that remain invisible to traditional exome sequencing.",
+        "opportunity": "This research provides clinical validation for the adoption of long-read sequencing as a first-tier diagnostic tool in clinical genetics for resolving 'exome-negative' cases of structural and regulatory variation.",
+        "fields": [
+          "Genomics",
+          "Diagnostics",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "While the study effectively demonstrates the diagnostic utility of long-read sequencing in solving exome-negative cases, the scientific contribution is an incremental clinical case report confirming existing knowledge about HOXD cluster regulation rather than a foundational discovery or a novel technological platform."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "While scientifically rigorous, the study identifies a specific rare-disease genetic etiology that offers limited commercial scalability beyond niche diagnostic genetic testing. It lacks a clear path to therapeutic intervention or a proprietary technology platform that would generate significant market value."
+          },
+          "market_size": {
+            "score": 2,
+            "reason": "The paper focuses on a ultra-rare, specific genetic malformation syndrome (Synpolydactyly), representing an extremely niche clinical diagnostic application rather than a broad-market therapeutic or industrial opportunity."
+          },
+          "trl": {
+            "score": 4,
+            "reason": "This is a single-case clinical report demonstrating the utility of existing diagnostic technologies (Oxford Nanopore) for gene discovery rather than the development of a new, scalable, or proprietary therapeutic or diagnostic product. It serves as a proof-of-concept for clinical genomics workflows but remains at the level of basic academic research and diagnostic methodology improvement."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "This paper reports a scientific discovery of a novel genetic variant associated with a disease, which is a fundamental biological finding and generally ineligible for patent protection. As it relies on existing standard sequencing platforms (Oxford Nanopore) and diagnostic methods, it lacks a proprietary technical innovation or novel therapeutic composition that could be defended as intellectual property."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "pi_affiliation": "Department of Genetics, Hadassah Medical Center, Jerusalem, Israel.; Hebrew University of Jerusalem, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_40400350",
+        "title": "RNA Analysis Enables Resolution and Reclassification of Reportedly Benign Synonymous Variants.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40400350/",
+        "journal": "Clinical genetics",
+        "score": 25,
+        "summary": "Researchers at the Hebrew University of Jerusalem demonstrated that many synonymous genetic variants—previously dismissed as benign—actually disrupt RNA splicing and cause disease. By integrating RNA-based testing into clinical workflows, the study proves that functional transcriptomic analysis is essential for accurate genetic diagnosis.",
+        "opportunity": "This finding validates the development of high-throughput clinical diagnostic platforms that combine exome sequencing with rapid RNA-sequencing (transcriptomics) to reduce the diagnostic odyssey for patients with rare genetic disorders.",
+        "fields": [
+          "Diagnostics",
+          "Genomics",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "The paper describes a clinical case study demonstrating the utility of established RNA-sequencing techniques for variant reclassification, which serves as a validation of existing diagnostic workflows rather than a novel scientific or technological breakthrough. While clinically important for the specific patients, it does not present a new method, platform, or fundamental discovery that advances the broader field of genomics."
+          },
+          "commercial_potential": {
+            "score": 4,
+            "reason": "While this highlights a clinically relevant diagnostic gap, it describes a case-study methodology rather than a scalable, proprietary platform or novel technology. The commercial potential is limited to standard diagnostic service workflows, which lack the high-margin, protectable IP required for a high-impact investment."
+          },
+          "market_size": {
+            "score": 7,
+            "reason": "The paper addresses a critical gap in the clinical genetics and diagnostic testing market, which is a high-value, high-growth sector as exome sequencing becomes standard practice. While the methodology is highly relevant for clinical decision-making, the market size is constrained by the niche application of RNA-based follow-up for specific variants rather than being a broad, first-line diagnostic platform."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "This study demonstrates a highly mature clinical application of RNA-seq as a diagnostic tool that is already integrated into clinical workflows to reclassify variants and directly alter patient management. It represents a near-market, standard-of-care enhancement for genomic medicine rather than an early-stage experimental technique."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "The paper describes the application of established clinical diagnostic workflows (RNA sequencing and segregation analysis) to identify specific splicing variants rather than creating a novel, patentable methodology or platform. As a case report, it lacks the technical novelty or proprietary intellectual property required to establish significant defensive barriers."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "pi_affiliation": "Department of Genetics, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_40234890",
+        "title": "Transcriptome analysis of atad3-null zebrafish embryos elucidates possible disease mechanisms.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40234890/",
+        "journal": "Orphanet journal of rare diseases",
+        "score": 12,
+        "summary": "Hebrew University researchers developed a zebrafish knockout model for the ATAD3A gene to replicate human mitochondrial neurological diseases. The study identifies key metabolic and developmental pathways affected by the loss of this protein, providing a new platform for studying mitochondrial disease pathogenesis.",
+        "opportunity": "This zebrafish model offers a high-throughput phenotypic screening platform for drug discovery to identify small molecules that rescue mitochondrial function in rare neurological disorders.",
+        "fields": [
+          "Drug Discovery",
+          "Genomics",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "The study provides a valuable model characterization for a known gene but relies on established methodology (CRISPR/Cas9 knockout and transcriptomic profiling) without proposing a novel therapeutic platform or transformative biological insight. It serves as a incremental validation of a rare disease model rather than a groundbreaking discovery or proprietary technological advancement."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "While this study establishes a useful animal model for studying a rare disease mechanism, it lacks a direct therapeutic intervention, drug screening platform, or proprietary diagnostic tool that would define a clear path to commercialization."
+          },
+          "market_size": {
+            "score": 2,
+            "reason": "The market size for this research is relatively small and niche, focusing on a specific rare disease in humans, which limits its addressable demand and commercial potential."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "This is fundamental discovery research using a basic model organism (zebrafish) to characterize gene function; it is at the very earliest stages of the research pipeline and lacks direct clinical or commercial application."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "This is a fundamental academic study using standard CRISPR techniques to characterize a disease model, which lacks the novelty or inventive step required for patentability. The research describes basic biological observation rather than a proprietary therapeutic platform, novel diagnostic method, or unique composition of matter."
+          }
+        },
+        "eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "Department of Genetics, Hadassah Medical Organization, Jerusalem, Israel. tamarhe@hadassah.org.il.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel. tamarhe@hadassah.org.il.; Department of Genetics, Hadassah-Hebrew University Medical Center, POB 12000, Jerusalem, Israel. tamarhe@hadassah.org.il.",
+        "pi_email": "tamarhe@hadassah.org.il."
+      },
+      {
+        "id": "pubmed_40156476",
+        "title": "Expanding the SIAH1-Associated Phenotypic Spectrum: Insights From Loss-of-Function Variants.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40156476/",
+        "journal": "American journal of medical genetics. Part A",
+        "score": 12,
+        "summary": "Researchers at the Hebrew University of Jerusalem have identified a broader clinical spectrum for SIAH1-related disorders caused by loss-of-function genetic variants. The study characterizes the systemic impact of this E3 ubiquitin ligase, linking it to developmental delays, neurodevelopmental issues, and various metabolic or immune-related complications.",
+        "opportunity": "The well-defined clinical phenotype created by SIAH1 deficiency provides a foundation for developing gene-based diagnostics or targeted therapeutic strategies involving the Wnt and Akt3 signaling pathways.",
+        "fields": [
+          "Genomics",
+          "Clinical",
+          "Neuroscience"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "This study is a descriptive clinical case series that expands the phenotypic characterization of a known genetic syndrome rather than introducing a novel therapeutic mechanism, diagnostic platform, or groundbreaking biological insight. While it provides clinical utility for genetic diagnostics, it represents incremental clinical observation rather than transformative scientific innovation."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "This paper is a clinical characterization of a rare genetic syndrome, which provides essential diagnostic utility but lacks a clear pathway for therapeutic development, diagnostic platform creation, or patentable commercial technology. It functions primarily as foundational medical knowledge rather than a deployable commercial asset."
+          },
+          "market_size": {
+            "score": 2,
+            "reason": "This study focuses on an ultra-rare genetic condition found in a very small number of individuals, representing a negligible addressable market size for therapeutic or diagnostic development. The narrow scope of the clinical phenotype limits the commercial potential to orphan drug designations with extremely constrained patient populations."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "This is a fundamental clinical genetics and phenotypic characterization study; while it advances medical knowledge, it does not propose or validate a technology, therapeutic intervention, or diagnostic tool for commercial application."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "This is a clinical genetics study characterizing the phenotypic spectrum of a rare disease, which provides no novel compositions of matter, therapeutic interventions, or platform technologies that could be protected via patents. The findings represent descriptive biological knowledge that is generally considered prior art and lacks the commercial exclusivity required for high investment defensibility."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "pi_affiliation": "Department of Genetics, Hadassah Medical Organization, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_39003951",
+        "title": "Low prevalence of SCA27B in adult-onset cerebellar ataxia cohort of Jewish ancestry.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39003951/",
+        "journal": "Parkinsonism & related disorders",
+        "score": 8,
+        "summary": "This study investigates the prevalence of the SCA27B gene mutation within a specific cohort of Jewish patients suffering from adult-onset cerebellar ataxia. The findings indicate that this specific genetic cause is rare in this population, which helps clinicians rule out unnecessary testing and focus on other diagnostic avenues.",
+        "opportunity": "The results refine the diagnostic workflow for hereditary ataxias in populations of Jewish ancestry, improving the efficiency of genetic screening panels.",
+        "fields": [
+          "Diagnostics",
+          "Genomics",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 2,
+            "reason": "This study is a narrow epidemiological report providing negative or confirmatory data on the prevalence of a known genetic mutation within a specific ethnic cohort. It lacks the paradigm-shifting innovation, platform technology, or novel mechanism required for a high novelty score."
+          },
+          "commercial_potential": {
+            "score": 1,
+            "reason": "This study is a negative diagnostic prevalence finding that does not introduce a new technology, therapeutic, or platform, offering no clear path to commercialization."
+          },
+          "market_size": {
+            "score": 2,
+            "reason": "The paper focuses on a very specific genetic variant (SCA27B) within a narrow demographic cohort, indicating an extremely limited addressable market size that lacks broad commercial or therapeutic scalability. As a rare orphan condition with low prevalence, the total addressable market is insufficient to support significant investment returns compared to broader neurodegenerative or platform-based indications."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "This is an observational clinical study investigating disease prevalence within a specific genetic cohort, which constitutes basic clinical research rather than the development of a therapeutic, diagnostic, or scalable technology. It provides no novel mechanism, device, or proprietary platform that advances toward commercialization."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This paper is a clinical observational study reporting epidemiological data on genetic prevalence, which constitutes discovery of natural phenomena rather than protectable intellectual property. There is no novel technology, composition of matter, or proprietary methodology presented that could form the basis of a patent claim."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "pi_affiliation": "Department of Neurology, Hadassah Medical Center and the Faculty of Medicine, The Hebrew University, Jerusalem, Israel.",
+        "pi_email": ""
       }
     ]
   },
@@ -680,15 +1184,18 @@
     "pi_full_name": "Zohar Kerem",
     "pi_email": "",
     "pi_affiliation": "Institute of Biochemistry, Food Science and Nutrition, Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Rehovot 7610001, Israel.",
-    "avg_score": 35.0,
-    "paper_count": 1,
-    "description": "",
-    "applicability": "",
+    "avg_score": 24.5,
+    "paper_count": 2,
+    "description": "This researcher appears to focus on the intersection of nutrition, biochemistry, and plant-based solutions. Their work involves identifying novel interactions between dietary compounds and biological receptors, as well as developing methods for quantifying and mitigating the risks associated with toxic compounds in plant-based foods. This research has the potential to inform the development of new dietary supplements, food products, and sustainable protein sources.",
+    "applicability": "The discovery of a new allosteric site on the GLP-1 receptor could lead to the development of novel therapeutic agents for diabetes and obesity, with near-term potential for partnerships with pharmaceutical companies. The method for quantifying canavanine in processed bitter vetch seeds could enable the safe commercialization of this legume as a sustainable protein source, with potential applications in the food industry and near-term opportunities for partnerships with food manufacturers.",
     "fields": [
       "Drug Discovery",
-      "Clinical"
+      "Clinical",
+      "AgriTech",
+      "FoodTech"
     ],
     "branches": [
+      "Agriculture & Food",
       "Healthcare"
     ],
     "papers": [
@@ -730,6 +1237,45 @@
         "eval_model": "",
         "pi_affiliation": "Institute of Biochemistry, Food Science and Nutrition, Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Rehovot 7610001, Israel.",
         "pi_email": ""
+      },
+      {
+        "id": "pubmed_39200455",
+        "title": "Canavanine Content Quantification in Processed Bitter Vetch (",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39200455/",
+        "journal": "Foods (Basel, Switzerland)",
+        "score": 14,
+        "summary": "This research develops a reliable method for quantifying canavanine, a toxic non-protein amino acid, in processed bitter vetch seeds to ensure safety for consumption. By optimizing detoxification and analytical measurement protocols, the study enables the safe repurposing of this resilient legume as a sustainable protein source.",
+        "opportunity": "The methodology facilitates the commercial scaling of underutilized, drought-resistant crops by providing a standardized quality-control framework for the global plant-based protein market.",
+        "fields": [
+          "AgriTech",
+          "FoodTech"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 2,
+            "reason": "The research appears to be an incremental analysis of a specific aspect of bitter vetch, without introducing any fundamentally new concepts or methods, suggesting a relatively low level of scientific novelty."
+          },
+          "commercial_potential": {
+            "score": 4,
+            "reason": "The paper appears to focus on a specific aspect of bitter vetch analysis, but the commercial potential of quantifying canavanine content in processed bitter vetch is not clearly established. The abstract lacks context on the practical applications or market relevance of this research."
+          },
+          "market_size": {
+            "score": 2,
+            "reason": "The paper appears to be focused on a specific, niche application of bitter vetch, and the market size for this particular use case is likely to be relatively small, limiting the addressable demand."
+          },
+          "trl": {
+            "score": 4,
+            "reason": "The paper appears to be at a lab-stage, with a focus on quantifying canavanine content in processed bitter vetch, indicating a relatively low level of technology readiness. There is no clear indication of near-market application or commercialization potential."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "The abstract does not provide any information on patentable aspects or defensibility of the innovation, suggesting a lack of clear IP strength. The focus appears to be on a specific measurement rather than a novel or protectable innovation."
+          }
+        },
+        "eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "The Levi Eshkol School of Agriculture, The Hebrew University of Jerusalem, Rehovot 7610001, Israel.",
+        "pi_email": ""
       }
     ]
   },
@@ -738,13 +1284,16 @@
     "pi_full_name": "Avi Priel",
     "pi_email": "avi.priel@mail.huji.ac.il.",
     "pi_affiliation": "The Institute for Drug Research (IDR), Department of Pharmacology, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
-    "avg_score": 35.0,
-    "paper_count": 1,
+    "avg_score": 32.0,
+    "paper_count": 4,
     "description": "",
     "applicability": "",
     "fields": [
       "Drug Discovery",
-      "Neuroscience"
+      "Neuroscience",
+      "Clinical",
+      "Medical Device",
+      "Pharmacology"
     ],
     "branches": [
       "Healthcare"
@@ -787,6 +1336,128 @@
         },
         "eval_model": "",
         "pi_affiliation": "The Institute for Drug Research (IDR), Department of Pharmacology, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
+        "pi_email": "avi.priel@mail.huji.ac.il."
+      },
+      {
+        "id": "pubmed_41565997",
+        "title": "The psychoactive cannabinoid THC inhibits peripheral nociceptors by targeting Na",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41565997/",
+        "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+        "score": 35,
+        "summary": "Researchers from Hebrew University of Jerusalem found that THC, the psychoactive compound in cannabis, can inhibit pain signals by targeting specific sodium channels in peripheral nerves, providing a new understanding of its effects beyond the central nervous system.",
+        "opportunity": "This discovery could lead to the development of new pain management treatments or cannabis-based therapies that target peripheral nociceptors, potentially offering a more effective and targeted approach to pain relief.",
+        "fields": [
+          "Drug Discovery",
+          "Medical Device",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 8,
+            "reason": "This research presents a novel mechanism by which THC inhibits nociceptors, offering a distinct peripheral pathway that diverges from the well-known central effects mediated by cannabinoid receptors. This discovery has the potential to unlock new therapeutic applications for THC and cannabinoids."
+          },
+          "commercial_potential": {
+            "score": 6,
+            "reason": "The research on THC's peripheral mechanism of action has commercial potential, but it appears to be primarily focused on understanding the underlying biology, which may not directly translate to a product or licensable technology without further development and validation."
+          },
+          "market_size": {
+            "score": 6,
+            "reason": "The market size for this specific application of THC is relatively niche, targeting peripheral nociceptor inhibition for pain management, which may not be as large as other areas of pain research or broader applications of cannabinoids. However, it still represents a significant and underserved market with potential for growth."
+          },
+          "trl": {
+            "score": 6,
+            "reason": "The paper describes a novel mechanism of action for THC, but it appears to be at an early stage of research, with no clear indication of near-term commercialization or real-world application. Further research and validation are needed to bring this discovery closer to market."
+          },
+          "ip_strength": {
+            "score": 9,
+            "reason": "The discovery of a distinct peripheral mechanism by which THC inhibits nociceptive neurons, specifically targeting Na channels, presents a novel and potentially protectable innovation with significant clinical relevance, indicating strong IP strength."
+          }
+        },
+        "eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. avi.priel@mail.huji.ac.il.",
+        "pi_email": "avi.priel@mail.huji.ac.il."
+      },
+      {
+        "id": "pubmed_40465624",
+        "title": "The analgesic paracetamol metabolite AM404 acts peripherally to directly inhibit sodium channels.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40465624/",
+        "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+        "score": 28,
+        "summary": "Researchers found that a metabolite of paracetamol, AM404, has a direct inhibitory effect on sodium channels in peripheral neurons, leading to pain relief. This discovery could lead to new pain management treatments.",
+        "opportunity": "Developing AM404-based pain management treatments with improved efficacy and reduced side effects compared to existing painkillers.",
+        "fields": [
+          "Drug Discovery",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 7,
+            "reason": "The research presents a novel mechanism of action for a well-known analgesic compound, AM404, which directly inhibits sodium channels in peripheral nociceptor neurons, offering a new perspective on its analgesic effects. However, the underlying concept of sodium channel inhibition is not entirely new, and the novelty lies in its specific application and peripheral mechanism."
+          },
+          "commercial_potential": {
+            "score": 6,
+            "reason": "The paper presents a clear mechanism of action for the analgesic effect of AM404, which could lead to the development of new pain management therapies, but the commercial potential is not explicitly discussed, and the translation to a product or licensable technology is not directly addressed."
+          },
+          "market_size": {
+            "score": 2,
+            "reason": "The market size for a specific analgesic compound like AM404 is relatively small compared to the broader pain management market, and the paper does not provide any information on the potential market size or addressable demand for this compound."
+          },
+          "trl": {
+            "score": 7,
+            "reason": "This paper demonstrates a clear understanding of the analgesic mechanism of AM404 and its potential therapeutic application, but it appears to be at a relatively early stage of research, with in vitro and in vivo experiments in rats, suggesting a need for further validation and optimization before potential commercialization."
+          },
+          "ip_strength": {
+            "score": 6,
+            "reason": "The innovation appears to be a specific mechanism of action for a known drug, which may be patentable but lacks broad platform-enabling potential. The direct inhibition of sodium channels by AM404 is a clear and specific finding, but its IP strength is somewhat limited by the fact that paracetamol is an existing drug with a well-understood mechanism of action."
+          }
+        },
+        "eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_39368566",
+        "title": "Identification of the TRPA1 cannabinoid-binding site.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39368566/",
+        "journal": "Pharmacological research",
+        "score": 30,
+        "summary": "Researchers at Hebrew University of Jerusalem identified the TRPA1 cannabinoid-binding site, a crucial step in understanding how cannabis induces analgesia, which could lead to the development of more targeted and effective pain treatments.",
+        "opportunity": "This discovery could enable the development of novel cannabis-based pain treatments with improved efficacy and reduced side effects, creating a new commercial opportunity in the biotech industry.",
+        "fields": [
+          "Drug Discovery",
+          "Neuroscience",
+          "Pharmacology",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 6,
+            "reason": "The research identifies a specific cannabinoid-binding site on the TRPA1 receptor, which is a novel finding in the field of pain management and cannabis research. However, the novelty of this discovery is somewhat tempered by the fact that the TRPA1 receptor has been studied extensively in the context of pain and inflammation, and the identification of a cannabinoid-binding site is an incremental advancement rather than a revolutionary breakthrough."
+          },
+          "commercial_potential": {
+            "score": 6,
+            "reason": "The paper identifies a specific cannabinoid-binding site, which is a crucial step in understanding the mechanisms of cannabis-induced analgesia, but the direct commercial potential of this discovery is not immediately clear, and further research is required to translate this into a product or service."
+          },
+          "market_size": {
+            "score": 6,
+            "reason": "The market size for the target market of chronic pain treatment is significant, but the specific addressable demand for the TRPA1 cannabinoid-binding site is not clearly defined in the abstract, limiting the understanding of its potential market size."
+          },
+          "trl": {
+            "score": 6,
+            "reason": "The paper appears to be at a lab-stage, identifying a cannabinoid-binding site, which is an important discovery but still requires significant development and validation before it can be applied in real-world settings or commercialized."
+          },
+          "ip_strength": {
+            "score": 6,
+            "reason": "The paper identifies a specific cannabinoid-binding site, which could be patentable, but the novelty and defensibility of this discovery are somewhat limited by the existing knowledge of TRPA1 and its interactions with cannabinoids. While this finding could be a step towards understanding cannabis-induced analgesia, it may not be a highly protectable or platform-enabling innovation on its own."
+          }
+        },
+        "eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "The Institute for Drug Research (IDR), School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
         "pi_email": "avi.priel@mail.huji.ac.il."
       }
     ]
@@ -1306,8 +1977,8 @@
     "pi_affiliation": "The Institute for Drug Research, The School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
     "avg_score": 31.0,
     "paper_count": 1,
-    "description": "",
-    "applicability": "",
+    "description": "This researcher focuses on developing innovative microfluidic devices for cancer research, specifically for testing 3D tumor models in a biologically realistic environment. Their work enables the evaluation of how tumor spheroids respond to drugs, which can lead to more accurate and efficient cancer treatment development. This research has the potential to contribute to the development of personalized medicine and improve cancer treatment outcomes.",
+    "applicability": "The pump-free microfluidic device has significant commercial potential, particularly in the pharmaceutical industry, where it can be used for high-throughput drug testing and personalized medicine. This technology can lead to the development of new products and licensable technologies, such as point-of-care diagnostic devices and lab-on-a-chip systems. The near-term applicability of this work is high, as it can be easily integrated into existing laboratory settings and has the potential to reduce development time and costs for new cancer treatments.",
     "fields": [
       "Drug Discovery",
       "Medical Device",
@@ -1366,8 +2037,8 @@
     "pi_affiliation": "Institute of Rheumatology-Immunology-Allergology, Hadassah-Hebrew University Medical Center, Jerusalem, Israel. mevorachd@gmail.com.; Hebrew University-Hadassah Faculty of Medicine, Jerusalem, Israel. mevorachd@gmail.com.; Wohl Institute for Translational Medicine, Hadassah-Hebrew University Medical Center, Jerusalem, Israel. mevorachd@gmail.com.",
     "avg_score": 31.0,
     "paper_count": 1,
-    "description": "",
-    "applicability": "",
+    "description": "This researcher's focus area is metabolic dysfunction, specifically the underlying molecular mechanisms driving diet-induced obesity, insulin resistance, and fatty liver disease. Their research involves identifying key proteins and pathways that contribute to these conditions, and exploring potential therapeutic targets for intervention. By inhibiting specific proteins like CD59, they aim to develop novel treatments for metabolic disorders.",
+    "applicability": "The discovery of CD59 as a critical driver of obesity-related metabolic dysfunction has significant commercial potential. It could lead to the development of new pharmaceuticals or biologics targeting CD59, or the creation of diagnostic tools to identify individuals at risk of metabolic dysfunction. With the global obesity epidemic on the rise, this research could lead to near-term industry partnerships and licensable technologies, potentially resulting in new treatments within the next 5-7 years.",
     "fields": [
       "Drug Discovery",
       "Clinical",
@@ -1489,8 +2160,8 @@
     "pi_affiliation": "Department of Prosthodontics, Hadassah School of Dental Medicine, The Hebrew University, Jerusalem 91120, Israel.",
     "avg_score": 30.0,
     "paper_count": 1,
-    "description": "",
-    "applicability": "",
+    "description": "This researcher focuses on developing non-invasive diagnostic systems using machine learning and sensor technologies to detect various diseases. Their work involves breath analysis to identify specific volatile organic compounds associated with oral diseases, showcasing their expertise in bio-sensing and machine learning applications in healthcare. This research has the potential to lead to the development of portable, user-friendly devices for disease screening.",
+    "applicability": "The developed technology has significant commercial potential, leading to the creation of non-invasive diagnostic devices for oral diseases. These devices could be licensed to medical technology companies or used to establish partnerships with healthcare providers. The near-term applicability of this technology is high, with potential for rapid translation into clinical practice and commercialization within the next 3-5 years.",
     "fields": [
       "Diagnostics",
       "Medical Device",
@@ -1550,8 +2221,8 @@
     "pi_affiliation": "Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel; The Department of Neurology, The Agnes-Ginges Center for Human Neurogenetics, Hadassah-Hebrew University Medical Center, Jerusalem, Israel. Electronic address: tamir@hadassah.org.il.",
     "avg_score": 30.0,
     "paper_count": 1,
-    "description": "",
-    "applicability": "",
+    "description": "This researcher focuses on developing cell therapies using human embryonic stem cells to repair damaged tissues in the nervous system, specifically targeting demyelinating disorders. Their work involves creating astrocyte cell therapies to restore the protective sheath around nerve fibers, promoting repair and potentially treating conditions such as multiple sclerosis. This research has the potential to lead to the development of novel treatments for neurodegenerative diseases.",
+    "applicability": "The commercial applicability of this researcher's work is high, with potential to lead to the development of licensable cell therapies for demyelinating disorders. Near-term, this could result in partnerships with pharmaceutical companies to further develop and commercialize these therapies. Longer-term, this research could also lead to the creation of new biotechnology companies focused on regenerative medicine and cell therapy products.",
     "fields": [
       "Neuroscience",
       "Clinical",
