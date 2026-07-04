@@ -47,6 +47,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
           APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           TOP_N_RESEARCHERS: ${{ github.event.inputs.top_n || '20' }}
           YEARS_BACK: ${{ github.event.inputs.years_back || '3' }}
           MAX_PAPERS_PER_RESEARCHER: ${{ github.event.inputs.max_papers_per_researcher || '15' }}
