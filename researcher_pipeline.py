@@ -227,6 +227,28 @@ def _pubmed_author_search_name(pi_name):
     return f"{last} {initials}"
 
 
+def _ncbi_get(url, params, timeout):
+    """GET against NCBI E-Utilities with backoff on 429s.
+
+    NCBI rate-limits unauthenticated clients to ~3 req/sec; with 20 researchers
+    each issuing 2 requests back-to-back, a full run can trip that limit and
+    lose whole candidates outright (confirmed live: 9/20 candidates failed
+    with 429 in one run). Three retries with growing backoff is enough
+    headroom without an NCBI API key.
+    """
+    backoffs = [1, 3, 8]
+    for attempt, delay in enumerate([0] + backoffs):
+        if delay:
+            time.sleep(delay)
+        r = requests.get(url, params=params, timeout=timeout)
+        if r.status_code != 429:
+            r.raise_for_status()
+            return r
+        if attempt == len(backoffs):
+            r.raise_for_status()
+    return r  # unreachable, keeps linters happy
+
+
 def fetch_pubmed_for_author(pi_name, years_back=YEARS_BACK, max_results=50):
     """Fetch this author's HUJI-affiliated papers from the last `years_back` years.
 
@@ -242,19 +264,18 @@ def fetch_pubmed_for_author(pi_name, years_back=YEARS_BACK, max_results=50):
         'AND ("Hebrew University"[Affiliation] OR "Hadassah"[Affiliation]) '
         f'AND ("{since}"[PDAT] : "{today}"[PDAT])'
     )
-    r = requests.get(f"{base}/esearch.fcgi", params={
+    r = _ncbi_get(f"{base}/esearch.fcgi", {
         "db": "pubmed", "term": query,
         "retmax": max_results, "retmode": "json",
     }, timeout=20)
-    r.raise_for_status()
     ids = r.json().get("esearchresult", {}).get("idlist", [])
     if not ids:
         return []
 
-    r2 = requests.get(f"{base}/efetch.fcgi", params={
+    time.sleep(0.4)  # stay under NCBI's ~3 req/sec unauthenticated limit
+    r2 = _ncbi_get(f"{base}/efetch.fcgi", {
         "db": "pubmed", "id": ",".join(ids), "rettype": "xml", "retmode": "xml",
     }, timeout=30)
-    r2.raise_for_status()
     root = ET.fromstring(r2.text)
 
     papers = []
@@ -479,6 +500,7 @@ def main():
         if profile:
             profiles.append(profile)
         checkpoint(f"{i+1}/{len(candidates)}")
+        time.sleep(0.5)  # extra headroom against NCBI's unauthenticated rate limit
 
     print(f"\nDone. {len(profiles)} researcher profiles written.")
 
