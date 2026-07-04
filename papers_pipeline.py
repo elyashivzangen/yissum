@@ -799,9 +799,36 @@ EVAL_MODEL_CANDIDATES = [
     "gemini-3.1-flash-lite",
 ]
 
+# Minimum seconds between two calls to the SAME model, sized to each model's
+# documented free-tier RPM with headroom. Each paper needs 6 calls (1 meta +
+# 5 score dimensions); without this, calls fired every ~0.4s ran at ~150/min —
+# ~10x over every one of these models' real limits — which is what was
+# actually causing the "500/504" errors and the 429s, not genuine exhaustion
+# of a generous quota. Confirmed live: once all models got banned from
+# overload, every paper after that point in a run failed outright.
+_MIN_CALL_INTERVAL = {
+    "gemma-4-31b-it":        4.5,   # ~15 RPM free tier
+    "gemma-4-26b-a4b-it":    4.5,   # ~15 RPM free tier
+    "gemini-3.1-flash-lite": 4.5,   # ~15 RPM free tier
+    "groq":                  2.2,   # ~30 RPM free tier
+}
+_last_call_time = {}   # model_id -> time.monotonic() of last call, for throttling
+
+def _throttle(model_key):
+    min_interval = _MIN_CALL_INTERVAL.get(model_key, 0.4)
+    last = _last_call_time.get(model_key, 0)
+    wait = min_interval - (time.monotonic() - last)
+    if wait > 0:
+        time.sleep(wait)
+    _last_call_time[model_key] = time.monotonic()
+
 _last_good_model_idx = 0   # remember which model worked last to skip known-bad ones sooner
-_dead_this_run = set()     # models that have failed 3x in a row this run — skip until process restarts
+_cooldown_until = {}       # model_id -> time.monotonic() before which it's skipped
 _fail_streak = {}          # model_id -> consecutive fail count, resets on any success
+_COOLDOWN_SECONDS = 90     # bench a misbehaving model for a while, not the whole run —
+                            # transient overload/500s recover; a permanent ban just
+                            # dumps 100% of traffic onto whatever's left, which then
+                            # overloads too (this is exactly what happened live).
 
 def _call_gemini(prompt, allow_groq=True):
     """Call the model fallback chain and return (parsed_json, model_id).
@@ -815,11 +842,13 @@ def _call_gemini(prompt, allow_groq=True):
     global _last_good_model_idx
     last_err = None
     n = len(EVAL_MODEL_CANDIDATES)
+    now = time.monotonic()
     for offset in range(n):
         idx = (_last_good_model_idx + offset) % n
         model_id = EVAL_MODEL_CANDIDATES[idx]
-        if model_id in _dead_this_run:
+        if _cooldown_until.get(model_id, 0) > now:
             continue
+        _throttle(model_id)
         try:
             resp = client.models.generate_content(model=model_id, contents=prompt)
             text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
@@ -836,10 +865,11 @@ def _call_gemini(prompt, allow_groq=True):
                 time.sleep(2)
             _fail_streak[model_id] = _fail_streak.get(model_id, 0) + 1
             if _fail_streak[model_id] >= 3:
-                _dead_this_run.add(model_id)
-                print(f"    {model_id} failed 3x in a row — skipping it for the rest of this run")
+                _cooldown_until[model_id] = time.monotonic() + _COOLDOWN_SECONDS
+                print(f"    {model_id} failed 3x in a row — cooling down {_COOLDOWN_SECONDS}s")
     if allow_groq and GROQ_API_KEY:
         try:
+            _throttle("groq")
             data = _call_groq(prompt)
             print(f"    {GROQ_MODEL} (groq) succeeded")
             return data, f"groq:{GROQ_MODEL}"
