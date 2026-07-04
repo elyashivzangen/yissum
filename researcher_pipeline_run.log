@@ -9,8 +9,8 @@ Selected 20 researchers to profile.
 Fetching last 3 years of publications for Osnat Malka...
     grading: Osmoregulation by sucrose isomerization in the phloem-feeding whitefly
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      score=16 (gemini-3.1-flash-lite)
+    gemma-4-26b-a4b-it failed (error): The read operation timed out
+      score=18 (gemma-4-31b-it)
   [checkpoint: 1/20] writing 1 researcher profile(s)...
 Generated papers_reader.html and papers_data.json with 332 papers and 1 researcher profiles.
 
@@ -19,10 +19,7 @@ Fetching last 3 years of publications for Chamutal Gur...
     grading: B cell Maturation Antigen Targeted Chimeric Antigen Receptor T Cell Th
       score=36 (gemini-3.1-flash-lite)
     grading: Targeting Bladder Cancer with Inactivated Uropathogenic 
-    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 11.257160978s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      score=25 (gemini-3.1-flash-lite)
+      score=27 (gemini-3.1-flash-lite)
     grading: Fluorosis and the settling toothpaste: further comments by the authors
       score=15 (gemini-3.1-flash-lite)
   [checkpoint: 2/20] writing 2 researcher profile(s)...
@@ -31,20 +28,15 @@ Generated papers_reader.html and papers_data.json with 332 papers and 2 research
 [3/20] Rabea Asleh
 Fetching last 3 years of publications for Rabea Asleh...
     grading: First Successful Implantation of the CARMAT Aeson® Total Artificial He
-      score=39 (gemini-3.1-flash-lite)
+      score=38 (gemini-3.1-flash-lite)
     grading: Assessing Cardiac Flow Measurements Using a Noninvasive Photoplethysmo
-    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 53.802199273s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — skipping it for the rest of this run
-    llama-3.1-8b-instant (groq) succeeded
-      score=29 (groq:llama-3.1-8b-instant)
+      score=32 (gemini-3.1-flash-lite)
     grading: Endomyocardial biopsy in clinical practice: the diagnostic yield and i
-      score=17 (gemini-3.1-flash-lite)
+      score=18 (gemini-3.1-flash-lite)
     grading: Reversibility of precapillary pulmonary hypertension and outcomes afte
       score=18 (gemini-3.1-flash-lite)
     grading: Human Gut Microbiota in Cardiovascular Disease.
-      score=23 (gemini-3.1-flash-lite)
+      score=24 (gemini-3.1-flash-lite)
   [checkpoint: 3/20] writing 3 researcher profile(s)...
 Generated papers_reader.html and papers_data.json with 332 papers and 3 researcher profiles.
 
@@ -53,74 +45,214 @@ Fetching last 3 years of publications for Tamar Harel...
     grading: CRISPR knockout screens reveal genes and pathways essential for neuron
       score=25 (gemini-3.1-flash-lite)
     grading: Reconsidering a silent variant: SGCA's role in atypical cardiomyopathy
-    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 9.820968428s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      score=14 (gemma-4-31b-it)
+      score=13 (gemini-3.1-flash-lite)
     grading: High Concordance of Copy Number Variants Detected by Chromosomal Micro
       score=32 (gemini-3.1-flash-lite)
     grading: A Confirmatory Case of Severe Spondylocostal Dysostosis Caused by Bial
       score=7 (gemini-3.1-flash-lite)
     grading: Homozygous Deletion of the Epigenetic Regulator 
-    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 11.411580295s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 46.318754435s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}
-    llama-3.1-8b-instant (groq) succeeded
-      score=14 (groq:llama-3.1-8b-instant)
+      score=22 (gemini-3.1-flash-lite)
     grading: Inherent variability limits clinical utility of reproducible Parkinson
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
       score=9 (gemini-3.1-flash-lite)
     grading: Intronic IGF1R variant causing aberrant splicing, short stature, and n
       score=12 (gemini-3.1-flash-lite)
     grading: Exploring the unique characteristics of genes with dual autosomal domi
-    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 50.321329468s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    llama-3.1-8b-instant (groq) succeeded
-      score=16 (groq:llama-3.1-8b-instant)
+      score=14 (gemini-3.1-flash-lite)
     grading: Long-Read Whole-Genome Sequencing Uncovers a Deletion Upstream to HOXD
-      score=15 (gemini-3.1-flash-lite)
+      score=14 (gemini-3.1-flash-lite)
     grading: RNA Analysis Enables Resolution and Reclassification of Reportedly Ben
-      score=25 (gemini-3.1-flash-lite)
+      score=24 (gemini-3.1-flash-lite)
     grading: Transcriptome analysis of atad3-null zebrafish embryos elucidates poss
-    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 56.942119947s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '56s'}]}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — skipping it for the rest of this run
-    llama-3.1-8b-instant (groq) succeeded
-      score=12 (groq:llama-3.1-8b-instant)
+      score=12 (gemini-3.1-flash-lite)
     grading: Expanding the SIAH1-Associated Phenotypic Spectrum: Insights From Loss
       score=12 (gemini-3.1-flash-lite)
     grading: Low prevalence of SCA27B in adult-onset cerebellar ataxia cohort of Je
-      score=8 (gemini-3.1-flash-lite)
+      score=9 (gemini-3.1-flash-lite)
   [checkpoint: 4/20] writing 4 researcher profile(s)...
 Generated papers_reader.html and papers_data.json with 332 papers and 4 researcher profiles.
 
 [5/20] Zohar Kerem
 Fetching last 3 years of publications for Zohar Kerem...
     grading: Canavanine Content Quantification in Processed Bitter Vetch (
-    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 59.750465262s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}
-    llama-3.1-8b-instant (groq) succeeded
-    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 57.002420944s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '57s'}]}}
-    llama-3.1-8b-instant (groq) succeeded
-    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 54.236712721s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '54s'}]}}
-    gemini-3.1-flash-lite failed 3x in a row — skipping it for the rest of this run
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) succeeded
-      score=14 (groq:llama-3.1-8b-instant)
-    llama-3.1-8b-instant (groq) succeeded
+      score=12 (gemini-3.1-flash-lite)
   [checkpoint: 5/20] writing 5 researcher profile(s)...
 Generated papers_reader.html and papers_data.json with 332 papers and 5 researcher profiles.
 
 [6/20] Avi Priel
 Fetching last 3 years of publications for Avi Priel...
     grading: The psychoactive cannabinoid THC inhibits peripheral nociceptors by ta
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) succeeded
-      score=35 (groq:llama-3.1-8b-instant)
+      score=30 (gemini-3.1-flash-lite)
     grading: The analgesic paracetamol metabolite AM404 acts peripherally to direct
+      score=30 (gemini-3.1-flash-lite)
+    grading: Identification of the TRPA1 cannabinoid-binding site.
+      score=32 (gemini-3.1-flash-lite)
+    grading: TRPM5 activation depends on a synergistic effect of calcium and PKC ph
+      score=22 (gemini-3.1-flash-lite)
+  [checkpoint: 6/20] writing 6 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 6 researcher profiles.
+
+[7/20] Sharon Schlesinger
+Fetching last 3 years of publications for Sharon Schlesinger...
+    grading: Growth factors-infused cellulose scaffolds support cost-efficient prol
+      score=32 (gemini-3.1-flash-lite)
+    grading: Mesenchymal stem cells and their secretome modulate stress and enhance
+      score=16 (gemini-3.1-flash-lite)
+    grading: Cultivation of bovine lipid chunks on Aloe vera scaffolds.
+      score=26 (gemini-3.1-flash-lite)
+    grading: Random antimicrobial peptide mixtures as non-antibiotic antimicrobial 
+      score=30 (gemini-3.1-flash-lite)
+    grading: Impact of gestational diabetes mellitus on neonatal outcomes in small 
+      score=17 (gemini-3.1-flash-lite)
+    grading: Cultivation of Bovine Mesenchymal Stem Cells on Plant-Based Scaffolds 
+      score=28 (gemini-3.1-flash-lite)
+    grading: The role of Smarcad1 in retroviral repression in mouse embryonic stem 
+      score=9 (gemini-3.1-flash-lite)
+    grading: Short heat shock has a long-term effect on mesenchymal stem cells' tra
+      score=16 (gemini-3.1-flash-lite)
+  [checkpoint: 7/20] writing 7 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 7 researcher profiles.
+
+[8/20] Sheera Adar
+Fetching last 3 years of publications for Sheera Adar...
+    grading: A Cisplatin-Based Prodrug Inhibits Nucleotide Excision Repair Independ
+      score=29 (gemini-3.1-flash-lite)
+    grading: The epigenetic landscape shapes smoking-induced mutagenesis by modulat
+      score=16 (gemini-3.1-flash-lite)
+    grading: Genomic patterns of somatic mutations provide new prognostic, therapeu
+      score=28 (gemini-3.1-flash-lite)
+    grading: A Practical Site-specific Method for the Detection of Bulky DNA Damage
+      score=26 (gemini-3.1-flash-lite)
+    grading: Gene architecture is a determinant of the transcriptional response to 
+      score=16 (gemini-3.1-flash-lite)
+    grading: GENI: A web server to identify gene set enrichments in tumor samples.
+      score=16 (gemini-3.1-flash-lite)
+    grading: Novel insights into bulky DNA damage formation and nucleotide excision
+      score=14 (gemini-3.1-flash-lite)
+  [checkpoint: 8/20] writing 8 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 8 researcher profiles.
+
+[9/20] Oren Ram
+Fetching last 3 years of publications for Oren Ram...
+    grading: Three lncRNAs promote PUM protein condensation and germline differenti
+      score=13 (gemini-3.1-flash-lite)
+    grading: Distinct roles of TET-mediated cytosine oxidation in neural stem cell 
+      score=19 (gemini-3.1-flash-lite)
+    grading: Genome-wide screening reveals essential roles for HOX genes and imprin
+      score=20 (gemini-3.1-flash-lite)
+    grading: The killifish germline regulates longevity and somatic repair in a sex
+      score=18 (gemini-3.1-flash-lite)
+  [checkpoint: 9/20] writing 9 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 9 researcher profiles.
+
+[10/20] A Yaacov
+Fetching last 3 years of publications for A Yaacov...
+    grading: The Impact of Minimal Residual Disease (MRD) Testing on the Decision-M
+      score=32 (gemini-3.1-flash-lite)
+    grading: Consensus Copy-Number Alteration Signatures from Clinical Panels Enabl
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 28.528402384s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 1.470847451s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '1s'}]}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 56.962689325s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '56s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=39 (groq:llama-3.1-8b-instant)
+    grading: The Temozolomide Mutational Signature: Mechanisms, Clinical Implicatio
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=26 (groq:llama-3.1-8b-instant)
+    grading: Graph convolution networks model identifies and quantifies gene and ca
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=38 (groq:llama-3.1-8b-instant)
+    grading: Cancer mutational signatures identification in clinical assays using n
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=37 (groq:llama-3.1-8b-instant)
+    grading: Both cell autonomous and non-autonomous processes modulate the associa
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+      score=27 (groq:llama-3.1-8b-instant)
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (researcher summary): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  [checkpoint: 10/20] writing 10 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 10 researcher profiles.
+
+[11/20] Oren Zimhony
+Fetching last 3 years of publications for Oren Zimhony...
+    grading: Månsson et al. conclusion that Piperacillin/tazobactam(PTZ) is non inf
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (market_size): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=17 (groq:llama-3.1-8b-instant)
+    grading: Hyperimmune Globulins in COVID-19.
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    grading: The Role of Varicella Zoster Virus (VZV) in Central Nervous System Inf
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=12 (groq:llama-3.1-8b-instant)
+    grading: Reply to Focosi et al.
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 41.294908569s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '41s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      score=13 (groq:llama-3.1-8b-instant)
+    grading: A Randomized Controlled Study Assessing Convalescent Immunoglobulins v
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=18 (groq:llama-3.1-8b-instant)
+    llama-3.1-8b-instant (groq) succeeded
+  [checkpoint: 11/20] writing 11 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 11 researcher profiles.
+
+[12/20] Itamar Harel
+Fetching last 3 years of publications for Itamar Harel...
+    grading: Scaling life as an interspecies hallmark of aging.
     llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) succeeded
@@ -128,353 +260,411 @@ Fetching last 3 years of publications for Avi Priel...
     llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) succeeded
       score=28 (groq:llama-3.1-8b-instant)
-    grading: Identification of the TRPA1 cannabinoid-binding site.
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) succeeded
-      score=30 (groq:llama-3.1-8b-instant)
-    grading: TRPM5 activation depends on a synergistic effect of calcium and PKC ph
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (researcher summary): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  [checkpoint: 6/20] writing 6 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 6 researcher profiles.
-
-[7/20] Sharon Schlesinger
-Fetching last 3 years of publications for Sharon Schlesinger...
-    grading: Growth factors-infused cellulose scaffolds support cost-efficient prol
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Mesenchymal stem cells and their secretome modulate stress and enhance
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Cultivation of bovine lipid chunks on Aloe vera scaffolds.
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Random antimicrobial peptide mixtures as non-antibiotic antimicrobial 
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Impact of gestational diabetes mellitus on neonatal outcomes in small 
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Cultivation of Bovine Mesenchymal Stem Cells on Plant-Based Scaffolds 
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: The role of Smarcad1 in retroviral repression in mouse embryonic stem 
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Short heat shock has a long-term effect on mesenchymal stem cells' tra
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (market_size): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (ip_strength): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  No gradable papers found for Sharon Schlesinger in the last 3 years.
-  [checkpoint: 7/20] writing 6 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 6 researcher profiles.
-
-[8/20] Sheera Adar
-Fetching last 3 years of publications for Sheera Adar...
-    grading: A Cisplatin-Based Prodrug Inhibits Nucleotide Excision Repair Independ
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: The epigenetic landscape shapes smoking-induced mutagenesis by modulat
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Genomic patterns of somatic mutations provide new prognostic, therapeu
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: A Practical Site-specific Method for the Detection of Bulky DNA Damage
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Gene architecture is a determinant of the transcriptional response to 
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: GENI: A web server to identify gene set enrichments in tumor samples.
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Novel insights into bulky DNA damage formation and nucleotide excision
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  No gradable papers found for Sheera Adar in the last 3 years.
-  [checkpoint: 8/20] writing 6 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 6 researcher profiles.
-
-[9/20] Oren Ram
-Fetching last 3 years of publications for Oren Ram...
-    grading: Three lncRNAs promote PUM protein condensation and germline differenti
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Distinct roles of TET-mediated cytosine oxidation in neural stem cell 
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (market_size): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (ip_strength): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Genome-wide screening reveals essential roles for HOX genes and imprin
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     grading: The killifish germline regulates longevity and somatic repair in a sex
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (researcher summary): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  [checkpoint: 9/20] writing 7 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 7 researcher profiles.
-
-[10/20] A Yaacov
-Fetching last 3 years of publications for A Yaacov...
-    grading: The Impact of Minimal Residual Disease (MRD) Testing on the Decision-M
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (market_size): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (ip_strength): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Consensus Copy-Number Alteration Signatures from Clinical Panels Enabl
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: The Temozolomide Mutational Signature: Mechanisms, Clinical Implicatio
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Graph convolution networks model identifies and quantifies gene and ca
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Cancer mutational signatures identification in clinical assays using n
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Both cell autonomous and non-autonomous processes modulate the associa
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (researcher summary): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  [checkpoint: 10/20] writing 8 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 8 researcher profiles.
-
-[11/20] Oren Zimhony
-Fetching last 3 years of publications for Oren Zimhony...
-    grading: Månsson et al. conclusion that Piperacillin/tazobactam(PTZ) is non inf
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (market_size): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (ip_strength): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Hyperimmune Globulins in COVID-19.
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: The Role of Varicella Zoster Virus (VZV) in Central Nervous System Inf
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Reply to Focosi et al.
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: A Randomized Controlled Study Assessing Convalescent Immunoglobulins v
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (researcher summary): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  [checkpoint: 11/20] writing 9 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 9 researcher profiles.
-
-[12/20] Itamar Harel
-Fetching last 3 years of publications for Itamar Harel...
-    grading: Scaling life as an interspecies hallmark of aging.
-    llama-3.1-8b-instant (groq) succeeded
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (market_size): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (ip_strength): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: The killifish germline regulates longevity and somatic repair in a sex
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+      score=22 (groq:llama-3.1-8b-instant)
     grading: A Case Report of Familial Mayer-Rokitansky-Küster-Hauser Syndrome as P
+    llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+      score=4 (groq:llama-3.1-8b-instant)
     grading: A scalable and tunable platform for functional interrogation of peptid
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     grading: Genetic perturbation of AMP biosynthesis extends lifespan and restores
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (researcher summary): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  [checkpoint: 12/20] writing 10 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 10 researcher profiles.
-
-[13/20] Asaf Levy
-Fetching last 3 years of publications for Asaf Levy...
-    grading: Spinal Epidural Empyema Associated with Bite Wounds in an Indian Crest
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Genomic and structural analysis of major antigenic proteins' variabili
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: The point of subjective equality as a tool for accurate and robust ana
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: A comprehensive catalogue of receptor-binding domains in extracellular
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Plasmids, prophages, and defense systems are depleted from plant micro
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Cdc48 plays a crucial role in redox homeostasis through dynamic reshap
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Author Correction: Systematic discovery of antibacterial and antifunga
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Deciphering bacterial protein functions with innovative computational 
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Lyrics do matter: how "coping songs" relate to well-being goals. The C
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Systematic discovery of antibacterial and antifungal bacterial toxins.
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Identification of novel toxins associated with the extracellular contr
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Hand movement trajectories illustrate the mechanism underlying Kurt Le
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Widespread horizontal gene transfer between plants and bacteria.
     llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (market_size): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (ip_strength): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      score=12 (groq:llama-3.1-8b-instant)
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 7.520464945s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '7s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (researcher summary): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  [checkpoint: 13/20] writing 11 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 11 researcher profiles.
+  [checkpoint: 12/20] writing 12 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 12 researcher profiles.
+
+[13/20] Asaf Levy
+Fetching last 3 years of publications for Asaf Levy...
+    grading: Spinal Epidural Empyema Associated with Bite Wounds in an Indian Crest
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+      score=10 (groq:llama-3.1-8b-instant)
+    grading: Genomic and structural analysis of major antigenic proteins' variabili
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+      score=9 (groq:llama-3.1-8b-instant)
+    grading: The point of subjective equality as a tool for accurate and robust ana
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 29.352574322s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '29s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      score=16 (groq:llama-3.1-8b-instant)
+    grading: A comprehensive catalogue of receptor-binding domains in extracellular
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 36.139804392s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      score=37 (groq:llama-3.1-8b-instant)
+    grading: Plasmids, prophages, and defense systems are depleted from plant micro
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=30)
+  Gemini error (novelty): HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=30)
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=20 (groq:llama-3.1-8b-instant)
+    grading: Cdc48 plays a crucial role in redox homeostasis through dynamic reshap
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=25 (groq:llama-3.1-8b-instant)
+    grading: Author Correction: Systematic discovery of antibacterial and antifunga
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=27 (groq:llama-3.1-8b-instant)
+    grading: Deciphering bacterial protein functions with innovative computational 
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=26 (groq:llama-3.1-8b-instant)
+    grading: Lyrics do matter: how "coping songs" relate to well-being goals. The C
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 33.677275771s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '33s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=18 (groq:llama-3.1-8b-instant)
+    grading: Systematic discovery of antibacterial and antifungal bacterial toxins.
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=38 (groq:llama-3.1-8b-instant)
+    grading: Identification of novel toxins associated with the extracellular contr
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=33 (groq:llama-3.1-8b-instant)
+    grading: Hand movement trajectories illustrate the mechanism underlying Kurt Le
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=18 (groq:llama-3.1-8b-instant)
+    grading: Widespread horizontal gene transfer between plants and bacteria.
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (market_size): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (ip_strength): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+      score=10 (groq:llama-3.1-8b-instant)
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+  [checkpoint: 13/20] writing 13 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 13 researcher profiles.
 
 [14/20] Ofra Benny
 Fetching last 3 years of publications for Ofra Benny...
     grading: Colloid-patterned surfaces distinguish malignant mechanophenotypes.
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 31.485521353s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '31s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=31 (groq:llama-3.1-8b-instant)
     grading: Toward FGF2 reduction in cultured meat media: polyphenol salts enhance
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=40 (groq:llama-3.1-8b-instant)
     grading: Development and Characterization of a High-CBD Cannabis Extract Nanoem
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     grading: Structural Control for Tunable Hyperthermia-Induced Cellular Responses
+    llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+      score=11 (groq:llama-3.1-8b-instant)
     grading: Immunomodulatory Effects of a High-CBD Cannabis Extract: A Comparative
+    llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (market_size): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (ip_strength): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+      score=10 (groq:llama-3.1-8b-instant)
     grading: Elongated Particles Show a Preferential Uptake in Invasive Cancer Cell
+    llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+      score=10 (groq:llama-3.1-8b-instant)
     grading: Senescent cancer-associated fibroblasts in pancreatic adenocarcinoma r
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     grading: Particle uptake in cancer cells can predict malignancy and drug resist
+    llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 32.724948707s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=28 (groq:llama-3.1-8b-instant)
     grading: Analyzing force measurements of multi-cellular clusters comprising ind
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=28 (groq:llama-3.1-8b-instant)
     grading: A fully 3D-printed versatile tumor-on-a-chip allows multi-drug screeni
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     grading: Modular Drug-Loaded Nanocapsules with Metal Dome Layers as a Platform 
+    llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+      score=21 (groq:llama-3.1-8b-instant)
     grading: Drug-Eluting Porous Embolic Microspheres for Trans-Arterial Delivery o
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) succeeded
-  [checkpoint: 14/20] writing 12 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 12 researcher profiles.
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (researcher summary): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  [checkpoint: 14/20] writing 14 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 14 researcher profiles.
 
 [15/20] Dror Mevorach
 Fetching last 3 years of publications for Dror Mevorach...
     grading: B cell Maturation Antigen Targeted Chimeric Antigen Receptor T Cell Th
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Clinical use of inpatient FDG-PET/CT in internal medicine.
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Apoptotic Cell-Based Therapy for the Modification of the Inflammatory 
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Pathogenic Variants of Scavenger Receptor 
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: HLA binding-groove motifs are associated with myocarditis induction af
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Complement-membrane regulatory proteins are absent from the nodes of R
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Apoptotic cells for treatment of acute respiratory distress syndrome a
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     llama-3.1-8b-instant (groq) succeeded
-  [checkpoint: 15/20] writing 13 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 13 researcher profiles.
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (ip_strength): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+      score=4 (groq:llama-3.1-8b-instant)
+    grading: Clinical use of inpatient FDG-PET/CT in internal medicine.
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+      score=6 (groq:llama-3.1-8b-instant)
+    grading: Apoptotic Cell-Based Therapy for the Modification of the Inflammatory 
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 616.862477ms.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '0s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (ip_strength): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+      score=20 (groq:llama-3.1-8b-instant)
+    grading: Pathogenic Variants of Scavenger Receptor 
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=24 (groq:llama-3.1-8b-instant)
+    grading: HLA binding-groove motifs are associated with myocarditis induction af
+    llama-3.1-8b-instant (groq) failed: HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=30)
+  Gemini error (meta): HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=30)
+    grading: Complement-membrane regulatory proteins are absent from the nodes of R
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=23 (groq:llama-3.1-8b-instant)
+    grading: Apoptotic cells for treatment of acute respiratory distress syndrome a
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (market_size): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (ip_strength): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+      score=20 (groq:llama-3.1-8b-instant)
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (researcher summary): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  [checkpoint: 15/20] writing 15 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 15 researcher profiles.
 
 [16/20] Johnathan Arnon
 Fetching last 3 years of publications for Johnathan Arnon...
     grading: RapidPlan Knowledge-Based Radiotherapy Planning Compared to Manual Pla
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=14 (groq:llama-3.1-8b-instant)
     grading: Prediction of clinical outcomes of immune checkpoint inhibitors in adv
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 3.293943012s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '3s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      score=38 (groq:llama-3.1-8b-instant)
     grading: Planning Target Volume and Nodal Status Predict Clinical Outcomes Afte
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=16 (groq:llama-3.1-8b-instant)
     grading: Non-classical pulmonary exacerbation in cystic fibrosis revealing ALK-
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=16 (groq:llama-3.1-8b-instant)
     grading: Predictive value of ENLIGHT-DP in patients with metastatic lung adenoc
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+      score=25 (groq:llama-3.1-8b-instant)
     grading: Clinical and genetic characteristics of carriers of the TP53 c.541C > 
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
@@ -482,76 +672,178 @@ Fetching last 3 years of publications for Johnathan Arnon...
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     grading: Clinical Characteristics, Response to Platinum-Based Chemotherapy and 
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (researcher summary): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  [checkpoint: 16/20] writing 14 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 14 researcher profiles.
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      score=18 (groq:llama-3.1-8b-instant)
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 2.223222872s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+  [checkpoint: 16/20] writing 16 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 16 researcher profiles.
 
 [17/20] Maisa Haiek
 Fetching last 3 years of publications for Maisa Haiek...
     grading: Bacterial Volatile Organic Compounds as Potential Caries and Periodont
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     llama-3.1-8b-instant (groq) succeeded
-  [checkpoint: 17/20] writing 15 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 15 researcher profiles.
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=28 (groq:llama-3.1-8b-instant)
+    llama-3.1-8b-instant (groq) succeeded
+  [checkpoint: 17/20] writing 17 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 17 researcher profiles.
 
 [18/20] Tamir Ben-Hur
 Fetching last 3 years of publications for Tamir Ben-Hur...
     grading: Corrigendum to "The paradoxical protective effect of chronic stress on
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: The paradoxical protective effect of chronic stress on advanced Alzhei
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Illusion of inactivity: Revisiting progressive multiple sclerosis trea
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Medical risk factors, ApoE haplotype, and Alzheimer's disease: a large
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: National guidelines for diagnosis, treatment, and management of myasth
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Fulminant Idiopathic Intracranial Hypertension-Clinical Characteristic
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Targeting CNS myeloid infiltrates provides neuroprotection in a progre
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: The "Hit and Run" Hypothesis for Alzheimer's Disease Pathogenesis.
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Can immunization with BCG delay the onset of Alzheimer's disease?
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: Oligodendrocyte progenitor cells differentiation induction with MAPK/E
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     llama-3.1-8b-instant (groq) succeeded
-  [checkpoint: 18/20] writing 16 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 16 researcher profiles.
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=30)
+  Gemini error (commercial_potential): HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=30)
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=12 (groq:llama-3.1-8b-instant)
+    grading: The paradoxical protective effect of chronic stress on advanced Alzhei
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 57.393784273s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '57s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 52.90542915s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '52s'}]}}
+      score=17 (groq:llama-3.1-8b-instant)
+    grading: Illusion of inactivity: Revisiting progressive multiple sclerosis trea
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 34.42453152s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      score=18 (groq:llama-3.1-8b-instant)
+    grading: Medical risk factors, ApoE haplotype, and Alzheimer's disease: a large
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 53.944239117s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '53s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    llama-3.1-8b-instant (groq) succeeded
+      score=17 (groq:llama-3.1-8b-instant)
+    grading: National guidelines for diagnosis, treatment, and management of myasth
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 47.324079214s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '47s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    llama-3.1-8b-instant (groq) succeeded
+      score=8 (groq:llama-3.1-8b-instant)
+    grading: Fulminant Idiopathic Intracranial Hypertension-Clinical Characteristic
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      score=15 (groq:llama-3.1-8b-instant)
+    grading: Targeting CNS myeloid infiltrates provides neuroprotection in a progre
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 38.956681459s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '38s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      score=31 (groq:llama-3.1-8b-instant)
+    grading: The "Hit and Run" Hypothesis for Alzheimer's Disease Pathogenesis.
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 46.787442101s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      score=28 (groq:llama-3.1-8b-instant)
+    grading: Can immunization with BCG delay the onset of Alzheimer's disease?
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    llama-3.1-8b-instant (groq) succeeded
+      score=25 (groq:llama-3.1-8b-instant)
+    grading: Oligodendrocyte progenitor cells differentiation induction with MAPK/E
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 44.747866725s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '44s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      score=20 (groq:llama-3.1-8b-instant)
+    llama-3.1-8b-instant (groq) succeeded
+  [checkpoint: 18/20] writing 18 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 18 researcher profiles.
 
 [19/20] Amir Haze
 Fetching last 3 years of publications for Amir Haze...
     grading: Recombinant Human Amelogenin Protein Enhances Tendon-To-Bone Healing i
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=29 (groq:llama-3.1-8b-instant)
     grading: Amelogenin Null Mice Develop Osteoarthritis, While Its Application Mit
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=26 (groq:llama-3.1-8b-instant)
     grading: Clinical outcomes of patients with Polyvascular disease admitted with 
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=12 (groq:llama-3.1-8b-instant)
     grading: Regeneration of injured articular cartilage using the recombinant huma
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+      score=16 (groq:llama-3.1-8b-instant)
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (researcher summary): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  [checkpoint: 19/20] writing 17 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 17 researcher profiles.
+  [checkpoint: 19/20] writing 19 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 19 researcher profiles.
 
 [20/20] Sharon Einav
 Fetching last 3 years of publications for Sharon Einav...
@@ -559,56 +851,110 @@ Fetching last 3 years of publications for Sharon Einav...
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     grading: Real World Human-LLM Interactions - Prospective blinded versus unblind
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    grading: How large language models can help us write a systematic review.
     llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (market_size): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (trl): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+      score=4 (groq:llama-3.1-8b-instant)
+    grading: How large language models can help us write a systematic review.
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (ip_strength): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
     grading: Utilizing Point-of-Care Ultrasound and Tourniquet Placement for Expedi
+    llama-3.1-8b-instant (groq) succeeded
     llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (novelty): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (commercial_potential): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): The read operation timed out
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 14.28103757s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=6 (groq:llama-3.1-8b-instant)
     grading: Evaluating the performance of large language models versus human resea
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) failed: HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=30)
+  Gemini error (novelty): HTTPSConnectionPool(host='api.groq.com', port=443): Read timed out. (read timeout=30)
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=20 (groq:llama-3.1-8b-instant)
     grading: Evaluating the o1 reasoning large language model for cognitive bias: a
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=20 (groq:llama-3.1-8b-instant)
     grading: Primer on large language models: an educational overview for intensivi
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 17.630536546s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      score=20 (groq:llama-3.1-8b-instant)
     grading: [EMERGING THERAPIES FOR LI-FRAUMENI SYNDROME AND RHABDOMYOSARCOMA: CAN
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+      score=10 (gemma-4-31b-it)
     grading: [LORENZO'S OIL AND ADRENOLEUKODYSTROPHY EXAMINING AN ARTIFICIAL INTELL
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+      score=15 (gemma-4-31b-it)
     grading: Intensive care for the long-term.
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+      score=14 (gemma-4-31b-it)
     grading: Using augmented intelligence to improve long term outcomes.
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 59.95192679s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '59s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      score=22 (groq:llama-3.1-8b-instant)
     grading: Correction: Anesthetic approach to pregnant patients with malaria: a n
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=10 (groq:llama-3.1-8b-instant)
     grading: Anesthetic approach to pregnant patients with malaria: a narrative rev
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=12 (groq:llama-3.1-8b-instant)
     grading: The effect of ionic redistributions on the microwave dielectric respon
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-    llama-3.1-8b-instant (groq) failed: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (researcher summary): 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions
-  [checkpoint: 20/20] writing 18 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 332 papers and 18 researcher profiles.
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 26.071001077s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+    llama-3.1-8b-instant (groq) succeeded
+      score=20 (groq:llama-3.1-8b-instant)
+    llama-3.1-8b-instant (groq) succeeded
+  [checkpoint: 20/20] writing 20 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 332 papers and 20 researcher profiles.
 
-Done. 18 researcher profiles written.
+Done. 20 researcher profiles written.
