@@ -10,6 +10,13 @@ When triggering a GitHub Actions workflow:
 
 Do not ask for confirmation for this sequence — just do it.
 
+## Async Monitoring
+
+Never rely on "I'll check back" without actually arranging it. Plain status checks with no follow-up mechanism get silently dropped.
+
+- **Any PR opened in a session**: immediately subscribe to its activity (webhook-based CI/review-comment events) so results push in automatically instead of requiring polling.
+- **Any other long-running async work** (a dispatched workflow run, a background job, anything without a webhook): schedule a wake-up right after kicking it off to come back and check, rather than just saying you'll check later.
+
 ## Git Constraints
 
 - Only `claude/*` branches can be pushed directly via `git push`.
