@@ -783,21 +783,37 @@ Return a JSON object (no markdown) with exactly these keys:
 - reason: 1-2 sentence explanation for the score on this specific dimension
 """
 
-# Tried in order for each call. Both gemma-3-27b-it and gemma-4-4b-it were
-# dropped after confirming via live runs that they 404 for this project on
-# every single call (not transient) — pure dead latency in the chain. The
-# two Gemma models below each carry their own separate free-tier quota
-# (~15 RPM / ~1500 RPD), so a transient 500/504 on one usually still has
-# headroom on the next. gemini-2.5-flash was replaced with
-# gemini-3.1-flash-lite as the last resort: per the live rate-limit
-# dashboard, flash-lite gets ~15 RPM / ~500 RPD vs. 2.5-flash's ~5 RPM /
-# ~20 RPD — strictly better on both axes, so there's no reason to keep
-# 2.5-flash in the chain at all.
-EVAL_MODEL_CANDIDATES = [
+# Two model-strength tiers, both cascading through the same 3 models —
+# just in a different order — plus Groq as a shared last resort.
+#
+# Strength order (Arena leaderboard / model class): gemma-4-31b-it (31B
+# dense, #3 Arena) > gemma-4-26b-a4b-it (26B MoE, ~3.8B active/token, #6
+# Arena) > gemini-3.1-flash-lite (cost/speed tier) > groq llama-3.1-8b-instant
+# (8B, weakest — last resort only).
+#
+# STRONG_MODEL_CANDIDATES: the strongest model first. Used for the
+# lower-volume, higher-stakes qualitative calls — the per-paper meta call
+# (summary/opportunity/fields) and the once-per-researcher applicability
+# summary — where quality matters most and call volume is low.
+#
+# PARAM_MODEL_CANDIDATES: the weaker/cheaper flash-lite model first. Used
+# for the 5-per-paper numeric dimension scoring loop — high volume, so this
+# also keeps that bulk traffic off Gemma's scarce capacity, reserving it for
+# the calls above. Falls back to the Gemma models if flash-lite is out.
+#
+# (gemma-3-27b-it and gemma-4-4b-it were dropped after confirming via live
+# runs that they 404 on every single call — pure dead latency in the chain.)
+STRONG_MODEL_CANDIDATES = [
     os.environ.get("GEMINI_MODEL", "gemma-4-31b-it"),
     "gemma-4-26b-a4b-it",
     "gemini-3.1-flash-lite",
 ]
+PARAM_MODEL_CANDIDATES = [
+    "gemini-3.1-flash-lite",
+    "gemma-4-26b-a4b-it",
+    "gemma-4-31b-it",
+]
+EVAL_MODEL_CANDIDATES = STRONG_MODEL_CANDIDATES  # back-compat alias
 
 # Minimum seconds between two calls to the SAME model, sized to each model's
 # documented free-tier RPM with headroom. Each paper needs 6 calls (1 meta +
@@ -822,30 +838,36 @@ def _throttle(model_key):
         time.sleep(wait)
     _last_call_time[model_key] = time.monotonic()
 
-_last_good_model_idx = 0   # remember which model worked last to skip known-bad ones sooner
-_cooldown_until = {}       # model_id -> time.monotonic() before which it's skipped
-_fail_streak = {}          # model_id -> consecutive fail count, resets on any success
+_last_good_idx = {}        # chain name -> index of the model that worked last in that chain
+_cooldown_until = {}       # model_id -> time.monotonic() before which it's skipped (shared across chains)
+_fail_streak = {}          # model_id -> consecutive fail count, resets on any success (shared across chains)
 _COOLDOWN_SECONDS = 90     # bench a misbehaving model for a while, not the whole run —
                             # transient overload/500s recover; a permanent ban just
                             # dumps 100% of traffic onto whatever's left, which then
                             # overloads too (this is exactly what happened live).
 
-def _call_gemini(prompt, allow_groq=True):
-    """Call the model fallback chain and return (parsed_json, model_id).
+def _call_gemini(prompt, allow_groq=True, candidates=None, chain="strong"):
+    """Call a model fallback chain and return (parsed_json, model_id).
 
-    Gemma models are always tried first (they carry the applicability-scoring
-    calibration we want); Groq is only a last resort and only when allow_groq
-    is True. model_id is the identifier of whichever model actually produced
-    the answer — Groq answers are tagged ``groq:<model>`` so callers can tell
-    a Gemma score from a Groq score and later re-score the Groq ones on Gemma.
+    `candidates` selects which strength tier to try first (defaults to
+    STRONG_MODEL_CANDIDATES); `chain` is just a label so each tier remembers
+    its own last-good-model index independently. Cooldowns/fail-streaks are
+    shared across chains since they key off the actual model_id — a model
+    cooling down for one caller is cooling down for both. Groq is only a
+    last resort and only when allow_groq is True. model_id is the identifier
+    of whichever model actually produced the answer — Groq answers are
+    tagged ``groq:<model>`` so callers can tell a Gemma score from a Groq
+    score and later re-score the Groq ones on Gemma.
     """
-    global _last_good_model_idx
+    if candidates is None:
+        candidates = STRONG_MODEL_CANDIDATES
     last_err = None
-    n = len(EVAL_MODEL_CANDIDATES)
+    n = len(candidates)
     now = time.monotonic()
+    start_idx = _last_good_idx.get(chain, 0)
     for offset in range(n):
-        idx = (_last_good_model_idx + offset) % n
-        model_id = EVAL_MODEL_CANDIDATES[idx]
+        idx = (start_idx + offset) % n
+        model_id = candidates[idx]
         if _cooldown_until.get(model_id, 0) > now:
             continue
         _throttle(model_id)
@@ -854,7 +876,7 @@ def _call_gemini(prompt, allow_groq=True):
             text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
             text = re.sub(r"\s*```$", "", text)
             data = json.loads(text)
-            _last_good_model_idx = idx
+            _last_good_idx[chain] = idx
             _fail_streak[model_id] = 0
             return data, model_id
         except Exception as e:
@@ -917,18 +939,21 @@ def evaluate_paper(paper, allow_groq=True):
     truncated = abstract[:1200]
     models_used = []
 
-    # 1. Meta: summary, opportunity, fields
+    # 1. Meta: summary, opportunity, fields — low volume (1x/paper), so use the
+    # strongest model first.
     try:
         meta, meta_model = _call_gemini(META_PROMPT.format(
             title=paper["title"], abstract=truncated, fields=json.dumps(FIELD_TAGS),
-        ), allow_groq=allow_groq)
+        ), allow_groq=allow_groq, candidates=STRONG_MODEL_CANDIDATES, chain="strong")
         models_used.append(meta_model)
     except Exception as e:
         print(f"  Gemini error (meta): {e}")
         return None
     time.sleep(0.4)
 
-    # 2. Per-parameter scoring (separate call each)
+    # 2. Per-parameter scoring (separate call each) — high volume (5x/paper),
+    # so use the faster/cheaper model first and reserve the strong model's
+    # scarce capacity for the calls above.
     breakdown = {}
     scores = []
     for param_name, param_desc in SCORE_PARAMS:
@@ -936,7 +961,7 @@ def evaluate_paper(paper, allow_groq=True):
             data, param_model = _call_gemini(PARAM_PROMPT.format(
                 param_name=param_name, param_desc=param_desc,
                 title=paper["title"], abstract=truncated,
-            ), allow_groq=allow_groq)
+            ), allow_groq=allow_groq, candidates=PARAM_MODEL_CANDIDATES, chain="param")
             s = max(1, min(10, int(data.get("score", 5))))
             breakdown[param_name] = {"score": s, "reason": data.get("reason", "")}
             scores.append(s)
