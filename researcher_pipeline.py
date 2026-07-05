@@ -324,7 +324,7 @@ def fetch_pubmed_for_author(pi_name, years_back=YEARS_BACK, max_results=50):
             "id":       f"pubmed_{uid}",
             "title":    title,
             "abstract": abstract,
-            "authors":  all_authors[:3],
+            "authors":  all_authors,
             "journal":  journal,
             "date":     pub_date,
             "url":      f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
@@ -422,6 +422,7 @@ def build_researcher_profile(candidate, known_papers_by_id):
                 "score":           existing.get("score", 0),
                 "summary":         existing.get("summary", ""),
                 "opportunity":     existing.get("opportunity", ""),
+                "abstract":        paper.get("abstract", ""),
                 "fields":          existing.get("fields", []),
                 "score_breakdown": existing.get("score_breakdown", {}),
                 "eval_model":      existing.get("eval_model", ""),
@@ -446,6 +447,7 @@ def build_researcher_profile(candidate, known_papers_by_id):
             "score":           result["score"],
             "summary":         result["summary"],
             "opportunity":     result["opportunity"],
+            "abstract":        paper.get("abstract", ""),
             "fields":          result["fields"],
             "score_breakdown": result["score_breakdown"],
             "eval_model":      result.get("eval_model", ""),
@@ -514,7 +516,6 @@ def reeval_researchers_to_gemma():
             print(f"  re-eval: {p.get('title', '')[:70]}")
             p["abstract"] = pp._fetch_abstract_for_paper(p)
             result = pp.evaluate_paper(p, candidates=pp.GEMMA_ONLY_CANDIDATES, allow_groq=False)
-            p.pop("abstract", None)
             if not result or not pp._is_gemma_model(result.get("eval_model", "")):
                 print("    still no Gemma result — leaving as-is")
                 continue
@@ -536,6 +537,27 @@ def reeval_researchers_to_gemma():
             scores = [p.get("score", 0) for p in papers]
             profile["avg_score"] = round(sum(scores) / len(scores), 1) if scores else 0
 
+    # Backfill missing abstracts (for profiles built before this field existed,
+    # or reused-from-main-pipeline papers that never had one persisted). NCBI
+    # fetches are free/rate-limited rather than paid Gemini calls, but still
+    # cap the per-run volume so a huge backlog doesn't blow out the runtime.
+    total_abstracts = 0
+    MAX_ABSTRACT_BACKFILL = 60
+    for profile in profiles:
+        for p in profile.get("papers", []):
+            if total_abstracts >= MAX_ABSTRACT_BACKFILL:
+                break
+            if p.get("abstract", "").strip():
+                continue
+            p["abstract"] = pp._fetch_abstract_for_paper(p)
+            if p["abstract"]:
+                total_abstracts += 1
+            time.sleep(0.2)
+        if total_abstracts >= MAX_ABSTRACT_BACKFILL:
+            break
+    if total_abstracts:
+        print(f"\nBackfilled {total_abstracts} missing abstract(s).")
+
     total_backfilled = 0
     for profile in profiles:
         if profile.get("description", "").strip():
@@ -550,7 +572,7 @@ def reeval_researchers_to_gemma():
         else:
             print("    still failed — leaving blank for next run")
 
-    if total_rescored or total_backfilled:
+    if total_rescored or total_backfilled or total_abstracts:
         OUTPUT_JSON.write_text(json.dumps(profiles, ensure_ascii=False, indent=2), encoding="utf-8")
         if check_apps_script_version():
             try:
@@ -565,8 +587,9 @@ def reeval_researchers_to_gemma():
         pp.generate_html(main_papers, researchers=profiles)
 
     print(f"\nRe-evaluated {total_rescored} paper(s) onto Gemma, "
-          f"backfilled {total_backfilled} missing researcher description(s).")
-    return total_rescored + total_backfilled
+          f"backfilled {total_backfilled} missing researcher description(s), "
+          f"backfilled {total_abstracts} missing abstract(s).")
+    return total_rescored + total_backfilled + total_abstracts
 
 
 def main():
