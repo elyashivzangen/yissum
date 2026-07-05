@@ -50,6 +50,11 @@ def _parse_args():
                         "whose Gemma re-score still fails (e.g. it's still down) are "
                         "left untouched, so it is safe to run repeatedly. "
                         "--reeval-groq is a deprecated alias for the same flag.")
+    p.add_argument("--backfill-authors", action="store_true",
+                   help="One-off: re-fetch the full author list for every existing "
+                        "paper from its source (PubMed/EuropePMC/Semantic Scholar), "
+                        "skipping new-paper fetch and evaluation. Needed for papers "
+                        "fetched before author lists stopped being truncated to 3.")
     # parse_known_args so this module stays importable from other scripts
     # (e.g. researcher_pipeline.py) that define their own unrelated CLI flags.
     return p.parse_known_args()[0]
@@ -413,6 +418,107 @@ def backfill_metadata(papers, batch_size=50):
             print(f"  Metadata backfill Semantic Scholar error: {e}")
 
     print("  Metadata backfill done.")
+
+
+def backfill_authors(papers, batch_size=50):
+    """One-off: re-fetch the full author list for every existing paper.
+
+    Papers fetched before authors[:3] truncation was removed only ever had
+    up to 3 authors persisted; re-fetching from source is the only way to
+    recover the rest. Free-tier NCBI/EuropePMC/Semantic Scholar calls, not
+    Gemini — cheap to run over the whole dataset in one pass.
+    """
+    print(f"  Re-fetching author lists for {len(papers)} papers...")
+    updated = 0
+
+    pmid_map = {}
+    for p in papers:
+        pmid = _pmid_from_paper_id(p["id"])
+        if pmid:
+            pmid_map[pmid] = p
+
+    if pmid_map:
+        base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+        ids = list(pmid_map.keys())
+        for i in range(0, len(ids), batch_size):
+            batch = ids[i:i + batch_size]
+            try:
+                r = requests.get(f"{base}/efetch.fcgi", params={
+                    "db": "pubmed", "id": ",".join(batch),
+                    "rettype": "xml", "retmode": "xml",
+                }, timeout=30)
+                r.raise_for_status()
+                root = ET.fromstring(r.text)
+                for article in root.findall(".//PubmedArticle"):
+                    uid = article.findtext(".//PMID", "")
+                    p = pmid_map.get(uid)
+                    if not p:
+                        continue
+                    all_authors = []
+                    for a in article.findall(".//AuthorList/Author"):
+                        last = a.findtext("LastName", "")
+                        fore = a.findtext("ForeName", "") or a.findtext("Initials", "")
+                        name = f"{fore} {last}".strip() if fore else last
+                        if name:
+                            all_authors.append(name)
+                    if all_authors:
+                        p["authors"] = all_authors
+                        updated += 1
+            except Exception as e:
+                print(f"  Author backfill PubMed error (batch {i}): {e}")
+            time.sleep(0.3)
+
+    ss_map = {p["id"][3:]: p for p in papers if p["id"].startswith("ss_")}
+    if ss_map:
+        try:
+            r = requests.post(
+                "https://api.semanticscholar.org/graph/v1/paper/batch",
+                params={"fields": "authors.name"},
+                json={"ids": list(ss_map.keys())},
+                timeout=30,
+            )
+            r.raise_for_status()
+            for item in r.json():
+                if not item:
+                    continue
+                p = ss_map.get(item.get("paperId", ""))
+                if not p:
+                    continue
+                names = [a.get("name", "") for a in (item.get("authors") or []) if a.get("name")]
+                if names:
+                    p["authors"] = names
+                    updated += 1
+        except Exception as e:
+            print(f"  Author backfill Semantic Scholar error: {e}")
+
+    epmc_papers = [p for p in papers if p["id"].startswith("epmc_")]
+    for p in epmc_papers:
+        eid = p["id"].split("_", 1)[1]
+        try:
+            r = requests.get(
+                "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+                params={"query": f"EXT_ID:{eid}", "resultType": "core", "format": "json"},
+                timeout=30,
+            )
+            r.raise_for_status()
+            items = r.json().get("resultList", {}).get("result", [])
+            if not items:
+                continue
+            all_author_objs = (items[0].get("authorList") or {}).get("author", [])
+            names = []
+            for a in all_author_objs:
+                name = f"{a.get('firstName','')} {a.get('lastName','')}".strip()
+                if name:
+                    names.append(name)
+            if names:
+                p["authors"] = names
+                updated += 1
+        except Exception as e:
+            print(f"  Author backfill EuropePMC error for {eid}: {e}")
+        time.sleep(0.3)
+
+    print(f"  Author backfill done: {updated}/{len(papers)} papers updated.")
+    return updated
 
 
 # ── PI Contact Enrichment ──────────────────────────────────────────────────────
@@ -1951,6 +2057,13 @@ def main():
         save_to_sheet(existing)
         generate_html(existing)
         print("Backfill complete.")
+        return True
+
+    if ARGS.backfill_authors:
+        backfill_authors(existing)
+        save_to_sheet(existing)
+        generate_html(existing)
+        print("Author backfill complete.")
         return True
 
     if ARGS.reeval_to_gemma:

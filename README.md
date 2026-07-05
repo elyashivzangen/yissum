@@ -223,6 +223,8 @@ For every paper, the system attempts to identify the most senior HUJI-affiliated
 
 1. **PubMed papers** — fetches the full XML record and scans author affiliation strings for HUJI keywords, working backwards from the last author. Extracts both full name and email (if present in the affiliation field).
 2. **All papers with a DOI** — queries the CrossRef API for the corresponding author's email as a secondary fallback.
+3. **ORCID** — as a last resort, searches by PI name + HUJI affiliation for a public email.
+4. **Cross-paper fallback** — the same PI's email/affiliation often lands on some of their papers but not others (a PubMed record only embeds it in the affiliation free-text some of the time). At HTML-generation time, any paper still missing `pi_email`/`pi_affiliation` is backfilled from that PI's aggregated value in `researchers_data.json` (if they're one of the profiled researchers), rather than only ever depending on that one paper's own source record.
 
 ### Result
 
@@ -230,7 +232,7 @@ For every paper, the system attempts to identify the most senior HUJI-affiliated
 - `pi_full_name` — full first + last name (from enrichment)
 - `pi_email` — email address (shown behind a toggle button in the viewer)
 
-Note: Most academic APIs do not expose author emails publicly. Only a subset of papers (~10–15%) will have an email found. The backfill process retries missing emails on every pipeline run as new enrichment logic is added.
+Note: Most academic APIs do not expose author emails publicly. Only a subset of papers (~10–15%) will have an email found directly from their own source record — the cross-paper fallback above recovers a further slice of these for PIs who are also in the Researchers dataset. The backfill process retries missing emails on every pipeline run as new enrichment logic is added.
 
 ---
 
@@ -242,6 +244,8 @@ It has two top-level tabs:
 
 - **📄 Papers** — the paper-by-paper view described below.
 - **🧑‍🔬 Researchers** — researcher applicability profiles; see [Researcher Applicability Dataset](#researcher-applicability-dataset).
+
+Next to the tab switcher is a **🏛️ HUJI-primary only** toggle, on by default, shared across both tabs. It hides any paper/researcher whose *first* listed affiliation segment isn't Hebrew University — e.g. a paper whose PI's affiliation string is `"Hadassah Medical Center; Hebrew University of Jerusalem"` (Hadassah listed first) is hidden until the toggle is switched off. Affiliation order comes from whatever order the source (PubMed/EuropePMC/Semantic Scholar) reported it in — this is a heuristic, not a guarantee, since the underlying data is a single joined string rather than a structured, priority-ordered list.
 
 ### Controls
 
@@ -267,8 +271,8 @@ Each chip shows the live count of matching papers, updating as other filters cha
 Each card displays:
 
 - **Title** and **score badge** (green/yellow/red)
-- **Main Researcher** — PI full name, with an "Email ▾" toggle button if an email was found
-- **Authors** — first three authors, journal, publication date
+- **Main Researcher** — PI full name, with an "Email ▾" toggle button if an email was found (including via the cross-paper fallback described in [PI & Email Enrichment](#pi--email-enrichment))
+- **Authors** — the first 3 authors, journal, publication date. Papers with more than 4 authors show `A, B, C, +N more, LastAuthor` — the last author is always visible even collapsed; clicking "+N more" expands to the full list inline. (Papers fetched before author-list truncation was removed only have up to 3 authors persisted — see `--backfill-authors` under [Running Manually](#running-manually) to recover the rest.)
 - **AI Summary** — 2-sentence plain-English description
 - **Commercial Opportunity** — highlighted in a purple box
 - **Field tags**
@@ -319,9 +323,14 @@ produce applicable, commercially-relevant work.
   researcher showing their average-score badge, affiliation, email, focus
   description, a highlighted **applicability** summary, aggregated field-tag
   chips, and an expandable "Graded Publications ▾" list where each paper shows
-  its field tags, scoring model badge, and its own expandable score breakdown.
-  The tab also has **branch filter tabs** (All / Healthcare / Agriculture &
-  Food / Exact & Social Sciences) mirroring the Papers tab.
+  its field tags and scoring model badge, plus two independently-expandable
+  panels: **"Abstract & Summary ▾"** (the AI-generated summary and commercial
+  opportunity, and — for papers graded since this field was added, with older
+  ones backfilled over subsequent daily reeval runs — the original paper
+  abstract) and **"Score Breakdown ▾"** (the same five-dimension breakdown as
+  the Papers tab). The tab also has **branch filter tabs** (All / Healthcare /
+  Agriculture & Food / Exact & Social Sciences) mirroring the Papers tab, and
+  is subject to the same **🏛️ HUJI-primary only** toggle described above.
 - **`researchers_data.json`** — the raw JSON, same shape as the Sheet rows.
 
 Because this is a much heavier job than the weekly pipeline (a full
@@ -433,11 +442,38 @@ how old they are. All papers scoring 25 or above are kept indefinitely.
 trigger: schedule (Monday 06:00 UTC) + workflow_dispatch
 inputs:
   period: week (default) | month
-secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, APPS_SCRIPT_URL
+  days_back: 90 (default) — actual fetch window in days, for multi-month backfills
+  max_results: 300 (default) — max papers requested per source
+  backfill_metadata: false (default) — one-off: refresh pi_affiliation/date precision only
+  reeval_to_gemma: false (default) — one-off: re-score non-Gemma papers onto Gemma only
+  backfill_authors: false (default) — one-off: re-fetch full author lists for existing papers
+secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, APPS_SCRIPT_URL, GROQ_API_KEY
 outputs: papers_reader.html, papers_data.json, pipeline_run.log
 ```
 
-Can be triggered manually from the GitHub Actions tab with `period=month` to do a full 30-day lookback (useful after the pipeline has been down or for initial population).
+Can be triggered manually from the GitHub Actions tab with `period=month` to do a full 30-day lookback (useful after the pipeline has been down or for initial population). The three boolean inputs are mutually-exclusive one-off modes — each skips fetching new papers entirely and only touches the existing dataset.
+
+### `reeval_to_gemma.yml`
+
+```yaml
+trigger: schedule (04:13 UTC daily) + workflow_dispatch
+secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, APPS_SCRIPT_URL, GROQ_API_KEY
+outputs: papers_reader.html, papers_data.json, researchers_data.json, reeval_papers_run.log, reeval_researchers_run.log
+```
+
+Runs `papers_pipeline.py --reeval-to-gemma` and `researcher_pipeline.py --reeval-to-gemma` back to back, once a day, so both datasets keep converging onto Gemma without manual intervention. See [Converging every paper onto Gemma](#converging-every-paper-onto-gemma).
+
+### `model_comparison_pilot.yml`
+
+```yaml
+trigger: workflow_dispatch only (manual, one-off diagnostic — not scheduled)
+inputs:
+  sample_size: 5 (default)
+secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, APPS_SCRIPT_URL, GROQ_API_KEY
+outputs: model_comparison_pilot.json, model_comparison_pilot_run.log
+```
+
+Runs `model_comparison_pilot.py`. See [Comparing what each model actually says](#comparing-what-each-model-actually-says).
 
 ### `weekly_digest.yml`
 
@@ -463,7 +499,7 @@ inputs:
   top_n: 20 (default)
   years_back: 3 (default)
   max_papers_per_researcher: 15 (default)
-secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, APPS_SCRIPT_URL
+secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, APPS_SCRIPT_URL, GROQ_API_KEY
 outputs: papers_reader.html, researchers_data.json, researcher_pipeline_run.log
 ```
 
@@ -492,8 +528,12 @@ outputs: latest_rfps.json, data/*.pdf
 | `papers_reader.html` | **Generated** — interactive viewer with Papers + Researchers tabs (open in browser) |
 | `papers_data.json` | **Generated** — raw JSON for all papers |
 | `researchers_data.json` | **Generated** — raw JSON for all researcher applicability profiles |
+| `model_comparison_pilot.json` | **Generated** — per-model score comparison from the last pilot run |
 | `pipeline_run.log` | **Generated** — log of the last pipeline run |
 | `researcher_pipeline_run.log` | **Generated** — log of the last researcher pipeline run |
+| `reeval_papers_run.log` | **Generated** — log of the last daily papers reeval-to-Gemma pass |
+| `reeval_researchers_run.log` | **Generated** — log of the last daily researcher reeval-to-Gemma pass |
+| `model_comparison_pilot_run.log` | **Generated** — log of the last model comparison pilot run |
 | `digest_run.log` | **Generated** — log of the last digest run |
 | `latest_rfps.json` | **Generated** — latest harvested RFP documents |
 | `digests/` | Folder of all historical digest PDFs |
@@ -510,9 +550,10 @@ Configure these in the GitHub repository under **Settings → Secrets and variab
 
 | Secret | Used by | Description |
 |--------|---------|-------------|
-| `GEMINI_API_KEY` | pipeline, researcher pipeline, digest, cleanup | Google AI API key for Gemini |
-| `GOOGLE_SHEET_ID` | pipeline, researcher pipeline, digest, cleanup | ID from the Google Sheet URL |
-| `APPS_SCRIPT_URL` | pipeline, researcher pipeline, cleanup | Deployed Apps Script web app URL |
+| `GEMINI_API_KEY` | pipeline, researcher pipeline, reeval, model comparison pilot, digest, cleanup | Google AI API key for Gemini/Gemma |
+| `GOOGLE_SHEET_ID` | pipeline, researcher pipeline, reeval, model comparison pilot, digest, cleanup | ID from the Google Sheet URL |
+| `APPS_SCRIPT_URL` | pipeline, researcher pipeline, reeval, model comparison pilot, cleanup | Deployed Apps Script web app URL |
+| `GROQ_API_KEY` | pipeline, researcher pipeline, reeval, model comparison pilot | Groq API key — last-resort fallback model when every Gemini/Gemma model in the chain fails |
 | `GH_TOKEN` | rfp_scrape | GitHub token (for pushing scraped data) |
 
 ---
@@ -521,9 +562,11 @@ Configure these in the GitHub repository under **Settings → Secrets and variab
 
 ### Trigger via GitHub UI
 
-Go to **Actions → Papers Pipeline → Run workflow** and choose `period: week` or `period: month`.
+Go to **Actions → Papers Pipeline → Run workflow** and choose `period: week` or `period: month`, or enable one of the one-off boolean inputs (`backfill_metadata`, `reeval_to_gemma`, `backfill_authors`) to run just that pass over the existing dataset without fetching new papers.
 
 For researcher profiles, go to **Actions → Researcher Pipeline → Run workflow** and optionally override `top_n`, `years_back`, `max_papers_per_researcher`.
+
+To force the daily Gemma-convergence pass or the model comparison pilot on demand, use **Actions → Daily Reeval to Gemma → Run workflow** or **Actions → Model Comparison Pilot → Run workflow** (the latter takes a `sample_size` input).
 
 ### Run locally
 
@@ -533,6 +576,14 @@ pip install -r requirements.txt
 # Run the main pipeline
 GEMINI_API_KEY=... GOOGLE_SHEET_ID=... APPS_SCRIPT_URL=... \
   python papers_pipeline.py --period week
+
+# One-off: re-fetch full author lists for existing papers (no new fetch/scoring)
+GEMINI_API_KEY=... GOOGLE_SHEET_ID=... APPS_SCRIPT_URL=... \
+  python papers_pipeline.py --backfill-authors
+
+# One-off: re-score any paper not currently scored by Gemma
+GEMINI_API_KEY=... GOOGLE_SHEET_ID=... APPS_SCRIPT_URL=... GROQ_API_KEY=... \
+  python papers_pipeline.py --reeval-to-gemma
 
 # Build researcher applicability profiles
 GEMINI_API_KEY=... GOOGLE_SHEET_ID=... APPS_SCRIPT_URL=... \
