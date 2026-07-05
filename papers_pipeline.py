@@ -640,7 +640,7 @@ def fetch_pubmed(max_results=MAX_RESULTS):
             "id":       f"pubmed_{uid}",
             "title":    title,
             "abstract": "",
-            "authors":  all_authors[:3],
+            "authors":  all_authors,
             "journal":  journal,
             "date":     pub_date,
             "url":      f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
@@ -695,7 +695,7 @@ def fetch_europepmc(max_results=MAX_RESULTS):
             "id":       f"epmc_{item.get('id','')}",
             "title":    item.get("title", ""),
             "abstract": item.get("abstractText", ""),
-            "authors":  all_authors[:3],
+            "authors":  all_authors,
             "journal":  item.get("journalTitle", ""),
             "date":     item.get("firstPublicationDate", ""),
             "url":      f"https://europepmc.org/article/{item.get('source','')}/{item.get('id','')}",
@@ -746,7 +746,7 @@ def fetch_semantic_scholar(max_results=MAX_RESULTS):
             "id":       f"ss_{pid}",
             "title":    item.get("title", ""),
             "abstract": item.get("abstract", "") or "",
-            "authors":  all_authors[:3],
+            "authors":  all_authors,
             "journal":  item.get("venue", ""),
             "date":     pub_date,
             "url":      url,
@@ -1155,6 +1155,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   .meta-row{{display:flex;align-items:center;gap:6px;flex-wrap:wrap}}
   .meta{{font-size:.72rem;color:var(--muted)}}
+  .authors-toggle{{color:var(--accent3);cursor:pointer;text-decoration:underline;text-underline-offset:2px}}
   .source-badge{{
     font-size:.62rem;padding:1px 7px;border-radius:4px;font-weight:600;letter-spacing:.03em;
     background:rgba(56,189,248,.12);color:var(--accent3);border:1px solid rgba(56,189,248,.2)
@@ -1234,10 +1235,18 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .branch-tab.active{{color:var(--accent);border-bottom-color:var(--accent)}}
 
   /* ── Page Tabs (Papers / Researchers) ── */
-  .page-tabs{{display:flex;gap:8px;background:var(--header-bg);padding:0 24px;overflow-x:auto;flex-shrink:0}}
+  .page-tabs{{display:flex;align-items:center;gap:8px;background:var(--header-bg);padding:0 24px;overflow-x:auto;flex-shrink:0}}
   .page-tab{{padding:11px 20px;border:none;background:transparent;color:rgba(255,255,255,.65);font-size:.85rem;font-weight:700;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px;transition:all .18s;white-space:nowrap;letter-spacing:.01em}}
   .page-tab:hover{{color:#fff}}
   .page-tab.active{{color:#fff;border-bottom-color:#fff}}
+  .huji-toggle{{
+    margin-left:auto;padding:6px 13px;border-radius:999px;
+    border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);
+    color:rgba(255,255,255,.75);font-size:.72rem;font-weight:600;cursor:pointer;
+    transition:all .15s;white-space:nowrap
+  }}
+  .huji-toggle:hover{{background:rgba(255,255,255,.18);color:#fff}}
+  .huji-toggle.active{{background:#fff;border-color:#fff;color:var(--accent2)}}
 
   /* ── Researcher Card ── */
   .r-card{{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}}
@@ -1267,6 +1276,12 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .r-paper-score{{font-weight:800;flex-shrink:0}}
   .r-paper .breakdown{{display:flex;margin-top:0;padding-top:8px}}
   .r-paper-toggle{{align-self:flex-start;font-size:.66rem;padding:2px 8px}}
+  .r-paper-actions{{display:flex;gap:6px}}
+  .r-paper-details{{display:none;flex-direction:column;gap:8px}}
+  .r-paper-details.open{{display:flex}}
+  .r-paper .summary,.r-paper .opportunity{{font-size:.74rem}}
+  .r-abstract{{font-size:.72rem;color:var(--muted);line-height:1.5}}
+  .r-abstract-label{{display:block;font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;margin-bottom:2px}}
 
   @media(max-width:600px){{
     .grid{{grid-template-columns:1fr;padding:12px 12px 32px}}
@@ -1289,6 +1304,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <div class="page-tabs">
   <button class="page-tab active" data-view="papers">📄 Papers</button>
   <button class="page-tab" data-view="researchers">🧑‍🔬 Researchers</button>
+  <button class="huji-toggle active" id="hujiToggle" title="Hide papers/researchers whose first listed affiliation isn't Hebrew University (e.g. a Hadassah-first listing)">🏛️ HUJI-primary only</button>
 </div>
 <div id="papers-view">
 <div class="branch-tabs">
@@ -1386,7 +1402,7 @@ function parseDate(d){{
   return null;
 }}
 function daysAgo(d){{const t=parseDate(d);if(!t)return 9999;t.setHours(0,0,0,0);return Math.round((TODAY-t)/86400000);}}
-let activeScore=0, activeField='all', activePeriod='all', activeBranch='all', sortBy='score', searchQ='', activeParam='', activeParamMin=1;
+let activeScore=0, activeField='all', activePeriod='all', activeBranch='all', sortBy='score', searchQ='', activeParam='', activeParamMin=1, hujiOnly=true;
 const PARAM_LABELS = {{
   novelty:'Novelty', commercial_potential:'Commercial Potential',
   market_size:'Market Size', trl:'Tech Readiness', ip_strength:'IP Strength'
@@ -1416,6 +1432,30 @@ function renderBreakdown(bd){{
   }}).join('');
   return `<div class="breakdown">${{rows}}</div>`;
 }}
+function renderAuthors(authors){{
+  if(!authors.length)return '';
+  if(authors.length<=4)return authors.join(', ');
+  // Always show the last author, even collapsed — only the middle names hide.
+  const shown=authors.slice(0,3).join(', ');
+  const last=authors[authors.length-1];
+  const hidden=authors.length-4;
+  const full=authors.join(', ').replace(/"/g,'&quot;');
+  return `<span class="authors-collapsed">${{shown}}, <span class="authors-toggle" onclick="toggleAuthors(this)">+${{hidden}} more</span>, ${{last}}</span><span class="authors-full" style="display:none">${{full}}</span>`;
+}}
+function toggleAuthors(el){{
+  const wrap=el.closest('.meta');
+  if(!wrap)return;
+  const collapsed=wrap.querySelector('.authors-collapsed');
+  const full=wrap.querySelector('.authors-full');
+  if(!collapsed||!full)return;
+  collapsed.style.display='none';
+  full.style.display='inline';
+}}
+function hujiFirst(aff){{
+  if(!aff)return true; // unknown affiliation — don't hide for missing data
+  const first=(aff.split(';')[0]||'').trim().toLowerCase();
+  return first.includes('hebrew university')||first.includes('hebrew u');
+}}
 function branchMatches(p){{
   // Returns an object {{branch: bool}} — true if this branch has the highest field-tag match.
   // Ties: the paper appears in ALL tied branches.
@@ -1429,6 +1469,7 @@ function branchMatches(p){{
   return result;
 }}
 function applyFilters(list,{{skipPeriod,skipField}}){{
+  if(hujiOnly)list=list.filter(p=>hujiFirst(p.pi_affiliation));
   if(activeBranch!=='all')list=list.filter(p=>{{const m=branchMatches(p);return m&&m[activeBranch];}});
   if(searchQ){{const q=searchQ.toLowerCase();list=list.filter(p=>(p.title||'').toLowerCase().includes(q)||(p.summary||'').toLowerCase().includes(q)||(p.opportunity||'').toLowerCase().includes(q));}}
   if(!skipPeriod&&activePeriod!=='all')list=list.filter(p=>daysAgo(p.date)<=parseInt(activePeriod));
@@ -1457,7 +1498,7 @@ function render(){{
   if(!list.length){{grid.innerHTML='<div class="empty">No papers match.</div>';return;}}
   grid.innerHTML=list.map((p,i)=>{{
     const tags=(p.fields||[]).map(f=>`<span class="tag">${{f}}</span>`).join('');
-    const authors=(p.authors||[]).join(', ');
+    const authors=renderAuthors(p.authors||[]);
     const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
     return `<div class="card">
       <div class="card-header"><div class="title">${{p.title}}</div><div class="score-badge ${{scoreClass(p.score)}}"><span class="score-num">${{p.score}}</span><span class="score-denom">/50</span></div></div>
@@ -1545,6 +1586,7 @@ function researcherBranches(r){{
 }}
 function renderResearchers(){{
   let list=researchers.slice();
+  if(hujiOnly)list=list.filter(r=>hujiFirst(r.pi_affiliation));
   if(rBranch!=='all')list=list.filter(r=>researcherBranches(r).includes(rBranch));
   if(rSearchQ){{const q=rSearchQ.toLowerCase();list=list.filter(r=>(r.pi_full_name||r.pi||'').toLowerCase().includes(q)||(r.description||'').toLowerCase().includes(q)||(r.applicability||'').toLowerCase().includes(q)||(r.fields||[]).join(' ').toLowerCase().includes(q));}}
   if(rSortBy==='pi')list.sort((a,b)=>(a.pi_full_name||a.pi||'').localeCompare(b.pi_full_name||b.pi||''));
@@ -1559,6 +1601,7 @@ function renderResearchers(){{
     const papers=(r.papers||[]).slice().sort((a,b)=>(b.score||0)-(a.score||0));
     const rows=papers.map(p=>{{
       const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
+      const hasDetails=!!(p.summary||p.opportunity||p.abstract);
       const ptags=(p.fields||[]).map(f=>`<span class="tag">${{f}}</span>`).join('');
       return `<div class="r-paper">
         <div class="r-paper-row">
@@ -1566,8 +1609,16 @@ function renderResearchers(){{
           <span class="r-paper-score ${{scoreClass(p.score)}}">${{p.score}}/50</span>
         </div>
         ${{ptags?`<div class="tags">${{ptags}}</div>`:''}}
+        ${{hasDetails?`<div class="r-paper-details">
+          ${{p.summary?`<div class="summary">${{p.summary}}</div>`:''}}
+          ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
+          ${{p.abstract?`<div class="r-abstract"><span class="r-abstract-label">Abstract</span>${{p.abstract}}</div>`:''}}
+        </div>`:''}}
         ${{hasBd?renderBreakdown(p.score_breakdown):''}}
-        ${{hasBd?`<button class="btn r-paper-toggle" onclick="toggleBd(this)">Score Breakdown ▾</button>`:''}}
+        <div class="r-paper-actions">
+          ${{hasDetails?`<button class="btn r-paper-toggle" onclick="toggleDetails(this)">Abstract &amp; Summary ▾</button>`:''}}
+          ${{hasBd?`<button class="btn r-paper-toggle" onclick="toggleBd(this)">Score Breakdown ▾</button>`:''}}
+        </div>
       </div>`;
     }}).join('');
     return `<div class="r-card">
@@ -1597,6 +1648,15 @@ function toggleRPapers(btn){{
   btn.classList.toggle('active');
   btn.textContent=list.classList.contains('open')?'Graded Publications ▴':'Graded Publications ▾';
 }}
+function toggleDetails(btn){{
+  const container=btn.closest('.r-paper');
+  if(!container)return;
+  const details=container.querySelector('.r-paper-details');
+  if(!details)return;
+  details.classList.toggle('open');
+  btn.classList.toggle('active');
+  btn.textContent=details.classList.contains('open')?'Abstract & Summary ▴':'Abstract & Summary ▾';
+}}
 document.getElementById('r-search').addEventListener('input',e=>{{rSearchQ=e.target.value.trim();renderResearchers();}});
 document.getElementById('r-sort').addEventListener('change',e=>{{rSortBy=e.target.value;renderResearchers();}});
 document.querySelectorAll('.r-branch-tab').forEach(tab=>tab.addEventListener('click',()=>{{
@@ -1612,6 +1672,12 @@ document.querySelectorAll('.page-tab').forEach(tab=>tab.addEventListener('click'
   document.getElementById('papers-view').style.display=view==='papers'?'':'none';
   document.getElementById('researchers-view').style.display=view==='researchers'?'':'none';
 }}));
+document.getElementById('hujiToggle').addEventListener('click',function(){{
+  hujiOnly=!hujiOnly;
+  this.classList.toggle('active',hujiOnly);
+  render();
+  renderResearchers();
+}});
 renderResearchers();
 (function(){{
   const btn=document.getElementById('themeToggle');
@@ -1648,6 +1714,22 @@ def generate_html(papers, researchers=None):
         else:
             researchers = []
 
+    # A given PI's email/affiliation often lands on some of their papers but
+    # not others (PubMed only embeds it in the affiliation free-text some of
+    # the time — see enrich_pi_contact()). The Researchers pipeline already
+    # aggregates the most-common non-empty value per PI across all their
+    # papers; reuse that here so any paper missing pi_email/pi_affiliation
+    # falls back to what's already known about the same PI, instead of only
+    # ever getting it from that one paper's own source record.
+    pi_lookup = {}
+    for r in (researchers or []):
+        key = (r.get("pi_full_name") or r.get("pi") or "").strip().lower()
+        if key:
+            pi_lookup[key] = r
+
+    def _pi_key(p):
+        return (p.get("pi_full_name") or p.get("pi") or "").strip().lower()
+
     enriched = sorted([{
         "id":              p["id"],
         "title":           p.get("title", ""),
@@ -1663,8 +1745,8 @@ def generate_html(papers, researchers=None):
         "score_breakdown": p.get("score_breakdown", {}),
         "pi":              p.get("pi", ""),
         "pi_full_name":    p.get("pi_full_name", ""),
-        "pi_email":        p.get("pi_email", ""),
-        "pi_affiliation":  p.get("pi_affiliation", ""),
+        "pi_email":        p.get("pi_email", "") or pi_lookup.get(_pi_key(p), {}).get("pi_email", ""),
+        "pi_affiliation":  p.get("pi_affiliation", "") or pi_lookup.get(_pi_key(p), {}).get("pi_affiliation", ""),
         "eval_model":      p.get("eval_model", ""),
         "prev_score":      p.get("prev_score", ""),
         "prev_eval_model": p.get("prev_eval_model", ""),
