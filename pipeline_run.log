@@ -1,7 +1,8 @@
 Loading existing papers from Google Sheet...
   332 existing papers loaded.
   Verifying HUJI affiliation for 326 papers via PubMed efetch...
-  0 Groq-scored papers to re-evaluate on Gemma.
-  Re-evaluated 0/0 Groq papers on Gemma.
-  Nothing re-scored (no Groq papers, or Gemma still unavailable).
-Re-evaluation complete.
+  Re-fetching author lists for 332 papers...
+  Author backfill done: 401/332 papers updated.
+Sheet updated: {"status":"ok","rows":333}
+Generated papers_reader.html and papers_data.json with 332 papers and 20 researcher profiles.
+Author backfill complete.
