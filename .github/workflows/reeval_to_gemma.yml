@@ -1,0 +1,64 @@
+name: Daily Reeval to Gemma
+
+# Runs once a day: re-scores any paper (main sheet + researcher profiles)
+# that isn't currently scored by Gemma (i.e. it fell back to
+# gemini-3.1-flash-lite or Groq), so the dataset converges on a single
+# consistent model over time. Skips fetching new papers/researchers
+# entirely — this is purely an upgrade pass over what's already committed.
+# Safe to run repeatedly: papers that still fail on Gemma are left as-is.
+
+on:
+  schedule:
+    - cron: '13 4 * * *'   # once daily, off the :00/:30 mark
+  workflow_dispatch:
+
+concurrency:
+  group: reeval-to-gemma
+  cancel-in-progress: false
+
+jobs:
+  reeval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Reeval main papers sheet
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+        run: |
+          set -o pipefail
+          python -u papers_pipeline.py --reeval-to-gemma 2>&1 | tee reeval_papers_run.log
+
+      - name: Reeval researcher profiles
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+        run: |
+          set -o pipefail
+          python -u researcher_pipeline.py --reeval-to-gemma 2>&1 | tee reeval_researchers_run.log
+
+      - name: Commit generated files
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git reset --soft origin/main
+          git add papers_reader.html papers_data.json researchers_data.json \
+                   reeval_papers_run.log reeval_researchers_run.log || true
+          git diff --cached --quiet || git commit -m "chore: daily reeval to Gemma [$(date -u +%Y-%m-%d)]"
+          git push origin HEAD:main
