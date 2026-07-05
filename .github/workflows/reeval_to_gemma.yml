@@ -56,8 +56,19 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Stage only the files this job generates, then rebase them onto the
+          # *current* origin/main (not the commit this job started from) so a
+          # long-running job that finishes after other PRs/merges land can't
+          # silently revert unrelated files back to its stale checkout — a
+          # plain `git reset --soft origin/main` + partial `git add` does
+          # exactly that, since everything not re-added stays at the old
+          # checkout's content. See the "chore" incident of 2026-07-05.
+          mkdir -p /tmp/gen
+          cp -f papers_reader.html papers_data.json researchers_data.json \
+                reeval_papers_run.log reeval_researchers_run.log /tmp/gen/ 2>/dev/null || true
           git fetch origin main
-          git reset --soft origin/main
+          git reset --hard origin/main
+          cp -f /tmp/gen/* . 2>/dev/null || true
           git add papers_reader.html papers_data.json researchers_data.json \
                    reeval_papers_run.log reeval_researchers_run.log || true
           git diff --cached --quiet || git commit -m "chore: daily reeval to Gemma [$(date -u +%Y-%m-%d)]"
