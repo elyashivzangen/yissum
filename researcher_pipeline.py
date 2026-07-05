@@ -342,7 +342,12 @@ def generate_researcher_summary(graded_papers):
         entries.append(f"- {p.get('title', '')}: {p.get('summary', '')}")
     paper_list = "\n".join(entries) or "(no summaries available)"
     try:
-        data, _model = pp._call_gemini(RESEARCHER_PROMPT.format(paper_list=paper_list))
+        # Ranking the whole researcher is a single, high-stakes call — use the
+        # strongest model first (same tier as the per-paper meta call).
+        data, _model = pp._call_gemini(
+            RESEARCHER_PROMPT.format(paper_list=paper_list),
+            candidates=pp.STRONG_MODEL_CANDIDATES, chain="strong",
+        )
         return {
             "description": pp.fix_encoding(data.get("description", "")),
             "applicability": pp.fix_encoding(data.get("applicability", "")),

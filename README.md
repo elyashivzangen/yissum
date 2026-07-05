@@ -113,13 +113,28 @@ Each new paper is evaluated by Gemini (Gemma) AI on **five separate dimensions**
 
 ### Model fallback chain & scoring provenance
 
-Scoring always tries the Gemma models first (they carry the applicability
-calibration we want), falling back through the chain in `EVAL_MODEL_CANDIDATES`
-and only using **Groq** (`llama-3.1-8b-instant`) as a last resort when every
-Gemma model is rate-limited or down. Each paper records which model actually
-scored it in an `eval_model` column, surfaced as a small 🤖 badge on the card
-(green = Gemma, yellow = Groq). Because the free Gemma tier has a ~500
-requests/day quota, busy runs can fall back to Groq for some papers.
+Strength order: `gemma-4-31b-it` (31B dense, #3 on the Arena leaderboard) >
+`gemma-4-26b-a4b-it` (26B MoE, ~3.8B active/token, #6 Arena) >
+`gemini-3.1-flash-lite` (cost/speed tier) > Groq `llama-3.1-8b-instant`
+(8B, weakest — last resort only, and only when every Gemini/Gemma model in
+the chain is rate-limited or down).
+
+Two tiers use that same chain in a different order:
+
+- **`STRONG_MODEL_CANDIDATES`** (strongest model first): the once-per-paper
+  meta call (summary/opportunity/fields) and the once-per-researcher
+  applicability summary — low call volume, so quality is prioritized.
+- **`PARAM_MODEL_CANDIDATES`** (`gemini-3.1-flash-lite` first): the 5-per-paper
+  numeric dimension scoring loop — high call volume, so this tier keeps that
+  bulk traffic off Gemma's scarcer capacity, falling back to the Gemma models
+  only if flash-lite is unavailable too.
+
+Each paper records whichever model actually scored it in an `eval_model`
+column, surfaced as a small 🤖 badge on the card (green = Gemma, yellow =
+Groq). Per-model calls are throttled to each model's real free-tier RPM
+(~15 RPM for the Gemini/Gemma models, ~30 RPM for Groq) — a model that still
+errors out 3 times in a row is benched for 90 seconds, not the rest of the
+run, so a transient overload recovers instead of cascading.
 
 To upgrade those later, run the pipeline with **`--reeval-groq`** (or the
 `reeval_groq` workflow input): it re-fetches the abstract and re-scores every
