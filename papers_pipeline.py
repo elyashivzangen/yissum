@@ -1385,7 +1385,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .r-paper-title a{{color:inherit;text-decoration:none}}
   .r-paper-title a:hover{{text-decoration:underline;color:var(--accent2)}}
   .r-paper-score{{font-weight:800;flex-shrink:0}}
-  .r-paper .breakdown{{display:flex;margin-top:0;padding-top:8px}}
+  .r-paper .breakdown{{margin-top:0;padding-top:8px}}
   .r-paper-toggle{{align-self:flex-start;font-size:.66rem;padding:2px 8px}}
   .r-paper-actions{{display:flex;gap:6px}}
   .r-paper-details{{display:none;flex-direction:column;gap:8px}}
