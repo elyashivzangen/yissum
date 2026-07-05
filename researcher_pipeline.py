@@ -341,26 +341,35 @@ def generate_researcher_summary(graded_papers):
     """One Gemini call → {description, applicability} for a researcher.
 
     Combined into a single call (rather than two) to conserve the scarce
-    free-tier daily quota. Returns empty strings on failure.
+    free-tier daily quota. Retries a few times on transient failure (all
+    models/cooldowns down at once) rather than permanently blanking the
+    field — the whole fallback chain being briefly unavailable is common
+    and shouldn't be indistinguishable from "no summary possible".
     """
     entries = []
     for p in graded_papers[:10]:
         entries.append(f"- {p.get('title', '')}: {p.get('summary', '')}")
     paper_list = "\n".join(entries) or "(no summaries available)"
-    try:
-        # Ranking the whole researcher is a single, high-stakes call — use the
-        # strongest model first (same tier as the per-paper meta call).
-        data, _model = pp._call_gemini(
-            RESEARCHER_PROMPT.format(paper_list=paper_list),
-            candidates=pp.STRONG_MODEL_CANDIDATES, chain="strong",
-        )
-        return {
-            "description": pp.fix_encoding(data.get("description", "")),
-            "applicability": pp.fix_encoding(data.get("applicability", "")),
-        }
-    except Exception as e:
-        print(f"  Gemini error (researcher summary): {e}")
-        return {"description": "", "applicability": ""}
+    last_error = None
+    for attempt in range(3):
+        if attempt:
+            time.sleep(5 * attempt)
+        try:
+            # Ranking the whole researcher is a single, high-stakes call — use the
+            # strongest model first (same tier as the per-paper meta call).
+            data, _model = pp._call_gemini(
+                RESEARCHER_PROMPT.format(paper_list=paper_list),
+                candidates=pp.STRONG_MODEL_CANDIDATES, chain="strong",
+            )
+            return {
+                "description": pp.fix_encoding(data.get("description", "")),
+                "applicability": pp.fix_encoding(data.get("applicability", "")),
+            }
+        except Exception as e:
+            last_error = e
+            print(f"  Gemini error (researcher summary, attempt {attempt+1}/3): {e}")
+    print(f"  giving up on researcher summary after 3 attempts: {last_error}")
+    return {"description": "", "applicability": ""}
 
 
 def _most_common(values):
@@ -482,8 +491,10 @@ def reeval_researchers_to_gemma():
     """Re-score papers inside the already-committed researchers_data.json
     that aren't scored by Gemma yet — no PubMed re-fetch, no researcher
     re-selection, just upgrading existing paper scores in place. Recomputes
-    avg_score for any profile that changes. Safe to run repeatedly; papers
-    whose Gemma re-score still fails are left untouched.
+    avg_score for any profile that changes. Also backfills any profile still
+    missing a description (e.g. from a run where the summary call failed
+    outright) by retrying it against the current data. Safe to run
+    repeatedly; anything that still fails is left untouched.
     """
     if not OUTPUT_JSON.exists():
         print("  No researchers_data.json found — nothing to re-evaluate.")
@@ -525,7 +536,21 @@ def reeval_researchers_to_gemma():
             scores = [p.get("score", 0) for p in papers]
             profile["avg_score"] = round(sum(scores) / len(scores), 1) if scores else 0
 
-    if total_rescored:
+    total_backfilled = 0
+    for profile in profiles:
+        if profile.get("description", "").strip():
+            continue
+        name = profile.get("pi_full_name") or profile.get("pi")
+        print(f"\n{name}: missing description — regenerating summary.")
+        summary = generate_researcher_summary(profile.get("papers", []))
+        if summary["description"].strip():
+            profile["description"] = summary["description"]
+            profile["applicability"] = summary["applicability"]
+            total_backfilled += 1
+        else:
+            print("    still failed — leaving blank for next run")
+
+    if total_rescored or total_backfilled:
         OUTPUT_JSON.write_text(json.dumps(profiles, ensure_ascii=False, indent=2), encoding="utf-8")
         if check_apps_script_version():
             try:
@@ -539,8 +564,9 @@ def reeval_researchers_to_gemma():
             main_papers = []
         pp.generate_html(main_papers, researchers=profiles)
 
-    print(f"\nRe-evaluated {total_rescored} paper(s) across researcher profiles onto Gemma.")
-    return total_rescored
+    print(f"\nRe-evaluated {total_rescored} paper(s) onto Gemma, "
+          f"backfilled {total_backfilled} missing researcher description(s).")
+    return total_rescored + total_backfilled
 
 
 def main():
