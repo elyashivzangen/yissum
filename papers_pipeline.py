@@ -41,15 +41,11 @@ def _parse_args():
     p.add_argument("--backfill-metadata", action="store_true",
                    help="One-off: refresh pi_affiliation/date precision for existing "
                         "papers only, skipping new-paper fetch and evaluation")
-    p.add_argument("--reeval-to-gemma", "--reeval-groq", dest="reeval_to_gemma", action="store_true",
-                   help="One-off: re-score any paper NOT currently scored by a Gemma "
-                        "model (i.e. scored by gemini-3.1-flash-lite or Groq) using "
-                        "Gemma only, so every paper converges on the same model over "
-                        "time (skips new-paper fetch). The paper's previous score/model "
-                        "are kept in prev_score/prev_eval_model for comparison. Papers "
-                        "whose Gemma re-score still fails (e.g. it's still down) are "
-                        "left untouched, so it is safe to run repeatedly. "
-                        "--reeval-groq is a deprecated alias for the same flag.")
+    p.add_argument("--reeval-groq", action="store_true",
+                   help="One-off: re-score papers previously scored by the Groq "
+                        "fallback using Gemma (skips new-paper fetch). Papers whose "
+                        "Gemma re-score fails — e.g. daily quota exhausted — are left "
+                        "untouched, so it is safe to run repeatedly.")
     # parse_known_args so this module stays importable from other scripts
     # (e.g. researcher_pipeline.py) that define their own unrelated CLI flags.
     return p.parse_known_args()[0]
@@ -90,7 +86,6 @@ SHEET_COLUMNS = [
     "id", "title", "authors", "journal", "date", "url", "source",
     "score", "summary", "opportunity", "fields", "added_date", "score_breakdown", "pi",
     "pi_full_name", "pi_email", "pi_affiliation", "eval_model",
-    "prev_score", "prev_eval_model",
 ]
 
 SCORE_PARAMS = [
@@ -176,8 +171,6 @@ def save_to_sheet(papers):
             p.get("pi_email", ""),
             p.get("pi_affiliation", ""),
             p.get("eval_model", ""),
-            p.get("prev_score", ""),
-            p.get("prev_eval_model", ""),
         ])
     backoffs = [3, 8, 15]
     for attempt, delay in enumerate([0] + backoffs):
@@ -790,26 +783,23 @@ Return a JSON object (no markdown) with exactly these keys:
 - reason: 1-2 sentence explanation for the score on this specific dimension
 """
 
-# Single strength-ordered chain, used for every call (meta, per-param, and
-# the researcher-level summary) — the strongest model is always tried
-# first, falling through to weaker models only on failure:
+# Two model-strength tiers, both cascading through the same 3 models —
+# just in a different order — plus Groq as a shared last resort.
 #
-#   gemma-4-31b-it (31B dense, #3 on the Arena leaderboard; BenchLM has it
-#   beating gemini-3.1-flash-lite 62-49 across benchmark categories)
-#     > gemma-4-26b-a4b-it (26B MoE, ~3.8B active/token, #6 Arena)
-#       > gemini-3.1-flash-lite (cost/speed tier — its only edge is
-#         latency/context window, not quality)
-#         > groq llama-3.1-8b-instant (8B, weakest — last resort only)
+# Strength order (Arena leaderboard / model class): gemma-4-31b-it (31B
+# dense, #3 Arena) > gemma-4-26b-a4b-it (26B MoE, ~3.8B active/token, #6
+# Arena) > gemini-3.1-flash-lite (cost/speed tier) > groq llama-3.1-8b-instant
+# (8B, weakest — last resort only).
 #
-# An earlier version of this chain split into two tiers (strong-first for
-# meta/summary calls, flash-lite-first for the high-volume per-param calls)
-# to spread load off Gemma. That's intentionally reverted: Gemma is the
-# best model available here, so every call prefers it regardless of volume;
-# only fall back when it actually fails. Gemma's real reliability problem
-# (frequent 500/503/504 from Google's side on the newly-launched Gemma 4
-# endpoints) is mitigated instead via thinking_level=minimal, throttling,
-# and cooldown-not-permanent-ban (see below) — and via reeval_to_gemma()
-# which upgrades any paper that had to fall back, once capacity frees up.
+# STRONG_MODEL_CANDIDATES: the strongest model first. Used for the
+# lower-volume, higher-stakes qualitative calls — the per-paper meta call
+# (summary/opportunity/fields) and the once-per-researcher applicability
+# summary — where quality matters most and call volume is low.
+#
+# PARAM_MODEL_CANDIDATES: the weaker/cheaper flash-lite model first. Used
+# for the 5-per-paper numeric dimension scoring loop — high volume, so this
+# also keeps that bulk traffic off Gemma's scarce capacity, reserving it for
+# the calls above. Falls back to the Gemma models if flash-lite is out.
 #
 # (gemma-3-27b-it and gemma-4-4b-it were dropped after confirming via live
 # runs that they 404 on every single call — pure dead latency in the chain.)
@@ -818,9 +808,10 @@ STRONG_MODEL_CANDIDATES = [
     "gemma-4-26b-a4b-it",
     "gemini-3.1-flash-lite",
 ]
-GEMMA_ONLY_CANDIDATES = [
-    os.environ.get("GEMINI_MODEL", "gemma-4-31b-it"),
+PARAM_MODEL_CANDIDATES = [
+    "gemini-3.1-flash-lite",
     "gemma-4-26b-a4b-it",
+    "gemma-4-31b-it",
 ]
 EVAL_MODEL_CANDIDATES = STRONG_MODEL_CANDIDATES  # back-compat alias
 
@@ -855,21 +846,6 @@ _COOLDOWN_SECONDS = 90     # bench a misbehaving model for a while, not the whol
                             # dumps 100% of traffic onto whatever's left, which then
                             # overloads too (this is exactly what happened live).
 
-# Gemma 4's "thinking"/extended-reasoning mode adds real latency, which is a
-# likely contributor to the live 504 DEADLINE_EXCEEDED errors (Google's own
-# guidance: 504s on reasoning models are typically fixed by cutting response
-# time). thinking_level="minimal" turns that off. include_thoughts=False is
-# reportedly silently ignored by this model — thinking_level is what actually
-# works. Built once and reused; if the installed google-genai SDK is too old
-# to have ThinkingConfig, this degrades to plain calls instead of crashing.
-try:
-    _GEMMA_GEN_CONFIG = types.GenerateContentConfig(
-        thinking_config=types.ThinkingConfig(thinking_level="minimal")
-    )
-except Exception as e:
-    print(f"  (thinking_level config unavailable in this SDK, calling Gemma without it: {e})")
-    _GEMMA_GEN_CONFIG = None
-
 def _call_gemini(prompt, allow_groq=True, candidates=None, chain="strong"):
     """Call a model fallback chain and return (parsed_json, model_id).
 
@@ -896,11 +872,7 @@ def _call_gemini(prompt, allow_groq=True, candidates=None, chain="strong"):
             continue
         _throttle(model_id)
         try:
-            if "gemma" in model_id and _GEMMA_GEN_CONFIG is not None:
-                resp = client.models.generate_content(
-                    model=model_id, contents=prompt, config=_GEMMA_GEN_CONFIG)
-            else:
-                resp = client.models.generate_content(model=model_id, contents=prompt)
+            resp = client.models.generate_content(model=model_id, contents=prompt)
             text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
             text = re.sub(r"\s*```$", "", text)
             data = json.loads(text)
@@ -962,43 +934,26 @@ def _summarize_eval_model(models):
     return max(set(models), key=models.count)
 
 
-def evaluate_paper(paper, allow_groq=True, force_model=None, candidates=None):
-    """Score a paper. Every call prefers the strongest model (Gemma) first,
-    falling through the candidate list only on failure.
-
-    candidates overrides the default STRONG_MODEL_CANDIDATES chain — e.g.
-    GEMMA_ONLY_CANDIDATES for reeval_to_gemma(), where falling through to
-    gemini-3.1-flash-lite would defeat the point of the re-eval.
-
-    force_model pins every call in this evaluation to exactly one model with
-    no fallback at all — used only by model_comparison_pilot.py to see what
-    each model independently produces for the same paper. Pass a Gemini/Gemma
-    model id, or ``"groq:<model>"`` to force Groq.
-    """
+def evaluate_paper(paper, allow_groq=True):
     abstract = paper.get("abstract", "").strip() or "(no abstract available)"
     truncated = abstract[:1200]
     models_used = []
 
-    if force_model is not None:
-        is_groq_force = force_model.startswith("groq:")
-        eval_candidates = [] if is_groq_force else [force_model]
-        eval_allow_groq = True if is_groq_force else False
-    else:
-        eval_candidates = candidates if candidates is not None else STRONG_MODEL_CANDIDATES
-        eval_allow_groq = allow_groq
-
-    # 1. Meta: summary, opportunity, fields
+    # 1. Meta: summary, opportunity, fields — low volume (1x/paper), so use the
+    # strongest model first.
     try:
         meta, meta_model = _call_gemini(META_PROMPT.format(
             title=paper["title"], abstract=truncated, fields=json.dumps(FIELD_TAGS),
-        ), allow_groq=eval_allow_groq, candidates=eval_candidates, chain="strong")
+        ), allow_groq=allow_groq, candidates=STRONG_MODEL_CANDIDATES, chain="strong")
         models_used.append(meta_model)
     except Exception as e:
         print(f"  Gemini error (meta): {e}")
         return None
     time.sleep(0.4)
 
-    # 2. Per-parameter scoring (separate call each)
+    # 2. Per-parameter scoring (separate call each) — high volume (5x/paper),
+    # so use the faster/cheaper model first and reserve the strong model's
+    # scarce capacity for the calls above.
     breakdown = {}
     scores = []
     for param_name, param_desc in SCORE_PARAMS:
@@ -1006,7 +961,7 @@ def evaluate_paper(paper, allow_groq=True, force_model=None, candidates=None):
             data, param_model = _call_gemini(PARAM_PROMPT.format(
                 param_name=param_name, param_desc=param_desc,
                 title=paper["title"], abstract=truncated,
-            ), allow_groq=eval_allow_groq, candidates=eval_candidates, chain="strong")
+            ), allow_groq=allow_groq, candidates=PARAM_MODEL_CANDIDATES, chain="param")
             s = max(1, min(10, int(data.get("score", 5))))
             breakdown[param_name] = {"score": s, "reason": data.get("reason", "")}
             scores.append(s)
@@ -1393,15 +1348,13 @@ const PARAM_LABELS = {{
 }};
 function scoreClass(s){{return s>=38?'score-high':s>=28?'score-mid':'score-low';}}
 function barColor(s){{return s>=8?'#22c55e':s>=5?'#eab308':'#ef4444';}}
-function modelBadge(m,prevScore,prevModel){{
+function modelBadge(m){{
   if(!m)return '';
   const isGroq=m.indexOf('groq')===0;
   const cls=isGroq?'model-groq':(m.indexOf('gemma')>=0?'model-gemma':'');
   const label=isGroq?('groq: '+m.replace('groq:','')):m;
   const tip=isGroq?'Scored by Groq fallback — pending re-score on Gemma':'Scored by '+m;
-  const upgraded=(prevScore!==undefined&&prevScore!==null&&prevScore!==''&&prevModel)
-    ?` <span class="model-badge" title="Re-scored on Gemma — was ${{prevScore}}/50 via ${{prevModel}}">↑ was ${{prevScore}}</span>`:'';
-  return `<span class="model-badge ${{cls}}" title="${{tip}}">🤖 ${{label}}</span>${{upgraded}}`;
+  return `<span class="model-badge ${{cls}}" title="${{tip}}">🤖 ${{label}}</span>`;
 }}
 function renderBreakdown(bd){{
   if(!bd||!Object.keys(bd).length) return '';
@@ -1462,7 +1415,7 @@ function render(){{
     return `<div class="card">
       <div class="card-header"><div class="title">${{p.title}}</div><div class="score-badge ${{scoreClass(p.score)}}"><span class="score-num">${{p.score}}</span><span class="score-denom">/50</span></div></div>
       ${{(p.pi||p.pi_full_name)?`<div class="pi"><span class="pi-label">Main Researcher</span><span class="pi-name">👤 ${{p.pi_full_name||p.pi}}</span>${{p.pi_email?`<button class="btn pi-email-btn" onclick="toggleEmail(this)">Email ▾</button>`:''}} </div>${{p.pi_affiliation?`<div class="pi-affiliation">${{p.pi_affiliation}}</div>`:''}}${{p.pi_email?`<div class="pi-email" style="display:none"><a href="mailto:${{p.pi_email}}">${{p.pi_email}}</a></div>`:''}}`:''}}
-      <div class="meta-row"><div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>${{p.source?`<span class="source-badge">${{p.source}}</span>`:''}}${{modelBadge(p.eval_model,p.prev_score,p.prev_eval_model)}}</div>
+      <div class="meta-row"><div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>${{p.source?`<span class="source-badge">${{p.source}}</span>`:''}}${{modelBadge(p.eval_model)}}</div>
       ${{p.summary?`<div class="summary">${{p.summary}}</div>`:''}}
       ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
       ${{hasBd?renderBreakdown(p.score_breakdown):''}}
@@ -1562,7 +1515,7 @@ function renderResearchers(){{
       const ptags=(p.fields||[]).map(f=>`<span class="tag">${{f}}</span>`).join('');
       return `<div class="r-paper">
         <div class="r-paper-row">
-          <span class="r-paper-title"><a href="${{p.url}}" target="_blank">${{p.title}}</a>${{p.date?' ('+p.date+')':''}} ${{modelBadge(p.eval_model,p.prev_score,p.prev_eval_model)}}</span>
+          <span class="r-paper-title"><a href="${{p.url}}" target="_blank">${{p.title}}</a>${{p.date?' ('+p.date+')':''}} ${{modelBadge(p.eval_model)}}</span>
           <span class="r-paper-score ${{scoreClass(p.score)}}">${{p.score}}/50</span>
         </div>
         ${{ptags?`<div class="tags">${{ptags}}</div>`:''}}
@@ -1666,8 +1619,6 @@ def generate_html(papers, researchers=None):
         "pi_email":        p.get("pi_email", ""),
         "pi_affiliation":  p.get("pi_affiliation", ""),
         "eval_model":      p.get("eval_model", ""),
-        "prev_score":      p.get("prev_score", ""),
-        "prev_eval_model": p.get("prev_eval_model", ""),
         "added_date":      p.get("added_date", ""),
     } for p in papers], key=lambda x: x["score"], reverse=True)
 
@@ -1777,44 +1728,28 @@ def _fetch_abstract_for_paper(paper):
     return ""
 
 
-def _is_gemma_model(model_id):
-    return any(g in str(model_id) for g in GEMMA_ONLY_CANDIDATES)
+def reeval_groq_papers(papers):
+    """Re-score papers whose eval_model is a Groq fallback, using Gemma only.
 
-
-def reeval_to_gemma_papers(papers):
-    """Re-score any paper NOT currently scored by Gemma (empty/gemini/groq
-    eval_model), using Gemma only — no fallback to gemini-3.1-flash-lite or
-    Groq within this pass, since that would defeat the point.
-
-    The paper's previous score/model are preserved in prev_score/
-    prev_eval_model (only ever set once, on the first successful re-eval, so
-    repeated runs don't overwrite the original baseline with an intermediate
-    one) — this is what model_comparison_pilot.py and the dashboard can use
-    to see the real effect of switching a paper from one model to another.
-
-    Papers where the Gemma re-score fails (e.g. still down) are left exactly
-    as they were, so this is safe to run daily until every paper converges
-    on a Gemma score. Returns the number of papers actually re-scored.
+    Papers where the Gemma re-score fails (e.g. daily quota exhausted) are left
+    exactly as they were, so this is safe to run repeatedly until every paper
+    carries a Gemma score. Returns the number of papers actually re-scored.
     """
-    targets = [p for p in papers if not _is_gemma_model(p.get("eval_model", ""))]
-    print(f"  {len(targets)} non-Gemma-scored papers to re-evaluate on Gemma.")
+    targets = [p for p in papers if str(p.get("eval_model", "")).startswith("groq:")]
+    print(f"  {len(targets)} Groq-scored papers to re-evaluate on Gemma.")
     rescored = 0
     for i, p in enumerate(targets):
         print(f"  [{i+1}/{len(targets)}] re-eval: {p.get('title','')[:70]}")
         p["abstract"] = _fetch_abstract_for_paper(p)
-        result = evaluate_paper(p, candidates=GEMMA_ONLY_CANDIDATES, allow_groq=False)
+        result = evaluate_paper(p, allow_groq=False)  # Gemma only
         p.pop("abstract", None)
-        if not result or not _is_gemma_model(result.get("eval_model", "")):
+        if not result or str(result.get("eval_model", "")).startswith("groq:"):
             print("      still no Gemma result — leaving as-is")
             continue
-        if "prev_score" not in p or not p.get("prev_eval_model"):
-            p["prev_score"] = p.get("score", 0)
-            p["prev_eval_model"] = p.get("eval_model", "")
         p.update(result)
         rescored += 1
-        print(f"      re-scored {p['score']} via {result['eval_model']} "
-              f"(was {p['prev_score']} via {p['prev_eval_model'] or '(none)'})")
-    print(f"  Re-evaluated {rescored}/{len(targets)} papers onto Gemma.")
+        print(f"      re-scored {p['score']} via {result['eval_model']}")
+    print(f"  Re-evaluated {rescored}/{len(targets)} Groq papers on Gemma.")
     return rescored
 
 
@@ -1863,13 +1798,13 @@ def main():
         print("Backfill complete.")
         return True
 
-    if ARGS.reeval_to_gemma:
-        rescored = reeval_to_gemma_papers(existing)
+    if ARGS.reeval_groq:
+        rescored = reeval_groq_papers(existing)
         if rescored:
             save_to_sheet(existing)
             generate_html(existing)
         else:
-            print("  Nothing re-scored (no non-Gemma papers, or Gemma still unavailable).")
+            print("  Nothing re-scored (no Groq papers, or Gemma still unavailable).")
         print("Re-evaluation complete.")
         return True
 
