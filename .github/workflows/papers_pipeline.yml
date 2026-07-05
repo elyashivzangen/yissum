@@ -31,6 +31,11 @@ on:
         required: false
         default: false
         type: boolean
+      backfill_authors:
+        description: 'One-off: re-fetch the full author list for every existing paper (skips fetching new papers and re-evaluating scores). Needed for papers fetched before author lists stopped being truncated to 3.'
+        required: false
+        default: false
+        type: boolean
 
 concurrency:
   group: papers-pipeline
@@ -66,6 +71,7 @@ jobs:
           fi
           echo "BACKFILL_METADATA=${{ github.event.inputs.backfill_metadata || 'false' }}" >> "$GITHUB_ENV"
           echo "REEVAL_TO_GEMMA=${{ github.event.inputs.reeval_to_gemma || 'false' }}" >> "$GITHUB_ENV"
+          echo "BACKFILL_AUTHORS=${{ github.event.inputs.backfill_authors || 'false' }}" >> "$GITHUB_ENV"
 
       - name: Run pipeline
         env:
@@ -77,11 +83,13 @@ jobs:
           DAYS_BACK: ${{ env.DAYS_BACK }}
           BACKFILL_METADATA: ${{ env.BACKFILL_METADATA }}
           REEVAL_TO_GEMMA: ${{ env.REEVAL_TO_GEMMA }}
+          BACKFILL_AUTHORS: ${{ env.BACKFILL_AUTHORS }}
         run: |
           set -o pipefail
           EXTRA_ARGS=""
           if [ "$BACKFILL_METADATA" = "true" ]; then EXTRA_ARGS="--backfill-metadata"; fi
           if [ "$REEVAL_TO_GEMMA" = "true" ]; then EXTRA_ARGS="$EXTRA_ARGS --reeval-to-gemma"; fi
+          if [ "$BACKFILL_AUTHORS" = "true" ]; then EXTRA_ARGS="$EXTRA_ARGS --backfill-authors"; fi
           python -u papers_pipeline.py --period "$PIPELINE_PERIOD" $EXTRA_ARGS 2>&1 | tee pipeline_run.log
 
       - name: Commit generated HTML
