@@ -491,7 +491,12 @@ def backfill_authors(papers, batch_size=50):
         except Exception as e:
             print(f"  Author backfill Semantic Scholar error: {e}")
 
-    epmc_papers = [p for p in papers if p["id"].startswith("epmc_")]
+    # epmc_ ids that are PMID-shaped (EuropePMC MED-source articles) were
+    # already covered by the pmid_map batch above — _pmid_from_paper_id()
+    # matches both pubmed_ and epmc_ prefixes when the suffix is numeric.
+    # Re-querying them here would double-count `updated` and waste calls.
+    epmc_papers = [p for p in papers
+                   if p["id"].startswith("epmc_") and not _pmid_from_paper_id(p["id"])]
     for p in epmc_papers:
         eid = p["id"].split("_", 1)[1]
         try:
@@ -1559,8 +1564,19 @@ function toggleAuthors(el){{
 }}
 function hujiFirst(aff){{
   if(!aff)return true; // unknown affiliation — don't hide for missing data
-  const first=(aff.split(';')[0]||'').trim().toLowerCase();
-  return first.includes('hebrew university')||first.includes('hebrew u');
+  // Affiliation strings aren't reliably semicolon-separated — a single
+  // "Dept X, Hadassah Medical Center, ..., Hebrew University of Jerusalem"
+  // string has no semicolon at all, so splitting on ';' alone would treat
+  // the whole string as one segment and always match "hebrew university"
+  // as a substring regardless of where Hadassah appears. Instead compare
+  // the earliest position either institution is mentioned.
+  const s=aff.toLowerCase();
+  const hadassahIdx=s.indexOf('hadassah');
+  if(hadassahIdx<0)return true; // no Hadassah mention — nothing to prefer HUJI over
+  const hujiIdx=Math.min(...['hebrew university of jerusalem','hebrew university','hebrew u.']
+    .map(k=>{{const i=s.indexOf(k);return i<0?Infinity:i;}}));
+  if(hujiIdx===Infinity)return false; // Hadassah mentioned, HUJI not mentioned at all
+  return hujiIdx<hadassahIdx;
 }}
 function branchMatches(p){{
   // Returns an object {{branch: bool}} — true if this branch has the highest field-tag match.
