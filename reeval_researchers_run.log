@@ -1,0 +1,375 @@
+
+Chamutal Gur: 2 non-Gemma paper(s) to re-evaluate.
+  re-eval: B cell Maturation Antigen Targeted Chimeric Antigen Receptor T Cell Th
+    gemma-4-31b-it failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 1500, model: gemma-4-31b\nPlease retry in 11.903973946s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemma-4-31b', 'location': 'global'}, 'quotaValue': '1500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 1500, model: gemma-4-31b\nPlease retry in 7.406518296s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemma-4-31b', 'location': 'global'}, 'quotaValue': '1500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '7s'}]}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 1500, model: gemma-4-31b\nPlease retry in 39.113225814s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemma-4-31b'}, 'quotaValue': '1500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+  Gemini error (market_size): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 1500, model: gemma-4-31b\nPlease retry in 39.113225814s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemma-4-31b'}, 'quotaValue': '1500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '39s'}]}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+  Gemini error (ip_strength): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+  re-eval: Targeting Bladder Cancer with Inactivated Uropathogenic 
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (trl): all Gemini models are marked dead this run and Groq is unavailable
+  Gemini error (ip_strength): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Rabea Asleh: 4 non-Gemma paper(s) to re-evaluate.
+  re-eval: Haptoglobin, hemolysis, and renal vulnerability after pulsed field abl
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Tailoring heart failure management in cardiac amyloidosis.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Assessing Cardiac Flow Measurements Using a Noninvasive Photoplethysmo
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Reversibility of precapillary pulmonary hypertension and outcomes afte
+    abstract refetch failed for pubmed_38452886: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=38452886&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Tamar Harel: 10 non-Gemma paper(s) to re-evaluate.
+  re-eval: Epidermal Nevus with Woolly Hair: A Case Report.
+    abstract refetch failed for pubmed_42311176: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42311176&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Allele-specific antisense oligonucleotide treatment rescues 
+    abstract refetch failed for pubmed_42239176: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42239176&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A Confirmatory Case of Severe Spondylocostal Dysostosis Caused by Bial
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Homozygous Deletion of the Epigenetic Regulator 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Inherent variability limits clinical utility of reproducible Parkinson
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Intronic IGF1R variant causing aberrant splicing, short stature, and n
+    abstract refetch failed for pubmed_41042543: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41042543&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Exploring the unique characteristics of genes with dual autosomal domi
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Long-Read Whole-Genome Sequencing Uncovers a Deletion Upstream to HOXD
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Transcriptome analysis of atad3-null zebrafish embryos elucidates poss
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Low prevalence of SCA27B in adult-onset cerebellar ataxia cohort of Je
+    abstract refetch failed for pubmed_39003951: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=39003951&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Zohar Kerem: 1 non-Gemma paper(s) to re-evaluate.
+  re-eval: Differential Modulation of GLP-1R by Dietary Ginsenosides Points to a 
+    abstract refetch failed for pubmed_42353344: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42353344&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Avi Priel: 2 non-Gemma paper(s) to re-evaluate.
+  re-eval: Carbamate-based cannabinoids uncover a conserved lipid-sensing pocket 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: TRPM5 activation depends on a synergistic effect of calcium and PKC ph
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Sharon Schlesinger: 3 non-Gemma paper(s) to re-evaluate.
+  re-eval: Growth factors-infused cellulose scaffolds support cost-efficient prol
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Cultivation of bovine lipid chunks on Aloe vera scaffolds.
+    abstract refetch failed for pubmed_40000634: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=40000634&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Short heat shock has a long-term effect on mesenchymal stem cells' tra
+    abstract refetch failed for pubmed_37529103: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37529103&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Sheera Adar: 5 non-Gemma paper(s) to re-evaluate.
+  re-eval: The epigenetic landscape shapes smoking-induced mutagenesis by modulat
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A Practical Site-specific Method for the Detection of Bulky DNA Damage
+    abstract refetch failed for pubmed_38246411: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=38246411&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Gene architecture is a determinant of the transcriptional response to 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: GENI: A web server to identify gene set enrichments in tumor samples.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Novel insights into bulky DNA damage formation and nucleotide excision
+    abstract refetch failed for pubmed_37566959: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37566959&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Oren Ram: 5 non-Gemma paper(s) to re-evaluate.
+  re-eval: sc-rDSeq: Droplet-based single-cell full-length total RNA-seq method.
+    abstract refetch failed for pubmed_42318539: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42318539&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: sc-rDSeq: a robust and cost-effective full-length total RNA sequencing
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Three lncRNAs promote PUM protein condensation and germline differenti
+    abstract refetch failed for pubmed_40993113: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=40993113&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Distinct roles of TET-mediated cytosine oxidation in neural stem cell 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Genome-wide screening reveals essential roles for HOX genes and imprin
+    abstract refetch failed for pubmed_39486407: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=39486407&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+A Yaacov: 6 non-Gemma paper(s) to re-evaluate.
+  re-eval: APOBEC mutational signatures predict immune checkpoint inhibitor benef
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Real-World Outcomes of First-Line Pembrolizumab-Based Therapy in Advan
+    abstract refetch failed for pubmed_42355925: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42355925&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: CBFB mutations predict endocrine therapy benefit in estrogen receptor-
+    abstract refetch failed for pubmed_42238456: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42238456&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The Impact of Minimal Residual Disease (MRD) Testing on the Decision-M
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The Temozolomide Mutational Signature: Mechanisms, Clinical Implicatio
+    abstract refetch failed for pubmed_41511341: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41511341&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Cancer mutational signatures identification in clinical assays using n
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Oren Zimhony: 4 non-Gemma paper(s) to re-evaluate.
+  re-eval: The effect of a proprietary chlorine-stabilizing surface-coating formu
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Månsson et al. conclusion that Piperacillin/tazobactam(PTZ) is non inf
+    abstract refetch failed for pubmed_40549325: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=40549325&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Hyperimmune Globulins in COVID-19.
+    abstract refetch failed for pubmed_38877201: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=38877201&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A Randomized Controlled Study Assessing Convalescent Immunoglobulins v
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Liron Kogan: 6 non-Gemma paper(s) to re-evaluate.
+  re-eval: Robotic-Assisted Cytoreductive Surgery for Recurrent Endometrial Carci
+    abstract refetch failed for pubmed_42143650: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42143650&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: ASO Author Reflections: Robotic Cytoreduction at the Vascular Interfac
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Laparoscopic excision of a noncommunicating rudimentary horn containin
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Secondary Cytoreduction for Isolated Infra-renal Para-aortic Recurrenc
+    abstract refetch failed for pubmed_41690457: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41690457&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A Challenging Case of IUD Retrieval From the Colon.
+    abstract refetch failed for pubmed_39168445: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=39168445&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Positive results bias in randomized controlled trials in gynecologic o
+    abstract refetch failed for pubmed_37310450: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37310450&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Itamar Harel: 3 non-Gemma paper(s) to re-evaluate.
+  re-eval: An antagonistically pleiotropic gene regulates vertebrate growth, matu
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A dual role for cGAS in shaping cellular and organismal responses to g
+    gemma-4-31b-it failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 1500, model: gemma-4-31b\nPlease retry in 6.786308334s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemma-4-31b'}, 'quotaValue': '1500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+  Gemini error (meta): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 1500, model: gemma-4-31b\nPlease retry in 6.786308334s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemma-4-31b'}, 'quotaValue': '1500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}
+    still no Gemma result — leaving as-is
+  re-eval: Scaling life as an interspecies hallmark of aging.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Osnat Malka: 2 non-Gemma paper(s) to re-evaluate.
+  re-eval: Creating resistance to the whitefly 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Osmoregulation by sucrose isomerization in the phloem-feeding whitefly
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Asaf Levy: 11 non-Gemma paper(s) to re-evaluate.
+  re-eval: Discovery of novel antimicrobials within microbiomes.
+    abstract refetch failed for pubmed_42341608: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42341608&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Spinal Epidural Empyema Associated with Bite Wounds in an Indian Crest
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Genomic and structural analysis of major antigenic proteins' variabili
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Traumatic brain injury clinical score (TBICS) predicts survival outcom
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The point of subjective equality as a tool for accurate and robust ana
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A comprehensive catalogue of receptor-binding domains in extracellular
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Plasmids, prophages, and defense systems are depleted from plant micro
+    abstract refetch failed for pubmed_40500753: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=40500753&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Cdc48 plays a crucial role in redox homeostasis through dynamic reshap
+    abstract refetch failed for pubmed_40359616: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=40359616&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Author Correction: Systematic discovery of antibacterial and antifunga
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Deciphering bacterial protein functions with innovative computational 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Widespread horizontal gene transfer between plants and bacteria.
+    abstract refetch failed for pubmed_38808121: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=38808121&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Ofra Benny: 9 non-Gemma paper(s) to re-evaluate.
+  re-eval: A pump-free microfluidic device for integrated multi-functional testin
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Development and Characterization of a High-CBD Cannabis Extract Nanoem
+    abstract refetch failed for pubmed_41373676: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41373676&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Structural Control for Tunable Hyperthermia-Induced Cellular Responses
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Immunomodulatory Effects of a High-CBD Cannabis Extract: A Comparative
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Senescent cancer-associated fibroblasts in pancreatic adenocarcinoma r
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Particle uptake in cancer cells can predict malignancy and drug resist
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Analyzing force measurements of multi-cellular clusters comprising ind
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Modular Drug-Loaded Nanocapsules with Metal Dome Layers as a Platform 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Drug-Eluting Porous Embolic Microspheres for Trans-Arterial Delivery o
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Dror Mevorach: 3 non-Gemma paper(s) to re-evaluate.
+  re-eval: CD59 drives diet-induced obesity and glucose intolerance, insulin resi
+    abstract refetch failed for pubmed_42310179: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42310179&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: HLA binding-groove motifs are associated with myocarditis induction af
+    abstract refetch failed for pubmed_38071404: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=38071404&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Apoptotic cells for treatment of acute respiratory distress syndrome a
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Johnathan Arnon: 6 non-Gemma paper(s) to re-evaluate.
+  re-eval: Prediction of clinical outcomes of advanced cutaneous squamous cell ca
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Planning Target Volume and Nodal Status Predict Clinical Outcomes Afte
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Non-classical pulmonary exacerbation in cystic fibrosis revealing ALK-
+    abstract refetch failed for pubmed_39980610: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=39980610&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Clinical and genetic characteristics of carriers of the TP53 c.541C > 
+    abstract refetch failed for pubmed_38743206: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=38743206&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Outcomes of extracranial stereotactic body radiation therapy for induc
+    abstract refetch failed for pubmed_38601442: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=38601442&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Clinical Characteristics, Response to Platinum-Based Chemotherapy and 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Maisa Haiek: 1 non-Gemma paper(s) to re-evaluate.
+  re-eval: Breath-Based Detection of Oral Diseases Using Sensors and Machine Lear
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Tamir Ben-Hur: 6 non-Gemma paper(s) to re-evaluate.
+  re-eval: Pro-repair properties of a human embryonic stem cell-derived astrocyte
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The paradoxical protective effect of chronic stress on advanced Alzhei
+    abstract refetch failed for pubmed_41421732: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41421732&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Illusion of inactivity: Revisiting progressive multiple sclerosis trea
+    abstract refetch failed for pubmed_40145948: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=40145948&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Medical risk factors, ApoE haplotype, and Alzheimer's disease: a large
+    abstract refetch failed for pubmed_40769858: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=40769858&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Targeting CNS myeloid infiltrates provides neuroprotection in a progre
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Oligodendrocyte progenitor cells differentiation induction with MAPK/E
+    abstract refetch failed for pubmed_37610097: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37610097&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Amir Haze: 3 non-Gemma paper(s) to re-evaluate.
+  re-eval: Recombinant Human Amelogenin Protein Enhances Healing of Osteochondral
+    abstract refetch failed for pubmed_41925697: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41925697&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Amelogenin Null Mice Develop Osteoarthritis, While Its Application Mit
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Regeneration of injured articular cartilage using the recombinant huma
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  WARNING: deployed apps_script.js reports version=0 (need >=2). Skipping ALL Google Sheet writes this run — the old deployment ignores sheet_name and would overwrite Sheet1. researchers_data.json and the dashboard Researchers tab will still be built. To also get the Researchers sheet tab, redeploy apps_script.js (Extensions > Apps Script > paste latest source > Deploy > Manage deployments > Edit > New version) and re-run.
+Generated papers_reader.html and papers_data.json with 332 papers and 20 researcher profiles.
+
+Re-evaluated 1 paper(s) across researcher profiles onto Gemma.

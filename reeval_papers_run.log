@@ -1,0 +1,754 @@
+Loading existing papers from Google Sheet...
+  332 existing papers loaded.
+  Verifying HUJI affiliation for 326 papers via PubMed efetch...
+  317 non-Gemma-scored papers to re-evaluate on Gemma.
+  [1/317] re-eval: Using deep learning to identify inherited retinal diseases based on wi
+      re-scored 22 via gemma-4-31b-it (was 26 via (none))
+  [2/317] re-eval: Anxiety-buffer disruption in combat soldiers: the contributions of exp
+      re-scored 11 via gemma-4-31b-it (was 10 via (none))
+  [3/317] re-eval: Reply to Comment on: Interferon alpha-2a as treatment for primary acqu
+      re-scored 15 via gemma-4-31b-it (was 2 via (none))
+  [4/317] re-eval: MRD conversion during oral azacitidine maintenance correlates with out
+      re-scored 25 via gemma-4-31b-it (was 23 via (none))
+  [5/317] re-eval: Single-session transanal minimally invasive surgery (TAMIS) and adjuva
+      re-scored 16 via gemma-4-31b-it (was 12 via (none))
+  [6/317] re-eval: Correction: Human DNA levels in feces reflect gut inflammation and ass
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 19 via gemma-4-31b-it (was 14 via (none))
+  [7/317] re-eval: B cell Maturation Antigen Targeted Chimeric Antigen Receptor T Cell Th
+      re-scored 37 via gemma-4-26b-a4b-it (was 37 via (none))
+  [8/317] re-eval: Gestational Ketosis Compromises Nephron Endowment and Long-Term Kidney
+      re-scored 17 via gemma-4-26b-a4b-it (was 13 via (none))
+  [9/317] re-eval: Growth factors-infused cellulose scaffolds support cost-efficient prol
+      re-scored 35 via gemma-4-26b-a4b-it (was 34 via (none))
+  [10/317] re-eval: Paradoxical thinking and attitudes toward prostitution: preliminary ex
+      re-scored 8 via gemma-4-26b-a4b-it (was 7 via (none))
+  [11/317] re-eval: Beyond one-shot nudges: the effects of repeated interventions for heal
+      re-scored 22 via gemma-4-26b-a4b-it (was 28 via (none))
+  [12/317] re-eval: A Cisplatin-Based Prodrug Inhibits Nucleotide Excision Repair Independ
+      re-scored 32 via gemma-4-26b-a4b-it (was 34 via (none))
+  [13/317] re-eval: Impact of obesity on surgical outcomes following uterine-preserving ap
+      re-scored 18 via gemma-4-26b-a4b-it (was 11 via (none))
+  [14/317] re-eval: Acute COPD Exacerbation and long-term cardiopulmonary outcomes: Real-w
+      re-scored 14 via gemma-4-26b-a4b-it (was 19 via (none))
+  [15/317] re-eval: CD163+ Foamy Histiocytes in the Vitreous of a Patient with West Nile V
+      re-scored 8 via gemma-4-26b-a4b-it (was 7 via (none))
+  [16/317] re-eval: CApEsid biOfilm: a suggested pipeline for clinical phage microbiology 
+      re-scored 22 via gemma-4-26b-a4b-it (was 19 via (none))
+  [17/317] re-eval: Evaluating the detectability of randomly acquired characteristics unde
+      re-scored 14 via gemma-4-26b-a4b-it (was 11 via (none))
+  [18/317] re-eval: Graded Severity of Aortic Valve Sclerosis as an Independent Clinical M
+      re-scored 17 via gemma-4-26b-a4b-it (was 24 via (none))
+  [19/317] re-eval: Binge Eating and Addictive-Like Eating Behaviors Seven Years After Sle
+      re-scored 24 via gemma-4-26b-a4b-it (was 13 via (none))
+  [20/317] re-eval: Flight in the dark: different responses to darkness in flying insects.
+      re-scored 13 via gemma-4-26b-a4b-it (was 2 via (none))
+  [21/317] re-eval: Bioengineering CAR-T cells to function in hostile tumor microenvironme
+      re-scored 18 via gemma-4-26b-a4b-it (was 22 via (none))
+  [22/317] re-eval: The effect of collective trauma on craving for cannabis and tobacco.
+      re-scored 11 via gemma-4-26b-a4b-it (was 8 via (none))
+  [23/317] re-eval: Symptom Clusters and Longitudinal Progression in Chronic Hemodialysis 
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      re-scored 18 via gemma-4-31b-it (was 8 via (none))
+  [24/317] re-eval: Editorial for exploring understudied inflammatory diseases.
+      re-scored 9 via gemma-4-31b-it (was 2 via (none))
+  [25/317] re-eval: Neurodiversity-affirming SEA for ADHD: evaluation of an online program
+      re-scored 23 via gemma-4-31b-it (was 18 via (none))
+  [26/317] re-eval: How (not) to study deviance sensitivity and predictive coding in audit
+      re-scored 7 via gemma-4-31b-it (was 8 via (none))
+  [27/317] re-eval: Prevalence of addictive use of cosmetic procedures and risk factors am
+      re-scored 12 via gemma-4-31b-it (was 8 via (none))
+  [28/317] re-eval: What Galen's dissections reveal about tacit learning in modern medical
+      re-scored 8 via gemma-4-31b-it (was 5 via (none))
+  [29/317] re-eval: ANTI-VEGF THERAPY SWITCHING RETINAL DISEASES: Characterizing Clinical 
+      re-scored 10 via gemma-4-31b-it (was 14 via (none))
+  [30/317] re-eval: RadD from <i>Fusobacterium nucleatum</i> engages NKp46 to promote anti
+      re-scored 28 via gemma-4-31b-it (was 27 via (none))
+  [31/317] re-eval: Development and validation of "parental satisfaction with knee-to-knee
+      re-scored 16 via gemma-4-31b-it (was 5 via (none))
+  [32/317] re-eval: Effects of Statistical Learning on Stimulus Detection Speed Reflect At
+      re-scored 9 via gemma-4-31b-it (was 9 via (none))
+  [33/317] re-eval: First Successful Implantation of the CARMAT Aeson® Total Artificial He
+      re-scored 31 via gemma-4-31b-it (was 37 via (none))
+  [34/317] re-eval: [Immunotherapy for Inhalant Allergy - Long Term Efficacy].
+      re-scored 14 via gemma-4-31b-it (was 11 via (none))
+  [35/317] re-eval: Association between semaglutide use and thyroid eye disease-related ou
+      re-scored 20 via gemma-4-31b-it (was 20 via (none))
+  [36/317] re-eval: Tomato drought-responsive transcription factor TINY1 suppresses embryo
+      re-scored 17 via gemma-4-31b-it (was 12 via (none))
+  [37/317] re-eval: Autistic children and their parents during war - A mixed-methods study
+      re-scored 10 via gemma-4-31b-it (was 5 via (none))
+  [38/317] re-eval: Neurological manifestations in a cat with tick-borne relapsing fever c
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      re-scored 8 via gemma-4-26b-a4b-it (was 2 via (none))
+  [39/317] re-eval: Ophthalmic Emergency Department Visits at a Tertiary Medical Center in
+      re-scored 8 via gemma-4-26b-a4b-it (was 4 via (none))
+  [40/317] re-eval: Tetracyclines and Risk of Proliferative Vitreoretinopathy after Rhegma
+      re-scored 10 via gemma-4-26b-a4b-it (was 9 via (none))
+  [41/317] re-eval: Temporal control of midline crossing via incoherent feedforward and fe
+      re-scored 16 via gemma-4-26b-a4b-it (was 8 via (none))
+  [42/317] re-eval: Esophagectomy with colonic interposition: what outcomes can we salvage
+      re-scored 16 via gemma-4-26b-a4b-it (was 11 via (none))
+  [43/317] re-eval: Mental health in a digitally fragmented world: Exploring negative and 
+      re-scored 23 via gemma-4-26b-a4b-it (was 14 via (none))
+  [44/317] re-eval: Psychological function in the context of protracted stress during war:
+      re-scored 12 via gemma-4-26b-a4b-it (was 7 via (none))
+  [45/317] re-eval: Pathways-to-Care Analysis of Non-Hodgkin Lymphoma in Ethiopia: A Mixed
+      re-scored 10 via gemma-4-26b-a4b-it (was 10 via (none))
+  [46/317] re-eval: Comparative Analysis of <i>BRCA</i> Pathogenic Variant Detection in a 
+      re-scored 20 via gemma-4-26b-a4b-it (was 19 via (none))
+  [47/317] re-eval: Metacognitive monitoring and calibration in the vocal emotion recognit
+      re-scored 11 via gemma-4-26b-a4b-it (was 10 via (none))
+  [48/317] re-eval: Nitric oxide inhibition ameliorates cortical proteomic changes in the 
+      re-scored 25 via gemma-4-26b-a4b-it (was 16 via (none))
+  [49/317] re-eval: Slower Progression Rates in Lower Limb-Onset ALS.
+      re-scored 12 via gemma-4-26b-a4b-it (was 7 via (none))
+  [50/317] re-eval: Maternal SARS-CoV-2 infection and early child growth and development: 
+      re-scored 8 via gemma-4-26b-a4b-it (was 4 via (none))
+  [51/317] re-eval: Safety and Efficacy of Direct Selective Laser Trabeculoplasty in Patie
+      re-scored 26 via gemma-4-26b-a4b-it (was 21 via (none))
+  [52/317] re-eval: Outcomes of tympanostomy tube insertion in the emergency department ve
+      re-scored 16 via gemma-4-26b-a4b-it (was 10 via (none))
+  [53/317] re-eval: <i>Paenibacillus dendritiformis</i> C454 as a sustainable biocontrol a
+      re-scored 25 via gemma-4-26b-a4b-it (was 25 via (none))
+  [54/317] re-eval: A Novel Light-Induced Collective Circular Movement in <i>Armadillo sor
+      re-scored 7 via gemma-4-26b-a4b-it (was 15 via (none))
+  [55/317] re-eval: Meaning in life and the mental health - addiction spiral: testing a un
+      re-scored 12 via gemma-4-26b-a4b-it (was 13 via (none))
+  [56/317] re-eval: Maternal Diabetes and Early Neurodevelopment: Differential Milestone A
+      re-scored 16 via gemma-4-26b-a4b-it (was 13 via (none))
+  [57/317] re-eval: The Natural History of Deficiency of Adenosine Deaminase 2 Vasculitis 
+      re-scored 12 via gemma-4-26b-a4b-it (was 19 via (none))
+  [58/317] re-eval: Real-world epidemiological outcomes of biologic therapy for chronic rh
+      re-scored 24 via gemma-4-26b-a4b-it (was 24 via (none))
+  [59/317] re-eval: Hepatitis B Vaccine Response in Children of Vaccinated Versus Unvaccin
+      re-scored 11 via gemma-4-26b-a4b-it (was 19 via (none))
+  [60/317] re-eval: Safety of Risankizumab during Pregnancy in IBD.
+      re-scored 17 via gemma-4-26b-a4b-it (was 17 via (none))
+  [61/317] re-eval: Association of neovascular glaucoma with increased mortality and cardi
+      re-scored 12 via gemma-4-26b-a4b-it (was 11 via (none))
+  [62/317] re-eval: Strategic self-initiated encoding in object-location memory in 8-10-ye
+      re-scored 11 via gemma-4-26b-a4b-it (was 11 via (none))
+  [63/317] re-eval: Surgery for Pain Symptoms in Women with Isolated Superficial Peritonea
+      re-scored 21 via gemma-4-26b-a4b-it (was 20 via (none))
+  [64/317] re-eval: Editorial: TEER in shock states - Promising feasibility, uncertain ben
+      re-scored 10 via gemma-4-26b-a4b-it (was 13 via (none))
+  [65/317] re-eval: A family of endonucleases blocks nanotube-mediated plasmid exchange.
+      re-scored 24 via gemma-4-26b-a4b-it (was 24 via (none))
+  [66/317] re-eval: Conscious Detection of Spoken Words Depends on Their Valence.
+      re-scored 12 via gemma-4-26b-a4b-it (was 15 via (none))
+  [67/317] re-eval: Tachycardia with Left Bundle Branch Block Morphology in a Patient with
+      re-scored 5 via gemma-4-26b-a4b-it (was 7 via (none))
+  [68/317] re-eval: Identifying maximally informative signal-aware representations of sing
+      re-scored 28 via gemma-4-26b-a4b-it (was 23 via (none))
+  [69/317] re-eval: Enhanced reward coding and condition-independent dynamics in optogenet
+      re-scored 14 via gemma-4-26b-a4b-it (was 19 via (none))
+  [70/317] re-eval: Hepatic radiofrequency ablation induces widespread cellular activation
+      re-scored 15 via gemma-4-26b-a4b-it (was 18 via (none))
+  [71/317] re-eval: Recombinant Human Amelogenin Protein Enhances Healing of Osteochondral
+      re-scored 33 via gemma-4-26b-a4b-it (was 29 via (none))
+  [72/317] re-eval: Pessary-related Content on TikTok: A Cross-Sectional Quality Assessmen
+      re-scored 7 via gemma-4-26b-a4b-it (was 10 via (none))
+  [73/317] re-eval: Chronic Oral Inflammation Impairs Female Reproduction in a Murine Mode
+      re-scored 15 via gemma-4-26b-a4b-it (was 15 via (none))
+  [74/317] re-eval: NSTEMI in the oldest-old: prognosis and impact of invasive management 
+      re-scored 15 via gemma-4-26b-a4b-it (was 11 via (none))
+  [75/317] re-eval: ATF3-dependent formation of inclusion bodies in polyQ-expressing human
+      re-scored 26 via gemma-4-26b-a4b-it (was 20 via (none))
+  [76/317] re-eval: The lesser the better? A systematic review and meta-analysis of resect
+      re-scored 8 via gemma-4-26b-a4b-it (was 13 via (none))
+  [77/317] re-eval: Backboards in prehospital trauma: Assessing long-term neurological and
+      re-scored 22 via gemma-4-26b-a4b-it (was 13 via (none))
+  [78/317] re-eval: From Simulation to Survival: Managing an Emergency Department Under th
+      re-scored 19 via gemma-4-26b-a4b-it (was 17 via (none))
+  [79/317] re-eval: Dendro-plexing of Single Input Spikes via Multiple Synaptic Contacts C
+      re-scored 20 via gemma-4-26b-a4b-it (was 18 via (none))
+  [80/317] re-eval: Evolution and consequences of paternal inheritance of plastid DNA in c
+      re-scored 10 via gemma-4-26b-a4b-it (was 16 via (none))
+  [81/317] re-eval: Intracellular and dual-site inhibition of a bitter taste GPCR.
+      re-scored 22 via gemma-4-26b-a4b-it (was 24 via (none))
+  [82/317] re-eval: The Impact of Small-for-Gestational-Age on Pulmonary Function in Infan
+      re-scored 7 via gemma-4-26b-a4b-it (was 13 via (none))
+  [83/317] re-eval: An animated educational video is effective for improving treatment out
+      re-scored 18 via gemma-4-26b-a4b-it (was 21 via (none))
+  [84/317] re-eval: The Development of an Integrative Surf Therapy Program for Trauma Surv
+      re-scored 15 via gemma-4-26b-a4b-it (was 13 via (none))
+  [85/317] re-eval: Response to Letter to the Editor on "The impact of elective adult circ
+      re-scored 6 via gemma-4-26b-a4b-it (was 5 via (none))
+  [86/317] re-eval: Lipid Desaturation and Cellular Viability: Mechanisms, Stem Cell Insig
+      re-scored 19 via gemma-4-26b-a4b-it (was 19 via (none))
+  [87/317] re-eval: Postpartum headache after epidural analgesia: A case of overlapping po
+      re-scored 6 via gemma-4-26b-a4b-it (was 8 via (none))
+  [88/317] re-eval: Survey on ICU organization and admission after hematopoietic cell tran
+      re-scored 6 via gemma-4-26b-a4b-it (was 12 via (none))
+  [89/317] re-eval: Proline-promoted electrophilic dichloromethylation of α-enaminones via
+      re-scored 30 via gemma-4-26b-a4b-it (was 20 via (none))
+  [90/317] re-eval: Systematic classification differences across eye movement detection al
+      re-scored 15 via gemma-4-26b-a4b-it (was 16 via (none))
+  [91/317] re-eval: GI and liver updates in CF: The next frontier.
+      re-scored 13 via gemma-4-26b-a4b-it (was 18 via (none))
+  [92/317] re-eval: Dual-energy and photon-counting computed tomography in critical care.
+      re-scored 22 via gemma-4-26b-a4b-it (was 29 via (none))
+  [93/317] re-eval: Optimizing topical antibiotic delivery in dogs: Tear film pharmacokine
+      re-scored 23 via gemma-4-26b-a4b-it (was 20 via (none))
+  [94/317] re-eval: Prevalence and Characteristics of Pill Dysphagia in Adults with Swallo
+      re-scored 16 via gemma-4-26b-a4b-it (was 13 via (none))
+  [95/317] re-eval: One Size Might Not Fit All: A Tailored Approach to Psychological Inter
+      re-scored 13 via gemma-4-26b-a4b-it (was 14 via (none))
+  [96/317] re-eval: Distinct distributed neural dynamics predict pallium-dependent social 
+      re-scored 16 via gemma-4-26b-a4b-it (was 17 via (none))
+  [97/317] re-eval: Tailoring heart failure management in cardiac amyloidosis.
+      re-scored 21 via gemma-4-26b-a4b-it (was 22 via (none))
+  [98/317] re-eval: Maternal antibodies regulate the establishment of murine oral and sali
+      re-scored 24 via gemma-4-26b-a4b-it (was 18 via (none))
+  [99/317] re-eval: Group A Streptococcus host-pathogen dual crosstalk.
+      re-scored 28 via gemma-4-26b-a4b-it (was 17 via (none))
+  [100/317] re-eval: Teprotumumab-Associated Hyperglycemia: A Large-Scale Multinational Coh
+      re-scored 19 via gemma-4-26b-a4b-it (was 21 via (none))
+  [101/317] re-eval: Induction of cytochrome P450 2C9 and P-glycoprotein activity by antise
+      re-scored 20 via gemma-4-26b-a4b-it (was 18 via (none))
+  [102/317] re-eval: Epigenomic and transcriptomic analyses reveal cnidocyte specialization
+      re-scored 16 via gemma-4-26b-a4b-it (was 16 via (none))
+  [103/317] re-eval: Beyond Weight Loss: Association Between Glucagon-like peptide-1 Recept
+      re-scored 16 via gemma-4-26b-a4b-it (was 19 via (none))
+  [104/317] re-eval: Corrigendum to "Genomic insights unveil taxonomic incongruities and ev
+      re-scored 5 via gemma-4-26b-a4b-it (was 9 via (none))
+  [105/317] re-eval: Post-thaw embryo culture and the risk of large-for-gestational-age off
+      re-scored 10 via gemma-4-26b-a4b-it (was 17 via (none))
+  [106/317] re-eval: Opioids for management of endometriosis associated pain: balancing eff
+      re-scored 19 via gemma-4-26b-a4b-it (was 15 via (none))
+  [107/317] re-eval: Exposure to prolonged political violence, self-efficacy, and posttraum
+      re-scored 7 via gemma-4-26b-a4b-it (was 8 via (none))
+  [108/317] re-eval: Association between hypoglycemia during glucose challenge and toleranc
+      re-scored 12 via gemma-4-26b-a4b-it (was 18 via (none))
+  [109/317] re-eval: mGem: Horses for courses in mapping bacterial small RNA interaction ne
+      re-scored 20 via gemma-4-26b-a4b-it (was 21 via (none))
+  [110/317] re-eval: Traumatic brain injury clinical score (TBICS) predicts survival outcom
+      re-scored 20 via gemma-4-26b-a4b-it (was 21 via (none))
+  [111/317] re-eval: Acute kidney injury, secondary to valacyclovir use during pregnancy fo
+      re-scored 15 via gemma-4-26b-a4b-it (was 14 via (none))
+  [112/317] re-eval: Periodontal Diseases and Conditions in Children and Adolescents Associ
+      re-scored 9 via gemma-4-26b-a4b-it (was 15 via (none))
+  [113/317] re-eval: Neural temporal scaling accounts for robust hunting behavior across te
+      re-scored 15 via gemma-4-26b-a4b-it (was 17 via (none))
+  [114/317] re-eval: Complex genotype-phenotype relationships in neurodevelopmental disorde
+      re-scored 19 via gemma-4-26b-a4b-it (was 13 via (none))
+  [115/317] re-eval: Comparison of dogs with septic peritonitis due to S. lupi aberrant mig
+      re-scored 11 via gemma-4-26b-a4b-it (was 13 via (none))
+  [116/317] re-eval: WWOX maintains epidermal identity and suppresses EMT to prevent aggres
+      re-scored 26 via gemma-4-26b-a4b-it (was 23 via (none))
+  [117/317] re-eval: RNA dicing promotes the expression of an oncogenic JAK1 isoform.
+      re-scored 33 via gemma-4-26b-a4b-it (was 21 via (none))
+  [118/317] re-eval: Exact-Factorization Framework for Electron-Nuclear Dynamics in Electro
+      re-scored 19 via gemma-4-26b-a4b-it (was 21 via (none))
+  [119/317] re-eval: A Novel Light-Induced Collective Circular Movement in 
+      re-scored 7 via gemma-4-26b-a4b-it (was 17 via (none))
+  [120/317] re-eval: The genetic basis for DNA methylation variation across tissues and dev
+      re-scored 30 via gemma-4-26b-a4b-it (was 20 via (none))
+  [121/317] re-eval: A dual role for cGAS in shaping cellular and organismal responses to g
+      re-scored 23 via gemma-4-26b-a4b-it (was 18 via (none))
+  [122/317] re-eval: Associations between prenatal exposure to ambient temperature and birt
+      re-scored 12 via gemma-4-26b-a4b-it (was 13 via (none))
+  [123/317] re-eval: Harnessing random peptide mixtures to combat multidrug-resistant funga
+      re-scored 26 via gemma-4-26b-a4b-it (was 28 via (none))
+  [124/317] re-eval: Mastery Motivation and Maternal Stress in Typically Developing Childre
+      re-scored 12 via gemma-4-26b-a4b-it (was 9 via (none))
+  [125/317] re-eval: sc-rDSeq: a robust and cost-effective full-length total RNA sequencing
+      re-scored 35 via gemma-4-26b-a4b-it (was 27 via (none))
+  [126/317] re-eval: Powered mobility acquisition by an adolescent with severe visual and p
+      re-scored 11 via gemma-4-26b-a4b-it (was 12 via (none))
+  [127/317] re-eval: Codon bias shapes bacterial small RNA binding sites within protein-cod
+      re-scored 17 via gemma-4-26b-a4b-it (was 18 via (none))
+  [128/317] re-eval: Health warnings for electronic cigarette packaging: a rapid scoping re
+      re-scored 8 via gemma-4-26b-a4b-it (was 10 via (none))
+  [129/317] re-eval: Epigenetic adaptation of beta cells across lifespan and disease.
+      re-scored 25 via gemma-4-26b-a4b-it (was 26 via (none))
+  [130/317] re-eval: Functional characterization of specialized immune cells in a cnidarian
+      re-scored 14 via gemma-4-26b-a4b-it (was 18 via (none))
+  [131/317] re-eval: The role of geographical proximity to the October 7th, 2023, attack on
+      re-scored 8 via gemma-4-26b-a4b-it (was 8 via (none))
+  [132/317] re-eval: From profiles to precision: incorporating the Psychosocial Assessment 
+      re-scored 22 via gemma-4-26b-a4b-it (was 13 via (none))
+  [133/317] re-eval: New Onset of Acne Associated With Dietary Supplements Post-Metabolic B
+      re-scored 8 via gemma-4-26b-a4b-it (was 10 via (none))
+  [134/317] re-eval: Association of Recent Antibiotic Therapy on Post-Thyroidectomy Wound C
+      re-scored 12 via gemma-4-26b-a4b-it (was 12 via (none))
+  [135/317] re-eval: Mitral Leaflet Tear Following Transcatheter Edge-to-Edge Repair: A Cas
+      re-scored 12 via gemma-4-26b-a4b-it (was 14 via (none))
+  [136/317] re-eval: Mast Cells in Acute COVID-19 Patients.
+      re-scored 11 via gemma-4-26b-a4b-it (was 13 via (none))
+  [137/317] re-eval: Universal Hamiltonian simulators in one and two dimensions.
+      re-scored 24 via gemma-4-26b-a4b-it (was 18 via (none))
+  [138/317] re-eval: Dynamic Switchable and Transient DNA Condensates Driven by Aptamer-Lig
+      re-scored 28 via gemma-4-26b-a4b-it (was 26 via (none))
+  [139/317] re-eval: Nitric oxide inhibition ameliorates cortical proteomic changes in the 
+      re-scored 27 via gemma-4-26b-a4b-it (was 17 via (none))
+  [140/317] re-eval: Strain-level microbial signatures and inferred functional alterations 
+      re-scored 23 via gemma-4-26b-a4b-it (was 19 via (none))
+  [141/317] re-eval: Clinical characteristics, laboratory measures, and quality of life as 
+      re-scored 10 via gemma-4-26b-a4b-it (was 13 via (none))
+  [142/317] re-eval: Vaccinations: more than prevention of infection.
+      re-scored 14 via gemma-4-26b-a4b-it (was 21 via (none))
+  [143/317] re-eval: Temperature-Enhanced Coercive Field by Chiral Molecules.
+      re-scored 22 via gemma-4-26b-a4b-it (was 21 via (none))
+  [144/317] re-eval: Facilitating Thought Progression: A Neurocognitive Framework Linking T
+      re-scored 23 via gemma-4-26b-a4b-it (was 15 via (none))
+  [145/317] re-eval: Addendum: Telomouse-a mouse model with human-length telomeres generate
+      re-scored 32 via gemma-4-26b-a4b-it (was 27 via (none))
+  [146/317] re-eval: RNA editing of pathogenic variants causing inherited retinal diseases 
+      re-scored 26 via gemma-4-26b-a4b-it (was 29 via (none))
+  [147/317] re-eval: IR nanospectroscopy mapping of facet-dependent sulfur poisoning and th
+      re-scored 26 via gemma-4-26b-a4b-it (was 21 via (none))
+  [148/317] re-eval: RadD from 
+      re-scored 5 via gemma-4-26b-a4b-it (was 10 via (none))
+  [149/317] re-eval: Spermatogenic timing, dose, and route of administration as determinant
+      re-scored 15 via gemma-4-26b-a4b-it (was 16 via (none))
+  [150/317] re-eval: Tetracyclines and Risk of Proliferative Vitreoretinopathy Following Rh
+      re-scored 12 via gemma-4-26b-a4b-it (was 12 via (none))
+  [151/317] re-eval: Learning affect norms: Implications for predictions, experiences, and 
+      re-scored 12 via gemma-4-26b-a4b-it (was 13 via (none))
+  [152/317] re-eval: From Survival to Recovery: 25 Years of Paediatric Critical Care Transf
+      re-scored 8 via gemma-4-26b-a4b-it (was 10 via (none))
+  [153/317] re-eval: Racial discrimination and life satisfaction in non-Western contexts: e
+      re-scored 6 via gemma-4-26b-a4b-it (was 9 via (none))
+  [154/317] re-eval: Aging-associated modulation of UFMylation impairs proteostasis in C. e
+      re-scored 27 via gemma-4-26b-a4b-it (was 17 via (none))
+  [155/317] re-eval: Cationic Sulfonium-Based Tripodal Ligand and Its Rh(I) Complexes.
+      re-scored 17 via gemma-4-26b-a4b-it (was 19 via (none))
+  [156/317] re-eval: Plaque Reduction Efficacy of an Advanced Electric Toothbrush Compared 
+      re-scored 28 via gemma-4-26b-a4b-it (was 25 via (none))
+  [157/317] re-eval: Mandibular advancement devices in severe obstructive sleep apnea: a se
+      re-scored 20 via gemma-4-26b-a4b-it (was 24 via (none))
+  [158/317] re-eval: Photoluminescence line shapes of nanocrystals: Contributions from firs
+      re-scored 16 via gemma-4-26b-a4b-it (was 16 via (none))
+  [159/317] re-eval: Sensory Processing Disorders and Emotional Distress Among Young Childr
+      re-scored 12 via gemma-4-26b-a4b-it (was 10 via (none))
+  [160/317] re-eval: Incidence and clinical manifestations of sudden death in young adults:
+      re-scored 10 via gemma-4-26b-a4b-it (was 11 via (none))
+  [161/317] re-eval: Comparing the Level of Knowledge on External Ventricular Drain Care: A
+      re-scored 7 via gemma-4-26b-a4b-it (was 8 via (none))
+  [162/317] re-eval: Severe eosinophilia and risk of major disease and mortality: A nationw
+      re-scored 12 via gemma-4-26b-a4b-it (was 14 via (none))
+  [163/317] re-eval: Arytenoid Cartilage Ossification in Early Glottic Carcinoma and Its As
+      re-scored 11 via gemma-4-26b-a4b-it (was 8 via (none))
+  [164/317] re-eval: Large Language Models on European Guidelines for Cervical Cancer: Impl
+      re-scored 16 via gemma-4-26b-a4b-it (was 20 via (none))
+  [165/317] re-eval: Orthodontic loading modulates epithelial progenitor dynamics and ename
+      re-scored 17 via gemma-4-26b-a4b-it (was 23 via (none))
+  [166/317] re-eval: Breath-Based Detection of Oral Diseases Using Sensors and Machine Lear
+      re-scored 28 via gemma-4-26b-a4b-it (was 30 via (none))
+  [167/317] re-eval: APOBEC mutational signatures predict immune checkpoint inhibitor benef
+      re-scored 32 via gemma-4-26b-a4b-it (was 33 via (none))
+  [168/317] re-eval: People in more individualist cultures are more motivated to make other
+      re-scored 8 via gemma-4-26b-a4b-it (was 7 via (none))
+  [169/317] re-eval: Beyond Observable Participation: Occupational Experiences, Temporal Dy
+      re-scored 12 via gemma-4-26b-a4b-it (was 18 via (none))
+  [170/317] re-eval: Targeting Temozolomide-Resistant Glioblastoma: Therapeutic Potential o
+      re-scored 26 via gemma-4-26b-a4b-it (was 24 via (none))
+  [171/317] re-eval: The effect of a proprietary chlorine-stabilizing surface-coating formu
+      re-scored 33 via gemma-4-26b-a4b-it (was 33 via (none))
+  [172/317] re-eval: PCIS1 is an essential factor in mitochondrial RNA splicing and complex
+      re-scored 15 via gemma-4-26b-a4b-it (was 14 via (none))
+  [173/317] re-eval: Ureteral obstruction caused by migration of a renal embolization coil 
+      re-scored 5 via gemma-4-26b-a4b-it (was 15 via (none))
+  [174/317] re-eval: A Metagenomic Biosurveillance Network for Emerging Infectious Diseases
+      re-scored 20 via gemma-4-26b-a4b-it (was 21 via (none))
+  [175/317] re-eval: Neurodevelopmental care across pediatric critical care settings: towar
+      re-scored 13 via gemma-4-26b-a4b-it (was 17 via (none))
+  [176/317] re-eval: Temporal patterns of smartphone-mediated digital engagement and mental
+      re-scored 23 via gemma-4-26b-a4b-it (was 21 via (none))
+  [177/317] re-eval: An ancient anthozoan protein reveals an alternative evolutionary path 
+      re-scored 19 via gemma-4-26b-a4b-it (was 17 via (none))
+  [178/317] re-eval: Cellular Dynamics and Dentine Bridge Formation Following Direct Pulp C
+      re-scored 15 via gemma-4-26b-a4b-it (was 12 via (none))
+  [179/317] re-eval: Stirring glycopeptides away from the constraints of solid-phase synthe
+      re-scored 33 via gemma-4-26b-a4b-it (was 23 via (none))
+  [180/317] re-eval: Between languages and scalpels: a woman's journey in a foreign neurosu
+      re-scored 5 via gemma-4-26b-a4b-it (was 5 via (none))
+  [181/317] re-eval: Real-World Outcomes of First-Line Pembrolizumab-Based Therapy in Advan
+      re-scored 25 via gemma-4-26b-a4b-it (was 25 via (none))
+  [182/317] re-eval: Differential Modulation of GLP-1R by Dietary Ginsenosides Points to a 
+      re-scored 23 via gemma-4-26b-a4b-it (was 35 via (none))
+  [183/317] re-eval: The Simplest Complexity: The Story of the Three-Body Problem.
+      re-scored 5 via gemma-4-26b-a4b-it (was 5 via (none))
+  [184/317] re-eval: Artificial Intelligence in Cardiac Point-of-Care Ultrasound: A Narrati
+      re-scored 13 via gemma-4-26b-a4b-it (was 11 via (none))
+  [185/317] re-eval: When scientific sources fail to convince: evidence-oriented thinking e
+      re-scored 17 via gemma-4-26b-a4b-it (was 14 via (none))
+  [186/317] re-eval: SPL84 and trikafta® exhibit comparable and additive effects in patient
+      re-scored 31 via gemma-4-26b-a4b-it (was 22 via (none))
+  [187/317] re-eval: Adherence to an intraoperative and post-cesarean analgesia protocol: a
+      re-scored 17 via gemma-4-26b-a4b-it (was 18 via (none))
+  [188/317] re-eval: Generative artificial intelligence for outcome prediction in critical 
+      re-scored 20 via gemma-4-26b-a4b-it (was 22 via (none))
+  [189/317] re-eval: Smell and Taste Disturbances Among Glucagon-Like Peptide-1 Receptor Ag
+      re-scored 17 via gemma-4-26b-a4b-it (was 24 via (none))
+  [190/317] re-eval: Intensity, desirability, and attainability: Predictors of effort in em
+      re-scored 11 via gemma-4-26b-a4b-it (was 12 via (none))
+  [191/317] re-eval: Early Postoperative Cell-Free DNA Reflects Renal and Hepatic Injury Af
+      re-scored 18 via gemma-4-26b-a4b-it (was 22 via (none))
+  [192/317] re-eval: The Fragmented Nature of Biosensor Development: Challenges and Paths t
+      re-scored 14 via gemma-4-26b-a4b-it (was 16 via (none))
+  [193/317] re-eval: [Treatment of Morbid Obesity in Israel: GLP-1 Agonists Versus Bariatri
+      re-scored 23 via gemma-4-26b-a4b-it (was 25 via (none))
+  [194/317] re-eval: [Pediatric Thyroiditis Secondary to Fourth Branchial Arch Anomaly: A C
+      re-scored 6 via gemma-4-26b-a4b-it (was 6 via (none))
+  [195/317] re-eval: Sleep Restriction and Heat Stress as Compounded Risks to Military Cogn
+      re-scored 13 via gemma-4-26b-a4b-it (was 15 via (none))
+  [196/317] re-eval: Knowledge Gaps in Our Understanding of Hyperbaric Oxygen Therapy in Po
+      re-scored 23 via gemma-4-26b-a4b-it (was 20 via (none))
+  [197/317] re-eval: Asthma in Active Military Aircrew: Long-term Health and Flight Perform
+      re-scored 10 via gemma-4-26b-a4b-it (was 7 via (none))
+  [198/317] re-eval: Studying the Biochemical Profile of Patients after Exertional Heat Str
+      re-scored 11 via gemma-4-26b-a4b-it (was 10 via (none))
+  [199/317] re-eval: Prevalence of Hearing Impairment Among Young Adults.
+      re-scored 16 via gemma-4-26b-a4b-it (was 13 via (none))
+  [200/317] re-eval: A two-step auxin-GA cross talk regulates organ formation.
+      re-scored 18 via gemma-4-26b-a4b-it (was 15 via (none))
+  [201/317] re-eval: Carbamate-based cannabinoids uncover a conserved lipid-sensing pocket 
+      re-scored 33 via gemma-4-26b-a4b-it (was 35 via (none))
+  [202/317] re-eval: Discovery of novel antimicrobials within microbiomes.
+      re-scored 19 via gemma-4-26b-a4b-it (was 31 via (none))
+  [203/317] re-eval: GAS6 regulates mucosal langerhans cell homeostasis through cell-intrin
+      re-scored 25 via gemma-4-26b-a4b-it (was 18 via (none))
+  [204/317] re-eval: Between Faith, Family, and Moral Reasoning: Muslim Women in Israel Nav
+      re-scored 6 via gemma-4-26b-a4b-it (was 6 via (none))
+  [205/317] re-eval: First-in-Human Mechanical Leaflet Modification of Native Aortic Stenos
+      re-scored 36 via gemma-4-26b-a4b-it (was 24 via (none))
+  [206/317] re-eval: Reversible Mitochondrial Iron Toxicity in Wolfram Syndrome Type 2 Mono
+      re-scored 25 via gemma-4-26b-a4b-it (was 24 via (none))
+  [207/317] re-eval: A pump-free microfluidic device for integrated multi-functional testin
+      re-scored 30 via gemma-4-26b-a4b-it (was 31 via (none))
+  [208/317] re-eval: A unified analysis of cell type- and trajectory-associated pathways in
+      re-scored 25 via gemma-4-26b-a4b-it (was 20 via (none))
+  [209/317] re-eval: Adaptive Laboratory Evolution Unlocks Membrane Permeability as a Key L
+      re-scored 34 via gemma-4-26b-a4b-it (was 25 via (none))
+  [210/317] re-eval: Clinical Features and Surgical Outcomes of Cats With Presumed Primary 
+      re-scored 18 via gemma-4-26b-a4b-it (was 9 via (none))
+  [211/317] re-eval: Borrelia theileri infection in beef and dairy cattle in Israel: molecu
+      re-scored 10 via gemma-4-26b-a4b-it (was 11 via (none))
+  [212/317] re-eval: Potentiation of the altered immune microenvironment following RF ablat
+      re-scored 24 via gemma-4-26b-a4b-it (was 22 via (none))
+  [213/317] re-eval: Children's narrow learning bottleneck accelerates the emergence of sta
+      re-scored 13 via gemma-4-26b-a4b-it (was 12 via (none))
+  [214/317] re-eval: Plant-Based Matrix for Bone Apatite Biomineralization: In Vitro Bioact
+      re-scored 25 via gemma-4-26b-a4b-it (was 19 via (none))
+  [215/317] re-eval: Antibiotics in Veterinary Ophthalmology: Resistance, Stewardship, and 
+      re-scored 10 via gemma-4-26b-a4b-it (was 14 via (none))
+  [216/317] re-eval: Why I love My profession.
+      re-scored 5 via gemma-4-26b-a4b-it (was 5 via (none))
+  [217/317] re-eval: Neural Patterns Reveal Lateral Occipital Complex Representation of Ens
+      re-scored 12 via gemma-4-26b-a4b-it (was 12 via (none))
+  [218/317] re-eval: Fogarty balloon-assisted extraction of an impacted friable foreign bod
+      re-scored 16 via gemma-4-26b-a4b-it (was 15 via (none))
+  [219/317] re-eval: Detected residual venous thrombi and catheter-directed management of i
+      re-scored 21 via gemma-4-26b-a4b-it (was 24 via (none))
+  [220/317] re-eval: Psychiatric readmissions following Soteria versus traditional inpatien
+      re-scored 22 via gemma-4-26b-a4b-it (was 22 via (none))
+  [221/317] re-eval: In Vitro Model of Milking Pulses and Stretching Cycles: Assessing Mech
+      re-scored 19 via gemma-4-26b-a4b-it (was 14 via (none))
+  [222/317] re-eval: Proposal of 
+      re-scored 5 via gemma-4-26b-a4b-it (was 5 via (none))
+  [223/317] re-eval: Voltage imaging of CA1 pyramidal cells and SST+ interneurons reveals s
+      re-scored 15 via gemma-4-26b-a4b-it (was 17 via (none))
+  [224/317] re-eval: Cystic fibrosis nutrition: Addressing emerging trends following the 20
+      re-scored 19 via gemma-4-26b-a4b-it (was 17 via (none))
+  [225/317] re-eval: Detection of Crithidia mellificae in golden jackals in Israel.
+      re-scored 9 via gemma-4-26b-a4b-it (was 7 via (none))
+  [226/317] re-eval: Hepatocellular Inflammatory Adenomas.
+      re-scored 8 via gemma-4-26b-a4b-it (was 8 via (none))
+  [227/317] re-eval: Polymer scaling in protein crowding: From dilute coils to semidilute m
+      re-scored 14 via gemma-4-26b-a4b-it (was 13 via (none))
+  [228/317] re-eval: RBOHC-Generated ROS Tune MIZ2/GNOM-Dependent Root Halotropism in Arabi
+      re-scored 16 via gemma-4-26b-a4b-it (was 10 via (none))
+  [229/317] re-eval: sc-rDSeq: Droplet-based single-cell full-length total RNA-seq method.
+      re-scored 31 via gemma-4-26b-a4b-it (was 33 via (none))
+  [230/317] re-eval: Short-time statistics of extinction and blowup in reaction kinetics.
+      re-scored 11 via gemma-4-26b-a4b-it (was 9 via (none))
+  [231/317] re-eval: Activity-dependent antioxidant gene therapy protects against epileptog
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      re-scored 31 via gemma-4-26b-a4b-it (was 26 via (none))
+  [232/317] re-eval: Translation and validation of the Hebrew version of the xerostomia inv
+      re-scored 15 via gemma-4-31b-it (was 15 via (none))
+  [233/317] re-eval: Allopatric coevolution: Migratory predators may facilitate mimicry bet
+      re-scored 10 via gemma-4-31b-it (was 7 via (none))
+  [234/317] re-eval: Ecosystem Disturbance as a Niche Construction Strategy for Invasive Sp
+      re-scored 11 via gemma-4-31b-it (was 8 via (none))
+  [235/317] re-eval: "When I saw his face, I recognized him": Visibility, complexity, and t
+      re-scored 9 via gemma-4-31b-it (was 6 via (none))
+  [236/317] re-eval: Americans Want To Make Themselves Feel Better More than Japanese Do: C
+      re-scored 9 via gemma-4-31b-it (was 9 via (none))
+  [237/317] re-eval: Irinotecan Modulates Immune Checkpoints in Neuroblastoma.
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+      still no Gemma result — leaving as-is
+  [238/317] re-eval: Epidermal Nevus with Woolly Hair: A Case Report.
+      re-scored 6 via gemma-4-31b-it (was 5 via (none))
+  [239/317] re-eval: Is "sky" bluer than "grass" is green? Word-color associations dataset 
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 8 via gemma-4-31b-it (was 7 via (none))
+  [240/317] re-eval: CD59 drives diet-induced obesity and glucose intolerance, insulin resi
+      re-scored 30 via gemma-4-31b-it (was 31 via (none))
+  [241/317] re-eval: Tasty&Healthy exclusive whole food diet in asymptomatic children and y
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      still no Gemma result — leaving as-is
+  [242/317] re-eval: Corrigendum to "Kinetic roughening transition of ice crystal and its i
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      re-scored 5 via gemma-4-31b-it (was 6 via (none))
+  [243/317] re-eval: Iron, Ferroptosis, and the Vulnerable Placenta: Rethinking Preeclampsi
+      re-scored 20 via gemma-4-26b-a4b-it (was 26 via (none))
+  [244/317] re-eval: High-Accuracy Performance of a Simplified Binary Triage System in Mili
+      re-scored 20 via gemma-4-26b-a4b-it (was 22 via (none))
+  [245/317] re-eval: The impact of bronchoscopy on the safety of percutaneous tracheostomy:
+      re-scored 6 via gemma-4-26b-a4b-it (was 14 via (none))
+  [246/317] re-eval: Risk of medication-related osteonecrosis of the jaw during romosozumab
+      re-scored 19 via gemma-4-26b-a4b-it (was 19 via (none))
+  [247/317] re-eval: Patients' Experiences of Nurse-Led Integrative Palliative Care in Mult
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+      re-scored 19 via gemma-4-31b-it (was 17 via (none))
+  [248/317] re-eval: Wounding-induced redirection of sugar transport fuels tissue repair.
+      re-scored 18 via gemma-4-31b-it (was 19 via (none))
+  [249/317] re-eval: Redox- and Photo-Responsive Fe
+      re-scored 9 via gemma-4-31b-it (was 18 via (none))
+  [250/317] re-eval: Strategic Template Filtering Accelerates Fragment-Based Peptide Dockin
+      re-scored 26 via gemma-4-31b-it (was 25 via (none))
+  [251/317] re-eval: Right ventricular function-pulmonary pressure interaction as a predict
+      re-scored 20 via gemma-4-31b-it (was 23 via (none))
+  [252/317] re-eval: Multiple Charged Purine (MCP) PNA as a Simple Mode for Cellular Uptake
+      re-scored 33 via gemma-4-31b-it (was 29 via (none))
+  [253/317] re-eval: Antioxidant potential of microencapsulated bioactive extracts from dur
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 17 via gemma-4-31b-it (was 16 via (none))
+  [254/317] re-eval: Steroid hormones dynamics during coral reproduction: Multi-year patter
+      re-scored 10 via gemma-4-31b-it (was 9 via (none))
+  [255/317] re-eval: Wurtzite InP/ZnSe/ZnS Core/Shell Semiconductor Quantum Dots with Brigh
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+      still no Gemma result — leaving as-is
+  [256/317] re-eval: End-of-life decision-making in very old critically ill patients.
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 9 via gemma-4-26b-a4b-it (was 14 via (none))
+  [257/317] re-eval: The evolution of craniotomies, from the ancient civilizations to moder
+      re-scored 5 via gemma-4-26b-a4b-it (was 5 via (none))
+  [258/317] re-eval: Decision-making trades off learned and perceived information.
+      re-scored 13 via gemma-4-26b-a4b-it (was 12 via (none))
+  [259/317] re-eval: Impact of anti-Müllerian hormone and antral follicle count discordance
+      re-scored 20 via gemma-4-26b-a4b-it (was 23 via (none))
+  [260/317] re-eval: Developmental Morphokinetics and the Transcriptomic Profile of Bovine 
+      re-scored 21 via gemma-4-26b-a4b-it (was 17 via (none))
+  [261/317] re-eval: Correction: McCartney et al. Retrospective Clinical and Radiographic O
+      re-scored 5 via gemma-4-26b-a4b-it (was 16 via (none))
+  [262/317] re-eval: The impact of post thaw embryo culture (extended culture) on frozen em
+      re-scored 19 via gemma-4-26b-a4b-it (was 23 via (none))
+  [263/317] re-eval: Phosphoproteomic profiling reveals reversal of dysregulated kinase sig
+      re-scored 28 via gemma-4-26b-a4b-it (was 23 via (none))
+  [264/317] re-eval: Elevated fetal middle cerebral artery peak systolic velocity caused by
+      re-scored 9 via gemma-4-26b-a4b-it (was 18 via (none))
+  [265/317] re-eval: Marginal Outer Retinal Ridge Following Rhegmatogenous Retinal Detachme
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 16 via gemma-4-26b-a4b-it (was 18 via (none))
+  [266/317] re-eval: Post-bariatric surgery adherence to clinical pharmacist recommendation
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 15 via gemma-4-26b-a4b-it (was 18 via (none))
+  [267/317] re-eval: Pro-repair properties of a human embryonic stem cell-derived astrocyte
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      still no Gemma result — leaving as-is
+  [268/317] re-eval: Serum from Fibromyalgia Patients Activates Satellite Glial Cells in Mo
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 23 via gemma-4-31b-it (was 23 via (none))
+  [269/317] re-eval: Multicenter Insights into Pediatric Extreme Leukocytosis: A 5-Year Ret
+      re-scored 18 via gemma-4-31b-it (was 8 via (none))
+  [270/317] re-eval: Nuances of double empathy in autistic and non-autistic people: examina
+      re-scored 12 via gemma-4-31b-it (was 9 via (none))
+  [271/317] re-eval: Low-normal immunoglobulin suggests monoclonal B-cell lymphocytosis and
+      re-scored 19 via gemma-4-31b-it (was 13 via (none))
+  [272/317] re-eval: Artificial intelligence and medical retina training: A scoping review 
+      re-scored 13 via gemma-4-31b-it (was 12 via (none))
+  [273/317] re-eval: High-power laser photobiomodulation therapy for immediate relief of mu
+      re-scored 27 via gemma-4-31b-it (was 25 via (none))
+  [274/317] re-eval: Is informed consent in the critically ill informed?
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (trl): all Gemini models are marked dead this run and Groq is unavailable
+  Gemini error (ip_strength): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [275/317] re-eval: Total Synthesis of Conjugation-Ready Sulfated Red Algae Carrageenan Ol
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [276/317] re-eval: Empty Confidant Network Satisfaction and Mental Well-Being After the A
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [277/317] re-eval: Oral and dental status in children with intestinal failure: A descript
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [278/317] re-eval: Fetal growth is driven by a bimodal fetal beta cell response and resha
+    abstract refetch failed for pubmed_42265456: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42265456&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [279/317] re-eval: Cell-to-cell variability and gain of methylation at polycomb CpG islan
+    abstract refetch failed for pubmed_42265112: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42265112&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [280/317] re-eval: Clinical manifestations and management of Androctonus bicolor envenoma
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [281/317] re-eval: Food Insecurity Is Associated with Increased Risk of Ischemic Stroke.
+    abstract refetch failed for pubmed_42259399: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42259399&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [282/317] re-eval: Targeting primary and metastatic ovarian cancer with a peptide derived
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [283/317] re-eval: Vesicular monoamine transporters (VMATs): From discovery to therapeuti
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [284/317] re-eval: Creating resistance to the whitefly 
+    abstract refetch failed for pubmed_42255296: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42255296&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [285/317] re-eval: Vaginal progesterone and risk of preterm birth in asymptomatic women w
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [286/317] re-eval: Radical Empathy.
+    abstract refetch failed for pubmed_42249865: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42249865&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [287/317] re-eval: Examining Laterality in Masticatory Myofascial Pain.
+    abstract refetch failed for pubmed_42249598: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42249598&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [288/317] re-eval: Pulmonary exacerbations in cystic fibrosis after fatherhood with and w
+    abstract refetch failed for pubmed_42248370: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42248370&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [289/317] re-eval: Sharing for the common good: Children's levels of social inclusion wit
+    abstract refetch failed for pubmed_42244058: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42244058&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [290/317] re-eval: Erratum to "Corrigendum to "Genomic insights unveil taxonomic incongru
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [291/317] re-eval: Redefining Feasibility for Transcatheter Aortic Valve Replacement in t
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [292/317] re-eval: Allele-specific antisense oligonucleotide treatment rescues 
+    abstract refetch failed for pubmed_42239176: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42239176&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [293/317] re-eval: CBFB mutations predict endocrine therapy benefit in estrogen receptor-
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [294/317] re-eval: Meaningful outcomes in food allergy immunotherapy: Measuring what coun
+    abstract refetch failed for pubmed_42236046: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42236046&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [295/317] re-eval: Haptoglobin, hemolysis, and renal vulnerability after pulsed field abl
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [296/317] re-eval: Post-infectious bronchiolitis obliterans in children: pathogenesis, tr
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [297/317] re-eval: Eosinophilic esophagitis is associated with increased risk of allergic
+    abstract refetch failed for pubmed_42234218: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42234218&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [298/317] re-eval: Reshaping the Postbariatric Breast: A Single-center Experience With th
+    abstract refetch failed for pubmed_42232887: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42232887&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [299/317] re-eval: A novel high-resolution test battery for language mapping in awake cra
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [300/317] re-eval: Schizophrenia in Offspring of Holocaust Survivors: Intergenerational E
+    abstract refetch failed for pubmed_42231080: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42231080&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [301/317] re-eval: An antagonistically pleiotropic gene regulates vertebrate growth, matu
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [302/317] re-eval: Vitamin E supplementation moderates salt-induced oxidation status in b
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [303/317] re-eval: Task Performance and Queen Presence Influence the Brain Transcriptome 
+    abstract refetch failed for pubmed_42227751: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42227751&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [304/317] re-eval: Aberrant protein S-nitrosylation disrupts axonal development and metab
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [305/317] re-eval: Headache as a predictive clinical marker for combat-related PTSD risk.
+    abstract refetch failed for pubmed_42223652: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42223652&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [306/317] re-eval: Incidence of mastoiditis complications in relation to prior community-
+    abstract refetch failed for pubmed_42223618: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42223618&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [307/317] re-eval: Universal rhythmic architecture uncovers two modes of neural dynamics.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [308/317] re-eval: Effectiveness of written exposure therapy in group therapy for veteran
+    abstract refetch failed for pubmed_42217210: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42217210&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [309/317] re-eval: Prolonged Undiagnosed Prodromal Symptoms.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [310/317] re-eval: Risk of postoperative respiratory complications in adults treated with
+    abstract refetch failed for pubmed_42215372: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42215372&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [311/317] re-eval: Body mass index and epilepsy risk: Evidence from cross-sectional and t
+    abstract refetch failed for pubmed_42214219: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42214219&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [312/317] re-eval: Designed Synthesis of Unsymmetrical (Deuterated) 1,1-Diarylethylenes v
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [313/317] re-eval: Prediction of clinical outcomes of advanced cutaneous squamous cell ca
+    abstract refetch failed for pubmed_42212120: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42212120&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [314/317] re-eval: Mathematical anxiety is associated with general rather than specific w
+    abstract refetch failed for pubmed_42212014: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42212014&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [315/317] re-eval: EMF2 deficiency disrupts epigenetic and chromatin organization landsca
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [316/317] re-eval: Sensory impairment and mental health in old age: The moderating role o
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  [317/317] re-eval: Enhancing Physiological Complexity Through Mindfulness: A Wearable-Bas
+    abstract refetch failed for pubmed_42278785: 429 Client Error: Too Many Requests for url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42278785&rettype=xml&retmode=xml
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+      still no Gemma result — leaving as-is
+  Re-evaluated 269/317 papers onto Gemma.
+Sheet updated: {"status":"ok","rows":333}
+Generated papers_reader.html and papers_data.json with 332 papers and 20 researcher profiles.
+Re-evaluation complete.

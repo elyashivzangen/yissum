@@ -4,7 +4,7 @@
     "pi_full_name": "Chamutal Gur",
     "pi_email": "",
     "pi_affiliation": "Department of Rheumatology, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
-    "avg_score": 24.7,
+    "avg_score": 18.3,
     "paper_count": 3,
     "description": "This researcher focuses on advanced immunotherapy and clinical therapeutics, with a particular emphasis on cellular and bacterial-based treatments. Their work spans the development of CAR-T cell therapies for autoimmune diseases and the engineering of alternative immunotherapies for oncology. They also engage in clinical evaluations of preventative healthcare products.",
     "applicability": "The work has high commercial potential, specifically in the development of proprietary CAR-T platforms for rheumatology and novel biologic agents for bladder cancer. These projects are likely in early-to-mid stage clinical translation, offering opportunities for licensing agreements with biotech firms or partnerships with pharmaceutical companies specializing in oncology and immunology.",
@@ -27,39 +27,28 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/42098533/",
         "journal": "Arthritis & rheumatology (Hoboken, N.J.)",
-        "score": 35,
-        "summary": "Researchers tested a new CAR-T cell therapy targeting B cell maturation antigens in patients with severe, treatment-resistant lupus and systemic sclerosis. The early results show significant reduction in disease activity and improvement in skin symptoms with manageable safety side effects.",
-        "opportunity": "Potential for a first-in-class curative cell therapy for refractory autoimmune diseases, expanding the CAR-T market beyond oncology into high-unmet-need rheumatology.",
+        "score": 16,
+        "summary": "Researchers tested a new CAR-T cell therapy targeting the B cell maturation antigen to treat severe, treatment-resistant autoimmune diseases. Early results show promising reductions in disease activity for lupus and systemic sclerosis patients with a manageable safety profile.",
+        "opportunity": "Expansion of CAR-T therapies from oncology into high-value autoimmune markets for refractory systemic diseases.",
         "fields": [
           "Immunology",
           "Clinical",
-          "Synthetic Biology"
+          "Synthetic Biology",
+          "Drug Discovery"
         ],
         "score_breakdown": {
-          "novelty": {
-            "score": 4,
-            "reason": "The application of BCMA-targeted CAR-T cells is well-established in multiple myeloma; applying this existing modality to autoimmune diseases like SLE and SSc is an incremental clinical expansion rather than a groundbreaking scientific innovation."
-          },
           "commercial_potential": {
             "score": 9,
-            "reason": "Targeting BCMA for refractory autoimmune diseases represents a high-value expansion of CAR-T therapy into a massive unmet market beyond oncology. The preliminary phase 1 data showing rapid disease activity reduction (SLEDAI to 0) and manageable safety profiles indicates a strong path toward a high-priced, curative-intent therapeutic product."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "Targeting refractory SLE and Systemic Sclerosis addresses a massive global unmet need in autoimmune diseases, representing a significant expansion of the CAR-T market beyond oncology into high-prevalence chronic conditions."
+            "reason": "The study demonstrates high-impact clinical signals in significant unmet medical needs (SLE and SSc) using a modular CAR-T platform, suggesting a strong path toward high-value licensing or specialized cell therapy products. The transition from oncology to autoimmune indications represents a massive expansion of the addressable market for this technology."
           },
           "trl": {
             "score": 7,
-            "reason": "The therapy is currently in an ongoing Phase 1 clinical trial, demonstrating safety and preliminary efficacy in human subjects. It has moved beyond preclinical/lab stages but requires further Phase 2/3 validation to establish definitive efficacy and dosing for market approval."
-          },
-          "ip_strength": {
-            "score": 6,
-            "reason": "The paper presents a novel CAR-T cell therapy targeting B cell maturation antigen, which shows promise for treating refractory systemic lupus erythematosus and systemic sclerosis. However, the IP strength is limited by the fact that CAR-T cell therapies are not novel and the specific target antigen is not explicitly disclosed, making it difficult to assess the patentability of the innovation."
+            "reason": "The therapy has progressed beyond preclinical development into an ongoing Phase 1 clinical trial, demonstrating safety and preliminary efficacy in human subjects. While it shows significant clinical potential, it remains in the early stages of human testing and is not yet near-market or in late-stage pivotal trials."
           }
         },
-        "eval_model": "groq:llama-3.1-8b-instant",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 35,
+        "prev_eval_model": "groq:llama-3.1-8b-instant",
         "pi_affiliation": "Department of Rheumatology, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
         "pi_email": ""
       },
