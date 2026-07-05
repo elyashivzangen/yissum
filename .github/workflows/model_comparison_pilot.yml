@@ -1,0 +1,53 @@
+name: Model Comparison Pilot
+
+# Manual, one-off analysis: forces each of the 4 models in the fallback
+# chain to independently score the same sample of papers, to quantify the
+# real difference in applicability scoring across models. Not scheduled —
+# this is a diagnostic tool, run it on demand.
+
+on:
+  workflow_dispatch:
+    inputs:
+      sample_size:
+        description: 'Number of papers to compare across all 4 models. Cost is sample_size x 4 models x 6 calls.'
+        required: false
+        default: '5'
+        type: string
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run model comparison pilot
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          set -o pipefail
+          python -u model_comparison_pilot.py --sample-size "${{ github.event.inputs.sample_size || '5' }}" 2>&1 | tee model_comparison_pilot_run.log
+
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git reset --soft origin/main
+          git add model_comparison_pilot.json model_comparison_pilot_run.log || true
+          git diff --cached --quiet || git commit -m "chore: model comparison pilot results [$(date -u +%Y-%m-%d)]"
+          git push origin HEAD:main
