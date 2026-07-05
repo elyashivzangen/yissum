@@ -26,8 +26,8 @@ on:
         required: false
         default: false
         type: boolean
-      reeval_groq:
-        description: 'One-off: re-score papers previously scored by the Groq fallback using Gemma (skips fetching new papers). Safe to repeat.'
+      reeval_to_gemma:
+        description: 'One-off: re-score papers not currently scored by Gemma (gemini/groq) using Gemma only (skips fetching new papers). Safe to repeat. Also runs automatically once a day — see reeval_to_gemma.yml.'
         required: false
         default: false
         type: boolean
@@ -65,7 +65,7 @@ jobs:
             echo "MAX_RESULTS=${{ github.event.inputs.max_results || '300' }}" >> "$GITHUB_ENV"
           fi
           echo "BACKFILL_METADATA=${{ github.event.inputs.backfill_metadata || 'false' }}" >> "$GITHUB_ENV"
-          echo "REEVAL_GROQ=${{ github.event.inputs.reeval_groq || 'false' }}" >> "$GITHUB_ENV"
+          echo "REEVAL_TO_GEMMA=${{ github.event.inputs.reeval_to_gemma || 'false' }}" >> "$GITHUB_ENV"
 
       - name: Run pipeline
         env:
@@ -76,12 +76,12 @@ jobs:
           MAX_RESULTS: ${{ env.MAX_RESULTS }}
           DAYS_BACK: ${{ env.DAYS_BACK }}
           BACKFILL_METADATA: ${{ env.BACKFILL_METADATA }}
-          REEVAL_GROQ: ${{ env.REEVAL_GROQ }}
+          REEVAL_TO_GEMMA: ${{ env.REEVAL_TO_GEMMA }}
         run: |
           set -o pipefail
           EXTRA_ARGS=""
           if [ "$BACKFILL_METADATA" = "true" ]; then EXTRA_ARGS="--backfill-metadata"; fi
-          if [ "$REEVAL_GROQ" = "true" ]; then EXTRA_ARGS="$EXTRA_ARGS --reeval-groq"; fi
+          if [ "$REEVAL_TO_GEMMA" = "true" ]; then EXTRA_ARGS="$EXTRA_ARGS --reeval-to-gemma"; fi
           python -u papers_pipeline.py --period "$PIPELINE_PERIOD" $EXTRA_ARGS 2>&1 | tee pipeline_run.log
 
       - name: Commit generated HTML
@@ -89,8 +89,18 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Stage only the files this job generates, then rebase them onto the
+          # *current* origin/main (not the commit this job started from) so a
+          # long-running job that finishes after other PRs/merges land can't
+          # silently revert unrelated files back to its stale checkout — a
+          # plain `git reset --soft origin/main` + partial `git add` does
+          # exactly that, since everything not re-added stays at the old
+          # checkout's content. See the "chore" incident of 2026-07-05.
+          mkdir -p /tmp/gen
+          cp -f papers_reader.html papers_data.json index.html pipeline_run.log /tmp/gen/ 2>/dev/null || true
           git fetch origin main
-          git reset --soft origin/main
+          git checkout -B main origin/main
+          cp -f /tmp/gen/* . 2>/dev/null || true
           git add papers_reader.html papers_data.json index.html pipeline_run.log || true
           git diff --cached --quiet || git commit -m "chore: update papers [$(date -u +%Y-%m-%d)]"
           git push origin HEAD:main

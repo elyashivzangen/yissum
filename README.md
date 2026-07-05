@@ -113,34 +113,74 @@ Each new paper is evaluated by Gemini (Gemma) AI on **five separate dimensions**
 
 ### Model fallback chain & scoring provenance
 
-Strength order: `gemma-4-31b-it` (31B dense, #3 on the Arena leaderboard) >
+Strength order, confirmed via benchmark comparison (BenchLM has Gemma 4 31B
+beating Gemini 3.1 Flash-Lite 62-49 across benchmark categories; Flash-Lite's
+only real edge is speed/cost/context window, not quality):
+
+`gemma-4-31b-it` (31B dense, #3 on the Arena leaderboard) >
 `gemma-4-26b-a4b-it` (26B MoE, ~3.8B active/token, #6 Arena) >
 `gemini-3.1-flash-lite` (cost/speed tier) > Groq `llama-3.1-8b-instant`
-(8B, weakest — last resort only, and only when every Gemini/Gemma model in
-the chain is rate-limited or down).
+(8B, weakest — last resort only).
 
-Two tiers use that same chain in a different order:
-
-- **`STRONG_MODEL_CANDIDATES`** (strongest model first): the once-per-paper
-  meta call (summary/opportunity/fields) and the once-per-researcher
-  applicability summary — low call volume, so quality is prioritized.
-- **`PARAM_MODEL_CANDIDATES`** (`gemini-3.1-flash-lite` first): the 5-per-paper
-  numeric dimension scoring loop — high call volume, so this tier keeps that
-  bulk traffic off Gemma's scarcer capacity, falling back to the Gemma models
-  only if flash-lite is unavailable too.
+**Every call** (the per-paper meta call, all 5 per-paper dimension scores,
+and the once-per-researcher applicability summary) tries models in exactly
+that order, falling through to the next only on failure — Gemma is the best
+available model, so it's preferred everywhere, not just for some call types.
 
 Each paper records whichever model actually scored it in an `eval_model`
 column, surfaced as a small 🤖 badge on the card (green = Gemma, yellow =
 Groq). Per-model calls are throttled to each model's real free-tier RPM
 (~15 RPM for the Gemini/Gemma models, ~30 RPM for Groq) — a model that still
 errors out 3 times in a row is benched for 90 seconds, not the rest of the
-run, so a transient overload recovers instead of cascading.
+run, so a transient overload recovers instead of cascading. Gemma calls also
+set `thinking_level="minimal"` — Gemma 4's extended-reasoning mode adds real
+latency, which is a likely contributor to the 504 DEADLINE_EXCEEDED errors
+seen live; turning it off is Google's own documented mitigation.
 
-To upgrade those later, run the pipeline with **`--reeval-groq`** (or the
-`reeval_groq` workflow input): it re-fetches the abstract and re-scores every
-Groq-scored paper on Gemma only. Papers whose Gemma re-score still fails (quota
-not yet reset) are left untouched, so it is safe to run repeatedly until every
-paper carries a Gemma score.
+**Note on Gemma reliability:** the newly-launched (April 2026) Gemma 4
+endpoints on the Gemini API are known, as of this writing, to throw frequent
+500/503/504 errors under load — this is a widely-reported Google-side
+capacity issue, not something fixable from this codebase beyond good
+fallback design (which is what the chain above, throttling, and cooldown
+all exist for).
+
+### Converging every paper onto Gemma
+
+Because Gemma can still fail (quota, overload) and fall back to Gemini or
+Groq, a paper's `eval_model` may not always be Gemma. To converge the whole
+dataset onto one consistent model:
+
+- **`--reeval-to-gemma`** (papers_pipeline.py) / **`--reeval-to-gemma`**
+  (researcher_pipeline.py) re-score any paper whose `eval_model` isn't Gemma,
+  using *only* the two Gemma models (no falling through to Gemini/Groq within
+  this pass — that would defeat the point). Papers that still fail are left
+  untouched, so it's safe to run repeatedly.
+- The paper's previous score and model are preserved in `prev_score` /
+  `prev_eval_model` (set once, on the first successful re-eval, so repeated
+  runs don't overwrite the original baseline) — the dashboard shows this as
+  a small "↑ was N" badge next to the model badge.
+- **`reeval_to_gemma.yml`** runs both scripts' reeval mode automatically once
+  a day, so the dataset keeps converging without manual intervention. It can
+  also be triggered manually, as can `--reeval-to-gemma` via the
+  `papers_pipeline.yml` workflow input (`--reeval-groq` remains a deprecated
+  CLI alias for the same flag).
+
+### Comparing what each model actually says
+
+`model_comparison_pilot.py` is a manual, one-off analysis tool: it forces
+each of the 4 models (bypassing the fallback chain) to independently score
+the *same* sample of papers, so you can see the real spread in scores a
+paper gets depending on which model evaluates it — not just which model
+happened to answer first in production.
+
+```bash
+GEMINI_API_KEY=... GOOGLE_SHEET_ID=... [GROQ_API_KEY=...] \
+  python model_comparison_pilot.py [--sample-size 5]
+```
+
+Cost: `sample_size × 4 models × 6 calls` (the default of 5 papers is 120
+calls). Writes `model_comparison_pilot.json` (full per-model results) and
+prints a summary table (per-paper score spread, per-model averages/failures).
 
 | Dimension | What it measures | Max |
 |-----------|-----------------|-----|
@@ -303,7 +343,7 @@ All paper data is synced to a shared Google Sheet after every pipeline run. This
 
 The `Sheet1` tab columns are:
 
-`id` · `title` · `authors` · `journal` · `date` · `url` · `source` · `score` · `summary` · `opportunity` · `fields` · `added_date` · `score_breakdown` · `pi` · `pi_full_name` · `pi_email` · `pi_affiliation` · `eval_model`
+`id` · `title` · `authors` · `journal` · `date` · `url` · `source` · `score` · `summary` · `opportunity` · `fields` · `added_date` · `score_breakdown` · `pi` · `pi_full_name` · `pi_email` · `pi_affiliation` · `eval_model` · `prev_score` · `prev_eval_model`
 
 A second tab, `Researchers`, holds the researcher applicability profiles
 (see [Researcher Applicability Dataset](#researcher-applicability-dataset)),
@@ -443,6 +483,7 @@ outputs: latest_rfps.json, data/*.pdf
 |------|-------------|
 | `papers_pipeline.py` | Main pipeline: fetch, evaluate, enrich, sync, generate HTML |
 | `researcher_pipeline.py` | Monthly pipeline: builds researcher applicability profiles (Researchers Sheet tab + dashboard tab) |
+| `model_comparison_pilot.py` | Manual, one-off: forces each of the 4 models to independently score the same sample of papers |
 | `weekly_digest.py` | Curated PDF digest generator |
 | `scrape.py` | RFP/grant document harvester |
 | `sync_sheet.py` | One-time utility to push local JSON to the Sheet |
