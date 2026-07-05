@@ -1746,11 +1746,19 @@ def _fetch_abstract_for_paper(paper):
     try:
         if pid.startswith("pubmed_"):
             pmid = pid.split("_", 1)[1]
-            r = requests.get(
-                "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi",
-                params={"db": "pubmed", "id": pmid, "rettype": "xml", "retmode": "xml"},
-                timeout=30,
-            )
+            # NCBI rate-limits unauthenticated clients to ~3 req/sec; a reeval
+            # pass hitting this per-paper in a tight loop trips 429s often
+            # enough to silently drop papers from re-scoring without a retry.
+            for attempt, delay in enumerate([0, 1, 3, 8]):
+                if delay:
+                    time.sleep(delay)
+                r = requests.get(
+                    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi",
+                    params={"db": "pubmed", "id": pmid, "rettype": "xml", "retmode": "xml"},
+                    timeout=30,
+                )
+                if r.status_code != 429 or attempt == 3:
+                    break
             r.raise_for_status()
             root = ET.fromstring(r.text)
             return " ".join((el.text or "") for el in root.findall(".//Abstract/AbstractText")).strip()
