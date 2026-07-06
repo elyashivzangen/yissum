@@ -1,8 +1,36 @@
 Loading existing papers from Google Sheet...
   332 existing papers loaded.
   Verifying HUJI affiliation for 326 papers via PubMed efetch...
-  Backfilling metadata for 16 papers...
-  Metadata backfill done.
-Sheet updated: {"status":"ok","rows":333}
-Generated papers_reader.html and papers_data.json with 332 papers and 20 researcher profiles.
-Backfill complete.
+fetch_pubmed: 24 fetched, 10 new
+fetch_europepmc: 25 fetched, 0 new
+fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
+
+10 unique new papers to evaluate.
+Enriching PI contact info for 10 new papers...
+Enriching PI contact for 25 existing papers (backfill)...
+  [1/10] Assessing iatrogenic atrial septal defect as a primary unloading strat
+    score=23 fields=['Medical Device', 'Clinical']
+  [2/10] Historical trauma-based education and nursing professional identity: A
+    score=9 fields=['Clinical', 'Other']
+  [3/10] Disrupted WWOX-MYC interplay impairs neurogenesis in human brain organ
+    score=21 fields=['Drug Discovery', 'Neuroscience', 'Genomics']
+  [4/10] Growth Temperature Alters the Thermal Sensitivity of Mesophyll Conduct
+    score=17 fields=['AgriTech', 'Genomics', 'Synthetic Biology']
+  [5/10] Seasonal-to-interannual hydroclimatic variability in Afromontane envir
+    score=7 fields=['AgriTech', 'Other']
+  [6/10] Associations of red blood cell fatty acids with personality traits: 10
+    score=10 fields=['Diagnostics', 'Neuroscience', 'Clinical']
+  [7/10] Paternal exposure to chlorpyrifos disrupts protein regulation and abol
+    score=13 fields=['Neuroscience', 'Proteomics', 'Diagnostics', 'Drug Discovery']
+  [8/10] Real-world comparison of faricimab and aflibercept as second-line ther
+    score=26 fields=['Clinical', 'Immunology']
+  [9/10] Screening examination of the fetal heart and indications for fetal ech
+    score=24 fields=['Diagnostics', 'Imaging', 'Clinical', 'Medical Device']
+  [10/10] Laparoscopic resection of small bowel neuroendocrine tumors: A long-te
+    score=17 fields=['Clinical', 'Medical Device']
+
+Kept all 332 existing papers, added 10 new.
+  [checkpoint: final] writing 342 papers (332 retained + 10 new)...
+Sheet updated: {"status":"ok","rows":343}
+Generated papers_reader.html and papers_data.json with 342 papers and 20 researcher profiles.
+Done.
