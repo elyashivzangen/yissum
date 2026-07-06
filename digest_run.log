@@ -2,51 +2,65 @@
 =======================================================
 Branch: All Branches
 Loading top papers from Google Sheet...
-  Sheet response: 200, 606305 bytes
-  Cutoff date: 2026-05-31  (DIGEST_WINDOW=31 days)
-  Rows: 201 total, 200 excluded, 1 kept.
-  Sample pub date values: ['2026 Jun 1']
-  1 candidates (top 40 by score).
+  Sheet response: 200, 972235 bytes
+  Cutoff date: 2026-06-29  (DIGEST_WINDOW=7 days)
+  Rows: 342 total, 241 excluded, 101 kept.
+  Sample pub date values: ['2026-10-15', '2026-09-01', '2026 Aug 1']
+  20 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 1 papers.
-  Executive summary: Our latest digest highlights a groundbreaking advancement in neurological care, featuring a novel second-generation AI s...
+  Gemini selected 12 papers.
+  Executive summary: This week's digest highlights groundbreaking advancements across several high-impact fields. We feature pioneering cell ...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_M07.pdf  (3 KB)
+PDF written: digests/HUJI_digest_2026_W28.pdf  (17 KB)
 
 =======================================================
 Branch: Healthcare
 Loading top papers from Google Sheet...
-  Sheet response: 200, 606305 bytes
-  Cutoff date: 2026-05-31  (DIGEST_WINDOW=31 days)
-  Rows: 201 total, 200 excluded, 1 kept.
-  Sample pub date values: ['2026 Jun 1']
-  1 candidates (top 40 by score).
+  Sheet response: 200, 972235 bytes
+  Cutoff date: 2026-06-29  (DIGEST_WINDOW=7 days)
+  Rows: 342 total, 253 excluded, 89 kept.
+  Sample pub date values: ['2026-10-15', '2026 Aug 1', '2026 Aug 1']
+  20 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 1 papers.
-  Executive summary: This month's spotlight features an exciting development in artificial intelligence applied to chronic disease management...
+  Gemini selected 12 papers.
+  Executive summary: This week's digest highlights a diverse portfolio of groundbreaking innovations from Hebrew University, ranging from tra...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_M07_Healthcare.pdf  (4 KB)
+PDF written: digests/HUJI_digest_2026_W28_Healthcare.pdf  (16 KB)
 
 =======================================================
 Branch: Agriculture & Food
 Loading top papers from Google Sheet...
-  Sheet response: 200, 606305 bytes
-  Cutoff date: 2026-05-31  (DIGEST_WINDOW=31 days)
-  Rows: 201 total, 201 excluded, 0 kept.
-  0 candidates (top 40 by score).
-  No papers found for Agriculture & Food — skipping.
+  Sheet response: 200, 972235 bytes
+  Cutoff date: 2026-06-29  (DIGEST_WINDOW=7 days)
+  Rows: 342 total, 338 excluded, 4 kept.
+  Sample pub date values: ['2026-09-01', '2026 Jul 2', '2026 Jul 1']
+  4 candidates (top 20 by score).
+Asking Gemini to curate the digest...
+  Trying model: gemini-2.5-flash
+  Success with: gemini-2.5-flash
+  Gemini selected 4 papers.
+  Executive summary: Hebrew University researchers are driving innovation in sustainable food technology, precision agriculture, and environm...
+Generating PDF...
+PDF written: digests/HUJI_digest_2026_W28_Agriculture_Food.pdf  (7 KB)
 
 =======================================================
 Branch: Exact & Social Sciences
 Loading top papers from Google Sheet...
-  Sheet response: 200, 606305 bytes
-  Cutoff date: 2026-05-31  (DIGEST_WINDOW=31 days)
-  Rows: 201 total, 201 excluded, 0 kept.
-  0 candidates (top 40 by score).
-  No papers found for Exact & Social Sciences — skipping.
+  Sheet response: 200, 972235 bytes
+  Cutoff date: 2026-06-29  (DIGEST_WINDOW=7 days)
+  Rows: 342 total, 334 excluded, 8 kept.
+  Sample pub date values: ['2026 Aug 1', '2026 Jul 7', '2026-05']
+  8 candidates (top 20 by score).
+Asking Gemini to curate the digest...
+  Trying model: gemini-2.5-flash
+  Success with: gemini-2.5-flash
+  Gemini selected 5 papers.
+  Executive summary: This week's digest highlights groundbreaking research poised to revolutionize several high-growth industries. We feature...
+Generating PDF...
+PDF written: digests/HUJI_digest_2026_W28_Exact_Social_Sciences.pdf  (8 KB)
 
 All digests done.
