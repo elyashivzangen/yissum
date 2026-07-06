@@ -405,7 +405,7 @@ Every Monday at 09:00 UTC, `weekly_digest.py` runs and produces a PDF in `digest
 
 `digest_recipients.txt` (repo root) holds one email address per line — `#` comments and blank lines are ignored — and is read fresh on every digest run. Currently just `elyashiv.zangen@mail.huji.ac.il`; add more addresses by editing the file directly.
 
-Sending is entirely optional and self-disabling: if `SMTP_USER`/`SMTP_PASSWORD` aren't configured, or the recipients file is empty, `weekly_digest.py` logs a clear line and skips emailing — the PDF is still generated and committed exactly as before. Configure via:
+Sending is entirely optional and self-disabling: if `SMTP_USER`/`SMTP_PASSWORD` aren't configured (as passed into `weekly_digest.py` — see below), or the recipients file is empty, it logs a clear line and skips emailing — the PDF is still generated and committed exactly as before. The script's env-var interface:
 
 | Name | Type | Default | Notes |
 |------|------|---------|-------|
@@ -414,6 +414,8 @@ Sending is entirely optional and self-disabling: if `SMTP_USER`/`SMTP_PASSWORD` 
 | `SMTP_USER` | secret | — | SMTP login/username |
 | `SMTP_PASSWORD` | secret | — | SMTP password (an app-specific password for Gmail/Google-backed accounts, which require 2-Step Verification to be enabled to generate one) |
 | `MAIL_FROM` | secret | falls back to `SMTP_USER` | "From" address, if different from the login |
+
+**Current wiring** (in `weekly_digest.yml`/`monthly_digest.yml`): sends from a dedicated account, `elyashiv.zangen.ai@gmail.com` (2-Step Verification + App Password enabled), hardcoded as `SMTP_USER`/`MAIL_FROM` directly in the workflow files (not a secret — it's just an address, not sensitive). The App Password itself is stored as the repo secret **`GMAIL_APP_PASSWORD`** and mapped to `SMTP_PASSWORD` in the workflow's `env:` block. `SMTP_HOST`/`SMTP_PORT` are left unset, so the script's `smtp.gmail.com:465` defaults apply.
 
 Repo variables are set the same place as secrets — **Settings → Secrets and variables → Actions → Variables tab** — the difference is variables aren't hidden in logs, so only put non-sensitive values there.
 
@@ -496,7 +498,7 @@ Runs `model_comparison_pilot.py`. See [Comparing what each model actually says](
 
 ```yaml
 trigger: schedule (Monday 09:00 UTC) + workflow_dispatch
-secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, SMTP_USER, SMTP_PASSWORD, MAIL_FROM (last 3 optional)
+secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, GMAIL_APP_PASSWORD (optional; SMTP_USER/MAIL_FROM hardcoded in-workflow)
 vars: SMTP_HOST, SMTP_PORT (optional, non-secret)
 outputs: digests/HUJI_digest_YYYY_WNN*.pdf, digest_run.log
 ```
@@ -505,7 +507,7 @@ outputs: digests/HUJI_digest_YYYY_WNN*.pdf, digest_run.log
 
 ```yaml
 trigger: schedule (1st of every month, 10:00 UTC) + workflow_dispatch
-secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, SMTP_USER, SMTP_PASSWORD, MAIL_FROM (last 3 optional)
+secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, GMAIL_APP_PASSWORD (optional; SMTP_USER/MAIL_FROM hardcoded in-workflow)
 vars: SMTP_HOST, SMTP_PORT (optional, non-secret)
 outputs: digests/HUJI_digest_YYYY_MNN*.pdf, digest_run.log
 ```
@@ -584,9 +586,7 @@ Configure these in the GitHub repository under **Settings → Secrets and variab
 | `GOOGLE_SHEET_ID` | pipeline, researcher pipeline, reeval, model comparison pilot, digest, cleanup | ID from the Google Sheet URL |
 | `APPS_SCRIPT_URL` | pipeline, researcher pipeline, reeval, model comparison pilot, cleanup | Deployed Apps Script web app URL |
 | `GROQ_API_KEY` | pipeline, researcher pipeline, reeval, model comparison pilot | Groq API key — last-resort fallback model when every Gemini/Gemma model in the chain fails |
-| `SMTP_USER` | digest (weekly + monthly) | SMTP login for emailing the digest PDF(s); optional — sending is skipped if unset |
-| `SMTP_PASSWORD` | digest (weekly + monthly) | SMTP password / app-specific password; optional |
-| `MAIL_FROM` | digest (weekly + monthly) | "From" address if different from `SMTP_USER`; optional |
+| `GMAIL_APP_PASSWORD` | digest (weekly + monthly) | App Password for the dedicated `elyashiv.zangen.ai@gmail.com` digest-sender account (2-Step Verification enabled); optional — sending is skipped if unset. `SMTP_USER`/`MAIL_FROM` are hardcoded to that address directly in the two digest workflow files, not stored as secrets |
 | `GH_TOKEN` | rfp_scrape | GitHub token (for pushing scraped data) |
 
 Also configurable as non-secret **repo variables** (same Settings page, "Variables" tab): `SMTP_HOST` (default `smtp.gmail.com`), `SMTP_PORT` (default `465`). See [Email Delivery](#email-delivery) for details.
