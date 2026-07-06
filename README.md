@@ -47,12 +47,14 @@ Every Monday, the pipeline automatically:
 5. Generates a self-contained interactive HTML viewer (`papers_reader.html`) with full filtering and search.
 6. Generates a curated weekly digest PDF highlighting the 8–12 most commercially promising papers.
 
-Once a month, a second pipeline (`researcher_pipeline.py`) builds researcher-level
+Every week, a second pipeline (`researcher_pipeline.py`) builds researcher-level
 profiles: it identifies the top-scoring HUJI researchers, pulls each one's last
 3 years of publications, grades them with the same scoring method, and produces
 an average applicability score, an AI-written description of their focus area,
 and the full list of graded papers per researcher — surfaced in a second
-"Researchers" tab in the same `papers_reader.html`. See
+"Researchers" tab in the same `papers_reader.html`. Profiles are additive: an
+existing researcher only has newly-published papers added to their profile
+each week, never rebuilt from scratch. See
 [Researcher Applicability Dataset](#researcher-applicability-dataset).
 
 ---
@@ -74,23 +76,21 @@ All automation runs on GitHub Actions with no manual intervention required. Ever
 | 02:00 | `rfp_scrape.yml` | Harvests RFP/grant documents from pharma company websites — fully independent of the paper pipeline |
 | 06:00 | `papers_pipeline.yml` | Fetches new papers, evaluates them, updates the Sheet + HTML viewer |
 | 09:00 | `weekly_digest.yml` | Reads top papers from the Sheet, generates + emails the curated weekly PDF digest |
+| 11:00 | `researcher_pipeline.yml` | Adds this week's new papers to the top-20 researchers' profiles (or bootstraps a profile for anyone new to the top 20); researchers who fall out of the top 20 keep their existing profile untouched |
 
-`weekly_digest.yml` is deliberately scheduled 3 hours after `papers_pipeline.yml` so it always reads that week's freshest data.
+`weekly_digest.yml` and `researcher_pipeline.yml` are deliberately scheduled after `papers_pipeline.yml` (3h and 5h respectively) so they always read that week's freshest data.
 
 ### Monthly (1st of the month)
 
 | Time (UTC) | Workflow | What it does |
 |------------|----------|---------------|
-| 08:00 | `researcher_pipeline.yml` | Rebuilds the top-20 researcher applicability profiles (Researchers Sheet tab + dashboard tab) |
 | 10:00 | `monthly_digest.yml` | Reads a wider window of top papers, generates + emails the curated monthly PDF digest |
-
-These two don't depend on each other's output (the monthly digest reads papers, not researcher profiles), so their relative order doesn't matter functionally.
 
 ### Bimonthly (1st of every 2nd month)
 
 | Time (UTC) | Workflow | What it does |
 |------------|----------|---------------|
-| 07:00 | `cleanup.yml` | Removes low-scoring papers to keep the dataset focused — runs before that month's `researcher_pipeline.yml`/`monthly_digest.yml` on months it fires |
+| 07:00 | `cleanup.yml` | Removes low-scoring papers to keep the dataset focused |
 
 ### Manual-only (no schedule)
 
@@ -317,24 +317,40 @@ produce applicable, commercially-relevant work.
 
 ### Process
 
-1. Loads the current scored papers from the Sheet.
-2. Groups them by PI (`pi_full_name`, falling back to `pi`) and ranks
+Runs weekly. Profiles are **additive** — an existing researcher only ever has
+newly-published papers added to their profile; nothing already in it is
+re-fetched, re-graded, or replaced.
+
+1. Loads the current scored papers from the Sheet, and the existing
+   `researchers_data.json` profiles from the previous run (if any).
+2. Groups papers by PI (`pi_full_name`, falling back to `pi`) and ranks
    researchers by their single highest-scoring paper.
-3. Takes the **top 20** researchers (`TOP_N_RESEARCHERS`).
-4. For each one, queries PubMed by author name + HUJI affiliation for their
-   publications from the **last 3 years** (`YEARS_BACK`), capped at
-   `MAX_PAPERS_PER_RESEARCHER` (default 15, most recent first).
-5. Grades every paper with the exact same Gemini scoring method used by
+3. Takes the **top 20** researchers (`TOP_N_RESEARCHERS`) as this week's
+   candidates. A researcher who already has a profile but falls out of the
+   top 20 this week **keeps their existing profile as-is** — they're simply
+   not re-queried this run, not dropped from the dataset.
+4. For each candidate, queries PubMed by author name + HUJI affiliation for
+   their publications from the **last 3 years** (`YEARS_BACK`), capped at
+   `MAX_PAPERS_PER_RESEARCHER` (default 15, most recent first):
+   - **New candidate** (no existing profile): bootstraps a fresh profile
+     from this fetch, same as before.
+   - **Existing candidate**: diffs the fetch against papers already in
+     their profile; only genuinely new papers are graded and appended. If
+     nothing new turns up, the existing profile is returned completely
+     untouched — no wasted Gemini calls on a quiet week.
+5. Grades every new paper with the exact same Gemini scoring method used by
    `papers_pipeline.py` (`evaluate_paper()` — same five dimensions, same
    1–50 scale). Papers already scored in the main dataset are reused as-is
    instead of being re-graded, to save API calls and keep scores consistent.
-6. Computes the researcher's average score across their graded papers, and
-   asks Gemini (one combined call) for both a **description** of their research
-   focus and a separate **applicability** assessment of the commercial /
-   translational potential of their work.
+6. Recomputes the researcher's average score across their **full** paper
+   list (old + new), and — only when new papers were actually added — asks
+   Gemini (one combined call) for an updated **description** of their
+   research focus and a separate **applicability** assessment of the
+   commercial / translational potential of their work.
 7. Aggregates researcher-level metadata: their **affiliation** and **email**
-   (from the paper author records), the union of **field tags** across their
-   papers, and the TTO **branches** those fields map to.
+   (from the paper author records, falling back to the existing profile's
+   values), the union of **field tags** across their papers, and the TTO
+   **branches** those fields map to.
 8. Writes one profile per researcher — `pi`, `pi_full_name`, `pi_email`,
    `pi_affiliation`, `avg_score`, `paper_count`, `description`, `applicability`,
    `fields`, `branches`, and the full list of graded `papers` (each with its
@@ -361,11 +377,14 @@ produce applicable, commercially-relevant work.
   is subject to the same **🏛️ HUJI-primary only** toggle described above.
 - **`researchers_data.json`** — the raw JSON, same shape as the Sheet rows.
 
-Because this is a much heavier job than the weekly pipeline (a full
-publication-history fetch + re-scoring per researcher), it runs on its own
-monthly schedule (`researcher_pipeline.yml`) rather than as part of
-`papers_pipeline.yml`. It checkpoints after every researcher, so a killed or
-timed-out run still keeps whatever profiles it finished.
+Because this is a heavier job than the main pipeline (a publication-history
+fetch per researcher, plus grading whatever's new), it runs as its own
+workflow (`researcher_pipeline.yml`) — scheduled weekly, after
+`papers_pipeline.yml` and `weekly_digest.yml` so it always sees that week's
+freshest data — rather than as part of `papers_pipeline.yml`. It checkpoints
+after every researcher, so a killed or timed-out run still keeps whatever
+profiles it finished (both newly-updated ones and untouched carried-forward
+ones).
 
 Researcher grouping is a simple string match on `pi_full_name`/`pi` (the same
 approach already used elsewhere in this repo for PI trend analysis) — it does
@@ -553,13 +572,14 @@ outputs: papers_reader.html, papers_data.json, cleanup_run.log
 ### `researcher_pipeline.yml`
 
 ```yaml
-trigger: schedule (1st of every month, 08:00 UTC) + workflow_dispatch
+trigger: schedule (every Monday, 11:00 UTC) + workflow_dispatch
 inputs:
   top_n: 20 (default)
   years_back: 3 (default)
   max_papers_per_researcher: 15 (default)
 secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, APPS_SCRIPT_URL, GROQ_API_KEY
 outputs: papers_reader.html, researchers_data.json, researcher_pipeline_run.log
+note: additive — existing profiles are updated with new papers, not rebuilt from scratch
 ```
 
 ### `rfp_scrape.yml`
@@ -577,7 +597,7 @@ outputs: latest_rfps.json, data/*.pdf
 | File | Description |
 |------|-------------|
 | `papers_pipeline.py` | Main pipeline: fetch, evaluate, enrich, sync, generate HTML |
-| `researcher_pipeline.py` | Monthly pipeline: builds researcher applicability profiles (Researchers Sheet tab + dashboard tab) |
+| `researcher_pipeline.py` | Weekly pipeline: builds/updates researcher applicability profiles (Researchers Sheet tab + dashboard tab), additively |
 | `model_comparison_pilot.py` | Manual, one-off: forces each of the 4 models to independently score the same sample of papers |
 | `weekly_digest.py` | Curated PDF digest generator (weekly + monthly modes); also emails the PDF(s) if SMTP is configured |
 | `digest_recipients.txt` | Email addresses (one per line) that receive the digest PDF(s) |
@@ -703,7 +723,9 @@ The `pipeline_run.log` / `researcher_pipeline_run.log` files written after each 
 4. Everything is written to the Google Sheet (shared with TTO team).
 5. An interactive HTML viewer and JSON file are generated and committed to the repo.
 6. Three hours later, the digest script reads the top papers and generates a curated PDF.
-7. Once a month, `researcher_pipeline.py` reads the Sheet, picks the top-scoring
-   researchers, fetches + grades each one's last 3 years of publications, and
-   writes profiles to a second `Researchers` Sheet tab, `researchers_data.json`,
-   and the "Researchers" tab of the same `papers_reader.html`.
+7. Every week, `researcher_pipeline.py` reads the Sheet, picks the top-scoring
+   researchers, and fetches + grades new publications for each — adding them
+   to that researcher's existing profile (or bootstrapping a new one) rather
+   than rebuilding from scratch — writing to a second `Researchers` Sheet
+   tab, `researchers_data.json`, and the "Researchers" tab of the same
+   `papers_reader.html`.
