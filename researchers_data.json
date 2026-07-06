@@ -3782,11 +3782,11 @@
     "pi": "Danny Dvir",
     "pi_full_name": "Danny Dvir",
     "pi_email": "danny.dvir@gmail.com.",
-    "pi_affiliation": "Jesselson Integrated Heart Center, The Eisenberg R&D Authority, Shaare Zedek Medical Center, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 23.9,
-    "paper_count": 15,
-    "description": "This researcher specializes in interventional cardiology with a strong focus on advancing transcatheter heart valve procedures, specifically Transcatheter Aortic Valve Replacement (TAVR). Their work integrates clinical outcomes analysis with the development of novel procedural techniques and mechanical devices—such as leaflet modification tools and anchoring scaffolds—designed to improve procedural safety and expand the patient population eligible for minimally invasive valve interventions.",
-    "applicability": "The researcher's focus on procedural tool development and predictive clinical models offers high near-term commercial potential for medical device companies specializing in structural heart solutions. The proprietary techniques for native leaflet modification and valve anchoring are highly licensable technologies that address critical market needs in TAVR, particularly for patients with non-calcified valves or high-risk anatomy.",
+    "pi_affiliation": "Department of Cardiology, Shaare Zedek Medical Centre, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel. Electronic address: danny.dvir@gmail.com.",
+    "avg_score": 22.7,
+    "paper_count": 19,
+    "description": "This researcher focuses on the advancement of transcatheter interventional cardiology, specifically targeting structural heart diseases like aortic and mitral valve dysfunction. Their work spans from developing novel mechanical tools for leaflet modification and valve anchoring to clinical predictive modeling using ECG and CT data. They combine surgical innovation with clinical outcomes research to improve the safety and longevity of minimally invasive valve replacement procedures.",
+    "applicability": "The research holds high commercial potential for the development of next-generation TAVR/TAVI devices, specialized anchoring scaffolds (like the ATLAS system), and mechanical leaflet-splitting tools. These innovations address critical unmet needs in the multi-billion dollar structural heart market, offering licensable IP for medical device giants. While the clinical studies are established, the translation of the novel mechanical devices into commercialized medical products is likely in the mid-term (3-7 years) stage.",
     "fields": [
       "Clinical",
       "Medical Device",
@@ -4439,6 +4439,179 @@
         "prev_eval_model": "",
         "pi_affiliation": "Jesselson Integrated Heart Center, Shaare Zedek Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": ""
+      },
+      {
+        "id": "pubmed_38303542",
+        "title": "Transcatheter edge-to-edge repair in papillary muscle injury complicating acute myocardial infarction.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38303542/",
+        "journal": "ESC heart failure",
+        "score": 19,
+        "summary": "Researchers evaluated the use of a minimally invasive clipping procedure to repair mitral valve leaks caused by papillary muscle rupture after a heart attack. The results show that this transcatheter approach is a feasible salvage option for high-risk patients who are too unstable for open-heart surgery.",
+        "opportunity": "Expansion of the addressable market for TEER devices into acute, high-risk emergency cardiology settings rather than just chronic valve management.",
+        "abstract": "Acute mitral regurgitation (MR) in the setting of myocardial infarction (MI) may be the result of papillary muscle rupture (PMR). This condition is associated with high morbidity and mortality. We aim to evaluate the feasibility of transcatheter edge-to-edge mitral valve repair (TEER) in this acute setting. We analysed data from the International Registry of MitraClip in Acute Mitral Regurgitation following acute Myocardial Infarction (IREMMI) of 30 centres in Europe, North America, and the middle east. We included patients with post-MI PMR treated with TEER as a salvage procedure, and we evaluated immediate and 30-day outcomes. Twenty-three patients were included in this analysis (9 patients suffered complete papillary muscle rupture, 9 partial and 5 chordal rupture). The patients' mean age was 68 ± 14 years. Patients were at high surgical risk with median EuroSCORE II 27% (IQR 16, 28) and 20 out of 23 (87% were in cardiogenic shock). All patients were treated with vasopressors, and 17 out of 23 patients required mechanical support. TEER procedure was performed on the median 6 days after the index MI date IQR (3, 11). Procedural success was achieved in 87% of patients. The grade of MR was significantly decreased after the procedure. MR reduction to 0 or 1 + was achieved in 13 patients (57%), to 2 + in 7 patients (30%), P < 0.01. V-Wave was reduced from 49 ± 8 mmHg to 26 ± 10 mmHg post-procedure, P < 0.01. Sixteen out of 23 patients (70%) were discharged from hospital and 5 of them required reintervention with surgical mitral valve replacement. No additional death at 1 year was documented. TEER is a feasible therapy in critically ill patients with PMR due to a recent MI. TEER may have a role as salvage treatment or bridge to surgery in this population.",
+        "fields": [
+          "Medical Device",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "The paper is a clinical registry study evaluating the feasibility of an existing technology (TEER) in a specific, high-risk clinical subset rather than introducing a new device, mechanism, or fundamental scientific discovery. While clinically relevant for niche salvage use, it lacks the technical or conceptual innovation required for a high novelty score."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "This is a clinical registry study evaluating the efficacy of an existing device (MitraClip) in a specific niche complication, rather than a development of a new product or technology. While it provides clinical validation for off-label or expanded use, it does not represent a new commercial asset or platform."
+          },
+          "market_size": {
+            "score": 3,
+            "reason": "The target market is a highly specific, niche subset of acute myocardial infarction patients (papillary muscle rupture), representing a rare clinical complication rather than a broad therapeutic indication. While clinically significant, the low patient volume and acute/salvage nature of the procedure limit the overall addressable market size."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "The study evaluates the clinical use of the MitraClip system (an already marketed device) in a specific, high-risk clinical niche using real-world registry data. This represents late-stage clinical validation and application of an established technology in a new surgical indication."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This is a clinical registry study evaluating the outcomes of an existing medical device (MitraClip) in a specific patient population, rather than an original technological or molecular invention. It provides clinical evidence for a procedure but contains no new intellectual property or patentable innovation."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Jesselson Integrated Heart Centre, Shaare Zedek Medical Center / The Eisenberg R&D Authority, Hebrew University, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_38211677",
+        "title": "Mitral valve gradient changes associate with outcomes of patients undergoing transcatheter edge-to-edge repair.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38211677/",
+        "journal": "International journal of cardiology",
+        "score": 20,
+        "summary": "This clinical study investigates how changes in mitral valve pressure gradients after TEER procedures affect patient mortality and hospitalization rates. The findings suggest that current methods of using absolute post-procedural gradients may not be sufficient predictors of long-term patient outcomes.",
+        "opportunity": "There is a commercial opportunity for advanced hemodynamic monitoring software or AI-driven diagnostic tools that can better predict post-TEER complications using multi-parameter physiological data.",
+        "abstract": "Transcatheter edge-to-edge repair (TEER) is typically used to treat mitral regurgitation (MR) in patients with high surgical risk. Increased post-procedural mitral valve gradient (MVG) may impact mortality and hospitalizations. We aim to evaluate and compare the absolute postprocedural MVG and the change in the MVG effect on outcomes for patients undergoing TEER therapy. Patients who underwent TEER for severe MR were divided into two groups, initially by postprocedural absolute MVG, TTE-based at discharge, and then by the difference between preprocedural and postprocedural MVG. Primary endpoints included all-cause mortality and heart failure hospitalization (HFH) during one year after the procedure. The study included 100 patients. The mean MVG increased from 3.39 mmHg immediately after the procedure to 4.83 mmHg the following day, an increase of 1.44 mmHg (p < 0.001). First stratification was by MVG on the day following the procedure - MVG ≤5 mmHg (n = 70) and MVG >5 mmHg (n = 30). There was no significant difference in rates of survival (88.6%, 93.3%, p = 0.716) or HFH (18.6%, 33.3%, p = 0.178). Second stratification was by the difference in preprocedural and postprocedural MVG- delta MVG <3 mmHg (n = 55) and delta MVG ≥3 mmHg (n = 45). While survival rates did not significantly differ (87.3% vs. 93.3%, p = 0.503), delta MVG ≥3 mmHg correlated with higher HFH rates (12.7% vs. 35.6%, p = 0.014). The MVG of patients undergoing TEER usually increases on the day after the procedure compared to the immediate post-procedure MVG. Higher delta MVG is associated with higher HFH rate.",
+        "fields": [
+          "Medical Device",
+          "Diagnostics",
+          "Clinical",
+          "Software/AI"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "The study performs a standard clinical correlation analysis rather than introducing a new technology, platform, or biological mechanism. It investigates known hemodynamic parameters (mitral valve gradient) within an existing clinical procedure (TEER) to refine prognostic understanding."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "The paper describes an observational clinical correlation rather than a novel device, drug, or diagnostic tool. While the findings may inform clinical guidelines or post-procedural monitoring protocols, there is no clear intellectual property or productizable technology presented."
+          },
+          "market_size": {
+            "score": 4,
+            "reason": "The paper focuses on a specific physiological biomarker (mitral valve gradient) rather than a commercial product or platform, making its direct market size difficult to quantify. While the clinical context of TEER is a multi-billion dollar field, this study is a retrospective observational analysis that identifies a clinical correlation rather than a new market-expanding technology."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "The study evaluates the clinical outcomes of a procedure (TEER) and a diagnostic metric that are already standard-of-care in clinical practice. It focuses on optimizing post-procedural monitoring and patient stratification rather than developing a new device or technology."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This is a clinical observational study identifying correlations between physiological metrics (mitral valve gradient) and patient outcomes, which represents clinical knowledge rather than patentable technology or a proprietary platform. There is no underlying device, molecule, or novel methodology described that offers intellectual property defensibility."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Jesselson Integrated Heart Center, Shaare Zedek Medical Center and Faculty of Medicine, Hebrew University, Jerusalem, Israel. Electronic address: monysh@szmc.org.il.",
+        "pi_email": "monysh@szmc.org.il."
+      },
+      {
+        "id": "pubmed_38225168",
+        "title": "Post-transcatheter aortic valve implantation isolated PR prolongation: incidence and clinical significance.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38225168/",
+        "journal": "Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology",
+        "score": 11,
+        "summary": "This study investigates whether isolated PR prolongation following TAVI procedures increases the risk of needing a permanent pacemaker or mortality. The findings suggest that patients with isolated PR prolongation without QRS changes do not face significantly higher risks of pacemaker implantation or death compared to those with no ECG changes.",
+        "opportunity": "The study supports the development of more refined AI-driven ECG monitoring algorithms that can better differentiate between benign post-procedural electrical shifts and high-risk conduction abnormalities to reduce unnecessary pacemaker interventions.",
+        "abstract": "Conduction abnormalities post-transcatheter aortic valve implantation (TAVI) are common. Post-TAVI PR prolongation was mainly studied as an adjunct to new-onset bundle branch block. The net effect of isolated PR prolongation (IPRP) without post-TAVI QRS changes is not well known. The aim of this study was to define the incidence and clinical significance of post-TAVI IPRP. A total of 1108 consecutive TAVI patients were reviewed. Patients with IPRP were compared with patients without post-TAVI electrocardiogram (ECG) changes. Clinical outcomes included permanent pacemaker implantation (PPI) and overall mortality. A total of 146 patients with IPRP were compared with 290 patients without post-TAVI ECG changes. At 1 year follow-up, 4 (2.7%) and 7 (2.4%) patients underwent PPI (P = 0.838) and 10 (6.8%) and 25 (8.6%) died (P = 0.521), from the study and control groups, respectively. No patient with IPRP and narrow QRS underwent PPI during 1 year post-TAVI, and all death events were non-cardiac except one unknown cause. Permanent pacemaker implantation rates among patients with IPRP and wide QRS were higher (n = 4, 12.1%), compared with patients with wide QRS without post-TAVI ECG change (n = 3, 4%) however not reaching statistical significance (P = 0.126). Multivariate Cox proportional hazards model demonstrated that in patients with narrow QRS, neither PR prolongation nor baseline or maximal PR intervals was associated with the combined endpoint of PPI and mortality. However, in patients with wide QRS, baseline PR intervals and QRS width, but not PR prolongation were associated with the combined outcome. Post-TAVI IPRP in patients with narrow QRS is not associated with adverse outcome. This finding may translate clinically into a more permissive approach to these patients.",
+        "fields": [
+          "Medical Device",
+          "Diagnostics",
+          "Clinical",
+          "Software/AI"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "The study is a retrospective clinical observational analysis that seeks to fill a specific knowledge gap in existing literature rather than introducing a new technology, mechanism, or breakthrough methodology. While it provides incremental clinical utility for risk stratification, it lacks the groundbreaking scientific innovation required for a high novelty score."
+          },
+          "commercial_potential": {
+            "score": 2,
+            "reason": "This is a retrospective clinical observational study intended to refine diagnostic guidelines rather than a development of a new product, device, or therapeutic modality. While the findings may influence clinical practice, they do not represent a patentable technology or a direct commercializable asset."
+          },
+          "market_size": {
+            "score": 2,
+            "reason": "This is an observational clinical study investigating a specific ECG phenomenon rather than a product or technology development; it identifies a clinical observation rather than defining an addressable market for a new therapeutic or device."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "This is a retrospective clinical observational study aimed at defining clinical significance rather than developing a new technology or medical device. While it provides important clinical decision-support data, it does not represent a technological advancement or a new product moving through the development pipeline."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This is an observational clinical study investigating statistical correlations and clinical outcomes, which does not involve a novel device, molecule, or proprietary technology capable of being patented. The findings represent clinical knowledge and diagnostic insights rather than defensible intellectual property."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Jesselson Integrated Heart Center, Shaare Zedek Medical Center, 12 Shmuel Beit Street, Jerusalem, Israel.; Faculty of Medicine, Hebrew University, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_37968032",
+        "title": "Clinical and Hemodynamic Outcomes of Balloon-Expandable Mitral Valve-in-Valve Positioning and Asymmetric Deployment: The VIVID Registry.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37968032/",
+        "journal": "JACC. Cardiovascular interventions",
+        "score": 23,
+        "summary": "This study analyzes how the depth and symmetry of balloon-expandable heart valve placement affect clinical outcomes in patients receiving valve-in-valve procedures. It specifically examines risks like residual stenosis and left ventricular outflow tract obstruction using data from the VIVID registry.",
+        "opportunity": "There is a commercial opportunity for specialized surgical planning software or advanced guidance tools that optimize device positioning to reduce post-procedural stenosis and obstruction.",
+        "abstract": "Mitral valve-in-valve (ViV) is associated with suboptimal hemodynamics and rare left ventricular outflow tract (LVOT) obstruction. This study aimed to determine whether device position and asymmetry are associated with these outcomes. Patients undergoing SAPIEN 3 (Edwards Lifesciences) mitral ViV included in the VIVID (Valve-in-Valve International Data) Registry were studied. Clinical endpoints are reported according to Mitral Valve Academic Research Consortium definitions. Residual mitral valve stenosis was defined as mean gradient ≥5 mm Hg. Depth of implantation (percentage of transcatheter heart valve [THV] atrial to the bioprosthesis ring) and asymmetry (ratio of 2 measures of THV height) were evaluated. A total of 222 patients meeting the criteria for optimal core lab evaluation were studied (age 74 ± 11.6 years; 61.9% female; STS score = 8.3 ± 7.1). Mean asymmetry was 6.2% ± 4.4%. Mean depth of implantation was 19.0% ± 10.3% atrial. Residual stenosis was common (50%; mean gradient 5.0 ± 2.6 mm Hg). LVOT obstruction occurred in 7 cases (3.2%). Implantation depth was not a predictor of residual stenosis (OR: 1.19 [95% CI: 0.92-1.55]; P = 0.184), but more atrial implantation was protective against LVOT obstruction (0.7% vs 7.1%; P = 0.009; per 10% atrial, OR: 0.48 [95% CI: 0.24-0.98]; P = 0.044). Asymmetry was found to be an independent predictor of residual stenosis (per 10% increase, OR: 2.30 [95% CI: 1.10-4.82]; P = 0.027). Valve stenosis is common after mitral ViV. Asymmetry was associated with residual stenosis. Depth of implantation on its own was not associated with residual stenosis but was associated with LVOT obstruction. Technical considerations to reduce postdeployment THV asymmetry should be considered.",
+        "fields": [
+          "Medical Device",
+          "Clinical",
+          "Software/AI"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "This is a registry-based observational study focused on characterizing clinical outcomes and procedural variables rather than introducing a new technology or fundamental scientific breakthrough. While the data is clinically valuable for refining procedural techniques, it represents incremental optimization of existing device deployment rather than scientific or platform novelty."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "This is a clinical registry study evaluating existing device performance (Edwards SAPIEN 3) rather than a novel technology or product. While the data informs clinical guidelines and device optimization, it does not represent a new, licensable, or protectable commercial asset."
+          },
+          "market_size": {
+            "score": 7,
+            "reason": "The target market for Mitral Valve-in-Valve (ViV) procedures is substantial and growing as the population of patients with failing bioprosthetic mitral valves increases, though it currently represents a smaller subset of the total TAVR/structural heart market."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "The study evaluates a commercially available device (Edwards Lifesciences SAPIEN 3) within a large-scale clinical registry, indicating the technology is already in the market and undergoing routine clinical application."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This is a clinical registry study evaluating the performance of an existing, commercially owned device (Edwards Lifesciences SAPIEN 3) rather than a presentation of a new invention or proprietary technology. It provides clinical data on device positioning but does not disclose any novel, patentable, or defensible IP."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Department of Cardiology, Shaare Zedek Medical Centre, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel. Electronic address: danny.dvir@gmail.com.",
+        "pi_email": "danny.dvir@gmail.com."
       }
     ]
   },
