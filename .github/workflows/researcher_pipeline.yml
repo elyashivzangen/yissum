@@ -2,7 +2,7 @@ name: Researcher Pipeline
 
 on:
   schedule:
-    - cron: '0 8 1 * *'   # 1st of each month at 08:00 UTC (after the monthly digest/cleanup jobs)
+    - cron: '0 8 1 * *'   # 1st of each month at 08:00 UTC (after cleanup.yml's 07:00 on months it fires; before monthly_digest.yml's 10:00, though the two don't depend on each other)
   workflow_dispatch:
     inputs:
       top_n:

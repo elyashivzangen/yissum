@@ -59,17 +59,45 @@ and the full list of graded papers per researcher — surfaced in a second
 
 ## Weekly Automation Schedule
 
-All automation runs on GitHub Actions with no manual intervention required:
+All automation runs on GitHub Actions with no manual intervention required. Every scheduled workflow can also be triggered manually from the Actions tab (`workflow_dispatch`) — see [Running Manually](#running-manually).
 
-| Time (UTC, Mondays) | Workflow | What it does |
-|---------------------|----------|--------------|
-| 02:00 | `rfp_scrape.yml` | Harvests RFP/grant documents from pharma company websites |
-| 06:00 | `papers_pipeline.yml` | Fetches papers, evaluates them, updates Sheet + HTML viewer |
-| 09:00 | `weekly_digest.yml` | Reads top papers from Sheet, generates curated PDF digest |
-| 07:00 (1st of every 2nd month) | `cleanup.yml` | Removes low-scoring papers to keep the database focused |
-| 08:00 (1st of every month) | `researcher_pipeline.yml` | Rebuilds researcher applicability profiles (Researchers Sheet tab + dashboard tab) |
+### Daily
 
-The digest workflow is intentionally scheduled 3 hours after the pipeline to ensure it always reads the freshest data.
+| Time (UTC) | Workflow | What it does |
+|------------|----------|---------------|
+| 04:13 | `reeval_to_gemma.yml` | Re-scores any paper (main sheet + researcher profiles) not yet scored by Gemma, so the dataset keeps converging onto one consistent model as Gemma's availability recovers. See [Converging every paper onto Gemma](#converging-every-paper-onto-gemma). |
+
+### Weekly (Mondays)
+
+| Time (UTC) | Workflow | What it does |
+|------------|----------|---------------|
+| 02:00 | `rfp_scrape.yml` | Harvests RFP/grant documents from pharma company websites — fully independent of the paper pipeline |
+| 06:00 | `papers_pipeline.yml` | Fetches new papers, evaluates them, updates the Sheet + HTML viewer |
+| 09:00 | `weekly_digest.yml` | Reads top papers from the Sheet, generates + emails the curated weekly PDF digest |
+
+`weekly_digest.yml` is deliberately scheduled 3 hours after `papers_pipeline.yml` so it always reads that week's freshest data.
+
+### Monthly (1st of the month)
+
+| Time (UTC) | Workflow | What it does |
+|------------|----------|---------------|
+| 08:00 | `researcher_pipeline.yml` | Rebuilds the top-20 researcher applicability profiles (Researchers Sheet tab + dashboard tab) |
+| 10:00 | `monthly_digest.yml` | Reads a wider window of top papers, generates + emails the curated monthly PDF digest |
+
+These two don't depend on each other's output (the monthly digest reads papers, not researcher profiles), so their relative order doesn't matter functionally.
+
+### Bimonthly (1st of every 2nd month)
+
+| Time (UTC) | Workflow | What it does |
+|------------|----------|---------------|
+| 07:00 | `cleanup.yml` | Removes low-scoring papers to keep the dataset focused — runs before that month's `researcher_pipeline.yml`/`monthly_digest.yml` on months it fires |
+
+### Manual-only (no schedule)
+
+| Workflow | What it does |
+|----------|---------------|
+| `model_comparison_pilot.yml` | One-off diagnostic: forces each model in the fallback chain to score the same sample of papers, to compare real scoring behavior across models. See [Comparing what each model actually says](#comparing-what-each-model-actually-says). |
+| `weekly_digest_enhanced.yml` | Experimental digest variant, kept around for testing — not part of the regular pipeline. |
 
 ---
 
