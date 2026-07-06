@@ -7,6 +7,14 @@ HUJI Researcher Applicability Pipeline
 - Writes a per-researcher profile (avg score, description, graded papers) to
   a separate "Researchers" Google Sheet tab and researchers_data.json
 - Regenerates papers_reader.html with the Researchers tab populated
+
+Runs weekly. Profiles are additive, not rebuilt from scratch each run: a
+researcher already in researchers_data.json only has newly-published papers
+added to their existing profile (existing papers are never re-fetched,
+re-graded, or replaced); a researcher new to this week's top-N candidate
+list gets a fresh profile bootstrapped the same way as before. A researcher
+who falls out of the top-N list keeps their existing profile untouched
+rather than being dropped.
 """
 
 import argparse
@@ -395,19 +403,9 @@ def _aggregate_fields(graded_papers):
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 
-def build_researcher_profile(candidate, known_papers_by_id):
-    pi_name = candidate["pi"]
-    print(f"Fetching last {YEARS_BACK} years of publications for {pi_name}...")
-    try:
-        history = fetch_pubmed_for_author(pi_name)
-    except Exception as e:
-        print(f"  fetch error for {pi_name}: {e}")
-        return None
-
-    history = pp.dedup_by_title(history)
-    history.sort(key=lambda p: p.get("date", ""), reverse=True)
-    history = history[:MAX_PAPERS_PER_RESEARCHER]
-
+def _grade_history(history, known_papers_by_id):
+    """Grade a list of freshly-fetched PubMed papers, reusing an existing
+    main-pipeline score when available instead of re-spending a Gemini call."""
     graded = []
     for paper in history:
         existing = known_papers_by_id.get(paper["id"])
@@ -457,22 +455,48 @@ def build_researcher_profile(candidate, known_papers_by_id):
             "pi_email":        paper.get("pi_email", ""),
         })
         time.sleep(0.4)
+    return graded
 
+
+def _researcher_metadata(candidate, graded, existing_profile=None):
+    """Aggregate pi_affiliation/pi_email/fields/branches from a researcher's
+    full graded-papers list, falling back to an existing profile's values
+    (for a merge) and then the candidate's (from the main papers Sheet)."""
+    existing_profile = existing_profile or {}
+    pi_affiliation = (_most_common([p.get("pi_affiliation", "") for p in graded])
+                      or existing_profile.get("pi_affiliation", "")
+                      or candidate.get("pi_affiliation", ""))
+    pi_email = (existing_profile.get("pi_email", "")
+                or candidate.get("pi_email", "")
+                or _most_common([p.get("pi_email", "") for p in graded]))
+    fields = _aggregate_fields(graded)
+    branches = sorted({b for b, bf in pp.BRANCHES.items()
+                       if any(f in bf for f in fields)})
+    return pi_affiliation, pi_email, fields, branches
+
+
+def build_researcher_profile(candidate, known_papers_by_id):
+    """Bootstrap a brand-new researcher profile from scratch."""
+    pi_name = candidate["pi"]
+    print(f"Fetching last {YEARS_BACK} years of publications for {pi_name}...")
+    try:
+        history = fetch_pubmed_for_author(pi_name)
+    except Exception as e:
+        print(f"  fetch error for {pi_name}: {e}")
+        return None
+
+    history = pp.dedup_by_title(history)
+    history.sort(key=lambda p: p.get("date", ""), reverse=True)
+    history = history[:MAX_PAPERS_PER_RESEARCHER]
+
+    graded = _grade_history(history, known_papers_by_id)
     if not graded:
         print(f"  No gradable papers found for {pi_name} in the last {YEARS_BACK} years.")
         return None
 
     avg_score = round(sum(p["score"] for p in graded) / len(graded), 1)
     summary = generate_researcher_summary(graded)
-
-    # Aggregate researcher-level metadata from their papers
-    pi_affiliation = (_most_common([p.get("pi_affiliation", "") for p in graded])
-                      or candidate.get("pi_affiliation", ""))
-    pi_email = (candidate.get("pi_email", "")
-                or _most_common([p.get("pi_email", "") for p in graded]))
-    fields = _aggregate_fields(graded)
-    branches = sorted({b for b, bf in pp.BRANCHES.items()
-                       if any(f in bf for f in fields)})
+    pi_affiliation, pi_email, fields, branches = _researcher_metadata(candidate, graded)
 
     return {
         "pi":            pi_name,
@@ -486,6 +510,63 @@ def build_researcher_profile(candidate, known_papers_by_id):
         "fields":        fields,
         "branches":      branches,
         "papers":        graded,
+    }
+
+
+def merge_researcher_profile(candidate, existing_profile, known_papers_by_id):
+    """Add newly-published papers to an already-existing researcher profile,
+    instead of rebuilding it from scratch — papers already in the profile
+    are left completely untouched (never re-fetched, re-graded, or dropped).
+    Returns the existing profile unchanged if nothing new was found, so a
+    quiet week costs no extra Gemini calls.
+    """
+    pi_name = candidate["pi"]
+    existing_papers = existing_profile.get("papers", [])
+    print(f"Checking for new publications for {pi_name} "
+          f"(existing profile: {len(existing_papers)} paper(s))...")
+    try:
+        history = fetch_pubmed_for_author(pi_name)
+    except Exception as e:
+        print(f"  fetch error for {pi_name}: {e} — keeping existing profile as-is")
+        return existing_profile
+
+    history = pp.dedup_by_title(history)
+    existing_ids = {p.get("id") for p in existing_papers}
+    new_history = [p for p in history if p.get("id") not in existing_ids]
+    new_history.sort(key=lambda p: p.get("date", ""), reverse=True)
+    new_history = new_history[:MAX_PAPERS_PER_RESEARCHER]
+
+    if not new_history:
+        print(f"  No new papers for {pi_name}.")
+        return existing_profile
+
+    graded_new = _grade_history(new_history, known_papers_by_id)
+    if not graded_new:
+        print(f"  No gradable new papers for {pi_name}.")
+        return existing_profile
+
+    all_papers = existing_papers + graded_new
+    avg_score = round(sum(p["score"] for p in all_papers) / len(all_papers), 1)
+    # Only spend a Gemini call re-describing the researcher when there's
+    # actually something new for it to reflect.
+    summary = generate_researcher_summary(all_papers)
+    pi_affiliation, pi_email, fields, branches = _researcher_metadata(
+        candidate, all_papers, existing_profile)
+
+    print(f"  Added {len(graded_new)} new paper(s) for {pi_name} "
+          f"({len(existing_papers)} -> {len(all_papers)}).")
+    return {
+        "pi":            pi_name,
+        "pi_full_name":  candidate.get("pi_full_name", existing_profile.get("pi_full_name", pi_name)),
+        "pi_email":      pi_email,
+        "pi_affiliation": pi_affiliation,
+        "avg_score":     avg_score,
+        "paper_count":   len(all_papers),
+        "description":   summary["description"] or existing_profile.get("description", ""),
+        "applicability": summary["applicability"] or existing_profile.get("applicability", ""),
+        "fields":        fields,
+        "branches":      branches,
+        "papers":        all_papers,
     }
 
 
@@ -615,7 +696,25 @@ def main():
     candidates = select_top_researchers(papers, TOP_N_RESEARCHERS)
     print(f"\nSelected {len(candidates)} researchers to profile.")
 
-    profiles = []
+    existing_profiles = []
+    if OUTPUT_JSON.exists():
+        try:
+            existing_profiles = json.loads(OUTPUT_JSON.read_text(encoding="utf-8"))
+        except Exception as e:
+            print(f"  Could not read existing {OUTPUT_JSON}: {e}")
+    existing_by_pi = {p.get("pi"): p for p in existing_profiles if p.get("pi")}
+    candidate_pis = {c["pi"] for c in candidates}
+
+    # Profiles are additive: a researcher who profiled well in a past run but
+    # falls out of this week's top-N candidate list keeps their existing
+    # profile untouched (just not re-queried/updated this run), rather than
+    # being dropped from the dataset.
+    carried_forward = [p for pi, p in existing_by_pi.items() if pi not in candidate_pis]
+    if carried_forward:
+        print(f"Carrying forward {len(carried_forward)} existing profile(s) "
+              f"not in this run's top {TOP_N_RESEARCHERS}.")
+
+    profiles = list(carried_forward)
 
     def checkpoint(label):
         print(f"  [checkpoint: {label}] writing {len(profiles)} researcher profile(s)...")
@@ -629,13 +728,18 @@ def main():
 
     for i, candidate in enumerate(candidates):
         print(f"\n[{i+1}/{len(candidates)}] {candidate['pi']}")
-        profile = build_researcher_profile(candidate, known_papers_by_id)
+        existing = existing_by_pi.get(candidate["pi"])
+        if existing:
+            profile = merge_researcher_profile(candidate, existing, known_papers_by_id)
+        else:
+            profile = build_researcher_profile(candidate, known_papers_by_id)
         if profile:
             profiles.append(profile)
         checkpoint(f"{i+1}/{len(candidates)}")
         time.sleep(0.5)  # extra headroom against NCBI's unauthenticated rate limit
 
-    print(f"\nDone. {len(profiles)} researcher profiles written.")
+    print(f"\nDone. {len(profiles)} researcher profiles written "
+          f"({len(carried_forward)} carried forward unchanged).")
 
 
 if __name__ == "__main__":
