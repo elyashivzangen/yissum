@@ -11,7 +11,10 @@ import io
 import json
 import os
 import re
+import smtplib
+import ssl
 import datetime
+from email.message import EmailMessage
 import requests
 from pathlib import Path
 from google import genai
@@ -32,6 +35,16 @@ GOOGLE_SHEET_ID = os.environ["GOOGLE_SHEET_ID"]
 DIGESTS_DIR     = Path("digests")
 TOP_N           = 20   # top papers by score sent to Gemini for curation
 DIGEST_WINDOW   = 7    # only include papers added in the last N days
+
+# ── Email delivery ──────────────────────────────────────────────────────────
+# All optional: if SMTP_USER/SMTP_PASSWORD aren't set, digests are still
+# generated and committed as before — email sending is just skipped.
+RECIPIENTS_FILE = Path("digest_recipients.txt")
+SMTP_HOST     = os.environ.get("SMTP_HOST") or "smtp.gmail.com"
+SMTP_PORT     = int(os.environ.get("SMTP_PORT") or "465")
+SMTP_USER     = os.environ.get("SMTP_USER", "")
+SMTP_PASSWORD = os.environ.get("SMTP_PASSWORD", "")
+MAIL_FROM     = os.environ.get("MAIL_FROM", "") or SMTP_USER
 
 # Three main Yissum TTO branches (mirrors papers_pipeline.py)
 BRANCHES = {
@@ -454,6 +467,68 @@ def generate_pdf(papers_by_idx, curation, monthly=False, branch=None):
 
     doc.build(story)
     print(f"PDF written: {output_pdf}  ({output_pdf.stat().st_size // 1024} KB)")
+    return output_pdf
+
+
+# ── Email delivery ───────────────────────────────────────────────────────────
+
+def load_recipients():
+    """One email address per line in digest_recipients.txt; '#' comments and
+    blank lines are ignored. Missing file or no entries = no recipients."""
+    if not RECIPIENTS_FILE.exists():
+        return []
+    lines = RECIPIENTS_FILE.read_text(encoding="utf-8").splitlines()
+    return [l.strip() for l in lines if l.strip() and not l.strip().startswith("#")]
+
+
+def send_digest_email(pdf_paths, monthly=False):
+    """Email the generated digest PDFs as attachments to every address in
+    digest_recipients.txt. No-op (with a clear log line) if SMTP credentials
+    aren't configured or there are no recipients — never blocks digest
+    generation itself.
+    """
+    recipients = load_recipients()
+    if not recipients:
+        print("  No recipients configured in digest_recipients.txt — skipping email.")
+        return
+    if not (SMTP_USER and SMTP_PASSWORD):
+        print("  SMTP_USER/SMTP_PASSWORD not set — skipping email "
+              "(digests were still generated and committed as usual).")
+        return
+
+    period = "Monthly" if monthly else "Weekly"
+    today = datetime.date.today().strftime("%B %d, %Y")
+
+    msg = EmailMessage()
+    msg["Subject"] = f"HUJI Research Monitor — {period} Digest — {today}"
+    msg["From"] = MAIL_FROM
+    msg["To"] = ", ".join(recipients)
+    msg.set_content(
+        f"Attached: the {period.lower()} HUJI Research Monitor digest(s) "
+        f"for {today}.\n\nGenerated automatically — see the repository "
+        f"README for how this is produced."
+    )
+    for pdf_path in pdf_paths:
+        msg.add_attachment(
+            pdf_path.read_bytes(),
+            maintype="application", subtype="pdf",
+            filename=pdf_path.name,
+        )
+
+    try:
+        context = ssl.create_default_context()
+        if SMTP_PORT == 465:
+            with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT, context=context, timeout=30) as s:
+                s.login(SMTP_USER, SMTP_PASSWORD)
+                s.send_message(msg)
+        else:
+            with smtplib.SMTP(SMTP_HOST, SMTP_PORT, timeout=30) as s:
+                s.starttls(context=context)
+                s.login(SMTP_USER, SMTP_PASSWORD)
+                s.send_message(msg)
+        print(f"  Emailed {len(pdf_paths)} PDF(s) to {len(recipients)} recipient(s).")
+    except Exception as e:
+        print(f"  Email send failed (digests were still generated and committed as usual): {e}")
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
@@ -468,6 +543,7 @@ def main(monthly=False):
     ]
 
     top_n = 40 if monthly else 20  # monthly draws from a larger pool
+    generated_pdfs = []
 
     for branch, label in branch_cases:
         print(f"\n{'='*55}")
@@ -488,9 +564,14 @@ def main(monthly=False):
         print(f"  Executive summary: {curation.get('executive_summary','')[:120]}...")
 
         print("Generating PDF...")
-        generate_pdf(papers, curation, monthly=monthly, branch=branch)
+        pdf_path = generate_pdf(papers, curation, monthly=monthly, branch=branch)
+        generated_pdfs.append(pdf_path)
 
     print("\nAll digests done.")
+
+    if generated_pdfs:
+        print("\nSending digest email...")
+        send_digest_email(generated_pdfs, monthly=monthly)
 
 
 if __name__ == "__main__":

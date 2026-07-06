@@ -386,6 +386,7 @@ Every Monday at 09:00 UTC, `weekly_digest.py` runs and produces a PDF in `digest
    - **Executive Summary** — 3–4 sentence overview of the week's standout research themes
    - **Selected papers** — each with a commercial headline (max 20 words) and a "Why Now" justification (1–2 sentences)
 5. PDF is generated using ReportLab and committed to the `digests/` folder.
+6. If SMTP is configured (see below), the generated PDF(s) are emailed as attachments to every address in `digest_recipients.txt`.
 
 ### PDF Contents
 
@@ -399,6 +400,22 @@ Every Monday at 09:00 UTC, `weekly_digest.py` runs and produces a PDF in `digest
   - "Commercial Angle" section
   - Direct URL to the paper
 - Footer: generation timestamp and model credit
+
+### Email Delivery
+
+`digest_recipients.txt` (repo root) holds one email address per line — `#` comments and blank lines are ignored — and is read fresh on every digest run. Currently just `elyashiv.zangen@mail.huji.ac.il`; add more addresses by editing the file directly.
+
+Sending is entirely optional and self-disabling: if `SMTP_USER`/`SMTP_PASSWORD` aren't configured, or the recipients file is empty, `weekly_digest.py` logs a clear line and skips emailing — the PDF is still generated and committed exactly as before. Configure via:
+
+| Name | Type | Default | Notes |
+|------|------|---------|-------|
+| `SMTP_HOST` | repo variable | `smtp.gmail.com` | SMTP server hostname |
+| `SMTP_PORT` | repo variable | `465` | `465` = implicit SSL, anything else = STARTTLS |
+| `SMTP_USER` | secret | — | SMTP login/username |
+| `SMTP_PASSWORD` | secret | — | SMTP password (an app-specific password for Gmail/Google-backed accounts, which require 2-Step Verification to be enabled to generate one) |
+| `MAIL_FROM` | secret | falls back to `SMTP_USER` | "From" address, if different from the login |
+
+Repo variables are set the same place as secrets — **Settings → Secrets and variables → Actions → Variables tab** — the difference is variables aren't hidden in logs, so only put non-sensitive values there.
 
 ---
 
@@ -479,9 +496,21 @@ Runs `model_comparison_pilot.py`. See [Comparing what each model actually says](
 
 ```yaml
 trigger: schedule (Monday 09:00 UTC) + workflow_dispatch
-secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID
-outputs: digests/HUJI_digest_YYYY_WNN.pdf, digest_run.log
+secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, SMTP_USER, SMTP_PASSWORD, MAIL_FROM (last 3 optional)
+vars: SMTP_HOST, SMTP_PORT (optional, non-secret)
+outputs: digests/HUJI_digest_YYYY_WNN*.pdf, digest_run.log
 ```
+
+### `monthly_digest.yml`
+
+```yaml
+trigger: schedule (1st of every month, 10:00 UTC) + workflow_dispatch
+secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, SMTP_USER, SMTP_PASSWORD, MAIL_FROM (last 3 optional)
+vars: SMTP_HOST, SMTP_PORT (optional, non-secret)
+outputs: digests/HUJI_digest_YYYY_MNN*.pdf, digest_run.log
+```
+
+Both run `weekly_digest.py` (the latter with `--monthly`) — see [Weekly Digest PDF](#weekly-digest-pdf).
 
 ### `cleanup.yml`
 
@@ -520,7 +549,8 @@ outputs: latest_rfps.json, data/*.pdf
 | `papers_pipeline.py` | Main pipeline: fetch, evaluate, enrich, sync, generate HTML |
 | `researcher_pipeline.py` | Monthly pipeline: builds researcher applicability profiles (Researchers Sheet tab + dashboard tab) |
 | `model_comparison_pilot.py` | Manual, one-off: forces each of the 4 models to independently score the same sample of papers |
-| `weekly_digest.py` | Curated PDF digest generator |
+| `weekly_digest.py` | Curated PDF digest generator (weekly + monthly modes); also emails the PDF(s) if SMTP is configured |
+| `digest_recipients.txt` | Email addresses (one per line) that receive the digest PDF(s) |
 | `scrape.py` | RFP/grant document harvester |
 | `sync_sheet.py` | One-time utility to push local JSON to the Sheet |
 | `cleanup.py` | Bimonthly score-based cleanup of low-scoring papers |
@@ -554,7 +584,12 @@ Configure these in the GitHub repository under **Settings → Secrets and variab
 | `GOOGLE_SHEET_ID` | pipeline, researcher pipeline, reeval, model comparison pilot, digest, cleanup | ID from the Google Sheet URL |
 | `APPS_SCRIPT_URL` | pipeline, researcher pipeline, reeval, model comparison pilot, cleanup | Deployed Apps Script web app URL |
 | `GROQ_API_KEY` | pipeline, researcher pipeline, reeval, model comparison pilot | Groq API key — last-resort fallback model when every Gemini/Gemma model in the chain fails |
+| `SMTP_USER` | digest (weekly + monthly) | SMTP login for emailing the digest PDF(s); optional — sending is skipped if unset |
+| `SMTP_PASSWORD` | digest (weekly + monthly) | SMTP password / app-specific password; optional |
+| `MAIL_FROM` | digest (weekly + monthly) | "From" address if different from `SMTP_USER`; optional |
 | `GH_TOKEN` | rfp_scrape | GitHub token (for pushing scraped data) |
+
+Also configurable as non-secret **repo variables** (same Settings page, "Variables" tab): `SMTP_HOST` (default `smtp.gmail.com`), `SMTP_PORT` (default `465`). See [Email Delivery](#email-delivery) for details.
 
 ---
 
