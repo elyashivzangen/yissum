@@ -577,10 +577,27 @@ inputs:
   top_n: 20 (default)
   years_back: 3 (default)
   max_papers_per_researcher: 15 (default)
+  papers_snapshot_ref: '' (default) — one-off backfill, see below
 secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, APPS_SCRIPT_URL, GROQ_API_KEY
 outputs: papers_reader.html, researchers_data.json, researcher_pipeline_run.log
 note: additive — existing profiles are updated with new papers, not rebuilt from scratch
 ```
+
+**Backfilling past weeks** (`papers_snapshot_ref` input): since candidate
+selection normally reads the *live* Sheet, running the workflow multiple
+times today always recomputes the same top-20 and finds nothing new to add.
+To reconstruct history — e.g. running "as if" this were 8 weeks ago, 7 weeks
+ago, etc. — set `papers_snapshot_ref` to a past git commit SHA that touched
+`papers_data.json` (`papers_pipeline.yml` commits one weekly). The workflow
+extracts that commit's `papers_data.json` via `git show <ref>:papers_data.json`
+and passes it to `researcher_pipeline.py --papers-snapshot <file>`, which
+uses it only for top-N candidate selection and known-paper score reuse —
+everything else (real PubMed fetch, real Gemini grading, writing to the
+live Sheet/`researchers_data.json`) behaves exactly as a normal run. Run
+these oldest-to-newest, one at a time, so each backfill run merges onto the
+previous one correctly. Requires the checkout to have full git history
+(`fetch-depth: 0`, already set in this workflow) since old commits aren't
+reachable from a shallow clone.
 
 ### `rfp_scrape.yml`
 

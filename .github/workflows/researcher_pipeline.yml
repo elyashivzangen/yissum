@@ -20,6 +20,11 @@ on:
         required: false
         default: '15'
         type: string
+      papers_snapshot_ref:
+        description: 'One-off backfill: git ref/SHA to pull papers_data.json from for candidate selection + known-paper reuse, instead of the live Sheet (e.g. a past weekly commit, to simulate a run from that week). Leave blank for normal behavior.'
+        required: false
+        default: ''
+        type: string
 
 concurrency:
   group: researcher-pipeline
@@ -34,6 +39,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history — needed so `git show <ref>:papers_data.json` can reach past commits for papers_snapshot_ref backfills
 
       - uses: actions/setup-python@v5
         with:
@@ -41,6 +48,17 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Resolve papers snapshot
+        run: |
+          REF="${{ github.event.inputs.papers_snapshot_ref }}"
+          if [ -n "$REF" ]; then
+            git show "$REF:papers_data.json" > /tmp/papers_snapshot.json
+            echo "PAPERS_SNAPSHOT=/tmp/papers_snapshot.json" >> "$GITHUB_ENV"
+            echo "Using papers_data.json from $REF for candidate selection."
+          else
+            echo "PAPERS_SNAPSHOT=" >> "$GITHUB_ENV"
+          fi
 
       - name: Run researcher pipeline
         env:
@@ -53,7 +71,9 @@ jobs:
           MAX_PAPERS_PER_RESEARCHER: ${{ github.event.inputs.max_papers_per_researcher || '15' }}
         run: |
           set -o pipefail
-          python -u researcher_pipeline.py 2>&1 | tee researcher_pipeline_run.log
+          EXTRA_ARGS=""
+          if [ -n "$PAPERS_SNAPSHOT" ]; then EXTRA_ARGS="--papers-snapshot $PAPERS_SNAPSHOT"; fi
+          python -u researcher_pipeline.py $EXTRA_ARGS 2>&1 | tee researcher_pipeline_run.log
 
       - name: Commit generated files
         if: always()

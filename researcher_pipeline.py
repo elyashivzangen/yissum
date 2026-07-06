@@ -25,6 +25,7 @@ import os
 import time
 import datetime
 import xml.etree.ElementTree as ET
+from pathlib import Path
 import requests
 
 import papers_pipeline as pp
@@ -55,6 +56,13 @@ def _parse_args():
                         "fetch/candidate selection entirely — works off the committed "
                         "file). Safe to run repeatedly; papers that still fail on "
                         "Gemma are left untouched.")
+    p.add_argument("--papers-snapshot", type=str, default=None,
+                   help="One-off: select this run's top-N candidates (and known-paper "
+                        "reuse lookups) from a local papers_data.json snapshot instead "
+                        "of the live Sheet — for backfilling researcher profiles as if "
+                        "this run happened at a past point in time (e.g. a historical "
+                        "git commit's papers_data.json). Everything else (PubMed fetch, "
+                        "grading, writing to the Sheet/researchers_data.json) is unchanged.")
     return p.parse_known_args()[0]
 
 
@@ -683,13 +691,23 @@ def main():
     if sheet_writes_enabled:
         print(f"  OK (version >= {REQUIRED_SCRIPT_VERSION}) — Researchers sheet tab will be updated.")
 
-    print("Loading existing papers from Google Sheet...")
-    try:
-        papers = pp.load_from_sheet()
-        print(f"  {len(papers)} papers loaded.")
-    except Exception as e:
-        print(f"  Could not read sheet: {e}")
-        return
+    if ARGS.papers_snapshot:
+        print(f"Loading papers from snapshot {ARGS.papers_snapshot} "
+              "(candidate selection + known-paper reuse only — backfill mode)...")
+        try:
+            papers = json.loads(Path(ARGS.papers_snapshot).read_text(encoding="utf-8"))
+            print(f"  {len(papers)} papers loaded from snapshot.")
+        except Exception as e:
+            print(f"  Could not read snapshot: {e}")
+            return
+    else:
+        print("Loading existing papers from Google Sheet...")
+        try:
+            papers = pp.load_from_sheet()
+            print(f"  {len(papers)} papers loaded.")
+        except Exception as e:
+            print(f"  Could not read sheet: {e}")
+            return
 
     known_papers_by_id = {p["id"]: p for p in papers}
 
