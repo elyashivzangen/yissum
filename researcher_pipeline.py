@@ -63,6 +63,12 @@ def _parse_args():
                         "this run happened at a past point in time (e.g. a historical "
                         "git commit's papers_data.json). Everything else (PubMed fetch, "
                         "grading, writing to the Sheet/researchers_data.json) is unchanged.")
+    p.add_argument("--drop-non-author-papers", action="store_true",
+                   help="One-off: remove papers from the existing researchers_data.json "
+                        "where the researcher was not the first or last author (a "
+                        "co-authored paper incorrectly pulled in by the author-name "
+                        "search). Skips PubMed candidate/history fetch entirely — works "
+                        "off the committed file. Safe to run repeatedly.")
     return p.parse_known_args()[0]
 
 
@@ -249,6 +255,34 @@ def _pubmed_author_search_name(pi_name):
     return f"{last} {initials}"
 
 
+def _name_key(name):
+    """Split a "First [Middle] Last" name into (lowercase last name, initials
+    of the remaining parts) for loose author-matching."""
+    parts = (name or "").strip().split()
+    if not parts:
+        return "", ""
+    last = parts[-1].lower()
+    initials = "".join(p[0].lower() for p in parts[:-1] if p)
+    return last, initials
+
+
+def _is_first_or_last_author(pi_name, authors):
+    """True if pi_name matches the first or last entry of a PubMed AuthorList
+    (by last name + first initial). Used to keep only papers a researcher
+    actually led (PI/senior-author position), not ones they merely
+    co-authored — PubMed's [Author] field search matches any author position."""
+    if not authors:
+        return False
+    pi_last, pi_initials = _name_key(pi_name)
+    if not pi_last:
+        return False
+    for candidate in (authors[0], authors[-1]):
+        c_last, c_initials = _name_key(candidate)
+        if c_last == pi_last and (not pi_initials or not c_initials or pi_initials[0] == c_initials[0]):
+            return True
+    return False
+
+
 def _ncbi_get(url, params, timeout):
     """GET against NCBI E-Utilities with backoff on 429s.
 
@@ -323,6 +357,13 @@ def fetch_pubmed_for_author(pi_name, years_back=YEARS_BACK, max_results=50):
             author_affs.append(affs)
 
         if not pp.is_huji_paper(author_affs):
+            continue
+
+        # PubMed's [Author] search matches any author position — keep only
+        # papers where this researcher was first or last author (the
+        # positions that actually indicate they led the work), so a busy
+        # co-author's name doesn't pull in papers that aren't really theirs.
+        if not _is_first_or_last_author(pi_name, all_authors):
             continue
 
         # Capture the last HUJI-affiliated author's affiliation string + email
@@ -578,6 +619,98 @@ def merge_researcher_profile(candidate, existing_profile, known_papers_by_id):
     }
 
 
+def _fetch_author_lists(pmids):
+    """Batch-fetch PubMed AuthorLists (as ordered name strings) for a set of
+    PMIDs. Returns {pmid: [author_name, ...]}."""
+    base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+    result = {}
+    pmids = list(pmids)
+    for i in range(0, len(pmids), 150):
+        chunk = pmids[i:i + 150]
+        time.sleep(0.4)
+        r = _ncbi_get(f"{base}/efetch.fcgi", {
+            "db": "pubmed", "id": ",".join(chunk), "rettype": "xml", "retmode": "xml",
+        }, timeout=30)
+        root = ET.fromstring(r.text)
+        for article in root.findall(".//PubmedArticle"):
+            uid = article.findtext(".//PMID", "")
+            authors = []
+            for a in article.findall(".//AuthorList/Author"):
+                last = a.findtext("LastName", "")
+                fore = a.findtext("ForeName", "") or a.findtext("Initials", "")
+                name = f"{fore} {last}".strip() if fore else last
+                if name:
+                    authors.append(name)
+            if uid:
+                result[uid] = authors
+    return result
+
+
+def filter_researchers_authorship():
+    """One-off cleanup: drop any PubMed paper from an existing researcher
+    profile where that researcher was not the first or last author — a
+    co-authored paper incorrectly pulled in by the author-name search rather
+    than one they actually led. Recomputes avg_score/paper_count/fields for
+    any profile that changes, and drops profiles left with zero papers.
+    Safe to run repeatedly.
+    """
+    if not OUTPUT_JSON.exists():
+        print("  No researchers_data.json found — nothing to filter.")
+        return 0
+
+    profiles = json.loads(OUTPUT_JSON.read_text(encoding="utf-8"))
+
+    pmids = {p["id"][len("pubmed_"):]
+             for profile in profiles for p in profile.get("papers", [])
+             if p.get("id", "").startswith("pubmed_")}
+    if not pmids:
+        print("  No PubMed-sourced papers to check.")
+        return 0
+
+    print(f"Fetching author lists for {len(pmids)} PubMed paper(s)...")
+    author_lists = _fetch_author_lists(pmids)
+
+    total_removed = 0
+    for profile in profiles:
+        pi_name = profile.get("pi_full_name") or profile.get("pi")
+        papers = profile.get("papers", [])
+        kept = []
+        for p in papers:
+            if not p.get("id", "").startswith("pubmed_"):
+                kept.append(p)
+                continue
+            authors = author_lists.get(p["id"][len("pubmed_"):])
+            if not authors or _is_first_or_last_author(pi_name, authors):
+                kept.append(p)
+            else:
+                print(f"  {pi_name}: dropping (not first/last author): {p.get('title', '')[:70]}")
+                total_removed += 1
+        if len(kept) != len(papers):
+            profile["papers"] = kept
+            scores = [p.get("score", 0) for p in kept]
+            profile["avg_score"] = round(sum(scores) / len(scores), 1) if scores else 0
+            profile["paper_count"] = len(kept)
+            profile["fields"] = _aggregate_fields(kept)
+            profile["branches"] = sorted({b for b, bf in pp.BRANCHES.items()
+                                          if any(f in bf for f in profile["fields"])})
+
+    profiles = [p for p in profiles if p.get("papers")]
+
+    if total_removed:
+        OUTPUT_JSON.write_text(json.dumps(profiles, ensure_ascii=False, indent=2), encoding="utf-8")
+        if check_apps_script_version():
+            try:
+                save_researchers_to_sheet(profiles)
+            except Exception as e:
+                print(f"  sheet save failed: {e}")
+        try:
+            pp.generate_html(pp.load_from_sheet(), researchers=profiles)
+        except Exception as e:
+            print(f"  Could not regenerate HTML: {e}")
+    print(f"Removed {total_removed} non-first/last-author paper(s).")
+    return total_removed
+
+
 def reeval_researchers_to_gemma():
     """Re-score papers inside the already-committed researchers_data.json
     that aren't scored by Gemma yet — no PubMed re-fetch, no researcher
@@ -684,6 +817,10 @@ def reeval_researchers_to_gemma():
 def main():
     if ARGS.reeval_to_gemma:
         reeval_researchers_to_gemma()
+        return
+
+    if ARGS.drop_non_author_papers:
+        filter_researchers_authorship()
         return
 
     print("Checking apps_script.js deployment version...")
