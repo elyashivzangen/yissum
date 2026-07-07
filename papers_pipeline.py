@@ -998,36 +998,52 @@ def _call_gemini(prompt, allow_groq=True, candidates=None, chain="strong"):
         candidates = STRONG_MODEL_CANDIDATES
     last_err = None
     n = len(candidates)
-    now = time.monotonic()
-    start_idx = _last_good_idx.get(chain, 0)
-    for offset in range(n):
-        idx = (start_idx + offset) % n
-        model_id = candidates[idx]
-        if _cooldown_until.get(model_id, 0) > now:
-            continue
-        _throttle(model_id)
-        try:
-            if "gemma" in model_id and _GEMMA_GEN_CONFIG is not None:
-                resp = client.models.generate_content(
-                    model=model_id, contents=prompt, config=_GEMMA_GEN_CONFIG)
-            else:
-                resp = client.models.generate_content(model=model_id, contents=prompt)
-            text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
-            text = re.sub(r"\s*```$", "", text)
-            data = json.loads(text)
-            _last_good_idx[chain] = idx
-            _fail_streak[model_id] = 0
-            return data, model_id
-        except Exception as e:
-            last_err = e
-            is_rate_limit = "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e)
-            print(f"    {model_id} failed ({'rate limit' if is_rate_limit else 'error'}): {e}")
-            if is_rate_limit:
-                time.sleep(2)
-            _fail_streak[model_id] = _fail_streak.get(model_id, 0) + 1
-            if _fail_streak[model_id] >= 3:
-                _cooldown_until[model_id] = time.monotonic() + _COOLDOWN_SECONDS
-                print(f"    {model_id} failed 3x in a row — cooling down {_COOLDOWN_SECONDS}s")
+    for wait_round in range(2):
+        now = time.monotonic()
+        start_idx = _last_good_idx.get(chain, 0)
+        attempted = False
+        for offset in range(n):
+            idx = (start_idx + offset) % n
+            model_id = candidates[idx]
+            if _cooldown_until.get(model_id, 0) > now:
+                continue
+            attempted = True
+            _throttle(model_id)
+            try:
+                if "gemma" in model_id and _GEMMA_GEN_CONFIG is not None:
+                    resp = client.models.generate_content(
+                        model=model_id, contents=prompt, config=_GEMMA_GEN_CONFIG)
+                else:
+                    resp = client.models.generate_content(model=model_id, contents=prompt)
+                text = re.sub(r"^```(?:json)?\s*", "", resp.text.strip())
+                text = re.sub(r"\s*```$", "", text)
+                data = json.loads(text)
+                _last_good_idx[chain] = idx
+                _fail_streak[model_id] = 0
+                return data, model_id
+            except Exception as e:
+                last_err = e
+                is_rate_limit = "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e)
+                print(f"    {model_id} failed ({'rate limit' if is_rate_limit else 'error'}): {e}")
+                if is_rate_limit:
+                    time.sleep(2)
+                _fail_streak[model_id] = _fail_streak.get(model_id, 0) + 1
+                if _fail_streak[model_id] >= 3:
+                    _cooldown_until[model_id] = time.monotonic() + _COOLDOWN_SECONDS
+                    print(f"    {model_id} failed 3x in a row — cooling down {_COOLDOWN_SECONDS}s")
+        if attempted or wait_round == 1:
+            break
+        # Every candidate is cooling down simultaneously (easy to hit when a
+        # chain has only 2 entries, e.g. GEMMA_ONLY_CANDIDATES) — wait out the
+        # shortest cooldown and retry once instead of instantly failing this
+        # call and every other one behind it in the same run (that cascade is
+        # what left a stable tail of papers permanently un-scored by Gemma
+        # across many daily reeval runs).
+        wait = min((_cooldown_until.get(c, 0) for c in candidates), default=0) - time.monotonic()
+        wait = min(wait, _COOLDOWN_SECONDS)  # defensive cap — cooldowns are never set longer than this
+        if wait > 0:
+            print(f"    all {n} candidate(s) cooling down — waiting {wait:.0f}s before retry")
+            time.sleep(wait + 1)
     if allow_groq and GROQ_API_KEY:
         try:
             _throttle("groq")
