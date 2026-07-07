@@ -1,134 +1,57 @@
 Loading existing papers from Google Sheet...
   342 existing papers loaded.
   Verifying HUJI affiliation for 336 papers via PubMed efetch...
-  41 non-Gemma-scored papers to re-evaluate on Gemma.
-  [1/41] re-eval: Sensory impairment and mental health in old age: The moderating role o
-      re-scored 16 via gemma-4-31b-it (was 13 via (none))
-  [2/41] re-eval: Vitamin E supplementation moderates salt-induced oxidation status in b
-      re-scored 23 via gemma-4-31b-it (was 23 via (none))
-  [3/41] re-eval: Post-infectious bronchiolitis obliterans in children: pathogenesis, tr
-      re-scored 13 via gemma-4-31b-it (was 10 via (none))
-  [4/41] re-eval: Vesicular monoamine transporters (VMATs): From discovery to therapeuti
-      re-scored 16 via gemma-4-31b-it (was 25 via (none))
-  [5/41] re-eval: Targeting primary and metastatic ovarian cancer with a peptide derived
-      re-scored 31 via gemma-4-31b-it (was 29 via (none))
-  [6/41] re-eval: Sharing for the common good: Children's levels of social inclusion wit
-      re-scored 8 via gemma-4-31b-it (was 6 via (none))
-  [7/41] re-eval: Designed Synthesis of Unsymmetrical (Deuterated) 1,1-Diarylethylenes v
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      re-scored 15 via gemma-4-31b-it (was 15 via (none))
-  [8/41] re-eval: Oral and dental status in children with intestinal failure: A descript
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      re-scored 7 via gemma-4-31b-it (was 9 via (none))
-  [9/41] re-eval: Fetal growth is driven by a bimodal fetal beta cell response and resha
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      re-scored 23 via gemma-4-31b-it (was 22 via (none))
-  [10/41] re-eval: Cell-to-cell variability and gain of methylation at polycomb CpG islan
-      re-scored 26 via gemma-4-31b-it (was 26 via (none))
-  [11/41] re-eval: Clinical manifestations and management of Androctonus bicolor envenoma
-      re-scored 7 via gemma-4-31b-it (was 6 via (none))
-  [12/41] re-eval: Food Insecurity Is Associated with Increased Risk of Ischemic Stroke.
-      re-scored 11 via gemma-4-31b-it (was 8 via (none))
-  [13/41] re-eval: Radical Empathy.
+  24 non-Gemma-scored papers to re-evaluate on Gemma.
+  [1/24] re-eval: Erratum to "Corrigendum to "Genomic insights unveil taxonomic incongru
       re-scored 5 via gemma-4-31b-it (was 5 via (none))
-  [14/41] re-eval: Vaginal progesterone and risk of preterm birth in asymptomatic women w
-      re-scored 22 via gemma-4-31b-it (was 22 via (none))
-  [15/41] re-eval: Examining Laterality in Masticatory Myofascial Pain.
-      re-scored 10 via gemma-4-31b-it (was 9 via (none))
-  [16/41] re-eval: Erratum to "Corrigendum to "Genomic insights unveil taxonomic incongru
+  [2/24] re-eval: Redefining Feasibility for Transcatheter Aortic Valve Replacement in t
+      re-scored 26 via gemma-4-31b-it (was 21 via (none))
+  [3/24] re-eval: Haptoglobin, hemolysis, and renal vulnerability after pulsed field abl
+      re-scored 23 via gemma-4-31b-it (was 21 via (none))
+  [4/24] re-eval: An antagonistically pleiotropic gene regulates vertebrate growth, matu
+      re-scored 20 via gemma-4-31b-it (was 32 via (none))
+  [5/24] re-eval: Headache as a predictive clinical marker for combat-related PTSD risk.
+      re-scored 16 via gemma-4-31b-it (was 17 via (none))
+  [6/24] re-eval: Incidence of mastoiditis complications in relation to prior community-
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [17/41] re-eval: Redefining Feasibility for Transcatheter Aortic Valve Replacement in t
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [18/41] re-eval: Eosinophilic esophagitis is associated with increased risk of allergic
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      re-scored 9 via gemma-4-31b-it (was 10 via (none))
-  [19/41] re-eval: Schizophrenia in Offspring of Holocaust Survivors: Intergenerational E
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      re-scored 10 via gemma-4-31b-it (was 10 via (none))
-  [20/41] re-eval: Haptoglobin, hemolysis, and renal vulnerability after pulsed field abl
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [21/41] re-eval: An antagonistically pleiotropic gene regulates vertebrate growth, matu
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [22/41] re-eval: Headache as a predictive clinical marker for combat-related PTSD risk.
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [23/41] re-eval: Incidence of mastoiditis complications in relation to prior community-
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [24/41] re-eval: Enhancing Physiological Complexity Through Mindfulness: A Wearable-Bas
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [25/41] re-eval: Meaningful outcomes in food allergy immunotherapy: Measuring what coun
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [26/41] re-eval: Reshaping the Postbariatric Breast: A Single-center Experience With th
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [27/41] re-eval: Task Performance and Queen Presence Influence the Brain Transcriptome 
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [28/41] re-eval: Universal rhythmic architecture uncovers two modes of neural dynamics.
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [29/41] re-eval: Effectiveness of written exposure therapy in group therapy for veteran
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [30/41] re-eval: Risk of postoperative respiratory complications in adults treated with
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [31/41] re-eval: Aberrant protein S-nitrosylation disrupts axonal development and metab
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [32/41] re-eval: EMF2 deficiency disrupts epigenetic and chromatin organization landsca
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [33/41] re-eval: Allele-specific antisense oligonucleotide treatment rescues 
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [34/41] re-eval: CBFB mutations predict endocrine therapy benefit in estrogen receptor-
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [35/41] re-eval: Body mass index and epilepsy risk: Evidence from cross-sectional and t
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [36/41] re-eval: Prolonged Undiagnosed Prodromal Symptoms.
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [37/41] re-eval: Creating resistance to the whitefly 
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [38/41] re-eval: Pulmonary exacerbations in cystic fibrosis after fatherhood with and w
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [39/41] re-eval: A novel high-resolution test battery for language mapping in awake cra
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [40/41] re-eval: Prediction of clinical outcomes of advanced cutaneous squamous cell ca
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  [41/41] re-eval: Mathematical anxiety is associated with general rather than specific w
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-      still no Gemma result — leaving as-is
-  Re-evaluated 17/41 papers onto Gemma.
+      re-scored 7 via gemma-4-31b-it (was 8 via (none))
+  [7/24] re-eval: Enhancing Physiological Complexity Through Mindfulness: A Wearable-Bas
+      re-scored 16 via gemma-4-26b-a4b-it (was 26 via (none))
+  [8/24] re-eval: Meaningful outcomes in food allergy immunotherapy: Measuring what coun
+      re-scored 11 via gemma-4-26b-a4b-it (was 17 via (none))
+  [9/24] re-eval: Reshaping the Postbariatric Breast: A Single-center Experience With th
+      re-scored 21 via gemma-4-26b-a4b-it (was 18 via (none))
+  [10/24] re-eval: Task Performance and Queen Presence Influence the Brain Transcriptome 
+      re-scored 11 via gemma-4-26b-a4b-it (was 8 via (none))
+  [11/24] re-eval: Universal rhythmic architecture uncovers two modes of neural dynamics.
+      re-scored 28 via gemma-4-26b-a4b-it (was 19 via (none))
+  [12/24] re-eval: Effectiveness of written exposure therapy in group therapy for veteran
+      re-scored 19 via gemma-4-26b-a4b-it (was 22 via (none))
+  [13/24] re-eval: Risk of postoperative respiratory complications in adults treated with
+      re-scored 17 via gemma-4-26b-a4b-it (was 25 via (none))
+  [14/24] re-eval: Aberrant protein S-nitrosylation disrupts axonal development and metab
+      re-scored 24 via gemma-4-26b-a4b-it (was 22 via (none))
+  [15/24] re-eval: EMF2 deficiency disrupts epigenetic and chromatin organization landsca
+      re-scored 17 via gemma-4-26b-a4b-it (was 13 via (none))
+  [16/24] re-eval: Allele-specific antisense oligonucleotide treatment rescues 
+      re-scored 34 via gemma-4-26b-a4b-it (was 37 via (none))
+  [17/24] re-eval: CBFB mutations predict endocrine therapy benefit in estrogen receptor-
+      re-scored 35 via gemma-4-26b-a4b-it (was 27 via (none))
+  [18/24] re-eval: Body mass index and epilepsy risk: Evidence from cross-sectional and t
+      re-scored 10 via gemma-4-26b-a4b-it (was 10 via (none))
+  [19/24] re-eval: Prolonged Undiagnosed Prodromal Symptoms.
+      re-scored 6 via gemma-4-26b-a4b-it (was 15 via (none))
+  [20/24] re-eval: Creating resistance to the whitefly 
+      re-scored 36 via gemma-4-26b-a4b-it (was 28 via (none))
+  [21/24] re-eval: Pulmonary exacerbations in cystic fibrosis after fatherhood with and w
+      re-scored 9 via gemma-4-26b-a4b-it (was 16 via (none))
+  [22/24] re-eval: A novel high-resolution test battery for language mapping in awake cra
+      re-scored 23 via gemma-4-26b-a4b-it (was 20 via (none))
+  [23/24] re-eval: Prediction of clinical outcomes of advanced cutaneous squamous cell ca
+      re-scored 32 via gemma-4-26b-a4b-it (was 31 via (none))
+  [24/24] re-eval: Mathematical anxiety is associated with general rather than specific w
+      re-scored 11 via gemma-4-26b-a4b-it (was 9 via (none))
+  Re-evaluated 24/24 papers onto Gemma.
 Sheet updated: {"status":"ok","rows":343}
 Generated papers_reader.html and papers_data.json with 342 papers and 45 researcher profiles.
 Re-evaluation complete.
