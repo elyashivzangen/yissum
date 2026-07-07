@@ -9929,19 +9929,19 @@
     "pi_full_name": "Yaron Ilan",
     "pi_email": "ilan@hadassah.org.il.",
     "pi_affiliation": "Department of Medicine, Hadassah Medical Center, Faculty of Medicine, Hebrew University, Jerusalem 9112001, Israel.",
-    "avg_score": 21.1,
-    "paper_count": 27,
-    "description": "The researcher focuses on the 'Constrained Disorder Principle' (CDP), a framework suggesting that biological systems require a balance of controlled randomness and variability to function optimally. They integrate this principle into a second-generation AI platform designed to analyze biological noise and variability to personalize medical treatments and optimize health interventions.",
-    "applicability": "Their work has high translational potential for precision medicine, specifically in developing AI-driven diagnostic tools and personalized dosing platforms for GLP-1 agonists, medical cannabis, and Parkinson's disease. Near-term opportunities include licensing the CDP-based AI software to pharmaceutical companies or health-tech providers for patient stratification and treatment optimization.",
+    "avg_score": 20.6,
+    "paper_count": 32,
+    "description": "This researcher specializes in the 'Constrained Disorder Principle' (CDP), a theoretical framework suggesting that biological systems require controlled, non-random variability to maintain optimal function and adaptability. They translate this theory into 'second-generation' artificial intelligence models that analyze complex biological noise to personalize medical interventions. Their work bridges quantum biology, systems medicine, and AI-driven predictive modeling to optimize treatment outcomes in chronic diseases.",
+    "applicability": "The work has high translational potential, particularly in digital health and personalized medicine platforms, with tangible applications such as AI-driven dosing optimization for diabetes, chronic pain management, and neurodegenerative disease monitoring. Given the existing real-world data pilots, such as the Altus Care cannabis platform, these technologies are nearing commercial readiness and are highly suitable for strategic partnerships with pharmaceutical firms, digital therapeutics companies, or medical device developers.",
     "fields": [
       "Software/AI",
       "Clinical",
+      "Drug Discovery",
       "Diagnostics",
       "Neuroscience",
-      "Drug Discovery",
       "Immunology",
-      "Quantum",
       "Medical Device",
+      "Quantum",
       "Synthetic Biology",
       "Other",
       "Genomics",
@@ -11098,6 +11098,222 @@
         "prev_eval_model": "",
         "pi_affiliation": "Department of Medicine, the Hebrew University-Hadassah Medical Center, Jerusalem, Israel.",
         "pi_email": ""
+      },
+      {
+        "id": "pubmed_37736974",
+        "title": "The Constrained Disorder Principle Accounts for the Variability That Characterizes Breathing: A Method for Treating Chronic Respiratory Diseases and Improving Mechanical Ventilation.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37736974/",
+        "journal": "Advances in respiratory medicine",
+        "score": 18,
+        "summary": "The paper proposes the Constrained Disorder Principle to explain why breathing and cellular respiration exhibit inherent randomness and variability. It suggests that leveraging this principle through AI can optimize mechanical ventilation and treat chronic respiratory diseases.",
+        "opportunity": "Development of AI-driven closed-loop control systems for ventilators and respiratory therapies that adapt to a patient's natural biological variability.",
+        "abstract": "Variability characterizes breathing, cellular respiration, and the underlying quantum effects. Variability serves as a mechanism for coping with changing environments; however, this hypothesis does not explain why many of the variable phenomena of respiration manifest randomness. According to the constrained disorder principle (CDP), living organisms are defined by their inherent disorder bounded by variable boundaries. The present paper describes the mechanisms of breathing and cellular respiration, focusing on their inherent variability. It defines how the CDP accounts for the variability and randomness in breathing and respiration. It also provides a scheme for the potential role of respiration variability in the energy balance in biological systems. The paper describes the option of using CDP-based artificial intelligence platforms to augment the respiratory process's efficiency, correct malfunctions, and treat disorders associated with the respiratory system.",
+        "fields": [
+          "Medical Device",
+          "Software/AI",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "The paper proposes a theoretical framework (CDP) to explain biological variability, but it lacks the specific, actionable technical disclosure or novel mechanism required to differentiate it from existing stochastic modeling and physiological control theories. While the application of AI to respiration is clinically relevant, the core novelty appears to be a conceptual reinterpretation of randomness rather than a groundbreaking technological or biological discovery."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "The paper presents a theoretical biological framework rather than a specific, validated medical device or software architecture, making the path to a tangible product highly speculative. While it suggests an AI platform for respiratory management, the lack of described proprietary algorithms or clinical data makes it difficult to assess direct commercial viability."
+          },
+          "market_size": {
+            "score": 7,
+            "reason": "The paper targets the massive global market for chronic respiratory diseases and mechanical ventilation, where any incremental improvement in treatment efficiency holds significant clinical and commercial value. However, the score is capped at 7 because the 'Constrained Disorder Principle' is a highly theoretical framework that currently lacks the concrete validation and clinical integration required to guarantee a clear path to capturing this large addressable market."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "The paper presents a theoretical framework and conceptual hypothesis rather than an experimental validation, prototype, or clinical data. While it proposes an AI-based application, it remains at the fundamental research stage with no evidence of a tangible technology or clinical implementation."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "The paper describes a theoretical framework ('constrained disorder principle') that functions as a high-level conceptual model rather than a specific, reduced-to-practice technological invention. The abstract lacks the necessary technical specificity to establish clear patentability, as it proposes a general AI-based approach without defining unique, non-obvious algorithms or novel hardware components."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Faculty of Medicine, Hebrew University, Jerusalem P.O. Box 1200, Israel.; Department of Medicine, Hadassah Medical Center, Jerusalem P.O. Box 1200, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_37623270",
+        "title": "The Constrained-Disorder Principle Assists in Overcoming Significant Challenges in Digital Health: Moving from \"Nice to Have\" to Mandatory Systems.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37623270/",
+        "journal": "Clinics and practice",
+        "score": 19,
+        "summary": "The paper introduces the 'Constrained-Disorder Principle' (CDP) as a framework to transition digital health from optional efficiency tools to essential, outcome-driven medical systems. By modeling biological systems through regulated variability, this approach aims to create a more reliable second-generation of AI that can effectively integrate into evidence-based clinical practice.",
+        "opportunity": "The CDP framework offers a proprietary methodology to develop high-utility, clinically-validated AI algorithms that can move beyond administrative support to become critical components of standard diagnostic and therapeutic protocols.",
+        "abstract": "The success of artificial intelligence depends on whether it can penetrate the boundaries of evidence-based medicine, the lack of policies, and the resistance of medical professionals to its use. The failure of digital health to meet expectations requires rethinking some of the challenges faced. We discuss some of the most significant challenges faced by patients, physicians, payers, pharmaceutical companies, and health systems in the digital world. The goal of healthcare systems is to improve outcomes. Assisting in diagnosing, collecting data, and simplifying processes is a \"nice to have\" tool, but it is not essential. Many of these systems have yet to be shown to improve outcomes. Current outcome-based expectations and economic constraints make \"nice to have,\" \"assists,\" and \"ease processes\" insufficient. Complex biological systems are defined by their inherent disorder, bounded by dynamic boundaries, as described by the constrained disorder principle (CDP). It provides a platform for correcting systems' malfunctions by regulating their degree of variability. A CDP-based second-generation artificial intelligence system provides solutions to some challenges digital health faces. Therapeutic interventions are held to improve outcomes with these systems. In addition to improving clinically meaningful endpoints, CDP-based second-generation algorithms ensure patient and physician engagement and reduce the health system's costs.",
+        "fields": [
+          "Software/AI",
+          "Clinical",
+          "Diagnostics"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "The paper relies on a conceptual framework rather than novel technical architecture, and it lacks the empirical validation or clear mechanistic roadmap required to move from high-level theory to a protectable or industry-ready platform."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "The paper describes a highly theoretical, abstract framework (the Constrained-Disorder Principle) rather than a concrete, actionable technology or platform. It lacks the technical roadmap, specific application architecture, or experimental validation required to define a viable product or licensable digital health asset."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "By positioning digital health as an essential 'mandatory' infrastructure for evidence-based medicine rather than a peripheral 'nice-to-have' utility, the paper addresses the entire global healthcare AI market, which is among the most massive and high-value addressable markets in existence."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "The paper describes a theoretical framework (Constrained-Disorder Principle) rather than a validated technology or prototype, placing it firmly at the conceptual/basic research stage. It lacks the empirical evidence, clinical validation, or engineering specifications required to demonstrate industrial or clinical readiness."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "The paper describes an abstract theoretical framework rather than a concrete technical invention, making it difficult to define specific, enforceable patent claims. The 'Constrained-Disorder Principle' functions as a conceptual paradigm or mathematical approach rather than a tangible, protectable proprietary technology."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Hadassah Medical Center, Department of Medicine, Faculty of Medicine, Hebrew University, POB 1200, Jerusalem IL91120, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_37622964",
+        "title": "Using Constrained-Disorder Principle-Based Systems to Improve the Performance of Digital Twins in Biological Systems.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37622964/",
+        "journal": "Biomimetics (Basel, Switzerland)",
+        "score": 19,
+        "summary": "This paper proposes a new framework for biological digital twins that treats inherent biological noise as a functional component rather than an error to be eliminated. By integrating the 'constrained-disorder principle,' the authors suggest that simulators can more accurately mirror living systems, which rely on variability for stability and adaptation.",
+        "opportunity": "This methodology provides a competitive edge in developing AI-driven predictive modeling platforms for personalized medicine and drug testing, where standard deterministic models often fail to capture the complex, noisy reality of human patient responses.",
+        "abstract": "Digital twins are computer programs that use real-world data to create simulations that predict the performance of processes, products, and systems. Digital twins may integrate artificial intelligence to improve their outputs. Models for dealing with uncertainties and noise are used to improve the accuracy of digital twins. Most currently used systems aim to reduce noise to improve their outputs. Nevertheless, biological systems are characterized by inherent variability, which is necessary for their proper function. The constrained-disorder principle defines living systems as having a disorder as part of their existence and proper operation while kept within dynamic boundaries. In the present paper, we review the role of noise in complex systems and its use in bioengineering. We describe the use of digital twins for medical applications and current methods for dealing with noise and uncertainties in modeling. The paper presents methods to improve the accuracy and effectiveness of digital twin systems by continuously implementing variability signatures while simultaneously reducing unwanted noise in their inputs and outputs. Accounting for the noisy internal and external environments of complex biological systems is necessary for the future design of improved, more accurate digital twins.",
+        "fields": [
+          "Software/AI",
+          "Clinical",
+          "Drug Discovery",
+          "Synthetic Biology"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "While the conceptual pivot from noise reduction to variability modeling is philosophically interesting, the paper appears to be a review rather than an original experimental or computational methodology. It lacks the technical specification or validated proof-of-concept necessary to be considered a disruptive platform technology."
+          },
+          "commercial_potential": {
+            "score": 4,
+            "reason": "The paper describes a conceptual theoretical framework rather than a concrete, validated technology, making its path to a product or licensable IP highly speculative. Without demonstrated empirical results or a defined software architecture, it remains an abstract academic proposal with low immediate commercial readiness."
+          },
+          "market_size": {
+            "score": 6,
+            "reason": "While digital twins for precision medicine represent a high-growth, multi-billion dollar market, this paper is a conceptual review focusing on a theoretical framework rather than a validated, commercially viable product. It addresses a fundamental challenge in bio-simulation, but its path to clinical or industrial adoption remains early-stage and unproven."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "This is a theoretical framework and review paper that discusses conceptual methodologies rather than providing a validated, actionable technology or experimental prototype. It remains at the early research stage, far from industrial deployment or clinical application."
+          },
+          "ip_strength": {
+            "score": 3,
+            "reason": "The paper outlines a high-level conceptual framework based on a theoretical principle ('constrained-disorder') rather than a novel, concrete technical architecture or specific algorithmic invention that would be easily patentable. Without detailed technical implementations or specific method-based claims, the IP remains too abstract and descriptive to establish significant technical defensibility."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Department of Medicine, Hadassah Medical Center, Faculty of Medicine, Hebrew University, Jerusalem P.O. Box 12000, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_36594558",
+        "title": "Using chronobiology-based second-generation artificial intelligence digital system for overcoming antimicrobial drug resistance in chronic infections.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36594558/",
+        "journal": "Annals of medicine",
+        "score": 25,
+        "summary": "This research proposes a second-generation AI system that optimizes antimicrobial dosing regimens by aligning drug administration with the patient's circadian rhythms. By introducing variability into treatment schedules, the approach aims to mitigate bacterial adaptation and prevent the development of drug resistance in chronic infections.",
+        "opportunity": "The technology offers a high-value software-as-a-medical-device (SaMD) opportunity to extend the clinical efficacy and commercial lifecycle of existing, off-patent antibiotics through precision dosing protocols.",
+        "abstract": "Antimicrobial resistance results from the widespread use of antimicrobial agents and is a significant obstacle to the effectiveness of these agents. Numerous methods are used to overcome this problem with moderate success. Besides efforts of antimicrobial stewards, several artificial intelligence (AI)-based technologies are being explored for preventing resistance development. These first-generation systems mainly focus on improving patients' adherence. Chronobiology is inherent in all biological systems. Host response to infections and pathogens activity are assumed to be affected by the circadian clock. This paper describes the problem of antimicrobial resistance and reviews some of the current AI technologies. We present the establishment of a second-generation AI chronobiology-based approach to help in preventing further resistance and possibly overcome existing resistance. An algorithm-controlled regimen that improves the long-term effectiveness of antimicrobial agents is being developed based on the implementation of variability in dosing and drug administration times. The method provides a means for ensuring a sustainable response and improved outcomes. Ongoing clinical trials determine the effectiveness of this second-generation system in chronic infections. Data from these studies are expected to shed light on a new aspect of resistance mechanisms and suggest methods for overcoming them.IMPORTANCE SECTIONThe paper presents the establishment of a second-generation AI chronobiology-based approach to help in preventing further resistance and possibly overcome existing resistance.Key messagesAntimicrobial resistance results from the widespread use of antimicrobial agents and is a significant obstacle to the effectiveness of these agents.We present the establishment of a second-generation AI chronobiology-based approach to help in preventing further resistance and possibly overcome existing resistance.",
+        "fields": [
+          "Software/AI",
+          "Clinical",
+          "Immunology"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "While integrating chronobiology with AI dosing is a conceptually interesting approach, the proposal lacks the technical depth or proprietary algorithmic framework required to distinguish it as a truly groundbreaking platform innovation compared to existing dynamic dosing models. It remains largely theoretical and descriptive rather than demonstrating a novel technical mechanism or significant clinical breakthrough."
+          },
+          "commercial_potential": {
+            "score": 6,
+            "reason": "The proposal offers a clear, platform-based digital health product (AI-driven dosing optimization) that addresses a massive, high-value clinical need. However, it lacks specificity regarding the underlying IP, proprietary algorithms, and the integration pathways into existing clinical workflows, which are essential for determining actual market viability."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "Antimicrobial resistance (AMR) is a global health crisis with an enormous addressable market, as this digital platform could potentially be applied across virtually all systemic infectious disease treatments to extend the efficacy of existing drugs. The approach is highly scalable as a software-based layer that integrates with standard clinical care, positioning it to capture significant value by preserving the utility of multi-billion dollar antimicrobial portfolios."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The paper describes a conceptual framework and a system currently under development rather than a validated product, as evidenced by the mention of 'ongoing clinical trials' without preliminary data. It remains at an early, lab-to-early-clinical stage where the feasibility of the chronobiology-based AI algorithm has yet to be proven in a regulated commercial context."
+          },
+          "ip_strength": {
+            "score": 3,
+            "reason": "The proposal centers on an algorithmic regimen for dosing timing, which faces significant hurdles regarding patentable subject matter eligibility (e.g., Alice/Mayo tests) and lacks unique proprietary hardware or novel chemical compositions. Without evidence of a transformative, non-obvious computational architecture or specific data-proprietary moat, the IP defensibility is weak and highly susceptible to being bypassed by generic dose-optimization software."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Department of Medicine, Faculty of Medicine, Hadassah Medical Center, Hebrew University, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_38628268",
+        "title": "Correlations between components of the immune system.",
+        "date": "2021",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38628268/",
+        "journal": "F1000Research",
+        "score": 9,
+        "summary": "This research explores how systemic interventions like fasting and splenectomy dynamically recalibrate immune cell surface markers and cytokine secretion profiles. The findings suggest that the immune system functions as a highly coupled network where targeted physiological triggers can induce predictable, cross-component shifts in immune activity.",
+        "opportunity": "This modular understanding of immune connectivity could enable the development of 'metabolic priming' protocols that enhance the efficacy of immunotherapies or vaccines by pre-conditioning the patient's immune state.",
+        "abstract": "No evidence of the possibility of altering a constituent of the immune system without directly affecting one of its associated components has yet been shown. A schematic model was developed in which two triggers, fasting and splenectomy, were studied for their ability to affect the expression of cell membrane epitopes and the cytokine secretion of out-of-body autogeneic and syngeneic lymphocytes. The effect of fasting and/or splenectomy on promoting correlations between immune systems was studied by determining the alterations in expressions of cell membrane epitopes and in cytokine secretion by out-of-body autogeneic and syngeneic lymphocytes. The effect of fasting as a trigger decreased expression of CD8 and CD25 and increased TNFα levels. The effect of splenectomy as a trigger was investigated in non-fasting mice by comparing splenectomized and non-splenectomized mice. An increase in the CD8 expression and in TNFα, IFNg, and IL10 secretion was noted. The effect of splenectomy as a trigger in fasting mice was determined by comparing splenectomized and non-splenectomized mice. Splenectomy significantly affected the expression of CD25 and CD4 CD25 and on secretion of TNFα, IFNg, and IL10. To determine the effect of keeping the cells in an out-of-body location on the expression of lymphocyte epitopes, tubes kept on top of the cages of the fasting mice were compared with tubes kept on top of empty cages. The results showed a significant change in the CD8 expression was noted. To determine the effect of keeping cells in an out-of-body location on cytokine secretion, tubes kept on cages were tested for cytokine levels significant decrease was noted in the secretion of TNFα and IFNg. The study showed that a mouse could affect cells at a distance and alter the expression of surface markers and cytokine secretion following two types of triggers: fasting and/or splenectomy. The data characterized a system for the induction of correlations between two's immune system components without a transfer of mediators. It suggests that an out-of-body correlation can be induced between two components of the immune system.",
+        "fields": [
+          "Immunology",
+          "Clinical",
+          "Drug Discovery"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 2,
+            "reason": "The study describes fundamental biological observations regarding immune modulation through fasting and splenectomy, which are well-established physiological phenomena rather than a novel, protectable, or platform-enabling technological innovation. The methodology and findings lack the conceptual advancement or translational edge required for high-impact deep-tech investment."
+          },
+          "commercial_potential": {
+            "score": 2,
+            "reason": "The paper describes a basic physiological observation regarding immune system correlations, but it lacks a defined therapeutic mechanism, a clear diagnostic application, or a path to a scalable product. The triggers (fasting and splenectomy) are either well-established lifestyle factors or radical surgical procedures, offering little in the way of novel, investable IP."
+          },
+          "market_size": {
+            "score": 2,
+            "reason": "The paper describes a fundamental, observational study on immune system correlations using mouse models, which lacks a clear commercial application, therapeutic target, or scalable platform value. There is no defined market or industrial problem being solved, resulting in negligible addressable demand."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "This is a basic research study conducted on murine models investigating physiological correlations rather than a developed technology, therapeutic, or diagnostic platform. It lacks the translational validation, IP framework, or scalability required to move toward clinical or industrial application."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "The paper describes a biological observation of physiological correlations rather than a novel, proprietary, or patentable intervention, as both fasting and splenectomy are well-characterized biological states/procedures lacking the novelty required for IP protection. There is no unique, defensible composition of matter or proprietary method disclosed that would allow for an exclusionary competitive advantage."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Hadassah University Hospital, Jerusalem, Jerusalem, Israel, Israel.",
+        "pi_email": ""
       }
     ]
   },
@@ -11301,18 +11517,19 @@
     "pi_full_name": "Mony Shuvy",
     "pi_email": "monysh@gmail.com.",
     "pi_affiliation": "Jesselson Integrated Heart Center, Shaare Zedek Medical Center and Faculty of Medicine, Hebrew University, Jerusalem, Israel. Electronic address: monysh@gmail.com.",
-    "avg_score": 17.4,
-    "paper_count": 25,
-    "description": "This researcher specializes in interventional cardiology, with a primary focus on Transcatheter Edge-to-Edge Repair (TEER) for mitral and tricuspid valve regurgitation. Their work combines clinical case studies, mechanistic analysis of procedural complications, and the optimization of emergency cardiovascular care for high-risk and elderly populations.",
-    "applicability": "The work has high translational value for medical device manufacturers (e.g., Abbott, Edwards Lifesciences) to refine device design and safety protocols to prevent leaflet tears and lead entrapment. Additionally, their development of mobile intervention teams suggests a model for specialized healthcare delivery services and acute care protocols that could be scaled via partnerships with hospital networks in the near term.",
+    "avg_score": 18.5,
+    "paper_count": 33,
+    "description": "This researcher specializes in interventional cardiology with a primary focus on structural heart disease, specifically the refinement and safety optimization of transcatheter mitral and tricuspid valve repair (TEER) procedures. Their work combines clinical case analysis with mechanistic studies to identify procedural risks, improve patient selection criteria, and optimize outcomes for high-risk and elderly populations. By evaluating hemodynamic markers and novel organizational models like mobile cardiac teams, they aim to refine the standard of care for complex valvular and coronary interventions.",
+    "applicability": "The research has high translational potential, offering immediate value for the development of improved transcatheter delivery systems, safety-enhancing accessories to prevent lead entrapment, and diagnostic AI tools based on hemodynamic flow markers. Industry partnerships with medtech companies focused on structural heart interventions are highly feasible, as the findings directly inform clinical guidelines and product iterations for next-generation valve repair technologies.",
     "fields": [
       "Clinical",
       "Medical Device",
       "Imaging",
-      "Diagnostics",
       "Software/AI",
+      "Diagnostics",
       "Cardiovascular",
       "Drug Discovery",
+      "Materials",
       "Immunology"
     ],
     "branches": [
@@ -12329,6 +12546,346 @@
         "prev_score": "",
         "prev_eval_model": "",
         "pi_affiliation": "Jesselson Integrated Heart Center, Shaare Zedek Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_38377679",
+        "title": "Immature Platelet Fraction and Clinical Outcomes in Patients Undergoing Transcatheter Aortic Valve Implantation.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38377679/",
+        "journal": "Clinical and applied thrombosis/hemostasis : official journal of the International Academy of Clinical and Applied Thrombosis/Hemostasis",
+        "score": 16,
+        "summary": "This study evaluates whether the Immature Platelet Fraction (IPF) can serve as a predictive biomarker for adverse clinical outcomes in elderly patients undergoing TAVI procedures. The findings explore the relationship between post-procedural platelet dynamics and 12-month mortality or rehospitalization rates to improve patient risk stratification.",
+        "opportunity": "There is a commercial opportunity to develop predictive diagnostic software or integration modules for standard hematology analyzers that automatically flag high-risk TAVI candidates based on real-time IPF monitoring.",
+        "abstract": "Immature platelets or reticulated platelets are newly released thrombocytes. They can be identified by their large size and high RNA cytoplasm concentration. Immature platelet fraction (IPF) represents the percentage of immature circulative platelets relative to the total number of platelets. The role of IPF in patients undergoing transcatheter aortic valve implantation (TAVI) is unknown. The aim of the current trial was to assess the levels of IPF in patients undergoing TAVI and correlation with clinical outcomes. Immature platelet fraction levels were measured 3 times in all patients (preprocedure, 1-2 days post-procedure and 1-month post-procedure). Immature platelet fraction measurement was carried out using an autoanalyzer (Sysmex XE-2100). Patients were followed for 12 months. Primary outcomes were defined as complications during hospitalizations, rehospitalization, and mortality. Fifty-one patients were included in the study. Mean age was 79.8 (±9.6), and 28 (55%) were women. Twenty-one patients (41%) had complications: Of them, 6 of 21 (29%) occurred during hospitalizations (2-vascular complications; 2-sepsis, 2-implantation of a pacemaker), 9 of 21 (43%) patients were rehospitalized after the index admission, and 6 patients died during the follow-up period. Multivariate Cox regression analysis found that IPF < 7% in at least one of the 3 tests was associated with worse outcomes (hazard ratio 3.42; 95% CI 1.11-10.5,  Immature platelet fraction >7% in patients undergoing TAVI is associated with worse outcomes. Further studies are needed to better understand this phenomenon.",
+        "fields": [
+          "Diagnostics",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 2,
+            "reason": "This study is a retrospective observational analysis applying a well-established clinical diagnostic marker (IPF) to a new patient cohort, representing incremental clinical validation rather than scientific innovation or a novel technological platform."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "This study is a small-scale, retrospective clinical observation using existing, standardized hematology analyzers rather than a novel, protectable diagnostic technology. It identifies a biomarker correlation but lacks a clear pathway to a proprietary product, service, or scalable clinical innovation."
+          },
+          "market_size": {
+            "score": 3,
+            "reason": "While TAVI is a high-growth procedure, this study targets a niche prognostic biomarker within a narrow patient subset, lacking evidence of a platform-level impact that could capture significant market value or drive broad diagnostic adoption."
+          },
+          "trl": {
+            "score": 7,
+            "reason": "The study utilizes an established, commercially available diagnostic platform (Sysmex XE-2100) to measure a biomarker in a clinical setting, demonstrating high translational proximity. While it represents an observational clinical trial rather than a new technology development, the methodology is directly applicable to existing hospital workflows."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "The study uses standard, off-the-shelf diagnostic equipment (Sysmex XE-2100) to measure a known biomarker, representing a clinical observation rather than a novel, patentable technology or proprietary method. There is no underlying intellectual property, composition of matter, or unique process that could be defended or commercialized."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Jesselson Integrated Heart Center, Shaare Zedek Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_38303542",
+        "title": "Transcatheter edge-to-edge repair in papillary muscle injury complicating acute myocardial infarction.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38303542/",
+        "journal": "ESC heart failure",
+        "score": 26,
+        "summary": "This study demonstrates that transcatheter edge-to-edge repair (TEER) is a viable life-saving salvage intervention for patients suffering from acute mitral valve regurgitation due to papillary muscle rupture following a heart attack. The findings indicate high procedural success rates for this high-risk patient population, offering a potential alternative to high-mortality open-heart surgery in cardiogenic shock cases.",
+        "opportunity": "The validation of TEER for acute post-MI mechanical complications creates a clinical expansion opportunity for manufacturers of mitral valve repair devices to seek expanded indications and specialized training programs for emergency interventional cardiology teams.",
+        "abstract": "Acute mitral regurgitation (MR) in the setting of myocardial infarction (MI) may be the result of papillary muscle rupture (PMR). This condition is associated with high morbidity and mortality. We aim to evaluate the feasibility of transcatheter edge-to-edge mitral valve repair (TEER) in this acute setting. We analysed data from the International Registry of MitraClip in Acute Mitral Regurgitation following acute Myocardial Infarction (IREMMI) of 30 centres in Europe, North America, and the middle east. We included patients with post-MI PMR treated with TEER as a salvage procedure, and we evaluated immediate and 30-day outcomes. Twenty-three patients were included in this analysis (9 patients suffered complete papillary muscle rupture, 9 partial and 5 chordal rupture). The patients' mean age was 68 ± 14 years. Patients were at high surgical risk with median EuroSCORE II 27% (IQR 16, 28) and 20 out of 23 (87% were in cardiogenic shock). All patients were treated with vasopressors, and 17 out of 23 patients required mechanical support. TEER procedure was performed on the median 6 days after the index MI date IQR (3, 11). Procedural success was achieved in 87% of patients. The grade of MR was significantly decreased after the procedure. MR reduction to 0 or 1 + was achieved in 13 patients (57%), to 2 + in 7 patients (30%), P < 0.01. V-Wave was reduced from 49 ± 8 mmHg to 26 ± 10 mmHg post-procedure, P < 0.01. Sixteen out of 23 patients (70%) were discharged from hospital and 5 of them required reintervention with surgical mitral valve replacement. No additional death at 1 year was documented. TEER is a feasible therapy in critically ill patients with PMR due to a recent MI. TEER may have a role as salvage treatment or bridge to surgery in this population.",
+        "fields": [
+          "Medical Device",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "While this study provides valuable clinical data on a high-risk application of an existing technology, it represents an incremental procedural adaptation rather than a foundational scientific or technological innovation. The research reports on the off-label application of an established medical device (MitraClip) rather than creating new intellectual property or a novel therapeutic platform."
+          },
+          "commercial_potential": {
+            "score": 9,
+            "reason": "This study validates an existing, commercially available medical device (MitraClip) for a high-acuity, life-saving clinical indication, providing strong evidence for an 'off-label' or expanded-label market adoption. The clear procedural success in a high-mortality population demonstrates immediate clinical utility and provides a direct pathway for expanded commercial uptake by hospital systems and device manufacturers."
+          },
+          "market_size": {
+            "score": 3,
+            "reason": "While papillary muscle rupture is a high-acuity, life-threatening condition, it is an extremely rare clinical event, representing a very small niche patient population rather than a broad, scalable market. The addressable demand is limited to highly specialized tertiary care centers performing salvage procedures on a miniscule subset of acute myocardial infarction patients."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "The technology (TEER) is already commercially available and CE-marked/FDA-approved for mitral regurgitation, and this study represents an advanced clinical application in an acute, real-world high-risk patient population."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This paper is a clinical retrospective analysis of an existing, off-label procedure using established medical devices; it contains no new intellectual property, novel compositions of matter, or proprietary technical methods."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Jesselson Integrated Heart Centre, Shaare Zedek Medical Center / The Eisenberg R&D Authority, Hebrew University, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_38211677",
+        "title": "Mitral valve gradient changes associate with outcomes of patients undergoing transcatheter edge-to-edge repair.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38211677/",
+        "journal": "International journal of cardiology",
+        "score": 24,
+        "summary": "This study analyzes how changes in mitral valve pressure gradients following transcatheter edge-to-edge repair (TEER) impact patient outcomes such as mortality and hospitalizations. The researchers found that while post-procedural gradients often increase, absolute thresholds alone may not be the sole predictor of one-year clinical success.",
+        "opportunity": "The findings suggest a need for more precise intraoperative hemodynamics monitoring tools or predictive software to optimize TEER procedural outcomes and patient selection.",
+        "abstract": "Transcatheter edge-to-edge repair (TEER) is typically used to treat mitral regurgitation (MR) in patients with high surgical risk. Increased post-procedural mitral valve gradient (MVG) may impact mortality and hospitalizations. We aim to evaluate and compare the absolute postprocedural MVG and the change in the MVG effect on outcomes for patients undergoing TEER therapy. Patients who underwent TEER for severe MR were divided into two groups, initially by postprocedural absolute MVG, TTE-based at discharge, and then by the difference between preprocedural and postprocedural MVG. Primary endpoints included all-cause mortality and heart failure hospitalization (HFH) during one year after the procedure. The study included 100 patients. The mean MVG increased from 3.39 mmHg immediately after the procedure to 4.83 mmHg the following day, an increase of 1.44 mmHg (p < 0.001). First stratification was by MVG on the day following the procedure - MVG ≤5 mmHg (n = 70) and MVG >5 mmHg (n = 30). There was no significant difference in rates of survival (88.6%, 93.3%, p = 0.716) or HFH (18.6%, 33.3%, p = 0.178). Second stratification was by the difference in preprocedural and postprocedural MVG- delta MVG <3 mmHg (n = 55) and delta MVG ≥3 mmHg (n = 45). While survival rates did not significantly differ (87.3% vs. 93.3%, p = 0.503), delta MVG ≥3 mmHg correlated with higher HFH rates (12.7% vs. 35.6%, p = 0.014). The MVG of patients undergoing TEER usually increases on the day after the procedure compared to the immediate post-procedure MVG. Higher delta MVG is associated with higher HFH rate.",
+        "fields": [
+          "Medical Device",
+          "Clinical",
+          "Imaging"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 2,
+            "reason": "This study is a modest retrospective clinical observation that confirms known hemodynamic parameters rather than introducing a novel therapeutic mechanism, device innovation, or groundbreaking methodology. It serves as an incremental clinical audit that provides limited utility for strategic investment or transformative medical progress."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "This is a retrospective clinical observational study that provides incremental prognostic insight rather than a novel product, device, or licensable IP. It serves as supportive clinical data for existing TEER platforms rather than creating a new commercial opportunity."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The study addresses the transcatheter edge-to-edge repair (TEER) market, a multi-billion dollar segment of the structural heart industry that is rapidly expanding as a standard of care for high-risk mitral regurgitation patients. Improving patient outcomes and prognostic precision in this large, well-funded therapeutic space represents a high-value addressable market for diagnostic and procedural optimization technologies."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "The technology (TEER) is an already established, FDA-approved commercial procedure, and this study represents a clinical validation of post-procedural outcome metrics within an existing standard-of-care workflow."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This is a clinical observational study evaluating physiological outcomes of an existing procedure and lacks any novel composition of matter, device design, or proprietary methodology that could be protected by intellectual property. The findings constitute medical knowledge rather than patentable deep-tech innovation."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Jesselson Integrated Heart Center, Shaare Zedek Medical Center and Faculty of Medicine, Hebrew University, Jerusalem, Israel. Electronic address: monysh@szmc.org.il.",
+        "pi_email": "monysh@szmc.org.il."
+      },
+      {
+        "id": "pubmed_38110174",
+        "title": "Mitral Valve Interventions for Hypertrophic Obstructive Cardiomyopathy.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38110174/",
+        "journal": "The Canadian journal of cardiology",
+        "score": 28,
+        "summary": "This review analyzes the role of the mitral valve in hypertrophic obstructive cardiomyopathy and the limitations of current pharmacological and surgical treatments. It highlights the growing importance of transcatheter procedures as a minimally invasive alternative for patients who do not respond to traditional therapy.",
+        "opportunity": "There is a significant commercial opportunity for the development of next-generation transcatheter repair devices specifically engineered to address the unique anatomical complexities of hypertrophic cardiomyopathy patients.",
+        "abstract": "The mitral valve (MV) plays an important role in the pathophysiology of hypertrophic obstructive cardiomyopathy (HOCM). Dynamic left ventricular outflow tract (LVOT) obstruction, caused by systolic anterior motion (SAM), is a common occurrence in most patients with hypertrophic cardiomyopathy and is directly associated with the MV apparatus. First line therapy for HOCM patients is pharmacological, and surgical intervention is often indicated for patients who do not respond to medical therapy. Emerging research on mitral disease in HOCM, specifically mitral regurgitation (MR), demonstrates that these patients frequently do not respond to standard therapeutic options, and can benefit from MV interventions. In this review, we describe the involvement of the MV in the pathogenesis of HOCM, discuss medical therapy, and explore available mitral procedures. Surgical myectomy, often combined with various modifications to the MV apparatus, is frequently necessary to achieve a durable resolution of LVOT obstruction and SAM-related MR. Alcohol septal ablation, an alternative to surgical myectomy, will be briefly mentioned. We also emphasize the role of transcatheter edge-to-edge repair (TEER) as a promising and novel therapeutic option for HOCM patients. Over time, TEER has established itself as an effective and safe procedure, demonstrating success across a spectrum of anatomical variations. The leaflet modification and movement restriction achieved through TEER help reduce SAM and, consequently, have the potential to alleviate LVOT obstruction and SAM-related MR. Furthermore, we propose a treatment algorithm for cases where TEER is a potential course of action for patients who are at high risk for other interventions.",
+        "fields": [
+          "Medical Device",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 2,
+            "reason": "This paper is a review article summarizing established pathophysiology and existing therapeutic standards rather than presenting original clinical data or novel technological breakthroughs. It synthesizes known surgical and transcatheter approaches to HOCM rather than introducing a new platform or groundbreaking medical innovation."
+          },
+          "commercial_potential": {
+            "score": 9,
+            "reason": "The paper focuses on well-defined clinical pathways for a high-acuity condition, leveraging existing, high-value transcatheter technologies (TEER) that already possess established regulatory and reimbursement frameworks. This addresses a clear, unmet clinical need with immediate potential for medical device innovation and commercial scalability."
+          },
+          "market_size": {
+            "score": 6,
+            "reason": "While HOCM is a serious condition, it is relatively rare, limiting the total addressable market size compared to broader cardiovascular indications like mitral regurgitation in degenerative disease. However, the move toward transcatheter interventions (TEER) significantly increases the patient population eligible for treatment by capturing those who are too high-risk for invasive surgical myectomy."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "The paper discusses established clinical procedures and transcatheter interventions (TEER) that are already in routine clinical use or represent mature, standardized medical practices for managing HOCM. The technologies described are well beyond the experimental phase and are actively utilized in modern cardiology practice."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "This paper is a clinical review summarizing existing surgical and interventional procedures rather than presenting novel, proprietary technology. As it describes well-established medical practices and known procedural techniques, there is no underlying innovation or intellectual property to evaluate."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Jesselson Integrated Heart Centre, Shaare Zedek Medical Center and Faculty of Medicine, Hebrew University, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_38042340",
+        "title": "Transcatheter Edge to Edge Mitral Valve Repair for Mitral Regurgitation in Hypertrophic Cardiomyopathy: A Case Series.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38042340/",
+        "journal": "The Canadian journal of cardiology",
+        "score": 20,
+        "summary": "This case series explores the application of minimally invasive transcatheter edge-to-edge repair (TEER) technology to treat patients suffering from mitral regurgitation secondary to hypertrophic cardiomyopathy. It highlights a potential procedural alternative for high-risk patients who are traditionally difficult to manage with surgery alone.",
+        "opportunity": "The findings support the expansion of label indications for existing transcatheter mitral valve devices, creating a new clinical niche for medical device manufacturers in the structural heart market.",
+        "abstract": "",
+        "fields": [
+          "Medical Device",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 3,
+            "reason": "This study is a retrospective case series describing the application of an existing, well-established clinical procedure (TEER) to a specific sub-population, which represents incremental clinical observation rather than fundamental scientific or technological innovation. It does not introduce new materials, devices, or breakthrough methodologies that would shift the current deep-tech or therapeutic landscape."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "This is a descriptive clinical case series regarding the application of existing, already-marketed devices (TEER technology) to a niche patient population, offering no new intellectual property, platform innovation, or novel product development. The commercial potential is limited to small incremental market expansion for established medical device OEMs rather than a distinct investable opportunity."
+          },
+          "market_size": {
+            "score": 3,
+            "reason": "Hypertrophic cardiomyopathy (HCM) patients requiring mitral valve repair represent a very narrow, niche sub-population within the broader structural heart disease market. While the technology is high-value, the addressable demand is restricted to a small cohort of patients who are often already managed via septal reduction therapies."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "Transcatheter Edge-to-Edge Repair (TEER) is a commercially validated, FDA-approved technology already in routine clinical use, and this study specifically addresses its application in a new patient sub-population."
+          },
+          "ip_strength": {
+            "score": 2,
+            "reason": "This paper is a retrospective clinical case series describing the use of an existing, established commercial device (likely the Abbott MitraClip) in a specific patient sub-population, which offers no novel patentable IP or technical innovation. The methodology relies on standard-of-care interventional procedures, providing no defensibility or proprietary technological advantage."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Structural Interventional Program and Cardiomyopathy Service, Jesselson Integrated Heart Center, Shaare Zedek Medical Center, Jerusalem, Israel; Hadassah Faculty of Medicine, Hebrew University, Jerusalem, Israel. Electronic address: monysh@szmc.org.il.",
+        "pi_email": "monysh@szmc.org.il."
+      },
+      {
+        "id": "pubmed_37859573",
+        "title": "Troponin level at presentation as a prognostic factor among patients presenting with non-ST-segment elevation myocardial infarction.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37859573/",
+        "journal": "Clinical cardiology",
+        "score": 24,
+        "summary": "This study demonstrates that initial high-sensitivity cardiac troponin levels at hospital admission are a strong predictor of long-term mortality in NSTEMI patients. The findings suggest that early quantitative assessment could serve as a vital risk-stratification tool to prioritize intervention for high-risk cardiac patients.",
+        "opportunity": "This data supports the development of AI-driven clinical decision support software that integrates real-time biomarker thresholding into emergency triage workflows to optimize PCI resource allocation.",
+        "abstract": "Timely reperfusion within 120 min is strongly recommended in patients presenting with non-ST-segment myocardial infarction (NSTEMI) with very high-risk features. Evidence regarding the use of high-sensitivity cardiac troponin (hs-cTn) concentration upon admission for the risk-stratification of patients presenting with NSTEMI to expedite percutaneous coronary intervention (PCI) and thus potentially improve outcomes is limited. All patients admitted to a tertiary care center ICCU between July 2019 and July 2022 were included. Hs-cTnI levels on presentaion were recorded, dividing patients into quartiles based on baseline hs-cTnI. Association between initial hs-cTnI and all-cause mortality during up to 3 years of follow-up was studied. A total of 544 NSTEMI patients with a median age of 67 were included. Hs-cTnI levels in each quartile were: (a) ≤122, (b) 123-680, (c) 681-2877, and (d) ≥2878 ng/L. There was no difference between the initial hs-cTnI level groups regarding age and comorbidities. A higher mortality rate was observed in the highest hs-cTnI quartile as compared with the lowest hs-cTnI quartile (16.2% vs. 7.35%, p = .03) with hazard ratio (HR) for mortality of 2.6 (95% confidence interval [CI]: 1.23-5.4; p = .012) in the unadjusted model, and HR of 2.06 (95% CI: 1.01-4.79; p = .047) with adjustment for age, gender, serum creatinine, and significant comorbidities. Patients with NSTEMI and higher hs-cTnI levels upon admission faced elevated mortality risk. This underscores the need for further prospective investigations into early reperfusion strategies' impact on NSTEMI patients' mortality, based on admission troponin elevation.",
+        "fields": [
+          "Diagnostics",
+          "Clinical",
+          "Software/AI"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 2,
+            "reason": "This study is a retrospective observational analysis that confirms established clinical correlations between troponin levels and mortality, offering no novel biological insight, proprietary diagnostic method, or platform-level innovation. It represents incremental clinical data validation rather than groundbreaking scientific advancement."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "This is a retrospective clinical observation study that provides incremental prognostic validation for existing diagnostic markers rather than developing a new, protectable, or novel commercial technology. It lacks a clear path to product or service innovation, as the use of high-sensitivity troponin is already standard of care in the target market."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "Cardiovascular disease remains the leading cause of global mortality, and NSTEMI represents a massive, high-acuity clinical market requiring standardized risk-stratification tools for rapid triage. A diagnostic or prognostic biomarker that directly informs PCI decision-making addresses an urgent, high-value clinical need with enormous global addressable demand."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "This study analyzes clinical data using established, already-marketed high-sensitivity troponin assays within a standard care setting (ICCU), making it highly relevant to immediate clinical practice and decision-making protocols. It effectively bridges the gap between observational clinical research and real-world medical application."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This is a retrospective clinical observational study using standard-of-care diagnostic biomarkers (hs-cTnI), which are not novel, proprietary, or patentable inventions. There is no unique technology, chemical entity, or methodology described that could provide any form of intellectual property protection or competitive defensibility."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Department of Cardiology, Jesselson Integrated Heart Center, Shaare Zedek Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_37834991",
+        "title": "Mitral Regurgitation Severity Assessment after Transcutaneous Edge-to-Edge Mitral Valve Repair: Recommended Integration versus Volumetric Assessment Guidelines.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37834991/",
+        "journal": "Journal of clinical medicine",
+        "score": 23,
+        "summary": "This clinical research evaluates two different methodologies for assessing the severity of mitral regurgitation following minimally invasive valve repair procedures. The study compares current recommended integration techniques against volumetric assessment approaches to determine which provides more accurate clinical outcomes for post-procedural monitoring.",
+        "opportunity": "The findings offer clinical validation criteria for software developers and medical imaging manufacturers seeking to automate or improve the precision of structural heart diagnostic tools used in interventional cardiology.",
+        "abstract": "",
+        "fields": [
+          "Medical Device",
+          "Imaging",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 2,
+            "reason": "This study is an evaluative comparison of existing diagnostic methodologies rather than the development of a novel technology, therapeutic approach, or proprietary diagnostic platform. It focuses on optimizing current clinical protocols, which, while useful for practice, lacks the groundbreaking scientific innovation or intellectual property potential required for a higher novelty score."
+          },
+          "commercial_potential": {
+            "score": 3,
+            "reason": "This paper is a comparative methodology analysis focused on clinical guidelines rather than a novel technology, device, or therapeutic intervention. It lacks the intellectual property or product-centric focus required for a high commercial potential rating."
+          },
+          "market_size": {
+            "score": 8,
+            "reason": "Transcutaneous edge-to-edge repair (TEER) is the gold standard for structural heart intervention in a rapidly expanding, multi-billion dollar market for mitral valve disease. Improving diagnostic precision for post-procedural outcomes is essential for the clinical adoption and market growth of these high-value medical device platforms."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "The paper addresses clinical guidelines for assessing an established, FDA-approved transcatheter procedure (TEER), meaning it operates at the stage of standard-of-care optimization and clinical practice implementation."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This paper represents a clinical study comparing existing diagnostic protocols rather than proposing novel, patentable technology, and therefore lacks any underlying IP or proprietary innovation."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Heart Institute, Hadassah University Medical Center, Jerusalem 9112001, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_37685801",
+        "title": "Safety and Outcomes of Peripherally Administered Vasopressor Infusion in Patients Admitted with Shock to an Intensive Cardiac Care Unit-A Single-Center Prospective Study.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37685801/",
+        "journal": "Journal of clinical medicine",
+        "score": 17,
+        "summary": "This study evaluates the clinical safety and efficacy of administering vasopressors through standard peripheral intravenous catheters rather than traditional central lines for patients in cardiogenic shock. The findings suggest that peripheral administration is a viable, time-saving alternative that reduces the procedural risks associated with central venous access.",
+        "opportunity": "There is a commercial opportunity to develop standardized, clinician-facing clinical decision support software or specialized peripheral catheter technologies that monitor for extravasation risk to safely facilitate this bedside practice change.",
+        "abstract": "Vasopressors are frequently utilized for blood pressure stabilization in patients with cardiogenic shock (CS), although with a questionable benefit. Obtaining central venous access is time consuming and may be associated with serious complications. Hence, we thought to evaluate whether the administration of vasopressors through a peripheral venous catheter (PVC) is a safe and effective alternative for the management of patients with CS presenting to the intensive cardiovascular care unit (ICCU).",
+        "fields": [
+          "Clinical",
+          "Medical Device",
+          "Software/AI"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 2,
+            "reason": "This study addresses an established clinical protocol (peripheral vasopressor administration) that is already widely practiced and documented in emergency and critical care literature, offering little to no conceptual or technical innovation. It functions as a routine clinical validation study rather than a groundbreaking, platform-enabling, or highly novel scientific contribution."
+          },
+          "commercial_potential": {
+            "score": 2,
+            "reason": "This study evaluates clinical safety protocols for existing drugs rather than developing a new, protectable technology, device, or therapeutic agent. It lacks intellectual property potential or a distinct commercial pathway beyond standard clinical practice guidelines."
+          },
+          "market_size": {
+            "score": 3,
+            "reason": "This study addresses a clinical practice optimization rather than a novel product or technology, resulting in a very limited, narrow total addressable market restricted to existing hospital protocols. There is no clear commercial opportunity or scalable platform potential identified within this research."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "This study evaluates an established clinical practice in a real-world prospective setting, meaning it addresses immediate implementation and clinical workflow optimization rather than requiring further laboratory or regulatory development."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This study evaluates a clinical protocol regarding the site of vasopressor administration, which constitutes a non-patentable medical practice rather than a novel, defensible technology or composition of matter."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Jesselson Integrated Heart Center, Shaare Zedek Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem 91121, Israel.",
         "pi_email": ""
       }
     ]
@@ -18364,23 +18921,21 @@
     "pi_full_name": "Itamar Willner",
     "pi_email": "jtdong2025@nankai.edu.cn",
     "pi_affiliation": "Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem 91904, Israel.",
-    "avg_score": 22.9,
-    "paper_count": 26,
-    "description": "This researcher specializes in the intersection of supramolecular chemistry, nucleic acid engineering, and nanotechnology to create responsive 'smart' materials. Their work focuses on developing dynamic, switchable systems—often triggered by light, ions, or specific ligands—to control DNA condensation, gene transcription, and catalytic activity.",
-    "applicability": "The work has high translational potential in precision medicine, specifically for stimuli-responsive drug delivery systems and programmable gene therapies for cancer. Near-term applications include the licensing of specialized nanozymes for diagnostics and the development of synthetic biological frameworks for controlled protein expression and blood-clotting modulation.",
+    "avg_score": 23.2,
+    "paper_count": 30,
+    "description": "This researcher specializes in the field of dynamic chemical and biological systems, focusing on the engineering of 'smart' responsive materials at the intersection of DNA nanotechnology and supramolecular chemistry. Their work involves creating switchable nanostructures, synthetic protocells, and functional nanozymes that can be precisely controlled via external stimuli such as light, redox potentials, or specific molecular triggers. By mimicking complex cellular processes like gene regulation and enzymatic catalysis, they are developing programmable systems capable of executing sophisticated tasks in biological environments.",
+    "applicability": "The work has strong translational potential in precision medicine, particularly through the development of stimuli-responsive drug delivery vehicles, diagnostic biosensors, and synthetic biology platforms for controlled gene therapy. While many of these programmable nanostructures and protocells are currently in the laboratory research phase, the modular nature of the DNA-based circuits and metallic catalysts offers a clear pathway for licensing to biopharmaceutical firms or diagnostic device companies, likely reaching clinical validation in the medium-to-long term.",
     "fields": [
       "Synthetic Biology",
-      "Drug Discovery",
       "Materials",
+      "Drug Discovery",
       "Diagnostics",
-      "Immunology",
       "Genomics",
-      "Clinical",
       "Medical Device",
-      "Proteomics",
+      "Clinical",
+      "Immunology",
       "Imaging",
-      "Software/AI",
-      "Biocatalysis",
+      "Proteomics",
       "Clean Energy"
     ],
     "branches": [
@@ -19495,6 +20050,178 @@
         "prev_score": "",
         "prev_eval_model": "",
         "pi_affiliation": "The Institute of Chemistry, The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem 91904, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_37646290",
+        "title": "Nucleic acid-functionalized nanozymes and their applications.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37646290/",
+        "journal": "Nanoscale",
+        "score": 30,
+        "summary": "This research explores the integration of nucleic acids with nanozymes to overcome inherent limitations in substrate specificity and catalytic efficiency. By combining aptamer binding with nanoparticle catalysis, these hybrid constructs achieve enhanced performance, enabling complex and tunable chemical reactions for various practical applications.",
+        "opportunity": "The development of programmable aptananozymes offers a modular platform for creating highly sensitive, low-cost diagnostic sensors and targeted therapeutic delivery systems.",
+        "abstract": "Nanozymes are inorganic, organic and metal-organic framework nanoparticles that reveal catalytic functions by emulating native enzyme activities. Recently, these nanozymes have attracted growing scientific interest, finding diverse analytical and medical applications. However, the catalytic activities and functions of nanozymes are limited, due to the lack of substrate binding sites that concentrate on the substrate at the catalytic site (molarity effect), introduce substrate specificity and allow functional complexity of the catalysts (cascaded, switchable and cooperative catalysis). The modification of nanozymes with functional nucleic acids provides means to overcome these limitations and engineer nucleic acid/nanozyme hybrids for diverse applications. This is exemplified with the synthesis of aptananozymes, which are supramolecular aptamer-modified nanozymes. Aptananozymes exhibit combined specific binding and catalytic properties that drive diverse chemical transformations, revealing enhanced catalytic activities, as compared to the separated nanozyme/aptamer constituents. Relationships of structure-catalytic functions in the aptananozyme constructs are demonstrated. In addition, modification of nanozymes exhibiting multimodal catalytic functions with aptamers allows the engineering of nanozyme-based bioreactors for cascaded catalysis. Also, the functionalization of reactive oxygen species (ROS)-generating nanozymes with cancer cell-recognizing aptamers yields aptananozymes for targeted chemodynamic treatment of cancer cells and cancer tumors elicited in mice. Finally, nucleic acid-modified enzyme (glucose oxidase)-loaded metal-organic framework nanoparticles yield switchable biocatalytic nanozymes that drive the ON/OFF biocatalyzed oxidation of Amplex Red, dopamine or the generation of chemiluminescence. Herein, future challenges of the topic are addressed.",
+        "fields": [
+          "Diagnostics",
+          "Materials",
+          "Synthetic Biology"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 6,
+            "reason": "While the integration of functional nucleic acids with nanozymes is a clever and useful approach to address substrate specificity, the fundamental concepts of surface functionalization and aptamer-based biosensing are well-established in the literature. This represents an evolutionary improvement in catalyst design rather than a groundbreaking, paradigm-shifting scientific discovery."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "This is a versatile, platform-enabling technology that offers a clear path toward high-sensitivity diagnostic assays and targeted therapeutic delivery; however, it remains at a relatively early stage of mechanistic validation compared to established enzymatic or antibody-based industrial platforms."
+          },
+          "market_size": {
+            "score": 8,
+            "reason": "This technology represents a highly versatile platform for diagnostics and therapeutics, potentially disrupting multi-billion dollar markets in biosensing, medical imaging, and personalized medicine by overcoming the inherent limitations of native enzymes. Its broad applicability across high-value clinical and industrial sectors justifies a high score for addressable demand."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "This paper focuses on the fundamental engineering and structural characterization of a new class of hybrid materials, placing it firmly in the early proof-of-concept/lab-bench stage. While the platform has potential, it lacks the validated stability, scalability, and preclinical safety data required for commercial or clinical application."
+          },
+          "ip_strength": {
+            "score": 6,
+            "reason": "While the aptananozyme platform offers clear modularity and potential for engineered specificity, the field is crowded with diverse functionalization strategies, making broad foundational IP difficult to secure. Defensibility likely relies on specific conjugate structures or novel catalytic material compositions rather than the general concept of nucleic acid-functionalized nanozymes."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "The Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem 91904, Israel. itamar.willner@mail.huji.ac.il.",
+        "pi_email": "itamar.willner@mail.huji.ac.il."
+      },
+      {
+        "id": "pubmed_37549398",
+        "title": "Dynamic Fusion of Nucleic Acid Functionalized Nano-/Micro-Cell-Like Containments: From Basic Concepts to Applications.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37549398/",
+        "journal": "ACS nano",
+        "score": 23,
+        "summary": "This research explores a method of using DNA-functionalized liposomes to achieve precise, stimulus-responsive membrane fusion in synthetic cell-like systems. By mimicking natural biological processes, the technique allows for the controlled exchange of chemical cargo and the integration of complex biocatalytic reactions across synthetic membranes.",
+        "opportunity": "This platform technology enables the development of programmable, site-specific drug delivery vehicles or synthetic cellular scaffolds for advanced in-vivo enzymatic manufacturing.",
+        "abstract": "Membrane fusion processes play key roles in biological transformations, such as endocytosis/exocytosis, signal transduction, neurotransmission, or viral infections, and substantial research efforts have been directed to emulate these functions by artificial means. The recognition and dynamic reconfiguration properties of nucleic acids provide a versatile means to induce membrane fusion. Here we address recent advances in the functionalization of liposomes or membranes with structurally engineered lipidated nucleic acids guiding the fusion of cell-like containments, and the biophysical and chemical parameters controlling the fusion of the liposomes will be discussed. Intermembrane bridging by duplex or triplex nucleic acids and light-induced activation of membrane-associated nucleic acid constituents provide the means for spatiotemporal fusion of liposomes or nucleic acid modified liposome fusion with native cell membranes. The membrane fusion processes lead to exchange of loads in the fused containments and are a means to integrate functional assemblies. This is exemplified with the operation of biocatalytic cascades and dynamic DNA polymerization/nicking or transcription machineries in fused protocell systems. Membrane fusion processes of protocell assemblies are found to have important drug-delivery, therapeutic, sensing, and biocatalytic applications. The future challenges and perspectives of DNA-guided fused containments and membranes are addressed.",
+        "fields": [
+          "Synthetic Biology",
+          "Drug Discovery",
+          "Materials"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 6,
+            "reason": "While the approach utilizes elegant DNA-based modularity for membrane fusion, the field of DNA-mediated liposome docking and fusion is a well-established area of chemical biology with several prior seminal works. It represents a sophisticated refinement and systemic integration of existing concepts rather than a fundamental scientific paradigm shift."
+          },
+          "commercial_potential": {
+            "score": 6,
+            "reason": "While this research offers a highly versatile, modular platform for targeted drug delivery and synthetic biology, it remains in the early conceptual and biophysical characterization stage. Its commercial path is currently hindered by the complexities of scaling precise nucleic acid-membrane conjugates and the regulatory hurdles associated with in vivo membrane-fusion technologies."
+          },
+          "market_size": {
+            "score": 3,
+            "reason": "While the technology is platform-enabling for basic research or niche synthetic biology applications, it lacks a clearly defined commercial use case or a large, immediate addressable market compared to mature drug delivery or gene therapy platforms. The paper focuses on biophysical fundamental mechanisms rather than solving a specific high-value clinical or industrial pain point."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "This paper focuses on the fundamental biophysical principles of lipid-nucleic acid interactions and proof-of-concept membrane fusion mechanisms in simplified model systems, which remains in the early laboratory research phase. It lacks the complex stability, regulatory validation, and scalability required for clinical or industrial deployment."
+          },
+          "ip_strength": {
+            "score": 5,
+            "reason": "While the nucleic acid-mediated fusion mechanism is a highly innovative technical approach, the underlying concepts rely on well-established bioconjugation strategies and DNA-nanotechnology, which may face significant hurdles in establishing broad, non-obvious freedom to operate. The field is academically crowded, suggesting that the scope of defensible proprietary claims would likely be limited to very specific structural configurations rather than the core methodology."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "The Institute of Chemistry, The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem 91904, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_37477942",
+        "title": "Stimuli-Responsive DNA-Based Hydrogels on Surfaces for Switchable Bioelectrocatalysis and Controlled Release of Loads.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37477942/",
+        "journal": "ACS applied materials & interfaces",
+        "score": 23,
+        "summary": "Researchers have developed DNA-based hydrogels that act as intelligent, stimuli-responsive membranes capable of regulating enzyme activity and drug release based on local pH and glucose concentrations. By integrating these hydrogels onto electrode surfaces, the system achieves precise, feedback-controlled delivery of therapeutic payloads like insulin in response to real-time glucose oxidation.",
+        "opportunity": "This technology provides a foundation for the next generation of 'closed-loop' implantable medical devices that autonomously sense metabolic conditions and release precise therapeutic doses without external hardware.",
+        "abstract": "The assembly of enzyme [glucose oxidase (GOx)]-loaded stimuli-responsive DNA-based hydrogels on electrode surfaces, and the triggered control over the stiffness of the hydrogels, provides a means to switch the bioelectrocatalytic functions of the hydrogels. One system includes the assembly of GOx-loaded, pH-responsive, hydrogel matrices cross-linked by two cooperative nucleic acid motives comprising permanent duplex nucleic acids and \"caged\" i-motif pH-responsive duplexes. Bioelectrocatalyzed oxidation of glucose leads to the formation of gluconic acid that acidifies the hydrogel resulting in the separation of the i-motif constituents and lowering the hydrogel stiffness. Loading of the hydrogel matrices with insulin results in the potential-triggered, glucose concentration-controlled, switchable release of insulin from the hydrogel-modified electrodes. The switchable bioelectrocatalyzed release of insulin is demonstrated in the presence of ferrocenemethanol as a diffusional electron mediator or by applying an electrically wired integrated matrix that includes ferrocenyl-modified GOx embedded in the hydrogel. The second GOx-loaded, stimuli-responsive, DNA-based hydrogel matrix associated with the electrode includes a polyacrylamide hydrogel cooperatively cross-linked by duplex nucleic acids and \"caged\" G-quadruplex-responsive duplexes. The hydrogel matrix undergoes K",
+        "fields": [
+          "Medical Device",
+          "Materials",
+          "Synthetic Biology"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 6,
+            "reason": "While the integration of DNA-based hydrogels for switchable bioelectrocatalysis is elegant, the core mechanics rely on established stimuli-responsive nucleic acid motifs rather than a fundamentally new paradigm in materials science. It is a sophisticated incremental advancement in smart delivery systems rather than a groundbreaking shift in the field."
+          },
+          "commercial_potential": {
+            "score": 6,
+            "reason": "While the technology offers a sophisticated platform for closed-loop, glucose-responsive insulin delivery, the reliance on complex DNA-based hydrogels and exogenous mediators creates significant manufacturing, stability, and regulatory hurdles compared to existing sensor-pump systems. It demonstrates strong proof-of-concept for a 'smart' therapeutic interface, but requires substantial development to prove clinical scalability and long-term in vivo biocompatibility."
+          },
+          "market_size": {
+            "score": 4,
+            "reason": "While the technology addresses the massive diabetes management market, the reliance on complex DNA-based hydrogels and electrode-integrated bioelectrocatalysis faces significant scalability and manufacturing hurdles compared to existing insulin delivery solutions. The complexity of the material synthesis and the electrochemical interface suggests a long, high-risk pathway to clinical commercialization."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "This is a fundamental proof-of-concept study demonstrating a molecular-level mechanism in a controlled laboratory setting, which faces significant hurdles regarding long-term stability, scalability, and biocompatibility in a clinical or industrial environment."
+          },
+          "ip_strength": {
+            "score": 4,
+            "reason": "While the underlying chemistry is elegant, the reliance on DNA-based materials for clinical applications (like insulin delivery) faces significant hurdles regarding enzymatic degradation, high manufacturing costs, and long-term stability compared to synthetic polymers. The IP landscape is crowded with general DNA-nanotechnology and hydrogel patents, making it difficult to establish a broad, enforceable moat around this specific implementation."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "The Institute of Chemistry, The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem 91904, Israel.",
+        "pi_email": ""
+      },
+      {
+        "id": "pubmed_37380611",
+        "title": "Transient Transcription Machineries Modulate Dynamic Functions of G-Quadruplexes: Temporal Regulation of Biocatalytic Circuits, Gene Replication and Transcription.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37380611/",
+        "journal": "Angewandte Chemie (International ed. in English)",
+        "score": 23,
+        "summary": "This research introduces synthetic transcription machineries that use fuel-triggered DNA nanostructures to dynamically control biochemical processes like gene replication and protein activity. By engineering these G-quadruplex circuits, the researchers demonstrate the ability to precisely time and toggle complex molecular functions such as blood coagulation.",
+        "opportunity": "The technology offers a platform for developing programmable, time-gated drug delivery systems and synthetic biosensors capable of autonomous, conditional activation in therapeutic environments.",
+        "abstract": "Native G-quadruplex-regulated temporal biocatalytic circuits, gene polymerization, and transcription processes are emulated by biomimetic, synthetically engineered transcription machineries coupled to reconfigurable G-quadruplex nanostructures. These are addressed by the following example: (i) A reaction module demonstrates the fuel-triggered transcription machinery-guided transient synthesis of G-quadruplex nanostructures. (ii) A dynamically triggered and modulated transcription machinery that guides the temporal separation and reassembly of the anti-thrombin G-quadruplex aptamer/thrombin complex is introduced, and the transient thrombin-catalyzed coagulation of fibrinogen is demonstrated. (iii) A dynamically fueled transient transcription machinery for the temporal activation of G-quadruplex-topologically blocked gene polymerization circuits is introduced. (iv) Transcription circuits revealing G-quadruplex-promoted or G-quadruplex-inhibited cascaded transcription machineries are presented. Beyond advancing the rapidly developing field of dynamically modulated G-quadruplex DNA nanostructures, the systems introduce potential therapeutic applications.",
+        "fields": [
+          "Synthetic Biology",
+          "Drug Discovery",
+          "Materials"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 8,
+            "reason": "This work represents a high-level conceptual breakthrough by successfully integrating synthetic, fuel-driven transcription machineries with dynamic DNA nanostructures, creating a sophisticated, platform-ready mechanism for temporal control over biological outputs. Its ability to emulate complex, transient cellular processes via synthetic circuits provides a robust foundation for next-generation, programable therapeutic and diagnostic modalities."
+          },
+          "commercial_potential": {
+            "score": 4,
+            "reason": "While the work demonstrates sophisticated molecular engineering, it currently functions as a highly complex proof-of-concept in synthetic biology with significant hurdles in in vivo stability, delivery, and scalability for clinical or industrial application. The transition from transient, fuel-triggered DNA-based circuits to a robust, cost-effective therapeutic or diagnostic product remains speculative and lacks a clear path to regulatory or commercial viability."
+          },
+          "market_size": {
+            "score": 3,
+            "reason": "While scientifically novel, the paper describes highly specialized, foundational chemical biology tools that lack a defined clinical indication or industrial application. The technology is currently too abstract and early-stage to project a significant or addressable market size."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "This is a foundational, proof-of-concept study exploring complex biomimetic molecular systems in a controlled laboratory setting, far removed from the clinical or industrial validation required for practical application. While innovative, the research lacks the scalability, stability, and delivery mechanisms necessary to transition from a benchtop synthetic biology experiment to a real-world tool."
+          },
+          "ip_strength": {
+            "score": 6,
+            "reason": "The innovation describes a sophisticated, modular platform for dynamic DNA nanotechnology, which offers strong potential for composition-of-matter and method-of-use patents. However, the reliance on complex, fuel-triggered synthetic circuits often faces significant challenges in achieving the robust, scalable reproducibility required for high-value clinical defensibility compared to established molecular diagnostic or therapeutic modalities."
+          }
+        },
+        "eval_model": "gemini-3.1-flash-lite",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "The Institute of Chemistry, The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, 91904, Israel.",
         "pi_email": ""
       }
     ]
