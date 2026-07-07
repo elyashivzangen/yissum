@@ -1,295 +1,86 @@
 
-Chamutal Gur: 1 non-Gemma paper(s) to re-evaluate.
-  re-eval: Targeting Bladder Cancer with Inactivated Uropathogenic 
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-
-Rabea Asleh: 4 non-Gemma paper(s) to re-evaluate.
-  re-eval: Haptoglobin, hemolysis, and renal vulnerability after pulsed field abl
-  re-eval: Tailoring heart failure management in cardiac amyloidosis.
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  re-eval: Assessing Cardiac Flow Measurements Using a Noninvasive Photoplethysmo
-  re-eval: Reversibility of precapillary pulmonary hypertension and outcomes afte
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-
-Tamar Harel: 10 non-Gemma paper(s) to re-evaluate.
-  re-eval: Epidermal Nevus with Woolly Hair: A Case Report.
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  re-eval: Allele-specific antisense oligonucleotide treatment rescues 
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
-  re-eval: A Confirmatory Case of Severe Spondylocostal Dysostosis Caused by Bial
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  re-eval: Homozygous Deletion of the Epigenetic Regulator 
-  re-eval: Inherent variability limits clinical utility of reproducible Parkinson
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  re-eval: Intronic IGF1R variant causing aberrant splicing, short stature, and n
-  re-eval: Exploring the unique characteristics of genes with dual autosomal domi
-  re-eval: Long-Read Whole-Genome Sequencing Uncovers a Deletion Upstream to HOXD
-  re-eval: Transcriptome analysis of atad3-null zebrafish embryos elucidates poss
-  re-eval: Low prevalence of SCA27B in adult-onset cerebellar ataxia cohort of Je
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-
-Zohar Kerem: 1 non-Gemma paper(s) to re-evaluate.
-  re-eval: Differential Modulation of GLP-1R by Dietary Ginsenosides Points to a 
-
-Avi Priel: 2 non-Gemma paper(s) to re-evaluate.
-  re-eval: Carbamate-based cannabinoids uncover a conserved lipid-sensing pocket 
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    still no Gemma result — leaving as-is
-  re-eval: TRPM5 activation depends on a synergistic effect of calcium and PKC ph
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-
-Sharon Schlesinger: 3 non-Gemma paper(s) to re-evaluate.
-  re-eval: Growth factors-infused cellulose scaffolds support cost-efficient prol
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
-  re-eval: Cultivation of bovine lipid chunks on Aloe vera scaffolds.
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (market_size): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  re-eval: Short heat shock has a long-term effect on mesenchymal stem cells' tra
-
-Sheera Adar: 5 non-Gemma paper(s) to re-evaluate.
-  re-eval: The epigenetic landscape shapes smoking-induced mutagenesis by modulat
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (commercial_potential): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  re-eval: A Practical Site-specific Method for the Detection of Bulky DNA Damage
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
-  re-eval: Gene architecture is a determinant of the transcriptional response to 
-  re-eval: GENI: A web server to identify gene set enrichments in tumor samples.
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  re-eval: Novel insights into bulky DNA damage formation and nucleotide excision
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-
-Oren Ram: 5 non-Gemma paper(s) to re-evaluate.
-  re-eval: sc-rDSeq: Droplet-based single-cell full-length total RNA-seq method.
-  re-eval: sc-rDSeq: a robust and cost-effective full-length total RNA sequencing
-  re-eval: Three lncRNAs promote PUM protein condensation and germline differenti
-  re-eval: Distinct roles of TET-mediated cytosine oxidation in neural stem cell 
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (commercial_potential): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  re-eval: Genome-wide screening reveals essential roles for HOX genes and imprin
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-
-A Yaacov: 6 non-Gemma paper(s) to re-evaluate.
-  re-eval: APOBEC mutational signatures predict immune checkpoint inhibitor benef
-  re-eval: Real-World Outcomes of First-Line Pembrolizumab-Based Therapy in Advan
-  re-eval: CBFB mutations predict endocrine therapy benefit in estrogen receptor-
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
-  re-eval: The Impact of Minimal Residual Disease (MRD) Testing on the Decision-M
-  re-eval: The Temozolomide Mutational Signature: Mechanisms, Clinical Implicatio
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  re-eval: Cancer mutational signatures identification in clinical assays using n
-
-Oren Zimhony: 4 non-Gemma paper(s) to re-evaluate.
-  re-eval: The effect of a proprietary chlorine-stabilizing surface-coating formu
-  re-eval: Månsson et al. conclusion that Piperacillin/tazobactam(PTZ) is non inf
-  re-eval: Hyperimmune Globulins in COVID-19.
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  re-eval: A Randomized Controlled Study Assessing Convalescent Immunoglobulins v
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
-
-Liron Kogan: 6 non-Gemma paper(s) to re-evaluate.
-  re-eval: Robotic-Assisted Cytoreductive Surgery for Recurrent Endometrial Carci
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  re-eval: ASO Author Reflections: Robotic Cytoreduction at the Vascular Interfac
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
-  re-eval: Laparoscopic excision of a noncommunicating rudimentary horn containin
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  re-eval: Secondary Cytoreduction for Isolated Infra-renal Para-aortic Recurrenc
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  re-eval: A Challenging Case of IUD Retrieval From the Colon.
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
-  re-eval: Positive results bias in randomized controlled trials in gynecologic o
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
-
-Itamar Harel: 3 non-Gemma paper(s) to re-evaluate.
-  re-eval: An antagonistically pleiotropic gene regulates vertebrate growth, matu
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  re-eval: A dual role for cGAS in shaping cellular and organismal responses to g
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
-  re-eval: Scaling life as an interspecies hallmark of aging.
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
-
 Osnat Malka: 2 non-Gemma paper(s) to re-evaluate.
   re-eval: Creating resistance to the whitefly 
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   re-eval: Osmoregulation by sucrose isomerization in the phloem-feeding whitefly
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
 
 Asaf Levy: 11 non-Gemma paper(s) to re-evaluate.
   re-eval: Discovery of novel antimicrobials within microbiomes.
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Spinal Epidural Empyema Associated with Bite Wounds in an Indian Crest
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Genomic and structural analysis of major antigenic proteins' variabili
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Traumatic brain injury clinical score (TBICS) predicts survival outcom
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: The point of subjective equality as a tool for accurate and robust ana
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: A comprehensive catalogue of receptor-binding domains in extracellular
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Plasmids, prophages, and defense systems are depleted from plant micro
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Cdc48 plays a crucial role in redox homeostasis through dynamic reshap
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Author Correction: Systematic discovery of antibacterial and antifunga
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Deciphering bacterial protein functions with innovative computational 
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Widespread horizontal gene transfer between plants and bacteria.
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-
-Ofra Benny: 9 non-Gemma paper(s) to re-evaluate.
-  re-eval: A pump-free microfluidic device for integrated multi-functional testin
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Development and Characterization of a High-CBD Cannabis Extract Nanoem
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Structural Control for Tunable Hyperthermia-Induced Cellular Responses
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Immunomodulatory Effects of a High-CBD Cannabis Extract: A Comparative
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Senescent cancer-associated fibroblasts in pancreatic adenocarcinoma r
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Particle uptake in cancer cells can predict malignancy and drug resist
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Analyzing force measurements of multi-cellular clusters comprising ind
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Modular Drug-Loaded Nanocapsules with Metal Dome Layers as a Platform 
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
-  re-eval: Drug-Eluting Porous Embolic Microspheres for Trans-Arterial Delivery o
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (novelty): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Spinal Epidural Empyema Associated with Bite Wounds in an Indian Crest
+  re-eval: Genomic and structural analysis of major antigenic proteins' variabili
+  re-eval: Traumatic brain injury clinical score (TBICS) predicts survival outcom
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: The point of subjective equality as a tool for accurate and robust ana
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: A comprehensive catalogue of receptor-binding domains in extracellular
+  re-eval: Plasmids, prophages, and defense systems are depleted from plant micro
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  re-eval: Cdc48 plays a crucial role in redox homeostasis through dynamic reshap
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Author Correction: Systematic discovery of antibacterial and antifunga
+  re-eval: Deciphering bacterial protein functions with innovative computational 
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Widespread horizontal gene transfer between plants and bacteria.
+
+Ofra Benny: 8 non-Gemma paper(s) to re-evaluate.
+  re-eval: A pump-free microfluidic device for integrated multi-functional testin
+  re-eval: Development and Characterization of a High-CBD Cannabis Extract Nanoem
+  re-eval: Structural Control for Tunable Hyperthermia-Induced Cellular Responses
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (market_size): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  re-eval: Immunomodulatory Effects of a High-CBD Cannabis Extract: A Comparative
+  re-eval: Senescent cancer-associated fibroblasts in pancreatic adenocarcinoma r
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Particle uptake in cancer cells can predict malignancy and drug resist
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Analyzing force measurements of multi-cellular clusters comprising ind
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Modular Drug-Loaded Nanocapsules with Metal Dome Layers as a Platform 
 
 Dror Mevorach: 3 non-Gemma paper(s) to re-evaluate.
   re-eval: CD59 drives diet-induced obesity and glucose intolerance, insulin resi
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
   re-eval: HLA binding-groove motifs are associated with myocarditis induction af
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   re-eval: Apoptotic cells for treatment of acute respiratory distress syndrome a
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
 
 Johnathan Arnon: 6 non-Gemma paper(s) to re-evaluate.
   re-eval: Prediction of clinical outcomes of advanced cutaneous squamous cell ca
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   re-eval: Planning Target Volume and Nodal Status Predict Clinical Outcomes Afte
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   re-eval: Non-classical pulmonary exacerbation in cystic fibrosis revealing ALK-
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   re-eval: Clinical and genetic characteristics of carriers of the TP53 c.541C > 
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
-    still no Gemma result — leaving as-is
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   re-eval: Outcomes of extracranial stereotactic body radiation therapy for induc
-  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     still no Gemma result — leaving as-is
   re-eval: Clinical Characteristics, Response to Platinum-Based Chemotherapy and 
   Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
@@ -297,6 +88,82 @@ Johnathan Arnon: 6 non-Gemma paper(s) to re-evaluate.
 
 Maisa Haiek: 1 non-Gemma paper(s) to re-evaluate.
   re-eval: Breath-Based Detection of Oral Diseases Using Sensors and Machine Lear
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Tamar Harel: 10 non-Gemma paper(s) to re-evaluate.
+  re-eval: Allele-specific antisense oligonucleotide treatment rescues 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: RNA Analysis Enables Resolution and Reclassification of Reportedly Ben
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Expanding the SIAH1-Associated Phenotypic Spectrum: Insights From Loss
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Genetics of bilateral pediatric cataract in the Israeli and Palestinia
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A neurodevelopmental disorder associated with a loss-of-function misse
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Unbiased phenotype and genotype matching maximizes gene discovery and 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Complex rearrangement in TBC1D4 in an individual with diabetes due to 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Intellectual disability syndrome associated with a homozygous founder 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Bi-allelic loss-of-function variants in WBP4, encoding a spliceosome p
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Homozygous 22q11.2 distal type II microdeletion is associated with syn
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Danny Dvir: 14 non-Gemma paper(s) to re-evaluate.
+  re-eval: [Cardiology 2030].
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: First Report of Anchoring Via Trans-Leaflet Apposition Stent (ATLAS): 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Immediate vs delayed left bundle branch block after transcatheter aort
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: New-Onset RBBB After Transcatheter Aortic Valve Replacement: Incidence
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Predicting Treatment of Bioprosthetic Aortic Valve Failure in the Unit
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Simultaneous Cardioflow Optimisation to facilitate haemodynamic recove
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Evaluation of Prospective ECG-Triggered CT Scan as a Practical Alterna
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Native Leaflet Calcification: A Culprit for TAVR Degeneration?
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Transcatheter edge-to-edge repair in severe mitral regurgitation follo
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Pulmonary venous flow patterns associated with long-term mitral transc
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Transcatheter Aspiration of Tricuspid Vegetation.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Correlation between staging classification of aortic stenosis based on
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Culprit Lesion Coronary Intervention Before Complete Angiography in ST
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Immature Platelet Fraction and Clinical Outcomes in Patients Undergoin
   Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
     still no Gemma result — leaving as-is
 
@@ -320,7 +187,333 @@ Tamir Ben-Hur: 6 non-Gemma paper(s) to re-evaluate.
   Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
     still no Gemma result — leaving as-is
 
-Amir Haze: 3 non-Gemma paper(s) to re-evaluate.
+Sharon Schlesinger: 1 non-Gemma paper(s) to re-evaluate.
+  re-eval: Growth factors-infused cellulose scaffolds support cost-efficient prol
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Lianet Noda-García: 3 non-Gemma paper(s) to re-evaluate.
+  re-eval: Can flavoprotein monooxygenases functionalize long-chain n-alkanes?
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The diversity of PET degrading enzymes: A systematic review of sequenc
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Natural variation in a short region of the Acidovorax citrulli type II
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Oren Zimhony: 1 non-Gemma paper(s) to re-evaluate.
+  re-eval: A Randomized Controlled Study Assessing Convalescent Immunoglobulins v
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Avi Priel: 1 non-Gemma paper(s) to re-evaluate.
+  re-eval: Carbamate-based cannabinoids uncover a conserved lipid-sensing pocket 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Eylon Yavin: 8 non-Gemma paper(s) to re-evaluate.
+  re-eval: Gamma-FIT-PNAs as sensitive RNA probes.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: 7-Methylguanine With a Cyclopentane Backbone: A Bright Combination for
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Fmoc Solid-Phase FIT-PNA Synthesis-Manual and Automated Methodologies.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Differential Effect of Simulated Microgravity on the Cellular Uptake o
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A Facile Synthesis of Red-Shifted Bis-Quinoline (BisQ) Surrogate Base.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Detecting the 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A Biotinylated cpFIT-PNA Platform for the Facile Detection of Drug Res
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Correction: Cyclopentane FIT-PNAs: bright RNA sensors.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Mattan Hurevich: 10 non-Gemma paper(s) to re-evaluate.
+  re-eval: Methods for studying the effects of phosphorylation patterns in protei
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Expeditious synthesis of multiglycopeptides with heterogeneous glycan 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Expeditious Synthesis of Multiglycosylated Peptides for Sensing of 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Monosaccharide-Derived Enantioselectivity in SWCNT Chemoresistive VOC 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Specific phosphorylation patterns control the interplay between aggreg
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Acceptor-Adaptive Automated Glycosylation Optimization for Automated G
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Metal-Mediated Il-8 Binding to Heparan Sulfate Evaluated by Electroche
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Impedimetric Characterization of NanA Structural Domains Activity on S
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Surface-Controlled Sialoside-Based Biosensing of Viral and Bacterial N
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Unexpected Nucleophile Masking in Acyl Transfer to Sterically Crowded 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+A Yaacov: 3 non-Gemma paper(s) to re-evaluate.
+  re-eval: CBFB mutations predict endocrine therapy benefit in estrogen receptor-
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Consensus Copy-Number Alteration Signatures from Clinical Panels Enabl
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Graph convolution networks model identifies and quantifies gene and ca
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Itamar Harel: 2 non-Gemma paper(s) to re-evaluate.
+  re-eval: A dual role for cGAS in shaping cellular and organismal responses to g
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Scaling life as an interspecies hallmark of aging.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Liron Kogan: 4 non-Gemma paper(s) to re-evaluate.
+  re-eval: ASO Author Reflections: Robotic Cytoreduction at the Vascular Interfac
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A Challenging Case of IUD Retrieval From the Colon.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Positive results bias in randomized controlled trials in gynecologic o
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Repair of Vesicovaginal Fistula in 12 Steps Using the da Vinci Surgica
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Sheera Adar: 1 non-Gemma paper(s) to re-evaluate.
+  re-eval: A Practical Site-specific Method for the Detection of Bulky DNA Damage
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Batsheva Kerem: 4 non-Gemma paper(s) to re-evaluate.
+  re-eval: Intestinal organoids as a platform for functional evaluation of ASO-me
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The response of rare CFTR mutations to specific modulator combinations
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Insights into common fragile site instability: DNA replication challen
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Clinical and functional efficacy of elexacaftor/tezacaftor/ivacaftor i
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Tawfeeq Shekh-Ahmad: 10 non-Gemma paper(s) to re-evaluate.
+  re-eval: Thioredoxin-mimetic peptide attenuates epilepsy progression and neuroc
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Targeting Hsp90 with cemdomespib reduces seizure burden and alters dis
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Modified Pentylenetetrazole Model for Acute Seizure Induction in Rats.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Selective inhibition of NOX2 after status epilepticus attenuates epile
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Enantioselective comparative analysis of the anticonvulsant potency of
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Targeting NOX2 mitigates seizure susceptibility, oxidative stress, and
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Enigmatic intractable Epilepsy patients have antibodies that bind glut
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Repurposing dimethyl fumarate as an antiepileptogenic and disease-modi
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: N-oleoyl glycine and N-oleoyl alanine attenuate alcohol self-administr
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Sestrin 3 promotes oxidative stress primarily in neurons following epi
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Dean Nachman: 12 non-Gemma paper(s) to re-evaluate.
+  re-eval: Assessing iatrogenic atrial septal defect as a primary unloading strat
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A Personalized, 3D Printed Polymeric Device for the Prevention of Post
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Autoinjector-based delivery of tranexamic acid provides pharmacokineti
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Investigating Changes in Cerebral Blood Flow and Oxygenation Using Opt
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Assessing Cardiac Flow Measurements Using a Noninvasive Photoplethysmo
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Periodontitis Accelerates Progression of Heart Failure With Preserved 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Real-Time Monitoring of Personal Protective Equipment Adherence Using 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Protein kinase C epsilon activation improves early survival in an acut
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A Systematic Review of Remote Cardiac Rehabilitation Utilizing Wearabl
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Apoptotic Cell-Based Therapy for the Modification of the Inflammatory 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Continuous Monitoring of Advanced Hemodynamic Parameters during Hemodi
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Comparing body temperature measurements using the double sensor method
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Yaron Ilan: 12 non-Gemma paper(s) to re-evaluate.
+  re-eval: A feasibility open-label clinical trial utilizing second-generation ar
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The constrained disorder principle accounts for quantum effects in bio
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Biological Systems Depend on Communication Over Distances: A Review of
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Integrating the Contrasting Perspectives Between the Constrained Disor
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Establishing a system to identify correlations among immune system com
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The constrained disorder principle emphasizes the importance of variab
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Employing an Artificial Intelligence Platform to Enhance Treatment Res
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A constrained disorder principle-based second-generation artificial in
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The Constrained Disorder Principle: Beyond Biological Allostasis.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Variability in Exercise is Linked to Improved Age-related Dysfunctions
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Inter-organ correlations in inflammation regulation: a novel biologica
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The Constrained Disorder Principle Overcomes the Challenges of Methods
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Ilan Z Kafka: 4 non-Gemma paper(s) to re-evaluate.
+  re-eval: Image-Guided Robotic-Assisted Waterjet Ablation of Prostate (Aquablati
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Emphysematous pyelonephritis and infection-related calculi.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Comparative Outcomes of Indwelling Urethral Versus Suprapubic Catheter
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Vascular calcification in kidney stone formers: the impact of age and 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Mony Shuvy: 10 non-Gemma paper(s) to re-evaluate.
+  re-eval: Tricuspid Transcatheter Edge-to-Edge Repair Device Entrapment on a Rig
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Mitral Leaflet Tear After Transcatheter Edge-to-edge Repair: A Case Se
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: NSTEMI in the oldest-old: prognosis and impact of invasive management 
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Can transcatheter edge-to-edge repair change the paradigm in severe ac
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    still no Gemma result — leaving as-is
+  re-eval: Mobile Transcatheter Edge-to-Edge Repair Team for Acute Post-Myocardia
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Impact of time in therapeutic range (TTR) within the first 72 h on pro
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Acute Left Ventricular Dysfunction After Mitral Transcatheter Edge-to-
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The Association Between Significant Mitral Regurgitation and Atrial Fi
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Shifting Trends in Intensive Cardiovascular Care Unit Admission Patter
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Pulmonary venous flow patterns associated with long-term mitral transc
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Shlomo Magdassi: 8 non-Gemma paper(s) to re-evaluate.
+  re-eval: 4D printing of fully programmable sheets of digital metamaterials.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Fabrication of Soft Robotics by Additive Manufacturing: From Materials
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Untying the Knot: A Fully Recyclable, Solvent-Free, Wide-Spectral Phot
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Tunable Lotus Leaf Effect by Three-Dimensionally Printed Stretchable O
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: 3D Printing of Self-Healing Materials.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Fully Recyclable Cured Polymers for Sustainable 3D Printing.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Additive Manufacturing of Transparent Multi-Component Nanoporous Glass
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Performance upgrade of a microbial explosives' sensor strain by screen
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Amir Haze: 4 non-Gemma paper(s) to re-evaluate.
   re-eval: Recombinant Human Amelogenin Protein Enhances Healing of Osteochondral
   Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
     still no Gemma result — leaving as-is
@@ -330,13 +523,277 @@ Amir Haze: 3 non-Gemma paper(s) to re-evaluate.
   re-eval: Regeneration of injured articular cartilage using the recombinant huma
   Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
     still no Gemma result — leaving as-is
+  re-eval: Recombinant Human Amelogenin Protein Enhances Tendon-To-Bone Healing i
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
 
-Backfilled 41 missing abstract(s).
+Sharon Einav: 10 non-Gemma paper(s) to re-evaluate.
+  re-eval: Dual-energy and photon-counting computed tomography in critical care.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Long term follow-up of functional outcome and quality of life after ad
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Real World Human-LLM Interactions - Prospective blinded versus unblind
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: How large language models can help us write a systematic review.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Evaluating the o1 reasoning large language model for cognitive bias: a
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Primer on large language models: an educational overview for intensivi
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: [EMERGING THERAPIES FOR LI-FRAUMENI SYNDROME AND RHABDOMYOSARCOMA: CAN
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: [LORENZO'S OIL AND ADRENOLEUKODYSTROPHY EXAMINING AN ARTIFICIAL INTELL
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Correction: Anesthetic approach to pregnant patients with malaria: a n
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The effect of ionic redistributions on the microwave dielectric respon
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
 
-Oren Ram: missing description — regenerating summary.
+Dror Sharon: 12 non-Gemma paper(s) to re-evaluate.
+  re-eval: Using deep learning to identify inherited retinal diseases based on wi
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: RNA editing of pathogenic variants causing inherited retinal diseases 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The Genetic Landscape of Inherited Retinal Diseases in the Israeli Pop
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The potential use of anti-codon engineered tRNAs (ACE-tRNAs) to treat 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Nickel Vanadium Oxyphosphide Nanosheets with Synergistic Metal-Phosphi
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Founder Homozygous Nonsense CREB3 Variant and Variable-Onset Retinal D
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Self-Assembled Monolayer of N-Heterocyclic Carbene as a Primer in a Du
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: A Leaky Deep Intronic Splice Variant in 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Enhancing Efficiency, Stability, and Cycle Life of Lithium Metal Elect
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Genetic Analysis of 252 Index Cases with Inherited Retinal Diseases Us
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Genetic and Clinical Analyses of the 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Simultaneous Detection of Common Founder Mutations Using a Cost-Effect
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
 
-Liron Kogan: missing description — regenerating summary.
+Neta Shlezinger: 3 non-Gemma paper(s) to re-evaluate.
+  re-eval: Harnessing random peptide mixtures to combat multidrug-resistant funga
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Author Correction: Systematic discovery of antibacterial and antifunga
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The quorum-sensing peptidic inhibitor rescues host immune system eradi
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Ofer Mandelboim: 1 non-Gemma paper(s) to re-evaluate.
+  re-eval: RadD from 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Itay Lavy: 14 non-Gemma paper(s) to re-evaluate.
+  re-eval: Unilateral corneal ectasia following trigeminal schwannoma resection w
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Strain-level microbial signatures and inferred functional alterations 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Evaluating the Efficacy of a Novel Triangle Suture Technique in Sclera
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Risk of retinal artery occlusion in patients with primary open-angle g
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Effectiveness of adult zoster vaccination in preventing a first episod
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Rehabilitation Following Penetrating Ocular Trauma From Hand Grenade F
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Corneal Diseases and Corneal Transplantation: Current Updates and Pers
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Vision rehabilitation of post-Descemet membrane endothelial keratoplas
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Visual rehabilitation of a fighter pilot by utilizing a combination of
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Chronic Progressive External Ophthalmoplegia (CPEO): Rehabilitation ut
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Clinical Evaluation of Ripasudil for Corneal Edema: A Large-Scale Retr
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Fungal Keratitis following the Application of Green Tea Bag Warm Compr
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Unusual Presentation of Extensive Visually Significant Pseudoexfoliati
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Managing pseudophakic bullous keratopathy with a topical rho kinase in
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Oren Ram: 1 non-Gemma paper(s) to re-evaluate.
+  re-eval: The killifish germline regulates longevity and somatic repair in a sex
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Yehuda Tzfati: 4 non-Gemma paper(s) to re-evaluate.
+  re-eval: The house mouse maintains constant telomere length throughout life.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Separation of telomere protection from length regulation by two differ
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: The many faces of the helicase RTEL1 at telomeres and beyond.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Telomouse-a mouse model with human-length telomeres generated by a sin
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Nissim Benvenisty: 10 non-Gemma paper(s) to re-evaluate.
+  re-eval: A single-cell CRISPR screen defines a gene regulatory network governin
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Genetic screening of long non-coding RNAs in human embryonic stem cell
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Analysis of Human Uniparental Embryonic Stem Cells Reveals New Putativ
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Implications of genetic and epigenetic aberrations to the tumorigenici
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Drivers and implications of lineage-specific cancer-related mutations 
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Therapeutic strategies for fragile X syndrome and implications for oth
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Large-scale analysis of loss of chromosome Y in human pluripotent stem
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Genome-Wide Screening in Haploid Stem Cells Reveals Synthetic Lethalit
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: High prevalence of acquired cancer-related mutations in 146 human plur
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Iodinated contrast media allergy is rare in patients undergoing sialog
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Talya Wolak: 1 non-Gemma paper(s) to re-evaluate.
+  re-eval: Feasibility and safety of electrohydraulic acoustic therapy for treatm
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Dana Avrahami: 5 non-Gemma paper(s) to re-evaluate.
+  re-eval: Glucosamine links hyperglycemia to mTORC1 activation and glucose toxic
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Epigenetic adaptation of beta cells across lifespan and disease.
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Author Correction: CelFiE-ISH: a probabilistic model for multi-cell ty
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Senescence of human pancreatic beta cells enhances functional maturati
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Characterization of metabolic alterations in the lean metabolically un
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+
+Itamar Willner: 11 non-Gemma paper(s) to re-evaluate.
+  re-eval: Redox- and Photo-Responsive Fe
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Dynamic Switchable and Transient DNA Condensates Driven by Aptamer-Lig
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Allosteric ligand-aptamer complexes orchestrate supramolecular or tran
+  Gemini error (meta): all Gemini models are marked dead this run and Groq is unavailable
+    still no Gemma result — leaving as-is
+  re-eval: Synthetic dynamic transcription frameworks and their applications.
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Nucleic Acid-Modified Nanoparticles for Cancer Therapeutic Application
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Adenosine-Triggered Dynamic and Transient Aptamer-Based Networks Integ
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  re-eval: Enzyme-loaded Fe
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Molecularly Imprinted Polyaniline-Coated Cu-Zeolitic Imidazolate Frame
+  re-eval: Photomodulated Transient Catalytic Constitutional Dynamic Networks and
+  re-eval: Photochemically Triggered, Transient, and Oscillatory Transcription Ma
+  re-eval: Photochemically Triggered and Autonomous Oscillatory pH-Modulated Tran
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+
+Moran Yassour: 11 non-Gemma paper(s) to re-evaluate.
+  re-eval: Tasty&Healthy exclusive whole food diet in asymptomatic children and y
+  re-eval: Correction: Human DNA levels in feces reflect gut inflammation and ass
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Strain-level microbial signatures and inferred functional alterations 
+  re-eval: Human DNA levels in feces reflect gut inflammation and associate with 
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Reply.
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  re-eval: Lessons derived from a 3-year congenital cytomegalovirus screening pro
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Development of the preterm infant gut and gastric residuals microbiome
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Whole Food Diet Induces Remission in Children and Young Adults With Mi
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  re-eval: Nano-mupirocin as tumor-targeted antibiotic: Physicochemical, immunoto
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  re-eval: Implementation of pooled saliva tests for universal screening of cCMV 
+  re-eval: CRISPR-Cas-based identification of a sialylated human milk oligosaccha
   WARNING: deployed apps_script.js reports version=0 (need >=2). Skipping ALL Google Sheet writes this run — the old deployment ignores sheet_name and would overwrite Sheet1. researchers_data.json and the dashboard Researchers tab will still be built. To also get the Researchers sheet tab, redeploy apps_script.js (Extensions > Apps Script > paste latest source > Deploy > Manage deployments > Edit > New version) and re-run.
-Generated papers_reader.html and papers_data.json with 332 papers and 20 researcher profiles.
+Generated papers_reader.html and papers_data.json with 342 papers and 45 researcher profiles.
 
-Re-evaluated 40 paper(s) onto Gemma, backfilled 2 missing researcher description(s), backfilled 41 missing abstract(s).
+Re-evaluated 50 paper(s) onto Gemma, backfilled 0 missing researcher description(s), backfilled 0 missing abstract(s).
