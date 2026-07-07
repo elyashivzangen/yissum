@@ -691,7 +691,20 @@ def main():
     if sheet_writes_enabled:
         print(f"  OK (version >= {REQUIRED_SCRIPT_VERSION}) — Researchers sheet tab will be updated.")
 
+    print("Loading existing papers from Google Sheet...")
+    try:
+        live_papers = pp.load_from_sheet()
+        print(f"  {len(live_papers)} papers loaded.")
+    except Exception as e:
+        print(f"  Could not read sheet: {e}")
+        return
+
     if ARGS.papers_snapshot:
+        # Candidate selection + known-paper score reuse come from the
+        # snapshot (backfill mode); HTML/papers_data.json generation always
+        # uses the real live sheet — never overwrite the live dashboard with
+        # stale historical data just because a backfill run is selecting
+        # candidates from the past.
         print(f"Loading papers from snapshot {ARGS.papers_snapshot} "
               "(candidate selection + known-paper reuse only — backfill mode)...")
         try:
@@ -701,13 +714,7 @@ def main():
             print(f"  Could not read snapshot: {e}")
             return
     else:
-        print("Loading existing papers from Google Sheet...")
-        try:
-            papers = pp.load_from_sheet()
-            print(f"  {len(papers)} papers loaded.")
-        except Exception as e:
-            print(f"  Could not read sheet: {e}")
-            return
+        papers = live_papers
 
     known_papers_by_id = {p["id"]: p for p in papers}
 
@@ -742,7 +749,7 @@ def main():
                 save_researchers_to_sheet(profiles)
             except Exception as e:
                 print(f"  checkpoint sheet-save failed (will retry at next checkpoint): {e}")
-        pp.generate_html(papers, researchers=profiles)
+        pp.generate_html(live_papers, researchers=profiles)
 
     for i, candidate in enumerate(candidates):
         print(f"\n[{i+1}/{len(candidates)}] {candidate['pi']}")
