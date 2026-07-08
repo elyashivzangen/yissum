@@ -1279,6 +1279,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .score-high{{background:var(--green-bg);color:var(--green);border:1px solid rgba(52,211,153,.25)}}
   .score-mid{{background:var(--yellow-bg);color:var(--yellow);border:1px solid rgba(251,191,36,.25)}}
   .score-low{{background:var(--red-bg);color:var(--red);border:1px solid rgba(248,113,113,.25)}}
+  .score-total{{background:rgba(124,111,247,.12);color:var(--accent);border:1px solid rgba(124,111,247,.25)}}
+  .r-badges{{display:flex;flex-direction:column;gap:6px;align-items:flex-end;flex-shrink:0}}
 
   .meta-row{{display:flex;align-items:center;gap:6px;flex-wrap:wrap}}
   .meta{{font-size:.72rem;color:var(--muted)}}
@@ -1499,9 +1501,15 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       </div>
       <select class="sort-select" id="r-sort">
         <option value="avg_score">Avg Applicability ↓</option>
+        <option value="total_score">Total Score (3y) ↓</option>
         <option value="paper_count">Paper Count ↓</option>
         <option value="pi">Name A-Z</option>
       </select>
+    </div>
+    <div class="row">
+      <label>Total Score (3y)</label>
+      <input type="range" id="r-total-slider" min="0" max="750" value="0" step="10" class="slider"/>
+      <span id="r-total-val" class="slider-val">Any</span>
     </div>
   </div>
   <div class="count" id="r-count"></div>
@@ -1534,7 +1542,7 @@ const PARAM_LABELS = {{
   novelty:'Novelty', commercial_potential:'Commercial Potential',
   market_size:'Market Size', trl:'Tech Readiness', ip_strength:'IP Strength'
 }};
-function scoreClass(s){{return s>=38?'score-high':s>=28?'score-mid':'score-low';}}
+function scoreClass(s){{return s>=35?'score-high':s>=25?'score-mid':'score-low';}}
 function barColor(s){{return s>=8?'#22c55e':s>=5?'#eab308':'#ef4444';}}
 function modelBadge(m,prevScore,prevModel){{
   if(!m)return '';
@@ -1715,7 +1723,10 @@ document.getElementById('sort').addEventListener('change',e=>{{sortBy=e.target.v
 document.getElementById('search').addEventListener('input',e=>{{searchQ=e.target.value.trim();render();}});
 
 // ── Researchers tab ──
-let rSortBy='avg_score', rSearchQ='', rBranch='all';
+let rSortBy='avg_score', rSearchQ='', rBranch='all', activeRTotal=0;
+function researcherTotalScore(r){{
+  return (r.papers||[]).reduce((s,p)=>s+(p.score||0),0);
+}}
 function researcherBranches(r){{
   // Prefer stored branches; otherwise derive from aggregated field tags.
   if(r.branches&&r.branches.length)return r.branches;
@@ -1727,7 +1738,9 @@ function renderResearchers(){{
   if(hujiOnly)list=list.filter(r=>hujiFirst(r.pi_affiliation));
   if(rBranch!=='all')list=list.filter(r=>researcherBranches(r).includes(rBranch));
   if(rSearchQ){{const q=rSearchQ.toLowerCase();list=list.filter(r=>(r.pi_full_name||r.pi||'').toLowerCase().includes(q)||(r.description||'').toLowerCase().includes(q)||(r.applicability||'').toLowerCase().includes(q)||(r.fields||[]).join(' ').toLowerCase().includes(q));}}
+  if(activeRTotal>0)list=list.filter(r=>researcherTotalScore(r)>=activeRTotal);
   if(rSortBy==='pi')list.sort((a,b)=>(a.pi_full_name||a.pi||'').localeCompare(b.pi_full_name||b.pi||''));
+  else if(rSortBy==='total_score')list.sort((a,b)=>researcherTotalScore(b)-researcherTotalScore(a));
   else list.sort((a,b)=>(b[rSortBy]||0)-(a[rSortBy]||0));
   const n=list.length;
   document.getElementById('r-count').textContent=n+' researcher'+(n!==1?'s':'')+' shown';
@@ -1765,7 +1778,10 @@ function renderResearchers(){{
           <div class="r-name">👤 ${{name}}</div>
           <div class="r-meta">${{r.paper_count||0}} graded paper${{(r.paper_count||0)!==1?'s':''}}${{r.pi_email?` · <a href="mailto:${{r.pi_email}}">${{r.pi_email}}</a>`:''}}</div>
         </div>
-        <div class="score-badge ${{scoreClass(Math.round(r.avg_score||0))}}"><span class="score-num">${{(r.avg_score||0).toFixed(1)}}</span><span class="score-denom">avg /50</span></div>
+        <div class="r-badges">
+          <div class="score-badge ${{scoreClass(Math.round(r.avg_score||0))}}"><span class="score-num">${{(r.avg_score||0).toFixed(1)}}</span><span class="score-denom">avg /50</span></div>
+          <div class="score-badge score-total"><span class="score-num">${{researcherTotalScore(r)}}</span><span class="score-denom">total (3y)</span></div>
+        </div>
       </div>
       ${{r.pi_affiliation?`<div class="r-affiliation">🏛️ ${{r.pi_affiliation}}</div>`:''}}
       ${{r.description?`<div class="r-desc">${{r.description}}</div>`:''}}
@@ -1797,6 +1813,11 @@ function toggleDetails(btn){{
 }}
 document.getElementById('r-search').addEventListener('input',e=>{{rSearchQ=e.target.value.trim();renderResearchers();}});
 document.getElementById('r-sort').addEventListener('change',e=>{{rSortBy=e.target.value;renderResearchers();}});
+document.getElementById('r-total-slider').addEventListener('input',function(){{
+  activeRTotal=parseInt(this.value);
+  document.getElementById('r-total-val').textContent=activeRTotal>0?activeRTotal+'+':'Any';
+  renderResearchers();
+}});
 document.querySelectorAll('.r-branch-tab').forEach(tab=>tab.addEventListener('click',()=>{{
   document.querySelectorAll('.r-branch-tab').forEach(t=>t.classList.remove('active'));
   tab.classList.add('active');
