@@ -391,7 +391,7 @@ const PARAM_LABELS = {
   novelty:'Novelty', commercial_potential:'Commercial Potential',
   market_size:'Market Size', trl:'Tech Readiness', ip_strength:'IP Strength'
 };
-function scoreClass(s){return s>=35?'score-high':s>=28?'score-mid':'score-low';}
+function scoreClass(s){return s>=35?'score-high':s>=25?'score-mid':'score-low';}
 function barColor(s){return s>=8?'#22c55e':s>=5?'#eab308':'#ef4444';}
 function modelBadge(m,prevScore,prevModel){
   if(!m)return '';
