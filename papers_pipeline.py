@@ -1592,15 +1592,19 @@ function hujiFirst(aff){{
   // "Dept X, Hadassah Medical Center, ..., Hebrew University of Jerusalem"
   // string has no semicolon at all, so splitting on ';' alone would treat
   // the whole string as one segment and always match "hebrew university"
-  // as a substring regardless of where Hadassah appears. Instead compare
-  // the earliest position either institution is mentioned.
+  // as a substring regardless of where the other hospital appears. Instead
+  // compare the earliest position either institution is mentioned.
+  // Covers all of HUJI's clinically-affiliated hospitals (Hadassah, Shaare
+  // Zedek), not just Hadassah — a Shaare-Zedek-first listing should be
+  // hidden by "HUJI-primary only" too.
   const s=aff.toLowerCase();
-  const hadassahIdx=s.indexOf('hadassah');
-  if(hadassahIdx<0)return true; // no Hadassah mention — nothing to prefer HUJI over
+  const otherIdx=Math.min(...['hadassah','shaare zedek',"sha'are zedek",'share zedek']
+    .map(k=>{{const i=s.indexOf(k);return i<0?Infinity:i;}}));
+  if(otherIdx===Infinity)return true; // no competing-hospital mention — nothing to prefer HUJI over
   const hujiIdx=Math.min(...['hebrew university of jerusalem','hebrew university','hebrew u.']
     .map(k=>{{const i=s.indexOf(k);return i<0?Infinity:i;}}));
-  if(hujiIdx===Infinity)return false; // Hadassah mentioned, HUJI not mentioned at all
-  return hujiIdx<hadassahIdx;
+  if(hujiIdx===Infinity)return false; // other hospital mentioned, HUJI not mentioned at all
+  return hujiIdx<otherIdx;
 }}
 function branchMatches(p){{
   // Returns an object {{branch: bool}} — true if this branch has the highest field-tag match.
