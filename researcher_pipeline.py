@@ -69,6 +69,11 @@ def _parse_args():
                         "co-authored paper incorrectly pulled in by the author-name "
                         "search). Skips PubMed candidate/history fetch entirely — works "
                         "off the committed file. Safe to run repeatedly.")
+    p.add_argument("--backfill-hts", action="store_true",
+                   help="One-off: score every paper in the existing researchers_data.json "
+                        "missing an HTS (High-Throughput Screening) collaboration-fitness "
+                        "score. Skips PubMed candidate/history fetch entirely — works off "
+                        "the committed file. Safe to run repeatedly.")
     return p.parse_known_args()[0]
 
 
@@ -477,6 +482,9 @@ def _grade_history(history, known_papers_by_id):
                 "prev_eval_model": existing.get("prev_eval_model", ""),
                 "pi_affiliation":  paper.get("pi_affiliation", "") or existing.get("pi_affiliation", ""),
                 "pi_email":        paper.get("pi_email", "") or existing.get("pi_email", ""),
+                "hts_score":       existing.get("hts_score", 0),
+                "hts_reason":      existing.get("hts_reason", ""),
+                "hts_eval_model":  existing.get("hts_eval_model", ""),
             })
             continue
 
@@ -485,6 +493,9 @@ def _grade_history(history, known_papers_by_id):
         if not result:
             continue
         print(f"      score={result['score']} ({result.get('eval_model','?')})")
+        hts_result = pp.evaluate_hts_suitability(paper)
+        if hts_result:
+            print(f"      hts_score={hts_result['hts_score']}")
         graded.append({
             "id":              paper["id"],
             "title":           paper["title"],
@@ -502,6 +513,9 @@ def _grade_history(history, known_papers_by_id):
             "prev_eval_model": "",
             "pi_affiliation":  paper.get("pi_affiliation", ""),
             "pi_email":        paper.get("pi_email", ""),
+            "hts_score":       hts_result.get("hts_score", 0) if hts_result else 0,
+            "hts_reason":      hts_result.get("hts_reason", "") if hts_result else "",
+            "hts_eval_model":  hts_result.get("hts_eval_model", "") if hts_result else "",
         })
         time.sleep(0.4)
     return graded
@@ -544,6 +558,7 @@ def build_researcher_profile(candidate, known_papers_by_id):
         return None
 
     avg_score = round(sum(p["score"] for p in graded) / len(graded), 1)
+    max_hts_score = max((p.get("hts_score") or 0) for p in graded)
     summary = generate_researcher_summary(graded)
     pi_affiliation, pi_email, fields, branches = _researcher_metadata(candidate, graded)
 
@@ -553,6 +568,7 @@ def build_researcher_profile(candidate, known_papers_by_id):
         "pi_email":      pi_email,
         "pi_affiliation": pi_affiliation,
         "avg_score":     avg_score,
+        "max_hts_score": max_hts_score,
         "paper_count":   len(graded),
         "description":   summary["description"],
         "applicability": summary["applicability"],
@@ -596,6 +612,7 @@ def merge_researcher_profile(candidate, existing_profile, known_papers_by_id):
 
     all_papers = existing_papers + graded_new
     avg_score = round(sum(p["score"] for p in all_papers) / len(all_papers), 1)
+    max_hts_score = max((p.get("hts_score") or 0) for p in all_papers)
     # Only spend a Gemini call re-describing the researcher when there's
     # actually something new for it to reflect.
     summary = generate_researcher_summary(all_papers)
@@ -610,6 +627,7 @@ def merge_researcher_profile(candidate, existing_profile, known_papers_by_id):
         "pi_email":      pi_email,
         "pi_affiliation": pi_affiliation,
         "avg_score":     avg_score,
+        "max_hts_score": max_hts_score,
         "paper_count":   len(all_papers),
         "description":   summary["description"] or existing_profile.get("description", ""),
         "applicability": summary["applicability"] or existing_profile.get("applicability", ""),
@@ -689,6 +707,7 @@ def filter_researchers_authorship():
             profile["papers"] = kept
             scores = [p.get("score", 0) for p in kept]
             profile["avg_score"] = round(sum(scores) / len(scores), 1) if scores else 0
+            profile["max_hts_score"] = max((p.get("hts_score") or 0) for p in kept) if kept else 0
             profile["paper_count"] = len(kept)
             profile["fields"] = _aggregate_fields(kept)
             profile["branches"] = sorted({b for b, bf in pp.BRANCHES.items()
@@ -814,6 +833,60 @@ def reeval_researchers_to_gemma():
     return total_rescored + total_backfilled + total_abstracts
 
 
+def backfill_hts_researchers():
+    """One-off: score every paper missing an HTS (High-Throughput Screening)
+    collaboration-fitness score inside the already-committed
+    researchers_data.json. No PubMed re-fetch, no researcher re-selection —
+    just scoring existing papers in place and recomputing each changed
+    profile's max_hts_score. Safe to run repeatedly.
+    """
+    if not OUTPUT_JSON.exists():
+        print("  No researchers_data.json found — nothing to score.")
+        return 0
+
+    profiles = json.loads(OUTPUT_JSON.read_text(encoding="utf-8"))
+    total_scored = 0
+    for profile in profiles:
+        papers = profile.get("papers", [])
+        targets = [p for p in papers if not p.get("hts_score")]
+        if not targets:
+            continue
+        name = profile.get("pi_full_name") or profile.get("pi")
+        print(f"\n{name}: {len(targets)} paper(s) missing an HTS score.")
+        scored_here = 0
+        for p in targets:
+            print(f"  hts: {p.get('title', '')[:70]}")
+            if not p.get("abstract", "").strip():
+                p["abstract"] = pp._fetch_abstract_for_paper(p)
+            result = pp.evaluate_hts_suitability(p)
+            if not result:
+                print("    hts scoring failed — leaving as-is")
+                continue
+            p.update(result)
+            scored_here += 1
+            total_scored += 1
+            time.sleep(0.4)
+        if scored_here:
+            profile["max_hts_score"] = max((p.get("hts_score") or 0) for p in papers)
+
+    if total_scored:
+        OUTPUT_JSON.write_text(json.dumps(profiles, ensure_ascii=False, indent=2), encoding="utf-8")
+        if check_apps_script_version():
+            try:
+                save_researchers_to_sheet(profiles)
+            except Exception as e:
+                print(f"  sheet-save failed: {e}")
+        try:
+            main_papers = pp.load_from_sheet()
+        except Exception as e:
+            print(f"  Could not reload main papers for HTML regeneration: {e}")
+            main_papers = []
+        pp.generate_html(main_papers, researchers=profiles)
+
+    print(f"\nScored {total_scored} paper(s) for HTS suitability.")
+    return total_scored
+
+
 def main():
     if ARGS.reeval_to_gemma:
         reeval_researchers_to_gemma()
@@ -821,6 +894,10 @@ def main():
 
     if ARGS.drop_non_author_papers:
         filter_researchers_authorship()
+        return
+
+    if ARGS.backfill_hts:
+        backfill_hts_researchers()
         return
 
     print("Checking apps_script.js deployment version...")

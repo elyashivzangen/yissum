@@ -36,6 +36,11 @@ on:
         required: false
         default: false
         type: boolean
+      backfill_hts:
+        description: 'One-off: score every existing paper missing an HTS (High-Throughput Screening) collaboration-fitness score (skips fetching new papers and the regular 50-point evaluation). Safe to repeat.'
+        required: false
+        default: false
+        type: boolean
 
 concurrency:
   group: papers-pipeline
@@ -72,6 +77,7 @@ jobs:
           echo "BACKFILL_METADATA=${{ github.event.inputs.backfill_metadata || 'false' }}" >> "$GITHUB_ENV"
           echo "REEVAL_TO_GEMMA=${{ github.event.inputs.reeval_to_gemma || 'false' }}" >> "$GITHUB_ENV"
           echo "BACKFILL_AUTHORS=${{ github.event.inputs.backfill_authors || 'false' }}" >> "$GITHUB_ENV"
+          echo "BACKFILL_HTS=${{ github.event.inputs.backfill_hts || 'false' }}" >> "$GITHUB_ENV"
 
       - name: Run pipeline
         env:
@@ -84,12 +90,14 @@ jobs:
           BACKFILL_METADATA: ${{ env.BACKFILL_METADATA }}
           REEVAL_TO_GEMMA: ${{ env.REEVAL_TO_GEMMA }}
           BACKFILL_AUTHORS: ${{ env.BACKFILL_AUTHORS }}
+          BACKFILL_HTS: ${{ env.BACKFILL_HTS }}
         run: |
           set -o pipefail
           EXTRA_ARGS=""
           if [ "$BACKFILL_METADATA" = "true" ]; then EXTRA_ARGS="--backfill-metadata"; fi
           if [ "$REEVAL_TO_GEMMA" = "true" ]; then EXTRA_ARGS="$EXTRA_ARGS --reeval-to-gemma"; fi
           if [ "$BACKFILL_AUTHORS" = "true" ]; then EXTRA_ARGS="$EXTRA_ARGS --backfill-authors"; fi
+          if [ "$BACKFILL_HTS" = "true" ]; then EXTRA_ARGS="$EXTRA_ARGS --backfill-hts"; fi
           python -u papers_pipeline.py --period "$PIPELINE_PERIOD" $EXTRA_ARGS 2>&1 | tee pipeline_run.log
 
       - name: Commit generated HTML

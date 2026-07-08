@@ -172,6 +172,36 @@ capacity issue, not something fixable from this codebase beyond good
 fallback design (which is what the chain above, throttling, and cooldown
 all exist for).
 
+### HTS Suitability Score (independent of the 1–50 composite)
+
+Every paper is also graded on a separate **1–10 "HTS Fit" score** — how
+suitable it is for a High-Throughput Screening (HTS) collaboration — via its
+own Gemini/Gemma call (`evaluate_hts_suitability()`), with its own
+explanation. This score is **never summed into the 50-point composite** and
+does not affect the regular score, sort order, or badges; it's a separate
+lens entirely.
+
+The model is asked to check for three specific elements: (1) a **specific
+new molecule or target** (not a vague pathway/gene family), (2) a **link to
+a disease or condition**, and (3) a **described assay** that could test the
+molecule/target's effect. Scores of 8-10 require all three to be clearly
+present; 1-3 means fewer than two are present or the paper is purely
+descriptive.
+
+Shown as a distinct "🎯 HTS Fit" block (separate from the five-dimension
+Score Breakdown) on every paper card and in each researcher's paper list,
+with its own filter slider on both the Papers and Researchers tabs. On the
+Researchers tab, each researcher also gets a **Max HTS Score** badge (their
+single highest-scoring paper on this dimension) with a matching sort option
+and filter slider.
+
+New papers are scored on this dimension automatically as part of the normal
+weekly runs (`papers_pipeline.py`'s new-paper loop and
+`researcher_pipeline.py`'s `_grade_history()`). To score papers already in
+the dataset before this feature existed, use the one-off `--backfill-hts`
+flag (see [Running Manually](#running-manually)) — safe to run repeatedly,
+it only targets papers still missing an `hts_score`.
+
 ### Converging every paper onto Gemma
 
 Because Gemma can still fail (quota, overload) and fall back to Gemini or
@@ -399,7 +429,7 @@ All paper data is synced to a shared Google Sheet after every pipeline run. This
 
 The `Sheet1` tab columns are:
 
-`id` · `title` · `authors` · `journal` · `date` · `url` · `source` · `score` · `summary` · `opportunity` · `fields` · `added_date` · `score_breakdown` · `pi` · `pi_full_name` · `pi_email` · `pi_affiliation` · `eval_model` · `prev_score` · `prev_eval_model`
+`id` · `title` · `authors` · `journal` · `date` · `url` · `source` · `score` · `summary` · `opportunity` · `fields` · `added_date` · `score_breakdown` · `pi` · `pi_full_name` · `pi_email` · `pi_affiliation` · `eval_model` · `prev_score` · `prev_eval_model` · `hts_score` · `hts_reason` · `hts_eval_model`
 
 A second tab, `Researchers`, holds the researcher applicability profiles
 (see [Researcher Applicability Dataset](#researcher-applicability-dataset)),
@@ -513,11 +543,12 @@ inputs:
   backfill_metadata: false (default) — one-off: refresh pi_affiliation/date precision only
   reeval_to_gemma: false (default) — one-off: re-score non-Gemma papers onto Gemma only
   backfill_authors: false (default) — one-off: re-fetch full author lists for existing papers
+  backfill_hts: false (default) — one-off: score papers missing an HTS suitability score
 secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, APPS_SCRIPT_URL, GROQ_API_KEY
 outputs: papers_reader.html, papers_data.json, pipeline_run.log
 ```
 
-Can be triggered manually from the GitHub Actions tab with `period=month` to do a full 30-day lookback (useful after the pipeline has been down or for initial population). The three boolean inputs are mutually-exclusive one-off modes — each skips fetching new papers entirely and only touches the existing dataset.
+Can be triggered manually from the GitHub Actions tab with `period=month` to do a full 30-day lookback (useful after the pipeline has been down or for initial population). The four boolean inputs are mutually-exclusive one-off modes — each skips fetching new papers entirely and only touches the existing dataset.
 
 ### `reeval_to_gemma.yml`
 
@@ -578,6 +609,8 @@ inputs:
   years_back: 3 (default)
   max_papers_per_researcher: 15 (default)
   papers_snapshot_ref: '' (default) — one-off backfill, see below
+  drop_non_author_papers: false (default) — one-off: remove papers where the researcher wasn't first/last author
+  backfill_hts: false (default) — one-off: score papers missing an HTS suitability score
 secrets: GEMINI_API_KEY, GOOGLE_SHEET_ID, APPS_SCRIPT_URL, GROQ_API_KEY
 outputs: papers_reader.html, researchers_data.json, researcher_pipeline_run.log
 note: additive — existing profiles are updated with new papers, not rebuilt from scratch
@@ -662,9 +695,9 @@ Also configurable as non-secret **repo variables** (same Settings page, "Variabl
 
 ### Trigger via GitHub UI
 
-Go to **Actions → Papers Pipeline → Run workflow** and choose `period: week` or `period: month`, or enable one of the one-off boolean inputs (`backfill_metadata`, `reeval_to_gemma`, `backfill_authors`) to run just that pass over the existing dataset without fetching new papers.
+Go to **Actions → Papers Pipeline → Run workflow** and choose `period: week` or `period: month`, or enable one of the one-off boolean inputs (`backfill_metadata`, `reeval_to_gemma`, `backfill_authors`, `backfill_hts`) to run just that pass over the existing dataset without fetching new papers.
 
-For researcher profiles, go to **Actions → Researcher Pipeline → Run workflow** and optionally override `top_n`, `years_back`, `max_papers_per_researcher`.
+For researcher profiles, go to **Actions → Researcher Pipeline → Run workflow** and optionally override `top_n`, `years_back`, `max_papers_per_researcher`, or enable `drop_non_author_papers`/`backfill_hts` for a one-off pass over the existing profiles.
 
 To force the daily Gemma-convergence pass or the model comparison pilot on demand, use **Actions → Daily Reeval to Gemma → Run workflow** or **Actions → Model Comparison Pilot → Run workflow** (the latter takes a `sample_size` input).
 
@@ -684,6 +717,10 @@ GEMINI_API_KEY=... GOOGLE_SHEET_ID=... APPS_SCRIPT_URL=... \
 # One-off: re-score any paper not currently scored by Gemma
 GEMINI_API_KEY=... GOOGLE_SHEET_ID=... APPS_SCRIPT_URL=... GROQ_API_KEY=... \
   python papers_pipeline.py --reeval-to-gemma
+
+# One-off: score any paper missing an HTS suitability score
+GEMINI_API_KEY=... GOOGLE_SHEET_ID=... APPS_SCRIPT_URL=... \
+  python papers_pipeline.py --backfill-hts
 
 # Build researcher applicability profiles
 GEMINI_API_KEY=... GOOGLE_SHEET_ID=... APPS_SCRIPT_URL=... \

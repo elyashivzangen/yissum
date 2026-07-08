@@ -30,6 +30,11 @@ on:
         required: false
         default: false
         type: boolean
+      backfill_hts:
+        description: 'One-off: score every paper in researchers_data.json missing an HTS (High-Throughput Screening) collaboration-fitness score. Skips PubMed fetch entirely.'
+        required: false
+        default: false
+        type: boolean
 
 concurrency:
   group: researcher-pipeline
@@ -75,11 +80,13 @@ jobs:
           YEARS_BACK: ${{ github.event.inputs.years_back || '3' }}
           MAX_PAPERS_PER_RESEARCHER: ${{ github.event.inputs.max_papers_per_researcher || '15' }}
           DROP_NON_AUTHOR_PAPERS: ${{ github.event.inputs.drop_non_author_papers || 'false' }}
+          BACKFILL_HTS: ${{ github.event.inputs.backfill_hts || 'false' }}
         run: |
           set -o pipefail
           EXTRA_ARGS=""
           if [ -n "$PAPERS_SNAPSHOT" ]; then EXTRA_ARGS="--papers-snapshot $PAPERS_SNAPSHOT"; fi
           if [ "$DROP_NON_AUTHOR_PAPERS" = "true" ]; then EXTRA_ARGS="$EXTRA_ARGS --drop-non-author-papers"; fi
+          if [ "$BACKFILL_HTS" = "true" ]; then EXTRA_ARGS="$EXTRA_ARGS --backfill-hts"; fi
           python -u researcher_pipeline.py $EXTRA_ARGS 2>&1 | tee researcher_pipeline_run.log
 
       - name: Commit generated files
