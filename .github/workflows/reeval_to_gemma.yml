@@ -43,6 +43,17 @@ jobs:
           set -o pipefail
           python -u papers_pipeline.py --reeval-to-gemma 2>&1 | tee reeval_papers_run.log
 
+      - name: Sync latest data before researcher reeval
+        # This job's checkout can be hours stale by the time this step runs
+        # (the main-papers reeval step above can take a long time under rate
+        # limits). If another workflow (e.g. researcher_pipeline.yml's
+        # --drop-non-author-papers cleanup) committed to researchers_data.json
+        # in the meantime, working off the stale in-memory copy would silently
+        # undo that commit when this job writes its own result later. Pull the
+        # latest main now, right before reading researchers_data.json, so this
+        # run's changes are layered on top of anything committed since start.
+        run: git pull --ff-only origin main
+
       - name: Reeval researcher profiles
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
