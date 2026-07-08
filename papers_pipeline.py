@@ -1800,6 +1800,10 @@ document.getElementById('score-slider').addEventListener('input',function(){{
   activeScore=parseInt(this.value);
   render();
 }});
+document.getElementById('hts-slider').addEventListener('input',function(){{
+  activeHts=parseInt(this.value);
+  render();
+}});
 (function(){{
   const sel=document.getElementById('param-select');
   const sl=document.getElementById('param-slider');
