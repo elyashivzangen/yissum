@@ -1406,9 +1406,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .bd-bar{{height:100%;border-radius:2px;transition:width .4s cubic-bezier(.4,0,.2,1)}}
   .bd-reason{{font-size:.68rem;color:var(--muted);line-height:1.4;margin-top:1px}}
 
-  /* ── HTS block — visually distinct from the 50-pt breakdown, collapsed by default ── */
+  /* ── HTS UI — hidden entirely unless the global "Show HTS" toggle is on ── */
   .hts-block{{display:none;flex-direction:column;gap:4px;border:1px solid rgba(124,111,247,.25);background:rgba(124,111,247,.06);border-radius:8px;padding:8px 10px}}
-  .hts-block.open{{display:flex}}
+  [data-hts="on"] .hts-block{{display:flex}}
+  .hts-filter-row{{display:none}}
+  [data-hts="on"] .hts-filter-row{{display:flex}}
+  .hts-agg-badge{{display:none}}
+  [data-hts="on"] .hts-agg-badge{{display:flex}}
 
   /* ── Slider ── */
   .slider{{-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;background:var(--border);outline:none;cursor:pointer;width:140px;vertical-align:middle}}
@@ -1499,6 +1503,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   <button class="page-tab active" data-view="papers">📄 Papers</button>
   <button class="page-tab" data-view="researchers">🧑‍🔬 Researchers</button>
   <button class="huji-toggle active" id="hujiToggle" title="Hide papers/researchers whose first listed affiliation isn't Hebrew University (e.g. a Hadassah-first listing)">🏛️ HUJI-primary only</button>
+  <button class="huji-toggle" id="htsToggle" title="Show/hide HTS (High-Throughput Screening) suitability data across the dashboard">🎯 Show HTS</button>
 </div>
 <div id="papers-view">
 <div class="branch-tabs">
@@ -1542,7 +1547,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <input type="range" id="param-slider" min="1" max="10" value="1" step="1" class="slider" disabled/>
     <span id="param-val" class="slider-val">—</span>
   </div>
-  <div class="row">
+  <div class="row hts-filter-row">
     <label>HTS</label>
     <input type="range" id="hts-slider" min="0" max="10" value="0" step="1" class="slider"/>
     <span id="hts-val" class="slider-val">Any</span>
@@ -1582,7 +1587,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <input type="range" id="r-total-slider" min="0" max="750" value="0" step="10" class="slider"/>
       <span id="r-total-val" class="slider-val">Any</span>
     </div>
-    <div class="row">
+    <div class="row hts-filter-row">
       <label>HTS</label>
       <input type="range" id="r-hts-slider" min="0" max="10" value="0" step="1" class="slider"/>
       <span id="r-hts-val" class="slider-val">Any</span>
@@ -1736,7 +1741,6 @@ function render(){{
     const tags=(p.fields||[]).map(f=>`<span class="tag">${{f}}</span>`).join('');
     const authors=renderAuthors(p.authors||[]);
     const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
-    const hasHts=!!p.hts_score;
     return `<div class="card">
       <div class="card-header"><div class="title">${{p.title}}</div><div class="score-badge ${{scoreClass(p.score)}}"><span class="score-num">${{p.score}}</span><span class="score-denom">/50</span></div></div>
       ${{(p.pi||p.pi_full_name)?`<div class="pi"><span class="pi-label">Main Researcher</span><span class="pi-name">👤 ${{p.pi_full_name||p.pi}}</span>${{p.pi_email?`<button class="btn pi-email-btn" onclick="toggleEmail(this)">Email ▾</button>`:''}} </div>${{p.pi_affiliation?`<div class="pi-affiliation">${{p.pi_affiliation}}</div>`:''}}${{p.pi_email?`<div class="pi-email" style="display:none"><a href="mailto:${{p.pi_email}}">${{p.pi_email}}</a></div>`:''}}`:''}}
@@ -1749,7 +1753,6 @@ function render(){{
       <div class="actions">
         <a class="btn" href="${{p.url}}" target="_blank">Open Paper</a>
         ${{hasBd?`<button class="btn" onclick="toggleBd(this)">Score Breakdown ▾</button>`:''}}
-        ${{hasHts?`<button class="btn" onclick="toggleHts(this)">HTS Fit ▾</button>`:''}}
       </div>
     </div>`;
   }}).join('');
@@ -1762,15 +1765,6 @@ function toggleBd(btn){{
   bd.classList.toggle('open');
   btn.classList.toggle('active');
   btn.textContent=bd.classList.contains('open')?'Score Breakdown ▴':'Score Breakdown ▾';
-}}
-function toggleHts(btn){{
-  const container=btn.closest('.r-paper')||btn.closest('.card');
-  if(!container)return;
-  const el=container.querySelector('.hts-block');
-  if(!el)return;
-  el.classList.toggle('open');
-  btn.classList.toggle('active');
-  btn.textContent=el.classList.contains('open')?'HTS Fit ▴':'HTS Fit ▾';
 }}
 function toggleEmail(btn){{
   const div=btn.closest('.card').querySelector('.pi-email');
@@ -1859,7 +1853,6 @@ function renderResearchers(){{
     const papers=(r.papers||[]).slice().sort((a,b)=>(b.score||0)-(a.score||0));
     const rows=papers.map(p=>{{
       const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
-      const hasHts=!!p.hts_score;
       const hasDetails=!!(p.summary||p.opportunity||p.abstract);
       const ptags=(p.fields||[]).map(f=>`<span class="tag">${{f}}</span>`).join('');
       return `<div class="r-paper">
@@ -1878,7 +1871,6 @@ function renderResearchers(){{
         <div class="r-paper-actions">
           ${{hasDetails?`<button class="btn r-paper-toggle" onclick="toggleDetails(this)">Abstract &amp; Summary ▾</button>`:''}}
           ${{hasBd?`<button class="btn r-paper-toggle" onclick="toggleBd(this)">Score Breakdown ▾</button>`:''}}
-          ${{hasHts?`<button class="btn r-paper-toggle" onclick="toggleHts(this)">HTS Fit ▾</button>`:''}}
         </div>
       </div>`;
     }}).join('');
@@ -1891,7 +1883,7 @@ function renderResearchers(){{
         <div class="r-badges">
           <div class="score-badge ${{scoreClass(Math.round(r.avg_score||0))}}"><span class="score-num">${{(r.avg_score||0).toFixed(1)}}</span><span class="score-denom">avg /50</span></div>
           <div class="score-badge score-total"><span class="score-num">${{researcherTotalScore(r)}}</span><span class="score-denom">total (3y)</span></div>
-          ${{researcherMaxHts(r)?`<div class="score-badge ${{htsClass(researcherMaxHts(r))}}"><span class="score-num">${{researcherMaxHts(r)}}</span><span class="score-denom">🎯 HTS /10</span></div>`:''}}
+          ${{researcherMaxHts(r)?`<div class="score-badge hts-agg-badge ${{htsClass(researcherMaxHts(r))}}"><span class="score-num">${{researcherMaxHts(r)}}</span><span class="score-denom">🎯 HTS /10</span></div>`:''}}
         </div>
       </div>
       ${{r.pi_affiliation?`<div class="r-affiliation">🏛️ ${{r.pi_affiliation}}</div>`:''}}
@@ -1953,6 +1945,16 @@ document.getElementById('hujiToggle').addEventListener('click',function(){{
   render();
   renderResearchers();
 }});
+(function(){{
+  const btn=document.getElementById('htsToggle');
+  const saved=localStorage.getItem('huji-hts');
+  if(saved==='on'){{document.documentElement.setAttribute('data-hts','on');btn.classList.add('active');}}
+  btn.addEventListener('click',function(){{
+    const isOn=document.documentElement.getAttribute('data-hts')==='on';
+    if(isOn){{document.documentElement.removeAttribute('data-hts');localStorage.setItem('huji-hts','off');btn.classList.remove('active');}}
+    else{{document.documentElement.setAttribute('data-hts','on');localStorage.setItem('huji-hts','on');btn.classList.add('active');}}
+  }});
+}})();
 renderResearchers();
 (function(){{
   const btn=document.getElementById('themeToggle');
