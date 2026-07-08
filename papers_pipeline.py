@@ -1406,8 +1406,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .bd-bar{{height:100%;border-radius:2px;transition:width .4s cubic-bezier(.4,0,.2,1)}}
   .bd-reason{{font-size:.68rem;color:var(--muted);line-height:1.4;margin-top:1px}}
 
-  /* ── HTS block — visually distinct from the 50-pt breakdown, always visible ── */
-  .hts-block{{display:flex;flex-direction:column;gap:4px;border:1px solid rgba(124,111,247,.25);background:rgba(124,111,247,.06);border-radius:8px;padding:8px 10px}}
+  /* ── HTS block — visually distinct from the 50-pt breakdown, collapsed by default ── */
+  .hts-block{{display:none;flex-direction:column;gap:4px;border:1px solid rgba(124,111,247,.25);background:rgba(124,111,247,.06);border-radius:8px;padding:8px 10px}}
+  .hts-block.open{{display:flex}}
 
   /* ── Slider ── */
   .slider{{-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;background:var(--border);outline:none;cursor:pointer;width:140px;vertical-align:middle}}
@@ -1643,10 +1644,10 @@ function renderBreakdown(bd){{
   }}).join('');
   return `<div class="breakdown">${{rows}}</div>`;
 }}
-function renderHts(score,reason){{
+function renderHts(score,reason,model){{
   if(!score)return '';
   return `<div class="hts-block">
-    <div class="bd-label"><span class="bd-name">🎯 HTS Fit</span><span class="bd-score" style="color:${{barColor(score)}}">${{score}}/10</span></div>
+    <div class="bd-label"><span class="bd-name">🎯 HTS Fit</span><span class="bd-score" style="color:${{barColor(score)}}">${{score}}/10</span> ${{modelBadge(model)}}</div>
     ${{reason?`<div class="bd-reason">${{reason}}</div>`:''}}
   </div>`;
 }}
@@ -1735,18 +1736,20 @@ function render(){{
     const tags=(p.fields||[]).map(f=>`<span class="tag">${{f}}</span>`).join('');
     const authors=renderAuthors(p.authors||[]);
     const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
+    const hasHts=!!p.hts_score;
     return `<div class="card">
       <div class="card-header"><div class="title">${{p.title}}</div><div class="score-badge ${{scoreClass(p.score)}}"><span class="score-num">${{p.score}}</span><span class="score-denom">/50</span></div></div>
       ${{(p.pi||p.pi_full_name)?`<div class="pi"><span class="pi-label">Main Researcher</span><span class="pi-name">👤 ${{p.pi_full_name||p.pi}}</span>${{p.pi_email?`<button class="btn pi-email-btn" onclick="toggleEmail(this)">Email ▾</button>`:''}} </div>${{p.pi_affiliation?`<div class="pi-affiliation">${{p.pi_affiliation}}</div>`:''}}${{p.pi_email?`<div class="pi-email" style="display:none"><a href="mailto:${{p.pi_email}}">${{p.pi_email}}</a></div>`:''}}`:''}}
       <div class="meta-row"><div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>${{p.source?`<span class="source-badge">${{p.source}}</span>`:''}}${{modelBadge(p.eval_model,p.prev_score,p.prev_eval_model)}}</div>
       ${{p.summary?`<div class="summary">${{p.summary}}</div>`:''}}
       ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
-      ${{renderHts(p.hts_score,p.hts_reason)}}
+      ${{renderHts(p.hts_score,p.hts_reason,p.hts_eval_model)}}
       ${{hasBd?renderBreakdown(p.score_breakdown):''}}
       ${{tags?`<div class="tags">${{tags}}</div>`:''}}
       <div class="actions">
         <a class="btn" href="${{p.url}}" target="_blank">Open Paper</a>
         ${{hasBd?`<button class="btn" onclick="toggleBd(this)">Score Breakdown ▾</button>`:''}}
+        ${{hasHts?`<button class="btn" onclick="toggleHts(this)">HTS Fit ▾</button>`:''}}
       </div>
     </div>`;
   }}).join('');
@@ -1759,6 +1762,15 @@ function toggleBd(btn){{
   bd.classList.toggle('open');
   btn.classList.toggle('active');
   btn.textContent=bd.classList.contains('open')?'Score Breakdown ▴':'Score Breakdown ▾';
+}}
+function toggleHts(btn){{
+  const container=btn.closest('.r-paper')||btn.closest('.card');
+  if(!container)return;
+  const el=container.querySelector('.hts-block');
+  if(!el)return;
+  el.classList.toggle('open');
+  btn.classList.toggle('active');
+  btn.textContent=el.classList.contains('open')?'HTS Fit ▴':'HTS Fit ▾';
 }}
 function toggleEmail(btn){{
   const div=btn.closest('.card').querySelector('.pi-email');
@@ -1847,15 +1859,13 @@ function renderResearchers(){{
     const papers=(r.papers||[]).slice().sort((a,b)=>(b.score||0)-(a.score||0));
     const rows=papers.map(p=>{{
       const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
+      const hasHts=!!p.hts_score;
       const hasDetails=!!(p.summary||p.opportunity||p.abstract);
       const ptags=(p.fields||[]).map(f=>`<span class="tag">${{f}}</span>`).join('');
       return `<div class="r-paper">
         <div class="r-paper-row">
           <span class="r-paper-title"><a href="${{p.url}}" target="_blank">${{p.title}}</a>${{p.date?' ('+p.date+')':''}} ${{modelBadge(p.eval_model,p.prev_score,p.prev_eval_model)}}</span>
-          <span style="display:flex;gap:6px;flex-shrink:0">
-            <span class="r-paper-score ${{scoreClass(p.score)}}">${{p.score}}/50</span>
-            ${{p.hts_score?`<span class="r-paper-score ${{htsClass(p.hts_score)}}">🎯 ${{p.hts_score}}/10</span>`:''}}
-          </span>
+          <span class="r-paper-score ${{scoreClass(p.score)}}">${{p.score}}/50</span>
         </div>
         ${{ptags?`<div class="tags">${{ptags}}</div>`:''}}
         ${{hasDetails?`<div class="r-paper-details">
@@ -1863,11 +1873,12 @@ function renderResearchers(){{
           ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
           ${{p.abstract?`<div class="r-abstract"><span class="r-abstract-label">Abstract</span>${{p.abstract}}</div>`:''}}
         </div>`:''}}
-        ${{renderHts(p.hts_score,p.hts_reason)}}
+        ${{renderHts(p.hts_score,p.hts_reason,p.hts_eval_model)}}
         ${{hasBd?renderBreakdown(p.score_breakdown):''}}
         <div class="r-paper-actions">
           ${{hasDetails?`<button class="btn r-paper-toggle" onclick="toggleDetails(this)">Abstract &amp; Summary ▾</button>`:''}}
           ${{hasBd?`<button class="btn r-paper-toggle" onclick="toggleBd(this)">Score Breakdown ▾</button>`:''}}
+          ${{hasHts?`<button class="btn r-paper-toggle" onclick="toggleHts(this)">HTS Fit ▾</button>`:''}}
         </div>
       </div>`;
     }}).join('');
