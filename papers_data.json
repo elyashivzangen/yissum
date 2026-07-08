@@ -80,9 +80,9 @@
     "prev_score": "37",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "While the paper identifies a specific target (BCMA) and links it to diseases (SLE and SSc), it describes a clinical CAR-T therapy trial rather than a molecular assay suitable for high-throughput small molecule or biologic screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42340176",
@@ -139,9 +139,9 @@
     "prev_score": "24",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper describes a mechanical surgical technique rather than a molecular target or chemical entity suitable for high-throughput screening. It lacks both a druggable molecular target and a biochemical assay amenable to drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42276062",
@@ -203,9 +203,9 @@
     "prev_score": "30",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The paper focuses on a cell-based therapy (AstroRx) rather than a druggable molecular target or small molecule, and lacks a specific molecular target suitable for high-throughput screening. While it links a therapeutic product to demyelinating diseases and describes biological assays, it does not identify a specific molecule or mechanism targetable by conventional HTS.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42255296",
@@ -267,9 +267,9 @@
     "prev_score": "28",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific target (RNAi technology) and links it to a disease (Cassava mosaic disease and Cassava brown streak disease), but it does not clearly describe an assay or method to test the effect of the target. Instead, it mentions bioassays and population dynamics modeling, but these methods are not clearly described or testable.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42238456",
@@ -323,9 +323,9 @@
     "prev_score": "27",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific gene (CBFB) associated with a disease (estrogen receptor-positive breast cancer), but does not describe a new molecule or target, and the described method is a genomic screen using Cox proportional hazards regression, which is not a direct assay or method to test/measure the molecule/target's effect.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "epmc_42182043",
@@ -385,9 +385,9 @@
     "prev_score": "34",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not clearly identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It does describe an assay or method (growth and differentiation of bovine mesenchymal stem cells) but it is not directly related to high-throughput screening collaboration potential.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41978262",
@@ -445,9 +445,9 @@
     "prev_score": "27",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper links a disease (drug-resistant lung cancer) to broad cellular programs (migration, sterol synthesis) but fails to identify a specific molecular target for inhibition, providing only a methodology for transcriptomic profiling.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42338148",
@@ -498,9 +498,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific target (hydrocarbon transporter-encoding gene) and links it to a specific condition (long-chain alcohol metabolism by Pseudomonas putida KT2440), but does not clearly link the target to a specific disease or condition, and the assay is more of a method for reproducing a phenotype rather than a testable effect.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42239176",
@@ -560,9 +560,9 @@
     "prev_score": "37",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific disease (rescues pathogenic variants) and describes an assay or method (allele-specific antisense oligonucleotide treatment), but it does not clearly identify a specific new molecule or target, only pathogenic variants which is a vague pathway.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42374536",
@@ -620,9 +620,9 @@
     "prev_score": "33",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific surface coating formulation (OxiLast™) and links it to a specific disease condition (multidrug-resistant bacteria isolation rooms), but it does not clearly describe a testable assay or method to measure the molecule's effect on the disease. Instead, it presents environmental sampling and quantitative colony counts as a method to evaluate the effect of the formulation.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42342000",
@@ -679,9 +679,9 @@
     "prev_score": "35",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 8,
+    "hts_reason": "The paper clearly identifies a specific target (nociceptive TRPA1 and TRPV1 channels) and links it to a specific disease or condition (non-opioid analgesics for pain relief), and describes an assay or method (calcium imaging and whole-cell patch-clamp recordings) that could test the molecule's effect. The target is a named molecule or target, not a vague pathway/gene family.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42294022",
@@ -732,9 +732,9 @@
     "prev_score": "29",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper focuses on the chemical optimization of PNA delivery rather than identifying a specific therapeutic target or linking a molecule to a disease, and it lacks a high-throughput assay platform for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41984590",
@@ -792,9 +792,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 9,
+    "hts_reason": "The paper identifies a specific oncogenic protein product (the diced JH1 kinase domain) linked to endometrial cancer, and provides a clear mechanism for an assay to measure the relative expression of these isoforms to screen for inhibitors.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41925697",
@@ -856,9 +856,9 @@
     "prev_score": "29",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific molecule (recombinant human amelogenin) and a specific disease condition (osteochondral injury), but it describes a therapeutic application rather than a high-throughput screening assay or druggable target for chemical discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42359351",
@@ -911,9 +911,9 @@
     "prev_score": "23",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not clearly identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It does describe an assay or method, but only in the context of glycopeptide synthesis, which is not directly related to a disease or condition.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42378718",
@@ -970,9 +970,9 @@
     "prev_score": "33",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper identifies a mutational signature (APOBEC) rather than a druggable molecular target and lacks a biological assay for therapeutic screening, focusing instead on clinical correlation and predictive biomarker analysis.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42120689",
@@ -1031,9 +1031,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It appears to be a purely descriptive paper focused on robotic cytoreduction at the vascular interface, without any mention of a testable assay or HTS collaboration potential.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42067527",
@@ -1096,9 +1096,9 @@
     "prev_score": "27",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The paper identifies a specific molecular change (RTEL1 mutation) and a model system, but it lacks a specific druggable disease target and a clear HTS-ready assay for screening small molecules.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42072663",
@@ -1160,9 +1160,9 @@
     "prev_score": "34",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 9,
+    "hts_reason": "The paper identifies a specific novel molecule (cPVP) linked to cancer treatment (cisplatin resistance) and utilizes high-resolution mapping and cytotoxicity assays that are readily scalable for HTS lead optimization or analog screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42212120",
@@ -1226,9 +1226,9 @@
     "prev_score": "31",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The paper focuses on a digital pathology biomarker (ENLIGHT-DP) rather than a druggable molecular target or a high-throughput drug screening assay. It lacks a specific novel molecule or target for pharmacological modulation, making it unsuitable for an HTS collaboration.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42259134",
@@ -1288,9 +1288,9 @@
     "prev_score": "29",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 9,
+    "hts_reason": "The paper identifies a specific molecule (3D-NAF-1 peptide), links it to ovarian cancer, and validates its efficacy through in vitro and in vivo assays that are highly amenable to HTS optimization.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42350209",
@@ -1353,9 +1353,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 9,
+    "hts_reason": "The paper identifies a specific molecule (SPL84) and target (3849+10kb C→T splicing defect) linked to Cystic Fibrosis, and utilizes established functional assays (Ussing chamber and TECC-24) to measure therapeutic efficacy. While the molecule is already in clinical development, the established high-throughput screening methods (TECC-24) provide a clear framework for further compound optimization or synergy screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42315848",
@@ -1410,9 +1410,9 @@
     "prev_score": "26",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The title links antioxidant gene therapy to epileptogenesis (target/disease link), but lacks a specific molecule name and a description of a screenable assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42267531",
@@ -1467,9 +1467,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link a molecule/target to a specific disease or condition. Instead, it focuses on the total synthesis of sulfated red algae carrageenan oligosaccharides for sensing applications, which is more of a methodological development.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "epmc_42255296",
@@ -1531,9 +1531,9 @@
     "prev_score": "39",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 5,
+    "hts_reason": "The paper identifies specific gene targets for RNAi and links them to whitefly infestation management, but it describes a genetic engineering/in-planta approach rather than a high-throughput chemical screening assay suitable for standard drug-discovery collaborations.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42148620",
@@ -1593,9 +1593,9 @@
     "prev_score": "37",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a clinical case report regarding a medical device implantation and does not identify a specific molecular target for drug discovery, nor does it describe a high-throughput assay or screen.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42318539",
@@ -1646,9 +1646,9 @@
     "prev_score": "33",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It describes a new method for RNA sequencing, but does not provide a testable assay for a specific molecule or target's effect.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42310179",
@@ -1711,9 +1711,9 @@
     "prev_score": "31",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 9,
+    "hts_reason": "The paper identifies a specific molecular target (CD59) linked to well-defined metabolic conditions and provides a clear genetic model (CD59a KO mice) and metabolic profiling assays that could be adapted for high-throughput pharmacological screening to identify small molecule inhibitors.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42339006",
@@ -1767,9 +1767,9 @@
     "prev_score": "31",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It describes a device for testing tumor spheroids, but does not provide a clear testable assay for a specific molecule or target.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41980926",
@@ -1826,9 +1826,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper is a descriptive genomic atlas that lacks a specific druggable target molecule and a concrete screening assay, as it focuses on broad regulatory mechanisms rather than actionable therapeutic intervention.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41965351",
@@ -1880,9 +1880,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a fundamental organic chemistry methodology paper that lacks a biological target, a disease context, and a therapeutic screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42046511",
@@ -1937,9 +1937,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper fails all three criteria for HTS: it studies a medical device (toothbrush) rather than a molecular target, lacks a biochemical or cellular mechanism, and uses a clinical index rather than a high-throughput assay.",
+    "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
     "id": "pubmed_42379259",
@@ -1995,9 +1995,9 @@
     "prev_score": "30",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The paper lacks a specific molecular target for drug discovery, focusing instead on diagnostic VOC profiles for oral conditions. While it links conditions to breath patterns and describes a sensor-based diagnostic method, it provides no actionable target for a high-throughput screening campaign.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42277197",
@@ -2052,9 +2052,9 @@
     "prev_score": "23",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 7,
+    "hts_reason": "The paper identifies a specific target (nNOS) and links it to a specific disease model (Shank3-deficient ASD), but lacks a description of a high-throughput-compatible assay, as it focuses on global phosphoproteomic profiling rather than a screening-ready platform.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41956943",
@@ -2109,9 +2109,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 7,
+    "hts_reason": "The paper identifies a specific molecular target (ASNS/asparagine biosynthesis) linked to a specific disease context (GAS infection), but it lacks a description of a specific, high-throughput compatible assay or chemical screen methodology.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42012076",
@@ -2168,9 +2168,9 @@
     "prev_score": "26",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not clearly identify a specific new molecule or target and does not link it to a specific disease or condition. While it describes a method for forming DNA condensates, it does not provide a clear assay or method to test the molecule's effect.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42218120",
@@ -2225,9 +2225,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not clearly identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It does describe an assay or method (rhythmicity measure) that could test/measure the molecule/target's effect, but only in the context of understanding brain organization and neural activity.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41928515",
@@ -2283,9 +2283,9 @@
     "prev_score": "23",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it describe an assay or method to test its effect. It does, however, link the optimized representation of single-cell data to various diseases or conditions, such as Alzheimer's disease, epithelial-to-mesenchymal transition, immune development, and hematopoiesis.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "epmc_42065370",
@@ -2342,9 +2342,9 @@
     "prev_score": "27",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 9,
+    "hts_reason": "The paper clearly identifies a specific protein-protein interaction (RadD-NKp46), links it to tumor progression in head and neck cancers, and utilizes existing binding and cytotoxicity assays suitable for high-throughput screening of modulators.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42269385",
@@ -2396,9 +2396,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "This paper identifies a specific treatment (high-power laser photobiomodulation therapy) and links it to a specific disease (mucositis-related odynophagia), but it does not describe a specific molecule or target, nor does it describe an assay or method that could test/measure the molecule/target's effect in a high-throughput screening context.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42056101",
@@ -2456,9 +2456,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific target (UFMylation) and links it to a disease (neurodegenerative disorders), but does not describe a specific assay or method to test its effect, making it a candidate for further investigation but not ideal for HTS collaboration.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42010670",
@@ -2512,9 +2512,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 7,
+    "hts_reason": "The paper identifies a specific molecular target (nNOS) linked to a specific disease condition (ASD) and utilizes a pharmacological inhibitor (7-NI) as a proof-of-concept; however, it lacks a high-throughput compatible assay development component for screening novel compounds.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42390573",
@@ -2575,9 +2575,9 @@
     "prev_score": "",
     "prev_eval_model": "",
     "added_date": "2026-07-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This is a retrospective clinical outcomes study comparing existing drugs rather than identifying new targets or molecules; it lacks the exploratory assay development component necessary for HTS collaboration.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42374654",
@@ -2631,9 +2631,9 @@
     "prev_score": "24",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 10,
+    "hts_reason": "The paper identifies a specific molecule (BA-101) targeting a defined protein (nNOS) for a specific disease (TMZ-resistant glioblastoma) and utilizes established cell-based assays that are highly suitable for high-throughput screening adaptation.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42299509",
@@ -2687,9 +2687,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper describes a computational docking tool (PatchMAN2) rather than identifying a specific target, linking it to a disease, or describing a biological assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42265112",
@@ -2755,9 +2755,9 @@
     "prev_score": "26",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not clearly identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It does describe an assay or method (single-cell whole-genome methylation data) but it's more of a research approach rather than a testable assay for the effect of a specific molecule/target.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42240245",
@@ -2807,9 +2807,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper focuses on clinical procedural feasibility for valve replacement surgery and does not identify a molecular target, a disease mechanism, or a high-throughput screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42066582",
@@ -2866,9 +2866,9 @@
     "prev_score": "29",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "This paper does not clearly identify a specific new molecule or target, and while it links a process (ADAR-mediated RNA editing) to a disease (inherited retinal diseases), it does not describe a specific assay or method that could test/measure the molecule/target's effect in a high-throughput manner.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41979352",
@@ -2924,9 +2924,9 @@
     "prev_score": "28",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 6,
+    "hts_reason": "The paper identifies a specific problem (multidrug-resistant fungal infections) and describes a potential solution (random peptide mixtures), but it does not name a specific new molecule or target. It also mentions a potential method (using random peptide mixtures) but does not describe a specific assay or method to test the molecule's effect.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42065428",
@@ -2977,9 +2977,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on material science (catalysis/platinum nanocrystals) rather than biological targets, diseases, or drug-discovery assays. It lacks all three elements required for a translational medicinal chemistry or HTS collaboration.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41984841",
@@ -3040,9 +3040,9 @@
     "prev_score": "23",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 6,
+    "hts_reason": "The paper identifies a specific target (WWOX) and links it to a disease (cSCC), but it lacks a defined, scalable assay format suitable for traditional small-molecule HTS, focusing instead on genetic knockout and observational protein-protein association studies.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41922802",
@@ -3097,9 +3097,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 9,
+    "hts_reason": "The study identifies ATF3 as a specific target for Huntington's disease and describes a robust, cell-based fluorescent iPSC-derived neuronal assay suitable for measuring the modulation of inclusion body formation.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42148860",
@@ -3156,9 +3156,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, and the described method is a medical procedure rather than an assay or method to test a molecule's effect. The disease link is present, but it's a well-established condition rather than a new connection to a specific molecule or target.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42341044",
@@ -3217,9 +3217,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 7,
+    "hts_reason": "The paper identifies a specific molecular target (GAS6/AXL) and links it to mucosal immune homeostasis and inflammation, but lacks a high-throughput assay description, as the current findings rely on developmental biology and immunological characterization.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42373304",
@@ -3272,9 +3272,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper describes a computational method for gene pathway analysis rather than identifying a specific druggable target, disease-specific molecule, or a primary screenable assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42339507",
@@ -3342,9 +3342,9 @@
     "prev_score": "24",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 9,
+    "hts_reason": "The paper identifies a specific target (CISD2/mitochondrial iron overload), links it to Wolfram syndrome type 2, and provides established ex vivo functional cellular assays (mLI and ROS measurement) suitable for screen adaptation.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42334412",
@@ -3397,9 +3397,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. Instead, it focuses on the properties and potential applications of lignin and lignin-silica composites for bone regeneration.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42355925",
@@ -3454,9 +3454,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a retrospective clinical outcomes study of an existing drug (Pembrolizumab) rather than a discovery paper identifying a new target or describing a screening assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "epmc_42104100",
@@ -3520,9 +3520,9 @@
     "prev_score": "23",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper is a retrospective clinical outcomes study that does not identify a new molecular target for drug discovery, but rather monitors existing markers for clinical prognosis. It lacks a specific druggable target for HTS and relies on clinical observation rather than a biochemical or cell-based screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42032110",
@@ -3587,9 +3587,9 @@
     "prev_score": "26",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The paper is descriptive and focuses on genome-wide DNA methylation patterns rather than identifying a specific druggable molecule or target. It lacks a defined assay or high-throughput method suitable for screening small molecule modulators of the observed epigenetic phenomena.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42189911",
@@ -3647,9 +3647,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper focuses on physical chemistry and photonics regarding quantum dots and plasmonic cavities, lacking any biological target, disease association, or HTS-relevant pharmacological assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42010670",
@@ -3703,9 +3703,9 @@
     "prev_score": "16",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 9,
+    "hts_reason": "The paper identifies a specific target (nNOS) linked to a specific condition (ASD), and describes the use of a pharmacological inhibitor (7-NI) and proteomic profiling as measurable assays.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "epmc_41975582",
@@ -3759,9 +3759,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "This paper identifies a potential biocontrol agent (<i>Paenibacillus dendritiformis</i> C454) and links it to bacterial plant diseases, but it does not describe a specific molecule or target, nor does it provide a testable assay to measure its effect.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42390209",
@@ -3815,9 +3815,9 @@
     "prev_score": "",
     "prev_eval_model": "",
     "added_date": "2026-07-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a clinical guideline/review regarding diagnostic imaging (echocardiography) and does not identify a molecular target, a drug-testable disease link, or a biochemical assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42337219",
@@ -3875,9 +3875,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 6,
+    "hts_reason": "This paper identifies a specific target (CTLA-4) linked to a disease (tumor growth and survival), but the description of the assay or method to test the molecule's effect is vague and based on pre-existing methods (immune profiling, flow cytometry, immunohistochemistry).",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42309429",
@@ -3956,9 +3956,9 @@
     "prev_score": "23",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The study evaluates a complex dietary intervention rather than a specific molecular target or chemical entity, making it unsuitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42224991",
@@ -4011,9 +4011,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 9,
+    "hts_reason": "The paper identifies a specific molecular target (MAP1B at Cys1305), links it to a specific disease condition (Cntnap2 mouse model of autism), and utilizes a well-defined SNOTRAP-MS assay that can be adapted for screening compound libraries against this post-translational modification.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42014383",
@@ -4065,9 +4065,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on quantum computing theory and Hamiltonian simulations, containing none of the required elements: a specific molecular target, a disease association, or a biological assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41957019",
@@ -4133,9 +4133,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a broad class of molecules (maternal IgG) and a specific condition (periodontitis), but it lacks a singular, druggable molecular target or a high-throughput assay platform suitable for drug screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41933200",
@@ -4198,9 +4198,9 @@
     "prev_score": "24",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 7,
+    "hts_reason": "The paper identifies a specific molecular target (YokF) and describes a testable assay (plasmid transfer inhibition), but the 'disease' link is limited to bacterial competition rather than a human clinical condition, which limits direct translational potential.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42159860",
@@ -4256,9 +4256,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a clinical observational study on behavioral outcomes and does not identify a specific molecular target or describe a biochemical assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42196319",
@@ -4318,9 +4318,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 5,
+    "hts_reason": "The paper identifies a specific molecular target (aromatase) and links it to a disease (obesity-associated breast cancer), but it describes a biological mechanism rather than a validated, high-throughput compatible screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_41486788",
@@ -4374,9 +4374,9 @@
     "prev_score": "24",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "While the paper links specific biologics (dupilumab and mepolizumab) to a disease (CRSwNP), it is a retrospective epidemiological study rather than a discovery paper describing a new molecular target or a novel HTS-ready assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42229083",
@@ -4430,9 +4430,9 @@
     "prev_score": "23",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "While the paper identifies a molecule (alpha-tocopherol) and a testable assay (lipid peroxidation measurement), it lacks a human disease link, as the study focuses on agricultural/meat quality rather than a clinical condition.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42402654",
@@ -4494,9 +4494,9 @@
     "prev_score": "",
     "prev_eval_model": "",
     "added_date": "2026-07-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This study focuses on a mechanical/hemodynamic surgical intervention rather than a molecular or pharmacological target; therefore, it lacks all three elements required for molecular High-Throughput Screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42364396",
@@ -4551,9 +4551,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a behavioral observational study and does not identify a molecular target, a biological disease mechanism suitable for drug screening, or an assay applicable to high-throughput molecular testing.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42353344",
@@ -4609,9 +4609,9 @@
     "prev_score": "35",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 7,
+    "hts_reason": "The paper identifies a specific target (GLP-1R) and a testable assay (luciferase reporter), but the disease link is implied via 'metabolic regulation' rather than a specific diagnosed condition.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42265456",
@@ -4672,9 +4672,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "This paper identifies a specific disease condition (maternal diabetes and its effects on fetal growth) and describes an assay or method (islet functional assays ex vivo, immunohistochemistry for beta cell area, proliferation, maturation, and mTORC1 activity) that could test/measure the effect, but it does not clearly identify a specific new molecule or target, instead focusing on a pathway (fetal beta cell response).",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42235779",
@@ -4725,9 +4725,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 5,
+    "hts_reason": "The paper identifies a specific molecule (Haptoglobin) and a disease context (renal injury following pulsed field ablation), but it lacks a defined HTS-ready assay or targetable screening protocol for therapeutic modulation.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41980769",
@@ -4789,9 +4789,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 6,
+    "hts_reason": "The paper identifies a specific pathway (cGAS-STING axis) and links it to a specific disease (ataxia telangiectasia and Bloom syndrome), but it does not describe a specific new molecule or target, and the assay or method described is not directly testable for the molecule/target's effect.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42345248",
@@ -4846,9 +4846,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not clearly identify a specific new molecule or target, nor does it describe an assay or method to test the molecule/target's effect. It does link a treatment (GLP-1 agonists) to a specific disease (morbid obesity), but in a general and clinical-economic context rather than a translational-science context.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42345229",
@@ -4902,9 +4902,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, and while it links a treatment (hyperbaric oxygen therapy) to a specific disease (post-traumatic stress disorder), it does not describe an assay or method that could test/measure the molecule/target's effect, instead presenting preliminary results of a clinical trial.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42274567",
@@ -4957,9 +4957,9 @@
     "prev_score": "23",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper links a disease (Fibromyalgia) to an assay (GFAP upregulation in mouse ganglia), but fails to identify a specific molecular target, instead attributing the effect to an undefined component within the patient's serum.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42142165",
@@ -5012,9 +5012,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a psychosocial behavioral study; it does not identify a molecular target, a biological disease mechanism, or a biochemical assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42069104",
@@ -5066,9 +5066,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper proposes a conceptual framework rather than identifying a specific molecular target, and it lacks a discrete biochemical or cellular assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
     "id": "pubmed_42010622",
@@ -5127,9 +5127,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it describe an assay or method to test the molecule's effect. It does link microbial signatures to a specific disease (food protein-induced allergic proctocolitis), but the lack of a specific target and testable assay limits its HTS collaboration fitness.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "epmc_42054919",
@@ -5184,9 +5184,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is an observational social science study on digital behavior and does not identify any molecular targets, biological pathways for pharmacological intervention, or biochemical assays suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41961875",
@@ -5240,9 +5240,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link a molecule/target to a specific disease or condition. It does describe an assay or method that could test/measure the effect of moxifloxacin, but in the context of optimizing topical antibiotic delivery in dogs, which is a relatively specific application but not a disease or condition.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42232537",
@@ -5298,9 +5298,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it describe an assay or method that could test/measure the molecule/target's effect. It does link a specific disease or condition (neurooncologic patients with eloquently located tumors) to a particular aspect of language function, but this is not a molecule or target in the context of High-Throughput Screening.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41962419",
@@ -5353,9 +5353,9 @@
     "prev_score": "29",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a clinical review paper on medical imaging technology and does not identify a specific molecular target for screening, link a target to a disease for drug discovery, or describe a biological assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42289936",
@@ -5406,9 +5406,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper describes the synthesis and optical properties of quantum dots but fails to identify a specific biological target or link the material to a particular disease state. While the methodology for material synthesis is clear, it lacks the biological screening component required for an HTS collaboration.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42300680",
@@ -5468,9 +5468,9 @@
     "prev_score": "16",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper describes a materials science innovation rather than a biological target or disease-linked molecular screen. It lacks a defined disease model and a high-throughput biological screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42322926",
@@ -5526,9 +5526,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a clinical observational study on psychiatric care models and does not identify a molecular target, link a specific molecule to a condition, or describe a laboratory-based high-throughput assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42250879",
@@ -5581,9 +5581,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "While it identifies a molecule (progesterone) and a condition (preterm birth), it describes a clinical retrospective cohort study rather than a molecular assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "epmc_42113772",
@@ -5642,9 +5642,9 @@
     "prev_score": "26",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it describe an assay or method that could test/measure the molecule/target's effect. It focuses on developing a deep learning method for identifying inherited retinal diseases based on imaging data.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "epmc_42158255",
@@ -5696,9 +5696,9 @@
     "prev_score": "28",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper focuses on behavioral psychology and digital user experience design rather than biological molecular targets or drug discovery assays. It lacks all three required elements (specific molecule/target, disease pathology, and biochemical/cellular assay).",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42003341",
@@ -5754,9 +5754,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "While a specific molecule (RAO) and a measurement method (magnetic coercivity) are described, there is no link to a disease or medical condition.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42029957",
@@ -5813,9 +5813,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, and it does not describe an assay or method that could test/measure the molecule/target's effect. It does link the identified psychosocial profiles to varying symptom severity levels, but this is more of a clinical application rather than a direct link to a specific disease or condition related to a molecule or target.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41920201",
@@ -5874,9 +5874,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is an epidemiological outcomes study regarding clinical practice protocols; it identifies no molecular targets, lacks a disease-linked therapeutic target, and contains no biochemical or pharmacological assays.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41912874",
@@ -5935,9 +5935,9 @@
     "prev_score": "24",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 5,
+    "hts_reason": "The paper identifies specific molecules (LF1, LF22) and targets (TAS2R14, TAS2R16) and describes an assay (site-directed mutagenesis and functional inhibition testing), but it lacks a clear link to a specific disease or clinical condition.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42168489",
@@ -5994,9 +5994,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The paper describes a methodological pipeline for phage testing but fails to identify a specific novel molecular target or chemical entity for screening. While it links a method to biofilm infections, it lacks the target specificity required for a traditional high-throughput drug discovery screen.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42133586",
@@ -6044,9 +6044,9 @@
     "prev_score": "6",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper focuses on multi-omics machine learning for clinical prediction rather than identifying a specific druggable molecular target or providing a high-throughput assay for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42397075",
@@ -6106,9 +6106,9 @@
     "prev_score": "",
     "prev_eval_model": "",
     "added_date": "2026-07-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 8,
+    "hts_reason": "The paper identifies a specific target interaction (WWOX-MYC) linked to neurodevelopmental disorders (WOREE/SCAR12) and provides a testable assay using human brain organoids and single-cell transcriptomics.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42232887",
@@ -6161,9 +6161,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a surgical retrospective cohort study and lacks a molecular target, a pharmacological disease link, and any biochemical or high-throughput screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42278414",
@@ -6217,9 +6217,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The study is purely descriptive, characterizing developmental timelines and transcriptomic profiles without identifying a specific druggable molecule or target suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41957254",
@@ -6278,9 +6278,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "This is a clinical review paper that identifies existing therapeutic classes like TTR stabilizers but lacks a novel target discovery or an assay suitable for HTS development. It is purely descriptive/review work and does not propose new molecular candidates for screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41935570",
@@ -6334,9 +6334,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a retrospective clinical cohort study regarding surgical outcomes and lacks a specific molecular target, a pharmacological intervention, or an assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42325685",
@@ -6389,9 +6389,9 @@
     "prev_score": "24",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, and the described method (catheter-directed management) is a treatment strategy rather than an assay or method to test/measure the effect of a molecule/target. The paper does discuss a disease link, but it is not focused on a specific molecule or target.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42308280",
@@ -6443,9 +6443,9 @@
     "prev_score": "26",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The title suggests a review or perspective article focusing on the biological mechanism of ferroptosis in preeclampsia rather than the identification of a novel drug target or a specific high-throughput compatible assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42366537",
@@ -6503,9 +6503,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a simulation-based model for public health surveillance infrastructure and does not identify a specific molecular target, link a specific molecule to a disease mechanism, or describe a screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42348601",
@@ -6557,9 +6557,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a review/perspective piece focused on predictive software models for critical care outcomes and does not identify a specific molecular target or describe a laboratory-based high-throughput screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42307942",
@@ -6622,9 +6622,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper focuses on clinical triage workflow and patient outcomes rather than molecular targets, specific drug candidates, or high-throughput biological assays. None of the three required elements for HTS collaboration are present.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42295558",
@@ -6678,9 +6678,9 @@
     "prev_score": "23",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on clinical echocardiographic indices (TAPSE/PASP) rather than a molecular target. It lacks a specific molecule for screening and a biochemical assay suitable for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42281451",
@@ -6739,9 +6739,9 @@
     "prev_score": "23",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "While it identifies a specific molecule (AMH) and a condition (fertility preservation), it is a retrospective clinical cohort study lacking a novel assay or method suitable for high-throughput screening.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42230577",
@@ -6804,9 +6804,9 @@
     "prev_score": "32",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific target (vgll3) and links it to a disease (melanoma-like tumors and shortened lifespan), but the assay or method to test/measure the molecule/target's effect is not clearly described in the abstract.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41948839",
@@ -6860,9 +6860,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This is a systematic review and meta-analysis of existing clinical data rather than primary research; while it identifies specific targets (CYP2C9 and P-gp) and a condition (epilepsy), it lacks the experimental description of an assay for novel lead discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41916758",
@@ -6915,9 +6915,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a computational study on neural network architecture rather than a biological investigation; it identifies no drug target, proposes no disease-specific mechanism, and offers no molecular assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42045761",
@@ -6966,9 +6966,9 @@
     "prev_score": "24",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a clinical/review commentary on a mechanical medical device (mandibular advancement device) rather than a molecular target or drug discovery research, failing to provide a testable molecular assay or specific biochemical target.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41999725",
@@ -7024,9 +7024,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper describes a clinical scoring system (TBICS) for prognosis rather than identifying a molecular target, a disease-linked molecule, or a biochemical assay suitable for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_41789914",
@@ -7078,9 +7078,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper describes high-throughput methodology for mapping RNA interactions but fails to identify a specific therapeutic target or link these interactions to a concrete disease condition.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_41620207",
@@ -7134,9 +7134,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "This is an observational clinical study evaluating the impact of an existing drug rather than identifying a new target or proposing a molecular HTS assay. While it links semaglutide (molecule) to TED (disease), it lacks the experimental methodology or novel target identification required for a collaborative HTS screening program.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42024842",
@@ -7193,9 +7193,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, and it does not describe an assay or method that could test/measure the molecule/target's effect. It focuses on comparing psychosocial aspects and outcomes of BRCA pathogenic variant carriers identified through different methods.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42386421",
@@ -7254,9 +7254,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a review and clinical guideline document that lacks a specific molecular target, a defined drug-screening assay, and any experimental evaluation of new chemical entities.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42362929",
@@ -7317,9 +7317,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 5,
+    "hts_reason": "The paper identifies specific protein targets (CARDIB and RLRb) and describes functional assays to measure their activity, but lacks a direct link to a specific human disease or clinical condition, focusing instead on evolutionary biology.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42341608",
@@ -7373,9 +7373,9 @@
     "prev_score": "31",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This is a review paper that lacks the identification of a specific target molecule and does not describe a primary assay or experimental method for testing a new candidate. It focuses on the general landscape of microbiome-based antimicrobial discovery rather than presenting a concrete, testable screening project.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42322468",
@@ -7432,9 +7432,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not clearly identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It does describe an assay or method that could test/measure the effect of mechanical forces on bovine mammary cells, but this is more of a methodological contribution rather than a direct HTS collaboration opportunity.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42303774",
@@ -7484,9 +7484,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper discusses a known drug (romosozumab) and a condition (MRONJ), but it is a retrospective clinical cohort study. It does not identify a new target nor describe a laboratory assay suitable for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42277342",
@@ -7540,9 +7540,9 @@
     "prev_score": "23",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a systematic review of clinical protocols, not a discovery paper; it identifies no specific molecular target or assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42271038",
@@ -7599,9 +7599,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper identifies a disease link (CLL) and biomarkers (IgA/IgG/IgM), but it does not identify a specific druggable molecule/target or describe a functional assay for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_41966456",
@@ -7654,9 +7654,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "This is a descriptive review paper that identifies a target family (SCD variants) and broad cellular contexts but lacks a specific disease-model focus or a novel, scalable assay suitable for an HTS screening campaign.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41954033",
@@ -7708,9 +7708,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "While the paper identifies a specific target (IGF-1R) and links it to a disease (thyroid eye disease) and an adverse event (hyperglycemia), it is a retrospective clinical cohort study rather than a discovery paper describing an assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42217210",
@@ -7764,9 +7764,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on a psychological behavioral intervention rather than a molecular or druggable biological target, making it entirely unsuitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42302187",
@@ -7818,9 +7818,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a qualitative study focused on patient experiences with nursing care models and contains no specific molecular targets, disease-linked compounds, or biochemical assays suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42104481",
@@ -7883,9 +7883,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper is a diagnostic/observational study linking fecal DNA levels to inflammation, but it does not identify a specific molecular target for drug intervention nor propose an HTS-ready assay for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41983625",
@@ -7937,9 +7937,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition, and it does not describe an assay or method that could test/measure the molecule/target's effect. The paper appears to be a theoretical work on quantum mechanics and does not have any direct relevance to high-throughput screening or translational research.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41986224",
@@ -7992,9 +7992,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a descriptive review paper that discusses broad genetic mechanisms of neurodevelopmental disorders without identifying a specific molecular target or a functional screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41942993",
@@ -8048,9 +8048,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a clinical retrospective cohort study that lacks a specific molecular target for drug discovery, as it focuses on the utilization of existing opioid analgesics rather than identifying novel therapeutic entities or biochemical assays.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41919411",
@@ -8104,9 +8104,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a descriptive clinical/operational report regarding emergency department management and contains none of the required elements: no specific molecule or target, no disease link to a druggable pathology, and no biochemical assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42203988",
@@ -8159,9 +8159,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a clinical imaging study evaluating diagnostic tools and lacks a molecular target, a disease-specific biological mechanism, or any assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42338012",
@@ -8216,9 +8216,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This is a retrospective clinical observation study that identifies no specific molecular target and provides no assay for high-throughput screening; it only describes surgical and clinical outcomes.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42343828",
@@ -8275,9 +8275,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific interaction between auxin and GA, but it does not link this interaction to a specific disease or condition, and the assay described is more of a biological observation rather than a testable method for HTS.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42301788",
@@ -8329,9 +8329,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 6,
+    "hts_reason": "The paper identifies a specific molecule (sucrose) and links it to a specific disease/condition (tissue repair), but the assay or method described is not directly testable for the molecule's effect. Instead, it describes a method for tracking glucose accumulation near the cut.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42272271",
@@ -8390,9 +8390,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper is a retrospective clinical observation of white blood cell counts and does not identify a specific druggable molecular target or provide a high-throughput assay for molecular screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42346455",
@@ -8450,9 +8450,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The study identifies a general biomarker (cfDNA) rather than a specific druggable molecular target and describes a diagnostic observation rather than a therapeutic assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42134732",
@@ -8498,9 +8498,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It does describe an assay or method (continuous and simultaneous functional phenotyping) that could test/measure the plant's physiological response patterns.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "epmc_41950545",
@@ -8555,9 +8555,9 @@
     "prev_score": "11",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a retrospective clinical outcomes study that does not identify a molecular target or describe a biochemical assay; it focuses on surgical metrics rather than drug discovery or molecular screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41852511",
@@ -8611,9 +8611,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on an educational intervention for patient behavior rather than a molecular target, disease-linked protein, or a biochemical assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42150943",
@@ -8668,9 +8668,9 @@
     "prev_score": "22",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This is a review article that does not identify a specific novel molecular target or provide a primary assay for high-throughput screening; it focuses on general strategies for CAR-T bioengineering.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42194467",
@@ -8727,9 +8727,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a clinical observational study on patient-reported symptom clusters and lacks a specific molecular target, a pharmacological intervention, or an experimental bioassay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42164974",
@@ -8775,9 +8775,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a retrospective clinical outcomes study comparing surgical procedures rather than identifying a molecular target or a high-throughput screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42311444",
@@ -8831,9 +8831,9 @@
     "prev_score": "16",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 7,
+    "hts_reason": "This paper identifies a specific molecule (Irinotecan) linked to a disease (neuroblastoma), but the target is not a specific molecule or protein, rather a treatment modality. An assay or method is described to test the effect of Irinotecan, but it's not a novel target or molecule.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42394124",
@@ -8885,9 +8885,9 @@
     "prev_score": "",
     "prev_eval_model": "",
     "added_date": "2026-07-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a descriptive study on plant physiology (tomato mesophyll conductance) and does not identify a drug target, a human disease, or a screenable assay for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42389916",
@@ -8942,9 +8942,9 @@
     "prev_score": "",
     "prev_eval_model": "",
     "added_date": "2026-07-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a retrospective clinical outcomes study regarding surgical technique and does not identify a specific molecular target for screening or propose a biochemical assay for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42380895",
@@ -9001,9 +9001,9 @@
     "prev_score": "23",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The study focuses on physiological mechanical loading and general epithelial kinetics rather than a specific druggable molecular target. While it describes an in vivo model, it lacks a defined molecular screenable target and a relevant clinical disease condition beyond basic developmental biology.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42350447",
@@ -9054,9 +9054,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It does describe an experiment, but it's a social science study and not a method for testing a molecule's effect.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42348217",
@@ -9107,9 +9107,9 @@
     "prev_score": "24",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, but rather a receptor agonist class. It does link this class to a specific disease (type 2 diabetes), but does not describe an assay or method that could test/measure the molecule/target's effect.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42349306",
@@ -9164,9 +9164,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on clinical protocol adherence and process improvement rather than identifying a molecular target, disease mechanism, or a pharmacological assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42215372",
@@ -9222,9 +9222,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "While the paper identifies a specific drug class (GLP-1 receptor agonists) and a specific condition (postoperative respiratory complications), it is an observational clinical study lacking an experimental assay or method for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42210433",
@@ -9278,9 +9278,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper identifies a biological regulator (EMF2) in a plant model system, but it lacks a human disease link and does not describe an assay suitable for high-throughput chemical screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42090211",
@@ -9338,9 +9338,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a potential link between maternal ketosis and impaired kidney function in offspring, but it does not clearly specify a new molecule or target. It also describes an assay or method to test the effect, but it's focused on transcriptomic analysis and not a specific, testable assay for the molecule/target's effect.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42051017",
@@ -9394,9 +9394,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on organometallic coordination chemistry and ligand design with no identified biological target, disease association, or physiological assay relevant to translational science.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41605646",
@@ -9448,9 +9448,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper describes a biological mechanism regarding codon bias and sRNA binding but fails to identify a specific disease-linked target and lacks a translatable HTS assay for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42160229",
@@ -9506,9 +9506,9 @@
     "prev_score": "24",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This is an observational clinical study that lacks a specific molecular target for drug discovery and does not describe a high-throughput assay; it is purely descriptive of clinical imaging findings.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42143650",
@@ -9566,9 +9566,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a surgical case report that describes a procedure rather than identifying a molecular target, a chemical compound, or a quantifiable high-throughput screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42126559",
@@ -9619,9 +9619,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a clinical radiology paper focused on diagnostic imaging protocols, lacking a specific molecular target, biological disease mechanism for drug intervention, or a biochemical assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_41645467",
@@ -9675,9 +9675,9 @@
     "prev_score": "12",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "While the paper identifies a specific molecular target (TINY1) and a measurable assay (growth and transpiration metrics), it fails to link the target to a disease or clinically relevant condition, focusing instead on plant developmental biology.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_41423815",
@@ -9735,9 +9735,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper focuses on the clinical safety of an existing, well-characterized drug (Risankizumab) in a specific patient population, rather than identifying a new target or assay for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42293207",
@@ -9793,9 +9793,9 @@
     "prev_score": "16",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper identifies complex natural extracts rather than a specific molecule or target, lacks a link to a specific disease, and focuses on food science assays (DPPH, FRAP) rather than pharmacological screening assays.",
+    "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
     "id": "pubmed_42208814",
@@ -9845,9 +9845,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a population-based epidemiological study; it does not identify a molecular target, a druggable molecule, or a laboratory assay for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42257616",
@@ -9897,9 +9897,9 @@
     "prev_score": "25",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "While the paper identifies specific targets (VMAT1/VMAT2), it is a retrospective review that lacks a novel disease-linkage study or a defined, actionable high-throughput screening protocol.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42381178",
@@ -9949,9 +9949,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a review or descriptive analysis of AI clinical guidelines rather than experimental research; it fails to identify a specific molecular target, link it to a druggable disease mechanism, or propose a biological assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42318775",
@@ -10004,9 +10004,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "Identifies specific targets (RBOHC, MIZ2/GNOM) and a method (root halotropism), but lacks a human disease or clinical condition link, focusing instead on plant biology.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42276459",
@@ -10061,9 +10061,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper identifies a clinical imaging biomarker rather than a druggable molecular target and lacks a biological assay for high-throughput screening. It describes a structural phenomenon related to retinal repair rather than a molecule or biochemical pathway suitable for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42223652",
@@ -10121,9 +10121,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, and does not describe an assay or method that could test/measure the molecule/target's effect. It does link headache to a specific disease or condition (combat-related PTSD risk).",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42278785",
@@ -10180,9 +10180,9 @@
     "prev_score": "26",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It also does not describe an assay or method that could test/measure the molecule/target's effect, instead focusing on a wearable-based intervention for first responders and their partners.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42345224",
@@ -10237,9 +10237,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a descriptive epidemiological study; it identifies no specific molecular target, no drug-targetable mechanism, and no biochemical assay suitable for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "epmc_42104124",
@@ -10291,9 +10291,9 @@
     "prev_score": "12",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a surgical case report describing a clinical procedure rather than a molecular target, disease-related molecule, or assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42029403",
@@ -10349,9 +10349,9 @@
     "prev_score": "16",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on theoretical physics and semiconductor photoluminescence modeling rather than biological targets or disease-related drug discovery. It lacks any link to a medical condition and does not describe an assay suitable for high-throughput pharmacological screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41961262",
@@ -10405,9 +10405,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This study is clinical/observational and does not identify a molecular target or chemical entity for screening. While it describes a functional assessment method (FEES), it lacks a druggable target or molecular discovery component.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41957349",
@@ -10463,9 +10463,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper identifies a neural population (pallial neurons) rather than a druggable molecular target and lacks a specific disease link. While it describes an assay for behavioral/neural monitoring, it is not suitable for high-throughput pharmacological screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41946505",
@@ -10520,9 +10520,9 @@
     "prev_score": "16",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper is purely descriptive/evolutionary and lacks a disease model or clinical application, though it does identify a specific target (Nep3 toxin) and an assay platform (RNA/epigenetic profiling) for further study.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41945654",
@@ -10578,9 +10578,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "While the paper identifies a specific drug class (GLP-1 RAs) and a clinical association, it is a retrospective clinical observation study rather than a discovery-oriented paper providing a molecular mechanism or a testable HTS assay for a novel target.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42146121",
@@ -10632,9 +10632,9 @@
     "prev_score": "5",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on the development of a psychological survey tool for dental practice and lacks any molecular targets, disease-pathology linkages, or biochemical/pharmacological screening assays.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42181240",
@@ -10698,9 +10698,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific molecular target (Robo3) and a regulatory mechanism, but it lacks a specific disease application and does not describe a scalable high-throughput assay for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42182782",
@@ -10751,9 +10751,9 @@
     "prev_score": "11",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a clinical surgical study focused on procedural outcomes rather than molecular targets, drug discovery, or assay development.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42034104",
@@ -10808,9 +10808,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it describe an assay or method that could test/measure the molecule/target's effect. It is a retrospective observational study comparing clinical outcomes of two different treatment locations for acute mastoiditis.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "epmc_41678362",
@@ -10871,9 +10871,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it describe an assay or method to test the molecule's effect. It does link maternal diabetes to a specific disease condition (delayed developmental milestones in offspring), but the lack of a specific target or testable assay makes it unsuitable for HTS collaboration.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42328598",
@@ -10923,9 +10923,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link a molecule/target to a specific disease or condition. It does, however, describe an assay or method (the Fogarty balloon catheter technique) that could test/measure the effect of removing a foreign body, but in a clinical rather than a molecular context.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42386780",
@@ -10981,9 +10981,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper is a descriptive physiological study that lacks a specific druggable molecular target and a defined disease indication. While it describes a voltage imaging assay, it does not provide a therapeutic target or a pathway-specific intervention suitable for HTS.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41967557",
@@ -11035,9 +11035,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper describes a behavioral therapy program rather than a molecular target. It lacks a specific molecule, a pharmacological target, and a biochemical assay suitable for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42371139",
@@ -11090,9 +11090,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "While the paper identifies a specific molecular target (PCIS1), it focuses on plant biology rather than human disease and lacks a translatable high-throughput assay suitable for pharmaceutical screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42360180",
@@ -11145,9 +11145,9 @@
     "prev_score": "12",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The paper focuses on evaluating medical devices (MTA and Biodentine) rather than a specific molecular target for drug discovery, and it lacks a high-throughput compatible assay for target-based screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42315815",
@@ -11199,9 +11199,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper describes a patient-reported outcome questionnaire (clinical survey tool) rather than identifying a molecular target or a biochemical assay for drug screening.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42213864",
@@ -11249,9 +11249,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper describes a synthetic chemistry methodology for building blocks; it lacks a specific biological target, a linked disease, and a functional assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42276380",
@@ -11300,9 +11300,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a retrospective clinical outcomes study focused on pharmacy practice adherence rather than molecular biology; it identifies no specific molecular target, nor does it describe a biochemical or cellular assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42114633",
@@ -11357,9 +11357,9 @@
     "prev_score": "2",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The paper discusses an existing clinical treatment (Interferon alpha-2a) for a specific condition but lacks a novel molecular target or a new high-throughput assay methodology suitable for screening. It is a clinical commentary rather than a discovery paper targeting new pharmacological intervention points.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41999145",
@@ -11412,9 +11412,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a clinical case report describing a drug side effect. It lacks a novel therapeutic target and does not describe a screenable assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_41997896",
@@ -11469,9 +11469,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper describes a biophysical/systems-level mechanism (neural temporal scaling) rather than a specific molecular target or disease, and provides no assay suitable for high-throughput pharmacological screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41963708",
@@ -11523,9 +11523,9 @@
     "prev_score": "16",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper focuses on software methodology for eye-tracking data analysis and does not identify a molecular target, link it to a disease, or describe a biological assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41926011",
@@ -11586,9 +11586,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The paper identifies specific genes (Ccl2, Ccl7) but is purely descriptive of a physiological response to injury rather than establishing a druggable target for a specific disease condition, and it lacks a high-throughput assay methodology for a therapeutic screening campaign.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41925051",
@@ -11651,9 +11651,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The paper lacks a specific molecular target for drug discovery, focusing instead on broad systemic cytokine responses in a murine model. While it links inflammation to reproductive impairment and uses standard immunoassays, it fails to identify a druggable protein or receptor as a candidate for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41922992",
@@ -11719,9 +11719,9 @@
     "prev_score": "11",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a clinical observational study focused on patient outcomes and procedural management; it identifies no molecular targets and describes no assays suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42061688",
@@ -11773,9 +11773,9 @@
     "prev_score": "16",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper is a review/perspective piece that describes broad categories of substances and systemic outcomes rather than identifying a specific molecular target or a high-throughput assay platform.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42330696",
@@ -11827,9 +11827,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a theoretical review of polymer physics and protein crowding; it lacks a specific drug target, a disease link, and a concrete HTS assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42345897",
@@ -11881,9 +11881,9 @@
     "prev_score": "16",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a perspective piece discussing the methodology and standardization of biosensor development rather than identifying a specific molecular target, a disease link, or a concrete high-throughput screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42031744",
@@ -11946,9 +11946,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific reporter assay (RLRb promoter) and links it to an antiviral response, but lacks a human disease-relevant target or actionable therapeutic molecule for HTS development.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42008338",
@@ -11999,9 +11999,9 @@
     "prev_score": "21",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The title suggests a general review or conceptual piece. None of the three required elements (specific target, disease link, or testable assay) are present.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_41927562",
@@ -12055,9 +12055,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The study is a descriptive neurophysiological investigation of neuronal activity patterns and lacks a specific molecular target for screening, a direct link to a clinical disease, or a high-throughput assay platform.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42203182",
@@ -12117,9 +12117,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a retrospective epidemiological cohort study that does not identify a molecular target or describe a laboratory-based assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42184362",
@@ -12163,9 +12163,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on psychological and technical aptitude assessment for surgical selection and lacks a molecular target, a disease-specific biological mechanism, and an HTS-compatible assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42172949",
@@ -12222,9 +12222,9 @@
     "prev_score": "11",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper focuses on forensic analysis of footwear impressions and does not identify any molecular biological targets, disease states, or biochemical assays suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42200330",
@@ -12282,9 +12282,9 @@
     "prev_score": "11",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The abstract lacks a specific molecular target, a defined mechanism for HTS intervention, and any description of a testable assay, as it appears to be a clinical review or summary.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42234623",
@@ -12339,9 +12339,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "This is a review article that discusses broad mechanistic pathways (inflammasome activation) rather than identifying a specific novel drug target, nor does it propose or describe a new HTS-ready assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42392411",
@@ -12394,9 +12394,9 @@
     "prev_score": "",
     "prev_eval_model": "",
     "added_date": "2026-07-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 5,
+    "hts_reason": "The paper identifies a specific molecular target (PKCβ) and links it to neurodevelopmental outcomes, but the study is observational/toxicological rather than presenting a methodology suitable for high-throughput chemical screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42365178",
@@ -12451,9 +12451,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a narrative review paper that discusses clinical care models and environmental strategies rather than identifying specific molecular targets or high-throughput screening assays.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42335652",
@@ -12505,9 +12505,9 @@
     "prev_score": "12",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It does describe an assay or method (transmission chains of child and adult learners) that could test/measure the emergence of statistical properties of language, but this is not relevant to High-Throughput Screening collaboration potential.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42351580",
@@ -12563,9 +12563,9 @@
     "prev_score": "11",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link a molecule/target to a specific disease or condition. It appears to be a narrative review of the application of artificial intelligence in cardiac point-of-care ultrasound.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42269942",
@@ -12620,9 +12620,9 @@
     "prev_score": "12",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a scoping review on medical education and AI training; it identifies no specific molecular target, disease mechanism, or testable biological assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42345233",
@@ -12675,9 +12675,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, and it does not describe an assay or method to test the molecule's effect. It only discusses the impact of sleep restriction and heat stress on military cognitive readiness, which is a vague pathway.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42282940",
@@ -12730,9 +12730,9 @@
     "prev_score": "12",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on human cognitive behavior and computational modeling rather than molecular targets or disease-specific biomarkers; it lacks a screenable biological target, disease link, or chemical assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41963203",
@@ -12783,9 +12783,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This is a review article title lacking specific molecular targets, disease-linked mechanistic data, or assay descriptions suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41958062",
@@ -12838,9 +12838,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on psychological social science interventions rather than biological molecular targets, diseases, or quantifiable biochemical assays, making it entirely unsuitable for HTS collaboration.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42157686",
@@ -12895,9 +12895,9 @@
     "prev_score": "2",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a descriptive behavioral study of insect flight mechanics and does not identify a specific molecular target, link it to a human disease, or propose a high-throughput molecular assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42376810",
@@ -12950,9 +12950,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a qualitative sociological/phenomenological study that does not identify a molecular target, biological mechanism, or any testable high-throughput assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42331623",
@@ -13004,9 +13004,9 @@
     "prev_score": "12",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a cognitive neuroscience study on visual perception and lacks a molecular target, a disease link, and a pharmacological assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42271534",
@@ -13062,9 +13062,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on psychological social-cognition research and lacks any biochemical target, molecular entity, or pharmacological assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42137966",
@@ -13117,9 +13117,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, and it does not describe an assay or method that could test/measure the molecule/target's effect. It does, however, link a specific condition (addictive use of cosmetic procedures) to a disease or condition (addiction), but in a descriptive manner without any translational or experimental context.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41920176",
@@ -13172,9 +13172,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a clinical observational study on psychological outcomes and does not identify a specific molecular target or a biochemical assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41932681",
@@ -13227,9 +13227,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a cognitive psychology study on auditory perception and lacks a specific molecular target, a disease-related therapeutic link, or an assay suitable for high-throughput chemical screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42060399",
@@ -13283,9 +13283,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on psychological and social behavioral constructs rather than biological molecules, disease targets, or molecular assays suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41809114",
@@ -13350,9 +13350,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This study does not identify a specific new molecule or target, and the disease link is to a condition (severe eosinophilia) rather than a specific disease. It also does not describe an assay or method to test the molecule/target's effect, instead relying on observational data.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42061571",
@@ -13408,9 +13408,9 @@
     "prev_score": "12",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a class of molecules (tetracyclines) and links them to a specific disease (PVR), but it relies on retrospective clinical data rather than describing a high-throughput assay or target-based mechanism suitable for screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42025445",
@@ -13462,9 +13462,9 @@
     "prev_score": "12",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is an epidemiological observational study that lacks a specific molecular or protein target, a drug-target interaction, or a high-throughput biological assay; it is purely clinical data analysis.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42019819",
@@ -13519,9 +13519,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a clinical case series regarding a physical complication of a medical procedure and does not identify a specific molecular target for drug discovery, nor does it describe a biochemical or cellular assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41979603",
@@ -13577,9 +13577,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is an epidemiological observational study that identifies no specific molecular target, provides no disease mechanism amenable to drug screening, and describes no biological assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41979112",
@@ -13633,9 +13633,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on psychological and behavioral constructs (mastery motivation) rather than a molecular target, and does not provide an assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41937578",
@@ -13691,9 +13691,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a clinical observational study evaluating glucose levels as a physiological marker rather than identifying a specific drug target or molecule, and it does not propose an assay for therapeutic screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41936589",
@@ -13749,9 +13749,9 @@
     "prev_score": "11",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a retrospective clinical epidemiological study that identifies no specific molecular target or actionable assay; it purely investigates clinical risk associations.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42112049",
@@ -13813,9 +13813,9 @@
     "prev_score": "7",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a longitudinal psychological study focusing on sociological and mental health outcomes, containing no molecular targets, disease-linked biomarkers, or high-throughput biochemical assays.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42074898",
@@ -13868,9 +13868,9 @@
     "prev_score": "7",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it describe an assay or method that could test/measure the molecule/target's effect. It only links the progression rates of ALS to a specific site of onset.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "epmc_42038091",
@@ -13929,9 +13929,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on a psychological construct (Meaning in Life) rather than a biological molecule or drug target, and it utilizes self-report survey methodology rather than a molecular or biochemical assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_41539726",
@@ -14001,9 +14001,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific target (DADA2) linked to a disease (vasculitis), but the description of the assay or method to test the target's effect is vague and not explicitly mentioned. The study focuses on clinical and laboratory findings, treatment effectiveness, and factors associated with disease-related damage.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41936229",
@@ -14055,9 +14055,9 @@
     "prev_score": "11",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on developmental psychology and memory strategies in children, lacking a specific molecular target, a defined disease link, or a biochemical assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42313786",
@@ -14108,9 +14108,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a theoretical ecology study and contains none of the required elements: there is no specific molecular target, no link to a human disease, and no HTS-compatible assay described.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42381216",
@@ -14166,9 +14166,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper focuses on a structural imaging feature (arytenoid cartilage ossification) rather than a druggable molecular target or protein. It lacks a link to a screening-compatible biochemical or cell-based assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42347782",
@@ -14222,9 +14222,9 @@
     "prev_score": "12",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It appears to be a purely descriptive/review work on emotion regulation, lacking any elements relevant to High-Throughput Screening collaboration.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42259399",
@@ -14280,9 +14280,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This study is a purely epidemiological, observational analysis of social determinants of health and lacks a specific molecular target, a biological mechanism for screening, or any testable high-throughput assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41985580",
@@ -14338,9 +14338,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a retrospective clinical observation study that identifies no specific molecular target and provides no assay for high-throughput screening; it is purely descriptive clinical research.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42345226",
@@ -14395,9 +14395,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper is purely descriptive/clinical; it lacks a specific novel molecular target for drug intervention and does not describe a screening assay, focusing instead on existing clinical biomarkers.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42236046",
@@ -14448,9 +14448,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper is a review/perspective piece focused on clinical outcome measures for food allergy immunotherapy rather than identifying a specific molecular target or a high-throughput screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42227751",
@@ -14509,9 +14509,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper performs a descriptive transcriptomic analysis of insect behavior and fails to identify a specific druggable molecular target or a human disease model suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42116702",
@@ -14566,9 +14566,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a social-psychological study focused on behavioral outcomes and does not identify a druggable molecular target or provide a biochemical assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42316693",
@@ -14620,9 +14620,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not clearly identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It does describe an assay or method, but it is a mathematical approximation applied to a master equation, which is not directly testable or relevant to HTS collaboration.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42017499",
@@ -14681,9 +14681,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper identifies a cell type rather than a specific druggable molecular target and lacks the description of an assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41973546",
@@ -14735,9 +14735,9 @@
     "prev_score": "12",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a qualitative case study on mobility acquisition and lacks a molecular target, disease-related biochemical mechanism, or high-throughput assay platform.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42153451",
@@ -14796,9 +14796,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The study is a psychological behavioral experiment and does not identify a specific molecular target, biological disease mechanism, or a chemical assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42099730",
@@ -14849,9 +14849,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on behavioral psychology and metacognition; it identifies no molecular target, no biological disease, and no pharmacological assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "epmc_41804915",
@@ -14905,9 +14905,9 @@
     "prev_score": "19",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it describe an assay or method that could test/measure the molecule/target's effect. It does link a specific disease (Hepatitis B) to a condition (vaccine response in children), but the focus is on the observational study rather than a new molecule or assay.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42212014",
@@ -14958,9 +14958,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on psychological/behavioral constructs rather than biological targets, failing to identify any molecular entity, disease-related protein, or HTS-compatible biological assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42392455",
@@ -15014,9 +15014,9 @@
     "prev_score": "",
     "prev_eval_model": "",
     "added_date": "2026-07-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper identifies a broad class of nutrients (n-6 fatty acids) rather than a specific druggable molecular target, and it describes an observational epidemiological study rather than a functional assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42333014",
@@ -15067,9 +15067,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This is a review article that discusses general bacterial pathogens rather than identifying a specific molecular target for screening. It lacks a novel, druggable target and a defined HTS-ready assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42313983",
@@ -15120,9 +15120,9 @@
     "prev_score": "7",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is an evolutionary biology paper about species mimicry and migration; it contains no molecular targets, no human diseases, and no pharmacological assays.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42337585",
@@ -15182,9 +15182,9 @@
     "prev_score": "11",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper identifies an organism (Borrelia theileri) rather than a druggable molecular target and focuses on epidemiological detection rather than therapeutic assay development. While a disease link is present, it lacks the specific molecular target and actionable high-throughput screening methodology required for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42291187",
@@ -15236,9 +15236,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper is descriptive of biological processes (gametogenesis) rather than identifying a druggable target for a disease. It lacks a specific disease link and a screenable assay for HTS purposes.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42249598",
@@ -15293,9 +15293,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a clinical descriptive study; it identifies no specific molecular target and describes no biochemical assay for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "epmc_42132685",
@@ -15348,9 +15348,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on fundamental physical chemistry and quantum dynamics of molecular clusters, lacking a biological target, a disease context, or any relevance to therapeutic high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42231080",
@@ -15406,9 +15406,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is an epidemiological study that lacks a specific molecular or protein target and does not describe a pharmacological or biochemical assay for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42345227",
@@ -15466,9 +15466,9 @@
     "prev_score": "7",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a retrospective clinical observation study. It lacks a specific molecular target and does not describe a pharmacological assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42214219",
@@ -15524,9 +15524,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not identify a specific new molecule or target, and it does not describe an assay or method to test the effect of the molecule/target. It does link body mass index to a specific disease or condition (epilepsy), but this is not a molecule or target.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41915004",
@@ -15578,9 +15578,9 @@
     "prev_score": "16",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "While the paper identifies a specific candidate gene (ycf1), it lacks a human disease or therapeutic context and does not describe a pharmacological assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41909183",
@@ -15643,9 +15643,9 @@
     "prev_score": "11",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a retrospective epidemiological study that identifies no specific molecular targets for drug discovery and does not describe any testable HTS-compatible assays.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42010000",
@@ -15719,9 +15719,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a clinical behavioral study on medication adherence; it identifies no molecular target, no druggable mechanism, and no laboratory assay suitable for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_41943149",
@@ -15780,9 +15780,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a retrospective clinical cohort study that identifies no molecular targets, lacks a disease model suitable for screening, and describes no biological assay for HTS intervention.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41934057",
@@ -15835,9 +15835,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This is an editorial rather than an original research article, and it fails to identify a specific molecular target or a new screening assay for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_41490227",
@@ -15891,9 +15891,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "While the paper identifies specific genes and links them to retinal diseases, it is a retrospective clinical characterization study that lacks any described assay or method for measuring target-molecule interaction or drug screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_41997034",
@@ -15951,9 +15951,9 @@
     "prev_score": "5",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a social/behavioral clinical study and does not identify a molecular target or describe an assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42061571",
@@ -16009,9 +16009,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "While the paper links a specific drug class (tetracyclines) to a disease (PVR), it is a retrospective clinical observational study that does not describe a novel molecular target or provide a mechanistic assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42024844",
@@ -16073,9 +16073,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is an observational study focusing on healthcare delivery and patient outcomes rather than identifying molecular targets or describing pharmacological assays for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42386122",
@@ -16130,9 +16130,9 @@
     "prev_score": "7",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper is a descriptive epidemiological report that identifies a pathogen but does not propose a specific druggable molecular target or a functional assay for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42300680",
@@ -16192,9 +16192,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper focuses on the synthesis of a material rather than a specific biological target or disease-linked molecule. It lacks both a specific disease connection and an assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42401107",
@@ -16243,9 +16243,9 @@
     "prev_score": "",
     "prev_eval_model": "",
     "added_date": "2026-07-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a qualitative educational study and does not identify a molecular target, a specific disease pathology amenable to drug screening, or a quantitative assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41998830",
@@ -16300,9 +16300,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a systematic review that describes general disease associations rather than identifying a specific molecular target or proposing a testable assay for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42313645",
@@ -16352,9 +16352,9 @@
     "prev_score": "6",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a qualitative sociological study; it lacks a molecular target, a biological disease link, and a measurable pharmacological assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42286398",
@@ -16406,9 +16406,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a clinical ethics and outcomes paper; it contains no specific molecular target, no drug-disease link, and no biochemical assay for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42276498",
@@ -16462,9 +16462,9 @@
     "prev_score": "18",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a clinical case report describing a physiological phenomenon related to anemia and hemodynamics; it lacks a specific druggable molecular target, a disease-mechanism link suitable for pharmacological modulation, and any description of a screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42234218",
@@ -16514,9 +16514,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a retrospective epidemiological study that identifies a clinical association between two diseases rather than proposing a specific molecular target or an assay for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42311805",
@@ -16571,9 +16571,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on psychological and cultural behavioral trends rather than specific molecular targets, biological disease mechanisms, or quantifiable biochemical/pharmacological assays suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42101932",
@@ -16625,9 +16625,9 @@
     "prev_score": "2",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is an editorial piece lacking a specific molecular target, a concrete disease link, and a testable assay. It is purely descriptive/conceptual.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "epmc_42208287",
@@ -16675,9 +16675,9 @@
     "prev_score": "20",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper identifies a chemical class (PFAS) rather than a specific molecular target for therapeutic modulation and lacks a link to a specific human disease or biological assay suitable for HTS.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42143743",
@@ -16728,9 +16728,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a cognitive psychology study on human statistical learning and attention, containing no molecular targets, disease models, or biochemical assays suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42248370",
@@ -16790,9 +16790,9 @@
     "prev_score": "16",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not clearly identify a specific new molecule or target, and the described effect of CFTR modulators on pulmonary exacerbations is more of a clinical observation than a testable assay. The study does link the molecule to a specific disease or condition, but the lack of a specific target or testable assay limits its HTS collaboration fitness.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42378288",
@@ -16874,9 +16874,9 @@
     "prev_score": "7",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a psychological survey study regarding cultural influence on social behavior and lacks a biological target, a disease mechanism, or any measurable assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42244058",
@@ -16927,9 +16927,9 @@
     "prev_score": "6",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a behavioral psychology study; it identifies no molecular target, no disease state, and uses a game-theory assay rather than a biological screening method.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42331048",
@@ -16981,9 +16981,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The title suggests a purely descriptive pathological study. No specific molecular target, disease mechanism for drug discovery, or measurable assay is identified.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42310264",
@@ -17030,9 +17030,9 @@
     "prev_score": "7",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on cognitive science and linguistics rather than biological targets. It lacks a specific molecule/target, a disease link, and a pharmacological assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42030175",
@@ -17088,9 +17088,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, and does not describe an assay or method that could test/measure the molecule/target's effect, making it unfit for HTS collaboration.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "epmc_42141197",
@@ -17142,9 +17142,9 @@
     "prev_score": "5",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition, and it does not describe an assay or method to test/measure the molecule/target's effect. The paper appears to be a historical/educational study with no relevance to High-Throughput Screening (HTS) collaboration.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "epmc_42083747",
@@ -17195,9 +17195,9 @@
     "prev_score": "7",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper focuses on social psychology and communication strategies rather than biological targets or molecular assays. It lacks all three required elements for high-throughput screening collaboration.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42059564",
@@ -17253,9 +17253,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a retrospective epidemiological cohort study and does not identify a specific molecular target, a specific molecule, or a laboratory assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
     "id": "pubmed_42032566",
@@ -17307,9 +17307,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a scoping review of public health communication strategies rather than a biological study; it identifies no molecular targets, lacks a disease-state biological model, and proposes no assay for molecular screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42029414",
@@ -17362,9 +17362,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-04-27",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The paper is a clinical case report describing nutrient-induced acne rather than a molecular target identification study; it lacks a screenable biological target and a high-throughput assay methodology.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41922295",
@@ -17423,9 +17423,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a clinical meta-analysis of surgical techniques and does not identify a specific molecular target, link a target to a disease mechanism, or describe a high-throughput screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42183578",
@@ -17478,9 +17478,9 @@
     "prev_score": "7",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "While the paper links CD163+ histiocytes to West Nile Virus-associated chorioretinitis, it is a clinical case report describing a cellular observation rather than identifying a druggable molecular target or a high-throughput compatible assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_41985201",
@@ -17533,9 +17533,9 @@
     "prev_score": "2",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The paper identifies a pathogen (Borrelia persica) and a disease, but lacks a specific druggable molecular target for HTS and does not describe a high-throughput assay. It is primarily a clinical case report rather than a drug discovery study.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42083641",
@@ -17591,9 +17591,9 @@
     "prev_score": "4",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a retrospective epidemiological study of patient demographics and clinical visits; it does not identify any molecular targets, link targets to disease, or describe a screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42002083",
@@ -17656,9 +17656,9 @@
     "prev_score": "4",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a descriptive epidemiological cohort study. It lacks a specific molecular target for drug discovery and does not describe a laboratory assay for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42393269",
@@ -17717,9 +17717,9 @@
     "prev_score": "",
     "prev_eval_model": "",
     "added_date": "2026-07-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a paleoclimatological study on Pleistocene hominins and lacks a molecular target, a disease link, and a pharmacological assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42265903",
@@ -17767,9 +17767,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link a molecule/target to a specific disease or condition. It is a descriptive cross-sectional study focusing on oral and dental health in children with intestinal failure, without a clear testable assay or method to measure the effect of a molecule or target.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42264194",
@@ -17822,9 +17822,9 @@
     "prev_score": "6",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This is a clinical case report describing a singular animal envenomation event; it fails to identify a specific molecular target for screening and does not propose a methodology suitable for high-throughput pharmacological testing.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42223618",
@@ -17879,9 +17879,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, and the described study design does not provide a method to test or measure the effect of a molecule or target. The study focuses on the association between prior antibiotic treatment and the incidence of mastoiditis complications, but does not involve a testable assay or a specific molecule/target.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "epmc_42150404",
@@ -17933,9 +17933,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a methodological critique of neurophysiological paradigms; it lacks a specific molecular target, a disease link, and a drug-testable assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_41867066",
@@ -17989,9 +17989,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, and does not link a molecule or target to a specific disease or condition. It only describes a study on nursing knowledge and practices regarding patients with External Ventricular Drains.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41941138",
@@ -18044,9 +18044,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a social science study regarding psychological constructs; it identifies no biological target or molecule and describes no HTS-compatible assay for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41906950",
@@ -18100,9 +18100,9 @@
     "prev_score": "13",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a retrospective clinical cohort study that lacks a specific molecular target, a pharmacological intervention, and any high-throughput screening methodology.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41982399",
@@ -18153,9 +18153,9 @@
     "prev_score": "17",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on the behavioral ecology of terrestrial isopods and lacks a molecular target, a disease-related context, and any high-throughput screening-compatible assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41925628",
@@ -18210,9 +18210,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a cross-sectional observational study on social media content quality and does not identify a molecular target, link a target to a disease mechanism, or describe a biological assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_41982399",
@@ -18263,9 +18263,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-04-20",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not clearly identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It does describe an assay or method (image analysis and manual tracking) that could test/measure the behavior of isopods, but this is not directly related to a molecule or target.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42340612",
@@ -18316,9 +18316,9 @@
     "prev_score": "6",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a qualitative social science study on reproductive decision-making; it lacks a specific molecular target, a disease linked to a biological mechanism, or any quantitative assay for drug screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42311176",
@@ -18372,9 +18372,9 @@
     "prev_score": "5",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "The paper identifies a specific target (HRAS p.Gly12Ser) and a disease link (mosaic RASopathies), but it provides no assay or method for testing therapeutic effects.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42304479",
@@ -18432,9 +18432,9 @@
     "prev_score": "14",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a clinical correspondence regarding surgical procedure safety; it contains no molecular target, disease mechanism, or assay suitable for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42267892",
@@ -18480,9 +18480,9 @@
     "prev_score": "6",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it describe an assay or method to test the molecule's effect. It only discusses the concept of informed consent in critically ill patients.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_41965967",
@@ -18538,9 +18538,9 @@
     "prev_score": "8",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a clinical case report describing a complex patient presentation with no identified novel molecular target or translatable high-throughput assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41965469",
@@ -18597,9 +18597,9 @@
     "prev_score": "12",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper is a clinical survey on ICU organization and admission policies, lacking any molecular targets, disease-specific drug targets, or biological assays suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42345242",
@@ -18653,9 +18653,9 @@
     "prev_score": "6",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a clinical case series describing a structural anatomical anomaly; it identifies no molecular target, no biochemical disease mechanism, and no assay suitable for HTS.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42216614",
@@ -18705,9 +18705,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 3,
+    "hts_reason": "This paper lacks a specific new molecule or target, and does not describe an assay or method to test the molecule's effect, despite mentioning a disease or condition (undiagnosed prodromal symptoms).",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "epmc_42121168",
@@ -18751,9 +18751,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on a psychological phenomenon (decision fatigue) rather than a biological molecule or target, and it describes a retrospective clinical analysis rather than a biochemical assay for drug screening.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42059247",
@@ -18804,9 +18804,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a social science study on psychological well-being and does not identify any biological molecules, targets, or lab-based assays suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41967062",
@@ -18860,9 +18860,9 @@
     "prev_score": "5",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a letter to the editor regarding a clinical pilot study on circumcision and sexual satisfaction; it lacks a specific molecular target, a disease-linked pharmacological mechanism, and any relevant high-throughput screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41945075",
@@ -18916,9 +18916,9 @@
     "prev_score": "9",
     "prev_eval_model": "",
     "added_date": "2026-04-13",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a corrigendum for a phylogenetics paper regarding the evolution of solifuges (arachnids); it contains no therapeutic targets, disease links, or HTS assays.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42368489",
@@ -18976,9 +18976,9 @@
     "prev_score": "15",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a clinical case report describing a surgical complication; it does not identify a molecular target for drug discovery, nor does it propose any high-throughput screening assays.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42332785",
@@ -19026,9 +19026,9 @@
     "prev_score": "5",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The title suggests a personal essay or opinion piece; none of the three required elements (target, disease link, or assay) are present.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42308896",
@@ -19079,9 +19079,9 @@
     "prev_score": "6",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a corrigendum regarding the physics of ice crystal growth; it does not identify a biological target, a disease link, or a high-throughput assay suitable for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42284739",
@@ -19138,9 +19138,9 @@
     "prev_score": "5",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a historical review of surgical procedures; it does not identify a molecular target, a specific disease mechanism for drug discovery, or a testable assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42249865",
@@ -19190,9 +19190,9 @@
     "prev_score": "5",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The title provides no scientific data regarding molecular targets, disease links, or screening assays, and lacks an abstract to evaluate for translational potential.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42243009",
@@ -19245,9 +19245,9 @@
     "prev_score": "5",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is an administrative erratum to a phylogenetics paper and contains no information regarding therapeutic targets, disease links, or screening assays.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42278186",
@@ -19301,9 +19301,9 @@
     "prev_score": "16",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This is a formal correction notice for a veterinary clinical study and contains no identifiable molecular targets, disease-pathway research, or assays suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42319382",
@@ -19355,9 +19355,9 @@
     "prev_score": "5",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition, and it does not describe an assay or method that could test/measure the molecule/target's effect. The title and abstract suggest a purely descriptive or review work on prokaryotic genus names.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42352120",
@@ -19406,9 +19406,9 @@
     "prev_score": "5",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a historical review of theoretical physics and contains none of the required elements: no specific biological target, no disease link, and no chemical or biological assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42065370",
@@ -19463,9 +19463,9 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-05-04",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "The input lacks an abstract and provides only a protein name without context, failing to establish a specific disease link or a defined screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_41932616",
@@ -19516,9 +19516,9 @@
     "prev_score": "7",
     "prev_eval_model": "",
     "added_date": "2026-04-06",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 2,
+    "hts_reason": "This paper does not clearly identify a specific new molecule or target, nor does it describe an assay or method to test the molecule's effect. It does link the described condition (tachycardia with left bundle branch block morphology) to a specific disease or condition (a patient with right bundle branch block), but this is not a molecule or target.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42359324",
@@ -19566,9 +19566,9 @@
     "prev_score": "5",
     "prev_eval_model": "",
     "added_date": "2026-07-01",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It appears to be a qualitative, narrative piece rather than a translational-science study.",
+    "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
     "id": "pubmed_42267462",
@@ -19603,8 +19603,8 @@
     "prev_score": "10",
     "prev_eval_model": "",
     "added_date": "2026-07-02",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
+    "hts_score": 1,
+    "hts_reason": "The paper is a sociological/psychological study that lacks a specific molecular target, a biochemical disease mechanism, and a laboratory assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemma-4-26b-a4b-it"
   }
 ]

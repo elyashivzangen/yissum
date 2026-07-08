@@ -1,8 +1,949 @@
 Loading existing papers from Google Sheet...
   342 existing papers loaded.
   Verifying HUJI affiliation for 336 papers via PubMed efetch...
-  Backfilling metadata for 16 papers...
-  Metadata backfill done.
+  342 papers missing an HTS score.
+  [1/342] hts: Sensory impairment and mental health in old age: The moderating role o
+      hts_score=1
+  [2/342] hts: Vitamin E supplementation moderates salt-induced oxidation status in b
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      hts_score=2
+  [3/342] hts: Post-infectious bronchiolitis obliterans in children: pathogenesis, tr
+      hts_score=3
+  [4/342] hts: Strategic self-initiated encoding in object-location memory in 8-10-ye
+      hts_score=1
+  [5/342] hts: Dual-energy and photon-counting computed tomography in critical care.
+      hts_score=1
+  [6/342] hts: People in more individualist cultures are more motivated to make other
+      hts_score=1
+  [7/342] hts: Vesicular monoamine transporters (VMATs): From discovery to therapeuti
+      hts_score=3
+  [8/342] hts: Assessing iatrogenic atrial septal defect as a primary unloading strat
+      hts_score=1
+  [9/342] hts: Disrupted WWOX-MYC interplay impairs neurogenesis in human brain organ
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 28.926974049s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}
+      hts_score=8
+  [10/342] hts: Growth Temperature Alters the Thermal Sensitivity of Mesophyll Conduct
+      hts_score=1
+  [11/342] hts: Seasonal-to-interannual hydroclimatic variability in Afromontane envir
+      hts_score=1
+  [12/342] hts: Associations of red blood cell fatty acids with personality traits: 10
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      hts_score=2
+  [13/342] hts: Paternal exposure to chlorpyrifos disrupts protein regulation and abol
+      hts_score=5
+  [14/342] hts: Real-world comparison of faricimab and aflibercept as second-line ther
+      hts_score=2
+  [15/342] hts: Voltage imaging of CA1 pyramidal cells and SST+ interneurons reveals s
+      hts_score=2
+  [16/342] hts: Cystic fibrosis nutrition: Addressing emerging trends following the 20
+      hts_score=1
+  [17/342] hts: Detection of Crithidia mellificae in golden jackals in Israel.
+      hts_score=2
+  [18/342] hts: Redox- and Photo-Responsive Fe
+      hts_score=2
+  [19/342] hts: Wurtzite InP/ZnSe/ZnS Core/Shell Semiconductor Quantum Dots with Brigh
+      hts_score=2
+  [20/342] hts: Historical trauma-based education and nursing professional identity: A
+      hts_score=1
+  [21/342] hts: The Development of an Integrative Surf Therapy Program for Trauma Surv
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 25.568907603s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '25s'}]}}
+      hts_score=1
+  [22/342] hts: Corrigendum to "Genomic insights unveil taxonomic incongruities and ev
+      hts_score=1
+  [23/342] hts: Periodontal Diseases and Conditions in Children and Adolescents Associ
+      hts_score=1
+  [24/342] hts: Plaque Reduction Efficacy of an Advanced Electric Toothbrush Compared 
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      hts_score=1
+  [25/342] hts: Targeting Temozolomide-Resistant Glioblastoma: Therapeutic Potential o
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      hts_score=10
+  [26/342] hts: Ureteral obstruction caused by migration of a renal embolization coil 
+      hts_score=1
+  [27/342] hts: Clinical Features and Surgical Outcomes of Cats With Presumed Primary 
+      hts_score=2
+  [28/342] hts: Antibiotics in Veterinary Ophthalmology: Resistance, Stewardship, and 
+      hts_score=2
+  [29/342] hts: Ecosystem Disturbance as a Niche Construction Strategy for Invasive Sp
+      hts_score=1
+  [30/342] hts: Iron, Ferroptosis, and the Vulnerable Placenta: Rethinking Preeclampsi
+      hts_score=2
+  [31/342] hts: Targeting primary and metastatic ovarian cancer with a peptide derived
+      hts_score=9
+  [32/342] hts: Sharing for the common good: Children's levels of social inclusion wit
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 16.805294921s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}
+      hts_score=1
+  [33/342] hts: Screening examination of the fetal heart and indications for fetal ech
+      hts_score=1
+  [34/342] hts: Laparoscopic resection of small bowel neuroendocrine tumors: A long-te
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      hts_score=1
+  [35/342] hts: Arytenoid Cartilage Ossification in Early Glottic Carcinoma and Its As
+      hts_score=2
+  [36/342] hts: Large Language Models on European Guidelines for Cervical Cancer: Impl
+      hts_score=1
+  [37/342] hts: Orthodontic loading modulates epithelial progenitor dynamics and ename
+      hts_score=3
+  [38/342] hts: Breath-Based Detection of Oral Diseases Using Sensors and Machine Lear
+      hts_score=3
+  [39/342] hts: APOBEC mutational signatures predict immune checkpoint inhibitor benef
+      hts_score=2
+  [40/342] hts: Beyond Observable Participation: Occupational Experiences, Temporal Dy
+      hts_score=1
+  [41/342] hts: GAS6 regulates mucosal langerhans cell homeostasis through cell-intrin
+      hts_score=7
+  [42/342] hts: Allopatric coevolution: Migratory predators may facilitate mimicry bet
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 29.241617544s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '29s'}]}}
+      hts_score=1
+  [43/342] hts: The effect of a proprietary chlorine-stabilizing surface-coating formu
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 14.239725192s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [44/342] hts: PCIS1 is an essential factor in mitochondrial RNA splicing and complex
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      hts_score=3
+  [45/342] hts: A unified analysis of cell type- and trajectory-associated pathways in
+      hts_score=2
+  [46/342] hts: A Metagenomic Biosurveillance Network for Emerging Infectious Diseases
+      hts_score=1
+  [47/342] hts: Neurodevelopmental care across pediatric critical care settings: towar
+      hts_score=1
+  [48/342] hts: Temporal patterns of smartphone-mediated digital engagement and mental
+      hts_score=1
+  [49/342] hts: An ancient anthozoan protein reveals an alternative evolutionary path 
+      hts_score=5
+  [50/342] hts: Cellular Dynamics and Dentine Bridge Formation Following Direct Pulp C
+      hts_score=3
+  [51/342] hts: SPL84 and trikafta® exhibit comparable and additive effects in patient
+      hts_score=9
+  [52/342] hts: Generative artificial intelligence for outcome prediction in critical 
+      hts_score=1
+  [53/342] hts: When scientific sources fail to convince: evidence-oriented thinking e
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 29.247403734s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '29s'}]}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [54/342] hts: Smell and Taste Disturbances Among Glucagon-Like Peptide-1 Receptor Ag
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 24.737911348s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [55/342] hts: Intensity, desirability, and attainability: Predictors of effort in em
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 20.225158531s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [56/342] hts: A two-step auxin-GA cross talk regulates organ formation.
+    all 3 candidate(s) cooling down — waiting 33s before retry
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [57/342] hts: Carbamate-based cannabinoids uncover a conserved lipid-sensing pocket 
+    all 3 candidate(s) cooling down — waiting 45s before retry
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=8
+  [58/342] hts: Discovery of novel antimicrobials within microbiomes.
+    all 3 candidate(s) cooling down — waiting 7s before retry
+      hts_score=2
+  [59/342] hts: Between Faith, Family, and Moral Reasoning: Muslim Women in Israel Nav
+      hts_score=1
+  [60/342] hts: First-in-Human Mechanical Leaflet Modification of Native Aortic Stenos
+      hts_score=2
+  [61/342] hts: Reversible Mitochondrial Iron Toxicity in Wolfram Syndrome Type 2 Mono
+      hts_score=9
+  [62/342] hts: Borrelia theileri infection in beef and dairy cattle in Israel: molecu
+      hts_score=2
+  [63/342] hts: Potentiation of the altered immune microenvironment following RF ablat
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 24.657744601s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=6
+  [64/342] hts: Children's narrow learning bottleneck accelerates the emergence of sta
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 20.158780511s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [65/342] hts: Plant-Based Matrix for Bone Apatite Biomineralization: In Vitro Bioact
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 15.631380443s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '15s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [66/342] hts: Wounding-induced redirection of sugar transport fuels tissue repair.
+    all 3 candidate(s) cooling down — waiting 0s before retry
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=6
+  [67/342] hts: Differential Modulation of GLP-1R by Dietary Ginsenosides Points to a 
+    all 3 candidate(s) cooling down — waiting 45s before retry
+      hts_score=7
+  [68/342] hts: Why I love My profession.
+      hts_score=1
+  [69/342] hts: Neural Patterns Reveal Lateral Occipital Complex Representation of Ens
+      hts_score=1
+  [70/342] hts: Hepatocellular Inflammatory Adenomas.
+      hts_score=1
+  [71/342] hts: Polymer scaling in protein crowding: From dilute coils to semidilute m
+      hts_score=1
+  [72/342] hts: Artificial Intelligence in Cardiac Point-of-Care Ultrasound: A Narrati
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [73/342] hts: In Vitro Model of Milking Pulses and Stretching Cycles: Assessing Mech
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [74/342] hts: RBOHC-Generated ROS Tune MIZ2/GNOM-Dependent Root Halotropism in Arabi
+      hts_score=3
+  [75/342] hts: Activity-dependent antioxidant gene therapy protects against epileptog
+      hts_score=4
+  [76/342] hts: Translation and validation of the Hebrew version of the xerostomia inv
+      hts_score=1
+  [77/342] hts: Steroid hormones dynamics during coral reproduction: Multi-year patter
+      hts_score=2
+  [78/342] hts: Real-World Outcomes of First-Line Pembrolizumab-Based Therapy in Advan
+      hts_score=1
+  [79/342] hts: "When I saw his face, I recognized him": Visibility, complexity, and t
+      hts_score=1
+  [80/342] hts: Epidermal Nevus with Woolly Hair: A Case Report.
+      hts_score=3
+  [81/342] hts: Is "sky" bluer than "grass" is green? Word-color associations dataset 
+      hts_score=1
+  [82/342] hts: CD59 drives diet-induced obesity and glucose intolerance, insulin resi
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+      hts_score=9
+  [83/342] hts: Tasty&Healthy exclusive whole food diet in asymptomatic children and y
+      hts_score=2
+  [84/342] hts: Corrigendum to "Kinetic roughening transition of ice crystal and its i
+      hts_score=1
+  [85/342] hts: High-Accuracy Performance of a Simplified Binary Triage System in Mili
+      hts_score=1
+  [86/342] hts: Redox- and Photo-Responsive Fe<sup>3+/2+</sup>-Cross-Linked Carboxymet
+      hts_score=2
+  [87/342] hts: Adherence to an intraoperative and post-cesarean analgesia protocol: a
+      hts_score=1
+  [88/342] hts: The Fragmented Nature of Biosensor Development: Challenges and Paths t
+      hts_score=1
+  [89/342] hts: The impact of bronchoscopy on the safety of percutaneous tracheostomy:
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 22.283933886s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '22s'}]}}
+      hts_score=1
+  [90/342] hts: Risk of medication-related osteonecrosis of the jaw during romosozumab
+      hts_score=2
+  [91/342] hts: Strategic Template Filtering Accelerates Fragment-Based Peptide Dockin
+      hts_score=1
+  [92/342] hts: Right ventricular function-pulmonary pressure interaction as a predict
+      hts_score=1
+  [93/342] hts: End-of-life decision-making in very old critically ill patients.
+      hts_score=1
+  [94/342] hts: The evolution of craniotomies, from the ancient civilizations to moder
+      hts_score=1
+  [95/342] hts: Impact of anti-Müllerian hormone and antral follicle count discordance
+      hts_score=2
+  [96/342] hts: The impact of post thaw embryo culture (extended culture) on frozen em
+      hts_score=1
+  [97/342] hts: Designed Synthesis of Unsymmetrical (Deuterated) 1,1-Diarylethylenes v
+      hts_score=1
+  [98/342] hts: Phosphoproteomic profiling reveals reversal of dysregulated kinase sig
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+      hts_score=7
+  [99/342] hts: Elevated fetal middle cerebral artery peak systolic velocity caused by
+      hts_score=1
+  [100/342] hts: Marginal Outer Retinal Ridge Following Rhegmatogenous Retinal Detachme
+      hts_score=2
+  [101/342] hts: Post-bariatric surgery adherence to clinical pharmacist recommendation
+      hts_score=1
+  [102/342] hts: Pro-repair properties of a human embryonic stem cell-derived astrocyte
+      hts_score=3
+  [103/342] hts: Multicenter Insights into Pediatric Extreme Leukocytosis: A 5-Year Ret
+      hts_score=2
+  [104/342] hts: Multiple Charged Purine (MCP) PNA as a Simple Mode for Cellular Uptake
+      hts_score=2
+  [105/342] hts: Nuances of double empathy in autistic and non-autistic people: examina
+      hts_score=1
+  [106/342] hts: Low-normal immunoglobulin suggests monoclonal B-cell lymphocytosis and
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 34.771640625s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '34s'}]}}
+      hts_score=2
+  [107/342] hts: Artificial intelligence and medical retina training: A scoping review 
+      hts_score=1
+  [108/342] hts: High-power laser photobiomodulation therapy for immediate relief of mu
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 16.902774975s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [109/342] hts: Is informed consent in the critically ill informed?
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 12.399271824s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [110/342] hts: Total Synthesis of Conjugation-Ready Sulfated Red Algae Carrageenan Ol
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [111/342] hts: Empty Confidant Network Satisfaction and Mental Well-Being After the A
+    all 3 candidate(s) cooling down — waiting 27s before retry
+      hts_score=1
+  [112/342] hts: Oral and dental status in children with intestinal failure: A descript
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [113/342] hts: Fetal growth is driven by a bimodal fetal beta cell response and resha
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [114/342] hts: Cell-to-cell variability and gain of methylation at polycomb CpG islan
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [115/342] hts: Clinical manifestations and management of Androctonus bicolor envenoma
+    all 3 candidate(s) cooling down — waiting 44s before retry
+      hts_score=2
+  [116/342] hts: Food Insecurity Is Associated with Increased Risk of Ischemic Stroke.
+      hts_score=1
+  [117/342] hts: Radical Empathy.
+      hts_score=1
+  [118/342] hts: Psychiatric readmissions following Soteria versus traditional inpatien
+      hts_score=1
+  [119/342] hts: Vaginal progesterone and risk of preterm birth in asymptomatic women w
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 21.327604526s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '21s'}]}}
+      hts_score=3
+  [120/342] hts: Examining Laterality in Masticatory Myofascial Pain.
+      hts_score=1
+  [121/342] hts: Erratum to "Corrigendum to "Genomic insights unveil taxonomic incongru
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      hts_score=1
+  [122/342] hts: Non-adiabatic origin of roaming OH dynamics in the formic acid dimer d
+      hts_score=1
+  [123/342] hts: Redefining Feasibility for Transcatheter Aortic Valve Replacement in t
+      hts_score=1
+  [124/342] hts: Eosinophilic esophagitis is associated with increased risk of allergic
+      hts_score=1
+  [125/342] hts: Schizophrenia in Offspring of Holocaust Survivors: Intergenerational E
+      hts_score=1
+  [126/342] hts: Correction: McCartney et al. Retrospective Clinical and Radiographic O
+      hts_score=1
+  [127/342] hts: Haptoglobin, hemolysis, and renal vulnerability after pulsed field abl
+      hts_score=5
+  [128/342] hts: An antagonistically pleiotropic gene regulates vertebrate growth, matu
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 35.072983913s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '35s'}]}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [129/342] hts: A dual role for cGAS in shaping cellular and organismal responses to g
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 30.574555104s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=6
+  [130/342] hts: Headache as a predictive clinical marker for combat-related PTSD risk.
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 26.058407586s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [131/342] hts: Incidence of mastoiditis complications in relation to prior community-
+    all 3 candidate(s) cooling down — waiting 81s before retry
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [132/342] hts: Enhancing Physiological Complexity Through Mindfulness: A Wearable-Bas
+    all 3 candidate(s) cooling down — waiting 3s before retry
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [133/342] hts: Lipid Desaturation and Cellular Viability: Mechanisms, Stem Cell Insig
+    all 3 candidate(s) cooling down — waiting 0s before retry
+      hts_score=3
+  [134/342] hts: Postpartum headache after epidural analgesia: A case of overlapping po
+      hts_score=1
+  [135/342] hts: Survey on ICU organization and admission after hematopoietic cell tran
+      hts_score=1
+  [136/342] hts: Group A Streptococcus host-pathogen dual crosstalk.
+      hts_score=7
+  [137/342] hts: Teprotumumab-Associated Hyperglycemia: A Large-Scale Multinational Coh
+      hts_score=3
+  [138/342] hts: Induction of cytochrome P450 2C9 and P-glycoprotein activity by antise
+      hts_score=2
+  [139/342] hts: Comparison of dogs with septic peritonitis due to S. lupi aberrant mig
+      hts_score=1
+  [140/342] hts: The role of geographical proximity to the October 7th, 2023, attack on
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 21.494770692s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '21s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [141/342] hts: Dynamic Switchable and Transient DNA Condensates Driven by Aptamer-Lig
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 16.998740947s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [142/342] hts: RNA editing of pathogenic variants causing inherited retinal diseases 
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 12.492202412s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=3
+  [143/342] hts: [Treatment of Morbid Obesity in Israel: GLP-1 Agonists Versus Bariatri
+    all 3 candidate(s) cooling down — waiting 38s before retry
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [144/342] hts: [Pediatric Thyroiditis Secondary to Fourth Branchial Arch Anomaly: A C
+    all 3 candidate(s) cooling down — waiting 5s before retry
+      hts_score=1
+  [145/342] hts: Sleep Restriction and Heat Stress as Compounded Risks to Military Cogn
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [146/342] hts: Knowledge Gaps in Our Understanding of Hyperbaric Oxygen Therapy in Po
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [147/342] hts: Asthma in Active Military Aircrew: Long-term Health and Flight Perform
+      hts_score=1
+  [148/342] hts: Studying the Biochemical Profile of Patients after Exertional Heat Str
+      hts_score=2
+  [149/342] hts: Prevalence of Hearing Impairment Among Young Adults.
+      hts_score=1
+  [150/342] hts: A pump-free microfluidic device for integrated multi-functional testin
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [151/342] hts: Adaptive Laboratory Evolution Unlocks Membrane Permeability as a Key L
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [152/342] hts: Proposal of 
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [153/342] hts: Americans Want To Make Themselves Feel Better More than Japanese Do: C
+    all 3 candidate(s) cooling down — waiting 1s before retry
+      hts_score=1
+  [154/342] hts: Decision-making trades off learned and perceived information.
+      hts_score=1
+  [155/342] hts: Meaningful outcomes in food allergy immunotherapy: Measuring what coun
+      hts_score=2
+  [156/342] hts: Reshaping the Postbariatric Breast: A Single-center Experience With th
+      hts_score=1
+  [157/342] hts: Task Performance and Queen Presence Influence the Brain Transcriptome 
+      hts_score=2
+  [158/342] hts: Early Postoperative Cell-Free DNA Reflects Renal and Hepatic Injury Af
+      hts_score=2
+  [159/342] hts: Universal rhythmic architecture uncovers two modes of neural dynamics.
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 12.427525579s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [160/342] hts: Effectiveness of written exposure therapy in group therapy for veteran
+      hts_score=1
+  [161/342] hts: The Simplest Complexity: The Story of the Three-Body Problem.
+      hts_score=1
+  [162/342] hts: Risk of postoperative respiratory complications in adults treated with
+      hts_score=3
+  [163/342] hts: Developmental Morphokinetics and the Transcriptomic Profile of Bovine 
+      hts_score=2
+  [164/342] hts: Aberrant protein S-nitrosylation disrupts axonal development and metab
+      hts_score=9
+  [165/342] hts: EMF2 deficiency disrupts epigenetic and chromatin organization landsca
+      hts_score=2
+  [166/342] hts: Serum from Fibromyalgia Patients Activates Satellite Glial Cells in Mo
+      hts_score=4
+  [167/342] hts: Allele-specific antisense oligonucleotide treatment rescues 
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 36.425443808s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '36s'}]}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [168/342] hts: Patients' Experiences of Nurse-Led Integrative Palliative Care in Mult
+      hts_score=1
+  [169/342] hts: CBFB mutations predict endocrine therapy benefit in estrogen receptor-
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 27.435945704s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '27s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [170/342] hts: Identifying maximally informative signal-aware representations of sing
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 22.932346693s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '22s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [171/342] hts: Body mass index and epilepsy risk: Evidence from cross-sectional and t
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 18.428774164s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [172/342] hts: Editorial for exploring understudied inflammatory diseases.
+    all 3 candidate(s) cooling down — waiting 3s before retry
+      hts_score=1
+  [173/342] hts: Prolonged Undiagnosed Prodromal Symptoms.
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=3
+  [174/342] hts: Neurodiversity-affirming SEA for ADHD: evaluation of an online program
+      hts_score=1
+  [175/342] hts: How (not) to study deviance sensitivity and predictive coding in audit
+      hts_score=1
+  [176/342] hts: Prevalence of addictive use of cosmetic procedures and risk factors am
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [177/342] hts: What Galen's dissections reveal about tacit learning in modern medical
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [178/342] hts: Decision fatigue among military primary care physicians: a retrospecti
+      hts_score=1
+  [179/342] hts: Stomatal density and aperture dynamics regulate drought response and y
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=3
+  [180/342] hts: Harnessing random peptide mixtures to combat multidrug-resistant funga
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=6
+  [181/342] hts: ASO Author Reflections: Robotic Cytoreduction at the Vascular Interfac
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [182/342] hts: Using deep learning to identify inherited retinal diseases based on wi
+    all 3 candidate(s) cooling down — waiting 14s before retry
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [183/342] hts: Anxiety-buffer disruption in combat soldiers: the contributions of exp
+    all 3 candidate(s) cooling down — waiting 15s before retry
+      hts_score=1
+  [184/342] hts: Reply to Comment on: Interferon alpha-2a as treatment for primary acqu
+      hts_score=3
+  [185/342] hts: MRD conversion during oral azacitidine maintenance correlates with out
+      hts_score=2
+  [186/342] hts: Single-session transanal minimally invasive surgery (TAMIS) and adjuva
+      hts_score=1
+  [187/342] hts: Correction: Human DNA levels in feces reflect gut inflammation and ass
+      hts_score=2
+  [188/342] hts: B cell Maturation Antigen Targeted Chimeric Antigen Receptor T Cell Th
+      hts_score=3
+  [189/342] hts: Gestational Ketosis Compromises Nephron Endowment and Long-Term Kidney
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 18.364694331s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [190/342] hts: Growth factors-infused cellulose scaffolds support cost-efficient prol
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 13.878884301s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '13s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [191/342] hts: Paradoxical thinking and attitudes toward prostitution: preliminary ex
+      hts_score=1
+  [192/342] hts: Evolution and consequences of paternal inheritance of plastid DNA in c
+      hts_score=2
+  [193/342] hts: Beyond one-shot nudges: the effects of repeated interventions for heal
+      hts_score=1
+  [194/342] hts: Addendum: Telomouse-a mouse model with human-length telomeres generate
+      hts_score=3
+  [195/342] hts: RadD from 
+      hts_score=2
+  [196/342] hts: Sensory Processing Disorders and Emotional Distress Among Young Childr
+      hts_score=1
+  [197/342] hts: Conscious Detection of Spoken Words Depends on Their Valence.
+      hts_score=1
+  [198/342] hts: GI and liver updates in CF: The next frontier.
+      hts_score=2
+  [199/342] hts: Learning affect norms: Implications for predictions, experiences, and 
+      hts_score=1
+  [200/342] hts: Incidence and clinical manifestations of sudden death in young adults:
+      hts_score=1
+  [201/342] hts: Comparing the Level of Knowledge on External Ventricular Drain Care: A
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 24.367357573s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24s'}]}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [202/342] hts: Severe eosinophilia and risk of major disease and mortality: A nationw
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 19.871489827s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [203/342] hts: Short-time statistics of extinction and blowup in reaction kinetics.
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 15.364376102s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '15s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [204/342] hts: Temperature-Enhanced Coercive Field by Chiral Molecules.
+    all 3 candidate(s) cooling down — waiting 81s before retry
+      hts_score=2
+  [205/342] hts: Facilitating Thought Progression: A Neurocognitive Framework Linking T
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      hts_score=2
+  [206/342] hts: From Survival to Recovery: 25 Years of Paediatric Critical Care Transf
+      hts_score=1
+  [207/342] hts: Racial discrimination and life satisfaction in non-Western contexts: e
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      hts_score=1
+  [208/342] hts: Dendro-plexing of Single Input Spikes via Multiple Synaptic Contacts C
+      hts_score=1
+  [209/342] hts: IR nanospectroscopy mapping of facet-dependent sulfur poisoning and th
+      hts_score=1
+  [210/342] hts: Aging-associated modulation of UFMylation impairs proteostasis in C. e
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 14.983666479s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [211/342] hts: Exact-Factorization Framework for Electron-Nuclear Dynamics in Electro
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 10.472993676s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '10s'}]}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [212/342] hts: Tetracyclines and Risk of Proliferative Vitreoretinopathy Following Rh
+      hts_score=4
+  [213/342] hts: Cationic Sulfonium-Based Tripodal Ligand and Its Rh(I) Complexes.
+      hts_score=1
+  [214/342] hts: Photoluminescence line shapes of nanocrystals: Contributions from firs
+      hts_score=1
+  [215/342] hts: Mandibular advancement devices in severe obstructive sleep apnea: a se
+      hts_score=1
+  [216/342] hts: Health warnings for electronic cigarette packaging: a rapid scoping re
+      hts_score=1
+  [217/342] hts: Functional characterization of specialized immune cells in a cnidarian
+      hts_score=4
+  [218/342] hts: From profiles to precision: incorporating the Psychosocial Assessment 
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 11.065975622s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [219/342] hts: New Onset of Acne Associated With Dietary Supplements Post-Metabolic B
+      hts_score=2
+  [220/342] hts: Association of Recent Antibiotic Therapy on Post-Thyroidectomy Wound C
+      hts_score=1
+  [221/342] hts: Mast Cells in Acute COVID-19 Patients.
+      hts_score=2
+  [222/342] hts: WWOX maintains epidermal identity and suppresses EMT to prevent aggres
+      hts_score=6
+  [223/342] hts: Universal Hamiltonian simulators in one and two dimensions.
+      hts_score=1
+  [224/342] hts: Mitral Leaflet Tear Following Transcatheter Edge-to-Edge Repair: A Cas
+      hts_score=1
+  [225/342] hts: Nitric oxide inhibition ameliorates cortical proteomic changes in the 
+      hts_score=7
+  [226/342] hts: Strain-level microbial signatures and inferred functional alterations 
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 35.076445925s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '35s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [227/342] hts: Clinical characteristics, laboratory measures, and quality of life as 
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.1-flash-lite\nPlease retry in 30.575223159s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}
+      hts_score=1
+  [228/342] hts: Vaccinations: more than prevention of infection.
+      hts_score=1
+  [229/342] hts: Acute kidney injury, secondary to valacyclovir use during pregnancy fo
+      hts_score=1
+  [230/342] hts: Traumatic brain injury clinical score (TBICS) predicts survival outcom
+      hts_score=1
+  [231/342] hts: Neural temporal scaling accounts for robust hunting behavior across te
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+      hts_score=2
+  [232/342] hts: Codon bias shapes bacterial small RNA binding sites within protein-cod
+      hts_score=2
+  [233/342] hts: The genetic basis for DNA methylation variation across tissues and dev
+      hts_score=2
+  [234/342] hts: Complex genotype-phenotype relationships in neurodevelopmental disorde
+      hts_score=1
+  [235/342] hts: Associations between prenatal exposure to ambient temperature and birt
+      hts_score=1
+  [236/342] hts: Mastery Motivation and Maternal Stress in Typically Developing Childre
+      hts_score=1
+  [237/342] hts: RNA dicing promotes the expression of an oncogenic JAK1 isoform.
+      hts_score=9
+  [238/342] hts: sc-rDSeq: a robust and cost-effective full-length total RNA sequencing
+      hts_score=4
+  [239/342] hts: Powered mobility acquisition by an adolescent with severe visual and p
+      hts_score=1
+  [240/342] hts: Proline-promoted electrophilic dichloromethylation of α-enaminones via
+      hts_score=1
+  [241/342] hts: Systematic classification differences across eye movement detection al
+      hts_score=1
+  [242/342] hts: Prevalence and Characteristics of Pill Dysphagia in Adults with Swallo
+      hts_score=2
+  [243/342] hts: Tailoring heart failure management in cardiac amyloidosis.
+      hts_score=3
+  [244/342] hts: Maternal antibodies regulate the establishment of murine oral and sali
+      hts_score=4
+  [245/342] hts: Response to Letter to the Editor on "The impact of elective adult circ
+      hts_score=1
+  [246/342] hts: One Size Might Not Fit All: A Tailored Approach to Psychological Inter
+      hts_score=1
+  [247/342] hts: Distinct distributed neural dynamics predict pallium-dependent social 
+      hts_score=2
+  [248/342] hts: Epigenomic and transcriptomic analyses reveal cnidocyte specialization
+      hts_score=2
+  [249/342] hts: mGem: Horses for courses in mapping bacterial small RNA interaction ne
+      hts_score=2
+  [250/342] hts: A Cisplatin-Based Prodrug Inhibits Nucleotide Excision Repair Independ
+      hts_score=9
+  [251/342] hts: Beyond Weight Loss: Association Between Glucagon-like peptide-1 Recept
+      hts_score=3
+  [252/342] hts: Post-thaw embryo culture and the risk of large-for-gestational-age off
+      hts_score=1
+  [253/342] hts: Opioids for management of endometriosis associated pain: balancing eff
+      hts_score=1
+  [254/342] hts: Exposure to prolonged political violence, self-efficacy, and posttraum
+      hts_score=1
+  [255/342] hts: Association between hypoglycemia during glucose challenge and toleranc
+      hts_score=1
+  [256/342] hts: Impact of obesity on surgical outcomes following uterine-preserving ap
+      hts_score=1
+  [257/342] hts: Association of neovascular glaucoma with increased mortality and cardi
+      hts_score=1
+  [258/342] hts: Enhanced reward coding and condition-independent dynamics in optogenet
+      hts_score=2
+  [259/342] hts: Surgery for Pain Symptoms in Women with Isolated Superficial Peritonea
+      hts_score=1
+  [260/342] hts: Hepatic radiofrequency ablation induces widespread cellular activation
+      hts_score=3
+  [261/342] hts: Chronic Oral Inflammation Impairs Female Reproduction in a Murine Mode
+      hts_score=3
+  [262/342] hts: ATF3-dependent formation of inclusion bodies in polyQ-expressing human
+      hts_score=9
+  [263/342] hts: NSTEMI in the oldest-old: prognosis and impact of invasive management 
+      hts_score=1
+  [264/342] hts: Backboards in prehospital trauma: Assessing long-term neurological and
+      hts_score=1
+  [265/342] hts: From Simulation to Survival: Managing an Emergency Department Under th
+      hts_score=1
+  [266/342] hts: Editorial: TEER in shock states - Promising feasibility, uncertain ben
+      hts_score=2
+  [267/342] hts: A family of endonucleases blocks nanotube-mediated plasmid exchange.
+      hts_score=7
+  [268/342] hts: Recombinant Human Amelogenin Protein Enhances Healing of Osteochondral
+      hts_score=4
+  [269/342] hts: The lesser the better? A systematic review and meta-analysis of resect
+      hts_score=1
+  [270/342] hts: The Impact of Small-for-Gestational-Age on Pulmonary Function in Infan
+      hts_score=1
+  [271/342] hts: An animated educational video is effective for improving treatment out
+      hts_score=1
+  [272/342] hts: A Novel Light-Induced Collective Circular Movement in 
+      hts_score=1
+  [273/342] hts: Epigenetic adaptation of beta cells across lifespan and disease.
+      hts_score=3
+  [274/342] hts: Pessary-related Content on TikTok: A Cross-Sectional Quality Assessmen
+      hts_score=1
+  [275/342] hts: Intracellular and dual-site inhibition of a bitter taste GPCR.
+      hts_score=5
+  [276/342] hts: Near-infrared OCT imaging for the assessment of anisocoria.
+      hts_score=1
+  [277/342] hts: Plasmon-Induced Hot-State Multiexciton Emission from Quantum Dots Coup
+      hts_score=1
+  [278/342] hts: Acute COPD Exacerbation and long-term cardiopulmonary outcomes: Real-w
+      hts_score=1
+  [279/342] hts: Virtual Reality and Gamification for Assessing Technical Aptitude, Cog
+      hts_score=1
+  [280/342] hts: CD163+ Foamy Histiocytes in the Vitreous of a Patient with West Nile V
+      hts_score=3
+  [281/342] hts: Creating resistance to the whitefly <i>Bemisia tabaci</i> in cassava t
+      hts_score=5
+  [282/342] hts: CApEsid biOfilm: a suggested pipeline for clinical phage microbiology 
+      hts_score=3
+  [283/342] hts: Evaluating the detectability of randomly acquired characteristics unde
+      hts_score=1
+  [284/342] hts: PFAS contamination in agricultural systems near an active war zone: So
+      hts_score=2
+  [285/342] hts: Graded Severity of Aortic Valve Sclerosis as an Independent Clinical M
+      hts_score=2
+  [286/342] hts: Binge Eating and Addictive-Like Eating Behaviors Seven Years After Sle
+      hts_score=1
+  [287/342] hts: Flight in the dark: different responses to darkness in flying insects.
+      hts_score=1
+  [288/342] hts: Bioengineering CAR-T cells to function in hostile tumor microenvironme
+      hts_score=2
+  [289/342] hts: The effect of collective trauma on craving for cannabis and tobacco.
+      hts_score=1
+  [290/342] hts: Symptom Clusters and Longitudinal Progression in Chronic Hemodialysis 
+      hts_score=1
+  [291/342] hts: Robotic-Assisted Cytoreductive Surgery for Recurrent Endometrial Carci
+      hts_score=1
+  [292/342] hts: Long-Term Outcomes of Combined Phacoemulsification and Non-Penetrating
+      hts_score=1
+  [293/342] hts: Multi-omics-based machine learning model predicts response and guides 
+      hts_score=2
+  [294/342] hts: Metabolic Endotoxemia Amplifies Estrogen Signaling Through Stromal Cro
+      hts_score=5
+  [295/342] hts: What is the Preferred CT Protocol for the Diagnosis of Small Bowel Obs
+      hts_score=1
+  [296/342] hts: ANTI-VEGF THERAPY SWITCHING RETINAL DISEASES: Characterizing Clinical 
+      hts_score=3
+  [297/342] hts: RadD from <i>Fusobacterium nucleatum</i> engages NKp46 to promote anti
+      hts_score=9
+  [298/342] hts: Development and validation of "parental satisfaction with knee-to-knee
+      hts_score=1
+  [299/342] hts: Effects of Statistical Learning on Stimulus Detection Speed Reflect At
+      hts_score=1
+  [300/342] hts: First Successful Implantation of the CARMAT Aeson® Total Artificial He
+      hts_score=1
+  [301/342] hts: [Immunotherapy for Inhalant Allergy - Long Term Efficacy].
+      hts_score=1
+  [302/342] hts: Association between semaglutide use and thyroid eye disease-related ou
+      hts_score=3
+  [303/342] hts: Tomato drought-responsive transcription factor TINY1 suppresses embryo
+      hts_score=3
+  [304/342] hts: Autistic children and their parents during war - A mixed-methods study
+      hts_score=1
+  [305/342] hts: Neurological manifestations in a cat with tick-borne relapsing fever c
+      hts_score=3
+  [306/342] hts: Ophthalmic Emergency Department Visits at a Tertiary Medical Center in
+      hts_score=1
+  [307/342] hts: Tetracyclines and Risk of Proliferative Vitreoretinopathy after Rhegma
+      hts_score=3
+  [308/342] hts: Temporal control of midline crossing via incoherent feedforward and fe
+      hts_score=4
+  [309/342] hts: Esophagectomy with colonic interposition: what outcomes can we salvage
+      hts_score=1
+  [310/342] hts: Mental health in a digitally fragmented world: Exploring negative and 
+      hts_score=1
+  [311/342] hts: Psychological function in the context of protracted stress during war:
+      hts_score=1
+  [312/342] hts: Pathways-to-Care Analysis of Non-Hodgkin Lymphoma in Ethiopia: A Mixed
+      hts_score=1
+  [313/342] hts: Comparative Analysis of <i>BRCA</i> Pathogenic Variant Detection in a 
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 25.750735754s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '25s'}]}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [314/342] hts: Metacognitive monitoring and calibration in the vocal emotion recognit
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 21.207707064s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '21s'}]}}
+      hts_score=1
+  [315/342] hts: Nitric oxide inhibition ameliorates cortical proteomic changes in the 
+      hts_score=9
+  [316/342] hts: Slower Progression Rates in Lower Limb-Onset ALS.
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 536.811521ms.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '0s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [317/342] hts: Maternal SARS-CoV-2 infection and early child growth and development: 
+      hts_score=1
+  [318/342] hts: Safety and Efficacy of Direct Selective Laser Trabeculoplasty in Patie
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [319/342] hts: Outcomes of tympanostomy tube insertion in the emergency department ve
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [320/342] hts: <i>Paenibacillus dendritiformis</i> C454 as a sustainable biocontrol a
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [321/342] hts: A Novel Light-Induced Collective Circular Movement in <i>Armadillo sor
+    all 3 candidate(s) cooling down — waiting 48s before retry
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [322/342] hts: Meaning in life and the mental health - addiction spiral: testing a un
+    all 3 candidate(s) cooling down — waiting 22s before retry
+      hts_score=1
+  [323/342] hts: Maternal Diabetes and Early Neurodevelopment: Differential Milestone A
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 22.963729178s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '22s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [324/342] hts: The Natural History of Deficiency of Adenosine Deaminase 2 Vasculitis 
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 18.466088785s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [325/342] hts: Real-world epidemiological outcomes of biologic therapy for chronic rh
+      hts_score=4
+  [326/342] hts: Hepatitis B Vaccine Response in Children of Vaccinated Versus Unvaccin
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 9.458286396s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.1-flash-lite', 'location': 'global'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [327/342] hts: Safety of Risankizumab during Pregnancy in IBD.
+      hts_score=2
+  [328/342] hts: Tachycardia with Left Bundle Branch Block Morphology in a Patient with
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 476.024694ms.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '0s'}]}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [329/342] hts: Optimizing topical antibiotic delivery in dogs: Tear film pharmacokine
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 55.965449927s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '55s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [330/342] hts: Spermatogenic timing, dose, and route of administration as determinant
+      hts_score=2
+  [331/342] hts: Stirring glycopeptides away from the constraints of solid-phase synthe
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 46.969304219s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '46s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [332/342] hts: Between languages and scalpels: a woman's journey in a foreign neurosu
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 42.465148979s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42s'}]}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [333/342] hts: Fogarty balloon-assisted extraction of an impacted friable foreign bod
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 37.901118796s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '37s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [334/342] hts: Detected residual venous thrombi and catheter-directed management of i
+    all 3 candidate(s) cooling down — waiting 13s before retry
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [335/342] hts: sc-rDSeq: Droplet-based single-cell full-length total RNA-seq method.
+    all 3 candidate(s) cooling down — waiting 52s before retry
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=1
+  [336/342] hts: Irinotecan Modulates Immune Checkpoints in Neuroblastoma.
+    all 3 candidate(s) cooling down — waiting 20s before retry
+    gemini-3.1-flash-lite failed (rate limit): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.1-flash-lite\nPlease retry in 4.805049973s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.1-flash-lite'}, 'quotaValue': '500'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '4s'}]}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=7
+  [337/342] hts: Antioxidant potential of microencapsulated bioactive extracts from dur
+    all 3 candidate(s) cooling down — waiting 12s before retry
+      hts_score=2
+  [338/342] hts: Creating resistance to the whitefly 
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=4
+  [339/342] hts: Pulmonary exacerbations in cystic fibrosis after fatherhood with and w
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [340/342] hts: A novel high-resolution test battery for language mapping in awake cra
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    llama-3.1-8b-instant (groq) succeeded
+      hts_score=2
+  [341/342] hts: Prediction of clinical outcomes of advanced cutaneous squamous cell ca
+      hts_score=3
+  [342/342] hts: Mathematical anxiety is associated with general rather than specific w
+      hts_score=1
+  Scored 342/342 papers for HTS suitability.
 Sheet updated: {"status":"ok","rows":343}
 Generated papers_reader.html and papers_data.json with 342 papers and 45 researcher profiles.
-Backfill complete.
+HTS backfill complete.
