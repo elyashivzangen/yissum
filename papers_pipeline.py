@@ -55,6 +55,12 @@ def _parse_args():
                         "paper from its source (PubMed/EuropePMC/Semantic Scholar), "
                         "skipping new-paper fetch and evaluation. Needed for papers "
                         "fetched before author lists stopped being truncated to 3.")
+    p.add_argument("--backfill-hts", action="store_true",
+                   help="One-off: score every existing paper missing an HTS "
+                        "(High-Throughput Screening) collaboration-fitness score, "
+                        "skipping new-paper fetch and the regular 50-point "
+                        "evaluation. Safe to run repeatedly — only targets papers "
+                        "without an hts_score yet.")
     # parse_known_args so this module stays importable from other scripts
     # (e.g. researcher_pipeline.py) that define their own unrelated CLI flags.
     return p.parse_known_args()[0]
@@ -96,6 +102,7 @@ SHEET_COLUMNS = [
     "score", "summary", "opportunity", "fields", "added_date", "score_breakdown", "pi",
     "pi_full_name", "pi_email", "pi_affiliation", "eval_model",
     "prev_score", "prev_eval_model",
+    "hts_score", "hts_reason", "hts_eval_model",
 ]
 
 SCORE_PARAMS = [
@@ -146,6 +153,10 @@ def load_from_sheet():
             p["score"] = int(p.get("score", 0))
         except Exception:
             p["score"] = 0
+        try:
+            p["hts_score"] = int(p.get("hts_score", 0)) if str(p.get("hts_score", "")).strip() else 0
+        except Exception:
+            p["hts_score"] = 0
         sb = p.get("score_breakdown", "")
         if isinstance(sb, str) and sb.strip():
             try:
@@ -183,6 +194,9 @@ def save_to_sheet(papers):
             p.get("eval_model", ""),
             p.get("prev_score", ""),
             p.get("prev_eval_model", ""),
+            p.get("hts_score", ""),
+            p.get("hts_reason", ""),
+            p.get("hts_eval_model", ""),
         ])
     backoffs = [3, 8, 15]
     for attempt, delay in enumerate([0] + backoffs):
@@ -901,6 +915,30 @@ Return a JSON object (no markdown) with exactly these keys:
 - reason: 1-2 sentence explanation for the score on this specific dimension
 """
 
+# Independent of the 50-point composite above — screens for High-Throughput
+# Screening (HTS) collaboration fitness: a specific new molecule/target,
+# linked to a disease, with a testable assay. Never summed into `score`.
+HTS_PROMPT = """You are a translational-science analyst screening papers for
+High-Throughput Screening (HTS) collaboration potential.
+
+Determine whether this paper:
+1. Identifies a SPECIFIC new molecule or target (not a vague pathway/gene family)
+2. Links that molecule/target to a specific disease or condition
+3. Describes an assay or method that could test/measure the molecule/target's effect
+
+Title: {title}
+Abstract: {abstract}
+
+Score 1-10 for HTS collaboration fitness:
+- 8-10: all three elements clearly present (named target, disease link, testable assay)
+- 4-7: two of three present, or all three present but vaguely
+- 1-3: fewer than two elements present, or purely descriptive/review work
+
+Return a JSON object (no markdown) with exactly these keys:
+- hts_score: integer 1-10
+- hts_reason: 1-2 sentence explanation citing which of the 3 elements are/aren't present
+"""
+
 # Single strength-ordered chain, used for every call (meta, per-param, and
 # the researcher-level summary) — the strongest model is always tried
 # first, falling through to weaker models only on failure:
@@ -1156,6 +1194,29 @@ def evaluate_paper(paper, allow_groq=True, force_model=None, candidates=None):
         "eval_model":      _summarize_eval_model(models_used),
     }
 
+
+def evaluate_hts_suitability(paper, allow_groq=True, candidates=None):
+    """Independent 1-10 HTS-collaboration-fitness score — never summed into
+    the 50-point composite from evaluate_paper(). Same model chain/throttling,
+    via its own _call_gemini chain label so it doesn't interfere with the
+    'strong' chain's round-robin bookkeeping."""
+    abstract = paper.get("abstract", "").strip() or "(no abstract available)"
+    truncated = abstract[:1200]
+    eval_candidates = candidates if candidates is not None else STRONG_MODEL_CANDIDATES
+    try:
+        data, model = _call_gemini(HTS_PROMPT.format(
+            title=paper["title"], abstract=truncated,
+        ), allow_groq=allow_groq, candidates=eval_candidates, chain="hts")
+    except Exception as e:
+        print(f"  Gemini error (hts): {e}")
+        return None
+    s = max(1, min(10, int(data.get("hts_score", 1))))
+    return {
+        "hts_score":      s,
+        "hts_reason":     fix_encoding(data.get("hts_reason", "")),
+        "hts_eval_model": model,
+    }
+
 # ── HTML Generation ────────────────────────────────────────────────────────────
 
 HTML_TEMPLATE = """<!DOCTYPE html>
@@ -1345,6 +1406,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .bd-bar{{height:100%;border-radius:2px;transition:width .4s cubic-bezier(.4,0,.2,1)}}
   .bd-reason{{font-size:.68rem;color:var(--muted);line-height:1.4;margin-top:1px}}
 
+  /* ── HTS block — visually distinct from the 50-pt breakdown, always visible ── */
+  .hts-block{{display:flex;flex-direction:column;gap:4px;border:1px solid rgba(124,111,247,.25);background:rgba(124,111,247,.06);border-radius:8px;padding:8px 10px}}
+
   /* ── Slider ── */
   .slider{{-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;background:var(--border);outline:none;cursor:pointer;width:140px;vertical-align:middle}}
   .slider::-webkit-slider-thumb{{-webkit-appearance:none;appearance:none;width:15px;height:15px;border-radius:50%;background:var(--accent);cursor:pointer;box-shadow:0 0 6px rgba(124,111,247,.5)}}
@@ -1478,6 +1542,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     <span id="param-val" class="slider-val">—</span>
   </div>
   <div class="row">
+    <label>HTS</label>
+    <input type="range" id="hts-slider" min="0" max="10" value="0" step="1" class="slider"/>
+    <span id="hts-val" class="slider-val">Any</span>
+  </div>
+  <div class="row">
     <label>Field</label>
     <button class="chip active" data-filter="field" data-val="all" data-label="All">All</button>
     {field_chips}
@@ -1502,6 +1571,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <select class="sort-select" id="r-sort">
         <option value="avg_score">Avg Applicability ↓</option>
         <option value="total_score">Total Score (3y) ↓</option>
+        <option value="max_hts">Max HTS Score ↓</option>
         <option value="paper_count">Paper Count ↓</option>
         <option value="pi">Name A-Z</option>
       </select>
@@ -1510,6 +1580,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <label>Total Score (3y)</label>
       <input type="range" id="r-total-slider" min="0" max="750" value="0" step="10" class="slider"/>
       <span id="r-total-val" class="slider-val">Any</span>
+    </div>
+    <div class="row">
+      <label>HTS</label>
+      <input type="range" id="r-hts-slider" min="0" max="10" value="0" step="1" class="slider"/>
+      <span id="r-hts-val" class="slider-val">Any</span>
     </div>
   </div>
   <div class="count" id="r-count"></div>
@@ -1537,12 +1612,13 @@ function parseDate(d){{
   return null;
 }}
 function daysAgo(d){{const t=parseDate(d);if(!t)return 9999;t.setHours(0,0,0,0);return Math.round((TODAY-t)/86400000);}}
-let activeScore=0, activeField='all', activePeriod='all', activeBranch='all', sortBy='score', searchQ='', activeParam='', activeParamMin=1, hujiOnly=true;
+let activeScore=0, activeField='all', activePeriod='all', activeBranch='all', sortBy='score', searchQ='', activeParam='', activeParamMin=1, activeHts=0, hujiOnly=true;
 const PARAM_LABELS = {{
   novelty:'Novelty', commercial_potential:'Commercial Potential',
   market_size:'Market Size', trl:'Tech Readiness', ip_strength:'IP Strength'
 }};
 function scoreClass(s){{return s>=35?'score-high':s>=25?'score-mid':'score-low';}}
+function htsClass(s){{return s>=8?'score-high':s>=5?'score-mid':'score-low';}}
 function barColor(s){{return s>=8?'#22c55e':s>=5?'#eab308':'#ef4444';}}
 function modelBadge(m,prevScore,prevModel){{
   if(!m)return '';
@@ -1566,6 +1642,13 @@ function renderBreakdown(bd){{
     </div>`;
   }}).join('');
   return `<div class="breakdown">${{rows}}</div>`;
+}}
+function renderHts(score,reason){{
+  if(!score)return '';
+  return `<div class="hts-block">
+    <div class="bd-label"><span class="bd-name">🎯 HTS Fit</span><span class="bd-score" style="color:${{barColor(score)}}">${{score}}/10</span></div>
+    ${{reason?`<div class="bd-reason">${{reason}}</div>`:''}}
+  </div>`;
 }}
 function renderAuthors(authors){{
   if(!authors.length)return '';
@@ -1625,6 +1708,7 @@ function applyFilters(list,{{skipPeriod,skipField}}){{
   if(!skipPeriod&&activePeriod!=='all')list=list.filter(p=>daysAgo(p.date)<=parseInt(activePeriod));
   if(activeScore>0)list=list.filter(p=>p.score>=activeScore);
   if(activeParam)list=list.filter(p=>((p.score_breakdown||{{}})[activeParam]||{{}}).score>=activeParamMin);
+  if(activeHts>0)list=list.filter(p=>(p.hts_score||0)>=activeHts);
   if(!skipField&&activeField!=='all')list=list.filter(p=>(p.fields||[]).includes(activeField));
   return list;
 }}
@@ -1644,6 +1728,7 @@ function render(){{
   // Update slider labels with current result count
   document.getElementById('score-val').textContent=activeScore>0?activeScore+'+ /50 · '+n:'Any · '+n;
   if(activeParam)document.getElementById('param-val').textContent=activeParamMin+'/10 · '+n;
+  document.getElementById('hts-val').textContent=activeHts>0?activeHts+'+ /10 · '+n:'Any · '+n;
   const grid=document.getElementById('grid');
   if(!list.length){{grid.innerHTML='<div class="empty">No papers match.</div>';return;}}
   grid.innerHTML=list.map((p,i)=>{{
@@ -1656,6 +1741,7 @@ function render(){{
       <div class="meta-row"><div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>${{p.source?`<span class="source-badge">${{p.source}}</span>`:''}}${{modelBadge(p.eval_model,p.prev_score,p.prev_eval_model)}}</div>
       ${{p.summary?`<div class="summary">${{p.summary}}</div>`:''}}
       ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
+      ${{renderHts(p.hts_score,p.hts_reason)}}
       ${{hasBd?renderBreakdown(p.score_breakdown):''}}
       ${{tags?`<div class="tags">${{tags}}</div>`:''}}
       <div class="actions">
@@ -1727,9 +1813,12 @@ document.getElementById('sort').addEventListener('change',e=>{{sortBy=e.target.v
 document.getElementById('search').addEventListener('input',e=>{{searchQ=e.target.value.trim();render();}});
 
 // ── Researchers tab ──
-let rSortBy='avg_score', rSearchQ='', rBranch='all', activeRTotal=0;
+let rSortBy='avg_score', rSearchQ='', rBranch='all', activeRTotal=0, activeRHts=0;
 function researcherTotalScore(r){{
   return (r.papers||[]).reduce((s,p)=>s+(p.score||0),0);
+}}
+function researcherMaxHts(r){{
+  return (r.papers||[]).reduce((m,p)=>Math.max(m,p.hts_score||0),0);
 }}
 function researcherBranches(r){{
   // Prefer stored branches; otherwise derive from aggregated field tags.
@@ -1743,8 +1832,10 @@ function renderResearchers(){{
   if(rBranch!=='all')list=list.filter(r=>researcherBranches(r).includes(rBranch));
   if(rSearchQ){{const q=rSearchQ.toLowerCase();list=list.filter(r=>(r.pi_full_name||r.pi||'').toLowerCase().includes(q)||(r.description||'').toLowerCase().includes(q)||(r.applicability||'').toLowerCase().includes(q)||(r.fields||[]).join(' ').toLowerCase().includes(q));}}
   if(activeRTotal>0)list=list.filter(r=>researcherTotalScore(r)>=activeRTotal);
+  if(activeRHts>0)list=list.filter(r=>researcherMaxHts(r)>=activeRHts);
   if(rSortBy==='pi')list.sort((a,b)=>(a.pi_full_name||a.pi||'').localeCompare(b.pi_full_name||b.pi||''));
   else if(rSortBy==='total_score')list.sort((a,b)=>researcherTotalScore(b)-researcherTotalScore(a));
+  else if(rSortBy==='max_hts')list.sort((a,b)=>researcherMaxHts(b)-researcherMaxHts(a));
   else list.sort((a,b)=>(b[rSortBy]||0)-(a[rSortBy]||0));
   const n=list.length;
   document.getElementById('r-count').textContent=n+' researcher'+(n!==1?'s':'')+' shown';
@@ -1761,7 +1852,10 @@ function renderResearchers(){{
       return `<div class="r-paper">
         <div class="r-paper-row">
           <span class="r-paper-title"><a href="${{p.url}}" target="_blank">${{p.title}}</a>${{p.date?' ('+p.date+')':''}} ${{modelBadge(p.eval_model,p.prev_score,p.prev_eval_model)}}</span>
-          <span class="r-paper-score ${{scoreClass(p.score)}}">${{p.score}}/50</span>
+          <span style="display:flex;gap:6px;flex-shrink:0">
+            <span class="r-paper-score ${{scoreClass(p.score)}}">${{p.score}}/50</span>
+            ${{p.hts_score?`<span class="r-paper-score ${{htsClass(p.hts_score)}}">🎯 ${{p.hts_score}}/10</span>`:''}}
+          </span>
         </div>
         ${{ptags?`<div class="tags">${{ptags}}</div>`:''}}
         ${{hasDetails?`<div class="r-paper-details">
@@ -1769,6 +1863,7 @@ function renderResearchers(){{
           ${{p.opportunity?`<div class="opportunity">${{p.opportunity}}</div>`:''}}
           ${{p.abstract?`<div class="r-abstract"><span class="r-abstract-label">Abstract</span>${{p.abstract}}</div>`:''}}
         </div>`:''}}
+        ${{renderHts(p.hts_score,p.hts_reason)}}
         ${{hasBd?renderBreakdown(p.score_breakdown):''}}
         <div class="r-paper-actions">
           ${{hasDetails?`<button class="btn r-paper-toggle" onclick="toggleDetails(this)">Abstract &amp; Summary ▾</button>`:''}}
@@ -1785,6 +1880,7 @@ function renderResearchers(){{
         <div class="r-badges">
           <div class="score-badge ${{scoreClass(Math.round(r.avg_score||0))}}"><span class="score-num">${{(r.avg_score||0).toFixed(1)}}</span><span class="score-denom">avg /50</span></div>
           <div class="score-badge score-total"><span class="score-num">${{researcherTotalScore(r)}}</span><span class="score-denom">total (3y)</span></div>
+          ${{researcherMaxHts(r)?`<div class="score-badge ${{htsClass(researcherMaxHts(r))}}"><span class="score-num">${{researcherMaxHts(r)}}</span><span class="score-denom">🎯 HTS /10</span></div>`:''}}
         </div>
       </div>
       ${{r.pi_affiliation?`<div class="r-affiliation">🏛️ ${{r.pi_affiliation}}</div>`:''}}
@@ -1820,6 +1916,11 @@ document.getElementById('r-sort').addEventListener('change',e=>{{rSortBy=e.targe
 document.getElementById('r-total-slider').addEventListener('input',function(){{
   activeRTotal=parseInt(this.value);
   document.getElementById('r-total-val').textContent=activeRTotal>0?activeRTotal+'+':'Any';
+  renderResearchers();
+}});
+document.getElementById('r-hts-slider').addEventListener('input',function(){{
+  activeRHts=parseInt(this.value);
+  document.getElementById('r-hts-val').textContent=activeRHts>0?activeRHts+'+':'Any';
   renderResearchers();
 }});
 document.querySelectorAll('.r-branch-tab').forEach(tab=>tab.addEventListener('click',()=>{{
@@ -1914,6 +2015,9 @@ def generate_html(papers, researchers=None):
         "prev_score":      p.get("prev_score", ""),
         "prev_eval_model": p.get("prev_eval_model", ""),
         "added_date":      p.get("added_date", ""),
+        "hts_score":       p.get("hts_score", 0),
+        "hts_reason":      p.get("hts_reason", ""),
+        "hts_eval_model":  p.get("hts_eval_model", ""),
     } for p in papers], key=lambda x: x["score"], reverse=True)
 
     # Build header links: latest weekly + monthly digests + spreadsheet + user guide
@@ -2071,6 +2175,32 @@ def reeval_to_gemma_papers(papers):
     return rescored
 
 
+def backfill_hts_papers(papers):
+    """One-off: score every paper missing an HTS (High-Throughput Screening)
+    collaboration-fitness score. The main papers Sheet/JSON doesn't persist
+    `abstract` (only researcher profiles do), so this re-fetches it per
+    paper for scoring, same as reeval_to_gemma_papers() does. Safe to run
+    repeatedly — only targets papers without an hts_score yet, and papers
+    where the call fails are simply left for the next run.
+    """
+    targets = [p for p in papers if not p.get("hts_score")]
+    print(f"  {len(targets)} papers missing an HTS score.")
+    scored = 0
+    for i, p in enumerate(targets):
+        print(f"  [{i+1}/{len(targets)}] hts: {p.get('title','')[:70]}")
+        p["abstract"] = _fetch_abstract_for_paper(p)
+        result = evaluate_hts_suitability(p)
+        p.pop("abstract", None)
+        if not result:
+            print("      hts scoring failed — leaving as-is")
+            continue
+        p.update(result)
+        scored += 1
+        print(f"      hts_score={result['hts_score']}")
+    print(f"  Scored {scored}/{len(targets)} papers for HTS suitability.")
+    return scored
+
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
@@ -2131,6 +2261,16 @@ def main():
         else:
             print("  Nothing re-scored (no non-Gemma papers, or Gemma still unavailable).")
         print("Re-evaluation complete.")
+        return True
+
+    if ARGS.backfill_hts:
+        scored = backfill_hts_papers(existing)
+        if scored:
+            save_to_sheet(existing)
+            generate_html(existing)
+        else:
+            print("  Nothing scored (no papers missing an HTS score).")
+        print("HTS backfill complete.")
         return True
 
     known_ids = existing_ids(existing)
@@ -2201,6 +2341,10 @@ def main():
             paper["added_date"] = today_str()
             evaluated.append(paper)
             print(f"    score={result['score']} fields={result['fields']}")
+            hts_result = evaluate_hts_suitability(paper)
+            if hts_result:
+                paper.update(hts_result)
+                print(f"    hts_score={hts_result['hts_score']}")
         else:
             print(f"    evaluation failed — skipped")
         if evaluated and len(evaluated) % CHECKPOINT_EVERY == 0:
