@@ -1,61 +1,10 @@
 
-Dror Sharon: 1 non-Gemma paper(s) to re-evaluate.
-  re-eval: Genetic Analysis of 252 Index Cases with Inherited Retinal Diseases Us
-
-Neta Shlezinger: 1 non-Gemma paper(s) to re-evaluate.
-  re-eval: The quorum-sensing peptidic inhibitor rescues host immune system eradi
-
-Itay Lavy: 6 non-Gemma paper(s) to re-evaluate.
-  re-eval: Risk of retinal artery occlusion in patients with primary open-angle g
-  re-eval: Visual rehabilitation of a fighter pilot by utilizing a combination of
-  re-eval: Chronic Progressive External Ophthalmoplegia (CPEO): Rehabilitation ut
-  re-eval: Clinical Evaluation of Ripasudil for Corneal Edema: A Large-Scale Retr
-  re-eval: Unusual Presentation of Extensive Visually Significant Pseudoexfoliati
-  re-eval: Managing pseudophakic bullous keratopathy with a topical rho kinase in
-
-Yehuda Tzfati: 2 non-Gemma paper(s) to re-evaluate.
-  re-eval: Separation of telomere protection from length regulation by two differ
-  re-eval: The many faces of the helicase RTEL1 at telomeres and beyond.
-
-Nissim Benvenisty: 7 non-Gemma paper(s) to re-evaluate.
-  re-eval: Genetic screening of long non-coding RNAs in human embryonic stem cell
-  re-eval: Analysis of Human Uniparental Embryonic Stem Cells Reveals New Putativ
-  re-eval: Implications of genetic and epigenetic aberrations to the tumorigenici
-  re-eval: Large-scale analysis of loss of chromosome Y in human pluripotent stem
-  re-eval: Genome-Wide Screening in Haploid Stem Cells Reveals Synthetic Lethalit
-  re-eval: High prevalence of acquired cancer-related mutations in 146 human plur
-  re-eval: Iodinated contrast media allergy is rare in patients undergoing sialog
-
-Talya Wolak: 1 non-Gemma paper(s) to re-evaluate.
-  re-eval: Feasibility and safety of electrohydraulic acoustic therapy for treatm
-
-Dana Avrahami: 2 non-Gemma paper(s) to re-evaluate.
-  re-eval: Epigenetic adaptation of beta cells across lifespan and disease.
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  re-eval: Author Correction: CelFiE-ISH: a probabilistic model for multi-cell ty
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-
-Itamar Willner: 6 non-Gemma paper(s) to re-evaluate.
-  re-eval: Redox- and Photo-Responsive Fe
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+Itamar Willner: 1 non-Gemma paper(s) to re-evaluate.
   re-eval: Dynamic Switchable and Transient DNA Condensates Driven by Aptamer-Lig
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    still no Gemma result — leaving as-is
-  re-eval: Allosteric ligand-aptamer complexes orchestrate supramolecular or tran
-  re-eval: Nucleic acid-functionalized nanozymes and their applications.
-  re-eval: Dynamic Fusion of Nucleic Acid Functionalized Nano-/Micro-Cell-Like Co
-  re-eval: Stimuli-Responsive DNA-Based Hydrogels on Surfaces for Switchable Bioe
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   WARNING: deployed apps_script.js reports version=0 (need >=2). Skipping ALL Google Sheet writes this run — the old deployment ignores sheet_name and would overwrite Sheet1. researchers_data.json and the dashboard Researchers tab will still be built. To also get the Researchers sheet tab, redeploy apps_script.js (Extensions > Apps Script > paste latest source > Deploy > Manage deployments > Edit > New version) and re-run.
 Generated papers_reader.html and papers_data.json with 342 papers and 45 researcher profiles.
 
-Re-evaluated 25 paper(s) onto Gemma, backfilled 0 missing researcher description(s), backfilled 0 missing abstract(s).
+Re-evaluated 1 paper(s) onto Gemma, backfilled 0 missing researcher description(s), backfilled 0 missing abstract(s).
