@@ -1,10 +1,2 @@
 
-Itamar Willner: 1 non-Gemma paper(s) to re-evaluate.
-  re-eval: Dynamic Switchable and Transient DNA Condensates Driven by Aptamer-Lig
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  WARNING: deployed apps_script.js reports version=0 (need >=2). Skipping ALL Google Sheet writes this run — the old deployment ignores sheet_name and would overwrite Sheet1. researchers_data.json and the dashboard Researchers tab will still be built. To also get the Researchers sheet tab, redeploy apps_script.js (Extensions > Apps Script > paste latest source > Deploy > Manage deployments > Edit > New version) and re-run.
-Generated papers_reader.html and papers_data.json with 342 papers and 45 researcher profiles.
-
-Re-evaluated 1 paper(s) onto Gemma, backfilled 0 missing researcher description(s), backfilled 0 missing abstract(s).
+Re-evaluated 0 paper(s) onto Gemma, backfilled 0 missing researcher description(s), backfilled 0 missing abstract(s).
