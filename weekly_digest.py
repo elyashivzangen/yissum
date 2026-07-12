@@ -219,17 +219,18 @@ def curate_with_gemini(papers, monthly=False):
 
 # ── PDF generation ───────────────────────────────────────────────────────────
 
-# Colour palette — matches the dashboard's dark-theme accent (papers_pipeline.py HTML_TEMPLATE)
-C_PURPLE  = colors.HexColor("#7c6ff7")
-C_PURPLE2 = colors.HexColor("#b39dff")
-C_DARK    = colors.HexColor("#0f1117")
-C_CARD    = colors.HexColor("#1a1d2e")
-C_BORDER  = colors.HexColor("#2d3148")
-C_TEXT    = colors.HexColor("#e2e8f0")
-C_MUTED   = colors.HexColor("#8892a4")
-C_GREEN   = colors.HexColor("#22c55e")
-C_YELLOW  = colors.HexColor("#eab308")
-C_RED     = colors.HexColor("#ef4444")
+# Colour palette — matches the dashboard's light-theme accent (papers_pipeline.py HTML_TEMPLATE :root block)
+C_PURPLE  = colors.HexColor("#5b50e8")
+C_PURPLE2 = colors.HexColor("#4338ca")
+C_BG      = colors.HexColor("#f5f6fa")
+C_CARD    = colors.HexColor("#ffffff")
+C_CARD2   = colors.HexColor("#eef0f7")
+C_BORDER  = colors.HexColor("#dde1ef")
+C_TEXT    = colors.HexColor("#1e2130")
+C_MUTED   = colors.HexColor("#6b7280")
+C_GREEN   = colors.HexColor("#16a34a")
+C_YELLOW  = colors.HexColor("#b45309")
+C_RED     = colors.HexColor("#dc2626")
 C_WHITE   = colors.white
 
 def score_color(s):
@@ -261,6 +262,11 @@ def build_styles():
             "subtitle", parent=base["Normal"],
             fontSize=10, leading=14, textColor=C_MUTED,
             fontName="Helvetica", spaceAfter=0,
+        ),
+        "dashboard_link": ParagraphStyle(
+            "dashboard_link", parent=base["Normal"],
+            fontSize=9, leading=13, textColor=C_PURPLE,
+            fontName="Helvetica-Bold", spaceBefore=2,
         ),
         "exec_label": ParagraphStyle(
             "exec_label", parent=base["Normal"],
@@ -346,7 +352,7 @@ def score_badge_table(score):
     )]]
     t = Table(data, colWidths=[18*mm])
     t.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#1a1d2e")),
+        ("BACKGROUND", (0, 0), (-1, -1), C_CARD2),
         ("BOX",        (0, 0), (-1, -1), 0.5, C_BORDER),
         ("ROUNDEDCORNERS", [4]),
         ("TOPPADDING",    (0, 0), (-1, -1), 5),
@@ -435,7 +441,7 @@ def paper_block(idx, paper, curation_item, styles):
             pi_segments.append(pi_affiliation)
         pi_email = paper.get("pi_email", "").strip()
         if pi_email:
-            pi_segments.append(pi_email)
+            pi_segments.append(f'<link href="mailto:{pi_email}">{pi_email}</link>')
         inner.append(Spacer(1, 2*mm))
         inner.append(Paragraph(
             "Main Researcher: " + " · ".join(pi_segments), styles["pi_line"],
@@ -455,6 +461,14 @@ def paper_block(idx, paper, curation_item, styles):
     if meta_segments:
         inner.append(Spacer(1, 1*mm))
         inner.append(Paragraph(" · ".join(meta_segments), styles["meta_line"]))
+
+    # Abstract (short AI-written summary — the sheet doesn't store the real
+    # PubMed/journal abstract text)
+    summary = paper.get("summary", "").strip()
+    if summary:
+        inner.append(Spacer(1, 2*mm))
+        inner.append(Paragraph("ABSTRACT", styles["label"]))
+        inner.append(Paragraph(summary, styles["body"]))
 
     # Fields
     fields = paper.get("fields", [])
@@ -488,7 +502,7 @@ def paper_block(idx, paper, curation_item, styles):
     url = paper.get("url", "")
     if url:
         inner.append(Paragraph(
-            f'<link href="{url}"><font color="#7c6ff7">{url}</font></link>',
+            f'<link href="{url}"><font color="#5b50e8">{url}</font></link>',
             ParagraphStyle("url", fontName="Helvetica", fontSize=8, leading=10,
                            textColor=C_PURPLE),
         ))
@@ -553,6 +567,14 @@ def generate_pdf(papers_by_idx, curation, monthly=False, branch=None):
     # ── Header ──
     story.append(Paragraph("HUJI Research Monitor", styles["title"]))
     story.append(Paragraph(period_label, styles["subtitle"]))
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    if repo:
+        owner, rname = (repo.split("/") + [""])[:2]
+        dashboard_url = f"https://{owner}.github.io/{rname}/papers_reader.html"
+        story.append(Paragraph(
+            f'<link href="{dashboard_url}">View the live dashboard →</link>',
+            styles["dashboard_link"],
+        ))
     story.append(Spacer(1, 6*mm))
     story.append(HRFlowable(width="100%", thickness=1, color=C_BORDER))
     story.append(Spacer(1, 4*mm))
@@ -566,7 +588,7 @@ def generate_pdf(papers_by_idx, curation, monthly=False, branch=None):
     exec_table = Table([[[e] for e in exec_box_inner]], colWidths=[page_w])
     exec_table = Table([[exec_box_inner]], colWidths=[page_w])
     exec_table.setStyle(TableStyle([
-        ("BACKGROUND",    (0, 0), (-1, -1), colors.HexColor("#1e1b4b")),
+        ("BACKGROUND",    (0, 0), (-1, -1), C_CARD2),
         ("BOX",           (0, 0), (-1, -1), 0.5, C_PURPLE),
         ("LEFTPADDING",   (0, 0), (-1, -1), 5*mm),
         ("RIGHTPADDING",  (0, 0), (-1, -1), 5*mm),
