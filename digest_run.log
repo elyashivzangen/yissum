@@ -2,66 +2,66 @@
 =======================================================
 Branch: All Branches
 Loading top papers from Google Sheet...
-  Sheet response: 200, 972235 bytes
-  Cutoff date: 2026-06-29  (DIGEST_WINDOW=7 days)
-  Rows: 342 total, 241 excluded, 101 kept.
-  Sample pub date values: ['2026-10-15', '2026-09-01', '2026 Aug 1']
+  Sheet response: 200, 1091886 bytes
+  Cutoff date: 2026-07-06  (DIGEST_WINDOW=7 days)
+  Rows: 357 total, 279 excluded, 78 kept.
+  Sample pub date values: ['2026-10-15', '2026-09-01', '2026 Jul 14']
   20 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
   Gemini selected 12 papers.
-  Executive summary: Hebrew University researchers are driving innovation across several high-impact sectors, poised to attract significant i...
+  Executive summary: Hebrew University researchers are advancing a diverse portfolio of innovations poised for significant commercial impact....
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W28.pdf  (16 KB)
+PDF written: digests/HUJI_digest_2026_W29.pdf  (16 KB)
 
 =======================================================
 Branch: Healthcare
 Loading top papers from Google Sheet...
-  Sheet response: 200, 972235 bytes
-  Cutoff date: 2026-06-29  (DIGEST_WINDOW=7 days)
-  Rows: 342 total, 253 excluded, 89 kept.
-  Sample pub date values: ['2026-10-15', '2026 Aug 1', '2026 Aug 1']
+  Sheet response: 200, 1091886 bytes
+  Cutoff date: 2026-07-06  (DIGEST_WINDOW=7 days)
+  Rows: 357 total, 292 excluded, 65 kept.
+  Sample pub date values: ['2026-10-15', '2026 Jul 14', '2026 Jul 11']
   20 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
   Gemini selected 12 papers.
-  Executive summary: This week's digest highlights a diverse portfolio of breakthroughs poised for significant commercial impact across biote...
+  Executive summary: This week's digest highlights groundbreaking advancements across medical devices, precision therapeutics, and AI-driven ...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W28_Healthcare.pdf  (16 KB)
+PDF written: digests/HUJI_digest_2026_W29_Healthcare.pdf  (16 KB)
 
 =======================================================
 Branch: Agriculture & Food
 Loading top papers from Google Sheet...
-  Sheet response: 200, 972235 bytes
-  Cutoff date: 2026-06-29  (DIGEST_WINDOW=7 days)
-  Rows: 342 total, 338 excluded, 4 kept.
-  Sample pub date values: ['2026-09-01', '2026 Jul 2', '2026 Jul 1']
-  4 candidates (top 20 by score).
+  Sheet response: 200, 1091886 bytes
+  Cutoff date: 2026-07-06  (DIGEST_WINDOW=7 days)
+  Rows: 357 total, 355 excluded, 2 kept.
+  Sample pub date values: ['2026-09-01', '2026-05']
+  2 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 3 papers.
-  Executive summary: Hebrew University researchers are advancing sustainable solutions in food technology and agriculture. New findings enabl...
+  Gemini selected 2 papers.
+  Executive summary: This week's digest features two innovations with significant potential across the FoodTech and AgriTech sectors. A groun...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W28_Agriculture_Food.pdf  (6 KB)
+PDF written: digests/HUJI_digest_2026_W29_Agriculture_Food.pdf  (4 KB)
 
 =======================================================
 Branch: Exact & Social Sciences
 Loading top papers from Google Sheet...
-  Sheet response: 200, 972235 bytes
-  Cutoff date: 2026-06-29  (DIGEST_WINDOW=7 days)
-  Rows: 342 total, 334 excluded, 8 kept.
-  Sample pub date values: ['2026 Aug 1', '2026 Jul 7', '2026-05']
-  8 candidates (top 20 by score).
+  Sheet response: 200, 1091886 bytes
+  Cutoff date: 2026-07-06  (DIGEST_WINDOW=7 days)
+  Rows: 357 total, 346 excluded, 11 kept.
+  Sample pub date values: ['2026-06', '2026-05', '2026-05']
+  11 candidates (top 20 by score).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 5 papers.
-  Executive summary: This week's digest showcases exciting advancements across advanced materials and AI, poised for significant commercial i...
+  Gemini selected 9 papers.
+  Executive summary: This week's digest highlights groundbreaking advancements across several high-impact fields, from sustainable bio-econom...
 Generating PDF...
-PDF written: digests/HUJI_digest_2026_W28_Exact_Social_Sciences.pdf  (8 KB)
+PDF written: digests/HUJI_digest_2026_W29_Exact_Social_Sciences.pdf  (13 KB)
 
 All digests done.
 
