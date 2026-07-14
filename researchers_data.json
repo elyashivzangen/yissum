@@ -12105,7 +12105,7 @@
     "pi_full_name": "Albert Grinshpun",
     "pi_email": "",
     "pi_affiliation": "Sharett Institute of Oncology, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 22.6,
+    "avg_score": 22.4,
     "max_hts_score": 4,
     "paper_count": 5,
     "description": "This researcher specializes in translational cancer genomics, focusing on the identification of molecular biomarkers that dictate treatment response and disease progression. Their work bridges laboratory-based genetic analysis with clinical oncology to develop precision medicine tools, such as liquid biopsies and predictive genomic signatures, for more effective cancer management.",
@@ -12315,40 +12315,41 @@
         "date": "2023",
         "url": "https://pubmed.ncbi.nlm.nih.gov/37900856/",
         "journal": "Case reports in oncology",
-        "score": 7,
-        "summary": "This paper details the clinical and molecular characteristics of a rare CIC-FOXO4-translocated sarcoma in a 46-year-old female patient. The study contributes to the growing body of knowledge surrounding the molecular classification of undifferentiated small round cell sarcomas.",
-        "opportunity": "The identification of unique genomic fusion drivers provides a target for the development of precision oncology therapeutics and specialized molecular diagnostic panels.",
+        "score": 6,
+        "summary": "Researchers documented a rare type of bone and soft tissue cancer driven by a specific genetic fusion called CIC-FOXO4 in a female patient. The paper provides a detailed molecular and clinical profile of this malignancy to help improve identification and treatment.",
+        "opportunity": "The detailed molecular mapping of this rare translocation supports the development of specialized companion diagnostics and targeted therapies for CIC-rearranged sarcomas.",
         "abstract": "Small round cell sarcoma is a group of undifferentiated malignancies arising in the bone and soft tissue, notable for Ewing sarcoma. Recently, a new World Health Organization classification has been introduced, including an additional subset of these sarcomas, named CIC-rearranged sarcoma. Within this group, CIC-FOXO4 translocation is an exceedingly rare fusion that has been reported only 4 times in the literature. Herein, we report in-depth the pathological, clinical, and molecular features of a CIC-FOXO4 translocation-driven tumor in a 46-year-old woman.",
         "fields": [
-          "Clinical",
+          "Diagnostics",
           "Genomics",
-          "Diagnostics"
+          "Drug Discovery",
+          "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 2,
-            "reason": "This is a descriptive clinical case report documenting an exceedingly rare variant, which contributes to medical literature but lacks the technical innovation or platform-enabling potential required for high novelty in a deep-tech context."
+            "reason": "This is a descriptive case report of a known translocation; it adds a single data point to existing literature rather than introducing a new mechanism, therapy, or diagnostic platform."
           },
           "commercial_potential": {
-            "score": 2,
-            "reason": "This is a descriptive single-patient case report detailing a rare biological phenomenon rather than a scalable therapeutic, diagnostic, or platform technology. It lacks an actionable commercial value proposition, serving primarily as clinical documentation rather than product development."
+            "score": 1,
+            "reason": "This is a single-patient case report describing an extremely rare mutation; it provides no new therapeutic targets, diagnostic tools, or scalable technologies that could be commercialized."
           },
           "market_size": {
             "score": 1,
-            "reason": "The paper focuses on an exceedingly rare clinical case report with a global literature count of only five instances, representing a negligible addressable market size with no commercial scalability. The target population is too small to support a viable therapeutic or diagnostic business model."
+            "reason": "The paper describes an 'exceedingly rare' translocation reported only 4 times in literature, representing a negligible addressable market for any targeted therapeutic or diagnostic product."
           },
           "trl": {
             "score": 1,
-            "reason": "This is a descriptive clinical case report documenting a rare oncological observation, which contributes to medical literature but does not involve the development or testing of a technology, platform, or therapeutic intervention."
+            "reason": "This is a clinical case report describing a rare pathological finding, which represents basic observational medical knowledge rather than a developed technology, device, or therapeutic product."
           },
           "ip_strength": {
             "score": 1,
-            "reason": "This is a clinical case report describing a rare patient condition and does not involve the development of a novel technology, therapeutic, or diagnostic method capable of intellectual property protection."
+            "reason": "This is a descriptive case report of a rare clinical occurrence; it contains no novel methodology, therapeutic candidate, or proprietary technology that is patentable or defensible."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": 7,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Sharett Institute of Oncology, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 3,
