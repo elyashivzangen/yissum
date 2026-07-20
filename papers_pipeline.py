@@ -1226,33 +1226,34 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>HUJI Research Monitor</title>
 <style>
+  /* Yissum brand palette (teal / navy) — light by default */
   :root {{
-    --bg:#f5f6fa; --card:#ffffff; --card2:#eef0f7;
-    --accent:#5b50e8; --accent2:#4338ca; --accent3:#0284c7;
-    --text:#1e2130; --muted:#6b7280; --faint:#d1d5db;
-    --border:#dde1ef; --tag-bg:#eef0f8;
+    --bg:#eef1f4; --card:#ffffff; --card2:#f0faf8;
+    --accent:#159a8a; --accent2:#0f7d70; --accent3:#1155a6;
+    --text:#1f2d3d; --muted:#6b7c8f; --faint:#cbd5e0;
+    --border:#e2e8f0; --tag-bg:#e9f6f3;
     --green:#16a34a; --yellow:#b45309; --red:#dc2626;
     --green-bg:#dcfce7; --yellow-bg:#fef9c3; --red-bg:#fee2e2;
-    --shadow:0 4px 24px rgba(0,0,0,.08);
-    --header-bg:linear-gradient(135deg,#4338ca 0%,#5b50e8 100%);
-    --header-border:rgba(255,255,255,.15);
-    --header-shadow:0 2px 16px rgba(67,56,202,.25);
-    --header-h1:#ffffff; --header-subtitle:rgba(255,255,255,.75);
-    --controls-bg:linear-gradient(to bottom,rgba(238,240,247,.95),transparent);
+    --shadow:0 4px 24px rgba(27,42,74,.08);
+    --header-bg:linear-gradient(135deg,#0f7d70 0%,#159a8a 100%);
+    --header-border:rgba(255,255,255,.18);
+    --header-shadow:0 2px 16px rgba(21,154,138,.28);
+    --header-h1:#ffffff; --header-subtitle:rgba(255,255,255,.85);
+    --controls-bg:linear-gradient(to bottom,rgba(240,250,248,.95),transparent);
   }}
   [data-theme=dark] {{
-    --bg:#0b0d18; --card:#13162a; --card2:#1a1d35;
-    --accent:#7c6ff7; --accent2:#b39dff; --accent3:#38bdf8;
-    --text:#dde4f0; --muted:#7a8499; --faint:#3a3f5c;
-    --border:#252a45; --tag-bg:#1e2240;
+    --bg:#0b1220; --card:#111d2e; --card2:#16273a;
+    --accent:#2bb6a4; --accent2:#7fd8cc; --accent3:#38bdf8;
+    --text:#dde4f0; --muted:#7a8ba0; --faint:#334155;
+    --border:#22344a; --tag-bg:#123028;
     --green:#34d399; --yellow:#fbbf24; --red:#f87171;
     --green-bg:#052e1c; --yellow-bg:#2d1f02; --red-bg:#2a0a0a;
     --shadow:0 4px 24px rgba(0,0,0,.45);
-    --header-bg:linear-gradient(135deg,#0f1225 0%,#161a36 100%);
+    --header-bg:linear-gradient(135deg,#0b2b28 0%,#0f3d38 100%);
     --header-border:var(--border);
     --header-shadow:0 2px 16px rgba(0,0,0,.4);
     --header-h1:var(--accent2); --header-subtitle:var(--muted);
-    --controls-bg:linear-gradient(to bottom,rgba(22,26,54,.9),transparent);
+    --controls-bg:linear-gradient(to bottom,rgba(17,29,46,.9),transparent);
   }}
   *{{box-sizing:border-box;margin:0;padding:0}}
   body{{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}}
@@ -1360,14 +1361,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   .model-badge.model-groq{{background:var(--yellow-bg);color:var(--yellow);border-color:rgba(251,191,36,.3)}}
   .model-badge.model-gemma{{background:var(--green-bg);color:var(--green);border-color:rgba(52,211,153,.25)}}
 
-  .summary{{font-size:.8rem;color:#9aa5bc;line-height:1.6}}
+  .summary{{font-size:.8rem;color:var(--muted);line-height:1.6}}
   .opportunity{{
     font-size:.8rem;
-    background:linear-gradient(135deg,#1a1552 0%,#0f1535 100%);
+    background:var(--card2);
     border-left:3px solid var(--accent);
     padding:8px 12px;border-radius:0 8px 8px 0;
-    color:var(--accent2);line-height:1.5;
-    box-shadow:inset 0 0 20px rgba(124,111,247,.05)
+    color:var(--text);line-height:1.5;
   }}
 
   .tags{{display:flex;flex-wrap:wrap;gap:5px}}
@@ -1495,9 +1495,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body>
 <header>
-  <div class="logo">HU</div>
+  <div class="logo">N</div>
   <div class="header-title">
-    <h1>HUJI Research Monitor</h1>
+    <h1>Yissum Research Monitor</h1>
     <span class="subtitle" id="updated"></span>
   </div>
   <div class="header-links">{header_links}<button class="header-link theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌙 Dark</button></div>
