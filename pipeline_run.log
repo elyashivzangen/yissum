@@ -1,65 +1,45 @@
 Loading existing papers from Google Sheet...
-  342 existing papers loaded.
-  Verifying HUJI affiliation for 336 papers via PubMed efetch...
-fetch_pubmed: 17 fetched, 15 new
-fetch_europepmc: 13 fetched, 0 new
+  357 existing papers loaded.
+  Verifying HUJI affiliation for 351 papers via PubMed efetch...
+fetch_pubmed: 14 fetched, 9 new
+fetch_europepmc: 8 fetched, 0 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-15 unique new papers to evaluate.
-Enriching PI contact info for 15 new papers...
+9 unique new papers to evaluate.
+Enriching PI contact info for 9 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/15] Breast cancer genomic subtype-specific copy number alterations in meta
-    score=19 fields=['Genomics', 'Diagnostics', 'Drug Discovery', 'Clinical']
+  [1/9] CCR1 signaling as a common injury pathway in retinal degeneration.
+    score=23 fields=['Drug Discovery', 'Immunology', 'Clinical']
+    hts_score=4
+  [2/9] Single-cell transcriptome profiles of Foxl1-lineage cells along the in
+    score=14 fields=['Drug Discovery', 'Genomics', 'Synthetic Biology']
     hts_score=2
-  [2/15] Open Abdomen in Nontrauma Patients: Fascial Closure and Favorable Disc
-    score=17 fields=['Medical Device', 'Clinical']
+  [3/9] Wild canids as reservoirs of zoonotic Bartonella species in Israel.
+    score=10 fields=['Diagnostics', 'Clinical', 'Immunology']
     hts_score=1
-  [3/15] Progress in structure prediction and design of adaptive immune recepto
-    score=30 fields=['Drug Discovery', 'Immunology', 'Software/AI', 'Synthetic Biology']
+  [4/9] Model-Based Attribution of Biologic Effectiveness in Psoriasis: Drug v
+    score=26 fields=['Software/AI', 'Immunology', 'Clinical', 'Drug Discovery']
+    hts_score=2
+  [5/9] Full Quantum and Mixed Quantum-Classical Dynamics of Hot Exciton Cooli
+    score=21 fields=['Materials', 'Clean Energy', 'Quantum']
     hts_score=1
-  [4/15] Excitation of a photosensitizer-reagent complex: 4BBA-nonanoic acid co
-    score=13 fields=['Materials', 'Medical Device', 'Diagnostics']
-    hts_score=1
-  [5/15] Thinking outside the box to reduce health inequities in prenatal nicot
-    score=15 fields=['Clinical', 'Software/AI']
-    hts_score=1
-  [6/15] The impact of sibling sexual abuse on intrafamilial relationships: A f
-    score=8 fields=['Clinical', 'Neuroscience', 'Other']
-    hts_score=1
-  [7/15] Cognitive-Functional Intervention for Adults With ADHD (Cog-Fun-A): An
-    score=20 fields=['Neuroscience', 'Clinical', 'Software/AI']
-    hts_score=1
-  [8/15] Analysis of haploinsufficiency in human neural progenitor cells: insig
-    score=19 fields=['Drug Discovery', 'Neuroscience', 'Genomics', 'Diagnostics']
-    hts_score=3
-  [9/15] Senior nurse leaders' perspectives on integrity, dishonesty and ethica
-    score=7 fields=['Clinical', 'Software/AI']
-    hts_score=1
-  [10/15] International survey on the management of cervical artery dissection: 
-    score=18 fields=['Clinical', 'Imaging', 'Software/AI']
+  [6/9] Sustained Mayer-Like Very-Low-Frequency Blood Pressure Oscillations in
     gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    score=7 fields=['Medical Device', 'Diagnostics', 'Clinical']
     hts_score=1
-  [11/15] EXPRESS: The Effect of Response-code on Stroop Interference and Facili
-    score=7 fields=['Neuroscience', 'Software/AI', 'Diagnostics']
+  [7/9] Metal ions affect abiotic sugar oligomerization reactions.
+    score=9 fields=['Materials', 'Synthetic Biology', 'FoodTech']
     hts_score=1
-  [12/15] Measles-Associated Stridor.
-    score=6 fields=['Clinical', 'Immunology']
+  [8/9] Blastomere/trophectoderm biopsy for preimplantation genetic testing do
+    score=21 fields=['Diagnostics', 'Genomics', 'Clinical']
     hts_score=1
-  [13/15] Dendritic morphology and synaptic nonlinearities enhance functional co
-    score=18 fields=['Neuroscience', 'Software/AI', 'Medical Device']
-    hts_score=2
-  [14/15] Importin 7 mediates the nuclear import of HIV-1 integrase via a specif
-    score=24 fields=['Drug Discovery', 'Proteomics', 'Immunology']
-    hts_score=9
-  [15/15] It was the best of times, it was the worst of times: Evidence for swit
-    score=9 fields=['Neuroscience', 'Software/AI']
-    hts_score=1
-  [checkpoint: 15/15] writing 357 papers (342 retained + 15 new)...
-Sheet updated: {"status":"ok","rows":358}
-Generated papers_reader.html and papers_data.json with 357 papers and 45 researcher profiles.
+  [9/9] Erk inhibitors intercept Erk-mediated negative feedback while imposing
+    score=25 fields=['Drug Discovery', 'Clinical', 'Immunology']
+    hts_score=4
 
-Kept all 342 existing papers, added 15 new.
-  [checkpoint: final] writing 357 papers (342 retained + 15 new)...
-Sheet updated: {"status":"ok","rows":358}
-Generated papers_reader.html and papers_data.json with 357 papers and 45 researcher profiles.
+Kept all 357 existing papers, added 9 new.
+  [checkpoint: final] writing 366 papers (357 retained + 9 new)...
+Sheet updated: {"status":"ok","rows":367}
+Generated papers_reader.html and papers_data.json with 366 papers and 46 researcher profiles.
 Done.
