@@ -1,7 +1,7 @@
 Checking apps_script.js deployment version...
   WARNING: deployed apps_script.js reports version=0 (need >=2). Skipping ALL Google Sheet writes this run — the old deployment ignores sheet_name and would overwrite Sheet1. researchers_data.json and the dashboard Researchers tab will still be built. To also get the Researchers sheet tab, redeploy apps_script.js (Extensions > Apps Script > paste latest source > Deploy > Manage deployments > Edit > New version) and re-run.
 Loading existing papers from Google Sheet...
-  357 papers loaded.
+  366 papers loaded.
 
 Selected 20 researchers to profile.
 Carrying forward 26 existing profile(s) not in this run's top 20.
@@ -10,133 +10,126 @@ Carrying forward 26 existing profile(s) not in this run's top 20.
 Checking for new publications for Chamutal Gur (existing profile: 2 paper(s))...
   No new papers for Chamutal Gur.
   [checkpoint: 1/20] writing 27 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 27 researcher profiles.
+Generated papers_reader.html and papers_data.json with 366 papers and 27 researcher profiles.
 
 [2/20] Tamir Ben-Hur
 Checking for new publications for Tamir Ben-Hur (existing profile: 7 paper(s))...
   No new papers for Tamir Ben-Hur.
   [checkpoint: 2/20] writing 28 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 28 researcher profiles.
+Generated papers_reader.html and papers_data.json with 366 papers and 28 researcher profiles.
 
-[3/20] Osnat Malka
-Checking for new publications for Osnat Malka (existing profile: 2 paper(s))...
-  No new papers for Osnat Malka.
-  [checkpoint: 3/20] writing 29 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 29 researcher profiles.
-
-[4/20] Danny Dvir
+[3/20] Danny Dvir
 Checking for new publications for Danny Dvir (existing profile: 6 paper(s))...
   No new papers for Danny Dvir.
+  [checkpoint: 3/20] writing 29 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 366 papers and 29 researcher profiles.
+
+[4/20] Osnat Malka
+Checking for new publications for Osnat Malka (existing profile: 2 paper(s))...
+  No new papers for Osnat Malka.
   [checkpoint: 4/20] writing 30 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 30 researcher profiles.
+Generated papers_reader.html and papers_data.json with 366 papers and 30 researcher profiles.
 
 [5/20] Albert Grinshpun
-Fetching last 3 years of publications for Albert Grinshpun...
-    grading: The Temozolomide Mutational Signature: Mechanisms, Clinical Implicatio
-      score=24 (gemma-4-31b-it)
+Checking for new publications for Albert Grinshpun (existing profile: 5 paper(s))...
+    grading: Oral Estrogen Receptor Degraders Compared to Standard Endocrine Therap
+      score=27 (gemma-4-31b-it)
       hts_score=2
-    grading: Detection of antibody-drug conjugate-induced interstitial lung disease
-      score=28 (gemma-4-31b-it)
-      hts_score=3
-    grading: Unleashing the power of anti-HER2 therapies in metastatic colorectal c
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      score=19 (gemma-4-31b-it)
-      hts_score=3
-    grading: First Female Patient with a Rare CIC-FOXO4-Translocated Sarcoma: A Cas
-      score=7 (gemini-3.1-flash-lite)
-      hts_score=3
+  Added 1 new paper(s) for Albert Grinshpun (5 -> 6).
   [checkpoint: 5/20] writing 31 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 31 researcher profiles.
+Generated papers_reader.html and papers_data.json with 366 papers and 31 researcher profiles.
 
 [6/20] Sharon Schlesinger
 Checking for new publications for Sharon Schlesinger (existing profile: 4 paper(s))...
   No new papers for Sharon Schlesinger.
   [checkpoint: 6/20] writing 32 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 32 researcher profiles.
+Generated papers_reader.html and papers_data.json with 366 papers and 32 researcher profiles.
 
 [7/20] Oren Ram
 Checking for new publications for Oren Ram (existing profile: 3 paper(s))...
   No new papers for Oren Ram.
   [checkpoint: 7/20] writing 33 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 33 researcher profiles.
+Generated papers_reader.html and papers_data.json with 366 papers and 33 researcher profiles.
 
 [8/20] Lianet Noda-García
 Checking for new publications for Lianet Noda-García (existing profile: 3 paper(s))...
   No new papers for Lianet Noda-García.
   [checkpoint: 8/20] writing 34 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 34 researcher profiles.
+Generated papers_reader.html and papers_data.json with 366 papers and 34 researcher profiles.
 
 [9/20] Tamar Harel
 Checking for new publications for Tamar Harel (existing profile: 12 paper(s))...
   No new papers for Tamar Harel.
   [checkpoint: 9/20] writing 35 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 35 researcher profiles.
+Generated papers_reader.html and papers_data.json with 366 papers and 35 researcher profiles.
 
-[10/20] Oren Zimhony
-Checking for new publications for Oren Zimhony (existing profile: 6 paper(s))...
-  No new papers for Oren Zimhony.
-  [checkpoint: 10/20] writing 36 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 36 researcher profiles.
-
-[11/20] Eylon Yavin
-Checking for new publications for Eylon Yavin (existing profile: 8 paper(s))...
-  No new papers for Eylon Yavin.
-  [checkpoint: 11/20] writing 37 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 37 researcher profiles.
-
-[12/20] Mattan Hurevich
-Checking for new publications for Mattan Hurevich (existing profile: 6 paper(s))...
-  No new papers for Mattan Hurevich.
-  [checkpoint: 12/20] writing 38 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 38 researcher profiles.
-
-[13/20] Yuval Malka
-Checking for new publications for Yuval Malka (existing profile: 1 paper(s))...
-  No new papers for Yuval Malka.
-  [checkpoint: 13/20] writing 39 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 39 researcher profiles.
-
-[14/20] Amir Haze
-Checking for new publications for Amir Haze (existing profile: 4 paper(s))...
-  No new papers for Amir Haze.
-  [checkpoint: 14/20] writing 40 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 40 researcher profiles.
-
-[15/20] Avi Priel
+[10/20] Avi Priel
 Checking for new publications for Avi Priel (existing profile: 5 paper(s))...
   No new papers for Avi Priel.
+  [checkpoint: 10/20] writing 36 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 366 papers and 36 researcher profiles.
+
+[11/20] Yuval Malka
+Checking for new publications for Yuval Malka (existing profile: 1 paper(s))...
+  No new papers for Yuval Malka.
+  [checkpoint: 11/20] writing 37 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 366 papers and 37 researcher profiles.
+
+[12/20] Amir Haze
+Checking for new publications for Amir Haze (existing profile: 4 paper(s))...
+  No new papers for Amir Haze.
+  [checkpoint: 12/20] writing 38 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 366 papers and 38 researcher profiles.
+
+[13/20] Oren Zimhony
+Checking for new publications for Oren Zimhony (existing profile: 6 paper(s))...
+  No new papers for Oren Zimhony.
+  [checkpoint: 13/20] writing 39 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 366 papers and 39 researcher profiles.
+
+[14/20] Eylon Yavin
+Checking for new publications for Eylon Yavin (existing profile: 8 paper(s))...
+  No new papers for Eylon Yavin.
+  [checkpoint: 14/20] writing 40 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 366 papers and 40 researcher profiles.
+
+[15/20] Mattan Hurevich
+Checking for new publications for Mattan Hurevich (existing profile: 6 paper(s))...
+  No new papers for Mattan Hurevich.
   [checkpoint: 15/20] writing 41 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 41 researcher profiles.
+Generated papers_reader.html and papers_data.json with 366 papers and 41 researcher profiles.
 
-[16/20] A Yaacov
-Checking for new publications for A Yaacov (existing profile: 5 paper(s))...
-  No new papers for A Yaacov.
-  [checkpoint: 16/20] writing 42 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 42 researcher profiles.
-
-[17/20] Liron Kogan
+[16/20] Liron Kogan
 Checking for new publications for Liron Kogan (existing profile: 6 paper(s))...
   No new papers for Liron Kogan.
-  [checkpoint: 17/20] writing 43 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 43 researcher profiles.
+  [checkpoint: 16/20] writing 42 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 366 papers and 42 researcher profiles.
 
-[18/20] Yehuda Tzfati
+[17/20] Yehuda Tzfati
 Checking for new publications for Yehuda Tzfati (existing profile: 5 paper(s))...
   No new papers for Yehuda Tzfati.
-  [checkpoint: 18/20] writing 44 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 44 researcher profiles.
+  [checkpoint: 17/20] writing 43 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 366 papers and 43 researcher profiles.
 
-[19/20] Sheera Adar
+[18/20] Sheera Adar
 Checking for new publications for Sheera Adar (existing profile: 6 paper(s))...
   No new papers for Sheera Adar.
+  [checkpoint: 18/20] writing 44 researcher profile(s)...
+Generated papers_reader.html and papers_data.json with 366 papers and 44 researcher profiles.
+
+[19/20] A Yaacov
+Checking for new publications for A Yaacov (existing profile: 5 paper(s))...
+    grading: From matching to facilitation: Reframing AI's role in clinical trial e
+      score=28 (gemma-4-31b-it)
+      hts_score=1
+  Added 1 new paper(s) for A Yaacov (5 -> 6).
   [checkpoint: 19/20] writing 45 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 45 researcher profiles.
+Generated papers_reader.html and papers_data.json with 366 papers and 45 researcher profiles.
 
 [20/20] Johnathan Arnon
 Checking for new publications for Johnathan Arnon (existing profile: 4 paper(s))...
   No new papers for Johnathan Arnon.
   [checkpoint: 20/20] writing 46 researcher profile(s)...
-Generated papers_reader.html and papers_data.json with 357 papers and 46 researcher profiles.
+Generated papers_reader.html and papers_data.json with 366 papers and 46 researcher profiles.
 
 Done. 46 researcher profiles written (26 carried forward unchanged).
