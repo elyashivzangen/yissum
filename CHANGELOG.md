@@ -6,6 +6,30 @@ into today's session (checkpointing, model fallback, `-u` unbuffered
 output — see `SESSION_HANDOFF.md` for that history). Everything below is
 what changed today.
 
+## [1.3.0] - 2026-07-20
+
+### Changed
+- **Redesigned weekly & monthly digests (`yissum_report.py`)** — both
+  `weekly_digest.py` and `weekly_digest_enhanced.py` now render a light,
+  Yissum-branded **HTML report** *and* a PDF in the same style (replacing the
+  old dark PDF-only layout). Highlights:
+  - **HUJI-primary researchers only** — papers whose PI's primary affiliation is
+    a co-located hospital (Hadassah / Shaare Zedek) are excluded, reusing the
+    dashboard's `hujiFirst` rule.
+  - **High-potential filter** — only papers scoring above 25/50 are reported. If
+    none qualify, the report says so explicitly and presents the 2 best instead.
+  - **Executive summary** lists the researchers and research subjects of the
+    high-potential papers.
+  - Each paper shows its **publication venue**, the **PI e-mail** (when known),
+    the **five commercialisation metrics** (HTS excluded) — expandable per-metric
+    in the HTML, static in the PDF — an **Open Dashboard** button and a
+    **per-paper deep link** into the dashboard.
+  - The digest e-mail now uses the styled HTML report as its inline body and
+    attaches both HTML and PDF.
+- **Dashboard deep-linking (`papers_reader.html`)** — `?paper=<id>` reveals,
+  scrolls to and highlights a single paper, so the digest's per-paper links land
+  on the right card.
+
 ## [1.2.0] - 2026-07-03
 
 ### Added

@@ -1328,6 +1328,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   }}
   .card:hover{{border-color:var(--accent);box-shadow:0 6px 28px rgba(0,0,0,.5),0 0 0 1px rgba(124,111,247,.2);transform:translateY(-1px)}}
   .card:hover::before{{opacity:1}}
+  /* Deep-link target (papers_reader.html?paper=<id>) — highlighted on arrival */
+  .card.deep-focus{{border-color:var(--accent);box-shadow:0 0 0 3px rgba(124,111,247,.45),0 6px 28px rgba(0,0,0,.5);animation:deepPulse 2.4s ease-out 1}}
+  @keyframes deepPulse{{0%{{box-shadow:0 0 0 6px rgba(124,111,247,.7)}}100%{{box-shadow:0 0 0 3px rgba(124,111,247,.45)}}}}
 
   .card-header{{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}}
   .title{{font-size:.88rem;font-weight:600;line-height:1.45;color:var(--text);flex:1}}
@@ -1741,7 +1744,7 @@ function render(){{
     const tags=(p.fields||[]).map(f=>`<span class="tag">${{f}}</span>`).join('');
     const authors=renderAuthors(p.authors||[]);
     const hasBd=p.score_breakdown&&Object.keys(p.score_breakdown).length>0;
-    return `<div class="card">
+    return `<div class="card" id="paper-${{p.id}}" data-pid="${{p.id}}">
       <div class="card-header"><div class="title">${{p.title}}</div><div class="score-badge ${{scoreClass(p.score)}}"><span class="score-num">${{p.score}}</span><span class="score-denom">/50</span></div></div>
       ${{(p.pi||p.pi_full_name)?`<div class="pi"><span class="pi-label">Main Researcher</span><span class="pi-name">👤 ${{p.pi_full_name||p.pi}}</span>${{p.pi_email?`<button class="btn pi-email-btn" onclick="toggleEmail(this)">Email ▾</button>`:''}} </div>${{p.pi_affiliation?`<div class="pi-affiliation">${{p.pi_affiliation}}</div>`:''}}${{p.pi_email?`<div class="pi-email" style="display:none"><a href="mailto:${{p.pi_email}}">${{p.pi_email}}</a></div>`:''}}`:''}}
       <div class="meta-row"><div class="meta">${{authors?authors+' · ':''}}${{p.journal||''}}${{p.date?' · '+p.date:''}}</div>${{p.source?`<span class="source-badge">${{p.source}}</span>`:''}}${{modelBadge(p.eval_model,p.prev_score,p.prev_eval_model)}}</div>
@@ -1971,6 +1974,23 @@ renderResearchers();
   }});
 }})();
 render();
+// Deep link: papers_reader.html?paper=<id> — reveal, scroll to and highlight
+// one paper (used by the Yissum digest's per-paper "View in Dashboard" links).
+function focusDeepLinkPaper(){{
+  const pid=new URLSearchParams(location.search).get('paper');
+  if(!pid)return;
+  let el=document.querySelector('[data-pid="'+(window.CSS&&CSS.escape?CSS.escape(pid):pid)+'"]');
+  if(!el){{
+    // Relax filters so a paper hidden by the current view still shows.
+    hujiOnly=false;activeScore=0;activePeriod='all';activeBranch='all';activeField='all';activeParam='';activeHts=0;searchQ='';
+    const hb=document.getElementById('hujiToggle');if(hb)hb.classList.remove('active');
+    const si=document.getElementById('search');if(si)si.value='';
+    render();
+    el=document.querySelector('[data-pid="'+(window.CSS&&CSS.escape?CSS.escape(pid):pid)+'"]');
+  }}
+  if(el){{el.classList.add('deep-focus');el.scrollIntoView({{behavior:'smooth',block:'center'}});}}
+}}
+focusDeepLinkPaper();
 </script>
 </body>
 </html>
