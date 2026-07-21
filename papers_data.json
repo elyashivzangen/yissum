@@ -3274,63 +3274,6 @@
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
-    "id": "pubmed_42438827",
-    "title": "Erk inhibitors intercept Erk-mediated negative feedback while imposing cell-cycle arrest and activating p38.",
-    "authors": [
-      "Merav Darash-Yahana",
-      "Nadine Soudah",
-      "Alexey Baskin",
-      "Inbal Levy-Saar",
-      "Alexander Levitzki",
-      "David Engelberg"
-    ],
-    "journal": "iScience",
-    "date": "2026 Jul 17",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42438827/",
-    "source": "PubMed",
-    "score": 25,
-    "summary": "This research reveals how ERK inhibitors trigger a compensatory survival mechanism by simultaneously inhibiting negative feedback loops and activating the stress-response protein p38. By identifying this specific signaling switch, the study provides a roadmap for designing synergistic drug combinations that prevent cancer cells from developing resistance to MAPK-pathway inhibitors.",
-    "opportunity": "The findings enable the development of rational combination therapies or predictive biomarkers to overcome clinical drug resistance in RAS/MAPK-driven cancers.",
-    "fields": [
-      "Drug Discovery",
-      "Clinical",
-      "Immunology"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 4,
-        "reason": "While characterizing the compensatory feedback mechanisms of MAPK signaling is scientifically robust, the concept of ERK inhibition triggering p38 activation and cell-cycle arrest is a well-established phenomenon in oncology research. This study provides mechanistic refinement rather than a novel therapeutic modality or a breakthrough discovery that shifts the current paradigm of kinase inhibitor development."
-      },
-      "commercial_potential": {
-        "score": 6,
-        "reason": "While ERK inhibitors are a high-value class of oncology therapeutics, the paper focuses on characterizing specific pathway feedback loops and p38 activation, which serves as a mechanistic foundation for combination therapy strategies rather than a direct, commercially ready asset. It provides actionable intellectual property and rationale for drug combinations, but lacks the standalone translational depth required for a higher score."
-      },
-      "market_size": {
-        "score": 8,
-        "reason": "ERK inhibition targets a central node in the MAPK pathway, which is dysregulated in a vast array of solid tumors, representing a multi-billion dollar addressable market in oncology. The potential to overcome feedback-driven resistance mechanisms positions this as a highly valuable therapeutic strategy for a broad patient population."
-      },
-      "trl": {
-        "score": 3,
-        "reason": "This study focuses on fundamental mechanistic pathway analysis of ERK inhibitors, characterizing intracellular signaling feedback loops rather than developing a validated therapeutic lead or delivery platform. It represents early-stage preclinical target validation that requires significant lead optimization and translational development before reaching commercial relevance."
-      },
-      "ip_strength": {
-        "score": 4,
-        "reason": "While identifying a novel regulatory mechanism is scientifically valuable, academic findings regarding signaling pathway feedback loops are often difficult to patent as composition-of-matter IP. The research focuses on pathway modulation rather than specific novel chemical entities, limiting the immediate commercial defensibility of the core insight."
-      }
-    },
-    "pi": "David Engelberg",
-    "pi_full_name": "David Engelberg",
-    "pi_email": "",
-    "pi_affiliation": "Department of Biological Chemistry, The Institute of Life Science, The Hebrew University of Jerusalem, Jerusalem 91904, Israel.; Department of Microbiology and Immunology, Yong Loo Lin School of Medicine, National University of Singapore, Singapore 117456, Singapore.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-07-20",
-    "hts_score": 4,
-    "hts_reason": "The paper identifies a specific target (Erk) and describes testable assays (cell-cycle arrest and p38 activation), but does not specify a particular disease or condition in the title.",
-    "hts_eval_model": "gemma-4-31b-it"
-  },
-  {
     "id": "pubmed_42373304",
     "title": "A unified analysis of cell type- and trajectory-associated pathways in single-cell data using Phoenix.",
     "authors": [
@@ -5593,6 +5536,63 @@
     "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
+    "id": "pubmed_42438827",
+    "title": "Erk inhibitors intercept Erk-mediated negative feedback while imposing cell-cycle arrest and activating p38.",
+    "authors": [
+      "Merav Darash-Yahana",
+      "Nadine Soudah",
+      "Alexey Baskin",
+      "Inbal Levy-Saar",
+      "Alexander Levitzki",
+      "David Engelberg"
+    ],
+    "journal": "iScience",
+    "date": "2026 Jul 17",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42438827/",
+    "source": "PubMed",
+    "score": 22,
+    "summary": "Researchers found that while Erk inhibitors stop cancer cell growth, they inadvertently trigger a feedback loop that reactivates upstream proteins and activates stress-response pathways like p38. This mechanism explains why some cancers develop resistance to these drugs and potentially lead to disease recurrence.",
+    "opportunity": "Development of combination therapies pairing Erk inhibitors with p38 inhibitors or upstream blockers to prevent drug resistance and improve oncology patient outcomes.",
+    "fields": [
+      "Drug Discovery",
+      "Clinical",
+      "Proteomics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "The paper describes well-known feedback loops and compensatory mechanisms in the MAPK pathway; identifying that Erk inhibition triggers p38 activation and relieves negative feedback is an incremental observation rather than a groundbreaking discovery."
+      },
+      "commercial_potential": {
+        "score": 4,
+        "reason": "The paper focuses on mechanistic understanding of feedback loops and paradoxical activation, which is fundamental science but does not present a novel drug candidate, a specific biomarker, or a clear path to a product."
+      },
+      "market_size": {
+        "score": 9,
+        "reason": "The target market is the oncology sector, specifically cancers driven by the RTK-Ras-Raf-MEK pathway, which represents one of the largest and most clinically significant addressable markets in precision medicine."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "The work is fundamentally mechanistic and basic research, focusing on intracellular signaling feedback loops and cellular responses in transformed cells. It describes biological phenomena rather than a developed drug candidate or a translatable clinical protocol."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The abstract describes fundamental mechanistic research into pathway feedback loops rather than a novel chemical entity, a proprietary platform, or a specific patentable application. It identifies a biological problem (recurrent disease via feedback reactivation) but does not present a unique, defensible solution or molecule."
+      }
+    },
+    "pi": "David Engelberg",
+    "pi_full_name": "David Engelberg",
+    "pi_email": "",
+    "pi_affiliation": "Department of Biological Chemistry, The Institute of Life Science, The Hebrew University of Jerusalem, Jerusalem 91904, Israel.; Department of Microbiology and Immunology, Yong Loo Lin School of Medicine, National University of Singapore, Singapore 117456, Singapore.",
+    "eval_model": "gemma-4-31b-it",
+    "prev_score": 25,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-07-20",
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific target (Erk) and describes testable assays (cell-cycle arrest and p38 activation), but does not specify a particular disease or condition in the title.",
+    "hts_eval_model": "gemma-4-31b-it"
+  },
+  {
     "id": "pubmed_42289936",
     "title": "Wurtzite InP/ZnSe/ZnS Core/Shell Semiconductor Quantum Dots with Bright Near-IR Emission.",
     "authors": [
@@ -6394,63 +6394,6 @@
     "added_date": "2026-07-20",
     "hts_score": 1,
     "hts_reason": "This is a physics paper focused on quantum dynamics in semiconductors; it lacks a biological target, a disease link, and a pharmacological assay.",
-    "hts_eval_model": "gemma-4-31b-it"
-  },
-  {
-    "id": "pubmed_42441884",
-    "title": "Blastomere/trophectoderm biopsy for preimplantation genetic testing does not affect early HCG levels.",
-    "authors": [
-      "Heli Alexandroni",
-      "Eadit Buhbut",
-      "Yovel Cohen",
-      "Gheona Altarescu",
-      "Talia Eldar-Geva",
-      "Ido Ben-Ami"
-    ],
-    "journal": "JBRA assisted reproduction",
-    "date": "2026 Jul 13",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42441884/",
-    "source": "PubMed",
-    "score": 21,
-    "summary": "This study examines the safety of preimplantation genetic testing (PGT) by analyzing whether performing a biopsy on early-stage embryos correlates with changes in human chorionic gonadotropin (HCG) levels. The findings suggest that the biopsy procedure itself does not negatively impact early hormonal markers of pregnancy success.",
-    "opportunity": "This research provides clinical validation for fertility clinics and genetic diagnostic companies to standardize PGT protocols without fear of compromising early embryonic viability signals.",
-    "fields": [
-      "Diagnostics",
-      "Genomics",
-      "Clinical"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 2,
-        "reason": "This study performs a standard clinical safety assessment of an existing, widely adopted procedure and lacks the transformative innovation required for high novelty scores. It represents an incremental observational study rather than a fundamental scientific breakthrough or a new platform technology."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "This study addresses a clinical safety concern rather than developing a novel product or proprietary technology, representing incremental data for existing IVF procedures rather than a new commercial opportunity. It lacks the IP potential or transformative platform nature required for high-scoring investment targets."
-      },
-      "market_size": {
-        "score": 6,
-        "reason": "The study addresses the established IVF/PGT-A market, which is a high-growth, multi-billion dollar clinical segment, but the finding itself is a incremental safety confirmation rather than a disruptive innovation that captures significant new addressable demand."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "The technology described involves an established clinical procedure (PGT) already in widespread use in IVF clinics globally; the study focuses on evaluating the safety and clinical outcomes of an existing, near-market standard of care."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "This study reports clinical observation data on a standard medical procedure rather than a novel, patentable technological invention. The findings describe clinical outcomes of existing diagnostic practices and lack the novelty or inventive step required for intellectual property protection."
-      }
-    },
-    "pi": "Ido Ben-Ami",
-    "pi_full_name": "Ido Ben-Ami",
-    "pi_email": "",
-    "pi_affiliation": "IVF and Infertility Unit, Department of Obstetrics and Gynecology, Shaare Zedek Medical Center, Jerusalem, affiliated with the Faculty of Medicine, Hebrew University of Jerusalem, Israel. The Eisenberg R&D Authority, Shaare Zedek Medical Center.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-07-20",
-    "hts_score": 1,
-    "hts_reason": "The paper is a clinical outcome study on biopsy procedures; it does not identify a molecular target for drug discovery, link a molecule to a disease, or describe a screening assay.",
     "hts_eval_model": "gemma-4-31b-it"
   },
   {
@@ -12642,6 +12585,59 @@
     "hts_eval_model": "gemma-4-31b-it"
   },
   {
+    "id": "pubmed_42441884",
+    "title": "Blastomere/trophectoderm biopsy for preimplantation genetic testing does not affect early HCG levels.",
+    "authors": [
+      "Heli Alexandroni",
+      "Eadit Buhbut",
+      "Yovel Cohen",
+      "Gheona Altarescu",
+      "Talia Eldar-Geva",
+      "Ido Ben-Ami"
+    ],
+    "journal": "JBRA assisted reproduction",
+    "date": "2026 Jul 13",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42441884/",
+    "source": "PubMed",
+    "score": 14,
+    "summary": "This study confirms that performing genetic biopsies on embryos during IVF does not negatively impact early pregnancy markers or long-term clinical outcomes like live birth rates. The findings suggest that preimplantation genetic testing is a safe procedure that does not compromise the biological viability of the transferred embryo.",
+    "opportunity": "The study provides clinical validation to de-risk the adoption of advanced PGT workflows, supporting the commercial scaling of high-throughput genomic screening services in IVF clinics.",
+    "fields": [
+      "Genomics",
+      "Diagnostics",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 2,
+        "reason": "The study is a retrospective observational clinical validation rather than a discovery of new biological mechanisms or a novel technological platform. It seeks to confirm a lack of adverse effect (non-inferiority) rather than introducing a groundbreaking scientific advancement."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This is a clinical validation study confirming that a standard procedure (PGT biopsy) does not negatively impact early pregnancy markers, which serves as supportive evidence rather than a novel, protectable, or licensable technology. It lacks the characteristics of a new product or platform-enabling innovation."
+      },
+      "trl": {
+        "score": 9,
+        "reason": "The technology (PGT via biopsy) is already a clinically established standard of care, and this study provides high-level retrospective clinical validation of its safety profile. The findings support the continued routine use and commercial scaling of existing IVF/PGT workflows."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This is a retrospective clinical observation study aimed at validating the safety of an existing procedure, rather than an innovation of a new method, device, or molecule. It provides clinical evidence for a standard-of-care practice but lacks any novel, patentable, or defensible intellectual property."
+      }
+    },
+    "pi": "Ido Ben-Ami",
+    "pi_full_name": "Ido Ben-Ami",
+    "pi_email": "",
+    "pi_affiliation": "IVF and Infertility Unit, Department of Obstetrics and Gynecology, Shaare Zedek Medical Center, Jerusalem, affiliated with the Faculty of Medicine, Hebrew University of Jerusalem, Israel. The Eisenberg R&D Authority, Shaare Zedek Medical Center.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": 21,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-07-20",
+    "hts_score": 1,
+    "hts_reason": "The paper is a clinical outcome study on biopsy procedures; it does not identify a molecular target for drug discovery, link a molecule to a disease, or describe a screening assay.",
+    "hts_eval_model": "gemma-4-31b-it"
+  },
+  {
     "id": "pubmed_42330696",
     "title": "Polymer scaling in protein crowding: From dilute coils to semidilute meshes.",
     "authors": [
@@ -17055,60 +17051,6 @@
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
-    "id": "pubmed_42443447",
-    "title": "Metal ions affect abiotic sugar oligomerization reactions.",
-    "authors": [
-      "Daniil Akulenko",
-      "Rotem Edri",
-      "Moran Frenkel-Pinter"
-    ],
-    "journal": "Communications chemistry",
-    "date": "2026 Jul 13",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42443447/",
-    "source": "PubMed",
-    "score": 9,
-    "summary": "This research explores how specific metal ions catalyze the abiotic formation of sugar chains, providing insights into the pre-biotic chemical conditions that led to early biological molecules. By manipulating these metal-ion interactions, the study highlights fundamental mechanisms that govern how complex carbohydrates are assembled without biological enzymes.",
-    "opportunity": "This discovery offers a novel pathway for the sustainable, catalyst-driven synthesis of specialized glycans and sugar-based polymers, potentially disrupting existing multi-step enzymatic or petrochemical production processes in industrial chemistry.",
-    "fields": [
-      "Materials",
-      "Synthetic Biology",
-      "FoodTech"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "The study of metal-catalyzed sugar oligomerization is a well-established area of prebiotic chemistry and carbohydrate synthesis, lacking the transformative mechanism or unique application required for a high novelty score."
-      },
-      "commercial_potential": {
-        "score": 2,
-        "reason": "This study describes fundamental abiotic chemical processes that lack clear industrial application or a direct path to product development. Without a defined mechanism for translating these prebiotic sugar oligomerization reactions into scalable manufacturing or diagnostic tools, the commercial potential remains highly speculative and distant."
-      },
-      "market_size": {
-        "score": 1,
-        "reason": "This is a fundamental chemical study on the prebiotic formation of sugars, which lacks clear commercial utility, scalability, or industrial application in its current form. It does not address a defined market need, as it pertains to theoretical geochemistry rather than practical technology or product development."
-      },
-      "trl": {
-        "score": 1,
-        "reason": "This is fundamental geochemical research exploring prebiotic chemical reactions, which currently lacks any identifiable industrial application, intellectual property, or commercial utility."
-      },
-      "ip_strength": {
-        "score": 2,
-        "reason": "The paper describes a fundamental chemical phenomenon regarding abiotic sugar oligomerization, which constitutes basic scientific discovery rather than a novel, non-obvious, or commercially defensible technical invention. Such natural reaction mechanisms are generally ineligible for patent protection and lack the specificity required for a defensible commercial moat."
-      }
-    },
-    "pi": "Moran Frenkel-Pinter",
-    "pi_full_name": "Moran Frenkel-Pinter",
-    "pi_email": "moran.fp@mail.huji.ac.il.",
-    "pi_affiliation": "Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem, Israel. moran.fp@mail.huji.ac.il.; The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, Israel. moran.fp@mail.huji.ac.il.; Casali Center of Applied Chemistry, The Hebrew University of Jerusalem, Jerusalem, Israel. moran.fp@mail.huji.ac.il.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-07-20",
-    "hts_score": 1,
-    "hts_reason": "The title describes basic abiotic chemical reactions involving metal ions and sugars; it lacks a specific biological target, a disease link, and a therapeutic assay.",
-    "hts_eval_model": "gemma-4-31b-it"
-  },
-  {
     "id": "pubmed_42406489",
     "title": "It was the best of times, it was the worst of times: Evidence for switch cost beyond stimulus-response tasks.",
     "authors": [
@@ -17877,6 +17819,60 @@
     "hts_score": 2,
     "hts_reason": "This paper does not clearly identify a specific new molecule or target, and the described effect of CFTR modulators on pulmonary exacerbations is more of a clinical observation than a testable assay. The study does link the molecule to a specific disease or condition, but the lack of a specific target or testable assay limits its HTS collaboration fitness.",
     "hts_eval_model": "groq:llama-3.1-8b-instant"
+  },
+  {
+    "id": "pubmed_42443447",
+    "title": "Metal ions affect abiotic sugar oligomerization reactions.",
+    "authors": [
+      "Daniil Akulenko",
+      "Rotem Edri",
+      "Moran Frenkel-Pinter"
+    ],
+    "journal": "Communications chemistry",
+    "date": "2026 Jul 13",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42443447/",
+    "source": "PubMed",
+    "score": 8,
+    "summary": "Researchers investigated how different metal ions influence the way sugar molecules link together during abiotic drying processes. They discovered that while most metals slow down the reaction, specific ions can steer the production toward different types of sugar chains.",
+    "opportunity": "This provides a fundamental chemical framework for the precision synthesis of custom sugar-based polymers and biomimetic materials using metal-ion catalysts.",
+    "fields": [
+      "Materials",
+      "Synthetic Biology",
+      "FoodTech"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "The research addresses a gap in prebiotic chemistry by applying known metal-ion effects to sugar oligomerization, but it remains an exploratory observation rather than a groundbreaking discovery or platform-enabling innovation."
+      },
+      "commercial_potential": {
+        "score": 1,
+        "reason": "The research is focused on prebiotic chemistry and origins-of-life theory, offering no clear path toward a commercial product, industrial application, or protectable technology."
+      },
+      "market_size": {
+        "score": 1,
+        "reason": "This is fundamental prebiotic chemistry research focused on the origins of life; it has no identifiable commercial target market, industrial application, or addressable demand."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This is fundamental basic research into prebiotic chemistry and the origins of life, with no indicated path toward a commercial product or industrial application."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "The work is basic prebiotic research focused on fundamental chemical evolution with no clear industrial application, proprietary method, or patentable utility."
+      }
+    },
+    "pi": "Moran Frenkel-Pinter",
+    "pi_full_name": "Moran Frenkel-Pinter",
+    "pi_email": "moran.fp@mail.huji.ac.il.",
+    "pi_affiliation": "Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem, Israel. moran.fp@mail.huji.ac.il.; The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, Israel. moran.fp@mail.huji.ac.il.; Casali Center of Applied Chemistry, The Hebrew University of Jerusalem, Jerusalem, Israel. moran.fp@mail.huji.ac.il.",
+    "eval_model": "gemma-4-31b-it",
+    "prev_score": 9,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-07-20",
+    "hts_score": 1,
+    "hts_reason": "The title describes basic abiotic chemical reactions involving metal ions and sugars; it lacks a specific biological target, a disease link, and a therapeutic assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42378288",
