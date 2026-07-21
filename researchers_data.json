@@ -11690,120 +11690,6 @@
     "max_hts_score": 8
   },
   {
-    "pi": "Osnat Malka",
-    "pi_full_name": "Osnat Malka",
-    "pi_email": "osnat226@gmail.com.",
-    "pi_affiliation": "The Institute of Environmental Sciences, The Hebrew University of Jerusalem, Rehovot, Israel.; Katif Research and Development Center, Sdot Negev Regional Council, Netivot, Israel.",
-    "avg_score": 25.5,
-    "paper_count": 2,
-    "description": "This researcher focuses on the molecular biology and genetics of agricultural pests, specifically the whitefly. Their work involves identifying critical metabolic enzymes and physiological vulnerabilities in these insects to develop targeted genetic interventions for crop protection.",
-    "applicability": "The research has high translational potential for the AgTech industry, specifically in developing CRISPR-edited or transgenic seed varieties with innate pest resistance. This could lead to licensable biotech traits or partnerships with global seed companies to reduce reliance on chemical pesticides in the near-to-medium term.",
-    "fields": [
-      "AgriTech",
-      "Synthetic Biology",
-      "Genomics"
-    ],
-    "branches": [
-      "Agriculture & Food",
-      "Healthcare"
-    ],
-    "papers": [
-      {
-        "id": "pubmed_42255296",
-        "title": "Creating resistance to the whitefly ",
-        "date": "2026",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42255296/",
-        "journal": "Frontiers in plant science",
-        "score": 30,
-        "summary": "Researchers have developed transgenic cassava plants that use RNA interference (RNAi) to target and kill whiteflies, which are the primary vectors for devastating cassava diseases. The technology demonstrates significant lethality against both adult and nymph stages of the insect, offering a biological method to protect crops from viral infection.",
-        "opportunity": "A scalable RNAi-based seed platform for developing pest-resistant staple crops in emerging markets to secure food supply chains and reduce agricultural losses.",
-        "fields": [
-          "AgriTech",
-          "Synthetic Biology",
-          "Genomics"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 7,
-            "reason": "The application of Host-Induced Gene Silencing (HIGS) via RNAi specifically for cassava whitefly resistance is a highly relevant and sophisticated biotechnological approach. While RNAi-mediated insect control is a known mechanism, applying it to this specific agricultural bottleneck represents a significant, high-value advancement in crop protection technology."
-          },
-          "commercial_potential": {
-            "score": 7,
-            "reason": "The technology addresses a high-impact, billion-dollar loss market with a clear product application (transgenic seeds). While it demonstrates strong proof-of-concept and modeling, the final commercial score is tempered by the regulatory hurdles associated with transgenic crops in African markets."
-          },
-          "market_size": {
-            "score": 7,
-            "reason": "The addressable market is significant with documented annual losses exceeding $1.25 billion, impacting food security for an entire region. However, the score is moderated by the localized geographic focus (East Africa) and the inherent challenges of monetizing transgenic crops for subsistence farming households."
-          },
-          "trl": {
-            "score": 3,
-            "reason": "The research is at the early proof-of-concept stage, demonstrating insecticidal activity in whole plant bioassays (lab/greenhouse) and using theoretical modeling to predict field performance rather than conducting actual field trials."
-          },
-          "ip_strength": {
-            "score": 6,
-            "reason": "The use of RNAi for pest control is a known modality, but the specific target genes and construct sequences for the African cassava whitefly are likely patentable. Defensibility is moderate as it relies on specific genetic sequences, though regulatory hurdles for GMOs in East Africa may impact commercial viability."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": 28,
-        "prev_eval_model": "",
-        "pi_affiliation": "The Institute of Environmental Sciences, The Hebrew University of Jerusalem, Rehovot, Israel.; Katif Research and Development Center, Sdot Negev Regional Council, Netivot, Israel.",
-        "pi_email": "",
-        "abstract": "It is commonplace in East Africa for 100% of cassava fields to be infected with Cassava mosaic disease (CMD) and/or Cassava brown streak disease (CBSD), resulting in annual losses of more than US$1.25 billion and reduced food and economic security for farming households. The vector of both diseases is the African cassava species of the whitefly  Here, we aimed at developing long-term whitefly-control solutions using an  Whole plant bioassays showed insecticidal activity of transgenic plants, reaching 58% lethality for adults within 7 days and 75-90% lethality of nymphs after 25 days, compared to control plants. Target genes were confirmed to be downregulated by up to 2.5-fold in adult whiteflies and nymphs. We used population dynamics modeling to predict the potential of the RNAi technology to control whiteflies under field conditions in East Africa. These analyses indicated that the developed technology offers a realistic option for obtaining durable control of cassava whitefly in African cassava fields.",
-        "hts_score": 5,
-        "hts_reason": "The paper links a specific technology (RNAi) to a disease vector (whitefly) and includes a functional whole-plant bioassay, but it fails to identify a specific, novel molecular target or small molecule, relying instead on gene-level downregulation.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      },
-      {
-        "id": "pubmed_39892859",
-        "title": "Osmoregulation by sucrose isomerization in the phloem-feeding whitefly Bemisia tabaci involves members of the glycoside hydrolase family 13.",
-        "date": "2025",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/39892859/",
-        "journal": "Insect biochemistry and molecular biology",
-        "score": 21,
-        "summary": "Researchers identified specific GH13 enzymes that whiteflies use to convert sucrose into trehalulose to manage osmotic pressure in their gut. Blocking these enzymes disrupts the insect's ability to handle sugar intake, leading to physiological stress.",
-        "opportunity": "Development of highly specific RNAi-based biopesticides or small-molecule inhibitors targeting GH13 enzymes to control whitefly populations in high-value crops.",
-        "fields": [
-          "AgriTech",
-          "Synthetic Biology",
-          "Genomics"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 4,
-            "reason": "The research provides an incremental advancement by identifying specific GH13 family members responsible for sucrose isomerization in a known biological process. While scientifically sound, it follows a standard gene-silencing validation workflow rather than introducing a groundbreaking mechanism or a platform-enabling technology."
-          },
-          "commercial_potential": {
-            "score": 4,
-            "reason": "The research identifies specific genetic vulnerabilities (GH13 family) that could be leveraged for RNAi-based biopesticides, but it remains in the basic mechanistic stage without a developed delivery system or product formulation."
-          },
-          "market_size": {
-            "score": 4,
-            "reason": "The target market is limited to agricultural pest control specifically for Bemisia tabaci; while economically significant as a crop pest, this is a niche biological mechanism rather than a broad platform technology."
-          },
-          "trl": {
-            "score": 2,
-            "reason": "This is fundamental mechanistic research focused on identifying specific genes and enzymes in an insect's digestive process. It is firmly at the lab-stage (TRL 2), as it establishes basic biological principles without proposing a specific application, prototype, or scalable pest-control method."
-          },
-          "ip_strength": {
-            "score": 7,
-            "reason": "The identification of specific GH13 family genes involved in osmotic regulation provides a clear target for RNAi-based pesticides, which is highly defensible and industrially relevant. However, the discovery is currently at a basic mechanistic stage, and patentability would depend on the ability to claim specific sequences or methods of applying these gene knockdowns in a commercial agrochemical context."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": 21,
-        "prev_eval_model": "groq:llama-3.1-8b-instant",
-        "pi_affiliation": "Department of Entomology, Institute of Environmental Sciences, The Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Herzl St. 229, Rehovot, 7610001, Israel; Katif Research and Development Center, Sdot Negev Regional Council, PO Box 100, Netivot, 8771002, Israel. Electronic address: osnat226@gmail.com.",
-        "pi_email": "osnat226@gmail.com.",
-        "abstract": "A phloem-sap based diet requires unique enzymatic skills for regulating the osmotic pressure differences in the gut lumen between the sucrose-rich ingested sap and the body fluids, which can lead to desiccation and death. In the phloem-feeding whitefly Bemisia tabaci, members of the glycoside hydrolase family 13 (GH13) are likely to play a critical role in mitigating this risk by oligomerizing and isomerizing the products of sucrose hydrolysis. So far, however, the identities of the family members acting as sucrose isomerases (mainly isomerizing trehalulose) remain unknown. In this study, we focused on four putative sucrose isomerase coding genes of B. tabaci that belong to the GH13 family. The four coding genes were selected based on their phylogeny, expression patterns, and motif analyses. We used artificial diets of sucrose and dsRNA to knockdown the expression of each of the target genes and analyzed the sugar composition of the secreted honeydew. We found that in all cases, gene silencing resulted in a significant reduction of the fractions of trehalulose accompanied by an increase in the fractions of the trisaccharide melezitose, suggesting that the insects attempt to compensate for the inability to isomerize sucrose by synthesizing oligosaccharides. In addition, we found that the downregulation of the target genes also resulted in a significant increase in the mortality rates of the silenced insects and a significant delay in the development of their progeny. Taken together, these findings demonstrate the importance of the osmoregulation-by-isomerization strategy in B. tabaci.",
-        "hts_score": 7,
-        "hts_reason": "The paper identifies specific genes (GH13 family members) and describes an assay involving RNAi-mediated knockdown and honeydew analysis, but the 'disease' link is to an agricultural pest (whitefly) rather than human or clinical medicine, making it less applicable for traditional drug discovery HTS.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      }
-    ],
-    "max_hts_score": 7
-  },
-  {
     "pi": "Danny Dvir",
     "pi_full_name": "Danny Dvir",
     "pi_email": "danny.dvir@gmail.com.",
@@ -12101,19 +11987,133 @@
     "max_hts_score": 2
   },
   {
+    "pi": "Osnat Malka",
+    "pi_full_name": "Osnat Malka",
+    "pi_email": "osnat226@gmail.com.",
+    "pi_affiliation": "The Institute of Environmental Sciences, The Hebrew University of Jerusalem, Rehovot, Israel.; Katif Research and Development Center, Sdot Negev Regional Council, Netivot, Israel.",
+    "avg_score": 25.5,
+    "paper_count": 2,
+    "description": "This researcher focuses on the molecular biology and genetics of agricultural pests, specifically the whitefly. Their work involves identifying critical metabolic enzymes and physiological vulnerabilities in these insects to develop targeted genetic interventions for crop protection.",
+    "applicability": "The research has high translational potential for the AgTech industry, specifically in developing CRISPR-edited or transgenic seed varieties with innate pest resistance. This could lead to licensable biotech traits or partnerships with global seed companies to reduce reliance on chemical pesticides in the near-to-medium term.",
+    "fields": [
+      "AgriTech",
+      "Synthetic Biology",
+      "Genomics"
+    ],
+    "branches": [
+      "Agriculture & Food",
+      "Healthcare"
+    ],
+    "papers": [
+      {
+        "id": "pubmed_42255296",
+        "title": "Creating resistance to the whitefly ",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42255296/",
+        "journal": "Frontiers in plant science",
+        "score": 30,
+        "summary": "Researchers have developed transgenic cassava plants that use RNA interference (RNAi) to target and kill whiteflies, which are the primary vectors for devastating cassava diseases. The technology demonstrates significant lethality against both adult and nymph stages of the insect, offering a biological method to protect crops from viral infection.",
+        "opportunity": "A scalable RNAi-based seed platform for developing pest-resistant staple crops in emerging markets to secure food supply chains and reduce agricultural losses.",
+        "fields": [
+          "AgriTech",
+          "Synthetic Biology",
+          "Genomics"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 7,
+            "reason": "The application of Host-Induced Gene Silencing (HIGS) via RNAi specifically for cassava whitefly resistance is a highly relevant and sophisticated biotechnological approach. While RNAi-mediated insect control is a known mechanism, applying it to this specific agricultural bottleneck represents a significant, high-value advancement in crop protection technology."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The technology addresses a high-impact, billion-dollar loss market with a clear product application (transgenic seeds). While it demonstrates strong proof-of-concept and modeling, the final commercial score is tempered by the regulatory hurdles associated with transgenic crops in African markets."
+          },
+          "market_size": {
+            "score": 7,
+            "reason": "The addressable market is significant with documented annual losses exceeding $1.25 billion, impacting food security for an entire region. However, the score is moderated by the localized geographic focus (East Africa) and the inherent challenges of monetizing transgenic crops for subsistence farming households."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The research is at the early proof-of-concept stage, demonstrating insecticidal activity in whole plant bioassays (lab/greenhouse) and using theoretical modeling to predict field performance rather than conducting actual field trials."
+          },
+          "ip_strength": {
+            "score": 6,
+            "reason": "The use of RNAi for pest control is a known modality, but the specific target genes and construct sequences for the African cassava whitefly are likely patentable. Defensibility is moderate as it relies on specific genetic sequences, though regulatory hurdles for GMOs in East Africa may impact commercial viability."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": 28,
+        "prev_eval_model": "",
+        "pi_affiliation": "The Institute of Environmental Sciences, The Hebrew University of Jerusalem, Rehovot, Israel.; Katif Research and Development Center, Sdot Negev Regional Council, Netivot, Israel.",
+        "pi_email": "",
+        "abstract": "It is commonplace in East Africa for 100% of cassava fields to be infected with Cassava mosaic disease (CMD) and/or Cassava brown streak disease (CBSD), resulting in annual losses of more than US$1.25 billion and reduced food and economic security for farming households. The vector of both diseases is the African cassava species of the whitefly  Here, we aimed at developing long-term whitefly-control solutions using an  Whole plant bioassays showed insecticidal activity of transgenic plants, reaching 58% lethality for adults within 7 days and 75-90% lethality of nymphs after 25 days, compared to control plants. Target genes were confirmed to be downregulated by up to 2.5-fold in adult whiteflies and nymphs. We used population dynamics modeling to predict the potential of the RNAi technology to control whiteflies under field conditions in East Africa. These analyses indicated that the developed technology offers a realistic option for obtaining durable control of cassava whitefly in African cassava fields.",
+        "hts_score": 5,
+        "hts_reason": "The paper links a specific technology (RNAi) to a disease vector (whitefly) and includes a functional whole-plant bioassay, but it fails to identify a specific, novel molecular target or small molecule, relying instead on gene-level downregulation.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      },
+      {
+        "id": "pubmed_39892859",
+        "title": "Osmoregulation by sucrose isomerization in the phloem-feeding whitefly Bemisia tabaci involves members of the glycoside hydrolase family 13.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39892859/",
+        "journal": "Insect biochemistry and molecular biology",
+        "score": 21,
+        "summary": "Researchers identified specific GH13 enzymes that whiteflies use to convert sucrose into trehalulose to manage osmotic pressure in their gut. Blocking these enzymes disrupts the insect's ability to handle sugar intake, leading to physiological stress.",
+        "opportunity": "Development of highly specific RNAi-based biopesticides or small-molecule inhibitors targeting GH13 enzymes to control whitefly populations in high-value crops.",
+        "fields": [
+          "AgriTech",
+          "Synthetic Biology",
+          "Genomics"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "The research provides an incremental advancement by identifying specific GH13 family members responsible for sucrose isomerization in a known biological process. While scientifically sound, it follows a standard gene-silencing validation workflow rather than introducing a groundbreaking mechanism or a platform-enabling technology."
+          },
+          "commercial_potential": {
+            "score": 4,
+            "reason": "The research identifies specific genetic vulnerabilities (GH13 family) that could be leveraged for RNAi-based biopesticides, but it remains in the basic mechanistic stage without a developed delivery system or product formulation."
+          },
+          "market_size": {
+            "score": 4,
+            "reason": "The target market is limited to agricultural pest control specifically for Bemisia tabaci; while economically significant as a crop pest, this is a niche biological mechanism rather than a broad platform technology."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "This is fundamental mechanistic research focused on identifying specific genes and enzymes in an insect's digestive process. It is firmly at the lab-stage (TRL 2), as it establishes basic biological principles without proposing a specific application, prototype, or scalable pest-control method."
+          },
+          "ip_strength": {
+            "score": 7,
+            "reason": "The identification of specific GH13 family genes involved in osmotic regulation provides a clear target for RNAi-based pesticides, which is highly defensible and industrially relevant. However, the discovery is currently at a basic mechanistic stage, and patentability would depend on the ability to claim specific sequences or methods of applying these gene knockdowns in a commercial agrochemical context."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": 21,
+        "prev_eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "Department of Entomology, Institute of Environmental Sciences, The Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Herzl St. 229, Rehovot, 7610001, Israel; Katif Research and Development Center, Sdot Negev Regional Council, PO Box 100, Netivot, 8771002, Israel. Electronic address: osnat226@gmail.com.",
+        "pi_email": "osnat226@gmail.com.",
+        "abstract": "A phloem-sap based diet requires unique enzymatic skills for regulating the osmotic pressure differences in the gut lumen between the sucrose-rich ingested sap and the body fluids, which can lead to desiccation and death. In the phloem-feeding whitefly Bemisia tabaci, members of the glycoside hydrolase family 13 (GH13) are likely to play a critical role in mitigating this risk by oligomerizing and isomerizing the products of sucrose hydrolysis. So far, however, the identities of the family members acting as sucrose isomerases (mainly isomerizing trehalulose) remain unknown. In this study, we focused on four putative sucrose isomerase coding genes of B. tabaci that belong to the GH13 family. The four coding genes were selected based on their phylogeny, expression patterns, and motif analyses. We used artificial diets of sucrose and dsRNA to knockdown the expression of each of the target genes and analyzed the sugar composition of the secreted honeydew. We found that in all cases, gene silencing resulted in a significant reduction of the fractions of trehalulose accompanied by an increase in the fractions of the trisaccharide melezitose, suggesting that the insects attempt to compensate for the inability to isomerize sucrose by synthesizing oligosaccharides. In addition, we found that the downregulation of the target genes also resulted in a significant increase in the mortality rates of the silenced insects and a significant delay in the development of their progeny. Taken together, these findings demonstrate the importance of the osmoregulation-by-isomerization strategy in B. tabaci.",
+        "hts_score": 7,
+        "hts_reason": "The paper identifies specific genes (GH13 family members) and describes an assay involving RNAi-mediated knockdown and honeydew analysis, but the 'disease' link is to an agricultural pest (whitefly) rather than human or clinical medicine, making it less applicable for traditional drug discovery HTS.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      }
+    ],
+    "max_hts_score": 7
+  },
+  {
     "pi": "Albert Grinshpun",
     "pi_full_name": "Albert Grinshpun",
     "pi_email": "",
     "pi_affiliation": "Sharett Institute of Oncology, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 22.4,
+    "avg_score": 23.2,
     "max_hts_score": 4,
-    "paper_count": 5,
-    "description": "This researcher specializes in translational cancer genomics, focusing on the identification of molecular biomarkers that dictate treatment response and disease progression. Their work bridges laboratory-based genetic analysis with clinical oncology to develop precision medicine tools, such as liquid biopsies and predictive genomic signatures, for more effective cancer management.",
-    "applicability": "The work is highly translational, offering near-term opportunities for the development of companion diagnostics, including liquid biopsy kits for monitoring drug-induced toxicity and genomic tests to optimize patient stratification for endocrine and HER2-targeted therapies. These innovations are prime candidates for licensing agreements with diagnostic firms or partnership opportunities with pharmaceutical companies seeking to improve the efficacy and safety profiles of their precision oncology pipelines.",
+    "paper_count": 6,
+    "description": "This researcher focuses on precision oncology, specifically identifying genetic biomarkers to predict treatment response and monitor toxicity in breast, brain, and colorectal cancers. Their work combines molecular profiling, liquid biopsy development, and clinical meta-analyses to optimize the use of targeted therapies and endocrine treatments.",
+    "applicability": "The work has high translational value, particularly in developing companion diagnostics (CDx) for HER2-low and CBFB-mutated tumors and non-invasive liquid biopsy kits for monitoring ADC-induced lung toxicity. These innovations are highly attractive for licensing to biotech firms or partnerships with pharmaceutical companies seeking to refine patient stratification for oncology drug pipelines in the near-to-medium term.",
     "fields": [
       "Diagnostics",
-      "Genomics",
       "Clinical",
+      "Genomics",
       "Drug Discovery",
       "Immunology",
       "Neuroscience"
@@ -12354,6 +12354,51 @@
         "pi_email": "",
         "hts_score": 3,
         "hts_reason": "The paper identifies a specific target (CIC-FOXO4 fusion) and links it to a disease (sarcoma), but it is a purely descriptive case report that describes no assay or method for testing therapeutic effects.",
+        "hts_eval_model": "gemma-4-31b-it"
+      },
+      {
+        "id": "pubmed_42449621",
+        "title": "Oral Estrogen Receptor Degraders Compared to Standard Endocrine Therapy in Estrogen Receptor-Positive, Human Epidermal Growth Factor Receptor 2-Negative Metastatic Breast Cancer: A Systematic Review and Meta-Analysis.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42449621/",
+        "journal": "Cancers",
+        "score": 27,
+        "summary": "This study compares a new class of oral drugs called estrogen receptor degraders (SERDs) against standard hormonal therapies for treating advanced breast cancer. The researchers used a meta-analysis to determine if these degraders provide superior clinical outcomes for patients with specific tumor profiles.",
+        "opportunity": "Validation of oral SERDs creates a high-value commercial pathway for pharmaceutical companies to displace traditional injectable endocrine therapies in the oncology market.",
+        "abstract": "",
+        "fields": [
+          "Drug Discovery",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 2,
+            "reason": "The paper is a systematic review and meta-analysis, which by definition synthesizes existing data rather than introducing new scientific discoveries, molecules, or methodologies."
+          },
+          "commercial_potential": {
+            "score": 6,
+            "reason": "The paper evaluates a high-value therapeutic class (SERDs) in a large patient population, but as a meta-analysis, it provides clinical validation rather than a novel, protectable asset or platform."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The target market (ER+/HER2- metastatic breast cancer) is one of the largest oncology segments globally, and the development of oral degraders addresses a critical, high-value clinical need for patients who fail standard endocrine therapy."
+          },
+          "trl": {
+            "score": 9,
+            "reason": "The paper is a systematic review and meta-analysis of clinical data, indicating that the technology (oral ER degraders) has already progressed through human clinical trials and is nearing or at the stage of regulatory approval and market entry."
+          },
+          "ip_strength": {
+            "score": 1,
+            "reason": "This is a systematic review and meta-analysis of existing data, which by definition contains no new primary innovation, novel molecules, or patentable methodology."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "The Helmsley Cancer Center, Shaare Zedek Medical Center, 12 Shmuel Bait, Jerusalem 9103102, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel.",
+        "pi_email": "",
+        "hts_score": 2,
+        "hts_reason": "The paper is a systematic review and meta-analysis of existing therapies rather than original research. It lacks a novel target identification and does not describe a new testable assay.",
         "hts_eval_model": "gemma-4-31b-it"
       }
     ]
@@ -13472,6 +13517,532 @@
     "max_hts_score": 7
   },
   {
+    "pi": "Avi Priel",
+    "pi_full_name": "Avi Priel",
+    "pi_email": "avi.priel@mail.huji.ac.il.",
+    "pi_affiliation": "The Institute for Drug Research (IDR), Department of Pharmacology, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
+    "avg_score": 29.4,
+    "paper_count": 5,
+    "description": "This researcher specializes in the molecular pharmacology of ion channels, focusing specifically on how lipid-sensing proteins like TRP and sodium channels regulate pain signaling. Their work combines structural biology and pharmacology to map precise binding sites for cannabinoids and other analgesic compounds. By identifying these peripheral mechanisms, they aim to decouple pain relief from central nervous system side effects.",
+    "applicability": "The work has high translational value for the development of next-generation, non-opioid analgesics and non-psychoactive cannabinoid derivatives. This could lead to licensable IP for targeted drug discovery platforms or partnerships with pharmaceutical firms developing peripheral pain medications. Given the focus on specific binding pockets, the path toward lead optimization and pre-clinical drug candidates is well-defined and mid-term.",
+    "fields": [
+      "Drug Discovery",
+      "Neuroscience",
+      "Clinical",
+      "Proteomics"
+    ],
+    "branches": [
+      "Healthcare"
+    ],
+    "papers": [
+      {
+        "id": "pubmed_42342000",
+        "title": "Carbamate-based cannabinoids uncover a conserved lipid-sensing pocket in nociceptive TRPA1 and TRPV1 channels.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42342000/",
+        "journal": "Pharmacological research",
+        "score": 33,
+        "summary": "Researchers have engineered new chemical derivatives of CBD and CBG that act as highly potent dual agonists for pain-sensing TRPA1 and TRPV1 ion channels. This study identifies a specific structural binding pocket shared by these channels, providing a blueprint for designing more effective non-opioid painkillers.",
+        "opportunity": "The ability to rationally design high-potency cannabinoid derivatives offers a platform for developing a new class of non-addictive, targeted analgesics for chronic pain management.",
+        "fields": [
+          "Drug Discovery",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 7,
+            "reason": "The research demonstrates high novelty by utilizing rational design to transform natural phytocannabinoids into potent dual agonists, uncovering a previously unknown conserved lipid-sensing mechanism. While the specific chemical modification is an incremental optimization of existing scaffolds, the structural insight provides a novel framework for targeting nociceptive channels."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The research demonstrates a clear medicinal chemistry path to optimize phytocannabinoids into potent dual-channel agonists, offering a high-value structural blueprint for non-opioid analgesic drug discovery. While it provides a strong 'lead series' for licensing, the commercial value is currently tied to early-stage discovery rather than a validated clinical candidate or a broad platform technology."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The research targets TRPA1 and TRPV1 ion channels, which are central to the multi-billion dollar non-opioid pain management market. By optimizing phytocannabinoids into potent dual agonists, this work addresses a massive unmet clinical demand for safer alternatives to opioids."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The research is at the fundamental discovery and lead optimization stage, utilizing heterologous expression systems and in vitro electrophysiology rather than animal models or pharmacokinetic studies. While it provides a structural basis for rational design, it remains a basic science/proof-of-concept study far from preclinical or clinical development."
+          },
+          "ip_strength": {
+            "score": 7,
+            "reason": "The work demonstrates high defensibility through rational medicinal chemistry, transforming existing scaffolds into novel, potent carbamate-based derivatives with specific selectivity profiles. While these new chemical entities are likely patentable, the reliance on known phytocannabinoid scaffolds may present moderate challenges regarding non-obviousness during patent prosecution."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 35,
+        "prev_eval_model": "",
+        "pi_affiliation": "The Institute for Drug Research (IDR), Department of Pharmacology, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
+        "pi_email": "avi.priel@mail.huji.ac.il.",
+        "abstract": "TRPA1 and TRPV1 are nociceptive ion channels that integrate noxious chemical stimuli and are attractive targets for non-opioid analgesics. The phytocannabinoids cannabidiol (CBD) and cannabigerol (CBG) modulate both channels, but their pharmacological profiles and underlying structural determinants remain poorly defined. Here, we used rational ligand design to convert CBD and CBG into potent dual TRPA1/TRPV1 agonists and to probe a conserved lipid-sensing architecture in both channels. Guided by the structural features of the TRPV1 vanilloid-binding site and our previously developed TRPA1 cannabinoid-binding site model, we incorporated an aryl carbamate anchor into the CBD and CBG scaffolds. We compared their activity with that of the parent phytocannabinoids in heterologous expression systems using calcium imaging and whole-cell patch-clamp recordings. Whereas CBD and CBG preferentially activated TRPA1 and were weak TRPV1 agonists at physiologically relevant concentrations, carbamate functionalization markedly increased potency and efficacy at TRPV1 while preserving robust TRPA1 activation. In contrast to the parent phytocannabinoids, carbamate derivatives did not potentiate TRPV2 responses, demonstrating channel selectivity. Site-directed mutagenesis and molecular docking localized carbamate-based ligand binding to the canonical vanilloid binding site in TRPV1 and the non-electrophilic cannabinoid-binding site in TRPA1, consistent with engagement of a shared lipid-sensing pocket. Carbamate derivatives also activated nociceptive neurons in primary rat trigeminal ganglion cultures in a TRPV1-dependent manner, as confirmed by pharmacological block with the selective TRPV1 antagonist BCTC. These findings define a conserved structural framework for lipid ligand recognition in TRPA1 and TRPV1 and provide a rational starting point for developing dual-target modulators of peripheral nociceptors.",
+        "hts_score": 9,
+        "hts_reason": "The paper identifies specific dual-agonist molecules targeting TRPA1 and TRPV1 channels for non-opioid analgesia and describes validated calcium imaging and patch-clamp assays for high-throughput screening of derivative compounds.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      },
+      {
+        "id": "pubmed_41565997",
+        "title": "The psychoactive cannabinoid THC inhibits peripheral nociceptors by targeting Na",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41565997/",
+        "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+        "score": 34,
+        "summary": "Researchers discovered that THC reduces pain by directly blocking sodium channels in peripheral nerves, rather than solely acting on the brain. This reveals a non-psychoactive pathway for pain relief that happens at the site of injury.",
+        "opportunity": "Development of peripheral-acting cannabinoid analogs or NaV-channel blockers that provide potent analgesia without the psychoactive side effects of THC.",
+        "fields": [
+          "Drug Discovery",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 8,
+            "reason": "The discovery of a direct, non-cannabinoid receptor-mediated mechanism (targeting NaV channels) represents a paradigm shift in our understanding of THC's analgesic properties. This provides a clear path for developing novel, non-psychoactive peripheral analgesics with a specific molecular target."
+          },
+          "commercial_potential": {
+            "score": 8,
+            "reason": "Identifying a specific molecular target (Nav) for THC's analgesic effect enables the development of non-psychoactive synthetic analogs that target peripheral pain without central side effects. This provides a clear path to a novel class of non-opioid analgesics with high licensable value."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "Chronic pain is one of the largest global healthcare burdens with massive unmet demand for non-opioid analgesics. A mechanism that targets peripheral nociceptors via sodium channels opens a vast market for non-addictive, non-psychoactive derivatives for widespread clinical use."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "The work describes a fundamental mechanistic discovery of a protein target in a laboratory setting, representing basic research (TRL 2) rather than a developed lead compound or clinical candidate."
+          },
+          "ip_strength": {
+            "score": 7,
+            "reason": "Identifying a specific, non-canonical molecular target (NaV channels) for a known compound provides a strong basis for new composition-of-matter patents on selective agonists or NaV-specific cannabinoid derivatives. However, the inherent difficulty in patenting THC itself limits the score to the strength of potential downstream 'me-too' or optimized analog drug discovery."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. avi.priel@mail.huji.ac.il.",
+        "pi_email": "avi.priel@mail.huji.ac.il.",
+        "abstract": "Δ⁹-Tetrahydrocannabinol (THC), the primary psychoactive compound in cannabis, is widely recognized for its central effects mediated by cannabinoid receptors. Here, we uncover a distinct peripheral mechanism by which THC inhibits the excitability of nociceptive neurons. We show that THC directly targets the nociceptive voltage-gated sodium channels Na",
+        "hts_score": 10,
+        "hts_reason": "The paper identifies a specific target (NaV sodium channels), links it to a condition (peripheral nociception/pain), and describes a mechanism for testing inhibition of neuronal excitability.",
+        "hts_eval_model": "gemma-4-31b-it"
+      },
+      {
+        "id": "pubmed_40465624",
+        "title": "The analgesic paracetamol metabolite AM404 acts peripherally to directly inhibit sodium channels.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40465624/",
+        "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+        "score": 30,
+        "summary": "Researchers discovered that a metabolite of paracetamol, AM404, provides pain relief by directly blocking sodium channels in peripheral sensory neurons rather than just acting on the brain. This reveals a new peripheral mechanism for a common drug, suggesting that targeting these specific sodium channels can treat pain without central nervous system side effects.",
+        "opportunity": "Development of next-generation non-opioid analgesics based on AM404 analogs that selectively inhibit peripheral voltage-gated sodium channels to reduce systemic toxicity.",
+        "fields": [
+          "Drug Discovery",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 8,
+            "reason": "This research identifies a previously unknown peripheral mechanism of action for a ubiquitous drug, shifting the paradigm from CNS-centric effects to direct sodium channel inhibition in nociceptors. This discovery is highly innovative and creates immediate opportunities for developing targeted, non-opioid analgesics based on this specific molecular target."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The discovery of a direct, peripheral sodium channel inhibition mechanism for AM404 opens a clear path for developing potent, non-opioid analgesics with reduced CNS side effects. While the target is validated, the commercial value depends on the ability to synthesize more stable or potent AM404 analogs to overcome the metabolic limitations of paracetamol."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The research targets pain management, one of the largest therapeutic markets globally, by identifying a new mechanism for a metabolite of paracetamol, the world's most widely used analgesic."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The research is at the fundamental mechanism-of-action stage, demonstrating effects in animal models (rats) and primary neurons. While it clarifies the pharmacology of an existing drug, it does not present a new lead compound, a clinical candidate, or a developed therapeutic delivery system."
+          },
+          "ip_strength": {
+            "score": 3,
+            "reason": "The innovation describes a mechanism of action for a metabolite of paracetamol, a generic drug that has been in public use for decades, making the primary compound non-patentable. Defensibility is low as the discovery is a fundamental biological observation rather than a novel, protectable chemical entity or platform."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel.",
+        "pi_email": "",
+        "abstract": "Paracetamol has been used for decades to relieve mild-to-moderate pain. Its analgesic effect is mainly attributed to its metabolite, AM404, acting on cannabinoid receptors or TRPV1 channels in central nervous system (CNS) neurons. Here, we show that AM404 is produced by primary sensory neurons. It inhibits sodium current in nociceptor neurons, blocking action potential (AP) generation and reducing nocifensive behavior in naïve and inflamed rats. We demonstrated that this analgesic effect of AM404 is mediated by its direct inhibition of nociceptive voltage-gated sodium channels (Na",
+        "hts_score": 10,
+        "hts_reason": "The paper identifies a specific target (nociceptive voltage-gated sodium channels), links it to a disease state (inflammation/pain), and describes a testable assay (sodium current inhibition/AP generation).",
+        "hts_eval_model": "gemma-4-31b-it"
+      },
+      {
+        "id": "pubmed_39368566",
+        "title": "Identification of the TRPA1 cannabinoid-binding site.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39368566/",
+        "journal": "Pharmacological research",
+        "score": 33,
+        "summary": "Researchers have identified the specific binding site where cannabinoids interact with the TRPA1 ion channel to reduce pain. This discovery provides a molecular map for how cannabis-based compounds alleviate chronic pain without relying solely on the brain's CB1 receptors.",
+        "opportunity": "Development of high-affinity, non-psychoactive TRPA1 agonists for targeted chronic pain management and inflammation therapy.",
+        "fields": [
+          "Drug Discovery",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 8,
+            "reason": "The precise structural identification of a cannabinoid-binding site on TRPA1 fills a critical knowledge gap in pharmacology and enables the rational design of targeted, non-psychoactive analgesics."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The identification of a specific binding site enables the rational design of selective TRPA1 agonists/antagonists, transforming a broad observation into a druggable target for chronic pain. While further lead optimization is required, this provides a clear path toward a novel class of non-opioid analgesics."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The target market is chronic pain, one of the largest and most valuable therapeutic areas in healthcare, with massive addressable demand across both pharmaceutical and medical cannabis sectors."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "The work is fundamental structural biology focused on identifying a binding site, representing basic research (TRL 2) rather than a developed lead compound or therapeutic application."
+          },
+          "ip_strength": {
+            "score": 7,
+            "reason": "The identification of a specific binding site provides a strong foundation for structure-based drug design and the filing of composition-of-matter patents for novel, high-affinity TRPA1 ligands. While the biological discovery itself is descriptive, it enables the creation of a highly defensible proprietary chemical library."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "The Institute for Drug Research (IDR), School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
+        "pi_email": "avi.priel@mail.huji.ac.il.",
+        "abstract": "Chronic pain accounts for nearly two-thirds of conditions eligible for medical cannabis licenses, yet the mechanisms underlying cannabis-induced analgesia remain poorly understood. The principal phytocannabinoids, the psychoactive Δ",
+        "hts_score": 8,
+        "hts_reason": "The paper identifies a specific target (TRPA1 cannabinoid-binding site) linked to chronic pain and describes a mechanism for cannabis-induced analgesia that implies a measurable assay for screening ligands.",
+        "hts_eval_model": "gemma-4-31b-it"
+      },
+      {
+        "id": "pubmed_38538847",
+        "title": "TRPM5 activation depends on a synergistic effect of calcium and PKC phosphorylation.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38538847/",
+        "journal": "Communications biology",
+        "score": 17,
+        "summary": "Researchers discovered that TRPM5 ion channels require both calcium elevation and phosphorylation by PKC to activate fully. This clarifies the precise molecular switch that controls insulin secretion and taste perception.",
+        "opportunity": "Development of precision small-molecule modulators targeting the PKC-TRPM5 interaction for the treatment of metabolic disorders like diabetes.",
+        "fields": [
+          "Drug Discovery",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "The research addresses an existing knowledge gap regarding TRPM5 activation, but the hypothesis (synergy between calcium and PKC phosphorylation) is an incremental refinement of known signaling pathways rather than a groundbreaking discovery."
+          },
+          "commercial_potential": {
+            "score": 4,
+            "reason": "The paper provides foundational mechanistic insight into TRPM5 activation, which is valuable for target validation, but it does not present a lead compound, a screening platform, or a specific therapeutic application."
+          },
+          "market_size": {
+            "score": 7,
+            "reason": "The target, TRPM5, is linked to insulin secretion (diabetes) and taste transduction, addressing massive global healthcare markets. However, the paper focuses on basic mechanistic elucidation rather than a specific lead compound or a platform, leaving the immediate addressable demand theoretical."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "The research is fundamental mechanistic biochemistry focused on elucidating the molecular triggers of channel activation, representing early-stage basic science (TRL 2) rather than a developed therapeutic or device."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": 19,
+        "prev_eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Ein Karem, Jerusalem, 9112102, Israel. avi.priel@mail.huji.ac.il.",
+        "pi_email": "avi.priel@mail.huji.ac.il.",
+        "abstract": "Transient receptor potential melastatin 5 (TRPM5) is a calcium-activated monovalent-specific ion channel involved in insulin secretion and taste transduction, making it an attractive target for drug development in various pathologies. While TRPM5 activation involves ligand binding to Gq/G-protein coupled receptors (GPCR) and subsequent elevation of intracellular calcium levels, recent reports suggest the need for additional molecular determinants. Hence, the mechanism of TRPM5 activation remains to be elucidated. Here, we show that PKC phosphorylation and the elevation of intracellular Ca",
+        "hts_score": 5,
+        "hts_reason": "The paper identifies a specific target (TRPM5) and links it to insulin secretion/taste pathologies, but the abstract cuts off before describing a specific assay for measuring effect.",
+        "hts_eval_model": "gemma-4-31b-it"
+      }
+    ],
+    "max_hts_score": 10
+  },
+  {
+    "pi": "Yuval Malka",
+    "pi_full_name": "Yuval Malka",
+    "pi_email": "y.malka@mail.huji.ac.il.",
+    "pi_affiliation": "Department of Biochemistry and Molecular Biology, The Institute for Medical Research Israel-Canada, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem 9112001, Israel. Electronic address: y.malka@mail.huji.ac.il.",
+    "avg_score": 33.0,
+    "paper_count": 1,
+    "description": "This researcher specializes in molecular oncology and post-transcriptional gene regulation, specifically investigating how RNA processing mechanisms influence cancer progression. Their work centers on identifying novel RNA-based drivers of tumorigenesis, such as the cleavage of mRNA into oncogenic protein isoforms. By mapping these mechanisms, the lab uncovers new molecular targets for diagnostic and therapeutic interventions in various cancers.",
+    "applicability": "The discovery of an oncogenic JAK1 isoform provides a high-value target for the development of precision inhibitors or RNA-based therapeutics that specifically neutralize truncated proteins. While the biological validation is significant, this research is in the early discovery stage and would require further validation in pre-clinical models before transitioning to drug development partnerships or diagnostic assay commercialization over the medium-to-long term.",
+    "fields": [
+      "Drug Discovery",
+      "Diagnostics",
+      "Genomics",
+      "Immunology"
+    ],
+    "branches": [
+      "Healthcare"
+    ],
+    "papers": [
+      {
+        "id": "pubmed_41984590",
+        "title": "RNA dicing promotes the expression of an oncogenic JAK1 isoform.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41984590/",
+        "journal": "Cell reports",
+        "score": 33,
+        "summary": "Researchers discovered a process called 'RNA dicing' where mRNA is cleaved to produce a truncated, oncogenic version of the JAK1 protein. This process changes how cells grow and contributes to cancer development, particularly in endometrial tumors.",
+        "opportunity": "The discovery enables a new precision medicine approach by using RNA dicing profiles to stratify patients for existing JAK1 inhibitors like momelotinib.",
+        "abstract": "The translation of an mRNA transcript is traditionally thought to be limited to its open reading frames (ORFs). However, recent findings reveal a more complex reality in which the proteome vastly exceeds transcriptome limits. Here, we demonstrate that JAK1 mRNA can be cleaved into a truncated, uncapped form with a shorter ORF, leading to the translation of the JH1 kinase domain independently of other domains, a process we term \"RNA dicing.\" Canonical and diced JAK1 variants differently impact cell proliferation and tumorigenesis, with the balance of these isoforms altered in tumorigenesis and in response to IFN-γ. Analyzing JAK1 nonsense mutations in endometrial tumors reveals that mutations inhibit the tumor-suppressive functions of canonical JAK1 while enhancing the oncogenic diced JH1 domain. This results in a better response to the JAK1 inhibitor momelotinib, highlighting RNA dicing's role in patient stratification. Our findings show that RNA dicing diversifies mRNA products, significantly impacting biological functions.",
+        "fields": [
+          "Drug Discovery",
+          "Diagnostics",
+          "Genomics",
+          "Immunology"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 9,
+            "reason": "The discovery of 'RNA dicing' represents a paradigm-shifting mechanism that challenges the traditional ORF-centric view of translation, offering a novel biological principle. It provides a highly innovative foundation for new therapeutic strategies and patient stratification models based on non-canonical mRNA processing."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The discovery provides a high-value biomarker for patient stratification in oncology, specifically linking 'RNA dicing' to drug sensitivity for existing JAK inhibitors like momelotinib. While the mechanistic insight is profound, the commercial leap depends on validating this as a diagnostic tool or developing new therapeutics targeting the diced isoform specifically."
+          },
+          "market_size": {
+            "score": 7,
+            "reason": "The discovery identifies a novel mechanism of protein expression that serves as a high-value biomarker for patient stratification in oncology, specifically for existing JAK inhibitors. While the mechanism itself is a potentially platform-enabling biological insight, the immediate market is constrained to specific cancer indications and the repurposing/refinement of existing drug classes."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "This is fundamental mechanistic research identifying a new biological phenomenon (RNA dicing) and its role in oncogenesis. While it suggests potential for patient stratification using existing inhibitors, it remains at the basic discovery/proof-of-concept stage without a developed diagnostic or therapeutic pipeline."
+          },
+          "ip_strength": {
+            "score": 7,
+            "reason": "The discovery of 'RNA dicing' as a mechanism for generating oncogenic isoforms provides a strong foundation for new therapeutic targets and diagnostic biomarkers. While the biological mechanism is novel and potentially patentable, the IP strength is tempered by the fact that the study focuses on a specific endogenous process rather than a proprietary platform technology."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": "21",
+        "prev_eval_model": "",
+        "pi_affiliation": "Department of Biochemistry and Molecular Biology, The Institute for Medical Research Israel-Canada, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem 9112001, Israel. Electronic address: y.malka@mail.huji.ac.il.",
+        "pi_email": "y.malka@mail.huji.ac.il.",
+        "hts_score": 9,
+        "hts_reason": "The paper identifies a specific oncogenic protein product (the diced JAK1 JH1 domain), links it to endometrial cancer, and provides a clear mechanism for testing efficacy using existing JAK1 inhibitors like momelotinib.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      }
+    ],
+    "max_hts_score": 9
+  },
+  {
+    "pi": "Amir Haze",
+    "pi_full_name": "Amir Haze",
+    "pi_email": "avivit@hadassah.org.il.",
+    "pi_affiliation": "Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.; Orthopedic Surgery Department, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; The Wohl Institute for Translational Medicine, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
+    "avg_score": 29.0,
+    "paper_count": 4,
+    "description": "This researcher specializes in regenerative medicine, with a primary focus on leveraging the recombinant human amelogenin protein to repair complex musculoskeletal injuries. Their work investigates the protein's role in tissue engineering, demonstrating its efficacy in regenerating articular cartilage, improving tendon-to-bone integration, and mitigating osteoarthritis. Additionally, they conduct clinical research in vascular medicine, specifically identifying risk factors and outcomes for diabetic patients with polyvascular complications.",
+    "applicability": "The research on recombinant amelogenin shows high commercial potential for developing novel biologic therapeutics or orthopedic medical devices aimed at soft-tissue and joint repair. Given the successful pre-clinical results in animal models, this technology is a strong candidate for pharmaceutical licensing or a spin-off venture focused on orthopedic regenerative medicine, potentially entering clinical trials within the mid-term horizon.",
+    "fields": [
+      "Clinical",
+      "Proteomics",
+      "Synthetic Biology",
+      "Medical Device",
+      "Drug Discovery"
+    ],
+    "branches": [
+      "Healthcare"
+    ],
+    "papers": [
+      {
+        "id": "pubmed_41925697",
+        "title": "Recombinant Human Amelogenin Protein Enhances Healing of Osteochondral Injury in a Goat Model.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41925697/",
+        "journal": "Journal of orthopaedic research : official publication of the Orthopaedic Research Society",
+        "score": 33,
+        "summary": "Researchers tested a recombinant human amelogenin-based product, Remelix®, in a goat model to treat cartilage and bone injuries. The study showed that the protein significantly promotes the healing of osteochondral defects without causing adverse side effects.",
+        "opportunity": "Development of a high-value regenerative medicine therapeutic for treating osteoarthritis and joint injuries in humans.",
+        "fields": [
+          "Medical Device",
+          "Clinical",
+          "Proteomics",
+          "Synthetic Biology"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "The scientific novelty is limited as the research focuses on validating an existing mechanism (amelogenin-driven repair) in a larger animal model rather than introducing a new biological pathway or platform technology. This represents a translational step toward clinical application rather than a groundbreaking scientific discovery."
+          },
+          "commercial_potential": {
+            "score": 8,
+            "reason": "The study demonstrates a clear transition from rodent models to a large animal (goat) model using a branded product (Remelix®), which significantly de-risks the clinical translation pathway for orthopedic regenerative medicine. The successful evaluation of dose-dependent healing and safety in a weight-bearing model suggests a highly viable, near-market therapeutic candidate for osteochondral repair."
+          },
+          "market_size": {
+            "score": 8,
+            "reason": "The target market for osteochondral repair is significant due to the high prevalence of joint injuries and the lack of effective regenerative treatments. As a recombinant protein-based therapy, Remelix® addresses a high-value clinical need in orthopedics with substantial addressable demand."
+          },
+          "trl": {
+            "score": 6,
+            "reason": "The study has successfully moved beyond small animal models (rats) into a large animal (goat) model, which is a critical late-stage preclinical milestone for orthopedic products. However, it remains in the preclinical phase and has not yet entered human clinical trials to demonstrate safety and efficacy in patients."
+          },
+          "ip_strength": {
+            "score": 7,
+            "reason": "The product (Remelix®) utilizes a specific recombinant protein and a proprietary carrier (PX 407), suggesting established composition-of-matter or formulation patents. However, the underlying biological target (amelogenin) is a known protein, which may limit the breadth of defensibility against competitors using alternative expression systems or similar protein scaffolds."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 29,
+        "prev_eval_model": "",
+        "pi_affiliation": "Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.; Orthopedic Surgery Department, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; The Wohl Institute for Translational Medicine, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
+        "pi_email": "",
+        "abstract": "Osteochondral injuries are common, painful, and lack natural healing abilities. Previous studies demonstrated that recombinant human amelogenin promotes osteochondral repair in rat knee injuries, including improved defect filling and formation of hyaline cartilage. Here, we aimed to evaluate the efficacy and safety of Remelix®, a novel recombinant human amelogenin-based product, in a large animal goat model. Acute osteochondral injuries were created in the weight-bearing region of the medial femoral condyle in thirteen goats. Seven goats received Remelix® at a protein concentration of 0.5 mg/mL, with the contralateral knee applied with PX 407 carrier alone. An additional six goats received Remelix® at 0.25 mg/mL, while contralateral knees were treated with normal saline. Potential adverse effects, along with evaluation of osteochondral healing were assessed. Healing was assessed 24 weeks post-treatment using magnetic resonance imaging (MRI), macroscopic evaluation, and histological and immunohistochemical analyses. No adverse effects were observed. Both Remelix® concentrations resulted in substantial healing of cartilage and subchondral bone. Histological analyses demonstrated improved tidemark formation, predominantly hyaline cartilage filling in the deeper layers of the defect with extension toward the superficial zone, and reduced subchondral bone abnormalities. MRI and macroscopic evaluations revealed a continuous repair surface with good integration at the defect margins. In contrast, PX 407 and saline-treated control knees exhibited inferior repair, characterized by mainly fibrous cartilage, heterogeneous MRI signal intensity, and lower histological scores. Overall, Remelix® substantially improved osteochondral healing in a goat model without observable adverse effects, supporting its potential for further evaluation in human clinical studies.",
+        "hts_score": 4,
+        "hts_reason": "The study identifies a specific molecule (recombinant human amelogenin) and links it to a specific disease (osteochondral injury), but it lacks a high-throughput compatible assay or a screening methodology, as it focuses on clinical/histological efficacy in a large animal model.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      },
+      {
+        "id": "pubmed_40682253",
+        "title": "Amelogenin Null Mice Develop Osteoarthritis, While Its Application Mitigates Disease Phenotypes in a Rat Model.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40682253/",
+        "journal": "FASEB journal : official publication of the Federation of American Societies for Experimental Biology",
+        "score": 30,
+        "summary": "Researchers found that mice lacking the amelogenin protein develop osteoarthritis, whereas applying the protein can reduce disease symptoms in rats. This suggests amelogenin plays a critical role in protecting joint cartilage and managing degenerative bone diseases.",
+        "opportunity": "Development of regenerative biologics or topical therapeutics targeting osteoarthritis and cartilage repair.",
+        "fields": [
+          "Drug Discovery",
+          "Clinical",
+          "Proteomics"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 5,
+            "reason": "The research follows a standard validation logic—using a knockout model to establish necessity and a protein application to demonstrate sufficiency—which is incremental rather than a paradigm shift in regenerative medicine."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The study provides strong proof-of-concept for amelogenin as a therapeutic agent to mitigate osteoarthritis, suggesting a clear path toward a biologics-based treatment or topical service. However, the transition from a rat model to human clinical applications requires significant validation of delivery mechanisms and long-term safety/efficacy."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "Osteoarthritis is a massive, high-prevalence degenerative disease with a multi-billion dollar global market and significant unmet clinical need for non-surgical disease-modifying interventions. The potential for amelogenin to serve as a therapeutic agent targets a vast, growing patient population across all age demographics."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The research is at a fundamental preclinical stage, utilizing genetic knockout mouse models and rat disease models to establish biological mechanisms. While it demonstrates therapeutic potential, it lacks the formal pharmacology, toxicology, or large-animal studies required to move toward clinical development."
+          },
+          "ip_strength": {
+            "score": 6,
+            "reason": "The study demonstrates a clear therapeutic effect of recombinant amelogenin, which is patentable as a composition of matter or method of use, but the reliance on a known protein rather than a novel engineered molecule limits the breadth of defensive moats."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 23,
+        "prev_eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.; Orthopedic Surgery Department, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; The Wohl Institute for Translational Medicine, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
+        "pi_email": "",
+        "abstract": "Previous studies have demonstrated that recombinant human amelogenin protein (rHAM",
+        "hts_score": 9,
+        "hts_reason": "The paper identifies a specific molecule (recombinant human amelogenin), links it to a specific disease (osteoarthritis), and implies a translational assay through the application of the protein in a validated rat model.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      },
+      {
+        "id": "pubmed_37783468",
+        "title": "Regeneration of injured articular cartilage using the recombinant human amelogenin protein.",
+        "date": "2023",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37783468/",
+        "journal": "Bone & joint research",
+        "score": 27,
+        "summary": "Researchers have demonstrated that recombinant human amelogenin protein can effectively promote the regeneration of large cartilage injuries in rat models. The study identifies an optimal dosage that helps restore functional cartilage instead of the typical inferior fibrous tissue.",
+        "opportunity": "Development of a bioactive regenerative therapy or injectable scaffold for treating osteoarthritis and large osteochondral defects in humans.",
+        "fields": [
+          "Clinical",
+          "Synthetic Biology",
+          "Proteomics"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 5,
+            "reason": "The use of amelogenin for cartilage repair is a well-established concept in regenerative medicine, making this an incremental application of a known protein rather than a groundbreaking biological discovery. The study focuses on dose-optimization in a standard rat model, which is iterative rather than platform-enabling."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The use of a recombinant protein to address the high-unmet-need market of cartilage repair presents a clear path toward a biologic therapeutic or injectable product. However, the reliance on a rat model and the lack of a delivery vehicle (scaffold) description in the abstract suggest significant translational hurdles regarding clinical efficacy and manufacturing scalability."
+          },
+          "market_size": {
+            "score": 8,
+            "reason": "Articular cartilage repair addresses a massive, high-prevalence clinical need driven by aging populations and sports injuries, representing a multi-billion dollar orthopedic market. The use of a recombinant protein suggests a scalable therapeutic approach for a broad patient population currently underserved by existing surgical standards."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The study is currently at the preclinical stage, utilizing a small animal (rat) model to demonstrate proof-of-concept efficacy. It lacks the large animal studies and clinical trial data required to move toward human application or market readiness."
+          },
+          "ip_strength": {
+            "score": 4,
+            "reason": "The innovation relies on a recombinant version of a naturally occurring human protein (amelogenin), which faces significant 'product of nature' patentability hurdles. Defensibility is limited unless the company can claim a novel delivery system, specific manufacturing process, or a unique non-obvious concentration range."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 15,
+        "prev_eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "Orthopedic Surgery Department, Hadassah University Medical Center, Jerusalem, Israel.; The Wohl Institute for Translational Medicine, Hadassah University Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+        "pi_email": "",
+        "abstract": "Cartilage injuries rarely heal spontaneously and often require surgical intervention, leading to the formation of biomechanically inferior fibrous tissue. This study aimed to evaluate the possible effect of amelogenin on the healing process of a large osteochondral injury (OCI) in a rat model. A reproducible large OCI was created in the right leg femoral trochlea of 93 rats. The OCIs were treated with 0.1, 0.5, 1.0, 2.5, or 5.0 μg/μl recombinant human amelogenin protein (rHAM A total of 12 weeks after treatment, 0.5 μg/μl rHAM We found that 0.5 μg/μl rHAM",
+        "hts_score": 7,
+        "hts_reason": "The paper identifies a specific molecule (recombinant human amelogenin) and links it to a specific disease model (osteochondral injury), but lacks a scalable high-throughput screening assay as the method relies on direct surgical application in animal models.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      },
+      {
+        "id": "pubmed_41607093",
+        "title": "Recombinant Human Amelogenin Protein Enhances Tendon-To-Bone Healing in a Rat Rotator Cuff Tear Model.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41607093/",
+        "journal": "Journal of orthopaedic research : official publication of the Orthopaedic Research Society",
+        "score": 26,
+        "summary": "Researchers have demonstrated that using a recombinant human amelogenin protein significantly improves the healing of the tendon-to-bone interface in rotator cuff injury models. This approach addresses the high failure rates of traditional surgeries by promoting better structural integration at the site of the tear.",
+        "opportunity": "Developing a bioactive regenerative coating or injectable therapeutic for orthopedic surgical implants to reduce rotator cuff retear rates.",
+        "abstract": "Rotator cuff tears (RCTs) often require surgical intervention; however, surgical outcome is frequently insufficient due to poor healing of the tendon-bone enthesis, leading to high retear rates. Previously, the recombinant human amelogenin protein (rHAM",
+        "fields": [
+          "Medical Device",
+          "Synthetic Biology",
+          "Proteomics",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "The use of amelogenin to promote mineralization at the enthesis is a well-established concept in regenerative medicine, making this application an incremental optimization rather than a groundbreaking scientific leap. The research demonstrates proof-of-concept in a standard animal model but lacks the fundamental mechanistic or platform innovation required for a high novelty score."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The technology addresses a high-value clinical unmet need in orthopedics with a clear path toward a bioactive medical device or injectable therapeutic. However, the reliance on a single protein (amelogenin) requires further validation of manufacturing scalability and comparative efficacy against existing growth factor standards to maximize licensing value."
+          },
+          "market_size": {
+            "score": 7,
+            "reason": "The target market for rotator cuff repair is large and clinically significant due to high retear rates, representing a substantial addressable demand in orthopedics. However, the score is capped by the fact that the current scope is limited to a single protein application for one specific anatomical site rather than a broader tissue-engineering platform."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The research is currently at the preclinical proof-of-concept stage, utilizing a small animal (rat) model to demonstrate biological efficacy. It requires significant translation through larger animal models, toxicology, and clinical trials before approaching market readiness."
+          },
+          "ip_strength": {
+            "score": 5,
+            "reason": "While the use of recombinant human amelogenin is a specific therapeutic application, amelogenin is a well-known protein with existing literature, making it difficult to claim broad novelty or a 'moat' unless specific proprietary expression systems or unique delivery formulations are disclosed."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 28,
+        "prev_eval_model": "gemini-3.1-flash-lite",
+        "pi_affiliation": "Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.; Orthopedic Surgery Department, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; The Wohl Institute for Translational Medicine, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
+        "pi_email": "",
+        "hts_score": 7,
+        "hts_reason": "The paper identifies a specific molecule (recombinant human amelogenin) and links it to a specific condition (tendon-to-bone healing in rotator cuff tears), but lacks a defined, scalable high-throughput screening assay method for identifying small-molecule mimetics or modulators of this protein.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      }
+    ],
+    "max_hts_score": 9
+  },
+  {
     "pi": "Oren Zimhony",
     "pi_full_name": "Oren Zimhony",
     "pi_email": "Oren_Z@clalit.org.il.",
@@ -14471,788 +15042,6 @@
     "max_hts_score": 4
   },
   {
-    "pi": "Yuval Malka",
-    "pi_full_name": "Yuval Malka",
-    "pi_email": "y.malka@mail.huji.ac.il.",
-    "pi_affiliation": "Department of Biochemistry and Molecular Biology, The Institute for Medical Research Israel-Canada, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem 9112001, Israel. Electronic address: y.malka@mail.huji.ac.il.",
-    "avg_score": 33.0,
-    "paper_count": 1,
-    "description": "This researcher specializes in molecular oncology and post-transcriptional gene regulation, specifically investigating how RNA processing mechanisms influence cancer progression. Their work centers on identifying novel RNA-based drivers of tumorigenesis, such as the cleavage of mRNA into oncogenic protein isoforms. By mapping these mechanisms, the lab uncovers new molecular targets for diagnostic and therapeutic interventions in various cancers.",
-    "applicability": "The discovery of an oncogenic JAK1 isoform provides a high-value target for the development of precision inhibitors or RNA-based therapeutics that specifically neutralize truncated proteins. While the biological validation is significant, this research is in the early discovery stage and would require further validation in pre-clinical models before transitioning to drug development partnerships or diagnostic assay commercialization over the medium-to-long term.",
-    "fields": [
-      "Drug Discovery",
-      "Diagnostics",
-      "Genomics",
-      "Immunology"
-    ],
-    "branches": [
-      "Healthcare"
-    ],
-    "papers": [
-      {
-        "id": "pubmed_41984590",
-        "title": "RNA dicing promotes the expression of an oncogenic JAK1 isoform.",
-        "date": "2026",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/41984590/",
-        "journal": "Cell reports",
-        "score": 33,
-        "summary": "Researchers discovered a process called 'RNA dicing' where mRNA is cleaved to produce a truncated, oncogenic version of the JAK1 protein. This process changes how cells grow and contributes to cancer development, particularly in endometrial tumors.",
-        "opportunity": "The discovery enables a new precision medicine approach by using RNA dicing profiles to stratify patients for existing JAK1 inhibitors like momelotinib.",
-        "abstract": "The translation of an mRNA transcript is traditionally thought to be limited to its open reading frames (ORFs). However, recent findings reveal a more complex reality in which the proteome vastly exceeds transcriptome limits. Here, we demonstrate that JAK1 mRNA can be cleaved into a truncated, uncapped form with a shorter ORF, leading to the translation of the JH1 kinase domain independently of other domains, a process we term \"RNA dicing.\" Canonical and diced JAK1 variants differently impact cell proliferation and tumorigenesis, with the balance of these isoforms altered in tumorigenesis and in response to IFN-γ. Analyzing JAK1 nonsense mutations in endometrial tumors reveals that mutations inhibit the tumor-suppressive functions of canonical JAK1 while enhancing the oncogenic diced JH1 domain. This results in a better response to the JAK1 inhibitor momelotinib, highlighting RNA dicing's role in patient stratification. Our findings show that RNA dicing diversifies mRNA products, significantly impacting biological functions.",
-        "fields": [
-          "Drug Discovery",
-          "Diagnostics",
-          "Genomics",
-          "Immunology"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 9,
-            "reason": "The discovery of 'RNA dicing' represents a paradigm-shifting mechanism that challenges the traditional ORF-centric view of translation, offering a novel biological principle. It provides a highly innovative foundation for new therapeutic strategies and patient stratification models based on non-canonical mRNA processing."
-          },
-          "commercial_potential": {
-            "score": 7,
-            "reason": "The discovery provides a high-value biomarker for patient stratification in oncology, specifically linking 'RNA dicing' to drug sensitivity for existing JAK inhibitors like momelotinib. While the mechanistic insight is profound, the commercial leap depends on validating this as a diagnostic tool or developing new therapeutics targeting the diced isoform specifically."
-          },
-          "market_size": {
-            "score": 7,
-            "reason": "The discovery identifies a novel mechanism of protein expression that serves as a high-value biomarker for patient stratification in oncology, specifically for existing JAK inhibitors. While the mechanism itself is a potentially platform-enabling biological insight, the immediate market is constrained to specific cancer indications and the repurposing/refinement of existing drug classes."
-          },
-          "trl": {
-            "score": 3,
-            "reason": "This is fundamental mechanistic research identifying a new biological phenomenon (RNA dicing) and its role in oncogenesis. While it suggests potential for patient stratification using existing inhibitors, it remains at the basic discovery/proof-of-concept stage without a developed diagnostic or therapeutic pipeline."
-          },
-          "ip_strength": {
-            "score": 7,
-            "reason": "The discovery of 'RNA dicing' as a mechanism for generating oncogenic isoforms provides a strong foundation for new therapeutic targets and diagnostic biomarkers. While the biological mechanism is novel and potentially patentable, the IP strength is tempered by the fact that the study focuses on a specific endogenous process rather than a proprietary platform technology."
-          }
-        },
-        "eval_model": "gemma-4-26b-a4b-it",
-        "prev_score": "21",
-        "prev_eval_model": "",
-        "pi_affiliation": "Department of Biochemistry and Molecular Biology, The Institute for Medical Research Israel-Canada, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem 9112001, Israel. Electronic address: y.malka@mail.huji.ac.il.",
-        "pi_email": "y.malka@mail.huji.ac.il.",
-        "hts_score": 9,
-        "hts_reason": "The paper identifies a specific oncogenic protein product (the diced JAK1 JH1 domain), links it to endometrial cancer, and provides a clear mechanism for testing efficacy using existing JAK1 inhibitors like momelotinib.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      }
-    ],
-    "max_hts_score": 9
-  },
-  {
-    "pi": "Amir Haze",
-    "pi_full_name": "Amir Haze",
-    "pi_email": "avivit@hadassah.org.il.",
-    "pi_affiliation": "Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.; Orthopedic Surgery Department, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; The Wohl Institute for Translational Medicine, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
-    "avg_score": 29.0,
-    "paper_count": 4,
-    "description": "This researcher specializes in regenerative medicine, with a primary focus on leveraging the recombinant human amelogenin protein to repair complex musculoskeletal injuries. Their work investigates the protein's role in tissue engineering, demonstrating its efficacy in regenerating articular cartilage, improving tendon-to-bone integration, and mitigating osteoarthritis. Additionally, they conduct clinical research in vascular medicine, specifically identifying risk factors and outcomes for diabetic patients with polyvascular complications.",
-    "applicability": "The research on recombinant amelogenin shows high commercial potential for developing novel biologic therapeutics or orthopedic medical devices aimed at soft-tissue and joint repair. Given the successful pre-clinical results in animal models, this technology is a strong candidate for pharmaceutical licensing or a spin-off venture focused on orthopedic regenerative medicine, potentially entering clinical trials within the mid-term horizon.",
-    "fields": [
-      "Clinical",
-      "Proteomics",
-      "Synthetic Biology",
-      "Medical Device",
-      "Drug Discovery"
-    ],
-    "branches": [
-      "Healthcare"
-    ],
-    "papers": [
-      {
-        "id": "pubmed_41925697",
-        "title": "Recombinant Human Amelogenin Protein Enhances Healing of Osteochondral Injury in a Goat Model.",
-        "date": "2026",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/41925697/",
-        "journal": "Journal of orthopaedic research : official publication of the Orthopaedic Research Society",
-        "score": 33,
-        "summary": "Researchers tested a recombinant human amelogenin-based product, Remelix®, in a goat model to treat cartilage and bone injuries. The study showed that the protein significantly promotes the healing of osteochondral defects without causing adverse side effects.",
-        "opportunity": "Development of a high-value regenerative medicine therapeutic for treating osteoarthritis and joint injuries in humans.",
-        "fields": [
-          "Medical Device",
-          "Clinical",
-          "Proteomics",
-          "Synthetic Biology"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 4,
-            "reason": "The scientific novelty is limited as the research focuses on validating an existing mechanism (amelogenin-driven repair) in a larger animal model rather than introducing a new biological pathway or platform technology. This represents a translational step toward clinical application rather than a groundbreaking scientific discovery."
-          },
-          "commercial_potential": {
-            "score": 8,
-            "reason": "The study demonstrates a clear transition from rodent models to a large animal (goat) model using a branded product (Remelix®), which significantly de-risks the clinical translation pathway for orthopedic regenerative medicine. The successful evaluation of dose-dependent healing and safety in a weight-bearing model suggests a highly viable, near-market therapeutic candidate for osteochondral repair."
-          },
-          "market_size": {
-            "score": 8,
-            "reason": "The target market for osteochondral repair is significant due to the high prevalence of joint injuries and the lack of effective regenerative treatments. As a recombinant protein-based therapy, Remelix® addresses a high-value clinical need in orthopedics with substantial addressable demand."
-          },
-          "trl": {
-            "score": 6,
-            "reason": "The study has successfully moved beyond small animal models (rats) into a large animal (goat) model, which is a critical late-stage preclinical milestone for orthopedic products. However, it remains in the preclinical phase and has not yet entered human clinical trials to demonstrate safety and efficacy in patients."
-          },
-          "ip_strength": {
-            "score": 7,
-            "reason": "The product (Remelix®) utilizes a specific recombinant protein and a proprietary carrier (PX 407), suggesting established composition-of-matter or formulation patents. However, the underlying biological target (amelogenin) is a known protein, which may limit the breadth of defensibility against competitors using alternative expression systems or similar protein scaffolds."
-          }
-        },
-        "eval_model": "gemma-4-26b-a4b-it",
-        "prev_score": 29,
-        "prev_eval_model": "",
-        "pi_affiliation": "Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.; Orthopedic Surgery Department, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; The Wohl Institute for Translational Medicine, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
-        "pi_email": "",
-        "abstract": "Osteochondral injuries are common, painful, and lack natural healing abilities. Previous studies demonstrated that recombinant human amelogenin promotes osteochondral repair in rat knee injuries, including improved defect filling and formation of hyaline cartilage. Here, we aimed to evaluate the efficacy and safety of Remelix®, a novel recombinant human amelogenin-based product, in a large animal goat model. Acute osteochondral injuries were created in the weight-bearing region of the medial femoral condyle in thirteen goats. Seven goats received Remelix® at a protein concentration of 0.5 mg/mL, with the contralateral knee applied with PX 407 carrier alone. An additional six goats received Remelix® at 0.25 mg/mL, while contralateral knees were treated with normal saline. Potential adverse effects, along with evaluation of osteochondral healing were assessed. Healing was assessed 24 weeks post-treatment using magnetic resonance imaging (MRI), macroscopic evaluation, and histological and immunohistochemical analyses. No adverse effects were observed. Both Remelix® concentrations resulted in substantial healing of cartilage and subchondral bone. Histological analyses demonstrated improved tidemark formation, predominantly hyaline cartilage filling in the deeper layers of the defect with extension toward the superficial zone, and reduced subchondral bone abnormalities. MRI and macroscopic evaluations revealed a continuous repair surface with good integration at the defect margins. In contrast, PX 407 and saline-treated control knees exhibited inferior repair, characterized by mainly fibrous cartilage, heterogeneous MRI signal intensity, and lower histological scores. Overall, Remelix® substantially improved osteochondral healing in a goat model without observable adverse effects, supporting its potential for further evaluation in human clinical studies.",
-        "hts_score": 4,
-        "hts_reason": "The study identifies a specific molecule (recombinant human amelogenin) and links it to a specific disease (osteochondral injury), but it lacks a high-throughput compatible assay or a screening methodology, as it focuses on clinical/histological efficacy in a large animal model.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      },
-      {
-        "id": "pubmed_40682253",
-        "title": "Amelogenin Null Mice Develop Osteoarthritis, While Its Application Mitigates Disease Phenotypes in a Rat Model.",
-        "date": "2025",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/40682253/",
-        "journal": "FASEB journal : official publication of the Federation of American Societies for Experimental Biology",
-        "score": 30,
-        "summary": "Researchers found that mice lacking the amelogenin protein develop osteoarthritis, whereas applying the protein can reduce disease symptoms in rats. This suggests amelogenin plays a critical role in protecting joint cartilage and managing degenerative bone diseases.",
-        "opportunity": "Development of regenerative biologics or topical therapeutics targeting osteoarthritis and cartilage repair.",
-        "fields": [
-          "Drug Discovery",
-          "Clinical",
-          "Proteomics"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 5,
-            "reason": "The research follows a standard validation logic—using a knockout model to establish necessity and a protein application to demonstrate sufficiency—which is incremental rather than a paradigm shift in regenerative medicine."
-          },
-          "commercial_potential": {
-            "score": 7,
-            "reason": "The study provides strong proof-of-concept for amelogenin as a therapeutic agent to mitigate osteoarthritis, suggesting a clear path toward a biologics-based treatment or topical service. However, the transition from a rat model to human clinical applications requires significant validation of delivery mechanisms and long-term safety/efficacy."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "Osteoarthritis is a massive, high-prevalence degenerative disease with a multi-billion dollar global market and significant unmet clinical need for non-surgical disease-modifying interventions. The potential for amelogenin to serve as a therapeutic agent targets a vast, growing patient population across all age demographics."
-          },
-          "trl": {
-            "score": 3,
-            "reason": "The research is at a fundamental preclinical stage, utilizing genetic knockout mouse models and rat disease models to establish biological mechanisms. While it demonstrates therapeutic potential, it lacks the formal pharmacology, toxicology, or large-animal studies required to move toward clinical development."
-          },
-          "ip_strength": {
-            "score": 6,
-            "reason": "The study demonstrates a clear therapeutic effect of recombinant amelogenin, which is patentable as a composition of matter or method of use, but the reliance on a known protein rather than a novel engineered molecule limits the breadth of defensive moats."
-          }
-        },
-        "eval_model": "gemma-4-26b-a4b-it",
-        "prev_score": 23,
-        "prev_eval_model": "groq:llama-3.1-8b-instant",
-        "pi_affiliation": "Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.; Orthopedic Surgery Department, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; The Wohl Institute for Translational Medicine, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
-        "pi_email": "",
-        "abstract": "Previous studies have demonstrated that recombinant human amelogenin protein (rHAM",
-        "hts_score": 9,
-        "hts_reason": "The paper identifies a specific molecule (recombinant human amelogenin), links it to a specific disease (osteoarthritis), and implies a translational assay through the application of the protein in a validated rat model.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      },
-      {
-        "id": "pubmed_37783468",
-        "title": "Regeneration of injured articular cartilage using the recombinant human amelogenin protein.",
-        "date": "2023",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/37783468/",
-        "journal": "Bone & joint research",
-        "score": 27,
-        "summary": "Researchers have demonstrated that recombinant human amelogenin protein can effectively promote the regeneration of large cartilage injuries in rat models. The study identifies an optimal dosage that helps restore functional cartilage instead of the typical inferior fibrous tissue.",
-        "opportunity": "Development of a bioactive regenerative therapy or injectable scaffold for treating osteoarthritis and large osteochondral defects in humans.",
-        "fields": [
-          "Clinical",
-          "Synthetic Biology",
-          "Proteomics"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 5,
-            "reason": "The use of amelogenin for cartilage repair is a well-established concept in regenerative medicine, making this an incremental application of a known protein rather than a groundbreaking biological discovery. The study focuses on dose-optimization in a standard rat model, which is iterative rather than platform-enabling."
-          },
-          "commercial_potential": {
-            "score": 7,
-            "reason": "The use of a recombinant protein to address the high-unmet-need market of cartilage repair presents a clear path toward a biologic therapeutic or injectable product. However, the reliance on a rat model and the lack of a delivery vehicle (scaffold) description in the abstract suggest significant translational hurdles regarding clinical efficacy and manufacturing scalability."
-          },
-          "market_size": {
-            "score": 8,
-            "reason": "Articular cartilage repair addresses a massive, high-prevalence clinical need driven by aging populations and sports injuries, representing a multi-billion dollar orthopedic market. The use of a recombinant protein suggests a scalable therapeutic approach for a broad patient population currently underserved by existing surgical standards."
-          },
-          "trl": {
-            "score": 3,
-            "reason": "The study is currently at the preclinical stage, utilizing a small animal (rat) model to demonstrate proof-of-concept efficacy. It lacks the large animal studies and clinical trial data required to move toward human application or market readiness."
-          },
-          "ip_strength": {
-            "score": 4,
-            "reason": "The innovation relies on a recombinant version of a naturally occurring human protein (amelogenin), which faces significant 'product of nature' patentability hurdles. Defensibility is limited unless the company can claim a novel delivery system, specific manufacturing process, or a unique non-obvious concentration range."
-          }
-        },
-        "eval_model": "gemma-4-26b-a4b-it",
-        "prev_score": 15,
-        "prev_eval_model": "groq:llama-3.1-8b-instant",
-        "pi_affiliation": "Orthopedic Surgery Department, Hadassah University Medical Center, Jerusalem, Israel.; The Wohl Institute for Translational Medicine, Hadassah University Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-        "pi_email": "",
-        "abstract": "Cartilage injuries rarely heal spontaneously and often require surgical intervention, leading to the formation of biomechanically inferior fibrous tissue. This study aimed to evaluate the possible effect of amelogenin on the healing process of a large osteochondral injury (OCI) in a rat model. A reproducible large OCI was created in the right leg femoral trochlea of 93 rats. The OCIs were treated with 0.1, 0.5, 1.0, 2.5, or 5.0 μg/μl recombinant human amelogenin protein (rHAM A total of 12 weeks after treatment, 0.5 μg/μl rHAM We found that 0.5 μg/μl rHAM",
-        "hts_score": 7,
-        "hts_reason": "The paper identifies a specific molecule (recombinant human amelogenin) and links it to a specific disease model (osteochondral injury), but lacks a scalable high-throughput screening assay as the method relies on direct surgical application in animal models.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      },
-      {
-        "id": "pubmed_41607093",
-        "title": "Recombinant Human Amelogenin Protein Enhances Tendon-To-Bone Healing in a Rat Rotator Cuff Tear Model.",
-        "date": "2026",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/41607093/",
-        "journal": "Journal of orthopaedic research : official publication of the Orthopaedic Research Society",
-        "score": 26,
-        "summary": "Researchers have demonstrated that using a recombinant human amelogenin protein significantly improves the healing of the tendon-to-bone interface in rotator cuff injury models. This approach addresses the high failure rates of traditional surgeries by promoting better structural integration at the site of the tear.",
-        "opportunity": "Developing a bioactive regenerative coating or injectable therapeutic for orthopedic surgical implants to reduce rotator cuff retear rates.",
-        "abstract": "Rotator cuff tears (RCTs) often require surgical intervention; however, surgical outcome is frequently insufficient due to poor healing of the tendon-bone enthesis, leading to high retear rates. Previously, the recombinant human amelogenin protein (rHAM",
-        "fields": [
-          "Medical Device",
-          "Synthetic Biology",
-          "Proteomics",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 4,
-            "reason": "The use of amelogenin to promote mineralization at the enthesis is a well-established concept in regenerative medicine, making this application an incremental optimization rather than a groundbreaking scientific leap. The research demonstrates proof-of-concept in a standard animal model but lacks the fundamental mechanistic or platform innovation required for a high novelty score."
-          },
-          "commercial_potential": {
-            "score": 7,
-            "reason": "The technology addresses a high-value clinical unmet need in orthopedics with a clear path toward a bioactive medical device or injectable therapeutic. However, the reliance on a single protein (amelogenin) requires further validation of manufacturing scalability and comparative efficacy against existing growth factor standards to maximize licensing value."
-          },
-          "market_size": {
-            "score": 7,
-            "reason": "The target market for rotator cuff repair is large and clinically significant due to high retear rates, representing a substantial addressable demand in orthopedics. However, the score is capped by the fact that the current scope is limited to a single protein application for one specific anatomical site rather than a broader tissue-engineering platform."
-          },
-          "trl": {
-            "score": 3,
-            "reason": "The research is currently at the preclinical proof-of-concept stage, utilizing a small animal (rat) model to demonstrate biological efficacy. It requires significant translation through larger animal models, toxicology, and clinical trials before approaching market readiness."
-          },
-          "ip_strength": {
-            "score": 5,
-            "reason": "While the use of recombinant human amelogenin is a specific therapeutic application, amelogenin is a well-known protein with existing literature, making it difficult to claim broad novelty or a 'moat' unless specific proprietary expression systems or unique delivery formulations are disclosed."
-          }
-        },
-        "eval_model": "gemma-4-26b-a4b-it",
-        "prev_score": 28,
-        "prev_eval_model": "gemini-3.1-flash-lite",
-        "pi_affiliation": "Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.; Orthopedic Surgery Department, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; The Wohl Institute for Translational Medicine, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
-        "pi_email": "",
-        "hts_score": 7,
-        "hts_reason": "The paper identifies a specific molecule (recombinant human amelogenin) and links it to a specific condition (tendon-to-bone healing in rotator cuff tears), but lacks a defined, scalable high-throughput screening assay method for identifying small-molecule mimetics or modulators of this protein.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      }
-    ],
-    "max_hts_score": 9
-  },
-  {
-    "pi": "Avi Priel",
-    "pi_full_name": "Avi Priel",
-    "pi_email": "avi.priel@mail.huji.ac.il.",
-    "pi_affiliation": "The Institute for Drug Research (IDR), Department of Pharmacology, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
-    "avg_score": 29.4,
-    "paper_count": 5,
-    "description": "This researcher specializes in the molecular pharmacology of ion channels, focusing specifically on how lipid-sensing proteins like TRP and sodium channels regulate pain signaling. Their work combines structural biology and pharmacology to map precise binding sites for cannabinoids and other analgesic compounds. By identifying these peripheral mechanisms, they aim to decouple pain relief from central nervous system side effects.",
-    "applicability": "The work has high translational value for the development of next-generation, non-opioid analgesics and non-psychoactive cannabinoid derivatives. This could lead to licensable IP for targeted drug discovery platforms or partnerships with pharmaceutical firms developing peripheral pain medications. Given the focus on specific binding pockets, the path toward lead optimization and pre-clinical drug candidates is well-defined and mid-term.",
-    "fields": [
-      "Drug Discovery",
-      "Neuroscience",
-      "Clinical",
-      "Proteomics"
-    ],
-    "branches": [
-      "Healthcare"
-    ],
-    "papers": [
-      {
-        "id": "pubmed_42342000",
-        "title": "Carbamate-based cannabinoids uncover a conserved lipid-sensing pocket in nociceptive TRPA1 and TRPV1 channels.",
-        "date": "2026",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42342000/",
-        "journal": "Pharmacological research",
-        "score": 33,
-        "summary": "Researchers have engineered new chemical derivatives of CBD and CBG that act as highly potent dual agonists for pain-sensing TRPA1 and TRPV1 ion channels. This study identifies a specific structural binding pocket shared by these channels, providing a blueprint for designing more effective non-opioid painkillers.",
-        "opportunity": "The ability to rationally design high-potency cannabinoid derivatives offers a platform for developing a new class of non-addictive, targeted analgesics for chronic pain management.",
-        "fields": [
-          "Drug Discovery",
-          "Neuroscience",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 7,
-            "reason": "The research demonstrates high novelty by utilizing rational design to transform natural phytocannabinoids into potent dual agonists, uncovering a previously unknown conserved lipid-sensing mechanism. While the specific chemical modification is an incremental optimization of existing scaffolds, the structural insight provides a novel framework for targeting nociceptive channels."
-          },
-          "commercial_potential": {
-            "score": 7,
-            "reason": "The research demonstrates a clear medicinal chemistry path to optimize phytocannabinoids into potent dual-channel agonists, offering a high-value structural blueprint for non-opioid analgesic drug discovery. While it provides a strong 'lead series' for licensing, the commercial value is currently tied to early-stage discovery rather than a validated clinical candidate or a broad platform technology."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "The research targets TRPA1 and TRPV1 ion channels, which are central to the multi-billion dollar non-opioid pain management market. By optimizing phytocannabinoids into potent dual agonists, this work addresses a massive unmet clinical demand for safer alternatives to opioids."
-          },
-          "trl": {
-            "score": 3,
-            "reason": "The research is at the fundamental discovery and lead optimization stage, utilizing heterologous expression systems and in vitro electrophysiology rather than animal models or pharmacokinetic studies. While it provides a structural basis for rational design, it remains a basic science/proof-of-concept study far from preclinical or clinical development."
-          },
-          "ip_strength": {
-            "score": 7,
-            "reason": "The work demonstrates high defensibility through rational medicinal chemistry, transforming existing scaffolds into novel, potent carbamate-based derivatives with specific selectivity profiles. While these new chemical entities are likely patentable, the reliance on known phytocannabinoid scaffolds may present moderate challenges regarding non-obviousness during patent prosecution."
-          }
-        },
-        "eval_model": "gemma-4-26b-a4b-it",
-        "prev_score": 35,
-        "prev_eval_model": "",
-        "pi_affiliation": "The Institute for Drug Research (IDR), Department of Pharmacology, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
-        "pi_email": "avi.priel@mail.huji.ac.il.",
-        "abstract": "TRPA1 and TRPV1 are nociceptive ion channels that integrate noxious chemical stimuli and are attractive targets for non-opioid analgesics. The phytocannabinoids cannabidiol (CBD) and cannabigerol (CBG) modulate both channels, but their pharmacological profiles and underlying structural determinants remain poorly defined. Here, we used rational ligand design to convert CBD and CBG into potent dual TRPA1/TRPV1 agonists and to probe a conserved lipid-sensing architecture in both channels. Guided by the structural features of the TRPV1 vanilloid-binding site and our previously developed TRPA1 cannabinoid-binding site model, we incorporated an aryl carbamate anchor into the CBD and CBG scaffolds. We compared their activity with that of the parent phytocannabinoids in heterologous expression systems using calcium imaging and whole-cell patch-clamp recordings. Whereas CBD and CBG preferentially activated TRPA1 and were weak TRPV1 agonists at physiologically relevant concentrations, carbamate functionalization markedly increased potency and efficacy at TRPV1 while preserving robust TRPA1 activation. In contrast to the parent phytocannabinoids, carbamate derivatives did not potentiate TRPV2 responses, demonstrating channel selectivity. Site-directed mutagenesis and molecular docking localized carbamate-based ligand binding to the canonical vanilloid binding site in TRPV1 and the non-electrophilic cannabinoid-binding site in TRPA1, consistent with engagement of a shared lipid-sensing pocket. Carbamate derivatives also activated nociceptive neurons in primary rat trigeminal ganglion cultures in a TRPV1-dependent manner, as confirmed by pharmacological block with the selective TRPV1 antagonist BCTC. These findings define a conserved structural framework for lipid ligand recognition in TRPA1 and TRPV1 and provide a rational starting point for developing dual-target modulators of peripheral nociceptors.",
-        "hts_score": 9,
-        "hts_reason": "The paper identifies specific dual-agonist molecules targeting TRPA1 and TRPV1 channels for non-opioid analgesia and describes validated calcium imaging and patch-clamp assays for high-throughput screening of derivative compounds.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      },
-      {
-        "id": "pubmed_41565997",
-        "title": "The psychoactive cannabinoid THC inhibits peripheral nociceptors by targeting Na",
-        "date": "2026",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/41565997/",
-        "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
-        "score": 34,
-        "summary": "Researchers discovered that THC reduces pain by directly blocking sodium channels in peripheral nerves, rather than solely acting on the brain. This reveals a non-psychoactive pathway for pain relief that happens at the site of injury.",
-        "opportunity": "Development of peripheral-acting cannabinoid analogs or NaV-channel blockers that provide potent analgesia without the psychoactive side effects of THC.",
-        "fields": [
-          "Drug Discovery",
-          "Neuroscience",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 8,
-            "reason": "The discovery of a direct, non-cannabinoid receptor-mediated mechanism (targeting NaV channels) represents a paradigm shift in our understanding of THC's analgesic properties. This provides a clear path for developing novel, non-psychoactive peripheral analgesics with a specific molecular target."
-          },
-          "commercial_potential": {
-            "score": 8,
-            "reason": "Identifying a specific molecular target (Nav) for THC's analgesic effect enables the development of non-psychoactive synthetic analogs that target peripheral pain without central side effects. This provides a clear path to a novel class of non-opioid analgesics with high licensable value."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "Chronic pain is one of the largest global healthcare burdens with massive unmet demand for non-opioid analgesics. A mechanism that targets peripheral nociceptors via sodium channels opens a vast market for non-addictive, non-psychoactive derivatives for widespread clinical use."
-          },
-          "trl": {
-            "score": 2,
-            "reason": "The work describes a fundamental mechanistic discovery of a protein target in a laboratory setting, representing basic research (TRL 2) rather than a developed lead compound or clinical candidate."
-          },
-          "ip_strength": {
-            "score": 7,
-            "reason": "Identifying a specific, non-canonical molecular target (NaV channels) for a known compound provides a strong basis for new composition-of-matter patents on selective agonists or NaV-specific cannabinoid derivatives. However, the inherent difficulty in patenting THC itself limits the score to the strength of potential downstream 'me-too' or optimized analog drug discovery."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": "",
-        "prev_eval_model": "",
-        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. avi.priel@mail.huji.ac.il.",
-        "pi_email": "avi.priel@mail.huji.ac.il.",
-        "abstract": "Δ⁹-Tetrahydrocannabinol (THC), the primary psychoactive compound in cannabis, is widely recognized for its central effects mediated by cannabinoid receptors. Here, we uncover a distinct peripheral mechanism by which THC inhibits the excitability of nociceptive neurons. We show that THC directly targets the nociceptive voltage-gated sodium channels Na",
-        "hts_score": 10,
-        "hts_reason": "The paper identifies a specific target (NaV sodium channels), links it to a condition (peripheral nociception/pain), and describes a mechanism for testing inhibition of neuronal excitability.",
-        "hts_eval_model": "gemma-4-31b-it"
-      },
-      {
-        "id": "pubmed_40465624",
-        "title": "The analgesic paracetamol metabolite AM404 acts peripherally to directly inhibit sodium channels.",
-        "date": "2025",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/40465624/",
-        "journal": "Proceedings of the National Academy of Sciences of the United States of America",
-        "score": 30,
-        "summary": "Researchers discovered that a metabolite of paracetamol, AM404, provides pain relief by directly blocking sodium channels in peripheral sensory neurons rather than just acting on the brain. This reveals a new peripheral mechanism for a common drug, suggesting that targeting these specific sodium channels can treat pain without central nervous system side effects.",
-        "opportunity": "Development of next-generation non-opioid analgesics based on AM404 analogs that selectively inhibit peripheral voltage-gated sodium channels to reduce systemic toxicity.",
-        "fields": [
-          "Drug Discovery",
-          "Neuroscience",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 8,
-            "reason": "This research identifies a previously unknown peripheral mechanism of action for a ubiquitous drug, shifting the paradigm from CNS-centric effects to direct sodium channel inhibition in nociceptors. This discovery is highly innovative and creates immediate opportunities for developing targeted, non-opioid analgesics based on this specific molecular target."
-          },
-          "commercial_potential": {
-            "score": 7,
-            "reason": "The discovery of a direct, peripheral sodium channel inhibition mechanism for AM404 opens a clear path for developing potent, non-opioid analgesics with reduced CNS side effects. While the target is validated, the commercial value depends on the ability to synthesize more stable or potent AM404 analogs to overcome the metabolic limitations of paracetamol."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "The research targets pain management, one of the largest therapeutic markets globally, by identifying a new mechanism for a metabolite of paracetamol, the world's most widely used analgesic."
-          },
-          "trl": {
-            "score": 3,
-            "reason": "The research is at the fundamental mechanism-of-action stage, demonstrating effects in animal models (rats) and primary neurons. While it clarifies the pharmacology of an existing drug, it does not present a new lead compound, a clinical candidate, or a developed therapeutic delivery system."
-          },
-          "ip_strength": {
-            "score": 3,
-            "reason": "The innovation describes a mechanism of action for a metabolite of paracetamol, a generic drug that has been in public use for decades, making the primary compound non-patentable. Defensibility is low as the discovery is a fundamental biological observation rather than a novel, protectable chemical entity or platform."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": "",
-        "prev_eval_model": "",
-        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel.",
-        "pi_email": "",
-        "abstract": "Paracetamol has been used for decades to relieve mild-to-moderate pain. Its analgesic effect is mainly attributed to its metabolite, AM404, acting on cannabinoid receptors or TRPV1 channels in central nervous system (CNS) neurons. Here, we show that AM404 is produced by primary sensory neurons. It inhibits sodium current in nociceptor neurons, blocking action potential (AP) generation and reducing nocifensive behavior in naïve and inflamed rats. We demonstrated that this analgesic effect of AM404 is mediated by its direct inhibition of nociceptive voltage-gated sodium channels (Na",
-        "hts_score": 10,
-        "hts_reason": "The paper identifies a specific target (nociceptive voltage-gated sodium channels), links it to a disease state (inflammation/pain), and describes a testable assay (sodium current inhibition/AP generation).",
-        "hts_eval_model": "gemma-4-31b-it"
-      },
-      {
-        "id": "pubmed_39368566",
-        "title": "Identification of the TRPA1 cannabinoid-binding site.",
-        "date": "2024",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/39368566/",
-        "journal": "Pharmacological research",
-        "score": 33,
-        "summary": "Researchers have identified the specific binding site where cannabinoids interact with the TRPA1 ion channel to reduce pain. This discovery provides a molecular map for how cannabis-based compounds alleviate chronic pain without relying solely on the brain's CB1 receptors.",
-        "opportunity": "Development of high-affinity, non-psychoactive TRPA1 agonists for targeted chronic pain management and inflammation therapy.",
-        "fields": [
-          "Drug Discovery",
-          "Neuroscience",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 8,
-            "reason": "The precise structural identification of a cannabinoid-binding site on TRPA1 fills a critical knowledge gap in pharmacology and enables the rational design of targeted, non-psychoactive analgesics."
-          },
-          "commercial_potential": {
-            "score": 7,
-            "reason": "The identification of a specific binding site enables the rational design of selective TRPA1 agonists/antagonists, transforming a broad observation into a druggable target for chronic pain. While further lead optimization is required, this provides a clear path toward a novel class of non-opioid analgesics."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "The target market is chronic pain, one of the largest and most valuable therapeutic areas in healthcare, with massive addressable demand across both pharmaceutical and medical cannabis sectors."
-          },
-          "trl": {
-            "score": 2,
-            "reason": "The work is fundamental structural biology focused on identifying a binding site, representing basic research (TRL 2) rather than a developed lead compound or therapeutic application."
-          },
-          "ip_strength": {
-            "score": 7,
-            "reason": "The identification of a specific binding site provides a strong foundation for structure-based drug design and the filing of composition-of-matter patents for novel, high-affinity TRPA1 ligands. While the biological discovery itself is descriptive, it enables the creation of a highly defensible proprietary chemical library."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": "",
-        "prev_eval_model": "",
-        "pi_affiliation": "The Institute for Drug Research (IDR), School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
-        "pi_email": "avi.priel@mail.huji.ac.il.",
-        "abstract": "Chronic pain accounts for nearly two-thirds of conditions eligible for medical cannabis licenses, yet the mechanisms underlying cannabis-induced analgesia remain poorly understood. The principal phytocannabinoids, the psychoactive Δ",
-        "hts_score": 8,
-        "hts_reason": "The paper identifies a specific target (TRPA1 cannabinoid-binding site) linked to chronic pain and describes a mechanism for cannabis-induced analgesia that implies a measurable assay for screening ligands.",
-        "hts_eval_model": "gemma-4-31b-it"
-      },
-      {
-        "id": "pubmed_38538847",
-        "title": "TRPM5 activation depends on a synergistic effect of calcium and PKC phosphorylation.",
-        "date": "2024",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/38538847/",
-        "journal": "Communications biology",
-        "score": 17,
-        "summary": "Researchers discovered that TRPM5 ion channels require both calcium elevation and phosphorylation by PKC to activate fully. This clarifies the precise molecular switch that controls insulin secretion and taste perception.",
-        "opportunity": "Development of precision small-molecule modulators targeting the PKC-TRPM5 interaction for the treatment of metabolic disorders like diabetes.",
-        "fields": [
-          "Drug Discovery",
-          "Neuroscience",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 4,
-            "reason": "The research addresses an existing knowledge gap regarding TRPM5 activation, but the hypothesis (synergy between calcium and PKC phosphorylation) is an incremental refinement of known signaling pathways rather than a groundbreaking discovery."
-          },
-          "commercial_potential": {
-            "score": 4,
-            "reason": "The paper provides foundational mechanistic insight into TRPM5 activation, which is valuable for target validation, but it does not present a lead compound, a screening platform, or a specific therapeutic application."
-          },
-          "market_size": {
-            "score": 7,
-            "reason": "The target, TRPM5, is linked to insulin secretion (diabetes) and taste transduction, addressing massive global healthcare markets. However, the paper focuses on basic mechanistic elucidation rather than a specific lead compound or a platform, leaving the immediate addressable demand theoretical."
-          },
-          "trl": {
-            "score": 2,
-            "reason": "The research is fundamental mechanistic biochemistry focused on elucidating the molecular triggers of channel activation, representing early-stage basic science (TRL 2) rather than a developed therapeutic or device."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": 19,
-        "prev_eval_model": "groq:llama-3.1-8b-instant",
-        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Ein Karem, Jerusalem, 9112102, Israel. avi.priel@mail.huji.ac.il.",
-        "pi_email": "avi.priel@mail.huji.ac.il.",
-        "abstract": "Transient receptor potential melastatin 5 (TRPM5) is a calcium-activated monovalent-specific ion channel involved in insulin secretion and taste transduction, making it an attractive target for drug development in various pathologies. While TRPM5 activation involves ligand binding to Gq/G-protein coupled receptors (GPCR) and subsequent elevation of intracellular calcium levels, recent reports suggest the need for additional molecular determinants. Hence, the mechanism of TRPM5 activation remains to be elucidated. Here, we show that PKC phosphorylation and the elevation of intracellular Ca",
-        "hts_score": 5,
-        "hts_reason": "The paper identifies a specific target (TRPM5) and links it to insulin secretion/taste pathologies, but the abstract cuts off before describing a specific assay for measuring effect.",
-        "hts_eval_model": "gemma-4-31b-it"
-      }
-    ],
-    "max_hts_score": 10
-  },
-  {
-    "pi": "A Yaacov",
-    "pi_full_name": "A Yaacov",
-    "pi_email": "adar.yaacov@mail.huji.ac.il.",
-    "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem 9103102, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 7610001, Israel.",
-    "avg_score": 30.6,
-    "paper_count": 5,
-    "description": "This researcher specializes in computational oncology and precision medicine, focusing on the identification of novel genetic and molecular biomarkers to guide cancer treatment. By leveraging AI, neural networks, and graph convolution models, they decode complex genomic mutational signatures and transcriptomic data to predict patient response to immunotherapy, chemotherapy, and endocrine therapies. Their work aims to bridge the gap between high-dimensional molecular insights and practical clinical decision-making.",
-    "applicability": "The researcher's work has high translational potential, particularly in the development of AI-driven diagnostic software that integrates with existing clinical sequencing pipelines to improve patient stratification. These proprietary algorithms for identifying actionable mutational signatures from sparse panel data are highly licensable to diagnostic firms and biopharma companies seeking to improve clinical trial efficacy and precision prescribing. Given the reliance on existing clinical data structures, these technologies offer a clear, near-term path toward commercial adoption as clinical decision support tools.",
-    "fields": [
-      "Diagnostics",
-      "Genomics",
-      "Software/AI",
-      "Clinical",
-      "Immunology",
-      "Drug Discovery",
-      "Neuroscience"
-    ],
-    "branches": [
-      "Exact & Social Sciences",
-      "Healthcare"
-    ],
-    "papers": [
-      {
-        "id": "pubmed_42378718",
-        "title": "APOBEC mutational signatures predict immune checkpoint inhibitor benefit in TMB-low metastatic NSCLC independent of PD-L1 status.",
-        "date": "2026",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42378718/",
-        "journal": "ESMO open",
-        "score": 32,
-        "summary": "Researchers discovered that a specific genetic mutation pattern called APOBEC can predict which lung cancer patients will respond to immunotherapy, even when their overall mutation levels are low. This provides a new way to identify eligible patients who would have otherwise been excluded based on standard biomarkers.",
-        "opportunity": "Development of a companion diagnostic test using the MESiCA machine-learning algorithm to expand the addressable patient population for immune checkpoint inhibitors in NSCLC.",
-        "fields": [
-          "Diagnostics",
-          "Genomics",
-          "Immunology",
-          "Software/AI"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 6,
-            "reason": "The research applies existing knowledge of APOBEC signatures to a specific clinical gap (TMB-low NSCLC), providing useful refinement of patient selection rather than introducing a fundamentally new biological mechanism or novel technology."
-          },
-          "commercial_potential": {
-            "score": 8,
-            "reason": "The paper identifies a clinically actionable biomarker for a significant underserved patient population (TMB-low NSCLC) using a machine-learning tool (MESiCA) compatible with existing targeted gene panels, making it highly translatable into a companion diagnostic service."
-          },
-          "market_size": {
-            "score": 8,
-            "reason": "The target market is substantial, addressing the 60-70% of metastatic NSCLC patients who are TMB-low and currently lack precise biomarker-guided immunotherapy options. This represents a high-value clinical gap in a major oncology indication."
-          },
-          "trl": {
-            "score": 6,
-            "reason": "The study utilizes an existing ML algorithm (MESiCA) and retrospective cohorts to validate a biomarker, moving beyond basic discovery into clinical validation. However, it remains at the stage of retrospective analysis and external validation, lacking the prospective clinical trial data required for immediate clinical implementation."
-          },
-          "ip_strength": {
-            "score": 4,
-            "reason": "The paper describes a diagnostic discovery based on existing genomic signatures and a known ML algorithm (MESiCA), which likely lacks novel patentable composition or method claims. Defensibility is low as it relies on the correlation of existing biomarkers rather than a proprietary platform or a novel therapeutic molecule."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": 33,
-        "prev_eval_model": "",
-        "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem, Israel; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-        "pi_email": "adar.yaacov@mail.huji.ac.il.",
-        "abstract": "∼60%-70% of patients with metastatic non-small cell lung cancer (NSCLC) have relatively low tumor mutational burden (TMB), with limited biomarker-guided immunotherapy options beyond programmed death-ligand 1 (PD-L1) expression. APOBEC (apolipoprotein B mRNA editing enzyme, catalytic polypeptide-like) mutational signatures, defined by characteristic genomic footprints, are associated with higher TMB and a better response to immune checkpoint inhibitors (ICIs). However, whether APOBEC independently predicts ICI response in TMB-low tumors has not been established. We analyzed 857 ICI-treated and 1328 ICI-untreated TMB-low (<10 mut/Mb) patients with metastatic NSCLC from the MSK-CHORD cohort. APOBEC status was classified using MESiCA, a machine-learning algorithm for mutational signature detection from targeted gene panels. Predictive value was established through treatment interaction testing, multivariate adjustment, propensity score weighting, and landmark analyses. External validation included 82 TMB-low patients from published whole-exome sequencing studies. APOBEC-positive patients (n = 52, 6.1%) had significantly improved overall survival [median 33.7 versus 17.4 months; hazard ratio (HR) 0.60, 95% confidence interval (CI) 0.42-0.85, P = 0.004]. No such benefit was observed in ICI-untreated patients (HR 0.98, P = 0.85), with significant treatment interaction (P = 0.032), confirming a predictive rather than prognostic effect. APOBEC remained independently predictive after adjustment for PD-L1 status and age (adjusted HR 0.57, P = 0.002). The benefit was particularly pronounced in PD-L1-negative ICI-treated patients (HR 0.51, P = 0.002). The effect was robust across propensity score, landmark, and bootstrap analyses. External validation confirmed independent APOBEC benefit (adjusted HR 0.23, P = 0.020). APOBEC mutational signatures represent a robust predictive biomarker for ICI response in TMB-low metastatic NSCLC, identifying responders particularly among PD-L1-negative patients where biomarker guidance is most needed, detectable from targeted gene panels used in routine clinical practice.",
-        "hts_score": 3,
-        "hts_reason": "The paper identifies APOBEC activity as a biomarker for clinical prognosis but does not define a specific molecular target for drug development, nor does it propose a high-throughput screening assay for therapeutic modulation.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      },
-      {
-        "id": "pubmed_42238456",
-        "title": "CBFB mutations predict endocrine therapy benefit in estrogen receptor-positive breast cancer.",
-        "date": "2026",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42238456/",
-        "journal": "medRxiv : the preprint server for health sciences",
-        "score": 34,
-        "summary": "Researchers identified that mutations in the CBFB gene serve as a highly accurate biomarker for predicting which estrogen receptor-positive breast cancer patients will respond well to endocrine therapy. This discovery allows for better patient stratification, specifically identifying a subset of patients who experience significantly longer periods before disease progression.",
-        "opportunity": "Development of a companion diagnostic test to personalize endocrine therapy selection for ER+ breast cancer patients, reducing ineffective treatments and improving clinical outcomes.",
-        "fields": [
-          "Diagnostics",
-          "Genomics",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 8,
-            "reason": "The identification of CBFB mutations as a specific, unbiased genomic predictor for endocrine therapy response represents a significant leap over current ER-status-only paradigms. It provides a highly actionable and clinically relevant biomarker that could redefine patient stratification in the ER+ breast cancer space."
-          },
-          "commercial_potential": {
-            "score": 7,
-            "reason": "The study identifies a highly actionable companion diagnostic biomarker with strong clinical validation across large cohorts, addressing a significant unmet need in precision oncology. However, the low prevalence (~5%) and the requirement for integration into existing multi-gene assay panels may limit standalone commercial standalone pricing power."
-          },
-          "market_size": {
-            "score": 7,
-            "reason": "The target population is the massive ER+ breast cancer market, one of the largest oncology segments; however, the specific biomarker-driven niche is limited to the ~5% of patients with CBFB mutations."
-          },
-          "trl": {
-            "score": 7,
-            "reason": "The study demonstrates strong clinical validation across multiple large, independent cohorts (MSK-CHORD and METABRIC), moving the biomarker from discovery to a validated predictive tool. However, it remains at the stage of clinical evidence generation rather than being an integrated, cleared diagnostic test ready for immediate commercial deployment."
-          },
-          "ip_strength": {
-            "score": 5,
-            "reason": "The discovery of a predictive genomic biomarker (CBFB mutations) is highly valuable for clinical stratification, but biological correlations and natural mutations are difficult to patent compared to novel therapeutic compounds. Defensibility relies heavily on securing broad diagnostic method patents or proprietary algorithm IP rather than composition-of-matter protection."
-          }
-        },
-        "eval_model": "gemma-4-26b-a4b-it",
-        "prev_score": 27,
-        "prev_eval_model": "",
-        "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-        "pi_email": "",
-        "abstract": "Beyond estrogen receptor (ER) positivity, no genomic biomarker reliably identifies ER+ breast cancer patients who derive differential benefit from endocrine therapy (ET). We performed an unbiased genomic screen to discover genes predicting ET response and characterized the top candidate across clinical settings, treatment modalities, and an independent validation cohort. We screened 240 genes in 1,197 metastatic ET-treated patients from the MSK-CHORD clinical genomics database using Cox proportional hazards regression with false discovery rate (FDR) correction. The top candidate, core-binding factor subunit beta (CBFB), was characterized across four cohorts defined by disease setting (metastatic/adjuvant) and treatment (ET/chemotherapy), with multivariable adjustment, gene-by-treatment interaction testing, left-truncation sensitivity analysis for guarantee-time bias, and external validation in METABRIC (N = 1,499 ER+). CBFB mutations (prevalence, ~5%) were the only gene associated with improved time to progression (TTP). In metastatic ET patients, CBFB-mutated tumors (n = 80) demonstrated significantly longer TTP (hazard ratio [HR], 0.44; 95% CI, 0.29-0.67; P = .0002, FDR q = .010) with no chemotherapy benefit (HR, 1.16; P = .65). The gene-by-treatment interaction was significant (HR, 0.37; P = .009). Effects were robust to multivariable adjustment (HR, 0.46-0.50), independent of histology, and preserved under left-truncated Cox regression (HR, 0.38). In the adjuvant setting, CBFB mutations predicted improved recurrence-free survival (HR, 0.52; 95% CI, 0.31-0.85; P = .010), with no effect under chemotherapy. In METABRIC, CBFB mutations predicted improved ER+ overall survival (HR, 0.52; P = 9.3 × 10 CBFB mutations identify ~5% of ER+ breast cancers with exceptional ET benefit. As CBFB is included on all major cancer gene panels, this biomarker requires no additional testing infrastructure for clinical implementation.",
-        "hts_score": 5,
-        "hts_reason": "The paper identifies a specific target (CBFB mutations) and links it to a disease (ER+ breast cancer), but it lacks an assay or method suitable for high-throughput screening as it focuses on clinical genomic data and prognostic association rather than a druggable assay system.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      },
-      {
-        "id": "pubmed_41511341",
-        "title": "The Temozolomide Mutational Signature: Mechanisms, Clinical Implications, and Therapeutic Opportunities in Primary Brain Tumor Management.",
-        "date": "2025",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/41511341/",
-        "journal": "Cells",
-        "score": 17,
-        "summary": "This research examines how the chemotherapy drug Temozolomide induces specific genetic mutations in brain tumors, creating an evolutionary trade-off between killing cancer cells and driving resistance. By mapping this mutational signature, the authors identify new vulnerabilities in glioblastoma cells that could be targeted to overcome treatment failure.",
-        "opportunity": "Development of companion diagnostics to monitor TMZ-induced mutational signatures and the discovery of synthetic lethal drug combinations to target TMZ-resistant tumors.",
-        "fields": [
-          "Drug Discovery",
-          "Diagnostics",
-          "Genomics",
-          "Neuroscience"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 4,
-            "reason": "The paper focuses on the well-established mutational signatures of Temozolomide, providing a synthesis of existing mechanisms and clinical implications rather than introducing a groundbreaking discovery or a novel therapeutic platform."
-          },
-          "market_size": {
-            "score": 7,
-            "reason": "The target market is the global glioblastoma and diffuse glioma population, which represents a high-value, high-unmet-need oncology segment. While the patient population is smaller than breast or lung cancer, the critical need for TMZ-resistant alternatives creates significant addressable demand."
-          },
-          "trl": {
-            "score": 3,
-            "reason": "The paper focuses on mechanistic insights and clinical implications of mutational signatures, representing foundational basic science rather than a developed product or validated clinical tool."
-          },
-          "ip_strength": {
-            "score": 3,
-            "reason": "The paper appears to be a mechanistic study focusing on mutational signatures and clinical implications, which constitutes scientific discovery rather than a patentable invention or a proprietary platform."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": 10,
-        "prev_eval_model": "groq:llama-3.1-8b-instant",
-        "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem 9103102, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 7610001, Israel.",
-        "pi_email": "",
-        "abstract": "Temozolomide (TMZ) remains foundational in the management of adult-type diffuse gliomas in general, and glioblastoma specifically. However, its efficacy harbors an evolutionary trade-off. TMZ drives its cytotoxicity through generating O",
-        "hts_score": 3,
-        "hts_reason": "This is a review article describing existing mechanisms rather than proposing a novel screening target or a new high-throughput assay. It lacks the identification of a specific druggable target for an HTS campaign and focuses on clinical management of an established agent.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      },
-      {
-        "id": "pubmed_38866015",
-        "title": "Cancer mutational signatures identification in clinical assays using neural embedding-based representations.",
-        "date": "2024",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/38866015/",
-        "journal": "Cell reports. Medicine",
-        "score": 34,
-        "summary": "Researchers developed an AI model that can identify cancer mutational signatures using limited data from targeted gene panels rather than full genome sequencing. This allows clinicians to determine the cause and prognosis of a tumor using cheaper, faster, and more common clinical assays.",
-        "opportunity": "Development of a high-margin diagnostic software tool that enables precision oncology and survival prediction using standard clinical gene panels.",
-        "fields": [
-          "Diagnostics",
-          "Software/AI",
-          "Genomics",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 7,
-            "reason": "The application of neural embeddings to enable signature extraction from limited-mutation gene panels addresses a significant clinical bottleneck, moving beyond traditional whole-genome sequencing requirements. While embedding techniques are known in ML, applying them to solve the 'sparse data' problem in clinical oncology panels is a novel and highly practical innovation."
-          },
-          "commercial_potential": {
-            "score": 8,
-            "reason": "The technology enables a high-value transition from expensive Whole Genome Sequencing to affordable targeted gene panels for signature detection, creating a clear path for a diagnostic software-as-a-service (SaaS) or a licensable clinical assay."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "The technology targets the oncology diagnostics market by enabling high-value signature analysis on targeted gene panels rather than expensive whole-genome sequencing, dramatically expanding the addressable patient population. This is a platform-enabling approach for clinical assays used across almost all cancer types, representing a massive global market for precision medicine."
-          },
-          "trl": {
-            "score": 5,
-            "reason": "The work demonstrates a strong proof-of-concept by applying the model to a large dataset of 60,000 tumors, but it remains at the algorithmic validation stage. It lacks clinical trial data, regulatory validation, or integration into a diagnostic workflow required for near-market readiness."
-          },
-          "ip_strength": {
-            "score": 5,
-            "reason": "The innovation is a neural embedding-based method for signature prediction, which likely faces challenges regarding patentability due to the 'mathematical algorithm' nature of AI. Defensibility relies on the training data and specific architecture, but the core concept of using embeddings for mutation signatures is an incremental improvement in a crowded bioinformatics field."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": 35,
-        "prev_eval_model": "groq:llama-3.1-8b-instant",
-        "pi_affiliation": "Gaffin Center for Neuro-Oncology, Sharett Institute for Oncology, Hadassah Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel; The Wohl Institute for Translational Medicine, Hadassah Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel. Electronic address: shair@hadassah.org.il.",
-        "pi_email": "shair@hadassah.org.il.",
-        "abstract": "While mutational signatures provide a plethora of prognostic and therapeutic insights, their application in clinical-setting, targeted gene panels is extremely limited. We develop a mutational representation model (which learns and embeds specific mutation signature connections) that enables prediction of dominant signatures with only a few mutations. We predict the dominant signatures across more than 60,000 tumors with gene panels, delineating their landscape across different cancers. Dominant signature predictions in gene panels are of clinical importance. These included UV, tobacco, and apolipoprotein B mRNA editing enzyme, catalytic polypeptide (APOBEC) signatures that are associated with better survival, independently from mutational burden. Further analyses reveal gene and mutation associations with signatures, such as SBS5 with TP53 and APOBEC with FGFR3",
-        "hts_score": 4,
-        "hts_reason": "The paper identifies specific gene-signature associations (e.g., APOBEC/FGFR3) and links them to cancer, but it describes a computational prediction model rather than a specific experimental HTS-ready assay for drug discovery.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      },
-      {
-        "id": "pubmed_41751900",
-        "title": "Consensus Copy-Number Alteration Signatures from Clinical Panels Enable Pan-Cancer Risk Stratification and Therapy Response Association.",
-        "date": "2026",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/41751900/",
-        "journal": "International journal of molecular sciences",
-        "score": 36,
-        "summary": "Researchers developed a computational framework that extracts meaningful cancer genomic patterns from standard, low-coverage clinical sequencing panels. These patterns allow doctors to better predict patient survival and how they will respond to various cancer treatments across different tumor types.",
-        "opportunity": "The ability to extract high-value prognostic signatures from existing routine clinical panels presents a significant software-as-a-service (SaaS) opportunity for precision oncology diagnostic platforms and pharmaceutical companion diagnostics.",
-        "abstract": "Somatic copy-number alterations (CNAs) are pervasive in cancer, but routine targeted panels yield sparse CNA readouts unsuited for CNA signature analysis. We built a consensus framework that integrates four deconvolution algorithms to extract CNA signatures from panel data. Analysis of 24,870 tumors sequenced using MSK-IMPACT identified five reproducible signatures (CON1-CON5). CON5 mirrored near-diploid profiles, whereas the others captured distinct aneuploid patterns. Technical fidelity was confirmed by internal cross-validation and external validation in sarcoma and hepatocellular carcinoma cohorts. Clinically, these signatures were associated with overall survival across tumor types (hazard ratio 1.3-2.5; FDR < 0.01) and provided additive prognostic information beyond Fraction of Genome Altered. Associations with driver mutations (GATA3 in CON1, KRAS in CON5) supported biological specificity, and the signatures delineated resistance landscapes for chemotherapy, hormonal, targeted, and immunotherapy. By converting routine panel data into biologically interpretable prognostic features, our framework enables risk stratification and therapeutic guidance in precision oncology.",
-        "fields": [
-          "Diagnostics",
-          "Genomics",
-          "Software/AI",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 7,
-            "reason": "The novelty lies in the innovative algorithmic consensus framework that successfully converts low-resolution targeted panel data into high-resolution CNA signatures, bridging a known gap in routine clinical sequencing. While the concept of CNA signatures is established, the specific deconvolution approach to enable pan-cancer utility from sparse data represents a significant methodological advancement."
-          },
-          "commercial_potential": {
-            "score": 8,
-            "reason": "The framework transforms existing, routine clinical data into high-value prognostic insights without requiring new sequencing hardware, offering a highly scalable software-as-a-service or licensable bioinformatics model. It provides clear clinical utility by adding additive predictive value to standard-of-care panels for therapy selection and risk stratification."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "The framework transforms existing, high-volume routine clinical sequencing data (MSK-IMPACT style panels) into high-value prognostic tools, tapping into the massive, established precision oncology market without requiring new hardware. By adding predictive value to standard-of-care testing, it targets a multi-billion dollar addressable market across all major cancer indications."
-          },
-          "trl": {
-            "score": 7,
-            "reason": "The technology leverages existing routine clinical panel data (MSK-IMPACT) and has undergone extensive retrospective validation on a massive cohort (24,870 tumors), placing it beyond basic lab research and into the realm of a near-market clinical decision support tool."
-          },
-          "ip_strength": {
-            "score": 5,
-            "reason": "The innovation is a computational consensus framework (bioinformatic algorithm) rather than a novel molecular assay or hardware, making it harder to protect via patents compared to a physical tool. While the specific deconvolution combination might be patentable as a method, the underlying reliance on existing clinical panel data and public algorithms limits its long-term defensibility against competitors."
-          }
-        },
-        "eval_model": "gemma-4-26b-a4b-it",
-        "prev_score": 38,
-        "prev_eval_model": "gemini-3.1-flash-lite",
-        "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem 9103102, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 7610001, Israel.",
-        "pi_email": "",
-        "hts_score": 3,
-        "hts_reason": "The paper focuses on computational signatures (CON1-CON5) rather than a specific druggable molecular target, and it provides a data-analysis framework rather than a high-throughput biological assay suitable for small-molecule screening.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      }
-    ],
-    "max_hts_score": 5
-  },
-  {
     "pi": "Liron Kogan",
     "pi_full_name": "Liron Kogan",
     "pi_email": "lironkogan@yahoo.com.",
@@ -16071,6 +15860,307 @@
       }
     ],
     "max_hts_score": 7
+  },
+  {
+    "pi": "A Yaacov",
+    "pi_full_name": "A Yaacov",
+    "pi_email": "adar.yaacov@mail.huji.ac.il.",
+    "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "avg_score": 30.2,
+    "max_hts_score": 5,
+    "paper_count": 6,
+    "description": "This researcher specializes in cancer genomics and computational oncology, focusing on the identification of mutational signatures and copy-number alterations. They combine biological discovery with AI-driven models to turn complex genomic data into actionable clinical biomarkers for therapy response and patient stratification.",
+    "applicability": "Their work has high translational value for the development of companion diagnostics (CDx) and AI-based clinical decision support tools. The ability to extract high-value genomic insights from low-cost, targeted panels suggests immediate opportunities for licensing to diagnostic companies or partnerships with pharmaceutical firms seeking to optimize clinical trial enrollment and patient selection.",
+    "fields": [
+      "Diagnostics",
+      "Genomics",
+      "Software/AI",
+      "Clinical",
+      "Immunology",
+      "Drug Discovery",
+      "Neuroscience"
+    ],
+    "branches": [
+      "Exact & Social Sciences",
+      "Healthcare"
+    ],
+    "papers": [
+      {
+        "id": "pubmed_42378718",
+        "title": "APOBEC mutational signatures predict immune checkpoint inhibitor benefit in TMB-low metastatic NSCLC independent of PD-L1 status.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42378718/",
+        "journal": "ESMO open",
+        "score": 32,
+        "summary": "Researchers discovered that a specific genetic mutation pattern called APOBEC can predict which lung cancer patients will respond to immunotherapy, even when their overall mutation levels are low. This provides a new way to identify eligible patients who would have otherwise been excluded based on standard biomarkers.",
+        "opportunity": "Development of a companion diagnostic test using the MESiCA machine-learning algorithm to expand the addressable patient population for immune checkpoint inhibitors in NSCLC.",
+        "fields": [
+          "Diagnostics",
+          "Genomics",
+          "Immunology",
+          "Software/AI"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 6,
+            "reason": "The research applies existing knowledge of APOBEC signatures to a specific clinical gap (TMB-low NSCLC), providing useful refinement of patient selection rather than introducing a fundamentally new biological mechanism or novel technology."
+          },
+          "commercial_potential": {
+            "score": 8,
+            "reason": "The paper identifies a clinically actionable biomarker for a significant underserved patient population (TMB-low NSCLC) using a machine-learning tool (MESiCA) compatible with existing targeted gene panels, making it highly translatable into a companion diagnostic service."
+          },
+          "market_size": {
+            "score": 8,
+            "reason": "The target market is substantial, addressing the 60-70% of metastatic NSCLC patients who are TMB-low and currently lack precise biomarker-guided immunotherapy options. This represents a high-value clinical gap in a major oncology indication."
+          },
+          "trl": {
+            "score": 6,
+            "reason": "The study utilizes an existing ML algorithm (MESiCA) and retrospective cohorts to validate a biomarker, moving beyond basic discovery into clinical validation. However, it remains at the stage of retrospective analysis and external validation, lacking the prospective clinical trial data required for immediate clinical implementation."
+          },
+          "ip_strength": {
+            "score": 4,
+            "reason": "The paper describes a diagnostic discovery based on existing genomic signatures and a known ML algorithm (MESiCA), which likely lacks novel patentable composition or method claims. Defensibility is low as it relies on the correlation of existing biomarkers rather than a proprietary platform or a novel therapeutic molecule."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": 33,
+        "prev_eval_model": "",
+        "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem, Israel; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+        "pi_email": "adar.yaacov@mail.huji.ac.il.",
+        "abstract": "∼60%-70% of patients with metastatic non-small cell lung cancer (NSCLC) have relatively low tumor mutational burden (TMB), with limited biomarker-guided immunotherapy options beyond programmed death-ligand 1 (PD-L1) expression. APOBEC (apolipoprotein B mRNA editing enzyme, catalytic polypeptide-like) mutational signatures, defined by characteristic genomic footprints, are associated with higher TMB and a better response to immune checkpoint inhibitors (ICIs). However, whether APOBEC independently predicts ICI response in TMB-low tumors has not been established. We analyzed 857 ICI-treated and 1328 ICI-untreated TMB-low (<10 mut/Mb) patients with metastatic NSCLC from the MSK-CHORD cohort. APOBEC status was classified using MESiCA, a machine-learning algorithm for mutational signature detection from targeted gene panels. Predictive value was established through treatment interaction testing, multivariate adjustment, propensity score weighting, and landmark analyses. External validation included 82 TMB-low patients from published whole-exome sequencing studies. APOBEC-positive patients (n = 52, 6.1%) had significantly improved overall survival [median 33.7 versus 17.4 months; hazard ratio (HR) 0.60, 95% confidence interval (CI) 0.42-0.85, P = 0.004]. No such benefit was observed in ICI-untreated patients (HR 0.98, P = 0.85), with significant treatment interaction (P = 0.032), confirming a predictive rather than prognostic effect. APOBEC remained independently predictive after adjustment for PD-L1 status and age (adjusted HR 0.57, P = 0.002). The benefit was particularly pronounced in PD-L1-negative ICI-treated patients (HR 0.51, P = 0.002). The effect was robust across propensity score, landmark, and bootstrap analyses. External validation confirmed independent APOBEC benefit (adjusted HR 0.23, P = 0.020). APOBEC mutational signatures represent a robust predictive biomarker for ICI response in TMB-low metastatic NSCLC, identifying responders particularly among PD-L1-negative patients where biomarker guidance is most needed, detectable from targeted gene panels used in routine clinical practice.",
+        "hts_score": 3,
+        "hts_reason": "The paper identifies APOBEC activity as a biomarker for clinical prognosis but does not define a specific molecular target for drug development, nor does it propose a high-throughput screening assay for therapeutic modulation.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      },
+      {
+        "id": "pubmed_42238456",
+        "title": "CBFB mutations predict endocrine therapy benefit in estrogen receptor-positive breast cancer.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42238456/",
+        "journal": "medRxiv : the preprint server for health sciences",
+        "score": 34,
+        "summary": "Researchers identified that mutations in the CBFB gene serve as a highly accurate biomarker for predicting which estrogen receptor-positive breast cancer patients will respond well to endocrine therapy. This discovery allows for better patient stratification, specifically identifying a subset of patients who experience significantly longer periods before disease progression.",
+        "opportunity": "Development of a companion diagnostic test to personalize endocrine therapy selection for ER+ breast cancer patients, reducing ineffective treatments and improving clinical outcomes.",
+        "fields": [
+          "Diagnostics",
+          "Genomics",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 8,
+            "reason": "The identification of CBFB mutations as a specific, unbiased genomic predictor for endocrine therapy response represents a significant leap over current ER-status-only paradigms. It provides a highly actionable and clinically relevant biomarker that could redefine patient stratification in the ER+ breast cancer space."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The study identifies a highly actionable companion diagnostic biomarker with strong clinical validation across large cohorts, addressing a significant unmet need in precision oncology. However, the low prevalence (~5%) and the requirement for integration into existing multi-gene assay panels may limit standalone commercial standalone pricing power."
+          },
+          "market_size": {
+            "score": 7,
+            "reason": "The target population is the massive ER+ breast cancer market, one of the largest oncology segments; however, the specific biomarker-driven niche is limited to the ~5% of patients with CBFB mutations."
+          },
+          "trl": {
+            "score": 7,
+            "reason": "The study demonstrates strong clinical validation across multiple large, independent cohorts (MSK-CHORD and METABRIC), moving the biomarker from discovery to a validated predictive tool. However, it remains at the stage of clinical evidence generation rather than being an integrated, cleared diagnostic test ready for immediate commercial deployment."
+          },
+          "ip_strength": {
+            "score": 5,
+            "reason": "The discovery of a predictive genomic biomarker (CBFB mutations) is highly valuable for clinical stratification, but biological correlations and natural mutations are difficult to patent compared to novel therapeutic compounds. Defensibility relies heavily on securing broad diagnostic method patents or proprietary algorithm IP rather than composition-of-matter protection."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 27,
+        "prev_eval_model": "",
+        "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+        "pi_email": "",
+        "abstract": "Beyond estrogen receptor (ER) positivity, no genomic biomarker reliably identifies ER+ breast cancer patients who derive differential benefit from endocrine therapy (ET). We performed an unbiased genomic screen to discover genes predicting ET response and characterized the top candidate across clinical settings, treatment modalities, and an independent validation cohort. We screened 240 genes in 1,197 metastatic ET-treated patients from the MSK-CHORD clinical genomics database using Cox proportional hazards regression with false discovery rate (FDR) correction. The top candidate, core-binding factor subunit beta (CBFB), was characterized across four cohorts defined by disease setting (metastatic/adjuvant) and treatment (ET/chemotherapy), with multivariable adjustment, gene-by-treatment interaction testing, left-truncation sensitivity analysis for guarantee-time bias, and external validation in METABRIC (N = 1,499 ER+). CBFB mutations (prevalence, ~5%) were the only gene associated with improved time to progression (TTP). In metastatic ET patients, CBFB-mutated tumors (n = 80) demonstrated significantly longer TTP (hazard ratio [HR], 0.44; 95% CI, 0.29-0.67; P = .0002, FDR q = .010) with no chemotherapy benefit (HR, 1.16; P = .65). The gene-by-treatment interaction was significant (HR, 0.37; P = .009). Effects were robust to multivariable adjustment (HR, 0.46-0.50), independent of histology, and preserved under left-truncated Cox regression (HR, 0.38). In the adjuvant setting, CBFB mutations predicted improved recurrence-free survival (HR, 0.52; 95% CI, 0.31-0.85; P = .010), with no effect under chemotherapy. In METABRIC, CBFB mutations predicted improved ER+ overall survival (HR, 0.52; P = 9.3 × 10 CBFB mutations identify ~5% of ER+ breast cancers with exceptional ET benefit. As CBFB is included on all major cancer gene panels, this biomarker requires no additional testing infrastructure for clinical implementation.",
+        "hts_score": 5,
+        "hts_reason": "The paper identifies a specific target (CBFB mutations) and links it to a disease (ER+ breast cancer), but it lacks an assay or method suitable for high-throughput screening as it focuses on clinical genomic data and prognostic association rather than a druggable assay system.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      },
+      {
+        "id": "pubmed_41511341",
+        "title": "The Temozolomide Mutational Signature: Mechanisms, Clinical Implications, and Therapeutic Opportunities in Primary Brain Tumor Management.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41511341/",
+        "journal": "Cells",
+        "score": 17,
+        "summary": "This research examines how the chemotherapy drug Temozolomide induces specific genetic mutations in brain tumors, creating an evolutionary trade-off between killing cancer cells and driving resistance. By mapping this mutational signature, the authors identify new vulnerabilities in glioblastoma cells that could be targeted to overcome treatment failure.",
+        "opportunity": "Development of companion diagnostics to monitor TMZ-induced mutational signatures and the discovery of synthetic lethal drug combinations to target TMZ-resistant tumors.",
+        "fields": [
+          "Drug Discovery",
+          "Diagnostics",
+          "Genomics",
+          "Neuroscience"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "The paper focuses on the well-established mutational signatures of Temozolomide, providing a synthesis of existing mechanisms and clinical implications rather than introducing a groundbreaking discovery or a novel therapeutic platform."
+          },
+          "market_size": {
+            "score": 7,
+            "reason": "The target market is the global glioblastoma and diffuse glioma population, which represents a high-value, high-unmet-need oncology segment. While the patient population is smaller than breast or lung cancer, the critical need for TMZ-resistant alternatives creates significant addressable demand."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The paper focuses on mechanistic insights and clinical implications of mutational signatures, representing foundational basic science rather than a developed product or validated clinical tool."
+          },
+          "ip_strength": {
+            "score": 3,
+            "reason": "The paper appears to be a mechanistic study focusing on mutational signatures and clinical implications, which constitutes scientific discovery rather than a patentable invention or a proprietary platform."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": 10,
+        "prev_eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem 9103102, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 7610001, Israel.",
+        "pi_email": "",
+        "abstract": "Temozolomide (TMZ) remains foundational in the management of adult-type diffuse gliomas in general, and glioblastoma specifically. However, its efficacy harbors an evolutionary trade-off. TMZ drives its cytotoxicity through generating O",
+        "hts_score": 3,
+        "hts_reason": "This is a review article describing existing mechanisms rather than proposing a novel screening target or a new high-throughput assay. It lacks the identification of a specific druggable target for an HTS campaign and focuses on clinical management of an established agent.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      },
+      {
+        "id": "pubmed_38866015",
+        "title": "Cancer mutational signatures identification in clinical assays using neural embedding-based representations.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38866015/",
+        "journal": "Cell reports. Medicine",
+        "score": 34,
+        "summary": "Researchers developed an AI model that can identify cancer mutational signatures using limited data from targeted gene panels rather than full genome sequencing. This allows clinicians to determine the cause and prognosis of a tumor using cheaper, faster, and more common clinical assays.",
+        "opportunity": "Development of a high-margin diagnostic software tool that enables precision oncology and survival prediction using standard clinical gene panels.",
+        "fields": [
+          "Diagnostics",
+          "Software/AI",
+          "Genomics",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 7,
+            "reason": "The application of neural embeddings to enable signature extraction from limited-mutation gene panels addresses a significant clinical bottleneck, moving beyond traditional whole-genome sequencing requirements. While embedding techniques are known in ML, applying them to solve the 'sparse data' problem in clinical oncology panels is a novel and highly practical innovation."
+          },
+          "commercial_potential": {
+            "score": 8,
+            "reason": "The technology enables a high-value transition from expensive Whole Genome Sequencing to affordable targeted gene panels for signature detection, creating a clear path for a diagnostic software-as-a-service (SaaS) or a licensable clinical assay."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The technology targets the oncology diagnostics market by enabling high-value signature analysis on targeted gene panels rather than expensive whole-genome sequencing, dramatically expanding the addressable patient population. This is a platform-enabling approach for clinical assays used across almost all cancer types, representing a massive global market for precision medicine."
+          },
+          "trl": {
+            "score": 5,
+            "reason": "The work demonstrates a strong proof-of-concept by applying the model to a large dataset of 60,000 tumors, but it remains at the algorithmic validation stage. It lacks clinical trial data, regulatory validation, or integration into a diagnostic workflow required for near-market readiness."
+          },
+          "ip_strength": {
+            "score": 5,
+            "reason": "The innovation is a neural embedding-based method for signature prediction, which likely faces challenges regarding patentability due to the 'mathematical algorithm' nature of AI. Defensibility relies on the training data and specific architecture, but the core concept of using embeddings for mutation signatures is an incremental improvement in a crowded bioinformatics field."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": 35,
+        "prev_eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "Gaffin Center for Neuro-Oncology, Sharett Institute for Oncology, Hadassah Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel; The Wohl Institute for Translational Medicine, Hadassah Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel. Electronic address: shair@hadassah.org.il.",
+        "pi_email": "shair@hadassah.org.il.",
+        "abstract": "While mutational signatures provide a plethora of prognostic and therapeutic insights, their application in clinical-setting, targeted gene panels is extremely limited. We develop a mutational representation model (which learns and embeds specific mutation signature connections) that enables prediction of dominant signatures with only a few mutations. We predict the dominant signatures across more than 60,000 tumors with gene panels, delineating their landscape across different cancers. Dominant signature predictions in gene panels are of clinical importance. These included UV, tobacco, and apolipoprotein B mRNA editing enzyme, catalytic polypeptide (APOBEC) signatures that are associated with better survival, independently from mutational burden. Further analyses reveal gene and mutation associations with signatures, such as SBS5 with TP53 and APOBEC with FGFR3",
+        "hts_score": 4,
+        "hts_reason": "The paper identifies specific gene-signature associations (e.g., APOBEC/FGFR3) and links them to cancer, but it describes a computational prediction model rather than a specific experimental HTS-ready assay for drug discovery.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      },
+      {
+        "id": "pubmed_41751900",
+        "title": "Consensus Copy-Number Alteration Signatures from Clinical Panels Enable Pan-Cancer Risk Stratification and Therapy Response Association.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41751900/",
+        "journal": "International journal of molecular sciences",
+        "score": 36,
+        "summary": "Researchers developed a computational framework that extracts meaningful cancer genomic patterns from standard, low-coverage clinical sequencing panels. These patterns allow doctors to better predict patient survival and how they will respond to various cancer treatments across different tumor types.",
+        "opportunity": "The ability to extract high-value prognostic signatures from existing routine clinical panels presents a significant software-as-a-service (SaaS) opportunity for precision oncology diagnostic platforms and pharmaceutical companion diagnostics.",
+        "abstract": "Somatic copy-number alterations (CNAs) are pervasive in cancer, but routine targeted panels yield sparse CNA readouts unsuited for CNA signature analysis. We built a consensus framework that integrates four deconvolution algorithms to extract CNA signatures from panel data. Analysis of 24,870 tumors sequenced using MSK-IMPACT identified five reproducible signatures (CON1-CON5). CON5 mirrored near-diploid profiles, whereas the others captured distinct aneuploid patterns. Technical fidelity was confirmed by internal cross-validation and external validation in sarcoma and hepatocellular carcinoma cohorts. Clinically, these signatures were associated with overall survival across tumor types (hazard ratio 1.3-2.5; FDR < 0.01) and provided additive prognostic information beyond Fraction of Genome Altered. Associations with driver mutations (GATA3 in CON1, KRAS in CON5) supported biological specificity, and the signatures delineated resistance landscapes for chemotherapy, hormonal, targeted, and immunotherapy. By converting routine panel data into biologically interpretable prognostic features, our framework enables risk stratification and therapeutic guidance in precision oncology.",
+        "fields": [
+          "Diagnostics",
+          "Genomics",
+          "Software/AI",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 7,
+            "reason": "The novelty lies in the innovative algorithmic consensus framework that successfully converts low-resolution targeted panel data into high-resolution CNA signatures, bridging a known gap in routine clinical sequencing. While the concept of CNA signatures is established, the specific deconvolution approach to enable pan-cancer utility from sparse data represents a significant methodological advancement."
+          },
+          "commercial_potential": {
+            "score": 8,
+            "reason": "The framework transforms existing, routine clinical data into high-value prognostic insights without requiring new sequencing hardware, offering a highly scalable software-as-a-service or licensable bioinformatics model. It provides clear clinical utility by adding additive predictive value to standard-of-care panels for therapy selection and risk stratification."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The framework transforms existing, high-volume routine clinical sequencing data (MSK-IMPACT style panels) into high-value prognostic tools, tapping into the massive, established precision oncology market without requiring new hardware. By adding predictive value to standard-of-care testing, it targets a multi-billion dollar addressable market across all major cancer indications."
+          },
+          "trl": {
+            "score": 7,
+            "reason": "The technology leverages existing routine clinical panel data (MSK-IMPACT) and has undergone extensive retrospective validation on a massive cohort (24,870 tumors), placing it beyond basic lab research and into the realm of a near-market clinical decision support tool."
+          },
+          "ip_strength": {
+            "score": 5,
+            "reason": "The innovation is a computational consensus framework (bioinformatic algorithm) rather than a novel molecular assay or hardware, making it harder to protect via patents compared to a physical tool. While the specific deconvolution combination might be patentable as a method, the underlying reliance on existing clinical panel data and public algorithms limits its long-term defensibility against competitors."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 38,
+        "prev_eval_model": "gemini-3.1-flash-lite",
+        "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem 9103102, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 7610001, Israel.",
+        "pi_email": "",
+        "hts_score": 3,
+        "hts_reason": "The paper focuses on computational signatures (CON1-CON5) rather than a specific druggable molecular target, and it provides a data-analysis framework rather than a high-throughput biological assay suitable for small-molecule screening.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      },
+      {
+        "id": "pubmed_42453696",
+        "title": "From matching to facilitation: Reframing AI's role in clinical trial enrollment.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42453696/",
+        "journal": "Patterns (New York, N.Y.)",
+        "score": 28,
+        "summary": "The paper argues that AI's current focus on matching patients to clinical trials is insufficient because enrollment failures are caused by systemic logistics rather than a lack of information. It proposes shifting AI's purpose toward facilitating the actual operational workflow and consent process to increase patient participation.",
+        "opportunity": "Development of an AI-driven 'Trial Operating System' that automates clinical logistics and patient onboarding rather than just identification.",
+        "abstract": "Yaacov, Levi, and Peled argue that AI-powered clinical trial matching has achieved near-expert technical accuracy yet fails to increase patient enrollment because the dominant bottleneck is systemic-involving logistics, workflow misalignment, and consent burden-not informational. They propose reframing AI's role from matching engine to trial facilitation system.",
+        "fields": [
+          "Software/AI",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 6,
+            "reason": "The paper provides a valuable conceptual shift from 'matching' to 'facilitation' to address systemic bottlenecks, but it proposes a reframing of existing workflows rather than a fundamental scientific or technical breakthrough."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The shift from a saturated 'matching' market to a 'facilitation' system addresses a high-value systemic pain point in drug development, creating significant opportunities for B2B SaaS integration into clinical workflows."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "Clinical trial enrollment is a multi-billion dollar systemic bottleneck for the global pharmaceutical industry; moving from simple matching to end-to-end facilitation addresses a massive, high-value addressable market."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The paper is a conceptual reframing and theoretical argument rather than a technical implementation or a validated prototype. It identifies a systemic bottleneck but does not present a functional 'facilitation system' ready for clinical deployment."
+          },
+          "ip_strength": {
+            "score": 3,
+            "reason": "The paper proposes a conceptual reframing and strategic shift in AI application rather than a novel technical algorithm or a proprietary chemical entity. As a theoretical shift in workflow and system design, it lacks the specific technical novelty required for strong patentability or deep-tech defensibility."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+        "pi_email": "",
+        "hts_score": 1,
+        "hts_reason": "This is a systemic/operational paper about AI in clinical trial logistics. It contains no biological target, no specific disease mechanism, and no biochemical assay.",
+        "hts_eval_model": "gemma-4-31b-it"
+      }
+    ]
   },
   {
     "pi": "Johnathan Arnon",
