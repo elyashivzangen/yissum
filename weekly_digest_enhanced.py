@@ -16,6 +16,8 @@ import requests
 from pathlib import Path
 from google import genai
 
+import yissum_report as yr
+
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -626,9 +628,14 @@ def main(monthly=False):
         papers = load_top_papers(branch_name=branch, top_n=top_n)
         print(f"  {len(papers)} candidates (top {top_n} by score).")
 
+        # Requests #2 + #4: HUJI-primary researchers only, and only
+        # high-potential papers (score > 25) — else the 2 best as a fallback.
+        papers, is_fallback = yr.select_report_papers(papers)
         if not papers:
-            print(f"  No papers found for {label} — skipping.")
+            print(f"  No HUJI-primary papers for {label} — skipping.")
             continue
+        print(f"  {len(papers)} HUJI-primary paper(s) selected "
+              f"({'FALLBACK — no high-potential' if is_fallback else 'high-potential'}).")
 
         print("Asking Gemini to curate the digest...")
         curation = curate_with_gemini(papers, monthly=monthly)
@@ -646,9 +653,12 @@ def main(monthly=False):
                 print(f"  Searching for: {paper['title'][:60]}...")
                 enrichments[idx] = enrich_paper_with_search(paper)
 
-        print("Generating PDF...")
-        generate_pdf(papers, curation, monthly=monthly, branch=branch,
-                     pi_trends=pi_trends, enrichments=enrichments)
+        print("Generating HTML + PDF reports...")
+        yr.generate_reports(
+            papers, curation, monthly=monthly, branch=branch,
+            is_fallback=is_fallback, out_dir=DIGESTS_DIR, variant="_enhanced",
+            pi_trends=pi_trends, enrichments=enrichments,
+        )
 
     print("\nAll digests done.")
 
