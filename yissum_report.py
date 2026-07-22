@@ -22,6 +22,7 @@ The two public entry points are:
   generate_reports(papers, curation, ...) -> (html_path, pdf_path)
 """
 
+import base64
 import datetime
 import html
 import json
@@ -35,8 +36,25 @@ from reportlab.lib.units import mm
 from reportlab.lib.enums import TA_JUSTIFY, TA_LEFT
 from reportlab.platypus import (
     SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, HRFlowable,
-    KeepTogether,
+    KeepTogether, Image,
 )
+
+# ── Brand logo assets (Yissum + Hebrew University) ────────────────────────────
+ASSETS_DIR      = Path(__file__).resolve().parent / "assets"
+YISSUM_LOGO_SVG = ASSETS_DIR / "yissum_logo.svg"
+YISSUM_LOGO_PNG = ASSETS_DIR / "yissum_logo.png"
+HUJI_LOGO_PNG   = ASSETS_DIR / "huji_logo.png"
+
+
+def _data_uri(path, mime):
+    try:
+        return f"data:{mime};base64," + base64.b64encode(Path(path).read_bytes()).decode()
+    except Exception:
+        return ""
+
+
+YISSUM_LOGO_URI = _data_uri(YISSUM_LOGO_SVG, "image/svg+xml")
+HUJI_LOGO_URI   = _data_uri(HUJI_LOGO_PNG, "image/png")
 
 # ── Public config ─────────────────────────────────────────────────────────────
 
@@ -84,6 +102,20 @@ LOGO_SVG = (
     'letter-spacing=".3" fill="#6b7c8f">THE HEBREW UNIVERSITY TECH TRANSFER COMPANY</text>'
     '</svg>'
 )
+
+
+def _brand_html():
+    """The Yissum + Hebrew University logo lockup for the report header.
+
+    Falls back to the inline SVG wordmark if the asset files are missing.
+    """
+    if YISSUM_LOGO_URI and HUJI_LOGO_URI:
+        return (
+            f'<img class="logo-y" src="{YISSUM_LOGO_URI}" alt="Yissum">'
+            f'<span class="divider"></span>'
+            f'<img class="logo-h" src="{HUJI_LOGO_URI}" alt="The Hebrew University of Jerusalem">'
+        )
+    return LOGO_SVG
 
 
 # ── Business rules ─────────────────────────────────────────────────────────────
@@ -169,6 +201,24 @@ def metric_color(s):
     if s >= 5:
         return AMBER
     return RED
+
+
+def _breakdown(p):
+    """Return score_breakdown as a dict, tolerating a raw JSON string.
+
+    weekly_digest.py's loader parses ``fields`` but leaves ``score_breakdown``
+    as the raw CSV string, so coerce it here rather than assuming a dict.
+    """
+    bd = p.get("score_breakdown")
+    if isinstance(bd, str):
+        bd = bd.strip()
+        if not bd:
+            return {}
+        try:
+            bd = json.loads(bd)
+        except Exception:
+            return {}
+    return bd if isinstance(bd, dict) else {}
 
 
 def _pi_name(p):
@@ -263,6 +313,10 @@ body{margin:0;background:var(--bg);color:var(--text);
 .wrap{max-width:1000px;margin:0 auto;padding:24px 18px 60px}
 .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;
   flex-wrap:wrap;padding:6px 4px 22px}
+.brand{display:flex;align-items:center;gap:16px}
+.brand img.logo-y{height:42px;width:auto;display:block}
+.brand img.logo-h{height:38px;width:auto;display:block}
+.brand .divider{width:1px;height:34px;background:#d5dde3}
 .dash-btn{background:var(--teal);color:#fff;text-decoration:none;font-weight:700;
   font-size:.92rem;padding:11px 20px;border-radius:8px;white-space:nowrap;
   box-shadow:0 2px 8px rgba(21,154,138,.25);transition:background .15s}
@@ -334,7 +388,7 @@ function tm(btn){var r=btn.nextElementSibling;if(!r)return;
 
 
 def _metric_html(paper):
-    bd = paper.get("score_breakdown") or {}
+    bd = _breakdown(paper)
     if not bd:
         return ""
     rows = []
@@ -484,7 +538,7 @@ def render_html(papers, curation, meta, is_fallback, pi_trends=None, enrichments
 <body>
 <div class="wrap">
   <div class="topbar">
-    {LOGO_SVG}
+    <div class="brand">{_brand_html()}</div>
     <a class="dash-btn" href="{_e(DASHBOARD_URL)}" target="_blank">Open Dashboard →</a>
   </div>
   <div class="sheet">
@@ -545,7 +599,7 @@ def _pdf_styles():
 
 
 def _pdf_metric_rows(paper, st, page_w):
-    bd = paper.get("score_breakdown") or {}
+    bd = _breakdown(paper)
     if not bd:
         return None
     data = []
@@ -666,20 +720,35 @@ def render_pdf(path, papers, curation, meta, is_fallback, pi_trends=None, enrich
     )
     story = []
 
-    # Header band (teal) with the Yissum wordmark and a dashboard link.
+    # Header band (white) with the Yissum + Hebrew University logos and a link.
+    brand_items, brand_widths = [], []
+    if YISSUM_LOGO_PNG.exists():
+        brand_items.append(Image(str(YISSUM_LOGO_PNG), width=10 * mm * (436 / 120), height=10 * mm))
+        brand_widths.append(10 * mm * (436 / 120) + 6 * mm)
+    if HUJI_LOGO_PNG.exists():
+        brand_items.append(Image(str(HUJI_LOGO_PNG), width=9 * mm * (843 / 293), height=9 * mm))
+        brand_widths.append(9 * mm * (843 / 293) + 6 * mm)
+    if brand_items:
+        brand_cell = Table([brand_items], colWidths=brand_widths)
+        brand_cell.setStyle(TableStyle([
+            ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+            ("TOPPADDING", (0, 0), (-1, -1), 0), ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
+            ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ]))
+    else:
+        brand_cell = Paragraph('<b><font color="#159a8a">YISSUM</font></b>',
+                               ParagraphStyle("hz", fontSize=14, leading=16))
     header = Table(
-        [[Paragraph('<b><font color="white">YISSUM</font></b>  '
-                    '<font color="#d6f2ec" size="7">Hebrew University Technology Transfer</font>',
-                    ParagraphStyle("hz", fontSize=13, leading=16)),
-          Paragraph(f'<link href="{_e(DASHBOARD_URL)}"><font color="white"><b>Open Dashboard</b></font></link>',
-                    ParagraphStyle("hd", fontSize=9, leading=12, alignment=2))]],
-        colWidths=[page_w - 90, 90],
+        [[brand_cell,
+          Paragraph(f'<link href="{_e(DASHBOARD_URL)}"><font color="#0f7d70"><b>Open Dashboard →</b></font></link>',
+                    ParagraphStyle("hd", fontSize=9.5, leading=13, alignment=2))]],
+        colWidths=[page_w - 46 * mm, 46 * mm],
     )
     header.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, -1), _hex(BRAND_TEAL)),
-        ("LEFTPADDING", (0, 0), (-1, -1), 5 * mm), ("RIGHTPADDING", (0, 0), (-1, -1), 5 * mm),
-        ("TOPPADDING", (0, 0), (-1, -1), 3.5 * mm), ("BOTTOMPADDING", (0, 0), (-1, -1), 3.5 * mm),
+        ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+        ("TOPPADDING", (0, 0), (-1, -1), 2 * mm), ("BOTTOMPADDING", (0, 0), (-1, -1), 3 * mm),
         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("LINEBELOW", (0, 0), (-1, -1), 1.4, _hex(BRAND_TEAL)),
     ]))
     story.append(header)
     story.append(Spacer(1, 5 * mm))

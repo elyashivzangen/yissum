@@ -9,6 +9,7 @@ Hebrew University Paper Evaluation Pipeline
 """
 
 import argparse
+import base64
 import csv
 import io
 import json
@@ -22,6 +23,19 @@ import ftfy
 from google import genai
 from google.genai import types
 from pathlib import Path
+
+
+def _asset_data_uri(fname, mime):
+    """Base64 data URI for a bundled brand asset (empty string if missing)."""
+    try:
+        p = Path(__file__).resolve().parent / "assets" / fname
+        return f"data:{mime};base64," + base64.b64encode(p.read_bytes()).decode()
+    except Exception:
+        return ""
+
+
+YISSUM_LOGO_URI = _asset_data_uri("yissum_logo.svg", "image/svg+xml")
+HUJI_LOGO_URI = _asset_data_uri("huji_logo.png", "image/png")
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 GEMINI_API_KEY   = os.environ["GEMINI_API_KEY"]
@@ -1269,6 +1283,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     background:linear-gradient(135deg,var(--accent) 0%,var(--accent3) 100%);
     display:flex;align-items:center;justify-content:center;
     font-size:.75rem;font-weight:900;color:#fff;letter-spacing:-.5px;flex-shrink:0}}
+  /* Yissum + Hebrew University logo lockup on a white plate (readable on the teal header) */
+  .brand-lockup{{display:flex;align-items:center;gap:12px;background:#fff;
+    border-radius:10px;padding:7px 14px;box-shadow:0 1px 6px rgba(0,0,0,.12);flex-shrink:0}}
+  .brand-lockup img{{display:block;width:auto}}
+  .brand-lockup .bl-y{{height:30px}}
+  .brand-lockup .bl-h{{height:28px}}
+  .brand-lockup .bl-divider{{width:1px;height:26px;background:#d5dde3}}
   .header-title{{display:flex;flex-direction:column;gap:1px}}
   header h1{{font-size:1.1rem;font-weight:700;color:var(--header-h1);letter-spacing:-.01em}}
   header .subtitle{{font-size:.72rem;color:var(--header-subtitle)}}
@@ -1495,9 +1516,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body>
 <header>
-  <div class="logo">N</div>
+  <div class="brand-lockup">
+    <img class="bl-y" src="{yissum_logo}" alt="Yissum">
+    <span class="bl-divider"></span>
+    <img class="bl-h" src="{huji_logo}" alt="The Hebrew University of Jerusalem">
+  </div>
   <div class="header-title">
-    <h1>Yissum Research Monitor</h1>
+    <h1>Research Monitor</h1>
     <span class="subtitle" id="updated"></span>
   </div>
   <div class="header-links">{header_links}<button class="header-link theme-toggle" id="themeToggle" title="Toggle dark/light mode">🌙 Dark</button></div>
@@ -2115,6 +2140,8 @@ def generate_html(papers, researchers=None):
         digest_urls_json=json.dumps(digest_urls, ensure_ascii=False),
         updated=today_str(),
         header_links=header_links,
+        yissum_logo=YISSUM_LOGO_URI,
+        huji_logo=HUJI_LOGO_URI,
     ), encoding="utf-8")
     OUTPUT_JSON.write_text(json.dumps(enriched, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Generated {OUTPUT_HTML} and {OUTPUT_JSON} with {len(enriched)} papers "
