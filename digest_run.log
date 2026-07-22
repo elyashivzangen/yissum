@@ -2,34 +2,76 @@
 =======================================================
 Branch: All Branches
 Loading top papers from Google Sheet...
-  Sheet response: 200, 1118451 bytes
-  Cutoff date: 2026-07-14  (DIGEST_WINDOW=7 days)
-  Rows: 366 total, 298 excluded, 68 kept.
+  Sheet response: 200, 1116786 bytes
+  Cutoff date: 2026-06-21  (DIGEST_WINDOW=31 days)
+  Rows: 366 total, 222 excluded, 144 kept.
   Sample pub date values: ['2026-10-15', '2026-09-01', '2026 Jul 17']
-  20 candidates (top 20 by score).
-  13 HUJI-primary paper(s) selected (high-potential).
+  40 candidates (top 40 by score).
+  20 HUJI-primary paper(s) selected (high-potential).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 10 papers.
-  Executive summary: Hebrew University researchers are advancing a diverse portfolio of innovations with significant commercial potential, sp...
+  Gemini selected 16 papers.
+  Executive summary: Hebrew University researchers are advancing groundbreaking innovations spanning diverse fields from advanced therapeutic...
 Generating HTML + PDF reports...
-Traceback (most recent call last):
-  File "/home/runner/work/yissum/yissum/weekly_digest.py", line 606, in <module>
-    main(monthly=args.monthly)
-  File "/home/runner/work/yissum/yissum/weekly_digest.py", line 582, in main
-    html_path, pdf_path = yr.generate_reports(
-                          ^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/yissum/yissum/yissum_report.py", line 756, in generate_reports
-    render_html(papers, curation, meta, is_fallback,
-  File "/home/runner/work/yissum/yissum/yissum_report.py", line 471, in render_html
-    cards.append(_card_html(rank, paper, item, enrichment=enr, pi_trend=trend))
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/yissum/yissum/yissum_report.py", line 429, in _card_html
-    parts.append(_metric_html(paper))
-                 ^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/yissum/yissum/yissum_report.py", line 343, in _metric_html
-    v = bd.get(key) or {}
-        ^^^^^^
-AttributeError: 'str' object has no attribute 'get'
-Script failed (exit 1)
+  HTML written: digests/HUJI_digest_2026_M07.html  (120 KB)
+  PDF written:  digests/HUJI_digest_2026_M07.pdf  (95 KB)
+
+=======================================================
+Branch: Healthcare
+Loading top papers from Google Sheet...
+  Sheet response: 200, 1116786 bytes
+  Cutoff date: 2026-06-21  (DIGEST_WINDOW=31 days)
+  Rows: 366 total, 237 excluded, 129 kept.
+  Sample pub date values: ['2026-10-15', '2026 Jul 17', '2026 Jul 17']
+  40 candidates (top 40 by score).
+  20 HUJI-primary paper(s) selected (high-potential).
+Asking Gemini to curate the digest...
+  Trying model: gemini-2.5-flash
+  Success with: gemini-2.5-flash
+  Gemini selected 17 papers.
+  Executive summary: Hebrew University researchers are pioneering advanced precision medicine approaches across several high-impact fields. T...
+Generating HTML + PDF reports...
+  HTML written: digests/HUJI_digest_2026_M07_Healthcare.html  (127 KB)
+  PDF written:  digests/HUJI_digest_2026_M07_Healthcare.pdf  (99 KB)
+
+=======================================================
+Branch: Agriculture & Food
+Loading top papers from Google Sheet...
+  Sheet response: 200, 1116786 bytes
+  Cutoff date: 2026-06-21  (DIGEST_WINDOW=31 days)
+  Rows: 366 total, 361 excluded, 5 kept.
+  Sample pub date values: ['2026-09-01', '2026-06-25', '2026-06-30']
+  5 candidates (top 40 by score).
+  2 HUJI-primary paper(s) selected (FALLBACK — no high-potential).
+Asking Gemini to curate the digest...
+  Trying model: gemini-2.5-flash
+  Success with: gemini-2.5-flash
+  Gemini selected 2 papers.
+  Executive summary: Hebrew University researchers are advancing critical innovations in AgriTech and FoodTech, addressing key challenges in ...
+Generating HTML + PDF reports...
+  HTML written: digests/HUJI_digest_2026_M07_Agriculture_Food.html  (49 KB)
+  PDF written:  digests/HUJI_digest_2026_M07_Agriculture_Food.pdf  (49 KB)
+
+=======================================================
+Branch: Exact & Social Sciences
+Loading top papers from Google Sheet...
+  Sheet response: 200, 1116786 bytes
+  Cutoff date: 2026-06-21  (DIGEST_WINDOW=31 days)
+  Rows: 366 total, 356 excluded, 10 kept.
+  Sample pub date values: ['2026 Jul 14', '2026-07-07', '2026-06-25']
+  10 candidates (top 40 by score).
+  2 HUJI-primary paper(s) selected (FALLBACK — no high-potential).
+Asking Gemini to curate the digest...
+  Trying model: gemini-2.5-flash
+  Success with: gemini-2.5-flash
+  Gemini selected 2 papers.
+  Executive summary: This month's digest showcases compelling research at the intersection of fundamental science and applied technology. One...
+Generating HTML + PDF reports...
+  HTML written: digests/HUJI_digest_2026_M07_Exact_Social_Sciences.html  (50 KB)
+  PDF written:  digests/HUJI_digest_2026_M07_Exact_Social_Sciences.pdf  (49 KB)
+
+All digests done.
+
+Sending digest email...
+  Email send failed (digests were still generated and committed as usual): name 'pdf_paths' is not defined
