@@ -536,7 +536,7 @@ def send_digest_email(reports, monthly=False):
                 s.starttls(context=context)
                 s.login(SMTP_USER, SMTP_PASSWORD)
                 s.send_message(msg)
-        print(f"  Emailed {len(pdf_paths)} PDF(s) to {len(recipients)} recipient(s).")
+        print(f"  Emailed {len(reports)} report(s) (HTML + PDF) to {len(recipients)} recipient(s).")
     except Exception as e:
         print(f"  Email send failed (digests were still generated and committed as usual): {e}")
 
