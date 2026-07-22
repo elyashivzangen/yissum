@@ -7,7 +7,7 @@ weekly *and* monthly reports share one look (the light, Yissum-branded style)
 and one set of business rules:
 
   * HUJI-primary researchers only          (is_huji_primary)
-  * only high-potential papers (score > 25); if none, the 2 best as a fallback
+  * only high-potential papers (score >= 28); if none, the 2 best as a fallback
     with an explicit "no high-potential research this period" notice
                                             (select_report_papers)
   * five commercialisation metrics per paper, HTS excluded — expandable in the
@@ -59,7 +59,7 @@ HUJI_LOGO_URI   = _data_uri(HUJI_LOGO_PNG, "image/png")
 # ── Public config ─────────────────────────────────────────────────────────────
 
 DASHBOARD_URL = "https://elyashivzangen.github.io/yissum/papers_reader.html"
-HIGH_POTENTIAL_THRESHOLD = 25   # score is out of 50; "high potential" = strictly above this
+HIGH_POTENTIAL_THRESHOLD = 28   # score is out of 50; "high potential" = at or above this
 
 # Five commercialisation dimensions (mirrors papers_pipeline.SCORE_PARAMS).
 # HTS is intentionally NOT here — it is never shown in the digest.
@@ -161,14 +161,14 @@ def select_report_papers(candidates):
     """Apply requests #2 and #4 to a score-sorted candidate list.
 
     Returns (papers, is_fallback):
-      * HUJI-primary papers scoring above HIGH_POTENTIAL_THRESHOLD, when any
-        exist  -> (those papers, False)
+      * HUJI-primary papers scoring at or above HIGH_POTENTIAL_THRESHOLD, when
+        any exist  -> (those papers, False)
       * otherwise the 2 best HUJI-primary papers -> (up to 2 papers, True),
         so the report can say "no high-potential applicable research now".
     """
     huji = [p for p in candidates if is_huji_primary(p)]
     huji.sort(key=_score, reverse=True)
-    high = [p for p in huji if _score(p) > HIGH_POTENTIAL_THRESHOLD]
+    high = [p for p in huji if _score(p) >= HIGH_POTENTIAL_THRESHOLD]
     if high:
         return high, False
     return huji[:2], True
@@ -460,10 +460,10 @@ def _card_html(rank, paper, item, enrichment=None, pi_trend=None):
             pub += f" · {_e(date)}"
         parts.append(f'<div class="venue">{pub}</div>')
 
-    why = (item.get("why_now") or "").strip()
-    if why:
-        parts.append('<div class="lbl">Why now</div>')
-        parts.append(f'<div class="txt">{_e(why)}</div>')
+    abstract = (paper.get("summary") or "").strip()
+    if abstract:
+        parts.append('<div class="lbl">About this research</div>')
+        parts.append(f'<div class="txt">{_e(abstract)}</div>')
 
     opp = (paper.get("opportunity") or "").strip()
     if opp:
@@ -665,10 +665,10 @@ def _pdf_card(rank, paper, item, st, page_w, enrichment=None):
             pub += f"  ·  {_e(date)}"
         inner.append(Paragraph(pub, st["venue"]))
 
-    why = (item.get("why_now") or "").strip()
-    if why:
-        inner.append(Paragraph("WHY NOW", st["lbl"]))
-        inner.append(Paragraph(_e(why), st["body"]))
+    abstract = (paper.get("summary") or "").strip()
+    if abstract:
+        inner.append(Paragraph("ABOUT THIS RESEARCH", st["lbl"]))
+        inner.append(Paragraph(_e(abstract), st["body"]))
     opp = (paper.get("opportunity") or "").strip()
     if opp:
         inner.append(Paragraph("COMMERCIAL ANGLE", st["lbl"]))

@@ -564,7 +564,7 @@ def main(monthly=False):
         print(f"  {len(papers)} candidates (top {top_n} by score).")
 
         # Requests #2 + #4: HUJI-primary researchers only, and only
-        # high-potential papers (score > 25) — else the 2 best as a fallback.
+        # high-potential papers (score >= 28) — else the 2 best as a fallback.
         papers, is_fallback = yr.select_report_papers(papers)
         if not papers:
             print(f"  No HUJI-primary papers for {label} — skipping.")
