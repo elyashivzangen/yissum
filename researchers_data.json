@@ -13764,254 +13764,6 @@
     "max_hts_score": 7
   },
   {
-    "pi": "Avi Priel",
-    "pi_full_name": "Avi Priel",
-    "pi_email": "avi.priel@mail.huji.ac.il.",
-    "pi_affiliation": "The Institute for Drug Research (IDR), Department of Pharmacology, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
-    "avg_score": 29.4,
-    "paper_count": 5,
-    "description": "This researcher specializes in the molecular pharmacology of ion channels, focusing specifically on how lipid-sensing proteins like TRP and sodium channels regulate pain signaling. Their work combines structural biology and pharmacology to map precise binding sites for cannabinoids and other analgesic compounds. By identifying these peripheral mechanisms, they aim to decouple pain relief from central nervous system side effects.",
-    "applicability": "The work has high translational value for the development of next-generation, non-opioid analgesics and non-psychoactive cannabinoid derivatives. This could lead to licensable IP for targeted drug discovery platforms or partnerships with pharmaceutical firms developing peripheral pain medications. Given the focus on specific binding pockets, the path toward lead optimization and pre-clinical drug candidates is well-defined and mid-term.",
-    "fields": [
-      "Drug Discovery",
-      "Neuroscience",
-      "Clinical",
-      "Proteomics"
-    ],
-    "branches": [
-      "Healthcare"
-    ],
-    "papers": [
-      {
-        "id": "pubmed_42342000",
-        "title": "Carbamate-based cannabinoids uncover a conserved lipid-sensing pocket in nociceptive TRPA1 and TRPV1 channels.",
-        "date": "2026",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42342000/",
-        "journal": "Pharmacological research",
-        "score": 33,
-        "summary": "Researchers have engineered new chemical derivatives of CBD and CBG that act as highly potent dual agonists for pain-sensing TRPA1 and TRPV1 ion channels. This study identifies a specific structural binding pocket shared by these channels, providing a blueprint for designing more effective non-opioid painkillers.",
-        "opportunity": "The ability to rationally design high-potency cannabinoid derivatives offers a platform for developing a new class of non-addictive, targeted analgesics for chronic pain management.",
-        "fields": [
-          "Drug Discovery",
-          "Neuroscience",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 7,
-            "reason": "The research demonstrates high novelty by utilizing rational design to transform natural phytocannabinoids into potent dual agonists, uncovering a previously unknown conserved lipid-sensing mechanism. While the specific chemical modification is an incremental optimization of existing scaffolds, the structural insight provides a novel framework for targeting nociceptive channels."
-          },
-          "commercial_potential": {
-            "score": 7,
-            "reason": "The research demonstrates a clear medicinal chemistry path to optimize phytocannabinoids into potent dual-channel agonists, offering a high-value structural blueprint for non-opioid analgesic drug discovery. While it provides a strong 'lead series' for licensing, the commercial value is currently tied to early-stage discovery rather than a validated clinical candidate or a broad platform technology."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "The research targets TRPA1 and TRPV1 ion channels, which are central to the multi-billion dollar non-opioid pain management market. By optimizing phytocannabinoids into potent dual agonists, this work addresses a massive unmet clinical demand for safer alternatives to opioids."
-          },
-          "trl": {
-            "score": 3,
-            "reason": "The research is at the fundamental discovery and lead optimization stage, utilizing heterologous expression systems and in vitro electrophysiology rather than animal models or pharmacokinetic studies. While it provides a structural basis for rational design, it remains a basic science/proof-of-concept study far from preclinical or clinical development."
-          },
-          "ip_strength": {
-            "score": 7,
-            "reason": "The work demonstrates high defensibility through rational medicinal chemistry, transforming existing scaffolds into novel, potent carbamate-based derivatives with specific selectivity profiles. While these new chemical entities are likely patentable, the reliance on known phytocannabinoid scaffolds may present moderate challenges regarding non-obviousness during patent prosecution."
-          }
-        },
-        "eval_model": "gemma-4-26b-a4b-it",
-        "prev_score": 35,
-        "prev_eval_model": "",
-        "pi_affiliation": "The Institute for Drug Research (IDR), Department of Pharmacology, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
-        "pi_email": "avi.priel@mail.huji.ac.il.",
-        "abstract": "TRPA1 and TRPV1 are nociceptive ion channels that integrate noxious chemical stimuli and are attractive targets for non-opioid analgesics. The phytocannabinoids cannabidiol (CBD) and cannabigerol (CBG) modulate both channels, but their pharmacological profiles and underlying structural determinants remain poorly defined. Here, we used rational ligand design to convert CBD and CBG into potent dual TRPA1/TRPV1 agonists and to probe a conserved lipid-sensing architecture in both channels. Guided by the structural features of the TRPV1 vanilloid-binding site and our previously developed TRPA1 cannabinoid-binding site model, we incorporated an aryl carbamate anchor into the CBD and CBG scaffolds. We compared their activity with that of the parent phytocannabinoids in heterologous expression systems using calcium imaging and whole-cell patch-clamp recordings. Whereas CBD and CBG preferentially activated TRPA1 and were weak TRPV1 agonists at physiologically relevant concentrations, carbamate functionalization markedly increased potency and efficacy at TRPV1 while preserving robust TRPA1 activation. In contrast to the parent phytocannabinoids, carbamate derivatives did not potentiate TRPV2 responses, demonstrating channel selectivity. Site-directed mutagenesis and molecular docking localized carbamate-based ligand binding to the canonical vanilloid binding site in TRPV1 and the non-electrophilic cannabinoid-binding site in TRPA1, consistent with engagement of a shared lipid-sensing pocket. Carbamate derivatives also activated nociceptive neurons in primary rat trigeminal ganglion cultures in a TRPV1-dependent manner, as confirmed by pharmacological block with the selective TRPV1 antagonist BCTC. These findings define a conserved structural framework for lipid ligand recognition in TRPA1 and TRPV1 and provide a rational starting point for developing dual-target modulators of peripheral nociceptors.",
-        "hts_score": 9,
-        "hts_reason": "The paper identifies specific dual-agonist molecules targeting TRPA1 and TRPV1 channels for non-opioid analgesia and describes validated calcium imaging and patch-clamp assays for high-throughput screening of derivative compounds.",
-        "hts_eval_model": "gemini-3.1-flash-lite"
-      },
-      {
-        "id": "pubmed_41565997",
-        "title": "The psychoactive cannabinoid THC inhibits peripheral nociceptors by targeting Na",
-        "date": "2026",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/41565997/",
-        "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
-        "score": 34,
-        "summary": "Researchers discovered that THC reduces pain by directly blocking sodium channels in peripheral nerves, rather than solely acting on the brain. This reveals a non-psychoactive pathway for pain relief that happens at the site of injury.",
-        "opportunity": "Development of peripheral-acting cannabinoid analogs or NaV-channel blockers that provide potent analgesia without the psychoactive side effects of THC.",
-        "fields": [
-          "Drug Discovery",
-          "Neuroscience",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 8,
-            "reason": "The discovery of a direct, non-cannabinoid receptor-mediated mechanism (targeting NaV channels) represents a paradigm shift in our understanding of THC's analgesic properties. This provides a clear path for developing novel, non-psychoactive peripheral analgesics with a specific molecular target."
-          },
-          "commercial_potential": {
-            "score": 8,
-            "reason": "Identifying a specific molecular target (Nav) for THC's analgesic effect enables the development of non-psychoactive synthetic analogs that target peripheral pain without central side effects. This provides a clear path to a novel class of non-opioid analgesics with high licensable value."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "Chronic pain is one of the largest global healthcare burdens with massive unmet demand for non-opioid analgesics. A mechanism that targets peripheral nociceptors via sodium channels opens a vast market for non-addictive, non-psychoactive derivatives for widespread clinical use."
-          },
-          "trl": {
-            "score": 2,
-            "reason": "The work describes a fundamental mechanistic discovery of a protein target in a laboratory setting, representing basic research (TRL 2) rather than a developed lead compound or clinical candidate."
-          },
-          "ip_strength": {
-            "score": 7,
-            "reason": "Identifying a specific, non-canonical molecular target (NaV channels) for a known compound provides a strong basis for new composition-of-matter patents on selective agonists or NaV-specific cannabinoid derivatives. However, the inherent difficulty in patenting THC itself limits the score to the strength of potential downstream 'me-too' or optimized analog drug discovery."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": "",
-        "prev_eval_model": "",
-        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. avi.priel@mail.huji.ac.il.",
-        "pi_email": "avi.priel@mail.huji.ac.il.",
-        "abstract": "Δ⁹-Tetrahydrocannabinol (THC), the primary psychoactive compound in cannabis, is widely recognized for its central effects mediated by cannabinoid receptors. Here, we uncover a distinct peripheral mechanism by which THC inhibits the excitability of nociceptive neurons. We show that THC directly targets the nociceptive voltage-gated sodium channels Na",
-        "hts_score": 10,
-        "hts_reason": "The paper identifies a specific target (NaV sodium channels), links it to a condition (peripheral nociception/pain), and describes a mechanism for testing inhibition of neuronal excitability.",
-        "hts_eval_model": "gemma-4-31b-it"
-      },
-      {
-        "id": "pubmed_40465624",
-        "title": "The analgesic paracetamol metabolite AM404 acts peripherally to directly inhibit sodium channels.",
-        "date": "2025",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/40465624/",
-        "journal": "Proceedings of the National Academy of Sciences of the United States of America",
-        "score": 30,
-        "summary": "Researchers discovered that a metabolite of paracetamol, AM404, provides pain relief by directly blocking sodium channels in peripheral sensory neurons rather than just acting on the brain. This reveals a new peripheral mechanism for a common drug, suggesting that targeting these specific sodium channels can treat pain without central nervous system side effects.",
-        "opportunity": "Development of next-generation non-opioid analgesics based on AM404 analogs that selectively inhibit peripheral voltage-gated sodium channels to reduce systemic toxicity.",
-        "fields": [
-          "Drug Discovery",
-          "Neuroscience",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 8,
-            "reason": "This research identifies a previously unknown peripheral mechanism of action for a ubiquitous drug, shifting the paradigm from CNS-centric effects to direct sodium channel inhibition in nociceptors. This discovery is highly innovative and creates immediate opportunities for developing targeted, non-opioid analgesics based on this specific molecular target."
-          },
-          "commercial_potential": {
-            "score": 7,
-            "reason": "The discovery of a direct, peripheral sodium channel inhibition mechanism for AM404 opens a clear path for developing potent, non-opioid analgesics with reduced CNS side effects. While the target is validated, the commercial value depends on the ability to synthesize more stable or potent AM404 analogs to overcome the metabolic limitations of paracetamol."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "The research targets pain management, one of the largest therapeutic markets globally, by identifying a new mechanism for a metabolite of paracetamol, the world's most widely used analgesic."
-          },
-          "trl": {
-            "score": 3,
-            "reason": "The research is at the fundamental mechanism-of-action stage, demonstrating effects in animal models (rats) and primary neurons. While it clarifies the pharmacology of an existing drug, it does not present a new lead compound, a clinical candidate, or a developed therapeutic delivery system."
-          },
-          "ip_strength": {
-            "score": 3,
-            "reason": "The innovation describes a mechanism of action for a metabolite of paracetamol, a generic drug that has been in public use for decades, making the primary compound non-patentable. Defensibility is low as the discovery is a fundamental biological observation rather than a novel, protectable chemical entity or platform."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": "",
-        "prev_eval_model": "",
-        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel.",
-        "pi_email": "",
-        "abstract": "Paracetamol has been used for decades to relieve mild-to-moderate pain. Its analgesic effect is mainly attributed to its metabolite, AM404, acting on cannabinoid receptors or TRPV1 channels in central nervous system (CNS) neurons. Here, we show that AM404 is produced by primary sensory neurons. It inhibits sodium current in nociceptor neurons, blocking action potential (AP) generation and reducing nocifensive behavior in naïve and inflamed rats. We demonstrated that this analgesic effect of AM404 is mediated by its direct inhibition of nociceptive voltage-gated sodium channels (Na",
-        "hts_score": 10,
-        "hts_reason": "The paper identifies a specific target (nociceptive voltage-gated sodium channels), links it to a disease state (inflammation/pain), and describes a testable assay (sodium current inhibition/AP generation).",
-        "hts_eval_model": "gemma-4-31b-it"
-      },
-      {
-        "id": "pubmed_39368566",
-        "title": "Identification of the TRPA1 cannabinoid-binding site.",
-        "date": "2024",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/39368566/",
-        "journal": "Pharmacological research",
-        "score": 33,
-        "summary": "Researchers have identified the specific binding site where cannabinoids interact with the TRPA1 ion channel to reduce pain. This discovery provides a molecular map for how cannabis-based compounds alleviate chronic pain without relying solely on the brain's CB1 receptors.",
-        "opportunity": "Development of high-affinity, non-psychoactive TRPA1 agonists for targeted chronic pain management and inflammation therapy.",
-        "fields": [
-          "Drug Discovery",
-          "Neuroscience",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 8,
-            "reason": "The precise structural identification of a cannabinoid-binding site on TRPA1 fills a critical knowledge gap in pharmacology and enables the rational design of targeted, non-psychoactive analgesics."
-          },
-          "commercial_potential": {
-            "score": 7,
-            "reason": "The identification of a specific binding site enables the rational design of selective TRPA1 agonists/antagonists, transforming a broad observation into a druggable target for chronic pain. While further lead optimization is required, this provides a clear path toward a novel class of non-opioid analgesics."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "The target market is chronic pain, one of the largest and most valuable therapeutic areas in healthcare, with massive addressable demand across both pharmaceutical and medical cannabis sectors."
-          },
-          "trl": {
-            "score": 2,
-            "reason": "The work is fundamental structural biology focused on identifying a binding site, representing basic research (TRL 2) rather than a developed lead compound or therapeutic application."
-          },
-          "ip_strength": {
-            "score": 7,
-            "reason": "The identification of a specific binding site provides a strong foundation for structure-based drug design and the filing of composition-of-matter patents for novel, high-affinity TRPA1 ligands. While the biological discovery itself is descriptive, it enables the creation of a highly defensible proprietary chemical library."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": "",
-        "prev_eval_model": "",
-        "pi_affiliation": "The Institute for Drug Research (IDR), School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
-        "pi_email": "avi.priel@mail.huji.ac.il.",
-        "abstract": "Chronic pain accounts for nearly two-thirds of conditions eligible for medical cannabis licenses, yet the mechanisms underlying cannabis-induced analgesia remain poorly understood. The principal phytocannabinoids, the psychoactive Δ",
-        "hts_score": 8,
-        "hts_reason": "The paper identifies a specific target (TRPA1 cannabinoid-binding site) linked to chronic pain and describes a mechanism for cannabis-induced analgesia that implies a measurable assay for screening ligands.",
-        "hts_eval_model": "gemma-4-31b-it"
-      },
-      {
-        "id": "pubmed_38538847",
-        "title": "TRPM5 activation depends on a synergistic effect of calcium and PKC phosphorylation.",
-        "date": "2024",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/38538847/",
-        "journal": "Communications biology",
-        "score": 17,
-        "summary": "Researchers discovered that TRPM5 ion channels require both calcium elevation and phosphorylation by PKC to activate fully. This clarifies the precise molecular switch that controls insulin secretion and taste perception.",
-        "opportunity": "Development of precision small-molecule modulators targeting the PKC-TRPM5 interaction for the treatment of metabolic disorders like diabetes.",
-        "fields": [
-          "Drug Discovery",
-          "Neuroscience",
-          "Clinical"
-        ],
-        "score_breakdown": {
-          "novelty": {
-            "score": 4,
-            "reason": "The research addresses an existing knowledge gap regarding TRPM5 activation, but the hypothesis (synergy between calcium and PKC phosphorylation) is an incremental refinement of known signaling pathways rather than a groundbreaking discovery."
-          },
-          "commercial_potential": {
-            "score": 4,
-            "reason": "The paper provides foundational mechanistic insight into TRPM5 activation, which is valuable for target validation, but it does not present a lead compound, a screening platform, or a specific therapeutic application."
-          },
-          "market_size": {
-            "score": 7,
-            "reason": "The target, TRPM5, is linked to insulin secretion (diabetes) and taste transduction, addressing massive global healthcare markets. However, the paper focuses on basic mechanistic elucidation rather than a specific lead compound or a platform, leaving the immediate addressable demand theoretical."
-          },
-          "trl": {
-            "score": 2,
-            "reason": "The research is fundamental mechanistic biochemistry focused on elucidating the molecular triggers of channel activation, representing early-stage basic science (TRL 2) rather than a developed therapeutic or device."
-          }
-        },
-        "eval_model": "gemma-4-31b-it",
-        "prev_score": 19,
-        "prev_eval_model": "groq:llama-3.1-8b-instant",
-        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Ein Karem, Jerusalem, 9112102, Israel. avi.priel@mail.huji.ac.il.",
-        "pi_email": "avi.priel@mail.huji.ac.il.",
-        "abstract": "Transient receptor potential melastatin 5 (TRPM5) is a calcium-activated monovalent-specific ion channel involved in insulin secretion and taste transduction, making it an attractive target for drug development in various pathologies. While TRPM5 activation involves ligand binding to Gq/G-protein coupled receptors (GPCR) and subsequent elevation of intracellular calcium levels, recent reports suggest the need for additional molecular determinants. Hence, the mechanism of TRPM5 activation remains to be elucidated. Here, we show that PKC phosphorylation and the elevation of intracellular Ca",
-        "hts_score": 5,
-        "hts_reason": "The paper identifies a specific target (TRPM5) and links it to insulin secretion/taste pathologies, but the abstract cuts off before describing a specific assay for measuring effect.",
-        "hts_eval_model": "gemma-4-31b-it"
-      }
-    ],
-    "max_hts_score": 10
-  },
-  {
     "pi": "Oren Zimhony",
     "pi_full_name": "Oren Zimhony",
     "pi_email": "Oren_Z@clalit.org.il.",
@@ -15289,70 +15041,252 @@
     "max_hts_score": 9
   },
   {
-    "pi": "Roy Maman",
-    "pi_full_name": "Roy Maman",
-    "pi_email": "Roy.maman@mail.huji.ac.il.",
-    "pi_affiliation": "Institute of Applied Physics, The Faculty of Science, The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, 91904, Israel.",
-    "avg_score": 32.0,
-    "max_hts_score": 1,
-    "paper_count": 1,
-    "description": "The researcher focuses on the development of advanced metasurfaces for the precise control of thermal radiation. Their work involves engineering materials that can independently manipulate emissivity across multiple infrared spectral bands, such as MWIR and LWIR.",
-    "applicability": "This technology has strong commercial potential in stealth coatings, thermal management systems, and infrared camouflage for defense and aerospace. It could lead to licensable intellectual property for next-generation radiative cooling products or heat-shielding components, with near-term application in specialized military hardware.",
+    "pi": "Avi Priel",
+    "pi_full_name": "Avi Priel",
+    "pi_email": "avi.priel@mail.huji.ac.il.",
+    "pi_affiliation": "The Institute for Drug Research (IDR), Department of Pharmacology, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
+    "avg_score": 29.4,
+    "paper_count": 5,
+    "description": "This researcher specializes in the molecular pharmacology of ion channels, focusing specifically on how lipid-sensing proteins like TRP and sodium channels regulate pain signaling. Their work combines structural biology and pharmacology to map precise binding sites for cannabinoids and other analgesic compounds. By identifying these peripheral mechanisms, they aim to decouple pain relief from central nervous system side effects.",
+    "applicability": "The work has high translational value for the development of next-generation, non-opioid analgesics and non-psychoactive cannabinoid derivatives. This could lead to licensable IP for targeted drug discovery platforms or partnerships with pharmaceutical firms developing peripheral pain medications. Given the focus on specific binding pockets, the path toward lead optimization and pre-clinical drug candidates is well-defined and mid-term.",
     "fields": [
-      "Materials",
-      "Imaging"
+      "Drug Discovery",
+      "Neuroscience",
+      "Clinical",
+      "Proteomics"
     ],
     "branches": [
-      "Exact & Social Sciences",
       "Healthcare"
     ],
     "papers": [
       {
-        "id": "pubmed_42493493",
-        "title": "Metasurface platform for simultaneous and uncorrelated emissivity control over MWIR and LWIR spectral bands.",
+        "id": "pubmed_42342000",
+        "title": "Carbamate-based cannabinoids uncover a conserved lipid-sensing pocket in nociceptive TRPA1 and TRPV1 channels.",
         "date": "2026",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42493493/",
-        "journal": "Light, science & applications",
-        "score": 32,
-        "summary": "Researchers have developed a metasurface capable of independently controlling how an object emits heat (thermal radiation) across two different infrared spectrums. This allows for the precise manipulation of thermal signatures and heat dissipation without one wavelength affecting the other.",
-        "opportunity": "High-value applications in stealth technology, advanced thermal management for electronics, and specialized non-invasive thermal imaging sensors.",
-        "abstract": "Thermal radiation in the mid-wave infrared (MWIR) and long-wave infrared (LWIR) underpins a wide range of imaging, sensing, and security technologies. While metasurfaces have enabled spectral and angular control of thermal emissivity, achieving spatially resolved and uncorrelated emissivity control across multiple infrared bands on a single platform remains a major challenge. Here we experimentally demonstrate a metasurface-based approach that enables pixel-level control of thermal emissivity in both the MWIR and LWIR bands simultaneously. The platform is based on a cavity-coupled metal-insulator-metal architecture supporting two infrared resonances whose spectral positions and strengths are orthogonally controlled through geometric design parameters. By systematically exploring the design space, we realize a broad emissivity palette and experimentally verify its thermal response using Fourier-transform infrared spectroscopy (FTIR) together with calibrated MWIR and LWIR thermal imaging. This capability allows the encoding of spatial thermal patterns that are either correlated or distinct in the two bands, enabling demonstrations of dual-band thermal camouflage and decoupled thermal image multiplexing on a single chip. The metasurface response is shown to be polarization-insensitive and robust over a wide range of temperatures and viewing angles. These results establish a scalable route toward multi-band, image-level control of thermal emission, with potential applications in thermal imaging, security, and infrared information encoding.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42342000/",
+        "journal": "Pharmacological research",
+        "score": 33,
+        "summary": "Researchers have engineered new chemical derivatives of CBD and CBG that act as highly potent dual agonists for pain-sensing TRPA1 and TRPV1 ion channels. This study identifies a specific structural binding pocket shared by these channels, providing a blueprint for designing more effective non-opioid painkillers.",
+        "opportunity": "The ability to rationally design high-potency cannabinoid derivatives offers a platform for developing a new class of non-addictive, targeted analgesics for chronic pain management.",
         "fields": [
-          "Materials",
-          "Imaging"
+          "Drug Discovery",
+          "Neuroscience",
+          "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 7,
-            "reason": "The ability to achieve uncorrelated, simultaneous control over two distinct infrared bands (MWIR and LWIR) represents a significant functional leap over single-band or correlated metasurfaces, though it builds on existing plasmonic/dielectric resonator principles."
+            "reason": "The research demonstrates high novelty by utilizing rational design to transform natural phytocannabinoids into potent dual agonists, uncovering a previously unknown conserved lipid-sensing mechanism. While the specific chemical modification is an incremental optimization of existing scaffolds, the structural insight provides a novel framework for targeting nociceptive channels."
           },
           "commercial_potential": {
             "score": 7,
-            "reason": "The ability to independently control MWIR and LWIR emissivity creates a high-value platform for thermal camouflage, energy-efficient coatings, and advanced sensing. While the technical application is clear, the score is tempered by the lack of provided data on scalability and manufacturing costs."
+            "reason": "The research demonstrates a clear medicinal chemistry path to optimize phytocannabinoids into potent dual-channel agonists, offering a high-value structural blueprint for non-opioid analgesic drug discovery. While it provides a strong 'lead series' for licensing, the commercial value is currently tied to early-stage discovery rather than a validated clinical candidate or a broad platform technology."
           },
           "market_size": {
-            "score": 7,
-            "reason": "The ability to independently control MWIR and LWIR emissivity is a platform-enabling capability with high value in defense (stealth/cloaking) and industrial thermal management, though it targets specialized high-end niches rather than a mass consumer market."
+            "score": 9,
+            "reason": "The research targets TRPA1 and TRPV1 ion channels, which are central to the multi-billion dollar non-opioid pain management market. By optimizing phytocannabinoids into potent dual agonists, this work addresses a massive unmet clinical demand for safer alternatives to opioids."
           },
           "trl": {
             "score": 3,
-            "reason": "The paper describes the development of a metasurface platform for spectral control, which is characteristic of fundamental materials science and lab-stage proof-of-concept work. There is no evidence of integration into a commercial device, field testing, or scalable manufacturing processes."
+            "reason": "The research is at the fundamental discovery and lead optimization stage, utilizing heterologous expression systems and in vitro electrophysiology rather than animal models or pharmacokinetic studies. While it provides a structural basis for rational design, it remains a basic science/proof-of-concept study far from preclinical or clinical development."
           },
           "ip_strength": {
+            "score": 7,
+            "reason": "The work demonstrates high defensibility through rational medicinal chemistry, transforming existing scaffolds into novel, potent carbamate-based derivatives with specific selectivity profiles. While these new chemical entities are likely patentable, the reliance on known phytocannabinoid scaffolds may present moderate challenges regarding non-obviousness during patent prosecution."
+          }
+        },
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 35,
+        "prev_eval_model": "",
+        "pi_affiliation": "The Institute for Drug Research (IDR), Department of Pharmacology, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
+        "pi_email": "avi.priel@mail.huji.ac.il.",
+        "abstract": "TRPA1 and TRPV1 are nociceptive ion channels that integrate noxious chemical stimuli and are attractive targets for non-opioid analgesics. The phytocannabinoids cannabidiol (CBD) and cannabigerol (CBG) modulate both channels, but their pharmacological profiles and underlying structural determinants remain poorly defined. Here, we used rational ligand design to convert CBD and CBG into potent dual TRPA1/TRPV1 agonists and to probe a conserved lipid-sensing architecture in both channels. Guided by the structural features of the TRPV1 vanilloid-binding site and our previously developed TRPA1 cannabinoid-binding site model, we incorporated an aryl carbamate anchor into the CBD and CBG scaffolds. We compared their activity with that of the parent phytocannabinoids in heterologous expression systems using calcium imaging and whole-cell patch-clamp recordings. Whereas CBD and CBG preferentially activated TRPA1 and were weak TRPV1 agonists at physiologically relevant concentrations, carbamate functionalization markedly increased potency and efficacy at TRPV1 while preserving robust TRPA1 activation. In contrast to the parent phytocannabinoids, carbamate derivatives did not potentiate TRPV2 responses, demonstrating channel selectivity. Site-directed mutagenesis and molecular docking localized carbamate-based ligand binding to the canonical vanilloid binding site in TRPV1 and the non-electrophilic cannabinoid-binding site in TRPA1, consistent with engagement of a shared lipid-sensing pocket. Carbamate derivatives also activated nociceptive neurons in primary rat trigeminal ganglion cultures in a TRPV1-dependent manner, as confirmed by pharmacological block with the selective TRPV1 antagonist BCTC. These findings define a conserved structural framework for lipid ligand recognition in TRPA1 and TRPV1 and provide a rational starting point for developing dual-target modulators of peripheral nociceptors.",
+        "hts_score": 9,
+        "hts_reason": "The paper identifies specific dual-agonist molecules targeting TRPA1 and TRPV1 channels for non-opioid analgesia and describes validated calcium imaging and patch-clamp assays for high-throughput screening of derivative compounds.",
+        "hts_eval_model": "gemini-3.1-flash-lite"
+      },
+      {
+        "id": "pubmed_41565997",
+        "title": "The psychoactive cannabinoid THC inhibits peripheral nociceptors by targeting Na",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41565997/",
+        "journal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+        "score": 34,
+        "summary": "Researchers discovered that THC reduces pain by directly blocking sodium channels in peripheral nerves, rather than solely acting on the brain. This reveals a non-psychoactive pathway for pain relief that happens at the site of injury.",
+        "opportunity": "Development of peripheral-acting cannabinoid analogs or NaV-channel blockers that provide potent analgesia without the psychoactive side effects of THC.",
+        "fields": [
+          "Drug Discovery",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
             "score": 8,
-            "reason": "The development of a platform for uncorrelated spectral control in two distinct bands represents a high-value 'platform-enabling' innovation with strong potential for broad patent claims across defense and industrial sensing."
+            "reason": "The discovery of a direct, non-cannabinoid receptor-mediated mechanism (targeting NaV channels) represents a paradigm shift in our understanding of THC's analgesic properties. This provides a clear path for developing novel, non-psychoactive peripheral analgesics with a specific molecular target."
+          },
+          "commercial_potential": {
+            "score": 8,
+            "reason": "Identifying a specific molecular target (Nav) for THC's analgesic effect enables the development of non-psychoactive synthetic analogs that target peripheral pain without central side effects. This provides a clear path to a novel class of non-opioid analgesics with high licensable value."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "Chronic pain is one of the largest global healthcare burdens with massive unmet demand for non-opioid analgesics. A mechanism that targets peripheral nociceptors via sodium channels opens a vast market for non-addictive, non-psychoactive derivatives for widespread clinical use."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "The work describes a fundamental mechanistic discovery of a protein target in a laboratory setting, representing basic research (TRL 2) rather than a developed lead compound or clinical candidate."
+          },
+          "ip_strength": {
+            "score": 7,
+            "reason": "Identifying a specific, non-canonical molecular target (NaV channels) for a known compound provides a strong basis for new composition-of-matter patents on selective agonists or NaV-specific cannabinoid derivatives. However, the inherent difficulty in patenting THC itself limits the score to the strength of potential downstream 'me-too' or optimized analog drug discovery."
           }
         },
         "eval_model": "gemma-4-31b-it",
         "prev_score": "",
         "prev_eval_model": "",
-        "pi_affiliation": "Institute of Applied Physics, The Faculty of Science, The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, 91904, Israel.",
-        "pi_email": "Roy.maman@mail.huji.ac.il.",
-        "hts_score": 1,
-        "hts_reason": "The paper describes an optical engineering platform for spectral control; it contains no biological target, disease link, or drug-screening assay.",
+        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. avi.priel@mail.huji.ac.il.",
+        "pi_email": "avi.priel@mail.huji.ac.il.",
+        "abstract": "Δ⁹-Tetrahydrocannabinol (THC), the primary psychoactive compound in cannabis, is widely recognized for its central effects mediated by cannabinoid receptors. Here, we uncover a distinct peripheral mechanism by which THC inhibits the excitability of nociceptive neurons. We show that THC directly targets the nociceptive voltage-gated sodium channels Na",
+        "hts_score": 10,
+        "hts_reason": "The paper identifies a specific target (NaV sodium channels), links it to a condition (peripheral nociception/pain), and describes a mechanism for testing inhibition of neuronal excitability.",
+        "hts_eval_model": "gemma-4-31b-it"
+      },
+      {
+        "id": "pubmed_40465624",
+        "title": "The analgesic paracetamol metabolite AM404 acts peripherally to directly inhibit sodium channels.",
+        "date": "2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40465624/",
+        "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+        "score": 30,
+        "summary": "Researchers discovered that a metabolite of paracetamol, AM404, provides pain relief by directly blocking sodium channels in peripheral sensory neurons rather than just acting on the brain. This reveals a new peripheral mechanism for a common drug, suggesting that targeting these specific sodium channels can treat pain without central nervous system side effects.",
+        "opportunity": "Development of next-generation non-opioid analgesics based on AM404 analogs that selectively inhibit peripheral voltage-gated sodium channels to reduce systemic toxicity.",
+        "fields": [
+          "Drug Discovery",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 8,
+            "reason": "This research identifies a previously unknown peripheral mechanism of action for a ubiquitous drug, shifting the paradigm from CNS-centric effects to direct sodium channel inhibition in nociceptors. This discovery is highly innovative and creates immediate opportunities for developing targeted, non-opioid analgesics based on this specific molecular target."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The discovery of a direct, peripheral sodium channel inhibition mechanism for AM404 opens a clear path for developing potent, non-opioid analgesics with reduced CNS side effects. While the target is validated, the commercial value depends on the ability to synthesize more stable or potent AM404 analogs to overcome the metabolic limitations of paracetamol."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The research targets pain management, one of the largest therapeutic markets globally, by identifying a new mechanism for a metabolite of paracetamol, the world's most widely used analgesic."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The research is at the fundamental mechanism-of-action stage, demonstrating effects in animal models (rats) and primary neurons. While it clarifies the pharmacology of an existing drug, it does not present a new lead compound, a clinical candidate, or a developed therapeutic delivery system."
+          },
+          "ip_strength": {
+            "score": 3,
+            "reason": "The innovation describes a mechanism of action for a metabolite of paracetamol, a generic drug that has been in public use for decades, making the primary compound non-patentable. Defensibility is low as the discovery is a fundamental biological observation rather than a novel, protectable chemical entity or platform."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel.",
+        "pi_email": "",
+        "abstract": "Paracetamol has been used for decades to relieve mild-to-moderate pain. Its analgesic effect is mainly attributed to its metabolite, AM404, acting on cannabinoid receptors or TRPV1 channels in central nervous system (CNS) neurons. Here, we show that AM404 is produced by primary sensory neurons. It inhibits sodium current in nociceptor neurons, blocking action potential (AP) generation and reducing nocifensive behavior in naïve and inflamed rats. We demonstrated that this analgesic effect of AM404 is mediated by its direct inhibition of nociceptive voltage-gated sodium channels (Na",
+        "hts_score": 10,
+        "hts_reason": "The paper identifies a specific target (nociceptive voltage-gated sodium channels), links it to a disease state (inflammation/pain), and describes a testable assay (sodium current inhibition/AP generation).",
+        "hts_eval_model": "gemma-4-31b-it"
+      },
+      {
+        "id": "pubmed_39368566",
+        "title": "Identification of the TRPA1 cannabinoid-binding site.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39368566/",
+        "journal": "Pharmacological research",
+        "score": 33,
+        "summary": "Researchers have identified the specific binding site where cannabinoids interact with the TRPA1 ion channel to reduce pain. This discovery provides a molecular map for how cannabis-based compounds alleviate chronic pain without relying solely on the brain's CB1 receptors.",
+        "opportunity": "Development of high-affinity, non-psychoactive TRPA1 agonists for targeted chronic pain management and inflammation therapy.",
+        "fields": [
+          "Drug Discovery",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 8,
+            "reason": "The precise structural identification of a cannabinoid-binding site on TRPA1 fills a critical knowledge gap in pharmacology and enables the rational design of targeted, non-psychoactive analgesics."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The identification of a specific binding site enables the rational design of selective TRPA1 agonists/antagonists, transforming a broad observation into a druggable target for chronic pain. While further lead optimization is required, this provides a clear path toward a novel class of non-opioid analgesics."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The target market is chronic pain, one of the largest and most valuable therapeutic areas in healthcare, with massive addressable demand across both pharmaceutical and medical cannabis sectors."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "The work is fundamental structural biology focused on identifying a binding site, representing basic research (TRL 2) rather than a developed lead compound or therapeutic application."
+          },
+          "ip_strength": {
+            "score": 7,
+            "reason": "The identification of a specific binding site provides a strong foundation for structure-based drug design and the filing of composition-of-matter patents for novel, high-affinity TRPA1 ligands. While the biological discovery itself is descriptive, it enables the creation of a highly defensible proprietary chemical library."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "The Institute for Drug Research (IDR), School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel. Electronic address: avi.priel@mail.huji.ac.il.",
+        "pi_email": "avi.priel@mail.huji.ac.il.",
+        "abstract": "Chronic pain accounts for nearly two-thirds of conditions eligible for medical cannabis licenses, yet the mechanisms underlying cannabis-induced analgesia remain poorly understood. The principal phytocannabinoids, the psychoactive Δ",
+        "hts_score": 8,
+        "hts_reason": "The paper identifies a specific target (TRPA1 cannabinoid-binding site) linked to chronic pain and describes a mechanism for cannabis-induced analgesia that implies a measurable assay for screening ligands.",
+        "hts_eval_model": "gemma-4-31b-it"
+      },
+      {
+        "id": "pubmed_38538847",
+        "title": "TRPM5 activation depends on a synergistic effect of calcium and PKC phosphorylation.",
+        "date": "2024",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38538847/",
+        "journal": "Communications biology",
+        "score": 17,
+        "summary": "Researchers discovered that TRPM5 ion channels require both calcium elevation and phosphorylation by PKC to activate fully. This clarifies the precise molecular switch that controls insulin secretion and taste perception.",
+        "opportunity": "Development of precision small-molecule modulators targeting the PKC-TRPM5 interaction for the treatment of metabolic disorders like diabetes.",
+        "fields": [
+          "Drug Discovery",
+          "Neuroscience",
+          "Clinical"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 4,
+            "reason": "The research addresses an existing knowledge gap regarding TRPM5 activation, but the hypothesis (synergy between calcium and PKC phosphorylation) is an incremental refinement of known signaling pathways rather than a groundbreaking discovery."
+          },
+          "commercial_potential": {
+            "score": 4,
+            "reason": "The paper provides foundational mechanistic insight into TRPM5 activation, which is valuable for target validation, but it does not present a lead compound, a screening platform, or a specific therapeutic application."
+          },
+          "market_size": {
+            "score": 7,
+            "reason": "The target, TRPM5, is linked to insulin secretion (diabetes) and taste transduction, addressing massive global healthcare markets. However, the paper focuses on basic mechanistic elucidation rather than a specific lead compound or a platform, leaving the immediate addressable demand theoretical."
+          },
+          "trl": {
+            "score": 2,
+            "reason": "The research is fundamental mechanistic biochemistry focused on elucidating the molecular triggers of channel activation, representing early-stage basic science (TRL 2) rather than a developed therapeutic or device."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": 19,
+        "prev_eval_model": "groq:llama-3.1-8b-instant",
+        "pi_affiliation": "The Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Ein Karem, Jerusalem, 9112102, Israel. avi.priel@mail.huji.ac.il.",
+        "pi_email": "avi.priel@mail.huji.ac.il.",
+        "abstract": "Transient receptor potential melastatin 5 (TRPM5) is a calcium-activated monovalent-specific ion channel involved in insulin secretion and taste transduction, making it an attractive target for drug development in various pathologies. While TRPM5 activation involves ligand binding to Gq/G-protein coupled receptors (GPCR) and subsequent elevation of intracellular calcium levels, recent reports suggest the need for additional molecular determinants. Hence, the mechanism of TRPM5 activation remains to be elucidated. Here, we show that PKC phosphorylation and the elevation of intracellular Ca",
+        "hts_score": 5,
+        "hts_reason": "The paper identifies a specific target (TRPM5) and links it to insulin secretion/taste pathologies, but the abstract cuts off before describing a specific assay for measuring effect.",
         "hts_eval_model": "gemma-4-31b-it"
       }
-    ]
+    ],
+    "max_hts_score": 10
   },
   {
     "pi": "A Yaacov",
@@ -16474,5 +16408,71 @@
       }
     ],
     "max_hts_score": 7
+  },
+  {
+    "pi": "Roy Maman",
+    "pi_full_name": "Roy Maman",
+    "pi_email": "Roy.maman@mail.huji.ac.il.",
+    "pi_affiliation": "Institute of Applied Physics, The Faculty of Science, The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, 91904, Israel.",
+    "avg_score": 32.0,
+    "max_hts_score": 1,
+    "paper_count": 1,
+    "description": "The researcher focuses on the development of advanced metasurfaces for the precise control of thermal radiation. Their work involves engineering materials that can independently manipulate emissivity across multiple infrared spectral bands, such as MWIR and LWIR.",
+    "applicability": "This technology has strong commercial potential in stealth coatings, thermal management systems, and infrared camouflage for defense and aerospace. It could lead to licensable intellectual property for next-generation radiative cooling products or heat-shielding components, with near-term application in specialized military hardware.",
+    "fields": [
+      "Materials",
+      "Imaging"
+    ],
+    "branches": [
+      "Exact & Social Sciences",
+      "Healthcare"
+    ],
+    "papers": [
+      {
+        "id": "pubmed_42493493",
+        "title": "Metasurface platform for simultaneous and uncorrelated emissivity control over MWIR and LWIR spectral bands.",
+        "date": "2026",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42493493/",
+        "journal": "Light, science & applications",
+        "score": 32,
+        "summary": "Researchers have developed a metasurface capable of independently controlling how an object emits heat (thermal radiation) across two different infrared spectrums. This allows for the precise manipulation of thermal signatures and heat dissipation without one wavelength affecting the other.",
+        "opportunity": "High-value applications in stealth technology, advanced thermal management for electronics, and specialized non-invasive thermal imaging sensors.",
+        "abstract": "Thermal radiation in the mid-wave infrared (MWIR) and long-wave infrared (LWIR) underpins a wide range of imaging, sensing, and security technologies. While metasurfaces have enabled spectral and angular control of thermal emissivity, achieving spatially resolved and uncorrelated emissivity control across multiple infrared bands on a single platform remains a major challenge. Here we experimentally demonstrate a metasurface-based approach that enables pixel-level control of thermal emissivity in both the MWIR and LWIR bands simultaneously. The platform is based on a cavity-coupled metal-insulator-metal architecture supporting two infrared resonances whose spectral positions and strengths are orthogonally controlled through geometric design parameters. By systematically exploring the design space, we realize a broad emissivity palette and experimentally verify its thermal response using Fourier-transform infrared spectroscopy (FTIR) together with calibrated MWIR and LWIR thermal imaging. This capability allows the encoding of spatial thermal patterns that are either correlated or distinct in the two bands, enabling demonstrations of dual-band thermal camouflage and decoupled thermal image multiplexing on a single chip. The metasurface response is shown to be polarization-insensitive and robust over a wide range of temperatures and viewing angles. These results establish a scalable route toward multi-band, image-level control of thermal emission, with potential applications in thermal imaging, security, and infrared information encoding.",
+        "fields": [
+          "Materials",
+          "Imaging"
+        ],
+        "score_breakdown": {
+          "novelty": {
+            "score": 7,
+            "reason": "The ability to achieve uncorrelated, simultaneous control over two distinct infrared bands (MWIR and LWIR) represents a significant functional leap over single-band or correlated metasurfaces, though it builds on existing plasmonic/dielectric resonator principles."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The ability to independently control MWIR and LWIR emissivity creates a high-value platform for thermal camouflage, energy-efficient coatings, and advanced sensing. While the technical application is clear, the score is tempered by the lack of provided data on scalability and manufacturing costs."
+          },
+          "market_size": {
+            "score": 7,
+            "reason": "The ability to independently control MWIR and LWIR emissivity is a platform-enabling capability with high value in defense (stealth/cloaking) and industrial thermal management, though it targets specialized high-end niches rather than a mass consumer market."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The paper describes the development of a metasurface platform for spectral control, which is characteristic of fundamental materials science and lab-stage proof-of-concept work. There is no evidence of integration into a commercial device, field testing, or scalable manufacturing processes."
+          },
+          "ip_strength": {
+            "score": 8,
+            "reason": "The development of a platform for uncorrelated spectral control in two distinct bands represents a high-value 'platform-enabling' innovation with strong potential for broad patent claims across defense and industrial sensing."
+          }
+        },
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": "",
+        "prev_eval_model": "",
+        "pi_affiliation": "Institute of Applied Physics, The Faculty of Science, The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, 91904, Israel.",
+        "pi_email": "Roy.maman@mail.huji.ac.il.",
+        "hts_score": 1,
+        "hts_reason": "The paper describes an optical engineering platform for spectral control; it contains no biological target, disease link, or drug-screening assay.",
+        "hts_eval_model": "gemma-4-31b-it"
+      }
+    ]
   }
 ]
