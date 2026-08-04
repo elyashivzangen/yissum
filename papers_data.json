@@ -1994,6 +1994,76 @@
     "hts_eval_model": "gemma-4-31b-it"
   },
   {
+    "id": "epmc_42086326",
+    "title": "Multi-omics-based machine learning model predicts response and guides treatment in Crohn disease: a case study in nutritional therapy.",
+    "authors": [
+      "Asaf Azulay",
+      "Leora Gotesdyner",
+      "Yonat Aharoni-Frutkoff",
+      "Gili Focht",
+      "Yael Talmor",
+      "Elhanan Borenstein",
+      "Luba Plotkin",
+      "Esther Orlanski-Meyer",
+      "Raffi Lev-Tzion",
+      "Oren Ledder",
+      "Dotan Yogev",
+      "Amit Assa",
+      "Efrat Broide",
+      "Anat Yerushalmy-Feler",
+      "Jarosław Kierkuś",
+      "Tobias Schwerd",
+      "Eytan Wine",
+      "Dan Turner"
+    ],
+    "journal": "",
+    "date": "2026 Aug 1",
+    "url": "https://europepmc.org/article/MED/42086326",
+    "source": "Europe PMC",
+    "score": 28,
+    "summary": "Researchers developed a machine learning model that uses serum and stool data to predict whether pediatric Crohn's disease patients will respond to nutritional therapy. By combining microbiome, metabolomic, and lipidomic data, the tool can help clinicians personalize treatment plans for newly diagnosed patients.",
+    "opportunity": "Development of a companion diagnostic (CDx) platform for precision nutrition and personalized medicine in inflammatory bowel disease.",
+    "fields": [
+      "Diagnostics",
+      "Software/AI",
+      "Clinical",
+      "Genomics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "While the application of multi-omics to Crohn disease is clinically valuable, the use of Random Forest and mRMR for biomarker discovery is standard practice. The novelty lies in the specific multi-modal data integration for EEN response rather than a groundbreaking methodological or scientific leap."
+      },
+      "commercial_potential": {
+        "score": 7,
+        "reason": "The work presents a high-accuracy diagnostic tool for precision medicine in a pediatric population, offering a clear path toward a companion diagnostic (CDx) product. However, the reliance on multi-omics (metabolomics, lipidomics, and microbiome) creates significant hurdles for cost-effective scale-up and clinical integration compared to single-marker tests."
+      },
+      "market_size": {
+        "score": 6,
+        "reason": "Crohn disease represents a significant global healthcare burden, but this specific application is restricted to a niche sub-segment: pediatric patients initiating exclusive enteral nutrition (EEN). While the multi-omics approach is scalable to other therapies, the immediate addressable market for this specific predictive model is relatively small."
+      },
+      "trl": {
+        "score": 5,
+        "reason": "The technology has moved beyond a simple proof-of-concept by achieving external validation in an independent prospective cohort, but it remains in the early clinical validation stage. It requires further large-scale prospective trials and standardization of multi-omics pipelines before it can be transitioned into a bedside diagnostic tool."
+      },
+      "ip_strength": {
+        "score": 4,
+        "reason": "The innovation relies on a Random Forest ML model using known omics markers, which is generally difficult to patent and easily replicated. While the validated multi-omics signature has clinical utility, the lack of a novel proprietary assay or a unique therapeutic molecule limits its long-term defensibility."
+      }
+    },
+    "pi": "Dan Turner",
+    "pi_full_name": "Dan Turner",
+    "pi_email": "",
+    "pi_affiliation": "Juliet Keidan Institute of Pediatric Gastroenterology Hepatology and Nutrition, The Eisenberg R&D Authority, Shaare Zedek Medical Center, The Hebrew University of Jerusalem, Jerusalem Israel.",
+    "eval_model": "gemma-4-31b-it",
+    "prev_score": 26,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-08-03",
+    "hts_score": 3,
+    "hts_reason": "The paper identifies predictive biomarkers and multi-omic patterns rather than a single specific molecular target for drug discovery, and it describes a predictive machine learning model rather than a scalable biochemical or cellular assay for HTS.",
+    "hts_eval_model": "gemma-4-26b-a4b-it"
+  },
+  {
     "id": "pubmed_42379259",
     "title": "Breath-Based Detection of Oral Diseases Using Sensors and Machine Learning.",
     "authors": [
@@ -2755,75 +2825,6 @@
     "hts_eval_model": "gemma-4-31b-it"
   },
   {
-    "id": "epmc_42086326",
-    "title": "Multi-omics-based machine learning model predicts response and guides treatment in Crohn disease: a case study in nutritional therapy.",
-    "authors": [
-      "Asaf Azulay",
-      "Leora Gotesdyner",
-      "Yonat Aharoni-Frutkoff",
-      "Gili Focht",
-      "Yael Talmor",
-      "Elhanan Borenstein",
-      "Luba Plotkin",
-      "Esther Orlanski-Meyer",
-      "Raffi Lev-Tzion",
-      "Oren Ledder",
-      "Dotan Yogev",
-      "Amit Assa",
-      "Efrat Broide",
-      "Anat Yerushalmy-Feler",
-      "Jarosław Kierkuś",
-      "Tobias Schwerd",
-      "Eytan Wine",
-      "Dan Turner"
-    ],
-    "journal": "",
-    "date": "2026 Aug 1",
-    "url": "https://europepmc.org/article/MED/42086326",
-    "source": "Europe PMC",
-    "score": 26,
-    "summary": "Hebrew University researchers developed a machine learning model that integrates microbiome, metabolomics, and lipidomics data to accurately predict how pediatric Crohn's disease patients will respond to nutritional therapy. This multi-omics approach provides a precision medicine tool to guide treatment decisions and avoid ineffective therapies for newly diagnosed patients.",
-    "opportunity": "This technology creates a high-value clinical decision support software (SaMD) that can be licensed to health systems or integrated into personalized nutrition platforms to optimize patient outcomes in chronic inflammatory diseases.",
-    "fields": [
-      "Diagnostics",
-      "Software/AI",
-      "Clinical"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 6,
-        "reason": "While the integration of multi-omics with machine learning for personalized nutrition in Crohn's disease is clinically valuable, the methodology relies on established feature selection and random forest techniques rather than a breakthrough algorithmic or biological innovation. It represents an incremental optimization of precision medicine workflows rather than a paradigm-shifting scientific discovery."
-      },
-      "commercial_potential": {
-        "score": 7,
-        "reason": "The study offers a clear value proposition for clinical decision support in a high-need area, though it lacks details on IP protection and the scalability of the multi-omics assay platform. While highly translational, the complexity of multi-sample collection (serum/stool) presents practical hurdles to near-term clinical adoption."
-      },
-      "market_size": {
-        "score": 6,
-        "reason": "While Crohn's disease represents a significant chronic market with high unmet needs for predictive diagnostics, the scope here is narrow, focusing specifically on pediatric patients undergoing exclusive enteral nutrition, which limits the immediate addressable market size compared to broader inflammatory bowel disease treatment selection platforms."
-      },
-      "trl": {
-        "score": 4,
-        "reason": "The study demonstrates proof-of-concept validation in a clinical cohort, but it remains a discovery-stage research project that requires prospective interventional trials and regulatory approval before clinical implementation. It has not yet established a scalable, standardized diagnostic workflow or a clear commercial path."
-      },
-      "ip_strength": {
-        "score": 3,
-        "reason": "The study describes a diagnostic algorithm based on standard multi-omics profiling that faces significant challenges regarding patentability due to the 'Laws of Nature' doctrine and the commodity nature of public-domain ML methodologies. Without a novel, proprietary wet-lab assay or a specific, non-obvious therapeutic intervention, the approach lacks a robust, defensible moat."
-      }
-    },
-    "pi": "Dan Turner",
-    "pi_full_name": "Dan Turner",
-    "pi_email": "",
-    "pi_affiliation": "Juliet Keidan Institute of Pediatric Gastroenterology Hepatology and Nutrition, The Eisenberg R&D Authority, Shaare Zedek Medical Center, The Hebrew University of Jerusalem, Jerusalem Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-08-03",
-    "hts_score": 3,
-    "hts_reason": "The paper identifies predictive biomarkers and multi-omic patterns rather than a single specific molecular target for drug discovery, and it describes a predictive machine learning model rather than a scalable biochemical or cellular assay for HTS.",
-    "hts_eval_model": "gemma-4-26b-a4b-it"
-  },
-  {
     "id": "pubmed_42529797",
     "title": "Automated readings of imaging reports by natural language processing (NLP) supplemented by clinical data predict disease course in children and adults with Crohn's disease: report from the epi-IIRN.",
     "authors": [
@@ -2903,43 +2904,43 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42509464/",
     "source": "PubMed",
     "score": 26,
-    "summary": "This research explores the discovery of previously hidden micropeptides translated from long non-coding RNAs (lncRNAs) and their functional role in driving cancer progression and metastasis. By identifying these overlooked molecules, the study establishes a new class of potential biomarkers and therapeutic targets in oncology.",
-    "opportunity": "The identification of novel tumor-promoting micropeptides enables the development of high-precision diagnostic assays and targeted small-molecule or peptide-based therapeutics that specifically inhibit metastatic pathways.",
+    "summary": "Researchers discovered that many long non-coding RNAs previously thought to be non-functional actually encode small proteins called micropeptides that drive cancer progression. By combining AI modeling with genomic data, they identified specific micropeptide signatures that vary by cancer type and stage.",
+    "opportunity": "Development of highly specific cancer diagnostics and novel peptide-based therapeutics targeting previously 'undruggable' non-coding genomic regions.",
     "fields": [
-      "Genomics",
-      "Proteomics",
+      "Drug Discovery",
       "Diagnostics",
-      "Drug Discovery"
+      "Genomics",
+      "Proteomics"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 6,
-        "reason": "While identifying functional micropeptides from previously annotated lncRNAs is a growing area of study, the field has transitioned from an initial discovery phase to one of characterization, making this research a significant incremental advance rather than a paradigm-shifting breakthrough."
+        "reason": "While the integration of AlphaFold and TCGA data to map micropeptides is a robust application of current tools, the concept of lncRNA-encoded micropeptides is already an established field of study. The work is an incremental systematic expansion rather than a groundbreaking discovery of a new biological mechanism."
       },
       "commercial_potential": {
-        "score": 6,
-        "reason": "While lncRNA-derived micropeptides are a burgeoning field with significant therapeutic and diagnostic target potential, the lack of a defined delivery mechanism or specific therapeutic candidate keeps this in the exploratory, discovery-phase research category. It represents a strong platform-enabling concept, but it is currently too early-stage to guarantee clear commercial path-to-market compared to validated therapeutic modalities."
+        "score": 5,
+        "reason": "The paper identifies a large library of novel cancer-associated micropeptides, which provides a strong foundation for discovering new biomarkers or drug targets. However, it remains at the discovery stage without functional validation or a demonstrated lead candidate, leaving the path to a commercial product undefined."
       },
       "market_size": {
         "score": 8,
-        "reason": "The discovery of micropeptides as functional drivers in cancer progression identifies a high-value, untapped class of therapeutic targets and diagnostic biomarkers with massive addressable demand in the oncology drug development market. This platform-enabling research opens a novel druggable space that could fundamentally reshape treatment paradigms for metastatic disease."
+        "reason": "The target market is massive, as it addresses pan-cancer progression and metastasis across 17 different cancer types. Identifying novel micropeptides creates a high-value pipeline for both diagnostic biomarkers and first-in-class therapeutic targets."
       },
       "trl": {
         "score": 2,
-        "reason": "This research is at the fundamental discovery stage, focusing on characterizing the biological function of micropeptides, which is far removed from therapeutic validation or commercial diagnostics. It remains in the exploratory phase of identifying biomarkers rather than developing a deployable technology or platform."
+        "reason": "The work is in the early discovery phase, utilizing computational pipelines and bioinformatics to identify potential biomarkers. It lacks functional validation, lead optimization, or preclinical proof-of-concept required for higher TRL levels."
       },
       "ip_strength": {
-        "score": 4,
-        "reason": "While individual novel micropeptides could be patented as composition-of-matter, the discovery of a biological correlation is generally considered a discovery of natural phenomena and faces significant challenges under 35 U.S.C. § 101. Establishing broad IP defensibility would require moving beyond identification to specific, novel therapeutic or diagnostic applications with non-obvious utility."
+        "score": 5,
+        "reason": "The paper identifies a large library of novel micropeptides, which provides a foundation for composition-of-matter patents; however, it is primarily a descriptive discovery study without specific functional validation or therapeutic application needed for strong defensibility."
       }
     },
     "pi": "Michal Linial",
     "pi_full_name": "Michal Linial",
     "pi_email": "michall@mail.huji.ac.il.",
     "pi_affiliation": "Department of Biological Chemistry, The Life Science Institute, The Hebrew University of Jerusalem, Jerusalem, Israel. michall@mail.huji.ac.il.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "eval_model": "gemma-4-31b-it",
+    "prev_score": 26,
+    "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-08-03",
     "hts_score": 2,
     "hts_reason": "The title suggests a broad survey of signatures across micropeptides and lncRNAs rather than a specific molecule. It lacks a named target and a described assay.",
@@ -3646,61 +3647,6 @@
     "hts_score": 10,
     "hts_reason": "The paper identifies a specific molecule (BA-101) targeting a defined protein (nNOS) for a specific disease (TMZ-resistant glioblastoma) and utilizes established cell-based assays that are highly suitable for high-throughput screening adaptation.",
     "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
-    "id": "pubmed_42509258",
-    "title": "Hydroxy acid conjugation to lipids increases structural and hydrolytic stability.",
-    "authors": [
-      "R Edri",
-      "S Fisher",
-      "Y Levi-Kalisman",
-      "M Frenkel-Pinter"
-    ],
-    "journal": "Nature communications",
-    "date": "2026-07-27",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42509258/",
-    "source": "PubMed",
-    "score": 25,
-    "summary": "Hebrew University researchers have developed a method to conjugate hydroxy acids to lipid molecules, which significantly improves their structural integrity and resistance to chemical degradation. This chemical modification allows lipids to remain stable under harsher physiological or environmental conditions, overcoming common limitations in lipid-based formulation.",
-    "opportunity": "This technology enables the creation of more robust lipid-based drug delivery vehicles, such as stabilized mRNA vaccines or long-circulating nanocarriers, that require less stringent cold-chain storage.",
-    "fields": [
-      "Vaccines",
-      "Drug Discovery",
-      "Materials"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 4,
-        "reason": "The conjugation of hydroxy acids to lipids to improve stability is a well-established chemical strategy in lipid engineering and formulation science. While technically sound, it represents an incremental optimization rather than a groundbreaking or paradigm-shifting innovation in the field."
-      },
-      "commercial_potential": {
-        "score": 7,
-        "reason": "Lipid modification is a high-value, platform-enabling strategy for stabilizing therapeutic delivery vehicles (e.g., LNP-mRNA), providing a clear pathway for licensing or integration into existing biopharma manufacturing pipelines. However, the lack of efficacy data in a specific biological context leaves the true magnitude of the performance improvement relative to current industry standards undefined."
-      },
-      "market_size": {
-        "score": 7,
-        "reason": "The technology addresses the stability limitations of lipid-based delivery vehicles, a critical bottleneck for the rapidly expanding multi-billion dollar mRNA, siRNA, and gene therapy delivery markets. While highly enabling for drug formulation, its ultimate market size depends on demonstrating significant improvements over existing lipid nanoparticle (LNP) patents and their integration into high-value clinical pipelines."
-      },
-      "trl": {
-        "score": 3,
-        "reason": "This appears to be a fundamental chemical engineering study on molecular stability rather than a validated therapeutic or industrial prototype. Without evidence of a specific drug delivery application or shelf-life data in a commercial formulation, it remains in the early, exploratory stage of technology development."
-      },
-      "ip_strength": {
-        "score": 4,
-        "reason": "Chemical modification of lipids via conjugation is a well-trodden field in medicinal chemistry, making the establishment of broad, non-obvious composition-of-matter claims highly challenging. Without evidence of a specific, novel, and highly effective therapeutic or industrial application, the innovation lacks the necessary 'inventive step' to secure a strong defensible moat."
-      }
-    },
-    "pi": "M Frenkel-Pinter",
-    "pi_full_name": "M Frenkel-Pinter",
-    "pi_email": "moran.fp@mail.huji.ac.il.",
-    "pi_affiliation": "Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem, Israel. moran.fp@mail.huji.ac.il.; The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, Israel. moran.fp@mail.huji.ac.il.; Casali Center of Applied Chemistry, The Hebrew University of Jerusalem, Jerusalem, Israel. moran.fp@mail.huji.ac.il.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-08-03",
-    "hts_score": 1,
-    "hts_reason": "The paper describes chemical modification techniques for lipids but fails to identify a specific disease target, a specific disease link, or a functional assay suitable for HTS.",
-    "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
     "id": "pubmed_42373304",
@@ -9910,69 +9856,6 @@
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
-    "id": "pubmed_42520093",
-    "title": "De Ritis (AST/ALT) ratio as a predictor of early adverse outcomes following transcatheter aortic valve replacement.",
-    "authors": [
-      "Haitham Abu Khadija",
-      "Jebrin Alkrinawi",
-      "Ali Abdullah",
-      "Omar Ayyad",
-      "Ammar Barakat",
-      "Salma Najjar",
-      "Alexander Kogan",
-      "Leonid Sternik",
-      "Alaa Shehady",
-      "Mohammad Masu'd",
-      "Duha Najajra",
-      "Mohammad Alnees"
-    ],
-    "journal": "PloS one",
-    "date": "2026",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42520093/",
-    "source": "PubMed",
-    "score": 19,
-    "summary": "This study evaluates the ratio of two liver enzymes, AST and ALT, as a prognostic biomarker for identifying patients at risk of complications following transcatheter aortic valve replacement (TAVR). It suggests that simple, inexpensive blood panels can serve as effective early warning indicators for post-operative adverse outcomes in cardiac surgery patients.",
-    "opportunity": "This research enables the development of an AI-driven clinical decision support tool that integrates routine biomarker data to stratify TAVR patient risk and optimize pre-operative care management.",
-    "fields": [
-      "Diagnostics",
-      "Clinical",
-      "Software/AI"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "The study applies a well-established liver enzyme ratio to a standard clinical procedure, representing an incremental observational analysis rather than a novel diagnostic discovery or platform-enabling technology. It relies on existing biomarkers that lack intellectual property potential or significant clinical innovation."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "This study focuses on a retrospective clinical biomarker association rather than a novel, protectable diagnostic device or therapeutic platform. While it provides useful prognostic data, it lacks the proprietary intellectual property or high-barrier-to-entry innovation required for significant commercial scalability."
-      },
-      "market_size": {
-        "score": 3,
-        "reason": "The study focuses on a narrow diagnostic biomarker application for a specific surgical sub-segment (TAVR), offering limited potential for large-scale commercial scaling or high-value market expansion beyond existing clinical workflows. While TAVR is a significant procedure, the utility of this specific ratio as a predictive tool represents a niche clinical improvement rather than a broad market-defining opportunity."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "This study analyzes a readily available clinical biomarker (AST/ALT ratio) to predict post-surgical outcomes in an established procedure (TAVR), representing a near-market clinical decision support tool that requires no new hardware or regulatory approval for the diagnostic itself."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "The De Ritis ratio is a well-established, non-proprietary clinical laboratory measurement that cannot be patented or otherwise protected as intellectual property. This research is a retrospective clinical correlation study rather than an underlying technological innovation."
-      }
-    },
-    "pi": "Mohammad Alnees",
-    "pi_full_name": "Mohammad Alnees",
-    "pi_email": "",
-    "pi_affiliation": "Department of Internal Medicine B, Kaplan Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.; Harvard Medical School, Postgraduate Medical Education, Global Clinical Scholar Research Training Program, Boston, Massachusetts, United States of America.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-08-03",
-    "hts_score": 1,
-    "hts_reason": "The paper focuses on a clinical biomarker ratio (AST/ALT) rather than a novel druggable molecule or target, and it lacks any HTS-compatible assay for drug discovery.",
-    "hts_eval_model": "gemma-4-31b-it"
-  },
-  {
     "id": "pubmed_42530530",
     "title": "Training in the Shadow of War: Exertional Heat Illness During the \"Iron Swords\" War.",
     "authors": [
@@ -10029,6 +9912,60 @@
     "hts_score": 1,
     "hts_reason": "The title suggests a clinical or epidemiological descriptive study of exertional heat illness rather than a molecular target identification; none of the three required HTS elements are present.",
     "hts_eval_model": "gemma-4-31b-it"
+  },
+  {
+    "id": "pubmed_42509305",
+    "title": "Magnesium sulfate for brain protection in neonatal encephalopathy: a systematic review.",
+    "authors": [
+      "Francis B Mimouni",
+      "Yuval Dadon",
+      "Iris Arad",
+      "Joseph Mendlovic"
+    ],
+    "journal": "Journal of perinatology : official journal of the California Perinatal Association",
+    "date": "2026-07-27",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42509305/",
+    "source": "PubMed",
+    "score": 18,
+    "summary": "This study evaluates the use of magnesium sulfate to prevent brain damage in newborns with neonatal encephalopathy. It found that while the treatment is safe and improves short-term recovery and seizure reduction, there is insufficient evidence of long-term developmental benefits.",
+    "opportunity": "Potential for developing optimized delivery systems or combination therapies that pair magnesium sulfate with therapeutic hypothermia to improve long-term neurodevelopmental outcomes.",
+    "fields": [
+      "Neuroscience",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 2,
+        "reason": "This is a systematic review and meta-analysis of existing clinical trials, which by definition synthesizes known data rather than presenting new scientific discoveries or innovative methodologies. It offers no new therapeutic mechanism or protectable intellectual property."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "Magnesium sulfate is a generic, off-patent commodity drug with no protectable IP, and the study lacks evidence of long-term efficacy, offering no new commercial moat or high-value licensing opportunity."
+      },
+      "market_size": {
+        "score": 4,
+        "reason": "The target patient population (neonates with encephalopathy) is a niche orphan-like market, and the intervention uses magnesium sulfate, a low-cost generic commodity with negligible profit margins for investors."
+      },
+      "trl": {
+        "score": 9,
+        "reason": "The technology involves an off-the-shelf pharmaceutical (magnesium sulfate) already used in clinical trials, placing it at the final stages of clinical validation rather than early-stage development."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "The paper is a systematic review of magnesium sulfate, a generic and off-patent commodity chemical; there is no novel composition, method, or technology presented that is eligible for patent protection."
+      }
+    },
+    "pi": "Joseph Mendlovic",
+    "pi_full_name": "Joseph Mendlovic",
+    "pi_email": "sefi.mendlovic@moh.gov.il.",
+    "pi_affiliation": "Israel Ministry of Health, Jerusalem, Israel. sefi.mendlovic@moh.gov.il.; Department of Pediatrics, Shaare Zedek Medical Center, Affiliated with the Hadassah-Hebrew University School of Medicine, Jerusalem, Israel. sefi.mendlovic@moh.gov.il.",
+    "eval_model": "gemma-4-31b-it",
+    "prev_score": 17,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-08-03",
+    "hts_score": 2,
+    "hts_reason": "This is a systematic review of an existing clinical treatment rather than primary research identifying a new molecular target, molecule, or novel assay method.",
+    "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
     "id": "pubmed_42301788",
@@ -10819,58 +10756,67 @@
     "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
-    "id": "pubmed_42509305",
-    "title": "Magnesium sulfate for brain protection in neonatal encephalopathy: a systematic review.",
+    "id": "pubmed_42520093",
+    "title": "De Ritis (AST/ALT) ratio as a predictor of early adverse outcomes following transcatheter aortic valve replacement.",
     "authors": [
-      "Francis B Mimouni",
-      "Yuval Dadon",
-      "Iris Arad",
-      "Joseph Mendlovic"
+      "Haitham Abu Khadija",
+      "Jebrin Alkrinawi",
+      "Ali Abdullah",
+      "Omar Ayyad",
+      "Ammar Barakat",
+      "Salma Najjar",
+      "Alexander Kogan",
+      "Leonid Sternik",
+      "Alaa Shehady",
+      "Mohammad Masu'd",
+      "Duha Najajra",
+      "Mohammad Alnees"
     ],
-    "journal": "Journal of perinatology : official journal of the California Perinatal Association",
-    "date": "2026-07-27",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42509305/",
+    "journal": "PloS one",
+    "date": "2026",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42520093/",
     "source": "PubMed",
-    "score": 17,
-    "summary": "This systematic review evaluates the efficacy of magnesium sulfate as a neuroprotective agent for infants suffering from neonatal encephalopathy. It synthesizes existing clinical data to determine if this low-cost treatment can reliably reduce brain injury and improve developmental outcomes in newborns.",
-    "opportunity": "The findings can inform clinical guidelines or potential repurposing efforts for existing pediatric care protocols to improve outcomes in high-risk neonatal intensive care settings.",
+    "score": 18,
+    "summary": "Researchers found that a high ratio of AST to ALT liver enzymes can predict increased risks of kidney injury, stroke, and atrial fibrillation after TAVR heart valve procedures. This suggests that a simple blood test can help doctors better identify high-risk patients before surgery.",
+    "opportunity": "Integration of this biomarker into AI-driven clinical decision support software for preoperative risk stratification in cardiovascular surgery.",
     "fields": [
-      "Clinical",
-      "Neuroscience"
+      "Diagnostics",
+      "Software/AI",
+      "Clinical"
     ],
     "score_breakdown": {
       "novelty": {
-        "score": 2,
-        "reason": "As a systematic review, this paper summarizes existing clinical data rather than introducing a new therapeutic mechanism, technology, or discovery. It offers no scientific innovation, as magnesium sulfate is a well-characterized compound with a long history of study in obstetric and neonatal medicine."
+        "score": 3,
+        "reason": "The study applies a well-known, existing biochemical ratio (De Ritis) to a specific patient cohort (TAVR) without proposing a new mechanism, technology, or platform. It is an incremental retrospective validation rather than a groundbreaking innovation."
       },
       "commercial_potential": {
         "score": 2,
-        "reason": "Magnesium sulfate is an inexpensive, off-patent generic drug, offering no clear path to intellectual property protection or significant commercial return for a life-science investor. The potential is limited to clinical protocol refinement rather than the development of a novel, scalable, or proprietary medical product."
+        "reason": "The study identifies a correlation using existing, low-cost biochemical markers that are already standard of care, offering no protectable IP or novel product opportunity. Its value is purely clinical guidance rather than a commercializable technology or service."
       },
       "market_size": {
         "score": 3,
-        "reason": "Neonatal encephalopathy is a niche, orphan-scale condition with a restricted addressable patient population, and magnesium sulfate is a low-cost, generic molecule that offers limited commercial upside. The market lacks the scale and economic incentives typical of high-value deep-tech life science investments."
+        "reason": "The target market is limited to a specific subset of TAVR patients, and the 'product' is a calculation based on existing, low-cost biochemical markers, offering virtually no proprietary value or new market creation."
       },
       "trl": {
         "score": 9,
-        "reason": "Magnesium sulfate is an established clinical agent with a well-understood safety profile, and its use for neuroprotection in neonatal populations has progressed through advanced clinical trials, placing it near the final stages of clinical implementation and standard-of-care integration."
+        "reason": "The technology utilizes existing, FDA-approved biochemical assays (AST/ALT) available in every clinical lab, requiring only a change in clinical protocol to implement. It is essentially ready for immediate real-world clinical application as a risk-stratification tool."
       },
       "ip_strength": {
         "score": 1,
-        "reason": "Magnesium sulfate is a well-known, generic, off-patent chemical compound, meaning there is no novel intellectual property or proprietary composition of matter to protect."
+        "reason": "The study identifies a correlation using a ratio of two standard, ubiquitous biochemical markers (AST/ALT), which is a discovery of natural biological association and lacks any novel tool, molecule, or proprietary method that could be patented."
       }
     },
-    "pi": "Joseph Mendlovic",
-    "pi_full_name": "Joseph Mendlovic",
-    "pi_email": "sefi.mendlovic@moh.gov.il.",
-    "pi_affiliation": "Israel Ministry of Health, Jerusalem, Israel. sefi.mendlovic@moh.gov.il.; Department of Pediatrics, Shaare Zedek Medical Center, Affiliated with the Hadassah-Hebrew University School of Medicine, Jerusalem, Israel. sefi.mendlovic@moh.gov.il.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "pi": "Mohammad Alnees",
+    "pi_full_name": "Mohammad Alnees",
+    "pi_email": "",
+    "pi_affiliation": "Department of Internal Medicine B, Kaplan Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.; Harvard Medical School, Postgraduate Medical Education, Global Clinical Scholar Research Training Program, Boston, Massachusetts, United States of America.",
+    "eval_model": "gemma-4-31b-it",
+    "prev_score": 19,
+    "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-08-03",
-    "hts_score": 2,
-    "hts_reason": "This is a systematic review of an existing clinical treatment rather than primary research identifying a new molecular target, molecule, or novel assay method.",
-    "hts_eval_model": "gemma-4-26b-a4b-it"
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on a clinical biomarker ratio (AST/ALT) rather than a novel druggable molecule or target, and it lacks any HTS-compatible assay for drug discovery.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42478868",
@@ -12049,6 +11995,61 @@
     "hts_score": 1,
     "hts_reason": "The paper is a population-based epidemiological study; it does not identify a molecular target, a druggable molecule, or a laboratory assay for HTS.",
     "hts_eval_model": "gemma-4-31b-it"
+  },
+  {
+    "id": "pubmed_42509258",
+    "title": "Hydroxy acid conjugation to lipids increases structural and hydrolytic stability.",
+    "authors": [
+      "R Edri",
+      "S Fisher",
+      "Y Levi-Kalisman",
+      "M Frenkel-Pinter"
+    ],
+    "journal": "Nature communications",
+    "date": "2026-07-27",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42509258/",
+    "source": "PubMed",
+    "score": 16,
+    "summary": "Researchers discovered that attaching hydroxy acids to lipids creates a protective effect that prevents the acid chains from breaking down. This interaction also makes it easier for these molecules to form cell-like structures at lower concentrations.",
+    "opportunity": "Development of highly stable, self-assembling lipid-polymer hybrids for targeted drug delivery systems or synthetic membranes.",
+    "fields": [
+      "Materials",
+      "Synthetic Biology",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 6,
+        "reason": "The research demonstrates a novel cooperative interaction between polymerization and compartmentalization in an abiotic setting, but it relies on well-known chemistry (hydroxy acids and fatty acids) to prove a conceptual point rather than introducing a new chemical class or a disruptive platform technology."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The research is primarily fundamental and prebiotic in nature, focusing on co-evolutionary chemistry rather than a specific industrial application. While improved stability of oligoesters is noted, there is no clear path to a viable commercial product, therapeutic, or scalable material platform."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper focuses on abiotic, prebiotic chemistry and the theoretical co-evolution of lipids and polymers, lacking a defined commercial application or target industry. There is no evidence of a specific addressable market or industrial utility beyond fundamental scientific inquiry."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "The work is fundamental prebiotic chemistry research focused on abiotic scenarios and molecular co-evolution, representing basic lab-stage discovery with no immediate path to commercial application."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The work describes a fundamental chemical discovery regarding abiotic co-evolution and basic molecular stability, lacking a specific industrial application or a novel, non-obvious composition that would facilitate a strong patent claim."
+      }
+    },
+    "pi": "M Frenkel-Pinter",
+    "pi_full_name": "M Frenkel-Pinter",
+    "pi_email": "moran.fp@mail.huji.ac.il.",
+    "pi_affiliation": "Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem, Israel. moran.fp@mail.huji.ac.il.; The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, Israel. moran.fp@mail.huji.ac.il.; Casali Center of Applied Chemistry, The Hebrew University of Jerusalem, Jerusalem, Israel. moran.fp@mail.huji.ac.il.",
+    "eval_model": "gemma-4-31b-it",
+    "prev_score": 25,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-08-03",
+    "hts_score": 1,
+    "hts_reason": "The paper describes chemical modification techniques for lipids but fails to identify a specific disease target, a specific disease link, or a functional assay suitable for HTS.",
+    "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
     "id": "pubmed_42381178",
@@ -13237,6 +13238,65 @@
     "hts_eval_model": "gemma-4-31b-it"
   },
   {
+    "id": "epmc_42343828",
+    "title": "A two-step auxin-GA cross-talk regulates organ formation in tomato.",
+    "authors": [
+      "Alon Israeli",
+      "Dov Nir",
+      "Ido Shwartz",
+      "Matan Levy",
+      "Marc W Schmid",
+      "Yogev Burko",
+      "Idan Efroni",
+      "Naomi Ori"
+    ],
+    "journal": "",
+    "date": "2026-07-29",
+    "url": "https://europepmc.org/article/MED/42343828",
+    "source": "Europe PMC",
+    "score": 15,
+    "summary": "Researchers discovered that the plant hormone auxin controls tomato leaf formation by toggling the levels of another hormone, gibberellin, in two distinct stages. Specifically, auxin first lowers gibberellin to trigger the start of a new leaf and then increases it to drive the leaf's growth.",
+    "opportunity": "Development of precision growth regulators or CRISPR-edited crop varieties to optimize leaf architecture and fruit yield in commercial tomato production.",
+    "fields": [
+      "AgriTech",
+      "Synthetic Biology",
+      "Genomics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "The paper describes a specific hormonal cross-talk mechanism in tomato that is a logical extension of known auxin-GA interactions; it represents an incremental mechanistic refinement rather than a groundbreaking discovery or a protectable platform technology."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper describes a fundamental biological mechanism of hormone cross-talk; while it provides targets for potential crop engineering, it lacks a specific product application, a developed tool, or a clear path to commercialization beyond basic academic knowledge."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper presents fundamental plant biology regarding hormone cross-talk; while tomato is a major crop, the discovery is a basic mechanistic insight rather than a direct tool for yield increase or a platform for commercial application."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This is fundamental basic research focused on the molecular mechanisms of plant hormone cross-talk; it is at the discovery stage with no prototype or clear path to immediate commercial application."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The paper describes a fundamental biological mechanism of hormone cross-talk, which is generally considered a discovery of nature and difficult to patent. Without specific genetic constructs, novel chemical entities, or a clear application for crop yield enhancement, the findings lack immediate industrial defensibility."
+      }
+    },
+    "pi": "Naomi Ori",
+    "pi_full_name": "Naomi Ori",
+    "pi_email": "naomi.ori@mail.huji.ac.il",
+    "pi_affiliation": "The Institute of Plant Sciences and Genetics in Agriculture, The Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Rehovot 7610001, Israel.",
+    "eval_model": "gemma-4-31b-it",
+    "prev_score": 14,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-08-03",
+    "hts_score": 3,
+    "hts_reason": "The paper identifies specific hormonal targets (auxin and GA metabolism) and describes biological mechanisms, but it lacks a human disease link and is focused on plant developmental biology rather than a drug-discovery assay suitable for HTS.",
+    "hts_eval_model": "gemma-4-26b-a4b-it"
+  },
+  {
     "id": "pubmed_41967557",
     "title": "The Development of an Integrative Surf Therapy Program for Trauma Survivors: A conceptual model and Case Illustration.",
     "authors": [
@@ -14304,64 +14364,6 @@
     "hts_eval_model": "gemma-4-31b-it"
   },
   {
-    "id": "epmc_42343828",
-    "title": "A two-step auxin-GA cross-talk regulates organ formation in tomato.",
-    "authors": [
-      "Alon Israeli",
-      "Dov Nir",
-      "Ido Shwartz",
-      "Matan Levy",
-      "Marc W Schmid",
-      "Yogev Burko",
-      "Idan Efroni",
-      "Naomi Ori"
-    ],
-    "journal": "",
-    "date": "2026-07-29",
-    "url": "https://europepmc.org/article/MED/42343828",
-    "source": "Europe PMC",
-    "score": 14,
-    "summary": "Hebrew University researchers discovered that the plant hormones auxin and gibberellin (GA) act in a precise two-step sequence to control tomato leaf development. By modulating GA levels, plants first initiate new organ growth and subsequently promote the expansion of those tissues.",
-    "opportunity": "This regulatory mechanism provides a genetic roadmap for engineering high-yield crop varieties with optimized leaf architecture and enhanced biomass production through targeted hormonal manipulation.",
-    "fields": [
-      "AgriTech",
-      "Synthetic Biology"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 4,
-        "reason": "While this research provides a mechanistic advancement in plant developmental biology by elucidating the context-dependent auxin-GA feedback loop in tomato, it is a localized basic science discovery rather than a platform-enabling technology or a transformative commercial innovation. The findings are primarily incremental to the existing body of knowledge regarding hormonal regulation in plant architecture."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "While the paper provides valuable mechanistic insight into plant developmental biology, it describes fundamental physiological processes rather than a direct, actionable technology or platform. Translating these complex hormone-crosstalk pathways into commercial agricultural products remains highly speculative and distant from industry implementation."
-      },
-      "market_size": {
-        "score": 3,
-        "reason": "While plant growth regulation is commercially significant, this paper describes a fundamental mechanism of plant development in a model organism without proposing a specific application or industrial intervention. The findings are currently too distant from a scalable product or technology to demonstrate immediate market addressability."
-      },
-      "trl": {
-        "score": 2,
-        "reason": "This is fundamental plant physiology research focused on mechanistic signaling pathways, which provides necessary scientific knowledge but remains at a very early, bench-scale level far from agricultural application or commercial development."
-      },
-      "ip_strength": {
-        "score": 2,
-        "reason": "This is fundamental plant biology research characterizing a signaling pathway, which lacks the specific technical intervention or novel synthetic construct required for robust patentability. The findings are primarily descriptive discoveries of natural phenomena, making them difficult to translate into defensible proprietary intellectual property."
-      }
-    },
-    "pi": "Naomi Ori",
-    "pi_full_name": "Naomi Ori",
-    "pi_email": "naomi.ori@mail.huji.ac.il",
-    "pi_affiliation": "The Institute of Plant Sciences and Genetics in Agriculture, The Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Rehovot 7610001, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-08-03",
-    "hts_score": 3,
-    "hts_reason": "The paper identifies specific hormonal targets (auxin and GA metabolism) and describes biological mechanisms, but it lacks a human disease link and is focused on plant developmental biology rather than a drug-discovery assay suitable for HTS.",
-    "hts_eval_model": "gemma-4-26b-a4b-it"
-  },
-  {
     "id": "pubmed_42330696",
     "title": "Polymer scaling in protein crowding: From dilute coils to semidilute meshes.",
     "authors": [
@@ -15072,43 +15074,43 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42521109/",
     "source": "PubMed",
     "score": 13,
-    "summary": "This study characterizes a specific genetic founder variant in the C2 gene that causes complement component 2 deficiency within the Ashkenazi Jewish population. By mapping the clinical and genetic profile of this deficiency, the researchers provide a foundation for improved risk assessment and patient stratification in immunodeficiency disorders.",
-    "opportunity": "The findings facilitate the development of targeted genetic screening panels for population-specific carrier testing and precision diagnostic tools for patients presenting with unexplained immune-related clinical symptoms.",
+    "summary": "Researchers identified a common genetic mutation causing Complement Component 2 deficiency specifically within the Ashkenazi Jewish population. This deficiency increases susceptibility to severe bacterial infections and autoimmune diseases like lupus.",
+    "opportunity": "Development of targeted genetic screening panels and personalized prophylactic treatment strategies for high-risk populations identified via this founder variant.",
     "fields": [
       "Genomics",
-      "Diagnostics",
       "Immunology",
+      "Diagnostics",
       "Clinical"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 3,
-        "reason": "This study focuses on characterizing a founder variant, which provides valuable clinical diagnostic data but represents a localized genetic observation rather than a platform-enabling technology or a fundamental shift in scientific understanding. It falls into the category of incremental population-specific clinical genetics rather than groundbreaking, high-novelty deep-tech innovation."
+        "reason": "The paper describes a specific founder variant and a clinical case; while useful for population genetics and diagnostics, it represents incremental knowledge rather than a groundbreaking scientific discovery or a novel technological platform."
       },
       "commercial_potential": {
         "score": 3,
-        "reason": "This is a descriptive clinical genetic study identifying a founder variant, which primarily serves a diagnostic or epidemiological purpose rather than representing a novel therapeutic platform, device, or scalable commercial technology. The commercial utility is limited to niche genetic screening applications with a very small addressable market."
+        "reason": "The paper provides valuable genetic insights for diagnostic screening in a specific sub-population, but it does not propose a new therapeutic, device, or scalable platform technology."
       },
       "market_size": {
-        "score": 2,
-        "reason": "The paper focuses on a rare genetic deficiency (C2 deficiency) within a specific ethnic population, representing a highly niche 'orphan' market with limited addressable demand. The clinical utility is primarily diagnostic rather than representing a broad therapeutic platform or a large-scale commercial opportunity."
+        "score": 3,
+        "reason": "The target market is highly niche, focusing on a specific founder variant within a single ethnic subpopulation (Ashkenazi Jews). While the carrier frequency is 3%, the actual patient population requiring clinical intervention for C2D is very small compared to broad-market therapeutics."
       },
       "trl": {
-        "score": 3,
-        "reason": "This is a fundamental clinical and population genetics study focused on characterizing a disease-associated variant, which provides valuable diagnostic knowledge but lacks the therapeutic development, scalable platform technology, or commercial application required for higher TRL ratings."
+        "score": 2,
+        "reason": "This is a basic discovery paper identifying a genetic founder variant; it provides diagnostic insight but does not propose a therapeutic product or a scalable commercial tool."
       },
       "ip_strength": {
         "score": 2,
-        "reason": "This study is a descriptive clinical and genetic characterization of a naturally occurring variant rather than the creation of a novel, patentable invention or therapeutic modality. Identifying a founder mutation in a population lacks the novelty and non-obviousness required for strong intellectual property protection."
+        "reason": "The paper describes a genetic discovery of a founder variant in a specific population, which is a factual biological observation and generally not patentable. There is no mention of a novel therapeutic, diagnostic kit, or platform technology that would provide commercial defensibility."
       }
     },
     "pi": "Sigal Matza-Porges",
     "pi_full_name": "Sigal Matza-Porges",
     "pi_email": "sigalpo@jmc.ac.il.",
     "pi_affiliation": "Department of Genetics, Hadassah Medical Organization, Jerusalem, Israel; Department of Medical Laboratory Sciences, Jerusalem Multidisciplinary College, Jerusalem, Israel.. Electronic address: sigalpo@jmc.ac.il.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "eval_model": "gemma-4-31b-it",
+    "prev_score": 13,
+    "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-08-03",
     "hts_score": 4,
     "hts_reason": "The paper identifies a specific target (C2) and links it to a disease (C2 deficiency), but provides no information on a testable assay for HTS based on the title alone.",
@@ -17961,59 +17963,6 @@
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
-    "id": "pubmed_42522033",
-    "title": "The role of forensic and legal systems in suicide prevention: Implications for Israeli healthcare policy.",
-    "authors": [
-      "Gadi Lubin",
-      "Liat Keysar Gersht",
-      "Ligat Shalev"
-    ],
-    "journal": "Israel journal of health policy research",
-    "date": "2026-07-29",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42522033/",
-    "source": "PubMed",
-    "score": 10,
-    "summary": "This paper examines how legal and forensic frameworks can be integrated into healthcare policies to better prevent suicide. It focuses on the systemic intersection of law and medicine to improve intervention outcomes.",
-    "opportunity": "Development of AI-driven predictive analytics and compliance software for healthcare providers to manage legal risk and patient safety protocols.",
-    "fields": [
-      "Software/AI",
-      "Clinical"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "The paper appears to be a policy-oriented analysis of existing legal and forensic frameworks rather than the introduction of a new scientific discovery, technology, or clinical methodology."
-      },
-      "commercial_potential": {
-        "score": 2,
-        "reason": "The paper focuses on policy implications and legal frameworks rather than the development of a proprietary technology, tool, or platform. It describes systemic organizational changes rather than a scalable, licensable commercial product."
-      },
-      "market_size": {
-        "score": 2,
-        "reason": "The paper focuses on policy recommendations for Israeli forensic and legal systems, representing a narrow, geography-specific administrative intervention rather than a scalable, high-growth commercial market opportunity. It lacks the industry-relevant product architecture or broad addressable demand required for significant venture-scale investment potential."
-      },
-      "trl": {
-        "score": 2,
-        "reason": "This paper focuses on policy analysis and legal frameworks rather than the development of a deployable technology, placing it firmly in the theoretical research stage. It lacks a tangible product, protocol, or clinical tool capable of being measured on a technology readiness scale."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "This paper addresses policy, forensic, and legal frameworks rather than technical innovation, offering no protectable intellectual property or proprietary technology. It is a social science and public policy analysis that inherently lacks the subject matter required for patentability or technical defensibility."
-      }
-    },
-    "pi": "Ligat Shalev",
-    "pi_full_name": "Ligat Shalev",
-    "pi_email": "Ligat.Shalev@gmail.com.",
-    "pi_affiliation": "Hebrew University Faculty of Medicine, Jerusalem, 91120, Israel. Ligat.Shalev@gmail.com.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-08-03",
-    "hts_score": 1,
-    "hts_reason": "The paper is a policy and legal analysis; it identifies no molecular target, no biological disease mechanism, and no laboratory assay.",
-    "hts_eval_model": "gemma-4-31b-it"
-  },
-  {
     "id": "pubmed_42522212",
     "title": "Trauma Systems as Diplomatic Infrastructure: A Model for Professional Cooperation During Conflict.",
     "authors": [
@@ -19239,6 +19188,59 @@
     "hts_score": 2,
     "hts_reason": "This is a review article that discusses general bacterial pathogens rather than identifying a specific molecular target for screening. It lacks a novel, druggable target and a defined HTS-ready assay.",
     "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
+    "id": "pubmed_42522033",
+    "title": "The role of forensic and legal systems in suicide prevention: Implications for Israeli healthcare policy.",
+    "authors": [
+      "Gadi Lubin",
+      "Liat Keysar Gersht",
+      "Ligat Shalev"
+    ],
+    "journal": "Israel journal of health policy research",
+    "date": "2026-07-29",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42522033/",
+    "source": "PubMed",
+    "score": 9,
+    "summary": "This study analyzes nearly four decades of Israeli court rulings and settlements related to psychiatry malpractice in suicide cases. It evaluates how legal outcomes and medical documentation practices influence healthcare policies and clinical decision-making.",
+    "opportunity": "Development of AI-driven clinical decision support and automated documentation software to reduce medical malpractice risk in psychiatric care.",
+    "fields": [
+      "Software/AI",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The study is a retrospective descriptive analysis of existing legal records rather than a discovery of new biological mechanisms or a novel therapeutic intervention. It provides localized policy insights but lacks groundbreaking scientific or technical innovation."
+      },
+      "commercial_potential": {
+        "score": 1,
+        "reason": "This is a retrospective legal and policy analysis with no proprietary technology, therapeutic agent, or scalable product; it offers systemic policy recommendations rather than a commercializable asset."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper is a retrospective policy analysis focused on a very small sample size (20 lawsuits) within a single national jurisdiction (Israel), offering no scalable product, platform, or broad commercial application."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This is a retrospective legal and policy analysis rather than a technological or clinical intervention. It provides theoretical framework for policy change but lacks a deployable product, tool, or scalable technology."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "The paper is a retrospective legal and policy analysis of court rulings, containing no novel technology, chemical entity, or proprietary algorithm that could be patented or defended as intellectual property."
+      }
+    },
+    "pi": "Ligat Shalev",
+    "pi_full_name": "Ligat Shalev",
+    "pi_email": "Ligat.Shalev@gmail.com.",
+    "pi_affiliation": "Hebrew University Faculty of Medicine, Jerusalem, 91120, Israel. Ligat.Shalev@gmail.com.",
+    "eval_model": "gemma-4-31b-it",
+    "prev_score": 10,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-08-03",
+    "hts_score": 1,
+    "hts_reason": "The paper is a policy and legal analysis; it identifies no molecular target, no biological disease mechanism, and no laboratory assay.",
+    "hts_eval_model": "gemma-4-31b-it"
   },
   {
     "id": "pubmed_42406489",

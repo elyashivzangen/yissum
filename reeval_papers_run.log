@@ -1,9 +1,24 @@
 Loading existing papers from Google Sheet...
-  383 existing papers loaded.
-  Verifying HUJI affiliation for 376 papers via PubMed efetch...
-  Removed 1 paper(s) with no HUJI last/majority author:
-    - Hepatocellular Inflammatory Adenomas.
-  0 non-Gemma-scored papers to re-evaluate on Gemma.
-  Re-evaluated 0/0 papers onto Gemma.
-  Nothing re-scored (no non-Gemma papers, or Gemma still unavailable).
+  405 existing papers loaded.
+  Verifying HUJI affiliation for 397 papers via PubMed efetch...
+  8 non-Gemma-scored papers to re-evaluate on Gemma.
+  [1/8] re-eval: Multi-omics-based machine learning model predicts response and guides 
+      re-scored 28 via gemma-4-31b-it (was 26 via gemini-3.1-flash-lite)
+  [2/8] re-eval: The role of forensic and legal systems in suicide prevention: Implicat
+      re-scored 9 via gemma-4-31b-it (was 10 via gemini-3.1-flash-lite)
+  [3/8] re-eval: A two-step auxin-GA cross-talk regulates organ formation in tomato.
+      re-scored 15 via gemma-4-31b-it (was 14 via gemini-3.1-flash-lite)
+  [4/8] re-eval: Clinical and population genetic insights into primary complement compo
+      re-scored 13 via gemma-4-31b-it (was 13 via gemini-3.1-flash-lite)
+  [5/8] re-eval: Signatures of micropeptides encoded by lncRNAs in cancer progression a
+      re-scored 26 via gemma-4-31b-it (was 26 via gemini-3.1-flash-lite)
+  [6/8] re-eval: Magnesium sulfate for brain protection in neonatal encephalopathy: a s
+      re-scored 18 via gemma-4-31b-it (was 17 via gemini-3.1-flash-lite)
+  [7/8] re-eval: Hydroxy acid conjugation to lipids increases structural and hydrolytic
+      re-scored 16 via gemma-4-31b-it (was 25 via gemini-3.1-flash-lite)
+  [8/8] re-eval: De Ritis (AST/ALT) ratio as a predictor of early adverse outcomes foll
+      re-scored 18 via gemma-4-31b-it (was 19 via gemini-3.1-flash-lite)
+  Re-evaluated 8/8 papers onto Gemma.
+Sheet updated: {"status":"ok","rows":406}
+Generated papers_reader.html and papers_data.json with 405 papers and 47 researcher profiles.
 Re-evaluation complete.
