@@ -30,7 +30,9 @@ jobs:
           SMTP_USER:     elyashiv.zangen.ai@gmail.com
           SMTP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           MAIL_FROM:     elyashiv.zangen.ai@gmail.com
-        run: python -u weekly_digest.py > digest_run.log 2>&1 || echo "Script failed (exit $?)" >> digest_run.log
+        # --no-email: the weekly run refreshes the reports and the site but stays
+        # silent; only the monthly digest is emailed.
+        run: python -u weekly_digest.py --no-email > digest_run.log 2>&1 || echo "Script failed (exit $?)" >> digest_run.log
 
       - name: Commit PDF and log
         if: always()
