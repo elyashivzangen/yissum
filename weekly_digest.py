@@ -486,11 +486,13 @@ def load_recipients():
 def send_digest_email(reports, monthly=False):
     """Email the generated digests to every address in digest_recipients.txt.
 
-    ``reports`` is a list of dicts: {branch, html_path, pdf_path, html_str}.
-    The styled Yissum HTML report is used as the inline e-mail body (the
-    "All Branches" one, falling back to the first), and both the HTML and PDF
-    files are attached. No-op (with a clear log line) if SMTP credentials
-    aren't configured or there are no recipients — never blocks generation.
+    ``reports`` is a list of dicts: {branch, html_path, pdf_path, email_html}.
+    The "All Branches" report (falling back to the first) supplies the inline
+    body, rendered by yissum_report.render_email_html in a Gmail-safe form —
+    table layout and cid: PNG logos, because Gmail strips flexbox, CSS
+    variables, SVG and data: URIs. Every branch's HTML and PDF is attached.
+    No-op (with a clear log line) if SMTP credentials aren't configured or
+    there are no recipients — never blocks generation.
     """
     recipients = load_recipients()
     if not recipients:
@@ -512,11 +514,22 @@ def send_digest_email(reports, monthly=False):
     msg["From"] = MAIL_FROM
     msg["To"] = ", ".join(recipients)
     msg.set_content(
-        f"The {period.lower()} Yissum Research Intelligence Report for {today} "
-        f"is attached (HTML + PDF). View this e-mail in an HTML-capable client "
-        f"to read it inline, or open the dashboard: {yr.DASHBOARD_URL}"
+        f"The {period.lower()} Yissum Research Intelligence Report for {today}.\n\n"
+        f"The full data is available in the dashboard — every paper, researcher "
+        f"profile and score, with filtering and search:\n{yr.DASHBOARD_URL}\n\n"
+        f"Reports by branch are attached to this e-mail as HTML and PDF.\n\n"
+        f"View this e-mail in an HTML-capable client to read the report inline."
     )
-    msg.add_alternative(body["html_str"], subtype="html")
+    msg.add_alternative(body["email_html"], subtype="html")
+
+    # Attach the logos as inline (cid:) images on the HTML part — data: URIs
+    # are blocked by Gmail, so the header would otherwise show broken images.
+    html_part = msg.get_payload()[-1]
+    for cid, path, subtype in yr.email_inline_images():
+        html_part.add_related(
+            Path(path).read_bytes(), maintype="image", subtype=subtype, cid=f"<{cid}>",
+        )
+
     for r in reports:
         for path, mt, st in ((r["pdf_path"], "application", "pdf"),
                              (r["html_path"], "text", "html")):
@@ -579,13 +592,14 @@ def main(monthly=False, send_email=True):
         print(f"  Executive summary: {curation.get('executive_summary','')[:120]}...")
 
         print("Generating HTML + PDF reports...")
-        html_path, pdf_path = yr.generate_reports(
+        html_path, pdf_path, email_html = yr.generate_reports(
             papers, curation, monthly=monthly, branch=branch,
             is_fallback=is_fallback, out_dir=DIGESTS_DIR,
+            branch_names=[b for _, b in branch_cases if b != "All Branches"],
         )
         reports.append({
             "branch": branch, "html_path": html_path, "pdf_path": pdf_path,
-            "html_str": Path(html_path).read_text(encoding="utf-8"),
+            "email_html": email_html,
         })
 
     print("\nAll digests done.")

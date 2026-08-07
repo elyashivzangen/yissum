@@ -19,7 +19,7 @@ and one set of business rules:
 The two public entry points are:
 
   select_report_papers(candidates)  -> (papers, is_fallback)
-  generate_reports(papers, curation, ...) -> (html_path, pdf_path)
+  generate_reports(papers, curation, ...) -> (html_path, pdf_path, email_html)
 """
 
 import base64
@@ -811,11 +811,273 @@ def render_pdf(path, papers, curation, meta, is_fallback, pi_trends=None, enrich
     return path
 
 
+# ── E-mail rendering (tables + inline styles — Gmail-safe) ────────────────────
+#
+# The standalone report uses flexbox, CSS custom properties and data: URI logos.
+# Gmail strips all three: the logos show as broken images (it also refuses SVG
+# outright) and the flex metric rows collapse into a left-clustered run of text.
+# The e-mail body is therefore rendered separately here using table layout,
+# literal colours and cid: PNG logo references. Because e-mail has no
+# JavaScript, each metric's reason is always visible instead of expandable.
+
+EMAIL_CID_YISSUM = "yissumlogo"
+EMAIL_CID_HUJI = "hujilogo"
+
+_EM_FONT = "Arial,Helvetica,sans-serif"
+
+
+def email_inline_images():
+    """[(cid, Path, subtype)] for the logos referenced by render_email_html().
+
+    PNG only — Gmail and most desktop clients do not render SVG at all.
+    """
+    out = []
+    if YISSUM_LOGO_PNG.exists():
+        out.append((EMAIL_CID_YISSUM, YISSUM_LOGO_PNG, "png"))
+    if HUJI_LOGO_PNG.exists():
+        out.append((EMAIL_CID_HUJI, HUJI_LOGO_PNG, "png"))
+    return out
+
+
+def _em_bar(score):
+    """A score bar drawn as table cells — width styles alone are unreliable."""
+    filled = max(0, min(10, score))
+    col = metric_color(score)
+    cells = ""
+    if filled:
+        cells += (f'<td width="{filled * 13}" height="7" style="width:{filled * 13}px;'
+                  f'height:7px;background:{col};font-size:0;line-height:0">&nbsp;</td>')
+    if filled < 10:
+        cells += (f'<td width="{(10 - filled) * 13}" height="7" style="width:{(10 - filled) * 13}px;'
+                  f'height:7px;background:#e5eaf0;font-size:0;line-height:0">&nbsp;</td>')
+    return (f'<table role="presentation" cellpadding="0" cellspacing="0" border="0" '
+            f'style="border-collapse:collapse"><tr>{cells}</tr></table>')
+
+
+def _em_metrics(paper):
+    bd = _breakdown(paper)
+    if not bd:
+        return ""
+    rows = []
+    for key, label in METRIC_LABELS:
+        v = bd.get(key) or {}
+        try:
+            s = int(v.get("score", 0) or 0)
+        except Exception:
+            s = 0
+        reason = (v.get("reason") or "").strip()
+        col = metric_color(s)
+        rows.append(
+            '<tr>'
+            f'<td style="padding:7px 12px 0 0;font:bold 13px {_EM_FONT};color:#1f2d3d;'
+            f'white-space:nowrap">{_e(label)}</td>'
+            f'<td width="130" style="width:130px;padding:7px 12px 0 0">{_em_bar(s)}</td>'
+            f'<td align="right" style="padding:7px 0 0 0;font:bold 13px {_EM_FONT};'
+            f'color:{col};white-space:nowrap">{s}/10</td>'
+            '</tr>'
+        )
+        if reason:
+            rows.append(
+                f'<tr><td colspan="3" style="padding:2px 0 5px 0;font:normal 12px {_EM_FONT};'
+                f'color:#5b6b7c;line-height:1.45">{_e(reason)}</td></tr>'
+            )
+    return (
+        f'<div style="font:bold 11px {_EM_FONT};color:#8a97a5;letter-spacing:.05em;'
+        f'text-transform:uppercase;padding:14px 0 2px">Commercialisation metrics</div>'
+        f'<table role="presentation" cellpadding="0" cellspacing="0" border="0" '
+        f'width="100%" style="width:100%;border-collapse:collapse">{"".join(rows)}</table>'
+    )
+
+
+def _em_label(text):
+    return (f'<div style="font:bold 11px {_EM_FONT};color:#8a97a5;letter-spacing:.05em;'
+            f'text-transform:uppercase;padding:12px 0 2px">{_e(text)}</div>')
+
+
+def _em_text(text):
+    return (f'<div style="font:normal 14px {_EM_FONT};color:#34506b;'
+            f'line-height:1.55">{_e(text)}</div>')
+
+
+def _em_card(rank, paper, item):
+    score = _score(paper)
+    col = score_color(score)
+    inner = [
+        '<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" '
+        'style="width:100%;border-collapse:collapse"><tr>'
+        f'<td style="font:bold 16px {_EM_FONT};color:#1f2d3d;line-height:1.35">'
+        f'{rank}. {_e(paper.get("title"))}</td>'
+        f'<td align="right" valign="top" style="padding-left:10px;font:bold 14px {_EM_FONT};'
+        f'color:{col};white-space:nowrap">{score}/50</td></tr></table>'
+    ]
+    headline = (item.get("headline") or "").strip()
+    if headline:
+        inner.append(f'<div style="font:italic bold 14px {_EM_FONT};color:#0f7d70;'
+                     f'padding:8px 0 0">&ldquo;{_e(headline)}&rdquo;</div>')
+
+    pi = _pi_name(paper)
+    if pi:
+        line = (f'<div style="font:normal 14px {_EM_FONT};color:#34506b;padding:10px 0 0">'
+                f'Main researcher: <b style="color:#1b2a4a">{_e(pi)}</b>')
+        email = (paper.get("pi_email") or "").strip()
+        if email:
+            line += (f' &middot; <a href="mailto:{_e(email)}" '
+                     f'style="color:#0f7d70;text-decoration:none">{_e(email)}</a>')
+        inner.append(line + '</div>')
+        aff = (paper.get("pi_affiliation") or "").strip()
+        if aff:
+            inner.append(f'<div style="font:normal 12px {_EM_FONT};color:#8a97a5;'
+                         f'padding:2px 0 0">{_e(aff)}</div>')
+
+    venue = (paper.get("journal") or "").strip()
+    date = (paper.get("date") or "").strip()
+    if venue or date:
+        pub = f'Published in <b style="color:#34506b">{_e(venue)}</b>' if venue else "Published"
+        if date:
+            pub += f' &middot; {_e(date)}'
+        inner.append(f'<div style="font:normal 12px {_EM_FONT};color:#8a97a5;'
+                     f'padding:2px 0 0">{pub}</div>')
+
+    abstract = (paper.get("summary") or "").strip()
+    if abstract:
+        inner.append(_em_label("About this research"))
+        inner.append(_em_text(abstract))
+    opp = (paper.get("opportunity") or "").strip()
+    if opp:
+        inner.append(_em_label("Commercial angle"))
+        inner.append(_em_text(opp))
+
+    inner.append(_em_metrics(paper))
+
+    dash = dashboard_paper_url(paper.get("id"))
+    url = (paper.get("url") or "").strip()
+    links = (f'<a href="{_e(dash)}" style="background:#159a8a;color:#ffffff;'
+             f'text-decoration:none;font:bold 12px {_EM_FONT};padding:9px 16px;'
+             f'border-radius:6px;display:inline-block">View in Dashboard</a>')
+    if url:
+        links += (f'&nbsp;&nbsp;<a href="{_e(url)}" style="color:#0f7d70;'
+                  f'font:bold 12px {_EM_FONT};text-decoration:none;padding:9px 0;'
+                  f'display:inline-block">Open Paper &rarr;</a>')
+    inner.append(f'<div style="padding:14px 0 0">{links}</div>')
+
+    return (
+        '<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" '
+        'style="width:100%;border-collapse:collapse;margin:0 0 16px">'
+        '<tr><td width="4" style="width:4px;background:#159a8a;font-size:0">&nbsp;</td>'
+        '<td style="border:1px solid #e2e8f0;border-left:none;background:#ffffff;'
+        'padding:18px 20px">' + "".join(inner) + '</td></tr></table>'
+    )
+
+
+def render_email_html(papers, curation, meta, is_fallback, branch_names=None):
+    """Gmail-safe HTML body for the digest e-mail."""
+    highlights = build_highlights(papers, curation)
+    label = "high-potential paper" if not is_fallback else "paper"
+
+    logo_cells = []
+    if YISSUM_LOGO_PNG.exists():
+        logo_cells.append(f'<td style="padding-right:14px"><img src="cid:{EMAIL_CID_YISSUM}" '
+                          f'height="34" alt="Yissum" style="height:34px;display:block;border:0"></td>')
+    if HUJI_LOGO_PNG.exists():
+        logo_cells.append(f'<td><img src="cid:{EMAIL_CID_HUJI}" height="32" '
+                          f'alt="The Hebrew University of Jerusalem" '
+                          f'style="height:32px;display:block;border:0"></td>')
+    brand = ('<table role="presentation" cellpadding="0" cellspacing="0" border="0">'
+             f'<tr>{"".join(logo_cells)}</tr></table>') if logo_cells else (
+             f'<div style="font:bold 20px {_EM_FONT};color:#159a8a">YISSUM</div>')
+
+    notice = ''
+    if is_fallback:
+        notice = (f'<div style="background:#fff7ed;border:1px solid #fed7aa;'
+                  f'border-left:4px solid #f59e0b;color:#9a3412;padding:12px 16px;'
+                  f'font:bold 13px {_EM_FONT};margin:0 0 18px">&#9888; {_e(FALLBACK_NOTICE)}</div>')
+
+    hi = ''
+    if highlights:
+        lis = "".join(
+            f'<li style="margin:5px 0;color:#34506b;font:normal 14px {_EM_FONT}">'
+            f'<b style="color:#1f2d3d">{_e(h["pi"])}</b> &mdash; {_e(h["subject"])}'
+            + (f'<br><span style="color:#8a97a5;font-size:12px">{_e(h["title"])}</span>'
+               if h["title"] else '')
+            + '</li>'
+            for h in highlights
+        )
+        heading = ("Researchers &amp; research subjects — high-potential papers"
+                   if not is_fallback else "Researchers &amp; research subjects — best available")
+        hi = (f'<div style="background:#f0faf8;border:1px solid #cdeee8;'
+              f'border-left:4px solid #159a8a;padding:14px 18px;margin:0 0 22px">'
+              f'<div style="font:bold 11px {_EM_FONT};color:#0f7d70;letter-spacing:.06em;'
+              f'text-transform:uppercase;padding-bottom:8px">{heading}</div>'
+              f'<ul style="margin:0;padding-left:18px">{lis}</ul></div>')
+
+    branch_line = ""
+    if branch_names:
+        branch_line = (" Separate reports for " + _e(", ".join(branch_names))
+                       + " are attached as well.")
+    note = (
+        f'<div style="background:#f7f9fb;border:1px solid #e2e8f0;padding:14px 18px;'
+        f'margin:0 0 22px;font:normal 14px {_EM_FONT};color:#34506b;line-height:1.55">'
+        f'<b style="color:#1f2d3d">The full data is available in the dashboard</b> — '
+        f'every paper, researcher profile and score, with filtering and search: '
+        f'<a href="{_e(DASHBOARD_URL)}" style="color:#0f7d70">{_e(DASHBOARD_URL)}</a>.<br>'
+        f'<b style="color:#1f2d3d">Reports by branch are attached</b> to this e-mail '
+        f'as HTML and PDF.{branch_line}</div>'
+    )
+
+    cards = "".join(_em_card(rank, p, item)
+                    for rank, p, item, _idx in _selected_papers(papers, curation))
+
+    return f"""<!doctype html>
+<html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{_e(meta['title'])}</title></head>
+<body style="margin:0;padding:0;background:#eef1f4">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+       style="width:100%;background:#eef1f4;border-collapse:collapse">
+<tr><td align="center" style="padding:22px 12px 40px">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="640"
+       style="width:640px;max-width:640px;border-collapse:collapse">
+  <tr><td style="padding:0 0 18px">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+           style="width:100%;border-collapse:collapse"><tr>
+      <td>{brand}</td>
+      <td align="right"><a href="{_e(DASHBOARD_URL)}" style="background:#159a8a;color:#ffffff;
+          text-decoration:none;font:bold 13px {_EM_FONT};padding:11px 20px;border-radius:6px;
+          display:inline-block">Open Dashboard &rarr;</a></td>
+    </tr></table>
+  </td></tr>
+  <tr><td style="background:#ffffff;border:1px solid #e2e8f0;padding:28px 30px">
+    <div style="font:bold 22px {_EM_FONT};color:#1f2d3d;line-height:1.3">{_e(meta['title'])}</div>
+    <div style="font:normal 13px {_EM_FONT};color:#8a97a5;padding:6px 0 18px">
+      {len(highlights)} {label}(s) &middot; {_e(meta['subtitle'])}</div>
+    {notice}
+    <div style="font:normal 15px {_EM_FONT};color:#34506b;line-height:1.6;padding:0 0 20px">
+      {_e(curation.get('executive_summary', ''))}</div>
+    {hi}
+    {note}
+    <div style="font:bold 12px {_EM_FONT};color:#0f7d70;letter-spacing:.08em;
+      text-transform:uppercase;border-bottom:2px solid #159a8a;padding:0 0 8px;margin:0 0 16px">
+      {_e(meta['branch']).upper()} &mdash; RESEARCH HIGHLIGHTS</div>
+    {cards}
+    <div style="font:normal 11px {_EM_FONT};color:#8a97a5;text-align:center;padding:18px 0 0">
+      Generated {_e(meta['today'])} &middot; Yissum &mdash; Hebrew University Technology
+      Transfer Company</div>
+  </td></tr>
+</table>
+</td></tr></table>
+</body></html>
+"""
+
+
 # ── Combined entry point ───────────────────────────────────────────────────────
 
 def generate_reports(papers, curation, *, monthly, branch, is_fallback, out_dir,
-                     variant="", pi_trends=None, enrichments=None):
-    """Write both the HTML and the PDF report; return (html_path, pdf_path)."""
+                     variant="", pi_trends=None, enrichments=None, branch_names=None):
+    """Write the HTML and PDF report.
+
+    Returns (html_path, pdf_path, email_html) — the third value is the
+    Gmail-safe body for the digest e-mail (see render_email_html).
+    """
     out_dir = Path(out_dir)
     out_dir.mkdir(exist_ok=True)
     meta = report_meta(monthly, branch, variant=variant)
@@ -831,6 +1093,9 @@ def generate_reports(papers, curation, *, monthly, branch, is_fallback, out_dir,
     render_pdf(pdf_path, papers, curation, meta, is_fallback,
                pi_trends=pi_trends, enrichments=enrichments)
 
+    email_html = render_email_html(papers, curation, meta, is_fallback,
+                                   branch_names=branch_names)
+
     print(f"  HTML written: {html_path}  ({html_path.stat().st_size // 1024} KB)")
     print(f"  PDF written:  {pdf_path}  ({pdf_path.stat().st_size // 1024} KB)")
-    return html_path, pdf_path
+    return html_path, pdf_path, email_html
