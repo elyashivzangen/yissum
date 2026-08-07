@@ -543,7 +543,7 @@ def send_digest_email(reports, monthly=False):
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 
-def main(monthly=False):
+def main(monthly=False, send_email=True):
     # Generate one digest per branch + one combined "All" digest
     branch_cases = [
         (None, "All Branches"),
@@ -590,7 +590,10 @@ def main(monthly=False):
 
     print("\nAll digests done.")
 
-    if reports:
+    if reports and not send_email:
+        print("\n--no-email set — reports were generated and committed, "
+              "no digest email sent.")
+    elif reports:
         print("\nSending digest email...")
         send_digest_email(reports, monthly=monthly)
 
@@ -599,11 +602,14 @@ if __name__ == "__main__":
     import sys, traceback, argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--monthly", action="store_true", help="Generate monthly digest instead of weekly")
+    parser.add_argument("--no-email", action="store_true",
+                        help="Generate and commit the reports but skip the digest email "
+                             "(used by the weekly run — the monthly one still emails)")
     args = parser.parse_args()
     if args.monthly:
         DIGEST_WINDOW = 31
     try:
-        main(monthly=args.monthly)
+        main(monthly=args.monthly, send_email=not args.no_email)
     except Exception:
         traceback.print_exc()
         sys.exit(1)
