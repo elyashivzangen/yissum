@@ -274,13 +274,13 @@ def report_meta(monthly, branch, variant=""):
         month = today_dt.month
         base = f"HUJI_digest_{year}_M{month:02d}{branch_suffix}{variant}"
         period = today_dt.strftime("%B %Y")
-        title = f"Yissum Research Intelligence Report — {branch + ' — ' if branch else ''}{period}"
+        title = f"HUJI Applicative Research Report — {branch + ' — ' if branch else ''}{period}"
         subtitle = f"{branch_prefix}Monthly · {period} · Generated {today}"
     else:
         week = iso[1]
         base = f"HUJI_digest_{year}_W{week:02d}{branch_suffix}{variant}"
         period = f"Week {week}, {year}"
-        title = f"Yissum Research Intelligence Report — {branch + ' — ' if branch else ''}{period}"
+        title = f"HUJI Applicative Research Report — {branch + ' — ' if branch else ''}{period}"
         subtitle = f"{branch_prefix}Weekly · {period} · Generated {today}"
 
     return {

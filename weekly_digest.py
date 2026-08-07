@@ -510,11 +510,11 @@ def send_digest_email(reports, monthly=False):
     body = next((r for r in reports if r.get("branch") is None), reports[0])
 
     msg = EmailMessage()
-    msg["Subject"] = f"Yissum Research Intelligence — {period} Report — {today}"
+    msg["Subject"] = f"HUJI Applicative Research Report — {period} — {today}"
     msg["From"] = MAIL_FROM
     msg["To"] = ", ".join(recipients)
     msg.set_content(
-        f"The {period.lower()} Yissum Research Intelligence Report for {today}.\n\n"
+        f"The {period.lower()} HUJI Applicative Research Report for {today}.\n\n"
         f"The full data is available in the dashboard — every paper, researcher "
         f"profile and score, with filtering and search:\n{yr.DASHBOARD_URL}\n\n"
         f"Reports by branch are attached to this e-mail as HTML and PDF.\n\n"
