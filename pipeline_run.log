@@ -1,93 +1,79 @@
 Loading existing papers from Google Sheet...
-  383 existing papers loaded.
-  Verifying HUJI affiliation for 376 papers via PubMed efetch...
-  Removed 1 paper(s) with no HUJI last/majority author:
-    - Hepatocellular Inflammatory Adenomas.
-fetch_pubmed: 23 fetched, 21 new
-fetch_europepmc: 22 fetched, 2 new
+  405 existing papers loaded.
+  Verifying HUJI affiliation for 397 papers via PubMed efetch...
+fetch_pubmed: 22 fetched, 20 new
+fetch_europepmc: 17 fetched, 1 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-23 unique new papers to evaluate.
-Enriching PI contact info for 23 new papers...
+20 unique new papers to evaluate.
+Enriching PI contact info for 20 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/23] Incidence and parameters associated with early diagnosis in unexplaine
-    score=21 fields=['Medical Device', 'Diagnostics', 'Clinical']
+  [1/20] A new method for geometric analysis of mandibular features: A case stu
+    score=9 fields=['Imaging', 'Medical Device', 'Software/AI']
     hts_score=1
-  [2/23] Longitudinal changes in anemia during acute inflammatory disease.
-    score=14 fields=['Diagnostics', 'Immunology', 'Clinical']
+  [2/20] Portable CBCT in the forensic dental identification of the October 7th
+    score=20 fields=['Medical Device', 'Imaging', 'Clinical']
     hts_score=1
-  [3/23] Corrigendum to "Comparative medical imaging in mass-fatality identific
-    score=14 fields=['Imaging', 'Software/AI', 'Diagnostics']
+  [3/20] Contactless Detection of Giant Helicity-Dependent Photovoltage in Chir
+    score=25 fields=['Materials', 'Clean Energy', 'Quantum']
     hts_score=1
-  [4/23] Artificial intelligence in medicine: a clinician-oriented guide and op
-    score=19 fields=['Medical Device', 'Software/AI', 'Clinical', 'Diagnostics']
+  [4/20] Language-like statistical structure arises in learned signaling: evide
+    score=14 fields=['Software/AI', 'Neuroscience']
     hts_score=1
-  [5/23] Oral non-steroidal anti-inflammatory drugs do not delay corneal healin
-    score=15 fields=['Clinical', 'Other']
+  [5/20] Alignment between expanded carrier screening panels and conditions lea
+    score=24 fields=['Genomics', 'Diagnostics', 'Clinical']
     hts_score=1
-  [6/23] Conditioning, Donor, and Genotype: Hematopoietic Cell Transplantation 
-    score=19 fields=['Clinical', 'Genomics', 'Immunology']
+  [6/20] Kin-Keeping and the Complacency-Panic Mismatch: A Community-Level Anal
+    score=11 fields=['Software/AI', 'Clinical']
     hts_score=1
-  [7/23] Folic acid prevention of neural tube defects requires retinoic acid pr
-    score=22 fields=['Diagnostics', 'Neuroscience', 'Clinical', 'Drug Discovery']
-    hts_score=7
-  [8/23] Pediatric eosinophilic esophagitis: diagnostic and therapeutic insight
-    score=12 fields=['Clinical', 'Immunology', 'Diagnostics', 'Drug Discovery']
+  [7/20] Innovative behavior in nurses: The interactive effects of managerial r
+    score=18 fields=['Clinical', 'Other']
     hts_score=1
-  [9/23] The impact of prostate size on outcomes of aquablation: a prospective 
-    score=24 fields=['Medical Device', 'Clinical', 'Imaging']
-    hts_score=1
-  [10/23] Training in the Shadow of War: Exertional Heat Illness During the "Iro
-    score=18 fields=['Medical Device', 'Clinical', 'Software/AI']
-    hts_score=1
-  [11/23] Alzheimer disease in the computational era: from a deterministic disea
-    score=20 fields=['Drug Discovery', 'Software/AI', 'Neuroscience', 'Diagnostics']
-    hts_score=1
-  [12/23] Automated readings of imaging reports by natural language processing (
-    score=26 fields=['Software/AI', 'Diagnostics', 'Imaging', 'Clinical']
-    hts_score=1
-  [13/23] Adaptive Functioning, Sensory Processing, and Behavioral Problems in A
-    score=15 fields=['Neuroscience', 'Clinical', 'Software/AI', 'Diagnostics']
-    hts_score=1
-  [14/23] Human mast cells produce DHA-derived bioactive mediators: Resolvins D1
-    score=19 fields=['Drug Discovery', 'Immunology', 'Clinical']
-    hts_score=4
-  [15/23] Trauma Systems as Diplomatic Infrastructure: A Model for Professional 
-    score=10 fields=['Clinical', 'Other']
-    hts_score=1
-  [checkpoint: 15/23] writing 397 papers (382 retained + 15 new)...
-Sheet updated: HUJI Paper Monitor Apps Script is running ✓
-Generated papers_reader.html and papers_data.json with 397 papers and 47 researcher profiles.
-  [16/23] The role of forensic and legal systems in suicide prevention: Implicat
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    score=10 fields=['Software/AI', 'Clinical']
-    hts_score=1
-  [17/23] Clinical and population genetic insights into primary complement compo
-    score=13 fields=['Genomics', 'Diagnostics', 'Immunology', 'Clinical']
-    hts_score=4
-  [18/23] De Ritis (AST/ALT) ratio as a predictor of early adverse outcomes foll
-    score=19 fields=['Diagnostics', 'Clinical', 'Software/AI']
-    hts_score=1
-  [19/23] Signatures of micropeptides encoded by lncRNAs in cancer progression a
-    score=26 fields=['Genomics', 'Proteomics', 'Diagnostics', 'Drug Discovery']
+  [8/20] Protocol for culture of zebrafishdeveloping ovaries as an ex vivo syst
+    score=14 fields=['Drug Discovery', 'Genomics', 'Synthetic Biology']
     hts_score=2
-  [20/23] Magnesium sulfate for brain protection in neonatal encephalopathy: a s
-    score=17 fields=['Clinical', 'Neuroscience']
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    hts_score=2
-  [21/23] Hydroxy acid conjugation to lipids increases structural and hydrolytic
-    score=25 fields=['Vaccines', 'Drug Discovery', 'Materials']
+  [9/20] Parental Resolution of Infant Congenital Heart Disease and Bonding in 
+    score=8 fields=['Clinical', 'Neuroscience']
     hts_score=1
-  [22/23] A two-step auxin-GA cross-talk regulates organ formation in tomato.
-    score=14 fields=['AgriTech', 'Synthetic Biology']
-    hts_score=3
-  [23/23] Multi-omics-based machine learning model predicts response and guides 
-    score=26 fields=['Diagnostics', 'Software/AI', 'Clinical']
-    hts_score=3
+  [10/20] Subclinical Cardiac Changes Following CPX-351 Induction in Adults with
+    score=24 fields=['Clinical', 'Diagnostics']
+    hts_score=2
+  [11/20] Linear growth in pediatric kidney transplant recipients.
+    score=18 fields=['Clinical', 'Immunology']
+    hts_score=1
+  [12/20] Effects of continuous traumatic stress and coping efficacy on mental h
+    score=15 fields=['Clinical', 'Neuroscience', 'Software/AI']
+    hts_score=1
+  [13/20] The brain drain problem in sleep apnea.
+    score=14 fields=['Neuroscience', 'Medical Device', 'Diagnostics', 'Clinical']
+    hts_score=1
+  [14/20] Clinical characteristics associated with sustained ventricular arrhyth
+    score=19 fields=['Clinical', 'Diagnostics', 'Medical Device']
+    hts_score=1
+  [15/20] Treatment approaches for large traumatic cyclodialysis clefts in phaki
+    score=16 fields=['Medical Device', 'Clinical']
+    hts_score=1
+  [checkpoint: 15/20] writing 420 papers (405 retained + 15 new)...
+Sheet updated: {"status":"ok","rows":421}
+Generated papers_reader.html and papers_data.json with 420 papers and 47 researcher profiles.
+  [16/20] Age- and sex-specific patterns of microcytic anemia in adolescence: im
+    score=21 fields=['Diagnostics', 'Clinical']
+    hts_score=1
+  [17/20] Antiseizure potency and neurotoxicity of the enantiomers of fenflurami
+    score=17 fields=['Drug Discovery', 'Neuroscience', 'Clinical']
+    hts_score=4
+  [18/20] The Effect of Dicloxacillin Administration on Pharmacokinetics of Narr
+    score=17 fields=['Clinical', 'Diagnostics']
+    hts_score=2
+  [19/20] An OpIE2-DsRed marker disrupts female blood-feeding and shortens lifes
+    score=21 fields=['Synthetic Biology', 'Genomics', 'AgriTech']
+    hts_score=4
+  [20/20] Using Disease-Agnostic Genomic Liquid Biopsy in Complex Diagnoses: Rea
+    score=30 fields=['Diagnostics', 'Genomics', 'Clinical']
+    hts_score=2
 
-Kept all 382 existing papers, added 23 new.
-  [checkpoint: final] writing 405 papers (382 retained + 23 new)...
-Sheet updated: HUJI Paper Monitor Apps Script is running ✓
-Generated papers_reader.html and papers_data.json with 405 papers and 47 researcher profiles.
+Kept all 405 existing papers, added 20 new.
+  [checkpoint: final] writing 425 papers (405 retained + 20 new)...
+Sheet updated: {"status":"ok","rows":426}
+Generated papers_reader.html and papers_data.json with 425 papers and 47 researcher profiles.
 Done.
