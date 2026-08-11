@@ -97,6 +97,31 @@ def _primary_branch(fields):
     return best  # None if no matches
 
 
+BRANCH_ORDER = list(BRANCHES.keys()) + [None]   # None = "Other" (no field match)
+BRANCH_LABELS = {
+    "Healthcare": "🏥 Healthcare",
+    "Agriculture & Food": "🌾 Agriculture & Food",
+    "Exact & Social Sciences": "💡 Exact & Social Sciences",
+    None: "📎 Other",
+}
+
+
+def group_by_branch(papers_by_idx, selected):
+    """Bucket curated `selected` items by their paper's primary branch,
+    preserving each item's relative (Gemini-ranked) order within its bucket.
+    Returns an ordered list of (branch_name_or_None, [items]) for non-empty
+    buckets only, in BRANCH_ORDER."""
+    buckets = {b: [] for b in BRANCH_ORDER}
+    for item in selected:
+        idx = item["index"] - 1
+        if idx < 0 or idx >= len(papers_by_idx):
+            continue
+        paper = papers_by_idx[idx]
+        branch = _primary_branch(paper.get("fields", []))
+        buckets.setdefault(branch, []).append(item)
+    return [(b, buckets[b]) for b in BRANCH_ORDER if buckets.get(b)]
+
+
 def load_top_papers(branch_name=None, top_n=TOP_N):
     url = (
         f"https://docs.google.com/spreadsheets/d/{GOOGLE_SHEET_ID}"
@@ -120,6 +145,14 @@ def load_top_papers(branch_name=None, top_n=TOP_N):
             p["fields"] = json.loads(p.get("fields", "[]"))
         except Exception:
             p["fields"] = []
+        try:
+            p["authors"] = json.loads(p.get("authors", "[]"))
+        except Exception:
+            p["authors"] = []
+        try:
+            p["score_breakdown"] = json.loads(p.get("score_breakdown", "{}"))
+        except Exception:
+            p["score_breakdown"] = {}
         # Only include papers published within the digest window
         pub_str = p.get("date", "").strip()
         pub = _parse_date(pub_str)
@@ -188,22 +221,35 @@ def curate_with_gemini(papers, monthly=False):
 
 # ── PDF generation ───────────────────────────────────────────────────────────
 
-# Colour palette
-C_PURPLE  = colors.HexColor("#6c63ff")
-C_PURPLE2 = colors.HexColor("#a78bfa")
-C_DARK    = colors.HexColor("#0f1117")
-C_CARD    = colors.HexColor("#1a1d2e")
-C_BORDER  = colors.HexColor("#2d3148")
-C_TEXT    = colors.HexColor("#e2e8f0")
-C_MUTED   = colors.HexColor("#8892a4")
-C_GREEN   = colors.HexColor("#22c55e")
-C_YELLOW  = colors.HexColor("#eab308")
-C_RED     = colors.HexColor("#ef4444")
+# Colour palette — matches the dashboard's light-theme accent (papers_pipeline.py HTML_TEMPLATE :root block)
+C_PURPLE  = colors.HexColor("#5b50e8")
+C_PURPLE2 = colors.HexColor("#4338ca")
+C_BG      = colors.HexColor("#f5f6fa")
+C_CARD    = colors.HexColor("#ffffff")
+C_CARD2   = colors.HexColor("#eef0f7")
+C_BORDER  = colors.HexColor("#dde1ef")
+C_TEXT    = colors.HexColor("#1e2130")
+C_MUTED   = colors.HexColor("#6b7280")
+C_GREEN   = colors.HexColor("#16a34a")
+C_YELLOW  = colors.HexColor("#b45309")
+C_RED     = colors.HexColor("#dc2626")
 C_WHITE   = colors.white
 
 def score_color(s):
     if s >= 38: return C_GREEN
     if s >= 28: return C_YELLOW
+    return C_RED
+
+# Per-aspect (1-10) score breakdown — mirrors papers_pipeline.py's dashboard
+SCORE_DIMS = ["novelty", "commercial_potential", "market_size", "trl", "ip_strength"]
+PARAM_LABELS = {
+    "novelty": "Novelty", "commercial_potential": "Commercial Potential",
+    "market_size": "Market Size", "trl": "Tech Readiness", "ip_strength": "IP Strength",
+}
+
+def dim_color(s):
+    if s >= 8: return C_GREEN
+    if s >= 5: return C_YELLOW
     return C_RED
 
 def build_styles():
@@ -218,6 +264,11 @@ def build_styles():
             "subtitle", parent=base["Normal"],
             fontSize=10, leading=14, textColor=C_MUTED,
             fontName="Helvetica", spaceAfter=0,
+        ),
+        "dashboard_link": ParagraphStyle(
+            "dashboard_link", parent=base["Normal"],
+            fontSize=9, leading=13, textColor=C_PURPLE,
+            fontName="Helvetica-Bold", spaceBefore=2,
         ),
         "exec_label": ParagraphStyle(
             "exec_label", parent=base["Normal"],
@@ -265,6 +316,26 @@ def build_styles():
             fontSize=7, leading=9, textColor=C_MUTED,
             fontName="Helvetica",
         ),
+        "meta_line": ParagraphStyle(
+            "meta_line", parent=base["Normal"],
+            fontSize=7.5, leading=10, textColor=C_MUTED,
+            fontName="Helvetica-Oblique", spaceAfter=2,
+        ),
+        "bd_label": ParagraphStyle(
+            "bd_label", parent=base["Normal"],
+            fontSize=8, leading=10, textColor=C_TEXT,
+            fontName="Helvetica-Bold",
+        ),
+        "bd_reason": ParagraphStyle(
+            "bd_reason", parent=base["Normal"],
+            fontSize=7.5, leading=10, textColor=C_MUTED,
+            fontName="Helvetica",
+        ),
+        "section_header": ParagraphStyle(
+            "section_header", parent=base["Normal"],
+            fontSize=14, leading=18, textColor=C_PURPLE2,
+            fontName="Helvetica-Bold", spaceBefore=2, spaceAfter=2,
+        ),
         "footer": ParagraphStyle(
             "footer", parent=base["Normal"],
             fontSize=8, leading=10, textColor=C_MUTED,
@@ -283,7 +354,7 @@ def score_badge_table(score):
     )]]
     t = Table(data, colWidths=[18*mm])
     t.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#1a1d2e")),
+        ("BACKGROUND", (0, 0), (-1, -1), C_CARD2),
         ("BOX",        (0, 0), (-1, -1), 0.5, C_BORDER),
         ("ROUNDEDCORNERS", [4]),
         ("TOPPADDING",    (0, 0), (-1, -1), 5),
@@ -292,6 +363,38 @@ def score_badge_table(score):
         ("RIGHTPADDING",  (0, 0), (-1, -1), 4),
         ("ALIGN",         (0, 0), (-1, -1), "CENTER"),
         ("VALIGN",        (0, 0), (-1, -1), "MIDDLE"),
+    ]))
+    return t
+
+
+def score_breakdown_table(breakdown, styles, col_width):
+    """Returns a compact table of the 5 per-aspect (1-10) scores + reasons,
+    in a fixed dimension order. Skips any dimension missing from the data
+    (defensive — older/partial records may not have all 5)."""
+    rows = []
+    for dim in SCORE_DIMS:
+        d = breakdown.get(dim)
+        if not d:
+            continue
+        label = PARAM_LABELS.get(dim, dim)
+        s = d.get("score", 0)
+        c = dim_color(s)
+        rows.append([
+            Paragraph(
+                f"<font color='#{c.hexval()[2:]}'>{label}  {s}/10</font>",
+                styles["bd_label"],
+            ),
+            Paragraph(d.get("reason", ""), styles["bd_reason"]),
+        ])
+    if not rows:
+        return None
+    t = Table(rows, colWidths=[38*mm, col_width - 38*mm])
+    t.setStyle(TableStyle([
+        ("LEFTPADDING",   (0, 0), (-1, -1), 0),
+        ("RIGHTPADDING",  (0, 0), (-1, -1), 4),
+        ("TOPPADDING",    (0, 0), (-1, -1), 1.5),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 1.5),
+        ("VALIGN",        (0, 0), (-1, -1), "TOP"),
     ]))
     return t
 
@@ -331,11 +434,43 @@ def paper_block(idx, paper, curation_item, styles):
 
     inner = [header_row]
 
-    # PI
-    pi = paper.get("pi", "").strip()
-    if pi:
+    # PI — prefer the full name, and append affiliation/email when known
+    pi_name = paper.get("pi_full_name", "").strip() or paper.get("pi", "").strip()
+    if pi_name:
+        pi_segments = [pi_name]
+        pi_affiliation = paper.get("pi_affiliation", "").strip()
+        if pi_affiliation:
+            pi_segments.append(pi_affiliation)
+        pi_email = paper.get("pi_email", "").strip()
+        if pi_email:
+            pi_segments.append(f'<link href="mailto:{pi_email}">{pi_email}</link>')
         inner.append(Spacer(1, 2*mm))
-        inner.append(Paragraph(f"Main Researcher: {pi}", styles["pi_line"]))
+        inner.append(Paragraph(
+            "Main Researcher: " + " · ".join(pi_segments), styles["pi_line"],
+        ))
+
+    # Authors / journal / source
+    meta_segments = []
+    authors = paper.get("authors", [])
+    if authors:
+        meta_segments.append(", ".join(authors))
+    journal = paper.get("journal", "").strip()
+    if journal:
+        meta_segments.append(journal)
+    source = paper.get("source", "").strip()
+    if source:
+        meta_segments.append(source)
+    if meta_segments:
+        inner.append(Spacer(1, 1*mm))
+        inner.append(Paragraph(" · ".join(meta_segments), styles["meta_line"]))
+
+    # Abstract (short AI-written summary — the sheet doesn't store the real
+    # PubMed/journal abstract text)
+    summary = paper.get("summary", "").strip()
+    if summary:
+        inner.append(Spacer(1, 2*mm))
+        inner.append(Paragraph("ABSTRACT", styles["label"]))
+        inner.append(Paragraph(summary, styles["body"]))
 
     # Fields
     fields = paper.get("fields", [])
@@ -351,6 +486,14 @@ def paper_block(idx, paper, curation_item, styles):
     inner.append(Paragraph("WHY NOW", styles["label"]))
     inner.append(Paragraph(curation_item["why_now"], styles["body"]))
 
+    # Score breakdown (5-dimension, 1-10 each — separate from the 50-pt total)
+    breakdown = paper.get("score_breakdown", {})
+    bd_table = score_breakdown_table(breakdown, styles, page_w) if breakdown else None
+    if bd_table is not None:
+        inner.append(Paragraph("SCORE BREAKDOWN", styles["label"]))
+        inner.append(bd_table)
+        inner.append(Spacer(1, 2*mm))
+
     # Opportunity
     opp = paper.get("opportunity", "").strip()
     if opp:
@@ -361,7 +504,7 @@ def paper_block(idx, paper, curation_item, styles):
     url = paper.get("url", "")
     if url:
         inner.append(Paragraph(
-            f'<link href="{url}"><font color="#6c63ff">{url}</font></link>',
+            f'<link href="{url}"><font color="#5b50e8">{url}</font></link>',
             ParagraphStyle("url", fontName="Helvetica", fontSize=8, leading=10,
                            textColor=C_PURPLE),
         ))
@@ -426,6 +569,14 @@ def generate_pdf(papers_by_idx, curation, monthly=False, branch=None):
     # ── Header ──
     story.append(Paragraph("HUJI Research Monitor", styles["title"]))
     story.append(Paragraph(period_label, styles["subtitle"]))
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    if repo:
+        owner, rname = (repo.split("/") + [""])[:2]
+        dashboard_url = f"https://{owner}.github.io/{rname}/papers_reader.html"
+        story.append(Paragraph(
+            f'<link href="{dashboard_url}">View the live dashboard →</link>',
+            styles["dashboard_link"],
+        ))
     story.append(Spacer(1, 6*mm))
     story.append(HRFlowable(width="100%", thickness=1, color=C_BORDER))
     story.append(Spacer(1, 4*mm))
@@ -439,7 +590,7 @@ def generate_pdf(papers_by_idx, curation, monthly=False, branch=None):
     exec_table = Table([[[e] for e in exec_box_inner]], colWidths=[page_w])
     exec_table = Table([[exec_box_inner]], colWidths=[page_w])
     exec_table.setStyle(TableStyle([
-        ("BACKGROUND",    (0, 0), (-1, -1), colors.HexColor("#1e1b4b")),
+        ("BACKGROUND",    (0, 0), (-1, -1), C_CARD2),
         ("BOX",           (0, 0), (-1, -1), 0.5, C_PURPLE),
         ("LEFTPADDING",   (0, 0), (-1, -1), 5*mm),
         ("RIGHTPADDING",  (0, 0), (-1, -1), 5*mm),
@@ -451,12 +602,30 @@ def generate_pdf(papers_by_idx, curation, monthly=False, branch=None):
     story.append(Spacer(1, 6*mm))
 
     # ── Paper cards ──
-    for rank, item in enumerate(curation["selected"], start=1):
-        idx = item["index"] - 1   # 0-based
-        if idx < 0 or idx >= len(papers_by_idx):
-            continue
-        paper = papers_by_idx[idx]
-        story.extend(paper_block(rank, paper, item, styles))
+    # Continuous numbering across the whole document (no per-section restart).
+    if branch is None:
+        # Combined "All Branches" PDF: organize into labelled branch sections.
+        rank = 0
+        for branch_name, items in group_by_branch(papers_by_idx, curation["selected"]):
+            story.append(Paragraph(
+                f"{BRANCH_LABELS[branch_name]}  ({len(items)})", styles["section_header"],
+            ))
+            story.append(HRFlowable(width="100%", thickness=0.5, color=C_BORDER))
+            story.append(Spacer(1, 3*mm))
+            for item in items:
+                rank += 1
+                paper = papers_by_idx[item["index"] - 1]
+                story.extend(paper_block(rank, paper, item, styles))
+            story.append(Spacer(1, 2*mm))
+    else:
+        # Branch-specific PDF: every paper already shares this one branch,
+        # so a section header would be redundant — keep the flat list.
+        for rank, item in enumerate(curation["selected"], start=1):
+            idx = item["index"] - 1   # 0-based
+            if idx < 0 or idx >= len(papers_by_idx):
+                continue
+            paper = papers_by_idx[idx]
+            story.extend(paper_block(rank, paper, item, styles))
 
     # ── Footer ──
     story.append(Spacer(1, 4*mm))
