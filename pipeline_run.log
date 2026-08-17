@@ -1,79 +1,92 @@
 Loading existing papers from Google Sheet...
-  405 existing papers loaded.
-  Verifying HUJI affiliation for 397 papers via PubMed efetch...
-fetch_pubmed: 22 fetched, 20 new
-fetch_europepmc: 17 fetched, 1 new
+  425 existing papers loaded.
+  Verifying HUJI affiliation for 417 papers via PubMed efetch...
+fetch_pubmed: 26 fetched, 24 new
+fetch_europepmc: 13 fetched, 0 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-20 unique new papers to evaluate.
-Enriching PI contact info for 20 new papers...
+24 unique new papers to evaluate.
+Enriching PI contact info for 24 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/20] A new method for geometric analysis of mandibular features: A case stu
-    score=9 fields=['Imaging', 'Medical Device', 'Software/AI']
+  [1/24] When Fetal Anomalies Lead to Prognostic Clarification: An Underrecogni
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+    score=25 fields=['Diagnostics', 'Genomics', 'Clinical']
     hts_score=1
-  [2/20] Portable CBCT in the forensic dental identification of the October 7th
-    score=20 fields=['Medical Device', 'Imaging', 'Clinical']
-    hts_score=1
-  [3/20] Contactless Detection of Giant Helicity-Dependent Photovoltage in Chir
-    score=25 fields=['Materials', 'Clean Energy', 'Quantum']
-    hts_score=1
-  [4/20] Language-like statistical structure arises in learned signaling: evide
-    score=14 fields=['Software/AI', 'Neuroscience']
-    hts_score=1
-  [5/20] Alignment between expanded carrier screening panels and conditions lea
-    score=24 fields=['Genomics', 'Diagnostics', 'Clinical']
-    hts_score=1
-  [6/20] Kin-Keeping and the Complacency-Panic Mismatch: A Community-Level Anal
-    score=11 fields=['Software/AI', 'Clinical']
-    hts_score=1
-  [7/20] Innovative behavior in nurses: The interactive effects of managerial r
-    score=18 fields=['Clinical', 'Other']
-    hts_score=1
-  [8/20] Protocol for culture of zebrafishdeveloping ovaries as an ex vivo syst
-    score=14 fields=['Drug Discovery', 'Genomics', 'Synthetic Biology']
-    hts_score=2
-  [9/20] Parental Resolution of Infant Congenital Heart Disease and Bonding in 
-    score=8 fields=['Clinical', 'Neuroscience']
-    hts_score=1
-  [10/20] Subclinical Cardiac Changes Following CPX-351 Induction in Adults with
-    score=24 fields=['Clinical', 'Diagnostics']
-    hts_score=2
-  [11/20] Linear growth in pediatric kidney transplant recipients.
-    score=18 fields=['Clinical', 'Immunology']
-    hts_score=1
-  [12/20] Effects of continuous traumatic stress and coping efficacy on mental h
-    score=15 fields=['Clinical', 'Neuroscience', 'Software/AI']
-    hts_score=1
-  [13/20] The brain drain problem in sleep apnea.
-    score=14 fields=['Neuroscience', 'Medical Device', 'Diagnostics', 'Clinical']
-    hts_score=1
-  [14/20] Clinical characteristics associated with sustained ventricular arrhyth
-    score=19 fields=['Clinical', 'Diagnostics', 'Medical Device']
-    hts_score=1
-  [15/20] Treatment approaches for large traumatic cyclodialysis clefts in phaki
-    score=16 fields=['Medical Device', 'Clinical']
-    hts_score=1
-  [checkpoint: 15/20] writing 420 papers (405 retained + 15 new)...
-Sheet updated: {"status":"ok","rows":421}
-Generated papers_reader.html and papers_data.json with 420 papers and 47 researcher profiles.
-  [16/20] Age- and sex-specific patterns of microcytic anemia in adolescence: im
-    score=21 fields=['Diagnostics', 'Clinical']
-    hts_score=1
-  [17/20] Antiseizure potency and neurotoxicity of the enantiomers of fenflurami
-    score=17 fields=['Drug Discovery', 'Neuroscience', 'Clinical']
+  [2/24] Antagonistic pleiotropy at the stem solidness 1 locus balances wheat s
+    score=31 fields=['AgriTech', 'Genomics', 'Synthetic Biology']
     hts_score=4
-  [18/20] The Effect of Dicloxacillin Administration on Pharmacokinetics of Narr
-    score=17 fields=['Clinical', 'Diagnostics']
+  [3/24] Tissue-level division of labor is coordinated across organs through un
+    score=26 fields=['Synthetic Biology', 'Genomics', 'Software/AI', 'Drug Discovery']
+    hts_score=1
+  [4/24] My bad tooth and why it matters: the neglected value of "Medical Touch
+    score=7 fields=['Medical Device', 'Software/AI', 'Clinical']
+    hts_score=1
+  [5/24] Surgeon Shaming in Plastic Surgery: Recognition and Response.
+    score=15 fields=['Clinical', 'Other']
+    hts_score=1
+  [6/24] Corrigendum to Interferon Alpha-2a as Treatment for Primary Acquired M
+    score=13 fields=['Clinical', 'Immunology']
     hts_score=2
-  [19/20] An OpIE2-DsRed marker disrupts female blood-feeding and shortens lifes
-    score=21 fields=['Synthetic Biology', 'Genomics', 'AgriTech']
+  [7/24] Succinate and its carrier Sfc1 mediate metabolic control of mitochondr
+    score=18 fields=['Drug Discovery', 'Proteomics', 'Synthetic Biology']
     hts_score=4
-  [20/20] Using Disease-Agnostic Genomic Liquid Biopsy in Complex Diagnoses: Rea
-    score=30 fields=['Diagnostics', 'Genomics', 'Clinical']
+  [8/24] CT-based multi-threshold calcium scoring for aortic valve assessment: 
+    score=24 fields=['Imaging', 'Diagnostics', 'Medical Device', 'Software/AI']
+    hts_score=1
+  [9/24] Vesicle internalization proceeds 
+    score=7 fields=['Drug Discovery', 'Synthetic Biology', 'Imaging', 'Proteomics']
+    hts_score=1
+  [10/24] Hate has no place in medicine.
+    score=5 fields=['Clinical', 'Other']
+    hts_score=1
+  [11/24] Error Decomposition in Dissociation Processes within Density-Corrected
+    score=13 fields=['Materials', 'Clean Energy', 'Drug Discovery', 'Software/AI']
+    hts_score=1
+  [12/24] Does Subspecialization Matter? Institutional Outcomes Before and After
+    score=17 fields=['Clinical', 'Software/AI']
+    hts_score=1
+  [13/24] RNA as a crowding agent.
+    score=19 fields=['Drug Discovery', 'Synthetic Biology', 'Proteomics']
+    hts_score=1
+  [14/24] New-onset autoimmunity in people living with post-traumatic stress dis
+    score=16 fields=['Immunology', 'Neuroscience', 'Diagnostics', 'Clinical']
+    hts_score=1
+  [15/24] Very short-coupled regular monomorphic wide QRS tachycardia in a young
+    score=15 fields=['Clinical', 'Medical Device', 'Diagnostics']
+    hts_score=1
+  [checkpoint: 15/24] writing 440 papers (425 retained + 15 new)...
+Sheet updated: {"status":"ok","rows":441}
+Generated papers_reader.html and papers_data.json with 440 papers and 47 researcher profiles.
+  [16/24] A Wait and Scan Protocol for Asymptomatic Postsurgical Cholesteatoma R
+    score=20 fields=['Clinical', 'Imaging', 'Medical Device']
+    hts_score=1
+  [17/24] Non-adiabatic perturbation theory of the exact factorization.
+    score=13 fields=['Materials', 'Software/AI', 'Quantum', 'Clean Energy']
+    hts_score=1
+  [18/24] Seeing to Connect: How Visual and Auditory Channels Shape Empathic Int
+    score=12 fields=['Software/AI', 'Neuroscience', 'Clinical']
+    hts_score=1
+  [19/24] The miR167-ARF8 module coordinates stamen-pistil development and fruit
+    score=24 fields=['AgriTech', 'Genomics', 'Synthetic Biology']
+    hts_score=4
+  [20/24] Disparities in mammography screening adherence in a universal welfare 
+    score=23 fields=['Software/AI', 'Clinical', 'Imaging']
+    hts_score=1
+  [21/24] Effects of a Smartphone-Based Mindfulness Intervention on Momentary St
+    score=25 fields=['Software/AI', 'Clinical', 'Neuroscience']
+    hts_score=1
+  [22/24] Sex-specific differences in functional outcomes from anterior knee pai
+    score=18 fields=['Clinical', 'Medical Device']
+    hts_score=1
+  [23/24] The cutaneous phenotypic landscape of Gaucher disease type 1: a clinic
+    score=13 fields=['Clinical', 'Diagnostics']
+    hts_score=2
+  [24/24] Tire wear particles as a source of organic contaminants in the agro-en
+    score=15 fields=['AgriTech', 'Materials', 'Other']
     hts_score=2
 
-Kept all 405 existing papers, added 20 new.
-  [checkpoint: final] writing 425 papers (405 retained + 20 new)...
-Sheet updated: {"status":"ok","rows":426}
-Generated papers_reader.html and papers_data.json with 425 papers and 47 researcher profiles.
+Kept all 425 existing papers, added 24 new.
+  [checkpoint: final] writing 449 papers (425 retained + 24 new)...
+Sheet updated: {"status":"ok","rows":450}
+Generated papers_reader.html and papers_data.json with 449 papers and 47 researcher profiles.
 Done.
