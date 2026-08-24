@@ -1,92 +1,75 @@
 Loading existing papers from Google Sheet...
-  425 existing papers loaded.
-  Verifying HUJI affiliation for 417 papers via PubMed efetch...
-fetch_pubmed: 26 fetched, 24 new
-fetch_europepmc: 13 fetched, 0 new
+  449 existing papers loaded.
+  Verifying HUJI affiliation for 441 papers via PubMed efetch...
+fetch_pubmed: 19 fetched, 17 new
+fetch_europepmc: 13 fetched, 1 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-24 unique new papers to evaluate.
-Enriching PI contact info for 24 new papers...
+18 unique new papers to evaluate.
+Enriching PI contact info for 18 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/24] When Fetal Anomalies Lead to Prognostic Clarification: An Underrecogni
+  [1/18] Stereocontrolled entry to borylated piperidines 
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-    score=25 fields=['Diagnostics', 'Genomics', 'Clinical']
+    score=24 fields=['Drug Discovery', 'Synthetic Biology']
     hts_score=1
-  [2/24] Antagonistic pleiotropy at the stem solidness 1 locus balances wheat s
-    score=31 fields=['AgriTech', 'Genomics', 'Synthetic Biology']
-    hts_score=4
-  [3/24] Tissue-level division of labor is coordinated across organs through un
-    score=26 fields=['Synthetic Biology', 'Genomics', 'Software/AI', 'Drug Discovery']
+  [2/18] Modulating immune toxicity in ulcerative colitis using a small molecul
+    score=31 fields=['Drug Discovery', 'Immunology', 'Clinical']
+    hts_score=7
+  [3/18] Benign and Malignant Conjunctival Lesions in Children.
+    score=10 fields=['Diagnostics', 'Imaging', 'Clinical']
     hts_score=1
-  [4/24] My bad tooth and why it matters: the neglected value of "Medical Touch
-    score=7 fields=['Medical Device', 'Software/AI', 'Clinical']
+  [4/18] Oral Lichenoid Lesions in Patients With Dyskeratosis Congenita: A Retr
+    score=7 fields=['Genomics', 'Immunology', 'Clinical', 'Diagnostics']
     hts_score=1
-  [5/24] Surgeon Shaming in Plastic Surgery: Recognition and Response.
-    score=15 fields=['Clinical', 'Other']
+  [5/18] Factors associated with in-flight G-induced loss of consciousness (G-L
+    score=11 fields=['Medical Device', 'Neuroscience', 'Software/AI', 'Clinical']
     hts_score=1
-  [6/24] Corrigendum to Interferon Alpha-2a as Treatment for Primary Acquired M
-    score=13 fields=['Clinical', 'Immunology']
+  [6/18] Tail wounds in military working dogs: Clinical characterization and a 
+    score=19 fields=['Medical Device', 'Clinical']
+    hts_score=1
+  [7/18] Orbitofrontal cortex contributes to context-dependent timing under amb
+    score=11 fields=['Neuroscience', 'Medical Device', 'Software/AI']
+    hts_score=1
+  [8/18] Romiplostim during pregnancy in refractory primary immune thrombocytop
+    score=17 fields=['Immunology', 'Clinical']
     hts_score=2
-  [7/24] Succinate and its carrier Sfc1 mediate metabolic control of mitochondr
-    score=18 fields=['Drug Discovery', 'Proteomics', 'Synthetic Biology']
-    hts_score=4
-  [8/24] CT-based multi-threshold calcium scoring for aortic valve assessment: 
-    score=24 fields=['Imaging', 'Diagnostics', 'Medical Device', 'Software/AI']
-    hts_score=1
-  [9/24] Vesicle internalization proceeds 
-    score=7 fields=['Drug Discovery', 'Synthetic Biology', 'Imaging', 'Proteomics']
-    hts_score=1
-  [10/24] Hate has no place in medicine.
-    score=5 fields=['Clinical', 'Other']
-    hts_score=1
-  [11/24] Error Decomposition in Dissociation Processes within Density-Corrected
-    score=13 fields=['Materials', 'Clean Energy', 'Drug Discovery', 'Software/AI']
-    hts_score=1
-  [12/24] Does Subspecialization Matter? Institutional Outcomes Before and After
-    score=17 fields=['Clinical', 'Software/AI']
-    hts_score=1
-  [13/24] RNA as a crowding agent.
-    score=19 fields=['Drug Discovery', 'Synthetic Biology', 'Proteomics']
-    hts_score=1
-  [14/24] New-onset autoimmunity in people living with post-traumatic stress dis
-    score=16 fields=['Immunology', 'Neuroscience', 'Diagnostics', 'Clinical']
-    hts_score=1
-  [15/24] Very short-coupled regular monomorphic wide QRS tachycardia in a young
-    score=15 fields=['Clinical', 'Medical Device', 'Diagnostics']
-    hts_score=1
-  [checkpoint: 15/24] writing 440 papers (425 retained + 15 new)...
-Sheet updated: {"status":"ok","rows":441}
-Generated papers_reader.html and papers_data.json with 440 papers and 47 researcher profiles.
-  [16/24] A Wait and Scan Protocol for Asymptomatic Postsurgical Cholesteatoma R
-    score=20 fields=['Clinical', 'Imaging', 'Medical Device']
-    hts_score=1
-  [17/24] Non-adiabatic perturbation theory of the exact factorization.
-    score=13 fields=['Materials', 'Software/AI', 'Quantum', 'Clean Energy']
-    hts_score=1
-  [18/24] Seeing to Connect: How Visual and Auditory Channels Shape Empathic Int
-    score=12 fields=['Software/AI', 'Neuroscience', 'Clinical']
-    hts_score=1
-  [19/24] The miR167-ARF8 module coordinates stamen-pistil development and fruit
-    score=24 fields=['AgriTech', 'Genomics', 'Synthetic Biology']
-    hts_score=4
-  [20/24] Disparities in mammography screening adherence in a universal welfare 
-    score=23 fields=['Software/AI', 'Clinical', 'Imaging']
-    hts_score=1
-  [21/24] Effects of a Smartphone-Based Mindfulness Intervention on Momentary St
-    score=25 fields=['Software/AI', 'Clinical', 'Neuroscience']
-    hts_score=1
-  [22/24] Sex-specific differences in functional outcomes from anterior knee pai
-    score=18 fields=['Clinical', 'Medical Device']
-    hts_score=1
-  [23/24] The cutaneous phenotypic landscape of Gaucher disease type 1: a clinic
-    score=13 fields=['Clinical', 'Diagnostics']
+  [9/18] Early First-Line Bortezomib for Acute Antibody-Mediated Rejection: A R
+    score=20 fields=['Immunology', 'Clinical', 'Drug Discovery']
+    hts_score=3
+  [10/18] Ketamine administration and postoperative mortality after major cancer
+    score=23 fields=['Clinical', 'Neuroscience']
     hts_score=2
-  [24/24] Tire wear particles as a source of organic contaminants in the agro-en
-    score=15 fields=['AgriTech', 'Materials', 'Other']
+  [11/18] Coprecipitated Silica Controls the Divergent Pathways of Cysteine-Indu
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    score=15 fields=['Materials', 'AgriTech', 'Clean Energy']
+    hts_score=1
+  [12/18] Characterization of pulmonary embolism events in patients with suspect
+    score=10 fields=['Diagnostics', 'Clinical', 'Imaging']
+    hts_score=1
+  [13/18] Post-operative Urinary Tract Infection After Pediatric Pyeloplasty: A 
+    score=11 fields=['Medical Device', 'Clinical', 'Other']
+    hts_score=1
+  [14/18] Post-Endovascular Thrombectomy Perfusion Imaging (CT and MR) as a Prog
+    score=23 fields=['Diagnostics', 'Software/AI', 'Neuroscience', 'Imaging']
+    hts_score=1
+  [15/18] Atlas-based radiographic classification of mandibular molar root morph
+    score=17 fields=['Imaging', 'Software/AI', 'Diagnostics']
+    hts_score=1
+  [checkpoint: 15/18] writing 464 papers (449 retained + 15 new)...
+Sheet updated: {"status":"ok","rows":465}
+Generated papers_reader.html and papers_data.json with 464 papers and 47 researcher profiles.
+  [16/18] Adverse Events Requiring Intervention in Infants Aged 3 to 12 Months R
+    score=10 fields=['Clinical', 'Medical Device', 'Software/AI']
+    hts_score=1
+  [17/18] Temporal vision adaptation and restoration in achromatopsia.
+    score=16 fields=['Medical Device', 'Neuroscience', 'Imaging', 'Software/AI']
     hts_score=2
+  [18/18] Stereocontrolled entry to borylated piperidines &lt;i&gt;via&lt;/i&gt;
+    score=29 fields=['Drug Discovery']
+    hts_score=1
 
-Kept all 425 existing papers, added 24 new.
-  [checkpoint: final] writing 449 papers (425 retained + 24 new)...
-Sheet updated: {"status":"ok","rows":450}
-Generated papers_reader.html and papers_data.json with 449 papers and 47 researcher profiles.
+Kept all 449 existing papers, added 18 new.
+  [checkpoint: final] writing 467 papers (449 retained + 18 new)...
+Sheet updated: {"status":"ok","rows":468}
+Generated papers_reader.html and papers_data.json with 467 papers and 47 researcher profiles.
 Done.
