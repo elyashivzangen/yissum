@@ -2,46 +2,46 @@
 =======================================================
 Branch: All Branches
 Loading top papers from Google Sheet...
-  Sheet response: 200, 1338469 bytes
-  Cutoff date: 2026-08-10  (DIGEST_WINDOW=7 days)
-  Rows: 449 total, 368 excluded, 81 kept.
-  Sample pub date values: ['2026-10-15', '2026-09-01', '2026 Aug 16']
+  Sheet response: 200, 1388424 bytes
+  Cutoff date: 2026-08-17  (DIGEST_WINDOW=7 days)
+  Rows: 467 total, 392 excluded, 75 kept.
+  Sample pub date values: ['2026-10-15', '2026-09-01', '2026 Aug 21']
   20 candidates (top 20 by score).
-  3 HUJI-primary paper(s) selected (high-potential).
+  6 HUJI-primary paper(s) selected (high-potential).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
   Success with: gemini-2.5-flash
-  Gemini selected 3 papers.
-  Executive summary: Hebrew University researchers are advancing breakthrough solutions across critical sectors. New discoveries include a pl...
+  Gemini selected 6 papers.
+  Executive summary: Hebrew University researchers are pioneering breakthroughs across diverse fields, presenting unique investment opportuni...
 Generating HTML + PDF reports...
-  HTML written: digests/HUJI_digest_2026_W34.html  (54 KB)
-  PDF written:  digests/HUJI_digest_2026_W34.pdf  (51 KB)
+  HTML written: digests/HUJI_digest_2026_W35.html  (70 KB)
+  PDF written:  digests/HUJI_digest_2026_W35.pdf  (62 KB)
 
 =======================================================
 Branch: Healthcare
 Loading top papers from Google Sheet...
-  Sheet response: 200, 1338469 bytes
-  Cutoff date: 2026-08-10  (DIGEST_WINDOW=7 days)
-  Rows: 449 total, 376 excluded, 73 kept.
-  Sample pub date values: ['2026-10-15', '2026 Aug 16', '2026 Aug 16']
+  Sheet response: 200, 1388424 bytes
+  Cutoff date: 2026-08-17  (DIGEST_WINDOW=7 days)
+  Rows: 467 total, 401 excluded, 66 kept.
+  Sample pub date values: ['2026-10-15', '2026 Aug 21', '2026 Aug 21']
   20 candidates (top 20 by score).
-  3 HUJI-primary paper(s) selected (high-potential).
+  6 HUJI-primary paper(s) selected (high-potential).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
-  Gemini selected 3 papers.
-  Executive summary: Hebrew University researchers are advancing groundbreaking solutions across critical sectors. New insights into cellular...
+  Gemini selected 6 papers.
+  Executive summary: This week's digest highlights groundbreaking advancements from Hebrew University poised for significant commercial impac...
 Generating HTML + PDF reports...
-  HTML written: digests/HUJI_digest_2026_W34_Healthcare.html  (54 KB)
-  PDF written:  digests/HUJI_digest_2026_W34_Healthcare.pdf  (52 KB)
+  HTML written: digests/HUJI_digest_2026_W35_Healthcare.html  (70 KB)
+  PDF written:  digests/HUJI_digest_2026_W35_Healthcare.pdf  (62 KB)
 
 =======================================================
 Branch: Agriculture & Food
 Loading top papers from Google Sheet...
-  Sheet response: 200, 1338469 bytes
-  Cutoff date: 2026-08-10  (DIGEST_WINDOW=7 days)
-  Rows: 449 total, 448 excluded, 1 kept.
+  Sheet response: 200, 1388424 bytes
+  Cutoff date: 2026-08-17  (DIGEST_WINDOW=7 days)
+  Rows: 467 total, 466 excluded, 1 kept.
   Sample pub date values: ['2026-09-01']
   1 candidates (top 20 by score).
   1 HUJI-primary paper(s) selected (FALLBACK — no high-potential).
@@ -49,28 +49,28 @@ Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
   Gemini selected 1 papers.
-  Executive summary: Our latest AgriTech and FoodTech research highlights innovative approaches to food preservation and quality enhancement....
+  Executive summary: This week's digest highlights a promising development in AgriTech and FoodTech, addressing challenges in meat preservati...
 Generating HTML + PDF reports...
-  HTML written: digests/HUJI_digest_2026_W34_Agriculture_Food.html  (44 KB)
-  PDF written:  digests/HUJI_digest_2026_W34_Agriculture_Food.pdf  (45 KB)
+  HTML written: digests/HUJI_digest_2026_W35_Agriculture_Food.html  (44 KB)
+  PDF written:  digests/HUJI_digest_2026_W35_Agriculture_Food.pdf  (46 KB)
 
 =======================================================
 Branch: Exact & Social Sciences
 Loading top papers from Google Sheet...
-  Sheet response: 200, 1338469 bytes
-  Cutoff date: 2026-08-10  (DIGEST_WINDOW=7 days)
-  Rows: 449 total, 442 excluded, 7 kept.
-  Sample pub date values: ['2026 Aug 15', '2026 Aug 14', '2026-08-13']
-  7 candidates (top 20 by score).
+  Sheet response: 200, 1388424 bytes
+  Cutoff date: 2026-08-17  (DIGEST_WINDOW=7 days)
+  Rows: 467 total, 459 excluded, 8 kept.
+  Sample pub date values: ['2026 Aug 18', '2026-06', '2026-05']
+  8 candidates (top 20 by score).
   2 HUJI-primary paper(s) selected (FALLBACK — no high-potential).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
   Gemini selected 2 papers.
-  Executive summary: This week's digest highlights groundbreaking research from Hebrew University, showcasing innovations with significant co...
+  Executive summary: The latest research from Hebrew University showcases advancements in both consumer-facing digital health and foundationa...
 Generating HTML + PDF reports...
-  HTML written: digests/HUJI_digest_2026_W34_Exact_Social_Sciences.html  (50 KB)
-  PDF written:  digests/HUJI_digest_2026_W34_Exact_Social_Sciences.pdf  (49 KB)
+  HTML written: digests/HUJI_digest_2026_W35_Exact_Social_Sciences.html  (50 KB)
+  PDF written:  digests/HUJI_digest_2026_W35_Exact_Social_Sciences.pdf  (49 KB)
 
 All digests done.
 
