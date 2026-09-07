@@ -1,77 +1,94 @@
 Loading existing papers from Google Sheet...
-  467 existing papers loaded.
-  Verifying HUJI affiliation for 458 papers via PubMed efetch...
-fetch_pubmed: 21 fetched, 19 new
-fetch_europepmc: 19 fetched, 0 new
+  79 existing papers loaded.
+  Verifying HUJI affiliation for 77 papers via PubMed efetch...
+fetch_pubmed: 26 fetched, 26 new
+fetch_europepmc: 33 fetched, 7 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-19 unique new papers to evaluate.
-Enriching PI contact info for 19 new papers...
+24 unique new papers to evaluate.
+Enriching PI contact info for 24 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/19] MiR-122 regulates liver tolerance.
+  [1/24] Social Workers' Perspectives on the Climate of Trauma-Informed and Non
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-    score=19 fields=['Drug Discovery', 'Immunology', 'Genomics', 'Clinical']
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=7 fields=['Other']
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    hts_score=1
+  [2/24] Effect of community water fluoridation cessation on dental caries in 1
+    score=8 fields=['Clinical', 'Other']
+    hts_score=1
+  [3/24] Beyond two rooms: proton therapy access for all.
+    score=18 fields=['Medical Device', 'Imaging', 'Clinical', 'Software/AI']
+    hts_score=1
+  [4/24] Age-Period-Cohort Analysis of Creutzfeldt-Jakob Disease in Israel (198
+    score=8 fields=['Diagnostics', 'Neuroscience', 'Clinical']
+    hts_score=1
+  [5/24] The Odd Couple: Replacement Therapy for Citrate Transporter Deficiency
+    score=16 fields=['Drug Discovery', 'Neuroscience', 'Genomics', 'Clinical']
+    hts_score=5
+  [6/24] Perceived Changes in Occupational Participation and Quality of Life Am
+    score=10 fields=['Clinical', 'Other']
+    hts_score=1
+  [7/24] Latent profiles of mental health and care barriers among heterosexual 
+    score=12 fields=['Software/AI', 'Clinical', 'Other']
+    hts_score=1
+  [8/24] Recto-Perineal Fistula - Do We Need to Fix It? Long-Term Outcomes of N
+    score=10 fields=['Clinical', 'Medical Device']
+    hts_score=1
+  [9/24] Mitral Annular Calcification as a Marker of the HFpEF Phenotype: The I
+    score=17 fields=['Diagnostics', 'Imaging', 'Clinical']
+    hts_score=1
+  [10/24] The lived experiences of patients exercising with the Paula method for
+    score=12 fields=['Clinical', 'Other']
+    hts_score=1
+  [11/24] Temporal Trends in Autologous Breast Reconstruction Among Patients Wit
+    score=8 fields=['Clinical', 'Other']
+    hts_score=1
+  [12/24] Fatal Myocarditis Relapse in a Patient with Myasthenia Gravis Treated 
+    score=14 fields=['Immunology', 'Clinical', 'Drug Discovery']
+    hts_score=2
+  [13/24] Ploidy-Dependent Response to Anticancer Drugs of Human Embryonic Stem 
+    score=16 fields=['Drug Discovery', 'Genomics', 'Clinical']
+    hts_score=2
+  [14/24] Parallel evolutionary trajectories rewire enteropathogenic 
+    score=20 fields=['Drug Discovery', 'Genomics', 'Immunology', 'Diagnostics']
+    hts_score=2
+  [15/24] The Personification of Hope.
+    score=5 fields=['Other']
+    hts_score=1
+  [checkpoint: 15/24] writing 94 papers (79 retained + 15 new)...
+Sheet updated: {"status":"ok","rows":95}
+Generated papers_reader.html and papers_data.json with 94 papers and 47 researcher profiles.
+  [16/24] Stomatal aperture, VPD and transpiration - The chicken or the egg?
+    score=10 fields=['AgriTech', 'Software/AI']
+    hts_score=1
+  [17/24] Abstracts of the 36th World Congress on Ultrasound in Obstetrics and G
+    score=5 fields=['Medical Device', 'Diagnostics', 'Imaging']
+    hts_score=1
+  [18/24] The Role of Trace Elements in the Formation of Feline Corneal Sequestr
+    score=13 fields=['Diagnostics', 'Clinical', 'Imaging']
     hts_score=4
-  [2/19] A sibling to all: Reversed neural pattern of social affiliation in ext
-    score=14 fields=['Neuroscience', 'Diagnostics', 'Clinical']
+  [19/24] The anti-CEACAM1 agonistic antibody CCM5.01 inhibits the growth of col
+    score=30 fields=['Drug Discovery', 'Immunology', 'Clinical']
+    hts_score=10
+  [20/24] Willingness to volunteer during continuous traumatic stress: Psychosoc
+    score=9 fields=['Software/AI', 'Neuroscience', 'Clinical', 'Other']
     hts_score=1
-  [3/19] An Epstein-Barr virus-encoded snoRNA directs 2'-O-methylation of human
-    score=22 fields=['Drug Discovery', 'Genomics', 'Immunology']
-    hts_score=7
-  [4/19] Economic hardship and mental health following a national trauma and am
-    score=10 fields=['Clinical', 'Neuroscience', 'Software/AI']
+  [21/24] Parallel evolutionary trajectories rewire enteropathogenic &lt;i&gt;Es
+    score=24 fields=['Drug Discovery', 'Vaccines', 'Genomics', 'Clinical']
+    hts_score=9
+  [22/24] Utilizing Point-of-Care Ultrasound and Tourniquet Placement for Expedi
+    score=16 fields=['Medical Device', 'Diagnostics', 'Imaging', 'Clinical']
     hts_score=1
-  [5/19] Pitfalls encountered while projecting the future Israeli anesthesiolog
-    score=7 fields=['Software/AI', 'Clinical']
+  [23/24] Parent or Child Driven? Associations Over Time Between Parental Depres
+    score=12 fields=['Software/AI', 'Neuroscience', 'Clinical', 'Other']
     hts_score=1
-  [6/19] Irritable Bowel Syndrome and Allergic Diseases: A Nationwide Study of 
-    score=18 fields=['Immunology', 'Clinical', 'Diagnostics']
-    hts_score=1
-  [7/19] Revisiting the Sources of Parental Knowledge and Tracking Their Betwee
-    score=10 fields=['Software/AI', 'Clinical', 'Other']
-    hts_score=1
-  [8/19] Fertility Preservation Pathways in Young Women With Breast Cancer: A S
-    score=18 fields=['Clinical', 'Genomics']
-    hts_score=1
-  [9/19] Pulmonary Artery Diameter Predicts Mortality in Community-Acquired Pne
-    score=22 fields=['Diagnostics', 'Imaging', 'Software/AI', 'Clinical']
-    hts_score=1
-  [10/19] Who Benefits More in Group-Based and Individual Telehealth Parenting P
-    score=20 fields=['Software/AI', 'Clinical']
-    hts_score=1
-  [11/19] Paediatric regional anaesthesia and peripheral nerve blocks in paediat
-    score=18 fields=['Clinical', 'Medical Device']
-    hts_score=1
-  [12/19] Emerging experimental and computational methods for studying redox-reg
-    score=18 fields=['Drug Discovery', 'Proteomics', 'Software/AI', 'Diagnostics']
-    hts_score=1
-  [13/19] Participation Patterns, Family Routines and Environmental Factors Prio
-    score=16 fields=['Software/AI', 'Neuroscience', 'Clinical']
-    hts_score=1
-  [14/19] Mechanisms behind facilitation-competition transition along rainfall g
-    score=10 fields=['AgriTech']
-    hts_score=1
-  [15/19] ["The Associating Power of Intelligence" : In Search of "Intelligent" 
-    score=6 fields=['Software/AI', 'Other']
-    hts_score=1
-  [checkpoint: 15/19] writing 482 papers (467 retained + 15 new)...
-Sheet updated: {"status":"ok","rows":483}
-Generated papers_reader.html and papers_data.json with 482 papers and 47 researcher profiles.
-  [16/19] The effect of antiseizure medications on the exposure to combined oral
-    score=21 fields=['Clinical', 'Neuroscience']
-    hts_score=1
-  [17/19] Brainstem Theory of Consciousness.
-    score=15 fields=['Neuroscience', 'Diagnostics', 'Clinical', 'Imaging']
-    hts_score=1
-  [18/19] Non-invasive colorectal cancer screening in cystic fibrosis: Promise, 
-    score=14 fields=['Diagnostics', 'Clinical']
-    hts_score=1
-  [19/19] The clinical yield of repeated pediatric polysomnographies.
-    score=17 fields=['Diagnostics', 'Clinical', 'Software/AI']
+  [24/24] Neural Evidence for Action-Related Somatosensory Predictions.
+    score=14 fields=['Medical Device', 'Neuroscience', 'Software/AI']
     hts_score=1
 
-Kept all 467 existing papers, added 19 new.
-  [checkpoint: final] writing 486 papers (467 retained + 19 new)...
-Sheet updated: {"status":"ok","rows":487}
-Generated papers_reader.html and papers_data.json with 486 papers and 47 researcher profiles.
+Kept all 79 existing papers, added 24 new.
+  [checkpoint: final] writing 103 papers (79 retained + 24 new)...
+Sheet updated: {"status":"ok","rows":104}
+Generated papers_reader.html and papers_data.json with 103 papers and 47 researcher profiles.
 Done.
