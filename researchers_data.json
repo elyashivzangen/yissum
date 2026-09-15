@@ -11600,7 +11600,7 @@
     "pi_full_name": "Tamir Ben-Hur",
     "pi_email": "tamir@hadassah.org.il.",
     "pi_affiliation": "Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel; The Department of Neurology, The Agnes Ginges Center for Human Neurogenetics, Hadassah-Hebrew University Medical Center, Jerusalem, Israel. Electronic address: tamir@hadassah.org.il.",
-    "avg_score": 19.5,
+    "avg_score": 19.6,
     "max_hts_score": 8,
     "paper_count": 8,
     "description": "This researcher focuses on neuro-immunology, specifically the intersection of immune cell activity and neurodegeneration in Multiple Sclerosis (MS) and Alzheimer's disease. Their work blends basic mechanistic research, such as the 'Hit and Run' hypothesis for Alzheimer's, with translational efforts like developing stem cell-derived astrocyte therapies. They also contribute to clinical standardization and guideline development for neuromuscular and neuro-inflammatory disorders.",
@@ -11952,40 +11952,40 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/42727542/",
         "journal": "Journal of the neurological sciences",
-        "score": 10,
-        "summary": "This study utilizes a Delphi survey of Israeli MS specialists to establish consensus on clinical decision-making strategies for treating older patients with multiple sclerosis. It highlights the growing clinical challenge of managing comorbidities and medication safety in an aging neuro-immunological patient population.",
-        "opportunity": "The findings provide a roadmap for developing specialized clinical decision support (CDS) software or digital health platforms tailored to personalize therapy management for geriatric neurology patients.",
+        "score": 11,
+        "summary": "This study uses a Delphi survey to identify clinical uncertainties and lack of consensus among specialists regarding how to treat older patients with multiple sclerosis. It highlights the specific challenges of managing disease progression, treatment de-escalation, and age-related safety concerns in an aging patient population.",
+        "opportunity": "The identified clinical uncertainty creates a market need for decision-support software and personalized medicine tools tailored to geriatric MS management and treatment de-escalation protocols.",
         "abstract": "The aging population of people with multiple sclerosis (MS) presents growing clinical challenges that are insufficiently addressed by existing evidence. Age-related changes in disease biology, treatment effectiveness, and safety complicate therapeutic decision-making, particularly regarding treatment de-escalation and discontinuation. To describe areas of agreement and uncertainty among Israeli MS specialists regarding clinical decision-making for older adults with MS. A national two-round modified Delphi survey was conducted among 24 MS specialists in Israel. Round 1 included 23 items spanning age-related considerations, late-onset MS (LOMS), treatment continuation, de-escalation and discontinuation, progressive MS, monitoring, vaccination, and treatment decision factors. A structured expert discussion was followed by a focused second round. Consensus definitions were prespecified before response analysis after review of published Delphi methodology and were tailored to item structure. All 24 specialists completed both Delphi rounds. Panel characteristics were subsequently provided by 23 participants (95.8%): median experience in MS care was 15 years (range, 3-35), median annual MS caseload was 500 patients (range, 100-800), 22 practiced primarily in academic or hospital-based settings, and one reported mixed academic and community practice. The panel endorsed age-specific risk-benefit assessment, recognized continuation, de-escalation, and discontinuation as legitimate options in selected stable older patients, and identified persistent uncertainty regarding exit strategies and non-active progressive disease. These findings describe national expert opinion rather than evidence-based recommendations. This national modified Delphi survey describes areas of agreement and uncertainty among Israeli MS specialists. The findings support individualized treatment decisions integrating inflammatory activity, radiologic stability, safety, comorbidity burden, and patient preference, rather than age alone. They should not be interpreted as international consensus or as formal treatment recommendations.",
         "fields": [
           "Clinical",
-          "Software/AI",
-          "Neuroscience"
+          "Neuroscience",
+          "Software/AI"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 2,
-            "reason": "The study employs a standard methodology (Delphi survey) to document existing clinical consensus rather than introducing new therapeutic, diagnostic, or technological innovations. It functions as descriptive observational research rather than groundbreaking, platform-enabling, or high-value intellectual property."
+            "score": 3,
+            "reason": "The study is a descriptive consensus-building exercise rather than a scientific breakthrough or the introduction of a new therapeutic modality. While it provides valuable clinical guidance, it lacks the methodological or biological innovation required for high novelty in a deep-tech or life-science context."
           },
           "commercial_potential": {
             "score": 2,
-            "reason": "This study is a descriptive survey of clinical consensus rather than a technological innovation, offering no protectable IP, software, or novel therapeutic asset. Its value is limited to qualitative insights for medical practice guidelines rather than scalable commercial technology."
+            "reason": "This is a qualitative observational study focused on gathering expert consensus and clinical guidelines rather than developing a proprietary technology, drug, or digital tool. It offers academic value for standardizing care but lacks a direct path to a protectable product, service, or licensable IP."
           },
           "market_size": {
-            "score": 3,
-            "reason": "The study focuses on a narrow, localized clinical decision-making survey in Israel, addressing a specific sub-population (older adults with MS) without proposing a scalable commercial product or technology platform. The market value of this insights-based research is limited to academic or niche clinical guideline development rather than a broad, addressable commercial market."
+            "score": 2,
+            "reason": "This is a qualitative clinical survey paper rather than a commercial technology or therapeutic asset, meaning it lacks a direct addressable market or scalable product potential. While it identifies clinical gaps in an aging MS population, it does not define a market size for a specific intervention or platform."
           },
           "trl": {
-            "score": 2,
-            "reason": "This study is a descriptive Delphi survey focused on expert consensus rather than the development or validation of a new technology. As a qualitative research methodology, it remains at the level of gathering clinical insights rather than creating a product or a tangible therapeutic intervention."
+            "score": 3,
+            "reason": "This is a qualitative consensus-building study (Delphi survey) aimed at defining clinical guidelines rather than a technical tool, platform, or therapeutic intervention. It represents early-stage clinical knowledge generation rather than a developed technology or near-market product."
           },
           "ip_strength": {
             "score": 1,
-            "reason": "This paper is a qualitative clinical survey reporting on professional consensus among medical specialists and contains no novel technical, molecular, or diagnostic innovation that could be patented or claimed as proprietary intellectual property."
+            "reason": "The paper describes a Delphi survey, which is a qualitative methodology used to capture expert consensus and does not involve the development of novel molecules, devices, or proprietary technologies. As a collection of expert opinions and clinical guidelines, it lacks patentable subject matter or technical defensibility."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 10,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "The Department of Neurology and Laboratory of Neuroimmunology, The Agnes-Ginges Center for Human Neurogenetics, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 1,
@@ -15397,7 +15397,7 @@
     "pi_full_name": "Rami I Aqeilan",
     "pi_email": "ramiaq@mail.huji.ac.il.",
     "pi_affiliation": "The Concern Foundation Laboratories, The Lautenberg Center for Immunology and Cancer Research, Department of Immunology and Cancer Research-IMRIC, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. ramiaq@mail.huji.ac.il.; Cyprus Cancer Research Institute (CCRI), Nicosia, Cyprus. ramiaq@mail.huji.ac.il.",
-    "avg_score": 23.9,
+    "avg_score": 23.7,
     "max_hts_score": 9,
     "paper_count": 14,
     "description": "This researcher focuses on the intersection of genomic stability, transcriptional regulation, and neurodevelopmental disorders. Their work spans from developing high-precision technologies for mapping DNA double-strand breaks (sBLISS) to investigating how specific gene dysfunctions, such as WWOX mutations, drive both neurodevelopmental disease and oncogenesis. They utilize advanced models, including human brain organoids and iPSCs, to bridge the gap between molecular mechanism and therapeutic intervention.",
@@ -15420,40 +15420,41 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/42422765/",
         "journal": "Molecular therapy. Advances",
-        "score": 32,
-        "summary": "Hebrew University researchers developed a neuron-specific gene therapy that achieves long-term neurological improvement in a mouse model of WWOX-related epileptic encephalopathy. The treatment demonstrates a dose-dependent response, suggesting a viable therapeutic pathway for addressing this severe pediatric neurodevelopmental disorder.",
-        "opportunity": "This research provides a foundational asset for a clinical-stage orphan drug program targeting pediatric epilepsy through adeno-associated virus (AAV) mediated gene replacement therapy.",
+        "score": 30,
+        "summary": "Researchers have developed a specialized gene therapy that targets specific neurons to treat severe epilepsy caused by WWOX gene mutations. The study demonstrates that this method provides long-lasting and dose-responsive improvement in animal models of the disease.",
+        "opportunity": "This framework provides a validated platform for developing precision gene replacement therapies for rare neurodevelopmental disorders with high unmet medical needs.",
         "abstract": "Bi-allelic WWOX loss-of-function mutations underlie a spectrum of developmental and epileptic encephalopathies, including the severe WOREE syndrome and the milder SCAR12, for which no effective therapies exist. Gene replacement represents a compelling strategy; however, critical parameters for clinically translatable delivery remain undefined. Here, we establish a rationally optimized WWOX gene therapy framework using a severe",
         "fields": [
-          "Clinical",
+          "Drug Discovery",
           "Neuroscience",
-          "Genomics"
+          "Genomics",
+          "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 7,
-            "reason": "The research represents a significant translational advance in gene therapy for a rare neurodevelopmental disorder by achieving durable, neuron-specific rescue; however, it builds upon established AAV-mediated CNS delivery paradigms rather than introducing a radically new therapeutic modality."
+            "reason": "The research moves beyond basic proof-of-concept by introducing a 'rationally optimized' framework for neuron-specific delivery, addressing a critical translation gap for WWOX-related disorders. While gene replacement for WWOX is a logical therapeutic approach, the emphasis on optimizing dose-dependency and durability in a specific cellular compartment provides significant incremental innovation for the field."
           },
           "commercial_potential": {
             "score": 8,
-            "reason": "Gene therapy for rare, monogenic neurological disorders represents a high-value, clinically validated modality with strong potential for orphan drug designation and rapid regulatory pathways. The clear mechanistic focus on a specific gene target facilitates a defined development roadmap and high likelihood of interest for biotech acquisition or licensing."
+            "reason": "The study addresses a high-unmet-need orphan disease with a clearly defined mechanism of action and provides the critical preclinical 'dose-response' and 'durability' data required for IND-enabling studies. The use of a neuron-specific delivery framework suggests a platform-enabling approach that could be leveraged for other neurological gene therapy indications."
           },
           "market_size": {
-            "score": 3,
-            "reason": "WWOX-related epileptic encephalopathy is an ultra-rare orphan disease with a very small patient population, limiting the total addressable market size despite the high unmet medical need. While gene therapy provides high value per patient, the narrow target indication restricts the potential for significant commercial scale compared to broader neurological disorders."
+            "score": 4,
+            "reason": "The target indication covers rare, ultra-orphan neurodevelopmental disorders, which implies a limited patient population and highly niche market demand. While clinically urgent, the total addressable market is constrained by the low prevalence of WWOX-related mutations."
           },
           "trl": {
-            "score": 6,
-            "reason": "The study demonstrates proof-of-concept efficacy in an animal model with a viral delivery system, indicating a late preclinical stage of development. While highly promising for a specific rare disease, it has yet to initiate human clinical trials or establish large-scale manufacturing processes required for commercialization."
+            "score": 3,
+            "reason": "The research is currently at the preclinical stage, utilizing animal models to demonstrate proof-of-concept for gene delivery and dose-dependency. While it establishes a necessary framework for translation, it has not yet entered IND-enabling studies or clinical trials."
           },
           "ip_strength": {
             "score": 8,
-            "reason": "Gene therapy constructs targeting specific loci (WWOX) combined with tissue-specific promoters represent highly protectable compositions of matter with clear regulatory exclusivity pathways. The approach enables a distinct therapeutic platform for neuro-genetic disorders, providing a strong foundation for a robust, multi-layered patent estate."
+            "reason": "The innovation utilizes a 'rationally optimized' framework, implying proprietary vector engineering or promoter selection that provides specific neuron-targeting capabilities beyond generic gene replacement. This optimization creates a defensible technological moat through both composition-of-matter and method-of-use potential for treating WWOX-related encephalopathies."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 32,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "The Concern Foundation Laboratories, The Lautenberg Center for Immunology and Cancer Research, Department of Immunology and Cancer Research-IMRIC, Hebrew University-Hadassah Medical School, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 4,
@@ -16070,7 +16071,7 @@
     "pi_full_name": "Rabea Asleh",
     "pi_email": "rasleh@hadassah.org.il.",
     "pi_affiliation": "Heart Institute, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 21.2,
+    "avg_score": 20.1,
     "max_hts_score": 5,
     "paper_count": 9,
     "description": "This researcher focuses on advanced cardiovascular medicine, specifically targeting heart failure management, cardiac diagnostics, and mechanical circulatory support. Their work spans from clinical outcomes in transplantation and device efficacy to high-level biological discovery using multi-omics and gut microbiome analysis. They bridge the gap between bench-side molecular research and bedside clinical applications in cardiology.",
@@ -16373,41 +16374,41 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/42711399/",
         "journal": "Experimental & molecular medicine",
-        "score": 32,
-        "summary": "This research advocates for a 'human-first' paradigm shift in cardiovascular drug development by utilizing large-scale multi-omics data from human patients instead of relying primarily on traditional animal models. By integrating genomic and proteomic datasets, the approach aims to identify more accurate therapeutic targets and reduce the high failure rate of clinical cardiovascular trials.",
-        "opportunity": "This methodology presents a high-value commercial opportunity for AI-driven drug discovery platforms to license proprietary human-omics databases and predictive algorithms that de-risk the cardiovascular development pipeline.",
+        "score": 22,
+        "summary": "The paper proposes moving away from animal-based research toward a 'human-first' approach that uses direct profiling of human heart tissue. By integrating multi-omics data from real patients, researchers can identify more accurate therapeutic targets and reduce clinical trial failure rates.",
+        "opportunity": "Companies developing high-throughput multi-omics platforms or specialized biobanks of human cardiac tissue are positioned to disrupt the traditional drug discovery pipeline.",
         "abstract": "Despite significant biomedical advances, cardiovascular disease remains a leading cause of global mortality. The traditional 'bench-to-bedside' research pipeline, which heavily relies on animal models to guide clinical translation, is often hampered by species-specific physiological differences, leading to high rates of clinical trial failures. In this Review, we advocate for a paradigm shift toward a 'human-first' discovery approach. We explore how integrating human cardiac tissue resources obtained from biopsies, surgical explants and autopsies with high-resolution multi-omics technologies (including transcriptomics, proteomics and metabolomics) is transforming our understanding of complex heart diseases. We highlight recent breakthroughs in heart failure, ischemic heart disease, arrhythmias, myocarditis and valvular stenosis achieved through direct profiling of human samples. Finally, we propose a 'bedside-to-bench-and-back' strategy, in which therapeutic targets are identified in human tissues and then validated in animal models to accelerate the development of precise, clinically relevant cardiovascular treatments.",
         "fields": [
           "Drug Discovery",
           "Genomics",
           "Proteomics",
-          "Software/AI"
+          "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 7,
-            "reason": "While moving from animal models to human-first multi-omics is a necessary industry shift, the methodology leverages established high-throughput platforms rather than inventing new foundational technologies. It represents a significant strategic pivot in translational strategy rather than a radical scientific breakthrough."
+            "score": 3,
+            "reason": "This is a review paper advocating for a conceptual paradigm shift rather than presenting new primary data or a novel technological invention. While the 'human-first' strategy is clinically relevant, the integration of multi-omics with human tissue is an established and growing trend in the field rather than a groundbreaking scientific discovery."
           },
           "commercial_potential": {
-            "score": 8,
-            "reason": "This 'human-first' approach provides a high-value, de-risked drug discovery platform by using longitudinal human omics data to identify actionable targets, which is highly attractive for pharmaceutical licensing and R&D partnership models. Its focus on cardiovascular disease—a massive global market—combined with a repeatable multi-omics workflow makes it a clear, scalable, and commercially relevant technology."
+            "score": 4,
+            "reason": "The paper is a conceptual review advocating for a methodological paradigm shift rather than presenting a specific, proprietary asset, platform, or drug candidate. While the 'human-first' approach describes a highly valuable commercial strategy for drug discovery, the paper itself lacks a tangible, licensable technology or product."
           },
           "market_size": {
             "score": 10,
-            "reason": "Cardiovascular disease remains the leading cause of global mortality, representing an enormous, perennial multi-billion dollar market with high unmet clinical need for novel, human-data-driven therapeutic targets."
+            "reason": "Cardiovascular disease is the leading cause of death globally, representing one of the largest and most lucrative therapeutic markets in medicine. A platform approach that reduces clinical trial failure rates in this sector targets a multi-billion dollar addressable market across multiple high-prevalence indications."
           },
           "trl": {
-            "score": 3,
-            "reason": "This paper proposes a conceptual shift in drug discovery methodology rather than presenting a validated clinical asset or a mature, ready-to-deploy commercial platform. It represents an early-stage academic framework for target identification that requires significant downstream validation before reaching translational relevance."
+            "score": 2,
+            "reason": "This is a theoretical review paper advocating for a change in research methodology rather than a report on a specific technological development or product. It describes a conceptual framework and high-level research paradigms rather than a validated technology or near-market therapeutic."
           },
           "ip_strength": {
-            "score": 4,
-            "reason": "The 'human-first' multi-omics approach represents a methodology or research framework rather than a composition-of-matter invention, making it difficult to secure broad, enforceable patent protection. While specific diagnostic signatures or target discoveries derived from the pipeline could be patented, the overall discovery engine is more characteristic of a service-oriented business model with limited defensive moats."
+            "score": 3,
+            "reason": "This is a review paper advocating for a methodological paradigm shift rather than a disclosure of a novel, proprietary technology or invention. While the 'human-first' approach is scientifically valuable, the abstract describes a research strategy and workflow that is difficult to patent or defend as unique IP."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 32,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Cardiovascular Research Center, Heart Institute, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel. rasleh@hadassah.org.il.",
         "pi_email": "rasleh@hadassah.org.il.",
         "hts_score": 2,

@@ -1,5 +1,61 @@
 [
   {
+    "id": "pubmed_42719963",
+    "title": "Teclistamab for BCMA-positive relapsed/refractory B acute lymphoblastic leukemia.",
+    "authors": [
+      "Chezi Ganzel",
+      "Ariella Tvito",
+      "Mohammad Abu Eid",
+      "Yishai Ofran",
+      "Sarah Matarasso Greenfeld"
+    ],
+    "journal": "Haematologica",
+    "date": "2026 Sep 10",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42719963/",
+    "source": "PubMed",
+    "score": 38,
+    "summary": "This study investigates the efficacy of Teclistamab, a bispecific antibody, in treating patients with B-cell acute lymphoblastic leukemia that expresses the BCMA protein. It focuses on how this immunotherapy works in cases where standard treatments for relapsed or refractory leukemia have failed.",
+    "opportunity": "Development and commercialization of next-generation bispecific T-cell engagers (BiTEs) targeting specific surface antigens for highly specialized hematological malignancies.",
+    "fields": [
+      "Drug Discovery",
+      "Immunology",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "The research applies a known bispecific antibody mechanism (Teclistamab) to a new clinical indication (B-ALL), representing a significant therapeutic expansion rather than a fundamental mechanistic breakthrough."
+      },
+      "commercial_potential": {
+        "score": 9,
+        "reason": "Teclistamab is a high-value bispecific antibody targeting a validated oncology biomarker (BCMA) in a high-unmet-need population, representing a near-market asset with clear clinical and commercial pathways."
+      },
+      "market_size": {
+        "score": 4,
+        "reason": "The target indication, B-cell acute lymphoblastic leukemia (B-ALL), is a relatively niche orphan population compared to larger hematologic malignancies like multiple myeloma. While clinically significant, the total addressable patient population is limited, constraining the overall market ceiling."
+      },
+      "trl": {
+        "score": 9,
+        "reason": "Teclistamab is a highly advanced bispecific antibody that has already received regulatory approvals (e.g., FDA) for related indications, placing it in the near-market to marketed stage of clinical development."
+      },
+      "ip_strength": {
+        "score": 9,
+        "reason": "Teclistamab is a bispecific antibody targeting BCMA, a high-value therapeutic modality with strong patent protection potential surrounding its molecular structure and binding affinity. Its clinical relevance in BCMA-positive malignancies ensures significant defensive moat through both composition-of-matter and method-of-use intellectual property."
+      }
+    },
+    "pi": "Sarah Matarasso Greenfeld",
+    "pi_full_name": "Chezi Ganzel",
+    "pi_email": "ganzelc@szmc.org.il.",
+    "pi_affiliation": "The Hematology and Bone Marrow Transplantation Department, The Eisenberg Research and Development Authority, Shaare Zedek Medical Center, The Hebrew University of Jerusalem, Jerusalem.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "30",
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-09-14",
+    "hts_score": 3,
+    "hts_reason": "The paper identifies a specific molecule (Teclistamab) and a specific disease (relapsed/refractory B-ALL), but it describes a clinical therapeutic rather than a novel druggable target or an assay suitable for a high-throughput drug discovery screen.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
     "id": "epmc_42098533",
     "title": "B cell Maturation Antigen Targeted Chimeric Antigen Receptor T Cell Therapy for Refractory Systemic Lupus Erythematosus and Systemic Sclerosis.",
     "authors": [
@@ -916,126 +972,6 @@
     "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
-    "id": "pubmed_42422765",
-    "title": "Neuron-specific WWOX gene therapy produces dose-dependent, durable rescue in a model of WWOX-related epileptic encephalopathy.",
-    "authors": [
-      "Mustafa Obeid",
-      "Rania Akkawi",
-      "Srinivasarao Repudi",
-      "Prince Kumar Singh",
-      "Baraa Abudiab",
-      "Takwa Jebara",
-      "Allyson Berent",
-      "Thomas Brennan",
-      "Yael Weiss",
-      "Tawfeeq Shekh-Ahmad",
-      "Rami I Aqeilan"
-    ],
-    "journal": "Molecular therapy. Advances",
-    "date": "2026 Sep 10",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42422765/",
-    "source": "PubMed",
-    "score": 32,
-    "summary": "Hebrew University researchers developed a neuron-specific gene therapy that achieves long-term neurological improvement in a mouse model of WWOX-related epileptic encephalopathy. The treatment demonstrates a dose-dependent response, suggesting a viable therapeutic pathway for addressing this severe pediatric neurodevelopmental disorder.",
-    "opportunity": "This research provides a foundational asset for a clinical-stage orphan drug program targeting pediatric epilepsy through adeno-associated virus (AAV) mediated gene replacement therapy.",
-    "fields": [
-      "Clinical",
-      "Neuroscience",
-      "Genomics"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 7,
-        "reason": "The research represents a significant translational advance in gene therapy for a rare neurodevelopmental disorder by achieving durable, neuron-specific rescue; however, it builds upon established AAV-mediated CNS delivery paradigms rather than introducing a radically new therapeutic modality."
-      },
-      "commercial_potential": {
-        "score": 8,
-        "reason": "Gene therapy for rare, monogenic neurological disorders represents a high-value, clinically validated modality with strong potential for orphan drug designation and rapid regulatory pathways. The clear mechanistic focus on a specific gene target facilitates a defined development roadmap and high likelihood of interest for biotech acquisition or licensing."
-      },
-      "market_size": {
-        "score": 3,
-        "reason": "WWOX-related epileptic encephalopathy is an ultra-rare orphan disease with a very small patient population, limiting the total addressable market size despite the high unmet medical need. While gene therapy provides high value per patient, the narrow target indication restricts the potential for significant commercial scale compared to broader neurological disorders."
-      },
-      "trl": {
-        "score": 6,
-        "reason": "The study demonstrates proof-of-concept efficacy in an animal model with a viral delivery system, indicating a late preclinical stage of development. While highly promising for a specific rare disease, it has yet to initiate human clinical trials or establish large-scale manufacturing processes required for commercialization."
-      },
-      "ip_strength": {
-        "score": 8,
-        "reason": "Gene therapy constructs targeting specific loci (WWOX) combined with tissue-specific promoters represent highly protectable compositions of matter with clear regulatory exclusivity pathways. The approach enables a distinct therapeutic platform for neuro-genetic disorders, providing a strong foundation for a robust, multi-layered patent estate."
-      }
-    },
-    "pi": "Rami I Aqeilan",
-    "pi_full_name": "Rami I Aqeilan",
-    "pi_email": "ramiaq@mail.huji.ac.il.",
-    "pi_affiliation": "The Concern Foundation Laboratories, The Lautenberg Center for Immunology and Cancer Research, Department of Immunology and Cancer Research-IMRIC, Hebrew University-Hadassah Medical School, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-09-14",
-    "hts_score": 4,
-    "hts_reason": "The paper identifies a specific gene target (WWOX) and a clear disease linkage (WWOX-related epileptic encephalopathy), but it describes a gene therapy approach rather than a small-molecule screening assay suitable for HTS.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
-    "id": "pubmed_42711399",
-    "title": "Reversing the pipeline: a 'human-first' multi-omics approach to cardiovascular discovery.",
-    "authors": [
-      "Elchanan Parnasa",
-      "Yair Rokach",
-      "Suzan Abedat",
-      "Offer Amir",
-      "Iddo Z Ben-Dov",
-      "Rabea Asleh"
-    ],
-    "journal": "Experimental & molecular medicine",
-    "date": "2026 Sep 9",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42711399/",
-    "source": "PubMed",
-    "score": 32,
-    "summary": "This research advocates for a 'human-first' paradigm shift in cardiovascular drug development by utilizing large-scale multi-omics data from human patients instead of relying primarily on traditional animal models. By integrating genomic and proteomic datasets, the approach aims to identify more accurate therapeutic targets and reduce the high failure rate of clinical cardiovascular trials.",
-    "opportunity": "This methodology presents a high-value commercial opportunity for AI-driven drug discovery platforms to license proprietary human-omics databases and predictive algorithms that de-risk the cardiovascular development pipeline.",
-    "fields": [
-      "Drug Discovery",
-      "Genomics",
-      "Proteomics",
-      "Software/AI"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 7,
-        "reason": "While moving from animal models to human-first multi-omics is a necessary industry shift, the methodology leverages established high-throughput platforms rather than inventing new foundational technologies. It represents a significant strategic pivot in translational strategy rather than a radical scientific breakthrough."
-      },
-      "commercial_potential": {
-        "score": 8,
-        "reason": "This 'human-first' approach provides a high-value, de-risked drug discovery platform by using longitudinal human omics data to identify actionable targets, which is highly attractive for pharmaceutical licensing and R&D partnership models. Its focus on cardiovascular disease—a massive global market—combined with a repeatable multi-omics workflow makes it a clear, scalable, and commercially relevant technology."
-      },
-      "market_size": {
-        "score": 10,
-        "reason": "Cardiovascular disease remains the leading cause of global mortality, representing an enormous, perennial multi-billion dollar market with high unmet clinical need for novel, human-data-driven therapeutic targets."
-      },
-      "trl": {
-        "score": 3,
-        "reason": "This paper proposes a conceptual shift in drug discovery methodology rather than presenting a validated clinical asset or a mature, ready-to-deploy commercial platform. It represents an early-stage academic framework for target identification that requires significant downstream validation before reaching translational relevance."
-      },
-      "ip_strength": {
-        "score": 4,
-        "reason": "The 'human-first' multi-omics approach represents a methodology or research framework rather than a composition-of-matter invention, making it difficult to secure broad, enforceable patent protection. While specific diagnostic signatures or target discoveries derived from the pipeline could be patented, the overall discovery engine is more characteristic of a service-oriented business model with limited defensive moats."
-      }
-    },
-    "pi": "Rabea Asleh",
-    "pi_full_name": "Rabea Asleh",
-    "pi_email": "rasleh@hadassah.org.il.",
-    "pi_affiliation": "Cardiovascular Research Center, Heart Institute, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel. rasleh@hadassah.org.il.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-09-14",
-    "hts_score": 2,
-    "hts_reason": "This is a review or conceptual paper discussing 'human-first' methodology rather than identifying a specific molecular target or presenting a novel, actionable screening assay.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
     "id": "pubmed_42067527",
     "title": "Addendum: Telomouse-a mouse model with human-length telomeres generated by a single amino acid change in RTEL1.",
     "authors": [
@@ -1402,6 +1338,69 @@
     "added_date": "2026-07-02",
     "hts_score": 3,
     "hts_reason": "The paper focuses on a digital pathology biomarker (ENLIGHT-DP) rather than a druggable molecular target or a high-throughput drug screening assay. It lacks a specific novel molecule or target for pharmacological modulation, making it unsuitable for an HTS collaboration.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
+    "id": "pubmed_42422765",
+    "title": "Neuron-specific WWOX gene therapy produces dose-dependent, durable rescue in a model of WWOX-related epileptic encephalopathy.",
+    "authors": [
+      "Mustafa Obeid",
+      "Rania Akkawi",
+      "Srinivasarao Repudi",
+      "Prince Kumar Singh",
+      "Baraa Abudiab",
+      "Takwa Jebara",
+      "Allyson Berent",
+      "Thomas Brennan",
+      "Yael Weiss",
+      "Tawfeeq Shekh-Ahmad",
+      "Rami I Aqeilan"
+    ],
+    "journal": "Molecular therapy. Advances",
+    "date": "2026 Sep 10",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42422765/",
+    "source": "PubMed",
+    "score": 31,
+    "summary": "Researchers developed a targeted gene therapy that replaces the WWOX gene specifically in neurons to treat severe epilepsy and developmental disorders. The study demonstrates that this approach provides long-lasting and dose-dependent improvements in animal models of the disease.",
+    "opportunity": "The development of a neuron-specific delivery framework provides a platform technology for treating a wide range of neurodevelopmental genetic disorders currently lacking therapeutic options.",
+    "fields": [
+      "Drug Discovery",
+      "Neuroscience",
+      "Genomics",
+      "Synthetic Biology"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "The research demonstrates significant translational innovation by moving beyond simple gene replacement to a 'rationally optimized' framework with neuron-specific targeting and dose-dependency. While gene replacement for WWOX is a logical therapeutic approach, the optimized delivery mechanism and the establishment of critical clinical parameters provide high-value, platform-enabling insights."
+      },
+      "commercial_potential": {
+        "score": 8,
+        "reason": "The study addresses a high-unmet-need orphan disease with a clearly defined therapeutic modality (gene replacement) and provides critical proof-of-concept regarding dose-dependency and durability. The use of a 'rationally optimized framework' suggests a potentially licensable platform technology for WWOX-related pathologies."
+      },
+      "market_size": {
+        "score": 4,
+        "reason": "The target market is limited to ultra-orphan populations (WOREE and SCAR12 syndromes), which represent extremely small patient cohorts. While the technology demonstrates high clinical utility, the addressable demand is constrained by the rarity of these specific genetic indications."
+      },
+      "trl": {
+        "score": 4,
+        "reason": "The research is at the preclinical stage, demonstrating efficacy and dose-dependency in a disease model rather than in humans. While it optimizes critical parameters for translation, it has not yet entered formal IND-enabling studies or clinical trials."
+      },
+      "ip_strength": {
+        "score": 8,
+        "reason": "The development of a 'rationally optimized' neuron-specific framework suggests proprietary engineering of promoters or delivery vectors, which provides strong platform-level patentability beyond the transgene itself. This specificity enhances defensibility by creating a unique therapeutic window and reducing off-target risks compared to generic gene replacement."
+      }
+    },
+    "pi": "Rami I Aqeilan",
+    "pi_full_name": "Rami I Aqeilan",
+    "pi_email": "ramiaq@mail.huji.ac.il.",
+    "pi_affiliation": "The Concern Foundation Laboratories, The Lautenberg Center for Immunology and Cancer Research, Department of Immunology and Cancer Research-IMRIC, Hebrew University-Hadassah Medical School, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "32",
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-09-14",
+    "hts_score": 4,
+    "hts_reason": "The paper identifies a specific gene target (WWOX) and a clear disease linkage (WWOX-related epileptic encephalopathy), but it describes a gene therapy approach rather than a small-molecule screening assay suitable for HTS.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -1944,62 +1943,6 @@
     "hts_score": 1,
     "hts_reason": "This paper does not identify a specific new molecule or target, nor does it link that molecule/target to a specific disease or condition. It describes a new method for RNA sequencing, but does not provide a testable assay for a specific molecule or target's effect.",
     "hts_eval_model": "groq:llama-3.1-8b-instant"
-  },
-  {
-    "id": "pubmed_42719963",
-    "title": "Teclistamab for BCMA-positive relapsed/refractory B acute lymphoblastic leukemia.",
-    "authors": [
-      "Chezi Ganzel",
-      "Ariella Tvito",
-      "Mohammad Abu Eid",
-      "Yishai Ofran",
-      "Sarah Matarasso Greenfeld"
-    ],
-    "journal": "Haematologica",
-    "date": "2026 Sep 10",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42719963/",
-    "source": "PubMed",
-    "score": 30,
-    "summary": "This clinical investigation evaluates the efficacy and safety of teclistamab, a bispecific T-cell engager, in treating patients with relapsed or refractory B-cell acute lymphoblastic leukemia (B-ALL) expressing BCMA. The study aims to determine if repurposing this myeloma-targeting therapy can provide a life-saving intervention for high-risk leukemia patients with limited treatment options.",
-    "opportunity": "The successful expansion of BCMA-targeting therapies into B-ALL indications offers a significant opportunity to capture market share in the high-value refractory hematologic oncology space.",
-    "fields": [
-      "Clinical",
-      "Immunology",
-      "Drug Discovery"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 4,
-        "reason": "Teclistamab is a well-established bispecific T-cell engager already approved for multiple myeloma; applying it to B-ALL is an incremental clinical exploration of an existing asset rather than a groundbreaking scientific discovery or novel platform innovation."
-      },
-      "commercial_potential": {
-        "score": 9,
-        "reason": "Teclistamab is an already FDA-approved bispecific T-cell engager (Tecvayli) for multiple myeloma; repurposing a validated, high-value asset for a new, high-unmet-need indication like B-ALL represents a clear, de-risked path to rapid clinical adoption and market expansion."
-      },
-      "market_size": {
-        "score": 5,
-        "reason": "While relapsed/refractory B-ALL is a high-unmet-need indication, the target patient population is relatively small, and teclistamab faces significant competition from established CAR-T therapies and emerging bispecific antibodies in the crowded BCMA-targeting landscape."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "Teclistamab is already an FDA-approved therapeutic (Tecvayli) for multiple myeloma, meaning this application represents a clinical-stage investigation of an established, commercial-grade platform in a new indication. The transition to relapsed/refractory B-ALL utilizes a mature manufacturing process and a well-characterized safety profile."
-      },
-      "ip_strength": {
-        "score": 3,
-        "reason": "Teclistamab is a well-established, pre-existing bispecific T-cell engager (Tecvayli) already protected by broad, existing intellectual property; this paper reports on off-label clinical application rather than novel, patentable innovation."
-      }
-    },
-    "pi": "Sarah Matarasso Greenfeld",
-    "pi_full_name": "Chezi Ganzel",
-    "pi_email": "ganzelc@szmc.org.il.",
-    "pi_affiliation": "The Hematology and Bone Marrow Transplantation Department, The Eisenberg Research and Development Authority, Shaare Zedek Medical Center, The Hebrew University of Jerusalem, Jerusalem.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-09-14",
-    "hts_score": 3,
-    "hts_reason": "The paper identifies a specific molecule (Teclistamab) and a specific disease (relapsed/refractory B-ALL), but it describes a clinical therapeutic rather than a novel druggable target or an assay suitable for a high-throughput drug discovery screen.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "epmc_42671771",
@@ -3289,66 +3232,6 @@
     "hts_score": 7,
     "hts_reason": "The paper identifies a specific molecular target (nNOS) linked to a specific disease condition (ASD) and utilizes a pharmacological inhibitor (7-NI) as a proof-of-concept; however, it lacks a high-throughput compatible assay development component for screening novel compounds.",
     "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
-    "id": "pubmed_42728723",
-    "title": "Immature Platelet Fraction as an Independent Marker of Adverse Outcomes in an Intensive Cardiovascular Care Unit.",
-    "authors": [
-      "Elad Asher",
-      "Louay Taha",
-      "Mohammad Karmi",
-      "Akiva Brin",
-      "Pierre Sabouret",
-      "Mamas A Mamas",
-      "Noam Fink",
-      "Ari Naimark",
-      "Amjad Abu-Salman",
-      "Michael Glikson"
-    ],
-    "journal": "Thrombosis and haemostasis",
-    "date": "2026 Sep 11",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42728723/",
-    "source": "PubMed",
-    "score": 26,
-    "summary": "The study identifies the proportion of immature platelets in the blood as a predictive indicator for poor patient outcomes in intensive cardiovascular care settings. This marker serves as a standalone tool to assess risk levels in critically ill cardiac patients.",
-    "opportunity": "Development of high-sensitivity diagnostic assays or integrated ICU monitoring software that utilizes platelet maturation metrics to automate patient risk stratification.",
-    "fields": [
-      "Diagnostics",
-      "Clinical"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "The study investigates a known physiological parameter (IPF) as a predictive biomarker, which represents incremental clinical validation rather than a fundamental scientific breakthrough or a novel platform technology."
-      },
-      "commercial_potential": {
-        "score": 6,
-        "reason": "The Immature Platelet Fraction (IPF) is a well-defined biomarker already measurable on automated hematology analyzers, which lowers the barrier to clinical adoption but limits the potential for proprietary, high-margin platform development. Its utility as a prognostic tool in cardiovascular care is highly translatable into existing clinical workflows, though it lacks the novelty of a novel therapeutic or diagnostic modality."
-      },
-      "market_size": {
-        "score": 6,
-        "reason": "While the addressable market for cardiovascular diagnostics in intensive care units is substantial, the utility of the Immature Platelet Fraction (IPF) is constrained to a niche clinical segment rather than representing a broad, high-volume platform technology. Its application is limited to risk stratification in specific acute settings, which restricts its overall revenue potential compared to more universal diagnostic assays."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "Immature Platelet Fraction is a well-validated hematological parameter already integrated into standard clinical diagnostic hardware, making this application a direct, near-market translation of existing laboratory infrastructure."
-      },
-      "ip_strength": {
-        "score": 2,
-        "reason": "The paper focuses on the clinical utility of an existing hematological biomarker (immature platelet fraction) using standard diagnostic equipment, which typically lacks the novelty or inventive step required for robust composition-of-matter or method-of-use patent protection. As a clinical observational study, it describes biological correlations rather than a proprietary technology or unique platform."
-      }
-    },
-    "pi": "Michael Glikson",
-    "pi_full_name": "Michael Glikson",
-    "pi_email": "",
-    "pi_affiliation": "Jesselson Integrated Heart Center, Shaare Zedek Medical Center, The Eisenberg R&D Authority, and Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-09-14",
-    "hts_score": 2,
-    "hts_reason": "The paper identifies a clinical biomarker (Immature Platelet Fraction) and a disease context (Cardiovascular Care), but it describes a retrospective observational study rather than a molecular target or a scalable biochemical/cellular assay suitable for HTS.",
-    "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
     "id": "pubmed_42603275",
@@ -5067,6 +4950,191 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
+    "id": "pubmed_42728723",
+    "title": "Immature Platelet Fraction as an Independent Marker of Adverse Outcomes in an Intensive Cardiovascular Care Unit.",
+    "authors": [
+      "Elad Asher",
+      "Louay Taha",
+      "Mohammad Karmi",
+      "Akiva Brin",
+      "Pierre Sabouret",
+      "Mamas A Mamas",
+      "Noam Fink",
+      "Ari Naimark",
+      "Amjad Abu-Salman",
+      "Michael Glikson"
+    ],
+    "journal": "Thrombosis and haemostasis",
+    "date": "2026 Sep 11",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42728723/",
+    "source": "PubMed",
+    "score": 23,
+    "summary": "This study identifies the immature platelet fraction (IPF) as a significant predictor of mortality and acute renal failure in patients admitted to intensive cardiovascular care units. The findings suggest that monitoring these young platelets can help clinicians identify high-risk patients more effectively during acute cardiovascular events.",
+    "opportunity": "There is a commercial opportunity to develop integrated diagnostic software or rapid point-of-care blood analyzers that incorporate IPF monitoring into standard ICU prognostic scoring systems.",
+    "fields": [
+      "Diagnostics",
+      "Clinical",
+      "Software/AI"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The study is an observational validation of an existing biomarker (IPF) in a specific clinical cohort rather than the development of a new technology or biological mechanism. While clinically useful for refining prognosis, it lacks the groundbreaking innovation or platform-enabling characteristics required for a high novelty score."
+      },
+      "commercial_potential": {
+        "score": 4,
+        "reason": "The study identifies a valuable prognostic biomarker, but it relies on an existing laboratory metric (IPF) rather than a novel proprietary technology, limiting direct commercial defensibility. The primary value proposition lies in clinical decision support or software integration rather than a new hardware or drug platform."
+      },
+      "market_size": {
+        "score": 7,
+        "reason": "The target market is substantial, encompassing the global intensive cardiovascular care (ICCU) segment, which represents a high-volume, high-acuity patient population. However, the market size is limited to an incremental diagnostic value-add rather than a broad-based therapeutic or platform technology."
+      },
+      "trl": {
+        "score": 7,
+        "reason": "The study demonstrates strong clinical validation of a biomarker's prognostic utility in a large, real-world patient cohort (n=6,725), moving it beyond basic research into the clinical utility phase. It is near-market as it leverages existing hematology metrics, requiring only clinical decision-support integration rather than new hardware development."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "The study identifies a clinical correlation using an existing laboratory metric (IPF) rather than a novel molecular target or proprietary technology, offering virtually no defensible IP or patentable innovation."
+      }
+    },
+    "pi": "Michael Glikson",
+    "pi_full_name": "Michael Glikson",
+    "pi_email": "",
+    "pi_affiliation": "Jesselson Integrated Heart Center, Shaare Zedek Medical Center, The Eisenberg R&D Authority, and Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "26",
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-09-14",
+    "hts_score": 2,
+    "hts_reason": "The paper identifies a clinical biomarker (Immature Platelet Fraction) and a disease context (Cardiovascular Care), but it describes a retrospective observational study rather than a molecular target or a scalable biochemical/cellular assay suitable for HTS.",
+    "hts_eval_model": "gemma-4-26b-a4b-it"
+  },
+  {
+    "id": "pubmed_42711399",
+    "title": "Reversing the pipeline: a 'human-first' multi-omics approach to cardiovascular discovery.",
+    "authors": [
+      "Elchanan Parnasa",
+      "Yair Rokach",
+      "Suzan Abedat",
+      "Offer Amir",
+      "Iddo Z Ben-Dov",
+      "Rabea Asleh"
+    ],
+    "journal": "Experimental & molecular medicine",
+    "date": "2026 Sep 9",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42711399/",
+    "source": "PubMed",
+    "score": 22,
+    "summary": "The paper proposes moving away from animal-reliant research toward a 'human-first' model using direct multi-omics profiling of human cardiac tissues. By analyzing biopsies and surgical samples, researchers can identify more accurate therapeutic targets that are more likely to succeed in clinical trials.",
+    "opportunity": "The shift toward human-centric discovery creates a high-value market for specialized biobanks, high-resolution multi-omics service providers, and platforms that integrate human tissue data into drug development pipelines.",
+    "fields": [
+      "Drug Discovery",
+      "Genomics",
+      "Proteomics",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "As a review article, the paper synthesizes existing methodologies rather than presenting original, groundbreaking research or new technical inventions. While it advocates for a strategic paradigm shift, the 'human-first' multi-omics framework is an established direction in precision medicine rather than a novel scientific discovery."
+      },
+      "commercial_potential": {
+        "score": 4,
+        "reason": "As a review paper advocating for a methodological paradigm shift rather than presenting a novel proprietary technology or specific drug candidate, it lacks direct commercial assets. While the 'human-first' framework is industrially relevant for reducing R&D attrition, the paper itself describes a strategic approach rather than a licensable product or platform."
+      },
+      "market_size": {
+        "score": 10,
+        "reason": "Cardiovascular disease represents the largest therapeutic market globally due to its massive prevalence and mortality rates. A platform-enabling approach that reduces clinical trial failure rates in this sector targets a multi-billion dollar addressable demand across multiple indications."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This is a conceptual review paper advocating for a paradigm shift in research methodology rather than a report on a specific technology or product. It describes a scientific framework and strategy (bedside-to-bench) rather than a validated tool or therapeutic candidate ready for application."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "This is a review paper advocating for a methodological paradigm shift rather than a disclosure of a novel, proprietary technology or specific molecular entity. It describes a strategic framework and the use of existing multi-omics tools, which lack the specific inventive steps required for patentability or competitive IP defensibility."
+      }
+    },
+    "pi": "Rabea Asleh",
+    "pi_full_name": "Rabea Asleh",
+    "pi_email": "rasleh@hadassah.org.il.",
+    "pi_affiliation": "Cardiovascular Research Center, Heart Institute, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel. rasleh@hadassah.org.il.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "32",
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-09-14",
+    "hts_score": 2,
+    "hts_reason": "This is a review or conceptual paper discussing 'human-first' methodology rather than identifying a specific molecular target or presenting a novel, actionable screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
+    "id": "pubmed_42709184",
+    "title": "Clinical guidance on evaluation and management of bone fragility in patients with monoclonal gammopathy of undetermined significance (MGUS): an IOF position statement.",
+    "authors": [
+      "Cyrille B Confavreux",
+      "Beatrice Bouvard",
+      "Robert Blank",
+      "Peyman Hadji",
+      "Emmanuel Biver",
+      "Jean-Jacques Body",
+      "Maria Luisa Brandi",
+      "Claudia Campusano",
+      "Peter R Ebeling",
+      "Abdellah El Maghraoui",
+      "Gerold Holzer",
+      "David Kendler",
+      "Tobie de Villiers",
+      "René Rizzoli",
+      "A Joseph Foldes"
+    ],
+    "journal": "Osteoporosis international : a journal established as result of cooperation between the European Foundation for Osteoporosis and the National Osteoporosis Foundation of the USA",
+    "date": "2026-09-08",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42709184/",
+    "source": "PubMed",
+    "score": 22,
+    "summary": "This position statement establishes clinical guidelines for managing bone fragility in patients with Monoclonal Gammopathy of Undetermined Significance (MGUS). It highlights how this common condition increases fracture risk through a combination of osteoporosis and direct bone impact from plasma cell senescence.",
+    "opportunity": "The identification of specific bone microarchitecture and turnover markers in MGUS patients creates a niche market for specialized diagnostic tools and targeted therapeutic interventions for bone health in hematological populations.",
+    "fields": [
+      "Diagnostics",
+      "Clinical",
+      "Immunology"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 2,
+        "reason": "This is a clinical position statement and consensus guideline rather than original primary research. While it provides valuable clinical standardization, it synthesizes existing knowledge instead of introducing new scientific discoveries or breakthrough technologies."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This is a clinical practice guideline (position statement) intended to standardize medical care rather than a proprietary technology, drug candidate, or diagnostic tool. While it may influence market demand for bone health products, the paper itself lacks a direct commercializable asset or intellectual property."
+      },
+      "market_size": {
+        "score": 7,
+        "reason": "MGUS is a highly prevalent condition in the aging population, creating a significant and growing addressable market for diagnostic tools and therapeutics focused on bone health. However, the market is segmented within the broader osteoporosis and hematology sectors, preventing a top-tier score."
+      },
+      "trl": {
+        "score": 10,
+        "reason": "This is a clinical position statement providing standardized guidance for medical practice, representing the highest level of implementation in a real-world clinical setting. It is not a development paper, but rather a tool for immediate application by clinicians to manage patients."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This is a clinical position statement providing medical guidelines rather than a technological or pharmaceutical innovation. It contains no proprietary methods, molecular entities, or technical inventions that are subject to patent protection or industrial defensibility."
+      }
+    },
+    "pi": "A Joseph Foldes",
+    "pi_full_name": "A Joseph Foldes",
+    "pi_email": "",
+    "pi_affiliation": "Osteoporosis Center, Hadassah Mount-Scopus University Hospital, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "20",
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-09-14",
+    "hts_score": 2,
+    "hts_reason": "This is a clinical guidance position statement rather than a research paper; it lacks a specific novel target for drug discovery and does not describe a pharmacological assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
     "id": "pubmed_42678059",
     "title": "Parallel evolutionary trajectories rewire enteropathogenic ",
     "authors": [
@@ -5125,71 +5193,6 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
-    "id": "pubmed_42709184",
-    "title": "Clinical guidance on evaluation and management of bone fragility in patients with monoclonal gammopathy of undetermined significance (MGUS): an IOF position statement.",
-    "authors": [
-      "Cyrille B Confavreux",
-      "Beatrice Bouvard",
-      "Robert Blank",
-      "Peyman Hadji",
-      "Emmanuel Biver",
-      "Jean-Jacques Body",
-      "Maria Luisa Brandi",
-      "Claudia Campusano",
-      "Peter R Ebeling",
-      "Abdellah El Maghraoui",
-      "Gerold Holzer",
-      "David Kendler",
-      "Tobie de Villiers",
-      "René Rizzoli",
-      "A Joseph Foldes"
-    ],
-    "journal": "Osteoporosis international : a journal established as result of cooperation between the European Foundation for Osteoporosis and the National Osteoporosis Foundation of the USA",
-    "date": "2026-09-08",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42709184/",
-    "source": "PubMed",
-    "score": 20,
-    "summary": "This position statement provides clinical guidelines for identifying and treating bone fragility in patients with monoclonal gammopathy of undetermined significance (MGUS). It establishes a framework for risk stratification and therapeutic intervention to prevent fractures in this high-risk population.",
-    "opportunity": "The standardization of clinical protocols for MGUS bone health creates a clear roadmap for developing companion diagnostic tools and targeted pharmaceutical interventions aimed at early skeletal risk management.",
-    "fields": [
-      "Clinical",
-      "Diagnostics"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 2,
-        "reason": "This paper is a clinical position statement synthesizing existing evidence to provide guidelines rather than reporting novel scientific discovery, proprietary technology, or groundbreaking innovation. It functions as a consolidation of medical consensus, which has low novelty in terms of intellectual property or foundational research."
-      },
-      "commercial_potential": {
-        "score": 2,
-        "reason": "This paper is a clinical practice guidance document rather than a novel technology, drug, or platform, offering no proprietary IP or product commercialization potential. Its value lies in medical education and standard-of-care definition, which does not translate into a scalable business asset or licensable technology."
-      },
-      "market_size": {
-        "score": 6,
-        "reason": "MGUS is a common condition in the aging population with a significant association with fragility fractures, representing a substantial but niche clinical market rather than a massive, high-growth primary care opportunity. The addressable demand is defined by the intersection of oncology and metabolic bone health, limiting the scale compared to broader osteoporosis or oncology indications."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "This is a clinical guidance document published by a major international society, representing the final stage of translation where evidence-based protocols are established for immediate, widespread adoption in standard medical practice. It moves beyond the experimental phase to define the gold standard for clinical management, representing a high level of real-world operational readiness."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "This paper is a clinical practice guideline/position statement authored by a professional society and contains no novel, patentable technological innovation or proprietary intellectual property. It summarizes existing clinical knowledge rather than developing new methods, devices, or compositions of matter."
-      }
-    },
-    "pi": "A Joseph Foldes",
-    "pi_full_name": "A Joseph Foldes",
-    "pi_email": "",
-    "pi_affiliation": "Osteoporosis Center, Hadassah Mount-Scopus University Hospital, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-09-14",
-    "hts_score": 2,
-    "hts_reason": "This is a clinical guidance position statement rather than a research paper; it lacks a specific novel target for drug discovery and does not describe a pharmacological assay.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
     "id": "pubmed_42703788",
     "title": "Breaking reciprocity of the electron wave function in chiral materials with nonlocal interactions - the chiral-induced spin selectivity case.",
     "authors": [
@@ -5203,46 +5206,101 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42703788/",
     "source": "PubMed",
     "score": 20,
-    "summary": "This research explores the physics of Chiral-Induced Spin Selectivity (CISS), which explains how chiral molecules act as spin filters for electrons. By demonstrating that nonlocal interactions break wave function reciprocity, the study provides a theoretical foundation for manipulating electron spins using molecular structures rather than external magnetic fields.",
-    "opportunity": "This discovery enables the development of spintronic devices and highly efficient electrochemical sensors that leverage molecular chirality to perform logic operations or sensitive biomolecular detection without traditional heavy magnets.",
+    "summary": "Researchers have identified the physical mechanisms, specifically electron wave function delocalization and dissipation, that allow chiral materials to break time-reversal symmetry. This explains how the Chiral-Induced Spin Selectivity (CISS) effect functions at room temperature by allowing electron spins to interact with chiral phonons.",
+    "opportunity": "This fundamental understanding enables the engineering of next-generation spintronic devices and highly sensitive molecular sensors that leverage spin-selective electron transport.",
     "fields": [
       "Materials",
       "Quantum",
-      "Diagnostics",
-      "Clean Energy"
+      "Medical Device",
+      "Other"
     ],
     "score_breakdown": {
       "novelty": {
-        "score": 9,
-        "reason": "This research provides a fundamental theoretical breakthrough in the physics of chiral-induced spin selectivity (CISS), offering a mechanism to break time-reversal symmetry that could enable the development of high-efficiency, spin-polarized electronic and quantum computing devices at room temperature."
+        "score": 7,
+        "reason": "The paper provides a significant theoretical pivot by redefining the mechanism of TRS breaking through non-local interactions and dissipation rather than standard static models. While it reframes existing CISS observations, the introduction of delocalization as a driver for spin-selective transport offers a novel conceptual framework for future spintronic device design."
       },
       "commercial_potential": {
         "score": 3,
-        "reason": "This is a fundamental physics paper addressing the theoretical mechanisms of spin selectivity, which is highly speculative and lacks a direct path to a defined technological product or industrial application. While Chiral-Induced Spin Selectivity (CISS) has long-term potential in spintronics, this specific work focuses on wave function reciprocity rather than a tangible device architecture."
+        "reason": "The paper is fundamental physics research focused on theoretical mechanisms and basic characterization of electron wave functions, lacking a clear path to a specific product or industrial application. While CISS has long-term potential in spintronics, this work contributes to scientific understanding rather than providing a near-term commercializable technology or service."
       },
       "market_size": {
-        "score": 3,
-        "reason": "This is fundamental condensed matter physics research focused on quantum wave function mechanics, which lacks a direct or immediate path to a tangible commercial market. While chiral-induced spin selectivity (CISS) has potential applications in spintronics, the distance between this theoretical breakthrough and a scalable, addressable market remains vast."
+        "score": 4,
+        "reason": "The paper is fundamental physics research focused on the mechanistic understanding of electron spin selectivity, which lacks a defined commercial application or specific industry vertical. While the underlying phenomenon could eventually underpin massive markets like spintronics or quantum computing, the current scope is too theoretical to quantify addressable demand."
       },
       "trl": {
         "score": 2,
-        "reason": "This work is at the fundamental physics and theoretical modeling stage, focusing on the quantum mechanical behavior of electron wave functions in chiral materials. It addresses basic principles of spin selectivity rather than providing a prototype, scalable process, or industrial application."
+        "reason": "The paper is fundamental theoretical and experimental physics research focused on understanding the underlying quantum mechanics of the CISS effect. It provides mechanistic insights rather than a functional device or a scalable technology ready for industrial application."
       },
       "ip_strength": {
-        "score": 3,
-        "reason": "This paper explores fundamental quantum mechanical properties and theoretical physics regarding electron wave functions, which generally constitute scientific discovery rather than commercially protectable intellectual property. The abstract nature of this work lacks the specific engineering embodiments or industrial applications necessary to establish a strong defensible moat in a deep-tech investment context."
+        "score": 4,
+        "reason": "The paper provides fundamental physical insights into the mechanisms of CISS, but it is primarily a theoretical and phenomenological study rather than a disclosure of a novel device, material composition, or specific manufacturing process. While the discovery of the underlying mechanism is foundational, it lacks the specific, actionable technical embodiments required for immediate patent filing or robust IP moat construction."
       }
     },
     "pi": "Yossi Paltiel",
     "pi_full_name": "Yossi Paltiel",
     "pi_email": "offek.marelly@mail.huji.ac.il.",
     "pi_affiliation": "Applied Physics Institute, Center for Nanoscience and Nanotechnology, Hebrew University of Jerusalem, Israel. offek.marelly@mail.huji.ac.il.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "20",
+    "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-09-14",
     "hts_score": 1,
     "hts_reason": "The paper focuses on theoretical physics regarding chiral materials and electron wave functions, lacking a biological target, disease association, or a translational screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
+    "id": "pubmed_42721409",
+    "title": "Preliminary Evidence for the Effects of Bilingual ECoLoGiC Treatment for People With Aphasia.",
+    "authors": [
+      "Yael Neumann",
+      "Marion C Leaman",
+      "Aviva Lerman"
+    ],
+    "journal": "American journal of speech-language pathology",
+    "date": "2026 Sep 10",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42721409/",
+    "source": "PubMed",
+    "score": 18,
+    "summary": "This study explores a personalized therapy model called ECoLoGiC-Tx designed to help bilingual patients recover language skills after a stroke. The results suggest that incorporating natural language behaviors like code-switching can improve functional communication and patient outcomes.",
+    "opportunity": "Development of specialized digital therapeutics or AI-driven speech therapy platforms tailored for multilingual populations to capture the growing global market of non-English speaking stroke survivors.",
+    "fields": [
+      "Neuroscience",
+      "Software/AI",
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While the application of translanguaging and code-switching to aphasia therapy is a progressive shift toward sociolinguistic reality, the research represents an incremental clinical refinement of existing person-centered therapy rather than a novel technological or mechanistic breakthrough."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The study describes a highly personalized, therapist-led clinical protocol rather than a scalable product, software, or device. While clinically valuable, the 'treatment' relies on human-centric, context-sensitive intervention which lacks the inherent scalability or intellectual property defensibility required for high commercial potential."
+      },
+      "market_size": {
+        "score": 6,
+        "reason": "The target market of bilingual individuals with aphasia represents a significant and growing global niche within the neurorehabilitation sector, though the specific clinical application is currently limited to a highly specialized subset of speech therapy."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "The study is a preliminary case series with an extremely small sample size (n=2), indicating the protocol is still in the early proof-of-concept/validation phase. While it demonstrates potential efficacy, it lacks the large-scale clinical trial data required for regulatory approval or commercial deployment."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "The innovation describes a therapeutic protocol and pedagogical model based on conversational techniques rather than a proprietary device, molecule, or unique software algorithm. Clinical protocols and person-centered methodologies are notoriously difficult to patent and offer very low defensibility against competitors."
+      }
+    },
+    "pi": "Aviva Lerman",
+    "pi_full_name": "Aviva Lerman",
+    "pi_email": "",
+    "pi_affiliation": "Department of Communication Sciences and Disorders, University of Haifa, Israel.; Hadassah Mount Scopus Medical Center, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "15",
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-09-14",
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on a behavioral/linguistic therapy intervention for aphasia rather than a molecular or pharmacological target. None of the required elements for a drug-discovery HTS collaboration are present.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -5360,60 +5418,6 @@
     "hts_score": 1,
     "hts_reason": "The paper focuses on radiological imaging findings (CT scans) rather than a specific molecular target or molecule. It lacks a biochemical or cellular assay suitable for high-throughput screening.",
     "hts_eval_model": "gemma-4-26b-a4b-it"
-  },
-  {
-    "id": "pubmed_42722769",
-    "title": "Magnesium therapy in persistent pulmonary hypertension of the newborn: a scoping review.",
-    "authors": [
-      "Yuval Dadon",
-      "Francis B Mimouni",
-      "Iris Arad",
-      "Joseph Mendlovic"
-    ],
-    "journal": "Journal of perinatology : official journal of the California Perinatal Association",
-    "date": "2026 Sep 10",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42722769/",
-    "source": "PubMed",
-    "score": 17,
-    "summary": "This review evaluates the therapeutic use of magnesium sulfate as an adjunctive treatment for persistent pulmonary hypertension in newborns to improve oxygenation and reduce systemic resistance. It synthesizes existing clinical data to determine the efficacy and safety profile of this low-cost intervention in neonatal intensive care settings.",
-    "opportunity": "There is a commercial opportunity to standardize magnesium-based neonatal protocols through clinical decision support software or specialized drug delivery systems to improve outcomes in low-resource medical environments.",
-    "fields": [
-      "Clinical",
-      "Other"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 2,
-        "reason": "As a scoping review of existing literature, this work summarizes prior art rather than introducing a novel discovery, therapeutic mechanism, or technical innovation. It provides no new experimental data or intellectual property, serving only as a consolidation of established clinical practices."
-      },
-      "commercial_potential": {
-        "score": 2,
-        "reason": "Magnesium sulfate is an off-patent, inexpensive, and widely available generic medication, meaning there is virtually no protectable intellectual property or significant commercial opportunity for a new product or service. The paper represents a clinical literature review rather than the development of a novel therapeutic, diagnostic, or platform technology."
-      },
-      "market_size": {
-        "score": 3,
-        "reason": "The target market for magnesium sulfate as an adjunctive treatment for persistent pulmonary hypertension of the newborn is limited to a small, niche neonatal intensive care population. Furthermore, as magnesium is an off-patent, inexpensive generic commodity, the potential for high-value commercial capture or venture-scale returns is extremely low."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "Magnesium sulfate is an established, off-patent pharmaceutical already in use for various clinical indications, meaning the study evaluates an existing therapy for a new clinical application that is ready for immediate bedside adoption or protocol integration. The high score reflects that the technology is already mature and de-risked, requiring only clinical validation rather than primary R&D or platform development."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "Magnesium sulfate is an off-patent, widely available generic commodity chemical, making it impossible to establish meaningful patent protection or defensible intellectual property for this therapeutic application."
-      }
-    },
-    "pi": "Joseph Mendlovic",
-    "pi_full_name": "Joseph Mendlovic",
-    "pi_email": "",
-    "pi_affiliation": "Israel Ministry of Health, Jerusalem, Israel.; Shaare Zedek Medical Center, Affiliated with the Hadassah-Hebrew University School of Medicine, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-09-14",
-    "hts_score": 2,
-    "hts_reason": "This is a scoping review of an existing clinical intervention (magnesium) rather than a discovery paper, failing to identify a new druggable target or describe a novel high-throughput screening assay.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42692129",
@@ -5635,58 +5639,57 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
-    "id": "pubmed_42721409",
-    "title": "Preliminary Evidence for the Effects of Bilingual ECoLoGiC Treatment for People With Aphasia.",
+    "id": "pubmed_42716242",
+    "title": "Skeletal Maturation Delay and ADHD Medication Use in Children with Constitutional Growth Delay: A Retrospective-Prospective Study.",
     "authors": [
-      "Yael Neumann",
-      "Marion C Leaman",
-      "Aviva Lerman"
+      "Ranit Cahn",
+      "Shani Adjami Michaely",
+      "David Gillis"
     ],
-    "journal": "American journal of speech-language pathology",
-    "date": "2026 Sep 10",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42721409/",
+    "journal": "The Journal of pediatrics",
+    "date": "2026 Sep 9",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42716242/",
     "source": "PubMed",
-    "score": 15,
-    "summary": "This research explores the ECoLoGiC treatment, a novel bilingual intervention designed to improve communication outcomes for individuals suffering from aphasia after brain injury. The study provides preliminary evidence that leveraging a patient's bilingual background can enhance therapeutic recovery of language functions.",
-    "opportunity": "There is a commercial opportunity to develop a digital health platform or AI-driven speech therapy software that automates personalized, bilingual linguistic rehabilitation protocols for stroke and brain injury recovery.",
+    "score": 14,
+    "summary": "The study identifies a significant correlation between constitutional growth delay (CGD) and a higher prevalence of ADHD, suggesting a shared developmental pathway related to delayed skeletal maturation. It specifically shows that children with a greater gap in bone age are more likely to require ADHD medication and exhibit lower academic performance.",
+    "opportunity": "Development of specialized diagnostic screening tools or digital biomarkers that use bone age assessment to identify children at higher risk for neurodevelopmental challenges like ADHD.",
     "fields": [
-      "Medical Device",
-      "Software/AI",
+      "Diagnostics",
       "Neuroscience",
       "Clinical"
     ],
     "score_breakdown": {
       "novelty": {
-        "score": 3,
-        "reason": "The study represents an incremental clinical application of established speech-language therapy techniques to a bilingual population rather than a fundamental innovation or platform-enabling technology. While clinically useful for specific patient demographics, it does not propose a novel mechanism, proprietary methodology, or groundbreaking shift in the field of neuro-rehabilitation."
+        "score": 4,
+        "reason": "The study provides valuable clinical correlation between constitutional growth delay and ADHD, but it is an observational study exploring existing clinical phenotypes rather than introducing a novel biological mechanism or a disruptive therapeutic platform."
       },
       "commercial_potential": {
         "score": 3,
-        "reason": "The intervention is a specific therapeutic protocol rather than a proprietary platform, device, or drug, making it difficult to protect via intellectual property or scale as a high-margin commercial product. Its primary value resides in clinical practice guidelines or professional services rather than a high-growth investment opportunity."
+        "reason": "The study identifies a clinical correlation between skeletal maturation and ADHD, but it does not propose a new therapeutic agent, diagnostic device, or platform technology. Its value is primarily academic and observational, offering insights for clinical management rather than a direct pathway to a licensable product."
       },
       "market_size": {
-        "score": 3,
-        "reason": "The intervention addresses a niche patient population with a specific language impairment, limiting the total addressable market to a small segment of the speech-language pathology sector. While clinically relevant, the narrow application to bilingual aphasia lacks the broad scalability or high-frequency demand required for a top-tier market opportunity."
+        "score": 4,
+        "reason": "The study identifies a specific clinical correlation between CGD and ADHD, but the target market is limited to a relatively small niche of pediatric patients with constitutional growth delay. While it suggests potential for improved diagnostic screening or adjunctive therapy, it does not represent a massive, broad-market therapeutic or platform opportunity."
       },
       "trl": {
-        "score": 4,
-        "reason": "The study is at the preliminary clinical feasibility stage, focused on demonstrating proof-of-concept for a specific behavioral treatment protocol rather than a scalable or validated clinical product. It lacks the regulatory validation, standardized delivery platform, or commercial development necessary to reach a higher TRL."
+        "score": 2,
+        "reason": "This is an observational clinical study focused on establishing epidemiological correlations rather than developing a new therapeutic, diagnostic device, or medical technology. It identifies a clinical phenotype but does not represent a technology nearing commercialization or real-world application."
       },
       "ip_strength": {
-        "score": 2,
-        "reason": "This study focuses on a behavioral speech-language therapy protocol, which is generally not patentable subject matter. The lack of a proprietary hardware or molecular component makes it highly difficult to establish a defensible IP moat beyond basic service-based branding."
+        "score": 1,
+        "reason": "This is an observational clinical study establishing a correlation between existing conditions; it does not describe a novel molecule, device, or diagnostic tool that is subject to patent protection."
       }
     },
-    "pi": "Aviva Lerman",
-    "pi_full_name": "Aviva Lerman",
+    "pi": "David Gillis",
+    "pi_full_name": "David Gillis",
     "pi_email": "",
-    "pi_affiliation": "Department of Communication Sciences and Disorders, University of Haifa, Israel.; Hadassah Mount Scopus Medical Center, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "pi_affiliation": "The Hebrew University, Jerusalem, Israel; Pediatric Endocrinology Unit, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "12",
+    "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-09-14",
     "hts_score": 1,
-    "hts_reason": "The paper focuses on a behavioral/linguistic therapy intervention for aphasia rather than a molecular or pharmacological target. None of the required elements for a drug-discovery HTS collaboration are present.",
+    "hts_reason": "This study is a clinical retrospective-prospective observation of patient cohorts rather than a discovery-based biological investigation; it identifies no specific molecular target or biochemical assay.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -5856,57 +5859,77 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
-    "id": "pubmed_42716242",
-    "title": "Skeletal Maturation Delay and ADHD Medication Use in Children with Constitutional Growth Delay: A Retrospective-Prospective Study.",
+    "id": "pubmed_42727542",
+    "title": "Clinical decision-making in older adults with multiple sclerosis: A National Delphi survey of Israeli MS specialists.",
     "authors": [
-      "Ranit Cahn",
-      "Shani Adjami Michaely",
-      "David Gillis"
+      "Keren Regev",
+      "Itay Lotan",
+      "Ofir Zmira",
+      "Daniel Golan",
+      "Ronit Gilad",
+      "Daniela Noa Zohar",
+      "Marwan Alkrenawi",
+      "Arnon Karni",
+      "Maya Garty Ofir",
+      "Tali Drori",
+      "Ifat Vigiser",
+      "Shay Menascu",
+      "Nitai Shimon",
+      "Panayiota Petrou",
+      "Alla Shifrin",
+      "Adi Vaknin-Dembinsky",
+      "Adi Wilf Yarkoni",
+      "Mark A Hellmann",
+      "Ron Milo",
+      "Michael Osherov",
+      "Radi Shahien",
+      "Tamir Ben-Hur"
     ],
-    "journal": "The Journal of pediatrics",
-    "date": "2026 Sep 9",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42716242/",
+    "journal": "Journal of the neurological sciences",
+    "date": "2026 Sep 8",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42727542/",
     "source": "PubMed",
     "score": 12,
-    "summary": "This study investigates whether children experiencing constitutional growth delay are more frequently prescribed ADHD medication due to potential misidentification of developmental milestones. It highlights a critical intersection between pediatric endocrinology and neurodevelopmental diagnosis in clinical practice.",
-    "opportunity": "This research suggests a market opportunity for AI-driven clinical decision support tools that integrate multi-modal growth and neurodevelopmental data to prevent diagnostic overshadowing and medication over-prescription.",
+    "summary": "This study uses a Delphi survey of Israeli specialists to identify gaps and lack of consensus in treating older patients with multiple sclerosis. It highlights the clinical uncertainty surrounding treatment de-escalation and the unique biological challenges of aging with the disease.",
+    "opportunity": "The identification of clinical decision-making uncertainty suggests a market need for specialized clinical decision support systems (CDSS) or precision medicine tools tailored for aging neuroimmunology populations.",
     "fields": [
-      "Software/AI",
       "Clinical",
-      "Neuroscience"
+      "Neuroscience",
+      "Software/AI",
+      "Immunology"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 3,
-        "reason": "This study focuses on descriptive clinical observation of known physiological phenomena rather than proposing a novel therapeutic mechanism, diagnostic platform, or technical innovation. It contributes to existing medical literature through incremental retrospective data collection rather than introducing a breakthrough scientific paradigm."
+        "reason": "The study employs a standard Delphi methodology to capture expert opinion rather than introducing new biological mechanisms, therapeutic modalities, or technological innovations. While clinically useful for establishing consensus, it represents incremental clinical practice documentation rather than groundbreaking scientific discovery."
       },
       "commercial_potential": {
         "score": 2,
-        "reason": "This study is a retrospective/prospective clinical observation that provides medical insights but lacks a novel therapeutic, diagnostic, or proprietary technology to commercialize. It describes an association rather than creating a protectable intellectual property asset or a scalable product."
+        "reason": "This is a consensus-building observational study designed to map clinical uncertainty rather than a development of a proprietary technology, drug, or diagnostic tool. While it identifies unmet clinical needs, it does not represent a product, service, or licensable IP."
       },
       "market_size": {
         "score": 3,
-        "reason": "The study addresses a narrow clinical niche involving the intersection of pediatric growth patterns and ADHD medication management, which lacks the scale of a broad therapeutic or diagnostic platform. The addressable market is limited to a small subset of pediatric patients, offering low commercial scalability for investment purposes."
+        "reason": "This is a clinical survey paper establishing consensus on physician behavior rather than a commercial product or technology. While the aging MS population is a growing clinical demographic, the paper itself does not describe a scalable therapeutic, diagnostic, or platform-based solution with direct market value."
       },
       "trl": {
         "score": 3,
-        "reason": "This is a retrospective-prospective observational clinical study focused on patient outcomes rather than the development of a novel therapeutic or diagnostic technology. It provides clinical evidence that may inform medical practice, but it does not represent an invention or a technology moving through the commercialization pipeline."
+        "reason": "This is a qualitative consensus study rather than a technical development; it establishes clinical guidelines and expert opinion rather than a tangible product or platform. While it informs clinical practice, it sits at the foundational level of defining knowledge gaps rather than testing a technology or intervention."
       },
       "ip_strength": {
         "score": 1,
-        "reason": "This study is a clinical observation of drug usage patterns in a specific patient population and contains no novel compositions of matter, devices, or proprietary technological processes that are eligible for patent protection."
+        "reason": "This is a clinical survey study documenting expert opinions and consensus; it contains no novel molecular entities, medical devices, or proprietary technologies capable of being patented or defended."
       }
     },
-    "pi": "David Gillis",
-    "pi_full_name": "David Gillis",
-    "pi_email": "",
-    "pi_affiliation": "The Hebrew University, Jerusalem, Israel; Pediatric Endocrinology Unit, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "pi": "Tamir Ben-Hur",
+    "pi_full_name": "Tamir Ben-Hur",
+    "pi_email": "tamir@hadassah.org.il.",
+    "pi_affiliation": "The Department of Neurology and Laboratory of Neuroimmunology, The Agnes-Ginges Center for Human Neurogenetics, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "10",
+    "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-09-14",
     "hts_score": 1,
-    "hts_reason": "This study is a clinical retrospective-prospective observation of patient cohorts rather than a discovery-based biological investigation; it identifies no specific molecular target or biochemical assay.",
+    "hts_reason": "This is a clinical survey study regarding medical decision-making practices and contains no molecular targets, disease-modifying mechanisms, or high-throughput assay protocols.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -6077,76 +6100,113 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
-    "id": "pubmed_42727542",
-    "title": "Clinical decision-making in older adults with multiple sclerosis: A National Delphi survey of Israeli MS specialists.",
+    "id": "pubmed_42708894",
+    "title": "The Association Between IgA Nephropathy and Uveitis Using Clinical Setting Data.",
     "authors": [
-      "Keren Regev",
-      "Itay Lotan",
-      "Ofir Zmira",
-      "Daniel Golan",
-      "Ronit Gilad",
-      "Daniela Noa Zohar",
-      "Marwan Alkrenawi",
-      "Arnon Karni",
-      "Maya Garty Ofir",
-      "Tali Drori",
-      "Ifat Vigiser",
-      "Shay Menascu",
-      "Nitai Shimon",
-      "Panayiota Petrou",
-      "Alla Shifrin",
-      "Adi Vaknin-Dembinsky",
-      "Adi Wilf Yarkoni",
-      "Mark A Hellmann",
-      "Ron Milo",
-      "Michael Osherov",
-      "Radi Shahien",
-      "Tamir Ben-Hur"
+      "Natan Lishinsky-Fischer",
+      "Ittamar Gork",
+      "Aviya R Jacobs",
+      "Yaacov Corcos",
+      "Jaime Levy"
     ],
-    "journal": "Journal of the neurological sciences",
-    "date": "2026 Sep 8",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42727542/",
+    "journal": "Ocular immunology and inflammation",
+    "date": "2026-09-08",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42708894/",
+    "source": "PubMed",
+    "score": 11,
+    "summary": "This study identifies a statistically significant link between IgA nephropathy and an increased risk of developing uveitis. Researchers used a large-scale multicenter dataset and propensity score matching to show that IgAN patients are more than twice as likely to experience ocular inflammation compared to controls.",
+    "opportunity": "The association suggests a need for integrated diagnostic screening protocols or co-therapies targeting shared immunological pathways in patients with renal and ocular inflammation.",
+    "fields": [
+      "Immunology",
+      "Clinical",
+      "Diagnostics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The study identifies a statistical correlation between two existing clinical conditions rather than introducing a new biological mechanism, therapeutic modality, or technology. While it provides clinical insight, it represents incremental epidemiological observation rather than groundbreaking scientific innovation."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "The paper identifies a clinical association/correlation rather than a novel therapeutic target, diagnostic biomarker, or proprietary technology. While it may inform clinical management, it does not describe a product or service with direct commercial or IP-driven value."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The paper identifies a niche clinical correlation rather than a new therapeutic indication or a large-scale market segment. While IgA nephropathy is a significant disease, the specific subset of patients developing uveitis is statistically very small, limiting the direct commercial addressable market for a targeted intervention."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This is an observational epidemiological study identifying a clinical association rather than a therapeutic intervention or medical device. It represents early-stage fundamental knowledge (discovery science) that provides a rationale for future clinical investigation but lacks a tangible technology or product ready for development."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "The paper describes an observational epidemiological study of clinical associations rather than the development of a novel molecule, device, or diagnostic tool. There is no proprietary technology, composition of matter, or unique method presented that would be eligible for patent protection."
+      }
+    },
+    "pi": "Jaime Levy",
+    "pi_full_name": "Jaime Levy",
+    "pi_email": "",
+    "pi_affiliation": "Department of Ophthalmology, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "8",
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-09-14",
+    "hts_score": 1,
+    "hts_reason": "The paper focuses on clinical epidemiological associations rather than identifying a molecular target, a specific mechanism, or a biochemical assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
+    "id": "pubmed_42722769",
+    "title": "Magnesium therapy in persistent pulmonary hypertension of the newborn: a scoping review.",
+    "authors": [
+      "Yuval Dadon",
+      "Francis B Mimouni",
+      "Iris Arad",
+      "Joseph Mendlovic"
+    ],
+    "journal": "Journal of perinatology : official journal of the California Perinatal Association",
+    "date": "2026 Sep 10",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42722769/",
     "source": "PubMed",
     "score": 10,
-    "summary": "This study utilizes a Delphi survey of Israeli MS specialists to establish consensus on clinical decision-making strategies for treating older patients with multiple sclerosis. It highlights the growing clinical challenge of managing comorbidities and medication safety in an aging neuro-immunological patient population.",
-    "opportunity": "The findings provide a roadmap for developing specialized clinical decision support (CDS) software or digital health platforms tailored to personalize therapy management for geriatric neurology patients.",
+    "summary": "This scoping review evaluates the use of magnesium sulfate to treat persistent pulmonary hypertension in newborns, finding inconsistent efficacy and potential safety risks. The study concludes that current evidence is insufficient to recommend magnesium as a routine clinical treatment compared to existing standards.",
+    "opportunity": "The lack of effective, safe treatments for PPHN suggests a market opening for novel vasodilators or precision-dosed neonatal pulmonary therapeutics.",
     "fields": [
       "Clinical",
-      "Software/AI",
-      "Neuroscience"
+      "Drug Discovery"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 2,
-        "reason": "The study employs a standard methodology (Delphi survey) to document existing clinical consensus rather than introducing new therapeutic, diagnostic, or technological innovations. It functions as descriptive observational research rather than groundbreaking, platform-enabling, or high-value intellectual property."
+        "reason": "This is a scoping review of existing literature rather than original research presenting new scientific findings or novel therapeutic interventions. It serves to synthesize known evidence rather than introduce groundbreaking or protectable technological innovations."
       },
       "commercial_potential": {
         "score": 2,
-        "reason": "This study is a descriptive survey of clinical consensus rather than a technological innovation, offering no protectable IP, software, or novel therapeutic asset. Its value is limited to qualitative insights for medical practice guidelines rather than scalable commercial technology."
+        "reason": "The paper is a scoping review of an existing, off-patent generic drug (magnesium sulfate) that shows inferior efficacy and safety profiles compared to current standards of care. There is no evidence of new intellectual property, novel delivery mechanisms, or a unique technological platform that would allow for commercialization."
       },
       "market_size": {
         "score": 3,
-        "reason": "The study focuses on a narrow, localized clinical decision-making survey in Israel, addressing a specific sub-population (older adults with MS) without proposing a scalable commercial product or technology platform. The market value of this insights-based research is limited to academic or niche clinical guideline development rather than a broad, addressable commercial market."
+        "reason": "The target market is highly niche, limited to a specific neonatal complication (PPHN) with low prevalence, and the therapy uses a generic, low-cost off-patent compound (magnesium sulfate) that lacks significant commercial upside."
       },
       "trl": {
         "score": 2,
-        "reason": "This study is a descriptive Delphi survey focused on expert consensus rather than the development or validation of a new technology. As a qualitative research methodology, it remains at the level of gathering clinical insights rather than creating a product or a tangible therapeutic intervention."
+        "reason": "This is a scoping review of existing literature rather than a primary development of a new technology; it evaluates a known compound (magnesium sulfate) that is already clinically available but fails to establish a new, validated application for PPHN. The research is at the foundational stage of mapping evidence rather than progressing a specific technical intervention toward commercialization."
       },
       "ip_strength": {
         "score": 1,
-        "reason": "This paper is a qualitative clinical survey reporting on professional consensus among medical specialists and contains no novel technical, molecular, or diagnostic innovation that could be patented or claimed as proprietary intellectual property."
+        "reason": "This is a scoping review of an existing, off-patent chemical compound (magnesium sulfate) used for an established clinical indication. There is no novel intellectual property, proprietary formulation, or unique manufacturing process presented that would offer defensibility."
       }
     },
-    "pi": "Tamir Ben-Hur",
-    "pi_full_name": "Tamir Ben-Hur",
-    "pi_email": "tamir@hadassah.org.il.",
-    "pi_affiliation": "The Department of Neurology and Laboratory of Neuroimmunology, The Agnes-Ginges Center for Human Neurogenetics, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "pi": "Joseph Mendlovic",
+    "pi_full_name": "Joseph Mendlovic",
+    "pi_email": "",
+    "pi_affiliation": "Israel Ministry of Health, Jerusalem, Israel.; Shaare Zedek Medical Center, Affiliated with the Hadassah-Hebrew University School of Medicine, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "17",
+    "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-09-14",
-    "hts_score": 1,
-    "hts_reason": "This is a clinical survey study regarding medical decision-making practices and contains no molecular targets, disease-modifying mechanisms, or high-throughput assay protocols.",
+    "hts_score": 2,
+    "hts_reason": "This is a scoping review of an existing clinical intervention (magnesium) rather than a discovery paper, failing to identify a new druggable target or describe a novel high-throughput screening assay.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -6161,42 +6221,42 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42711662/",
     "source": "PubMed",
     "score": 10,
-    "summary": "This pilot study explores the psychological intersection of early maternal emotional availability and self-objectification among mothers with histories of childhood maltreatment during the breastfeeding period. It aims to identify behavioral markers that could indicate disruptions in maternal-infant bonding as a result of past trauma.",
-    "opportunity": "The research could lead to the development of AI-driven behavioral monitoring software or digital health tools designed to screen and support at-risk mothers during the postnatal period to improve early childhood development outcomes.",
+    "summary": "This pilot study explores how childhood maltreatment leads to self-objectification, which in turn negatively impacts a mother's emotional availability and experience during breastfeeding. It suggests that psychological trauma can create a measurable disconnect in the mother-infant bonding process during critical postpartum periods.",
+    "opportunity": "Development of AI-driven digital health platforms or mobile apps that use video analysis to monitor maternal-infant interaction and provide real-time psychological support for trauma-impacted mothers.",
     "fields": [
-      "Clinical",
       "Software/AI",
+      "Clinical",
       "Neuroscience"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 3,
-        "reason": "This study addresses an important psychological phenomenon but relies on established observational methodologies rather than introducing novel technical, therapeutic, or diagnostic innovations. It functions as an incremental contribution to developmental psychology literature rather than a disruptive platform-enabling technology."
+        "reason": "The study applies existing psychological constructs (self-objectification and emotional availability) to a known clinical context (childhood maltreatment and breastfeeding) rather than introducing a new mechanism, technology, or paradigm. While it offers incremental observational insight, it lacks the groundbreaking innovation or platform-enabling potential required for a higher novelty score in a deep-tech context."
       },
       "commercial_potential": {
         "score": 2,
-        "reason": "This study is an observational clinical psychology pilot focusing on behavioral dynamics, which lacks clear intellectual property potential or a direct pathway to a scalable, high-margin commercial product or technology. It offers limited opportunities for monetization beyond academic research grants or specialized consulting services."
+        "reason": "This is a basic observational pilot study focused on psychological mechanisms and behavioral correlations rather than a scalable technology, diagnostic tool, or therapeutic intervention. While it may inform clinical guidelines, it lacks a direct path to a proprietary product, service, or licensable asset."
       },
       "market_size": {
         "score": 2,
-        "reason": "This research addresses a niche psychological phenomenon in a specific sub-population, lacking a clear pathway to commercial scalability or a large addressable market beyond specialized clinical or academic literature."
+        "reason": "The study is a niche pilot observation focused on a specific psychological mediation mechanism in a subpopulation, lacking direct implications for a scalable commercial product or a large-scale addressable medical market."
       },
       "trl": {
         "score": 2,
-        "reason": "This is a foundational, exploratory pilot study focused on psychosocial observation rather than the development of a therapeutic, diagnostic, or commercializable medical technology. It provides descriptive insights into human behavior that lack a clear path to industrial application or clinical intervention."
+        "reason": "This is a fundamental pilot observational study focused on behavioral psychology and psychosociological mechanisms rather than a developed intervention or technological tool. It provides baseline scientific evidence but lacks a prototype, device, or scalable therapeutic platform required for higher TRL stages."
       },
       "ip_strength": {
         "score": 1,
-        "reason": "This study focuses on observational psychological research and behavioral patterns, which are not subject to patent protection or commercial intellectual property barriers. There is no novel technological, diagnostic, or therapeutic invention identified that could be defended as an asset."
+        "reason": "This is an observational clinical psychology study focused on psychosocial mechanisms rather than a proprietary technology, molecule, or device. The findings are based on standardized behavioral observations and self-reporting, which are not patentable and offer no defensible intellectual property."
       }
     },
     "pi": "Anat Talmon",
     "pi_full_name": "Anat Talmon",
     "pi_email": "",
     "pi_affiliation": "The Paul Baerwald School of Social Work and Social Welfare, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "10",
+    "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-09-14",
     "hts_score": 1,
     "hts_reason": "The study focuses on behavioral psychology and maternal-child interaction, which lacks a specific molecular or protein target, a defined disease pathology susceptible to chemical intervention, and a biochemical screening assay.",
@@ -6423,59 +6483,57 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
-    "id": "pubmed_42708894",
-    "title": "The Association Between IgA Nephropathy and Uveitis Using Clinical Setting Data.",
+    "id": "pubmed_42709749",
+    "title": "Specialty-Based Variation in Prostaglandin E1 Use for Neonates With dextro-Transposition of the Great Arteries: An International Cross-Sectional Survey of Neonatologists and Pediatric Cardiac Intensivists.",
     "authors": [
-      "Natan Lishinsky-Fischer",
-      "Ittamar Gork",
-      "Aviya R Jacobs",
-      "Yaacov Corcos",
-      "Jaime Levy"
+      "Sharon Morag",
+      "Alexander Lowenthal",
+      "Hiba Abuelhija",
+      "Uri Pollak"
     ],
-    "journal": "Ocular immunology and inflammation",
-    "date": "2026-09-08",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42708894/",
+    "journal": "World journal for pediatric & congenital heart surgery",
+    "date": "2026 Sep 8",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42709749/",
     "source": "PubMed",
     "score": 8,
-    "summary": "This study investigates the clinical correlation between IgA nephropathy, an autoimmune kidney disorder, and uveitis, an inflammatory eye condition. The findings suggest a potential shared systemic immunological mechanism that could link renal and ocular pathology in specific patient populations.",
-    "opportunity": "The identification of this comorbidity provides a basis for developing precision diagnostic screening protocols or novel monoclonal antibody therapies targeting shared inflammatory pathways for multi-organ autoimmune disease management.",
+    "summary": "This study identifies significant global inconsistencies in how neonatologists and cardiac intensivists administer life-saving prostaglandin E1 to newborns with heart defects. The findings highlight a lack of standardized clinical protocols across different medical specialties for managing critical neonatal cardiac conditions.",
+    "opportunity": "The lack of standardized dosing protocols creates a market entry point for clinical decision support software or AI-driven triage tools designed to optimize neonatal intensive care workflows.",
     "fields": [
       "Clinical",
-      "Immunology",
-      "Diagnostics"
+      "Software/AI"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 2,
-        "reason": "This study is an observational retrospective analysis of clinical associations, which represents incremental clinical observation rather than groundbreaking scientific innovation or novel platform development. It lacks the mechanistic or therapeutic novelty required for a higher score in a deep-tech investment context."
+        "reason": "This is a descriptive, cross-sectional survey study that identifies clinical practice variation rather than introducing a new therapeutic, technology, or scientific mechanism. While the findings are clinically relevant for standardizing care, the work lacks technical or scientific novelty as it describes existing human behaviors and protocols."
       },
       "commercial_potential": {
         "score": 2,
-        "reason": "This is an observational clinical study establishing an association between two conditions, which lacks a direct pathway to a novel therapeutic product, diagnostic device, or licensable IP. It serves as descriptive medical literature rather than foundational deep-tech or translational innovation."
+        "reason": "This is a clinical practice survey identifying heterogeneity in medical decision-making rather than a development of a new drug, device, or diagnostic tool. While it identifies a clinical gap, it describes observational data on existing standard-of-care usage rather than a proprietary technology or product."
       },
       "market_size": {
         "score": 2,
-        "reason": "The paper addresses a niche clinical association between IgA nephropathy and uveitis, which represents a very small, specialized patient population rather than a broad, high-value commercial opportunity. There is no clear therapeutic or diagnostic platform potential identified, limiting the addressable market size significantly."
+        "reason": "This is a clinical survey paper assessing practice variation rather than a technology or product development study; it does not present a commercializable asset or define a target market for a new therapeutic or device. The subject matter is limited to a niche clinical protocol for a specific congenital heart defect, offering no evidence of scalable market demand."
       },
       "trl": {
         "score": 1,
-        "reason": "This is an observational clinical study investigating a disease association rather than developing a new technology, product, or intervention. It lacks a TRL component as it does not involve the development or commercialization of an actionable tool."
+        "reason": "This is a clinical practice survey study focused on observational data and professional consensus rather than the development of a new technology or therapeutic product. It does not involve the advancement of a technical prototype or a medical device, placing it at the conceptual/observational stage of medical knowledge rather than a technology readiness level."
       },
       "ip_strength": {
         "score": 1,
-        "reason": "This study is an observational clinical association analysis between two known conditions and does not involve the development of a novel technology, therapeutic, or diagnostic process that could be protected by patent law."
+        "reason": "This is a clinical survey paper documenting existing medical practices and professional consensus rather than a novel therapeutic, device, or platform technology. It contains no new chemical entities, compositions of matter, or proprietary methodologies that are subject to patent protection or technical defensibility."
       }
     },
-    "pi": "Jaime Levy",
-    "pi_full_name": "Jaime Levy",
+    "pi": "Uri Pollak",
+    "pi_full_name": "Uri Pollak",
     "pi_email": "",
-    "pi_affiliation": "Department of Ophthalmology, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "pi_affiliation": "Section of Pediatric Critical Care, Hadassah University Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "7",
+    "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-09-14",
-    "hts_score": 1,
-    "hts_reason": "The paper focuses on clinical epidemiological associations rather than identifying a molecular target, a specific mechanism, or a biochemical assay suitable for high-throughput screening.",
+    "hts_score": 2,
+    "hts_reason": "The paper is a survey-based clinical practice study regarding the use of an existing drug (Prostaglandin E1) and lacks the identification of a new molecular target or a high-throughput assay development component.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -6694,60 +6752,6 @@
     "hts_score": 1,
     "hts_reason": "The paper is a systematic review regarding counterterrorism policy and socio-political interventions, lacking a biological molecule/target, a disease link, and a laboratory assay.",
     "hts_eval_model": "gemma-4-26b-a4b-it"
-  },
-  {
-    "id": "pubmed_42709749",
-    "title": "Specialty-Based Variation in Prostaglandin E1 Use for Neonates With dextro-Transposition of the Great Arteries: An International Cross-Sectional Survey of Neonatologists and Pediatric Cardiac Intensivists.",
-    "authors": [
-      "Sharon Morag",
-      "Alexander Lowenthal",
-      "Hiba Abuelhija",
-      "Uri Pollak"
-    ],
-    "journal": "World journal for pediatric & congenital heart surgery",
-    "date": "2026 Sep 8",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42709749/",
-    "source": "PubMed",
-    "score": 7,
-    "summary": "This study examines the significant variability in how clinicians prescribe Prostaglandin E1 for neonates suffering from dextro-Transposition of the Great Arteries across different medical specialties. The findings highlight a lack of standardized treatment protocols, which often leads to inconsistent patient care and potential safety risks in neonatal cardiac intensive care.",
-    "opportunity": "There is a clear commercial opportunity to develop AI-driven clinical decision support software that standardizes neonatal dosing protocols and reduces practice variation in high-acuity pediatric cardiology settings.",
-    "fields": [
-      "Software/AI",
-      "Clinical"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 2,
-        "reason": "This study is an observational survey of clinical practice patterns rather than a novel scientific breakthrough or technological innovation. It describes existing usage variations within established medical protocols rather than introducing a new therapeutic mechanism, platform, or diagnostic advancement."
-      },
-      "commercial_potential": {
-        "score": 1,
-        "reason": "This paper is an observational, cross-sectional survey regarding clinical practice variations and does not describe a novel technology, therapeutic, or diagnostic tool. It lacks any proprietary technical component or product-ready innovation, providing no clear pathway to commercialization."
-      },
-      "market_size": {
-        "score": 2,
-        "reason": "The market is limited to a small sub-segment of neonates with a specific congenital heart defect (d-TGA) and focuses on existing clinical practice variation rather than a scalable, high-growth commercial opportunity. The addressable demand is restricted by the rarity of the condition and the commodity nature of the pharmaceutical intervention involved."
-      },
-      "trl": {
-        "score": 1,
-        "reason": "This paper is a cross-sectional survey regarding current clinical practice patterns and does not involve the development, testing, or validation of a technology, device, or therapeutic candidate."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "This paper is a clinical survey analyzing physician practice patterns and variation in standard-of-care medication use; it contains no novel technology, proprietary methodology, or patentable intellectual property."
-      }
-    },
-    "pi": "Uri Pollak",
-    "pi_full_name": "Uri Pollak",
-    "pi_email": "",
-    "pi_affiliation": "Section of Pediatric Critical Care, Hadassah University Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-09-14",
-    "hts_score": 2,
-    "hts_reason": "The paper is a survey-based clinical practice study regarding the use of an existing drug (Prostaglandin E1) and lacks the identification of a new molecular target or a high-throughput assay development component.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42703242",
