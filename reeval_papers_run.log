@@ -1,36 +1,7 @@
 Loading existing papers from Google Sheet...
   117 existing papers loaded.
   Verifying HUJI affiliation for 114 papers via PubMed efetch...
-  13 non-Gemma-scored papers to re-evaluate on Gemma.
-  [1/13] re-eval: Immature Platelet Fraction as an Independent Marker of Adverse Outcome
-Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      re-scored 23 via gemma-4-26b-a4b-it (was 26 via gemini-3.1-flash-lite)
-  [2/13] re-eval: Magnesium therapy in persistent pulmonary hypertension of the newborn:
-      re-scored 10 via gemma-4-26b-a4b-it (was 17 via gemini-3.1-flash-lite)
-  [3/13] re-eval: Preliminary Evidence for the Effects of Bilingual ECoLoGiC Treatment f
-      re-scored 18 via gemma-4-26b-a4b-it (was 15 via gemini-3.1-flash-lite)
-  [4/13] re-eval: Teclistamab for BCMA-positive relapsed/refractory B acute lymphoblasti
-      re-scored 38 via gemma-4-26b-a4b-it (was 30 via gemini-3.1-flash-lite)
-  [5/13] re-eval: Neuron-specific WWOX gene therapy produces dose-dependent, durable res
-      re-scored 31 via gemma-4-26b-a4b-it (was 32 via gemini-3.1-flash-lite)
-  [6/13] re-eval: Skeletal Maturation Delay and ADHD Medication Use in Children with Con
-      re-scored 14 via gemma-4-26b-a4b-it (was 12 via gemini-3.1-flash-lite)
-  [7/13] re-eval: Reversing the pipeline: a 'human-first' multi-omics approach to cardio
-      re-scored 22 via gemma-4-26b-a4b-it (was 32 via gemini-3.1-flash-lite)
-  [8/13] re-eval: Clinical decision-making in older adults with multiple sclerosis: A Na
-      re-scored 12 via gemma-4-26b-a4b-it (was 10 via gemini-3.1-flash-lite)
-  [9/13] re-eval: Early maternal emotional availability and self-objectification during 
-      re-scored 10 via gemma-4-26b-a4b-it (was 10 via gemini-3.1-flash-lite)
-  [10/13] re-eval: Specialty-Based Variation in Prostaglandin E1 Use for Neonates With de
-      re-scored 8 via gemma-4-26b-a4b-it (was 7 via gemini-3.1-flash-lite)
-  [11/13] re-eval: Clinical guidance on evaluation and management of bone fragility in pa
-      re-scored 22 via gemma-4-26b-a4b-it (was 20 via gemini-3.1-flash-lite)
-  [12/13] re-eval: The Association Between IgA Nephropathy and Uveitis Using Clinical Set
-      re-scored 11 via gemma-4-26b-a4b-it (was 8 via gemini-3.1-flash-lite)
-  [13/13] re-eval: Breaking reciprocity of the electron wave function in chiral materials
-      re-scored 20 via gemma-4-26b-a4b-it (was 20 via gemini-3.1-flash-lite)
-  Re-evaluated 13/13 papers onto Gemma.
-Sheet updated: {"status":"ok","rows":118}
-Generated papers_reader.html and papers_data.json with 117 papers and 48 researcher profiles.
+  0 non-Gemma-scored papers to re-evaluate on Gemma.
+  Re-evaluated 0/0 papers onto Gemma.
+  Nothing re-scored (no non-Gemma papers, or Gemma still unavailable).
 Re-evaluation complete.
