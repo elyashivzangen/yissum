@@ -1,71 +1,67 @@
 Loading existing papers from Google Sheet...
-  103 existing papers loaded.
-  Verifying HUJI affiliation for 100 papers via PubMed efetch...
-  Removed 1 paper(s) with no HUJI last/majority author:
-    - Abstracts of the 36th World Congress on Ultrasound in Obstetrics and G
-fetch_pubmed: 16 fetched, 15 new
-fetch_europepmc: 15 fetched, 0 new
+  117 existing papers loaded.
+  Verifying HUJI affiliation for 114 papers via PubMed efetch...
+fetch_pubmed: 15 fetched, 15 new
+fetch_europepmc: 8 fetched, 0 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
 15 unique new papers to evaluate.
 Enriching PI contact info for 15 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/15] Protocol: Deterrence-Oriented Counterterrorism Interventions in OECD C
+  [1/15] The impact of an electric hand warmer on powered wheelchair mobility i
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=8 fields=['Other']
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=14 fields=['Medical Device', 'Clinical']
     hts_score=1
-  [2/15] CT-Based Brain Frailty Signs and Clinical Outcomes Following Endovascu
-    score=17 fields=['Diagnostics', 'Software/AI', 'Imaging', 'Neuroscience']
+  [2/15] Bilateral Maculopathy in an Infant Following Measles, Mumps, Rubella, 
+    score=6 fields=['Vaccines', 'Clinical', 'Immunology']
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     hts_score=1
-  [3/15] Immature Platelet Fraction as an Independent Marker of Adverse Outcome
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=26 fields=['Diagnostics', 'Clinical']
+  [3/15] Interplay of Charge Trapping, Charge Separation, and Chemical Reactivi
+    score=19 fields=['Materials', 'Clean Energy']
+    hts_score=1
+  [4/15] IVF outcomes and aneuploidy rates in BRCA pathogenic variant carriers 
+    score=13 fields=['Diagnostics', 'Genomics', 'Clinical']
     hts_score=2
-  [4/15] Clinical decision-making in older adults with multiple sclerosis: A Na
-    score=10 fields=['Clinical', 'Software/AI', 'Neuroscience']
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  [5/15] Factors affecting family consent to corneal donation at a hospital-bas
+    score=9 fields=['Clinical', 'Other']
     hts_score=1
-  [5/15] Magnesium therapy in persistent pulmonary hypertension of the newborn:
-    score=17 fields=['Clinical', 'Other']
-    hts_score=2
-  [6/15] Preliminary Evidence for the Effects of Bilingual ECoLoGiC Treatment f
-    score=15 fields=['Medical Device', 'Software/AI', 'Neuroscience', 'Clinical']
+  [6/15] Exploring Leisure Gaming as a Meaningful Occupation in Pediatric Inpat
+    score=11 fields=['Medical Device', 'Software/AI', 'Neuroscience', 'Clinical']
     hts_score=1
-  [7/15] Teclistamab for BCMA-positive relapsed/refractory B acute lymphoblasti
-    score=30 fields=['Clinical', 'Immunology', 'Drug Discovery']
+  [7/15] Larger language models better align with neural representations of nat
+    score=21 fields=['Software/AI', 'Neuroscience']
+    hts_score=1
+  [8/15] Association between congenital ptosis and ADHD: a national, cross-sect
+    score=10 fields=['Diagnostics', 'Neuroscience', 'Clinical']
+    hts_score=1
+  [9/15] Studying early events leading to fruitlet abscission.
+    score=12 fields=['AgriTech', 'FoodTech', 'Synthetic Biology']
+    hts_score=1
+  [10/15] Differences in resilience, hope, and sense of coherence among adolesce
+    score=10 fields=['Neuroscience', 'Software/AI', 'Clinical', 'Other']
+    hts_score=1
+  [11/15] Behavioral Determinants of Lifestyle Modifications Following Metabolic
+    score=11 fields=['Clinical', 'Software/AI', 'Other']
+    hts_score=1
+  [12/15] Management of Mesh-Related Complications Following Uterovaginal Prolap
+    score=9 fields=['Medical Device', 'Clinical']
+    hts_score=1
+  [13/15] Preterm birth disrupts nephron progenitor cell dynamics predisposing t
+    score=22 fields=['Drug Discovery', 'Diagnostics', 'Clinical', 'Genomics']
     hts_score=3
-  [8/15] Skeletal Maturation Delay and ADHD Medication Use in Children with Con
-    score=12 fields=['Software/AI', 'Clinical', 'Neuroscience']
+  [14/15] Declining fibreoptic intubation use in the videolaryngoscopy era.
+    score=6 fields=['Medical Device', 'Clinical']
     hts_score=1
-  [9/15] Early maternal emotional availability and self-objectification during 
-    score=10 fields=['Clinical', 'Software/AI', 'Neuroscience']
+  [15/15] Structure-controlled sulfur poisoning and hydrogen-induced regeneratio
+    score=22 fields=['Materials', 'Clean Energy']
     hts_score=1
-  [10/15] Reversing the pipeline: a 'human-first' multi-omics approach to cardio
-    score=32 fields=['Drug Discovery', 'Genomics', 'Proteomics', 'Software/AI']
-    hts_score=2
-  [11/15] Specialty-Based Variation in Prostaglandin E1 Use for Neonates With de
-    score=7 fields=['Software/AI', 'Clinical']
-    hts_score=2
-  [12/15] Clinical guidance on evaluation and management of bone fragility in pa
-    score=20 fields=['Clinical', 'Diagnostics']
-    hts_score=2
-  [13/15] The Association Between IgA Nephropathy and Uveitis Using Clinical Set
-    score=8 fields=['Clinical', 'Immunology', 'Diagnostics']
-    hts_score=1
-  [14/15] Breaking reciprocity of the electron wave function in chiral materials
-    score=20 fields=['Materials', 'Quantum', 'Diagnostics', 'Clean Energy']
-    hts_score=1
-  [15/15] Neuron-specific WWOX gene therapy produces dose-dependent, durable res
-    score=32 fields=['Clinical', 'Neuroscience', 'Genomics']
-    hts_score=4
-  [checkpoint: 15/15] writing 117 papers (102 retained + 15 new)...
-Sheet updated: {"status":"ok","rows":118}
-Generated papers_reader.html and papers_data.json with 117 papers and 47 researcher profiles.
+  [checkpoint: 15/15] writing 132 papers (117 retained + 15 new)...
+Sheet updated: {"status":"ok","rows":133}
+Generated papers_reader.html and papers_data.json with 132 papers and 48 researcher profiles.
 
-Kept all 102 existing papers, added 15 new.
-  [checkpoint: final] writing 117 papers (102 retained + 15 new)...
-Sheet updated: {"status":"ok","rows":118}
-Generated papers_reader.html and papers_data.json with 117 papers and 47 researcher profiles.
+Kept all 117 existing papers, added 15 new.
+  [checkpoint: final] writing 132 papers (117 retained + 15 new)...
+Sheet updated: {"status":"ok","rows":133}
+Generated papers_reader.html and papers_data.json with 132 papers and 48 researcher profiles.
 Done.
