@@ -5178,6 +5178,64 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
+    "id": "pubmed_42778686",
+    "title": "Universal newborn screening for G6PD deficiency and severe hyperbilirubinemia at a tertiary center in Jerusalem.",
+    "authors": [
+      "Aviad Schnapp",
+      "Ohad Neufeld",
+      "Sinan Abu-Leil",
+      "Rawan Abu Omar",
+      "Haneen Azzam",
+      "Noa Ofek Shlomai",
+      "Smadar Eventov Friedman"
+    ],
+    "journal": "Journal of perinatology : official journal of the California Perinatal Association",
+    "date": "2026-09-23",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42778686/",
+    "source": "PubMed",
+    "score": 22,
+    "summary": "This study demonstrates that universal newborn screening for G6PD deficiency significantly improves the detection of infants at high risk for severe jaundice compared to current targeted screening methods. Researchers found that nearly half of deficient newborns would be missed by traditional protocols, highlighting a major gap in current neonatal care.",
+    "opportunity": "Development of high-throughput, cost-effective point-of-care diagnostic kits for universal neonatal G6PD screening to prevent avoidable hyperbilirubinemia complications.",
+    "fields": [
+      "Diagnostics",
+      "Clinical",
+      "Genomics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The paper provides valuable clinical validation for universal screening protocols, but the underlying science and the concept of G6PD screening are well-established in existing medical literature. It represents an incremental implementation study rather than a groundbreaking scientific or technological innovation."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper is an observational clinical study providing epidemiological evidence rather than a novel diagnostic tool or platform technology. While it builds a clinical case for universal screening, it does not present a new, protectable product or method to commercialize."
+      },
+      "market_size": {
+        "score": 6,
+        "reason": "The market is significant due to the high prevalence of G6PD deficiency and the universal nature of neonatal screening, but it is limited to a specific diagnostic niche rather than a broad-reaching platform technology. While clinically valuable, the addressable market is constrained by existing newborn screening workflows and the specific requirement for phototherapy risk management."
+      },
+      "trl": {
+        "score": 9,
+        "reason": "The study demonstrates the clinical utility and real-world impact of a screening protocol using existing diagnostic methods in a large patient cohort, indicating the workflow is ready for immediate clinical implementation."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "The paper is a retrospective clinical observational study providing epidemiological evidence rather than a description of a novel technology, assay, or device. There is no proprietary methodology, chemical entity, or technical invention described that would be subject to patent protection or commercial defensibility."
+      }
+    },
+    "pi": "Smadar Eventov Friedman",
+    "pi_full_name": "Aviad Schnapp",
+    "pi_email": "aviadsch@hadassah.org.il.",
+    "pi_affiliation": "Division of Neonatology, Hadassah Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": 19,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-09-28",
+    "hts_score": 2,
+    "hts_reason": "While the paper identifies a specific target (G6PD enzyme) and a link to a disease (G6PD deficiency), it describes a diagnostic clinical screening protocol rather than a high-throughput assay suitable for drug discovery or small molecule screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
     "id": "pubmed_42709184",
     "title": "Clinical guidance on evaluation and management of bone fragility in patients with monoclonal gammopathy of undetermined significance (MGUS): an IOF position statement.",
     "authors": [
@@ -5658,59 +5716,6 @@
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
-    "id": "pubmed_42778686",
-    "title": "Universal newborn screening for G6PD deficiency and severe hyperbilirubinemia at a tertiary center in Jerusalem.",
-    "authors": [
-      "Aviad Schnapp",
-      "Ohad Neufeld",
-      "Sinan Abu-Leil",
-      "Rawan Abu Omar",
-      "Haneen Azzam",
-      "Noa Ofek Shlomai",
-      "Smadar Eventov Friedman"
-    ],
-    "journal": "Journal of perinatology : official journal of the California Perinatal Association",
-    "date": "2026-09-23",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42778686/",
-    "source": "PubMed",
-    "score": 19,
-    "summary": "This study evaluates a universal newborn screening program at a Jerusalem hospital to identify infants with G6PD deficiency and severe hyperbilirubinemia. By implementing systematic screening, researchers aim to prevent life-threatening complications such as kernicterus through early clinical intervention and management.",
-    "opportunity": "There is a commercial opportunity to develop rapid, point-of-care diagnostic platforms or integrated software decision-support tools that streamline universal neonatal metabolic screening to reduce hospital readmission costs.",
-    "fields": [
-      "Diagnostics",
-      "Clinical"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "This study describes the implementation of an established clinical screening protocol at a specific tertiary center rather than introducing a novel diagnostic methodology, platform technology, or scientific breakthrough. Its scope is restricted to operational validation and local clinical utility, lacking the innovation required for high novelty scoring."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "This study describes the implementation of a clinical screening protocol rather than a novel, protectable diagnostic technology or platform. It offers limited commercial scalability as it relies on established diagnostic methods within a hospital setting."
-      },
-      "market_size": {
-        "score": 4,
-        "reason": "While G6PD deficiency is a common genetic disorder, the market is geographically restricted to specific populations, and clinical screening programs are typically low-margin, government-mandated public health initiatives rather than high-growth commercial opportunities. The addressable demand is limited to regional diagnostic implementations rather than a broad, scalable platform technology."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "This study evaluates a clinical screening protocol implemented in a real-world hospital setting, demonstrating immediate operational utility and clinical integration. It represents a mature, high-readiness application of established diagnostic methodology within a standard-of-care workflow."
-      }
-    },
-    "pi": "Smadar Eventov Friedman",
-    "pi_full_name": "Aviad Schnapp",
-    "pi_email": "aviadsch@hadassah.org.il.",
-    "pi_affiliation": "Division of Neonatology, Hadassah Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-09-28",
-    "hts_score": 2,
-    "hts_reason": "While the paper identifies a specific target (G6PD enzyme) and a link to a disease (G6PD deficiency), it describes a diagnostic clinical screening protocol rather than a high-throughput assay suitable for drug discovery or small molecule screening.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
     "id": "pubmed_42758252",
     "title": "Interplay of Charge Trapping, Charge Separation, and Chemical Reactivity in Photocatalytic ZnSe-Based Semiconductor-Metal Hybrid Nanoparticles.",
     "authors": [
@@ -6003,6 +6008,116 @@
     "hts_score": 2,
     "hts_reason": "The paper identifies a specific target (BCMA) and disease (Antiphospholipid Syndrome), but it is a clinical case report rather than a study describing a testable assay or method suitable for high-throughput screening.",
     "hts_eval_model": "gemma-4-26b-a4b-it"
+  },
+  {
+    "id": "pubmed_42777030",
+    "title": "Social Physiology: Human homeostasis is more efficient in social proximity.",
+    "authors": [
+      "Monia Masalha",
+      "Matan Cohen",
+      "Maayan Aloni",
+      "Einav Toledo",
+      "Ella Stahl",
+      "Diane Shachar",
+      "Or Eliav",
+      "Shai Fuchs",
+      "Shir Atzil"
+    ],
+    "journal": "Science advances",
+    "date": "2026 Sep 25",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777030/",
+    "source": "PubMed",
+    "score": 17,
+    "summary": "Researchers discovered that being in the presence of others improves the body's ability to regulate glucose levels following a meal. The study shows that social proximity reduces physiological stress and helps the body return to a steady state more efficiently.",
+    "opportunity": "Developing digital health interventions or wearable-integrated social wellness platforms that leverage social connectivity to improve metabolic health and glycemic control.",
+    "fields": [
+      "Medical Device",
+      "Neuroscience",
+      "Clinical",
+      "Software/AI"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 8,
+        "reason": "The research shifts the paradigm of homeostasis from an individualistic biological imperative to a socially-mediated regulatory mechanism, introducing a potentially groundbreaking new variable for metabolic health. This concept of 'Social Physiology' offers a novel, platform-enabling framework for developing social-context-aware therapeutic interventions and digital health monitoring."
+      },
+      "market_size": {
+        "score": 4,
+        "reason": "While the finding suggests a novel biological mechanism for metabolic regulation, the abstract describes fundamental behavioral science rather than a specific product, therapeutic, or diagnostic application with clear commercial scale. The market potential is highly speculative and depends on translating social proximity into actionable interventions, such as digital health or social engineering tools."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "The research is at a fundamental, proof-of-concept stage, establishing a physiological correlation through controlled laboratory experiments. It lacks the clinical validation, longitudinal data, or technological implementation required for near-market application."
+      },
+      "ip_strength": {
+        "score": 2,
+        "reason": "The core innovation is a biological observation/phenomenon regarding social influence on homeostasis, which is a fundamental scientific finding rather than a patentable technology or proprietary method. While the insight is interesting, it lacks the technical architecture, composition of matter, or unique device application required for strong IP defensibility."
+      }
+    },
+    "pi": "Shir Atzil",
+    "pi_full_name": "Shir Atzil",
+    "pi_email": "shir.atzil@mail.huji.ac.il",
+    "pi_affiliation": "Department of Psychology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": 15,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-09-28",
+    "hts_score": 1,
+    "hts_reason": "The paper title describes a broad physiological phenomenon rather than a specific molecular target, a disease mechanism, or a scalable laboratory assay suitable for high-throughput screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
+    "id": "pubmed_42785577",
+    "title": "Morphine for End-of-Life Dyspnea: Underuse in the Emergency Department Versus Inpatient Care.",
+    "authors": [
+      "Asher Taragin",
+      "Avigail Bar Tikvah",
+      "Meir Frankel"
+    ],
+    "journal": "Journal of pain and symptom management",
+    "date": "2026 Sep 24",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42785577/",
+    "source": "PubMed",
+    "score": 17,
+    "summary": "The study identifies a significant gap in the administration of morphine for end-of-life breathlessness, showing it is far less frequently used in emergency departments compared to inpatient care. It highlights that clinical protocols for palliative symptom management are not being consistently applied during the initial acute phase of end-of-life presentations.",
+    "opportunity": "There is a commercial opportunity for clinical decision support software or AI-driven triage tools designed to alert emergency clinicians to palliative care needs and optimize symptom management protocols.",
+    "fields": [
+      "Clinical",
+      "Software/AI"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 2,
+        "reason": "The study provides clinical observational data on a well-established pharmacological intervention (morphine) for a known symptom (dyspnea) rather than introducing a new molecule, mechanism, or technology. It identifies a gap in care delivery protocols rather than presenting a scientific or technological breakthrough."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This is a retrospective clinical observation study identifying a gap in standard-of-care implementation rather than a novel technology, drug, or device. It describes a clinical workflow issue that lacks a proprietary product or licensable intellectual property component."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper is a clinical retrospective study focused on a specific care gap in morphine administration protocols rather than a proposal for a new therapeutic, device, or technology. Consequently, it describes a clinical management issue rather than a scalable commercial market or a new product demand."
+      },
+      "trl": {
+        "score": 10,
+        "reason": "The technology (morphine) is a gold-standard, FDA-approved pharmaceutical already in widespread clinical use. The study focuses on optimizing clinical workflows and administration protocols rather than developing new molecules, placing the application at the highest level of readiness."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "The paper describes a retrospective clinical observational study regarding the utilization patterns of an existing, off-patent generic drug (morphine). There is no novel molecule, device, or proprietary methodology presented that would qualify for patent protection or provide technological defensibility."
+      }
+    },
+    "pi": "Meir Frankel",
+    "pi_full_name": "Asher Taragin",
+    "pi_email": "ashert@szmc.org.il.",
+    "pi_affiliation": "Division of Internal Medicine, Shaare Zedek Medical Center, Affiliated with the Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": 3,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-09-28",
+    "hts_score": 0,
+    "hts_reason": "",
+    "hts_eval_model": ""
   },
   {
     "id": "pubmed_42731769",
@@ -6439,66 +6554,6 @@
     "hts_score": 2,
     "hts_reason": "The title describes a biological phenomenon (ploidy-dependent response) rather than a specific molecule or target, and lacks mention of a testable assay for screening.",
     "hts_eval_model": "gemma-4-26b-a4b-it"
-  },
-  {
-    "id": "pubmed_42777030",
-    "title": "Social Physiology: Human homeostasis is more efficient in social proximity.",
-    "authors": [
-      "Monia Masalha",
-      "Matan Cohen",
-      "Maayan Aloni",
-      "Einav Toledo",
-      "Ella Stahl",
-      "Diane Shachar",
-      "Or Eliav",
-      "Shai Fuchs",
-      "Shir Atzil"
-    ],
-    "journal": "Science advances",
-    "date": "2026 Sep 25",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42777030/",
-    "source": "PubMed",
-    "score": 15,
-    "summary": "This research explores how physical social proximity significantly enhances human physiological homeostasis, suggesting that biological regulation is an interactive, collective process rather than an isolated internal function. By demonstrating that social presence optimizes metabolic and physiological stability, the study provides a quantitative basis for the health-promoting effects of interpersonal connection.",
-    "opportunity": "This discovery enables the development of 'social-biometric' digital health platforms and clinical interventions that incorporate social proximity metrics to improve patient recovery outcomes and long-term chronic disease management.",
-    "fields": [
-      "Clinical",
-      "Neuroscience",
-      "Software/AI"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 6,
-        "reason": "While the hypothesis linking social proximity to physiological homeostasis is compelling and physiologically significant, it builds upon well-established foundations in psychoneuroendocrinology and social neuroscience rather than introducing a breakthrough technological platform or novel mechanistic discovery. The concept provides a strong framework for digital health or biometric intervention, but lacks the disruptive technical shift required for a top-tier novelty score."
-      },
-      "commercial_potential": {
-        "score": 2,
-        "reason": "The paper describes a behavioral or physiological observation rather than a distinct technological invention, making it difficult to define a proprietary product or licensable IP framework. Without a specific intervention or therapeutic modality, it lacks a clear path to commercial application in clinical or industrial markets."
-      },
-      "market_size": {
-        "score": 3,
-        "reason": "While the biological concept is interesting, it lacks a defined commercial application or clear pathway to monetizing human physiological states, resulting in a highly theoretical market with no current addressable demand."
-      },
-      "trl": {
-        "score": 2,
-        "reason": "The title suggests a fundamental mechanistic or behavioral study in social neuroscience/physiology, which typically indicates basic research at the exploratory stage. There is no evidence of a specific device, diagnostic tool, or applied therapeutic platform moving toward clinical or industrial deployment."
-      },
-      "ip_strength": {
-        "score": 2,
-        "reason": "The title describes a fundamental physiological/behavioral observation rather than a technical invention, making it a scientific theory that is generally unpatentable and difficult to defend as proprietary IP."
-      }
-    },
-    "pi": "Shir Atzil",
-    "pi_full_name": "Shir Atzil",
-    "pi_email": "shir.atzil@mail.huji.ac.il",
-    "pi_affiliation": "Department of Psychology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-09-28",
-    "hts_score": 1,
-    "hts_reason": "The paper title describes a broad physiological phenomenon rather than a specific molecular target, a disease mechanism, or a scalable laboratory assay suitable for high-throughput screening.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42772288",
@@ -8775,46 +8830,5 @@
     "hts_score": 1,
     "hts_reason": "The paper focuses on social sciences (parenting and citizenship) and does not identify a biological molecule, a clinical disease, or a laboratory assay suitable for high-throughput screening.",
     "hts_eval_model": "gemma-4-26b-a4b-it"
-  },
-  {
-    "id": "pubmed_42785577",
-    "title": "Morphine for End-of-Life Dyspnea: Underuse in the Emergency Department Versus Inpatient Care.",
-    "authors": [
-      "Asher Taragin",
-      "Avigail Bar Tikvah",
-      "Meir Frankel"
-    ],
-    "journal": "Journal of pain and symptom management",
-    "date": "2026 Sep 24",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42785577/",
-    "source": "PubMed",
-    "score": 3,
-    "summary": "This study analyzes clinical practice patterns regarding the administration of morphine to patients suffering from end-of-life dyspnea in emergency departments versus inpatient wards. It identifies significant disparities in palliative care delivery, highlighting a potential gap in standardized symptom management protocols.",
-    "opportunity": "There is a commercial opportunity for developing AI-driven clinical decision support software that integrates real-time patient physiological monitoring to standardize palliative care dosing protocols and improve end-of-life symptom management.",
-    "fields": [
-      "Clinical",
-      "Software/AI"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 2,
-        "reason": "This study is an observational analysis of current clinical practices rather than an innovation in pharmacology, diagnostic technology, or therapeutic intervention. It addresses the implementation gap of an existing standard-of-care drug rather than introducing a novel scientific discovery or platform."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "This is a clinical observational study on the usage patterns of an existing generic drug (morphine), offering no new composition of matter, device, or proprietary process to protect via IP."
-      }
-    },
-    "pi": "Meir Frankel",
-    "pi_full_name": "Asher Taragin",
-    "pi_email": "ashert@szmc.org.il.",
-    "pi_affiliation": "Division of Internal Medicine, Shaare Zedek Medical Center, Affiliated with the Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-09-28",
-    "hts_score": 0,
-    "hts_reason": "",
-    "hts_eval_model": ""
   }
 ]
