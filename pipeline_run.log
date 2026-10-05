@@ -1,220 +1,152 @@
 Loading existing papers from Google Sheet...
-  152 existing papers loaded.
-  Verifying HUJI affiliation for 148 papers via PubMed efetch...
-fetch_pubmed: 21 fetched, 20 new
-fetch_europepmc: 20 fetched, 2 new
-fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
+  168 existing papers loaded.
+  Verifying HUJI affiliation for 164 papers via PubMed efetch...
+fetch_pubmed: 47 fetched, 18 new
+fetch_europepmc: 63 fetched, 4 new
+fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=100
 
-22 unique new papers to evaluate.
-Enriching PI contact info for 22 new papers...
+21 unique new papers to evaluate.
+Enriching PI contact info for 21 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/22] The effect of anti-seizure medications on exposure to statins: A syste
+  [1/21] The effect of anti-seizure medications on exposure to statins: A syste
 Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    evaluation failed — skipped
-  [2/22] Collective Ambiguous Loss and Psychological Distress of the Public Dur
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): The read operation timed out
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (novelty): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    score=8 fields=['Neuroscience', 'Software/AI', 'Other']
+    score=18 fields=['Clinical', 'Software/AI']
     hts_score=1
-  [3/22] Falls in the Elderly: Under-appreciated Serious Sequela. A Narrative R
+  [2/21] Site-specific phosphorylation of Ser352 drives aggregation of Tau R4 u
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=22 fields=['Drug Discovery', 'Neuroscience', 'Proteomics', 'Clinical']
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    hts_score=9
+  [3/21] Timing matters: gastrostomy placement and outcomes in patients with he
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (commercial_potential): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (ip_strength): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    score=12 fields=['Medical Device', 'Software/AI', 'Clinical']
-    hts_score=1
-  [4/22] Plasma nucleosome profiling reports on tumor burden and molecular subt
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    evaluation failed — skipped
-  [5/22] Extracorporeal membrane oxygenation for life-threatening measles in ch
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    evaluation failed — skipped
-  [6/22] Accelerated Specialty Entry (ASE): Redesigning the Pathway to Cardiova
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (commercial_potential): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (market_size): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    score=13 fields=['Software/AI', 'Clinical']
-    hts_score=1
-  [7/22] Autoimmune-Mediated Hypertriglyceridemia in a Young Male with Refracto
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (novelty): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    score=5 fields=['Clinical', 'Immunology']
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
     llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (hts): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  [8/22] An Echo Unheard.
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    score=5 fields=['Other']
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    hts_score=1
-  [9/22] Dual roles of host N-glycosylation in enteropathogenic Escherichia col
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (market_size): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    gemini-3.1-flash-lite failed (error): The read operation timed out
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    score=12 fields=['Drug Discovery', 'Vaccines', 'Immunology']
-    hts_score=2
-  [10/22] A Homozygous Frameshift Variant in KHDC4 Is Associated With a Syndromi
-    score=15 fields=['Genomics', 'Diagnostics', 'Drug Discovery', 'Clinical']
-    hts_score=7
-  [11/22] Surfactant-free synthesis of copper-incorporated bioactive glass nanop
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'A valid API key or GCP project is required.', 'status': 'PERMISSION_DENIED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    gemma-4-26b-a4b-it failed (error): The read operation timed out
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'A valid API key or GCP project is required.', 'status': 'PERMISSION_DENIED'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (ip_strength): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    score=17 fields=['Medical Device', 'Materials']
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    score=8 fields=['Clinical', 'Software/AI']
+    hts_score=1
+  [4/21] Plasma nucleosome profiling reports on tumor burden and molecular subt
+    score=28 fields=['Diagnostics', 'Genomics', 'Clinical']
     hts_score=3
-  [12/22] "An urge to take action": Motivational pathways of crisis-activated so
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (ip_strength): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    score=7 fields=['Other', 'Software/AI']
+  [5/21] Extracorporeal membrane oxygenation for life-threatening measles in ch
+    score=17 fields=['Medical Device', 'Clinical']
     hts_score=1
-  [13/22] Discrepancies Between SNOT-22 Questionnaire, Objective Assessments, an
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=12 fields=['Diagnostics', 'Clinical', 'Software/AI']
+  [6/21] Reactions of Ions in Water Involving Halogen-Bonded Complexes.
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    score=10 fields=['Drug Discovery', 'Materials', 'Diagnostics']
+    hts_score=1
+  [7/21] The impact of colchicine treatment on long-term complications of famil
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (hts): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  [14/22] Age-dependent associations between physical activity and cognitive fun
-    score=12 fields=['Neuroscience', 'Software/AI', 'Clinical']
+    score=11 fields=['Software/AI', 'Clinical', 'Immunology']
+    hts_score=1
+  [8/21] Anesthetic management in pregnant women with Fontan circulation: a sin
+    score=6 fields=['Clinical', 'Medical Device', 'Software/AI']
+    hts_score=1
+  [9/21] Beyond Trauma Exposure and Symptoms: Preconception Transdiagnostic Vul
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    gemma-4-26b-a4b-it failed (error): The read operation timed out
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (hts): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  [15/22] Resilience and Quality of Life: The Role of Positive Affect on Healthc
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    score=18 fields=['Neuroscience', 'Diagnostics', 'Clinical', 'Software/AI']
+    hts_score=1
+  [10/21] Early Markers Associated with Crohn's Disease in Emergency Department 
+    score=17 fields=['Diagnostics', 'Immunology', 'Clinical']
+    hts_score=1
+  [11/21] SBRT for Colorectal Cancer Liver Metastasis Is a Safe and Effective Tr
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (novelty): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
+    score=18 fields=['Medical Device', 'Clinical', 'Imaging']
+    hts_score=1
+  [12/21] Tonabersat Blocks Gap Junctions and Alleviates Thermal Pain Behavior i
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (commercial_potential): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
+    score=24 fields=['Drug Discovery', 'Neuroscience', 'Clinical']
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    hts_score=9
+  [13/21] Conventional Culture Conditions Limit the Ability of Bovine Mammary Ep
+    score=26 fields=['FoodTech', 'Synthetic Biology']
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    hts_score=1
+  [14/21] Bacteremia Identified After Emergency Department Discharge in Adults: 
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
     llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (market_size): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    all 3 candidate(s) cooling down — waiting 30s before retry
-    score=3 fields=['Software/AI', 'Clinical', 'Neuroscience']
-    hts_score=1
-  [16/22] Training and Clinical Preparation of Nurses Delivering Cognitive Behav
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    evaluation failed — skipped
-  [17/22] Male With a Thumb Out of Joint.
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (market_size): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    score=4 fields=['Clinical', 'Medical Device']
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (hts): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  [18/22] Repeat biopsy in membranous lupus nephritis: extending the lens beyond
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    evaluation failed — skipped
-  [19/22] The clinical yield of repeated pediatric polysomnographies.
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    score=10 fields=['Clinical', 'Software/AI', 'Diagnostics']
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    hts_score=1
-  [20/22] Letter to the editor: Response to 'A visual reinterpretation of the 20
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (meta): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    evaluation failed — skipped
-  [21/22] Hyperpolarized MRI in Oncology-A Review of Clinical Studies and Evalua
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-  Gemini error (market_size): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (trl): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
-    score=6 fields=['Medical Device', 'Diagnostics', 'Imaging', 'Clinical']
+    score=6 fields=['Diagnostics', 'Software/AI', 'Clinical']
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    hts_score=1
+  [15/21] Salmonella in broiler breeder flocks in Israel during 2008-2018: Preva
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (market_size): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
+    score=7 fields=['AgriTech', 'FoodTech', 'Software/AI']
     hts_score=2
-  [checkpoint: 21/22] writing 167 papers (152 retained + 15 new)...
-Sheet updated: {"status":"ok","rows":168}
-Generated papers_reader.html and papers_data.json with 167 papers and 49 researcher profiles.
-  [22/22] Scalable distributed agreement from LWE: Byzantine agreement, broadcas
+  [checkpoint: 15/21] writing 183 papers (168 retained + 15 new)...
+Sheet updated: {"status":"ok","rows":184}
+  Archive: 736 papers total.
+Generated papers_reader.html and papers_data.json with 183 papers and 49 researcher profiles.
+  [16/21] Hereditary Transthyretin Cardiac Amyloidosis With Severe Left Ventricu
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=9 fields=['Diagnostics', 'Clinical', 'Genomics']
+    hts_score=3
+  [17/21] Psychiatric outcomes in the first two years after the October 7 attack
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=9 fields=['Software/AI', 'Neuroscience', 'Clinical']
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    hts_score=1
+  [18/21] Dementia progression with GLP-1 receptor agonists in people with mild 
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
+  Gemini error (ip_strength): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
+    score=23 fields=['Clinical', 'Neuroscience', 'Drug Discovery']
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
+    hts_score=4
+  [19/21] Training and Clinical Preparation of Nurses Delivering Cognitive Behav
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=19 fields=['Software/AI', 'Clinical', 'Neuroscience']
     gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    score=30 fields=['Software/AI', 'Quantum', 'Other']
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     llama-3.1-8b-instant (groq) failed: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
   Gemini error (hts): 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions
+  [20/21] Functional near-infrared spectroscopy pre-ictal oscillations recorded 
+    score=22 fields=['Medical Device', 'Diagnostics', 'Neuroscience', 'Imaging']
+    hts_score=1
+  [21/21] Dual checkpoint blockade beyond clinical trials: Real-world experience
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    score=22 fields=['Immunology', 'Clinical']
+    hts_score=3
 
-Kept all 152 existing papers, added 16 new.
-  [checkpoint: final] writing 168 papers (152 retained + 16 new)...
-Sheet updated: {"status":"ok","rows":169}
-Generated papers_reader.html and papers_data.json with 168 papers and 49 researcher profiles.
+Kept all 168 existing papers, added 21 new.
+  [checkpoint: final] writing 189 papers (168 retained + 21 new)...
+Sheet updated: {"status":"ok","rows":190}
+  Archive: 742 papers total.
+Generated papers_reader.html and papers_data.json with 189 papers and 49 researcher profiles.
 Done.
