@@ -89,6 +89,7 @@ HUJI_AFFILIATIONS = [
     "Hadassah",
     "Einstein Institute of Mathematics",
     "Silberman Institute",
+    "Smith Faculty of Agriculture",   # Rehovot — often written without "Hebrew University"
 ]
 
 EMAIL_RE = re.compile(r'[\w.+\-]+@[\w\-]+\.[\w.\-]+')
@@ -721,26 +722,40 @@ def _pubmed_pub_date(article):
 
 def fetch_pubmed(max_results=MAX_RESULTS):
     base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
-    since = days_ago(DAYS_BACK)
+    # EDAT (date added to PubMed) rather than PDAT (publication date): PDAT is
+    # often month-only ("2026 Sep" = Sep 1), so a 7-day PDAT window silently
+    # skips most papers. EDAT puts each paper in exactly one window; +3 days of
+    # overlap guards against a missed run (known ids/titles dedupe the repeats).
+    since = days_ago(DAYS_BACK + 3)
     query = (
-        '("Hebrew University"[Affiliation] OR "Hadassah"[Affiliation]) '
-        f'AND ("{since}"[PDAT] : "{today_str()}"[PDAT])'
+        '("Hebrew University"[Affiliation] OR "Hadassah"[Affiliation] '
+        'OR "Smith Faculty of Agriculture"[Affiliation]) '
+        f'AND ("{since}"[EDAT] : "{today_str()}"[EDAT])'
     )
+    # HUJI+Hadassah yield ~70-120 PubMed records a week, so the old per-source
+    # cap of 50 dropped a third of them. Always ask for plenty.
     r = requests.get(f"{base}/esearch.fcgi", params={
         "db": "pubmed", "term": query,
-        "retmax": max_results, "retmode": "json",
+        "retmax": max(max_results, 2000), "retmode": "json",
     }, timeout=20)
     r.raise_for_status()
     ids = r.json().get("esearchresult", {}).get("idlist", [])
     if not ids:
         return []
 
-    # Use efetch (full XML) so we have per-author affiliations for HUJI validation
-    r2 = requests.get(f"{base}/efetch.fcgi", params={
-        "db": "pubmed", "id": ",".join(ids), "rettype": "xml", "retmode": "xml",
-    }, timeout=30)
-    r2.raise_for_status()
-    root = ET.fromstring(r2.text)
+    # Use efetch (full XML) so we have per-author affiliations for HUJI validation.
+    # POST in batches — a few hundred ids overflow a GET URL.
+    xml_parts = []
+    for i in range(0, len(ids), 100):
+        r2 = requests.post(f"{base}/efetch.fcgi", data={
+            "db": "pubmed", "id": ",".join(ids[i:i + 100]), "rettype": "xml", "retmode": "xml",
+        }, timeout=60)
+        r2.raise_for_status()
+        xml_parts.append(ET.fromstring(r2.text))
+        time.sleep(0.4)
+    root = ET.Element("root")
+    for part in xml_parts:
+        root.extend(part.findall(".//PubmedArticle"))
 
     papers = []
     for article in root.findall(".//PubmedArticle"):
@@ -792,14 +807,14 @@ def fetch_pubmed(max_results=MAX_RESULTS):
 
 
 def fetch_europepmc(max_results=MAX_RESULTS):
-    since = days_ago(DAYS_BACK)
+    since = days_ago(DAYS_BACK + 3)   # small overlap; known ids/titles dedupe repeats
     query = (
         '(AFF:"Hebrew University of Jerusalem" OR AFF:"Hadassah") '
         f'AND FIRST_PDATE:[{since} TO {today_str()}]'
     )
     r = requests.get("https://www.ebi.ac.uk/europepmc/webservices/rest/search", params={
         "query": query, "resultType": "core",
-        "pageSize": max_results, "format": "json",
+        "pageSize": min(max(max_results, 500), 1000), "format": "json",
     }, timeout=20)
     r.raise_for_status()
     items = r.json().get("resultList", {}).get("result", [])
@@ -2454,8 +2469,12 @@ def main():
         print("HTS backfill complete.")
         return True
 
-    known_ids = existing_ids(existing)
-    known_titles = {norm_title(p.get("title", "")) for p in existing}
+    # Papers removed by cleanup live on in the archive — don't re-fetch and
+    # re-score them every week.
+    archived = load_archive()
+    known_ids = existing_ids(existing) | {p["id"] for p in archived}
+    known_titles = ({norm_title(p.get("title", "")) for p in existing}
+                    | {norm_title(p.get("title", "")) for p in archived})
     new_papers = []
 
     fetch_errors = 0
