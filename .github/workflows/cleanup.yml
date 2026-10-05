@@ -32,6 +32,6 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add papers_reader.html papers_data.json cleanup_run.log || true
+          git add papers_reader.html papers_data.json papers_archive.json cleanup_run.log || true
           git diff --cached --quiet || git commit -m "chore: bimonthly cleanup $(date -u +%Y-%m-%d)"
           git push

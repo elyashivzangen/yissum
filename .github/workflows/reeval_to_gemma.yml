@@ -77,12 +77,12 @@ jobs:
           # exactly that, since everything not re-added stays at the old
           # checkout's content. See the "chore" incident of 2026-07-05.
           mkdir -p /tmp/gen
-          cp -f papers_reader.html papers_data.json researchers_data.json \
+          cp -f papers_reader.html papers_data.json papers_archive.json researchers_data.json \
                 reeval_papers_run.log reeval_researchers_run.log /tmp/gen/ 2>/dev/null || true
           git fetch origin main
           git reset --hard origin/main
           cp -f /tmp/gen/* . 2>/dev/null || true
-          git add papers_reader.html papers_data.json researchers_data.json \
+          git add papers_reader.html papers_data.json papers_archive.json researchers_data.json \
                    reeval_papers_run.log reeval_researchers_run.log || true
           git diff --cached --quiet || git commit -m "chore: daily reeval to Gemma [$(date -u +%Y-%m-%d)]"
           git push origin HEAD:main

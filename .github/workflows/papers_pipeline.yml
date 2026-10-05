@@ -113,10 +113,10 @@ jobs:
           # exactly that, since everything not re-added stays at the old
           # checkout's content. See the "chore" incident of 2026-07-05.
           mkdir -p /tmp/gen
-          cp -f papers_reader.html papers_data.json index.html pipeline_run.log /tmp/gen/ 2>/dev/null || true
+          cp -f papers_reader.html papers_data.json papers_archive.json index.html pipeline_run.log /tmp/gen/ 2>/dev/null || true
           git fetch origin main
           git reset --hard origin/main
           cp -f /tmp/gen/* . 2>/dev/null || true
-          git add papers_reader.html papers_data.json index.html pipeline_run.log || true
+          git add papers_reader.html papers_data.json papers_archive.json index.html pipeline_run.log || true
           git diff --cached --quiet || git commit -m "chore: update papers [$(date -u +%Y-%m-%d)]"
           git push origin HEAD:main

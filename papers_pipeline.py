@@ -45,6 +45,7 @@ GROQ_API_KEY     = os.environ.get("GROQ_API_KEY", "")  # optional last-resort fa
 GROQ_MODEL       = "llama-3.1-8b-instant"
 OUTPUT_HTML      = Path("papers_reader.html")
 OUTPUT_JSON      = Path("papers_data.json")
+ARCHIVE_JSON     = Path("papers_archive.json")   # append-only: every paper ever seen, never shown in the monitor
 RESEARCHERS_JSON = Path("researchers_data.json")  # produced by researcher_pipeline.py
 MAX_RESULTS      = int(os.environ.get("MAX_RESULTS", "50"))    # per source
 
@@ -2027,7 +2028,30 @@ def build_field_chips():
         for f in FIELD_TAGS
     )
 
+def update_archive(papers):
+    """Merge `papers` into papers_archive.json (keyed by id; newest copy wins).
+
+    The archive only ever grows — cleanup, dedup and the sheet's replace_all
+    can drop papers from the live dataset, but never from here. The monitor
+    does not read this file.
+    """
+    archive = {}
+    if ARCHIVE_JSON.exists():
+        try:
+            archive = {p["id"]: p for p in json.loads(ARCHIVE_JSON.read_text(encoding="utf-8")) if p.get("id")}
+        except Exception as e:
+            print(f"  WARNING: could not read {ARCHIVE_JSON} ({e}) — leaving it untouched.")
+            return
+    for p in papers:
+        if p.get("id"):
+            archive[p["id"]] = p
+    ordered = sorted(archive.values(), key=lambda p: p.get("added_date", ""), reverse=True)
+    ARCHIVE_JSON.write_text(json.dumps(ordered, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"  Archive: {len(ordered)} papers total.")
+
+
 def generate_html(papers, researchers=None):
+    update_archive(papers)
     if researchers is None:
         # Weekly pipeline calls generate_html() without knowing about researcher
         # profiles — carry forward whatever researcher_pipeline.py last produced

@@ -2,6 +2,7 @@
 """
 Bimonthly cleanup: remove low-scoring papers (score below LOW_SCORE_THRESHOLD).
 All other papers are kept indefinitely, regardless of age.
+Removed papers are first saved to papers_archive.json (never shown in the monitor).
 
 Reuses papers_pipeline's sheet I/O so the schema (all SHEET_COLUMNS, including
 pi_affiliation/eval_model) and the Apps Script payload shape stay in sync — an
@@ -35,6 +36,7 @@ def main():
         print("Nothing to clean up.")
         return
 
+    pp.update_archive(papers)   # keep the removed papers in papers_archive.json before they leave the sheet
     pp.save_to_sheet(kept)
     pp.generate_html(kept)
     print("Done.")
