@@ -1,5 +1,846 @@
 [
  {
+  "id": "pubmed_42636989",
+  "title": "The clinical yield of repeated pediatric polysomnographies.",
+  "authors": [
+   "Naftali Stoch",
+   "Lee Barcesat-Stoch",
+   "Alex Gileles-Hillel",
+   "Joel Reiter"
+  ],
+  "journal": "Respiratory medicine",
+  "date": "2026-10",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42636989/",
+  "source": "PubMed",
+  "score": 10,
+  "summary": "This study evaluates the diagnostic utility of performing multiple overnight sleep studies on pediatric patients. It focuses on whether repeated polysomnography provides significant additional clinical insights compared to a single baseline evaluation.",
+  "opportunity": "The findings can inform the development of AI-driven diagnostic triage tools or decision-support software to optimize healthcare resource allocation by identifying which pediatric patients truly benefit from follow-up sleep monitoring.",
+  "fields": [
+   "Clinical",
+   "Software/AI",
+   "Diagnostics"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 2,
+    "reason": "This study focuses on evaluating the longitudinal utility of a standard diagnostic procedure rather than introducing a novel technology, therapeutic mechanism, or groundbreaking scientific paradigm. It represents incremental clinical audit research that refines existing practice guidelines rather than disrupting the field."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "This study addresses clinical procedural optimization rather than a new technology, product, or therapeutic intervention. It lacks the intellectual property potential or novel platform utility required to drive commercial value."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "The paper focuses on a specific clinical utility question regarding diagnostic efficiency in a niche pediatric sub-segment, which represents a very narrow clinical application rather than a broad market opportunity."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The title indicates a retrospective clinical study or observational analysis rather than the development of a new technology or device. It focuses on evaluating existing clinical workflows and diagnostic yields rather than advancing a product toward commercialization."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "The paper appears to be a clinical observation or retrospective study regarding diagnostic procedures rather than a novel technology or product. Clinical data and procedural observations are generally not patentable and offer virtually no IP defensibility."
+   }
+  },
+  "pi": "Joel Reiter",
+  "pi_full_name": "Joel Reiter",
+  "pi_email": "rjoely@hadassah.org.il.",
+  "pi_affiliation": "Faculty of Medicine, Hebrew University, Jerusalem, Israel; Pediatric Pulmonary and Sleep Unit, Hadassah Medical Center, Jerusalem, Israel. Electronic address: rjoely@hadassah.org.il.",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 1,
+  "hts_reason": "The paper focuses on clinical diagnostic yield and sleep studies (polysomnographies) rather than identifying a specific molecular target or describing a biochemical/cellular assay suitable for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "epmc_42827510",
+  "title": "Scalable distributed agreement from LWE: Byzantine agreement, broadcast, and leader election.",
+  "authors": [
+   "Rex Fernando",
+   "Yuval Gelles",
+   "Ilan Komargodski"
+  ],
+  "journal": "",
+  "date": "2026-10-01",
+  "url": "https://europepmc.org/article/MED/42827510",
+  "source": "Europe PMC",
+  "score": 30,
+  "summary": "This paper proposes a new method for achieving consensus in large networks of computers using Learning With Errors (LWE) cryptography. It allows many different nodes to agree on information efficiently even if some of those nodes are malicious or failing.",
+  "opportunity": "The research provides a foundation for highly scalable, post-quantum secure communication protocols essential for decentralized data infrastructure and secure multi-party computation.",
+  "fields": [
+   "Software/AI",
+   "Quantum",
+   "Other"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 8,
+    "reason": "The paper introduces a significant paradigm shift by replacing standard cryptographic assumptions with Learning With Errors (LWE) to achieve sublinear communication complexity, offering a potentially quantum-resistant path to scalability in distributed consensus. It directly improves upon the state-of-the-art by bridging the gap between computational efficiency and post-quantum security assumptions."
+   },
+   "commercial_potential": {
+    "score": 7,
+    "reason": "The work addresses a critical bottleneck in scalable blockchain and decentralized infrastructure by leveraging LWE-based cryptography for efficient consensus. While it offers a highly licensable foundational layer for next-generation distributed systems, its commercial value is currently tethered to the broader adoption of post-quantum cryptographic standards in large-scale networks."
+   },
+   "market_size": {
+    "score": 9,
+    "reason": "Consensus and Byzantine agreement protocols are foundational infrastructure for the entire blockchain and distributed systems market, representing a multi-billion dollar addressable demand. By solving for sublinear communication complexity, this research directly addresses the critical scaling bottleneck that currently limits the global adoption of decentralized financial and enterprise-grade distributed ledgers."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The paper focuses on fundamental cryptographic theory and complexity bounds (LWE-based protocols) rather than a practical implementation or system architecture. It represents early-stage mathematical research that provides the building blocks for future scalable distributed systems but lacks the engineering maturity for immediate commercial application."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "This is a fundamental theoretical contribution in cryptographic protocol design, which typically lacks the specific embodiment or novel physical/methodological utility required for robust, platform-enabling patent protection. While highly impactful for the field of distributed systems, it constitutes mathematical methodology and algorithmic theory that is broadly challenging to ring-fence as proprietary intellectual property."
+   }
+  },
+  "pi": "Ilan Komargodski",
+  "pi_full_name": "Ilan Komargodski",
+  "pi_email": "",
+  "pi_affiliation": "School of Computer Science and Engineering, The Hebrew University of Jerusalem, Givat Ram, Jerusalem, Israel.; NTT Research, Sunnyvale, CA USA.",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 0,
+  "hts_reason": "",
+  "hts_eval_model": ""
+ },
+ {
+  "id": "pubmed_42810937",
+  "title": "Surfactant-free synthesis of copper-incorporated bioactive glass nanoparticles for controlled ion release, antibacterial activity, and apatite-forming ability.",
+  "authors": [
+   "Praveen Rowlo",
+   "Ronit Vogt Sionov",
+   "Elisheva Goldman",
+   "Ofra Benny",
+   "Amnon Sharir"
+  ],
+  "journal": "Dental materials : official publication of the Academy of Dental Materials",
+  "date": "2026-09-29",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42810937/",
+  "source": "PubMed",
+  "score": 17,
+  "summary": "Researchers have developed a method to create copper-incorporated bioactive glass nanoparticles without the use of chemical surfactants, which simplifies manufacturing and reduces potential toxicity. These particles demonstrate an ability to release therapeutic ions, kill bacteria, and promote bone-like mineral formation, making them highly effective for advanced tissue repair applications.",
+  "opportunity": "This synthesis method provides a scalable, cost-effective platform for developing next-generation antimicrobial bone graft substitutes and dental materials that actively promote regeneration while preventing post-operative infection.",
+  "fields": [
+   "Medical Device",
+   "Materials"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 5,
+    "reason": "The research applies a known method (surfactant-free synthesis) to existing materials (bioactive glass and copper) to optimize known properties, representing incremental improvement rather than a fundamental shift in material science or a new class of technology."
+   },
+   "commercial_potential": {
+    "score": 6,
+    "reason": "Bioactive glass nanoparticles are well-established materials in regenerative medicine, offering clear paths to dental or orthopedic applications, but the 'surfactant-free' synthesis is an incremental process improvement rather than a disruptive platform technology."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "While bioactive glass is a known material class, this paper focuses on a specific synthesis refinement (surfactant-free) for a niche dental or orthopedic application with limited evidence of a transformative, large-scale market advantage. The addressable demand is constrained to specialized clinical sub-segments, lacking the platform-wide reach required for a higher valuation."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "This study represents fundamental materials science research focused on synthesis methodology and in-vitro characterization, lacking the preclinical, regulatory, or scaled manufacturing data required for commercial translation."
+   }
+  },
+  "pi": "Amnon Sharir",
+  "pi_full_name": "Amnon Sharir",
+  "pi_email": "amnon.sharir@mail.huji.ac.il.",
+  "pi_affiliation": "The Institute of Biomedical and Oral Research, Faculty of Dental Medicine, The Hebrew University, Jerusalem, Jerusalem, 91120, Israel. Electronic address: amnon.sharir@mail.huji.ac.il.",
+  "eval_model": "gemini-3.1-flash-lite",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 3,
+  "hts_reason": "The paper focuses on material science (bioactive glass) rather than a druggable molecular target, and it lacks a specific disease link or a high-throughput assay suitable for pharmaceutical screening.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42814004",
+  "title": "A Homozygous Frameshift Variant in KHDC4 Is Associated With a Syndromic Inherited Retinal Disease in Humans.",
+  "authors": [
+   "Asodu Sandeep Sarma",
+   "Neta Barnoy",
+   "Prakadeeswari Gopalakrishnan",
+   "Keren Dichter",
+   "Rotem Mizrachi",
+   "Manar Salameh",
+   "Eyal Banin",
+   "Dror Sharon",
+   "Adi Inbal",
+   "Samer Khateb"
+  ],
+  "journal": "Clinical genetics",
+  "date": "2026-09-30",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42814004/",
+  "source": "PubMed",
+  "score": 15,
+  "summary": "Researchers have identified a specific genetic mutation in the KHDC4 gene that causes a rare inherited form of vision loss. This discovery links a specific protein dysfunction to a clinical retinal disease syndrome.",
+  "opportunity": "The identification of KHDC4 as a causal driver provides a specific molecular target for gene therapies or precision diagnostics for rare retinal diseases.",
+  "fields": [
+   "Genomics",
+   "Diagnostics",
+   "Drug Discovery",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 4,
+    "reason": "The paper describes a classic Mendelian genetics discovery, identifying a specific causative mutation for a known disease phenotype. While scientifically valuable for clinical diagnostics, it follows a standard gene-discovery paradigm rather than introducing a novel platform or a groundbreaking biological mechanism."
+   },
+   "commercial_potential": {
+    "score": 4,
+    "reason": "The paper identifies a genetic association for a rare disease, which provides a foundation for diagnostic development or target discovery, but lacks a defined therapeutic modality or platform application."
+   },
+   "market_size": {
+    "score": 2,
+    "reason": "The research identifies a specific genetic variant for a rare, syndromic inherited retinal disease, which implies a very small, niche patient population with limited commercial scale."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The paper describes basic genetic discovery and characterization of a disease-causing variant, which represents early-stage foundational research. It identifies a biological mechanism but lacks any therapeutic intervention or preclinical validation required for higher TRLs."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The paper describes a fundamental genetic association discovery, which is often difficult to patent and lacks a clear therapeutic mechanism or platform technology. While it identifies a novel disease driver, the IP strength is limited to the observation of a variant rather than a proprietary molecule, tool, or method."
+   }
+  },
+  "pi": "Samer Khateb",
+  "pi_full_name": "Samer Khateb",
+  "pi_email": "",
+  "pi_affiliation": "Division of Ophthalmology, Hadassah Medical Centre, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 7,
+  "hts_reason": "The paper identifies a specific target (KHDC4) and links it to a specific disease (syndromic inherited retinal disease), but the title does not describe a specific functional assay available for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42815755",
+  "title": "Accelerated Specialty Entry (ASE): Redesigning the Pathway to Cardiovascular Specialty Appointments.",
+  "authors": [
+   "Amandeep Loi",
+   "Peter J Fitzgerald",
+   "Robert Schanzer",
+   "Dinesh Singal",
+   "Chandreshwar Shahi",
+   "Grace Cabanillas",
+   "Rizwana Khan",
+   "Mildred Cruz",
+   "Barry T Katzen",
+   "Jack A Stroh"
+  ],
+  "journal": "The American journal of medicine",
+  "date": "2026-09-30",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42815755/",
+  "source": "PubMed",
+  "score": 13,
+  "summary": "This research focuses on optimizing the administrative and clinical workflows for cardiovascular specialist referrals to reduce patient wait times. It proposes a redesigned pathway model that streamlines the transition from primary care to specialty cardiac consultations.",
+  "opportunity": "The model offers a scalable SaaS-based clinical operations tool to improve healthcare throughput and patient outcomes, presenting an acquisition target for electronic health record (EHR) platforms or health systems management software.",
+  "fields": [
+   "Software/AI",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 2,
+    "reason": "The paper focuses on operational workflow and appointment scheduling in cardiology, which represents an incremental process optimization rather than a groundbreaking scientific or deep-tech innovation. It lacks the technical novelty, intellectual property potential, or fundamental discovery required to reach higher scores on the novelty scale."
+   },
+   "trl": {
+    "score": 9,
+    "reason": "This intervention represents a process innovation and operational workflow redesign that is already deployed within clinical settings to optimize patient access, moving well beyond experimental lab-stage research."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The paper describes a clinical workflow redesign and process improvement initiative rather than a novel, patentable technological invention or proprietary composition of matter. Service-based delivery models and administrative workflow interventions generally lack the novelty and technical character required for strong, defensible intellectual property."
+   }
+  },
+  "pi": "Jack A Stroh",
+  "pi_full_name": "Jack A Stroh",
+  "pi_email": "",
+  "pi_affiliation": "Department of Cardiology, Hadassah Medical Center, Jerusalem, Israel.",
+  "eval_model": "gemini-3.1-flash-lite",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 1,
+  "hts_reason": "This paper focuses on clinical administrative processes and patient access pathways rather than biological targets, diseases, or molecular assays.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42826857",
+  "title": "Falls in the Elderly: Under-appreciated Serious Sequela. A Narrative Review.",
+  "authors": [
+   "Ami Schattner"
+  ],
+  "journal": "The American journal of medicine",
+  "date": "2026-10-02",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42826857/",
+  "source": "PubMed",
+  "score": 12,
+  "summary": "This paper examines the severe, often overlooked medical and psychological complications that follow falls in elderly populations. It emphasizes the need for better clinical recognition and integrated care to prevent long-term disability.",
+  "opportunity": "Development of predictive AI analytics for fall risk and smart monitoring systems to reduce post-fall sequelae in geriatric care.",
+  "fields": [
+   "Medical Device",
+   "Software/AI",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 1,
+    "reason": "As a narrative review on a well-established clinical topic, the paper synthesizes existing knowledge rather than introducing new scientific discoveries, methodologies, or proprietary technologies."
+   },
+   "market_size": {
+    "score": 10,
+    "reason": "Falls among the elderly represent a massive, globally pervasive healthcare crisis with immense addressable demand, as aging populations drive exponential growth in the need for preventative, diagnostic, and rehabilitative interventions."
+   },
+   "trl": {
+    "score": 1,
+    "reason": "This paper is a narrative review summarizing existing clinical knowledge rather than a primary research study, novel technology development, or experimental validation of a new intervention. It contributes zero technical readiness or proprietary innovation toward a specific commercial application."
+   }
+  },
+  "pi": "Ami Schattner",
+  "pi_full_name": "Ami Schattner",
+  "pi_email": "amischatt@gmail.com.",
+  "pi_affiliation": "The Faculty of Medicine, Hebrew University and Hadassah School of Medicine, Jerusalem, Israel. Electronic address: amischatt@gmail.com.",
+  "eval_model": "gemini-3.1-flash-lite",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 1,
+  "hts_reason": "This is a narrative review paper that discusses clinical outcomes of falls rather than identifying a molecular target, a specific disease mechanism, or a biochemical assay.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42814570",
+  "title": "Dual roles of host N-glycosylation in enteropathogenic Escherichia coli infection.",
+  "authors": [
+   "Klil Cohen Yaron",
+   "Yaakov Socol",
+   "Noam Yedidi",
+   "Michal Bejerano-Sagie",
+   "Miriam Ravins",
+   "Shira Fine-Leebhoff",
+   "Liron Birimberg-Schwartz",
+   "Myriam Grunewald",
+   "Karthik Hullahalli",
+   "Afonso de Sousa Vieira",
+   "Matthew K Waldor",
+   "Sina Bartfeld",
+   "Sigal Ben-Yehuda",
+   "Ilan Rosenshine"
+  ],
+  "journal": "Cell reports",
+  "date": "2026-09-29",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42814570/",
+  "source": "PubMed",
+  "score": 12,
+  "summary": "This research explores how human cell surface sugar modifications, known as N-glycosylation, influence the ability of enteropathogenic E. coli to infect host tissues. By mapping these interactions, the study identifies specific biological mechanisms that the bacteria exploit to colonize the gut.",
+  "opportunity": "The findings provide novel targets for developing non-antibiotic therapeutics, such as anti-adhesion inhibitors or targeted mucosal vaccines, to treat severe E. coli-related gastrointestinal infections.",
+  "fields": [
+   "Drug Discovery",
+   "Vaccines",
+   "Immunology"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 4,
+    "reason": "While characterizing host-pathogen interactions is important for basic biology, this research explores standard mechanisms of bacterial adhesion and glycosylation that are well-documented in existing literature, offering limited platform-enabling novelty for industrial or clinical application."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "This study focuses on fundamental host-pathogen molecular mechanisms, which currently lacks a clear therapeutic target or proprietary diagnostic application. Translating these basic biological findings into a clinical or industrial product would require extensive downstream discovery and target validation."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This study focuses on fundamental mechanistic biology concerning host-pathogen interactions, which is at the stage of basic scientific discovery rather than applied technology development. It lacks the therapeutic, diagnostic, or industrial proof-of-concept required to move toward commercialization or clinical application."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The paper appears to be fundamental basic science focused on mechanistic biological processes (host-pathogen interactions) rather than a specific therapeutic molecule or platform technology. While it provides mechanistic insight, basic biological observations regarding N-glycosylation are difficult to patent and offer limited direct IP defensibility without a clear application to a drug target or diagnostic tool."
+   }
+  },
+  "pi": "Ilan Rosenshine",
+  "pi_full_name": "Ilan Rosenshine",
+  "pi_email": "ilanr@ekmd.huji.ac.il.",
+  "pi_affiliation": "Department of Microbiology and Molecular Genetics, Institute for Medical Research Israel-Canada, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel. Electronic address: ilanr@ekmd.huji.ac.il.",
+  "eval_model": "gemini-3.1-flash-lite",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 2,
+  "hts_reason": "The title suggests a descriptive study of biological processes (N-glycosylation) rather than the identification of a single druggable target, a specific molecule, or a defined assay platform.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42803799",
+  "title": "Discrepancies Between SNOT-22 Questionnaire, Objective Assessments, and Histopathologic Findings in Chronic Rhinosinusitis With Nasal Polyps.",
+  "authors": [
+   "Elchanan Zloczower",
+   "Eitan Shavit",
+   "Nir Tsur",
+   "Raviv Allon",
+   "Yuval Cohen",
+   "Naama Ronel",
+   "Yael Shapira-Galitz",
+   "Meir Warman"
+  ],
+  "journal": "American journal of rhinology & allergy",
+  "date": "2026-09-28",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42803799/",
+  "source": "PubMed",
+  "score": 12,
+  "summary": "The study investigates the disconnect between patient-reported symptoms using the SNOT-22 scale and actual physical or pathological findings in patients with chronic rhinosinusitis. It highlights that subjective patient surveys do not always align with objective medical imaging or tissue analysis.",
+  "opportunity": "There is a commercial opportunity to develop advanced digital biomarkers or objective AI-driven diagnostic tools that better correlate physiological pathology with patient quality-of-life metrics.",
+  "fields": [
+   "Diagnostics",
+   "Clinical",
+   "Software/AI"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The study appears to be a clinical validation or correlation study rather than the development of a new technology or method. It evaluates the consistency of existing diagnostic tools, which is incremental clinical research rather than groundbreaking scientific innovation."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "This is a clinical validation study focused on diagnostic discrepancy rather than the development of a novel therapeutic, device, or platform technology. While it may inform clinical guidelines, it lacks a direct path to a proprietary product or licensable technology."
+   },
+   "market_size": {
+    "score": 4,
+    "reason": "The paper focuses on diagnostic discrepancy validation rather than a scalable therapeutic or platform technology, targeting a niche clinical measurement gap rather than a broad market opportunity. While Chronic Rhinosinusitis is a common condition, the research is academic/observational in nature and does not describe a high-value product or market-enabling intervention."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This is a clinical observation study comparing existing diagnostic tools and pathological benchmarks rather than the development of a new technology or device. It contributes to clinical knowledge but does not represent a new technological advancement approaching commercialization."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "The paper describes a clinical correlation study comparing diagnostic tools and histopathology, which is observational in nature and does not involve the creation of a novel composition, device, or proprietary methodology capable of patent protection."
+   }
+  },
+  "pi": "Meir Warman",
+  "pi_full_name": "Meir Warman",
+  "pi_email": "",
+  "pi_affiliation": "Department of Otolaryngology - Head & Neck Surgery, Kaplan Medical Center, Rehovot, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 0,
+  "hts_reason": "",
+  "hts_eval_model": ""
+ },
+ {
+  "id": "pubmed_42803718",
+  "title": "Age-dependent associations between physical activity and cognitive function in adults aged 70-100: A cross-sectional and longitudinal study.",
+  "authors": [
+   "Irit Stessman Lande",
+   "Aliza Rozenberg",
+   "Jochanan Stessman",
+   "Jeremy M Jacobs"
+  ],
+  "journal": "Journal of Alzheimer's disease : JAD",
+  "date": "2026-09-28",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42803718/",
+  "source": "PubMed",
+  "score": 12,
+  "summary": "This study investigates how different levels of physical activity impact cognitive health in elderly populations aged 70 to 100. It uses both cross-sectional and longitudinal data to determine how the relationship between movement and brain function changes as people age.",
+  "opportunity": "The data could inform the development of personalized digital therapeutics or preventative wellness platforms specifically targeted at geriatric cognitive preservation.",
+  "fields": [
+   "Neuroscience",
+   "Software/AI",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The study explores well-established epidemiological correlations between physical activity and cognitive health within a known demographic. It represents incremental clinical observation rather than a novel scientific discovery or a breakthrough technical innovation."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "This is an observational epidemiological study that identifies correlations rather than developing a novel therapeutic, diagnostic, or medical device. While the findings support lifestyle interventions, they do not constitute a proprietary or licensable technology."
+   },
+   "market_size": {
+    "score": 4,
+    "reason": "The study is fundamental academic research on lifestyle correlations rather than a commercial product or therapeutic intervention. While the aging population is a massive demographic, the findings do not represent a specific, scalable, or addressable market opportunity in a deep-tech or life-science investment context."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This is an observational epidemiological study identifying associations rather than a technical intervention or medical device. It represents fundamental academic knowledge that informs potential clinical guidelines but does not constitute a prototype or technology ready for commercial deployment."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "The study describes observational epidemiological associations between lifestyle factors and cognitive outcomes, which are natural phenomena and cannot be patented. There is no mention of a novel device, molecule, or proprietary algorithm that would provide technical defensibility."
+   }
+  },
+  "pi": "Jeremy M Jacobs",
+  "pi_full_name": "Jeremy M Jacobs",
+  "pi_email": "",
+  "pi_affiliation": "The Jerusalem Institute of Aging Research, The Department of Geriatric Rehabilitation, Faculty of Medicine, Hebrew University of Jerusalem, and Mt. Scopus, Hadassah Medical Center, Jerusalem, Israel.; Department of Geriatric Rehabilitation and the Center for Palliative Care, Hadassah Medical Center, Mt Scopus, Jerusalem, Israel.",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 0,
+  "hts_reason": "",
+  "hts_eval_model": ""
+ },
+ {
+  "id": "pubmed_42828449",
+  "title": "Collective Ambiguous Loss and Psychological Distress of the Public During War-Related Hostage Crisis: A Three-Wave Longitudinal Study Over 18 Months.",
+  "authors": [
+   "Einat Yehene",
+   "Shay Ohayon",
+   "Hagai Levine"
+  ],
+  "journal": "Stress and health : journal of the International Society for the Investigation of Stress",
+  "date": "2026-10",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42828449/",
+  "source": "PubMed",
+  "score": 8,
+  "summary": "This longitudinal study examines the psychological impact and collective ambiguous loss experienced by the public during a protracted hostage crisis. It tracks emotional distress levels and mental health trends over an 18-month period to understand societal trauma.",
+  "opportunity": "The findings could inform the development of digital mental health platforms or specialized therapeutic interventions tailored for populations experiencing chronic, ambiguous trauma.",
+  "fields": [
+   "Neuroscience",
+   "Software/AI",
+   "Other"
+  ],
+  "score_breakdown": {
+   "commercial_potential": {
+    "score": 2,
+    "reason": "The study appears to be a descriptive longitudinal psychological research paper focused on public health sociology rather than the development of a proprietary therapeutic intervention, diagnostic tool, or scalable digital health platform."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "While psychological distress during crises is a significant societal issue, this research focuses on academic longitudinal data rather than a scalable, high-growth commercial solution or platform technology. The addressable market for diagnostic or therapeutic tools based on this specific study remains niche and lacks clear pathways for rapid, high-margin commercialization."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This is a longitudinal observational study in social sciences/psychology focused on descriptive human behavior rather than the development of a technical intervention or medical device. It lacks a tangible technology, prototype, or therapeutic platform that can progress through a commercialization pipeline."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This is a social science research study focusing on psychological phenomena and public sentiment, which lacks patentable technical innovation, proprietary methodology, or industrial intellectual property."
+   }
+  },
+  "pi": "Hagai Levine",
+  "pi_full_name": "Hagai Levine",
+  "pi_email": "",
+  "pi_affiliation": "Braun School of Public Health and Community Medicine, Hadassah Medical Center, The Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 1,
+  "hts_reason": "The study is a psychological longitudinal survey focusing on collective loss and distress; it lacks a biological molecule/target, a biochemical disease link, and a screening assay.",
+  "hts_eval_model": "gemma-4-31b-it"
+ },
+ {
+  "id": "pubmed_42804253",
+  "title": "\"An urge to take action\": Motivational pathways of crisis-activated social entrepreneurs.",
+  "authors": [
+   "Noga Pitowsky-Nave",
+   "Hillel Schmid",
+   "Nir Yemini"
+  ],
+  "journal": "The American journal of orthopsychiatry",
+  "date": "2026-09-28",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42804253/",
+  "source": "PubMed",
+  "score": 7,
+  "summary": "This paper explores the psychological and motivational drivers that lead individuals to start social enterprises during periods of crisis. It analyzes the specific pathways and triggers that transform an urgent need for action into the creation of a mission-driven venture.",
+  "opportunity": "The insights could be integrated into entrepreneurial training software or venture studio frameworks to identify and cultivate high-resilience founders during market disruptions.",
+  "fields": [
+   "Other",
+   "Software/AI"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The research focuses on motivational pathways in social entrepreneurship, a well-studied area of behavioral science and management that lacks the technical breakthroughs or protectable IP required for a high novelty score in deep-tech."
+   },
+   "commercial_potential": {
+    "score": 1,
+    "reason": "This is a qualitative social science paper on entrepreneurship motivation, offering no protectable intellectual property, clinical utility, or scalable technical product."
+   },
+   "market_size": {
+    "score": 2,
+    "reason": "The paper focuses on behavioral psychology and motivational pathways of social entrepreneurs, which is academic research rather than a scalable deep-tech or life-science product with a defined addressable market."
+   },
+   "trl": {
+    "score": 1,
+    "reason": "The paper is a qualitative social science study on motivational pathways, which does not involve a developable technology, prototype, or product for commercialization."
+   }
+  },
+  "pi": "Nir Yemini",
+  "pi_full_name": "Nir Yemini",
+  "pi_email": "",
+  "pi_affiliation": "Paul Baerwald School of Social Work and Social Welfare, Hebrew University of Jerusalem.",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 1,
+  "hts_reason": "This paper is a study in social psychology/entrepreneurship and contains no molecular targets, disease links, or biochemical assays suitable for high-throughput screening.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "epmc_42629961",
+  "title": "Hyperpolarized MRI in Oncology-A Review of Clinical Studies and Evaluation of Preclinical Liver Studies.",
+  "authors": [
+   "Naama Lev-Cohain",
+   "Jacob Sosna",
+   "Rachel Katz-Brull"
+  ],
+  "journal": "",
+  "date": "2026-10-01",
+  "url": "https://europepmc.org/article/MED/42629961",
+  "source": "Europe PMC",
+  "score": 6,
+  "summary": "This review synthesizes over a decade of research on hyperpolarized MRI, a non-ionizing technology that allows for real-time metabolic imaging. It specifically evaluates the technology's ability to differentiate metabolic substrates from their products, with a focus on improving liver cancer detection and characterization.",
+  "opportunity": "The advancement of hyperpolarized MRI presents a high-value market for next-generation diagnostic imaging devices and specialized metabolic contrast agents for precision oncology.",
+  "fields": [
+   "Medical Device",
+   "Diagnostics",
+   "Imaging",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 2,
+    "reason": "The paper is a literature review and evaluation of existing studies rather than an original research contribution. It synthesizes existing knowledge and terminology rather than introducing a new scientific discovery, methodology, or technology."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "This is a literature review rather than a primary research paper describing a novel invention, device, or proprietary molecule. While it identifies a high-potential clinical field, the paper itself does not present new, licensable intellectual property or a specific commercial product."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This is a review paper, not a primary research paper or a technical disclosure of a new invention. It synthesizes existing literature and provides terminology rather than presenting new, patentable intellectual property or proprietary technology."
+   }
+  },
+  "pi": "Rachel Katz-Brull",
+  "pi_full_name": "Rachel Katz-Brull",
+  "pi_email": "",
+  "pi_affiliation": "Department of Radiology, Hadassah Medical Organization and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.; The Wohl Institute for Translational Medicine, Hadassah Medical Organization, Jerusalem, Israel.",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 2,
+  "hts_reason": "This is a review article that describes a broad imaging technology rather than identifying a specific molecular target for drug discovery. While it links metabolic imaging to hepatocellular carcinoma, it lacks a specific druggable target and a high-throughput assay suitable for screening.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42814931",
+  "title": "An Echo Unheard.",
+  "authors": [
+   "Roni Eichel",
+   "Gabriel S Breuer",
+   "Eyal Ben Dori",
+   "Merav Weil",
+   "Eli Ben-Chetrit"
+  ],
+  "journal": "The New England journal of medicine",
+  "date": "2026-10-01",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42814931/",
+  "source": "PubMed",
+  "score": 5,
+  "summary": "No information is available to evaluate this paper as the abstract is missing. I cannot provide a summary or assessment without the content of the research.",
+  "opportunity": "Unable to identify a commercial opportunity due to missing data.",
+  "fields": [
+   "Other"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 1,
+    "reason": "Without an abstract or provided content, the research is non-evaluable and offers no evidence of scientific novelty or technical advancement."
+   },
+   "commercial_potential": {
+    "score": 1,
+    "reason": "The provided information lacks any technical disclosure, methodology, or identifiable application, rendering it impossible to assess as a viable technology or commercial asset."
+   },
+   "market_size": {
+    "score": 1,
+    "reason": "The title 'An Echo Unheard' provides no information regarding a technology, product, or application, making it impossible to identify a target market or addressable demand."
+   },
+   "trl": {
+    "score": 1,
+    "reason": "The provided title lacks an abstract or any discernible technical context, rendering the technology non-existent and incapable of assessment for real-world application."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "Without an abstract, technical disclosure, or specific methodology provided, there is no evidence of a novel, non-obvious, or patentable intellectual property position. The title alone lacks the necessary technical specificity to establish any degree of defensibility or competitive moat."
+   }
+  },
+  "pi": "Eli Ben-Chetrit",
+  "pi_full_name": "Eli Ben-Chetrit",
+  "pi_email": "",
+  "pi_affiliation": "Infectious Diseases Unit, Shaare Zedek Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "eval_model": "gemini-3.1-flash-lite",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 1,
+  "hts_reason": "The paper provides neither a specific molecule/target, a disease link, nor a testable assay; the title is purely metaphorical and lacks scientific substance.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42815576",
+  "title": "Autoimmune-Mediated Hypertriglyceridemia in a Young Male with Refractory Immune Thrombocytopenia: A Case Report.",
+  "authors": [
+   "Batya Green",
+   "Eran Leitersdorf",
+   "Shoshana Shpitzen",
+   "Rayan Alyan",
+   "Daniel Schurr",
+   "Aviv Talmon",
+   "Yuval Tal",
+   "Merielle Kaplan",
+   "Ram Weiss",
+   "Ronen Durst"
+  ],
+  "journal": "Journal of lipid research",
+  "date": "2026-09-30",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42815576/",
+  "source": "PubMed",
+  "score": 5,
+  "summary": "This report details a clinical case of a young patient suffering from a rare, concurrent presentation of refractory immune thrombocytopenia and severe hypertriglyceridemia. It highlights a potential autoimmune mechanism linking lipid metabolism dysregulation with hematological failure.",
+  "opportunity": "The case suggests a potential diagnostic biomarker opportunity for identifying autoimmune-driven metabolic comorbidities in refractory hematological patients.",
+  "fields": [
+   "Clinical",
+   "Immunology"
+  ],
+  "score_breakdown": {
+   "commercial_potential": {
+    "score": 1,
+    "reason": "This is a single-patient case report describing an anecdotal clinical observation, which lacks the translational framework, proprietary technology, or scalable therapeutic hypothesis required for commercial development."
+   },
+   "market_size": {
+    "score": 2,
+    "reason": "This is a single-patient case report describing a rare, anecdotal clinical presentation rather than a scalable therapeutic or diagnostic platform. The addressable market is extremely small and lacks the commercial potential typical of high-growth life-science investments."
+   },
+   "trl": {
+    "score": 1,
+    "reason": "This is a clinical case report describing an anecdotal observation of a single patient, which provides no technological innovation, platform development, or scalable application."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This is a single-patient case report describing a clinical observation, which inherently lacks the novel, non-obvious, and enabling technical invention required for patentability or proprietary defensibility."
+   }
+  },
+  "pi": "Ronen Durst",
+  "pi_full_name": "Ronen Durst",
+  "pi_email": "",
+  "pi_affiliation": "Hadassah Medical Center, Jerusalem, Israel.",
+  "eval_model": "gemini-3.1-flash-lite",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 0,
+  "hts_reason": "",
+  "hts_eval_model": ""
+ },
+ {
+  "id": "pubmed_42743665",
+  "title": "Male With a Thumb Out of Joint.",
+  "authors": [
+   "Maram Bashir",
+   "Anna Van Tuyl",
+   "Ahmed Nama",
+   "Barry Hahn"
+  ],
+  "journal": "The Journal of emergency medicine",
+  "date": "2026-10",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42743665/",
+  "source": "PubMed",
+  "score": 4,
+  "summary": "This case study details the clinical presentation and management of a specific traumatic dislocation of the thumb's metacarpophalangeal joint in a male patient. It serves as a focused instructional report on orthopedic injury assessment and surgical or manipulative intervention protocols.",
+  "opportunity": "The paper provides limited commercial utility beyond educational content for clinical training platforms or specialized medical reference databases.",
+  "fields": [
+   "Clinical",
+   "Medical Device"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 1,
+    "reason": "This appears to be a clinical case report describing a standard orthopedic injury, which offers no original scientific innovation or groundbreaking methodology. It serves as routine medical documentation rather than a contribution to deep-tech or novel life-science research."
+   },
+   "commercial_potential": {
+    "score": 1,
+    "reason": "This appears to be a clinical case report describing a standard orthopedic injury rather than an invention, platform technology, or novel therapeutic modality. It lacks the intellectual property or scalable product potential required to constitute a commercial investment opportunity."
+   },
+   "trl": {
+    "score": 1,
+    "reason": "This is a clinical case report describing the manual reduction of a joint dislocation, which is a standard medical procedure rather than a novel technology, platform, or developmental asset."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This appears to be a clinical case report describing a standard orthopedic injury, which offers no novel, patentable technological innovation or proprietary intellectual property."
+   }
+  },
+  "pi": "Barry Hahn",
+  "pi_full_name": "Barry Hahn",
+  "pi_email": "barryjhahn@gmail.com.",
+  "pi_affiliation": "Department of Emergency Medicine, Hadassah University Medical Center- Ein Kerem, Jerusalem, Israel; Northwell Health, New Hyde Park, NY, USA; Department of Emergency Medicine, Staten Island University Hospital, Staten Island, New York. Electronic address: barryjhahn@gmail.com.",
+  "eval_model": "gemini-3.1-flash-lite",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 0,
+  "hts_reason": "",
+  "hts_eval_model": ""
+ },
+ {
+  "id": "pubmed_42768709",
+  "title": "Resilience and Quality of Life: The Role of Positive Affect on Healthcare Professionals in High-Stress Environments.",
+  "authors": [
+   "Nurit Zusman",
+   "Martine Denise Freeman",
+   "Caryn Scheinberg Andrews"
+  ],
+  "journal": "Worldviews on evidence-based nursing",
+  "date": "2026-10",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42768709/",
+  "source": "PubMed",
+  "score": 3,
+  "summary": "The research explores how positive emotional states contribute to the psychological resilience and overall quality of life for healthcare workers operating in high-pressure settings. It examines the connection between positive affect and the ability to maintain mental well-being amidst occupational stress.",
+  "opportunity": "Development of digital therapeutics or AI-driven mental health monitoring platforms specifically designed to mitigate burnout in high-stress clinical environments.",
+  "fields": [
+   "Software/AI",
+   "Clinical",
+   "Neuroscience"
+  ],
+  "score_breakdown": {
+   "trl": {
+    "score": 2,
+    "reason": "This paper addresses psychological and behavioral factors in workplace environments, which represents fundamental research rather than a validated technology or commercializable healthcare product. It lacks the technical development, IP, or clinical intervention hardware/software required for a high TRL rating."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "The paper focuses on psychological observations regarding healthcare professional well-being, which constitutes academic research rather than a protectable technological invention. As it lacks a novel technical process, device, or composition of matter, there is no underlying IP to defend."
+   }
+  },
+  "pi": "Caryn Scheinberg Andrews",
+  "pi_full_name": "Caryn Scheinberg Andrews",
+  "pi_email": "",
+  "pi_affiliation": "Henrietta Szold Hadassah School of Nursing at the Faculty of Medicine at, Hebrew University, Ein Kerem, Jerusalem, Israel.",
+  "eval_model": "gemini-3.1-flash-lite",
+  "prev_score": "",
+  "prev_eval_model": "",
+  "added_date": "2026-10-05",
+  "hts_score": 1,
+  "hts_reason": "The paper focuses on psychological resilience and positive affect in healthcare professionals, which does not involve a specific molecular target, a disease mechanism suitable for high-throughput screening, or an associated biochemical assay.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
   "id": "pubmed_42429341",
   "title": "Thinking outside the box to reduce health inequities in prenatal nicotine and tobacco exposure.",
   "authors": [
@@ -333,7 +1174,7 @@
   "pi_email": "aviadsch@hadassah.org.il.",
   "pi_affiliation": "Division of Neonatology, Hadassah Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 19,
+  "prev_score": "19",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "added_date": "2026-09-28",
   "hts_score": 2,
@@ -667,7 +1508,7 @@
   "pi_email": "shir.atzil@mail.huji.ac.il",
   "pi_affiliation": "Department of Psychology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 15,
+  "prev_score": "15",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "added_date": "2026-09-28",
   "hts_score": 1,
@@ -1103,7 +1944,7 @@
   "pi_email": "ashert@szmc.org.il.",
   "pi_affiliation": "Division of Internal Medicine, Shaare Zedek Medical Center, Affiliated with the Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 3,
+  "prev_score": "3",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "added_date": "2026-09-28",
   "hts_score": 0,
@@ -4674,61 +5515,6 @@
   "added_date": "2026-08-31",
   "hts_score": 1,
   "hts_reason": "The title indicates a review of methods and computational tools rather than a study identifying a specific target, disease link, or a novel assay for screening.",
-  "hts_eval_model": "gemma-4-31b-it"
- },
- {
-  "id": "pubmed_42636989",
-  "title": "The clinical yield of repeated pediatric polysomnographies.",
-  "authors": [
-   "Naftali Stoch",
-   "Lee Barcesat-Stoch",
-   "Alex Gileles-Hillel",
-   "Joel Reiter"
-  ],
-  "journal": "Respiratory medicine",
-  "date": "2026-08-25",
-  "url": "https://pubmed.ncbi.nlm.nih.gov/42636989/",
-  "source": "PubMed",
-  "score": 17,
-  "summary": "This study examines whether performing multiple sleep studies (polysomnographies) on pediatric patients provides additional diagnostic value compared to a single test. It evaluates the clinical utility and necessity of repeated testing in children to optimize healthcare resource allocation.",
-  "opportunity": "Potential for developing AI-driven triage tools or clinical decision support software to determine when repeat sleep studies are medically necessary, reducing unnecessary healthcare costs.",
-  "fields": [
-   "Diagnostics",
-   "Clinical",
-   "Software/AI"
-  ],
-  "score_breakdown": {
-   "novelty": {
-    "score": 2,
-    "reason": "The study assesses the clinical utility of repeating an existing diagnostic procedure (polysomnography) in a known population, which is an incremental observational analysis rather than a groundbreaking scientific or technological innovation."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "This appears to be a clinical outcome study focused on diagnostic yield rather than a novel technology, device, or drug. There is no evidence of a protectable invention or a scalable product implied by the title."
-   },
-   "market_size": {
-    "score": 3,
-    "reason": "The paper focuses on a narrow clinical optimization problem (the yield of repeated tests) within a niche pediatric sub-population, rather than addressing a broad market or providing a scalable technological platform."
-   },
-   "trl": {
-    "score": 9,
-    "reason": "This is a clinical yield study based on established diagnostic procedures (polysomnography), meaning the technology is already in widespread clinical use; the research focuses on optimizing an existing medical workflow rather than developing a new invention."
-   },
-   "ip_strength": {
-    "score": 1,
-    "reason": "This is a clinical yield study, which is observational and descriptive in nature; it describes medical outcomes rather than a novel device, drug, or process that could be patented."
-   }
-  },
-  "pi": "Joel Reiter",
-  "pi_full_name": "Joel Reiter",
-  "pi_email": "rjoely@hadassah.org.il.",
-  "pi_affiliation": "Faculty of Medicine, Hebrew University, Jerusalem, Israel; Pediatric Pulmonary and Sleep Unit, Hadassah Medical Center, Jerusalem, Israel. Electronic address: rjoely@hadassah.org.il.",
-  "eval_model": "gemma-4-31b-it",
-  "prev_score": "",
-  "prev_eval_model": "",
-  "added_date": "2026-08-31",
-  "hts_score": 1,
-  "hts_reason": "The paper appears to be a clinical study on diagnostic yield and lacks a molecular target, a drug-discovery disease link, or a biochemical assay.",
   "hts_eval_model": "gemma-4-31b-it"
  },
  {
