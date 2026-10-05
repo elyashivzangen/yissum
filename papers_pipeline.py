@@ -45,6 +45,7 @@ GROQ_API_KEY     = os.environ.get("GROQ_API_KEY", "")  # optional last-resort fa
 GROQ_MODEL       = "llama-3.1-8b-instant"
 OUTPUT_HTML      = Path("papers_reader.html")
 OUTPUT_JSON      = Path("papers_data.json")
+ARCHIVE_JSON     = Path("papers_archive.json")   # append-only: every paper ever seen, never shown in the monitor
 RESEARCHERS_JSON = Path("researchers_data.json")  # produced by researcher_pipeline.py
 MAX_RESULTS      = int(os.environ.get("MAX_RESULTS", "50"))    # per source
 
@@ -1629,6 +1630,8 @@ const papers = {papers_json};
 const researchers = {researchers_json};
 const BRANCHES = {branches_json};
 const DIGEST_URLS = {digest_urls_json};
+const OMITTED = {omitted_json};   // archived papers removed by the score cutoff (light fields only)
+const CUTOFFS = {cutoffs_json};   // per-branch score cutoff
 document.getElementById('updated').textContent = 'Updated {updated}';
 const TODAY=new Date(); TODAY.setHours(0,0,0,0);
 function parseDate(d){{
@@ -1746,11 +1749,24 @@ function applyFilters(list,{{skipPeriod,skipField}}){{
   if(!skipField&&activeField!=='all')list=list.filter(p=>(p.fields||[]).includes(activeField));
   return list;
 }}
+function omittedNote(){{
+  // Archived papers dropped by the per-branch score cutoff, narrowed by the
+  // same HUJI / branch / period / field filters as the visible list.
+  let om=OMITTED;
+  if(hujiOnly)om=om.filter(p=>hujiFirst(p.pi_affiliation));
+  if(activeBranch!=='all')om=om.filter(p=>{{const m=branchMatches(p);return m&&m[activeBranch];}});
+  if(activePeriod!=='all')om=om.filter(p=>daysAgo(p.date)<=parseInt(activePeriod));
+  if(activeField!=='all')om=om.filter(p=>(p.fields||[]).includes(activeField));
+  if(!om.length)return '';
+  const cut=activeBranch!=='all'?('score '+CUTOFFS[activeBranch])
+    :'their branch cutoff ('+Object.entries(CUTOFFS).map(([b,c])=>b+' <'+c).join(', ')+')';
+  return ' and '+om.length+' paper'+(om.length!==1?'s':'')+' under '+cut+' omitted';
+}}
 function render(){{
   let list=applyFilters(papers.slice(),{{}});
   list.sort(sortBy==='score'?(a,b)=>b.score-a.score:(a,b)=>(b.date||'').localeCompare(a.date||''));
   const n=list.length;
-  document.getElementById('count').textContent=n+' paper'+(n!==1?'s':'')+' shown';
+  document.getElementById('count').textContent=n+' paper'+(n!==1?'s':'')+' shown'+omittedNote();
   // Update chip counts
   document.querySelectorAll('.chip').forEach(b=>{{
     const f=b.dataset.filter,v=b.dataset.val,lbl=b.dataset.label||v;
@@ -2027,7 +2043,106 @@ def build_field_chips():
         for f in FIELD_TAGS
     )
 
+DEFAULT_CUTOFF = int(os.environ.get("LOW_SCORE_THRESHOLD", "25"))   # max score a paper may be below and still be deleted
+CUTOFF_KEEP_FRACTION = 0.25  # a branch must keep at least its top 25% of papers
+
+
+def paper_branches(p):
+    """Branches a paper belongs to — mirrors branchMatches() in the monitor JS.
+
+    The branch(es) with the most matching field tags win (ties → all tied
+    branches). No matching tag → [] (unclassified).
+    """
+    fields = p.get("fields") or []
+    counts = {b: sum(1 for f in fields if f in bf) for b, bf in BRANCHES.items()}
+    best = max(counts.values())
+    return [b for b, c in counts.items() if best and c == best]
+
+
+def compute_cutoffs(papers):
+    """Per-branch deletion cutoff: min(DEFAULT_CUTOFF, 75th-percentile score).
+
+    A paper is removed only if its score is below its branch's cutoff. For a
+    branch where fewer than 25% of papers reach DEFAULT_CUTOFF, the bar drops
+    to the 75th percentile so the top 25% are always kept. Unscored papers
+    (score 0) are ignored when measuring the distribution. `papers` should be
+    the widest set available (the archive) so the cutoff is stable.
+    """
+    cutoffs = {}
+    for b in BRANCHES:
+        scores = sorted(p.get("score", 0) for p in papers
+                        if p.get("score", 0) > 0 and b in paper_branches(p))
+        if not scores:
+            cutoffs[b] = DEFAULT_CUTOFF
+            continue
+        p75 = scores[int((1 - CUTOFF_KEEP_FRACTION) * (len(scores) - 1))]
+        cutoffs[b] = min(DEFAULT_CUTOFF, p75)
+    return cutoffs
+
+
+def paper_cutoff(p, cutoffs):
+    """Cutoff for one paper: the most lenient of its branches' cutoffs."""
+    bs = paper_branches(p)
+    return min((cutoffs[b] for b in bs), default=DEFAULT_CUTOFF)
+
+
+def load_archive():
+    if ARCHIVE_JSON.exists():
+        try:
+            return [p for p in json.loads(ARCHIVE_JSON.read_text(encoding="utf-8")) if p.get("id")]
+        except Exception:
+            pass
+    return []
+
+
+def update_archive(papers):
+    """Merge `papers` into papers_archive.json (keyed by id; newest copy wins).
+
+    The archive only ever grows — cleanup, dedup and the sheet's replace_all
+    can drop papers from the live dataset, but never from here. The monitor
+    does not read this file.
+    """
+    archive = {}
+    if ARCHIVE_JSON.exists():
+        try:
+            archive = {p["id"]: p for p in json.loads(ARCHIVE_JSON.read_text(encoding="utf-8")) if p.get("id")}
+        except Exception as e:
+            print(f"  WARNING: could not read {ARCHIVE_JSON} ({e}) — leaving it untouched.")
+            return
+    for p in papers:
+        if p.get("id"):
+            archive[p["id"]] = p
+    ordered = sorted(archive.values(), key=lambda p: p.get("added_date", ""), reverse=True)
+    ARCHIVE_JSON.write_text(json.dumps(ordered, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"  Archive: {len(ordered)} papers total.")
+
+
+def omitted_papers(live_papers):
+    """Archived papers no longer in the live set because of the score cutoff.
+
+    Returns (light records for the monitor, per-branch cutoffs). Papers still
+    live, title-duplicates of live papers, and papers at/above their cutoff
+    (dropped for another reason, e.g. dedup) are not counted.
+    """
+    pool = {p["id"]: p for p in load_archive()}
+    pool.update({p["id"]: p for p in live_papers if p.get("id")})
+    cutoffs = compute_cutoffs(list(pool.values()))
+    live_ids = {p.get("id") for p in live_papers}
+    live_titles = {norm_title(p.get("title", "")) for p in live_papers}
+    gone = [p for p in pool.values()
+            if p["id"] not in live_ids
+            and norm_title(p.get("title", "")) not in live_titles
+            and p.get("score", 0) < paper_cutoff(p, cutoffs)]
+    gone = dedup_by_title(gone)
+    light = [{"score": p.get("score", 0), "fields": p.get("fields", []),
+              "date": p.get("date", ""), "pi_affiliation": p.get("pi_affiliation", "")}
+             for p in gone]
+    return light, cutoffs
+
+
 def generate_html(papers, researchers=None):
+    update_archive(papers)
+    omitted, cutoffs = omitted_papers(papers)
     if researchers is None:
         # Weekly pipeline calls generate_html() without knowing about researcher
         # profiles — carry forward whatever researcher_pipeline.py last produced
@@ -2138,6 +2253,8 @@ def generate_html(papers, researchers=None):
         researchers_json=json.dumps(researchers, ensure_ascii=False),
         branches_json=json.dumps(BRANCHES, ensure_ascii=False),
         digest_urls_json=json.dumps(digest_urls, ensure_ascii=False),
+        omitted_json=json.dumps(omitted, ensure_ascii=False),
+        cutoffs_json=json.dumps(cutoffs, ensure_ascii=False),
         updated=today_str(),
         header_links=header_links,
         yissum_logo=YISSUM_LOGO_URI,
