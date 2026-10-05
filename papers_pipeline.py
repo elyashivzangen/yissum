@@ -89,7 +89,6 @@ HUJI_AFFILIATIONS = [
     "Hadassah",
     "Einstein Institute of Mathematics",
     "Silberman Institute",
-    "Smith Faculty of Agriculture",   # Rehovot — often written without "Hebrew University"
 ]
 
 EMAIL_RE = re.compile(r'[\w.+\-]+@[\w\-]+\.[\w.\-]+')
@@ -392,7 +391,7 @@ def backfill_metadata(papers, batch_size=50):
                     if not p:
                         continue
                     if len(p.get("date", "")) <= 4:
-                        p["date"] = _pubmed_pub_date(article)
+                        p["date"] = _paper_date(article)
                     if not p.get("pi_affiliation"):
                         all_authors, author_affs = [], []
                         for a in article.findall(".//AuthorList/Author"):
@@ -720,16 +719,39 @@ def _pubmed_pub_date(article):
         return f"{year}-{month.zfill(2)}"
     return year
 
+def _pubmed_entrez_date(article):
+    """Date the record was added to PubMed (YYYY-MM-DD), or ''."""
+    for status in ("entrez", "pubmed"):
+        for d in article.findall(".//PubmedData/History/PubMedPubDate"):
+            if d.get("PubStatus") == status and d.findtext("Year") and d.findtext("Month") and d.findtext("Day"):
+                return f"{d.findtext('Year')}-{d.findtext('Month').zfill(2)}-{d.findtext('Day').zfill(2)}"
+    return ""
+
+
+def _paper_date(article):
+    """Official publication date; PubMed's entrez date only as a fallback.
+
+    The publication date is used when it's a full day (YYYY-MM-DD). When it's
+    missing, only year/month (which would read as the 1st of the month) or in
+    the future, fall back to the date the record was added to PubMed.
+    """
+    pub = _pubmed_pub_date(article)
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", pub or "") and pub <= today_str():
+        return pub   # (a future issue date, e.g. "Nov 1" on an Oct paper, falls through)
+    return _pubmed_entrez_date(article) or pub
+
+
 def fetch_pubmed(max_results=MAX_RESULTS):
     base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
-    # EDAT (date added to PubMed) rather than PDAT (publication date): PDAT is
+    # The *search window* uses EDAT (date added to PubMed), not PDAT: PDAT is
     # often month-only ("2026 Sep" = Sep 1), so a 7-day PDAT window silently
     # skips most papers. EDAT puts each paper in exactly one window; +3 days of
     # overlap guards against a missed run (known ids/titles dedupe the repeats).
+    # The date *stored on the paper* is still the official publication date —
+    # see _paper_date().
     since = days_ago(DAYS_BACK + 3)
     query = (
-        '("Hebrew University"[Affiliation] OR "Hadassah"[Affiliation] '
-        'OR "Smith Faculty of Agriculture"[Affiliation]) '
+        '("Hebrew University"[Affiliation] OR "Hadassah"[Affiliation]) '
         f'AND ("{since}"[EDAT] : "{today_str()}"[EDAT])'
     )
     # HUJI+Hadassah yield ~70-120 PubMed records a week, so the old per-source
@@ -762,7 +784,7 @@ def fetch_pubmed(max_results=MAX_RESULTS):
         uid = article.findtext(".//PMID", "")
         title = article.findtext(".//ArticleTitle", "")
         journal = article.findtext(".//Journal/Title", "") or article.findtext(".//MedlineTA", "")
-        pub_date = _pubmed_pub_date(article)
+        pub_date = _paper_date(article)
 
         # Collect per-author affiliations for HUJI validation
         author_affs = []
