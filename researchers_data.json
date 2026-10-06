@@ -16926,7 +16926,7 @@
     "pi_full_name": "Michal Linial",
     "pi_email": "michall@mail.huji.ac.il.",
     "pi_affiliation": "Department of Biological Chemistry, Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 21.9,
+    "avg_score": 23.6,
     "max_hts_score": 9,
     "paper_count": 15,
     "description": "This researcher operates at the intersection of computational biology, machine learning, and functional genomics. Their work focuses on uncovering novel biological drivers of disease—specifically micropeptides encoded by non-coding RNAs and complex genomic rearrangements—using advanced AI models and large-scale biobank data. They develop predictive tools for neurodegenerative diseases, cancer progression, and viral immune evasion to bridge the gap between raw genomic data and mechanistic biological insight.",
@@ -17090,9 +17090,9 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/41463216/",
         "journal": "Cancers",
-        "score": 14,
-        "summary": "This research identifies specific cellular pathways linked to genetic predispositions for breast cancer by integrating complex genomic data. By mapping these pathways, the study provides a deeper understanding of the molecular mechanisms that drive hereditary cancer development.",
-        "opportunity": "The identified gene-centric pathways serve as high-value targets for developing companion diagnostics or precision therapeutics tailored to patients with specific hereditary cancer profiles.",
+        "score": 21,
+        "summary": "The research identifies specific cellular pathways linked to hereditary breast cancer by integrating various gene-centric datasets. This approach moves beyond single-gene mutations to understand the broader biological mechanisms driving cancer predisposition.",
+        "opportunity": "Developing high-precision multi-gene diagnostic panels and targeted therapies based on identified pathway vulnerabilities.",
         "abstract": "",
         "fields": [
           "Genomics",
@@ -17101,29 +17101,29 @@
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 3,
-            "reason": "The methodology describes standard gene-centric analysis, which represents a common, iterative application of established bioinformatics tools rather than a novel algorithmic or biological breakthrough. It functions as a incremental study adding data points to existing knowledge rather than introducing a new platform or paradigm-shifting insight."
+            "score": 4,
+            "reason": "The title suggests a descriptive bioinformatic study using integrative approaches to map known genetic associations to pathways, which represents incremental refinement of existing genomic methodologies rather than a paradigm-shifting discovery or new technology."
           },
           "commercial_potential": {
             "score": 4,
-            "reason": "While identifying genetic pathways is foundational for drug discovery, this study appears to be an observational/analytical exploration rather than a platform technology or a validated therapeutic candidate. Without a specific proprietary target or diagnostic application described, the transition to a commercial asset remains speculative and early-stage."
+            "reason": "The work appears to be fundamental discovery research focused on pathway mapping rather than a specific diagnostic assay or therapeutic target. While it provides biological insights, it lacks a clear description of a proprietary tool, platform, or clinical application necessary for immediate commercial translation."
           },
           "market_size": {
-            "score": 3,
-            "reason": "This paper focuses on foundational academic research into the genetic pathways of breast cancer, which lacks direct commercial application or immediate clinical utility. While breast cancer is a massive market, this specific discovery is too upstream and abstract to represent a tangible, addressable market opportunity for an investor."
+            "score": 7,
+            "reason": "The research targets a high-prevalence clinical segment (heritable breast cancer), offering significant value for precision diagnostics and pharmaceutical target discovery. However, without specific commercial application or platform scalability details, the total addressable market remains constrained to specialized oncology diagnostics."
           },
           "trl": {
-            "score": 2,
-            "reason": "This study is fundamentally discovery-based biological research focused on gene-centric pathways rather than the development of a validated diagnostic product or therapeutic intervention. It represents an early-stage academic inquiry aimed at identifying genetic associations, which is far removed from clinical utility or commercial application."
+            "score": 3,
+            "reason": "The study appears to be a fundamental bioinformatics or mechanistic discovery research project focused on identifying biological pathways. It represents early-stage knowledge generation (basic science) rather than a developed diagnostic tool or clinical application."
           },
           "ip_strength": {
-            "score": 2,
-            "reason": "This paper describes computational methodology and statistical gene-centric analysis, which generally face significant hurdles regarding patentable subject matter under 35 U.S.C. § 101 as abstract mathematical concepts or laws of nature. It lacks the novel physical composition of matter or specific, non-obvious industrial application required for strong IP defensibility."
+            "score": 3,
+            "reason": "The title describes a descriptive, observational bioinformatics study which identifies biological associations rather than a novel tool, drug molecule, or proprietary method. Such 'gene-centric analysis' of existing pathways is generally difficult to patent and faces significant 'natural phenomena' hurdles in IP law."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 14,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Biological Chemistry, The Life Science Institute, The Hebrew University of Jerusalem, Jerusalem 9190401, Israel.",
         "pi_email": "",
         "hts_score": 2,
@@ -17230,41 +17230,41 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40953713/",
         "journal": "Journal of biomedical informatics",
-        "score": 21,
-        "summary": "This paper explores advanced computational methods for determining cause-and-effect relationships using large-scale observational data from medical biobanks. It addresses the technical challenges of bias and missing information to make real-world data as reliable as traditional clinical trials.",
-        "opportunity": "Developing AI-driven software platforms that enable pharmaceutical companies to perform 'in silico' clinical trials and accelerate drug repositioning using existing biobank datasets.",
+        "score": 19,
+        "summary": "The paper explores advanced statistical methods to extract reliable cause-and-effect relationships from large-scale biobank datasets, which contain diverse genetic and lifestyle information. It addresses the challenge of overcoming biases and missing data in observational medical records to make them as useful as randomized controlled trials.",
+        "opportunity": "There is a significant market opportunity for AI-driven platforms that can automate high-fidelity causal inference from real-world evidence (RWE) to accelerate drug repurposing and precision medicine workflows.",
         "abstract": "Causal inference from observational medical record data is critical for advancing precision and personalization in healthcare. Recently, biobanks - collections of biological samples linked with genetic, lifestyle, environmental, and health-related data - have emerged as valuable resources for large-scale population studies. By integrating these resources, biobanks offer a harmonized repository of diverse data for each individual, capturing real-world medical events, including procedures, treatments, and diagnoses. However, these resources are often affected by confounding factors, selection biases, and missing information, posing significant challenges to drawing valid causal conclusions. While randomized controlled trials (RCTs) remain the gold standard for drug development and medical decision-making, the growing availability of observational data highlights the need for robust causal inference methodologies. This study provides an overview of methods for inferring the effect of a treatment on an outcome from observational data applicable to biobank data, focusing on the unique challenges they address. Our objective is to introduce current methods used for causal discovery in observational medical data. We discuss classic and modern methodologies that offer significant opportunities alongside the difficulty in reaching causality. We cover statistical methods designed for large-scale biobanks that have the potential to improve clinical decision-making, guide public health policies, and drive further research.",
         "fields": [
-          "Drug Discovery",
           "Software/AI",
           "Genomics",
+          "Drug Discovery",
           "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 3,
-            "reason": "The paper is framed as an overview or review of existing methodologies rather than an original research contribution or the development of a novel causal inference algorithm. It serves as a pedagogical summary of the current landscape in biobank data analytics, which lacks the groundbreaking technical innovation typically associated with high-novelty scores."
+            "reason": "The paper appears to be a literature review or an overview of existing methodologies rather than the introduction of a new algorithmic framework or a novel discovery. It summarizes current approaches to addressing known challenges like confounding and selection bias without proposing a groundbreaking technical innovation."
           },
           "commercial_potential": {
-            "score": 4,
-            "reason": "This paper is a methodological review rather than a proprietary technology or novel tool, offering limited direct path to a protectable product or service. While the field is highly valuable, the work itself functions as an educational survey rather than the scalable, platform-enabling asset required for a high commercial potential score."
+            "score": 3,
+            "reason": "The paper is a methodological overview of existing causal inference techniques rather than the introduction of a novel, proprietary algorithm or a specific software platform. While the subject matter is highly relevant to the industry, this particular work lacks the unique intellectual property or product-oriented application required for high commercial scoring."
           },
           "market_size": {
             "score": 9,
-            "reason": "The methodology addresses the massive, high-growth market of precision medicine and drug discovery by unlocking the latent value in existing multi-omic biobank datasets, which are foundational assets for the pharmaceutical and biotech industries. By enabling more efficient causal inference, this approach directly scales to a multi-billion dollar addressable market of clinical trials and therapeutic development workflows."
+            "reason": "The methodologies address the massive and growing pharmaceutical and clinical research market for Real-World Evidence (RWE), which is essential for drug development, regulatory approval, and precision medicine. By enabling valid causal conclusions from biobank data, this platform-enabling approach targets a multi-billion dollar necessity in reducing the cost and failure rate of clinical trials."
           },
           "trl": {
-            "score": 3,
-            "reason": "This paper is a methodological review and conceptual framework rather than a novel, validated technological tool or clinical product. It focuses on the academic landscape of causal inference, which is a foundational activity far removed from the commercial deployment of specific diagnostic or therapeutic solutions."
+            "score": 2,
+            "reason": "This is a literature review and methodological overview rather than a demonstration of a specific technological tool or prototype. It provides theoretical frameworks for causal discovery but does not present a validated, deployable software or clinical application."
           },
           "ip_strength": {
             "score": 2,
-            "reason": "This is an academic review paper summarizing existing causal inference methodologies rather than presenting a novel, proprietary technical invention or a protectable platform. Without a unique, non-obvious algorithmic advancement or specific hardware/wet-lab integration, there is no substantive subject matter to establish defensible IP."
+            "reason": "The paper is a methodological overview of existing causal inference techniques rather than the introduction of a novel, proprietary algorithm or tool. As a review of established mathematical frameworks applied to biobank data, it lacks specific, patentable intellectual property or unique technological defensibility."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 21,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Biological Chemistry, Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel. Electronic address: michal.linial@mail.huji.ac.il.",
         "pi_email": "michal.linial@mail.huji.ac.il.",
         "hts_score": 1,
@@ -17277,41 +17277,41 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40884651/",
         "journal": "Methods in molecular biology (Clifton, N.J.)",
-        "score": 25,
-        "summary": "This research introduces a machine-learning algorithm capable of identifying complex genomic rearrangement events known as chromoanagenesis across various cancer types using large-scale patient datasets. By accurately distinguishing these events, the tool provides new insights into tumor evolution and identifies unique genetic markers that differentiate chromoanagenesis-driven cancers from other tumorigenic processes.",
-        "opportunity": "This technology enables the development of high-precision diagnostic software for stratifying cancer patients and identifying novel genomic targets for personalized oncological therapies.",
+        "score": 23,
+        "summary": "Researchers developed a machine learning algorithm capable of identifying chromoanagenesis—a complex form of massive genomic rearrangement—across various cancer types with 86% accuracy. The tool analyzes copy number alteration data to distinguish unique genetic drivers in these specific cancer events compared to standard tumor progression.",
+        "opportunity": "The algorithm provides a foundation for high-precision oncology diagnostics and the identification of novel, mutation-specific therapeutic targets for precision medicine.",
         "abstract": "A comprehensive analysis of chromoanagenesis pan-cancer features is crucial for a broad and deep understanding of the phenomena. In this chapter, we describe a cancer-type agnostic machine-learning algorithm for detecting chromoanagenesis. We leveraged data from The Pan-Cancer Analysis of Whole Genome (PCAWG) and The Cancer Genome Atlas (TCGA) to construct and test a predictive algorithm for chromoanagenesis detection based on CNA data, with an accuracy of 86%. This algorithm was applied to analyze data from over 10,000 TCGA cancer patients. The analysis identified cancer-type specific chromoanagenesis characteristics and revealed distinct sets of genes impacted by chromoanagenesis versus non-chromoanagenesis tumorigenesis.",
         "fields": [
           "Diagnostics",
           "Software/AI",
           "Genomics",
-          "Clinical"
+          "Drug Discovery"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 6,
-            "reason": "While the application of machine learning to large-scale genomic datasets like PCAWG and TCGA provides valuable diagnostic insights, the methodology relies on established CNA analysis techniques rather than a breakthrough biological or computational paradigm. It is a solid, incremental technical advancement that offers utility for cohort analysis but lacks the 'first-of-its-kind' transformative novelty associated with higher scores."
+            "score": 5,
+            "reason": "While the application of a cancer-agnostic ML algorithm to large-scale genomic datasets is useful, the approach of using CNA data for structural variation detection is a well-established methodology in bioinformatics. The novelty lies more in the scale of the pan-cancer analysis rather than a fundamental breakthrough in algorithmic architecture or biological discovery."
           },
           "commercial_potential": {
-            "score": 6,
-            "reason": "While the algorithm provides clear diagnostic utility for genomic profiling, the commercial potential is constrained by its reliance on established whole-genome sequencing datasets rather than offering a unique, proprietary therapeutic or diagnostic platform. Its value is likely limited to a research tool or a component of a broader companion diagnostic pipeline rather than a standalone commercial product."
+            "score": 5,
+            "reason": "While the algorithm shows high accuracy and broad applicability, the paper describes a computational tool primarily for research discovery rather than a clearly defined clinical diagnostic product or therapeutic platform. The commercial path is limited by the reliance on existing genomic data repositories rather than a proprietary or integrated service model."
           },
           "market_size": {
-            "score": 6,
-            "reason": "While the addressable market for oncology diagnostics and precision medicine research is massive, the specific utility of this algorithm as a standalone diagnostic tool remains unproven compared to established genomic screening platforms. Its primary value currently lies in drug discovery and translational research, representing a large but niche segment of the multi-billion dollar cancer informatics market."
+            "score": 5,
+            "reason": "While the pan-cancer approach suggests broad applicability, the technology is currently a diagnostic/analytical tool for a specific genomic phenomenon rather than a foundational platform or therapeutic targeting a massive, clearly defined clinical market. The value is driven by niche research and precision oncology insights rather than a large-scale commercial diagnostic demand."
           },
           "trl": {
             "score": 4,
-            "reason": "The paper describes a computational proof-of-concept algorithm trained on retrospective public datasets, which remains in the R&D stage without validation in prospective clinical workflows or commercial integration. It lacks the regulatory validation, clinical decision support integration, or proprietary data moat required to move into the higher readiness tiers."
+            "reason": "The technology is currently at a computational proof-of-concept stage, validated on existing retrospective genomic datasets (TCGA/PCAWG) rather than in prospective clinical trials or real-world diagnostic workflows."
           },
           "ip_strength": {
-            "score": 3,
-            "reason": "The methodology relies on leveraging public, open-source datasets (PCAWG/TCGA) to train a standard predictive model, which faces significant hurdles regarding patentable novelty and freedom to operate. Diagnostic algorithms of this nature typically struggle with patent eligibility under 35 U.S.C. § 101, as they often constitute non-patentable mathematical abstractions applied to naturally occurring biological data."
+            "score": 4,
+            "reason": "The innovation relies on applying machine learning algorithms to existing, publicly available datasets (PCAWG and TCGA), which presents significant challenges for patentability due to the difficulty of claiming ownership over mathematical methods applied to public data. While the specific algorithm architecture could potentially be protected, the lack of a proprietary data moat or a unique biological hardware/reagent component limits its overall defensibility."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 25,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Biological Chemistry, Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 2,
@@ -17324,41 +17324,41 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40565140/",
         "journal": "International journal of molecular sciences",
-        "score": 14,
-        "summary": "Researchers identified specific microRNA signatures that change over time as microglial cells respond to inflammatory stimuli like pathogens and toxins. The study further demonstrates that the neuroprotective drug ladostigil can modulate these profiles, suggesting these microRNAs could serve as biomarkers or therapeutic targets for neuroinflammation.",
-        "opportunity": "This discovery provides a framework for developing microRNA-based companion diagnostics to monitor neuroinflammatory disease progression or to screen for novel compounds that restore microglial homeostasis.",
+        "score": 20,
+        "summary": "Researchers identified specific microRNA patterns that change over time in brain immune cells when they respond to inflammation or injury. The study also shows that the drug ladostigil can shift these microRNA profiles toward an anti-inflammatory state.",
+        "opportunity": "These temporal microRNA signatures could serve as highly specific biomarkers for monitoring neuroinflammation or evaluating the efficacy of new neuroprotective drugs in clinical trials.",
         "abstract": "The primary function of microglia is to maintain brain homeostasis. In neurodegenerative diseases like Alzheimer's, microglia contribute to neurotoxicity and inflammation. In this study, we exposed neonatal murine primary microglial cultures to stimuli mimicking pathogens, injury, or toxins. Treatment with benzoyl ATP (bzATP) and lipopolysaccharide (LPS) triggered a coordinated increase in interleukin and chemokine expression. We analyzed statistically significant differentially expressed microRNAs (DEMs) at 3 and 8 h post-activation, identifying 33 and 57 DEMs, respectively. Notably, miR-155, miR-132, miR-3473e, miR-222, and miR-146b showed strong temporal regulation, while miR-3963 was sharply downregulated by bzATP. These DEMs regulate inflammatory pathways, including TNFα and NFκB signaling. We also examined the effect of ladostigil, a neuroprotective agent known to reduce oxidative stress and inflammation. At 8 h post-activation, ladostigil induced upregulation of anti-inflammatory miRNAs, such as miR-27a, miR-27b, and miR-23b. Our findings suggest that miRNA profiles reflect microglial responses to inflammatory cues and that ladostigil modulates these responses. This model of controlled microglial activation offers a powerful tool with which to study inflammation in the aging brain and the progression of neurodegenerative diseases.",
         "fields": [
           "Drug Discovery",
+          "Diagnostics",
           "Neuroscience",
-          "Immunology",
-          "Diagnostics"
+          "Genomics"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 3,
-            "reason": "The study uses well-established models (LPS/bzATP-stimulated microglia) to perform a descriptive transcriptomic profiling of miRNAs, which is a common and incremental approach in neuro-immunology research. The findings lack significant technical innovation or a unique mechanistic breakthrough that would distinguish this from extensive prior art on microglial inflammatory miRNA regulation."
+            "score": 4,
+            "reason": "The study applies established methodologies (LPS/bzATP stimulation) to observe known microRNA responses in microglia, offering incremental characterization rather than a novel biological mechanism or a groundbreaking platform. While the temporal profiling provides useful descriptive data, the findings largely align with existing knowledge regarding microRNA involvement in NFκB and inflammatory signaling pathways."
           },
           "commercial_potential": {
-            "score": 3,
-            "reason": "While identifying miRNA signatures is a valid discovery effort, this is a basic science study characterizing mouse cellular responses rather than a validated diagnostic platform or a novel therapeutic modality with clear intellectual property potential. The lack of in vivo data or a defined clinical endpoint makes the path to a tangible product or licensed technology highly speculative at this stage."
+            "score": 4,
+            "reason": "The study is primarily descriptive basic science that identifies biomarkers in a murine model, lacking a clear path toward a proprietary diagnostic tool or therapeutic modality. While it validates ladostigil's mechanism, the work provides incremental mechanistic insight rather than a novel, protectable commercial product or platform."
           },
           "market_size": {
-            "score": 4,
-            "reason": "While the research addresses the high-value Alzheimer's and neuroinflammation market, the study is limited to early-stage, in vitro murine primary cell models, which possess significant translational risk and lack clear commercial scalability. The reliance on basic miRNA profiling rather than a proprietary therapeutic platform restricts the immediate addressable market potential."
+            "score": 7,
+            "reason": "The research targets neuroinflammation and neurodegenerative diseases like Alzheimer's, which represent massive global markets; however, the current findings are limited to murine cell models and foundational miRNA profiling rather than a specific therapeutic product."
           },
           "trl": {
             "score": 2,
-            "reason": "This is an early-stage mechanistic study utilizing primary murine cell cultures to identify miRNA biomarkers, which is far removed from clinical validation or commercial application. The research serves as fundamental biological discovery rather than a developed diagnostic or therapeutic platform."
+            "reason": "The study is in the fundamental discovery phase, utilizing in vitro murine (mouse) cell cultures to identify biological markers and mechanisms. It lacks in vivo validation, human relevance, or a developed diagnostic/therapeutic platform required for higher TRL levels."
           },
           "ip_strength": {
-            "score": 2,
-            "reason": "The study identifies correlations between miRNA expression and inflammatory states in murine models, which constitutes basic scientific discovery rather than a novel, patentable composition of matter or proprietary therapeutic method. Without a unique delivery vector, specific synthetic oligonucleotide design, or novel therapeutic application beyond characterizing known markers, the underlying innovation lacks significant freedom-to-operate or barriers to entry."
+            "score": 3,
+            "reason": "The study is primarily descriptive and observational, identifying natural biological correlations rather than disclosing novel synthetic molecules, engineered platforms, or unique methods of action. While the miRNA profiles could theoretically support diagnostic claims, the findings appear to be basic science discoveries that lack inherent non-obviousness or structural patentability."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 14,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Biological Chemistry, Institute of Life Science, Faculty of Science, The Hebrew University of Jerusalem, Jerusalem 91904, Israel.",
         "pi_email": "",
         "hts_score": 9,
@@ -17371,41 +17371,41 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39565197/",
         "journal": "Nucleic acids research",
-        "score": 26,
-        "summary": "PWAS Hub is a computational platform that identifies links between genetic variations and protein-level changes to better understand the biological roots of hundreds of complex diseases. By incorporating sex-specific data and predictive machine learning models, the tool provides a more granular view of how individual genetic profiles contribute to clinical health outcomes.",
-        "opportunity": "This platform serves as a powerful target-discovery engine for pharmaceutical companies to identify high-confidence protein targets for drug development by leveraging large-scale biobank data.",
+        "score": 27,
+        "summary": "The researchers developed a platform called PWAS Hub that uses machine learning to link genetic variants to protein changes and subsequent complex diseases. It specifically allows for the analysis of sex-dependent genetic effects across hundreds of phenotypes using massive datasets like the UK Biobank.",
+        "opportunity": "The platform provides a high-value computational engine for pharmaceutical companies to identify sex-specific drug targets and de-risk clinical trials through more precise genetic profiling.",
         "abstract": "The Proteome-Wide Association Study (PWAS) is a protein-based genetic association approach designed to complement traditional variant-based methods like GWAS. PWAS operates in two stages: first, machine learning models predict the impact of genetic variants on protein-coding genes, generating effect scores. These scores are then aggregated into a gene-damaging score for each individual. This score is then used in case-control statistical tests to significantly link to specific phenotypes. PWAS Hub (v1.2) is a user-friendly platform that facilitates the exploration of gene-disease associations using clinical and genetic data from the UK Biobank (UKB), encompassing 500k individuals. PWAS Hub reports on 819 diseases and phenotypes determined by PheCode and ICD-10 clinical codes, each with a minimum of 400 affected individuals. PWAS-derived gene associations were reported for 72% of the tested phenotypes. The PWAS Hub also analyzes gene associations separately for males and females, considering sex-specific genetic effects, inheritance patterns (dominant and recessive), and gene pleiotropy. We illustrated the utility of the PWAS Hub for primary (essential) hypertension (I10), type 2 diabetes mellitus (E11), and specified haematuria (R31) that showed sex-dependent genetic signals. The PWAS Hub, available at pwas.huji.ac.il, is a valuable resource for studying genetic contributions to common diseases and sex-specific effects.",
         "fields": [
           "Drug Discovery",
+          "Software/AI",
           "Genomics",
-          "Proteomics",
-          "Software/AI"
+          "Proteomics"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 4,
-            "reason": "While the platform provides a useful utility for visualizing existing data, it represents an incremental application of established PWAS methodologies rather than a groundbreaking advancement in genetic association science. The research focuses on implementing known computational frameworks on existing UK Biobank datasets, offering limited scientific innovation compared to the prior art of protein-based association studies."
+            "score": 5,
+            "reason": "The core methodology (PWAS) is an established proteomic approach, and the innovation lies more in the scale of the data integration and the user interface rather than a fundamental breakthrough in genetic association science. The addition of sex-dependency analysis is a valuable refinement of existing workflows but does not constitute a paradigm shift in the field."
           },
           "commercial_potential": {
             "score": 6,
-            "reason": "While the platform provides valuable bioinformatics insights for drug target discovery, it currently functions more as a research analysis tool than a distinct, protectable commercial product. Its value lies in facilitating R&D pipelines, but it lacks clear intellectual property barriers or a direct path to a standalone revenue-generating model."
+            "reason": "The platform offers high utility as a bioinformatics tool for drug discovery and target identification, but its commercial value is currently tied to existing datasets (UK Biobank) rather than proprietary biological assets. It serves as a powerful decision-support service for pharma, though it lacks a direct clinical product or unique IP-protected therapeutic pipeline."
           },
           "market_size": {
-            "score": 6,
-            "reason": "While the platform provides valuable insights for drug target discovery across a wide range of 819 diseases, it functions primarily as an academic research utility rather than a direct commercial product or high-value therapeutic asset. Its market potential is limited to the specialized niche of early-stage R&D informatics, lacking the scalability or immediate industrial application of a proprietary platform or clinical diagnostic tool."
+            "score": 8,
+            "reason": "The platform serves as a high-value discovery engine for drug target identification across 819 diseases, tapping into the massive multi-billion dollar therapeutic R&D market. Its ability to provide sex-specific genetic insights offers a significant competitive advantage in precision medicine and personalized drug development."
           },
           "trl": {
-            "score": 7,
-            "reason": "PWAS Hub is a robust, operationalized computational platform that leverages existing large-scale clinical biobank data to generate actionable biological insights. While it lacks the physical product lifecycle of a therapeutic or diagnostic device, it functions as a mature, deployable analytical tool ready for immediate use in drug discovery and target validation pipelines."
+            "score": 4,
+            "reason": "The work is at a computational/bioinformatics research stage, providing a platform for data exploration rather than a validated clinical diagnostic tool or therapeutic target. While the platform is functional and uses large-scale datasets (UKB), it remains a discovery-oriented tool for hypothesis generation in the pre-clinical phase."
           },
           "ip_strength": {
-            "score": 3,
-            "reason": "The platform functions primarily as an analytical software tool built on public datasets (UK Biobank) and standard statistical methodologies, which are difficult to patent and lack significant proprietary barriers to entry. The innovation is largely procedural rather than a novel, protectable composition of matter or unique technical process."
+            "score": 4,
+            "reason": "The innovation relies on combining existing machine learning methodologies with publicly available datasets (UK Biobank), making the underlying process difficult to patent or defend as proprietary IP. While the platform provides utility, it lacks a novel biological target or a unique, non-obvious algorithmic breakthrough that would constitute a strong defensive moat."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 26,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Biological Chemistry, Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem 91904, Israel.",
         "pi_email": "",
         "hts_score": 3,
@@ -17418,9 +17418,9 @@
         "date": "2024",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39406500/",
         "journal": "Genome research",
-        "score": 20,
-        "summary": "Researchers have developed a computational platform called PWAS Hub that identifies genetic links to common diseases by analyzing how DNA variants impact protein function. By leveraging UK Biobank data, the tool allows users to explore complex gene-disease associations across 99 different conditions with high statistical precision.",
-        "opportunity": "The platform serves as a high-value target discovery engine for pharmaceutical companies looking to identify novel protein targets for drug development based on human genetic data.",
+        "score": 29,
+        "summary": "The PWAS Hub is a computational platform that integrates genetic variant data with protein function modeling to identify genes linked to complex diseases. It provides a scalable interface for analyzing large-scale datasets like the UK Biobank to uncover sex-specific and inheritance-based disease associations.",
+        "opportunity": "The platform can be commercialized as a high-throughput target discovery engine for pharmaceutical companies seeking to validate novel protein targets for complex diseases.",
         "abstract": "PWAS (proteome-wide association study) is an innovative genetic association approach that complements widely used methods like GWAS (genome-wide association study). The PWAS approach involves consecutive phases. Initially, machine learning modeling and probabilistic considerations quantify the impact of genetic variants on protein-coding genes' biochemical functions. Secondly, for each individual, aggregating the variants per gene determines a gene-damaging score. Finally, standard statistical tests are activated in the case-control setting to yield statistically significant genes per phenotype. The PWAS Hub offers a user-friendly interface for an in-depth exploration of gene-disease associations from the UK Biobank (UKB). Results from PWAS cover 99 common diseases and conditions, each with over 10,000 diagnosed individuals per phenotype. Users can explore genes associated with these diseases, with separate analyses conducted for males and females. For each phenotype, the analyses account for sex-based genetic effects, inheritance modes (dominant and recessive), and the pleiotropic nature of associated genes. The PWAS Hub showcases its usefulness for asthma by navigating through proteomic-genetic analyses. Inspecting PWAS asthma-listed genes (a total of 27) provide insights into the underlying cellular and molecular mechanisms. Comparison of PWAS-statistically significant genes for common diseases to the Open Targets benchmark shows partial but significant overlap in gene associations for most phenotypes. Graphical tools facilitate comparing genetic effects between PWAS and coding GWAS results, aiding in understanding the sex-specific genetic impact on common diseases. This adaptable platform is attractive to clinicians, researchers, and individuals interested in delving into gene-disease associations and sex-specific genetic effects.",
         "fields": [
           "Drug Discovery",
@@ -17430,25 +17430,29 @@
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 4,
-            "reason": "While PWAS is a valuable integrative analytical framework, it represents an incremental methodological refinement of established transcriptomic and proteomic prediction pipelines rather than a fundamental breakthrough in genetic discovery. The hub itself serves primarily as a visualization and repository tool for existing UK Biobank data rather than introducing novel, high-barrier-to-entry proprietary technology."
+            "score": 5,
+            "reason": "The research applies existing proteome-wide association study (PWAS) methodologies to a specific large-scale dataset (UK Biobank) rather than introducing a new fundamental mathematical or biological paradigm. The novelty lies more in the systematic implementation and the user-friendly accessibility of the resulting data hub rather than a breakthrough in scientific theory."
+          },
+          "commercial_potential": {
+            "score": 7,
+            "reason": "The PWAS Hub represents a high-value bioinformatics platform that can be licensed to pharmaceutical companies for target identification and drug discovery. However, its commercial value is currently tied to existing datasets (UK Biobank), suggesting it is a sophisticated service/tool rather than a standalone proprietary biological asset."
           },
           "market_size": {
-            "score": 7,
-            "reason": "The platform addresses the massive drug discovery and precision medicine market by providing actionable genetic insights for 99 common diseases using high-value UK Biobank data. While it is a highly relevant enabling tool for target identification, its impact is currently limited to a research-oriented discovery dashboard rather than a direct clinical or commercial therapeutic asset."
+            "score": 9,
+            "reason": "The platform targets the massive drug discovery market by providing high-resolution genetic insights into 99 common complex diseases, which represent the majority of global healthcare spending. By bridging the gap between GWAS and protein-level causality, it serves as a high-value, platform-enabling tool for multi-billion dollar pharmaceutical R&D pipelines."
           },
           "trl": {
-            "score": 6,
-            "reason": "The PWAS Hub is a functional, data-ready analytical platform leveraging established UK Biobank datasets, moving beyond bench research to provide actionable insights for researchers and drug target discovery. However, it functions primarily as an exploratory bioinformatic tool rather than a clinical-grade diagnostic or therapeutic product, requiring further validation and integration into industry workflows."
+            "score": 4,
+            "reason": "The work is at a proof-of-concept/computational tool stage, providing a research interface for data exploration rather than a validated clinical diagnostic or therapeutic platform. While the software architecture is functional, it remains a bioinformatic research resource (TRL 3-4) rather than a near-market clinical product."
           },
           "ip_strength": {
-            "score": 3,
-            "reason": "The paper describes a methodological application of existing statistical and machine learning techniques to public UK Biobank data, which generally lacks the novelty required for robust composition-of-matter or process patent protection. The platform serves as a research utility rather than a proprietary, defensible technological asset."
+            "score": 4,
+            "reason": "The innovation describes a bioinformatic workflow and a user interface for data exploration rather than a novel molecular entity or a proprietary hardware platform. While the machine learning modeling steps might have components eligible for patenting, the overall utility is centered on the analysis of public datasets (UK Biobank), making it difficult to defend against competitors using similar statistical methodologies."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 20,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Biological Chemistry, Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem 91904, Israel michall@cc.huji.ac.il.",
         "pi_email": "michall@cc.huji.ac.il.",
         "hts_score": 3,
@@ -17461,40 +17465,41 @@
         "date": "2024",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39062793/",
         "journal": "International journal of molecular sciences",
-        "score": 13,
-        "summary": "Hebrew University researchers discovered that depleting the DJ-1 protein in HEK293 cells triggers a coordinated innate immune response characterized by the upregulation of type 1 interferons. This finding identifies DJ-1 as a critical regulatory checkpoint that suppresses antiviral signaling, offering a novel target for modulating immune activity.",
-        "opportunity": "Targeting the DJ-1 pathway presents a unique commercial opportunity to develop small-molecule inhibitors that artificially boost the host innate immune response for the treatment of persistent viral infections or as an adjuvant for immunotherapy.",
+        "score": 16,
+        "summary": "Researchers found that reducing the levels of the DJ-1 protein triggers a massive, coordinated innate immune response and antiviral signaling in human cells. This process involves the upregulation of type 1 interferons and inflammatory cytokines, alongside changes in mitochondrial and RNA metabolism.",
+        "opportunity": "The discovery of DJ-1 as a master regulator of innate immunity provides a potential target for modulating immune responses in neurodegenerative diseases or developing novel immunotherapies.",
         "abstract": "PARK7, also known as DJ-1, plays a critical role in protecting cells by functioning as a sensitive oxidation sensor and modulator of antioxidants. DJ-1 acts to maintain mitochondrial function and regulate transcription in response to different stressors. In this study, we showed that cell lines vary based on their antioxidation potential under basal conditions. The transcriptome of HEK293 cells was tested following knockdown (KD) of DJ-1 using siRNAs, which reduced the DJ-1 transcripts to only 12% of the original level. We compared the expression levels of 14k protein-coding transcripts and 4.2k non-coding RNAs relative to cells treated with non-specific siRNAs. Among the coding genes, approximately 200 upregulated differentially expressed genes (DEGs) signified a coordinated antiviral innate immune response. Most genes were associated with the regulation of type 1 interferons (IFN) and the induction of inflammatory cytokines. About a quarter of these genes were also induced in cells treated with non-specific siRNAs that were used as a negative control. Beyond the antiviral-like response, 114 genes were specific to the KD of DJ-1 with enrichment in RNA metabolism and mitochondrial functions. A smaller set of downregulated genes (58 genes) was associated with dysregulation in membrane structure, cell viability, and mitophagy. We propose that the KD DJ-1 perturbation diminishes the protective potency against oxidative stress. Thus, it renders the cells labile and responsive to the dsRNA signal by activating a large number of genes, many of which drive apoptosis, cell death, and inflammatory signatures. The KD of DJ-1 highlights its potency in regulating genes associated with antiviral responses, RNA metabolism, and mitochondrial functions, apparently through alteration in STAT activity and downstream signaling. Given that DJ-1 also acts as an oncogene in metastatic cancers, targeting DJ-1 could be a promising therapeutic strategy where manipulation of the DJ-1 level may reduce cancer cell viability and enhance the efficacy of cancer treatments.",
         "fields": [
           "Drug Discovery",
           "Immunology",
+          "Neuroscience",
           "Genomics"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 3,
-            "reason": "The study describes a basic transcriptomic observation in a common immortalized cell line (HEK293) that identifies a biological correlation rather than a novel therapeutic mechanism or platform technology. This type of gene-expression profiling is incremental and lacks the transformative potential or technical differentiation required for high novelty in a deep-tech context."
+            "score": 4,
+            "reason": "The study describes a mechanistic link between DJ-1 loss and innate immune activation, which is a logical extension of known DJ-1 functions in redox and mitochondrial homeostasis. While it provides granular transcriptomic data, it lacks the paradigm-shifting discovery or novel platform utility required for a high novelty score."
           },
           "commercial_potential": {
             "score": 3,
-            "reason": "The study identifies a potential biological pathway modulation, but it lacks a clear therapeutic or diagnostic application and relies on transient siRNA knockdown, which is not a commercially viable product modality. The mechanism of action involves widespread inflammatory and interferon responses, suggesting significant safety and toxicity hurdles that weaken its transition toward a drug candidate."
+            "reason": "The study is fundamental mechanistic research using a standard HEK293 cell line, providing basic biological insight rather than a specific therapeutic target or actionable platform. It lacks a clear translation path to a product, as the observed antiviral response is a reactive cellular consequence of a gene knockdown rather than a controlled intervention."
           },
           "market_size": {
-            "score": 3,
-            "reason": "The research focuses on a fundamental mechanistic observation in a cell line model without a clear translational path to a therapeutic indication or a commercial diagnostic application. Given the ubiquity of DJ-1 in basic cellular biology, the lack of a specific disease-modifying application makes it difficult to quantify a viable addressable market."
+            "score": 4,
+            "reason": "The study is fundamental basic science exploring a mechanistic link between DJ-1 and innate immunity in a single HEK293 cell line, offering no direct path to a defined therapeutic market or product. While the biological pathway could eventually inform neurodegeneration or immunology, the current scope is too disconnected from a commercialized market segment to command a high score."
           },
           "trl": {
             "score": 2,
-            "reason": "This is fundamental discovery research conducted in an immortalized cell line (HEK293) to elucidate basic molecular pathways; it lacks the therapeutic validation, animal models, or translational framework required for near-market application."
+            "reason": "The study is at a foundational discovery stage, utilizing in vitro siRNA knockdown in a standard immortalized cell line (HEK293) to characterize basic biological pathways. There is no evidence of animal models, therapeutic formulation, or disease-specific validation required to move toward preclinical development."
           },
           "ip_strength": {
-            "score": 2,
-            "reason": "The paper describes a fundamental biological characterization study using standard siRNA knockdown techniques, which lacks the novelty or inventive step required for strong IP protection. The findings represent basic scientific discovery rather than a proprietary therapeutic composition, method of use, or platform technology."
+            "score": 3,
+            "reason": "The study describes basic mechanistic research using standard siRNA knockdown in a common HEK293 cell line, which lacks the novelty required for high IP defensibility. While the gene expression patterns are interesting, the findings appear to be foundational biological observations rather than a novel composition of matter, a specific therapeutic modality, or a proprietary platform."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 13,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Biological Chemistry, Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem 91904, Israel.",
         "pi_email": "",
         "hts_score": 6,
@@ -17507,41 +17512,41 @@
         "date": "2024",
         "url": "https://pubmed.ncbi.nlm.nih.gov/38919955/",
         "journal": "Frontiers in genetics",
-        "score": 18,
-        "summary": "Researchers analyzed large-scale genomic and proteomic data from the UK Biobank to identify the complex genetic drivers of hypothyroidism. By integrating transcriptome and proteome-wide association methods, the study highlights the critical role of autoimmune mechanisms and specific gene clusters in the pathogenesis of the disease.",
-        "opportunity": "The identification of novel immune-related genetic targets provides a blueprint for developing precision therapeutics or diagnostic panels for early detection and personalized management of autoimmune-driven thyroid disorders.",
+        "score": 21,
+        "summary": "Researchers used large-scale genomic, proteomic, and transcriptomic data from the UK Biobank to identify specific causal genes linked to hypothyroidism. The study highlights a strong connection between thyroid dysfunction and immune-related genes, particularly within the MHC locus.",
+        "opportunity": "The identification of novel, proteome-validated genetic drivers provides high-confidence targets for developing precision immunotherapies or diagnostic biomarkers for autoimmune-driven hypothyroidism.",
         "abstract": "Hypothyroidism is a common endocrine disorder whose prevalence increases with age. The disease manifests itself when the thyroid gland fails to produce sufficient thyroid hormones. The disorder includes cases of congenital hypothyroidism (CH), but most cases exhibit hormonal feedback dysregulation and destruction of the thyroid gland by autoantibodies. In this study, we sought to identify causal genes for hypothyroidism in large populations. The study used the UK-Biobank (UKB) database, reporting on 13,687 cases of European ancestry. We used GWAS compilation from Open Targets (OT) and tuned protocols focusing on genes and coding regions, along with complementary association methods of PWAS (proteome-based) and TWAS (transcriptome-based). Comparing summary statistics from numerous GWAS revealed a limited number of variants associated with thyroid development. The proteome-wide association study method identified 77 statistically significant genes, half of which are located within the Chr6-MHC locus and are enriched with autoimmunity-related genes. While coding GWAS and PWAS highlighted the centrality of immune-related genes, OT and transcriptome-wide association study mostly identified genes involved in thyroid developmental programs. We used independent populations from Finland (FinnGen) and the Taiwan cohort to validate the PWAS results. The higher prevalence in females relative to males is substantiated as the polygenic risk score prediction of hypothyroidism relied mostly from the female group genetics. Comparing results from OT, TWAS, and PWAS revealed the complementary facets of hypothyroidism's etiology. This study underscores the significance of synthesizing gene-phenotype association methods for this common, intricate disease. We propose that the integration of established association methods enhances interpretability and clinical utility.",
         "fields": [
+          "Drug Discovery",
           "Genomics",
           "Proteomics",
-          "Immunology",
-          "Diagnostics"
+          "Immunology"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 3,
-            "reason": "The study applies established methodologies (GWAS, TWAS, PWAS) to a well-studied phenotype using existing public databases, representing an incremental refinement of association mapping rather than a novel scientific breakthrough or proprietary technological development. It lacks the platform-level innovation or unique mechanistic discovery required to reach higher tiers of novelty."
+            "score": 4,
+            "reason": "The study employs established multi-omic integration techniques (PWAS and TWAS) on an existing large-scale dataset (UK Biobank) rather than developing a new methodology or biological paradigm. While the findings provide incremental value to the understanding of hypothyroidism, the approach follows a standard bioinformatic workflow rather than introducing a groundbreaking scientific innovation."
           },
           "commercial_potential": {
             "score": 4,
-            "reason": "The paper is a fundamental discovery study that identifies genetic associations but lacks a clear translation into a proprietary therapeutic modality or a diagnostic product. While the identification of immune-related genes provides targets for drug discovery, the work itself is academic in nature and does not present a unique platform or actionable intellectual property."
+            "reason": "The paper is a fundamental academic study focused on gene discovery and association mapping rather than a specific therapeutic candidate or diagnostic tool. While the identified genes could theoretically serve as targets for future drug development, the work lacks a direct translation into a proprietary product, platform, or service."
           },
           "market_size": {
             "score": 7,
-            "reason": "Hypothyroidism is a highly prevalent endocrine disorder with a massive global patient population, ensuring significant addressable demand for new therapeutic targets. However, the study's focus on genetic discovery within a specific ancestry (European) and its current stage as basic research limits its immediate commercial market capture."
+            "reason": "Hypothyroidism is a highly prevalent global endocrine disorder, representing a massive patient population for diagnostic and therapeutic intervention. While the disease burden is vast, the study is foundational genetic research rather than a direct commercial product, slightly capping the immediate market score."
           },
           "trl": {
-            "score": 2,
-            "reason": "This is a foundational bioinformatics and genomic association study aimed at gene discovery rather than a therapeutic or diagnostic product. While it provides valuable biological insights, it remains at the hypothesis-generation stage and lacks the experimental validation or clinical development required for near-market application."
+            "score": 3,
+            "reason": "The study is in the early discovery stage, focusing on computational identification of genetic associations and causal genes using existing biobank datasets. It lacks functional validation in biological models or clinical utility testing required for higher TRL levels."
           },
           "ip_strength": {
-            "score": 2,
-            "reason": "This study is a descriptive genetic association analysis using publicly available datasets (UK-Biobank, Open Targets), which lack the novelty and inventive step required for patentability. The findings represent scientific discovery rather than a proprietary technology, composition of matter, or novel therapeutic platform."
+            "score": 3,
+            "reason": "The paper describes an observational bioinformatics study using publicly available datasets (UK Biobank, Open Targets) to identify gene associations, which lacks novel, patentable molecular entities or proprietary platform technologies. The findings are primarily academic in nature and represent discovery-phase statistical associations rather than defensible intellectual property."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 18,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Biological Chemistry, Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 4,
