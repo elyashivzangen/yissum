@@ -42,7 +42,7 @@ GEMINI_API_KEY   = os.environ["GEMINI_API_KEY"]
 GOOGLE_SHEET_ID  = os.environ["GOOGLE_SHEET_ID"]
 APPS_SCRIPT_URL  = os.environ["APPS_SCRIPT_URL"]   # deployed Apps Script web app URL
 GROQ_API_KEY     = os.environ.get("GROQ_API_KEY", "")  # optional last-resort fallback, runs on Groq's own infra
-GROQ_MODEL       = "llama-3.1-8b-instant"
+GROQ_MODEL       = "openai/gpt-oss-20b"   # llama-3.1-8b-instant was shut down 2026-08-16 (404 model_not_found)
 OUTPUT_HTML      = Path("papers_reader.html")
 OUTPUT_JSON      = Path("papers_data.json")
 ARCHIVE_JSON     = Path("papers_archive.json")   # append-only: every paper ever seen, never shown in the monitor
@@ -1000,7 +1000,7 @@ Return a JSON object (no markdown) with exactly these keys:
 #     > gemma-4-26b-a4b-it (26B MoE, ~3.8B active/token, #6 Arena)
 #       > gemini-3.1-flash-lite (cost/speed tier — its only edge is
 #         latency/context window, not quality)
-#         > groq llama-3.1-8b-instant (8B, weakest — last resort only)
+#         > groq openai/gpt-oss-20b (weakest — last resort only)
 #
 # An earlier version of this chain split into two tiers (strong-first for
 # meta/summary calls, flash-lite-first for the high-volume per-param calls)
@@ -1155,8 +1155,9 @@ def _call_groq(prompt):
             "model": GROQ_MODEL,
             "messages": [{"role": "user", "content": prompt}],
             "temperature": 0.3,
+            "reasoning_effort": "low",   # gpt-oss is a reasoning model; keep it fast and cheap
         },
-        timeout=30,
+        timeout=60,
     )
     r.raise_for_status()
     text = r.json()["choices"][0]["message"]["content"].strip()
