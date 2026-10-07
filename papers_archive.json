@@ -1484,42 +1484,43 @@
   "url": "https://pubmed.ncbi.nlm.nih.gov/42087059/",
   "source": "PubMed",
   "score": 18,
-  "summary": "This research investigates the safety and efficacy of low-dose atropine drops in mitigating progressive myopia specifically within pediatric populations already diagnosed with inherited retinal diseases. It aims to determine if standard myopia control protocols can be safely applied to patients with pre-existing, complex genetic ocular conditions.",
-  "opportunity": "The findings could lead to a new clinical guideline for an off-label prescription market, expanding the use of low-dose atropine as a standard-of-care preventative treatment for high-risk pediatric populations.",
+  "summary": "This study investigated whether low-dose atropine eye drops can slow down nearsightedness in children who also suffer from inherited retinal diseases. The researchers found that while atropine reduced myopia progression in typical cases, it did not show a significant effect in children with these specific genetic retinal conditions.",
+  "opportunity": "The findings suggest that current myopia management therapies like atropine may need to be repositioned or redesigned for the niche but high-value market of pediatric patients with complex genetic ocular pathologies.",
   "fields": [
    "Clinical",
-   "Other"
+   "Drug Discovery",
+   "Genomics"
   ],
   "added_date": "2026-10-06",
   "score_breakdown": {
    "novelty": {
-    "score": 3,
-    "reason": "This study represents an incremental clinical application of a well-established pharmacological agent (atropine) in a niche patient population, lacking the platform-level innovation or mechanistic breakthrough required for a high novelty score."
+    "score": 4,
+    "reason": "While the study applies a known therapeutic (low-dose atropine) to a specific niche patient population (children with IRDs), the underlying mechanism of action is well-established in myopia management. The research provides clinical insight into a sub-group rather than introducing a novel biological mechanism or a groundbreaking technological platform."
    },
    "commercial_potential": {
-    "score": 4,
-    "reason": "While atropine is already established in myopia management, repurposing it for inherited retinal diseases is a niche application with high regulatory hurdles and limited market size. The lack of a novel platform technology or clear proprietary barrier makes it a less attractive commercial opportunity compared to scalable deep-tech innovations."
+    "score": 3,
+    "reason": "The study investigates a repurposed, off-patent drug (atropine) for a highly niche patient population (children with IRDs), offering minimal opportunity for proprietary product development or high-margin licensing. Furthermore, the results suggest the treatment was not significantly effective in this specific subgroup, diminishing its commercial attractiveness."
    },
    "market_size": {
-    "score": 3,
-    "reason": "The market is highly restricted to the niche sub-segment of children with both myopia and rare inherited retinal diseases, representing a negligible total addressable market compared to the general pediatric myopia population. The limited patient population size significantly constrains the commercial return potential for a pharmaceutical intervention."
+    "score": 2,
+    "reason": "The study focuses on a highly niche orphan population (children with inherited retinal diseases), which represents a minute fraction of the total myopia market. While myopia management is a massive market, this specific clinical application lacks the scale necessary for significant commercial impact."
    },
    "trl": {
-    "score": 6,
-    "reason": "Low-dose atropine is a well-established intervention for myopia in the general population, meaning the fundamental technology and safety profile are already at a high TRL. The research is focused on clinical validation in a specific, high-risk patient subgroup, which represents a clear path to near-market label expansion."
+    "score": 7,
+    "reason": "The technology (low-dose atropine) is already clinically established for general myopia, but this study explores a specific, niche application for a specialized patient population (children with IRDs). It sits at the transition between clinical validation and targeted therapeutic deployment."
    },
    "ip_strength": {
     "score": 2,
-    "reason": "Atropine is a well-known, off-patent generic drug, and investigating its use in a specific sub-population (children with inherited retinal diseases) represents a therapeutic repurposing effort that typically offers very low IP protection or freedom to operate. Unless there is a novel, proprietary delivery mechanism or formulation involved, the underlying innovation is effectively unpatentable as a composition of matter."
+    "reason": "The study evaluates the use of atropine, an off-patent, generic drug, for a clinical indication, which offers virtually no proprietary IP or defensibility. The findings are observational and retrospective rather than describing a novel molecule, formulation, or delivery mechanism."
    }
   },
   "pi": "Claudia Yahalom",
   "pi_full_name": "Claudia Yahalom",
   "pi_email": "",
   "pi_affiliation": "Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.; Department of Ophthalmology, Hadassah Medical Center. Jerusalem, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "18",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 3,
   "hts_reason": "The paper investigates the clinical use of a known drug (atropine) for a specific disease (myopia in inherited retinal diseases), but it does not describe a novel molecular target or a new high-throughput screening assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -9076,9 +9077,9 @@
   "date": "2026-08-14",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42597154/",
   "source": "PubMed",
-  "score": 25,
-  "summary": "This study analyzes long-term diabetes risk by evaluating specific patterns and individual abnormal readings from the 100-g oral glucose tolerance test (OGTT) administered during pregnancy. The findings aim to refine clinical stratification of postpartum patients to identify those most likely to develop chronic metabolic conditions later in life.",
-  "opportunity": "The research enables the development of AI-driven predictive diagnostic software that integrates granular OGTT data to provide early-intervention risk scores for metabolic disease management.",
+  "score": 5,
+  "summary": "This study analyzes how different patterns of glucose levels during pregnancy-related testing can predict a woman's long-term risk of developing type 2 diabetes. Researchers found that the specific timing and number of abnormal readings during the oral glucose tolerance test are significant indicators of future metabolic disease.",
+  "opportunity": "Developing precision risk-stratification algorithms or digital health tools that use OGTT patterns to identify high-risk patients for early preventative intervention.",
   "fields": [
    "Diagnostics",
    "Software/AI",
@@ -9088,32 +9089,20 @@
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "This study represents an incremental clinical validation of existing diagnostic protocols rather than a novel technological or methodological breakthrough. It applies well-established oral glucose tolerance tests to long-term risk stratification, providing useful data for clinicians but offering no new platform, therapeutic, or diagnostic paradigm."
-   },
-   "commercial_potential": {
-    "score": 3,
-    "reason": "This study focuses on retrospective clinical data analysis rather than a novel, protectable technology or platform, making its commercial application limited to improved clinical guidelines rather than a scalable product or IP. It lacks a clear path to monetization or proprietary technology development."
-   },
-   "market_size": {
-    "score": 9,
-    "reason": "Diabetes mellitus is a massive, high-cost global chronic disease market, and identifying at-risk populations during pregnancy offers a critical, high-value window for preventative intervention that payers and healthcare systems are highly motivated to address."
-   },
-   "trl": {
-    "score": 9,
-    "reason": "This study utilizes standard clinical protocols (OGTT) and existing patient data to refine risk stratification models, making the findings immediately applicable to clinical practice and public health screening guidelines."
+    "reason": "The study performs an incremental refinement of existing clinical knowledge by analyzing patterns in an established diagnostic test (100-g OGTT) rather than introducing a new technology, biomarker, or methodology. While clinically useful for risk stratification, it lacks the groundbreaking scientific innovation or technical novelty required for a high score in deep-tech investment."
    },
    "ip_strength": {
-    "score": 1,
-    "reason": "The research analyzes established clinical diagnostic procedures (oral glucose tolerance tests) and their correlation with long-term diabetes risk, which involves non-patentable medical observations rather than a novel, protectable therapeutic or diagnostic invention."
+    "score": 2,
+    "reason": "The study analyzes existing clinical data (OGTT results) to derive statistical correlations, which constitutes clinical insight rather than a patentable invention or novel diagnostic hardware/biomarker. The findings are observational and lack the proprietary methodology or unique biological targets required for strong IP defensibility."
    }
   },
   "pi": "Edi Vaisbuch",
   "pi_full_name": "Edi Vaisbuch",
   "pi_email": "",
   "pi_affiliation": "Faculty of Medicine, Obstetric and Gynecology Department Kaplan Medical Center Rehovot Israel.; Faculty of Medicine Hebrew University of Jerusalem Jerusalem Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "25",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper focuses on clinical diagnostic patterns for disease prediction rather than identifying a specific molecular target or a testable biochemical assay for high-throughput screening.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
