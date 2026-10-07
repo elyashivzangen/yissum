@@ -1,0 +1,41 @@
+Loading papers from Google Sheet...
+  158 papers loaded.
+
+Comparing 4 models on 1 papers (24 total calls)...
+
+[1/1] Irradiated CD19 chimeric antigen receptor YTS cells retain antitumor a
+    forcing gemma-4-31b-it...
+Direct use of automatic function calling (AFC) in Models.generate_content is not recommended. Instead, we recommend to use AFC in Chat.send_message. Similarly, direct use of AFC in Models.generate_content_stream is not recommended. Instead, we recommend to use AFC in Chat.send_message_stream.
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      failed (no score)
+    forcing gemma-4-26b-a4b-it...
+      score=33
+    forcing gemini-3.1-flash-lite...
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+      failed (no score)
+    forcing groq:openai/gpt-oss-20b...
+    openai/gpt-oss-20b (groq) succeeded
+    openai/gpt-oss-20b (groq) succeeded
+    openai/gpt-oss-20b (groq) succeeded
+    openai/gpt-oss-20b (groq) succeeded
+    openai/gpt-oss-20b (groq) succeeded
+    openai/gpt-oss-20b (groq) succeeded
+      score=37
+
+Wrote model_comparison_pilot.json
+
+=== Per-paper score spread across models ===
+- Irradiated CD19 chimeric antigen receptor YTS cells retain a
+    gemma-4-31b-it               FAILED
+    gemma-4-26b-a4b-it           33
+    gemini-3.1-flash-lite        FAILED
+    groq:openai/gpt-oss-20b      37
+    spread: 4
+
+=== Per-model summary ===
+- gemma-4-31b-it               avg=None succeeded=0/1 failed=1
+- gemma-4-26b-a4b-it           avg=33.0 succeeded=1/1 failed=0
+- gemini-3.1-flash-lite        avg=None succeeded=0/1 failed=1
+- groq:openai/gpt-oss-20b      avg=37.0 succeeded=1/1 failed=0

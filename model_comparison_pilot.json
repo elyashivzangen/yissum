@@ -1,0 +1,62 @@
+[
+  {
+    "id": "pubmed_42610426",
+    "title": "Irradiated CD19 chimeric antigen receptor YTS cells retain antitumor activity and offer a scalable alternative to autologous CAR-T therapy.",
+    "production_score": 39,
+    "production_eval_model": "gemma-4-26b-a4b-it",
+    "models": {
+      "gemma-4-31b-it": null,
+      "gemma-4-26b-a4b-it": {
+        "score": 33,
+        "score_breakdown": {
+          "novelty": {
+            "score": 6,
+            "reason": "The concept of using engineered NK cell lines (off-the-shelf) and irradiation for safety is a well-established strategy in the field, offering incremental rather than disruptive innovation. The specific identification of the 2B4-CD48 co-stimulation enhancement provides meaningful mechanistic insight but does not fundamentally reorder the current CAR-T paradigm."
+          },
+          "commercial_potential": {
+            "score": 9,
+            "reason": "The research directly addresses the primary economic and logistical bottlenecks of cell therapy by proposing an 'off-the-shelf' allogeneic product using a scalable cell line. This shift from autologous to a scalable, cryopreserved, and irradiated model represents a massive commercial opportunity to reduce COGS and improve patient access."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The technology addresses the massive hematologic malignancy market by pivoting from expensive, bespoke autologous therapies to a scalable, 'off-the-shelf' allogeneic model. By solving the manufacturing and cost barriers of CAR-T, it unlocks a significantly larger addressable patient population and high-volume commercial utility."
+          },
+          "trl": {
+            "score": 3,
+            "reason": "The work is at the preclinical stage, demonstrating proof-of-concept in cell lines and animal models, but lacks the complex safety and pharmacokinetic data required for human clinical trials."
+          },
+          "ip_strength": {
+            "score": 6,
+            "reason": "While the use of an irradiated NK cell line for off-the-shelf therapy is industrially relevant, the core components (CD19 CAR and YTS cell line) are well-established in the literature, potentially limiting novel patentable space to specific combination or irradiation protocols."
+          }
+        }
+      },
+      "gemini-3.1-flash-lite": null,
+      "groq:openai/gpt-oss-20b": {
+        "score": 37,
+        "score_breakdown": {
+          "novelty": {
+            "score": 7,
+            "reason": "The study introduces a novel use of the YTS NK cell line engineered with a CD19 CAR and demonstrates that irradiation can halt proliferation without losing cytotoxicity, offering a scalable alternative to autologous CAR‑T. While the concept builds on existing CAR‑NK work, the specific combination of YTS cells, irradiation strategy, and demonstrated scalability represents a meaningful incremental innovation."
+          },
+          "commercial_potential": {
+            "score": 8,
+            "reason": "The work presents a scalable, off‑the‑shelf NK‑cell platform that can be manufactured, cryopreserved, and irradiated to prevent proliferation, directly addressing key cost and safety barriers of current CAR‑T therapies, indicating strong commercial potential."
+          },
+          "market_size": {
+            "score": 9,
+            "reason": "The technology targets the large, rapidly growing CD19 CAR‑T market, which is already multi‑billion dollar and expected to expand further, making the addressable demand substantial."
+          },
+          "trl": {
+            "score": 7,
+            "reason": "The study demonstrates proof-of-concept in vitro and in preclinical models with a scalable cell line, indicating a solid step toward clinical translation, but it has not yet entered human trials, placing it around TRL 7."
+          },
+          "ip_strength": {
+            "score": 6,
+            "reason": "The use of a human NK cell line (YTS) engineered with a CD19 CAR and irradiation to prevent proliferation is a novel therapeutic approach that is likely patentable, but the underlying concepts (CAR constructs, irradiation) are well known, so defensibility is moderate."
+          }
+        }
+      }
+    }
+  }
+]
