@@ -1,8 +1,884 @@
 [
  {
+  "id": "pubmed_42859981",
+  "title": "Enhancing Coherence Length in Tailored Chiral Hybrid Polymer-Wrapped Single-Walled Carbon Nanotube Superstructures.",
+  "abstract": "",
+  "authors": [
+   "Hanna T Fridman",
+   "Riley H Stephenson",
+   "Meital Ozeri",
+   "James A Alatis",
+   "Alexander C Wilcox",
+   "Jianan Yang",
+   "Francesco Mastrocinque",
+   "Shira Yochelis",
+   "Michael J Therien",
+   "Yossi Paltiel"
+  ],
+  "journal": "Small (Weinheim an der Bergstrasse, Germany)",
+  "date": "2026-10-11",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42859981/",
+  "source": "PubMed",
+  "pi": "Yossi Paltiel",
+  "pi_affiliation": "Institute of Applied Physics, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "pi_full_name": "Yossi Paltiel",
+  "pi_email": "paltiel@mail.huji.ac.il",
+  "score": 24,
+  "summary": "Researchers have developed a method to improve the electronic coherence length of single-walled carbon nanotubes by wrapping them in specialized chiral hybrid polymers. This technique creates more stable and uniform carbon nanotube superstructures with enhanced precision in their physical properties.",
+  "opportunity": "This technology enables the production of high-performance carbon nanotube-based sensors and components for advanced electronics and quantum computing architectures.",
+  "fields": [
+   "Materials",
+   "Quantum",
+   "Other"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 7,
+    "reason": "The concept of tailoring chiral polymer wrapping to extend coherence length in SWCNT superstructures is innovative and extends prior work on polymer–nanotube interactions, but the novelty is moderate as similar strategies have been explored in related nanomaterials."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "The work appears to be fundamental materials science aimed at improving coherence length in carbon nanotube superstructures; it does not directly describe a clear product, service, or licensable technology with immediate commercial application."
+   },
+   "market_size": {
+    "score": 5,
+    "reason": "The technology targets a specialized niche within nanomaterials and advanced electronics, suggesting a moderate but not massive addressable market; it is unlikely to be a mainstream consumer product yet."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The title describes fundamental materials science research focused on structural properties of carbon nanotubes, indicating basic lab-stage exploration of coherence length rather than a developed application or prototype."
+   },
+   "ip_strength": {
+    "score": 7,
+    "reason": "The work proposes a novel polymer-wrapped SWCNT superstructure that could improve coherence length, suggesting a potentially patentable material and process, but without detailed methodology or evidence of industrial applicability the defensibility remains moderate."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-10-12",
+  "hts_score": 1,
+  "hts_reason": "The paper focuses on material science and nanotechnology properties rather than identifying a specific biological target, disease link, or high-throughput biological assay.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42857383",
+  "title": "Occupational Solar UV Exposure and Skin Cancer: A Quantitative Framework for Individual Causal Attribution in Dermatology Practice.",
+  "abstract": "",
+  "authors": [
+   "Eytan Ellenberg",
+   "Arieh Ingber",
+   "Akshaya S Bhagavathula",
+   "Eldad Katorza",
+   "Yuval Ramot"
+  ],
+  "journal": "Safety and health at work",
+  "date": "2026-10-10",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42857383/",
+  "source": "PubMed",
+  "pi": "Yuval Ramot",
+  "pi_affiliation": "Department of Dermatology, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "pi_full_name": "Yuval Ramot",
+  "score": 14,
+  "summary": "This research develops a mathematical framework to calculate the specific contribution of workplace solar UV exposure to a patient's skin cancer risk. By formalizing causal attribution, the model provides a objective basis for clinical assessments and potential legal or insurance-related medical decision-making.",
+  "opportunity": "The framework can be commercialized as a clinical decision-support software tool for dermatologists and insurance underwriters to standardize occupational health risk assessment and liability modeling.",
+  "fields": [
+   "Software/AI",
+   "Clinical",
+   "Other"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The paper addresses a long-standing epidemiological challenge using existing statistical methods rather than introducing a novel scientific discovery or platform technology. It represents a practical application of retrospective causal analysis in dermatology, which is useful for clinical practice but lacks the transformative innovation or fundamental scientific breakthrough typically seen in high-novelty deep tech."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "This work represents an actuarial or clinical decision-support framework rather than a proprietary therapeutic or diagnostic technology, limiting its scalability and intellectual property moats. While useful for occupational health insurance or medico-legal contexts, it lacks the platform potential or high-barrier product architecture required for a strong venture-backed commercial opportunity."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "The paper focuses on a narrow methodological framework for causal attribution in dermatology rather than a scalable product, drug, or diagnostic tool with mass-market potential. The total addressable market is limited to a niche sub-segment of occupational health and legal/insurance consultation, lacking the high-growth commercial scalability required for a high score."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The paper describes a theoretical quantitative framework for causal attribution rather than a validated diagnostic tool or medical device. As a conceptual model for clinical practice, it remains in the early development stage and requires significant retrospective and prospective clinical validation before it can be applied in a real-world commercial setting."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The paper describes a quantitative framework for causal attribution, which is likely a mathematical or statistical methodology. Such methods are generally considered non-patentable abstract ideas and lack the technical hardware or biochemical components required for strong IP defensibility."
+   }
+  },
+  "eval_model": "gemini-3.1-flash-lite",
+  "added_date": "2026-10-12",
+  "hts_score": 1,
+  "hts_reason": "This paper is a clinical/epidemiological framework for causal attribution rather than a drug discovery study. It lacks a specific molecular target, a pharmacological disease-link, or an HTS-compatible screening assay.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42857360",
+  "title": "Two-stage laparoscopic management of De Garengeot hernia with gangrenous appendicitis: a case report and literature review.",
+  "abstract": "",
+  "authors": [
+   "Ata Maden",
+   "Ido Mizrahi"
+  ],
+  "journal": "International journal of surgery case reports",
+  "date": "2026-10-10",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42857360/",
+  "source": "PubMed",
+  "pi": "Ido Mizrahi",
+  "pi_affiliation": "Department of General Surgery, Hadassah Medical Center, Jerusalem, Israel.",
+  "pi_full_name": "Ido Mizrahi",
+  "score": 13,
+  "summary": "This paper presents a clinical case report and literature review on the two-stage laparoscopic treatment of a rare De Garengeot hernia involving gangrenous appendicitis. It highlights surgical procedural protocols for managing this complex abdominal emergency.",
+  "opportunity": "The findings provide valuable clinical data that can inform the design of specialized surgical instrumentation or robotic-assisted platforms for managing rare complex hernia repairs.",
+  "fields": [
+   "Medical Device",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 1,
+    "reason": "This is a single-patient case report describing a standard surgical approach for a rare hernia, which lacks the innovative or platform-enabling qualities required for investment consideration."
+   },
+   "commercial_potential": {
+    "score": 1,
+    "reason": "This is a single-patient case report describing a standard surgical procedure for a rare hernia type, offering no novel technology, IP, or scalable product potential. It provides clinical context for surgeons but holds zero commercial value as an investable asset."
+   },
+   "market_size": {
+    "score": 1,
+    "reason": "This paper is a singular clinical case report on a rare surgical presentation, offering no scalable technology, platform potential, or significant addressable market opportunity for investment."
+   },
+   "trl": {
+    "score": 9,
+    "reason": "This report describes a surgical procedure using established laparoscopic techniques already in standard clinical practice, representing a mature, real-world application of medical intervention. The TRL is high because the methodology involves existing, validated surgical equipment and protocols being applied to a specific clinical presentation."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This is a clinical case report describing the application of established surgical techniques for a known medical condition, involving no novel technology or patentable invention."
+   }
+  },
+  "eval_model": "gemini-3.1-flash-lite",
+  "added_date": "2026-10-12",
+  "hts_score": 1,
+  "hts_reason": "The article reports a surgical case and literature review; it does not identify a specific new molecule or target, nor link it to a disease, nor describe a testable assay.",
+  "hts_eval_model": "groq:openai/gpt-oss-20b"
+ },
+ {
+  "id": "pubmed_42854991",
+  "title": "Neuronal control of hatching in fish: An emerging perspective.",
+  "abstract": "",
+  "authors": [
+   "Deodatta Shyam Gajbhiye",
+   "Matan Golan"
+  ],
+  "journal": "General and comparative endocrinology",
+  "date": "2026-10-09",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42854991/",
+  "source": "PubMed",
+  "pi": "Matan Golan",
+  "pi_affiliation": "Matan Golan, The Hebrew University of Jerusalem, Israel.",
+  "pi_full_name": "Deodatta Shyam Gajbhiye",
+  "pi_email": "deodatta.gajbhiye@mail.huji.ac.il.",
+  "score": 10,
+  "summary": "This research explores the precise neurological mechanisms and signaling pathways that trigger the hatching process in fish embryos. By identifying the specific neuronal circuits involved, the study provides foundational biological insights into developmental timing and sensory-motor integration.",
+  "opportunity": "Deciphering these hatching mechanisms enables the development of synchronized, high-yield aquaculture production systems and precision hatchery automation tools.",
+  "fields": [
+   "AgriTech",
+   "Neuroscience"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "As a perspective or review-style paper, it synthesizes existing knowledge rather than introducing a novel experimental methodology or groundbreaking technical discovery. It serves as an academic summary of established neurobiological concepts rather than a protectable or platform-enabling technological innovation."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "This paper focuses on fundamental neurobiological mechanisms in fish development, which lacks immediate translation into a product, clinical application, or scalable industrial technology. It represents basic scientific inquiry rather than an actionable commercial opportunity."
+   },
+   "market_size": {
+    "score": 2,
+    "reason": "The paper focuses on fundamental developmental biology in fish, which lacks immediate industrial scalability or a defined commercial application. There is no clear path to monetizing this basic research mechanism within a high-growth life science or deep-tech market segment."
+   },
+   "trl": {
+    "score": 1,
+    "reason": "This paper focuses on fundamental neurobiological mechanisms in basic research, representing an early-stage academic inquiry with no immediate industrial application or commercial utility."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "This is a fundamental biology review paper describing physiological mechanisms in non-model organisms, which lacks the novelty, non-obviousness, and industrial application required for patentable IP. It serves as academic knowledge rather than a proprietary technological invention."
+   }
+  },
+  "eval_model": "gemini-3.1-flash-lite",
+  "added_date": "2026-10-12",
+  "hts_score": 1,
+  "hts_reason": "The article appears to be a review or descriptive study on neuronal control of hatching in fish; it does not identify a specific new molecule or target, nor link it to a particular disease, and no assay or method is described.",
+  "hts_eval_model": "groq:openai/gpt-oss-20b"
+ },
+ {
+  "id": "pubmed_42853952",
+  "title": "A neuronal GPCR modifies neuropeptide signaling to suppress proteostasis in distal tissues.",
+  "abstract": "",
+  "authors": [
+   "Joud Hirbawi",
+   "Adam Zaretsky",
+   "Huadong Zhu",
+   "Uri Goshtchevsky",
+   "Gourab Dey",
+   "Emmanuelle Merquiol",
+   "Atif Ahmed Siddiqui",
+   "Irit Cohen",
+   "Galia Blum",
+   "Ehud Cohen"
+  ],
+  "journal": "Science advances",
+  "date": "2026-10-09",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42853952/",
+  "source": "PubMed",
+  "pi": "Ehud Cohen",
+  "pi_affiliation": "Department of Biochemistry and Molecular Biology, the Institute for Medical Research Israel-Canada, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "pi_full_name": "Ehud Cohen",
+  "score": 20,
+  "summary": "Hebrew University researchers discovered that a specific G protein-coupled receptor (GPCR) in the brain acts as a systemic regulator of protein quality control in peripheral tissues. This mechanism suggests that neuronal signaling can be modulated to either trigger or suppress protein aggregation across the entire body.",
+  "opportunity": "This discovery provides a novel therapeutic target for developing systemic, brain-to-body pharmacological interventions to treat neurodegenerative and age-related protein-misfolding diseases.",
+  "fields": [
+   "Drug Discovery",
+   "Neuroscience",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 8,
+    "reason": "This research provides a novel mechanistic link between neuronal GPCR signaling and systemic proteostasis, representing a high-value, platform-enabling discovery for therapeutic intervention in age-related neurodegenerative and metabolic diseases. By identifying a druggable receptor that governs inter-tissue communication, it establishes a clear foundation for developing systemic, targetable therapies for protein misfolding disorders."
+   },
+   "commercial_potential": {
+    "score": 4,
+    "reason": "While identifying a novel GPCR-mediated mechanism for systemic proteostasis regulation is scientifically significant, the link to a specific drug candidate or platform technology remains highly speculative and at an early preclinical stage. Without a defined therapeutic modality or clear pharmacological strategy to target this specific receptor in humans, the translational path is currently too abstract to warrant a higher commercial score."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "This is fundamental biological research identifying a specific neural signaling pathway in model organisms, which is currently far removed from clinical translation or commercial application. While proteostasis-related mechanisms have therapeutic potential in neurodegenerative diseases, the link between this specific neuronal GPCR and a scalable, addressable market remains highly speculative and unproven."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This is fundamental, mechanism-oriented basic research identifying a specific biological pathway in a model organism; it lacks the therapeutic validation, screening platform development, or translational data required for industrial application."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "This is fundamental discovery science regarding signaling pathways that lacks an applied therapeutic composition, method of use, or engineered tool, making it difficult to establish strong IP protection in its current form. The findings serve as academic foundation rather than a defensible, proprietary platform or therapeutic candidate."
+   }
+  },
+  "eval_model": "gemini-3.1-flash-lite",
+  "added_date": "2026-10-12",
+  "hts_score": 4,
+  "hts_reason": "While the paper implies a mechanism involving a specific type of protein (neuronal GPCR), it does not name a specific target or disease, though it describes a biological effect that could theoretically be adapted into an assay.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42851308",
+  "title": "Mentorship as metadata: clinical annotation and the limits of real-world data in oculoplastic surgery.",
+  "abstract": "",
+  "authors": [
+   "Itay Nitzan",
+   "Tehila Shlomov",
+   "Zvi Gur"
+  ],
+  "journal": "Frontiers in ophthalmology",
+  "date": "2026-10-09",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42851308/",
+  "source": "PubMed",
+  "pi": "Zvi Gur",
+  "pi_affiliation": "Department of Ophthalmology, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "pi_full_name": "Zvi Gur",
+  "score": 13,
+  "summary": "This paper examines how the implicit knowledge passed through surgical mentorship acts as a critical, yet missing, layer of metadata that fundamentally limits the predictive power of current real-world clinical datasets. It highlights that relying solely on structured electronic health records fails to capture the nuanced decision-making processes necessary for training reliable surgical AI systems.",
+  "opportunity": "The findings suggest a high-value commercial opportunity in developing 'Human-in-the-loop' AI annotation tools that capture tacit procedural expertise to bridge the gap between crude historical data and high-fidelity surgical robotics or clinical decision support software.",
+  "fields": [
+   "Software/AI",
+   "Clinical",
+   "Imaging"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The paper focuses on the qualitative critique of clinical annotation and mentorship frameworks in a surgical sub-specialty, which represents a sociological observation rather than a technological or scientific breakthrough. It lacks the platform-enabling innovation or novel methodology required to impact deep-tech or life-science investment landscapes."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "The paper focuses on the qualitative assessment of data quality and the limitations of clinical documentation rather than proposing a scalable technical solution or a proprietary platform. It lacks a clear roadmap for product development or a protectable technology that could address the identified data gaps."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "The paper appears to focus on a highly specialized niche within oculoplastic surgery, targeting a narrow clinical workflow rather than a broad, high-value diagnostic or therapeutic market. The addressable demand for metadata/annotation improvements in this specific sub-specialty is likely limited in scale compared to general ophthalmology or medical AI platforms."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This paper is a qualitative/descriptive study focused on the limitations of data documentation and clinical metadata, rather than the development of a deployable technology or medical intervention. It provides academic commentary on surgical informatics workflows rather than a TRL-advancing tool or platform."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The paper focuses on data annotation and mentorship practices rather than a novel technology or method that would be patentable; it offers limited defensibility in IP terms."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-10-12",
+  "hts_score": 1,
+  "hts_reason": "This paper is a commentary on clinical data management and mentorship practices in surgery; it identifies no biological targets, disease mechanisms for intervention, or assay methods.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42850911",
+  "title": "Ti(IV) Asymmetric Acetyl-Substituted Phenolato Hexacoordinate Complexes as Anticancer Chemotherapy of Enhanced Bioavailability.",
+  "abstract": "",
+  "authors": [
+   "Mohammad Taha",
+   "Anwesh Pandey",
+   "Avital Shurki",
+   "Edit Y Tshuva"
+  ],
+  "journal": "ChemMedChem",
+  "date": "2026-10-09",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42850911/",
+  "source": "PubMed",
+  "pi": "Edit Y Tshuva",
+  "pi_affiliation": "Institute of Chemistry, The Hebrew University of Jerusalem, Edmond J. Safra Campus, Jerusalem, Israel.",
+  "pi_full_name": "Edit Y Tshuva",
+  "score": 21,
+  "summary": "Hebrew University researchers have developed novel hexacoordinate titanium(IV) complexes that utilize acetyl-substituted phenolato ligands to improve the delivery and therapeutic efficacy of metal-based anticancer agents. These compounds aim to overcome traditional limitations in bioavailability, potentially offering a more potent alternative to standard platinum-based chemotherapy drugs.",
+  "opportunity": "These proprietary metal complexes represent a high-value pipeline opportunity for developing next-generation, lower-toxicity systemic chemotherapeutic agents with improved pharmacokinetic profiles.",
+  "fields": [
+   "Drug Discovery",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "Titanium-based anticancer complexes are a well-trodden field in medicinal inorganic chemistry, and this research represents an incremental chemical modification of existing coordination motifs rather than a transformative or platform-enabling shift. The approach relies on traditional ligand substitution strategies that offer limited differentiation from established titanium(IV) therapeutic candidates."
+   },
+   "commercial_potential": {
+    "score": 4,
+    "reason": "While titanium-based complexes represent a known alternative to platinum chemotherapies, the field faces significant historical hurdles regarding stability, aqueous solubility, and toxicity in vivo. Without clinical efficacy data or a clear mechanistic advantage over established standards, the commercial path remains highly speculative and high-risk."
+   },
+   "market_size": {
+    "score": 6,
+    "reason": "While oncology represents a massive multi-billion dollar addressable market, the use of novel titanium-based coordination complexes faces a high hurdle for clinical adoption and commercialization due to the dominance of established platinum-based chemotherapies and emerging targeted immuno-oncology modalities."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This research represents early-stage medicinal chemistry involving the synthesis and characterization of novel organometallic complexes, which remains at the fundamental discovery phase far from clinical validation or commercial feasibility."
+   },
+   "ip_strength": {
+    "score": 6,
+    "reason": "While metal-based complexes offer a clear path for chemical entity patenting, the field is crowded with existing transition metal chemotherapy candidates, making it difficult to establish broad freedom-to-operate or strong novelty beyond specific structural variations. The innovation likely relies on narrow composition-of-matter claims, which are defensible but susceptible to 'me-too' circumventing by competitors in the inorganic medicinal chemistry space."
+   }
+  },
+  "eval_model": "gemini-3.1-flash-lite",
+  "added_date": "2026-10-12",
+  "hts_score": 5,
+  "hts_reason": "The paper identifies a specific class of molecules (Ti(IV) complexes) and links them to a specific disease (cancer), but it lacks a defined biological target and a high-throughput compatible assay method.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42848302",
+  "title": "BRCA Mutation Carriers and Breast Implant-Associated Anaplastic Large-Cell Lymphoma: Accumulating Evidence, Proposed Mechanism, and Implications for Reconstructive Planning and Follow-Up.",
+  "abstract": "",
+  "authors": [
+   "Yair Shachar"
+  ],
+  "journal": "Annals of surgical oncology",
+  "date": "2026-10-08",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42848302/",
+  "source": "PubMed",
+  "pi": "Yair Shachar",
+  "pi_affiliation": "Department of Plastic and Reconstructive Surgery, Hadassah Medical Center, Jerusalem, Israel. yair.shachar1@gmail.com.",
+  "pi_full_name": "Yair Shachar",
+  "pi_email": "yair.shachar1@gmail.com.",
+  "score": 14,
+  "summary": "This paper explores a potential link between BRCA genetic mutations and the development of breast implant-associated anaplastic large-cell lymphoma (BIA-ALCL). It suggests that genetic predisposition may necessitate revised screening protocols and personalized risk assessment strategies for reconstructive surgery patients.",
+  "opportunity": "There is a commercial opportunity to develop a predictive genetic screening diagnostic tool that stratifies breast reconstruction patients by their BIA-ALCL risk profile based on germline mutations.",
+  "fields": [
+   "Genomics",
+   "Diagnostics",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "This paper represents an observational clinical hypothesis or literature synthesis rather than a technological breakthrough or novel scientific platform. It provides incremental clinical insight into existing patient populations rather than proposing innovative diagnostics, therapeutics, or proprietary methodologies."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "This paper represents a clinical review or observational study rather than a novel technology, therapeutic, or diagnostic tool, offering minimal path to commercialization. It functions as medical guidance rather than a protectable asset or platform-enabling innovation."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "The market is limited to a very small, niche sub-segment of breast implant patients who are also BRCA mutation carriers, representing a narrow clinical overlap rather than a broad, high-growth commercial opportunity. The potential impact is confined to clinical risk assessment guidelines rather than a scalable therapeutic or diagnostic product market."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The paper focuses on proposing biological mechanisms and identifying clinical correlations rather than presenting a validated diagnostic tool or therapeutic intervention. It represents basic clinical research aimed at establishing a hypothesis that would require subsequent prospective validation before real-world application."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The paper appears to be a clinical observation or mechanistic hypothesis regarding an existing epidemiological association, which is generally considered non-patentable scientific knowledge. It lacks evidence of a novel therapeutic molecule, device, or proprietary diagnostic platform that would constitute defensible intellectual property."
+   }
+  },
+  "eval_model": "gemini-3.1-flash-lite",
+  "added_date": "2026-10-12",
+  "hts_score": 2,
+  "hts_reason": "The paper discusses a clinical association between BRCA mutations and a specific lymphoma but does not identify a druggable molecular target or describe a high-throughput assay for drug discovery.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42844398",
+  "title": "Radiology research platform: automating multicenter radiological research workflows using a cloud-native platform.",
+  "abstract": "",
+  "authors": [
+   "Ilias Miltiadis",
+   "Nadezhda A Stashevskaya",
+   "Pavel Burko"
+  ],
+  "journal": "European radiology",
+  "date": "2026-10-07",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42844398/",
+  "source": "PubMed",
+  "pi": "Pavel Burko",
+  "pi_affiliation": "Hadassah Medical LTD, Moscow, Russia.",
+  "pi_full_name": "Pavel Burko",
+  "score": 24,
+  "summary": "The researchers have developed a cloud-native platform designed to automate complex radiological research workflows across multiple medical centers. This system streamlines the aggregation, processing, and analysis of large-scale imaging datasets for multicenter studies.",
+  "opportunity": "A scalable SaaS platform for pharmaceutical companies and medical institutions to accelerate AI model training and multi-site clinical validation using standardized imaging data.",
+  "fields": [
+   "Software/AI",
+   "Imaging",
+   "Diagnostics",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The paper describes an engineering/infrastructure implementation of cloud-native workflows rather than a novel scientific discovery or a fundamentally new algorithmic approach. While practically useful for scaling research, it represents an incremental optimization of existing data engineering and DevOps principles applied to radiology."
+   },
+   "commercial_potential": {
+    "score": 7,
+    "reason": "The platform addresses a high-value bottleneck in clinical research by automating complex multicenter workflows, representing a scalable SaaS or licensable model. However, the lack of specific IP details or unique proprietary algorithms makes it difficult to distinguish from existing enterprise research cloud providers."
+   },
+   "market_size": {
+    "score": 7,
+    "reason": "The platform addresses a high-value bottleneck in clinical research and drug development, but the market is specialized to high-end academic and pharmaceutical research workflows rather than the broader radiology diagnostic market."
+   },
+   "trl": {
+    "score": 4,
+    "reason": "The title suggests a software infrastructure/platform designed for research workflows rather than a clinical diagnostic tool, likely sitting at the proof-of-concept or early prototype stage in a research setting. Without an abstract, it appears to be a tool for automating academic or multi-center studies rather than a validated, regulatory-cleared clinical product."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The innovation describes a workflow orchestration and cloud-native infrastructure platform, which is often difficult to protect via patents due to the 'abstract idea' exclusion and the high likelihood of existing open-source or SaaS competition. Defensibility relies more on network effects and data moats than on proprietary, patentable hardware or novel algorithmic breakthroughs."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-10-12",
+  "hts_score": 1,
+  "hts_reason": "The paper describes a computational/radiological research platform rather than a biological target, disease link, or biochemical assay suitable for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42843973",
+  "title": "Autolysosomal enhancer GHF201 attenuates pathophysiology in a mucopolysaccharidosis type I mouse model.",
+  "abstract": "",
+  "authors": [
+   "Pradeep Kumar",
+   "Emmanuelle Merquiol",
+   "Talya Avraham",
+   "Reut Sinai-Turyanski",
+   "Pankaj K Singh",
+   "Roberto A Ribas",
+   "Sahar Sweetat",
+   "Uri Sprecher",
+   "Noam Muchtar",
+   "Manjeet Gupta",
+   "Kumudesh Mishra",
+   "Shashank Kumar Ojha",
+   "Zhanna Yekhtin",
+   "Hava Glickstein",
+   "Ori Shalev",
+   "Alexandra Eliassaf",
+   "Anna Morshina",
+   "Hadas Segev-Yekutiel",
+   "Sharon Garti",
+   "Nissim Garti",
+   "Hannah Rosenmann",
+   "Miguel Weil",
+   "Matthew S Gentry",
+   "Galia Blum",
+   "Or Kakhlon"
+  ],
+  "journal": "Life science alliance",
+  "date": "2026-10-07",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42843973/",
+  "source": "PubMed",
+  "pi": "Or Kakhlon",
+  "pi_affiliation": "Department of Neurology, The Agnes Ginges Center for Human Neurogenetics, Hadassah Hebrew University Medical Center, Jerusalem, Israel ork@hadassah.org.il.; Faculty of Medicine, Hebrew University of Jerusalem, Ein Kerem, Jerusalem, Israel.",
+  "pi_full_name": "Or Kakhlon",
+  "pi_email": "ork@hadassah.org.il.",
+  "score": 27,
+  "summary": "Researchers have identified a small molecule, GHF201, that improves lysosomal function by enhancing autolysosomal processes in mice with Mucopolysaccharidosis type I. This approach aims to mitigate the cellular damage caused by the accumulation of undigested substrates in lysosomal storage disorders.",
+  "opportunity": "Development of a first-in-class pharmacological therapy for lysosomal storage diseases targeting cellular clearance mechanisms rather than enzyme replacement.",
+  "fields": [
+   "Drug Discovery",
+   "Clinical",
+   "Genomics"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 6,
+    "reason": "The research describes the therapeutic application of a specific small molecule to address a known disease mechanism, representing incremental progress in lysosomal storage disorder treatment rather than a fundamental paradigm shift in cell biology."
+   },
+   "commercial_potential": {
+    "score": 7,
+    "reason": "The identification of a specific small molecule enhancer (GHF201) targeting a well-defined orphan disease mechanism (MPS I) suggests a clear path toward drug development or licensing. However, without more data on the molecule's scaffold or delivery platform, the scalability beyond a single indication remains speculative."
+   },
+   "market_size": {
+    "score": 4,
+    "reason": "The research focuses on Mucopolysaccharidosis type I, which is an ultra-orphan disease with a very small patient population and limited total addressable market. While scientifically significant, the narrow therapeutic indication limits the overall market scale compared to broader lysosomal storage disorder platforms."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The research is at a foundational discovery stage, focusing on the characterization of a small molecule enhancer in a preclinical mouse model of a rare genetic disorder. It has not yet progressed to human clinical trials or established the necessary pharmacological and safety profiles for commercial drug development."
+   },
+   "ip_strength": {
+    "score": 7,
+    "reason": "The identification of a specific small molecule enhancer (GHF201) targeting the autolysosomal pathway offers a clear path to composition-of-matter patent protection and potential orphan drug designation. While the target is druggable and defensible, the score is capped as the underlying mechanism represents a single therapeutic asset rather than a broader, multi-product platform technology."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-10-12",
+  "hts_score": 10,
+  "hts_reason": "The paper identifies a specific molecule (GHF201), links it to a specific disease (Mucopolysaccharidosis type I), and implies a testable mechanism (autolysosomal enhancement/activity) suitable for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42843437",
+  "title": "Evolutionary conservation of MECP2 and its relevance to neuronal stability and behavioral adaptation.",
+  "abstract": "",
+  "authors": [
+   "Maya Braun",
+   "Yuval Tabach"
+  ],
+  "journal": "Neuroscience and biobehavioral reviews",
+  "date": "2026-10-07",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42843437/",
+  "source": "PubMed",
+  "pi": "Yuval Tabach",
+  "pi_affiliation": "Department of Developmental Biology and Cancer Research, Institute of Medical Research Israel-Canada, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel. Electronic address: YuvalTab@ekmd.huji.ac.il.",
+  "pi_full_name": "Yuval Tabach",
+  "pi_email": "YuvalTab@ekmd.huji.ac.il.",
+  "score": 12,
+  "summary": "This research explores how the MECP2 protein has been preserved throughout evolution to maintain neuronal health and behavioral function. By understanding its ancestral role, the study offers insights into the molecular mechanisms underlying neurodevelopmental disorders like Rett syndrome.",
+  "opportunity": "The findings provide a target-rich foundation for developing targeted gene therapies or small-molecule stabilizers to treat MECP2-related neurological conditions.",
+  "fields": [
+   "Drug Discovery",
+   "Genomics",
+   "Neuroscience",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The study of MECP2 evolutionary conservation is well-established in the literature, offering incremental biological insights rather than the transformative, platform-enabling innovation required for high investment scores. It lacks the novel therapeutic or diagnostic modality necessary to differentiate it from the extensive existing body of work on Rett syndrome and MeCP2 function."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "This paper addresses fundamental evolutionary biology and basic neurobiology, which lacks the immediate path to a tangible product, therapeutic intervention, or proprietary platform required for higher commercial potential. The focus on evolutionary conservation provides critical academic insight but does not inherently offer a clear, protectable, or near-market technological application."
+   },
+   "market_size": {
+    "score": 2,
+    "reason": "This is a fundamental biology paper focusing on the evolutionary conservation of a specific gene, which lacks immediate clinical application or a defined path to commercial product development. It represents basic research rather than a scalable market opportunity or a platform technology with an addressable target market."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This paper focuses on evolutionary biology and fundamental molecular mechanisms of the MECP2 gene rather than developing a therapeutic candidate or diagnostic tool. It represents basic discovery research that is several years removed from clinical translation or commercial application."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "As a study of evolutionary biology and basic gene conservation, the work describes natural phenomena that are generally ineligible for patent protection under 35 U.S.C. § 101. It lacks the applied engineering, novel therapeutic compositions, or proprietary technical methods required to establish meaningful commercial defensibility."
+   }
+  },
+  "eval_model": "gemini-3.1-flash-lite",
+  "added_date": "2026-10-12",
+  "hts_score": 5,
+  "hts_reason": "The title identifies a specific target (MECP2) and a link to neuronal stability/behavior, but does not describe a specific assay or method suitable for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42842950",
+  "title": "Kidney Outcomes With GLP-1 Receptor Agonists and Tirzepatide Versus Finerenone in Type 2 Diabetes and Chronic Kidney Disease: A Real-World Cohort Study.",
+  "abstract": "",
+  "authors": [
+   "Dvora R Sehtman-Shachar",
+   "Alisa Fishkin",
+   "Gil Leibowitz",
+   "Ofri Mosenzon",
+   "Meir Schechter",
+   "Genya Aharon-Hananel"
+  ],
+  "journal": "Diabetes, obesity & metabolism",
+  "date": "2026-10-07",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42842950/",
+  "source": "PubMed",
+  "pi": "Genya Aharon-Hananel",
+  "pi_affiliation": "Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.; Diabetes Unit, Department of Endocrinology and Metabolism, Hadassah Medical Center, Jerusalem, Israel.",
+  "pi_full_name": "Genya Aharon-Hananel",
+  "score": 27,
+  "summary": "This study compares the long-term kidney protective effects of GLP-1 receptor agonists and tirzepatide against finerenone in patients with type 2 diabetes and chronic kidney disease. It provides critical real-world evidence to help clinicians optimize treatment pathways for managing complex metabolic and renal health comorbidities.",
+  "opportunity": "The findings inform pharmaceutical positioning and market access strategies for cardiometabolic drug manufacturers aiming to differentiate their products based on comparative renal efficacy in a growing multi-billion dollar chronic disease segment.",
+  "fields": [
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "This study is an observational retrospective analysis comparing existing, well-characterized classes of drugs rather than introducing a novel therapeutic mechanism, platform, or diagnostic breakthrough. Its value lies in comparative real-world evidence and clinical practice refinement, which is incremental rather than scientifically groundbreaking."
+   },
+   "commercial_potential": {
+    "score": 4,
+    "reason": "This is a real-world evidence retrospective study comparing existing, already-marketed drugs, meaning it provides clinical insight but offers no new protectable intellectual property, product innovation, or platform technology."
+   },
+   "market_size": {
+    "score": 10,
+    "reason": "The study targets the massive, high-growth intersection of Type 2 Diabetes and Chronic Kidney Disease, representing a multi-billion dollar addressable market driven by an aging global population and the expanding clinical utility of GLP-1 receptor agonists."
+   },
+   "trl": {
+    "score": 9,
+    "reason": "The study utilizes real-world evidence on therapies that are already FDA-approved and widely prescribed, making the findings directly actionable for clinical decision-making and comparative effectiveness assessments."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This study is an observational analysis of existing, off-patent or already marketed pharmacological agents and provides no novel composition of matter or unique technical IP. The findings are clinical data points rather than proprietary innovation, offering zero defensibility for an investment firm."
+   }
+  },
+  "eval_model": "gemini-3.1-flash-lite",
+  "added_date": "2026-10-12",
+  "hts_score": 3,
+  "hts_reason": "This is a real-world clinical cohort study comparing existing, already-approved drugs rather than identifying a new molecular target or establishing a novel screening assay for drug discovery.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42860111",
+  "title": "From dam to neonate: microbial, metabolic, and functional pathways shaping early-life development in dogs.",
+  "abstract": "",
+  "authors": [
+   "Smadar Tal"
+  ],
+  "journal": "Theriogenology",
+  "date": "2026-10-05",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42860111/",
+  "source": "PubMed",
+  "pi": "Smadar Tal",
+  "pi_affiliation": "Tel-Hai University, Kiryat Shmona, Upper Galilee, Israel; Koret School of Veterinary Medicine, The Hebrew University Veterinary Teaching Hospital, The Hebrew University of Jerusalem, Rehovot, Israel. Electronic address: smadar.tal@mail.huji.ac.il.",
+  "pi_full_name": "Smadar Tal",
+  "pi_email": "smadar.tal@mail.huji.ac.il.",
+  "score": 20,
+  "summary": "This research investigates how microbial ecosystems and metabolic pathways transition from maternal influence to the neonate during early canine development. It maps the functional biological changes that occur during the critical window of early-life maturation.",
+  "opportunity": "The study provides a blueprint for developing precision probiotics and metabolic interventions to optimize neonatal health and immune programming in companion animals or humans.",
+  "fields": [
+   "Genomics",
+   "Immunology",
+   "Synthetic Biology",
+   "Diagnostics"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 6,
+    "reason": "The study explores early-life microbiome and metabolic pathways in dogs, a relatively under-investigated area, but it builds on established concepts in developmental microbiology and does not introduce a fundamentally new paradigm or technology."
+   },
+   "commercial_potential": {
+    "score": 6,
+    "reason": "The research identifies actionable biomarkers in the canine microbiome with strong potential for developing diagnostic tests, personalized nutritional supplements, or therapeutic probiotics in the high-growth pet health market. While highly applicable, the commercial path is currently broad and lacks the specific proof-of-concept data required for immediate clinical or industrial deployment."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "While the pet health and microbiome sectors are growing, this research addresses a highly niche biological developmental study in dogs rather than a scalable platform technology or a high-value clinical diagnostic. The addressable demand for this specific pathway mapping is limited to specialized veterinary nutrition or niche precision-medicine segments."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The title indicates fundamental mechanistic research into biological pathways and microbial ecology, which is characteristic of basic discovery science rather than applied technology or product development."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The paper appears to be a fundamental observational or mechanistic study of natural biological pathways rather than the development of a proprietary composition, tool, or therapeutic. While it provides scientific insight, biological correlations and descriptive metabolic pathways are notoriously difficult to protect via intellectual property."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-10-12",
+  "hts_score": 2,
+  "hts_reason": "The title indicates a descriptive, multi-omic study on developmental biology rather than a target-centric discovery; it lacks a specific molecular target, a specific disease link, and a defined screening assay.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42854539",
+  "title": "Reassessing the age distribution of vulvar lichen sclerosus: A retrospective cohort study.",
+  "abstract": "",
+  "authors": [
+   "Evgeny Kreichman",
+   "Oshrat Raviv",
+   "Amy Solnica",
+   "Orna Reichman"
+  ],
+  "journal": "European journal of obstetrics, gynecology, and reproductive biology",
+  "date": "2026-10-01",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42854539/",
+  "source": "PubMed",
+  "pi": "Orna Reichman",
+  "pi_affiliation": "Department of Obstetrics and Gynecology, The Eisenberg R&D Authority, Shaare Zedek Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "pi_full_name": "Amy Solnica",
+  "pi_email": "amy.solnica@mail.huji.ac.il.",
+  "score": 9,
+  "summary": "This study analyzes the demographic age distribution of patients diagnosed with vulvar lichen sclerosus, a chronic inflammatory skin condition. The research aims to clarify whether the disease prevalence across different age groups differs from historical clinical assumptions.",
+  "opportunity": "The findings could drive the development of improved diagnostic screening protocols and targeted dermatological therapeutics for younger patient demographics previously considered low-risk.",
+  "fields": [
+   "Clinical",
+   "Diagnostics"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 2,
+    "reason": "This study is a retrospective clinical analysis aimed at refining epidemiological data, which provides incremental knowledge rather than technological innovation or a novel scientific breakthrough. It does not introduce new therapeutic modalities, diagnostic platforms, or mechanisms of disease that would qualify as deep-tech or highly novel research."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "This is a descriptive retrospective clinical study intended to refine epidemiological understanding rather than a technology development paper. It lacks the novel IP, diagnostic utility, or therapeutic intervention required to support a scalable commercial product or platform."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "Vulvar lichen sclerosus is a chronic condition affecting a relatively small, niche patient demographic, representing a constrained clinical market rather than a high-growth or broad-scale opportunity. The research focuses on retrospective epidemiological refinement rather than a scalable platform or a high-impact therapeutic intervention."
+   },
+   "trl": {
+    "score": 1,
+    "reason": "This is a clinical retrospective cohort study focused on observational epidemiological data, which provides zero technology or product readiness as it is a diagnostic analysis rather than a development of a tool, therapeutic, or platform."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This is a clinical retrospective cohort study that reports observational epidemiological data, which contains no patentable subject matter or unique proprietary technology. The findings contribute to medical literature but lack the underlying innovation required for IP protection or defensibility."
+   }
+  },
+  "eval_model": "gemini-3.1-flash-lite",
+  "added_date": "2026-10-12",
+  "hts_score": 1,
+  "hts_reason": "This is a retrospective epidemiological study focused on clinical age demographics and does not identify a specific molecular target, biochemical mechanism, or experimental assay for HTS development.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42858412",
+  "title": "National Crisis-Induced Psychological Stress and Increased Herpes Zoster Incidence: A 10-Year Retrospective Study.",
+  "abstract": "",
+  "authors": [
+   "Michael Cleiman",
+   "Ayal Hassidim",
+   "Rony Shreberk-Hassidim"
+  ],
+  "journal": "Dermatology practical & conceptual",
+  "date": "2026-07-31",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42858412/",
+  "source": "PubMed",
+  "pi": "Rony Shreberk-Hassidim",
+  "pi_affiliation": "Department of Dermatology, Hadassah Medical Center, Hebrew University of Jerusalem, The Faculty of Medicine, Jerusalem, Israel.",
+  "pi_full_name": "Rony Shreberk-Hassidim",
+  "score": 14,
+  "summary": "This 10-year retrospective study from the Hebrew University of Jerusalem examines the correlation between population-level psychological stress caused by national crises and the increased incidence of Herpes Zoster. The research provides clinical evidence linking acute environmental stressors to the reactivation of latent viral infections in the general population.",
+  "opportunity": "The findings underscore a significant commercial opportunity for pharmaceutical companies to develop prophylactic vaccination programs targeting high-stress demographics and vulnerable populations in geopolitical hotspots.",
+  "fields": [
+   "Immunology",
+   "Clinical",
+   "Vaccines"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "This study follows a well-established epidemiological framework linking psychosocial stress to viral reactivation, offering incremental clinical observation rather than a novel mechanistic discovery or transformative platform technology. It lacks the groundbreaking innovation or intellectual property potential typically associated with high-scoring deep-tech investment opportunities."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "This is an epidemiological study establishing a correlation between stress and disease incidence, which lacks the proprietary technology, diagnostic tool, or therapeutic intervention required for commercial development. It provides market intelligence rather than a protectable asset or product candidate."
+   },
+   "market_size": {
+    "score": 6,
+    "reason": "The study highlights a rise in herpes zoster cases linked to crisis-induced stress, implying a larger patient pool and potentially increased demand for antiviral therapies and vaccines, but the market remains within the existing, well-established treatment space rather than a new, expansive sector."
+   },
+   "trl": {
+    "score": 1,
+    "reason": "This is a retrospective observational study analyzing historical epidemiological data and does not involve the development, validation, or commercialization of a new technology, diagnostic, or therapeutic product."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This study is an observational epidemiological analysis of existing clinical data and contains no novel compositions, devices, or proprietary methods that could be protected by intellectual property rights. It provides scientific insight but lacks any form of technical or legal defensibility as an asset."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-10-12",
+  "hts_score": 1,
+  "hts_reason": "The paper is a retrospective clinical epidemiological study that identifies no specific molecular target, provides no novel chemical candidates, and describes no druggable assay or methodology for HTS.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "epmc_PMC13648240",
+  "title": "Limitation of O3 Dry Deposition by Elevated-Source NO Emissions and Surface Dryness in Urban Environments",
+  "abstract": "",
+  "authors": [
+   "Daniel Choi",
+   "Yibo Huangfu",
+   "Erick Fredj",
+   "Qian Li",
+   "Bin Yuan",
+   "Xiaoxiao Zhang",
+   "Xianjun He",
+   "Huizhi Liu",
+   "Eran Tas"
+  ],
+  "journal": "",
+  "date": "2026-10-09",
+  "url": "https://europepmc.org/article/PMC/PMC13648240",
+  "source": "Europe PMC",
+  "pi": "Eran Tas",
+  "pi_affiliation": "The\nRobert H. Smith Faculty of Agriculture, Food and Environment, Department\nof Soil and Water Sciences , The Hebrew University\nof Jerusalem ,  ,",
+  "pi_email": "eran.tas@mail.huji.ac.il",
+  "score": 10,
+  "summary": "This research examines how nitrogen oxide (NO) emissions and surface moisture levels interact to constrain the natural removal of ground-level ozone from urban air. By modeling these atmospheric chemical dynamics, the study provides a deeper understanding of urban air quality degradation and the factors influencing pollutant sequestration.",
+  "opportunity": "This data can be integrated into AI-driven urban planning software to help municipalities predict localized air toxicity levels and optimize the placement of green infrastructure or sensor networks.",
+  "fields": [
+   "Software/AI",
+   "Other"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "This research provides a localized, incremental mechanistic refinement of existing urban atmospheric chemistry models rather than introducing a novel discovery or platform technology. Its contribution is limited to characterizing known chemical interactions in specific environmental conditions, offering minimal potential for intellectual property or industrial disruption."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "This paper focuses on fundamental atmospheric chemistry and environmental modeling, lacking a clear pathway to a commercial product, service, or proprietary technology. It provides scientific insight rather than a solution that addresses an unmet market need or offers a protectable commercial asset."
+   },
+   "market_size": {
+    "score": 2,
+    "reason": "This is a fundamental atmospheric science study regarding ozone deposition processes, which lacks a clear commercial application or a direct pathway to a scalable market. It provides academic insights into urban air chemistry rather than addressing a specific industrial or clinical pain point with significant revenue potential."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This paper represents fundamental atmospheric science research focused on characterizing chemical mechanisms in urban environments rather than the development of a commercial technology, process, or product. It provides scientific insight that informs environmental policy or modeling, but does not involve a readiness for industrial deployment or application."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This paper focuses on atmospheric chemistry and environmental modeling, which describes natural phenomena rather than a novel, patentable technology or proprietary industrial process. There is no underlying IP or technological asset that could be captured or defended."
+   }
+  },
+  "eval_model": "gemini-3.1-flash-lite",
+  "added_date": "2026-10-12",
+  "hts_score": 1,
+  "hts_reason": "The paper focuses on atmospheric chemistry and urban air pollution dynamics rather than biological targets, disease-specific drug discovery, or a molecular-level assay suitable for high-throughput screening.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
   "id": "pubmed_42841099",
   "title": "Obese Patients Undergoing Implant-based Breast Reconstruction: A Propensity Score-Matched Analysis.",
-  "abstract": "",
   "authors": [
    "Ron Skorochod",
    "Yitzhak Skorochod",
@@ -12,9 +888,6 @@
   "date": "2026-10-07",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42841099/",
   "source": "PubMed",
-  "pi": "Yoav Gronovich",
-  "pi_affiliation": "From the Department of Plastic, Reconstructive and Aesthetic Surgery, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Yoav Gronovich",
   "score": 10,
   "summary": "This study examines the outcomes and complication rates of breast reconstruction using implants in patients with obesity. It uses propensity score matching to ensure a fair comparison between obese and non-obese patient cohorts.",
   "opportunity": "Potential for developing specialized implant designs or surgical protocols tailored to the anatomical and physiological needs of high-BMI patients to reduce complication rates.",
@@ -22,6 +895,7 @@
    "Medical Device",
    "Clinical"
   ],
+  "added_date": "2026-10-07",
   "score_breakdown": {
    "novelty": {
     "score": 2,
@@ -44,8 +918,13 @@
     "reason": "This is a clinical observational study using propensity score matching, which identifies statistical correlations rather than developing new hardware, molecules, or proprietary technologies. There is no underlying innovation or novel methodology presented that would be subject to patent protection or technical defensibility."
    }
   },
+  "pi": "Yoav Gronovich",
+  "pi_full_name": "Yoav Gronovich",
+  "pi_email": "",
+  "pi_affiliation": "From the Department of Plastic, Reconstructive and Aesthetic Surgery, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "added_date": "2026-10-07",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper is a clinical observational study (propensity score-matched analysis) focusing on patient populations rather than molecular targets, specific molecules, or laboratory assays.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -53,7 +932,6 @@
  {
   "id": "pubmed_42839638",
   "title": "Self-Assembly of a Chiral Pyrene-Bifuran-Imide Into Helical and Spherical Nanostructures.",
-  "abstract": "",
   "authors": [
    "Hadar R Yakir",
    "Or Dishi",
@@ -66,9 +944,6 @@
   "date": "2026-10-06",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42839638/",
   "source": "PubMed",
-  "pi": "Ori Gidron",
-  "pi_affiliation": "Institute of Chemistry and the Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Ori Gidron",
   "score": 16,
   "summary": "Researchers have developed a new way to make tiny, spiral-shaped structures using a specific organic molecule called a chiral pyrene-bifuran-imide. These self-assembling shapes can form complex helical and spherical patterns at the nanoscale.",
   "opportunity": "These programmable nanostructures could be used to create advanced organic semiconductors or highly targeted drug delivery vehicles.",
@@ -76,6 +951,7 @@
    "Materials",
    "Drug Discovery"
   ],
+  "added_date": "2026-10-07",
   "score_breakdown": {
    "novelty": {
     "score": 4,
@@ -98,8 +974,13 @@
     "reason": "The research describes the fundamental physicochemical properties of a specific small molecule, which is likely patentable as a composition of matter, but the lack of a defined application or platform utility limits its industrial defensibility."
    }
   },
+  "pi": "Ori Gidron",
+  "pi_full_name": "Ori Gidron",
+  "pi_email": "",
+  "pi_affiliation": "Institute of Chemistry and the Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "added_date": "2026-10-07",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper describes material science/supramolecular chemistry (self-assembly of a chemical compound) but fails to identify a biological target, a disease link, or a biological assay.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -107,19 +988,15 @@
  {
   "id": "pubmed_42839174",
   "title": "Not all diverticulosis are colonic - jejunal diverticulitis.",
-  "abstract": "",
   "authors": [
    "Schattner Ami",
    "Shechtman Yitzhak",
    "Yair Glick"
   ],
   "journal": "Internal and emergency medicine",
-  "date": "2026-10-06",
+  "date": "2026 Oct 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42839174/",
   "source": "PubMed",
-  "pi": "Yair Glick",
-  "pi_affiliation": "Faculty of Medicine, Hebrew University and Hadassah Medical School (AS), Jerusalem, Israel.",
-  "pi_full_name": "Yair Glick",
   "score": 8,
   "summary": "This clinical paper identifies and discusses cases of diverticulitis occurring in the jejunum rather than the more common colon. It highlights a specific anatomical variation in inflammatory bowel disease presentation that may be overlooked in standard practice.",
   "opportunity": "Enhanced diagnostic protocols or specialized imaging software could be developed to improve the detection of non-colonic diverticula in abdominal imaging.",
@@ -128,6 +1005,7 @@
    "Clinical",
    "Imaging"
   ],
+  "added_date": "2026-10-07",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -150,8 +1028,13 @@
     "reason": "This is a clinical case report describing a specific medical phenomenon rather than a novel technological invention or platform. There is no underlying intellectual property, proprietary molecule, or device to defend."
    }
   },
+  "pi": "Yair Glick",
+  "pi_full_name": "Yair Glick",
+  "pi_email": "",
+  "pi_affiliation": "Faculty of Medicine, Hebrew University and Hadassah Medical School (AS), Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "added_date": "2026-10-07",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The title describes a clinical case report of a specific condition (jejunal diverticulitis) rather than identifying a molecular target, a specific drug candidate, or a scalable biochemical assay for high-throughput screening.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -159,7 +1042,6 @@
  {
   "id": "pubmed_42838337",
   "title": "Association between congenital nasolacrimal duct obstruction and upper airway pathology: insights from a large multicenter cohort.",
-  "abstract": "",
   "authors": [
    "Yossi Eshel",
    "Aseel Gebara",
@@ -169,13 +1051,9 @@
    "Zvi Gur"
   ],
   "journal": "Journal of AAPOS : the official publication of the American Association for Pediatric Ophthalmology and Strabismus",
-  "date": "2026-10-06",
+  "date": "2026 Oct 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42838337/",
   "source": "PubMed",
-  "pi": "Zvi Gur",
-  "pi_affiliation": "Department of Ophthalmology, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Israel. Electronic address: zvigur90@gmail.com.",
-  "pi_full_name": "Zvi Gur",
-  "pi_email": "zvigur90@gmail.com.",
   "score": 11,
   "summary": "The study investigates the statistical correlation between congenital blockage of the tear ducts and various upper airway disorders in children. It aims to identify if these two conditions frequently co-occur, suggesting a shared underlying physiological or developmental mechanism.",
   "opportunity": "Identification of these links could lead to improved clinical screening protocols or specialized diagnostic tools for pediatric respiratory and ocular health.",
@@ -183,6 +1061,7 @@
    "Clinical",
    "Diagnostics"
   ],
+  "added_date": "2026-10-07",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -205,8 +1084,13 @@
     "reason": "The paper describes an epidemiological association between two clinical conditions, which is an observational finding rather than a novel composition, device, or method that is inherently patentable. Observational data lacks the technical substance required to form a defensible intellectual property moat."
    }
   },
+  "pi": "Zvi Gur",
+  "pi_full_name": "Zvi Gur",
+  "pi_email": "zvigur90@gmail.com.",
+  "pi_affiliation": "Department of Ophthalmology, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Israel. Electronic address: zvigur90@gmail.com.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "added_date": "2026-10-07",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper describes an epidemiological association between two clinical conditions (nasolacrimal duct obstruction and upper airway pathology) rather than identifying a specific molecular target or a testable biochemical assay.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -214,7 +1098,6 @@
  {
   "id": "pubmed_42837064",
   "title": "A Live-Cell Imaging System for the Identification of Pro- and Anti-Aggregatory α-Synuclein Modulators.",
-  "abstract": "",
   "authors": [
    "Tzukit Tal",
    "Yael Almog",
@@ -225,13 +1108,9 @@
    "Eran Meshorer"
   ],
   "journal": "Molecular neurobiology",
-  "date": "2026-10-06",
+  "date": "2026 Oct 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42837064/",
   "source": "PubMed",
-  "pi": "Eran Meshorer",
-  "pi_affiliation": "Department of Genetics, The Institute of Life Sciences, The Edmond J. Safra Campus, The Hebrew University, 9190401, Jerusalem, Israel. eran.meshorer@mail.huji.ac.il.; The Edmond and Lily Safra Center for Brain Sciences (ELSC), The Hebrew University, The Edmond J. Safra Campus, 9190401, Jerusalem, Israel. eran.meshorer@mail.huji.ac.il.",
-  "pi_full_name": "Eran Meshorer",
-  "pi_email": "eran.meshorer@mail.huji.ac.il.",
   "score": 26,
   "summary": "Researchers have developed a new live-cell imaging platform designed to monitor how different compounds affect the aggregation of alpha-synuclein proteins. This system allows for the real-time identification of molecules that either promote or inhibit the protein clumping associated with neurodegenerative diseases.",
   "opportunity": "The technology offers a high-throughput screening tool for pharmaceutical companies to accelerate the discovery of disease-modifying drugs for Parkinson's and other synucleinopathies.",
@@ -241,6 +1120,7 @@
    "Imaging",
    "Medical Device"
   ],
+  "added_date": "2026-10-07",
   "score_breakdown": {
    "novelty": {
     "score": 4,
@@ -263,8 +1143,13 @@
     "reason": "The innovation appears to be a specialized application of existing live-cell imaging techniques rather than a novel hardware or molecular entity, making it difficult to secure broad composition-of-matter or foundational method patents. Defensibility is likely limited to specific proprietary protocols or software algorithms rather than a wide-reaching technological moat."
    }
   },
+  "pi": "Eran Meshorer",
+  "pi_full_name": "Eran Meshorer",
+  "pi_email": "eran.meshorer@mail.huji.ac.il.",
+  "pi_affiliation": "Department of Genetics, The Institute of Life Sciences, The Edmond J. Safra Campus, The Hebrew University, 9190401, Jerusalem, Israel. eran.meshorer@mail.huji.ac.il.; The Edmond and Lily Safra Center for Brain Sciences (ELSC), The Hebrew University, The Edmond J. Safra Campus, 9190401, Jerusalem, Israel. eran.meshorer@mail.huji.ac.il.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "added_date": "2026-10-07",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 9,
   "hts_reason": "The paper identifies a specific target (α-Synuclein), links it to a disease context (implied by α-Synuclein aggregation, typically Parkinson's), and describes a specific live-cell imaging assay for identifying modulators.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -272,7 +1157,6 @@
  {
   "id": "pubmed_42837062",
   "title": "The Protective Role of Collective Efficacy Against Illicit Drug Availability at the Street Level: A Longitudinal Analysis.",
-  "abstract": "",
   "authors": [
    "Kiseong Kuen",
    "Chloe Keel",
@@ -280,18 +1164,16 @@
    "David Weisburd"
   ],
   "journal": "Journal of urban health : bulletin of the New York Academy of Medicine",
-  "date": "2026-10-06",
+  "date": "2026 Oct 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42837062/",
   "source": "PubMed",
-  "pi": "David Weisburd",
-  "pi_affiliation": "Department of Criminology, Law and Society, George Mason University, Fairfax, VA, USA.; Institute of Criminology, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "David Weisburd",
   "score": 6,
   "summary": "This paper examines how community social cohesion and collective efficacy act as protective buffers against the presence of illicit drugs in local neighborhoods. It uses longitudinal data to analyze the sociological relationship between community strength and drug availability at the street level.",
   "opportunity": "There is no direct commercial opportunity in deep-tech or life sciences, as this is a sociological study focused on public health policy and urban social dynamics.",
   "fields": [
    "Other"
   ],
+  "added_date": "2026-10-07",
   "score_breakdown": {
    "novelty": {
     "score": 2,
@@ -314,8 +1196,13 @@
     "reason": "The paper focuses on sociological and behavioral phenomena (collective efficacy and illicit drug availability) rather than technical, chemical, or biological innovations. There is no proprietary technology, molecule, or platform presented that is eligible for patent protection or industrial defensibility."
    }
   },
+  "pi": "David Weisburd",
+  "pi_full_name": "David Weisburd",
+  "pi_email": "",
+  "pi_affiliation": "Department of Criminology, Law and Society, George Mason University, Fairfax, VA, USA.; Institute of Criminology, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "added_date": "2026-10-07",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper focuses on sociological constructs (collective efficacy) and public health policy rather than a biological molecule, disease mechanism, or biochemical assay.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -323,18 +1210,14 @@
  {
   "id": "pubmed_42836783",
   "title": "When the Algorithm Speaks First: Trust, Reliance and the Reconstruction of Clinical Metacognition.",
-  "abstract": "",
   "authors": [
    "Joel Hanhart",
    "Anat Zohar"
   ],
   "journal": "Journal of evaluation in clinical practice",
-  "date": "2026-10-06",
+  "date": "2026 Oct 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42836783/",
   "source": "PubMed",
-  "pi": "Anat Zohar",
-  "pi_affiliation": "Seymour Fox School of Education, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Anat Zohar",
   "score": 12,
   "summary": "The paper examines how clinicians' decision-making processes and metacognitive trust are reshaped when they interact with AI-driven clinical recommendations. It explores the psychological shift in how medical professionals rely on or override algorithmic suggestions during diagnosis and treatment planning.",
   "opportunity": "Developing UX/UI frameworks and human-in-the-loop validation protocols for clinical decision support systems to ensure safe and effective AI integration in healthcare settings.",
@@ -343,6 +1226,7 @@
    "Clinical",
    "Neuroscience"
   ],
+  "added_date": "2026-10-07",
   "score_breakdown": {
    "novelty": {
     "score": 4,
@@ -365,8 +1249,13 @@
     "reason": "The title suggests a philosophical, psychological, or sociological inquiry into human-AI interaction rather than a technical disclosure of a novel algorithm, device, or molecular entity. There is no evidence of patentable subject matter or proprietary technical architecture in the provided text."
    }
   },
+  "pi": "Anat Zohar",
+  "pi_full_name": "Anat Zohar",
+  "pi_email": "",
+  "pi_affiliation": "Seymour Fox School of Education, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "added_date": "2026-10-07",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper is a qualitative study on clinical decision-making and AI trust, lacking a specific molecular target, a biological disease link, or a biochemical assay.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -1529,7 +2418,7 @@
    "Liran Tiosano"
   ],
   "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
-  "date": "2026 May 9",
+  "date": "2026-05",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42105087/",
   "source": "PubMed",
   "score": 23,
@@ -1963,7 +2852,7 @@
    "Guy Golan"
   ],
   "journal": "bioRxiv : the preprint server for biology",
-  "date": "2026 Apr 30",
+  "date": "2026-04-30",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42094453/",
   "source": "PubMed",
   "score": 23,
@@ -2326,7 +3215,7 @@
    "Evan Avraham Alpert"
   ],
   "journal": "The Journal of emergency medicine",
-  "date": "2026-05-01",
+  "date": "2026 May 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42067436/",
   "source": "PubMed",
   "score": 4,
@@ -2443,7 +3332,7 @@
    "Shai Carmi"
   ],
   "journal": "medRxiv : the preprint server for health sciences",
-  "date": "2026 Apr 20",
+  "date": "2026-04-20",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42078343/",
   "source": "PubMed",
   "score": 11,
@@ -2888,7 +3777,7 @@
    "Abraham J Domb"
   ],
   "journal": "Pharmaceutics",
-  "date": "2026 Mar 31",
+  "date": "2026-03-31",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42076088/",
   "source": "PubMed",
   "score": 22,
@@ -4452,7 +5341,7 @@
    "Ilan Komargodski"
   ],
   "journal": "",
-  "date": "2026 Oct 1",
+  "date": "2026-10",
   "url": "https://europepmc.org/article/MED/42827510",
   "source": "Europe PMC",
   "score": 30,
@@ -5241,7 +6130,7 @@
    "Sara Eyal"
   ],
   "journal": "Epileptic disorders : international epilepsy journal with videotape",
-  "date": "2026-10-03",
+  "date": "2026 Oct 3",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42828464/",
   "source": "PubMed",
   "score": 17,
@@ -5325,7 +6214,7 @@
    "Anish Thomas"
   ],
   "journal": "The Journal of clinical investigation",
-  "date": "2026 Oct 1",
+  "date": "2026-10-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42820295/",
   "source": "PubMed",
   "score": 28,
@@ -5674,7 +6563,7 @@
    "Nurit Argov-Argaman"
   ],
   "journal": "Foods (Basel, Switzerland)",
-  "date": "2026 Sep 13",
+  "date": "2026-09",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42794019/",
   "source": "PubMed",
   "score": 25,
@@ -6222,7 +7111,7 @@
    "Michal Lotem"
   ],
   "journal": "",
-  "date": "2026 Sep 12",
+  "date": "2026-09-12",
   "url": "https://europepmc.org/article/MED/42735459",
   "source": "Europe PMC",
   "score": 22,
@@ -6289,7 +7178,7 @@
    "Mordekhay Medvedovsky"
   ],
   "journal": "",
-  "date": "2026 Sep 10",
+  "date": "2026-09",
   "url": "https://europepmc.org/article/PMC/PMC13586569",
   "source": "Europe PMC",
   "score": 18,
@@ -6796,7 +7685,7 @@
    "Adi Vaknin-Dembinsky"
   ],
   "journal": "IBRO neuroscience reports",
-  "date": "2026 Sep 17",
+  "date": "2026-09",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42751190/",
   "source": "PubMed",
   "score": 28,
@@ -8480,7 +9369,7 @@
    "David Shveiky"
   ],
   "journal": "Journal of clinical medicine",
-  "date": "2026-08-18",
+  "date": "2026 Aug 18",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42652769/",
   "source": "PubMed",
   "score": 22,
@@ -8535,7 +9424,7 @@
    "Maya Korem"
   ],
   "journal": "Journal of fungi (Basel, Switzerland)",
-  "date": "2026-08-16",
+  "date": "2026 Aug 16",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42646143/",
   "source": "PubMed",
   "score": 21,
@@ -8873,7 +9762,7 @@
    "Michal Linial"
   ],
   "journal": "Bioinformatics (Oxford, England)",
-  "date": "2026 Aug 1",
+  "date": "2026-08-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42635236/",
   "source": "PubMed",
   "score": 33,
@@ -9275,7 +10164,7 @@
    "Tomer Tzur"
   ],
   "journal": "Journal of plastic, reconstructive & aesthetic surgery : JPRAS",
-  "date": "2026-08",
+  "date": "2026-08-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42612275/",
   "source": "PubMed",
   "score": 26,
@@ -9683,7 +10572,7 @@
    "Moshe E Gatt"
   ],
   "journal": "Cancers",
-  "date": "2026 Jul 26",
+  "date": "2026-07-26",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42588628/",
   "source": "PubMed",
   "score": 15,
@@ -10704,7 +11593,7 @@
    "Reut Rotem"
   ],
   "journal": "International journal of gynaecology and obstetrics: the official organ of the International Federation of Gynaecology and Obstetrics",
-  "date": "2026 Jul 26",
+  "date": "2026-07-26",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42504049/",
   "source": "PubMed",
   "score": 21,
@@ -11169,7 +12058,7 @@
    "Ronen Hazan"
   ],
   "journal": "Antibiotics (Basel, Switzerland)",
-  "date": "2026 Jul 3",
+  "date": "2026-07-03",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42505622/",
   "source": "PubMed",
   "score": 25,
@@ -11236,7 +12125,7 @@
    "Ori Wald"
   ],
   "journal": "Pharmaceuticals (Basel, Switzerland)",
-  "date": "2026 Jul 2",
+  "date": "2026-07-02",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42515717/",
   "source": "PubMed",
   "score": 27,
@@ -11608,7 +12497,7 @@
    "Barry Hahn"
   ],
   "journal": "Open access emergency medicine : OAEM",
-  "date": "2026 Jul 20",
+  "date": "2026-07-20",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42473466/",
   "source": "PubMed",
   "score": 18,
@@ -12195,7 +13084,7 @@
    "Justin D Lathia"
   ],
   "journal": "Neuro-oncology",
-  "date": "2026-10-01",
+  "date": "2026 Oct 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42434965/",
   "source": "PubMed",
   "score": 24,
@@ -12653,7 +13542,7 @@
    "David Smadja"
   ],
   "journal": "Journal of refractive surgery (Thorofare, N.J. : 1995)",
-  "date": "2026-07",
+  "date": "2026 Jul 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42429236/",
   "source": "PubMed",
   "score": 24,
@@ -12914,7 +13803,7 @@
    "Albert Grinshpun"
   ],
   "journal": "Cancers",
-  "date": "2026-06-26",
+  "date": "2026 Jun 26",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42449621/",
   "source": "PubMed",
   "score": 26,
@@ -15337,7 +16226,7 @@
    "Doron Steinberg"
   ],
   "journal": "Pharmaceutics",
-  "date": "2026 Mar 25",
+  "date": "2026-03-25",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42076059/",
   "source": "PubMed",
   "score": 17,
@@ -15659,7 +16548,7 @@
    "Zvi Peleg"
   ],
   "journal": "",
-  "date": "2026-05-01",
+  "date": "2026 May 1",
   "url": "https://europepmc.org/article/MED/41147191",
   "source": "Europe PMC",
   "score": 20,
@@ -16377,7 +17266,7 @@
    "Alena Kirzhner"
   ],
   "journal": "Diabetes & metabolism",
-  "date": "2026 Sep 1",
+  "date": "2026-09-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42785671/",
   "source": "PubMed",
   "score": 25,
@@ -17315,7 +18204,7 @@
    "Morris Nechama"
   ],
   "journal": "iScience",
-  "date": "2026 Sep 1",
+  "date": "2026-09-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42741680/",
   "source": "PubMed",
   "score": 22,
@@ -18183,7 +19072,7 @@
    "Rami I Aqeilan"
   ],
   "journal": "Molecular therapy. Advances",
-  "date": "2026 Sep 10",
+  "date": "2026-09-10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42422765/",
   "source": "PubMed",
   "score": 31,
@@ -18298,7 +19187,7 @@
    "Sarah Matarasso Greenfeld"
   ],
   "journal": "Haematologica",
-  "date": "2026 Sep 10",
+  "date": "2026-09-10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42719963/",
   "source": "PubMed",
   "score": 38,
@@ -18359,7 +19248,7 @@
    "Michael Glikson"
   ],
   "journal": "Thrombosis and haemostasis",
-  "date": "2026 Sep 11",
+  "date": "2026-09-11",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42728723/",
   "source": "PubMed",
   "score": 23,
@@ -18480,7 +19369,7 @@
    "Yossi Paltiel"
   ],
   "journal": "Nanoscale",
-  "date": "2026 Sep 1",
+  "date": "2026-09-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42703788/",
   "source": "PubMed",
   "score": 20,
@@ -19108,7 +19997,7 @@
    "Ilan Rosenshine"
   ],
   "journal": "",
-  "date": "2026 Sep 1",
+  "date": "2026-09-01",
   "url": "https://europepmc.org/article/MED/42678059",
   "source": "Europe PMC",
   "score": 24,
@@ -21433,7 +22322,7 @@
    "Zackaria Nairoukh"
   ],
   "journal": "",
-  "date": "2026-08-17",
+  "date": "2026 Aug 17",
   "url": "https://europepmc.org/article/MED/42630607",
   "source": "Europe PMC",
   "score": 29,
@@ -22403,7 +23292,7 @@
    "Roi Ben-David"
   ],
   "journal": "TAG. Theoretical and applied genetics. Theoretische und angewandte Genetik",
-  "date": "2026 Aug 1",
+  "date": "2026-08-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42604475/",
   "source": "PubMed",
   "score": 31,
@@ -22461,7 +23350,7 @@
    "Miri Adler"
   ],
   "journal": "Cell reports",
-  "date": "2026 Aug 1",
+  "date": "2026-08-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42603275/",
   "source": "PubMed",
   "score": 26,
@@ -22578,7 +23467,7 @@
    "Abigail H Gewirtz"
   ],
   "journal": "Prevention science : the official journal of the Society for Prevention Research",
-  "date": "2026 Aug 10",
+  "date": "2026-08-10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42576136/",
   "source": "PubMed",
   "score": 25,
@@ -23823,7 +24712,7 @@
    "Igal Levine"
   ],
   "journal": "Small (Weinheim an der Bergstrasse, Germany)",
-  "date": "2026 Aug 1",
+  "date": "2026-08-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42568313/",
   "source": "PubMed",
   "score": 25,
@@ -24907,7 +25796,7 @@
    "Dan Turner"
   ],
   "journal": "",
-  "date": "2026 Aug 1",
+  "date": "2026-08",
   "url": "https://europepmc.org/article/MED/42086326",
   "source": "Europe PMC",
   "score": 28,
@@ -24975,7 +25864,7 @@
    "Dan Turner"
   ],
   "journal": "Scandinavian journal of gastroenterology",
-  "date": "2026-07-01",
+  "date": "2026 Jul 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42529797/",
   "source": "PubMed",
   "score": 26,
@@ -25029,7 +25918,7 @@
    "Michal Linial"
   ],
   "journal": "British journal of cancer",
-  "date": "2026 Jul 27",
+  "date": "2026-07-27",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42509464/",
   "source": "PubMed",
   "score": 26,
@@ -27715,7 +28604,7 @@
    "Dina Schneidman-Duhovny"
   ],
   "journal": "Current opinion in structural biology",
-  "date": "2026-07",
+  "date": "2026 Jul 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42430862/",
   "source": "PubMed",
   "score": 30,
@@ -29084,7 +29973,7 @@
    "Osnat Malka"
   ],
   "journal": "",
-  "date": "2026 May 1",
+  "date": "2026-05",
   "url": "https://europepmc.org/article/MED/42255296",
   "source": "Europe PMC",
   "score": 31,
@@ -29169,7 +30058,7 @@
    "Chamutal Gur"
   ],
   "journal": "",
-  "date": "2026 May 1",
+  "date": "2026-05-01",
   "url": "https://europepmc.org/article/MED/42098533",
   "source": "Europe PMC",
   "score": 37,
@@ -29232,7 +30121,7 @@
    "Rabea Asleh"
   ],
   "journal": "",
-  "date": "2026-05",
+  "date": "2026 May 1",
   "url": "https://europepmc.org/article/MED/42148620",
   "source": "Europe PMC",
   "score": 31,
@@ -29293,7 +30182,7 @@
    "Tamar Harel"
   ],
   "journal": "bioRxiv : the preprint server for biology",
-  "date": "2026 May 1",
+  "date": "2026-05",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42239176/",
   "source": "PubMed",
   "score": 34,
@@ -29354,7 +30243,7 @@
    "Sharon Schlesinger"
   ],
   "journal": "",
-  "date": "2026-05-01",
+  "date": "2026 May 1",
   "url": "https://europepmc.org/article/MED/42182043",
   "source": "Europe PMC",
   "score": 35,
@@ -29419,7 +30308,7 @@
    "Sheera Adar"
   ],
   "journal": "",
-  "date": "2026-04-01",
+  "date": "2026 Apr 1",
   "url": "https://europepmc.org/article/MED/42072663",
   "source": "Europe PMC",
   "score": 32,
@@ -29731,7 +30620,7 @@
    "Tamir Ben-Hur"
   ],
   "journal": "Stem cell reports",
-  "date": "2026 Jun 1",
+  "date": "2026-06",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42276062/",
   "source": "PubMed",
   "score": 36,
@@ -29847,7 +30736,7 @@
    "Rachel Nechushtai"
   ],
   "journal": "Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie",
-  "date": "2026-07-01",
+  "date": "2026 Jul 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42259134/",
   "source": "PubMed",
   "score": 31,
@@ -30021,7 +30910,7 @@
    "Albert Grinshpun"
   ],
   "journal": "medRxiv : the preprint server for health sciences",
-  "date": "2026 May 1",
+  "date": "2026-05-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42238456/",
   "source": "PubMed",
   "score": 35,
@@ -30138,7 +31027,7 @@
    "Tawfeeq Shekh-Ahmad"
   ],
   "journal": "Signal transduction and targeted therapy",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42315848/",
   "source": "PubMed",
   "score": 31,
@@ -30260,7 +31149,7 @@
    "Howard Cedar"
   ],
   "journal": "Nature communications",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42265112/",
   "source": "PubMed",
   "score": 26,
@@ -30380,7 +31269,7 @@
    "Uri Banin"
   ],
   "journal": "",
-  "date": "2026-05-01",
+  "date": "2026 May 1",
   "url": "https://europepmc.org/article/MED/42189911",
   "source": "Europe PMC",
   "score": 25,
@@ -30551,7 +31440,7 @@
    "Liron Kogan"
   ],
   "journal": "",
-  "date": "2026-05-01",
+  "date": "2026 May 1",
   "url": "https://europepmc.org/article/MED/42120689",
   "source": "Europe PMC",
   "score": 32,
@@ -30604,7 +31493,7 @@
    "Lianet Noda-García"
   ],
   "journal": "Microbial biotechnology",
-  "date": "2026-06",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42338148/",
   "source": "PubMed",
   "score": 34,
@@ -30715,7 +31604,7 @@
    "Ori Finfter"
   ],
   "journal": "Oral oncology",
-  "date": "2026-06",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42269385/",
   "source": "PubMed",
   "score": 27,
@@ -31003,7 +31892,7 @@
    "Boaz Nachmias"
   ],
   "journal": "",
-  "date": "2026 May 1",
+  "date": "2026-05-01",
   "url": "https://europepmc.org/article/MED/42104100",
   "source": "Europe PMC",
   "score": 25,
@@ -31313,7 +32202,7 @@
    "Haitham Amal"
   ],
   "journal": "Scientific reports",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42277197/",
   "source": "PubMed",
   "score": 28,
@@ -31721,7 +32610,7 @@
    "Mattan Hurevich"
   ],
   "journal": "Journal of the American Chemical Society",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42267531/",
   "source": "PubMed",
   "score": 31,
@@ -32429,7 +33318,7 @@
    "Michal Rabani"
   ],
   "journal": "Genome research",
-  "date": "2026-06-29",
+  "date": "2026 Jun 29",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42373304/",
   "source": "PubMed",
   "score": 25,
@@ -32664,7 +33553,7 @@
    "Rivka Elbaum"
   ],
   "journal": "ACS biomaterials science & engineering",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42334412/",
   "source": "PubMed",
   "score": 25,
@@ -32826,7 +33715,7 @@
    "Ayelet N Landau"
   ],
   "journal": "Nature communications",
-  "date": "2026-05-01",
+  "date": "2026 May 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42218120/",
   "source": "PubMed",
   "score": 28,
@@ -39024,7 +39913,7 @@
    "N Peled"
   ],
   "journal": "ESMO open",
-  "date": "2026-06",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42378718/",
   "source": "PubMed",
   "score": 32,
@@ -39085,7 +39974,7 @@
    "Oren Zimhony"
   ],
   "journal": "Antimicrobial resistance and infection control",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42374536/",
   "source": "PubMed",
   "score": 33,
@@ -39255,7 +40144,7 @@
    "Yael Houri-Haddad"
   ],
   "journal": "Journal of dentistry",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42379259/",
   "source": "PubMed",
   "score": 28,
@@ -39786,7 +40675,7 @@
    "Batsheva Kerem"
   ],
   "journal": "Journal of cystic fibrosis : official journal of the European Cystic Fibrosis Society",
-  "date": "2026 Jun 1",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42350209/",
   "source": "PubMed",
   "score": 31,
@@ -40298,7 +41187,7 @@
    "Avi-Hai Hovav"
   ],
   "journal": "Proceedings of the National Academy of Sciences of the United States of America",
-  "date": "2026-06-30",
+  "date": "2026 Jun 30",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42341044/",
   "source": "PubMed",
   "score": 25,
@@ -41567,7 +42456,7 @@
    "Ofer Mandelboim"
   ],
   "journal": "",
-  "date": "2026-05-01",
+  "date": "2026 May 1",
   "url": "https://europepmc.org/article/MED/42065370",
   "source": "Europe PMC",
   "score": 28,
@@ -41631,7 +42520,7 @@
    "Yehuda Tzfati"
   ],
   "journal": "Nature communications",
-  "date": "2026-05-01",
+  "date": "2026 May 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42067527/",
   "source": "PubMed",
   "score": 32,
@@ -41794,7 +42683,7 @@
    "Elad Gross"
   ],
   "journal": "Faraday discussions",
-  "date": "2026-04-01",
+  "date": "2026 Apr 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42065428/",
   "source": "PubMed",
   "score": 26,
@@ -42781,7 +43670,7 @@
    "Itamar Willner"
   ],
   "journal": "Small (Weinheim an der Bergstrasse, Germany)",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42012076/",
   "source": "PubMed",
   "score": 28,
@@ -43243,7 +44132,7 @@
    "Haitham Amal"
   ],
   "journal": "",
-  "date": "2026-04-01",
+  "date": "2026 Apr 1",
   "url": "https://europepmc.org/article/MED/42010670",
   "source": "Europe PMC",
   "score": 25,
@@ -43840,7 +44729,7 @@
    "Neta Shlezinger"
   ],
   "journal": "mBio",
-  "date": "2026-05",
+  "date": "2026 May 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41979352/",
   "source": "PubMed",
   "score": 26,
@@ -43899,7 +44788,7 @@
    "Oren Ram"
   ],
   "journal": "Nucleic acids research",
-  "date": "2026-04-01",
+  "date": "2026 Apr 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41978262/",
   "source": "PubMed",
   "score": 35,
@@ -44018,7 +44907,7 @@
    "Rami I Aqeilan"
   ],
   "journal": "Proceedings of the National Academy of Sciences of the United States of America",
-  "date": "2026-04-01",
+  "date": "2026 Apr 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41984841/",
   "source": "PubMed",
   "score": 26,
@@ -44249,7 +45138,7 @@
    "Tommy Kaplan"
   ],
   "journal": "Nature communications",
-  "date": "2026-04-01",
+  "date": "2026 Apr 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41980926/",
   "source": "PubMed",
   "score": 30,
@@ -45202,7 +46091,7 @@
    "Dmitry Tsvelikhovsky"
   ],
   "journal": "Nature communications",
-  "date": "2026-04-01",
+  "date": "2026 Apr 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41965351/",
   "source": "PubMed",
   "score": 30,
@@ -45720,7 +46609,7 @@
    "Emanuel Hanski"
   ],
   "journal": "Trends in microbiology",
-  "date": "2026 Jun 1",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41956943/",
   "source": "PubMed",
   "score": 28,
@@ -46461,7 +47350,7 @@
    "Amir Haze"
   ],
   "journal": "Journal of orthopaedic research : official publication of the Orthopaedic Research Society",
-  "date": "2026 Apr 1",
+  "date": "2026-04",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41925697/",
   "source": "PubMed",
   "score": 33,
@@ -46701,7 +47590,7 @@
    "Mor Nitzan"
   ],
   "journal": "Cell systems",
-  "date": "2026 May 1",
+  "date": "2026-05-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41928515/",
   "source": "PubMed",
   "score": 28,
@@ -46871,7 +47760,7 @@
    "Eran Meshorer"
   ],
   "journal": "Cell death and differentiation",
-  "date": "2026-04",
+  "date": "2026 Apr 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41922802/",
   "source": "PubMed",
   "score": 26,
