@@ -6,115 +6,97 @@ Loading existing papers from Google Sheet...
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (commercial_potential): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
   Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    all 2 candidate(s) cooling down — waiting 90s before retry
     gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    all 2 candidate(s) cooling down — waiting 90s before retry
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
   Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
+      re-scored 15 via gemma-4-26b-a4b-it (was 24 via groq:openai/gpt-oss-20b)
   [2/14] re-eval: Occupational Solar UV Exposure and Skin Cancer: A Quantitative Framewo
-    all 2 candidate(s) cooling down — waiting 90s before retry
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 8 via gemma-4-26b-a4b-it (was 14 via gemini-3.1-flash-lite)
   [3/14] re-eval: Two-stage laparoscopic management of De Garengeot hernia with gangreno
-    all 2 candidate(s) cooling down — waiting 90s before retry
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 3 via gemma-4-26b-a4b-it (was 13 via gemini-3.1-flash-lite)
   [4/14] re-eval: Neuronal control of hatching in fish: An emerging perspective.
-    all 2 candidate(s) cooling down — waiting 90s before retry
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
   Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
       still no Gemma result — leaving as-is
   [5/14] re-eval: A neuronal GPCR modifies neuropeptide signaling to suppress proteostas
-    all 2 candidate(s) cooling down — waiting 90s before retry
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 16 via gemma-4-26b-a4b-it (was 20 via gemini-3.1-flash-lite)
+  [6/14] re-eval: Mentorship as metadata: clinical annotation and the limits of real-wor
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
+  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 7 via gemma-4-26b-a4b-it (was 13 via groq:openai/gpt-oss-20b)
+  [7/14] re-eval: Ti(IV) Asymmetric Acetyl-Substituted Phenolato Hexacoordinate Complexe
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
       still no Gemma result — leaving as-is
-  [6/14] re-eval: Mentorship as metadata: clinical annotation and the limits of real-wor
-    all 2 candidate(s) cooling down — waiting 90s before retry
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
-  [7/14] re-eval: Ti(IV) Asymmetric Acetyl-Substituted Phenolato Hexacoordinate Complexe
-    all 2 candidate(s) cooling down — waiting 61s before retry
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
   [8/14] re-eval: Limitation of O3 Dry Deposition by Elevated-Source NO Emissions and Su
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
       still no Gemma result — leaving as-is
   [9/14] re-eval: BRCA Mutation Carriers and Breast Implant-Associated Anaplastic Large-
-    all 2 candidate(s) cooling down — waiting 89s before retry
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
   Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
       still no Gemma result — leaving as-is
   [10/14] re-eval: Evolutionary conservation of MECP2 and its relevance to neuronal stabi
+    all 2 candidate(s) cooling down — waiting 63s before retry
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
   Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
       still no Gemma result — leaving as-is
   [11/14] re-eval: Kidney Outcomes With GLP-1 Receptor Agonists and Tirzepatide Versus Fi
-    all 2 candidate(s) cooling down — waiting 89s before retry
+    all 2 candidate(s) cooling down — waiting 25s before retry
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
+  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 24 via gemma-4-26b-a4b-it (was 27 via gemini-3.1-flash-lite)
   [12/14] re-eval: From dam to neonate: microbial, metabolic, and functional pathways sha
-    all 2 candidate(s) cooling down — waiting 62s before retry
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 15 via gemma-4-26b-a4b-it (was 20 via groq:openai/gpt-oss-20b)
+  [13/14] re-eval: Reassessing the age distribution of vulvar lichen sclerosus: A retrosp
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [13/14] re-eval: Reassessing the age distribution of vulvar lichen sclerosus: A retrosp
-    all 2 candidate(s) cooling down — waiting 26s before retry
+  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    all 2 candidate(s) cooling down — waiting 90s before retry
+      re-scored 1 via gemma-4-26b-a4b-it (was 9 via gemini-3.1-flash-lite)
+  [14/14] re-eval: National Crisis-Induced Psychological Stress and Increased Herpes Zost
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
   Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
       still no Gemma result — leaving as-is
-  [14/14] re-eval: National Crisis-Induced Psychological Stress and Increased Herpes Zost
-    all 2 candidate(s) cooling down — waiting 62s before retry
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  Re-evaluated 0/14 papers onto Gemma.
-  Nothing re-scored (no non-Gemma papers, or Gemma still unavailable).
+  Re-evaluated 8/14 papers onto Gemma.
+Sheet updated: {"status":"ok","rows":175}
+  Archive: 1014 papers total.
+Generated papers_reader.html and papers_data.json with 174 papers and 51 researcher profiles.
 Re-evaluation complete.

@@ -18,44 +18,35 @@
   "date": "2026-10-11",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42859981/",
   "source": "PubMed",
-  "score": 24,
-  "summary": "Researchers have developed a method to improve the electronic coherence length of single-walled carbon nanotubes by wrapping them in specialized chiral hybrid polymers. This technique creates more stable and uniform carbon nanotube superstructures with enhanced precision in their physical properties.",
-  "opportunity": "This technology enables the production of high-performance carbon nanotube-based sensors and components for advanced electronics and quantum computing architectures.",
+  "score": 15,
+  "summary": "Researchers have developed a method to wrap single-walled carbon nanotubes in chiral polymers to significantly increase electron coherence length and induce spin-orbit coupling. This transformation changes how electrons move through the material, shifting behavior from weak localization to weak anti-localization.",
+  "opportunity": "This breakthrough enables the engineering of highly stable, spin-dependent nanoscale components essential for the next generation of quantum computing hardware and advanced spintronic sensors.",
   "fields": [
-   "Materials",
    "Quantum",
-   "Other"
+   "Materials"
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
    "novelty": {
-    "score": 7,
-    "reason": "The concept of tailoring chiral polymer wrapping to extend coherence length in SWCNT superstructures is innovative and extends prior work on polymer–nanotube interactions, but the novelty is moderate as similar strategies have been explored in related nanomaterials."
+    "score": 8,
+    "reason": "The research introduces a novel method for inducing spin-orbit coupling and enhancing phase coherence in SWNTs through chiral molecular wrapping, moving beyond simple functionalization to structural symmetry engineering. This represents a significant platform-enabling advancement for developing scalable, chirality-controlled spintronic and quantum transport devices."
    },
    "commercial_potential": {
-    "score": 3,
-    "reason": "The work appears to be fundamental materials science aimed at improving coherence length in carbon nanotube superstructures; it does not directly describe a clear product, service, or licensable technology with immediate commercial application."
-   },
-   "market_size": {
-    "score": 5,
-    "reason": "The technology targets a specialized niche within nanomaterials and advanced electronics, suggesting a moderate but not massive addressable market; it is unlikely to be a mainstream consumer product yet."
+    "score": 4,
+    "reason": "While the work demonstrates a fundamental breakthrough in manipulating spin-orbit coupling and coherence length, it remains in the fundamental physics domain without a clear application roadmap or defined device architecture. The technology is a promising material building block for quantum computing or spintronics, but the path to a scalable product or service is highly speculative and long-term."
    },
    "trl": {
-    "score": 2,
-    "reason": "The title describes fundamental materials science research focused on structural properties of carbon nanotubes, indicating basic lab-stage exploration of coherence length rather than a developed application or prototype."
-   },
-   "ip_strength": {
-    "score": 7,
-    "reason": "The work proposes a novel polymer-wrapped SWCNT superstructure that could improve coherence length, suggesting a potentially patentable material and process, but without detailed methodology or evidence of industrial applicability the defensibility remains moderate."
+    "score": 3,
+    "reason": "The research is in the fundamental physics/materials discovery stage, focusing on characterizing quantum transport phenomena and spin-orbit coupling mechanisms. While it demonstrates a significant scientific breakthrough in enhancing coherence length, it lacks the device integration or scalability required for near-market application."
    }
   },
   "pi": "Yossi Paltiel",
   "pi_full_name": "Yossi Paltiel",
   "pi_email": "paltiel@mail.huji.ac.il",
   "pi_affiliation": "Institute of Applied Physics, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 24,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper focuses on material science and nanotechnology properties rather than identifying a specific biological target, disease link, or high-throughput biological assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -74,9 +65,9 @@
   "date": "2026-10-10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42857383/",
   "source": "PubMed",
-  "score": 14,
-  "summary": "This research develops a mathematical framework to calculate the specific contribution of workplace solar UV exposure to a patient's skin cancer risk. By formalizing causal attribution, the model provides a objective basis for clinical assessments and potential legal or insurance-related medical decision-making.",
-  "opportunity": "The framework can be commercialized as a clinical decision-support software tool for dermatologists and insurance underwriters to standardize occupational health risk assessment and liability modeling.",
+  "score": 8,
+  "summary": "Researchers developed a mathematical framework using game theory and Monte Carlo simulations to precisely calculate how much skin cancer risk is caused by work environments versus individual biological factors. This allows for a quantitative way to partition liability and risk between employers and employees for medico-legal and insurance purposes.",
+  "opportunity": "This methodology could be commercialized as a decision-support software platform for insurance underwriting, occupational health risk assessment, and medico-legal litigation modeling.",
   "fields": [
    "Software/AI",
    "Clinical",
@@ -84,34 +75,22 @@
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "The paper addresses a long-standing epidemiological challenge using existing statistical methods rather than introducing a novel scientific discovery or platform technology. It represents a practical application of retrospective causal analysis in dermatology, which is useful for clinical practice but lacks the transformative innovation or fundamental scientific breakthrough typically seen in high-novelty deep tech."
-   },
    "commercial_potential": {
-    "score": 3,
-    "reason": "This work represents an actuarial or clinical decision-support framework rather than a proprietary therapeutic or diagnostic technology, limiting its scalability and intellectual property moats. While useful for occupational health insurance or medico-legal contexts, it lacks the platform potential or high-barrier product architecture required for a strong venture-backed commercial opportunity."
-   },
-   "market_size": {
-    "score": 3,
-    "reason": "The paper focuses on a narrow methodological framework for causal attribution in dermatology rather than a scalable product, drug, or diagnostic tool with mass-market potential. The total addressable market is limited to a niche sub-segment of occupational health and legal/insurance consultation, lacking the high-growth commercial scalability required for a high score."
+    "score": 4,
+    "reason": "While the methodology provides a sophisticated quantitative framework for medico-legal risk assessment, it is primarily a theoretical/methodological tool rather than a standalone product or platform. Its commercial value is limited to niche consultancy or as a component within larger insurance/occupational health software, rather than a scalable deep-tech asset."
    },
    "trl": {
-    "score": 3,
-    "reason": "The paper describes a theoretical quantitative framework for causal attribution rather than a validated diagnostic tool or medical device. As a conceptual model for clinical practice, it remains in the early development stage and requires significant retrospective and prospective clinical validation before it can be applied in a real-world commercial setting."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The paper describes a quantitative framework for causal attribution, which is likely a mathematical or statistical methodology. Such methods are generally considered non-patentable abstract ideas and lack the technical hardware or biochemical components required for strong IP defensibility."
+    "score": 4,
+    "reason": "The work is a methodological and mathematical framework based on meta-analysis rather than a functional product or software tool. While it provides a structured approach for clinical or legal decision-making, it remains in the theoretical/validation stage without a deployed digital platform or clinical implementation data."
    }
   },
   "pi": "Yuval Ramot",
   "pi_full_name": "Yuval Ramot",
   "pi_email": "",
   "pi_affiliation": "Department of Dermatology, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 14,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This paper is a clinical/epidemiological framework for causal attribution rather than a drug discovery study. It lacks a specific molecular target, a pharmacological disease-link, or an HTS-compatible screening assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -127,43 +106,37 @@
   "date": "2026 Oct 10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42857360/",
   "source": "PubMed",
-  "score": 13,
-  "summary": "This paper presents a clinical case report and literature review on the two-stage laparoscopic treatment of a rare De Garengeot hernia involving gangrenous appendicitis. It highlights surgical procedural protocols for managing this complex abdominal emergency.",
-  "opportunity": "The findings provide valuable clinical data that can inform the design of specialized surgical instrumentation or robotic-assisted platforms for managing rare complex hernia repairs.",
+  "score": 3,
+  "summary": "This case report details a rare surgical scenario where a patient's appendix was trapped within a femoral hernia sac, leading to gangrene. The researchers describe a successful two-stage laparoscopic approach to manage the infection before performing a delayed mesh repair.",
+  "opportunity": "There is limited commercial potential here, though the case highlights the need for improved diagnostic accuracy in hernia imaging and advanced antimicrobial materials for mesh in contaminated surgical fields.",
   "fields": [
    "Medical Device",
-   "Clinical"
+   "Diagnostics",
+   "Clinical",
+   "Imaging"
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
-   "novelty": {
-    "score": 1,
-    "reason": "This is a single-patient case report describing a standard surgical approach for a rare hernia, which lacks the innovative or platform-enabling qualities required for investment consideration."
-   },
    "commercial_potential": {
     "score": 1,
-    "reason": "This is a single-patient case report describing a standard surgical procedure for a rare hernia type, offering no novel technology, IP, or scalable product potential. It provides clinical context for surgeons but holds zero commercial value as an investable asset."
+    "reason": "This is a clinical case report describing a specific surgical technique for an exceptionally rare anatomical condition, offering no novel hardware, platform technology, or scalable productizable innovation."
    },
    "market_size": {
     "score": 1,
-    "reason": "This paper is a singular clinical case report on a rare surgical presentation, offering no scalable technology, platform potential, or significant addressable market opportunity for investment."
+    "reason": "This is a clinical case report focusing on an exceptionally rare medical condition (De Garengeot hernia), which lacks the patient volume or clinical prevalence to constitute a viable commercial market."
    },
    "trl": {
-    "score": 9,
-    "reason": "This report describes a surgical procedure using established laparoscopic techniques already in standard clinical practice, representing a mature, real-world application of medical intervention. The TRL is high because the methodology involves existing, validated surgical equipment and protocols being applied to a specific clinical presentation."
-   },
-   "ip_strength": {
     "score": 1,
-    "reason": "This is a clinical case report describing the application of established surgical techniques for a known medical condition, involving no novel technology or patentable invention."
+    "reason": "This is a clinical case report documenting a specific surgical outcome in a single patient, rather than the development or validation of a new medical technology or device. It describes an application of existing surgical techniques and materials rather than a technological advancement with commercial readiness."
    }
   },
   "pi": "Ido Mizrahi",
   "pi_full_name": "Ido Mizrahi",
   "pi_email": "",
   "pi_affiliation": "Department of General Surgery, Hadassah Medical Center, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 13,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The article reports a surgical case and literature review; it does not identify a specific new molecule or target, nor link it to a disease, nor describe a testable assay.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -239,44 +212,32 @@
   "date": "2026 Oct 9",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42853952/",
   "source": "PubMed",
-  "score": 20,
-  "summary": "Hebrew University researchers discovered that a specific G protein-coupled receptor (GPCR) in the brain acts as a systemic regulator of protein quality control in peripheral tissues. This mechanism suggests that neuronal signaling can be modulated to either trigger or suppress protein aggregation across the entire body.",
-  "opportunity": "This discovery provides a novel therapeutic target for developing systemic, brain-to-body pharmacological interventions to treat neurodegenerative and age-related protein-misfolding diseases.",
+  "score": 16,
+  "summary": "Researchers have discovered a specific type of brain receptor (GPCR) that sends signals to other parts of the body to control how well cells manage protein health. This mechanism reveals how the nervous system can actively influence the buildup of toxic proteins associated with aging and neurodegeneration.",
+  "opportunity": "This discovery provides a novel drug discovery target for developing systemic therapies that use the nervous system to boost protein clearance and treat neurodegenerative diseases.",
   "fields": [
    "Drug Discovery",
    "Neuroscience",
-   "Clinical"
+   "Proteomics"
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
-   "novelty": {
-    "score": 8,
-    "reason": "This research provides a novel mechanistic link between neuronal GPCR signaling and systemic proteostasis, representing a high-value, platform-enabling discovery for therapeutic intervention in age-related neurodegenerative and metabolic diseases. By identifying a druggable receptor that governs inter-tissue communication, it establishes a clear foundation for developing systemic, targetable therapies for protein misfolding disorders."
-   },
-   "commercial_potential": {
-    "score": 4,
-    "reason": "While identifying a novel GPCR-mediated mechanism for systemic proteostasis regulation is scientifically significant, the link to a specific drug candidate or platform technology remains highly speculative and at an early preclinical stage. Without a defined therapeutic modality or clear pharmacological strategy to target this specific receptor in humans, the translational path is currently too abstract to warrant a higher commercial score."
-   },
    "market_size": {
-    "score": 3,
-    "reason": "This is fundamental biological research identifying a specific neural signaling pathway in model organisms, which is currently far removed from clinical translation or commercial application. While proteostasis-related mechanisms have therapeutic potential in neurodegenerative diseases, the link between this specific neuronal GPCR and a scalable, addressable market remains highly speculative and unproven."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "This is fundamental, mechanism-oriented basic research identifying a specific biological pathway in a model organism; it lacks the therapeutic validation, screening platform development, or translational data required for industrial application."
+    "score": 9,
+    "reason": "The research targets the fundamental mechanism of proteostasis decline, addressing a massive, multi-billion dollar market encompassing neurodegenerative diseases like Alzheimer's and Huntington's. By identifying a neuronal GPCR as a systemic regulator, it suggests a potential platform for high-value, druggable intertissue communication therapies."
    },
    "ip_strength": {
-    "score": 3,
-    "reason": "This is fundamental discovery science regarding signaling pathways that lacks an applied therapeutic composition, method of use, or engineered tool, making it difficult to establish strong IP protection in its current form. The findings serve as academic foundation rather than a defensible, proprietary platform or therapeutic candidate."
+    "score": 7,
+    "reason": "The identification of a specific neuronal GPCR as a master regulator of systemic proteostasis offers a high-value, novel target for drug discovery. While the biological mechanism provides a strong foundation for composition-of-matter patents, the ultimate defensibility depends on the ability to claim specific agonists/antagonists and the therapeutic application in neurodegeneration."
    }
   },
   "pi": "Ehud Cohen",
   "pi_full_name": "Ehud Cohen",
   "pi_email": "",
   "pi_affiliation": "Department of Biochemistry and Molecular Biology, the Institute for Medical Research Israel-Canada, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 20,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 4,
   "hts_reason": "While the paper implies a mechanism involving a specific type of protein (neuronal GPCR), it does not name a specific target or disease, though it describes a biological effect that could theoretically be adapted into an assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -293,44 +254,32 @@
   "date": "2026 Oct 9",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42851308/",
   "source": "PubMed",
-  "score": 13,
-  "summary": "This paper examines how the implicit knowledge passed through surgical mentorship acts as a critical, yet missing, layer of metadata that fundamentally limits the predictive power of current real-world clinical datasets. It highlights that relying solely on structured electronic health records fails to capture the nuanced decision-making processes necessary for training reliable surgical AI systems.",
-  "opportunity": "The findings suggest a high-value commercial opportunity in developing 'Human-in-the-loop' AI annotation tools that capture tacit procedural expertise to bridge the gap between crude historical data and high-fidelity surgical robotics or clinical decision support software.",
+  "score": 7,
+  "summary": "The paper argues that standard medical databases lack the granular surgical details necessary for meaningful analysis in oculoplastic surgery. The authors propose treating clinical mentorship and expert supervision as structured metadata to bridge the gap between raw procedure codes and high-quality clinical data.",
+  "opportunity": "Developing specialized clinical data labeling platforms that integrate expert surgeon mentorship into real-world evidence (RWE) datasets to train high-fidelity surgical AI.",
   "fields": [
    "Software/AI",
    "Clinical",
-   "Imaging"
+   "Medical Device"
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "The paper focuses on the qualitative critique of clinical annotation and mentorship frameworks in a surgical sub-specialty, which represents a sociological observation rather than a technological or scientific breakthrough. It lacks the platform-enabling innovation or novel methodology required to impact deep-tech or life-science investment landscapes."
-   },
-   "commercial_potential": {
-    "score": 3,
-    "reason": "The paper focuses on the qualitative assessment of data quality and the limitations of clinical documentation rather than proposing a scalable technical solution or a proprietary platform. It lacks a clear roadmap for product development or a protectable technology that could address the identified data gaps."
-   },
    "market_size": {
-    "score": 3,
-    "reason": "The paper appears to focus on a highly specialized niche within oculoplastic surgery, targeting a narrow clinical workflow rather than a broad, high-value diagnostic or therapeutic market. The addressable demand for metadata/annotation improvements in this specific sub-specialty is likely limited in scale compared to general ophthalmology or medical AI platforms."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "This paper is a qualitative/descriptive study focused on the limitations of data documentation and clinical metadata, rather than the development of a deployable technology or medical intervention. It provides academic commentary on surgical informatics workflows rather than a TRL-advancing tool or platform."
+    "score": 4,
+    "reason": "The scope is highly niche, focusing on specific clinical variables within the specialized sub-field of oculoplastic surgery rather than a broad diagnostic or surgical platform. While critical for high-quality datasets, the addressable market is limited to a relatively small cohort of specialized surgeons and specific ophthalmic data registries."
    },
    "ip_strength": {
-    "score": 2,
-    "reason": "The paper focuses on data annotation and mentorship practices rather than a novel technology or method that would be patentable; it offers limited defensibility in IP terms."
+    "score": 3,
+    "reason": "The paper proposes a methodology for clinical data annotation and metadata structure rather than a novel hardware, drug, or proprietary algorithm. This framework is difficult to protect via patents and relies more on institutional workflow and data standards than on unique, defensible IP."
    }
   },
   "pi": "Zvi Gur",
   "pi_full_name": "Zvi Gur",
   "pi_email": "",
   "pi_affiliation": "Department of Ophthalmology, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 13,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This paper is a commentary on clinical data management and mentorship practices in surgery; it identifies no biological targets, disease mechanisms for intervention, or assay methods.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -641,42 +590,39 @@
   "date": "2026-10-07",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42842950/",
   "source": "PubMed",
-  "score": 27,
-  "summary": "This study compares the long-term kidney protective effects of GLP-1 receptor agonists and tirzepatide against finerenone in patients with type 2 diabetes and chronic kidney disease. It provides critical real-world evidence to help clinicians optimize treatment pathways for managing complex metabolic and renal health comorbidities.",
-  "opportunity": "The findings inform pharmaceutical positioning and market access strategies for cardiometabolic drug manufacturers aiming to differentiate their products based on comparative renal efficacy in a growing multi-billion dollar chronic disease segment.",
+  "score": 24,
+  "summary": "This study compares the effectiveness of GLP-1/GIP receptor agonists (like Tirzepatide) against finerenone in preventing severe kidney failure in patients with Type 2 diabetes. The findings suggest that GLP-1/GIP therapies offer superior protection against adverse kidney outcomes compared to finerenone in real-world settings.",
+  "opportunity": "The data supports expanding the clinical indication and market capture of GLP-1/GIP agonists from metabolic health into the much larger renal protection market.",
   "fields": [
-   "Clinical"
+   "Clinical",
+   "Drug Discovery"
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "This study is an observational retrospective analysis comparing existing, well-characterized classes of drugs rather than introducing a novel therapeutic mechanism, platform, or diagnostic breakthrough. Its value lies in comparative real-world evidence and clinical practice refinement, which is incremental rather than scientifically groundbreaking."
-   },
-   "commercial_potential": {
-    "score": 4,
-    "reason": "This is a real-world evidence retrospective study comparing existing, already-marketed drugs, meaning it provides clinical insight but offers no new protectable intellectual property, product innovation, or platform technology."
+    "reason": "This is a retrospective real-world observational study rather than original drug discovery or a novel mechanism of action. While it provides valuable clinical comparative effectiveness data, it does not introduce new scientific principles, platforms, or molecular entities."
    },
    "market_size": {
     "score": 10,
-    "reason": "The study targets the massive, high-growth intersection of Type 2 Diabetes and Chronic Kidney Disease, representing a multi-billion dollar addressable market driven by an aging global population and the expanding clinical utility of GLP-1 receptor agonists."
+    "reason": "The study targets the massive intersection of Type 2 Diabetes and Chronic Kidney Disease, representing a multi-billion dollar global market with massive, growing patient volumes. Demonstrating efficacy in this space places these therapies in a primary position to capture dominant market share from existing standards of care."
    },
    "trl": {
-    "score": 9,
-    "reason": "The study utilizes real-world evidence on therapies that are already FDA-approved and widely prescribed, making the findings directly actionable for clinical decision-making and comparative effectiveness assessments."
+    "score": 10,
+    "reason": "The technologies under study (GLP-1 RAs, Tirzepatide, and Finerenone) are already FDA-approved and commercially available on the market. This paper utilizes real-world clinical data to evaluate the efficacy of these established therapies in a specific patient population."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This study is an observational analysis of existing, off-patent or already marketed pharmacological agents and provides no novel composition of matter or unique technical IP. The findings are clinical data points rather than proprietary innovation, offering zero defensibility for an investment firm."
+    "reason": "This is a retrospective real-world observational study using existing clinical data (TriNetX) to compare established drugs; it generates clinical evidence rather than new, patentable chemical entities or proprietary technological platforms."
    }
   },
   "pi": "Genya Aharon-Hananel",
   "pi_full_name": "Genya Aharon-Hananel",
   "pi_email": "",
   "pi_affiliation": "Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.; Diabetes Unit, Department of Endocrinology and Metabolism, Hadassah Medical Center, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 27,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 3,
   "hts_reason": "This is a real-world clinical cohort study comparing existing, already-approved drugs rather than identifying a new molecular target or establishing a novel screening assay for drug discovery.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -691,45 +637,41 @@
   "date": "2026-10-05",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42860111/",
   "source": "PubMed",
-  "score": 20,
-  "summary": "This research investigates how microbial ecosystems and metabolic pathways transition from maternal influence to the neonate during early canine development. It maps the functional biological changes that occur during the critical window of early-life maturation.",
-  "opportunity": "The study provides a blueprint for developing precision probiotics and metabolic interventions to optimize neonatal health and immune programming in companion animals or humans.",
+  "score": 15,
+  "summary": "This review explores how the transition from maternal womb to independent life in dogs is driven by a complex interplay of metabolic, microbial, and physiological factors. It highlights how maternal health and early milk composition are critical in shaping the neonatal microbiome and immune development.",
+  "opportunity": "The study provides a blueprint for developing precision nutritional interventions and specialized probiotics to optimize neonatal immunity and metabolic health in veterinary and potentially human pediatric applications.",
   "fields": [
-   "Genomics",
+   "FoodTech",
    "Immunology",
-   "Synthetic Biology",
-   "Diagnostics"
+   "Genomics",
+   "Synthetic Biology"
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
    "novelty": {
-    "score": 6,
-    "reason": "The study explores early-life microbiome and metabolic pathways in dogs, a relatively under-investigated area, but it builds on established concepts in developmental microbiology and does not introduce a fundamentally new paradigm or technology."
+    "score": 3,
+    "reason": "As a narrative review, the paper synthesizes existing knowledge rather than introducing a new discovery, method, or technological platform. While it provides valuable integration of disparate datasets, it does not present original experimental breakthroughs or novel scientific intellectual property."
    },
    "commercial_potential": {
-    "score": 6,
-    "reason": "The research identifies actionable biomarkers in the canine microbiome with strong potential for developing diagnostic tests, personalized nutritional supplements, or therapeutic probiotics in the high-growth pet health market. While highly applicable, the commercial path is currently broad and lacks the specific proof-of-concept data required for immediate clinical or industrial deployment."
+    "score": 4,
+    "reason": "As a narrative review, the paper synthesizes existing knowledge rather than presenting novel, proprietary discoveries or specific molecular targets. While the biological insights could inform the development of high-value veterinary nutraceuticals or probiotics, the paper itself lacks a specific, protectable technological asset or product roadmap."
    },
    "market_size": {
-    "score": 3,
-    "reason": "While the pet health and microbiome sectors are growing, this research addresses a highly niche biological developmental study in dogs rather than a scalable platform technology or a high-value clinical diagnostic. The addressable demand for this specific pathway mapping is limited to specialized veterinary nutrition or niche precision-medicine segments."
+    "score": 6,
+    "reason": "The research identifies critical biological levers in the high-growth pet nutrition and wellness market, but as a narrative review, it describes a biological landscape rather than a specific, high-value therapeutic or product application."
    },
    "trl": {
     "score": 2,
-    "reason": "The title indicates fundamental mechanistic research into biological pathways and microbial ecology, which is characteristic of basic discovery science rather than applied technology or product development."
-   },
-   "ip_strength": {
-    "score": 3,
-    "reason": "The paper appears to be a fundamental observational or mechanistic study of natural biological pathways rather than the development of a proprietary composition, tool, or therapeutic. While it provides scientific insight, biological correlations and descriptive metabolic pathways are notoriously difficult to protect via intellectual property."
+    "reason": "This is a narrative review paper that synthesizes existing biological knowledge rather than presenting a new technology, product, or intervention. It provides foundational scientific insights but does not represent a developed technical solution or prototype."
    }
   },
   "pi": "Smadar Tal",
   "pi_full_name": "Smadar Tal",
   "pi_email": "smadar.tal@mail.huji.ac.il.",
   "pi_affiliation": "Tel-Hai University, Kiryat Shmona, Upper Galilee, Israel; Koret School of Veterinary Medicine, The Hebrew University Veterinary Teaching Hospital, The Hebrew University of Jerusalem, Rehovot, Israel. Electronic address: smadar.tal@mail.huji.ac.il.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 20,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 2,
   "hts_reason": "The title indicates a descriptive, multi-omic study on developmental biology rather than a target-centric discovery; it lacks a specific molecular target, a specific disease link, and a defined screening assay.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -747,43 +689,28 @@
   "date": "2026-10-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42854539/",
   "source": "PubMed",
-  "score": 9,
-  "summary": "This study analyzes the demographic age distribution of patients diagnosed with vulvar lichen sclerosus, a chronic inflammatory skin condition. The research aims to clarify whether the disease prevalence across different age groups differs from historical clinical assumptions.",
-  "opportunity": "The findings could drive the development of improved diagnostic screening protocols and targeted dermatological therapeutics for younger patient demographics previously considered low-risk.",
+  "score": 1,
+  "summary": "This study challenges the traditional belief that vulvar lichen sclerosus primarily affects children and postmenopausal women, finding instead a broad age distribution that includes many women of reproductive age. The findings suggest that clinical diagnosis is highly effective in real-world settings and that the condition requires management across a wider demographic than previously assumed.",
+  "opportunity": "The identification of a significant, underserved patient population in the reproductive age bracket creates a market opening for targeted dermatological therapeutics and specialized pelvic health monitoring tools.",
   "fields": [
    "Clinical",
-   "Diagnostics"
+   "Diagnostics",
+   "Other"
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
-   "novelty": {
-    "score": 2,
-    "reason": "This study is a retrospective clinical analysis aimed at refining epidemiological data, which provides incremental knowledge rather than technological innovation or a novel scientific breakthrough. It does not introduce new therapeutic modalities, diagnostic platforms, or mechanisms of disease that would qualify as deep-tech or highly novel research."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "This is a descriptive retrospective clinical study intended to refine epidemiological understanding rather than a technology development paper. It lacks the novel IP, diagnostic utility, or therapeutic intervention required to support a scalable commercial product or platform."
-   },
-   "market_size": {
-    "score": 3,
-    "reason": "Vulvar lichen sclerosus is a chronic condition affecting a relatively small, niche patient demographic, representing a constrained clinical market rather than a high-growth or broad-scale opportunity. The research focuses on retrospective epidemiological refinement rather than a scalable platform or a high-impact therapeutic intervention."
-   },
-   "trl": {
-    "score": 1,
-    "reason": "This is a clinical retrospective cohort study focused on observational epidemiological data, which provides zero technology or product readiness as it is a diagnostic analysis rather than a development of a tool, therapeutic, or platform."
-   },
    "ip_strength": {
     "score": 1,
-    "reason": "This is a clinical retrospective cohort study that reports observational epidemiological data, which contains no patentable subject matter or unique proprietary technology. The findings contribute to medical literature but lack the underlying innovation required for IP protection or defensibility."
+    "reason": "This is an observational clinical cohort study providing epidemiological data rather than a novel therapeutic, diagnostic device, or molecular entity. The findings describe patient demographics and clinical trends, which are not patentable or defensible assets."
    }
   },
   "pi": "Orna Reichman",
   "pi_full_name": "Amy Solnica",
   "pi_email": "amy.solnica@mail.huji.ac.il.",
   "pi_affiliation": "Department of Obstetrics and Gynecology, The Eisenberg R&D Authority, Shaare Zedek Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 9,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This is a retrospective epidemiological study focused on clinical age demographics and does not identify a specific molecular target, biochemical mechanism, or experimental assay for HTS development.",
   "hts_eval_model": "gemini-3.1-flash-lite"
