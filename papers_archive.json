@@ -45,7 +45,7 @@
   "pi_email": "paltiel@mail.huji.ac.il",
   "pi_affiliation": "Institute of Applied Physics, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 24,
+  "prev_score": "24",
   "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper focuses on material science and nanotechnology properties rather than identifying a specific biological target, disease link, or high-throughput biological assay.",
@@ -89,7 +89,7 @@
   "pi_email": "",
   "pi_affiliation": "Department of Dermatology, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 14,
+  "prev_score": "14",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This paper is a clinical/epidemiological framework for causal attribution rather than a drug discovery study. It lacks a specific molecular target, a pharmacological disease-link, or an HTS-compatible screening assay.",
@@ -135,7 +135,7 @@
   "pi_email": "",
   "pi_affiliation": "Department of General Surgery, Hadassah Medical Center, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 13,
+  "prev_score": "13",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The article reports a surgical case and literature review; it does not identify a specific new molecule or target, nor link it to a disease, nor describe a testable assay.",
@@ -153,42 +153,43 @@
   "url": "https://pubmed.ncbi.nlm.nih.gov/42854991/",
   "source": "PubMed",
   "score": 10,
-  "summary": "This research explores the precise neurological mechanisms and signaling pathways that trigger the hatching process in fish embryos. By identifying the specific neuronal circuits involved, the study provides foundational biological insights into developmental timing and sensory-motor integration.",
-  "opportunity": "Deciphering these hatching mechanisms enables the development of synchronized, high-yield aquaculture production systems and precision hatchery automation tools.",
+  "summary": "The paper explores how fish use neural and hormonal signals to trigger the hatching process from their eggs. It shifts the scientific focus from purely chemical egg digestion to the neuroendocrine circuits that coordinate this developmental transition.",
+  "opportunity": "Identifying specific neuropeptides and neuroendocrine triggers could lead to novel methods for controlling or optimizing embryo development in aquaculture and high-value seafood production.",
   "fields": [
    "AgriTech",
-   "Neuroscience"
+   "Neuroscience",
+   "Synthetic Biology"
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "As a perspective or review-style paper, it synthesizes existing knowledge rather than introducing a novel experimental methodology or groundbreaking technical discovery. It serves as an academic summary of established neurobiological concepts rather than a protectable or platform-enabling technological innovation."
+    "reason": "As a mini-review and perspective piece, this paper synthesizes existing knowledge and proposes a new conceptual framework rather than presenting original, groundbreaking experimental data. While it identifies a novel biological direction (neuroendocrine regulation of hatching), it functions as a roadmap for future research rather than a primary scientific discovery."
    },
    "commercial_potential": {
     "score": 2,
-    "reason": "This paper focuses on fundamental neurobiological mechanisms in fish development, which lacks immediate translation into a product, clinical application, or scalable industrial technology. It represents basic scientific inquiry rather than an actionable commercial opportunity."
+    "reason": "This is a theoretical mini-review focused on fundamental biological mechanisms rather than a novel technology or drug candidate. While it identifies new biological pathways, it lacks a direct application to a scalable product, service, or proprietary platform."
    },
    "market_size": {
     "score": 2,
-    "reason": "The paper focuses on fundamental developmental biology in fish, which lacks immediate industrial scalability or a defined commercial application. There is no clear path to monetizing this basic research mechanism within a high-growth life science or deep-tech market segment."
+    "reason": "The paper is a fundamental basic science mini-review focused on evolutionary biology and neuroendocrinology in fish, lacking direct application to high-value human therapeutics or large-scale industrial markets. While it may support niche aquaculture research, it does not address a commercially significant or scalable market segment."
    },
    "trl": {
     "score": 1,
-    "reason": "This paper focuses on fundamental neurobiological mechanisms in basic research, representing an early-stage academic inquiry with no immediate industrial application or commercial utility."
+    "reason": "This is a scientific review/perspective paper discussing fundamental biological mechanisms and theoretical frameworks rather than a developed technology or prototype. It represents the earliest stage of basic research (TRL 1), aimed at identifying knowledge gaps rather than applying a solution."
    },
    "ip_strength": {
     "score": 2,
-    "reason": "This is a fundamental biology review paper describing physiological mechanisms in non-model organisms, which lacks the novelty, non-obviousness, and industrial application required for patentable IP. It serves as academic knowledge rather than a proprietary technological invention."
+    "reason": "This is a scientific mini-review summarizing existing knowledge and proposing theoretical research directions rather than presenting new, proprietary technology or specific molecular targets. As a perspective piece, it lacks the novel, actionable data required to establish patentable intellectual property or industrial defensibility."
    }
   },
   "pi": "Matan Golan",
   "pi_full_name": "Deodatta Shyam Gajbhiye",
   "pi_email": "deodatta.gajbhiye@mail.huji.ac.il.",
   "pi_affiliation": "Matan Golan, The Hebrew University of Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 10,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The article appears to be a review or descriptive study on neuronal control of hatching in fish; it does not identify a specific new molecule or target, nor link it to a particular disease, and no assay or method is described.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -236,7 +237,7 @@
   "pi_email": "",
   "pi_affiliation": "Department of Biochemistry and Molecular Biology, the Institute for Medical Research Israel-Canada, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 20,
+  "prev_score": "20",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 4,
   "hts_reason": "While the paper implies a mechanism involving a specific type of protein (neuronal GPCR), it does not name a specific target or disease, though it describes a biological effect that could theoretically be adapted into an assay.",
@@ -278,7 +279,7 @@
   "pi_email": "",
   "pi_affiliation": "Department of Ophthalmology, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 13,
+  "prev_score": "13",
   "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This paper is a commentary on clinical data management and mentorship practices in surgery; it identifies no biological targets, disease mechanisms for intervention, or assay methods.",
@@ -621,7 +622,7 @@
   "pi_email": "",
   "pi_affiliation": "Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.; Diabetes Unit, Department of Endocrinology and Metabolism, Hadassah Medical Center, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 27,
+  "prev_score": "27",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 3,
   "hts_reason": "This is a real-world clinical cohort study comparing existing, already-approved drugs rather than identifying a new molecular target or establishing a novel screening assay for drug discovery.",
@@ -670,7 +671,7 @@
   "pi_email": "smadar.tal@mail.huji.ac.il.",
   "pi_affiliation": "Tel-Hai University, Kiryat Shmona, Upper Galilee, Israel; Koret School of Veterinary Medicine, The Hebrew University Veterinary Teaching Hospital, The Hebrew University of Jerusalem, Rehovot, Israel. Electronic address: smadar.tal@mail.huji.ac.il.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 20,
+  "prev_score": "20",
   "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 2,
   "hts_reason": "The title indicates a descriptive, multi-omic study on developmental biology rather than a target-centric discovery; it lacks a specific molecular target, a specific disease link, and a defined screening assay.",
@@ -709,7 +710,7 @@
   "pi_email": "amy.solnica@mail.huji.ac.il.",
   "pi_affiliation": "Department of Obstetrics and Gynecology, The Eisenberg R&D Authority, Shaare Zedek Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 9,
+  "prev_score": "9",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This is a retrospective epidemiological study focused on clinical age demographics and does not identify a specific molecular target, biochemical mechanism, or experimental assay for HTS development.",
@@ -727,44 +728,40 @@
   "date": "2026-07-31",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42858412/",
   "source": "PubMed",
-  "score": 14,
-  "summary": "This 10-year retrospective study from the Hebrew University of Jerusalem examines the correlation between population-level psychological stress caused by national crises and the increased incidence of Herpes Zoster. The research provides clinical evidence linking acute environmental stressors to the reactivation of latent viral infections in the general population.",
-  "opportunity": "The findings underscore a significant commercial opportunity for pharmaceutical companies to develop prophylactic vaccination programs targeting high-stress demographics and vulnerable populations in geopolitical hotspots.",
+  "score": 10,
+  "summary": "This study demonstrates a significant link between acute national crisis-induced psychological stress and an increased incidence of infectious skin diseases, specifically herpes zoster. Researchers found that the stress of the 2023 Israeli crisis led to a measurable spike in these infections compared to previous years and COVID-19 lockdowns.",
+  "opportunity": "The data supports the development of stress-monitoring digital health tools or preventative therapeutic interventions targeting immune system suppression during periods of high societal volatility.",
   "fields": [
    "Immunology",
    "Clinical",
-   "Vaccines"
+   "Software/AI"
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "This study follows a well-established epidemiological framework linking psychosocial stress to viral reactivation, offering incremental clinical observation rather than a novel mechanistic discovery or transformative platform technology. It lacks the groundbreaking innovation or intellectual property potential typically associated with high-scoring deep-tech investment opportunities."
+    "reason": "The study reinforces established medical knowledge regarding the link between psychological stress and immune-mediated conditions rather than introducing a new mechanism or groundbreaking methodology. While the specific context of a national crisis provides incremental epidemiological data, it lacks the fundamental scientific innovation required for a high novelty score."
    },
    "commercial_potential": {
-    "score": 3,
-    "reason": "This is an epidemiological study establishing a correlation between stress and disease incidence, which lacks the proprietary technology, diagnostic tool, or therapeutic intervention required for commercial development. It provides market intelligence rather than a protectable asset or product candidate."
+    "score": 2,
+    "reason": "The paper is an observational epidemiological study that establishes a correlation between stress and disease incidence rather than developing a novel therapeutic, diagnostic, or digital health intervention. It provides clinical insight but lacks a proprietary technological or product-based output suitable for commercialization."
    },
    "market_size": {
-    "score": 6,
-    "reason": "The study highlights a rise in herpes zoster cases linked to crisis-induced stress, implying a larger patient pool and potentially increased demand for antiviral therapies and vaccines, but the market remains within the existing, well-established treatment space rather than a new, expansive sector."
-   },
-   "trl": {
-    "score": 1,
-    "reason": "This is a retrospective observational study analyzing historical epidemiological data and does not involve the development, validation, or commercialization of a new technology, diagnostic, or therapeutic product."
+    "score": 4,
+    "reason": "While Herpes Zoster represents a significant clinical burden, this paper is an observational epidemiological study rather than a commercial product or platform. The market size is limited to the specific therapeutic or diagnostic demand for stress-triggered shingles, which lacks the massive scalability of a platform technology."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This study is an observational epidemiological analysis of existing clinical data and contains no novel compositions, devices, or proprietary methods that could be protected by intellectual property rights. It provides scientific insight but lacks any form of technical or legal defensibility as an asset."
+    "reason": "The paper is an observational epidemiological study of correlations, which is fundamentally unpatentable and provides no proprietary technology or chemical entity. It identifies a clinical trend but offers no defensible intellectual property or novel mechanism of action that could be protected from competition."
    }
   },
   "pi": "Rony Shreberk-Hassidim",
   "pi_full_name": "Rony Shreberk-Hassidim",
   "pi_email": "",
   "pi_affiliation": "Department of Dermatology, Hadassah Medical Center, Hebrew University of Jerusalem, The Faculty of Medicine, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 14,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper is a retrospective clinical epidemiological study that identifies no specific molecular target, provides no novel chemical candidates, and describes no druggable assay or methodology for HTS.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -787,43 +784,27 @@
   "date": "2026 Oct 9",
   "url": "https://europepmc.org/article/PMC/PMC13648240",
   "source": "Europe PMC",
-  "score": 10,
-  "summary": "This research examines how nitrogen oxide (NO) emissions and surface moisture levels interact to constrain the natural removal of ground-level ozone from urban air. By modeling these atmospheric chemical dynamics, the study provides a deeper understanding of urban air quality degradation and the factors influencing pollutant sequestration.",
-  "opportunity": "This data can be integrated into AI-driven urban planning software to help municipalities predict localized air toxicity levels and optimize the placement of green infrastructure or sensor networks.",
+  "score": 2,
+  "summary": "This research examines how nitrogen oxide emissions and surface dryness in cities limit the natural removal of ozone from the atmosphere. It identifies specific environmental conditions that hinder the earth's ability to self-regulate ozone levels through dry deposition.",
+  "opportunity": "The study provides critical data for developing high-precision environmental monitoring software and atmospheric modeling tools used in urban air quality management and smart city planning.",
   "fields": [
    "Software/AI",
    "Other"
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "This research provides a localized, incremental mechanistic refinement of existing urban atmospheric chemistry models rather than introducing a novel discovery or platform technology. Its contribution is limited to characterizing known chemical interactions in specific environmental conditions, offering minimal potential for intellectual property or industrial disruption."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "This paper focuses on fundamental atmospheric chemistry and environmental modeling, lacking a clear pathway to a commercial product, service, or proprietary technology. It provides scientific insight rather than a solution that addresses an unmet market need or offers a protectable commercial asset."
-   },
-   "market_size": {
-    "score": 2,
-    "reason": "This is a fundamental atmospheric science study regarding ozone deposition processes, which lacks a clear commercial application or a direct pathway to a scalable market. It provides academic insights into urban air chemistry rather than addressing a specific industrial or clinical pain point with significant revenue potential."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "This paper represents fundamental atmospheric science research focused on characterizing chemical mechanisms in urban environments rather than the development of a commercial technology, process, or product. It provides scientific insight that informs environmental policy or modeling, but does not involve a readiness for industrial deployment or application."
-   },
    "ip_strength": {
-    "score": 1,
-    "reason": "This paper focuses on atmospheric chemistry and environmental modeling, which describes natural phenomena rather than a novel, patentable technology or proprietary industrial process. There is no underlying IP or technological asset that could be captured or defended."
+    "score": 2,
+    "reason": "The paper describes fundamental atmospheric chemistry and environmental physics observations, which are typically considered natural phenomena and thus not patentable. There is no indication of a proprietary device, chemical formulation, or novel methodology that offers industrial defensibility."
    }
   },
   "pi": "Eran Tas",
   "pi_full_name": "",
   "pi_email": "eran.tas@mail.huji.ac.il",
   "pi_affiliation": "The\nRobert H. Smith Faculty of Agriculture, Food and Environment, Department\nof Soil and Water Sciences , The Hebrew University\nof Jerusalem ,  ,",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 10,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper focuses on atmospheric chemistry and urban air pollution dynamics rather than biological targets, disease-specific drug discovery, or a molecular-level assay suitable for high-throughput screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"
