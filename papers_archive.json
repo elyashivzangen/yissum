@@ -188,7 +188,7 @@
   "pi_email": "deodatta.gajbhiye@mail.huji.ac.il.",
   "pi_affiliation": "Matan Golan, The Hebrew University of Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 10,
+  "prev_score": "10",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The article appears to be a review or descriptive study on neuronal control of hatching in fish; it does not identify a specific new molecule or target, nor link it to a particular disease, and no assay or method is described.",
@@ -349,44 +349,41 @@
   "date": "2026 Oct 8",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42848302/",
   "source": "PubMed",
-  "score": 14,
-  "summary": "This paper explores a potential link between BRCA genetic mutations and the development of breast implant-associated anaplastic large-cell lymphoma (BIA-ALCL). It suggests that genetic predisposition may necessitate revised screening protocols and personalized risk assessment strategies for reconstructive surgery patients.",
-  "opportunity": "There is a commercial opportunity to develop a predictive genetic screening diagnostic tool that stratifies breast reconstruction patients by their BIA-ALCL risk profile based on germline mutations.",
+  "score": 16,
+  "summary": "This review highlights a significant link between germline mutations in BRCA1, BRCA2, and TP53 and an increased risk of developing BIA-ALCL in patients with breast implants. It suggests that host genetic factors, rather than just implant texture, play a critical role in disease susceptibility and clinical outcomes.",
+  "opportunity": "There is a commercial opening for companion diagnostic genetic screening tools for BRCA/TP53 mutations to guide surgical planning and personalized risk management for breast implant patients.",
   "fields": [
-   "Genomics",
    "Diagnostics",
+   "Genomics",
+   "Medical Device",
    "Clinical"
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "This paper represents an observational clinical hypothesis or literature synthesis rather than a technological breakthrough or novel scientific platform. It provides incremental clinical insight into existing patient populations rather than proposing innovative diagnostics, therapeutics, or proprietary methodologies."
+    "reason": "This is a narrative review synthesizing existing literature rather than primary research presenting new experimental data or a novel mechanism. While the clinical implications are important, the paper itself does not introduce new scientific discoveries or groundbreaking technical innovations."
    },
    "commercial_potential": {
-    "score": 3,
-    "reason": "This paper represents a clinical review or observational study rather than a novel technology, therapeutic, or diagnostic tool, offering minimal path to commercialization. It functions as medical guidance rather than a protectable asset or platform-enabling innovation."
+    "score": 6,
+    "reason": "The paper identifies a high-value clinical niche for a companion diagnostic (genetic screening for BRCA/TP53) in reconstructive surgery, but as a narrative review, it lacks original IP or a proprietary technology platform."
    },
    "market_size": {
-    "score": 3,
-    "reason": "The market is limited to a very small, niche sub-segment of breast implant patients who are also BRCA mutation carriers, representing a narrow clinical overlap rather than a broad, high-growth commercial opportunity. The potential impact is confined to clinical risk assessment guidelines rather than a scalable therapeutic or diagnostic product market."
+    "score": 4,
+    "reason": "The market is constrained to a highly specific niche of BRCA mutation carriers who also undergo breast reconstruction, representing a relatively small subset of the broader oncology and implant markets. While the clinical importance is high, the addressable patient population for a targeted intervention or diagnostic tool derived from this research is limited."
    },
    "trl": {
     "score": 3,
-    "reason": "The paper focuses on proposing biological mechanisms and identifying clinical correlations rather than presenting a validated diagnostic tool or therapeutic intervention. It represents basic clinical research aimed at establishing a hypothesis that would require subsequent prospective validation before real-world application."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The paper appears to be a clinical observation or mechanistic hypothesis regarding an existing epidemiological association, which is generally considered non-patentable scientific knowledge. It lacks evidence of a novel therapeutic molecule, device, or proprietary diagnostic platform that would constitute defensible intellectual property."
+    "reason": "This is a narrative review of existing epidemiological and clinical evidence rather than the development of a new diagnostic tool or therapeutic intervention. While the findings have clinical implications for patient screening, the paper itself represents basic/translational knowledge synthesis rather than a technology nearing commercialization."
    }
   },
   "pi": "Yair Shachar",
   "pi_full_name": "Yair Shachar",
   "pi_email": "yair.shachar1@gmail.com.",
   "pi_affiliation": "Department of Plastic and Reconstructive Surgery, Hadassah Medical Center, Jerusalem, Israel. yair.shachar1@gmail.com.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 14,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 2,
   "hts_reason": "The paper discusses a clinical association between BRCA mutations and a specific lymphoma but does not identify a druggable molecular target or describe a high-throughput assay for drug discovery.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -760,7 +757,7 @@
   "pi_email": "",
   "pi_affiliation": "Department of Dermatology, Hadassah Medical Center, Hebrew University of Jerusalem, The Faculty of Medicine, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 14,
+  "prev_score": "14",
   "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper is a retrospective clinical epidemiological study that identifies no specific molecular target, provides no novel chemical candidates, and describes no druggable assay or methodology for HTS.",
@@ -803,7 +800,7 @@
   "pi_email": "eran.tas@mail.huji.ac.il",
   "pi_affiliation": "The\nRobert H. Smith Faculty of Agriculture, Food and Environment, Department\nof Soil and Water Sciences , The Hebrew University\nof Jerusalem ,  ,",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 10,
+  "prev_score": "10",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper focuses on atmospheric chemistry and urban air pollution dynamics rather than biological targets, disease-specific drug discovery, or a molecular-level assay suitable for high-throughput screening.",
