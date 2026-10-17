@@ -382,7 +382,7 @@
   "pi_email": "yair.shachar1@gmail.com.",
   "pi_affiliation": "Department of Plastic and Reconstructive Surgery, Hadassah Medical Center, Jerusalem, Israel. yair.shachar1@gmail.com.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 14,
+  "prev_score": "14",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 2,
   "hts_reason": "The paper discusses a clinical association between BRCA mutations and a specific lymphoma but does not identify a druggable molecular target or describe a high-throughput assay for drug discovery.",
@@ -530,45 +530,32 @@
   "date": "2026-10-07",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42843437/",
   "source": "PubMed",
-  "score": 12,
-  "summary": "This research explores how the MECP2 protein has been preserved throughout evolution to maintain neuronal health and behavioral function. By understanding its ancestral role, the study offers insights into the molecular mechanisms underlying neurodevelopmental disorders like Rett syndrome.",
-  "opportunity": "The findings provide a target-rich foundation for developing targeted gene therapies or small-molecule stabilizers to treat MECP2-related neurological conditions.",
+  "score": 8,
+  "summary": "This research explores how the evolution of the MECP2 protein tracks with the increasing complexity of vertebrate nervous systems and DNA methylation patterns. It establishes a new framework for understanding how MECP2 maintains the balance between stability and flexibility in long-lived brain circuits.",
+  "opportunity": "The insights into the MECP2-NCoR/SMRT repression axis provide high-value mechanistic targets for developing precision epigenetic therapies for Rett syndrome and other neurodevelopmental disorders.",
   "fields": [
    "Drug Discovery",
-   "Genomics",
    "Neuroscience",
-   "Clinical"
+   "Genomics"
   ],
   "added_date": "2026-10-12",
   "score_breakdown": {
    "novelty": {
-    "score": 3,
-    "reason": "The study of MECP2 evolutionary conservation is well-established in the literature, offering incremental biological insights rather than the transformative, platform-enabling innovation required for high investment scores. It lacks the novel therapeutic or diagnostic modality necessary to differentiate it from the extensive existing body of work on Rett syndrome and MeCP2 function."
-   },
-   "commercial_potential": {
-    "score": 3,
-    "reason": "This paper addresses fundamental evolutionary biology and basic neurobiology, which lacks the immediate path to a tangible product, therapeutic intervention, or proprietary platform required for higher commercial potential. The focus on evolutionary conservation provides critical academic insight but does not inherently offer a clear, protectable, or near-market technological application."
+    "score": 4,
+    "reason": "The paper is a review summarizing existing comparative genomic and molecular evidence rather than presenting original, groundbreaking experimental data or a new technological platform. While it proposes a novel evolutionary framework for interpreting MECP2 function, it synthesizes known biological relationships rather than discovering a new mechanism or entity."
    },
    "market_size": {
-    "score": 2,
-    "reason": "This is a fundamental biology paper focusing on the evolutionary conservation of a specific gene, which lacks immediate clinical application or a defined path to commercial product development. It represents basic research rather than a scalable market opportunity or a platform technology with an addressable target market."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "This paper focuses on evolutionary biology and fundamental molecular mechanisms of the MECP2 gene rather than developing a therapeutic candidate or diagnostic tool. It represents basic discovery research that is several years removed from clinical translation or commercial application."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "As a study of evolutionary biology and basic gene conservation, the work describes natural phenomena that are generally ineligible for patent protection under 35 U.S.C. § 101. It lacks the applied engineering, novel therapeutic compositions, or proprietary technical methods required to establish meaningful commercial defensibility."
+    "score": 4,
+    "reason": "The paper is a basic evolutionary review focused on fundamental biological mechanisms rather than a specific therapeutic target or drug candidate. While the MECP2 pathway is clinically relevant to Rett syndrome, this research does not define a specific product market or addressable patient population."
    }
   },
   "pi": "Yuval Tabach",
   "pi_full_name": "Yuval Tabach",
   "pi_email": "YuvalTab@ekmd.huji.ac.il.",
   "pi_affiliation": "Department of Developmental Biology and Cancer Research, Institute of Medical Research Israel-Canada, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel. Electronic address: YuvalTab@ekmd.huji.ac.il.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 12,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 5,
   "hts_reason": "The title identifies a specific target (MECP2) and a link to neuronal stability/behavior, but does not describe a specific assay or method suitable for HTS.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
