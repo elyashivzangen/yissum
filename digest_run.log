@@ -2,66 +2,42 @@
 =======================================================
 Branch: All Branches
 Loading top papers from Google Sheet...
-  Sheet response: 200, 555337 bytes
-  Cutoff date: 2026-10-05  (DIGEST_WINDOW=7 days)
-  Rows: 174 total, 145 excluded, 29 kept.
-  Sample pub date values: ['2026-10-11', '2026-10-10', '2026 Oct 10']
+  Sheet response: 200, 661908 bytes
+  Cutoff date: 2026-10-12  (DIGEST_WINDOW=7 days)
+  Rows: 211 total, 169 excluded, 42 kept.
+  Sample pub date values: ['2026-10-18', '2026-10-18', '2026 Oct 18']
   20 candidates (top 20 by score).
   2 HUJI-primary paper(s) selected (high-potential).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
   Success with: gemini-2.5-flash
   Gemini selected 2 papers.
-  Executive summary: Hebrew University researchers are advancing pharmaceutical innovation on two fronts. One team has developed a unique mou...
+  Executive summary: Both papers highlight innovative approaches in drug discovery and vaccine development from Dr. Netanel Tzarum's lab. One...
 Generating HTML + PDF reports...
-  HTML written: digests/HUJI_digest_2026_W42.html  (50 KB)
-  PDF written:  digests/HUJI_digest_2026_W42.pdf  (48 KB)
+  HTML written: digests/HUJI_digest_2026_W43.html  (51 KB)
+  PDF written:  digests/HUJI_digest_2026_W43.pdf  (49 KB)
 
 =======================================================
 Branch: Healthcare
 Loading top papers from Google Sheet...
-  Sheet response: 200, 555337 bytes
-  Cutoff date: 2026-10-05  (DIGEST_WINDOW=7 days)
-  Rows: 174 total, 149 excluded, 25 kept.
-  Sample pub date values: ['2026 Oct 10', '2026 Oct 9', '2026 Oct 9']
+  Sheet response: 200, 661908 bytes
+  Cutoff date: 2026-10-12  (DIGEST_WINDOW=7 days)
+  Rows: 211 total, 173 excluded, 38 kept.
+  Sample pub date values: ['2026-10-18', '2026-10-18', '2026 Oct 18']
   20 candidates (top 20 by score).
   2 HUJI-primary paper(s) selected (high-potential).
 Asking Gemini to curate the digest...
   Trying model: gemini-2.5-flash
-  Success with: gemini-2.5-flash
-  Gemini selected 2 papers.
-  Executive summary: This week's digest highlights two promising advancements with significant commercial implications for the pharmaceutical...
-Generating HTML + PDF reports...
-  HTML written: digests/HUJI_digest_2026_W42_Healthcare.html  (50 KB)
-  PDF written:  digests/HUJI_digest_2026_W42_Healthcare.pdf  (49 KB)
-
-=======================================================
-Branch: Agriculture & Food
-Loading top papers from Google Sheet...
-  Sheet response: 200, 555337 bytes
-  Cutoff date: 2026-10-05  (DIGEST_WINDOW=7 days)
-  Rows: 174 total, 174 excluded, 0 kept.
-  0 candidates (top 20 by score).
-  No HUJI-primary papers for Agriculture & Food — skipping.
-
-=======================================================
-Branch: Exact & Social Sciences
-Loading top papers from Google Sheet...
-  Sheet response: 200, 555337 bytes
-  Cutoff date: 2026-10-05  (DIGEST_WINDOW=7 days)
-  Rows: 174 total, 170 excluded, 4 kept.
-  Sample pub date values: ['2026-10-11', '2026-10-10', '2026 Oct 9']
-  4 candidates (top 20 by score).
-  2 HUJI-primary paper(s) selected (FALLBACK — no high-potential).
-Asking Gemini to curate the digest...
-  Trying model: gemini-2.5-flash
-  Success with: gemini-2.5-flash
-  Gemini selected 1 papers.
-  Executive summary: This week's digest highlights a significant advancement in material science from Hebrew University, focusing on novel su...
-Generating HTML + PDF reports...
-  HTML written: digests/HUJI_digest_2026_W42_Exact_Social_Sciences.html  (45 KB)
-  PDF written:  digests/HUJI_digest_2026_W42_Exact_Social_Sciences.pdf  (46 KB)
-
-All digests done.
-
---no-email set — reports were generated and committed, no digest email sent.
+  gemini-2.5-flash failed: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Trying model: gemini-2.0-flash
+  gemini-2.0-flash failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+Traceback (most recent call last):
+  File "/home/runner/work/yissum/yissum/weekly_digest.py", line 626, in <module>
+    main(monthly=args.monthly, send_email=not args.no_email)
+  File "/home/runner/work/yissum/yissum/weekly_digest.py", line 589, in main
+    curation = curate_with_gemini(papers, monthly=monthly)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/yissum/yissum/weekly_digest.py", line 184, in curate_with_gemini
+    raise RuntimeError(f"All models failed. Last error: {last_err}")
+RuntimeError: All models failed. Last error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+Script failed (exit 1)
