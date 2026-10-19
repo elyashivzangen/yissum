@@ -298,9 +298,9 @@
   "date": "2026 Oct 9",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42850911/",
   "source": "PubMed",
-  "score": 21,
-  "summary": "Hebrew University researchers have developed novel hexacoordinate titanium(IV) complexes that utilize acetyl-substituted phenolato ligands to improve the delivery and therapeutic efficacy of metal-based anticancer agents. These compounds aim to overcome traditional limitations in bioavailability, potentially offering a more potent alternative to standard platinum-based chemotherapy drugs.",
-  "opportunity": "These proprietary metal complexes represent a high-value pipeline opportunity for developing next-generation, lower-toxicity systemic chemotherapeutic agents with improved pharmacokinetic profiles.",
+  "score": 17,
+  "summary": "Researchers developed new titanium-based chemical complexes designed to act as anticancer agents with improved absorption in the body. These complexes utilize specific ligand structures to potentially increase the effectiveness and bioavailability of chemotherapy treatments.",
+  "opportunity": "Development of next-generation organometallic oncology drugs with reduced toxicity and higher systemic absorption compared to traditional platinum-based chemotherapies.",
   "fields": [
    "Drug Discovery",
    "Clinical"
@@ -308,33 +308,29 @@
   "added_date": "2026-10-12",
   "score_breakdown": {
    "novelty": {
-    "score": 3,
-    "reason": "Titanium-based anticancer complexes are a well-trodden field in medicinal inorganic chemistry, and this research represents an incremental chemical modification of existing coordination motifs rather than a transformative or platform-enabling shift. The approach relies on traditional ligand substitution strategies that offer limited differentiation from established titanium(IV) therapeutic candidates."
+    "score": 4,
+    "reason": "The research focuses on incremental modifications of existing titanium(IV) coordination chemistry to improve bioavailability, representing an evolutionary rather than revolutionary step in metallodrug design."
    },
    "commercial_potential": {
     "score": 4,
-    "reason": "While titanium-based complexes represent a known alternative to platinum chemotherapies, the field faces significant historical hurdles regarding stability, aqueous solubility, and toxicity in vivo. Without clinical efficacy data or a clear mechanistic advantage over established standards, the commercial path remains highly speculative and high-risk."
+    "reason": "While the focus on enhanced bioavailability addresses a key pharmacological hurdle, the abstract describes basic coordination chemistry synthesis without demonstrating in vivo efficacy or a clear path to a scalable drug candidate. The commercial leap from novel complex synthesis to a clinical oncology asset remains high-risk and poorly defined."
    },
    "market_size": {
     "score": 6,
-    "reason": "While oncology represents a massive multi-billion dollar addressable market, the use of novel titanium-based coordination complexes faces a high hurdle for clinical adoption and commercialization due to the dominance of established platinum-based chemotherapies and emerging targeted immuno-oncology modalities."
+    "reason": "The target market is the multi-billion dollar oncology sector, but the scope is limited to a specific class of metal-based small molecules rather than a broad platform technology. While demand for novel chemotherapy is high, market capture depends on overcoming the significant competition and clinical hurdles inherent to coordination chemistry drugs."
    },
    "trl": {
-    "score": 2,
-    "reason": "This research represents early-stage medicinal chemistry involving the synthesis and characterization of novel organometallic complexes, which remains at the fundamental discovery phase far from clinical validation or commercial feasibility."
-   },
-   "ip_strength": {
-    "score": 6,
-    "reason": "While metal-based complexes offer a clear path for chemical entity patenting, the field is crowded with existing transition metal chemotherapy candidates, making it difficult to establish broad freedom-to-operate or strong novelty beyond specific structural variations. The innovation likely relies on narrow composition-of-matter claims, which are defensible but susceptible to 'me-too' circumventing by competitors in the inorganic medicinal chemistry space."
+    "score": 3,
+    "reason": "The study is currently at the fundamental chemical synthesis and characterization stage (in vitro/bench science) without reported animal models or pharmacokinetic studies in vivo. It represents early-stage discovery rather than a validated lead candidate ready for preclinical development."
    }
   },
   "pi": "Edit Y Tshuva",
   "pi_full_name": "Edit Y Tshuva",
   "pi_email": "",
   "pi_affiliation": "Institute of Chemistry, The Hebrew University of Jerusalem, Edmond J. Safra Campus, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 21,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 5,
   "hts_reason": "The paper identifies a specific class of molecules (Ti(IV) complexes) and links them to a specific disease (cancer), but it lacks a defined biological target and a high-throughput compatible assay method.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -554,7 +550,7 @@
   "pi_email": "YuvalTab@ekmd.huji.ac.il.",
   "pi_affiliation": "Department of Developmental Biology and Cancer Research, Institute of Medical Research Israel-Canada, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel. Electronic address: YuvalTab@ekmd.huji.ac.il.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 12,
+  "prev_score": "12",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 5,
   "hts_reason": "The title identifies a specific target (MECP2) and a link to neuronal stability/behavior, but does not describe a specific assay or method suitable for HTS.",
