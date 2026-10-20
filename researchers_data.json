@@ -13783,7 +13783,7 @@
     "pi_full_name": "Netanel Tzarum",
     "pi_email": "",
     "pi_affiliation": "Department of Biological Chemistry, Alexander Silberman Institute of Life Sciences, Faculty of Mathematics & Science, The Hebrew University of Jerusalem, Jerusalem, Israel.; The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 32.5,
+    "avg_score": 22.0,
     "max_hts_score": 5,
     "paper_count": 2,
     "description": "This researcher focuses on advanced protein engineering and structural biology to solve complex challenges in biomanufacturing and vaccinology. Their work involves developing modular platforms for the safe expression of high-risk proteins and utilizing high-resolution molecular mapping to design next-generation vaccines. They bridge the gap between fundamental biochemical insights and scalable biotechnological applications.",
@@ -13804,41 +13804,32 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/42888866/",
         "journal": "Microbial biotechnology",
-        "score": 37,
-        "summary": "This platform enables the safe, modular recombinant production of highly lethal bacterial proteins that are typically impossible to express using standard industrial methods. By decoupling the protein synthesis process from cellular viability, it allows for the high-yield manufacturing of potent toxins without endangering the production host.",
-        "opportunity": "The technology unlocks a massive commercial pipeline for next-generation antibody-drug conjugates (ADCs) and novel vaccines that leverage bacterial toxins previously deemed too dangerous or difficult to produce.",
+        "score": 16,
+        "summary": "Researchers developed a modular system to safely produce highly toxic bacterial proteins by fusing them to specific 'immunity proteins' that neutralize their toxicity during growth. This platform allows for the mass production of potent molecules that were previously impossible to manufacture, streamlining the process via protease-mediated cleavage.",
+        "opportunity": "Creation of a proprietary library of potent, novel antimicrobial peptides and toxins for next-generation antibiotic development and precision biotechnology.",
         "abstract": "Bacterial protein toxins constitute a vast, largely untapped reservoir of potent bioactive molecules for antimicrobial discovery and biotechnology. However, their intrinsic toxicity often prevents recombinant expression in microbial hosts, limiting biochemical and functional characterization. Here, we present a modular platform for the recombinant production of highly toxic bacterial proteins based on covalent fusion of polymorphic toxins (PTs) to their cognate immunity proteins (PIMs), enabling transient toxin neutralization during expression. This strategy enabled recombinant production and purification of three previously refractory toxin families, PT7, PT8 and PT9. We further streamlined the workflow by introducing intracellular protease-mediated cleavage of the toxin-immunity fusion, reducing purification from four steps to two and increasing the recovered yield of PT9 from approximately 1-2 mg/L to ~4 mg/L. Extending the approach to PT37 further showed that computational redesign of the immunity protein and fusion architecture can enable production when the native fusion is insufficient. Purified PT7 and PT8 retained nuclease activity following denaturation and refolding, while refolded PT9 was structurally validated by X-ray crystallography, demonstrating recovery of functionally and structurally competent proteins. Together, these findings establish a modular strategy for recombinant production of highly toxic bacterial proteins and facilitate their biochemical and functional characterization.",
         "fields": [
           "Drug Discovery",
-          "Vaccines",
           "Synthetic Biology",
-          "Immunology"
+          "Proteomics"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 7,
-            "reason": "The development of a modular platform for toxic protein expression addresses a critical bottleneck in biotechnology and biodefense, offering high utility for industrial and therapeutic applications. While the approach represents a significant technical refinement for difficult-to-express proteins, it is an evolutionary improvement on existing protein engineering workflows rather than a fundamental paradigm shift in synthetic biology."
-          },
-          "commercial_potential": {
-            "score": 9,
-            "reason": "This platform addresses a high-value technical bottleneck in the production of potent biotherapeutics and toxins, offering a clear, scalable B2B model for contract manufacturing or licensing to pharmaceutical companies. By abstracting the production of toxic proteins into a modular system, it de-risks a traditionally difficult manufacturing process, providing strong defensibility through proprietary technology."
+            "reason": "The research provides a clever, platform-enabling engineering solution to the long-standing bottleneck of expressing refractory toxins via covalent fusion and controlled cleavage. While the concept of immunity-protein fusion is established in microbiology, the modular refinement and computational redesign to enable production of previously inaccessible families represent a significant technical advancement."
           },
           "market_size": {
-            "score": 7,
-            "reason": "The platform addresses a high-value niche in the biopharma and defense sectors by enabling the production of previously unmanufacturable toxic proteins, which are essential for targeted cancer therapies (ADC payloads) and vaccine development. While the addressable market for these specific high-toxicity biologics is smaller than broad-spectrum protein therapeutics, the technical barriers to entry confer significant strategic value and pricing power."
+            "score": 6,
+            "reason": "The platform unlocks a vast reservoir of bioactive molecules for antimicrobial discovery, but the addressable market is currently limited to early-stage R&D and niche biotech applications rather than a broad clinical or industrial market."
           },
           "trl": {
-            "score": 7,
-            "reason": "The development of a modular production platform for toxic proteins addresses a significant industrial bottleneck in biomanufacturing, demonstrating high technical utility and clear scalability potential. However, its TRL is moderated by the inherent safety, regulatory, and containment complexities associated with scaling the production of hazardous biological agents."
-          },
-          "ip_strength": {
-            "score": 7,
-            "reason": "The platform approach for expressing difficult, toxic proteins offers strong utility and a clear path to composition-of-matter or process-based IP, though defensibility depends heavily on the novelty of the modular genetic control elements used to mitigate toxicity."
+            "score": 3,
+            "reason": "The work describes a fundamental laboratory method for protein expression and purification (proof-of-concept), focusing on overcoming biochemical barriers rather than a scalable industrial process or a clinical application."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": 37,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Biological Chemistry, Alexander Silberman Institute of Life Sciences, Faculty of Mathematics & Science, The Hebrew University of Jerusalem, Jerusalem, Israel.; The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 2,
