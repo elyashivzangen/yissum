@@ -13441,7 +13441,7 @@
     "pi_full_name": "Harold Jacob",
     "pi_email": "",
     "pi_affiliation": "Hadassah Medical Center, Department of Gastroenterology, Jerusalem, Israel, Jerusalem.",
-    "avg_score": 41.0,
+    "avg_score": 39.0,
     "max_hts_score": 2,
     "paper_count": 1,
     "description": "The researcher focuses on precision radiotherapy technologies, specifically developing minimally invasive delivery systems that use endoscopic ultrasound guidance to administer alpha‑particle emitters directly into tumors. Their work combines imaging, interventional endoscopy, and targeted radiation physics to enhance local tumor control while sparing healthy tissue.",
@@ -13461,40 +13461,40 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/42863515/",
         "journal": "Endoscopy",
-        "score": 41,
-        "summary": "This research outlines the clinical implementation of a platform that uses endoscopic ultrasound to precisely deliver alpha-emitting radiotherapy directly into tumor sites. By localizing high-energy radiation within the tumor, this approach aims to improve treatment efficacy while minimizing damage to surrounding healthy tissue.",
-        "opportunity": "The development represents a high-value MedTech opportunity to commercialize specialized delivery catheters and integrated radiotherapy source kits for hard-to-reach internal malignancies.",
+        "score": 39,
+        "summary": "Researchers have developed and clinically implemented a new method for delivering alpha-particle radiotherapy directly into tumors using endoscopic ultrasound guidance. This platform enables highly targeted radiation treatment to minimize damage to surrounding healthy tissue.",
+        "opportunity": "A specialized medtech platform combining endoscopic precision with targeted radiopharmaceuticals for treating localized, hard-to-reach cancers.",
         "abstract": "",
         "fields": [
           "Medical Device",
-          "Clinical",
-          "Imaging"
+          "Imaging",
+          "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 8,
-            "reason": "This platform represents a highly novel convergence of interventional endoscopy and targeted alpha therapy, enabling precise, high-potency local radiation delivery that effectively circumvents systemic toxicity issues associated with traditional radiotherapy."
+            "reason": "The integration of endoscopic ultrasound (EUS) guidance with alpha radiotherapy represents a significant technological leap in precision drug delivery, moving beyond systemic administration to highly localized, high-LET radiation. This combination creates a novel, platform-enabling approach for treating difficult-to-reach deep-seated tumors that was not previously standard of care."
           },
           "commercial_potential": {
             "score": 9,
-            "reason": "This technology represents a high-value platform play, as it combines an existing procedural workflow (EUS) with a novel therapeutic delivery system, creating a clear, protectable, and scalable pathway for treating localized, unresectable tumors."
+            "reason": "The title describes a highly specific, platform-enabling therapeutic delivery system that bridges medical device (endoscopic ultrasound) and radiopharmaceutical sectors. This suggests a clear path toward a high-value, specialized clinical service or a combination product licensable to medtech and pharma companies."
           },
           "market_size": {
-            "score": 8,
-            "reason": "The technology targets high-mortality solid tumors (such as pancreatic cancer) accessible via endoscopic ultrasound, addressing a large, high-unmet-need market with a platform capable of delivering targeted radiotherapy. The precision of this delivery mechanism significantly expands the addressable patient population for radiotherapy beyond those eligible for systemic or external beam options."
+            "score": 7,
+            "reason": "The technology addresses high-value oncology markets (intratumoral therapy), but the niche endoscopic delivery method may limit the total addressable market compared to systemic radiopharmaceuticals. The value is driven by precision targeting in hard-to-reach tumors, which commands significant pricing power in specialized oncology settings."
           },
           "trl": {
             "score": 8,
-            "reason": "The study demonstrates successful clinical implementation and human application of a sophisticated therapeutic delivery platform, moving well beyond proof-of-concept into active clinical use. It represents a mature, validated surgical-oncology technology with clear pathways for broader adoption."
+            "reason": "The title explicitly mentions 'clinical implementation,' implying the technology has moved beyond preclinical models and is being integrated into human clinical workflows."
           },
           "ip_strength": {
-            "score": 8,
-            "reason": "The innovation involves a novel hardware-delivery platform combined with a specific therapeutic agent, creating a strong opportunity for a 'razor-and-blade' patent strategy covering both the delivery device and the specific radioactive isotope formulation. The integration of clinical-stage hardware with a controlled radiotherapeutic delivery system offers high barriers to entry for competitors once intellectual property is secured."
+            "score": 7,
+            "reason": "The integration of alpha radiotherapy with endoscopic ultrasound guidance suggests a novel combination of device and therapeutic delivery, offering strong potential for method-of-use and device-specific patents. However, without the abstract, the specific uniqueness of the delivery platform versus existing interstitial brachytherapy tools remains unverified."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 41,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Hadassah Medical Center, Department of Gastroenterology, Jerusalem, Israel, Jerusalem.",
         "pi_email": "",
         "hts_score": 2,
@@ -13783,7 +13783,7 @@
     "pi_full_name": "Netanel Tzarum",
     "pi_email": "",
     "pi_affiliation": "Department of Biological Chemistry, Alexander Silberman Institute of Life Sciences, Faculty of Mathematics & Science, The Hebrew University of Jerusalem, Jerusalem, Israel.; The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 22.0,
+    "avg_score": 18.5,
     "max_hts_score": 5,
     "paper_count": 2,
     "description": "This researcher focuses on advanced protein engineering and structural biology to solve complex challenges in biomanufacturing and vaccinology. Their work involves developing modular platforms for the safe expression of high-risk proteins and utilizing high-resolution molecular mapping to design next-generation vaccines. They bridge the gap between fundamental biochemical insights and scalable biotechnological applications.",
@@ -13842,40 +13842,37 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/42862868/",
         "journal": "PLoS pathogens",
-        "score": 28,
-        "summary": "This research explores the molecular architecture of Hepatitis C Virus (HCV) envelope proteins to identify specific targets for the immune system. By mapping these structures, the scientists aim to design vaccine candidates that can elicit broadly neutralizing antibodies across diverse viral strains.",
-        "opportunity": "The structural insights provide a platform for developing a first-in-class HCV vaccine, addressing a significant global health gap in preventing chronic liver disease.",
+        "score": 21,
+        "summary": "Researchers identified how early-stage B cells recognize the Hepatitis C virus to help design vaccines that trigger powerful, broad-spectrum immune responses. While they successfully engineered protein variants with higher binding affinity, the study also revealed significant challenges in activating naive B cells for vaccine development.",
+        "opportunity": "The structural data and protein engineering techniques provide a blueprint for developing next-generation germline-targeting vaccines for difficult-to-treat viral pathogens.",
         "abstract": "Despite effective antivirals, Hepatitis C remains a global health burden, reflecting the difficulty of eliciting broadly neutralizing antibodies (bnAbs). For the Hepatitis C virus, bnAb responses are biased toward VH1-69-encoded Abs targeting a conserved epitope on the E2 glycoprotein, suggesting that effective immunogens must engage the corresponding germline (GL) B cell receptors. However, the structural basis of GL recognition remains unclear. Here, we show that GL-reverted VH1-69 bnAbs recognize the E2 core domain in a manner closely resembling mature Abs binding. High-resolution structures reveal a conserved mode of engagement, indicating that key epitope features are accessible prior to affinity maturation. Guided by these insights, we engineered E2 variants to enhance GL Ab interactions and stability. Although these designs increased affinity, they did not improve engagement of naïve B cells, highlighting a key constraint in GL-targeting strategies. Together, our findings define principles governing GL recognition and inform the rational design of an HCV vaccine.",
         "fields": [
           "Vaccines",
           "Immunology",
-          "Drug Discovery"
+          "Drug Discovery",
+          "Synthetic Biology"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 6,
-            "reason": "While applying structural biology to the challenging HCV envelope glycoprotein is high-quality scientific work, the 'germline-targeting' strategy represents an incremental advancement of existing vaccine design paradigms rather than a novel conceptual breakthrough."
+            "score": 7,
+            "reason": "The study provides high-value structural insights into the mechanism of germline recognition, which is a critical bottleneck in rational vaccine design. However, the failure of the engineered variants to improve naïve B cell engagement represents an incremental finding rather than a transformative platform breakthrough."
           },
           "commercial_potential": {
-            "score": 6,
-            "reason": "While the research targets a major global health challenge with clear licensing potential for pharmaceutical pipelines, it remains in the structural/biochemical phase, which is high-risk and years away from a de-risked clinical asset. The work is foundational and scientific rather than translational or near-market, limiting its immediate commercial clarity."
-          },
-          "market_size": {
-            "score": 7,
-            "reason": "Hepatitis C affects approximately 58 million people globally, representing a significant unmet medical need for a preventative vaccine that could command a large, multi-billion dollar addressable market. While the curative potential of current direct-acting antivirals limits the immediate urgency for a vaccine, the lack of a prophylactic option for high-risk populations keeps the market opportunity substantial."
+            "score": 5,
+            "reason": "While the research provides critical structural insights for rational vaccine design, the finding that engineered variants failed to improve naïve B cell engagement suggests significant remaining hurdles in translating these structural principles into a functional clinical product."
           },
           "trl": {
             "score": 3,
-            "reason": "This study focuses on foundational structural biology and biochemical characterization of viral proteins, which represents a discovery-stage effort far removed from clinical trial readiness or industrial manufacturing. While it provides essential data for vaccine design, it remains at the early-stage research level of the R&D pipeline."
+            "reason": "The work is at a fundamental discovery stage, focusing on high-resolution structural biology and basic mechanistic insights into B cell recognition. While it provides rational design principles, the research has not yet transitioned from protein engineering/structural modeling to animal models or preclinical efficacy testing."
           },
           "ip_strength": {
             "score": 6,
-            "reason": "While the structural characterization of viral proteins provides a foundational basis for rational vaccine design, the resulting insights often constitute scientific discovery rather than proprietary composition-of-matter inventions, necessitating significant downstream effort to secure specific vaccine candidates or delivery platforms. The inherent difficulty in achieving broad-spectrum efficacy against highly variable targets like HCV further complicates the establishment of a robust, enforceable IP moat."
+            "reason": "The study provides high-value structural blueprints and rational design principles for immunogen engineering, which are highly patentable; however, the failure to improve naïve B cell engagement suggests the current iteration is a discovery-stage insight rather than a validated, defensible vaccine candidate."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 28,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Biological Chemistry, Alexander Silberman Institute of Life Sciences, Faculty of Mathematics & Science, The Hebrew University of Jerusalem, Jerusalem, Israel.; The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 5,

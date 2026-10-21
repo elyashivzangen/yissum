@@ -1,240 +1,76 @@
 Loading existing papers from Google Sheet...
   211 existing papers loaded.
   Verifying HUJI affiliation for 206 papers via PubMed efetch...
-  30 non-Gemma-scored papers to re-evaluate on Gemma.
-  [1/30] re-eval: [A rare case of retroperitoneal hematoma following injury to the puden
+  21 non-Gemma-scored papers to re-evaluate on Gemma.
+  [1/21] re-eval: [A rare case of retroperitoneal hematoma following injury to the puden
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [2/30] re-eval: Effect of ultrasound-guided visual biofeedback performed by midwives o
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [3/30] re-eval: Adjunctive Cerebrolysin therapy following mechanical thrombectomy for 
+  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 4 via gemma-4-26b-a4b-it (was 5 via gemini-3.1-flash-lite)
+  [2/21] re-eval: Effect of ultrasound-guided visual biofeedback performed by midwives o
+      re-scored 27 via gemma-4-26b-a4b-it (was 24 via gemini-3.1-flash-lite)
+  [3/21] re-eval: Modular Platform for Recombinant Production of Highly Toxic Bacterial 
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (novelty): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (market_size): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (trl): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (ip_strength): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      re-scored 2 via gemma-4-31b-it (was 12 via gemini-3.1-flash-lite)
-  [4/30] re-eval: Modular Platform for Recombinant Production of Highly Toxic Bacterial 
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
-  [5/30] re-eval: Liver X receptors participate in the fasting response by assisting CEB
-    all 2 candidate(s) cooling down — waiting 60s before retry
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+      re-scored 32 via gemma-4-26b-a4b-it (was 37 via gemini-3.1-flash-lite)
+  [4/21] re-eval: The GP Crisis Dissected: An Outsider's View.
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 4 via gemma-4-26b-a4b-it (was 13 via gemini-3.1-flash-lite)
+  [5/21] re-eval: Does Prior Androgen Exposure Alter Outcomes After Gynecomastia Surgery
+      re-scored 11 via gemma-4-26b-a4b-it (was 16 via gemini-3.1-flash-lite)
+  [6/21] re-eval: Associations Between Perceived Knowledge, Interprofessional Collaborat
+      re-scored 7 via gemma-4-26b-a4b-it (was 7 via gemini-3.1-flash-lite)
+  [7/21] re-eval: Beyond Hemodynamics: Uremic Toxins, Post-Translational Modifications, 
+      re-scored 18 via gemma-4-26b-a4b-it (was 19 via gemini-3.1-flash-lite)
+  [8/21] re-eval: Finasteride and depression: the high cost of failed regulation.
+      re-scored 17 via gemma-4-26b-a4b-it (was 7 via gemini-3.1-flash-lite)
+  [9/21] re-eval: Ultra-high-resolution photon-counting CT argues against a suspected bi
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      re-scored 16 via gemma-4-31b-it (was 16 via gemini-3.1-flash-lite)
-  [6/30] re-eval: Pregnancy and Offspring Outcomes After Prenatal Stimulant or Atomoxeti
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      re-scored 10 via gemma-4-26b-a4b-it (was 11 via gemini-3.1-flash-lite)
+  [10/21] re-eval: Symmetries and continuous attractors in disordered neural circuits.
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+  Gemini error (novelty): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+      re-scored 10 via gemma-4-26b-a4b-it (was 13 via gemini-3.1-flash-lite)
+  [11/21] re-eval: Gaps in guidelines implementation and need for harmonization in toxopl
+      re-scored 10 via gemma-4-26b-a4b-it (was 8 via gemini-3.1-flash-lite)
+  [12/21] re-eval: Internal memory costs following cognitive offloading in younger and ol
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (trl): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
   Gemini error (ip_strength): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      re-scored 5 via gemma-4-31b-it (was 23 via gemini-3.1-flash-lite)
-  [7/30] re-eval: The GP Crisis Dissected: An Outsider's View.
-    all 2 candidate(s) cooling down — waiting 89s before retry
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
+      re-scored 7 via gemma-4-26b-a4b-it (was 10 via gemini-3.1-flash-lite)
+  [13/21] re-eval: From need to action: exploring the motivations of women entrepreneurs 
+      re-scored 7 via gemma-4-26b-a4b-it (was 6 via groq:openai/gpt-oss-20b)
+  [14/21] re-eval: Site, Fertilization and Season Structure the Soil Microbiome and Its I
+      re-scored 14 via gemma-4-26b-a4b-it (was 14 via gemini-3.1-flash-lite)
+  [15/21] re-eval: Enzyme- or Au Nanoparticle-Loaded Fe3+-Ion-Cross-Linked Carboxymethyl 
+      re-scored 20 via gemma-4-26b-a4b-it (was 18 via gemini-3.1-flash-lite)
+  [16/21] re-eval: Endoscopic ultrasound-guided intratumoral alpha radiotherapy: clinical
+      re-scored 40 via gemma-4-26b-a4b-it (was 41 via gemini-3.1-flash-lite)
+  [17/21] re-eval: Structural and biochemical insights into HCV envelope proteins for ger
+      re-scored 27 via gemma-4-26b-a4b-it (was 28 via gemini-3.1-flash-lite)
+  [18/21] re-eval: Evolution and metabolite signaling of fumarases (class I and II): orig
+      re-scored 12 via gemma-4-26b-a4b-it (was 10 via gemini-3.1-flash-lite)
+  [19/21] re-eval: Comment on:18F-fluorodeoxyglucose PET/CT uptake characteristics in ICI
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [8/30] re-eval: Dissociating task, semantic, and response conflict in cognitive aging:
-    all 2 candidate(s) cooling down — waiting 90s before retry
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (trl): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    all 2 candidate(s) cooling down — waiting 42s before retry
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (ip_strength): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      re-scored 3 via gemma-4-26b-a4b-it (was 10 via gemini-3.1-flash-lite)
-  [9/30] re-eval: Sex-Related Differences in Medical Cannabis Use: A Nationwide Database
-    all 2 candidate(s) cooling down — waiting 17s before retry
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (commercial_potential): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    all 2 candidate(s) cooling down — waiting 9s before retry
-      re-scored 11 via gemma-4-31b-it (was 13 via gemini-3.1-flash-lite)
-  [10/30] re-eval: Does Prior Androgen Exposure Alter Outcomes After Gynecomastia Surgery
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [11/30] re-eval: Associations Between Perceived Knowledge, Interprofessional Collaborat
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [12/30] re-eval: Beyond Hemodynamics: Uremic Toxins, Post-Translational Modifications, 
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  [13/30] re-eval: Finasteride and depression: the high cost of failed regulation.
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
-  [14/30] re-eval: Ultra-high-resolution photon-counting CT argues against a suspected bi
-    all 2 candidate(s) cooling down — waiting 60s before retry
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
-  [15/30] re-eval: Symmetries and continuous attractors in disordered neural circuits.
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
-  [16/30] re-eval: Gaps in guidelines implementation and need for harmonization in toxopl
-    all 2 candidate(s) cooling down — waiting 60s before retry
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (commercial_potential): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (market_size): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    all 2 candidate(s) cooling down — waiting 60s before retry
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    all 2 candidate(s) cooling down — waiting 18s before retry
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (ip_strength): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
-  [17/30] re-eval: Internal memory costs following cognitive offloading in younger and ol
-    all 2 candidate(s) cooling down — waiting 41s before retry
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
-  [18/30] re-eval: From need to action: exploring the motivations of women entrepreneurs 
-    all 2 candidate(s) cooling down — waiting 18s before retry
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
-  [19/30] re-eval: Brain-iT Immunotherapy: The Neurotransmitters Dopamine, Glutamate, GnR
-    all 2 candidate(s) cooling down — waiting 41s before retry
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (novelty): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (market_size): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (trl): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (ip_strength): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      re-scored 7 via gemma-4-31b-it (was 20 via gemini-3.1-flash-lite)
-  [20/30] re-eval: Site, Fertilization and Season Structure the Soil Microbiome and Its I
-    all 2 candidate(s) cooling down — waiting 32s before retry
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [21/30] re-eval: Endoscopic Management of Gallstone Ileus with Laser and Mechanical Lit
-    all 2 candidate(s) cooling down — waiting 57s before retry
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (novelty): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (commercial_potential): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (trl): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (ip_strength): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      re-scored 3 via gemma-4-31b-it (was 20 via gemini-3.1-flash-lite)
-  [22/30] re-eval: Cautious clinical interpretation of preoperative Tc-
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (novelty): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (commercial_potential): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (market_size): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    all 2 candidate(s) cooling down — waiting 60s before retry
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (trl): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    all 2 candidate(s) cooling down — waiting 29s before retry
-      re-scored 1 via gemma-4-31b-it (was 16 via gemini-3.1-flash-lite)
-  [23/30] re-eval: Enzyme- or Au Nanoparticle-Loaded Fe3+-Ion-Cross-Linked Carboxymethyl 
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
-  [24/30] re-eval: Endoscopic ultrasound-guided intratumoral alpha radiotherapy: clinical
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [25/30] re-eval: Structural and biochemical insights into HCV envelope proteins for ger
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
-  [26/30] re-eval: Evolution and metabolite signaling of fumarases (class I and II): orig
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
-  [27/30] re-eval: Comment on:18F-fluorodeoxyglucose PET/CT uptake characteristics in ICI
-    all 2 candidate(s) cooling down — waiting 60s before retry
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      still no Gemma result — leaving as-is
-  [28/30] re-eval: Diagnostic Performance of 99mTc-MAG3 Renal Scintigraphy for Acute Tubu
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  [29/30] re-eval: Is a Repeat Head CT Scan Necessary After an Initial Negative Scan in H
-    all 2 candidate(s) cooling down — waiting 89s before retry
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      re-scored 20 via gemma-4-31b-it (was 20 via gemini-3.1-flash-lite)
-  [30/30] re-eval: Characteristics of sialoliths detected on CBCT in patients who had pri
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Gemini error (meta): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-      still no Gemma result — leaving as-is
-  Re-evaluated 9/30 papers onto Gemma.
+      re-scored 10 via gemma-4-26b-a4b-it (was 15 via gemini-3.1-flash-lite)
+  [20/21] re-eval: Diagnostic Performance of 99mTc-MAG3 Renal Scintigraphy for Acute Tubu
+      re-scored 20 via gemma-4-26b-a4b-it (was 19 via gemini-3.1-flash-lite)
+  [21/21] re-eval: Characteristics of sialoliths detected on CBCT in patients who had pri
+      re-scored 14 via gemma-4-26b-a4b-it (was 16 via gemini-3.1-flash-lite)
+  Re-evaluated 21/21 papers onto Gemma.
 Sheet updated: {"status":"ok","rows":212}
   Archive: 1051 papers total.
 Generated papers_reader.html and papers_data.json with 211 papers and 53 researcher profiles.
