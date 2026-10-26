@@ -1,167 +1,300 @@
 Loading existing papers from Google Sheet...
-  174 existing papers loaded.
-  Verifying HUJI affiliation for 169 papers via PubMed efetch...
-fetch_pubmed: 47 fetched, 37 new
-fetch_europepmc: 6 fetched, 0 new
+  211 existing papers loaded.
+  Verifying HUJI affiliation for 206 papers via PubMed efetch...
+fetch_pubmed: 52 fetched, 34 new
+fetch_europepmc: 25 fetched, 0 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-37 unique new papers to evaluate.
-Enriching PI contact info for 37 new papers...
+34 unique new papers to evaluate.
+Enriching PI contact info for 34 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/37] [Preoperative evaluation and assessment of patients undergoing catarac
+  [1/34] Approaching Landauer's limit in a single superconducting vortex memory
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=23 fields=['Quantum', 'Materials', 'Other']
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    hts_score=1
+  [2/34] Distribution of Donor Types and Time to Allogeneic Hematopoietic Stem 
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=12 fields=['Clinical', 'Immunology']
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    hts_score=1
+  [3/34] Leishmania infection in dogs in Israel - A cross-sectional study.
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    score=17 fields=['Clinical', 'Medical Device']
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=9 fields=['Diagnostics', 'Vaccines', 'Clinical']
+    hts_score=1
+  [4/34] Carbodicarbene Monolayers on Au(111) Enable Strong Carbon(0)-Metal Bin
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    hts_score=1
-  [2/37] [A rare case of retroperitoneal hematoma following injury to the puden
-    score=5 fields=['Clinical', 'Medical Device', 'Imaging']
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    hts_score=1
-  [3/37] [Weigh your words: standardizing terminology in obesity management and
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    score=10 fields=['Clinical', 'Software/AI']
-    hts_score=1
-  [4/37] Acupuncture versus reflexology for cancer-related pain in palliative c
-    score=10 fields=['Clinical', 'Neuroscience', 'Other']
-    hts_score=1
-  [5/37] Cross-species atlas of bacterial RNA 3' ends reveals termination mecha
-    score=19 fields=['Drug Discovery', 'Genomics', 'Synthetic Biology']
-    hts_score=2
-  [6/37] Effect of ultrasound-guided visual biofeedback performed by midwives o
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=24 fields=['Medical Device', 'Imaging', 'Clinical']
-    hts_score=1
-  [7/37] Adjunctive Cerebrolysin therapy following mechanical thrombectomy for 
-    score=12 fields=['Clinical', 'Neuroscience']
-    hts_score=2
-  [8/37] Modular Platform for Recombinant Production of Highly Toxic Bacterial 
-    score=37 fields=['Drug Discovery', 'Vaccines', 'Synthetic Biology', 'Immunology']
-    hts_score=2
-  [9/37] Liver X receptors participate in the fasting response by assisting CEB
-    score=16 fields=['Drug Discovery', 'Clinical']
-    hts_score=5
-  [10/37] Pregnancy and Offspring Outcomes After Prenatal Stimulant or Atomoxeti
-    score=23 fields=['Clinical', 'Neuroscience']
-    hts_score=1
-  [11/37] The GP Crisis Dissected: An Outsider's View.
-    score=13 fields=['Software/AI', 'Other']
-    hts_score=1
-  [12/37] Dissociating task, semantic, and response conflict in cognitive aging:
-    score=10 fields=['Software/AI', 'Neuroscience', 'Clinical']
-    hts_score=1
-  [13/37] Sex-Related Differences in Medical Cannabis Use: A Nationwide Database
-    score=13 fields=['Clinical', 'Software/AI']
-    hts_score=1
-  [14/37] Does Prior Androgen Exposure Alter Outcomes After Gynecomastia Surgery
-    score=16 fields=['Clinical']
-    hts_score=2
-  [15/37] Associations Between Perceived Knowledge, Interprofessional Collaborat
-    score=7 fields=['Software/AI', 'Clinical']
-    hts_score=1
-  [checkpoint: 15/37] writing 189 papers (174 retained + 15 new)...
-Sheet updated: {"status":"ok","rows":190}
-  Archive: 1029 papers total.
-Generated papers_reader.html and papers_data.json with 189 papers and 51 researcher profiles.
-  [16/37] Diagnostic Performance of 99mTc-MAG3 Renal Scintigraphy for Acute Tubu
-    score=19 fields=['Diagnostics', 'Imaging', 'Clinical', 'Software/AI']
-    hts_score=2
-  [17/37] Is a Repeat Head CT Scan Necessary After an Initial Negative Scan in H
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    score=20 fields=['Clinical', 'Imaging', 'Software/AI']
-    hts_score=1
-  [18/37] A novel nitric oxide (NO)-dependent 'molecular switch' mediates LTP in
-    score=19 fields=['Drug Discovery', 'Neuroscience']
-    hts_score=4
-  [19/37] Beyond Hemodynamics: Uremic Toxins, Post-Translational Modifications, 
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=19 fields=['Drug Discovery', 'Diagnostics', 'Clinical', 'Proteomics']
-    hts_score=2
-  [20/37] Finasteride and depression: the high cost of failed regulation.
-    score=7 fields=['Clinical', 'Neuroscience', 'Diagnostics']
-    hts_score=2
-  [21/37] Ultra-high-resolution photon-counting CT argues against a suspected bi
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=11 fields=['Medical Device', 'Imaging', 'Clinical']
-    hts_score=1
-  [22/37] Symmetries and continuous attractors in disordered neural circuits.
-    score=13 fields=['Software/AI', 'Neuroscience']
-    hts_score=1
-  [23/37] Gaps in guidelines implementation and need for harmonization in toxopl
-    score=8 fields=['Clinical', 'Software/AI', 'Immunology']
-    hts_score=1
-  [24/37] Comment on:18F-fluorodeoxyglucose PET/CT uptake characteristics in ICI
-    score=15 fields=['Diagnostics', 'Imaging', 'Clinical', 'Immunology']
-    hts_score=2
-  [25/37] Internal memory costs following cognitive offloading in younger and ol
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    score=10 fields=['Software/AI', 'Neuroscience', 'Clinical']
-    hts_score=1
-  [26/37] A feasibility study of a monitored home program to increase walking an
-    score=15 fields=['Clinical', 'Software/AI', 'Medical Device']
-    hts_score=1
-  [27/37] From need to action: exploring the motivations of women entrepreneurs 
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
     openai/gpt-oss-20b (groq) succeeded
-    score=6 fields=['Other']
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=23 fields=['Materials', 'Clean Energy', 'Software/AI']
     hts_score=1
-  [28/37] Brain-iT Immunotherapy: The Neurotransmitters Dopamine, Glutamate, GnR
+  [5/34] Combined laparoscopic and endoscopic technique for safe percutaneous e
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=19 fields=['Medical Device', 'Clinical']
+    hts_score=1
+  [6/34] Age-dependent impact of diabetes on limb events and mortality in patie
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=20 fields=['Drug Discovery', 'Immunology', 'Neuroscience', 'Synthetic Biology']
-    hts_score=5
-  [29/37] Site, Fertilization and Season Structure the Soil Microbiome and Its I
-    score=14 fields=['AgriTech', 'Synthetic Biology']
-    hts_score=2
-  [30/37] Characteristics of sialoliths detected on CBCT in patients who had pri
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=25 fields=['Clinical', 'Software/AI']
+    hts_score=1
+  [7/34] Racial differences in reoperation rates following dacryocystorhinostom
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    score=15 fields=['Clinical', 'Software/AI']
+    hts_score=1
+  [8/34] Beyond Anticoagulant Exposure: Determinants of Mortality After Gastroi
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=24 fields=['Clinical', 'Diagnostics', 'Software/AI']
+    hts_score=1
+  [9/34] First-in-human prospective pilot study of a bipolar dual-center total 
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    score=25 fields=['Medical Device', 'Clinical']
+    hts_score=1
+  [10/34] The Impact of Postoperative Mechanical Ventilation Duration on Visual 
+    score=17 fields=['Clinical', 'Software/AI', 'Neuroscience']
+    hts_score=1
+  [11/34] Temporal transcriptomic changes during in vitro cultivation of the hum
     gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
-    score=16 fields=['Medical Device', 'Imaging', 'Clinical', 'Software/AI']
-    hts_score=1
-  [checkpoint: 30/37] writing 204 papers (174 retained + 30 new)...
-Sheet updated: {"status":"ok","rows":205}
-  Archive: 1044 papers total.
-Generated papers_reader.html and papers_data.json with 204 papers and 51 researcher profiles.
-  [31/37] Decoding object categories from electroencephalography during free vie
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=17 fields=['Neuroscience', 'Medical Device', 'Software/AI']
-    hts_score=1
-  [32/37] Endoscopic Management of Gallstone Ileus with Laser and Mechanical Lit
-    score=20 fields=['Medical Device', 'Clinical']
-    hts_score=1
-  [33/37] Cautious clinical interpretation of preoperative Tc-
-    score=16 fields=['Clinical', 'Imaging', 'Diagnostics']
-    hts_score=1
-  [34/37] Endoscopic ultrasound-guided intratumoral alpha radiotherapy: clinical
-    score=41 fields=['Medical Device', 'Clinical', 'Imaging']
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=12 fields=['Diagnostics', 'Drug Discovery', 'Genomics']
     hts_score=2
-  [35/37] Enzyme- or Au Nanoparticle-Loaded Fe3+-Ion-Cross-Linked Carboxymethyl 
+  [12/34] Simulating Photodissociation in Strong Field Enabled by the Random Pha
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=17 fields=['Software/AI', 'Materials', 'Clean Energy']
+    hts_score=1
+  [13/34] Interplay of Meissner Currents and Magnetic Vortices in NbSe2 Probed b
     gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=11 fields=['Materials', 'Quantum']
+    hts_score=1
+  [14/34] Synthesis and Characterization of Naringin Phenolate Salts for Cultiva
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    score=25 fields=['FoodTech', 'Synthetic Biology', 'AgriTech']
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    hts_score=1
+  [15/34] Unusual paroxysmal complete atrioventricular block after transcatheter
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
     gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    score=18 fields=['Materials', 'Synthetic Biology', 'Other']
+    score=6 fields=['Medical Device', 'Clinical']
+    hts_score=1
+  [checkpoint: 15/34] writing 226 papers (211 retained + 15 new)...
+Sheet updated: {"status":"ok","rows":227}
+  Archive: 1066 papers total.
+Generated papers_reader.html and papers_data.json with 226 papers and 53 researcher profiles.
+  [16/34] The investigation of the interaction between durian (Durio zibethinus 
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    score=11 fields=['FoodTech', 'Proteomics', 'Other']
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     hts_score=2
-  [36/37] Structural and biochemical insights into HCV envelope proteins for ger
-    score=28 fields=['Vaccines', 'Immunology', 'Drug Discovery']
-    hts_score=5
-  [37/37] Evolution and metabolite signaling of fumarases (class I and II): orig
-    score=10 fields=['Synthetic Biology', 'Drug Discovery']
+  [17/34] Chirality Inherent and Induced: An Algebraic Point of View.
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    score=10 fields=['Software/AI', 'Drug Discovery', 'Materials']
+    hts_score=1
+  [18/34] Feeling how one wants to feel may be more important in the United Stat
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=7 fields=['Software/AI', 'Neuroscience', 'Other']
+    hts_score=1
+  [19/34] Ethnocultural disparities in participation in higher education among c
+    score=7 fields=['Other']
+    hts_score=1
+  [20/34] Concerns About Smell and Taste Disturbances Among GLP-1 Receptor Agoni
+    score=22 fields=['Clinical', 'Diagnostics', 'Neuroscience']
+    hts_score=2
+  [21/34] Very low HDL cholesterol in infectious mononucleosis with hepatitis: a
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=10 fields=['Diagnostics', 'Clinical', 'Software/AI']
+    hts_score=2
+  [22/34] Fast and accurate taxonomic domain assignment of short metagenomic rea
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=27 fields=['Genomics', 'Software/AI', 'Diagnostics']
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    hts_score=1
+  [23/34] Crosstalk between RTG and TOR pathways mediates adaptation to amino ac
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=12 fields=['Synthetic Biology', 'FoodTech']
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    hts_score=3
+  [24/34] PPR9 mediates mitochondrial nad transcript maturation required for com
+    score=12 fields=['AgriTech', 'Synthetic Biology', 'Genomics']
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=2
+  [25/34] Dynamics of Ligand Binding Sites and Chloride Penetration in a Bitter 
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=13 fields=['Drug Discovery', 'FoodTech', 'Software/AI']
+    hts_score=3
+  [26/34] Diabetes, stone composition, and renal function in a large cohort of p
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=17 fields=['Clinical', 'Diagnostics', 'Software/AI']
+    hts_score=1
+  [27/34] Functional Adaptations for Load-Bearing in a Dermal Bone: The Pectoral
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    score=10 fields=['Materials']
+    hts_score=1
+  [28/34] A Decade Later: Trends in Fellowship Training and Secondary Board Cert
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    score=5 fields=['Clinical', 'Software/AI']
+    hts_score=1
+  [29/34] Selective Biexciton Generation under Energy-Time Entangled Quantum Lig
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=20 fields=['Quantum', 'Imaging', 'Diagnostics', 'Materials']
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    hts_score=1
+  [30/34] Impact of the 25-Hour Religious Fast of "Yom Kippur" on Pregnancy Outc
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=16 fields=['Clinical', 'Software/AI']
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    hts_score=1
+  [checkpoint: 30/34] writing 241 papers (211 retained + 30 new)...
+Sheet updated: {"status":"ok","rows":242}
+  Archive: 1081 papers total.
+Generated papers_reader.html and papers_data.json with 241 papers and 53 researcher profiles.
+  [31/34] The MBW complex regulates floral volatiles in petunia: transcriptional
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=14 fields=['AgriTech', 'Synthetic Biology', 'FoodTech']
+    hts_score=2
+  [32/34] "Something was happening, and on the other hand, it wasn't": Relationa
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=9 fields=['Software/AI', 'Clinical', 'Other']
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=1
+  [33/34] Loperamide overdose-associated euphoria and delirium.
+    gemini-3.1-flash-lite failed (error): The read operation timed out
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=7 fields=['Clinical', 'Neuroscience']
+    hts_score=2
+  [34/34] Home Transcranial Direct Current Stimulation With Gamified Cognitive C
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=33 fields=['Medical Device', 'Software/AI', 'Neuroscience', 'Clinical']
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
     hts_score=2
 
-Kept all 174 existing papers, added 37 new.
-  [checkpoint: final] writing 211 papers (174 retained + 37 new)...
-Sheet updated: {"status":"ok","rows":212}
-  Archive: 1051 papers total.
-Generated papers_reader.html and papers_data.json with 211 papers and 51 researcher profiles.
+Kept all 211 existing papers, added 34 new.
+  [checkpoint: final] writing 245 papers (211 retained + 34 new)...
+Sheet updated: {"status":"ok","rows":246}
+  Archive: 1085 papers total.
+Generated papers_reader.html and papers_data.json with 245 papers and 53 researcher profiles.
 Done.
