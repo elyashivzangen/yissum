@@ -18,43 +18,41 @@
   "date": "2026-10-25",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42927438/",
   "source": "PubMed",
-  "score": 12,
-  "summary": "This study examines how different donor types affect the timing of allogeneic stem cell transplantation in acute myeloid leukemia patients, with a focus on variations across ethnic groups. It highlights disparities in transplant access and outcomes that could inform better allocation strategies and patient counseling.",
-  "opportunity": "Develop AI-driven decision support tools that predict optimal donor selection and streamline transplant logistics to reduce ethnic disparities in AML treatment.",
+  "score": 9,
+  "summary": "This study analyzed hematopoietic stem cell transplants for AML patients in Israel, finding that while ethnic groups differ in the types of donors they access, survival rates and timing remain similar. It also noted that the COVID-19 pandemic delayed the transplant process but did not significantly impact overall patient survival.",
+  "opportunity": "Potential for AI-driven donor matching platforms and logistics software to optimize graft sourcing and reduce transplant delays in underserved ethnic populations.",
   "fields": [
    "Clinical",
-   "Immunology"
+   "Immunology",
+   "Software/AI",
+   "Genomics"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
-    "score": 3,
-    "reason": "This study is a retrospective clinical analysis focused on healthcare equity and existing distribution patterns rather than developing a new technology, diagnostic, or therapeutic platform. While important for health policy and clinical outcomes, it does not represent scientific or technological innovation."
+    "score": 2,
+    "reason": "This is a retrospective observational study that describes existing clinical trends within a specific local population; it does not introduce new methodologies, novel biomarkers, or groundbreaking therapeutic insights."
    },
    "commercial_potential": {
     "score": 2,
-    "reason": "This is a retrospective clinical observational study analyzing patient data rather than developing a proprietary therapeutic, diagnostic, or platform technology. It lacks an innovative invention, intellectual property, or commercializable product pathway."
+    "reason": "This is a retrospective observational study providing clinical data on healthcare disparities and logistics; it does not propose a new molecule, device, or proprietary method that could be commercialized or licensed."
    },
    "market_size": {
     "score": 3,
-    "reason": "While Acute Myeloid Leukemia is a significant clinical indication, this study focuses on retrospective demographic data regarding donor matching rather than a scalable therapeutic product, platform, or intervention. The findings address an operational clinical bottleneck rather than creating a new high-value market opportunity."
+    "reason": "The study focuses on retrospective observational data within a specific local cohort (Israel) rather than proposing a scalable product or platform, offering no evidence of a large, addressable commercial market. While AML is a significant clinical area, this specific research is descriptive/epidemiological and does not define a new market opportunity or high-value therapeutic segment."
    },
    "trl": {
-    "score": 3,
-    "reason": "This is a retrospective clinical observational study analyzing historical transplantation data rather than a developmental technology, therapeutic product, or novel platform. While it provides valuable clinical insights for healthcare strategy, it does not constitute a technical innovation or a commercializable solution."
-   },
-   "ip_strength": {
-    "score": 1,
-    "reason": "This is a retrospective clinical observational study analyzing patient data and has no underlying novel technology, proprietary methodology, or inventive step that could be protected by intellectual property."
+    "score": 2,
+    "reason": "This is a retrospective observational study analyzing clinical outcomes and demographic trends rather than the development of a new technology, tool, or therapeutic intervention. It provides clinical insights but does not advance the technological readiness of a specific product or platform."
    }
   },
   "pi": "Shlomo Elias",
   "pi_full_name": "Shlomo Elias",
   "pi_email": "",
   "pi_affiliation": "Department of Bone Marrow Transplantation and Cancer Immunotherapy, Faculty of Medicine, Hadassah Medical Center, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "12",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This study is a retrospective clinical analysis focused on transplantation demographics and timelines rather than identifying a molecular target, defining a disease mechanism, or establishing a biochemical assay for high-throughput screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -75,43 +73,44 @@
   "url": "https://pubmed.ncbi.nlm.nih.gov/42925975/",
   "source": "PubMed",
   "score": 9,
-  "summary": "This cross-sectional study investigates the prevalence and distribution of Leishmania infection among dog populations in Israel. It provides essential epidemiological data to understand the transmission dynamics and environmental risk factors associated with this zoonotic parasitic disease.",
-  "opportunity": "The findings support the development of novel point-of-care diagnostics or prophylactic vaccines for the veterinary market to mitigate the public health risk of zoonotic spillover.",
+  "summary": "This study maps the prevalence and geographical distribution of Leishmania infection in domestic dogs across Israel using a combination of ELISA serology and qPCR testing. The findings highlight the effectiveness of different molecular targets, such as kDNA and ITS1, in identifying infected animals within a population.",
+  "opportunity": "The data provides a foundation for developing high-sensitivity multiplex diagnostic kits for zoonotic disease surveillance in veterinary and public health markets.",
   "fields": [
    "Diagnostics",
-   "Vaccines",
+   "Genomics",
+   "Immunology",
    "Clinical"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
     "score": 2,
-    "reason": "A cross-sectional prevalence study of Leishmania in dogs is a routine epidemiological survey with minimal methodological or conceptual innovation, offering limited novelty beyond confirming known disease distribution."
+    "reason": "The study is a descriptive epidemiological survey providing localized prevalence data rather than introducing new methodologies, novel molecular targets, or groundbreaking scientific concepts. It applies established diagnostic techniques (ELISA, qPCR) to a specific geographic population to fill a data gap, which lacks the transformative innovation required for a high novelty score."
    },
    "commercial_potential": {
     "score": 2,
-    "reason": "This is a descriptive epidemiological study that provides public health insights but does not propose a novel technology, therapeutic, or diagnostic platform. It lacks the intellectual property or product development pathway required to demonstrate significant commercial potential."
+    "reason": "This is an epidemiological descriptive study providing prevalence data rather than a development of a novel diagnostic tool, therapeutic, or platform technology. It lacks a proprietary product or service offering that can be commercialized or licensed."
    },
    "market_size": {
     "score": 2,
-    "reason": "The study focuses on a geographically constrained epidemiological assessment of a niche parasitic infection in a specific regional canine population, representing a very small and localized addressable market with limited commercial scalability. There is no indication of a scalable therapeutic or diagnostic platform that would command broad industrial interest."
+    "reason": "The study is a localized epidemiological survey focused on a specific disease prevalence within a single small geographic market (Israel). It does not present a scalable product, platform, or addressable market opportunity that extends beyond descriptive academic research."
    },
    "trl": {
     "score": 2,
-    "reason": "This is a descriptive epidemiological cross-sectional study focused on disease prevalence mapping rather than the development, validation, or commercialization of a new technology. It provides clinical insights but does not advance a tool, platform, or diagnostic solution toward market readiness."
+    "reason": "This is a descriptive epidemiological survey used for baseline data collection rather than the development of a new technology, drug, or diagnostic tool. It provides foundational knowledge but does not introduce a prototype or a commercializable product."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This is a descriptive epidemiological study reporting field observations rather than an invention or proprietary technology. It contains no novel methods, compositions, or technical solutions that could be protected as intellectual property."
+    "reason": "This is a descriptive epidemiological study reporting prevalence data; it contains no novel methodology, composition of matter, or proprietary technology that could be patented or defended as IP."
    }
   },
   "pi": "Gad Baneth",
   "pi_full_name": "Harold Salant",
   "pi_email": "Harold.Salant@mail.huji.ac.il.",
   "pi_affiliation": "Koret School of Veterinary Medicine, The Hebrew University of Jerusalem, Rehovot, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "9",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This is a descriptive epidemiological study on disease prevalence in a population and does not identify a specific molecular target, nor does it provide a pharmacological assay for HTS.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -130,43 +129,39 @@
   "date": "2026 Oct 24",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42923296/",
   "source": "PubMed",
-  "score": 19,
-  "summary": "This paper details a hybrid laparoscopic and endoscopic procedural technique to safely place a feeding tube in patients with complex abdominal anatomy where standard approaches pose a high risk of complications. It demonstrates a surgical methodology that reduces procedural morbidity by integrating two established visualization platforms to ensure precise organ placement.",
-  "opportunity": "The technique provides a clinical framework for developing specialized surgical navigation tools or hybrid instrument kits designed to improve safety in challenging gastroenterological procedures.",
+  "score": 14,
+  "summary": "This clinical case report describes a hybrid surgical approach using laparoscopy and endoscopy to successfully place a feeding tube when standard methods failed due to anatomical obstructions. The technique allowed surgeons to safely reposition the colon to prevent accidental organ perforation during gastrostomy.",
+  "opportunity": "There is a niche market for advanced surgical guidance tools or specialized laparoscopic instruments designed to facilitate complex, rescue-mode enteral access procedures.",
   "fields": [
    "Medical Device",
    "Clinical"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
-   "novelty": {
-    "score": 2,
-    "reason": "This report describes a technical modification for a routine surgical procedure, which represents incremental clinical refinement rather than a breakthrough or platform-level innovation. Such case reports offer limited generalizable novelty and lack the intellectual property potential characteristic of high-impact deep-tech research."
-   },
    "commercial_potential": {
-    "score": 3,
-    "reason": "The paper describes a single procedural innovation with limited evidence of broader applicability or marketable technology; commercial potential is modest."
+    "score": 2,
+    "reason": "This is a clinical case report describing a surgical technique/workflow rather than a novel device, reagent, or platform technology. While the technique has clinical utility, it lacks the proprietary intellectual property or scalable productization required for high commercial value."
    },
    "market_size": {
     "score": 2,
-    "reason": "This paper describes a niche procedural technique for a specific subset of patients with challenging anatomy rather than a scalable medical device or broad-market platform. The addressable demand is restricted to a very small segment of clinical cases requiring percutaneous endoscopic gastrostomy, limiting its overall commercial value."
+    "reason": "This is a case report describing a rescue technique for a very small niche of patients with extreme anatomical distortions, rather than a scalable product or a broad clinical application."
    },
    "trl": {
     "score": 9,
-    "reason": "The paper describes a clinical application of a hybrid surgical technique in a real-world patient setting, demonstrating immediate clinical utility and safety for challenging anatomical cases. It represents an optimization of existing established technologies (laparoscopy and endoscopy) that is ready for standard clinical adoption."
+    "reason": "The technology consists of the application of existing, FDA-approved medical devices (laparoscopy and endoscopy) to a clinical case, meaning the tools are already market-ready and the method is immediately applicable in a clinical setting."
    },
    "ip_strength": {
-    "score": 3,
-    "reason": "The paper describes a specific surgical technique, which is generally not patentable as a medical procedure; thus the IP defensibility is limited."
+    "score": 1,
+    "reason": "The paper describes a surgical case report utilizing existing tools and known techniques; it lacks a novel device, composition, or proprietary method that would be patentable or defensible."
    }
   },
   "pi": "Gad Marom",
   "pi_full_name": "Gad Marom",
   "pi_email": "",
   "pi_affiliation": "Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.; General Surgery Department, Hadassah Medical Organization and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "19",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This is a clinical case report describing a surgical technique for gastrostomy placement, which lacks a molecular target, disease-linked protein, or a high-throughput screening assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -187,43 +182,40 @@
   "date": "2026 Oct 24",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42920895/",
   "source": "PubMed",
-  "score": 25,
-  "summary": "This study analyzes how diabetes influences the risk of limb-related complications and mortality in patients with peripheral artery disease across different age groups. It provides critical longitudinal data that underscores the varying clinical prognosis for diabetic patients as they age.",
-  "opportunity": "The findings support the development of stratified clinical decision-support AI tools that predict limb-salvage outcomes and mortality risk to optimize resource allocation in vascular surgery.",
+  "score": 13,
+  "summary": "This study demonstrates that diabetes significantly increases the risk of limb loss and death in patients with peripheral artery disease, especially those diagnosed under age 50. It highlights a critical need for more aggressive intervention in younger diabetic patients to prevent major adverse limb events.",
+  "opportunity": "Development of age-stratified risk prediction software and specialized early-intervention screening tools for young-onset PAD patients with diabetes.",
   "fields": [
    "Clinical",
-   "Software/AI"
+   "Software/AI",
+   "Diagnostics"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
-    "score": 2,
-    "reason": "The study examines well-known comorbidities (diabetes, age, and PAD) and their impact on standard clinical outcomes, representing incremental observational data rather than a groundbreaking scientific discovery or novel methodology."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "This is an epidemiological observational study that identifies risk factors rather than developing a therapeutic, diagnostic, or platform technology. It lacks the intellectual property potential and actionable product-development pathway required for high commercial viability."
+    "score": 3,
+    "reason": "The study applies known risk factors (diabetes and age) to a retrospective cohort to confirm established clinical associations; it offers incremental data rather than a groundbreaking scientific discovery or a novel therapeutic approach."
    },
    "market_size": {
-    "score": 9,
-    "reason": "The intersection of diabetes and peripheral artery disease represents a massive, growing global patient population with high unmet clinical needs and significant associated healthcare expenditures. The large addressable market for vascular interventions and complication management in this demographic offers substantial commercial value."
+    "score": 8,
+    "reason": "The study addresses a massive, high-prevalence patient population involving the intersection of diabetes and peripheral artery disease, which represents a significant global burden of chronic disease. The identification of high-risk, younger cohorts with increased mortality and limb event risks defines a large, clinically urgent market for targeted therapeutic or diagnostic interventions."
    },
    "trl": {
-    "score": 10,
-    "reason": "This is a clinical observational study providing immediate actionable medical insights. The 'technology' is the clinical knowledge itself, which is ready for immediate application in patient stratification and treatment protocols."
+    "score": 1,
+    "reason": "This is an observational retrospective cohort study providing clinical epidemiological insights rather than a technological development or medical device. It offers diagnostic/prognostic knowledge but does not represent a new technology or product at any stage of technical readiness."
    },
    "ip_strength": {
-    "score": 2,
-    "reason": "The study reports observational clinical data on diabetes impact in peripheral artery disease; it lacks novel therapeutic methods or technologies that could be patented, offering minimal defensibility."
+    "score": 1,
+    "reason": "This is an observational clinical study providing epidemiological insights; it contains no novel method, molecule, or device that could be patented or defended as intellectual property."
    }
   },
   "pi": "Tomer Arad",
   "pi_full_name": "Tomer Arad",
   "pi_email": "",
   "pi_affiliation": "Department of Internal Medicine C, Kaplan Medical Center and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem 9112102, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "25",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The title refers to a clinical study on patient outcomes rather than a molecular target, specific disease mechanism, or a biochemical assay suitable for HTS development.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -251,43 +243,43 @@
   "url": "https://pubmed.ncbi.nlm.nih.gov/42925223/",
   "source": "PubMed",
   "score": 23,
-  "summary": "Researchers at Hebrew University have demonstrated that carbodicarbene monolayers can be assembled on Au(111) surfaces, forming exceptionally strong carbon(0)-metal bonds that allow precise tuning of the metal's work function. This surface chemistry platform offers a new route to engineer electronic properties of metal interfaces for advanced device applications.",
-  "opportunity": "The ability to modulate gold surface work function via carbodicarbene monolayers could be commercialized in high‑performance sensors, catalytic converters, or next‑generation electronic components where tailored surface energetics are critical.",
+  "summary": "Researchers have developed a way to bond a new class of carbon-based molecules called carbodicarbenes to gold surfaces, creating an exceptionally stable and conductive interface. These monolayers can be manipulated with heat to change their orientation, allowing for precise control over the electrical properties of the surface.",
+  "opportunity": "The ability to precisely tune surface work functions and create ultra-stable metal-organic interfaces is critical for developing next-generation biosensors, high-efficiency catalysts, and molecular electronics.",
   "fields": [
    "Materials",
    "Clean Energy",
-   "Software/AI"
+   "Diagnostics"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
-    "score": 8,
-    "reason": "The concept of carbodicarbene monolayers forming exceptionally strong carbon(0)-metal bonds and enabling tunable work-function on Au(111) represents a significant advance over existing surface chemistry, offering a potentially platform-enabling interface for electronic and catalytic applications."
+    "score": 7,
+    "reason": "The research introduces a new class of molecular surface ligands (CDCs) to surface science, translating a known molecular chemistry concept to interface engineering for the first time. While scientifically innovative in providing a new tool for work-function modulation, it is an incremental advancement over existing NHC-based surface chemistry rather than a paradigm shift."
    },
    "commercial_potential": {
-    "score": 3,
-    "reason": "While the fundamental surface science is elegant, it lacks a defined application path, as carbodicarbenes are highly specialized laboratory reagents with no clear advantage over existing industrial surface-functionalization technologies like SAMs. The technical complexity and stability requirements for these monolayers present significant barriers to scaling for any practical electronic or catalytic device."
+    "score": 4,
+    "reason": "The research demonstrates fundamental surface science and material properties, but it lacks a defined application or a clear pathway to a specific industrial end-use like sensors, catalysis, or organic electronics. While the interface engineering is technically impressive, the transition from molecular characterization to a scalable product or service is not addressed."
    },
    "market_size": {
-    "score": 3,
-    "reason": "The research focuses on a highly specialized surface chemistry technique with limited immediate commercial applications, suggesting a modest and niche market size."
+    "score": 4,
+    "reason": "The research describes a fundamental materials science discovery in surface functionalization with broad theoretical potential, but the specific application area (nanoscale interface engineering) is currently confined to niche academic or specialized semiconductor R&D rather than a massive, high-volume commercial market. The lack of a defined end-use vertical makes it difficult to quantify a large, immediate addressable demand."
    },
    "trl": {
     "score": 2,
-    "reason": "This is fundamental surface science research focused on the synthesis and characterization of carbodicarbene-gold interfaces, representing a very early-stage lab investigation with no defined industrial or commercial application at this time."
+    "reason": "The research is at a fundamental proof-of-concept stage, focusing on molecular characterization and interfacial physics via STM and XPS. There is no demonstration of integration into a functional device, scalable manufacturing process, or practical application beyond basic surface science."
    },
    "ip_strength": {
-    "score": 7,
-    "reason": "The study presents a novel surface chemistry that could be patented as a new class of carbodicarbene monolayers for metal work‑function tuning, offering a defensible platform, but the lack of demonstrated commercial application or extensive prior art analysis limits it from a top‑tier IP score."
+    "score": 6,
+    "reason": "The innovation demonstrates a novel chemical class (CDCs) for interface engineering with high stability, offering potential for platform-level patentability in nano-electronics or sensing. However, the current focus is fundamental surface science, and the specific industrial application or 'moat' against existing NHC-based functionalization remains undefined."
    }
   },
   "pi": "Elad Gross",
   "pi_full_name": "Elad Gross",
   "pi_email": "",
   "pi_affiliation": "Institute of Chemistry and the Center for Nanoscience and Nanotechnology, The Hebrew University, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "23",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This paper is focused on fundamental surface chemistry and material properties (Au(111) monolayers) and contains none of the required elements: no biological target, no disease link, and no relevant high-throughput screening assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -470,43 +462,35 @@
   "date": "2026-10-17",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42914925/",
   "source": "PubMed",
-  "score": 6,
-  "summary": "This paper describes a clinical case where a patient experienced a sudden and complete heart block following a minimally invasive aortic valve replacement procedure. It examines the specific electrical conduction failures that can occur as a complication of transcatheter valve implantation.",
-  "opportunity": "The findings highlight a need for improved monitoring technologies or specialized pacing devices to mitigate electrophysiological risks during transcatheter aortic valve replacement (TAVR) procedures.",
+  "score": 3,
+  "summary": "This clinical paper describes a rare case of sudden, complete heart block occurring following a minimally invasive aortic valve replacement procedure. It documents the specific physiological complications and cardiac rhythm disruptions experienced by a patient post-surgery.",
+  "opportunity": "The findings highlight a need for improved real-time cardiac monitoring technologies or predictive AI modeling to mitigate rhythm complications during and after TAVR procedures.",
   "fields": [
    "Medical Device",
    "Clinical"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
-   "novelty": {
-    "score": 2,
-    "reason": "This paper is a clinical case report describing a known, documented complication of a standard procedure, offering no new scientific innovation or platform-enabling technology. It provides incremental clinical observation rather than groundbreaking research."
-   },
    "commercial_potential": {
     "score": 1,
-    "reason": "This is a clinical case report describing a rare adverse event, which serves to inform medical practice rather than presenting a novel, scalable, or licensable technology or product."
+    "reason": "This is a clinical case report documenting a specific adverse event rather than a description of a novel device, platform, or therapeutic technology. It offers clinical insight but lacks any direct commercializable product or intellectual property potential."
    },
    "market_size": {
     "score": 1,
-    "reason": "This is a single case report describing a rare clinical complication, which lacks the commercial scalability or broad market demand required for a significant market size."
-   },
-   "trl": {
-    "score": 1,
-    "reason": "This paper is a clinical case report documenting a specific, isolated medical complication rather than the development, validation, or commercialization of a new technology. It provides descriptive medical insight rather than technological advancement, placing it at the earliest stage of knowledge generation rather than product readiness."
+    "reason": "This is a single case report describing an unusual clinical complication, which represents an isolated medical event rather than a product, technology, or therapeutic platform with addressable market demand."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This is a clinical case report describing a medical complication, which does not contain or claim any novel, patentable technology or proprietary intellectual property."
+    "reason": "This is a clinical case report describing a rare adverse event, which is observational in nature and lacks any novel therapeutic, device, or platform technology capable of being patented or defended."
    }
   },
   "pi": "Bernard Belhassen",
   "pi_full_name": "Bernard Belhassen",
   "pi_email": "bblhass@hadassah.org.il.",
   "pi_affiliation": "Heart Institute, Hadassah Medical Center, Jerusalem, Israel; Gray Faculty of Medical and Health Sciences, Tel Aviv University, Israel. Electronic address: bblhass@hadassah.org.il.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "6",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper is a clinical case report describing a specific patient event rather than a molecular study; it lacks a specific molecular target and a scalable assay for high-throughput screening.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -642,44 +626,36 @@
   "date": "2026 Sep 24",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42917522/",
   "source": "PubMed",
-  "score": 17,
-  "summary": "This research introduces a novel computational method called the Random Phase Thermal Wavefunction approach to accurately simulate how molecules break apart under intense light exposure. By simplifying complex quantum calculations, this technique enables faster and more precise modeling of light-matter interactions at the atomic scale.",
-  "opportunity": "The methodology provides a powerful software tool for accelerated materials discovery and chemical process optimization, particularly in designing photo-responsive materials and advanced solar-to-fuel conversion technologies.",
+  "score": 11,
+  "summary": "Researchers have developed a new computational method to simulate how molecules break apart when exposed to intense laser light, even when the process involves many complex moving parts. This approach significantly reduces the computing power required to model these high-energy quantum interactions compared to traditional exact methods.",
+  "opportunity": "This method can be integrated into specialized simulation software used to design new molecules and materials at the quantum level, accelerating R&D in laser-based manufacturing and ultrafast spectroscopy.",
   "fields": [
    "Software/AI",
-   "Materials",
-   "Clean Energy"
+   "Quantum",
+   "Materials"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
-    "score": 7,
-    "reason": "The paper introduces a novel computational technique—Random Phase Thermal Wavefunction Approach—for simulating photodissociation under strong fields, representing a meaningful methodological advance over existing quantum dynamics methods, though its full impact and applicability remain to be demonstrated."
-   },
-   "commercial_potential": {
-    "score": 3,
-    "reason": "The paper presents a theoretical computational method for simulating photodissociation under strong fields, which is primarily of academic interest and does not directly translate to a clear product, service, or licensable technology with immediate commercial relevance."
+    "score": 6,
+    "reason": "The paper introduces a specific computational optimization (the random-phase thermal wavefunction approach) to solve a known scaling problem in quantum dynamics, representing an incremental but significant methodological improvement rather than a paradigm shift. While it extends the reach of simulations into previously intractable regimes, it builds upon established first-principles quantum modeling frameworks."
    },
    "market_size": {
-    "score": 2,
-    "reason": "This paper focuses on niche computational quantum chemistry methodology rather than a direct commercial application, limiting its addressable market to a small segment of academic and R&D research software. It lacks clear path-to-market utility or broad industrial scalability in its current form."
+    "score": 3,
+    "reason": "The research addresses a niche computational challenge in theoretical quantum physics and molecular dynamics rather than a direct industrial or clinical application. While foundational for specialized spectroscopy research, it lacks a clear pathway to a large-scale commercial market or broad enterprise demand."
    },
    "trl": {
     "score": 2,
-    "reason": "This work focuses on a foundational theoretical advancement in computational chemistry methodology rather than a practical hardware or software product. It represents early-stage basic research that requires significant subsequent development to be integrated into industrial R&D workflows."
-   },
-   "ip_strength": {
-    "score": 3,
-    "reason": "The paper describes a fundamental computational method for theoretical physics, which is typically classified as a mathematical algorithm or scientific discovery and is therefore difficult to patent under current IP frameworks. It lacks the specific industrial application or hardware integration required to establish a strong, defensible commercial moat."
+    "reason": "This is fundamental computational physics research focused on improving simulation algorithms for quantum dynamics. It remains at a theoretical/methodological stage with no direct application to a commercial product or industrial process."
    }
   },
   "pi": "Ronnie Kosloff",
   "pi_full_name": "Ronnie Kosloff",
   "pi_email": "",
   "pi_affiliation": "The Institute of Chemistry and the Fritz Haber Centre for Theoretical Chemistry, The Hebrew University of Jerusalem, Jerusalem9190401, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "17",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This paper focuses on computational physics and quantum dynamics methodology rather than biological targets, disease modeling, or high-throughput screening assays.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -697,9 +673,9 @@
   "date": "2026 Sep 23",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42916856/",
   "source": "PubMed",
-  "score": 11,
-  "summary": "This research investigates the complex behavior of superconducting states in niobium diselenide, a transition metal dichalcogenide, by observing how magnetic fields interact with the material at the nanoscale. By using tunneling spectroscopy to map Meissner currents and vortices, the study provides fundamental insights into the stability and phase transitions of superconducting materials.",
-  "opportunity": "The findings enhance the fundamental understanding of high-performance superconductors, potentially accelerating the development of next-generation quantum computing hardware and low-loss electronic components.",
+  "score": 12,
+  "summary": "Researchers have developed a highly precise method to measure and separate different types of electrical currents in ultra-thin superconducting materials using tunneling spectroscopy. This technique allows for the detailed observation of how magnetic fields and currents behave at the edges of two-dimensional materials.",
+  "opportunity": "The ability to precisely monitor current densities and magnetic vortex behavior in 2D superconductors is a critical foundational step for developing high-sensitivity quantum sensors and next-generation superconducting electronics.",
   "fields": [
    "Materials",
    "Quantum"
@@ -707,33 +683,29 @@
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
-    "score": 4,
-    "reason": "The study applies established tunneling spectroscopy techniques to probe known Meissner current and vortex interactions in NbSe2, offering detailed but incremental insights rather than a fundamentally new concept or platform."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "This is a fundamental physics study focusing on microscopic quantum phenomena in superconducting materials, which lacks direct application to a scalable product, service, or device. The research provides deep academic insight into NbSe2 but is several steps removed from commercial engineering or industrial utility."
+    "score": 5,
+    "reason": "While the paper demonstrates high precision in deconvolution techniques and experimental resolution, it represents an incremental refinement of existing tunneling spectroscopy methodologies rather than a groundbreaking shift in superconducting theory or a new physical phenomenon."
    },
    "market_size": {
-    "score": 1,
-    "reason": "This paper focuses on fundamental condensed matter physics research regarding superconducting state properties, which lacks direct commercial application or a defined market addressability. There is no evidence of industrial utility or a path toward productization in this study of NbSe2 tunneling spectroscopy."
+    "score": 2,
+    "reason": "The research is fundamental condensed matter physics focused on characterization techniques for 2D superconductors, which lacks a direct commercial application or a defined addressable market. While scientifically significant, it does not describe a product or technology with immediate industrial or clinical demand."
    },
    "trl": {
     "score": 2,
-    "reason": "This is fundamental condensed matter physics research focused on characterizing superconducting phenomena in NbSe2 at a microscopic level. It lacks an applied device architecture or commercial path, placing it firmly in the early discovery/basic research phase."
+    "reason": "The research is fundamental physics focused on characterizing the properties of 2D superconducting flakes at the atomic/microscopic scale. It provides basic scientific insight rather than a developed device or a scalable platform ready for industrial application."
    },
    "ip_strength": {
-    "score": 2,
-    "reason": "This paper represents fundamental condensed matter physics research focused on characterizing material properties at the microscopic scale, which constitutes scientific discovery rather than a protectable technological invention. As the work lacks a clear industrial application or engineered utility, it offers minimal basis for a defensive intellectual property strategy."
+    "score": 3,
+    "reason": "The paper describes fundamental physics research and characterization techniques rather than a novel device, composition of matter, or industrial process. While the methodology is precise, the findings represent academic discovery of existing physical phenomena (Meissner currents and vortices) rather than a proprietary, patentable technology."
    }
   },
   "pi": "Hadar Steinberg",
   "pi_full_name": "Hadar Steinberg",
   "pi_email": "",
   "pi_affiliation": "The Racah Institute of Physics, The Hebrew University of Jerusalem, Jerusalem91904, Israel.; The Center for Nanoscience and Nanotechnology, Hebrew University, Jerusalem91904, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "11",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This paper focuses on materials physics and superconductivity in NbSe2, lacking any link to a human disease or biological target relevant to high-throughput drug screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -781,44 +753,44 @@
   "date": "2026 Sep 15",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42918684/",
   "source": "PubMed",
-  "score": 17,
-  "summary": "This study investigates the correlation between the length of time patients spend on mechanical ventilation after cardiac surgery and their subsequent experience of visual or auditory hallucinations. It aims to identify clinical thresholds in postoperative care that could reduce the incidence of delirium and improve recovery outcomes.",
-  "opportunity": "The findings could drive the development of AI-based patient monitoring software that optimizes ventilation weaning protocols to reduce postoperative delirium and hospital length-of-stay costs.",
+  "score": 10,
+  "summary": "This study investigates how the duration of mechanical ventilation after cardiac surgery affects the risk of patients experiencing visual and auditory hallucinations. It found that while delayed extubation (over 6 hours) was associated with a lower overall risk of hallucinations, the immediate postoperative period showed a different hazard profile.",
+  "opportunity": "The findings could inform clinical protocols and monitoring software designed to predict and manage postoperative delirium and neuropsychiatric side effects in intensive care settings.",
   "fields": [
    "Clinical",
-   "Software/AI",
-   "Neuroscience"
+   "Neuroscience",
+   "Medical Device"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
-    "score": 2,
-    "reason": "This study addresses a clinical observational correlation rather than a technological breakthrough or novel scientific mechanism. It provides incremental insight into postoperative clinical management protocols without introducing new intellectual property, novel diagnostic methods, or therapeutic innovation."
+    "score": 3,
+    "reason": "The study is an observational cohort analysis rather than a discovery of new biological mechanisms or a novel technological intervention. While it provides clinical insights, it follows established epidemiological methodologies to investigate a known clinical relationship."
    },
    "commercial_potential": {
     "score": 2,
-    "reason": "This study is observational and focuses on clinical outcomes associated with procedural protocols rather than developing a proprietary, protectable, or scalable medical technology. It offers clinical insights for hospital management, but lacks the core intellectual property or innovative product development necessary for high commercial investment potential."
+    "reason": "This is an observational clinical study providing epidemiological insights rather than a novel therapeutic, diagnostic tool, or medical device. While the findings may influence clinical protocols for extubation, they do not represent a patentable technology or a direct commercial product."
    },
    "market_size": {
-    "score": 3,
-    "reason": "The study addresses a niche clinical complication in cardiac surgery recovery rather than a scalable therapeutic platform or high-growth diagnostic market. While patient safety is important, the addressable market for interventions specifically targeting postoperative hallucinations is relatively small and lacks broad commercial scalability."
+    "score": 2,
+    "reason": "This is an observational clinical study investigating a correlation rather than a product, technology, or therapeutic intervention with commercial potential. There is no addressable market or scalable solution presented, only insights into postoperative clinical management."
    },
    "trl": {
-    "score": 9,
-    "reason": "This is a clinical study derived from the VAACS cohort, representing high-level clinical evidence that directly informs postoperative standard-of-care practices and protocols. As an observational study within a real-world surgical setting, it is functionally ready for immediate integration into hospital management guidelines."
+    "score": 2,
+    "reason": "This is an observational clinical cohort study aimed at understanding disease pathology and risk factors rather than developing a new medical device, drug, or therapeutic intervention. While the insights are clinically relevant for protocol optimization, the work itself does not represent a technology transitioning toward commercialization."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This study is an observational clinical analysis of medical outcomes and lacks any novel technological, pharmaceutical, or procedural invention that could be subject to patent protection. There is no underlying intellectual property or proprietary innovation to defensibly capitalize upon."
+    "reason": "This is an observational cohort study establishing a clinical correlation, which is inherently unpatentable and lacks any proprietary technology, molecule, or device. There is zero defensibility or intellectual property generated from these findings."
    }
   },
   "pi": "Haitham Abu Khadija",
   "pi_full_name": "Haitham Abu Khadija",
   "pi_email": "dr.haitham_kh@yahoo.com.",
   "pi_affiliation": "Clinical Research Center (PCRC), Bethlehem, Palestine; Heart Center, Kaplan Medical Center, Rehovot, affiliated with the Hebrew University, Jerusalem, Israel; Jesselson Integrated Heart Center, Shaare Zedek Medical Center, Eisenberg R&D Authority and Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. Electronic address: dr.haitham_kh@yahoo.com.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "17",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper focuses on clinical outcomes of postoperative mechanical ventilation rather than identifying specific molecular targets or screening-ready assays. It lacks all three required elements for high-throughput screening potential.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -905,43 +877,39 @@
   "url": "https://pubmed.ncbi.nlm.nih.gov/42914253/",
   "source": "PubMed",
   "score": 11,
-  "summary": "This study uses molecular docking to examine how polyphenols found in durian interact with human blood proteins and how food processing changes these interactions. The research aims to understand how specific plant compounds might influence human biological pathways.",
-  "opportunity": "Development of functional food ingredients or nutraceuticals designed to modulate specific human protein targets for health optimization.",
+  "summary": "This research examines how processing methods like vacuum drying and frying affect the polyphenol content of durian and their ability to bind with human blood proteins. Using molecular docking and spectroscopic techniques, the study maps how thermal treatments alter the bioactive potential and protein-binding affinity of these compounds.",
+  "opportunity": "Developing high-bioavailability functional food ingredients or nutraceuticals by optimizing preservation techniques like vacuum drying to maximize polyphenol-protein interactions.",
   "fields": [
    "FoodTech",
    "Proteomics",
-   "Other"
+   "AgriTech"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "The study employs standard computational methods (molecular docking) to investigate well-known phytochemical interactions, representing incremental incremental knowledge rather than a novel discovery or platform technology. It follows a common pattern of characterizing specific plant polyphenols without introducing new methodologies or transformative biological insights."
+    "reason": "The research follows a standard methodological framework for food chemistry—characterizing polyphenols and assessing their stability during common food processing techniques. While it provides specific data on durian, it lacks the groundbreaking mechanistic insight or novel platform technology required for high scientific novelty."
    },
    "commercial_potential": {
     "score": 3,
-    "reason": "The paper appears to be fundamental basic research focused on mechanistic molecular modeling rather than a developed product or industrial application. While it identifies bioactive interactions, it lacks the clear pathway toward a specific therapeutic, nutraceutical, or processed functional food product required for high commercial potential."
+    "reason": "The study is fundamental academic research focused on characterization and mechanistic understanding rather than a specific product formulation or therapeutic application. While it provides insights into food processing optimization, it lacks a clear path to a proprietary product, service, or high-value licensable technology."
    },
    "market_size": {
-    "score": 2,
-    "reason": "The study focuses on fundamental biochemical interactions of a specific fruit polyphenol, which represents a niche application with limited commercial scalability or clear industrial disruption potential compared to broader therapeutic or diagnostic platforms. The research lacks a defined clinical or industrial value proposition that would suggest a large, addressable market."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "This is a fundamental, early-stage in-silico and biochemical study focused on molecular interactions, lacking any proof-of-concept for therapeutic, diagnostic, or industrial application. It does not address formulation, bioavailability, or clinical relevance, placing it firmly at the basic research stage."
+    "score": 3,
+    "reason": "The research focuses on niche food science properties of a specific tropical fruit rather than a scalable platform technology or therapeutic application with broad market reach. While durian has consumer value, the study's findings on polyphenol-protein interactions lack a clear path to a high-value, mass-market industrial or clinical product."
    },
    "ip_strength": {
-    "score": 1,
-    "reason": "The research focuses on the molecular characterization of naturally occurring polyphenols and basic processing effects, which describes phenomena in the public domain and lacks the novelty or inventive step required for patentable IP. There is no proprietary composition, method, or platform technology presented that would offer a competitive barrier to entry."
+    "score": 2,
+    "reason": "The study focuses on characterizing existing natural phenomena and basic scientific observations rather than developing a novel composition, unique process, or proprietary delivery platform. The findings are descriptive and fundamental, offering limited pathways for high-strength patent protection or commercial defensibility."
    }
   },
   "pi": "Shela Gorinstein",
   "pi_full_name": "Shela Gorinstein",
   "pi_email": "shela.gorin@mail.huji.ac.il.",
   "pi_affiliation": "Institute for Drug Research, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 9112001, Israel. Electronic address: shela.gorin@mail.huji.ac.il.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "11",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 2,
   "hts_reason": "The study focuses on a complex mixture (durian polyphenols) rather than a specific molecule, fails to link the interaction to a specific disease pathology, and lacks a functional screening assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1014,44 +982,36 @@
   "date": "2026 Oct 22",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42911786/",
   "source": "PubMed",
-  "score": 7,
-  "summary": "This research explores how cultural differences between the United States and Japan influence the internal motivation to regulate one's emotions. It highlights that Americans prioritize achieving desired emotional states, whereas Japanese individuals place greater value on interpersonal harmony and social expectations.",
-  "opportunity": "This insight is valuable for developing culturally adaptive digital health and mental wellness applications that personalize therapeutic interfaces based on a user's cultural cognitive framework.",
+  "score": 6,
+  "summary": "This research examines how cultural differences between the US and Japan influence the gap between experienced and desired emotions. It suggests that the psychological impact of not feeling 'how one wants to feel' varies by cultural value systems.",
+  "opportunity": "Development of culturally-adaptive AI mental health screening tools and personalized digital therapeutics for emotion regulation.",
   "fields": [
    "Software/AI",
    "Neuroscience",
-   "Other"
+   "Clinical"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "The study appears to be a straightforward cross-cultural survey on emotional preferences, offering limited methodological or conceptual innovation beyond existing literature on cultural differences in affect."
-   },
-   "commercial_potential": {
-    "score": 1,
-    "reason": "This paper addresses a fundamental sociological observation regarding cross-cultural emotional preferences and lacks a technical mechanism, proprietary asset, or specific industrial application. It provides no clear path toward a commercial product, service, or scalable technology."
+    "reason": "The research applies existing emotion regulation models to a cross-cultural comparison, representing an incremental extension of known psychological frameworks rather than a groundbreaking scientific discovery or platform innovation."
    },
    "market_size": {
-    "score": 1,
-    "reason": "This paper addresses a niche topic in cross-cultural psychology with no clear commercial application, industrial scalability, or addressable market potential."
-   },
-   "trl": {
-    "score": 1,
-    "reason": "This is a theoretical social science and cross-cultural psychology paper that does not involve technology development, hardware, or clinical applications. It lacks a TRL component as it investigates human behavior rather than engineering or product readiness."
+    "score": 2,
+    "reason": "The paper is a theoretical cross-cultural psychological study on emotion regulation, offering no clear commercial application, scalable product, or addressable industrial market."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This paper addresses a socio-psychological phenomenon related to emotional regulation and cultural differences, which lacks any technical, physical, or material innovation that could be subject to patent protection or commercial IP defensibility."
+    "reason": "The paper describes an observational psychological study on cultural differences in emotion regulation; it contains no proprietary technology, novel chemical entities, or patentable processes."
    }
   },
   "pi": "Maya Tamir",
   "pi_full_name": "Maya Tamir",
   "pi_email": "",
   "pi_affiliation": "Department of Psychology, Hebrew University of Jerusalem.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "7",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper focuses on psychological and cultural differences in emotional regulation rather than identifying a molecular target, a disease-related biological mechanism, or a biochemical assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1068,42 +1028,27 @@
   "date": "2026 Oct 22",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42911776/",
   "source": "PubMed",
-  "score": 7,
-  "summary": "This study analyzes educational attainment disparities among care leavers compared to their peers across different ethnocultural groups using a quasi-experimental approach. It focuses on sociological outcomes and systemic barriers rather than biological or technological innovations.",
-  "opportunity": "This research is not commercially applicable to biotech, medtech, or deep-tech industries as it falls strictly within the domain of social science and public policy.",
+  "score": 3,
+  "summary": "This study examines how ethnic and cultural backgrounds influence the rates at which former foster care children enter higher education compared to their peers. It uses longitudinal administrative data to identify systemic gaps in educational access for marginalized youth.",
+  "opportunity": "Development of AI-driven social service optimization tools and predictive analytics for government agencies to improve educational placement and support outcomes.",
   "fields": [
+   "Software/AI",
    "Other"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "This research applies standard quasi-experimental methodologies to well-trodden sociological territory, offering incremental policy insight rather than the fundamental scientific or technological breakthrough required for a high novelty score."
-   },
-   "commercial_potential": {
-    "score": 1,
-    "reason": "This study focuses on educational sociology and public policy analysis rather than developing a protectable technology, therapeutic, or scalable industrial product. It offers no pathway for intellectual property generation or commercialization within a life-science or deep-tech context."
-   },
-   "market_size": {
-    "score": 1,
-    "reason": "This paper addresses social policy and educational sociology rather than a commercializable life-science or deep-tech product, resulting in a negligible addressable market for investment purposes."
-   },
-   "trl": {
-    "score": 1,
-    "reason": "This is a social science research paper focused on educational equity and policy analysis rather than a technological, clinical, or industrial innovation. As it does not involve the development of a product, platform, or process, it has no relevant technology readiness level."
-   },
-   "ip_strength": {
-    "score": 1,
-    "reason": "This paper is a sociological study utilizing statistical analysis of educational data, which lacks any technical invention, composition of matter, or novel process that could be subject to patent protection."
+    "reason": "The research applies a standard quasi-experimental design to a known social disparity; it provides incremental empirical data rather than a groundbreaking methodological or theoretical innovation."
    }
   },
   "pi": "Anat Zeira",
   "pi_full_name": "Anat Zeira",
   "pi_email": "",
   "pi_affiliation": "School of Social Work and Social Welfare, Hebrew University of Jerusalem.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "7",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper is a sociological study concerning higher education participation and contains no molecular targets, disease-related biological mechanisms, or high-throughput assay methods.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1172,43 +1117,44 @@
   "date": "2026-10-22",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42908274/",
   "source": "PubMed",
-  "score": 12,
-  "summary": "This research explores how yeast cells balance metabolic signaling pathways when nutrients are scarce, specifically identifying the interplay between the RTG and TOR systems. Understanding these regulatory mechanisms provides insights into how eukaryotic cells manage survival during metabolic stress.",
-  "opportunity": "This pathway knowledge can be leveraged in Synthetic Biology to engineer optimized yeast strains for high-yield industrial fermentation and biomanufacturing processes.",
+  "score": 13,
+  "summary": "The study explores how yeast cells manage amino acid levels and metabolic pathways during starvation by balancing fermentation and respiration. It identifies specific genetic mechanisms, such as the RTG pathway, that allow cells to survive toxic amino acid analogs.",
+  "opportunity": "Understanding these metabolic regulation pathways can optimize strain engineering for high-yield microbial fermentation in industrial biotechnology and synthetic biology.",
   "fields": [
    "Synthetic Biology",
-   "FoodTech"
+   "FoodTech",
+   "Other"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
-    "score": 5,
-    "reason": "The study investigates interaction between two well-characterized nutrient-sensing pathways (RTG and TOR) in yeast, a topic that has been explored in various contexts; while it may provide useful mechanistic insights, it does not represent a groundbreaking or platform-enabling advance compared to existing literature."
+    "score": 4,
+    "reason": "The research provides incremental mechanistic insights into established metabolic regulatory circuits (RTG and TOR pathways) in a model organism rather than introducing a transformative or disruptive biological concept. While it clarifies the interplay between amino acid biosynthesis and metabolic repression, it lacks the groundbreaking novelty required for a high-impact deep-tech platform."
    },
    "commercial_potential": {
     "score": 3,
-    "reason": "This is fundamental yeast cell biology research focusing on internal metabolic signaling pathways, which lacks direct application as a standalone product, service, or clear path to IP-backed industrial technology. While potentially useful for basic academic understanding of fungal physiology, it currently provides no clear competitive advantage for commercial biotech processes or therapeutics."
+    "reason": "The paper is fundamental basic research focused on metabolic signaling pathways in yeast, which lacks a direct product roadmap or specific industrial application. While potentially useful for optimizing fermentation processes or synthetic biology strains, it does not propose a clear technological or service-oriented translation."
    },
    "market_size": {
-    "score": 1,
-    "reason": "This is a fundamental biology paper focused on yeast metabolic signaling pathways with no immediate commercial application, industrial scalability, or clear path to market. It lacks relevance to high-value life science markets or addressable clinical demand."
+    "score": 2,
+    "reason": "This is fundamental basic research focused on metabolic signaling pathways in yeast (Saccharomyces cerevisiae), which lacks direct commercial application or a clear path to a high-value addressable market. While biologically interesting, it does not describe a product, platform, or therapeutic targeting a significant human health or industrial market."
    },
    "trl": {
-    "score": 1,
-    "reason": "This is fundamental molecular biology research characterizing intracellular signaling pathways in yeast, which lacks direct commercial application or a path to industrial scale-up at this stage."
+    "score": 2,
+    "reason": "This is fundamental basic research focused on molecular signaling pathways and metabolic regulation in a model organism (yeast). It lacks any applied development, engineering of a product, or transition toward industrial bioprocess optimization."
    },
    "ip_strength": {
     "score": 2,
-    "reason": "The study focuses on fundamental yeast signaling mechanisms, which are unlikely to be patentable or defensible as a commercial technology; it provides basic biological insight rather than a novel, protectable innovation."
+    "reason": "The paper describes fundamental mechanistic biology in a model organism (S. cerevisiae) regarding metabolic pathways, which lacks clear industrial application or patentable therapeutic targets. The findings are likely to be considered natural phenomena or basic scientific knowledge, providing minimal defensibility for a commercial venture."
    }
   },
   "pi": "Shay Covo",
   "pi_full_name": "Shay Covo",
   "pi_email": "",
   "pi_affiliation": "Department of Plant Pathology and Microbiology, The Institute of Environmental Sciences, Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University, 229 Herzl St., Rehovot 7610001, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "12",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 3,
   "hts_reason": "The paper focuses on broad regulatory pathways (RTG and TOR) in yeast rather than a specific druggable target or human disease, and it lacks a translationally relevant assay for HTS.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1224,42 +1170,39 @@
   "date": "2026-10-22",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42902838/",
   "source": "PubMed",
-  "score": 10,
-  "summary": "This research investigates the complex hierarchical microstructure and mineralization patterns of the pectoral fin spine in the Russian sturgeon to understand how it handles significant mechanical stress. By mapping the mechanical adaptations of this biological structure, the study provides a blueprint for how nature optimizes bone-like tissues for durability and load-bearing performance.",
-  "opportunity": "The structural insights from this dermal bone can be leveraged to bio-inspire the design of high-performance, lightweight, and impact-resistant composite materials for aerospace or medical implants.",
+  "score": 9,
+  "summary": "Researchers analyzed the unique bone structure of the Russian sturgeon's pectoral fin spine to understand how its highly organized microarchitecture provides extreme toughness and load-bearing capacity. The study details how specific mineral compositions and interconnected vascular networks allow this dermal bone to withstand intense mechanical stress.",
+  "opportunity": "The findings provide a biological blueprint for developing next-generation biomimetic composite materials and advanced orthopedic implants with enhanced fracture toughness and vascular integration.",
   "fields": [
-   "Materials"
+   "Materials",
+   "Medical Device"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "This study focuses on descriptive morphological and biomechanical characterization of a specific biological structure, which provides incremental anatomical knowledge rather than a novel, disruptive, or platform-enabling technology. While academically valuable for biomimetics, it lacks the technical innovation or industrial scalability required for a higher novelty score in a deep-tech investment context."
+    "reason": "The study provides a detailed characterization of an existing biological structure using standard analytical techniques, but it represents incremental descriptive science rather than a novel biological discovery or a transformative technological breakthrough."
    },
    "commercial_potential": {
-    "score": 3,
-    "reason": "This is a fundamental biological study of comparative anatomy and biomechanics that lacks immediate application in product development or clinical utility. While it provides bio-inspired insights, it is descriptive research rather than a translation-ready technological platform."
-   },
-   "market_size": {
     "score": 2,
-    "reason": "This is a fundamental biological study of sturgeon anatomy with no clear pathway to industrial application, commercial scalability, or a defined addressable market. Its value is limited to niche academic research in evolutionary biomechanics rather than addressing a significant commercial pain point."
+    "reason": "The paper is a fundamental biological characterization of evolutionary morphology and provides descriptive biomechanical data rather than a defined technological application. While it offers biomimetic inspiration for material science, it lacks a specific translation pathway into a product, service, or proprietary platform."
    },
    "trl": {
-    "score": 1,
-    "reason": "This is a fundamental biology study focusing on the structural analysis of an extant sturgeon species, providing zero clinical or industrial application potential. It offers no technological development or engineering intervention, placing it strictly in the realm of basic scientific discovery."
+    "score": 2,
+    "reason": "This is a fundamental evolutionary biology and comparative anatomy study focused on characterizing natural biological structures. It provides basic scientific knowledge rather than a developed technology, prototype, or applied material ready for commercial use."
    },
    "ip_strength": {
-    "score": 1,
-    "reason": "The paper is a descriptive biological study of anatomical adaptations in a fish species; it describes natural phenomena which are not patentable and lacks any novel engineered application or proprietary methodology."
+    "score": 2,
+    "reason": "This is a fundamental biological characterization study of an existing natural structure rather than a novel composition, device, or process. While the biomechanical findings could potentially inform biomimetic design, the paper itself describes natural phenomena which are not patentable and lacks any disclosed invention or proprietary application."
    }
   },
   "pi": "Joshua Milgram",
   "pi_full_name": "Joshua Milgram",
   "pi_email": "",
   "pi_affiliation": "Robert H. Smith Faculty of Agriculture, Food and Environment, Koret School of Veterinary Medicine, Hebrew University of Jerusalem, Rehovot, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "10",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper is a purely descriptive anatomical study of fish bone structure and does not identify a druggable molecular target, a disease link, or a high-throughput screening assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1280,44 +1223,36 @@
   "date": "2026-10-21",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42907608/",
   "source": "PubMed",
-  "score": 12,
-  "summary": "This research identifies a specific protein, PPR9, that is essential for processing mitochondrial RNA and assembling respiratory complexes in plants. The findings reveal a critical regulatory mechanism that controls how plants convert energy and progress through early developmental stages.",
-  "opportunity": "The discovery offers a novel genetic target for engineering climate-resilient crops with enhanced metabolic efficiency and optimized biomass production.",
+  "score": 9,
+  "summary": "Researchers have identified a specific protein, PPR9, that is essential for processing mitochondrial RNA in plants, specifically enabling the development of respiratory complex I. Without this protein, plant embryos fail to develop correctly, leading to embryonic arrest.",
+  "opportunity": "This discovery provides a genetic target for enhancing mitochondrial efficiency and metabolic resilience in crops, potentially driving improvements in plant vigor and yield through precision breeding or synthetic biology.",
   "fields": [
    "AgriTech",
-   "Synthetic Biology",
-   "Genomics"
+   "Genomics",
+   "Synthetic Biology"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
-   "novelty": {
-    "score": 4,
-    "reason": "This research provides a localized mechanistic insight into plant mitochondrial gene expression, which, while valuable for fundamental plant biology, lacks the disruptive, platform-enabling, or transformative industrial application required for a higher novelty score in a deep-tech investment context."
-   },
    "commercial_potential": {
     "score": 3,
-    "reason": "This is fundamental plant biology research focused on mitochondrial transcript processing in a model organism, which lacks clear translational pathways to commercial agricultural or biotechnological products. While understanding complex I biogenesis is scientifically rigorous, it is currently too far upstream and mechanistically specific to demonstrate immediate commercial utility or platform scalability."
+    "reason": "The research is fundamental basic science focused on a specific molecular mechanism in a model organism (Arabidopsis), offering little direct path to a commercial product or service. While mitochondrial engineering has long-term agricultural potential, this specific finding lacks a clear application in crop improvement or industrial biotechnology."
    },
    "market_size": {
-    "score": 1,
-    "reason": "This is fundamental plant biology research focused on mitochondrial transcript maturation in Arabidopsis, which lacks immediate industrial scalability or a defined commercial application in the agricultural sector."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "This is fundamental plant biology research focused on mitochondrial gene regulation in a model organism (Arabidopsis), which is far removed from industrial application or commercial product development. It represents basic science discovery rather than a technology-ready solution."
+    "score": 3,
+    "reason": "The research is fundamental basic science focused on Arabidopsis (a model organism) and does not directly describe a commercial product, application, or scalable agricultural technology. While mitochondrial biogenesis is critical, the study lacks a direct pathway to a specific high-value market or industrial application."
    },
    "ip_strength": {
-    "score": 2,
-    "reason": "This is fundamental plant molecular biology research identifying a protein's function, which lacks the non-obvious application or industrial utility required for strong patent protection. As a basic academic characterization of a native gene, it offers minimal commercial exclusivity or defensible platform potential."
+    "score": 3,
+    "reason": "The work is fundamental basic research identifying a specific biological mechanism in Arabidopsis, which lacks direct commercial utility or high industrial defensibility. While the PPR protein family is a known target, this specific finding is mechanistic and descriptive rather than a novel platform or composition of matter likely to support strong IP."
    }
   },
   "pi": "Oren Ostersetzer-Biran",
   "pi_full_name": "Oren Ostersetzer-Biran",
   "pi_email": "oren.ostersetzer@mail.huji.ac.il.",
   "pi_affiliation": "Department of Plant and Environmental Sciences, The Alexander Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel. oren.ostersetzer@mail.huji.ac.il.; Institute of Parasitology, Biology Centre, Czech Academy of Sciences, České Budějovice, Czech Republic. oren.ostersetzer@mail.huji.ac.il.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "12",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 2,
   "hts_reason": "The paper identifies a specific protein target (PPR9) and describes its role in plant development, but it does not link this target to a human disease or condition, nor does it present a clear assay suitable for high‑throughput screening.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1338,44 +1273,40 @@
   "date": "2026-10-21",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42904311/",
   "source": "PubMed",
-  "score": 17,
-  "summary": "This study analyzes the correlation between diabetes, kidney stone composition, and overall renal function within a large patient cohort. By identifying patterns in metabolic markers and stone formation, the researchers aim to improve clinical understanding of complex nephrolithiasis cases.",
-  "opportunity": "The findings support the development of a predictive diagnostic AI tool that uses metabolic data and stone composition to personalize treatment plans and prevent recurrent kidney disease in diabetic populations.",
+  "score": 9,
+  "summary": "This study analyzes how diabetes and specific stone types, such as uric acid, impact the rate of kidney function decline in patients with kidney stones. It finds that while diabetic patients are more prone to uric acid stones, the presence of diabetes alone does not significantly accelerate kidney function loss compared to non-diabetics within specific stone subtypes.",
+  "opportunity": "The findings suggest a need for precision metabolic profiling and personalized preventative care tools to manage renal decline in stone-forming diabetic populations.",
   "fields": [
-   "Clinical",
    "Diagnostics",
+   "Clinical",
    "Software/AI"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
     "score": 2,
-    "reason": "This study performs a standard retrospective analysis of clinical correlations in a well-studied disease, offering incremental observational data rather than a novel therapeutic, diagnostic, or mechanistic breakthrough. It does not introduce new intellectual property or transformative innovation, serving instead as a routine clinical audit of existing associations."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "This study is a retrospective observational analysis of clinical data, which lacks the translational IP or novel technology development required for commercialization. It identifies an epidemiological association rather than a product, diagnostic tool, or proprietary therapeutic intervention."
+    "reason": "This is a retrospective observational cohort study aimed at characterizing clinical correlations rather than introducing a new biological mechanism, diagnostic tool, or therapeutic modality. While clinically informative for population health management, it follows established epidemiological frameworks without providing groundbreaking scientific innovation."
    },
    "market_size": {
-    "score": 9,
-    "reason": "The paper targets the intersection of diabetes and nephrolithiasis, two massive global health burdens with high prevalence and significant healthcare expenditures, representing a vast addressable patient population."
+    "score": 4,
+    "reason": "The paper is a retrospective observational study providing clinical insights rather than a novel therapeutic, diagnostic tool, or platform technology with direct commercial addressability. While the underlying disease states (diabetes and nephrolithiasis) are large markets, this specific research does not define a new market or a scalable product."
    },
    "trl": {
-    "score": 3,
-    "reason": "The study is an observational clinical investigation, providing epidemiological data rather than a developed technology or product; it is at a basic research stage with no clear path to commercialization."
+    "score": 2,
+    "reason": "This is a retrospective observational cohort study intended to generate clinical insights and epidemiological knowledge rather than a development of a new technology, device, or therapeutic intervention. It represents basic clinical research (TRL 1-2) aimed at understanding disease mechanisms rather than a tool ready for technical application."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This paper is a retrospective clinical observation study analyzing correlations in existing patient data, which inherently lacks the novelty or inventive step required for patent protection or defensible IP. It describes clinical associations rather than a proprietary technology, composition of matter, or novel method of treatment."
+    "reason": "This is a retrospective observational cohort study analyzing existing clinical data, which provides epidemiological insights rather than novel, patentable technology or proprietary methods. The findings are descriptive of clinical correlations and do not constitute intellectual property or a defensible technical moat."
    }
   },
   "pi": "Yaniv Shilo",
   "pi_full_name": "Yaniv Shilo",
   "pi_email": "",
   "pi_affiliation": "Maccabi Healthcare Services, Tel Aviv, Israel.; Department of Urology, Kaplan Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Rehovot, 7661041, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "17",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This paper is a retrospective clinical study focusing on patient cohort characteristics and disease associations rather than identifying a molecular target, a specific therapeutic molecule, or an HTS-compatible bioassay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1453,43 +1384,43 @@
   "date": "2026-10-19",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42897434/",
   "source": "PubMed",
-  "score": 16,
-  "summary": "This study analyzes the clinical effects of a 25-hour period of total fasting and fluid deprivation on fetal health and pregnancy progression in low-risk patients. It provides a unique, large-scale dataset on maternal metabolic stress and its potential impact on obstetric safety protocols.",
-  "opportunity": "The findings can be leveraged to develop predictive AI models or clinical decision-support software that monitors maternal metabolic stability and hydration status to optimize obstetric care during acute physiological stress.",
+  "score": 9,
+  "summary": "This study investigates how the 25-hour religious fast of Yom Kippur affects pregnancy outcomes and dehydration markers in low-risk women. Researchers compared delivery dates and biochemical markers to determine if prolonged fasting increases the risk of preterm birth.",
+  "opportunity": "The data could inform specialized nutritional guidance or monitoring protocols for pregnant women adhering to intermittent or religious fasting schedules.",
   "fields": [
    "Clinical",
-   "Software/AI"
+   "Other"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "This study addresses a niche clinical observation within a specific demographic rather than advancing a novel scientific platform, technology, or breakthrough therapeutic mechanism. Its contribution is limited to refining existing clinical guidelines for a specific cultural practice rather than providing foundational innovation."
+    "reason": "The study provides valuable epidemiological observations on a specific cultural phenomenon, but it utilizes a retrospective cohort design to observe existing behaviors rather than introducing a new biological mechanism, technology, or therapeutic platform. It is an incremental piece of observational clinical research rather than a groundbreaking scientific innovation."
    },
    "commercial_potential": {
     "score": 1,
-    "reason": "This study focuses on observational epidemiology regarding a religious behavioral practice and offers no novel technology, therapeutic intervention, or proprietary IP that could be commercialized."
+    "reason": "This is an observational clinical study investigating a specific cultural/religious phenomenon rather than a technology or therapeutic intervention. It provides epidemiological data for public health guidance but does not result in a patentable product, platform, or scalable service."
    },
    "market_size": {
-    "score": 1,
-    "reason": "This study addresses a hyper-niche, culturally specific observation rather than a scalable clinical intervention, resulting in a negligible addressable market size for any commercial product or service."
+    "score": 2,
+    "reason": "The research focuses on a highly specific, niche religious practice within a single geographic population, offering no scalable clinical application or broad commercial market potential. The findings address a sociocultural phenomenon rather than a widespread medical pathology or a developable therapeutic market."
    },
    "trl": {
-    "score": 9,
-    "reason": "This study utilizes clinical data from a multicenter retrospective analysis, which represents a high level of real-world evidence already integrated into the standard of care for obstetric clinical guidelines. As it evaluates existing patient outcomes within the current healthcare framework, it serves as a near-market clinical validation of medical practice."
+    "score": 2,
+    "reason": "This is an observational retrospective cohort study intended to generate clinical knowledge rather than a technology or medical device. It does not represent the development of a product or intervention, placing it at the most basic level of scientific understanding."
    },
    "ip_strength": {
-    "score": 2,
-    "reason": "The study investigates a medical observation rather than a novel technology or method, offering little basis for patentable claims or defensible IP."
+    "score": 1,
+    "reason": "This is an observational retrospective cohort study examining clinical outcomes of a natural human behavior, which lacks any novel composition of matter, device, or proprietary method capable of patent protection or commercial defensibility."
    }
   },
   "pi": "Hen Y Sela",
   "pi_full_name": "Maayan Bas Lando",
   "pi_email": "orenandmaayan@gmail.com.",
   "pi_affiliation": "Department of Obstetrics & Gynecology, Shaare Zedek Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, 12 Bayit Street, Jerusalem 91031, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "16",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This study is an observational clinical assessment of a fasting behavior rather than a molecular-level investigation, lacking a specific molecular target or a high-throughput screening assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1564,44 +1495,37 @@
   "date": "2026-10-13",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42908401/",
   "source": "PubMed",
-  "score": 27,
-  "summary": "The paper presents BBERT, a machine‑learning model that rapidly and accurately assigns taxonomic domains to short metagenomic reads, improving speed and precision over existing tools. It leverages transformer architecture to handle noisy, short sequences typical in metagenomic datasets.",
-  "opportunity": "BBERT could be commercialized as a cloud‑based metagenomic analysis platform for diagnostics, environmental monitoring, and agricultural pathogen surveillance, offering faster turnaround and higher accuracy than current pipelines.",
+  "score": 15,
+  "summary": "BBERT is a specialized large language model that identifies the taxonomic domain and functional potential of short DNA sequences without needing a reference database. It improves the speed and accuracy of metagenomic assembly, making it easier to decode complex microbial environments like soil.",
+  "opportunity": "This technology enables high-throughput, cost-effective microbial profiling for companies specializing in soil health, microbiome-based agriculture, and environmental biotechnology.",
   "fields": [
-   "Genomics",
    "Software/AI",
-   "Diagnostics"
+   "AgriTech",
+   "Genomics",
+   "Synthetic Biology"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
-   "novelty": {
-    "score": 7,
-    "reason": "The paper introduces a novel application of BERT-based models (BBERT) for rapid and accurate taxonomic domain assignment of short metagenomic reads, representing a meaningful methodological advance over traditional alignment or k‑mer approaches, though similar transformer-based methods are already emerging in the field."
-   },
    "commercial_potential": {
-    "score": 4,
-    "reason": "While bioinformatics tools like BBERT offer technical utility for metagenomic analysis, they are typically open-source software with low barriers to entry and limited proprietary capture, making them difficult to monetize as a standalone product. The technology lacks a clear path to high-margin defensibility or a direct clinical application without being embedded into a larger, more comprehensive diagnostic service or platform."
-   },
-   "market_size": {
-    "score": 8,
-    "reason": "The tool addresses a core need in the rapidly growing metagenomics and microbiome analysis market, which is part of the broader genomics and bioinformatics sector valued in the tens of billions, indicating a large and valuable addressable demand."
+    "score": 7,
+    "reason": "BBERT offers a clear platform-enabling value proposition by reducing computational overhead and overcoming reference database limitations in metagenomics. Its ability to accelerate assembly and provide reference-free classification has strong commercial utility for environmental biotech, agriculture, and microbiome diagnostics."
    },
    "trl": {
-    "score": 5,
-    "reason": "The paper presents a novel computational method for taxonomic assignment, which is still at the algorithmic development and validation stage; it has not yet been demonstrated in a real-world deployment or commercial product, placing it around TRL 5 (prototype in lab)."
+    "score": 4,
+    "reason": "The technology is currently at the computational validation stage, demonstrating performance improvements in simulated and cohort-based metagenomic datasets. While it offers clear platform potential for bioinformatics workflows, it lacks the real-world deployment data or integrated software package status required for a higher readiness score."
    },
    "ip_strength": {
-    "score": 3,
-    "reason": "The innovation describes a computational methodology for sequence classification, which faces significant challenges regarding patent eligibility under 35 U.S.C. § 101 as an abstract mathematical concept. Furthermore, open-source bioinformatics tools typically rely on community adoption and data superiority rather than proprietary IP as their primary mode of defensibility."
+    "score": 4,
+    "reason": "The innovation relies on a transformer-based architecture (BERT) which is a well-known open-source paradigm, making the core methodology difficult to patent. While the specific training weights and optimized hyperparameters may offer some trade secret value, the 'reference-free' algorithmic approach is highly susceptible to reverse engineering and rapid academic replication."
    }
   },
   "pi": "Amir Erez",
   "pi_full_name": "Amir Erez",
   "pi_email": "",
   "pi_affiliation": "Racah Institute of Physics, The Hebrew University of Jerusalem, Edmond J. Safra Campus, Givat Ram, Jerusalem 9190401, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "27",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper describes a bioinformatics tool (BBERT) for taxonomic classification of metagenomic reads; it identifies no specific molecule, disease link, or biological assay for HTS.",
   "hts_eval_model": "gemma-4-31b-it"
@@ -1618,9 +1542,9 @@
   "date": "2026 Sep 28",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42906028/",
   "source": "PubMed",
-  "score": 13,
-  "summary": "The study investigates how ligands interact with a bitter taste G‑protein coupled receptor (GPCR) and how chloride ions penetrate the binding pocket, revealing dynamic conformational changes that influence receptor activation. These mechanistic insights could inform the design of molecules that modulate bitter taste perception or target related GPCRs in therapeutic contexts.",
-  "opportunity": "Understanding chloride‑mediated modulation of bitter GPCRs opens avenues for developing novel taste‑modifying drugs or functional foods that reduce bitterness, with potential applications in pharmaceuticals, nutraceuticals, and consumer products.",
+  "score": 9,
+  "summary": "Researchers used molecular dynamics simulations to discover that the bitter taste receptor TAS2R14 has both an extracellular and a novel intracellular binding site. The study shows how different ligands and chloride ions influence the receptor's shape and ability to signal, revealing new ways to control taste perception.",
+  "opportunity": "The identification of a novel intracellular binding site offers a new pharmacological target for developing taste-modulating drugs to improve medication compliance or manage dietary behaviors.",
   "fields": [
    "Drug Discovery",
    "FoodTech",
@@ -1628,34 +1552,26 @@
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
-   "novelty": {
-    "score": 4,
-    "reason": "While characterizing ligand-binding and ion penetration in GPCRs is essential for structural biology, this research represents an incremental study of a single receptor type rather than a novel methodology or a paradigm-shifting breakthrough in pharmacology. It provides valuable mechanistic insight but lacks the disruptive platform-enabling potential typical of highly novel deep-tech research."
-   },
-   "commercial_potential": {
-    "score": 3,
-    "reason": "This study focuses on fundamental biophysical characterization of a bitter taste GPCR, which lacks a clear path to a scalable product or platform compared to therapeutic or diagnostic applications. While it offers insights into protein dynamics, it is highly academic and lacks the immediate translational applicability required for a high commercial potential score."
-   },
    "market_size": {
-    "score": 2,
-    "reason": "This is a fundamental biophysics paper focusing on the structural dynamics of a specific bitter taste receptor, which lacks immediate commercial application or a clear path to a scalable, high-value industrial market. While GPCR structural biology is important, this specific study lacks the platform-level utility or therapeutic focus required to address a significant addressable market."
+    "score": 4,
+    "reason": "While taste perception is a broad physiological area, this work is a basic mechanistic study of a single receptor (TAS2R14) rather than a drug discovery program or a platform technology. The market addressability is limited to niche applications in flavor science or specialized pharmacology rather than a large-scale therapeutic or industrial market."
    },
    "trl": {
     "score": 2,
-    "reason": "This study focuses on fundamental biophysical characterization and molecular dynamics simulations of a specific GPCR, which represents early-stage basic research. It lacks a clear therapeutic or industrial application and remains distant from any form of commercial translation."
+    "reason": "This is fundamental computational research using molecular dynamics simulations to understand receptor mechanics at an atomic level. It is early-stage basic science that provides mechanistic insights but does not yet involve a physical lead compound, assay validation, or a developed therapeutic candidate."
    },
    "ip_strength": {
-    "score": 2,
-    "reason": "This paper represents fundamental structural biology and computational modeling of a GPCR, which provides public domain knowledge rather than novel, composition-of-matter, or proprietary platform IP. While it offers insights into binding sites, the findings are descriptive academic research rather than a defensible, exclusionary technological asset."
+    "score": 3,
+    "reason": "The study is foundational computational research providing mechanistic insights into GPCR dynamics rather than disclosing a novel, patentable molecule or a proprietary platform. While the discovery of a novel intracellular site offers a theoretical starting point for drug design, the work itself is descriptive of biological phenomena rather than a protectable invention."
    }
   },
   "pi": "Masha Y Niv",
   "pi_full_name": "Masha Y Niv",
   "pi_email": "",
   "pi_affiliation": "The Institute of Biochemistry, Food Science and Nutrition, The Robert H. Smith Faculty of Agriculture, Food and Environment, 229 Herzl Street, Rehovot76100001, Israel.; The Fritz Haber Center for Molecular Dynamics, The Hebrew University, Jerusalem919041, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "13",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 3,
   "hts_reason": "The paper identifies a specific target (Bitter Taste GPCR) but lacks a link to a specific disease or condition and does not describe a high-throughput assay for drug discovery.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1738,8 +1654,8 @@
   "url": "https://pubmed.ncbi.nlm.nih.gov/42896854/",
   "source": "PubMed",
   "score": 14,
-  "summary": "Researchers at Hebrew University of Jerusalem uncovered that the MBW complex, a transcriptional regulator, controls the production of floral volatiles in petunia through the repressor EOBV, a MYB protein. This discovery elucidates the genetic basis of scent biosynthesis and offers a target for manipulating flower fragrance.",
-  "opportunity": "By engineering the MBW complex or EOBV, companies can develop petunias and other ornamental plants with customized scents, opening markets in horticulture, perfumery, and consumer fragrances.",
+  "summary": "Researchers have identified a specific protein, EOBV, that acts as a key regulator within a molecular complex to control the production of floral scents in petunias. By knocking out this protein, they demonstrated the ability to redirect metabolic pathways to increase or decrease specific aromatic compounds like vanillin and phenylpropenes.",
+  "opportunity": "This discovery provides a genetic blueprint for precision metabolic engineering to optimize the production of high-value aromatic compounds and flavorings in plants for the fragrance and food industries.",
   "fields": [
    "AgriTech",
    "Synthetic Biology",
@@ -1748,33 +1664,25 @@
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
-    "score": 4,
-    "reason": "This research provides a incremental mechanistic characterization of well-understood MBW regulatory complexes in model plant systems, representing a standard academic contribution rather than a groundbreaking, platform-enabling, or high-IP-potential innovation."
+    "score": 6,
+    "reason": "The study provides significant mechanistic insight by identifying a specific MYB component (EOBV) that links the well-known MBW complex to volatile regulation, but it represents an incremental expansion of an existing regulatory framework rather than a platform-shifting discovery."
    },
    "commercial_potential": {
-    "score": 3,
-    "reason": "The study is basic plant biology with limited immediate translation to a clear product or licensable technology; commercial potential is modest and indirect."
-   },
-   "market_size": {
-    "score": 2,
-    "reason": "The study focuses on a specific transcriptional regulator in petunia floral scent, a niche area with limited commercial application; the addressable market is small and not broadly industrially relevant."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "This is fundamental plant molecular biology research focused on elucidating transcriptional regulatory mechanisms in a model organism. It provides scientific insight into gene function rather than developing a commercial product, platform, or industrially scalable application."
+    "score": 4,
+    "reason": "While the study identifies a specific genetic mechanism for tuning floral scents, the commercial application is limited to the high-value but niche ornamental horticulture sector rather than broad-scale industrial or clinical markets. The technology offers a way to engineer scent profiles, but lacks the 'platform' scalability or transformative economic impact required for a higher score."
    },
    "ip_strength": {
-    "score": 3,
-    "reason": "This paper describes fundamental biological mechanisms of gene regulation in model plants, which constitutes basic scientific discovery rather than a proprietary, commercially enforceable technology. While the insights could inform future metabolic engineering, the findings themselves lack the novelty and industrial utility required for strong patentability."
+    "score": 4,
+    "reason": "The paper identifies a fundamental biological mechanism (the EOBV component of the MBW complex), which is patentable as a genetic target for trait engineering, but the discovery is primarily mechanistic and lacks specific industrial compositions or unique delivery methods that would provide high defensibility."
    }
   },
   "pi": "Alexander Vainstein",
   "pi_full_name": "Alexander Vainstein",
   "pi_email": "",
   "pi_affiliation": "Institute of Plant Sciences and Genetics in Agriculture, The Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Rehovot 7610001, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "14",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 2,
   "hts_reason": "The paper identifies a specific transcriptional repressor (EOBV) but fails to link it to a human disease or condition, and it lacks a scalable assay for drug discovery purposes.",
   "hts_eval_model": "gemini-3.1-flash-lite"

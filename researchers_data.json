@@ -13611,7 +13611,7 @@
     "pi_full_name": "Shlomo Elias",
     "pi_email": "selias@hadassah.org.il.",
     "pi_affiliation": "Department of Bone Marrow Transplantation and Cancer Immunotherapy, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel; The Lautenberg Center for General and Tumor Immunology, Department of Immunology and Cancer Research, Institute for Medical Research Israel Canada (IMRIC), Hebrew University-Hadassah Medical School. selias@hadassah.org.il.",
-    "avg_score": 24.3,
+    "avg_score": 22.7,
     "max_hts_score": 5,
     "paper_count": 3,
     "description": "This researcher specializes in advanced immunotherapies and hematopoietic cell transplantation, with a focus on improving efficacy and accessibility for cancer treatments. Their work bridges the gap between clinical outcomes and therapeutic innovation, particularly in refining CAR-T cell manufacturing to enable off-the-shelf, universal solutions. Additionally, they analyze the systemic and clinical challenges associated with cell-based therapies, including infectious disease complications and disparities in treatment access.",
@@ -13724,39 +13724,37 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/42927438/",
         "journal": "Clinical transplantation",
-        "score": 12,
-        "summary": "This study examines how different donor types affect the timing of allogeneic stem cell transplantation in acute myeloid leukemia patients, with a focus on variations across ethnic groups. It highlights disparities in transplant access and outcomes that could inform better allocation strategies and patient counseling.",
-        "opportunity": "Develop AI-driven decision support tools that predict optimal donor selection and streamline transplant logistics to reduce ethnic disparities in AML treatment.",
+        "score": 7,
+        "summary": "This study analyzes how ethnic background affects the type of stem cell donors available for leukemia patients in Israel. It found that while donor types vary significantly between Jewish and Arab populations, this does not currently impact the time to transplant or patient survival rates.",
+        "opportunity": "The data highlights a critical need for ethnic-specific genomic databases and matching algorithms to expand the pool of unrelated donors for diverse populations.",
         "abstract": "Identifying suitable donors and optimizing transplant timing are critical in allogeneic hematopoietic stem cell transplantation for acute myeloid leukemia. This retrospective study evaluated 124 Israeli adult AML patients (99 Jews, 25 Arabs) who underwent their first allo-HSCT between 2012 and 2022. We assessed donor types, key transplantation time intervals, overall survival, and the impact of the COVID-19 pandemic. Overall, 80.7% of patients received fully matched grafts. Donor type distribution differed significantly between ethnic groups (p = 0.007): Israeli Arabs predominantly received matched related donors (64%) with few matched unrelated donors (8%), whereas Israeli Jews showed a balanced distribution (41.4% each). Despite these differences, there were no significant disparities in time from diagnosis to transplantation (119 vs. 122 days, p = 0.871) or in overall survival. The COVID-19 pandemic was associated with prolonged time from coordinator referral to transplantation (p < 0.001) but did not significantly affect overall survival (p = 0.059). In conclusion, differences in donor type by ethnicity did not translate into disparities in transplantation timing or overall survival. These findings highlight the resilience of the transplantation process and the importance of evaluating ethnicity within the context of a specific healthcare system.",
         "fields": [
+          "Genomics",
+          "Immunology",
           "Clinical",
-          "Immunology"
+          "Software/AI"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 3,
-            "reason": "This study is a retrospective clinical analysis focused on healthcare equity and existing distribution patterns rather than developing a new technology, diagnostic, or therapeutic platform. While important for health policy and clinical outcomes, it does not represent scientific or technological innovation."
+            "score": 2,
+            "reason": "This is a descriptive retrospective clinical study that observes existing patterns in a specific population rather than introducing a new methodology, therapeutic mechanism, or technological innovation. It provides localized epidemiological insights but lacks the groundbreaking scientific novelty required for high-impact deep-tech or life-science disruption."
           },
           "commercial_potential": {
             "score": 2,
-            "reason": "This is a retrospective clinical observational study analyzing patient data rather than developing a proprietary therapeutic, diagnostic, or platform technology. It lacks an innovative invention, intellectual property, or commercializable product pathway."
-          },
-          "market_size": {
-            "score": 3,
-            "reason": "While Acute Myeloid Leukemia is a significant clinical indication, this study focuses on retrospective demographic data regarding donor matching rather than a scalable therapeutic product, platform, or intervention. The findings address an operational clinical bottleneck rather than creating a new high-value market opportunity."
+            "reason": "The study is a retrospective epidemiological observation that describes existing clinical trends rather than developing a new therapeutic, diagnostic, or platform technology. While it provides valuable clinical insights, it does not present a patentable product or a scalable service with direct commercial application."
           },
           "trl": {
-            "score": 3,
-            "reason": "This is a retrospective clinical observational study analyzing historical transplantation data rather than a developmental technology, therapeutic product, or novel platform. While it provides valuable clinical insights for healthcare strategy, it does not constitute a technical innovation or a commercializable solution."
+            "score": 2,
+            "reason": "This is a retrospective observational study analyzing existing clinical data rather than the development of a new medical technology, tool, or therapeutic intervention. It provides epidemiological insights but does not represent a technological advancement moving toward commercialization."
           },
           "ip_strength": {
             "score": 1,
-            "reason": "This is a retrospective clinical observational study analyzing patient data and has no underlying novel technology, proprietary methodology, or inventive step that could be protected by intellectual property."
+            "reason": "This is a retrospective clinical observational study providing epidemiological data, which lacks any novel molecular, technological, or compositional invention capable of being patented or protected as intellectual property."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 12,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "Department of Bone Marrow Transplantation and Cancer Immunotherapy, Faculty of Medicine, Hadassah Medical Center, Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 1,
@@ -16353,7 +16351,7 @@
     "pi_full_name": "Mor Nahum",
     "pi_email": "mor.nahum@mail.huji.ac.il.",
     "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, The Hebrew University, Jerusalem, Israel. Electronic address: mor.nahum@mail.huji.ac.il.",
-    "avg_score": 16.3,
+    "avg_score": 16.5,
     "max_hts_score": 2,
     "paper_count": 10,
     "description": "This researcher focuses on digital and neuro-technological interventions for mental health disorders, specifically ADHD and depression. Their work integrates clinical trials, neuroimaging biomarkers, and ecological momentary assessment to understand the neural and behavioral mechanisms behind executive dysfunction and emotional regulation. By bridging lab-based neuroscience with real-world mobile applications, they aim to develop personalized, remotely-administered therapeutic strategies.",
@@ -16562,41 +16560,41 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40849121/",
         "journal": "Behavior therapy",
-        "score": 17,
-        "summary": "This study uses ecological momentary assessment to identify distinct patterns of emotional variability in young adults with ADHD. The findings suggest that emotional instability, rather than mere lability, is a critical marker for emotion regulation difficulties in this population.",
-        "opportunity": "These findings provide the behavioral data foundation required to develop AI-driven digital phenotyping platforms that offer real-time diagnostic monitoring and personalized therapeutic interventions for ADHD management.",
+        "score": 16,
+        "summary": "This study uses real-time mobile tracking to analyze how emotional instability and variability manifest in young adults with ADHD. The findings distinguish between general emotional fluctuations and rapid lability, linking higher variability directly to difficulties in emotion regulation.",
+        "opportunity": "The methodology and data patterns provide a foundation for digital phenotyping tools and smartphone-based therapeutic interventions for mood regulation in neurodivergent populations.",
         "abstract": "Emotion dysregulation, and specifically emotional instability, characterizes adults with ADHD. This study utilized ecological momentary assessment (EMA) to track emotional states and examine patterns of emotional instability within individuals over different time scales. Specifically, it focused on two aspects: overall emotional variability over time, and emotional lability, reflected in emotional states fluctuations within and across days. We further examined the interaction of these emotional instability factors with the subjective experience of emotion regulation difficulties. Young adults with (n = 57) and without (HC; n = 54) ADHD diagnosis completed a self-report questionnaire for emotion regulation difficulties, followed by a 5-day EMA protocol of 5 emotion reports/day. Individuals with ADHD displayed significantly higher intra-individual emotional variability, but no group differences were found for emotional lability, both between and across days. This higher emotional variability was linked to self-reported emotion regulation difficulties in the ADHD group. Finally, using cluster analysis, we found a higher probability of individuals with ADHD being included in a cluster characterized by elevated emotional variability and emotion regulation difficulties. This study demonstrates that young adults with ADHD may experience a broader range of emotions in their daily lives, which may be related to the way they evaluate their challenges in emotion regulation. The findings highlight the need to address emotion dysregulation difficulties in clinical practice, as understanding these emotional dynamics could enhance personalized therapeutic strategies for ADHD, and help design interventions tailored to the breadth and intensity of emotional experiences in ADHD.",
         "fields": [
           "Software/AI",
-          "Clinical",
           "Neuroscience",
-          "Diagnostics"
+          "Diagnostics",
+          "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 3,
-            "reason": "The research uses a standard methodological approach (EMA) to quantify known symptoms of ADHD; it provides incremental descriptive data rather than a groundbreaking mechanism or a novel therapeutic platform."
+            "score": 4,
+            "reason": "The study applies established Ecological Momentary Assessment (EMA) methodology to well-known ADHD phenotypes (emotional dysregulation) rather than introducing a new mechanism or technological platform. While it provides granular clinical data, it represents incremental refinement of existing psychiatric observations rather than a groundbreaking scientific shift."
           },
           "commercial_potential": {
             "score": 3,
-            "reason": "The paper provides descriptive behavioral insights rather than a novel therapeutic, diagnostic tool, or protectable technology. While it validates the use of EMA for monitoring, it lacks a clear translation path to a commercial product or a scalable clinical intervention."
+            "reason": "The paper provides fundamental academic insights into ADHD phenomenology but lacks a defined technological or therapeutic intervention. While the EMA methodology could support digital health tools, the study itself is observational rather than a platform or product-enabling technology."
           },
           "market_size": {
-            "score": 7,
-            "reason": "ADHD is a massive, high-prevalence global market with significant unmet needs in personalized digital diagnostics and therapeutics, though this specific paper is an academic observational study rather than a commercial product or proprietary platform."
+            "score": 4,
+            "reason": "The paper provides fundamental behavioral insights rather than a commercial product or platform, offering limited direct evidence of a scalable market opportunity. While ADHD is a large therapeutic area, this specific research focuses on academic phenotype characterization rather than a high-value diagnostic or digital therapeutic tool."
           },
           "trl": {
             "score": 3,
-            "reason": "The study is a basic research investigation using EMA to characterize emotional variability in ADHD; it does not present a prototype, pilot, or market-ready solution, placing it at an early lab-stage (TRL 3)."
+            "reason": "The study is in the basic research/observational stage, focused on validating physiological or psychological correlations through EMA rather than developing a commercialized diagnostic tool or therapeutic intervention. While it provides foundational data for future digital phenotyping, it currently lacks a prototype or clinical validation of a technology ready for market entry."
           },
           "ip_strength": {
-            "score": 1,
-            "reason": "This is an academic observational study characterizing psychological phenomena using existing EMA methodology, which provides no novel technical invention or proprietary mechanism suitable for patent protection. There is no platform technology, diagnostic device, or unique therapeutic intervention described that could form the basis of a defensible IP moat."
+            "score": 2,
+            "reason": "The study is a clinical observation utilizing standard ecological momentary assessment (EMA) methodologies and self-report questionnaires, which lacks novel proprietary hardware, unique algorithms, or chemical entities that would be patentable. The findings are academic in nature and describe biological phenomena rather than providing a defensible technological or therapeutic platform."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 17,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, Hebrew University of Jerusalem.",
         "pi_email": "",
         "hts_score": 1,
@@ -16609,40 +16607,41 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39585834/",
         "journal": "The American journal of occupational therapy : official publication of the American Occupational Therapy Association",
-        "score": 9,
-        "summary": "This study analyzes how maintaining occupational balance and finding meaning in daily activities significantly influence the mental health outcomes of university students during wartime. The findings highlight key psychological mediators that contribute to resilience and emotional stability under conditions of prolonged stress.",
-        "opportunity": "The data supports the development of personalized digital health platforms that utilize predictive behavioral analytics to recommend specific occupational adjustments and habit-building exercises for enhancing mental health resilience in high-stress populations.",
+        "score": 10,
+        "summary": "This study investigates how changes in daily routines and the sense of purpose impact the mental health of Israeli university students during an active conflict. Using structural equation modeling, researchers identified that occupational balance and lifestyle variability are key mediators between trauma exposure and psychological well-being.",
+        "opportunity": "The findings support the development of digital therapeutics or AI-driven behavioral health platforms designed to optimize daily routine management and cognitive resilience in high-stress environments.",
         "abstract": "Exposure to trauma and extensive changes in daily life circumstances and occupations as a result of an ongoing armed conflict can significantly affect mental health. To examine factors related to the mental health status of Israeli students during the Swords of Iron war. A cross-sectional study. Online survey. Students in higher education institutions across Israel (N = 863). Self-report validated questionnaires were used to assess students' mental health status, resilience, satisfaction with life, executive functions, environmental factors, and occupations. Moderate levels of depression (Mdn = 18, interquartile range [IQR] = 10-28), anxiety (Mdn = 10, IQR = 4-20), and stress (Mdn = 24, IQR = 14-34) were found for 50% of participants, along with extensive changes in daily life occupations, occupational balance, and meaning. Using structured equation modeling, χ2(15) = 15.969, p = .384, the authors found that satisfaction with life, psychological resilience, religious status, executive functions, occupational balance, and variability in occupational change were directly associated with mental health status, whereas occupational balance and occupational change mediated these connections. The modifiable factors related to reduced mental health after exposure to traumatic threat included change in occupational patterns, occupational balance, and sense of belonging, which may all serve as goals for occupation-based interventions and contribute to better coping mechanisms with traumatic events. This study used a cross-sectional design and an online survey with self-reported data, which may limit the generalizability of the findings. Plain-Language Summary: Higher education students in Israel were exposed to traumatic events and changes in daily life because of war. This study aimed to understand their mental health, resilience, executive functions, environments, and changes in their occupational patterns and the complex interplay between these factors. An online survey showed a notable decline in the students' mental health status, with around 50% experiencing at least moderate levels of depression, anxiety, and stress. Changes in occupations, occupational meaning, and balance were also common. The study found that satisfaction with life, mental resilience, occupational balance, religious status, executive functions, and variability in occupational change all contributed directly to the students' mental health status. The findings suggest that modifiable factors such as occupational balance and belongingness could be addressed through interventions to enhance mental health and coping mechanisms of students facing trauma and stressful life events.",
         "fields": [
           "Software/AI",
+          "Neuroscience",
           "Clinical",
           "Other"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 3,
-            "reason": "The study applies established psychological frameworks to a contemporary conflict context but does not introduce new theoretical constructs, novel methodologies, or innovative interventions. It serves as an incremental validation of existing occupational therapy theories rather than a groundbreaking, platform-enabling, or high-novelty scientific advancement."
+            "reason": "The study utilizes standard psychological metrics and structural equation modeling to examine well-established theoretical relationships between occupation and mental health in a specific geopolitical context. While providing valuable situational data, it does not introduce a novel methodology, a new biological mechanism, or a groundbreaking technological innovation."
           },
           "commercial_potential": {
             "score": 2,
-            "reason": "This is a descriptive social science study that identifies psychosocial correlations rather than a novel, scalable, or proprietary technological intervention. It offers limited clear pathways to commercialization beyond potential use as a secondary data source for educational policy consulting."
+            "reason": "The paper is a descriptive sociological/psychological study providing academic insights rather than a technological or pharmacological innovation. It lacks a proprietary tool, digital health platform, or therapeutic intervention that could be developed into a scalable, protectable product."
           },
           "market_size": {
             "score": 2,
-            "reason": "The study focuses on a highly localized, reactive psychological assessment specific to a single conflict, lacking the scalability or commercial product potential required for a significant addressable market. It provides academic insight into mental health markers rather than a protectable intervention, clinical tool, or platform technology."
+            "reason": "The study is a localized, cross-sectional academic survey of a specific demographic (Israeli students) during a single conflict, providing no scalable platform or addressable commercial market. It identifies psychosocial correlations rather than a scalable therapeutic product or technology with broad market demand."
           },
           "trl": {
-            "score": 1,
-            "reason": "This is an observational, cross-sectional social science study identifying psychological correlations, which lacks a technology, intervention, or clinical product prototype required for commercialization readiness."
+            "score": 2,
+            "reason": "This is a descriptive, cross-sectional observational study providing academic insights into psychological correlations rather than a developed technological intervention or tool. It lacks any prototype, device, or scalable digital therapeutic platform required for higher TRL levels."
           },
           "ip_strength": {
             "score": 1,
-            "reason": "This is an academic observational study based on social science survey data, which produces non-patentable insights rather than a protectable technological invention or platform. There is no underlying intellectual property, trade secret, or proprietary methodology that could be legally defended or commercialized as a barrier to entry."
+            "reason": "The study is a cross-sectional observational survey analyzing psychological correlations, which lacks any proprietary technology, novel molecular entities, or patentable devices. The findings represent clinical insights rather than defensible intellectual property."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 9,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Mor Nahum, MSc, is Neuroscientist and Professor, Faculty of Medicine, School of Occupational Therapy, Hebrew University, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 1,
@@ -16655,41 +16654,41 @@
         "date": "2024",
         "url": "https://pubmed.ncbi.nlm.nih.gov/38858839/",
         "journal": "Cerebral cortex (New York, N.Y. : 1991)",
-        "score": 17,
-        "summary": "This study identifies distinct neural biomarkers in children with ADHD, specifically highlighting that aperiodic 1/f signal components and specific oscillatory power patterns differentiate them from neurotypical peers. These findings suggest that spectral parameterization of EEG data offers a more nuanced understanding of the neural excitation-inhibition imbalances underlying ADHD symptoms.",
-        "opportunity": "This research supports the development of AI-driven, objective EEG-based diagnostic software tools that can improve the speed and accuracy of ADHD clinical assessments.",
+        "score": 21,
+        "summary": "Researchers identified specific patterns in brain wave activity, including both rhythmic oscillations and aperiodic '1/f' noise, that distinguish children with ADHD from neurotypical peers. The study specifically highlights that a higher aperiodic exponent may reflect imbalances in neuronal excitation and inhibition linked to clinical symptoms.",
+        "opportunity": "Development of objective, EEG-based digital biomarkers and diagnostic software to improve the precision of ADHD screening and monitor treatment efficacy.",
         "abstract": "Children with attention-deficit/hyperactivity disorder show deficits in processing speed, as well as aberrant neural oscillations, including both periodic (oscillatory) and aperiodic (1/f-like) activity, reflecting the pattern of power across frequencies. Both components were suggested as underlying neural mechanisms of cognitive dysfunctions in attention-deficit/hyperactivity disorder. Here, we examined differences in processing speed and resting-state-Electroencephalogram neural oscillations and their associations between 6- and 12-year-old children with (n = 33) and without (n = 33) attention-deficit/hyperactivity disorder. Spectral analyses of the resting-state EEG signal using fast Fourier transform revealed increased power in fronto-central theta and beta oscillations for the attention-deficit/hyperactivity disorder group, but no differences in the theta/beta ratio. Using the parameterization method, we found a higher aperiodic exponent, which has been suggested to reflect lower neuronal excitation-inhibition, in the attention-deficit/hyperactivity disorder group. While fast Fourier transform-based theta power correlated with clinical symptoms for the attention-deficit/hyperactivity disorder group only, the aperiodic exponent was negatively correlated with processing speed across the entire sample. Finally, the aperiodic exponent was correlated with fast Fourier transform-based beta power. These results highlight the different and complementary contribution of periodic and aperiodic components of the neural spectrum as metrics for evaluation of processing speed in attention-deficit/hyperactivity disorder. Future studies should further clarify the roles of periodic and aperiodic components in additional cognitive functions and in relation to clinical status.",
         "fields": [
-          "Medical Device",
           "Diagnostics",
+          "Neuroscience",
           "Software/AI",
-          "Neuroscience"
+          "Medical Device"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 4,
-            "reason": "While the application of 1/f aperiodic parameterization to pediatric ADHD is a rigorous incremental advancement, it builds on well-established computational methods rather than introducing a novel biomarker or diagnostic platform. The study confirms existing hypotheses regarding excitation-inhibition imbalances without providing a transformative technical breakthrough or a new class of intervention."
+            "reason": "The study applies established signal processing techniques (FFT and parameterization) to known biomarkers (theta/beta ratios and 1/f exponents) in a specific clinical population. While it provides valuable clinical characterization, it lacks a novel methodological or mechanistic breakthrough that departs significantly from existing neurophysiological literature."
           },
           "commercial_potential": {
-            "score": 3,
-            "reason": "The study provides foundational insights into EEG biomarkers for ADHD but offers no clear pathway to a marketable product, service, or licensable technology, limiting its commercial potential."
+            "score": 4,
+            "reason": "The paper provides fundamental mechanistic insights into ADHD neurobiology but lacks a clear pathway to a proprietary diagnostic tool, digital biomarker, or therapeutic intervention. While the findings could inform future EEG-based diagnostics, the study remains descriptive rather than development-oriented."
           },
           "market_size": {
-            "score": 6,
-            "reason": "ADHD is a massive global market with significant unmet needs for objective diagnostic biomarkers, yet this paper represents early-stage academic research rather than a validated clinical tool. While the market potential for EEG-based diagnostics is high, the work requires substantial translational development to demonstrate real-world clinical utility and scalability."
+            "score": 8,
+            "reason": "The research targets ADHD, a high-prevalence neurodevelopmental disorder with massive global demand for improved diagnostic and monitoring tools. If these EEG biomarkers can be translated into scalable digital phenotyping or diagnostic software, they address a multi-billion dollar neuropsychiatric market."
           },
           "trl": {
             "score": 3,
-            "reason": "This is a fundamental clinical research study investigating neural biomarkers in a small cohort, which is currently at the discovery phase and lacks the translational validation or diagnostic device development required for near-market application."
+            "reason": "The paper is a fundamental academic study focused on identifying neural biomarkers via EEG spectral analysis, which remains in the basic research/discovery stage. It lacks the validation in larger cohorts, standardized clinical protocols, or hardware/software integration required to move toward a diagnostic tool or commercial application."
           },
           "ip_strength": {
-            "score": 1,
-            "reason": "This is a descriptive academic study observing neurological markers, which lacks novel composition-of-matter or unique technical processes that could be captured by patent protection. The research relies on standard signal processing techniques and mathematical characterizations of EEG data that are generally considered non-patentable scientific findings or abstract concepts."
+            "score": 2,
+            "reason": "The paper describes a descriptive observational study using standard signal processing techniques (FFT and parameterization) to identify biomarkers, which are generally not patentable. There is no novel device, drug, or proprietary algorithm presented that would provide a defensible competitive moat."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 17,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "School of Occupational Therapy, Hebrew University, Mount Scopus, Jerusalem, 9124001, Israel.",
         "pi_email": "",
         "hts_score": 2,
@@ -16702,40 +16701,31 @@
         "date": "2024",
         "url": "https://pubmed.ncbi.nlm.nih.gov/37500411/",
         "journal": "Comprehensive psychiatry",
-        "score": 5,
-        "summary": "This paper is a formal correction to a study examining the complex, often counterintuitive relationship between inhibitory control mechanisms and symptoms of depression. It clarifies statistical or methodological reporting in behavioral research rather than introducing new scientific findings.",
-        "opportunity": "The research has limited direct commercial application but could inform the refinement of digital behavioral markers or cognitive assessment tools for mental health platforms.",
+        "score": 3,
+        "summary": "This document is a formal correction to a previously published academic paper regarding the relationship between mood, inhibitory control, and depression. It does not present new experimental data or novel scientific findings, but rather rectifies errors in the original study.",
+        "opportunity": "There is no direct commercial opportunity as this is a clerical correction to a psychological study rather than a disclosure of new technology or biological insights.",
         "abstract": "",
         "fields": [
-          "Software/AI",
           "Neuroscience",
           "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 1,
-            "reason": "This is a corrigendum, which is a formal correction to a previously published paper rather than an original research study. As it contains no new scientific findings or novel methodologies, it has zero scientific innovation."
+            "reason": "This is a corrigendum, which is a formal correction to a previously published paper rather than a piece of new research. It contains no new scientific findings, methodologies, or innovations."
           },
           "commercial_potential": {
             "score": 1,
-            "reason": "This is a corrigendum regarding statistical correlations in a psychiatry journal, which provides no technological application, IP, or actionable product development pathway."
-          },
-          "market_size": {
-            "score": 1,
-            "reason": "This paper is a technical corrigendum to a psychological research article and lacks any commercial application, industrial utility, or addressable market potential."
+            "reason": "This is a corrigendum to a basic psychiatric research paper, which focuses on correcting errors in academic findings rather than presenting a new technology, product, or actionable therapeutic platform."
           },
           "trl": {
             "score": 1,
-            "reason": "This is a corrigendum to a basic psychological research paper, which represents fundamental academic knowledge rather than a technological development or product. It lacks any engineering, prototyping, or clinical trial components necessary for a higher TRL score."
-          },
-          "ip_strength": {
-            "score": 1,
-            "reason": "This paper is a corrigendum to a clinical psychology study regarding behavioral associations and carries no underlying proprietary technology, IP, or commercial utility."
+            "reason": "This is a corrigendum to a basic psychiatric research paper, which represents foundational academic knowledge rather than a technological development. It lacks any applied technology, device, or therapeutic intervention, placing it at the lowest level of technical readiness."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 5,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, The Hebrew University, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 1,
