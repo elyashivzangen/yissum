@@ -745,6 +745,60 @@
     "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
+    "id": "pubmed_42918917",
+    "title": "First-in-human prospective pilot study of a bipolar dual-center total wrist arthroplasty: early mechanical stability and clinical outcomes.",
+    "authors": [
+      "Raphael Israeli",
+      "Lauren Gorelick",
+      "Gil Gannot",
+      "Amir Oron"
+    ],
+    "journal": "Archives of orthopaedic and trauma surgery",
+    "date": "2026 Oct 22",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42918917/",
+    "source": "PubMed",
+    "score": 33,
+    "summary": "Researchers have conducted a successful first-in-human pilot study of a new bipolar dual-center wrist replacement implant designed to mimic natural wrist motion. Early results show 100% implant survivorship with no signs of loosening or dislocation after nearly two years of follow-up.",
+    "opportunity": "The development of a more biomechanically accurate wrist prosthesis addresses a significant unmet need in orthopedic surgery, offering a high-value target for MedTech venture capital and acquisition by major orthopedic device players.",
+    "fields": [
+      "Medical Device",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 8,
+        "reason": "The research introduces a novel bipolar dual-center design that addresses a fundamental biomechanical limitation (single center of rotation) of existing TWA implants to preserve native kinematics. As a first-in-human study of a new mechanical paradigm, it represents a significant departure from prior art in joint replacement engineering."
+      },
+      "commercial_potential": {
+        "score": 7,
+        "reason": "The device addresses a high-value unmet clinical need (implant loosening and kinematic preservation in TWA) and has successfully cleared the first-in-human milestone. However, the very small sample size (n=5) and short follow-up duration necessitate larger pivotal trials to de-risk the commercial path toward regulatory approval and market adoption."
+      },
+      "market_size": {
+        "score": 4,
+        "reason": "The target market is a niche subset of orthopedic surgery limited to end-stage wrist arthritis, which has significantly lower patient volumes compared to hip or knee arthroplasty. While clinically valuable, the addressable demand is constrained by the anatomical rarity and specific indications of the wrist joint."
+      },
+      "trl": {
+        "score": 7,
+        "reason": "The technology has successfully completed its first-in-human pilot study with positive safety and survivorship data, moving it beyond preclinical/animal models. However, it remains in the early clinical validation phase (small N=5) and requires larger, multi-center pivotal trials to establish definitive efficacy for regulatory approval."
+      },
+      "ip_strength": {
+        "score": 7,
+        "reason": "The innovation introduces a novel bipolar dual-center mechanical design that addresses a known physiological limitation of existing TWA implants, suggesting strong potential for structural patentability. However, as a first-in-human pilot study with a very small sample size (n=5), the IP strength is currently limited to the device architecture rather than proven clinical utility."
+      }
+    },
+    "pi": "Amir Oron",
+    "pi_full_name": "Amir Oron",
+    "pi_email": "",
+    "pi_affiliation": "Department of Orthopedic Surgery, Kaplan Medical Center, Rehovot, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "25",
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-10-26",
+    "hts_score": 1,
+    "hts_reason": "This paper is a clinical surgical study evaluating a medical device (total wrist arthroplasty) and contains no molecular targets, disease-mechanism assays, or drug screening potential.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
     "id": "pubmed_42895746",
     "title": "Home Transcranial Direct Current Stimulation With Gamified Cognitive Control Training for Depression: A Randomized Clinical Trial.",
     "authors": [
@@ -788,43 +842,43 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42895746/",
     "source": "PubMed",
     "score": 33,
-    "summary": "This study evaluates the effectiveness of home-based transcranial direct current stimulation (tDCS) combined with gamified cognitive training as a treatment for depression. The approach aims to provide an accessible, patient-administered therapeutic alternative to traditional in-clinic psychiatric interventions.",
-    "opportunity": "The development of integrated digital therapeutics that combine wearable neuromodulation hardware with engaging software offers a scalable, remote-monitoring solution for the global mental health crisis.",
+    "summary": "This clinical trial investigates whether combining home-based transcranial direct current stimulation (tDCS) with gamified cognitive training is more effective for treating depression than standalone methods. The study evaluates the feasibility and efficacy of this synergistic approach in a real-world, home-use setting over a 10-week period.",
+    "opportunity": "There is a significant market opportunity for integrated digital therapeutics platforms that pair consumer-grade neurostimulation hardware with proprietary gamified software to provide scalable, remote psychiatric care.",
     "fields": [
       "Medical Device",
-      "Software/AI",
       "Neuroscience",
+      "Software/AI",
       "Clinical"
     ],
     "score_breakdown": {
       "novelty": {
-        "score": 6,
-        "reason": "The study combines home-based tDCS with gamified cognitive control training, a modestly innovative integration of existing technologies, but it does not represent a groundbreaking platform or a significant departure from prior art."
+        "score": 5,
+        "reason": "While the combination of tDCS and gamified cognitive training addresses a known clinical gap regarding synergy, the individual components (home-based tDCS and digital therapeutics) are well-established in existing literature. The innovation lies in the specific multimodal protocol rather than a fundamental breakthrough in neurostimulation technology or a novel biological mechanism."
       },
       "commercial_potential": {
         "score": 8,
-        "reason": "This intervention utilizes a well-defined hardware-software pairing that is highly amenable to a scalable, direct-to-consumer or prescription-digital-therapeutic business model. The clear clinical trial pathway and the integration of gamification provide a distinct, protectable product architecture that addresses a massive, underserved market in mental health."
+        "reason": "The study validates a synergistic combination of hardware (tDCS) and software (gamified CCT) that is highly suitable for a direct-to-consumer or prescription-based digital therapeutic model. The multicenter RCT data provides the clinical evidence required for regulatory pathways and potential licensing to established mental health platforms."
       },
       "market_size": {
         "score": 9,
-        "reason": "The target market—depression treatment—has a vast global prevalence and high unmet demand, and a home-based tDCS device with gamified training could capture a significant share of the mental health therapeutics market, indicating a large and valuable addressable market."
+        "reason": "The target market is Major Depressive Disorder (MDD), a massive global health burden with hundreds of millions of sufferers, and the home-based delivery model significantly expands the total addressable market beyond traditional clinical settings."
       },
       "trl": {
-        "score": 7,
-        "reason": "The study demonstrates a clinically tested, home-based tDCS system combined with gamified training, indicating a technology that has progressed beyond basic lab research and is approaching market readiness, but it has not yet achieved widespread commercialization or regulatory approval."
+        "score": 8,
+        "reason": "The technology has moved beyond the lab into a multicenter randomized clinical trial (RCT) with home-use protocols, demonstrating high clinical readiness for commercial deployment. The transition from controlled clinical settings to real-world home environments indicates the product is in the near-market stage."
       },
       "ip_strength": {
         "score": 3,
-        "reason": "The intervention combines known tDCS hardware with standard cognitive training, which faces significant hurdles in establishing novelty and non-obviousness over existing neuromodulation and software-based therapeutic prior art. The modular, protocol-driven nature of this approach makes it difficult to secure broad, enforceable IP claims beyond narrow implementation details."
+        "reason": "The innovation relies on combining existing, well-known technologies (tDCS and cognitive training) rather than a novel hardware or neurostimulation method, making it difficult to secure broad, defensive patent protection. The 'gamified' element and procedural synergy are likely considered incremental improvements or methods of use, which offer limited long-term defensibility against competitors."
       }
     },
     "pi": "Mor Nahum",
     "pi_full_name": "Mor Nahum",
     "pi_email": "mor.nahum@mail.huji.ac.il.",
     "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "33",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
     "added_date": "2026-10-26",
     "hts_score": 2,
     "hts_reason": "The paper does not identify a specific new molecule or target; it focuses on a device-based intervention (tDCS) and cognitive training for depression, so only the disease link is present and no molecular assay is described.",
@@ -5359,60 +5413,6 @@
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
-    "id": "pubmed_42918917",
-    "title": "First-in-human prospective pilot study of a bipolar dual-center total wrist arthroplasty: early mechanical stability and clinical outcomes.",
-    "authors": [
-      "Raphael Israeli",
-      "Lauren Gorelick",
-      "Gil Gannot",
-      "Amir Oron"
-    ],
-    "journal": "Archives of orthopaedic and trauma surgery",
-    "date": "2026 Oct 22",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42918917/",
-    "source": "PubMed",
-    "score": 25,
-    "summary": "This pilot study evaluates the early mechanical performance and patient outcomes of a new dual-center, bipolar total wrist arthroplasty design. The research provides initial clinical validation for a hardware innovation intended to improve joint stability and mobility in patients requiring wrist replacement.",
-    "opportunity": "This device represents a high-value intellectual property opportunity in the orthopedic implant market, specifically targeting the niche of biomechanically advanced wrist reconstructive solutions.",
-    "fields": [
-      "Medical Device",
-      "Clinical"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "This study represents an incremental clinical evaluation of an existing surgical technique rather than a fundamental scientific breakthrough or a novel technological platform. The innovation is limited to the specific design iteration of a prosthesis rather than a paradigm shift in the field of orthopedics."
-      },
-      "commercial_potential": {
-        "score": 6,
-        "reason": "While this represents a clear, tangible product innovation in a defined medical device market, the potential is constrained by the saturated nature of the orthopedics implant space and the high regulatory and clinical trial hurdles typical of arthroplasty. It is a viable, protectable technology but lacks the platform-level scalability or disruptive market-creation potential typically found in higher-scoring deep-tech assets."
-      },
-      "market_size": {
-        "score": 4,
-        "reason": "Total wrist arthroplasty (TWA) is a niche orthopedic procedure primarily reserved for end-stage arthritis, representing a significantly smaller patient population compared to hip or knee replacements. The market is restricted by high revision rates and limited indications, constraining the total addressable market size."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "The study describes a first-in-human prospective pilot trial, which represents a highly advanced stage of clinical validation and confirms the technology is already in an active, real-world surgical setting."
-      },
-      "ip_strength": {
-        "score": 3,
-        "reason": "Total wrist arthroplasty is a mature, crowded clinical field where technical refinements to implant geometry or articulation typically face high hurdles for patentability due to extensive prior art. Without evidence of novel materials, proprietary manufacturing processes, or unique mechanical configurations, the defensibility of this specific design appears limited."
-      }
-    },
-    "pi": "Amir Oron",
-    "pi_full_name": "Amir Oron",
-    "pi_email": "",
-    "pi_affiliation": "Department of Orthopedic Surgery, Kaplan Medical Center, Rehovot, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-10-26",
-    "hts_score": 1,
-    "hts_reason": "This paper is a clinical surgical study evaluating a medical device (total wrist arthroplasty) and contains no molecular targets, disease-mechanism assays, or drug screening potential.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
     "id": "pubmed_42915796",
     "title": "Synthesis and Characterization of Naringin Phenolate Salts for Cultivated Meat.",
     "authors": [
@@ -6539,63 +6539,6 @@
     "hts_eval_model": "groq:llama-3.1-8b-instant"
   },
   {
-    "id": "pubmed_42919118",
-    "title": "Beyond Anticoagulant Exposure: Determinants of Mortality After Gastrointestinal Bleeding Across DOAC, Warfarin and Non-Anticoagulated Patients.",
-    "authors": [
-      "Esther Forkosh",
-      "David Hakimian",
-      "Harold Jacob",
-      "Ian M Gralnek",
-      "Lior Katz",
-      "Aviv Talmon"
-    ],
-    "journal": "Alimentary pharmacology & therapeutics",
-    "date": "2026 Oct 22",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42919118/",
-    "source": "PubMed",
-    "score": 24,
-    "summary": "The study investigates factors influencing mortality after gastrointestinal bleeding in patients on direct oral anticoagulants, warfarin, or no anticoagulation. It identifies clinical and treatment variables that predict outcomes, offering insights for risk stratification.",
-    "opportunity": "Develop a clinical decision‑support software that predicts GI‑bleeding mortality risk and guides anticoagulant management in hospitals.",
-    "fields": [
-      "Clinical",
-      "Diagnostics",
-      "Software/AI"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "The study appears to be an observational comparative effectiveness analysis using existing clinical data, which is standard retrospective clinical research rather than a groundbreaking, platform-enabling, or high-innovation deep-tech advancement. It contributes to medical knowledge through secondary analysis but does not represent a paradigm shift in scientific methodology or technological capability."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "This is an observational clinical study providing retrospective insights into patient outcomes rather than a novel therapeutic, diagnostic, or platform technology. Its utility is limited to informing clinical guidelines rather than creating a proprietary, protectable commercial asset."
-      },
-      "market_size": {
-        "score": 7,
-        "reason": "The study addresses gastrointestinal bleeding, a high-volume clinical complication occurring in a massive, aging patient population managed with anticoagulants. While the market for management and risk-stratification tools in this space is significant, the paper focuses on retrospective analysis rather than a high-growth, novel therapeutic or diagnostic platform."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "This is a clinical observational study analyzing existing medical treatments (DOACs, Warfarin), meaning the technology is already in market use; the work provides immediate actionable evidence for clinical decision-making."
-      },
-      "ip_strength": {
-        "score": 2,
-        "reason": "The study is a retrospective clinical analysis of patient outcomes, which offers limited scope for patentable inventions or defensible intellectual property. It does not present novel therapeutic agents, devices, or methods that could be protected by patents."
-      }
-    },
-    "pi": "Aviv Talmon",
-    "pi_full_name": "Aviv Talmon",
-    "pi_email": "",
-    "pi_affiliation": "Allergy and Clinical Immunology Unit, Department of Medicine, Hadassah Medical Center, and Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-10-26",
-    "hts_score": 1,
-    "hts_reason": "This study is a clinical/observational analysis of patient outcomes and lacks any specific molecular target, biochemical assay, or drug discovery component.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
     "id": "pubmed_42434965",
     "title": "Integrating androgen signaling tumor dependency with host neuroendocrine immunity for glioblastoma therapies.",
     "authors": [
@@ -7104,66 +7047,6 @@
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
-    "id": "pubmed_42928359",
-    "title": "Approaching Landauer's limit in a single superconducting vortex memory bit.",
-    "authors": [
-      "Nofar Fridman",
-      "Itai Keren",
-      "Avia Noah",
-      "Yishay Zur",
-      "Martin E Huber",
-      "Nadav Katz",
-      "Roland Willa",
-      "Hadar Steinberg",
-      "Yonathan Anahory"
-    ],
-    "journal": "Nature communications",
-    "date": "2026 Sep 24",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42928359/",
-    "source": "PubMed",
-    "score": 23,
-    "summary": "This research explores achieving ultra-low energy consumption in data storage by utilizing a single superconducting vortex to represent a bit of information. It aims to push computational efficiency toward the theoretical Landauer limit, which is the minimum energy required to erase one bit of information.",
-    "opportunity": "The development of ultra-low-power superconducting memory could revolutionize high-performance computing and the scalability of quantum hardware by drastically reducing heat dissipation.",
-    "fields": [
-      "Quantum",
-      "Materials",
-      "Other"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 9,
-        "reason": "The research targets the fundamental thermodynamic limit of computation (Landauer's limit) using a highly specialized superconducting vortex mechanism, representing a paradigm shift in ultra-low-power memory architectures. Achieving proximity to this limit is a groundbreaking milestone for next-generation, energy-efficient deep-tech hardware."
-      },
-      "commercial_potential": {
-        "score": 5,
-        "reason": "The work demonstrates a fundamental advance in low‑energy memory technology, suggesting a potential for highly efficient superconducting memory devices, but it remains at a proof‑of‑concept stage with no clear path to immediate productization or licensing."
-      },
-      "market_size": {
-        "score": 3,
-        "reason": "While energy-efficient computing is a massive market, superconducting vortex memory requires cryogenics, which restricts the addressable market to highly specialized niche applications like quantum computing or high-performance supercomputing rather than general-purpose electronics. The extreme cooling requirements represent a significant barrier to commercial scalability for the broader semiconductor industry."
-      },
-      "trl": {
-        "score": 2,
-        "reason": "This research is at a fundamental physics stage focused on demonstrating thermodynamic limits in individual superconducting devices, which is far from being integrated into a scalable or commercially viable memory architecture. Significant hurdles regarding cryogenic requirements, materials engineering, and system-level integration must be overcome before this can transition toward industrial application."
-      },
-      "ip_strength": {
-        "score": 4,
-        "reason": "While the experimental demonstration of vortex-based memory is a significant physics achievement, it remains at a fundamental research stage with substantial engineering hurdles before it could be considered a commercially defensible platform. The underlying principles rely on well-established superconducting theory, which may limit the breadth of novel, non-obvious patent claims compared to proprietary material compositions or proprietary circuit architectures."
-      }
-    },
-    "pi": "Yonathan Anahory",
-    "pi_full_name": "Yonathan Anahory",
-    "pi_email": "yonathan.anahory@mail.huji.ac.il.",
-    "pi_affiliation": "The Racah Institute of Physics, The Hebrew University, Jerusalem, Israel. yonathan.anahory@mail.huji.ac.il.; Center for Nanoscience and Nanotechnology, Hebrew University of Jerusalem, Jerusalem, Israel. yonathan.anahory@mail.huji.ac.il.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-10-26",
-    "hts_score": 1,
-    "hts_reason": "The paper focuses on fundamental physics and superconducting computing hardware rather than biological targets, diseases, or biochemical assays.",
-    "hts_eval_model": "gemma-4-26b-a4b-it"
-  },
-  {
     "id": "epmc_PMC13614179",
     "title": "Elucidating Sodium-Ion Storage Mechanisms in Bowl-Shaped Hierarchical Porous Carbon Anodes: A Combined Solid-State NMR and EPR Approach",
     "authors": [
@@ -7461,57 +7344,59 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
-    "id": "pubmed_42911560",
-    "title": "Concerns About Smell and Taste Disturbances Among GLP-1 Receptor Agonist Users-Reply.",
+    "id": "pubmed_42899780",
+    "title": "Selective Biexciton Generation under Energy-Time Entangled Quantum Light in Quantum Dots.",
     "authors": [
-      "Jonathan Zontag",
-      "Nir Zontag"
+      "Kaiyue Peng",
+      "Chieh Tsao",
+      "Hendrik Utzat",
+      "Eran Rabani"
     ],
-    "journal": "JAMA otolaryngology-- head & neck surgery",
-    "date": "2026-10-22",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42911560/",
+    "journal": "ACS nano",
+    "date": "2026-10-20",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42899780/",
     "source": "PubMed",
     "score": 22,
-    "summary": "This response addresses emerging clinical reports linking GLP-1 receptor agonists, such as semaglutide, to potential impairments in olfactory and gustatory sensory perception. It highlights the need for systematic pharmacovigilance as these blockbuster metabolic drugs see increasingly widespread use across the global population.",
-    "opportunity": "There is a commercial opportunity to develop standardized digital or hardware-based screening tools to monitor sensory side effects in patients undergoing GLP-1 therapy.",
+    "summary": "This research demonstrates how using entangled pairs of photons can more efficiently and selectively trigger specific many-body energy states (biexcitons) in quantum dots compared to traditional light. By optimizing the timing and energy correlations of these photon pairs, researchers can control quantum states with higher precision and lower energy waste.",
+    "opportunity": "This technology could enable a new class of ultra-precise quantum sensors and high-efficiency light-driven materials for next-generation optoelectronics and quantum computing hardware.",
     "fields": [
-      "Clinical",
-      "Diagnostics",
-      "Neuroscience"
+      "Quantum",
+      "Materials",
+      "Imaging"
     ],
     "score_breakdown": {
       "novelty": {
-        "score": 2,
-        "reason": "This paper is a brief editorial reply responding to existing correspondence rather than presenting original experimental data, a novel discovery, or a technological breakthrough. It contributes incremental clinical observation rather than transformative scientific innovation."
+        "score": 7,
+        "reason": "The research introduces a novel method for controlling many-body state populations in quantum dots by leveraging energy-time entanglement, moving beyond simple classical multiphoton absorption. While it provides a significant mechanistic insight into how biphoton arrival-time correlations can be tuned to optimize biexciton generation, it builds upon established quantum optics principles applied to well-known nanocrystal systems."
       },
       "commercial_potential": {
-        "score": 1,
-        "reason": "This paper is a clinical correspondence piece discussing side effects rather than presenting a novel, proprietary, or scalable technology. It lacks any framework for productization, intellectual property, or commercial utility."
+        "score": 4,
+        "reason": "The research is high-level fundamental physics focused on quantum state control, which lacks a clear path to a specific product or immediate industrial application. While it provides foundational insights for future quantum computing or sensing hardware, it currently functions as a proof-of-concept in a highly specialized academic niche rather than a scalable technology platform."
       },
       "market_size": {
-        "score": 9,
-        "reason": "The paper addresses GLP-1 receptor agonists, a massive, rapidly expanding multi-billion dollar drug class used by millions globally. As these drugs become standard-of-care for obesity and diabetes, any potential side-effect profile—such as sensory disturbances—represents a critical market concern with significant implications for patient adherence and long-term commercial viability."
+        "score": 4,
+        "reason": "The research is fundamental quantum physics focused on photon-matter interaction, which lacks a clearly defined commercial application or immediate industry vertical. While it could potentially enable future quantum computing or sensing technologies, the current scope is too academic and specialized to quantify a significant addressable market."
       },
       "trl": {
-        "score": 9,
-        "reason": "This paper discusses post-market clinical surveillance of a widely commercialized, blockbuster drug class, placing it at the highest level of real-world clinical application. It does not represent an experimental technology, but rather the ongoing safety assessment of a product already at the end-stage of the commercial lifecycle."
+        "score": 3,
+        "reason": "This is fundamental physics research focused on theoretical modeling and controlled laboratory demonstrations of quantum optical phenomena. It lacks the integrated device engineering or system-level testing required to move beyond basic scientific proof-of-concept toward industrial application."
       },
       "ip_strength": {
-        "score": 1,
-        "reason": "This paper is a clinical correspondence letter discussing reported patient symptoms rather than a novel technology, methodology, or composition of matter. It contains no patentable subject matter or unique technical innovation that could be protected through intellectual property rights."
+        "score": 4,
+        "reason": "The paper describes fundamental physics and proof-of-concept phenomena in quantum light-matter interaction, which is inherently difficult to protect via patents compared to specific device architectures or manufacturing processes. While the discovery of optimal entanglement parameters is scientifically valuable, it lacks the clear industrial application or 'black box' methodology required for high defensibility in a deep-tech investment context."
       }
     },
-    "pi": "Nir Zontag",
-    "pi_full_name": "Nir Zontag",
+    "pi": "Eran Rabani",
+    "pi_full_name": "Eran Rabani",
     "pi_email": "",
-    "pi_affiliation": "Hadassah Medical Center, Faculty of Medicine, Hebrew University, Jerusalem, Israel.; Institute for Research in Military Medicine (IRMM), Faculty of Medicine, The Hebrew University of Jerusalem and the Israel Defense Forces Medical Corps, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "pi_affiliation": "Department of Chemistry, University of California, Berkeley, California94720, United States.; Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, California94720, United States.; Fritz Haber Center for Molecular Dynamics, Institute of Chemistry and Institute of Applied Physics, Hebrew University of Jerusalem, Jerusalem91904, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "20",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
     "added_date": "2026-10-26",
-    "hts_score": 2,
-    "hts_reason": "This is a brief correspondence/reply article discussing clinical side effects rather than presenting a novel molecular target, a specific disease mechanism suitable for screening, or a high-throughput assay.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
+    "hts_score": 1,
+    "hts_reason": "The paper describes fundamental quantum physics research (biexciton generation in quantum dots) and lacks a specific disease link or a biological assay suitable for drug discovery HTS.",
+    "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
     "id": "pubmed_42711399",
@@ -8640,59 +8525,59 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
-    "id": "pubmed_42899780",
-    "title": "Selective Biexciton Generation under Energy-Time Entangled Quantum Light in Quantum Dots.",
+    "id": "pubmed_42928359",
+    "title": "Approaching Landauer's limit in a single superconducting vortex memory bit.",
     "authors": [
-      "Kaiyue Peng",
-      "Chieh Tsao",
-      "Hendrik Utzat",
-      "Eran Rabani"
+      "Nofar Fridman",
+      "Itai Keren",
+      "Avia Noah",
+      "Yishay Zur",
+      "Martin E Huber",
+      "Nadav Katz",
+      "Roland Willa",
+      "Hadar Steinberg",
+      "Yonathan Anahory"
     ],
-    "journal": "ACS nano",
-    "date": "2026-10-20",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42899780/",
+    "journal": "Nature communications",
+    "date": "2026 Sep 24",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42928359/",
     "source": "PubMed",
     "score": 20,
-    "summary": "This research demonstrates a method to precisely control the creation of paired excitons in quantum dots using entangled photons. This technique allows for superior manipulation of light-matter interactions at the quantum level, offering higher precision than classical optical methods.",
-    "opportunity": "This discovery provides the foundational physics for next-generation bio-imaging sensors and ultra-sensitive diagnostic devices capable of detecting single-molecule fluorescence with unprecedented signal-to-noise ratios.",
+    "summary": "Researchers have demonstrated a method to manipulate a single memory bit using a superconducting vortex in a nanoscale potential. Their findings show that the energy required for this bit erasure is extremely close to the fundamental physical limit known as Landauer's limit.",
+    "opportunity": "This research paves the way for ultra-low-power superconducting memory architectures essential for the next generation of energy-efficient quantum computing and high-performance computing hardware.",
     "fields": [
       "Quantum",
-      "Imaging",
-      "Diagnostics",
-      "Materials"
+      "Materials",
+      "Clean Energy"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 7,
-        "reason": "This work represents a significant advancement in quantum control by utilizing energy-time entangled photons to selectively drive biexciton states, offering a more robust alternative to traditional coherent control methods. While technically sophisticated and relevant for scaling quantum photonic interfaces, it serves as a specialized optimization of light-matter interaction rather than a transformative platform shift."
+        "reason": "The research presents a highly innovative approach to ultra-low-power computing by leveraging superconducting vortex dynamics to approach fundamental thermodynamic limits. While the concept of approaching Landauer's limit is established in theory, the experimental realization using a nanoscale double-well pinning potential provides a significant and novel step toward a practical energy-efficient memory platform."
       },
       "commercial_potential": {
-        "score": 3,
-        "reason": "While this research advances the fundamental physics of quantum dot excitons, it remains in the early stage of light-matter interaction research with no clear roadmap for a specific commercial application or scalable device architecture. The technology is far from being a platform-enabling tool and lacks a defined industrial value proposition at this stage of development."
+        "score": 4,
+        "reason": "While the research demonstrates a fundamental breakthrough in energy efficiency for computing, it remains at a low-level physics stage with no clear roadmap for integration into scalable architectures or existing semiconductor/quantum workflows. The lack of a specific device architecture or application-level implementation prevents it from moving toward a near-term commercial product or service."
       },
       "market_size": {
-        "score": 2,
-        "reason": "This is a fundamental physics study on quantum state manipulation in quantum dots, which is currently at a high level of abstraction with no clear application in a commercial market. The research is deep-tech in nature but lacks a defined product-market fit or a pathway to industrial-scale demand."
+        "score": 6,
+        "reason": "The research addresses a fundamental limit in ultra-low-power computing, which has massive theoretical potential in high-performance computing and edge AI. However, the current focus is on foundational physics and nanoscale vortex manipulation rather than a scalable, high-volume commercial architecture."
       },
       "trl": {
-        "score": 2,
-        "reason": "This is fundamental physics research focused on light-matter interactions in quantum dots, currently at the proof-of-concept stage in a controlled laboratory environment. It lacks the device integration, scalability, or industrial validation required for near-market application."
-      },
-      "ip_strength": {
-        "score": 6,
-        "reason": "The work presents a novel quantum light–matter interaction in quantum dots that could enable new photonic devices, suggesting a potentially patentable concept, but without detailed experimental data or clear technological application, the defensibility remains moderate."
+        "score": 3,
+        "reason": "The research is at a fundamental physics stage, focusing on characterization of stochastic resonance and energy limits in controlled laboratory setups rather than a functional memory device or prototype. While it validates a physical principle, it lacks the integration, scalability, and architecture necessary for near-market applications."
       }
     },
-    "pi": "Eran Rabani",
-    "pi_full_name": "Eran Rabani",
-    "pi_email": "",
-    "pi_affiliation": "Department of Chemistry, University of California, Berkeley, California94720, United States.; Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, California94720, United States.; Fritz Haber Center for Molecular Dynamics, Institute of Chemistry and Institute of Applied Physics, Hebrew University of Jerusalem, Jerusalem91904, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "pi": "Yonathan Anahory",
+    "pi_full_name": "Yonathan Anahory",
+    "pi_email": "yonathan.anahory@mail.huji.ac.il.",
+    "pi_affiliation": "The Racah Institute of Physics, The Hebrew University, Jerusalem, Israel. yonathan.anahory@mail.huji.ac.il.; Center for Nanoscience and Nanotechnology, Hebrew University of Jerusalem, Jerusalem, Israel. yonathan.anahory@mail.huji.ac.il.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "23",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
     "added_date": "2026-10-26",
     "hts_score": 1,
-    "hts_reason": "The paper describes fundamental quantum physics research (biexciton generation in quantum dots) and lacks a specific disease link or a biological assay suitable for drug discovery HTS.",
+    "hts_reason": "The paper focuses on fundamental physics and superconducting computing hardware rather than biological targets, diseases, or biochemical assays.",
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
@@ -10463,64 +10348,6 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
-    "id": "pubmed_42920125",
-    "title": "Racial differences in reoperation rates following dacryocystorhinostomy.",
-    "authors": [
-      "Nir Erdinest",
-      "Andrzej Grzybowski",
-      "Tehila Shlomov",
-      "Itay Nitzan",
-      "Ofira Zloto",
-      "Denise Wajnsztajn",
-      "Ortal Buhbut",
-      "Zvi Gur"
-    ],
-    "journal": "BMC ophthalmology",
-    "date": "2026 Jul 24",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42920125/",
-    "source": "PubMed",
-    "score": 15,
-    "summary": "This study analyzes clinical data to identify disparities in surgical outcomes for patients undergoing dacryocystorhinostomy, a procedure used to treat blocked tear ducts. It highlights how demographic factors correlate with the necessity for secondary interventions, emphasizing the need for more inclusive surgical protocols.",
-    "opportunity": "The findings present an opportunity to develop AI-driven decision support tools that integrate demographic and anatomical data to predict surgical success and personalize preoperative planning for lacrimal procedures.",
-    "fields": [
-      "Clinical",
-      "Software/AI"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 2,
-        "reason": "This is a retrospective observational study on health disparities for a well-established surgical procedure, offering incremental epidemiological data rather than groundbreaking scientific or technical innovation."
-      },
-      "commercial_potential": {
-        "score": 1,
-        "reason": "This is an epidemiological observational study analyzing clinical outcomes data, which does not result in a protectable product, platform technology, or licensable intellectual property. It identifies a disparity but offers no diagnostic, therapeutic, or digital tool for commercial exploitation."
-      },
-      "market_size": {
-        "score": 2,
-        "reason": "The study focuses on a highly specific surgical procedure (dacryocystorhinostomy) for a niche ophthalmological condition, representing an extremely small total addressable market with limited commercial scalability. It lacks broad platform potential or significant industrial relevance beyond clinical retrospective observation."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "This is a clinical retrospective study analyzing existing surgical outcomes, placing it at a TRL 9 level because the procedure (dacryocystorhinostomy) is already a standard, widely-practiced clinical intervention."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "This paper is a retrospective clinical outcomes study based on observational data, which describes clinical trends rather than developing novel, patentable technologies, compositions, or processes. There is no underlying intellectual property or technical innovation presented that could be protected or defended."
-      }
-    },
-    "pi": "Zvi Gur",
-    "pi_full_name": "Zvi Gur",
-    "pi_email": "zvi.gur@mail.huji.ac.il.",
-    "pi_affiliation": "Department of Ophthalmology, Hadassah Medical Organization, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel. zvi.gur@mail.huji.ac.il.; Department of Ophthalmology, Hadassah-Hebrew University Medical Center, Jerusalem, Israel. zvi.gur@mail.huji.ac.il.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-10-26",
-    "hts_score": 1,
-    "hts_reason": "This paper is a retrospective clinical study on surgical outcomes and does not identify a specific molecular target or describe a laboratory-based high-throughput screening assay.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
     "id": "pubmed_42466521",
     "title": "From Single Foods to Whole Diets: A Critical Framework for Protein Quality Assessment Accounting for Complementarity and Matrix Effects.",
     "authors": [
@@ -10779,6 +10606,62 @@
     "added_date": "2026-10-26",
     "hts_score": 1,
     "hts_reason": "This is a clinical case report describing a surgical technique for gastrostomy placement, which lacks a molecular target, disease-linked protein, or a high-throughput screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
+    "id": "pubmed_42918473",
+    "title": "Temporal transcriptomic changes during in vitro cultivation of the human tick-borne relapsing fever spirochete Borrelia persica.",
+    "authors": [
+      "Dor Shwartz",
+      "Yaarit Nachum-Biala",
+      "Peleg Schneider",
+      "Gad Baneth"
+    ],
+    "journal": "Infection, genetics and evolution : journal of molecular epidemiology and evolutionary genetics in infectious diseases",
+    "date": "2026 Oct 23",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42918473/",
+    "source": "PubMed",
+    "score": 14,
+    "summary": "Researchers tracked how the Borrelia persica bacterium changes its gene expression over time to evade the immune system. They found that the bacterium switches its surface proteins in a predictable pattern during growth, regardless of temperature stress.",
+    "opportunity": "Understanding the predictable patterns of antigenic variation can be leveraged to develop more effective, broad-spectrum vaccines or diagnostic tools that target conserved proteins.",
+    "fields": [
+      "Vaccines",
+      "Diagnostics",
+      "Immunology",
+      "Genomics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 4,
+        "reason": "While the study provides valuable descriptive transcriptomic data on a specific pathogen, it is primarily observational and incremental rather than a groundbreaking discovery of a new mechanism or a platform-enabling technology. The findings describe known phenomena (antigenic variation) in a specific context without introducing a novel biological paradigm or a disruptive method."
+      },
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This is basic mechanistic research focused on transcriptomic variations in a niche pathogen; it lacks a clear path to a product, diagnostic tool, or therapeutic candidate."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The research focuses on a niche, geographically restricted pathogen (Borrelia persica) with limited global commercial impact compared to broader infectious disease platforms. While scientifically significant for understanding antigenic variation, the addressable market for specific TBRF therapeutics is relatively small and lacks large-scale industrial scalability."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "The study is in the basic research stage, focusing on fundamental mechanistic understanding of transcriptomic shifts in an in vitro culture model. It lacks any application-oriented validation, drug targeting, or prototype development required for higher TRL levels."
+      },
+      "ip_strength": {
+        "score": 3,
+        "reason": "The paper describes fundamental mechanistic observations and transcriptomic profiling rather than a novel therapeutic target, diagnostic assay, or platform technology. While the data is scientifically valuable, the findings describe natural biological processes which are difficult to patent without an associated inventive application."
+      }
+    },
+    "pi": "Gad Baneth",
+    "pi_full_name": "Dor Shwartz",
+    "pi_email": "dor.shwartz@mail.huji.ac.il.",
+    "pi_affiliation": "Koret School of Veterinary Medicine, Hebrew University of Jerusalem, P.O. Box 12, Rehovot, 7610001, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "12",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
+    "added_date": "2026-10-26",
+    "hts_score": 2,
+    "hts_reason": "The study is a descriptive transcriptomic analysis of a bacterial cultivation process and fails to identify a specific druggable molecular target or provide a functional screening assay.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -11120,58 +11003,51 @@
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
-    "id": "pubmed_42918473",
-    "title": "Temporal transcriptomic changes during in vitro cultivation of the human tick-borne relapsing fever spirochete Borrelia persica.",
+    "id": "pubmed_42911560",
+    "title": "Concerns About Smell and Taste Disturbances Among GLP-1 Receptor Agonist Users-Reply.",
     "authors": [
-      "Dor Shwartz",
-      "Yaarit Nachum-Biala",
-      "Peleg Schneider",
-      "Gad Baneth"
+      "Jonathan Zontag",
+      "Nir Zontag"
     ],
-    "journal": "Infection, genetics and evolution : journal of molecular epidemiology and evolutionary genetics in infectious diseases",
-    "date": "2026 Oct 23",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42918473/",
+    "journal": "JAMA otolaryngology-- head & neck surgery",
+    "date": "2026-10-22",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42911560/",
     "source": "PubMed",
     "score": 12,
-    "summary": "This study analyzes the gene expression patterns of the tick-borne pathogen Borrelia persica as it adapts to laboratory culture conditions over time. By mapping these transcriptomic shifts, the researchers provide essential data for understanding how this elusive spirochete transitions between host and environmental states.",
-    "opportunity": "The identified gene expression profile offers new molecular targets for the development of rapid diagnostic tests and targeted antimicrobial therapies for relapsing fever.",
+    "summary": "This paper discusses the potential for GLP-1 receptor agonists, such as popular weight-loss drugs, to cause disruptions in smell and taste. It highlights a specific side-effect profile that may impact patient quality of life and treatment adherence.",
+    "opportunity": "Development of targeted supportive therapies or diagnostic tools to mitigate and monitor sensory disturbances in the growing population of GLP-1 users.",
     "fields": [
-      "Diagnostics",
-      "Drug Discovery",
-      "Genomics"
+      "Clinical",
+      "Drug Discovery"
     ],
     "score_breakdown": {
       "novelty": {
-        "score": 3,
-        "reason": "This study represents a descriptive characterization of a specific pathogen's transcriptomic behavior in culture, which provides incremental knowledge rather than a transformative or platform-enabling innovation. It lacks the groundbreaking conceptual shift or technological novelty required for a higher score."
+        "score": 1,
+        "reason": "This is a 'Reply' to a previous publication, which is a scholarly commentary rather than original research presenting new scientific methodologies, molecules, or data. It addresses existing observations rather than providing groundbreaking innovation."
       },
       "commercial_potential": {
-        "score": 2,
-        "reason": "This study focuses on fundamental microbiological characterization of an obscure pathogen with limited diagnostic or therapeutic market demand. It lacks a clear path to product development, diagnostic utility, or platform technology application."
+        "score": 1,
+        "reason": "This is a scientific 'Reply' to a discussion regarding side effects, which constitutes clinical observation rather than a new therapeutic, device, or platform technology. It lacks any inherent commercial product or licensable intellectual property."
       },
       "market_size": {
-        "score": 2,
-        "reason": "The research focuses on a specific, non-model organism of limited clinical prevalence, offering minimal commercial utility or addressable market potential compared to broader therapeutic or diagnostic platforms."
-      },
-      "trl": {
-        "score": 3,
-        "reason": "The study is fundamental laboratory research on transcriptomic dynamics of a tick-borne pathogen, representing early-stage basic science with no evidence of applied development or commercialization readiness."
+        "score": 9,
+        "reason": "The paper addresses side effects of GLP-1 receptor agonists, a drug class currently driving a massive, multi-billion dollar global market for obesity and diabetes. Any solution mitigating these side effects targets an enormous and rapidly expanding patient population."
       },
       "ip_strength": {
-        "score": 2,
-        "reason": "The study is basic transcriptomic profiling of a pathogen, providing descriptive data rather than a novel method or therapeutic candidate, offering limited patentable or defensible IP."
+        "score": 1,
+        "reason": "This is a published reply/commentary discussing adverse effects of existing drugs rather than a technical paper describing a novel invention or platform. It contains no new IP, proprietary methodology, or patentable technology."
       }
     },
-    "pi": "Gad Baneth",
-    "pi_full_name": "Dor Shwartz",
-    "pi_email": "dor.shwartz@mail.huji.ac.il.",
-    "pi_affiliation": "Koret School of Veterinary Medicine, Hebrew University of Jerusalem, P.O. Box 12, Rehovot, 7610001, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "pi": "Nir Zontag",
+    "pi_full_name": "Nir Zontag",
+    "pi_email": "",
+    "pi_affiliation": "Hadassah Medical Center, Faculty of Medicine, Hebrew University, Jerusalem, Israel.; Institute for Research in Military Medicine (IRMM), Faculty of Medicine, The Hebrew University of Jerusalem and the Israel Defense Forces Medical Corps, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "22",
+    "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-10-26",
     "hts_score": 2,
-    "hts_reason": "The study is a descriptive transcriptomic analysis of a bacterial cultivation process and fails to identify a specific druggable molecular target or provide a functional screening assay.",
+    "hts_reason": "This is a brief correspondence/reply article discussing clinical side effects rather than presenting a novel molecular target, a specific disease mechanism suitable for screening, or a high-throughput assay.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -11647,59 +11523,6 @@
     "added_date": "2026-10-06",
     "hts_score": 1,
     "hts_reason": "This paper is an analytical/statistical study on the efficacy of polygenic risk scores in IVF and does not identify a specific druggable molecular target, link it to a therapeutic disease intervention, or propose a high-throughput molecular screening assay.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
-    "id": "pubmed_42909391",
-    "title": "Very low HDL cholesterol in infectious mononucleosis with hepatitis: a real-world evidence study.",
-    "authors": [
-      "Iddo Z Ben-Dov",
-      "Alaa Danoon"
-    ],
-    "journal": "Atherosclerosis plus",
-    "date": "2026 Oct 23",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42909391/",
-    "source": "PubMed",
-    "score": 10,
-    "summary": "This study analyzes the correlation between severely low HDL cholesterol levels and the clinical presentation of infectious mononucleosis accompanied by hepatitis. It highlights how lipid profile monitoring can serve as a clinical marker for acute inflammatory viral infections.",
-    "opportunity": "The findings support the development of diagnostic panels or AI-driven clinical decision support tools that utilize lipidomic signatures to rapidly triage patients presenting with hepatotropic viral symptoms.",
-    "fields": [
-      "Diagnostics",
-      "Clinical",
-      "Software/AI"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 2,
-        "reason": "This study describes a clinical observation of lipid profile changes associated with an acute viral infection, which represents a retrospective descriptive analysis rather than a novel therapeutic, diagnostic, or platform innovation. It provides incremental clinical data but lacks the technical originality or inventive step required for high-impact deep-tech investment."
-      },
-      "commercial_potential": {
-        "score": 2,
-        "reason": "The study is a real‑world observational analysis of lipid changes in a specific infection; it does not describe a new therapeutic, diagnostic, or device, nor does it suggest a clear pathway to a marketable product or licenseable technology."
-      },
-      "market_size": {
-        "score": 2,
-        "reason": "This study focuses on a transient biomarker observation in a self-limiting viral condition, representing a niche clinical insight rather than a scalable diagnostic or therapeutic market. There is no clear commercial application or significant addressable demand for interventions targeting HDL levels specifically in the context of infectious mononucleosis."
-      },
-      "trl": {
-        "score": 2,
-        "reason": "This is an observational clinical study describing a physiological phenomenon rather than a technological development, meaning it lacks a deployable tool, diagnostic, or therapeutic platform. It functions as basic clinical research and is far removed from a TRL-driven commercial application."
-      },
-      "ip_strength": {
-        "score": 2,
-        "reason": "The study is an observational clinical analysis with no novel therapeutic or diagnostic technology, offering minimal patentable or defensible intellectual property."
-      }
-    },
-    "pi": "Alaa Danoon",
-    "pi_full_name": "Alaa Danoon",
-    "pi_email": "",
-    "pi_affiliation": "Internal Medicine B, Hadassah - Hebrew University Medical Center, Jerusalem, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-10-26",
-    "hts_score": 2,
-    "hts_reason": "The study is purely observational/descriptive regarding HDL cholesterol levels in infectious mononucleosis and does not identify a specific druggable molecular target or describe a novel assay for therapeutic screening.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -13217,6 +13040,57 @@
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
+    "id": "pubmed_42920125",
+    "title": "Racial differences in reoperation rates following dacryocystorhinostomy.",
+    "authors": [
+      "Nir Erdinest",
+      "Andrzej Grzybowski",
+      "Tehila Shlomov",
+      "Itay Nitzan",
+      "Ofira Zloto",
+      "Denise Wajnsztajn",
+      "Ortal Buhbut",
+      "Zvi Gur"
+    ],
+    "journal": "BMC ophthalmology",
+    "date": "2026 Jul 24",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42920125/",
+    "source": "PubMed",
+    "score": 6,
+    "summary": "This study examines how racial and ethnic backgrounds influence the likelihood of needing repeat surgery after a tear duct reconstruction procedure. By using large-scale health records and statistical matching, researchers aim to identify if certain demographic groups face higher failure rates.",
+    "opportunity": "The findings could drive the development of personalized surgical protocols or predictive risk-assessment software to improve patient selection and surgical outcomes in ophthalmology.",
+    "fields": [
+      "Clinical",
+      "Software/AI",
+      "Diagnostics"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The study is an observational epidemiological analysis of existing clinical outcomes rather than a development of new technology, biological targets, or therapeutic modalities. While it may provide clinical insights into health disparities, it lacks the groundbreaking scientific innovation or technical novelty characteristic of deep-tech or life-science breakthroughs."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "The paper is a clinical observational study investigating epidemiological disparities rather than a commercial product or technology. It does not define a market or addressable demand for a scalable therapeutic, device, or diagnostic tool."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This is an observational clinical study analyzing epidemiological trends and health disparities rather than a technical innovation. It lacks any proprietary methodology, novel device, or composition of matter that would be subject to patent protection or defensible IP."
+      }
+    },
+    "pi": "Zvi Gur",
+    "pi_full_name": "Zvi Gur",
+    "pi_email": "zvi.gur@mail.huji.ac.il.",
+    "pi_affiliation": "Department of Ophthalmology, Hadassah Medical Organization, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel. zvi.gur@mail.huji.ac.il.; Department of Ophthalmology, Hadassah-Hebrew University Medical Center, Jerusalem, Israel. zvi.gur@mail.huji.ac.il.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "15",
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-10-26",
+    "hts_score": 1,
+    "hts_reason": "This paper is a retrospective clinical study on surgical outcomes and does not identify a specific molecular target or describe a laboratory-based high-throughput screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
     "id": "pubmed_42837062",
     "title": "The Protective Role of Collective Efficacy Against Illicit Drug Availability at the Street Level: A Longitudinal Analysis.",
     "authors": [
@@ -13270,62 +13144,51 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
-    "id": "pubmed_42900924",
-    "title": "A Decade Later: Trends in Fellowship Training and Secondary Board Certification Among Emergency Medicine Residency Leaders.",
+    "id": "pubmed_42919118",
+    "title": "Beyond Anticoagulant Exposure: Determinants of Mortality After Gastrointestinal Bleeding Across DOAC, Warfarin and Non-Anticoagulated Patients.",
     "authors": [
-      "Danielle Langan",
-      "Lindsay Shogan",
-      "Shorok E Hassan",
-      "William Caputo",
-      "Abbas Husain",
-      "Jerel Chacko",
-      "Amin Mohamadi",
-      "Josh Greenstein",
-      "Barry Hahn"
+      "Esther Forkosh",
+      "David Hakimian",
+      "Harold Jacob",
+      "Ian M Gralnek",
+      "Lior Katz",
+      "Aviv Talmon"
     ],
-    "journal": "The western journal of emergency medicine",
-    "date": "2026 Sep 9",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42900924/",
+    "journal": "Alimentary pharmacology & therapeutics",
+    "date": "2026 Oct 22",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42919118/",
     "source": "PubMed",
     "score": 5,
-    "summary": "This study analyzes the career trajectories of emergency medicine residency program leaders over the past ten years, specifically focusing on their pursuit of sub-specialty fellowships and secondary board certifications. It highlights a growing shift toward increased specialization among academic leadership in emergency departments.",
-    "opportunity": "The trend toward sub-specialization in emergency medicine indicates a burgeoning market for targeted continuing medical education (CME) platforms and specialized software tools designed to support the workflow of niche emergency clinical disciplines.",
+    "summary": "This study analyzed over 11,000 patients to determine if the type of blood thinner used increases the risk of death following gastrointestinal bleeding. The researchers found that after accounting for age and comorbidities, neither DOACs nor warfarin were independently associated with higher mortality rates.",
+    "opportunity": "The findings support the clinical safety profile of DOACs in high-risk elderly populations, providing real-world evidence that can be used to refine risk-stratification algorithms in clinical decision support software.",
     "fields": [
       "Clinical",
       "Software/AI"
     ],
     "score_breakdown": {
-      "novelty": {
-        "score": 1,
-        "reason": "This study is a descriptive, retrospective analysis of demographic and professional trends within a medical specialty, which offers no technological, methodological, or scientific innovation. It is an administrative observation that lacks the intellectual property potential, platform-enabling utility, or clinical breakthrough status required for a higher novelty score."
-      },
       "commercial_potential": {
-        "score": 1,
-        "reason": "This paper is a retrospective academic study on medical workforce demographics and education policy, offering no identifiable technology, intellectual property, or commercial product opportunity. It provides descriptive data for health systems management rather than a scalable solution for the life-science or deep-tech sectors."
+        "score": 2,
+        "reason": "This is an observational epidemiological study that provides clinical insights but does not present a new therapeutic, diagnostic tool, or platform technology capable of being commercialized or licensed."
       },
       "market_size": {
-        "score": 1,
-        "reason": "The paper is a sociological/academic study of medical training trends rather than a commercial technology, drug, or platform. It does not address an addressable market or commercial demand."
-      },
-      "trl": {
-        "score": 1,
-        "reason": "This is a retrospective sociological/educational study regarding medical training trends, not a technological development or medical device. It lacks a physical or digital product/platform to advance through technology readiness levels."
+        "score": 2,
+        "reason": "This is an observational clinical study rather than a commercial product or technology development; while the clinical problem (GIB mortality) is large, the paper does not propose a new therapeutic, diagnostic, or digital health solution with a scalable market addressable via investment."
       },
       "ip_strength": {
         "score": 1,
-        "reason": "The paper is a retrospective observational study on medical education and board certification trends, which contains no novel technical, clinical, or industrial innovation capable of being patented or protected as intellectual property."
+        "reason": "This is a retrospective observational clinical study analyzing existing patient data; it does not involve the development of new compounds, devices, or proprietary algorithms that would be eligible for patent protection."
       }
     },
-    "pi": "Barry Hahn",
-    "pi_full_name": "Barry Hahn",
+    "pi": "Aviv Talmon",
+    "pi_full_name": "Aviv Talmon",
     "pi_email": "",
-    "pi_affiliation": "Hadassah University Medical Center-Ein Kerem, Department of Emergency Medicine, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "pi_affiliation": "Allergy and Clinical Immunology Unit, Department of Medicine, Hadassah Medical Center, and Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "24",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
     "added_date": "2026-10-26",
     "hts_score": 1,
-    "hts_reason": "This paper is a descriptive analysis of medical education and workforce trends, lacking any specific molecular targets, disease-pathology linkages, or biochemical assays.",
+    "hts_reason": "This study is a clinical/observational analysis of patient outcomes and lacks any specific molecular target, biochemical assay, or drug discovery component.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -13572,6 +13435,48 @@
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
+    "id": "pubmed_42909391",
+    "title": "Very low HDL cholesterol in infectious mononucleosis with hepatitis: a real-world evidence study.",
+    "authors": [
+      "Iddo Z Ben-Dov",
+      "Alaa Danoon"
+    ],
+    "journal": "Atherosclerosis plus",
+    "date": "2026 Oct 23",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42909391/",
+    "source": "PubMed",
+    "score": 3,
+    "summary": "The study demonstrates that infectious mononucleosis with hepatitis causes a significant and transient drop in HDL cholesterol levels. Using a massive real-world dataset, researchers linked these low HDL levels to a long-term increased risk of major adverse cardiovascular events.",
+    "opportunity": "The identification of specific lipid biomarkers during viral infections could lead to new diagnostic tools for assessing post-viral cardiovascular risk.",
+    "fields": [
+      "Diagnostics",
+      "Clinical",
+      "Immunology",
+      "Software/AI"
+    ],
+    "score_breakdown": {
+      "market_size": {
+        "score": 2,
+        "reason": "The study describes a clinical observation regarding a transient physiological phenomenon (low HDL during acute infection) rather than a novel therapeutic, diagnostic, or platform technology with commercial scalability. The target population is limited to patients with a specific acute infectious complication, which does not constitute a large or addressable commercial market."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This is an observational epidemiological study using existing real-world data (TriNetX) to characterize a biological correlation; it describes a natural phenomenon rather than a novel composition, device, or method that is patentable or defensible."
+      }
+    },
+    "pi": "Alaa Danoon",
+    "pi_full_name": "Alaa Danoon",
+    "pi_email": "",
+    "pi_affiliation": "Internal Medicine B, Hadassah - Hebrew University Medical Center, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "10",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
+    "added_date": "2026-10-26",
+    "hts_score": 2,
+    "hts_reason": "The study is purely observational/descriptive regarding HDL cholesterol levels in infectious mononucleosis and does not identify a specific druggable molecular target or describe a novel assay for therapeutic screening.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
     "id": "pubmed_42911776",
     "title": "Ethnocultural disparities in participation in higher education among care leavers and their matched peers: A quasi-experimental design.",
     "authors": [
@@ -13775,6 +13680,49 @@
     "added_date": "2026-10-19",
     "hts_score": 1,
     "hts_reason": "This paper focuses on cognitive psychology and behavioral tasks rather than molecular biology; it lacks a specific molecular target, a disease-linked pharmacological intervention, or a high-throughput assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
+    "id": "pubmed_42900924",
+    "title": "A Decade Later: Trends in Fellowship Training and Secondary Board Certification Among Emergency Medicine Residency Leaders.",
+    "authors": [
+      "Danielle Langan",
+      "Lindsay Shogan",
+      "Shorok E Hassan",
+      "William Caputo",
+      "Abbas Husain",
+      "Jerel Chacko",
+      "Amin Mohamadi",
+      "Josh Greenstein",
+      "Barry Hahn"
+    ],
+    "journal": "The western journal of emergency medicine",
+    "date": "2026 Sep 9",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42900924/",
+    "source": "PubMed",
+    "score": 2,
+    "summary": "This study tracks how emergency medicine residency leadership in the US has evolved over a decade, specifically looking at the rise in fellowship training and secondary board certifications. It reveals a significant increase in advanced specialized training among assistant and associate program directors compared to a decade ago.",
+    "opportunity": "There is no direct commercial technology opportunity in this paper, as it is a sociological study of medical education trends rather than a technical or scientific discovery.",
+    "fields": [
+      "Clinical",
+      "Other"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 2,
+        "reason": "This is a descriptive, longitudinal observational study of academic trends rather than a study presenting a new scientific discovery or technological innovation. While it provides useful epidemiological data on medical education, it offers no novel scientific mechanism or transformative methodology."
+      }
+    },
+    "pi": "Barry Hahn",
+    "pi_full_name": "Barry Hahn",
+    "pi_email": "",
+    "pi_affiliation": "Hadassah University Medical Center-Ein Kerem, Department of Emergency Medicine, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "5",
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-10-26",
+    "hts_score": 1,
+    "hts_reason": "This paper is a descriptive analysis of medical education and workforce trends, lacking any specific molecular targets, disease-pathology linkages, or biochemical assays.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {

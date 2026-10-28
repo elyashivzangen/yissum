@@ -16351,7 +16351,7 @@
     "pi_full_name": "Mor Nahum",
     "pi_email": "mor.nahum@mail.huji.ac.il.",
     "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, The Hebrew University, Jerusalem, Israel. Electronic address: mor.nahum@mail.huji.ac.il.",
-    "avg_score": 16.5,
+    "avg_score": 14.0,
     "max_hts_score": 2,
     "paper_count": 10,
     "description": "This researcher focuses on digital and neuro-technological interventions for mental health disorders, specifically ADHD and depression. Their work integrates clinical trials, neuroimaging biomarkers, and ecological momentary assessment to understand the neural and behavioral mechanisms behind executive dysfunction and emotional regulation. By bridging lab-based neuroscience with real-world mobile applications, they aim to develop personalized, remotely-administered therapeutic strategies.",
@@ -16375,9 +16375,9 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/42895746/",
         "journal": "JAMA network open",
-        "score": 33,
-        "summary": "This study evaluates the effectiveness of home-based transcranial direct current stimulation (tDCS) combined with gamified cognitive training as a treatment for depression. The approach aims to provide an accessible, patient-administered therapeutic alternative to traditional in-clinic psychiatric interventions.",
-        "opportunity": "The development of integrated digital therapeutics that combine wearable neuromodulation hardware with engaging software offers a scalable, remote-monitoring solution for the global mental health crisis.",
+        "score": 8,
+        "summary": "Researchers tested a home-based treatment for depression that combines mild electrical brain stimulation with gamified cognitive exercises. The study aims to determine if combining hardware stimulation with behavioral software improves efficacy over standard home-based tDCS.",
+        "opportunity": "Development of an integrated 'Digital Therapeutic' platform combining medical-grade wearable neuromodulation hardware with prescription software for remote mental health care.",
         "abstract": "Transcranial direct current stimulation (tDCS) has emerged as a home-based treatment in major depressive disorder (MDD), although its effects are typically small to moderate and inconsistently observed. Because tDCS may act synergistically with behavioral interventions, combining both approaches represents a promising strategy for developing more effective home-based treatments for MDD. To investigate the feasibility, safety, and efficacy of home-based tDCS and concurrent gamified cognitive control training (CCT) in adults with MDD. This multicenter, double-masked, parallel-group, randomized clinical trial with follow-up at week 10, masking checks at 2 time points, and expectancy assessments was conducted at 3 university hospitals in Latvia, Germany, and Israel between June 22, 2021, and August 8, 2024. Participants included adults aged 18 to 65 years with MDD, 17-item Hamilton Depression Rating Scale scores of at least 13, and no or stable antidepressant medication. Participants were randomly assigned 1:1 to active tDCS (2 mA; anode F3, cathode F4) plus a gamified CCT or sham tDCS plus a sham game. Participants were asked to complete 30 home treatment sessions (30 minutes each) over 6 weeks with software-assisted electrode positioning. The primary outcome was feasibility, defined as completing at least 20 of 30 sessions with greater than 50% probability. The secondary outcome was efficacy, measured as change in Montgomery-Åsberg Depression Rating Scale (MADRS) scores from baseline to week 6. Of 111 enrolled participants, 109 were included in the modified intention-to-treat sample (55 in the active group and 54 in the control group; mean [SD] age, 33.1 [10.6] years; 69 female [63.3%]). Feasibility criteria were met, with 86 participants (78.9%) completing at least 20 sessions (lower bound of 1-sided 95% CI, 71.5%). The MADRS scores improved significantly in both groups at week 6, indicating insufficient evidence to reject the null hypothesis of no difference in the mean change in MADRS score from baseline to 6 weeks between the 2 treatment groups (difference, 0.89 [95% CI, -1.37 to 3.15]; P = .44; Cohen d, 0.10 [95% CI, -0.15 to 0.34]). Results were similar at follow-up (week 10). Adverse events were balanced between groups. This RCT of home-based tDCS combined with CCT in adults with MDD was feasible and safe but did not demonstrate superior efficacy over the control condition. Future studies should refine the mechanistic alignment between stimulation and cognitive interventions to optimize treatment effects. ClinicalTrials.gov Identifier: NCT04953208.",
         "fields": [
           "Medical Device",
@@ -16386,30 +16386,14 @@
           "Clinical"
         ],
         "score_breakdown": {
-          "novelty": {
-            "score": 6,
-            "reason": "The study combines home-based tDCS with gamified cognitive control training, a modestly innovative integration of existing technologies, but it does not represent a groundbreaking platform or a significant departure from prior art."
-          },
           "commercial_potential": {
             "score": 8,
-            "reason": "This intervention utilizes a well-defined hardware-software pairing that is highly amenable to a scalable, direct-to-consumer or prescription-digital-therapeutic business model. The clear clinical trial pathway and the integration of gamification provide a distinct, protectable product architecture that addresses a massive, underserved market in mental health."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "The target market—depression treatment—has a vast global prevalence and high unmet demand, and a home-based tDCS device with gamified training could capture a significant share of the mental health therapeutics market, indicating a large and valuable addressable market."
-          },
-          "trl": {
-            "score": 7,
-            "reason": "The study demonstrates a clinically tested, home-based tDCS system combined with gamified training, indicating a technology that has progressed beyond basic lab research and is approaching market readiness, but it has not yet achieved widespread commercialization or regulatory approval."
-          },
-          "ip_strength": {
-            "score": 3,
-            "reason": "The intervention combines known tDCS hardware with standard cognitive training, which faces significant hurdles in establishing novelty and non-obviousness over existing neuromodulation and software-based therapeutic prior art. The modular, protocol-driven nature of this approach makes it difficult to secure broad, enforceable IP claims beyond narrow implementation details."
+            "reason": "The study validates a dual-modality digital therapeutic (hardware + software) that addresses the scalability issues of traditional psychiatry through a home-use model. By combining neuromodulation with gamified cognitive training, it creates a high-barrier-to-entry, synergistic product package with clear paths for regulatory clearance and reimbursement."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 33,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, The Hebrew University of Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 2,
