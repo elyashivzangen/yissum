@@ -1646,44 +1646,34 @@
   "date": "2026-10-19",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42896297/",
   "source": "PubMed",
-  "score": 9,
-  "summary": "This paper examines the psychological and relational cognitive processes involved in the experience of childhood sexual abuse within families. It explores how victims construct and reconcile contradictory knowledge structures regarding their abuse and the abusers.",
-  "opportunity": "This research could inform the development of specialized AI-driven diagnostic or therapeutic software tools designed to assist clinicians in identifying and processing complex trauma in forensic and mental health settings.",
+  "score": 5,
+  "summary": "This qualitative study explores how adult survivors of child sexual abuse navigate the psychological process of recognizing abuse when significant family members fail to acknowledge it. It examines the social and relational mechanisms of silencing that impact a survivor's ability to sustain knowledge of their own trauma.",
+  "opportunity": "There is no direct commercial opportunity in hard sciences, but the qualitative insights could inform the development of specialized psychological assessment tools or therapeutic software for trauma recovery.",
   "fields": [
-   "Software/AI",
-   "Clinical",
    "Other"
   ],
   "added_date": "2026-10-26",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "The study addresses a specific psychological phenomenon within a well-studied domain (child sexual abuse) and does not appear to introduce a fundamentally new theoretical framework or methodology, resulting in modest novelty."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "The study focuses on a specific psychological phenomenon with no obvious pathway to a marketable product, service, or licensable technology, indicating limited commercial potential."
+    "reason": "The research employs standard qualitative methods (reflexive thematic analysis) and established sociological frameworks to explore known psychological phenomena; it offers incremental understanding rather than a groundbreaking discovery or a protectable innovation."
    },
    "market_size": {
     "score": 1,
-    "reason": "This paper is a qualitative sociological or psychological study regarding child abuse dynamics and lacks any commercial application, industrial scalability, or target market addressability."
+    "reason": "This is a qualitative sociological study focused on psychological meaning-making; it describes no product, therapeutic intervention, or scalable technology with an addressable commercial market."
    },
    "trl": {
     "score": 1,
-    "reason": "This paper is a qualitative study in social science and psychology, which does not involve technology development, clinical application, or commercial product engineering."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The study focuses on relational knowledge in intrafamilial child sexual abuse, a social science topic with minimal technical novelty and no clear patentable or defensible technology."
+    "reason": "This is a qualitative sociological/psychological study focused on theoretical knowledge formation rather than a technological or medical intervention. It lacks any hardware, software, or biological product development required to advance toward commercialization or clinical application."
    }
   },
   "pi": "Carmit Katz",
   "pi_full_name": "Carmit Katz",
   "pi_email": "",
   "pi_affiliation": "The Paul Baerwald School of Social Work and Social Welfare, The Hebrew University of Jerusalem, Jerusalem, Israel; Haruv Institute, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "9",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper focuses on psychological relational knowledge in child sexual abuse and does not identify a specific molecule or target, nor link it to a disease, nor describe a testable assay.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"

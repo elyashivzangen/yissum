@@ -16351,7 +16351,7 @@
     "pi_full_name": "Mor Nahum",
     "pi_email": "mor.nahum@mail.huji.ac.il.",
     "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, The Hebrew University, Jerusalem, Israel. Electronic address: mor.nahum@mail.huji.ac.il.",
-    "avg_score": 14.0,
+    "avg_score": 11.5,
     "max_hts_score": 2,
     "paper_count": 10,
     "description": "This researcher focuses on digital and neuro-technological interventions for mental health disorders, specifically ADHD and depression. Their work integrates clinical trials, neuroimaging biomarkers, and ecological momentary assessment to understand the neural and behavioral mechanisms behind executive dysfunction and emotional regulation. By bridging lab-based neuroscience with real-world mobile applications, they aim to develop personalized, remotely-administered therapeutic strategies.",
@@ -16406,40 +16406,25 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/41570476/",
         "journal": "Psychiatry research",
-        "score": 10,
-        "summary": "The study reports that 40% of Israeli adolescents exhibit abnormal mental health symptoms eight months after a war, with executive dysfunction and low resilience being key predictors. It highlights significant gender and age differences and reduced participation in daily activities.",
-        "opportunity": "Develop AI-powered, culturally tailored digital mental‑health platforms that assess executive function and resilience to provide early interventions for war‑affected youth.",
+        "score": 2,
+        "summary": "This study examines the impact of prolonged war-related stress on the mental health of Israeli adolescents, finding significantly higher rates of abnormal symptoms than typical norms. It identifies executive dysfunction and low resilience as key factors linked to mental health decline and reduced daily life participation.",
+        "opportunity": "The data supports the development of digital therapeutics or AI-driven screening tools designed to monitor executive function and psychological resilience in youth living in high-conflict zones.",
         "abstract": "War-related prolonged stress is associated with poorer adolescent mental health. This cross-sectional study aimed to characterize the mental health of adolescents in Israel during an ongoing war situation and to examine how emotional, cognitive, and occupational factors were associated with their mental health during this period. Data from 973 Israeli adolescents (ages 13-18, 65.8% female) were collected remotely eight months after the October 7th, 2023, attack and the subsequent war. Participants completed validated self-report questionnaires assessing their mental health, dispositional resilience, subjective executive functions (EFs), sense of coherence, and war-related changes in their daily-life participation. Overall, 40.2% of adolescents scored within the abnormal range for mental health symptoms, exceeding the expected normative 10%. Female and older participants reported worse emotional status. Adolescents reported reduced participation across all occupational domains, with notable individual variability. A regression model explained over 50% of the variance in mental health scores, with greater executive dysfunction and lower resilience showing the strongest associations with poorer mental health. Decision tree analysis indicated that adolescents with better inhibitory control and more stable participation were more likely to report better mental health. Among adolescents with EF difficulties, lower arousal symptoms were associated with better mental health. These findings indicate a substantial and concerning mental health burden among adolescents living under prolonged war-related stress and highlight individual differences linked to internal resources and participation. EFs, patterns of daily-life participation, and arousal symptoms were associated with adolescents' capacity to cope with war-related stress. Addressing them as potential intervention targets may help mitigate the long-term negative consequences of prolonged conflict-related stress.",
         "fields": [
+          "Software/AI",
           "Neuroscience",
           "Clinical",
-          "Software/AI"
+          "Other"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 2,
-            "reason": "The study applies well-established psychological frameworks and cross-sectional survey methodologies to a specific conflict, representing an incremental observational report rather than a novel scientific or technological breakthrough. It confirms known correlations between stress and mental health outcomes without introducing innovative diagnostic tools, therapeutic interventions, or original theoretical constructs."
-          },
-          "commercial_potential": {
-            "score": 2,
-            "reason": "The study is a cross‑sectional observational analysis with no clear pathway to a marketable product, service, or licensable technology, offering limited commercial opportunity."
-          },
-          "market_size": {
-            "score": 3,
-            "reason": "The study focuses on a specific demographic (Israeli adolescents) in a single conflict context, limiting the addressable market to a relatively small, geographically and temporally constrained group."
-          },
-          "trl": {
-            "score": 2,
-            "reason": "This is a cross-sectional clinical observational study providing descriptive insights into public health, rather than a technology or intervention ready for commercial development. It lacks a tangible product, diagnostic tool, or scalable therapeutic platform that would move it toward market application."
-          },
-          "ip_strength": {
-            "score": 1,
-            "reason": "This is an observational academic study that does not propose a proprietary technology, composition of matter, or novel process, offering no basis for intellectual property protection."
+            "reason": "The study follows a standard epidemiological cross-sectional design to characterize mental health outcomes during a known stressor, applying established validated questionnaires rather than introducing new scientific paradigms or novel methodologies. While the specific context is timely, the research incrementalizes existing knowledge on war-related PTSD and resilience rather than providing a groundbreaking discovery."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 10,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. Electronic address: mor.nahum@mail.huji.ac.il.",
         "pi_email": "mor.nahum@mail.huji.ac.il.",
         "hts_score": 1,
@@ -16452,40 +16437,24 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/41496381/",
         "journal": "NeuroImage. Clinical",
-        "score": 24,
-        "summary": "The study shows that transcranial random noise stimulation (tRNS) combined with cognitive training can modulate neural excitation/inhibition balance and improve certain behavioral outcomes in children with ADHD. It demonstrates a potential neuromodulation therapy that targets specific brain regions to enhance inhibitory control.",
-        "opportunity": "tRNS-based neurostimulation devices paired with tailored cognitive training could become a non-pharmacological treatment platform for ADHD and other neurodevelopmental disorders.",
+        "score": 7,
+        "summary": "Researchers studied how transcranial random noise stimulation (tRNS) combined with cognitive training can correct neural excitation/inhibition imbalances in children with ADHD. The study found that the combined intervention improved accuracy in task performance and modulated specific EEG signals associated with ADHD.",
+        "opportunity": "Development of a non-invasive, closed-loop neuromodulation device that integrates tRNS with digital therapeutics to treat neurodevelopmental disorders.",
         "abstract": "Children with attention-deficit/hyperactivity disorder (ADHD) often show aberrant neural activity, including excitation/inhibition (E/I) imbalances, atypical event-related potentials (ERPs), and neural network dysfunction. Transcranial Random Noise Stimulation (tRNS) has shown promise in modulating neural activity in ADHD. The current study examined differences in behavioral and EEG signals recorded during an inhibitory control task in children with (N = 23) and without (N = 33) ADHD. Changes in these signals were further assessed following a combined tRNS and cognitive training intervention targeting the right inferior frontal gyrus and left dorsolateral prefrontal cortex in a sham-controlled randomized trial within the ADHD group only (n = 11 and 12 for intervention and sham groups, respectively). At baseline, children with ADHD showed slower reaction times, and higher commission error rates compared to healthy controls. Neurally, they exhibited elevated EEG aperiodic exponents, indicating lower E/I balance. Following intervention, we found slower task speed but fewer omission errors in the active compared to the sham group. Regression model showed reduced aperiodic exponents (β = -1.13, t(21) = -2.45, p = 0.023), decreased late ERP-P3b amplitude, and diminished theta and alpha band activity at the cortical level. There was a weaker but still significant reduction in aperiodic exponent values at follow-up compared to immediately post-treatment (β = 0.485, t(63) = 2.182, p = 0.033). Aperiodic exponent may serve as a useful indicator of treatment-related neural modulation and may provide complementary information to traditional ERP and event-related spectral perturbation (ERSP) measures, warranting further investigation in larger samples.",
         "fields": [
-          "Neuroscience",
           "Medical Device",
+          "Neuroscience",
           "Clinical"
         ],
         "score_breakdown": {
-          "novelty": {
-            "score": 4,
-            "reason": "The study applies existing tRNS technology to a known clinical population using standard EEG markers, representing an incremental validation of established neurostimulation protocols rather than a fundamental innovation or platform-enabling breakthrough. While it contributes to the evidence base for ADHD intervention, it lacks the technical novelty required to disrupt the current landscape of non-invasive brain stimulation."
-          },
           "commercial_potential": {
-            "score": 6,
-            "reason": "While the technology is potentially licensable as a digital health or neuromodulation platform, the small sample size (n=23) and mixed clinical outcomes suggest it is still in the early-stage exploratory phase rather than a clear near-market product. The path to commercialization is hampered by the need for larger validation trials and the regulatory burden associated with medical device approval for pediatric neuro-interventions."
-          },
-          "market_size": {
-            "score": 8,
-            "reason": "ADHD represents a massive, multi-billion dollar global market with a high unmet need for non-pharmacological interventions, and this neuromodulation approach addresses a clear, large-scale patient population. While early-stage, the platform potential of non-invasive brain stimulation for neurodevelopmental disorders offers significant commercial scalability."
-          },
-          "trl": {
-            "score": 3,
-            "reason": "This is a small-scale, exploratory pilot study (N=23) investigating physiological mechanisms rather than clinical efficacy or commercial viability. The technology requires significant further validation through large-scale, multi-center pivotal trials before it could be considered for clinical integration or regulatory approval."
-          },
-          "ip_strength": {
-            "score": 3,
-            "reason": "The underlying intervention (tRNS) is a well-established, non-patentable physical phenomenon, and the study describes an academic application of existing stimulation hardware rather than a novel, protectable proprietary device or method. The protocol is highly descriptive and lacks the proprietary technological barriers necessary to establish a significant intellectual property moat."
+            "score": 7,
+            "reason": "The study demonstrates a clear path toward a non-pharmacological digital therapeutic or neuromodulation device for ADHD, targeting a high-prevalence clinical market. However, the small sample size and the requirement for combined cognitive training may limit the ease of standalone device commercialization compared to pure hardware solutions."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 24,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "School of Occupational Therapy, Hebrew University of Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 2,
