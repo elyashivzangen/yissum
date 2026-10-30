@@ -16351,7 +16351,7 @@
     "pi_full_name": "Mor Nahum",
     "pi_email": "mor.nahum@mail.huji.ac.il.",
     "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, The Hebrew University, Jerusalem, Israel. Electronic address: mor.nahum@mail.huji.ac.il.",
-    "avg_score": 11.5,
+    "avg_score": 10.7,
     "max_hts_score": 2,
     "paper_count": 10,
     "description": "This researcher focuses on digital and neuro-technological interventions for mental health disorders, specifically ADHD and depression. Their work integrates clinical trials, neuroimaging biomarkers, and ecological momentary assessment to understand the neural and behavioral mechanisms behind executive dysfunction and emotional regulation. By bridging lab-based neuroscience with real-world mobile applications, they aim to develop personalized, remotely-administered therapeutic strategies.",
@@ -16467,40 +16467,33 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/41187581/",
         "journal": "Comprehensive psychiatry",
-        "score": 26,
-        "summary": "Hebrew University researchers evaluated a remote, tablet-based cognitive control video game to determine if it could effectively reduce depressive symptoms in adults. While the study showed high user adherence and general symptom improvement, it found no significant superiority of the experimental game over control games, except for specific cognitive-affective metrics.",
-        "opportunity": "This study underscores the potential for developing Digital Therapeutics (DTx) as scalable, low-cost remote interventions for sub-clinical mental health management.",
+        "score": 18,
+        "summary": "Researchers tested a tablet-based video game designed to improve cognitive control as a way to reduce depressive symptoms in young adults. The randomized controlled trial showed the intervention was feasible for remote use and specifically improved cognitive-affective depressive subscales in high-dose users.",
+        "opportunity": "The development of prescription digital therapeutics (DTx) that target specific cognitive mechanisms of mental health disorders for remote, scalable clinical intervention.",
         "abstract": "Depressive symptoms are prevalent among young adults, with cognitive theories suggesting that impaired cognitive control contributes to sustained negative mood and depressive symptoms. This study investigated the feasibility and efficacy of a remotely-applied, tablet-based cognitive control video game, Legends of Hoa'manu (LoH), for reducing depressive symptoms in subclinical adults. A randomized controlled trial (NCT05447091) was conducted with 173 participants (mean age 33 ± 11.6 years; 75.1 % female) exhibiting at least a minimal level of depressive symptoms (PHQ-8 ≥ 5). Participants were randomized into three groups: high-dose experimental game (HD_EG; N = 58), low-dose experimental game (LD_EG; N = 61), and high-dose control game (HD_CG; N = 54), with interventions spanning three weeks. The intervention demonstrated high feasibility and adherence (69.5-76.5 % of sessions completed) without direct study contact. Overall depressive symptoms (BDI-II total score) improved across all groups, with a significant main effect of time, but no significant group differences. Still, group differences were found for the cognitive-affective BDI-II subscale, where the HD_EG group showed the largest reduction (4.5 points vs. 2.3 and 2.1 in the LD_EG and HD_CG, respectively). These improvements were maintained at 3-week and 3-month follow-ups. Secondary outcomes, including anxiety and rumination, also improved across all groups. Overall cognitive control performance did not differ between groups; however, significant improvements in inhibitory control emerged exclusively in the HD_EG group. The results highlight the feasibility of this novel, cost-effective, and remotely-applied cognitive control-based intervention. These findings underscore the potential of LoH as a scalable solution for addressing depressive symptoms in subclinical populations.",
         "fields": [
           "Software/AI",
           "Neuroscience",
-          "Clinical"
+          "Clinical",
+          "Medical Device"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 3,
-            "reason": "The study applies a tablet-based cognitive control video game to reduce depressive symptoms, a concept that builds on existing digital mental health interventions and cognitive training literature, offering limited novelty beyond incremental design and remote delivery."
+            "score": 4,
+            "reason": "The study applies established cognitive control theories to a digital therapeutic format, which is an incremental application of existing research rather than a fundamental breakthrough in mechanism or technology. While the remote delivery is clinically relevant, the underlying intervention concept (cognitive training for mood regulation) lacks significant scientific novelty compared to prior art in the digital therapeutics space."
           },
           "commercial_potential": {
             "score": 6,
-            "reason": "While the digital therapeutics (DTx) market is established and the intervention is highly scalable, the lack of statistically significant superiority over the control group on the primary endpoint weakens the immediate clinical value proposition. Substantial further refinement and validation would be required to justify regulatory approval or a distinct competitive advantage over existing wellness applications."
+            "reason": "The study demonstrates a viable, remote digital therapeutic (DTx) model with proven feasibility and adherence, which is highly scalable. However, the lack of significant difference between the experimental and control groups suggests a lack of clear product differentiation or competitive advantage in clinical efficacy."
           },
           "market_size": {
             "score": 8,
-            "reason": "The intervention targets the massive, high-growth digital mental health market, specifically addressing sub-clinical depressive symptoms which represent an enormous addressable population currently underserved by traditional clinical care. The tablet-based, remote-delivery model offers high scalability and low marginal cost, making it a highly attractive platform for B2B2C or direct-to-consumer commercialization."
-          },
-          "trl": {
-            "score": 6,
-            "reason": "The intervention has completed a clinical trial (NCT05447091) demonstrating feasibility and preliminary efficacy, but the lack of significant group differences in the primary outcome indicates that the technology requires further refinement and validation before commercialization."
-          },
-          "ip_strength": {
-            "score": 3,
-            "reason": "The intervention relies on general cognitive behavioral paradigms (cognitive control training) implemented as a standard video game, making it highly susceptible to 'prior art' challenges and difficult to patent beyond narrow, gamified user interface elements. The lack of proprietary physiological biomarkers or unique algorithmic 'moats' provides minimal defensibility against established digital therapeutics competitors."
+            "reason": "The target market—sub-clinical depressive symptoms in young adults—represents a massive, global, and underserved population that exceeds the size of traditional clinical depression markets. The digital, remotely-applied nature of the intervention allows for highly scalable, low-marginal-cost deployment across broad consumer and preventative healthcare segments."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 26,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, The Hebrew University, Jerusalem, Israel. Electronic address: mor.nahum@mail.huji.ac.il.",
         "pi_email": "mor.nahum@mail.huji.ac.il.",
         "hts_score": 1,
