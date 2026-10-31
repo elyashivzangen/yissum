@@ -12667,41 +12667,42 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42896031/",
     "source": "PubMed",
     "score": 7,
-    "summary": "This paper examines the clinical presentation of patients experiencing euphoria and delirium due to toxic ingestion of loperamide, an over-the-counter anti-diarrheal medication. It highlights the growing public health risk posed by the off-label misuse of this opioid-receptor agonist to manage withdrawal symptoms.",
-    "opportunity": "There is a commercial opportunity to develop rapid point-of-care diagnostic assays or pharmacological abuse-deterrent formulations to mitigate loperamide-induced toxicity and misuse.",
+    "summary": "The paper examines the neurological effects, specifically euphoria and delirium, resulting from high doses of loperamide. It likely explores the mechanisms by which this over-the-counter medication affects the central nervous system when taken in extreme quantities.",
+    "opportunity": "There is potential for developing specialized diagnostic tools or clinical protocols to manage opioid-like toxicity from non-opioid medications.",
     "fields": [
+      "Neuroscience",
       "Clinical",
-      "Neuroscience"
+      "Diagnostics"
     ],
     "score_breakdown": {
       "novelty": {
         "score": 2,
-        "reason": "The paper reports a clinical observation of euphoria and delirium following loperamide overdose, a phenomenon already documented in the literature; it offers no new mechanistic insight or therapeutic approach, thus its scientific novelty is minimal."
+        "reason": "The paper appears to be a clinical case report describing known side effects of loperamide toxicity, which offers incremental observational value rather than a novel mechanistic discovery or a groundbreaking technological innovation."
       },
       "commercial_potential": {
         "score": 1,
-        "reason": "This paper describes a clinical case report regarding the abuse of an existing, off-patent drug and offers no novel proprietary technology, therapeutic platform, or commercializable innovation."
+        "reason": "This appears to be a clinical case report describing adverse drug effects rather than a technological innovation or therapeutic development. It lacks any inherent product, service, or patentable platform potential."
       },
       "market_size": {
         "score": 2,
-        "reason": "This paper focuses on the clinical pathology of substance misuse rather than a scalable therapeutic or diagnostic innovation. The market potential is limited to niche toxicology screening or narrow-scope harm reduction interventions, lacking the broad commercial utility of platform-enabling technologies."
+        "reason": "The paper describes a specific clinical observation of drug toxicity rather than a therapeutic product or technology targeting a broad market. There is no evidence of a scalable solution or a defined addressable market for the phenomenon described."
       },
       "trl": {
         "score": 1,
-        "reason": "This paper is a retrospective case report on existing pharmacological side effects and holds no proprietary technology, development pipeline, or industrial application potential."
+        "reason": "This is a clinical case report describing a medical phenomenon rather than a technology, drug development program, or medical device. It lacks any underlying technological innovation or product development to advance toward commercialization."
       },
       "ip_strength": {
         "score": 1,
-        "reason": "The paper discusses the clinical toxicology of loperamide, a widely available, off-patent generic drug, and involves no new technological innovation, composition of matter, or proprietary methodology that could be patented."
+        "reason": "The paper describes clinical observations of side effects from an existing, off-patent generic drug, which lacks any novel composition, method of use, or proprietary technology to protect."
       }
     },
     "pi": "Ami Schattner",
     "pi_full_name": "Ami Schattner",
     "pi_email": "",
     "pi_affiliation": "Department of Medicine, Laniado University Hospital, Sanz Medical Centre, Divrey-Hayim 16, Netanya 4244916, Israel.; Adelson School of Medicine, Ariel University, Ramat HaGolan 16, Ariel 4077625, Israel.; Faculty of Medicine, Hebrew University Hadassah Medical School, Ein Kerem, Jerusalem 91120, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "7",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
     "added_date": "2026-10-26",
     "hts_score": 2,
     "hts_reason": "The paper identifies a specific molecule (loperamide) and a condition (overdose/euphoria), but it describes a clinical case report rather than a novel target or a scalable HTS assay for drug discovery.",

@@ -16351,7 +16351,7 @@
     "pi_full_name": "Mor Nahum",
     "pi_email": "mor.nahum@mail.huji.ac.il.",
     "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, The Hebrew University, Jerusalem, Israel. Electronic address: mor.nahum@mail.huji.ac.il.",
-    "avg_score": 10.7,
+    "avg_score": 11.1,
     "max_hts_score": 2,
     "paper_count": 10,
     "description": "This researcher focuses on digital and neuro-technological interventions for mental health disorders, specifically ADHD and depression. Their work integrates clinical trials, neuroimaging biomarkers, and ecological momentary assessment to understand the neural and behavioral mechanisms behind executive dysfunction and emotional regulation. By bridging lab-based neuroscience with real-world mobile applications, they aim to develop personalized, remotely-administered therapeutic strategies.",
@@ -16684,9 +16684,9 @@
         "date": "2023",
         "url": "https://pubmed.ncbi.nlm.nih.gov/38061814/",
         "journal": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
-        "score": 12,
-        "summary": "This research explores how brain connectivity patterns correlate with social behaviors in natural, real-world settings rather than artificial laboratory environments. By using ecological measures, the study bridges the gap between neuroimaging data and actual human social functionality.",
-        "opportunity": "The findings could enable the development of predictive AI-driven diagnostic tools that assess social cognitive disorders or track the efficacy of neurological interventions through real-world behavioral biomarkers.",
+        "score": 16,
+        "summary": "The research investigates how brain connectivity patterns correlate with actual social behavior and performance within real-world environments. It seeks to move beyond controlled laboratory settings to understand how neurological data reflects ecological and social functioning.",
+        "opportunity": "Development of digital biomarkers and AI-driven neuro-diagnostic tools that predict social dysfunction or mental health outcomes using real-world connectivity data.",
         "abstract": "",
         "fields": [
           "Neuroscience",
@@ -16696,29 +16696,29 @@
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 3,
-            "reason": "The study focuses on correlating established neural connectivity metrics with behavioral social performance, which represents an incremental validation of existing neuroimaging frameworks rather than the development of a novel technology or paradigm-shifting scientific breakthrough."
+            "score": 4,
+            "reason": "The research appears to be an incremental refinement of existing neuroscientific frameworks by applying ecological validity to connectivity studies rather than introducing a novel biological mechanism or a groundbreaking technological platform. While it addresses an important methodological gap, it lacks the transformative leap required for a high novelty score in deep-tech investment terms."
           },
           "commercial_potential": {
             "score": 3,
-            "reason": "This work is fundamentally basic neuroscientific research aimed at validating ecological assessment methods rather than developing a proprietary, scalable, or actionable diagnostic product. While it offers insights into social neuroscience, it lacks the technical novelty, IP potential, or clear clinical utility required for a high commercial score."
+            "reason": "The paper appears to be foundational academic research focused on observational neuroscientific correlations rather than the development of a specific diagnostic tool, therapeutic, or commercialized platform. While it may inform future digital biomarkers, it lacks a direct path to a product or licensable technology in its current scope."
           },
           "market_size": {
-            "score": 2,
-            "reason": "This paper focuses on basic neuroscience research linking neural connectivity to social behavior, which lacks a direct commercial application or a clear pathway to a scalable, high-value clinical market. The methodology is diagnostic/observational in nature rather than therapeutic or platform-enabling, limiting its immediate addressable market size."
+            "score": 4,
+            "reason": "The paper focuses on basic scientific research into neurological correlations, which lacks a defined commercial application or a clear path to a scalable product or service. While neurotechnology is a large field, this specific work appears to be fundamental science rather than a targeted solution for a defined market segment."
           },
           "trl": {
-            "score": 2,
-            "reason": "This paper focuses on foundational neuroscientific research exploring correlations between neural connectivity and social behavior, which remains at a basic, discovery-oriented stage. It lacks the translational validation, clinical endpoints, or engineering maturation required for commercial application or diagnostic deployment."
+            "score": 3,
+            "reason": "The title suggests basic academic research focused on establishing correlations between neural patterns and social behavior, which is a foundational laboratory-stage investigation. It lacks indication of a developed diagnostic tool, medical device, or validated clinical application ready for transition."
           },
           "ip_strength": {
             "score": 2,
-            "reason": "The paper focuses on correlational neuroscience research and methodology rather than a novel, patentable technological invention or proprietary device. Academic findings of this nature are generally considered foundational scientific knowledge rather than protectable intellectual property."
+            "reason": "The paper appears to be an observational or correlational neuroscience study linking connectivity patterns to social performance, which is fundamentally difficult to protect via patents. Without evidence of a novel diagnostic tool, a proprietary algorithmic platform, or a therapeutic intervention, the findings remain academic observations rather than defensible intellectual property."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 12,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, The Hebrew University, Jerusalem, Israel. Electronic address: mor.nahum@mail.huji.ac.il.",
         "pi_email": "mor.nahum@mail.huji.ac.il.",
         "hts_score": 1,
@@ -16732,39 +16732,40 @@
         "url": "https://pubmed.ncbi.nlm.nih.gov/37796563/",
         "journal": "Developmental psychology",
         "score": 10,
-        "summary": "This study investigates the developmental intersection between empathy and executive functions in adolescents to understand how these cognitive processes support social and academic maturation. By mapping shared frontotemporal brain activity, the researchers provide insights into the underlying neurological architecture of social behavior during a critical growth phase.",
-        "opportunity": "These findings inform the development of AI-driven digital therapeutics and personalized neuro-feedback software designed to train and improve executive functioning and social-emotional regulation in adolescents.",
+        "summary": "This research examines the neurological and behavioral connections between empathy and executive functions in adolescents using longitudinal twin data. It aims to map how cognitive control mechanisms influence social-emotional development during a critical developmental window.",
+        "opportunity": "The findings could inform the development of AI-driven digital therapeutics or neuropsychological assessment software for early detection of neurodevelopmental disorders.",
         "abstract": "Empathy and executive functions (EFs) are multimodal constructs that enable individuals to cope with their environment. Both abilities develop throughout childhood and are known to contribute to social behavior and academic performance in young adolescents. Notably, mentalizing and EF activate shared frontotemporal brain areas, which in previous studies of adults led researchers to suggest that at least some aspects of empathy depend on intact EF mechanisms. Despite the substantial development that empathy and EF undergo during adolescence, no study to date has systematically examined the associations between components of empathy and EF in this age group. Here, we explore these associations using data from an online battery of tasks, collected as part of a longitudinal twin study (",
         "fields": [
-          "Software/AI",
           "Neuroscience",
+          "Software/AI",
+          "Diagnostics",
           "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 2,
-            "reason": "The study explores well-established psychological constructs using standard task batteries to fill a minor gap in longitudinal developmental literature, which lacks the transformative innovation or IP potential associated with deep-tech breakthroughs. It represents incremental academic research rather than a groundbreaking, platform-enabling, or industrially disruptive methodology."
+            "score": 3,
+            "reason": "The research is incremental and confirmatory rather than groundbreaking, seeking to extend existing adult-centric theories to a new developmental age group. It lacks the paradigm-shifting innovation or novel mechanistic discovery required for a high novelty score in deep-tech or life-science contexts."
           },
           "commercial_potential": {
             "score": 2,
-            "reason": "The study is purely academic, focusing on developmental psychology without any clear pathway to a product, service, or licensable technology, yielding minimal commercial potential."
+            "reason": "This is a basic behavioral science study investigating developmental correlations rather than a technology or intervention with a clear path to a commercial product or service. While the findings may inform educational or psychological frameworks, they lack the specific IP, platform utility, or technical application required for deep-tech investment."
           },
           "market_size": {
             "score": 2,
-            "reason": "The study is purely academic with no indication of a commercial product or market opportunity, so the addressable market size is essentially negligible."
+            "reason": "The paper is a fundamental behavioral science study investigating cognitive correlations rather than a commercial product, therapeutic intervention, or diagnostic tool. While understanding these mechanisms is foundational, it does not directly define a tangible market or addressable commercial demand."
           },
           "trl": {
             "score": 2,
-            "reason": "The study is a basic neuroscience/psychology investigation using online tasks; it is at the lab‑stage with no clear path to commercialization or industrial application."
+            "reason": "This is fundamental behavioral science research aimed at understanding cognitive correlations rather than a developed technology, medical device, or therapeutic intervention. It represents the earliest stages of knowledge discovery (TRL 1-2) with no immediate path to a commercial product or clinical application described."
           },
           "ip_strength": {
-            "score": 2,
-            "reason": "The study is a basic neuroscience investigation of empathy and executive functions in adolescents; it does not present novel technologies, methods, or products that could be patented or defended as intellectual property."
+            "score": 1,
+            "reason": "The paper describes a behavioral and longitudinal observational study of psychological constructs, which lacks any novel hardware, molecular entity, or proprietary algorithm that would meet the criteria for patentability or technical defensibility."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 10,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "School of Occupational Therapy, Hebrew University of Jerusalem.",
         "pi_email": "",
         "hts_score": 1,
