@@ -1,5 +1,2040 @@
 [
  {
+  "id": "pubmed_42965894",
+  "title": "Computation or Weight Adaptation? Rethinking the Role of Plasticity in Learning.",
+  "abstract": "",
+  "authors": [
+   "Gili Lior",
+   "Yuval Shalev",
+   "Gabriel Stanovsky",
+   "Ariel Goldstein"
+  ],
+  "journal": "Cognitive science",
+  "date": "2026-10-31",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42965894/",
+  "source": "PubMed",
+  "pi": "Ariel Goldstein",
+  "pi_affiliation": "Department of Cognitive and Brain Sciences, The Hebrew University of Jerusalem.; Center for Human Inspired AI, University of Cambridge.",
+  "pi_full_name": "Ariel Goldstein",
+  "score": 20,
+  "summary": "The paper investigates whether biological learning is driven by changes in how neurons compute or by the physical adaptation of synaptic weights. It challenges existing paradigms regarding how plasticity contributes to intelligence and information processing.",
+  "opportunity": "The research could lead to more efficient, bio-inspired neuromorphic hardware and advanced AI architectures that mimic biological learning efficiency.",
+  "fields": [
+   "Software/AI",
+   "Neuroscience"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 4,
+    "reason": "The title suggests a conceptual or theoretical inquiry into the mechanics of plasticity versus computation, which typically refines existing paradigms rather than introducing a fundamentally new scientific breakthrough. Without an abstract, the work appears to be a comparative analysis or a refinement of current deep learning theory rather than a platform-enabling innovation."
+   },
+   "commercial_potential": {
+    "score": 4,
+    "reason": "The paper appears to be fundamental theoretical research focused on machine learning paradigms rather than a specific applied technology or product. While it may eventually inform more efficient AI architectures, it lacks a direct pathway to a commercializable product, service, or patentable hardware implementation."
+   },
+   "market_size": {
+    "score": 7,
+    "reason": "The research addresses fundamental architectural efficiencies in machine learning, which has a massive addressable market across all AI deployment sectors, though its impact is currently more foundational than specific to a single high-value vertical."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The paper is a fundamental theoretical inquiry into neural plasticity and learning mechanics, representing early-stage basic research rather than an applied technology or prototype."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The paper appears to be a fundamental theoretical inquiry into neural plasticity and learning dynamics, which typically lacks the discrete, implementable architectural claims required for strong patent protection. Such conceptual shifts are difficult to defend as proprietary IP compared to specific algorithmic implementations or hardware-software co-designs."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The title suggests a theoretical or computational neuroscience paper regarding learning mechanisms; it lacks a specific molecular target, a disease link, and a druggable assay.",
+  "hts_eval_model": "gemma-4-31b-it"
+ },
+ {
+  "id": "pubmed_42965181",
+  "title": "Tissue Doppler S wave velocities are associated with changes in pro-brain natriuretic peptide levels following transcatheter aortic valve implantation.",
+  "abstract": "",
+  "authors": [
+   "Sima Gharra",
+   "Gabby Elbaz-Greener",
+   "David Planer",
+   "Oren Yagel",
+   "David Leibowitz"
+  ],
+  "journal": "American heart journal plus : cardiology research and practice",
+  "date": "2026-10-31",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42965181/",
+  "source": "PubMed",
+  "pi": "David Leibowitz",
+  "pi_affiliation": "Cardiology Department, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
+  "pi_full_name": "David Leibowitz",
+  "score": 14,
+  "summary": "The study examines the relationship between specific heart muscle movement measurements (Tissue Doppler S wave velocities) and blood markers of heart strain (pro-BNP) after aortic valve replacement procedures. It aims to identify how ultrasound-based mechanical metrics can track recovery and cardiac health following minimally invasive surgery.",
+  "opportunity": "Development of automated software tools for echocardiography to provide real-time, non-invasive predictive monitoring of post-surgical cardiac recovery.",
+  "fields": [
+   "Medical Device",
+   "Diagnostics",
+   "Imaging",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The study explores a correlative relationship between established clinical biomarkers (NT-proBNP) and standard echocardiographic measurements (Tissue Doppler) in a well-known patient population, representing incremental clinical validation rather than a groundbreaking technical or mechanistic innovation."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "The study identifies a correlation between Doppler S wave velocities and BNP changes post‑TAVI, but it does not propose a new device, therapy, or clear licensable technology, limiting its immediate commercial translation."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "The paper describes a specific clinical biomarker correlation rather than a product or technology, suggesting a narrow diagnostic niche with limited direct commercial scalability. It lacks evidence of a broad market application beyond post-TAVI monitoring."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The paper describes a retrospective observational study focused on establishing physiological correlations between imaging biomarkers and biochemical markers. It identifies clinical associations rather than developing or validating a novel medical device or therapeutic intervention ready for clinical implementation."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The study reports a clinical correlation between Doppler velocities and peptide levels; it does not describe a novel device, method, or therapeutic that could be patented, so the IP defensibility is minimal."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 3,
+  "hts_reason": "The paper focuses on clinical physiological parameters (S wave velocities and BNP levels) rather than identifying a specific molecular target or novel molecule for drug screening, and the method described is a clinical measurement rather than a scalable biochemical assay.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42964924",
+  "title": "Physician documented fatigue among adults and children with inflammatory bowel disease: a nationwide routinely collected health data study from the epi-IIRN.",
+  "abstract": "",
+  "authors": [
+   "Gili Focht",
+   "Rachel Buchuk",
+   "Menachem Sokolik",
+   "Shlomi Cohen",
+   "Henit Yanai",
+   "Amir Ben-Tov",
+   "Galia Zacay",
+   "Eran Matz",
+   "Shir Zekaria",
+   "Iris Dotan",
+   "Ora Paltiel",
+   "Dan Turner"
+  ],
+  "journal": "Crohn's & colitis 360",
+  "date": "2026-10-31",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42964924/",
+  "source": "PubMed",
+  "pi": "Dan Turner",
+  "pi_affiliation": "Juliet Keidan Institute of Pediatric Gastroenterology Hepatology and Nutrition, The Eisenberg R&D Authority, Shaare Zedek Medical Center, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "pi_full_name": "Dan Turner",
+  "score": 15,
+  "summary": "The study analyzes nationwide health data to quantify fatigue levels in adults and children with inflammatory bowel disease (IBD), highlighting a significant burden on patient quality of life. It identifies patterns and risk factors that could inform targeted interventions and monitoring strategies.",
+  "opportunity": "Develop a digital health platform that tracks and predicts fatigue in IBD patients, enabling personalized care plans and reducing disease flare‑ups.",
+  "fields": [
+   "Clinical",
+   "Diagnostics",
+   "Software/AI"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The study is an epidemiological observation using existing routine health data to document a known symptom (fatigue) in a known patient population (IBD). While clinically useful for characterization, it lacks the novel mechanistic discovery or technological innovation required for a high novelty score."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "This is an observational epidemiological study rather than a technology development paper; while it identifies a clinical need, it does not present a new product, therapeutic, or proprietary platform."
+   },
+   "market_size": {
+    "score": 7,
+    "reason": "The study identifies a significant unmet clinical need in a large, chronic patient population (IBD), suggesting a substantial addressable market for fatigue-specific diagnostics or therapeutics. However, without specific prevalence or commercialization data in the title/abstract, the precise economic scale remains unquantified."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This is an epidemiological observational study using existing health data to characterize a symptom, rather than the development of a new technology, therapeutic, or diagnostic tool. It represents foundational clinical knowledge rather than a technical product or platform."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This is an epidemiological observational study based on routine health data, which identifies clinical correlations rather than developing a novel composition, device, or platform technology. Observational findings and statistical associations are generally not patentable and offer no proprietary defensibility."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper is an epidemiological study focused on clinical documentation of symptoms (fatigue) rather than identifying a molecular target or a biochemical assay suitable for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42961903",
+  "title": "Transcriptional and functional profiling reveals a dynamic continuum of beta-cell activation states.",
+  "abstract": "",
+  "authors": [
+   "Alona Volov-Ohayon",
+   "Yaniv Ben-Arush",
+   "Inbal Davidovich",
+   "Amit Hamburg",
+   "Benjamin G Steinberg",
+   "Ben Ernan",
+   "Nova Noiman",
+   "Eran Elinav",
+   "Yitzhak Reizel",
+   "Aharon Helman"
+  ],
+  "journal": "Cell reports",
+  "date": "2026-10-30",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961903/",
+  "source": "PubMed",
+  "pi": "Aharon Helman",
+  "pi_affiliation": "Institute of Biochemistry, Food Science and Nutrition, The Hebrew University of Jerusalem, Rehovot 76100, Israel. Electronic address: aharon.helman@mail.huji.ac.il.",
+  "pi_full_name": "Aharon Helman",
+  "pi_email": "aharon.helman@mail.huji.ac.il.",
+  "score": 24,
+  "summary": "This research maps the various functional and transcriptional stages of beta-cell activation to understand how cells transition during metabolic stress or insulin response. By defining this continuum, the study identifies specific molecular signatures that characterize different states of pancreatic cell health and activity.",
+  "opportunity": "The identification of specific beta-cell activation states provides novel biomarkers and therapeutic targets for the precision treatment of Type 1 and Type 2 diabetes.",
+  "fields": [
+   "Drug Discovery",
+   "Genomics",
+   "Proteomics",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 5,
+    "reason": "The study provides a detailed transcriptional and functional map of beta-cell activation states, which adds depth to existing knowledge but does not introduce a fundamentally new concept or technology, positioning it as moderately novel."
+   },
+   "commercial_potential": {
+    "score": 4,
+    "reason": "The paper describes fundamental biological profiling of cell states, which is high-value discovery science but lacks a direct roadmap toward a specific therapeutic or diagnostic product. While it may enable future drug target identification, it currently functions more as basic academic knowledge than a defined commercial technology."
+   },
+   "market_size": {
+    "score": 9,
+    "reason": "Beta-cell dysfunction is a fundamental driver of Type 1 and Type 2 diabetes, representing one of the largest global therapeutic markets in life sciences. Understanding the continuum of activation states offers massive platform potential for cell therapies and regenerative medicine targeting multi-billion dollar indications."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The paper focuses on fundamental biological profiling and mechanism discovery (transcriptional/functional states) rather than a specific therapeutic intervention or clinical application. This represents early-stage basic research aimed at building foundational knowledge for future drug discovery."
+   },
+   "ip_strength": {
+    "score": 4,
+    "reason": "The paper appears to be a fundamental biological characterization study focused on descriptive profiling rather than the development of a novel therapeutic agent or a proprietary platform technology. While the insights may drive future discovery, transcriptional profiling itself is difficult to protect as intellectual property compared to specific targets or modalities."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 2,
+  "hts_reason": "The title indicates a descriptive profiling study of cell states rather than the identification of a specific drugable target, disease link, or a scalable screening assay.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42961321",
+  "title": "Estimating daytime respiration with steady-state and dynamic Laisk methods and its implications for mesophyll conductance.",
+  "abstract": "",
+  "authors": [
+   "Bar Ben-Zeev",
+   "Or Shapira",
+   "Yotam Zait"
+  ],
+  "journal": "Tree physiology",
+  "date": "2026-10-30",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42961321/",
+  "source": "PubMed",
+  "pi": "Yotam Zait",
+  "pi_affiliation": "The Robert H. Smith Institute of Plant Sciences and Genetics in Agriculture, Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Rehovot 76100, Israel.",
+  "pi_full_name": "Yotam Zait",
+  "pi_email": "yotam.zait@mail.huji.ac.il",
+  "score": 14,
+  "summary": "This research focuses on improving the precision of measuring how plants breathe (respiration) during the day using advanced mathematical modeling. By refining these measurements, researchers can better understand how gases move within plant tissues and how they respond to environmental changes.",
+  "opportunity": "The ability to more accurately model plant gas exchange can be leveraged to develop high-precision sensors and predictive software for optimizing crop yields and carbon sequestration in precision agriculture.",
+  "fields": [
+   "AgriTech",
+   "Software/AI"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The paper focuses on applying and comparing established physiological methodologies (Laisk methods) rather than introducing a fundamentally new mechanism or a paradigm-shifting technology. It represents incremental refinement and comparative analysis within existing plant physiology frameworks."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "This is a fundamental physiological study focused on methodology and biophysical parameters rather than a developed product or scalable technology. While useful for agricultural modeling, it lacks a clear pathway to a proprietary device, service, or licensable platform."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "The paper describes a niche methodological advancement in plant physiology research rather than a scalable commercial product or platform. The addressable market is limited to academic and specialized botanical research institutions with low industrial demand."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The paper focuses on fundamental physiological modeling and methodology refinement for plant respiration, which is at the basic research/proof-of-concept stage. It lacks the hardware integration or field-validated application required for higher TRL levels."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The paper describes mathematical modeling and physiological estimation methods based on established biophysical principles (Laisk methods), which are generally considered academic discovery rather than patentable novel hardware or proprietary compositions. While scientifically valuable for plant physiology, it lacks the structural or algorithmic novelty typically required for strong industrial IP defensibility."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper is about plant physiology (mesophyll conductance and respiration) rather than human pharmacology, lacking a specific therapeutic target, disease link, or drug-screening assay.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42960433",
+  "title": "PHYA and PHYC as Candidate Loci for Flowering Time and Developmental Plasticity in Wheat.",
+  "abstract": "",
+  "authors": [
+   "Sai Thejas Babanna",
+   "Yogev Burko",
+   "Björn Christopher Willige",
+   "Gizaw M Wolde",
+   "Thorsten Schnurbusch",
+   "Guy Golan"
+  ],
+  "journal": "Plant, cell & environment",
+  "date": "2026-10-30",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42960433/",
+  "source": "PubMed",
+  "pi": "Guy Golan",
+  "pi_affiliation": "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland, Germany.; The Robert H. Smith Faculty of Agriculture, Food & Environment, The Hebrew University of Jerusalem, Rehovot, Israel.",
+  "pi_full_name": "Guy Golan",
+  "score": 24,
+  "summary": "The study identifies two photoreceptor genes, PHYA and PHYC, as key regulators of flowering time and developmental plasticity in wheat. By mapping these loci, the research provides insights that could enable breeding of wheat varieties better adapted to changing climates and growing conditions.",
+  "opportunity": "Genetic markers for PHYA and PHYC can be leveraged to develop climate‑resilient wheat cultivars, opening a market for precision breeding and seed‑technology services.",
+  "fields": [
+   "AgriTech",
+   "Genomics"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 4,
+    "reason": "The study identifies PHYA and PHYC as candidate loci influencing flowering time and plasticity in wheat, which builds on existing knowledge of photoperiod genes in cereals; however, it does not introduce a fundamentally new mechanism or platform, representing a modest incremental advance rather than a groundbreaking discovery."
+   },
+   "commercial_potential": {
+    "score": 6,
+    "reason": "The identification of specific loci for flowering time has clear value for crop improvement and breeding programs, though it represents a foundational genetic discovery rather than a direct product or platform technology."
+   },
+   "market_size": {
+    "score": 8,
+    "reason": "The study targets wheat flowering time, a critical trait for global wheat production; the agricultural sector is vast and continuously seeks genetic improvements, indicating a large and valuable addressable market."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The study identifies specific genetic loci (PHYA and PHYC) associated with phenotypic traits, which is fundamental basic research. This stage focuses on understanding biological mechanisms rather than deploying a developed seed variety or breeding tool ready for commercial agriculture."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The paper describes fundamental genetic research identifying candidate loci, which is typically considered natural phenomenon and difficult to patent. While potentially useful for marker-assisted breeding, the discovery of gene functions lacks the inherent structural or composition-of-matter defensibility required for high IP scores."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 3,
+  "hts_reason": "While the paper identifies specific molecular targets (PHYA and PHYC), it lacks a disease/condition link relevant to human translational medicine and does not describe a high-throughput screening assay.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42959254",
+  "title": "Toward a population-level public health approach to support families living under continuous traumatic stress.",
+  "abstract": "",
+  "authors": [
+   "Abigail H Gewirtz",
+   "Mor Keleynikov",
+   "Hadar Eliash-Fizik",
+   "Nehama Lewis",
+   "Jessica Gale",
+   "Shir Itzhaky-Wruble",
+   "Adena Hoffnung-Assouline",
+   "Anastasia Viner"
+  ],
+  "journal": "Frontiers in psychiatry",
+  "date": "2026-10-30",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42959254/",
+  "source": "PubMed",
+  "pi": "Adena Hoffnung-Assouline",
+  "pi_affiliation": "Hebrew University of Jerusalem, Paul Baerwald School of Social Work & Social Welfare, Jerusalem, Israel.",
+  "pi_full_name": "Adena Hoffnung-Assouline",
+  "score": 18,
+  "summary": "The paper proposes a framework for public health interventions designed to mitigate the long-term psychological and physiological effects of continuous traumatic stress on families. It shifts the focus from individual clinical treatment to systemic, population-level support structures.",
+  "opportunity": "Development of scalable digital mental health platforms or predictive analytics tools for monitoring and intervening in community-wide trauma stress.",
+  "fields": [
+   "Software/AI",
+   "Clinical",
+   "Neuroscience",
+   "Other"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 2,
+    "reason": "The title suggests a public health framework or policy proposal rather than a novel scientific discovery, technological invention, or a new biological mechanism. It appears to be an application of existing sociological or epidemiological concepts to a specific population rather than groundbreaking technical innovation."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "The title suggests a public health framework or policy-oriented strategy rather than a discrete, patentable technology or a scalable therapeutic product. There is no indication of a proprietary tool, digital health intervention, or platform that could be commercialized through traditional life-science or deep-tech models."
+   },
+   "market_size": {
+    "score": 9,
+    "reason": "Continuous traumatic stress affects massive global populations, representing a vast, high-unmet-need market within the mental health and public health sectors. The population-level approach suggests scalable demand across multiple healthcare systems and demographics."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The paper proposes a population-level public health framework, which is primarily conceptual and policy-oriented rather than a developed technology; it is at an early stage of development with no demonstrated prototypes or field trials, placing it around TRL 3."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The paper focuses on a population-level public health strategy rather than a specific technological innovation, offering little basis for patentable claims or defensible IP."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 2,
+  "hts_reason": "The paper appears to be a population-level public health review and does not identify a specific new molecule or target, nor link it to a particular disease, nor describe a testable assay.",
+  "hts_eval_model": "groq:openai/gpt-oss-20b"
+ },
+ {
+  "id": "pubmed_42955197",
+  "title": "Infraoccluded permanent first molars and their effect on dentoalveolar and root development: a two-center retrospective split-mouth cross-sectional study.",
+  "abstract": "",
+  "authors": [
+   "Avi Leibovich",
+   "Zehava Geller Fishman",
+   "Gabriel Nahmias",
+   "Heli Rushinek",
+   "Nardi Casap",
+   "Letizia Perillo",
+   "Miriam Shalish",
+   "Cristina Grippaudo",
+   "Ludovica Nucci",
+   "Stella Chaushu"
+  ],
+  "journal": "Progress in orthodontics",
+  "date": "2026-10-29",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42955197/",
+  "source": "PubMed",
+  "pi": "Stella Chaushu",
+  "pi_affiliation": "Department of Orthodontics, Hadassah Medical Center, Faculty of Dental Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "pi_full_name": "Avi Leibovich",
+  "pi_email": "avi.leibovich@mail.huji.ac.il.",
+  "score": 11,
+  "summary": "This study investigates how the presence of infraoccluded permanent first molars affects the surrounding bone and tooth root development using a split-mouth design. It analyzes the structural changes in the jaw and teeth caused by these partially erupted teeth in a clinical setting.",
+  "opportunity": "The findings could improve orthodontic diagnostic software or specialized dental imaging tools used to predict long-term dentoalveolar complications.",
+  "fields": [
+   "Medical Device",
+   "Imaging",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The study is a retrospective clinical observation of a known dental condition, focusing on characterizing developmental outcomes rather than introducing a new biological mechanism, technology, or therapeutic intervention. While clinically useful for diagnostic refinement, it lacks the groundbreaking innovation or platform-enabling potential required for a high novelty score."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "The study is a retrospective clinical observation with no direct product or technology development, offering limited commercial opportunities beyond academic interest."
+   },
+   "market_size": {
+    "score": 2,
+    "reason": "The paper describes a narrow, retrospective clinical observation of a specific dental pathology rather than a commercial product, platform, or therapeutic intervention with scalable market demand."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This is an observational, retrospective clinical study focused on understanding biological pathology rather than developing a new medical device, drug, or diagnostic tool. It contributes to fundamental clinical knowledge but does not represent a technological development process moving toward commercialization."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This is a clinical retrospective observational study providing epidemiological or anatomical data rather than a new technology, molecule, or device. It lacks any proprietary invention, method, or composition that would be subject to patent protection or industrial defensibility."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The study focuses on clinical observations of molar development and does not identify a specific new molecule or target, link it to a disease, nor describe a testable assay suitable for high‑throughput screening.",
+  "hts_eval_model": "groq:openai/gpt-oss-20b"
+ },
+ {
+  "id": "pubmed_42955009",
+  "title": "Essential Kinase C Zeta in Nonsyndromic Retinitis Pigmentosa.",
+  "abstract": "",
+  "authors": [
+   "Johanna Valensi",
+   "Sapir Shalom",
+   "Dror Sharon"
+  ],
+  "journal": "JAMA ophthalmology",
+  "date": "2026-10-29",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42955009/",
+  "source": "PubMed",
+  "pi": "Dror Sharon",
+  "pi_affiliation": "Department of Ophthalmology, Hadassah Medical Center, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "pi_full_name": "Dror Sharon",
+  "score": 19,
+  "summary": "The research identifies the protein kinase C zeta enzyme as a critical factor in the development of nonsyndromic retinitis pigmentosa, a genetic form of vision loss. This discovery points toward specific biological pathways that could be targeted to slow or prevent retinal degeneration.",
+  "opportunity": "Targeting PKC zeta provides a novel mechanism for small-molecule drug discovery or gene therapy interventions to treat hereditary blindness.",
+  "fields": [
+   "Drug Discovery",
+   "Genomics",
+   "Neuroscience",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 4,
+    "reason": "Without an abstract, the title suggests a Mendelian genetics study identifying a specific gene-disease association, which is typically incremental characterization rather than a novel biological mechanism or platform technology. The work likely adds a single node to an existing genetic landscape rather than introducing a groundbreaking paradigm shift."
+   },
+   "commercial_potential": {
+    "score": 6,
+    "reason": "The identification of a specific genetic driver for a rare disease provides a clear target for precision medicine, but the lack of a therapeutic modality or delivery platform limits its immediate commercial translation."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "Nonsyndromic Retinitis Pigmentosa is a rare orphan disease with a very limited patient population, which constrains the total addressable market compared to broader indications."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The title suggests basic mechanistic research identifying a genetic or molecular driver of a disease, which typically corresponds to discovery-stage laboratory validation rather than preclinical development or clinical application."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The title indicates basic mechanistic research identifying a biological target, which is often difficult to patent without specific small molecule scaffolds or novel therapeutic modalities. Without data on chemical entities or unique delivery mechanisms, the defensibility of a single kinase association is low."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 7,
+  "hts_reason": "The paper identifies a specific target (Kinase C Zeta) and links it to a specific disease (Nonsyndromic Retinitis Pigmentosa), but the lack of abstract prevents verification of a described testable assay.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42954638",
+  "title": "Molecular Mechanisms of the Cytotoxicity of an Anti-Cancer Peptide.",
+  "abstract": "",
+  "authors": [
+   "Ehud Neumann",
+   "Yang-Sung Sohn",
+   "Alfredo E Cardenas",
+   "Taylor Hays",
+   "Itai Alfoni",
+   "Assaf Friedler",
+   "Lauren J Webb",
+   "Ron Elber",
+   "Rachel Nechushtai"
+  ],
+  "journal": "The journal of physical chemistry. B",
+  "date": "2026-10-29",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42954638/",
+  "source": "PubMed",
+  "pi": "Rachel Nechushtai",
+  "pi_affiliation": "Institute of Life Science, Faculty of Science and Mathematics, The Hebrew University of Jerusalem, Edmond J. Safra Campus at Givat Ram, Jerusalem9190401, Israel.",
+  "pi_full_name": "Rachel Nechushtai",
+  "score": 13,
+  "summary": "The research investigates how a specific anti-cancer peptide kills cancer cells at a molecular level. This study aims to clarify the biological pathways and mechanisms responsible for the peptide's toxic effects on malignant cells.",
+  "opportunity": "Understanding these mechanisms enables the optimization of peptide scaffolds to improve therapeutic efficacy and reduce off-target toxicity in next-generation oncology drugs.",
+  "fields": [
+   "Drug Discovery",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 2,
+    "reason": "The title suggests a mechanistic characterization study of an existing compound rather than the discovery of a new modality or a first-in-class platform. Without an abstract, the work appears to be incremental descriptive science rather than groundbreaking innovation."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "The paper appears to be basic mechanistic research on peptide cytotoxicity with no clear indication of a developed product, licenseable technology, or immediate clinical application, yielding limited commercial potential."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "The title describes fundamental mechanistic research rather than a specific therapeutic indication or clinical application, making it impossible to determine a target market size. Without evidence of a specific disease focus or platform scalability, the commercial addressable demand remains undefined."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The title indicates basic mechanistic research focused on understanding how a peptide works at a molecular level, which is characteristic of early-stage fundamental discovery rather than applied development."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The title describes basic mechanistic research rather than a novel chemical entity or platform, suggesting the work focuses on biological characterization which is difficult to protect compared to a specific therapeutic composition."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 3,
+  "hts_reason": "The title suggests a general study of cytotoxic mechanisms of an anti‑cancer peptide, but no specific novel molecule or target is named, and no disease link or assay is described in the available information.",
+  "hts_eval_model": "groq:openai/gpt-oss-20b"
+ },
+ {
+  "id": "pubmed_42952130",
+  "title": "Coercive Control Through Religious Authority: Intimate Partner Violence in the Israeli Ultra-Orthodox Community.",
+  "abstract": "",
+  "authors": [
+   "Daniel J N Weishut",
+   "Sara Zalcberg"
+  ],
+  "journal": "Journal of interpersonal violence",
+  "date": "2026-10-28",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42952130/",
+  "source": "PubMed",
+  "pi": "Sara Zalcberg",
+  "pi_affiliation": "Hebrew University of Jerusalem, Israel.; Shandong-Tel Aviv Joint Institute for Jewish and Israel Studies, Israel.",
+  "pi_full_name": "Sara Zalcberg",
+  "pi_email": "sarazalcberg@gmail.com",
+  "score": 5,
+  "summary": "The study investigates how religious authority is used to enforce coercive control in intimate partner violence within the Israeli Ultra-Orthodox community. It focuses on sociocultural dynamics rather than biomedical or technological aspects.",
+  "opportunity": "No direct commercial opportunity in biotech, medtech, agritech, materials, clean energy, or AI/software tools for science.",
+  "fields": [
+   "Other"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 1,
+    "reason": "This is a sociological or qualitative social science paper rather than a deep-tech or life-science research study. It lacks scientific novelty in terms of technical, molecular, or platform-enabling innovation."
+   },
+   "commercial_potential": {
+    "score": 1,
+    "reason": "The paper is a sociological or qualitative study of social dynamics and religious authority, which does not involve a patentable technology, medical device, or scalable platform with direct commercial applications."
+   },
+   "market_size": {
+    "score": 1,
+    "reason": "This is a sociological/humanities research paper addressing a social issue rather than a commercial technology or product. It lacks a scalable market, addressable demand in a commercial sense, or potential for industrial application."
+   },
+   "trl": {
+    "score": 1,
+    "reason": "This is a sociological or qualitative research paper regarding social behavior and religious authority, not a technological development. It lacks any engineered product, platform, or technical intervention that can be measured on a technology readiness scale."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This is a qualitative sociological or social science study regarding behavioral patterns and religious authority, which lacks any proprietary technology, biochemical compounds, or engineering innovations capable of patent protection or technical defensibility."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper is a sociological or criminological study regarding social control and violence; it does not identify a biological molecule, target, or biochemical assay.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42947254",
+  "title": "Policies to address Israel's physician workforce challenges.",
+  "abstract": "",
+  "authors": [
+   "Revital Sheinberg",
+   "Alon Kadmon",
+   "Alexey Belinsky",
+   "Ayelet Grinbaum Arizon",
+   "Rachel Berner Shalem",
+   "Bruce Rosen",
+   "Yifat Irshai Bas",
+   "Joseph Mendlovic"
+  ],
+  "journal": "Israel journal of health policy research",
+  "date": "2026-10-28",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42947254/",
+  "source": "PubMed",
+  "pi": "Joseph Mendlovic",
+  "pi_affiliation": "Ministry of Health, Jerusalem, Israel. sefimen@gmail.com.; Shaare Zedek Medical Center, Affiliated with the Hadassah-Hebrew University School of Medicine, Jerusalem, Israel. sefimen@gmail.com.; The Israeli Ministry of Health - Office of the Associate Director General, Yermiyahu 39, Jerusalem, 913101, Israel. sefimen@gmail.com.",
+  "pi_full_name": "Joseph Mendlovic",
+  "pi_email": "sefimen@gmail.com.",
+  "score": 7,
+  "summary": "This paper analyzes systemic shortages in the Israeli medical workforce and proposes policy changes to resolve them. It focuses on the workforce planning and administrative reforms needed to sustain healthcare delivery.",
+  "opportunity": "Potential for healthcare administration software and AI-driven workforce optimization tools to automate scheduling and resource allocation.",
+  "fields": [
+   "Clinical",
+   "Software/AI",
+   "Other"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 1,
+    "reason": "This paper is a policy analysis rather than scientific or technical research, offering no novel biological, chemical, or technological breakthroughs. It addresses administrative and systemic challenges through socio-political frameworks rather than technical innovation."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "The paper discusses workforce policy rather than a protectable technology or product, offering limited direct commercial opportunity."
+   },
+   "market_size": {
+    "score": 2,
+    "reason": "The paper focuses on public policy and workforce management rather than a scalable product, technology, or service with a measurable commercial market size. It addresses systemic healthcare administration rather than a targetable commercial demand."
+   },
+   "trl": {
+    "score": 1,
+    "reason": "The paper is a policy analysis regarding healthcare workforce management and does not involve a physical technology, product, or engineered solution. Therefore, it cannot be assigned a technology readiness level in the context of deep-tech development."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "The paper addresses public policy and workforce management, which are socio-political strategies rather than technical or scientific innovations capable of being patented or protected via IP."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper discusses healthcare policy and workforce challenges; it contains no molecular targets, disease mechanisms, or laboratory assays.",
+  "hts_eval_model": "gemma-4-31b-it"
+ },
+ {
+  "id": "pubmed_42944735",
+  "title": "The genomic diversity of ",
+  "abstract": "",
+  "authors": [
+   "Janet Perry",
+   "Katya Arnold",
+   "Anat Wiseman",
+   "Yael Markus",
+   "Ido From",
+   "Eugenia Yakunin",
+   "Assaf Rokney",
+   "Ehud Elnekave"
+  ],
+  "journal": "Microbial genomics",
+  "date": "2026-10-27",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42944735/",
+  "source": "PubMed",
+  "pi": "Ehud Elnekave",
+  "pi_affiliation": "The Koret School of Veterinary Medicine, Robert H. Smith Faculty of Agriculture, Food and Environment, Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "pi_full_name": "Ehud Elnekave",
+  "score": 7,
+  "summary": "The paper investigates the breadth and variation of genetic sequences within a specific biological population or species. This research provides a foundational map of genetic differences that drive biological diversity and phenotypic variation.",
+  "opportunity": "High-resolution genomic diversity data can be licensed to pharmaceutical companies to improve the accuracy of target identification and the success rates of personalized medicine.",
+  "fields": [
+   "Genomics",
+   "Drug Discovery",
+   "Software/AI"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 1,
+    "reason": "The provided input is an incomplete title and lacks an abstract or data, making it impossible to identify any scientific contribution or novelty."
+   },
+   "commercial_potential": {
+    "score": 1,
+    "reason": "The provided information is insufficient to assess commercial viability as both the title and abstract are incomplete. A purely descriptive title regarding genomic diversity lacks any indication of a specific application, platform, or therapeutic target."
+   },
+   "market_size": {
+    "score": 1,
+    "reason": "The title is incomplete and provides no information regarding a specific application, therapeutic target, or technology. Without a defined scope, it is impossible to assess any market size or addressable demand."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The paper appears to be basic genomic diversity research with no evidence of applied methods or prototypes, indicating a lab-stage technology rather than near-market readiness."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "The title suggests a descriptive genomic survey or observational study, which typically lacks patentable subject matter and represents foundational knowledge rather than a defensible technological asset."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper title is incomplete and lacks a specific molecule, disease link, or assay description; it provides no actionable information for HTS screening.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42957175",
+  "title": "From a Reflective Inquiry to a Proposed Revised Moral Formation of Current and Future Health Professionals.",
+  "abstract": "",
+  "authors": [
+   "Shmuel P Reis"
+  ],
+  "journal": "Rambam Maimonides medical journal",
+  "date": "2026-10-26",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42957175/",
+  "source": "PubMed",
+  "pi": "Shmuel P Reis",
+  "pi_affiliation": "Digital Medical Technologies, Holon Institute of Technology, Holon, Israel.; Center for Medical Education, School of Medicine, Hebrew University, Jerusalem, Israel.; Clalit Health Services, Haifa and Western Galilee District, Gilon and Misgav Village Clinics, Israel.",
+  "pi_full_name": "Shmuel P Reis",
+  "score": 6,
+  "summary": "The paper discusses a reflective inquiry into moral formation for health professionals, proposing a revised framework for current and future practitioners. It focuses on ethical education and professional development rather than technical or scientific innovation.",
+  "opportunity": "There is limited direct commercial potential; however, the framework could inform the development of ethics training modules or certification programs for healthcare providers.",
+  "fields": [
+   "Other"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 2,
+    "reason": "The paper appears to be a reflective, philosophical discussion on moral formation for health professionals, offering no new empirical data, methods, or theoretical breakthroughs beyond existing ethical literature."
+   },
+   "commercial_potential": {
+    "score": 1,
+    "reason": "The title indicates a theoretical or pedagogical inquiry into ethics and moral formation, which lacks a tangible technological, clinical, or industrial application suitable for commercialization."
+   },
+   "market_size": {
+    "score": 1,
+    "reason": "The paper appears to be a philosophical or pedagogical inquiry into moral education rather than a commercial technology or therapeutic product. Consequently, it lacks a quantifiable addressable market or industrial value proposition typical of life-science or deep-tech investments."
+   },
+   "trl": {
+    "score": 1,
+    "reason": "The paper is a philosophical or pedagogical treatise on moral formation rather than a technological or biological innovation. It lacks any physical prototype, clinical tool, or technical application that can be measured on a TRL scale."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "The paper discusses moral formation and educational frameworks for health professionals, which are pedagogical or philosophical concepts that lack patentable subject matter or technical defensibility. There is no proprietary technology, molecular entity, or engineering innovation present to protect via intellectual property."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper is a philosophical or pedagogical discussion regarding medical ethics/education and contains no specific molecular target, disease link, or biological assay.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42946577",
+  "title": "A small modification makes a big difference: rRNA modifications in hematopoiesis and leukemia.",
+  "abstract": "",
+  "authors": [
+   "Neta Ifergan",
+   "Sivan Ben Dror",
+   "Daphna Nachmani"
+  ],
+  "journal": "Seminars in hematology",
+  "date": "2026-10-01",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42946577/",
+  "source": "PubMed",
+  "pi": "Daphna Nachmani",
+  "pi_affiliation": "Department of Genetics, Alexander Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel. Electronic address: daphna.nachmani@mail.huji.ac.il.",
+  "pi_full_name": "Daphna Nachmani",
+  "pi_email": "daphna.nachmani@mail.huji.ac.il.",
+  "score": 20,
+  "summary": "This research explores how specific chemical modifications to ribosomal RNA (rRNA) influence the development of blood cells and the progression of leukemia. It highlights how these subtle molecular changes can drive or regulate cancerous transformations in the hematopoietic system.",
+  "opportunity": "Identification of specific rRNA modification patterns provides novel biomarkers for early leukemia detection and high-value targets for precision oncology therapeutics.",
+  "fields": [
+   "Drug Discovery",
+   "Diagnostics",
+   "Genomics",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The title suggests a descriptive or review-oriented study focusing on known mechanisms rather than the introduction of a disruptive new technology or a novel biological discovery. It implies an incremental understanding of existing rRNA modification pathways in a specific disease context."
+   },
+   "commercial_potential": {
+    "score": 4,
+    "reason": "The title suggests basic mechanistic research into rRNA modifications rather than a specific therapeutic target or diagnostic tool. While fundamental insights can eventually lead to drug discovery, the current framing lacks a clear, direct path to a proprietary product or service."
+   },
+   "market_size": {
+    "score": 8,
+    "reason": "The research targets hematopoiesis and leukemia, addressing a massive global market for oncology therapeutics and hematologic disorder treatments. The focus on rRNA modifications suggests a potential platform for novel drug targets in a high-value clinical area."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The title indicates a basic mechanistic biology study focused on understanding the role of rRNA modifications in disease processes. This represents fundamental discovery-stage research rather than a developed therapeutic or diagnostic tool."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The title suggests basic academic research into biological mechanisms (rRNA modifications) rather than a specific therapeutic modality or proprietary technology platform. While the findings may be foundational, mechanistic studies alone lack inherent IP defensibility without an accompanying invention like a novel drug or diagnostic tool."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 2,
+  "hts_reason": "The title suggests a review or descriptive study regarding a general biological process (rRNA modifications) rather than a specific molecule or target. No specific molecule, disease link, or assay method can be identified from the provided text.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42935128",
+  "title": "The fight of innate immunity and abnormal cannabinoids against Candida infection.",
+  "abstract": "",
+  "authors": [
+   "Prince Ofori",
+   "Ilan Zaffran",
+   "Francesca Levi Schaffer"
+  ],
+  "journal": "British journal of pharmacology",
+  "date": "2026-10-26",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42935128/",
+  "source": "PubMed",
+  "pi": "Francesca Levi Schaffer",
+  "pi_affiliation": "Pharmacology and Experimental Therapeutics Unit, School of Pharmacy, Institute for Drug Research, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+  "pi_full_name": "Francesca Levi Schaffer",
+  "score": 18,
+  "summary": "The research investigates how the body's innate immune system interacts with abnormal cannabinoids when fighting Candida fungal infections. It aims to understand if these compounds can modulate immune responses to enhance or inhibit fungal clearance.",
+  "opportunity": "Developing cannabinoid-based immunomodulatory therapies to manage systemic fungal infections or treat immunocompromised patients.",
+  "fields": [
+   "Drug Discovery",
+   "Immunology",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 4,
+    "reason": "The study appears to investigate interactions between innate immune responses and cannabinoids in the context of Candida infection, a topic that has been explored in various preclinical settings; it does not present a fundamentally new mechanism or platform, thus offering modest novelty."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "The title suggests basic mechanistic research into the interaction between cannabinoids and immunity, which lacks a defined therapeutic target, delivery modality, or clear path to a commercial product."
+   },
+   "market_size": {
+    "score": 6,
+    "reason": "The target market—Candida infection treatment using innate immunity and cannabinoid-based therapies—is sizable due to the prevalence of fungal infections, but the niche focus on cannabinoid adjuncts limits immediate addressable demand compared to broader antifungal markets."
+   },
+   "trl": {
+    "score": 4,
+    "reason": "The study appears to be basic mechanistic research on immune response and cannabinoids in a fungal infection model, likely conducted in vitro or in animal models, indicating a laboratory-stage technology with limited evidence of translation to clinical or commercial application."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The title suggests fundamental biological research on host-pathogen interactions rather than a novel composition of matter or a proprietary therapeutic delivery system. Without a specific molecule or method disclosed, the work appears to be mechanistic academic observation with low inherent patentability."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 2,
+  "hts_reason": "The title is descriptive and indicates a study of physiological interactions rather than a specific drug discovery effort; it fails to identify a specific molecule, target, or a scalable assay for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42934270",
+  "title": "Molecular glue mediated degradation of cannabinoid receptor 1 for cancer therapy.",
+  "abstract": "",
+  "authors": [
+   "Aseel Kashkush",
+   "Kisanet Tadesse",
+   "Binyamin Insler",
+   "Raphael I Benhamou"
+  ],
+  "journal": "npj drug discovery",
+  "date": "2026-10-26",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42934270/",
+  "source": "PubMed",
+  "pi": "Raphael I Benhamou",
+  "pi_affiliation": "The Institute for Drug Research of the School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. raphael.benhamou@mail.huji.ac.il.",
+  "pi_full_name": "Raphael I Benhamou",
+  "pi_email": "raphael.benhamou@mail.huji.ac.il.",
+  "score": 33,
+  "summary": "Researchers are developing a new class of drugs called molecular glues to target and degrade the cannabinoid receptor 1 (CB1) to treat cancer. This approach aims to eliminate specific proteins that promote tumor growth rather than just inhibiting their function.",
+  "opportunity": "Developing first-in-class targeted protein degraders (TPDs) for oncology targets that were previously considered undruggable.",
+  "fields": [
+   "Drug Discovery",
+   "Proteomics",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 8,
+    "reason": "The application of molecular glue technology to target the Cannabinoid Receptor 1 represents a highly innovative shift from traditional antagonism to targeted protein degradation. This approach offers a novel mechanism to overcome potential resistance and provides a specialized therapeutic modality for cancer treatment."
+   },
+   "commercial_potential": {
+    "score": 8,
+    "reason": "Molecular glues are a high-value, platform-enabling modality in drug discovery, and targeting the CB1 receptor offers a novel, potentially licensable approach to oncology. The specific mechanism provides a clear path toward a proprietary small-molecule therapeutic candidate."
+   },
+   "market_size": {
+    "score": 7,
+    "reason": "Targeting the cannabinoid receptor 1 (CB1) for cancer therapy addresses a significant oncology market, though the therapeutic application of CB1 modulation in cancer is a specialized niche compared to broader oncology targets."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The paper describes a fundamental proof-of-concept for a novel modality (molecular glue) targeting a specific receptor, which typically implies early-stage discovery and preclinical validation rather than lead optimization or clinical trials."
+   },
+   "ip_strength": {
+    "score": 7,
+    "reason": "Molecular glues targeting specific protein-protein interactions are highly patentable and offer strong chemical defensibility, though the specific novelty of targeting CB1 for oncology depends on the unique scaffold and binding mechanism."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 9,
+  "hts_reason": "The paper identifies a specific target (Cannabinoid receptor 1) and a specific disease application (cancer therapy), while the mention of 'molecular glue mediated degradation' implies a measurable biochemical or cellular assay for protein depletion.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42933904",
+  "title": "Neurocognitive characteristics of perceptual feedback processing differ in autism.",
+  "abstract": "",
+  "authors": [
+   "Nathaniel J Zuk",
+   "Jaroslav Y Slobodskoy-Plusnin",
+   "Yarden Weiss",
+   "VishnuPriya Sampath",
+   "Kira M Düsterwald",
+   "Athena Akrami",
+   "Merav Ahissar"
+  ],
+  "journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+  "date": "2026-10-26",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42933904/",
+  "source": "PubMed",
+  "pi": "Merav Ahissar",
+  "pi_affiliation": "Edmond & Lily Safra Center for Brain Sciences, Hebrew University, Jerusalem, Israel.",
+  "pi_full_name": "Nathaniel J Zuk",
+  "pi_email": "nathaniel.zuk@ntu.ac.uk.",
+  "score": 11,
+  "summary": "This research investigates how individuals with autism process sensory feedback differently at a neurocognitive level. It aims to map the specific brain mechanisms that govern perceptual responses to environmental stimuli.",
+  "opportunity": "The findings could inform the development of personalized neurorehabilitation tools or digital therapeutics designed to optimize sensory integration training.",
+  "fields": [
+   "Neuroscience",
+   "Diagnostics",
+   "Medical Device",
+   "Software/AI"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The title suggests a descriptive, observational study of neurocognitive differences rather than the development of a novel mechanism, platform, or technological breakthrough. It appears to be incremental characterization of an existing clinical phenotype rather than a groundbreaking scientific discovery."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "The paper appears to be a fundamental basic science study focused on descriptive neurocognitive characterization rather than the development of a diagnostic tool, therapeutic, or digital intervention. Without a clear translational endpoint, there is minimal immediate path to a commercial product or licensable technology."
+   },
+   "market_size": {
+    "score": 2,
+    "reason": "The paper describes basic fundamental neuroscience research into cognitive mechanisms rather than a specific therapeutic, diagnostic, or digital health product. There is no clear commercial application or addressable market identified in the title."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The title describes basic academic research focused on characterising neurocognitive mechanisms rather than developing a specific medical device, therapeutic, or diagnostic tool. It represents fundamental laboratory-stage science with no immediate path to commercial application."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The paper describes basic scientific observations of neurocognitive phenomena, which are fundamental biological truths that are generally not patentable. There is no indication of a proprietary device, biomarker assay, or therapeutic intervention that would constitute defensible intellectual property."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The title indicates a behavioral or psychological study rather than a molecular one; it lacks a specific molecular target, a chemical/biological intervention, and a biochemical assay suitable for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42933168",
+  "title": "Association between sperm progressive motility and seminal fluid metabolomic and lipidomic profiling of bovine ejaculate.",
+  "abstract": "",
+  "authors": [
+   "Tanya Kogan",
+   "Dorit Kalo",
+   "Zvi Roth"
+  ],
+  "journal": "Animal reproduction science",
+  "date": "2026-10-26",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42933168/",
+  "source": "PubMed",
+  "pi": "Zvi Roth",
+  "pi_affiliation": "Department of Animal Sciences, Robert H. Smith Faculty of Agriculture, Food and Environment, the Hebrew University, Rehovot, 7610001, Israel.",
+  "pi_full_name": "Dorit Kalo",
+  "pi_email": "dorit.kalo@mail.huji.ac.il.",
+  "score": 15,
+  "summary": "This research investigates how the metabolic and lipid profiles of bovine seminal fluid correlate with the swimming ability of sperm cells. By mapping these chemical signatures, the study seeks to identify specific biomarkers that indicate reproductive quality in cattle.",
+  "opportunity": "The findings could enable the development of high-throughput diagnostic kits for livestock breeding programs to select superior sires based on metabolic profiles rather than manual microscopic observation.",
+  "fields": [
+   "AgriTech",
+   "Diagnostics",
+   "Proteomics"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The study appears to be an incremental correlative analysis using established multi-omics techniques to characterize a known biological sample. It lacks the indication of a new methodology, a novel discovery of a fundamental biological mechanism, or a platform-enabling breakthrough."
+   },
+   "commercial_potential": {
+    "score": 4,
+    "reason": "While the research provides valuable biomarkers for bovine fertility, it is a fundamental descriptive study rather than a platform technology or a defined diagnostic product. The commercial path is limited to niche veterinary diagnostic kits or breeding selection tools, which lacks the scalability of high-value biotech platforms."
+   },
+   "market_size": {
+    "score": 4,
+    "reason": "The market is limited to the bovine reproductive technologies sector, which is a specialized niche within the broader livestock industry. While valuable for improving breeding efficiency, the total addressable market lacks the massive scale of human health or multi-species agricultural platforms."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This is a fundamental observational study identifying biological correlations rather than developing a functional tool or product. It represents basic laboratory-stage research (TRL 2) aimed at understanding mechanisms rather than a ready-to-use diagnostic or commercial application."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The paper describes an observational association study between biological markers and motility, which typically constitutes discovery of natural phenomena rather than patentable invention. There is no indication of a novel diagnostic tool, proprietary assay, or therapeutic intervention that would provide industrial defensibility."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 2,
+  "hts_reason": "The paper describes a correlative observational study of metabolites in bovine ejaculate rather than identifying a specific druggable target or a validated assay for drug discovery. It lacks a specific disease link suitable for therapeutic intervention and does not describe a functional assay for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42939625",
+  "title": "Efficacy of Pomegranate Seed Oil (PSO) in Its Nanoformulation (GranaGard",
+  "abstract": "",
+  "authors": [
+   "Kati Frid",
+   "Orli Binyamin",
+   "Liraz Larush",
+   "Shlomo Magdassi",
+   "Ruth Gabizon",
+   "Haim Ovadia"
+  ],
+  "journal": "Current issues in molecular biology",
+  "date": "2026-10-21",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42939625/",
+  "source": "PubMed",
+  "pi": "Haim Ovadia",
+  "pi_affiliation": "Department of Neurology, The Hebrew University of Jerusalem, Jerusalem 9112001, Israel.; Granalix Biotechnologies, Jerusalem 9342144, Israel.",
+  "pi_full_name": "Haim Ovadia",
+  "score": 28,
+  "summary": "This research evaluates the effectiveness of a nanoformulated pomegranate seed oil, branded as GranaGard, which likely aims to enhance the bioavailability and stability of its bioactive compounds. The study focuses on how this specialized nano-delivery system improves the biological activity of the oil compared to its standard form.",
+  "opportunity": "The development of a stabilized, high-bioavailability nano-emulsion presents a scalable ingredient play for the premium nutraceutical, functional food, and cosmeceutical markets.",
+  "fields": [
+   "FoodTech",
+   "Materials",
+   "Other"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The use of nanoformulations to enhance the bioavailability of plant-based oils is a well-established field in nutraceuticals rather than a groundbreaking scientific shift. The research appears to be an incremental application of existing delivery technologies to a known natural ingredient."
+   },
+   "commercial_potential": {
+    "score": 8,
+    "reason": "GranaGard is a commercially developed, patented nanoformulation that has already transitioned from research to a market-ready nutraceutical product. Its clear intellectual property position and defined clinical application path provide high commercial viability compared to standard natural product extracts."
+   },
+   "market_size": {
+    "score": 6,
+    "reason": "While the target indication (neurodegenerative diseases like Alzheimer's or Multiple Sclerosis) addresses a massive global unmet need, the reliance on a nutraceutical-derived compound (pomegranate seed oil) faces significant regulatory and competitive hurdles compared to high-value pharmaceutical assets. The market potential is substantial due to the aging population, but product differentiation and clinical adoption remain speculative."
+   },
+   "trl": {
+    "score": 8,
+    "reason": "GranaGard is a commercially available nano-formulated supplement with established human clinical data and clear IP protection surrounding its delivery mechanism. It has moved beyond the proof-of-concept laboratory phase into the regulated nutraceutical market with ongoing clinical trials for neurodegenerative applications."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The innovation relies on a natural extract (pomegranate seed oil) and a nanoformulation, which often faces high hurdles for non-obviousness and narrow patentable scope. Defensibility is limited as many nano-delivery methods for lipid-based botanical extracts are well-documented in existing prior art."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 2,
+  "hts_reason": "The paper identifies a complex mixture (pomegranate seed oil) rather than a specific molecular target, and lacks a defined assay or mechanism suitable for HTS. It functions more as a nutraceutical efficacy study than a target-based discovery paper.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42939250",
+  "title": "Nanoscale Characterization of Microscopically Layered Bone in the Russian Sturgeon Pectoral Fin Spine: A 3D FIB-SEM Study.",
+  "abstract": "",
+  "authors": [
+   "Esteban Marroquín-Arroyave",
+   "Joshua Milgram"
+  ],
+  "journal": "Animals : an open access journal from MDPI",
+  "date": "2026-10-21",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42939250/",
+  "source": "PubMed",
+  "pi": "Joshua Milgram",
+  "pi_affiliation": "Faculty of Agriculture Food & Environment, Koret School of Veterinary Medicine, Hebrew University Jerusalem, Rehovot 7610001, Israel.",
+  "pi_full_name": "Joshua Milgram",
+  "score": 11,
+  "summary": "The study uses focused ion beam scanning electron microscopy (FIB‑SEM) to map the nanoscale architecture of the layered bone in the pectoral fin spine of the Russian sturgeon, revealing detailed 3D structural organization. It provides insights into the hierarchical design and mechanical properties of this unique biomaterial.",
+  "opportunity": "The high‑resolution 3D imaging technique could be adapted to develop advanced bioinspired composite materials or to improve bone tissue engineering scaffolds, creating a niche market for biomaterials and regenerative medicine solutions.",
+  "fields": [
+   "Materials",
+   "Imaging"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The research appears to be a descriptive structural characterization study using established imaging techniques (FIB-SEM) on a specific biological specimen, rather than a development of a new methodology or a transformative biological discovery."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "The paper appears to be fundamental basic science focused on biological characterization rather than a technology platform or a therapeutic application. There is no clear indication of a scalable product, diagnostic tool, or industrial process derived from this specific morphological study."
+   },
+   "market_size": {
+    "score": 2,
+    "reason": "The research is a niche, fundamental biophysical study of a specific biological specimen (sturgeon fin spine) with no clear application to a scalable commercial market or industrial sector. The findings appear to be of academic interest in marine biology or histology rather than a platform for broad clinical or industrial demand."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This is a fundamental basic science study focused on descriptive morphological characterization using advanced imaging. It lacks a specific applied device, therapeutic application, or diagnostic utility that would move it toward a commercial technology."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The paper describes a fundamental biological characterization of natural tissue using standard imaging techniques (FIB-SEM), which is an observation of nature rather than a novel, patentable composition, method, or device. There is no indication of a proprietary tool, process, or synthetic application that provides industrial or clinical defensibility."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper describes structural characterization of anatomical features in a fish species and lacks a specific drug target, a human disease link, or a functional biochemical/cellular assay suitable for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42939776",
+  "title": "GPCRs as Partners of LGR5 Cancer Stem Cells: Opportunities and Challenges.",
+  "abstract": "",
+  "authors": [
+   "Jeetendra K Nag",
+   "Ganesh Subedi",
+   "Rachel Bar-Shavit"
+  ],
+  "journal": "Biomolecules",
+  "date": "2026-10-19",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42939776/",
+  "source": "PubMed",
+  "pi": "Rachel Bar-Shavit",
+  "pi_affiliation": "Sharett Institute of Oncology, Hadassah-Hebrew University Medical Center, Jerusalem 91120, Israel.",
+  "pi_full_name": "Rachel Bar-Shavit",
+  "score": 19,
+  "summary": "This research explores the interaction between G protein-coupled receptors (GPCRs) and LGR5-positive cancer stem cells, which are known drivers of tumor growth and metastasis. By mapping these signaling pathways, the paper identifies potential therapeutic vulnerabilities that could be targeted to eliminate stem-like cancer cells that often survive conventional treatments.",
+  "opportunity": "The identification of specific GPCR-LGR5 protein interactions provides a high-value roadmap for developing novel, targeted antibody or small-molecule therapies for aggressive, drug-resistant solid tumors.",
+  "fields": [
+   "Drug Discovery",
+   "Genomics",
+   "Immunology",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "This paper is a review article summarizing established interactions between GPCRs and LGR5, rather than reporting a novel experimental breakthrough or a new platform technology. It serves as a synthesis of existing literature rather than an advancement of the field's fundamental understanding or therapeutic pipeline."
+   },
+   "commercial_potential": {
+    "score": 5,
+    "reason": "The title suggests a high-level scientific review or mechanistic study rather than a specific therapeutic candidate or platform technology. While identifying GPCR-LGR5 interactions provides valuable biological context for drug discovery, the paper itself appears to be foundational research rather than a direct commercial asset."
+   },
+   "market_size": {
+    "score": 7,
+    "reason": "Targeting cancer stem cells via GPCR signaling addresses a massive, multi-billion dollar oncology market; however, the specific focus on LGR5 pathways represents a niche subset of cancer biology rather than a broad-spectrum therapeutic platform."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The title indicates a review or theoretical paper exploring biological mechanisms and research opportunities rather than a report on a specific, developed therapeutic or platform. It sits at the foundational discovery stage of the R&D lifecycle."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The title indicates this is a scientific review paper rather than original research presenting new compositions, methods, or molecular entities. Review papers synthesize existing knowledge and lack the novel, patentable subject matter required for high IP strength."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 2,
+  "hts_reason": "The title indicates this is a review paper ('Opportunities and Challenges') rather than a primary research study; it discusses broad gene families (GPCRs, LGR5) rather than a specific new molecule and lacks a described assay.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42938907",
+  "title": "ExacTrac Dynamic Surface-Guided Setup Versus Tattoo-Based Positioning in Breast Cancer Radiotherapy: A Retrospective Comparison of Setup Accuracy and Preparation Time.",
+  "abstract": "",
+  "authors": [
+   "Bilal Krayim",
+   "Adar Yaacov",
+   "Mohammad Abu Myala",
+   "Muhammad Awad",
+   "Dolev Kahla",
+   "Basel Afifi",
+   "Basil Dabbah",
+   "Roni Gillis",
+   "Albert Grinshpun",
+   "Areen Abu Ramila",
+   "Amir Abramovich",
+   "Hila Rosenfield",
+   "Nir Honig",
+   "Sion Koren",
+   "Sharon Rigler",
+   "Raphael Pfeffer",
+   "Aaron M Allen"
+  ],
+  "journal": "Cancers",
+  "date": "2026-10-19",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42938907/",
+  "source": "PubMed",
+  "pi": "Aaron M Allen",
+  "pi_affiliation": "Helmsley Cancer Center-Shaare Zedek Medical Center, The Hebrew University of Jerusalem, Shmuel Bait 12, Jerusalem 9103102, Israel.",
+  "pi_full_name": "Aaron M Allen",
+  "score": 24,
+  "summary": "The study compares a dynamic surface‑guided positioning system (ExacTrac) with traditional tattoo‑based setup for breast cancer radiotherapy, assessing accuracy and preparation time. Results suggest the surface‑guided method may improve setup precision while reducing patient preparation effort.",
+  "opportunity": "A commercial opportunity exists to develop or license advanced surface‑guided positioning systems that enhance radiotherapy accuracy and workflow efficiency for oncology clinics.",
+  "fields": [
+   "Medical Device",
+   "Imaging",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The paper describes a retrospective clinical comparison of existing technologies (ExacTrac vs. traditional tattooing) rather than the introduction of a new invention or breakthrough methodology. It evaluates clinical performance and workflow efficiency of known tools rather than proposing a novel scientific paradigm."
+   },
+   "commercial_potential": {
+    "score": 4,
+    "reason": "The paper describes a clinical performance comparison of an existing technology (ExacTrac) rather than the development of a new, protectable asset or platform. While it validates clinical utility, the work is descriptive of current workflows rather than presenting a novel commercializable product or IP."
+   },
+   "market_size": {
+    "score": 6,
+    "reason": "The technology targets a specific clinical workflow within radiation oncology (breast cancer setup), representing a significant but niche segment of the radiotherapy market. While clinically relevant, it addresses a procedural optimization rather than a broad, platform-enabling market expansion."
+   },
+   "trl": {
+    "score": 9,
+    "reason": "The study evaluates a clinical comparison between two existing technological workflows (surface-guided vs. tattoo-based), indicating the technology is already integrated into clinical practice and near-market/market-ready."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The paper is a retrospective clinical validation study comparing existing technologies (ExacTrac vs. traditional tattooing), which evaluates clinical efficacy rather than novel, patentable hardware or software IP."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper focuses on radiotherapy positioning techniques and medical imaging accuracy rather than molecular biology; it identifies no specific molecule or target and provides no biochemical assay for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42941454",
+  "title": "Routine Pringle Maneuver During Recipient Hepatectomy Is Associated with Improved Perioperative and Early Graft Outcomes After Adult Liver Transplantation.",
+  "abstract": "",
+  "authors": [
+   "Ashraf Imam",
+   "Ahmad Salhab",
+   "Suha Shabaneh",
+   "Michael Rivin",
+   "Alaa Altiti",
+   "Mohammad Emar",
+   "Natalia Kuzmina",
+   "Penina Yehudit Dienstag",
+   "Rifaat Safadi",
+   "Abed Khalaileh"
+  ],
+  "journal": "Journal of clinical medicine",
+  "date": "2026-10-14",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42941454/",
+  "source": "PubMed",
+  "pi": "Abed Khalaileh",
+  "pi_affiliation": "Transplantation Unit, Department of Surgery, Hadassah Medical Organization, Hadassah-Hebrew University, Jerusalem 9112001, Israel.",
+  "pi_full_name": "Abed Khalaileh",
+  "score": 19,
+  "summary": "This clinical study examines how performing a routine Pringle maneuver—a technique to temporarily restrict blood flow to the liver—during the removal of a recipient's liver impacts surgical outcomes. The research suggests that this standardizing procedure leads to better recovery and graft success for adult liver transplant patients.",
+  "opportunity": "The findings support the development of specialized surgical training platforms or real-time hemodynamic monitoring devices designed to optimize the timing and execution of blood flow restriction during complex transplant surgeries.",
+  "fields": [
+   "Clinical",
+   "Medical Device"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The paper investigates a procedural modification (Pringle maneuver) of an existing surgical technique rather than introducing a novel biological mechanism or a new technology. It represents incremental clinical optimization of established surgical practice rather than a groundbreaking scientific innovation."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "This is a clinical observation/observational study regarding a surgical technique rather than a new device, drug, or platform technology. It suggests an optimization of existing surgical practice rather than the creation of a new, licensable, or protectable commercial product."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "The study focuses on a specific surgical technique (the Pringle maneuver) within the highly specialized and relatively low-volume niche of adult liver transplantation. While clinically relevant for improving patient outcomes, the market is limited to specialized transplant centers and does not represent a broad-scale therapeutic or device market."
+   },
+   "trl": {
+    "score": 9,
+    "reason": "The paper evaluates a surgical technique (Pringle Maneuver) already in clinical use, meaning the technology is fully deployed in real-world medical practice. The study focuses on optimizing the application of an existing standard of care rather than developing a new prototype."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The study describes a surgical technique rather than a novel device or drug, offering limited patentability and defensibility; such procedural improvements are generally difficult to protect under IP law."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper describes a surgical technique (Pringle maneuver) and clinical outcomes rather than identifying a specific molecular target or providing a biochemical assay suitable for high-throughput screening.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42941725",
+  "title": "Epigallocatechin-3-Gallate Restores the Pulmonary Keap1-Nrf2-HO-1 Pathway and Attenuates Bile Acid-Associated Lung Injury in a Mouse Model of MASH.",
+  "abstract": "",
+  "authors": [
+   "Ahmad Salhab",
+   "Johnny Amer",
+   "Rifaat Safadi"
+  ],
+  "journal": "International journal of molecular sciences",
+  "date": "2026-10-09",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42941725/",
+  "source": "PubMed",
+  "pi": "Rifaat Safadi",
+  "pi_affiliation": "The Liver Institute, Gastroenterology Institute, Hadassah-Hebrew University Hospital, Jerusalem 91120, Israel.",
+  "pi_full_name": "Rifaat Safadi",
+  "pi_email": "rifaat.safadi2@gmail.com",
+  "score": 21,
+  "summary": "Researchers found that a compound from green tea (EGCG) can protect lung tissue from damage caused by bile acid buildup in mice with metabolic dysfunction-associated steatohepatitis (MASH). The study demonstrates that this compound reactivates a specific antioxidant pathway to mitigate pulmonary injury associated with liver disease.",
+  "opportunity": "Development of specialized nutraceuticals or pharmaceutical therapeutics targeting the lung-liver axis to prevent pulmonary complications in patients with metabolic liver diseases.",
+  "fields": [
+   "Drug Discovery",
+   "Immunology",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The research explores a well-known polyphenol (EGCG) acting on a highly characterized antioxidant pathway (Nrf2/HO-1) to treat a known complication of MASH. While the specific application to bile acid-induced lung injury may add incremental mechanistic knowledge, the molecular components and the intervention itself lack fundamental scientific novelty."
+   },
+   "commercial_potential": {
+    "score": 4,
+    "reason": "While the mechanism identifies a specific therapeutic target for MASH-related lung injury, the use of EGCG (a well-known, non-patentable dietary polyphenol) limits the ability to develop a proprietary, high-margin drug product or licensable technology."
+   },
+   "market_size": {
+    "score": 8,
+    "reason": "The research targets Metabolic Dysfunction-Associated Steatohepatitis (MASH), a massive and growing therapeutic market with significant unmet medical need and high commercial value. Furthermore, the focus on the Keap1-Nrf2 pathway suggests potential platform applicability for broader oxidative stress-related pulmonary and metabolic indications."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The research is currently in the preclinical stage, demonstrating efficacy in a murine (mouse) model rather than human clinical trials. While it identifies a biological mechanism, it remains in the basic/translational research phase required to establish proof-of-concept."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The study focuses on EGCG, a well-known, naturally occurring polyphenolic compound with extensive prior art, making it extremely difficult to secure broad composition-of-matter patents. Defensibility is limited to narrow, potentially weak secondary use claims for a specific mechanistic pathway in a known disease context."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 9,
+  "hts_reason": "The paper identifies a specific molecule (EGCG) and a specific target pathway (Keap1-Nrf2-HO-1) linked to a specific disease (Bile acid-associated lung injury in MASH). The title implies a measurable mechanistic effect that can be validated through biochemical or cellular assays.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42939870",
+  "title": "CDDO-EA Attenuates Acute Seizures and Suppresses Post-Status Epilepticus Epileptogenesis.",
+  "abstract": "",
+  "authors": [
+   "Yara Sheeni",
+   "Prince Kumar Singh",
+   "Shweta Maurya",
+   "Sereen Sandouka",
+   "Tawfeeq Shekh-Ahmad"
+  ],
+  "journal": "Antioxidants (Basel, Switzerland)",
+  "date": "2026-10-07",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42939870/",
+  "source": "PubMed",
+  "pi": "Tawfeeq Shekh-Ahmad",
+  "pi_affiliation": "The Institute for Drug Research, The School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 91120, Israel.",
+  "pi_full_name": "Tawfeeq Shekh-Ahmad",
+  "pi_email": "Tawfeeq.Shekh-Ahmad@mail.huji.ac.il",
+  "score": 25,
+  "summary": "The research demonstrates that the compound CDDO-EA can reduce the severity of immediate seizures and prevent the long-term development of epilepsy following a seizure event. This study focuses on a chemical intervention to mitigate both acute neurological distress and the chronic progression of brain disorders.",
+  "opportunity": "Development of a first-in-class neuroprotective pharmaceutical for the prevention of post-traumatic epilepsy and seizure management.",
+  "fields": [
+   "Drug Discovery",
+   "Neuroscience",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 4,
+    "reason": "The study evaluates CDDO-EA, a known triterpenoid with established anti-inflammatory properties, applying it to a standard epilepsy model rather than introducing a novel chemical entity or a fundamentally new biological mechanism."
+   },
+   "commercial_potential": {
+    "score": 6,
+    "reason": "The research identifies a specific therapeutic candidate (CDDO-EA) for a high-need neurological indication, suggesting clear drug development or licensing potential. However, without an abstract, the lack of data on pharmacokinetics, toxicity, or delivery mechanisms prevents a higher assessment of its clinical translatability."
+   },
+   "market_size": {
+    "score": 8,
+    "reason": "Epilepsy affects approximately 50 million people globally, and the specific focus on preventing post-status epilepticus epileptogenesis addresses a high-need, multi-billion dollar unmet clinical market. The drug-repurposing potential of CDDO-EA, a potent Nrf2 activator, allows for a viable and scalable pathway into a substantial, well-defined neuro-therapeutic market."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "This study is in the early preclinical stage using a rodent model to investigate mechanism of action and efficacy, which is far from clinical validation or regulatory approval. While the compound CDDO-EA is a known Nrf2 activator, establishing its utility for epilepsy requires significant translational development, including safety and toxicology profiling."
+   },
+   "ip_strength": {
+    "score": 4,
+    "reason": "CDDO-EA (omaveloxolone) is a well-characterized synthetic triterpenoid with significant prior art and existing patent estates held by Reata Pharmaceuticals (now Biogen), limiting the opportunity for novel composition-of-matter IP. The innovation here is restricted to a new therapeutic indication (repurposing), which typically offers narrower, more difficult-to-defend patent protection compared to original chemical entities."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 7,
+  "hts_reason": "The paper identifies a specific molecule (CDDO-EA) and links it to a specific disease (epilepsy), but it lacks a clearly defined molecular target or an established high-throughput screening assay format for that target.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42940635",
+  "title": "Association Between Health-Related Quality of Life and Ultrasound-Based Transverse Rectal Diameter in Pediatric Functional Constipation.",
+  "abstract": "",
+  "authors": [
+   "Pola Waissman",
+   "Shimon Reif",
+   "Yaniv Nudelman",
+   "Michael Wilschanski",
+   "Shmuel Springer",
+   "Mordechai Slae"
+  ],
+  "journal": "Children (Basel, Switzerland)",
+  "date": "2026-09-27",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42940635/",
+  "source": "PubMed",
+  "pi": "Mordechai Slae",
+  "pi_affiliation": "Department of Pediatrics, Hadassah-Hebrew University Medical Center, Jerusalem 9112001, Israel.",
+  "pi_full_name": "Mordechai Slae",
+  "score": 14,
+  "summary": "This study investigates the relationship between a patient's perceived quality of life and specific anatomical measurements of the rectum obtained via ultrasound in children with functional constipation. It aims to determine if ultrasound-based transverse rectal diameter can serve as a meaningful objective marker for the severity of pediatric gastrointestinal dysfunction.",
+  "opportunity": "Development of specialized pediatric ultrasound protocols or software tools to objectively quantify rectal morphology for more accurate diagnosis and treatment monitoring of functional constipation.",
+  "fields": [
+   "Medical Device",
+   "Diagnostics",
+   "Imaging",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The paper appears to be a clinical correlation study establishing a relationship between an existing imaging metric and patient-reported outcomes, rather than introducing a new technology or a fundamentally novel physiological discovery."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "The paper describes a clinical association rather than a novel device, diagnostic tool, or therapeutic intervention, suggesting it is primarily academic research rather than a direct commercial product."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "The study focuses on a highly specific clinical correlation in a niche pediatric sub-population, suggesting a limited addressable market for a dedicated diagnostic tool or intervention. It lacks evidence of platform potential or broad scalability into larger therapeutic or diagnostic markets."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The paper describes a clinical association study rather than a tool or device development, placing it at a basic research/observational stage. It establishes a diagnostic correlation but lacks the engineering or validation components required for higher TRL levels."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The paper describes a clinical association/correlation study rather than a novel device, method, or composition of matter. Observational clinical data regarding a metric (rectal diameter) lacks the technical novelty or non-obviousness required for patent protection."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 2,
+  "hts_reason": "The paper is a clinical observational study focusing on an anatomical measurement (transverse rectal diameter) rather than a molecular target or chemical entity suitable for high-throughput screening.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42934230",
+  "title": "Cortex-wide laminar dynamics diverge during learning.",
+  "abstract": "",
+  "authors": [
+   "Yael E Pollak",
+   "Robert N S Sachdev",
+   "Matthew E Larkum",
+   "Ariel Gilad"
+  ],
+  "journal": "Nature communications",
+  "date": "2026-09-26",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42934230/",
+  "source": "PubMed",
+  "pi": "Ariel Gilad",
+  "pi_affiliation": "Department of Medical Neurobiology, Faculty of Medicine, The Institute for Medical Research Israel-Canada (IMRIC), The Hebrew University of Jerusalem, Jerusalem, Israel. ariel.gilad@mail.huji.ac.il.",
+  "pi_full_name": "Ariel Gilad",
+  "pi_email": "ariel.gilad@mail.huji.ac.il.",
+  "score": 15,
+  "summary": "The research investigates how neural activity patterns across different layers of the cerebral cortex change and become more distinct as an organism learns new tasks. It specifically maps how these laminar dynamics evolve to represent information more efficiently during the learning process.",
+  "opportunity": "This fundamental discovery of cortical layer patterns could drive the development of high-fidelity brain-computer interfaces and more biologically accurate neuromorphic AI architectures.",
+  "fields": [
+   "Neuroscience",
+   "Software/AI",
+   "Medical Device"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 6,
+    "reason": "The paper addresses a fundamental question in systems neuroscience regarding how cortical architecture changes during plasticity, but the concept of laminar-specific shifts during learning is a logical extension of existing circuit-level theories rather than a paradigm-shifting discovery."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "The paper appears to be fundamental basic neuroscience research focused on mechanistic understanding of cortical architecture rather than a direct technological application. While it may eventually inform neurotechnology, it lacks an immediate pathway to a product, service, or licensable tool."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "The paper focuses on fundamental neuroscience and basic biological mechanisms of cortical learning, which lacks direct commercial application or a defined addressable market. While scientifically significant, it represents basic research rather than a product or platform with immediate industrial or clinical market demand."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This is fundamental basic neuroscience research focused on characterizing cortical mechanics during learning, which lacks direct clinical application or a developed technological platform."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The paper appears to be basic academic neuroscience research focused on fundamental biological mechanisms, which typically describes natural phenomena that are difficult to patent. Without a specific tool, method, or therapeutic application mentioned, there is little to no proprietary defensibility or industrial IP potential."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The title indicates a descriptive study on neurophysiological dynamics rather than the identification of a specific molecular target, disease link, or a druggable assay suitable for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42934212",
+  "title": "Alteromonas macleodii breaches the diatom frustule triggering protoplast emergence and programmed necrosis-like death in Thalassiosira rotula.",
+  "abstract": "",
+  "authors": [
+   "Isobel Short",
+   "Clara Martínez-Pérez",
+   "Samuel Miravet-Verde",
+   "Shinichi Sunagawa",
+   "Roman Stocker",
+   "Uria Alcolombri"
+  ],
+  "journal": "Nature communications",
+  "date": "2026-09-26",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42934212/",
+  "source": "PubMed",
+  "pi": "Uria Alcolombri",
+  "pi_affiliation": "Department of Plant and Environmental Sciences, Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel. uria.alcolombri@mail.huji.ac.il.",
+  "pi_full_name": "Uria Alcolombri",
+  "pi_email": "uria.alcolombri@mail.huji.ac.il.",
+  "score": 14,
+  "summary": "The research describes a specific biological mechanism where the bacterium Alteromonas macleodii physically penetrates the protective silica shells of diatoms to trigger cell death. This study details the precise interaction between bacterial infection and the structural failure of diatom frustules.",
+  "opportunity": "Understanding these microbial-silica interactions can inform the development of targeted biocontrol agents for aquaculture or enhance the engineering of bio-silica materials in nanotechnology.",
+  "fields": [
+   "Synthetic Biology",
+   "AgriTech",
+   "Materials"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 4,
+    "reason": "The study describes a specific mechanism of host-pathogen interaction (bacterial breach of a diatom frustule) which, while ecologically interesting, appears to be a specialized observation of a known biological phenomenon rather than a platform-enabling or groundbreaking scientific paradigm shift."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "The paper describes a fundamental mechanistic study of microbial-algal interactions, which lacks a direct path to a product or service without significant downstream engineering. While potentially useful for niche ecological modeling or specialized biocontrol research, it does not present a clear platform or scalable industrial application."
+   },
+   "market_size": {
+    "score": 2,
+    "reason": "The paper describes a specific mechanistic interaction between a bacterium and a diatom, which is fundamental biological research with no direct indication of a scalable industrial or commercial application. Without a defined use case in biotechnology, aquaculture, or carbon sequestration, the addressable market is negligible."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The paper describes fundamental mechanistic observations of microbial-diatom interactions at a cellular level, representing basic biological research rather than a developed technology or application."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The paper describes a fundamental biological mechanism of host-pathogen interaction rather than a novel tool, composition, or method. While the observation is scientifically valuable, it lacks inherent patentable utility or a clear pathway to an industrial/defensible technological application."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 2,
+  "hts_reason": "The paper describes a biological interaction between a bacterium and a diatom (marine ecology) rather than a human disease or medical target, and lacks a specific molecular target or druggable assay for HTS applications.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42940773",
+  "title": "Modern Solvation Thermodynamics from Macroscopic to Microscopic Approach.",
+  "abstract": "",
+  "authors": [
+   "Arieh Ben-Naim"
+  ],
+  "journal": "Entropy (Basel, Switzerland)",
+  "date": "2026-09-24",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42940773/",
+  "source": "PubMed",
+  "pi": "Arieh Ben-Naim",
+  "pi_affiliation": "Department of Physical Chemistry, The Hebrew University of Jerusalem, Edmond Safra Campus, Givat Ram, Jerusalem 91904, Israel.",
+  "pi_full_name": "Arieh Ben-Naim",
+  "score": 15,
+  "summary": "This research develops a multi-scale framework to bridge the gap between macroscopic thermodynamic observations and microscopic molecular interactions during solvation. It provides a more precise method for predicting how substances dissolve and interact within complex liquid environments.",
+  "opportunity": "The ability to accurately model solvation dynamics enables the high-fidelity digital simulation of drug-target interactions and the design of novel functional materials at the molecular level.",
+  "fields": [
+   "Drug Discovery",
+   "Materials",
+   "Software/AI",
+   "Synthetic Biology"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The title suggests a methodological refinement or an integrative review of existing thermodynamic frameworks rather than the introduction of a fundamentally new physical principle or disruptive technology. Without an abstract, the scope appears to be incremental optimization of multi-scale modeling rather than groundbreaking scientific innovation."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "The title suggests a fundamental, theoretical advancement in physical chemistry rather than a specific application or platform. While solvation thermodynamics is foundational to drug discovery, the lack of a defined application or specialized tool makes the immediate commercial path highly indirect and academic."
+   },
+   "market_size": {
+    "score": 4,
+    "reason": "The title suggests a fundamental physical chemistry methodology rather than a specific product or application, making the direct addressable market unclear. While foundational thermodynamics can enable many sectors, the lack of a defined industrial use case (e.g., drug formulation, battery electrolytes, or catalysis) limits the ability to quantify market demand."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The title indicates fundamental research into theoretical and physical chemistry frameworks rather than a specific product or application. This represents basic science (TRL 1-2) aimed at expanding foundational knowledge rather than developing a prototype or near-market technology."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The title suggests a theoretical or computational framework involving fundamental thermodynamic principles, which are generally considered laws of nature and difficult to patent. While the methodology may be proprietary, the core innovation lacks the clear structural or chemical embodiment typically required for high IP defensibility."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The title indicates a theoretical review of thermodynamics rather than a study identifying a specific biological target, disease link, or screening assay.",
+  "hts_eval_model": "gemini-3.1-flash-lite"
+ },
+ {
+  "id": "pubmed_42932803",
+  "title": "\"Do not make us feel crazy\": From otherness to social responsibility toward those who experienced childhood sexual abuse.",
+  "abstract": "",
+  "authors": [
+   "Agat Sold",
+   "Carmit Katz"
+  ],
+  "journal": "The American journal of orthopsychiatry",
+  "date": "2026-10-26",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42932803/",
+  "source": "PubMed",
+  "pi": "Carmit Katz",
+  "pi_affiliation": "Haruv Institute, Paul Baerwald School of Social Work and Social Welfare, Hebrew University of Jerusalem.",
+  "pi_full_name": "Carmit Katz",
+  "score": 6,
+  "summary": "This paper explores the sociological and psychological transitions from social exclusion to collective responsibility for survivors of childhood sexual abuse. It focuses on the lived experiences of individuals and how societal frameworks impact their reintegration and mental health.",
+  "opportunity": "There is no direct commercial opportunity in deep-tech or life sciences, as this is a qualitative sociological study rather than a technical or clinical breakthrough.",
+  "fields": [
+   "Other"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 2,
+    "reason": "The title suggests a qualitative sociological or psychological study focused on lived experience and social responsibility, which follows established academic frameworks rather than introducing a novel scientific mechanism or technological breakthrough."
+   },
+   "commercial_potential": {
+    "score": 1,
+    "reason": "The title indicates a qualitative sociological or psychological study focused on social responsibility and lived experience, which lacks a tangible technological, pharmaceutical, or platform-based application for commercialization."
+   },
+   "market_size": {
+    "score": 1,
+    "reason": "The paper appears to be a qualitative sociological or psychological study rather than a commercial product, technology, or therapeutic intervention with a quantifiable market. It lacks a scalable business model or an addressable industrial demand."
+   },
+   "trl": {
+    "score": 1,
+    "reason": "This appears to be a qualitative sociological or psychological study focused on social perception and lived experience rather than a technical, medical, or deep-tech intervention. It lacks a tangible technology, product, or clinical tool to advance through a readiness scale."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "The paper appears to be a qualitative sociological or psychological study focused on social responsibility and human experience, which lacks patentable technology, proprietary algorithms, or industrializable assets."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper is a qualitative sociological or psychological study; it does not identify a molecular target, a specific biological disease mechanism, or a laboratory assay suitable for high-throughput screening.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42932471",
+  "title": "AI-Assisted Molecular Review Refines SMO Inhibitor Candidacy in SHH Medulloblastoma.",
+  "abstract": "",
+  "authors": [
+   "Chen Buxbaum",
+   "Anat Yahav-Dovrat",
+   "Yael Fisher",
+   "Haim Zilberman",
+   "Tali Siegal"
+  ],
+  "journal": "NEJM AI",
+  "date": "2026-10-26",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42932471/",
+  "source": "PubMed",
+  "pi": "Tali Siegal",
+  "pi_affiliation": "Neuro-Oncology Unit, Rambam Health Care Campus, Haifa, Israel.; Hebrew University and Hadassah Medical School, Jerusalem, Israel.",
+  "pi_full_name": "Tali Siegal",
+  "score": 20,
+  "summary": "Researchers used artificial intelligence to evaluate and refine potential Smoothened (SMO) inhibitor candidates for treating Sonic Hedgehog (SHH) medulloblastoma, a specific type of brain cancer. This approach aims to identify more effective molecular compounds by leveraging AI to streamline the traditional drug selection process.",
+  "opportunity": "Development of AI-driven drug discovery platforms specifically optimized for high-precision oncology and rare pediatric brain tumors.",
+  "fields": [
+   "Drug Discovery",
+   "Software/AI",
+   "Neuroscience",
+   "Clinical"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The work appears to be an application of existing AI methodologies to a known target (SMO) and a well-characterized disease state (SHH Medulloblastoma), suggesting incremental optimization rather than a novel biological discovery or a breakthrough algorithmic framework."
+   },
+   "commercial_potential": {
+    "score": 6,
+    "reason": "The work demonstrates a clear application of AI to accelerate drug discovery for a high-need pediatric indication, but lacks specific details on the novelty of the molecule or the scalability of the AI platform for broader licensing."
+   },
+   "market_size": {
+    "score": 4,
+    "reason": "The market is limited to a highly specific orphan indication (SHH Medulloblastoma), which implies a small patient population and a niche commercial opportunity."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The research focuses on computational refinement of molecular candidates, which indicates a preclinical/in silico stage rather than animal models or clinical trials. It represents early-stage discovery rather than a near-market therapeutic."
+   },
+   "ip_strength": {
+    "score": 4,
+    "reason": "The innovation appears to be an application of AI to existing molecular targets (SMO inhibitors) rather than the discovery of a novel chemical entity or a proprietary platform, making it difficult to defend against competitors using similar computational workflows."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 9,
+  "hts_reason": "The paper identifies a specific target (SMO inhibitor), links it to a specific disease (SHH Medulloblastoma), and implies a screening/refinement methodology for molecular candidacy.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42929797",
+  "title": "Assembly of negatively charged gold nanoparticles induced by a negatively charged polysaccharide (gum arabic).",
+  "abstract": "",
+  "authors": [
+   "Tal Zeharia",
+   "Yael Schiltt",
+   "Ariel Cohen",
+   "Uri Raviv",
+   "Yael Levi-Kalisman",
+   "Rachel Yerushalmi-Rozen"
+  ],
+  "journal": "Nanoscale",
+  "date": "2026-10-26",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42929797/",
+  "source": "PubMed",
+  "pi": "Yael Levi-Kalisman",
+  "pi_affiliation": "The Center for Nanoscience and Nanotechnology, The Hebrew University, Jerusalem 9190401, Israel. uri.raviv@mail.huji.ac.il.",
+  "pi_full_name": "Yael Levi-Kalisman",
+  "pi_email": "uri.raviv@mail.huji.ac.il.",
+  "score": 14,
+  "summary": "Researchers have developed a method to assemble gold nanoparticles using gum arabic, a natural polysaccharide, to overcome electrostatic repulsion between like charges. This technique allows for the controlled organization of gold particles into structures that would otherwise remain dispersed.",
+  "opportunity": "This provides a scalable, bio-based method for synthesizing functionalized nanostructures used in high-precision medical diagnostics and advanced material coatings.",
+  "fields": [
+   "Diagnostics",
+   "Materials",
+   "FoodTech"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The assembly of charged nanoparticles using polyelectrolytes is a well-established phenomenon in colloidal science, and the use of gum arabic as a stabilizer is a standard technique in nanotechnology. The work appears to be an incremental application of known electrostatic principles rather than a groundbreaking scientific discovery."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "The research describes a fundamental physicochemical phenomenon (self-assembly via electrostatic repulsion/bridging) rather than a specific application or therapeutic platform. Without a defined use case in diagnostics, drug delivery, or materials science, the commercial translation remains highly speculative."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "The paper describes a niche material science phenomenon involving specific nanoparticle assembly that lacks a clearly defined industrial or clinical application. Without an application context, the addressable market is restricted to basic research reagents rather than a scalable commercial market."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The paper describes a fundamental material assembly process at the benchtop level, focusing on chemical characterization rather than device integration or application testing. It represents early-stage laboratory research (TRL 3) without evidence of functional prototyping or performance validation in a target environment."
+   },
+   "ip_strength": {
+    "score": 2,
+    "reason": "The phenomenon of nanoparticle aggregation induced by natural polymers like gum arabic is a well-documented topic in fundamental colloid science, making it extremely difficult to claim novelty or obtain broad patent protection. The mechanism relies on common electrostatic interactions and existing material properties that lack the non-obviousness required for strong IP."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper describes a physical chemistry phenomenon involving nanoparticle assembly and lacks a specific disease link and a biological assay suitable for HTS drug discovery.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42931259",
+  "title": "Direct Comparison of Two Commonly Used Prenatal Valproate Doses Identifies Different Sex- and Age-Related Neurobehavioral Outcomes Across Development.",
+  "abstract": "",
+  "authors": [
+   "Maria Becker",
+   "Denis Gorobets",
+   "Boniface Ezenwata Echefu",
+   "Akiva Juroviesky",
+   "Anna Beylis",
+   "Aviv Sela",
+   "Asher Ornoy"
+  ],
+  "journal": "NeuroSci",
+  "date": "2026-10-19",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42931259/",
+  "source": "PubMed",
+  "pi": "Asher Ornoy",
+  "pi_affiliation": "Department of Morphological Sciences and Teratology, Adelson School of Medicine, Ariel University, Ariel 40700, Israel.; Hadassah Medical School, Hebrew University, Jerusalem 91010, Israel.",
+  "pi_full_name": "Asher Ornoy",
+  "pi_email": "ornoy@cc.huji.ac.il",
+  "score": 13,
+  "summary": "This research compares how different doses of the prenatal medication valproate influence neurobehavioral development differently based on the sex and age of the offspring. The findings highlight specific developmental windows and demographic variables that dictate the long-term neurological impact of drug exposure.",
+  "opportunity": "The study provides critical data for precision medicine and risk-stratification tools to optimize prenatal drug dosing and mitigate developmental neurotoxicity.",
+  "fields": [
+   "Neuroscience",
+   "Clinical",
+   "Drug Discovery"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 4,
+    "reason": "The study appears to be a comparative observational or clinical study of existing drug dosages rather than the discovery of a new molecule, mechanism, or platform technology. While it provides valuable clinical nuance regarding sex and age variables, it follows a standard incremental research paradigm rather than introducing a groundbreaking scientific innovation."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "This is an observational clinical study focusing on neurobehavioral outcomes rather than the development of a new therapeutic, diagnostic tool, or proprietary technology. While it provides valuable safety data for risk management, it lacks a direct path to a protectable product or a scalable commercial platform."
+   },
+   "market_size": {
+    "score": 3,
+    "reason": "The study focuses on refining clinical dosing guidelines for a specific, existing drug (Valproate) rather than addressing a broad therapeutic market or identifying a new commercial opportunity. The market impact is limited to incremental optimization of specialized prenatal care rather than large-scale clinical or industrial expansion."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "This is fundamental basic research identifying neurobehavioral outcomes in a developmental model, which serves to understand mechanisms rather than providing a ready-to-use clinical tool or intervention."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This is an observational clinical study comparing existing dosages of a known drug; it identifies phenotypic outcomes rather than developing a novel composition, molecule, or proprietary delivery system."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 2,
+  "hts_reason": "The paper focuses on dose-response outcomes of an existing drug (Valproate) in developmental biology rather than identifying a new molecular target or providing a scalable biochemical/cellular assay for HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42929868",
+  "title": "S-Adenosylmethionine Depletion as Potential Rate-Limiting Nexus of Redox-Epigenetic Crosstalk in Neural Tube Defects: A Mechanistic Theory and Experimental Hypothesis.",
+  "abstract": "",
+  "authors": [
+   "Boniface Ezenwata Echefu",
+   "Maria Becker",
+   "Asher Ornoy"
+  ],
+  "journal": "Cells",
+  "date": "2026-10-17",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42929868/",
+  "source": "PubMed",
+  "pi": "Asher Ornoy",
+  "pi_affiliation": "Department of Morphological Sciences and Teratology, Adelson School of Medicine, Ariel University, Ariel 40700, Israel.; Hadassah Medical School, Hebrew University of Jerusalem, Jerusalem 91010, Israel.",
+  "pi_full_name": "Asher Ornoy",
+  "pi_email": "ornoy@cc.huji.ac.il",
+  "score": 14,
+  "summary": "The research proposes a new mechanistic link between oxidative stress and epigenetic changes in the development of neural tube defects, specifically focusing on the role of S-adenosylmethionine depletion. It suggests that imbalances in the redox state can disrupt methylation processes essential for proper embryonic development.",
+  "opportunity": "Development of targeted nutritional interventions or metabolic diagnostics to prevent neural tube defects during pregnancy through redox-epigenetic monitoring.",
+  "fields": [
+   "Drug Discovery",
+   "Diagnostics",
+   "Neuroscience",
+   "Genomics"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 4,
+    "reason": "The title suggests a mechanistic hypothesis connecting metabolic depletion to epigenetic changes, which is a known area of study in developmental biology rather than a novel biological discovery. While the specific nexus proposed may offer incremental insight, it lacks the indication of a paradigm-shifting or platform-enabling breakthrough."
+   },
+   "commercial_potential": {
+    "score": 3,
+    "reason": "The paper proposes a fundamental mechanistic theory and hypothesis rather than a specific therapeutic molecule or diagnostic tool. While the biological nexus identified could eventually inform drug discovery, the current work lacks a direct path to a product or a clearly defined IP-protectable application."
+   },
+   "market_size": {
+    "score": 2,
+    "reason": "This paper proposes a biochemical mechanism related to rare congenital anomalies, which represents a highly narrow, low-incidence clinical niche rather than a broad, commercially scalable market. The focus on a specific developmental pathway lacks immediate industrial application or a large patient population typical of high-growth biotech ventures."
+   },
+   "trl": {
+    "score": 2,
+    "reason": "The title indicates the work is at the fundamental mechanistic theory and hypothesis-testing stage, focusing on biochemical pathways rather than a developed therapeutic or diagnostic tool. It represents early-stage basic research (discovery science) rather than a technology ready for preclinical or clinical validation."
+   },
+   "ip_strength": {
+    "score": 3,
+    "reason": "The paper describes a mechanistic theory and biological hypothesis regarding a metabolic pathway, which is inherently difficult to patent compared to novel molecules or devices. Without specific actionable targets, unique chemical entities, or proprietary diagnostic assays, the core concept remains a discovery of natural biological phenomena."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 5,
+  "hts_reason": "The paper identifies a specific biochemical target (S-Adenosylmethionine) and links it to a specific condition (Neural Tube Defects), but lacks details on a specific assay or method for high-throughput testing.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42929989",
+  "title": "The Impact of Pre- Versus Post-Transplant Multidrug-Resistant Organism Colonization on Liver Transplant Outcomes: A Retrospective Cohort Study.",
+  "abstract": "",
+  "authors": [
+   "Emil Aliev",
+   "Efrat Orenbuch-Harroch",
+   "Abed Khalaileh",
+   "Ashraf Imam",
+   "Matan Joel Cohen",
+   "Maya Korem"
+  ],
+  "journal": "Diseases (Basel, Switzerland)",
+  "date": "2026-10-01",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42929989/",
+  "source": "PubMed",
+  "pi": "Maya Korem",
+  "pi_affiliation": "Department of Clinical Microbiology and Infectious Diseases, Hadassah Medical Center, Jerusalem 91120, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem 91120, Israel.",
+  "pi_full_name": "Maya Korem",
+  "score": 20,
+  "summary": "This study examines how being colonized by multidrug-resistant organisms before versus after a liver transplant affects patient survival and clinical outcomes. It aims to identify if early detection of resistant bacteria can improve postoperative management and transplant success rates.",
+  "opportunity": "Development of rapid, point-of-care diagnostic tools or predictive AI models to screen transplant candidates for resistant pathogens to mitigate post-surgical mortality.",
+  "fields": [
+   "Diagnostics",
+   "Clinical",
+   "Software/AI"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 3,
+    "reason": "The study is a retrospective cohort analysis of clinical outcomes, which represents incremental observational data rather than the development of new biological mechanisms, diagnostic technologies, or therapeutic modalities."
+   },
+   "commercial_potential": {
+    "score": 2,
+    "reason": "This is a retrospective clinical observation study rather than a development of new technology, offering no proprietary intellectual property, diagnostic tool, or therapeutic product to license. Its value is limited to informing clinical protocols rather than creating a scalable commercial entity."
+   },
+   "market_size": {
+    "score": 5,
+    "reason": "The study targets a specific subset of liver transplant patients with MDR colonization, representing a niche but clinically relevant market; however, the overall addressable market is limited compared to broader therapeutic areas."
+   },
+   "trl": {
+    "score": 9,
+    "reason": "This study analyzes clinical data from an established medical procedure (liver transplantation), representing a high level of technical readiness as it directly addresses real-world clinical decision-making and patient outcomes. The findings are immediately applicable to standard-of-care practices and surgical risk stratification in existing healthcare infrastructure."
+   },
+   "ip_strength": {
+    "score": 1,
+    "reason": "This is a retrospective cohort study analyzing clinical data patterns rather than a novel therapeutic, diagnostic tool, or biotechnological invention. Observational clinical research of this nature is generally not patentable and lacks inherent intellectual property defensibility."
+   }
+  },
+  "eval_model": "groq:openai/gpt-oss-20b",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper is a retrospective clinical cohort study focused on patient outcomes rather than molecular discovery. It lacks a specific molecular target, a new molecule, and a laboratory-based assay suitable for high-throughput screening.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
+  "id": "pubmed_42930086",
+  "title": "Detection of Buried Landmines in an Active Minefield Through Bioreporter-Based Optoelectronic Sensing of Their Chemical Signatures.",
+  "abstract": "",
+  "authors": [
+   "Yonatan Uziel",
+   "Mulkan Adgo",
+   "Natan Orlov",
+   "Roni Shohat",
+   "Shimshon Belkin",
+   "Aharon J Agranat"
+  ],
+  "journal": "Biosensors",
+  "date": "2026-09-25",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42930086/",
+  "source": "PubMed",
+  "pi": "Aharon J Agranat",
+  "pi_affiliation": "Department of Applied Physics, The Hebrew University of Jerusalem, Jerusalem 9190401, Israel.",
+  "pi_full_name": "Aharon J Agranat",
+  "score": 33,
+  "summary": "Researchers have developed a method to detect buried landmines by using engineered biological sensors that respond to specific chemical signatures. These biological signals are then captured through optoelectronic sensing to provide a remote or non-contact detection capability.",
+  "opportunity": "This technology could disrupt the humanitarian demining market by providing a low-cost, highly sensitive biological alternative to traditional ground-penetrating radar and metal detectors.",
+  "fields": [
+   "Synthetic Biology",
+   "Imaging",
+   "Other"
+  ],
+  "score_breakdown": {
+   "novelty": {
+    "score": 8,
+    "reason": "The research proposes a highly novel convergence of synthetic biology and optoelectronics, moving beyond traditional geophysical sensors to use engineered biological reporters for chemical specificity. This multi-disciplinary approach represents a potential platform shift in detecting trace chemical signatures in complex, high-noise environments."
+   },
+   "commercial_potential": {
+    "score": 8,
+    "reason": "The technology addresses a high-stakes, multi-billion dollar global humanitarian and defense market with a clear application in automated demining. The integration of synthetic biology (bioreporters) with optoelectronics suggests a scalable, hardware-enabled product platform rather than just a laboratory method."
+   },
+   "market_size": {
+    "score": 7,
+    "reason": "The addressable market includes global humanitarian demining efforts and military defense sectors, which represent significant, consistent demand. However, the market is constrained by specialized niche applications and the high barrier of entry regarding field deployment compared to traditional geophysical methods."
+   },
+   "trl": {
+    "score": 3,
+    "reason": "The title suggests a fundamental proof-of-concept involving biological components (bioreporters) and optoelectronic integration, which typically indicates early-stage laboratory validation rather than field-tested hardware."
+   },
+   "ip_strength": {
+    "score": 7,
+    "reason": "The combination of engineered bioreporters with optoelectronic sensing suggests a highly defensible, multi-layered IP strategy covering both biological components and hardware integration. However, without the abstract, the novelty of the specific genetic circuits or sensor architecture cannot be fully validated against existing synthetic biology patents."
+   }
+  },
+  "eval_model": "gemma-4-26b-a4b-it",
+  "added_date": "2026-11-02",
+  "hts_score": 1,
+  "hts_reason": "The paper focuses on environmental sensing of landmines rather than a biological target, disease, or pharmacological molecule, making it irrelevant for drug discovery HTS.",
+  "hts_eval_model": "gemma-4-26b-a4b-it"
+ },
+ {
   "id": "pubmed_42927438",
   "title": "Distribution of Donor Types and Time to Allogeneic Hematopoietic Stem Cell Transplantation for Acute Myeloid Leukemia Across Ethnic Groups: A Retrospective Study.",
   "authors": [
@@ -239,7 +2274,7 @@
    "Elad Gross"
   ],
   "journal": "Small (Weinheim an der Bergstrasse, Germany)",
-  "date": "2026 Oct 23",
+  "date": "2026-10-23",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42925223/",
   "source": "PubMed",
   "score": 23,
@@ -398,7 +2433,7 @@
    "Amir Oron"
   ],
   "journal": "Archives of orthopaedic and trauma surgery",
-  "date": "2026 Oct 22",
+  "date": "2026-10-22",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42918917/",
   "source": "PubMed",
   "score": 33,
@@ -1286,7 +3321,7 @@
    "Eran Rabani"
   ],
   "journal": "ACS nano",
-  "date": "2026-10-20",
+  "date": "2026 Oct 20",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42899780/",
   "source": "PubMed",
   "score": 22,
@@ -3247,7 +5282,7 @@
    "Abed Khalaileh"
   ],
   "journal": "Diagnostics (Basel, Switzerland)",
-  "date": "2026 Oct 1",
+  "date": "2026-10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42882348/",
   "source": "PubMed",
   "score": 20,
@@ -3301,7 +5336,7 @@
    "Shaden Salameh"
   ],
   "journal": "Journal of clinical medicine",
-  "date": "2026-09-25",
+  "date": "2026 Sep 25",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42881927/",
   "source": "PubMed",
   "score": 20,
@@ -4166,7 +6201,7 @@
    "Pavel Burko"
   ],
   "journal": "European radiology",
-  "date": "2026-10-07",
+  "date": "2026 Oct 7",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42844398/",
   "source": "PubMed",
   "score": 24,
@@ -4341,7 +6376,7 @@
    "Genya Aharon-Hananel"
   ],
   "journal": "Diabetes, obesity & metabolism",
-  "date": "2026-10-07",
+  "date": "2026 Oct 7",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42842950/",
   "source": "PubMed",
   "score": 24,
@@ -4627,7 +6662,7 @@
    "Ori Gidron"
   ],
   "journal": "Chemistry (Weinheim an der Bergstrasse, Germany)",
-  "date": "2026-10-06",
+  "date": "2026 Oct 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42839638/",
   "source": "PubMed",
   "score": 16,
@@ -4794,7 +6829,7 @@
    "Eran Meshorer"
   ],
   "journal": "Molecular neurobiology",
-  "date": "2026 Oct 1",
+  "date": "2026-10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42837064/",
   "source": "PubMed",
   "score": 26,
@@ -6104,7 +8139,7 @@
    "Liran Tiosano"
   ],
   "journal": "Graefe's archive for clinical and experimental ophthalmology = Albrecht von Graefes Archiv fur klinische und experimentelle Ophthalmologie",
-  "date": "2026 May 1",
+  "date": "2026-05-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42105087/",
   "source": "PubMed",
   "score": 23,
@@ -6212,7 +8247,7 @@
    "Yohai Bar-Sinai"
   ],
   "journal": "Scientific reports",
-  "date": "2026-05-07",
+  "date": "2026 May 7",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42098224/",
   "source": "PubMed",
   "score": 16,
@@ -7132,7 +9167,7 @@
    "Elizabeth Dudnik"
   ],
   "journal": "Cancers",
-  "date": "2026 Apr 14",
+  "date": "2026-04-14",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42073571/",
   "source": "PubMed",
   "score": 22,
@@ -7297,7 +9332,7 @@
    "Maggie Levy"
   ],
   "journal": "Plant physiology",
-  "date": "2026 Apr 2",
+  "date": "2026-04-02",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42054541/",
   "source": "PubMed",
   "score": 20,
@@ -7463,7 +9498,7 @@
    "Abraham J Domb"
   ],
   "journal": "Pharmaceutics",
-  "date": "2026-03",
+  "date": "2026 Mar 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42076088/",
   "source": "PubMed",
   "score": 22,
@@ -8578,7 +10613,7 @@
    "David Luria"
   ],
   "journal": "JACC. Clinical electrophysiology",
-  "date": "2026-04-01",
+  "date": "2026 Apr 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41954554/",
   "source": "PubMed",
   "score": 31,
@@ -9083,7 +11118,7 @@
    "Amnon Sharir"
   ],
   "journal": "Dental materials : official publication of the Academy of Dental Materials",
-  "date": "2026-09-29",
+  "date": "2026 Sep 29",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42810937/",
   "source": "PubMed",
   "score": 21,
@@ -10021,7 +12056,7 @@
    "Assaf Friedler"
   ],
   "journal": "Chemical science",
-  "date": "2026-09-24",
+  "date": "2026 Sep 24",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42827801/",
   "source": "PubMed",
   "score": 22,
@@ -11371,7 +13406,7 @@
    "Adi Vaknin-Dembinsky"
   ],
   "journal": "IBRO neuroscience reports",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42751190/",
   "source": "PubMed",
   "score": 28,
@@ -11982,7 +14017,7 @@
    "Suhail Aamar"
   ],
   "journal": "Annals of the rheumatic diseases",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42716674/",
   "source": "PubMed",
   "score": 24,
@@ -13055,7 +15090,7 @@
    "David Shveiky"
   ],
   "journal": "Journal of clinical medicine",
-  "date": "2026 Aug 1",
+  "date": "2026-08-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42652769/",
   "source": "PubMed",
   "score": 22,
@@ -13110,7 +15145,7 @@
    "Maya Korem"
   ],
   "journal": "Journal of fungi (Basel, Switzerland)",
-  "date": "2026 Aug 16",
+  "date": "2026-08-16",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42646143/",
   "source": "PubMed",
   "score": 21,
@@ -13850,7 +15885,7 @@
    "Tomer Tzur"
   ],
   "journal": "Journal of plastic, reconstructive & aesthetic surgery : JPRAS",
-  "date": "2026 Aug 1",
+  "date": "2026-08-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42612275/",
   "source": "PubMed",
   "score": 26,
@@ -14075,7 +16110,7 @@
    "Shlomo Elias"
   ],
   "journal": "Haematologica",
-  "date": "2026 Aug 13",
+  "date": "2026-08",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42610426/",
   "source": "PubMed",
   "score": 39,
@@ -14407,7 +16442,7 @@
    "Rachel Bar-Shavit"
   ],
   "journal": "Journal of Cancer",
-  "date": "2026 Aug 11",
+  "date": "2026-08-11",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42577862/",
   "source": "PubMed",
   "score": 21,
@@ -15279,7 +17314,7 @@
    "Reut Rotem"
   ],
   "journal": "International journal of gynaecology and obstetrics: the official organ of the International Federation of Gynaecology and Obstetrics",
-  "date": "2026 Jul 26",
+  "date": "2026-07-26",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42504049/",
   "source": "PubMed",
   "score": 21,
@@ -15744,7 +17779,7 @@
    "Ronen Hazan"
   ],
   "journal": "Antibiotics (Basel, Switzerland)",
-  "date": "2026 Jul 3",
+  "date": "2026-07",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42505622/",
   "source": "PubMed",
   "score": 25,
@@ -15811,7 +17846,7 @@
    "Ori Wald"
   ],
   "journal": "Pharmaceuticals (Basel, Switzerland)",
-  "date": "2026 Jul 2",
+  "date": "2026-07-02",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42515717/",
   "source": "PubMed",
   "score": 27,
@@ -16183,7 +18218,7 @@
    "Barry Hahn"
   ],
   "journal": "Open access emergency medicine : OAEM",
-  "date": "2026 Jul 20",
+  "date": "2026-07-20",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42473466/",
   "source": "PubMed",
   "score": 18,
@@ -16288,7 +18323,7 @@
    "Zohar Kerem"
   ],
   "journal": "Comprehensive reviews in food science and food safety",
-  "date": "2026 Jul 17",
+  "date": "2026-07-17",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42466521/",
   "source": "PubMed",
   "score": 15,
@@ -17228,7 +19263,7 @@
    "David Smadja"
   ],
   "journal": "Journal of refractive surgery (Thorofare, N.J. : 1995)",
-  "date": "2026-07-01",
+  "date": "2026 Jul 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42429236/",
   "source": "PubMed",
   "score": 24,
@@ -17896,7 +19931,7 @@
    "Albert Grinshpun"
   ],
   "journal": "Cancer research communications",
-  "date": "2026 Jul 1",
+  "date": "2026-07-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42361329/",
   "source": "PubMed",
   "score": 27,
@@ -18898,7 +20933,7 @@
    "Gil Leibowitz"
   ],
   "journal": "JCI insight",
-  "date": "2026-05",
+  "date": "2026 May 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42171606/",
   "source": "PubMed",
   "score": 25,
@@ -19912,7 +21947,7 @@
    "Doron Steinberg"
   ],
   "journal": "Pharmaceutics",
-  "date": "2026-03",
+  "date": "2026 Mar 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42076059/",
   "source": "PubMed",
   "score": 17,
@@ -20121,7 +22156,7 @@
    "Mikhal E Cohen"
   ],
   "journal": "",
-  "date": "2026 Jul 1",
+  "date": "2026-07-01",
   "url": "https://europepmc.org/article/MED/42514173",
   "source": "Europe PMC",
   "score": 24,
@@ -20892,7 +22927,7 @@
    "Jaime Levy"
   ],
   "journal": "Eye (London, England)",
-  "date": "2026 Sep 1",
+  "date": "2026-09-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42791273/",
   "source": "PubMed",
   "score": 25,
@@ -20952,7 +22987,7 @@
    "Alena Kirzhner"
   ],
   "journal": "Diabetes & metabolism",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42785671/",
   "source": "PubMed",
   "score": 25,
@@ -21005,7 +23040,7 @@
    "Daphna Shimon"
   ],
   "journal": "",
-  "date": "2026-09-26",
+  "date": "2026 Sep 26",
   "url": "https://europepmc.org/article/PMC/PMC13614179",
   "source": "Europe PMC",
   "score": 23,
@@ -21833,7 +23868,7 @@
    "Meir Frankel"
   ],
   "journal": "Journal of pain and symptom management",
-  "date": "2026 Sep 1",
+  "date": "2026-09-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42785577/",
   "source": "PubMed",
   "score": 17,
@@ -21890,7 +23925,7 @@
    "Morris Nechama"
   ],
   "journal": "iScience",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42741680/",
   "source": "PubMed",
   "score": 22,
@@ -22758,7 +24793,7 @@
    "Rami I Aqeilan"
   ],
   "journal": "Molecular therapy. Advances",
-  "date": "2026-09",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42422765/",
   "source": "PubMed",
   "score": 31,
@@ -22873,7 +24908,7 @@
    "Sarah Matarasso Greenfeld"
   ],
   "journal": "Haematologica",
-  "date": "2026-09-10",
+  "date": "2026 Sep 10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42719963/",
   "source": "PubMed",
   "score": 38,
@@ -23000,7 +25035,7 @@
    "A Joseph Foldes"
   ],
   "journal": "Osteoporosis international : a journal established as result of cooperation between the European Foundation for Osteoporosis and the National Osteoporosis Foundation of the USA",
-  "date": "2026-09-08",
+  "date": "2026 Sep 8",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42709184/",
   "source": "PubMed",
   "score": 22,
@@ -23055,7 +25090,7 @@
    "Yossi Paltiel"
   ],
   "journal": "Nanoscale",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42703788/",
   "source": "PubMed",
   "score": 20,
@@ -23683,7 +25718,7 @@
    "Ilan Rosenshine"
   ],
   "journal": "",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://europepmc.org/article/MED/42678059",
   "source": "Europe PMC",
   "score": 24,
@@ -26978,7 +29013,7 @@
    "Roi Ben-David"
   ],
   "journal": "TAG. Theoretical and applied genetics. Theoretische und angewandte Genetik",
-  "date": "2026 Aug 1",
+  "date": "2026-08-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42604475/",
   "source": "PubMed",
   "score": 31,
@@ -27153,7 +29188,7 @@
    "Abigail H Gewirtz"
   ],
   "journal": "Prevention science : the official journal of the Society for Prevention Research",
-  "date": "2026 Aug 10",
+  "date": "2026-08-10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42576136/",
   "source": "PubMed",
   "score": 25,
@@ -28342,7 +30377,7 @@
    "Nir Friedman"
   ],
   "journal": "",
-  "date": "2026-08-07",
+  "date": "2026 Aug 7",
   "url": "https://europepmc.org/article/MED/42566729",
   "source": "Europe PMC",
   "score": 30,
@@ -29604,7 +31639,7 @@
    "Michal Linial"
   ],
   "journal": "British journal of cancer",
-  "date": "2026 Jul 27",
+  "date": "2026-07",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42509464/",
   "source": "PubMed",
   "score": 26,
@@ -30804,7 +32839,7 @@
    "Uriel Levy"
   ],
   "journal": "Light, science & applications",
-  "date": "2026 Jul 1",
+  "date": "2026-07-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42493493/",
   "source": "PubMed",
   "score": 32,
@@ -30864,7 +32899,7 @@
    "Ofer Almog"
   ],
   "journal": "JMIR medical informatics",
-  "date": "2026 Jul 1",
+  "date": "2026-07-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42497409/",
   "source": "PubMed",
   "score": 27,
@@ -30932,7 +32967,7 @@
    "Carlos Caldas"
   ],
   "journal": "Cell reports methods",
-  "date": "2026 Jul 1",
+  "date": "2026-07",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42202786/",
   "source": "PubMed",
   "score": 27,
@@ -31772,7 +33807,7 @@
    "Yuval Ramot"
   ],
   "journal": "Journal of the American Academy of Dermatology",
-  "date": "2026 Jul 1",
+  "date": "2026-07-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42456775/",
   "source": "PubMed",
   "score": 26,
@@ -33807,7 +35842,7 @@
    "Rabea Asleh"
   ],
   "journal": "",
-  "date": "2026-05-01",
+  "date": "2026 May 1",
   "url": "https://europepmc.org/article/MED/42148620",
   "source": "Europe PMC",
   "score": 31,
@@ -33929,7 +35964,7 @@
    "Sharon Schlesinger"
   ],
   "journal": "",
-  "date": "2026 May 1",
+  "date": "2026-05-01",
   "url": "https://europepmc.org/article/MED/42182043",
   "source": "Europe PMC",
   "score": 35,
@@ -33994,7 +36029,7 @@
    "Sheera Adar"
   ],
   "journal": "",
-  "date": "2026 Apr 1",
+  "date": "2026-04-01",
   "url": "https://europepmc.org/article/MED/42072663",
   "source": "Europe PMC",
   "score": 32,
@@ -34360,7 +36395,7 @@
    "Eylon Yavin"
   ],
   "journal": "ACS polymers Au",
-  "date": "2026 Jun 1",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42294022/",
   "source": "PubMed",
   "score": 33,
@@ -34422,7 +36457,7 @@
    "Rachel Nechushtai"
   ],
   "journal": "Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie",
-  "date": "2026-07-01",
+  "date": "2026 Jul 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42259134/",
   "source": "PubMed",
   "score": 31,
@@ -34596,7 +36631,7 @@
    "Albert Grinshpun"
   ],
   "journal": "medRxiv : the preprint server for health sciences",
-  "date": "2026 May 1",
+  "date": "2026-05-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42238456/",
   "source": "PubMed",
   "score": 35,
@@ -34835,7 +36870,7 @@
    "Howard Cedar"
   ],
   "journal": "Nature communications",
-  "date": "2026 Jun 1",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42265112/",
   "source": "PubMed",
   "score": 26,
@@ -34955,7 +36990,7 @@
    "Uri Banin"
   ],
   "journal": "",
-  "date": "2026-05-01",
+  "date": "2026 May 1",
   "url": "https://europepmc.org/article/MED/42189911",
   "source": "Europe PMC",
   "score": 25,
@@ -35126,7 +37161,7 @@
    "Liron Kogan"
   ],
   "journal": "",
-  "date": "2026 May 1",
+  "date": "2026-05-01",
   "url": "https://europepmc.org/article/MED/42120689",
   "source": "Europe PMC",
   "score": 32,
@@ -35235,7 +37270,7 @@
    "Ora Schueler-Furman"
   ],
   "journal": "Journal of chemical information and modeling",
-  "date": "2026-06",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42299509/",
   "source": "PubMed",
   "score": 26,
@@ -35290,7 +37325,7 @@
    "Ori Finfter"
   ],
   "journal": "Oral oncology",
-  "date": "2026 Jun 1",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42269385/",
   "source": "PubMed",
   "score": 27,
@@ -35578,7 +37613,7 @@
    "Boaz Nachmias"
   ],
   "journal": "",
-  "date": "2026 May 1",
+  "date": "2026-05-01",
   "url": "https://europepmc.org/article/MED/42104100",
   "source": "Europe PMC",
   "score": 25,
@@ -35888,7 +37923,7 @@
    "Haitham Amal"
   ],
   "journal": "Scientific reports",
-  "date": "2026 Jun 1",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42277197/",
   "source": "PubMed",
   "score": 28,
@@ -36296,7 +38331,7 @@
    "Mattan Hurevich"
   ],
   "journal": "Journal of the American Chemical Society",
-  "date": "2026 Jun 1",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42267531/",
   "source": "PubMed",
   "score": 31,
@@ -36586,7 +38621,7 @@
    "David Zadok"
   ],
   "journal": "",
-  "date": "2026-04-01",
+  "date": "2026 Apr 1",
   "url": "https://europepmc.org/article/MED/42148860",
   "source": "Europe PMC",
   "score": 26,
@@ -37239,7 +39274,7 @@
    "Rivka Elbaum"
   ],
   "journal": "ACS biomaterials science & engineering",
-  "date": "2026-06",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42334412/",
   "source": "PubMed",
   "score": 25,
@@ -43541,7 +45576,7 @@
    "Avi Priel"
   ],
   "journal": "Pharmacological research",
-  "date": "2026 Jun 1",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42342000/",
   "source": "PubMed",
   "score": 33,
@@ -43660,7 +45695,7 @@
    "Oren Zimhony"
   ],
   "journal": "Antimicrobial resistance and infection control",
-  "date": "2026 Jun 1",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42374536/",
   "source": "PubMed",
   "score": 33,
@@ -43772,7 +45807,7 @@
    "Ofra Benny"
   ],
   "journal": "APL bioengineering",
-  "date": "2026-06",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42339006/",
   "source": "PubMed",
   "score": 30,
@@ -43830,7 +45865,7 @@
    "Yael Houri-Haddad"
   ],
   "journal": "Journal of dentistry",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42379259/",
   "source": "PubMed",
   "score": 28,
@@ -43887,7 +45922,7 @@
    "Noam Asna"
   ],
   "journal": "Journal of clinical medicine",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42355925/",
   "source": "PubMed",
   "score": 25,
@@ -44000,7 +46035,7 @@
    "Haitham Amal"
   ],
   "journal": "Cancer medicine",
-  "date": "2026 Jul 1",
+  "date": "2026-07-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42374654/",
   "source": "PubMed",
   "score": 26,
@@ -44182,7 +46217,7 @@
    "David Zangen"
   ],
   "journal": "The Journal of clinical endocrinology and metabolism",
-  "date": "2026 Jun 1",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42339507/",
   "source": "PubMed",
   "score": 25,
@@ -44361,7 +46396,7 @@
    "Batsheva Kerem"
   ],
   "journal": "Journal of cystic fibrosis : official journal of the European Cystic Fibrosis Society",
-  "date": "2026 Jun 1",
+  "date": "2026-06",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42350209/",
   "source": "PubMed",
   "score": 31,
@@ -44873,7 +46908,7 @@
    "Avi-Hai Hovav"
   ],
   "journal": "Proceedings of the National Academy of Sciences of the United States of America",
-  "date": "2026 Jun 30",
+  "date": "2026-06-30",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42341044/",
   "source": "PubMed",
   "score": 25,
@@ -46206,7 +48241,7 @@
    "Yehuda Tzfati"
   ],
   "journal": "Nature communications",
-  "date": "2026 May 1",
+  "date": "2026-05-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42067527/",
   "source": "PubMed",
   "score": 32,
@@ -47297,7 +49332,7 @@
    "Dana Avrahami"
   ],
   "journal": "Nature metabolism",
-  "date": "2026-04-01",
+  "date": "2026 Apr 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42032110/",
   "source": "PubMed",
   "score": 25,
@@ -48415,7 +50450,7 @@
    "Neta Shlezinger"
   ],
   "journal": "mBio",
-  "date": "2026-05",
+  "date": "2026-05-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41979352/",
   "source": "PubMed",
   "score": 26,
@@ -48711,7 +50746,7 @@
    "Yuval Malka"
   ],
   "journal": "Cell reports",
-  "date": "2026 Apr 1",
+  "date": "2026-04",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41984590/",
   "source": "PubMed",
   "score": 33,
@@ -51036,7 +53071,7 @@
    "Amir Haze"
   ],
   "journal": "Journal of orthopaedic research : official publication of the Orthopaedic Research Society",
-  "date": "2026 Apr 1",
+  "date": "2026-04-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41925697/",
   "source": "PubMed",
   "score": 33,
@@ -51276,7 +53311,7 @@
    "Mor Nitzan"
   ],
   "journal": "Cell systems",
-  "date": "2026 May 1",
+  "date": "2026-05",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41928515/",
   "source": "PubMed",
   "score": 28,
