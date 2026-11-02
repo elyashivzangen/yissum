@@ -1,227 +1,204 @@
 Checking apps_script.js deployment version...
   WARNING: deployed apps_script.js reports version=0 (need >=2). Skipping ALL Google Sheet writes this run — the old deployment ignores sheet_name and would overwrite Sheet1. researchers_data.json and the dashboard Researchers tab will still be built. To also get the Researchers sheet tab, redeploy apps_script.js (Extensions > Apps Script > paste latest source > Deploy > Manage deployments > Edit > New version) and re-run.
 Loading existing papers from Google Sheet...
-  245 papers loaded.
+  198 papers loaded.
 
 Selected 20 researchers to profile.
-Carrying forward 34 existing profile(s) not in this run's top 20.
+Carrying forward 37 existing profile(s) not in this run's top 20.
 
 [1/20] Harold Jacob
 Checking for new publications for Harold Jacob (existing profile: 1 paper(s))...
   No new papers for Harold Jacob.
-  [checkpoint: 1/20] writing 35 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 35 researcher profiles.
+  [checkpoint: 1/20] writing 38 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 38 researcher profiles.
 
 [2/20] Shlomo Elias
-Checking for new publications for Shlomo Elias (existing profile: 2 paper(s))...
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-  Added 1 new paper(s) for Shlomo Elias (2 -> 3).
-  [checkpoint: 2/20] writing 36 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 36 researcher profiles.
+Checking for new publications for Shlomo Elias (existing profile: 3 paper(s))...
+  No new papers for Shlomo Elias.
+  [checkpoint: 2/20] writing 39 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 39 researcher profiles.
 
 [3/20] Chezi Ganzel
 Checking for new publications for Chezi Ganzel (existing profile: 3 paper(s))...
   No new papers for Chezi Ganzel.
-  [checkpoint: 3/20] writing 37 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 37 researcher profiles.
+  [checkpoint: 3/20] writing 40 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 40 researcher profiles.
 
 [4/20] Chamutal Gur
 Checking for new publications for Chamutal Gur (existing profile: 3 paper(s))...
   No new papers for Chamutal Gur.
-  [checkpoint: 4/20] writing 38 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 38 researcher profiles.
+  [checkpoint: 4/20] writing 41 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 41 researcher profiles.
 
 [5/20] Osnat Malka
 Checking for new publications for Osnat Malka (existing profile: 2 paper(s))...
   No new papers for Osnat Malka.
-  [checkpoint: 5/20] writing 39 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 39 researcher profiles.
+  [checkpoint: 5/20] writing 42 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 42 researcher profiles.
 
 [6/20] Danny Dvir
 Checking for new publications for Danny Dvir (existing profile: 6 paper(s))...
   No new papers for Danny Dvir.
-  [checkpoint: 6/20] writing 40 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 40 researcher profiles.
+  [checkpoint: 6/20] writing 43 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 43 researcher profiles.
 
 [7/20] Tamir Ben-Hur
 Checking for new publications for Tamir Ben-Hur (existing profile: 8 paper(s))...
   No new papers for Tamir Ben-Hur.
-  [checkpoint: 7/20] writing 41 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 41 researcher profiles.
+  [checkpoint: 7/20] writing 44 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 44 researcher profiles.
 
 [8/20] Albert Grinshpun
 Checking for new publications for Albert Grinshpun (existing profile: 7 paper(s))...
   No new papers for Albert Grinshpun.
-  [checkpoint: 8/20] writing 42 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 42 researcher profiles.
+  [checkpoint: 8/20] writing 45 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 45 researcher profiles.
 
 [9/20] Sharon Schlesinger
 Checking for new publications for Sharon Schlesinger (existing profile: 4 paper(s))...
   No new papers for Sharon Schlesinger.
-  [checkpoint: 9/20] writing 43 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 43 researcher profiles.
+  [checkpoint: 9/20] writing 46 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 46 researcher profiles.
 
 [10/20] Oren Ram
 Checking for new publications for Oren Ram (existing profile: 3 paper(s))...
   No new papers for Oren Ram.
-  [checkpoint: 10/20] writing 44 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 44 researcher profiles.
+  [checkpoint: 10/20] writing 47 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 47 researcher profiles.
 
 [11/20] Tamar Harel
 Checking for new publications for Tamar Harel (existing profile: 12 paper(s))...
   No new papers for Tamar Harel.
-  [checkpoint: 11/20] writing 45 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 45 researcher profiles.
+  [checkpoint: 11/20] writing 48 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 48 researcher profiles.
 
 [12/20] Lianet Noda-García
 Checking for new publications for Lianet Noda-García (existing profile: 3 paper(s))...
   No new papers for Lianet Noda-García.
-  [checkpoint: 12/20] writing 46 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 46 researcher profiles.
+  [checkpoint: 12/20] writing 49 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 49 researcher profiles.
 
-[13/20] Mor Nahum
-Fetching last 3 years of publications for Mor Nahum...
-    grading: Mental health of adolescents during times of war.
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+[13/20] Raphael I Benhamou
+Fetching last 3 years of publications for Raphael I Benhamou...
+    grading: RNA G-Quadruplex RIBOTAC-Mediated Targeted Degradation of lncRNA TERRA
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Thread is cancelled before we get prefill results.; Failed to close the streaming context; status = CANCELLED: Thread is cancelled before we get prefill results.\n=== Source Location Trace: === \nlearning/gemini/deployment/disaggregation/wiz_cc/async_prefill_server_queues.cc:1207\nlearning/serving/servables/wiz/wiz_servable.cc:2268\nlearning/serving/servables/wiz/wiz_servable.cc:2559\nlearning/serving/servables/wiz/wiz_servable.cc:3782\n;  Failed to run inference for model: go/debugstr    \nname: "prod-common-global__/aistudio/gemma-v4-31b-mm-sc__main__/aistudio/gemma-v4-31b-mm-sc__2026040100__prefill__variant__591ed415-95e6-4bf2-9f7e-0c780fe9f78e"\nversion {\n  value: 1\n}\nsignature_name: "serving_default"\n', 'status': 'DEADLINE_EXCEEDED'}}
+      score=34 (gemma-4-26b-a4b-it)
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-      score=10 (groq:openai/gpt-oss-20b)
-      hts_score=1
-    grading: The effects of transcranial random noise stimulation on excitation/inh
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-      score=24 (groq:openai/gpt-oss-20b)
+      hts_score=10
+    grading: Development of PROTAC-Based Strategies for Cannabinoid Receptor Type 1
+      score=31 (gemma-4-26b-a4b-it)
+      hts_score=9
+    grading: Druglike Molecular Degraders of the Oncogenic RNA-Binding Protein HuR.
+      score=33 (gemma-4-26b-a4b-it)
+      hts_score=10
+    grading: Protocol for evaluating compound uptake and RNase L co-localization in
+      score=16 (gemma-4-26b-a4b-it)
+      hts_score=5
+    grading: Advancing target validation with PROTAC technology.
+      score=20 (gemma-4-26b-a4b-it)
       hts_score=2
-    grading: A remotely-applied, cognitive control-based video game intervention to
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    openai/gpt-oss-20b (groq) succeeded
-      score=26 (groq:openai/gpt-oss-20b)
-      hts_score=1
-    grading: The Emotional Pendulum in ADHD: Insights From Ecological Momentary Ass
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    grading: Leveraging RIBOTAC technology: Fluorescent RNase L probes for live-cel
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-      score=17 (groq:openai/gpt-oss-20b)
-      hts_score=1
-    grading: Occupational Balance and Meaning Mediate Higher Education Students' Me
-      score=9 (gemini-3.1-flash-lite)
-      hts_score=1
-    grading: Aperiodic and periodic components of oscillatory brain activity in rel
+      score=29 (gemini-3.1-flash-lite)
+      hts_score=5
+    grading: PROTAC and Molecular Glue Degraders of the Oncogenic RNA Binding Prote
+      score=32 (gemini-3.1-flash-lite)
+      hts_score=10
+    grading: Targeting MicroRNAs with Small Molecules.
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-      score=17 (groq:openai/gpt-oss-20b)
+      score=20 (gemma-4-26b-a4b-it)
       hts_score=2
-    grading: Corrigendum to "Less inhibited and more depressed? The puzzling associ
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      score=5 (gemini-3.1-flash-lite)
+  [checkpoint: 13/20] writing 50 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 50 researcher profiles.
+
+[14/20] Amir Oron
+Fetching last 3 years of publications for Amir Oron...
+    grading: Embedded Freshwater Snail in the Hand Following Rafting Trauma: A Rare
+      score=5 (gemma-4-26b-a4b-it)
       hts_score=1
-    grading: Linking Neural Connectivity Patterns With Real-World Social Performanc
-      score=12 (gemini-3.1-flash-lite)
+    grading: Ultrasound-guided Morton's neuroma injection: the "three-handed" techn
+      score=19 (gemma-4-26b-a4b-it)
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+      hts_score=2
+    grading: Intralesional bevacizumab injection for symptomatic glomus tumors of t
+      score=19 (gemma-4-26b-a4b-it)
+      hts_score=3
+    grading: Preliminary Assessment of Pisotriquetral Joint Kinematics Following Tr
+      score=11 (gemma-4-26b-a4b-it)
       hts_score=1
-    grading: The relationship between empathy and executive functions among young a
+    grading: Clinical and Radiographic Outcomes of the Wrap-Around Extension Block 
+      score=19 (gemma-4-26b-a4b-it)
     gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    all 3 candidate(s) cooling down — waiting 54s before retry
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-      score=10 (groq:openai/gpt-oss-20b)
-    all 3 candidate(s) cooling down — waiting 3s before retry
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
       hts_score=1
-    all 3 candidate(s) cooling down — waiting 1s before retry
-  [checkpoint: 13/20] writing 47 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 47 researcher profiles.
+    grading: The "cough trick" can reduce pain during Kirschner wire extraction fro
+      score=16 (gemma-4-26b-a4b-it)
+      hts_score=1
+    grading: Torsion and necrosis of a supernumerary digit.
+      score=5 (gemma-4-26b-a4b-it)
+      hts_score=1
+    grading: Patterns of osteoarthritis in long finger joints: an observational cad
+      score=11 (gemma-4-26b-a4b-it)
+      hts_score=1
+  [checkpoint: 14/20] writing 51 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 51 researcher profiles.
 
-[14/20] Oren Zimhony
-Checking for new publications for Oren Zimhony (existing profile: 6 paper(s))...
-  No new papers for Oren Zimhony.
-  [checkpoint: 14/20] writing 48 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 48 researcher profiles.
+[15/20] Aharon J Agranat
+Fetching last 3 years of publications for Aharon J Agranat...
+  [checkpoint: 15/20] writing 52 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 52 researcher profiles.
 
-[15/20] Mattan Hurevich
-Checking for new publications for Mattan Hurevich (existing profile: 6 paper(s))...
-  No new papers for Mattan Hurevich.
-  [checkpoint: 15/20] writing 49 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 49 researcher profiles.
-
-[16/20] Amir Haze
-Checking for new publications for Amir Haze (existing profile: 4 paper(s))...
-  No new papers for Amir Haze.
-  [checkpoint: 16/20] writing 50 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 50 researcher profiles.
-
-[17/20] Avi Priel
-Checking for new publications for Avi Priel (existing profile: 5 paper(s))...
-  No new papers for Avi Priel.
-  [checkpoint: 17/20] writing 51 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 51 researcher profiles.
-
-[18/20] Eylon Yavin
-Checking for new publications for Eylon Yavin (existing profile: 8 paper(s))...
-  No new papers for Eylon Yavin.
-  [checkpoint: 18/20] writing 52 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 52 researcher profiles.
-
-[19/20] Michal Linial
+[16/20] Michal Linial
 Checking for new publications for Michal Linial (existing profile: 17 paper(s))...
   No new papers for Michal Linial.
-  [checkpoint: 19/20] writing 53 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 53 researcher profiles.
+  [checkpoint: 16/20] writing 53 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 53 researcher profiles.
 
-[20/20] Yuval Malka
-Checking for new publications for Yuval Malka (existing profile: 1 paper(s))...
-  No new papers for Yuval Malka.
-  [checkpoint: 20/20] writing 54 researcher profile(s)...
-  Archive: 1085 papers total.
-Generated papers_reader.html and papers_data.json with 245 papers and 54 researcher profiles.
+[17/20] Oren Zimhony
+Checking for new publications for Oren Zimhony (existing profile: 6 paper(s))...
+  No new papers for Oren Zimhony.
+  [checkpoint: 17/20] writing 54 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 54 researcher profiles.
 
-Done. 54 researcher profiles written (34 carried forward unchanged).
+[18/20] Mattan Hurevich
+Checking for new publications for Mattan Hurevich (existing profile: 6 paper(s))...
+  No new papers for Mattan Hurevich.
+  [checkpoint: 18/20] writing 55 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 55 researcher profiles.
+
+[19/20] Avi Priel
+Checking for new publications for Avi Priel (existing profile: 5 paper(s))...
+  No new papers for Avi Priel.
+  [checkpoint: 19/20] writing 56 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 56 researcher profiles.
+
+[20/20] Eylon Yavin
+Checking for new publications for Eylon Yavin (existing profile: 8 paper(s))...
+  No new papers for Eylon Yavin.
+  [checkpoint: 20/20] writing 57 researcher profile(s)...
+  Archive: 1122 papers total.
+Generated papers_reader.html and papers_data.json with 198 papers and 57 researcher profiles.
+
+Done. 57 researcher profiles written (37 carried forward unchanged).
