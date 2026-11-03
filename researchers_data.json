@@ -17057,7 +17057,7 @@
     "pi_full_name": "Raphael I Benhamou",
     "pi_email": "raphael.benhamou@mail.huji.ac.il.",
     "pi_affiliation": "The Institute for Drug Research of the School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. raphael.benhamou@mail.huji.ac.il.",
-    "avg_score": 27.6,
+    "avg_score": 27.7,
     "max_hts_score": 10,
     "paper_count": 9,
     "description": "This researcher focuses on the development of next-generation targeted protein and RNA degradation technologies, specifically utilizing PROTACs, molecular glues, and RIBOTACs. Their work centers on hijacking cellular machinery to eliminate 'undruggable' targets, including oncogenic proteins like HuR and Lin28, as well as non-coding RNAs like TERRA. Additionally, they develop advanced imaging protocols and fluorescent probes to validate target engagement and cellular uptake in real-time.",
@@ -17360,9 +17360,9 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39831163/",
         "journal": "Heliyon",
-        "score": 29,
-        "summary": "Researchers have developed new fluorescent probes that allow scientists to visualize and track the activity of RNase L within living cells. These tools enable real-time monitoring of RNA degradation pathways and facilitate the discovery of new drugs that use the RIBOTAC mechanism.",
-        "opportunity": "The development of these probes creates a high-value screening platform for pharmaceutical companies to accelerate the discovery and validation of next-generation RNA-targeting therapeutics.",
+        "score": 28,
+        "summary": "Researchers have developed new fluorescent probes that can bind to and track the activity of RNase L, an enzyme crucial for RNA degradation. These tools allow scientists to visualize how RNase L moves and functions within living cells in real-time.",
+        "opportunity": "The technology provides a high-throughput screening platform for pharmaceutical companies to discover and validate new RNA-targeting drugs (RIBOTACs) through advanced imaging assays.",
         "abstract": "RNA-targeting small molecules, particularly RIBOnuclease TArgeting Chimeras (RIBOTACs), represent a powerful and promising therapeutic approach by selectively degrading RNAs through ribonuclease (RNase) recruitment. Despite their potential, the development of effective RNase recruitment tools is still in its early stages and remains a critical area of research. Ribonuclease L (RNase L) is a key ribonuclease targeted by RIBOTACs, yet the tools available for studying RNase L are limited. In this study, we introduce novel fluorescent ribonuclease binders that enhance the visualization and investigation of RNase L activity. Our findings provide new insights into RNase L dynamics and RNA degradation pathways, paving the way for more effective RNA-targeted degradation strategies. Furthermore, we explore the versatility of these conjugates for real-time tracking of RNase L localization, intracellular trafficking, and mechanistic studies. These fluorescent probes also enable high-throughput fluorescence-based assays to identify small molecules that bind and recruit RNase L, advancing RNA-targeted therapeutic approaches.",
         "fields": [
           "Drug Discovery",
@@ -17373,28 +17373,28 @@
         "score_breakdown": {
           "novelty": {
             "score": 6,
-            "reason": "The paper presents a useful tool-building advancement by converting an existing modality (RIBOTAC) into a functional imaging probe, but it is an incremental optimization of known chemical biology principles rather than a groundbreaking discovery. While it provides a new way to study RNase L, it follows established logic of attaching fluorophores to known binders to enable high-throughput screening and live-cell tracking."
+            "reason": "The research introduces a valuable analytical tool by conjugating RNase L binders with fluorophores, but it represents an incremental application of existing RIBOTAC logic rather than a fundamentally new paradigm in RNA degradation technology."
           },
           "commercial_potential": {
-            "score": 7,
-            "reason": "The technology functions as an enabling platform for high-throughput drug screening in the high-growth RNA-targeting field, offering a clear path to licensing or diagnostic service models. While it lacks immediate therapeutic end-product status, its role in accelerating the R&D pipelines of RNA-degradation-focused biotech companies gives it strong commercial relevance."
+            "score": 6,
+            "reason": "The technology provides valuable R&D tools (fluorescent probes and high-throughput assay formats) for the growing RIBOTAC field, but it serves as a secondary enabling tool rather than a direct therapeutic product. While licensable to drug discovery platforms, its commercial value is tied to the success of the broader RNA-degradation market."
           },
           "market_size": {
             "score": 7,
-            "reason": "The market potential is strong as it provides a critical tool for the rapidly growing RNA-targeted therapy and PROTAC/RIBOTAC space, which currently lacks robust screening and monitoring assays. While the innovation is a valuable platform-enabling research tool, its direct addressable market is currently gated by the success of the broader, still-maturing therapeutic modality it supports."
+            "reason": "The technology serves as a critical enabling tool for the burgeoning RIBOTAC therapeutic class, potentially capturing value across both the R&D reagent market and the broader RNA-targeted drug discovery sector. However, as a tool-based platform, its market size is inherently limited to the research and early-stage drug discovery segments rather than the multi-billion dollar therapeutic market itself."
           },
           "trl": {
             "score": 3,
-            "reason": "This study is a foundational tool-development project focused on basic mechanistic research and probe validation rather than clinical or industrial application. While it provides an enabling assay for high-throughput screening, it remains at the early proof-of-concept stage in laboratory research settings."
+            "reason": "The work is currently at the fundamental tool-development stage, focusing on creating fluorescent probes for mechanistic research and high-throughput screening rather than a therapeutic candidate. It serves as a foundational research enablement tool (TRL 3) rather than a near-market technology or clinical asset."
           },
           "ip_strength": {
             "score": 6,
-            "reason": "While the probes offer a clear utility for high-throughput screening and mechanistic study, the IP landscape for fluorescent small-molecule conjugates is highly crowded, and the underlying RIBOTAC concept is already widely explored, limiting the novelty of the core platform."
+            "reason": "The development of novel fluorescent probes for a specific RNase offers moderate defensibility through composition-of-matter patents, but as a tool rather than a therapeutic, its commercial moat is limited to the research reagent market. While it enables the discovery of RIBOTACs, the underlying IP strength is more centered on incremental chemical optimization for imaging rather than a foundational, platform-enabling therapeutic breakthrough."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 29,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "The Institute for Drug Research of the School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 5,
@@ -17407,40 +17407,41 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39575661/",
         "journal": "Macromolecular bioscience",
-        "score": 32,
-        "summary": "Hebrew University researchers have developed novel small-molecule degraders, specifically PROTACs and molecular glues, that effectively eliminate the oncogenic RNA-binding protein Lin28. The study demonstrates that molecular glues achieve superior potency in reducing Lin28 levels and suppressing cancer phenotypes compared to traditional PROTACs.",
-        "opportunity": "This research provides a high-value pipeline for developing first-in-class small-molecule therapeutics targeting 'undruggable' RNA-binding proteins for oncological applications.",
+        "score": 34,
+        "summary": "Researchers have developed new ways to destroy the cancer-promoting protein Lin28 using advanced small-molecule techniques called PROTACs and molecular glues. Their molecular glue approach proved particularly effective at removing the protein and reversing cancer-like behavior in cells.",
+        "opportunity": "This platform technology enables the development of a new class of highly potent oncology drugs targeting previously 'undruggable' RNA-binding proteins through superior molecular glue degradation.",
         "abstract": "The interaction between proteins and RNA is crucial for regulating gene expression, with dysregulation often linked to diseases such as cancer. The RNA-binding protein (RBP) Lin28 inhibits the tumor suppressor microRNA (miRNA) let-7, making it a significant oncogenic factor in tumor progression and metastasis. In this study, a small molecule is used that binds Lin28 and blocks its inhibition of let-7. To enhance its efficay, the inhibitor is transformed into degraders via two degradation approaches: Proteolysis Targeting Chimera (PROTAC) and molecular glue. A series of PROTAC bifunctional molecules and molecular glues capable of degrading Lin28 in cells.is developed Both strategies significantly reduce overexpressed Lin28 and alleviate cancer cellular phenotypes. Notably, the molecular glue approach demonstrates exceptional potency, surpassing PROTAC in several aspects. This outcome underscores the superior efficiency of the molecular glue approach for targeted Lin28 degradation and highlights its potential for addressing associated diseases with small molecules. Innovative small molecule strategies such as molecular glue and PROTAC technology for targeted RBP degradation, hold promise for opening new avenues in RNA modulation and addressing related diseases.",
         "fields": [
           "Drug Discovery",
-          "Clinical",
-          "Proteomics"
+          "Proteomics",
+          "Genomics",
+          "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 6,
-            "reason": "While applying PROTAC and molecular glue modalities to an oncogenic RBP like Lin28 is a logical and valuable therapeutic strategy, the methodology follows established industry paradigms rather than introducing a breakthrough technological shift. It represents solid, incremental medicinal chemistry advancement within the competitive field of targeted protein degradation."
+            "score": 8,
+            "reason": "The research applies the relatively nascent modality of targeted protein degradation (TPD) to an RNA-binding protein (RBP), a class of targets notoriously difficult to drug. Moving beyond simple inhibition to degradation via both PROTAC and molecular glue approaches for Lin28 represents a significant technological leap in targeting oncogenic RBPs."
           },
           "commercial_potential": {
             "score": 8,
-            "reason": "Targeting Lin28 with molecular glues addresses a high-value, 'undruggable' oncogenic driver with a modality that typically offers superior pharmacological properties (pharmacokinetics/oral bioavailability) compared to PROTACs. The study provides a clear, high-potential path toward a lead-optimization pipeline for a major oncology indication."
+            "reason": "The study successfully demonstrates two distinct, high-value modalities (PROTAC and molecular glue) targeting a notoriously difficult oncogenic RNA-binding protein, providing a clear path toward a first-in-class therapeutic or a platform for RBP degradation. The superior potency of the molecular glue approach significantly enhances the commercial attractiveness of the lead candidates for industrial licensing or drug development."
           },
           "market_size": {
             "score": 8,
-            "reason": "Lin28 is a high-value, 'undruggable' oncogenic target overexpressed in a wide range of aggressive cancers, making a successful degradation platform highly attractive for major oncology portfolios. The ability to employ both PROTAC and molecular glue modalities offers a significant commercial advantage for licensing or therapeutic development."
+            "reason": "The target Lin28 is a major oncogenic driver in various cancers, representing a high-value therapeutic market, and the discovery of both PROTAC and molecular glue modalities suggests a platform-enabling potential for a wide range of undruggable RNA-binding proteins."
           },
           "trl": {
             "score": 3,
-            "reason": "The study demonstrates successful proof-of-concept for targeted protein degradation in a cellular model, but it remains at the early discovery/pre-clinical stage with significant hurdles regarding pharmacokinetic optimization and in vivo validation. It lacks the systemic optimization and safety data required for the transition into clinical or industrial development."
+            "reason": "The research is at the early discovery stage, demonstrating proof-of-concept in cellular models but lacking the in vivo validation, pharmacokinetic profiling, or lead optimization required for clinical development."
           },
           "ip_strength": {
             "score": 7,
-            "reason": "The development of novel chemical matter (PROTACs and molecular glues) against a validated but historically 'undruggable' target like Lin28 provides a strong basis for composition-of-matter patents, though the field is crowded with significant prior art from established players in the targeted protein degradation space."
+            "reason": "The development of both PROTACs and molecular glues targeting a specific oncogenic protein (Lin28) provides strong composition-of-matter patent potential. However, the score is not higher because the abstract does not clarify if the initial small molecule scaffold is novel or if the degraders leverage a proprietary platform."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 32,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "The Institute for Drug Research of the School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Hadassah-Ein Kerem, Jerusalem, 91120, Israel.",
         "pi_email": "",
         "hts_score": 10,

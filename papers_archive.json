@@ -67,45 +67,45 @@
   "date": "2026-10-31",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42965181/",
   "source": "PubMed",
-  "score": 14,
-  "summary": "The study examines the relationship between specific heart muscle movement measurements (Tissue Doppler S wave velocities) and blood markers of heart strain (pro-BNP) after aortic valve replacement procedures. It aims to identify how ultrasound-based mechanical metrics can track recovery and cardiac health following minimally invasive surgery.",
-  "opportunity": "Development of automated software tools for echocardiography to provide real-time, non-invasive predictive monitoring of post-surgical cardiac recovery.",
+  "score": 21,
+  "summary": "Researchers found that a specific ultrasound measurement of heart muscle movement (S wave velocity) can predict whether a patient's heart biomarkers will improve after a TAVI valve replacement. This suggests that imaging data can identify patients unlikely to benefit from the procedure or those at higher risk of poor outcomes.",
+  "opportunity": "Development of predictive diagnostic software or clinical decision-support tools that integrate echocardiographic TDI data to optimize patient selection for TAVI procedures.",
   "fields": [
-   "Medical Device",
    "Diagnostics",
    "Imaging",
-   "Clinical"
+   "Clinical",
+   "Medical Device"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "The study explores a correlative relationship between established clinical biomarkers (NT-proBNP) and standard echocardiographic measurements (Tissue Doppler) in a well-known patient population, representing incremental clinical validation rather than a groundbreaking technical or mechanistic innovation."
+    "reason": "The study explores the correlation between an established echocardiographic parameter (S wave velocity) and a well-known biomarker (NTproBNP) to predict clinical outcomes, which represents incremental clinical validation rather than a novel discovery or platform technology. It confirms existing physiological intuitions rather than introducing a groundbreaking new mechanism or diagnostic modality."
    },
    "commercial_potential": {
     "score": 3,
-    "reason": "The study identifies a correlation between Doppler S wave velocities and BNP changes post‑TAVI, but it does not propose a new device, therapy, or clear licensable technology, limiting its immediate commercial translation."
+    "reason": "The study identifies a clinical correlation using existing, standard-of-care echocardiographic metrics rather than a novel device or proprietary diagnostic tool. While clinically useful for risk stratification, it lacks a clear path to a unique, protectable, or licensable product beyond being a clinical guideline recommendation."
    },
    "market_size": {
-    "score": 3,
-    "reason": "The paper describes a specific clinical biomarker correlation rather than a product or technology, suggesting a narrow diagnostic niche with limited direct commercial scalability. It lacks evidence of a broad market application beyond post-TAVI monitoring."
+    "score": 4,
+    "reason": "The study focuses on a narrow clinical biomarker correlation within a specific subset of TAVI patients, which lacks the platform potential or broad device-market reach required for a high score. While TAVI is a growing market, this specific diagnostic application is a niche clinical observation rather than a large-scale market driver."
    },
    "trl": {
-    "score": 3,
-    "reason": "The paper describes a retrospective observational study focused on establishing physiological correlations between imaging biomarkers and biochemical markers. It identifies clinical associations rather than developing or validating a novel medical device or therapeutic intervention ready for clinical implementation."
+    "score": 9,
+    "reason": "The study utilizes existing clinical tools (Tissue Doppler Imaging and NTproBNP) in a real-world patient cohort, requiring no new hardware or drug development. This is a near-market clinical validation of a prognostic biomarker strategy that can be implemented immediately in cardiology workflows."
    },
    "ip_strength": {
     "score": 2,
-    "reason": "The study reports a clinical correlation between Doppler velocities and peptide levels; it does not describe a novel device, method, or therapeutic that could be patented, so the IP defensibility is minimal."
+    "reason": "The paper describes a clinical correlation between an existing diagnostic measurement (Tissue Doppler S wave) and a biomarker (NTproBNP), which constitutes a discovery of a natural biological association rather than a patentable invention or proprietary technology."
    }
   },
   "pi": "David Leibowitz",
   "pi_full_name": "David Leibowitz",
   "pi_email": "",
   "pi_affiliation": "Cardiology Department, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "14",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 3,
   "hts_reason": "The paper focuses on clinical physiological parameters (S wave velocities and BNP levels) rather than identifying a specific molecular target or novel molecule for drug screening, and the method described is a clinical measurement rather than a scalable biochemical assay.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -131,44 +131,36 @@
   "date": "2026 Oct 31",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42964924/",
   "source": "PubMed",
-  "score": 15,
-  "summary": "The study analyzes nationwide health data to quantify fatigue levels in adults and children with inflammatory bowel disease (IBD), highlighting a significant burden on patient quality of life. It identifies patterns and risk factors that could inform targeted interventions and monitoring strategies.",
-  "opportunity": "Develop a digital health platform that tracks and predicts fatigue in IBD patients, enabling personalized care plans and reducing disease flare‑ups.",
+  "score": 6,
+  "summary": "This study uses large-scale, nationwide health data to analyze how often physicians document fatigue in patients with inflammatory bowel disease compared to healthy controls. It identifies clinical and demographic patterns that correlate with the documentation of fatigue in this specific patient population.",
+  "opportunity": "The findings highlight a significant, unaddressed symptom burden in IBD that could drive the development of digital health monitoring tools or targeted therapies to manage non-inflammatory symptoms.",
   "fields": [
    "Clinical",
-   "Diagnostics",
-   "Software/AI"
+   "Software/AI",
+   "Immunology"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "The study is an epidemiological observation using existing routine health data to document a known symptom (fatigue) in a known patient population (IBD). While clinically useful for characterization, it lacks the novel mechanistic discovery or technological innovation required for a high novelty score."
+    "reason": "The study is a descriptive epidemiological analysis of existing clinical data rather than a novel therapeutic discovery or a new technological method. While the large, nationwide cohort provides high statistical power, the research confirms well-established clinical associations between IBD and fatigue rather than introducing a groundbreaking scientific paradigm."
    },
    "commercial_potential": {
     "score": 2,
-    "reason": "This is an observational epidemiological study rather than a technology development paper; while it identifies a clinical need, it does not present a new product, therapeutic, or proprietary platform."
-   },
-   "market_size": {
-    "score": 7,
-    "reason": "The study identifies a significant unmet clinical need in a large, chronic patient population (IBD), suggesting a substantial addressable market for fatigue-specific diagnostics or therapeutics. However, without specific prevalence or commercialization data in the title/abstract, the precise economic scale remains unquantified."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "This is an epidemiological observational study using existing health data to characterize a symptom, rather than the development of a new technology, therapeutic, or diagnostic tool. It represents foundational clinical knowledge rather than a technical product or platform."
+    "reason": "This is an epidemiological observational study that identifies clinical prevalence rather than a novel therapeutic, diagnostic tool, or proprietary platform. While it characterizes a clinical need, it lacks a direct technological or product-based output for licensing or commercialization."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This is an epidemiological observational study based on routine health data, which identifies clinical correlations rather than developing a novel composition, device, or platform technology. Observational findings and statistical associations are generally not patentable and offer no proprietary defensibility."
+    "reason": "This is an observational epidemiological study using existing health data to identify clinical trends, which lacks any novel therapeutic, diagnostic, or technological invention capable of being patented or defended as proprietary IP."
    }
   },
   "pi": "Dan Turner",
   "pi_full_name": "Dan Turner",
   "pi_email": "",
   "pi_affiliation": "Juliet Keidan Institute of Pediatric Gastroenterology Hepatology and Nutrition, The Eisenberg R&D Authority, Shaare Zedek Medical Center, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "15",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper is an epidemiological study focused on clinical documentation of symptoms (fatigue) rather than identifying a molecular target or a biochemical assay suitable for HTS.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -192,45 +184,41 @@
   "date": "2026 Oct 30",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42961903/",
   "source": "PubMed",
-  "score": 24,
-  "summary": "This research maps the various functional and transcriptional stages of beta-cell activation to understand how cells transition during metabolic stress or insulin response. By defining this continuum, the study identifies specific molecular signatures that characterize different states of pancreatic cell health and activity.",
-  "opportunity": "The identification of specific beta-cell activation states provides novel biomarkers and therapeutic targets for the precision treatment of Type 1 and Type 2 diabetes.",
+  "score": 22,
+  "summary": "Researchers discovered that pancreatic beta-cells are not uniform but exist in a spectrum of activation states that respond sequentially to glucose levels. This hierarchical organization allows different subsets of cells to specialize in either stress resilience or high-capacity insulin secretion depending on metabolic demand.",
+  "opportunity": "The identification of specific beta-cell functional subsets provides novel biological targets for regenerative medicine and cell therapies aimed at restoring precise glucose control in Type 2 diabetes patients.",
   "fields": [
    "Drug Discovery",
    "Genomics",
-   "Proteomics",
+   "Synthetic Biology",
    "Clinical"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
    "novelty": {
-    "score": 5,
-    "reason": "The study provides a detailed transcriptional and functional map of beta-cell activation states, which adds depth to existing knowledge but does not introduce a fundamentally new concept or technology, positioning it as moderately novel."
+    "score": 7,
+    "reason": "The study moves beyond static cell-type classification by defining a dynamic, continuum-based model of beta-cell activation and spatial hierarchy. While single-cell heterogeneity is well-studied, the discovery of a functional 'division of labor' and the adaptive remodeling mechanism under metabolic stress provides significant new biological insight for therapeutic targeting."
    },
    "commercial_potential": {
     "score": 4,
-    "reason": "The paper describes fundamental biological profiling of cell states, which is high-value discovery science but lacks a direct roadmap toward a specific therapeutic or diagnostic product. While it may enable future drug target identification, it currently functions more as basic academic knowledge than a defined commercial technology."
+    "reason": "The paper provides fundamental mechanistic insight into beta-cell heterogeneity but lacks a direct application, such as a specific drug target or a therapeutic platform. While it could inform future drug discovery, the current findings are descriptive and academic rather than a defined product or service."
    },
    "market_size": {
     "score": 9,
-    "reason": "Beta-cell dysfunction is a fundamental driver of Type 1 and Type 2 diabetes, representing one of the largest global therapeutic markets in life sciences. Understanding the continuum of activation states offers massive platform potential for cell therapies and regenerative medicine targeting multi-billion dollar indications."
+    "reason": "The research targets the fundamental pathophysiology of Type 2 Diabetes, a multi-billion dollar global market with massive unmet demand for regenerative or precision therapies. By identifying specific functional beta-cell subsets and their adaptive mechanisms, this work enables the development of high-value cell therapies and precision medicines to restore metabolic function."
    },
    "trl": {
     "score": 2,
-    "reason": "The paper focuses on fundamental biological profiling and mechanism discovery (transcriptional/functional states) rather than a specific therapeutic intervention or clinical application. This represents early-stage basic research aimed at building foundational knowledge for future drug discovery."
-   },
-   "ip_strength": {
-    "score": 4,
-    "reason": "The paper appears to be a fundamental biological characterization study focused on descriptive profiling rather than the development of a novel therapeutic agent or a proprietary platform technology. While the insights may drive future discovery, transcriptional profiling itself is difficult to protect as intellectual property compared to specific targets or modalities."
+    "reason": "The paper describes fundamental biological discovery and mechanistic profiling of cellular heterogeneity using single-cell sequencing. It is strictly foundational lab-stage research with no immediate therapeutic modality or applied technology described."
    }
   },
   "pi": "Aharon Helman",
   "pi_full_name": "Aharon Helman",
   "pi_email": "aharon.helman@mail.huji.ac.il.",
   "pi_affiliation": "Institute of Biochemistry, Food Science and Nutrition, The Hebrew University of Jerusalem, Rehovot 76100, Israel. Electronic address: aharon.helman@mail.huji.ac.il.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "24",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 2,
   "hts_reason": "The title indicates a descriptive profiling study of cell states rather than the identification of a specific drugable target, disease link, or a scalable screening assay.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -303,43 +291,40 @@
   "date": "2026 Oct 30",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42960433/",
   "source": "PubMed",
-  "score": 24,
-  "summary": "The study identifies two photoreceptor genes, PHYA and PHYC, as key regulators of flowering time and developmental plasticity in wheat. By mapping these loci, the research provides insights that could enable breeding of wheat varieties better adapted to changing climates and growing conditions.",
-  "opportunity": "Genetic markers for PHYA and PHYC can be leveraged to develop climate‑resilient wheat cultivars, opening a market for precision breeding and seed‑technology services.",
+  "score": 22,
+  "summary": "Researchers identified specific genetic markers in wheat that control how the plant manages flowering time and growth under different light conditions, such as shade. They discovered that genes PHYC and VRN-A1 work together to help the plant adapt its development based on its environment.",
+  "opportunity": "This discovery enables the breeding of climate-resilient, high-density wheat varieties that can optimize yields in changing environments or intensive farming systems.",
   "fields": [
    "AgriTech",
-   "Genomics"
+   "Genomics",
+   "FoodTech"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
    "novelty": {
-    "score": 4,
-    "reason": "The study identifies PHYA and PHYC as candidate loci influencing flowering time and plasticity in wheat, which builds on existing knowledge of photoperiod genes in cereals; however, it does not introduce a fundamentally new mechanism or platform, representing a modest incremental advance rather than a groundbreaking discovery."
+    "score": 5,
+    "reason": "While the paper provides valuable genetic insights into specific wheat loci and epistatic interactions, the discovery of light-responsive QTLs and the role of phytochromes is incremental rather than a paradigm shift in plant biology. The research adds granular knowledge to existing breeding frameworks but does not introduce a novel technological platform or a previously unknown biological mechanism."
    },
    "commercial_potential": {
     "score": 6,
-    "reason": "The identification of specific loci for flowering time has clear value for crop improvement and breeding programs, though it represents a foundational genetic discovery rather than a direct product or platform technology."
+    "reason": "The identification of specific genetic loci (PHYC-A and VRN-A1) that regulate flowering time under varying light conditions offers clear value for marker-assisted breeding programs to optimize high-density cropping. However, the commercial value is incremental for the seed industry rather than a transformative platform technology, and its realization depends on the complexity of integrating these epistatic interactions into commercial cultivars."
    },
    "market_size": {
-    "score": 8,
-    "reason": "The study targets wheat flowering time, a critical trait for global wheat production; the agricultural sector is vast and continuously seeks genetic improvements, indicating a large and valuable addressable market."
-   },
-   "trl": {
-    "score": 3,
-    "reason": "The study identifies specific genetic loci (PHYA and PHYC) associated with phenotypic traits, which is fundamental basic research. This stage focuses on understanding biological mechanisms rather than deploying a developed seed variety or breeding tool ready for commercial agriculture."
+    "score": 7,
+    "reason": "The research targets wheat, a massive global commodity with multi-billion dollar annual markets, and identifies genetic levers to optimize yield in high-density cropping systems. While the scientific impact is high, the market size is constrained by the biological pace of crop breeding cycles compared to high-margin biotech sectors."
    },
    "ip_strength": {
-    "score": 3,
-    "reason": "The paper describes fundamental genetic research identifying candidate loci, which is typically considered natural phenomenon and difficult to patent. While potentially useful for marker-assisted breeding, the discovery of gene functions lacks the inherent structural or composition-of-matter defensibility required for high IP scores."
+    "score": 4,
+    "reason": "The findings identify natural genetic variation and QTLs in wheat, which are difficult to patent as 'inventions' rather than 'discoveries.' While the knowledge is valuable for marker-assisted breeding, the defensibility is low because the underlying traits are inherent biological properties that can be replicated by competitors through conventional selection."
    }
   },
   "pi": "Guy Golan",
   "pi_full_name": "Guy Golan",
   "pi_email": "",
   "pi_affiliation": "Leibniz Institute of Plant Genetics and Crop Plant Research (IPK), Seeland, Germany.; The Robert H. Smith Faculty of Agriculture, Food & Environment, The Hebrew University of Jerusalem, Rehovot, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "24",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 3,
   "hts_reason": "While the paper identifies specific molecular targets (PHYA and PHYC), it lacks a disease/condition link relevant to human translational medicine and does not describe a high-throughput screening assay.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -361,45 +346,36 @@
   "date": "2026 Oct 30",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42959254/",
   "source": "PubMed",
-  "score": 18,
-  "summary": "The paper proposes a framework for public health interventions designed to mitigate the long-term psychological and physiological effects of continuous traumatic stress on families. It shifts the focus from individual clinical treatment to systemic, population-level support structures.",
-  "opportunity": "Development of scalable digital mental health platforms or predictive analytics tools for monitoring and intervening in community-wide trauma stress.",
+  "score": 15,
+  "summary": "This paper describes the implementation of ADAPT-Israel, a tiered public health framework designed to provide scalable mental health support to families living under continuous traumatic stress. The model uses a combination of digital tools, AI-guided self-help, group interventions, and telehealth to address the massive gap between mental health demand and clinician availability.",
+  "opportunity": "Scalable, tiered digital therapeutics (DTx) platforms that use AI avatars and community-based models to manage large-scale population mental health crises.",
   "fields": [
    "Software/AI",
    "Clinical",
-   "Neuroscience",
-   "Other"
+   "Neuroscience"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
    "novelty": {
-    "score": 2,
-    "reason": "The title suggests a public health framework or policy proposal rather than a novel scientific discovery, technological invention, or a new biological mechanism. It appears to be an application of existing sociological or epidemiological concepts to a specific population rather than groundbreaking technical innovation."
+    "score": 4,
+    "reason": "The paper describes the implementation and adaptation of an existing evidence-based program (ADAPT) rather than the creation of a new scientific paradigm or novel therapeutic mechanism. While the tiered population-level deployment strategy is a pragmatic public health innovation, it represents an application of known methodologies to a specific crisis context rather than groundbreaking scientific discovery."
    },
    "commercial_potential": {
-    "score": 2,
-    "reason": "The title suggests a public health framework or policy-oriented strategy rather than a discrete, patentable technology or a scalable therapeutic product. There is no indication of a proprietary tool, digital health intervention, or platform that could be commercialized through traditional life-science or deep-tech models."
+    "score": 4,
+    "reason": "The work describes a public health intervention model rather than a proprietary technology or scalable platform, making it more of a service-delivery framework than a licensable product. While the AI avatar component holds some digital health potential, the overall value is tied to specific regional implementation rather than a broad, high-margin commercializable asset."
    },
    "market_size": {
-    "score": 9,
-    "reason": "Continuous traumatic stress affects massive global populations, representing a vast, high-unmet-need market within the mental health and public health sectors. The population-level approach suggests scalable demand across multiple healthcare systems and demographics."
-   },
-   "trl": {
-    "score": 3,
-    "reason": "The paper proposes a population-level public health framework, which is primarily conceptual and policy-oriented rather than a developed technology; it is at an early stage of development with no demonstrated prototypes or field trials, placing it around TRL 3."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The paper focuses on a population-level public health strategy rather than a specific technological innovation, offering little basis for patentable claims or defensible IP."
+    "score": 7,
+    "reason": "The market for scalable, digital mental health interventions for trauma-exposed populations is massive and globally relevant, particularly in conflict-prone or high-stress regions. However, the current scope is centered on a specific regional crisis (Israel), which may limit immediate total addressable market (TAM) estimates compared to a broader, non-region-specific platform."
    }
   },
   "pi": "Adena Hoffnung-Assouline",
   "pi_full_name": "Adena Hoffnung-Assouline",
   "pi_email": "",
   "pi_affiliation": "Hebrew University of Jerusalem, Paul Baerwald School of Social Work & Social Welfare, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "18",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 2,
   "hts_reason": "The paper appears to be a population-level public health review and does not identify a specific new molecule or target, nor link it to a particular disease, nor describe a testable assay.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -424,10 +400,11 @@
   "url": "https://pubmed.ncbi.nlm.nih.gov/42955197/",
   "source": "PubMed",
   "score": 11,
-  "summary": "This study investigates how the presence of infraoccluded permanent first molars affects the surrounding bone and tooth root development using a split-mouth design. It analyzes the structural changes in the jaw and teeth caused by these partially erupted teeth in a clinical setting.",
-  "opportunity": "The findings could improve orthodontic diagnostic software or specialized dental imaging tools used to predict long-term dentoalveolar complications.",
+  "summary": "This study examines how a sunken permanent first molar, often caused by ankylosis, negatively impacts the surrounding teeth and root development. By comparing affected teeth to healthy ones in the same mouth, researchers quantified significant shifts in tooth position, angulation, and root shape.",
+  "opportunity": "The quantified morphological changes identified could serve as high-fidelity training data for AI-driven orthodontic diagnostic software or automated radiographic assessment tools.",
   "fields": [
    "Medical Device",
+   "Software/AI",
    "Imaging",
    "Clinical"
   ],
@@ -435,32 +412,32 @@
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "The study is a retrospective clinical observation of a known dental condition, focusing on characterizing developmental outcomes rather than introducing a new biological mechanism, technology, or therapeutic intervention. While clinically useful for diagnostic refinement, it lacks the groundbreaking innovation or platform-enabling potential required for a high novelty score."
+    "reason": "The study is a descriptive retrospective clinical observation that characterizes known orthodontic phenomena rather than introducing a new biological mechanism, technology, or therapeutic intervention. While it provides useful clinical data through a split-mouth design, it lacks the groundbreaking innovation required for a high novelty score in a deep-tech context."
    },
    "commercial_potential": {
-    "score": 3,
-    "reason": "The study is a retrospective clinical observation with no direct product or technology development, offering limited commercial opportunities beyond academic interest."
+    "score": 2,
+    "reason": "This is a retrospective clinical observational study providing descriptive anatomical data rather than a new therapeutic intervention, diagnostic tool, or medical device. While the findings improve clinical understanding, they do not represent a tangible product, service, or licensable technology."
    },
    "market_size": {
-    "score": 2,
-    "reason": "The paper describes a narrow, retrospective clinical observation of a specific dental pathology rather than a commercial product, platform, or therapeutic intervention with scalable market demand."
+    "score": 3,
+    "reason": "The study addresses a specific, relatively low-prevalence orthodontic complication rather than a broad clinical category or a high-volume therapeutic area. The market is limited to a niche segment of pediatric/adolescent dental patients requiring corrective intervention."
    },
    "trl": {
     "score": 2,
-    "reason": "This is an observational, retrospective clinical study focused on understanding biological pathology rather than developing a new medical device, drug, or diagnostic tool. It contributes to fundamental clinical knowledge but does not represent a technological development process moving toward commercialization."
+    "reason": "This is a basic clinical observational study providing descriptive epidemiological and anatomical data rather than a new technology, device, or therapeutic intervention. It characterizes a medical condition but does not advance a specific technological solution toward commercialization."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This is a clinical retrospective observational study providing epidemiological or anatomical data rather than a new technology, molecule, or device. It lacks any proprietary invention, method, or composition that would be subject to patent protection or industrial defensibility."
+    "reason": "This is a retrospective clinical observational study that identifies natural disease progression and anatomical correlations rather than introducing a new technology, device, or proprietary methodology. As a piece of descriptive clinical research, it lacks any patentable subject matter or defensible intellectual property."
    }
   },
   "pi": "Stella Chaushu",
   "pi_full_name": "Avi Leibovich",
   "pi_email": "avi.leibovich@mail.huji.ac.il.",
   "pi_affiliation": "Department of Orthodontics, Hadassah Medical Center, Faculty of Dental Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "11",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The study focuses on clinical observations of molar development and does not identify a specific new molecule or target, link it to a disease, nor describe a testable assay suitable for high‑throughput screening.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -538,43 +515,36 @@
   "date": "2026 Oct 29",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42954638/",
   "source": "PubMed",
-  "score": 13,
-  "summary": "The research investigates how a specific anti-cancer peptide kills cancer cells at a molecular level. This study aims to clarify the biological pathways and mechanisms responsible for the peptide's toxic effects on malignant cells.",
-  "opportunity": "Understanding these mechanisms enables the optimization of peptide scaffolds to improve therapeutic efficacy and reduce off-target toxicity in next-generation oncology drugs.",
+  "score": 18,
+  "summary": "Researchers have mapped the specific step-by-step mechanism by which a particular anti-cancer peptide penetrates cell membranes to target internal organelles like the mitochondria. By identifying how specific amino acid mutations shift the peptide's target from the mitochondria to the nucleus, the study provides a blueprint for the rational design of precision therapeutics.",
+  "opportunity": "The ability to predictably engineer peptides that target specific intracellular organelles opens a high-value pathway for developing next-generation, low-toxicity cancer drugs with high specificity.",
   "fields": [
    "Drug Discovery",
-   "Clinical"
+   "Synthetic Biology",
+   "Proteomics"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
    "novelty": {
-    "score": 2,
-    "reason": "The title suggests a mechanistic characterization study of an existing compound rather than the discovery of a new modality or a first-in-class platform. Without an abstract, the work appears to be incremental descriptive science rather than groundbreaking innovation."
+    "score": 6,
+    "reason": "While the study provides valuable mechanistic insights into organelle-specific targeting through point mutations, the fundamental concept of using membrane-active peptides to induce apoptosis is well-established in the field. The novelty lies in the specific sequence-to-organelle mapping rather than a groundbreaking new paradigm of cancer therapy."
    },
    "commercial_potential": {
-    "score": 3,
-    "reason": "The paper appears to be basic mechanistic research on peptide cytotoxicity with no clear indication of a developed product, licenseable technology, or immediate clinical application, yielding limited commercial potential."
-   },
-   "market_size": {
-    "score": 3,
-    "reason": "The title describes fundamental mechanistic research rather than a specific therapeutic indication or clinical application, making it impossible to determine a target market size. Without evidence of a specific disease focus or platform scalability, the commercial addressable demand remains undefined."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "The title indicates basic mechanistic research focused on understanding how a peptide works at a molecular level, which is characteristic of early-stage fundamental discovery rather than applied development."
+    "score": 6,
+    "reason": "The research provides a valuable mechanistic roadmap for the rational design of targeted therapeutics via specific organelle-targeting mutations, but the study remains in the fundamental discovery phase without addressing drug delivery, stability, or pharmacokinetic challenges."
    },
    "ip_strength": {
-    "score": 3,
-    "reason": "The title describes basic mechanistic research rather than a novel chemical entity or platform, suggesting the work focuses on biological characterization which is difficult to protect compared to a specific therapeutic composition."
+    "score": 6,
+    "reason": "The study identifies a specific therapeutic peptide sequence (NAF-144-67) and provides mechanistic data that could support composition-of-matter claims, but the reliance on a naturally derived sequence and point mutations may face narrow claim construction or enablement challenges."
    }
   },
   "pi": "Rachel Nechushtai",
   "pi_full_name": "Rachel Nechushtai",
   "pi_email": "",
   "pi_affiliation": "Institute of Life Science, Faculty of Science and Mathematics, The Hebrew University of Jerusalem, Edmond J. Safra Campus at Givat Ram, Jerusalem9190401, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "13",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 3,
   "hts_reason": "The title suggests a general study of cytotoxic mechanisms of an anti‑cancer peptide, but no specific novel molecule or target is named, and no disease link or assay is described in the available information.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -590,42 +560,38 @@
   "date": "2026 Oct 28",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42952130/",
   "source": "PubMed",
-  "score": 5,
-  "summary": "The study investigates how religious authority is used to enforce coercive control in intimate partner violence within the Israeli Ultra-Orthodox community. It focuses on sociocultural dynamics rather than biomedical or technological aspects.",
-  "opportunity": "No direct commercial opportunity in biotech, medtech, agritech, materials, clean energy, or AI/software tools for science.",
+  "score": 7,
+  "summary": "This research investigates the specific methods of non-physical coercive control used in domestic violence within the ultra-Orthodox Jewish community in Israel. It highlights how spiritual, financial, and social mechanisms are used to entrap women within highly collectivist religious structures.",
+  "opportunity": "There is no direct commercial opportunity in this social science paper, as it focuses on qualitative sociological patterns rather than scalable technological or biological interventions.",
   "fields": [
    "Other"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
    "novelty": {
-    "score": 1,
-    "reason": "This is a sociological or qualitative social science paper rather than a deep-tech or life-science research study. It lacks scientific novelty in terms of technical, molecular, or platform-enabling innovation."
+    "score": 4,
+    "reason": "While the study provides valuable qualitative insights into a specific socio-religious niche, the identification of coercive control mechanisms like financial and spiritual abuse follows established sociological frameworks rather than introducing a groundbreaking new theory or paradigm. The novelty lies in the specific cultural application rather than a fundamental scientific or structural innovation."
    },
    "commercial_potential": {
     "score": 1,
-    "reason": "The paper is a sociological or qualitative study of social dynamics and religious authority, which does not involve a patentable technology, medical device, or scalable platform with direct commercial applications."
-   },
-   "market_size": {
-    "score": 1,
-    "reason": "This is a sociological/humanities research paper addressing a social issue rather than a commercial technology or product. It lacks a scalable market, addressable demand in a commercial sense, or potential for industrial application."
+    "reason": "This is a qualitative sociological study providing theoretical insights into social phenomena, which does not translate into a patentable technology, a clinical tool, or a scalable commercial product. While the findings may inform social policy, there is no clear path to industrial or commercial exploitation."
    },
    "trl": {
     "score": 1,
-    "reason": "This is a sociological or qualitative research paper regarding social behavior and religious authority, not a technological development. It lacks any engineered product, platform, or technical intervention that can be measured on a technology readiness scale."
+    "reason": "This is a qualitative sociological study providing theoretical insights rather than a technological or medical intervention. It lacks a tangible product, platform, or tool that can be scaled for commercial or clinical application."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This is a qualitative sociological or social science study regarding behavioral patterns and religious authority, which lacks any proprietary technology, biochemical compounds, or engineering innovations capable of patent protection or technical defensibility."
+    "reason": "The paper is a qualitative sociological study and does not contain any proprietary technology, chemical entities, or technical methodologies that are patentable or industrially defensible. Its value lies in social insight rather than intellectual property."
    }
   },
   "pi": "Sara Zalcberg",
   "pi_full_name": "Sara Zalcberg",
   "pi_email": "sarazalcberg@gmail.com",
   "pi_affiliation": "Hebrew University of Jerusalem, Israel.; Shandong-Tel Aviv Joint Institute for Jewish and Israel Studies, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "5",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper is a sociological or criminological study regarding social control and violence; it does not identify a biological molecule, target, or biochemical assay.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -648,43 +614,43 @@
   "url": "https://pubmed.ncbi.nlm.nih.gov/42947254/",
   "source": "PubMed",
   "score": 7,
-  "summary": "This paper analyzes systemic shortages in the Israeli medical workforce and proposes policy changes to resolve them. It focuses on the workforce planning and administrative reforms needed to sustain healthcare delivery.",
-  "opportunity": "Potential for healthcare administration software and AI-driven workforce optimization tools to automate scheduling and resource allocation.",
+  "summary": "The paper analyzes the Israeli Ministry of Health's strategic efforts to resolve critical physician shortages, uneven training quality, and geographic maldistribution. It outlines a multi-faceted policy framework focused on data-driven workforce planning and increasing medical school enrollment.",
+  "opportunity": "The identified physician shortages and suboptimal specialty mix create a high-demand market for AI-driven clinical decision support tools and remote healthcare technologies that augment existing staff.",
   "fields": [
-   "Clinical",
    "Software/AI",
+   "Clinical",
    "Other"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
    "novelty": {
-    "score": 1,
-    "reason": "This paper is a policy analysis rather than scientific or technical research, offering no novel biological, chemical, or technological breakthroughs. It addresses administrative and systemic challenges through socio-political frameworks rather than technical innovation."
+    "score": 2,
+    "reason": "The paper is a policy review and descriptive synthesis of existing government actions rather than an introduction of new scientific theories, technical methodologies, or technological innovations. It lacks the groundbreaking intellectual property or fundamental scientific discovery required for a high novelty score in a deep-tech context."
    },
    "commercial_potential": {
-    "score": 2,
-    "reason": "The paper discusses workforce policy rather than a protectable technology or product, offering limited direct commercial opportunity."
+    "score": 1,
+    "reason": "This is a policy review paper focused on macro-level healthcare administration and government strategy rather than the development of a proprietary product, service, or technical asset. It lacks any tangible, licensable technology or commercializable intellectual property."
    },
    "market_size": {
     "score": 2,
-    "reason": "The paper focuses on public policy and workforce management rather than a scalable product, technology, or service with a measurable commercial market size. It addresses systemic healthcare administration rather than a targetable commercial demand."
+    "reason": "This is a policy review paper focused on governmental workforce management rather than a commercial technology, product, or service with a scalable market. The scope is limited to public sector administrative solutions for a single national healthcare system, which lacks the commercial addressable demand required for deep-tech investment."
    },
    "trl": {
     "score": 1,
-    "reason": "The paper is a policy analysis regarding healthcare workforce management and does not involve a physical technology, product, or engineered solution. Therefore, it cannot be assigned a technology readiness level in the context of deep-tech development."
+    "reason": "This is a policy review and academic analysis of workforce management rather than a technological development or clinical intervention. It lacks a technical prototype, product, or proprietary platform, placing it at the lowest level of technology readiness."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "The paper addresses public policy and workforce management, which are socio-political strategies rather than technical or scientific innovations capable of being patented or protected via IP."
+    "reason": "The paper is a policy review and administrative analysis of healthcare workforce management, containing no proprietary technology, novel algorithms, or patentable inventions."
    }
   },
   "pi": "Joseph Mendlovic",
   "pi_full_name": "Joseph Mendlovic",
   "pi_email": "sefimen@gmail.com.",
   "pi_affiliation": "Ministry of Health, Jerusalem, Israel. sefimen@gmail.com.; Shaare Zedek Medical Center, Affiliated with the Hadassah-Hebrew University School of Medicine, Jerusalem, Israel. sefimen@gmail.com.; The Israeli Ministry of Health - Office of the Associate Director General, Yermiyahu 39, Jerusalem, 913101, Israel. sefimen@gmail.com.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "7",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper discusses healthcare policy and workforce challenges; it contains no molecular targets, disease mechanisms, or laboratory assays.",
   "hts_eval_model": "gemma-4-31b-it"
@@ -706,44 +672,38 @@
   "date": "2026-10-27",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42944735/",
   "source": "PubMed",
-  "score": 7,
-  "summary": "The paper investigates the breadth and variation of genetic sequences within a specific biological population or species. This research provides a foundational map of genetic differences that drive biological diversity and phenotypic variation.",
-  "opportunity": "High-resolution genomic diversity data can be licensed to pharmaceutical companies to improve the accuracy of target identification and the success rates of personalized medicine.",
+  "score": 4,
+  "summary": "The provided text is incomplete and only contains a partial title regarding genomic diversity. Therefore, the specific biological subject and its scientific implications cannot be determined.",
+  "opportunity": "Unable to identify a commercial opportunity due to missing data in the title and abstract.",
   "fields": [
-   "Genomics",
-   "Drug Discovery",
-   "Software/AI"
+   "Genomics"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
    "novelty": {
     "score": 1,
-    "reason": "The provided input is an incomplete title and lacks an abstract or data, making it impossible to identify any scientific contribution or novelty."
+    "reason": "The title is an incomplete fragment that lacks sufficient information to assess any scientific contribution or departure from prior art."
    },
    "commercial_potential": {
     "score": 1,
-    "reason": "The provided information is insufficient to assess commercial viability as both the title and abstract are incomplete. A purely descriptive title regarding genomic diversity lacks any indication of a specific application, platform, or therapeutic target."
+    "reason": "The title is incomplete and lacks any specific technical or application-based detail, making it impossible to determine if the underlying research has any commercial or industrial utility."
    },
    "market_size": {
     "score": 1,
-    "reason": "The title is incomplete and provides no information regarding a specific application, therapeutic target, or technology. Without a defined scope, it is impossible to assess any market size or addressable demand."
-   },
-   "trl": {
-    "score": 3,
-    "reason": "The paper appears to be basic genomic diversity research with no evidence of applied methods or prototypes, indicating a lab-stage technology rather than near-market readiness."
+    "reason": "The title is incomplete and lacks any context regarding a specific application, technology, or disease state, making it impossible to determine a target market or addressable demand."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "The title suggests a descriptive genomic survey or observational study, which typically lacks patentable subject matter and represents foundational knowledge rather than a defensible technological asset."
+    "reason": "The title suggests a descriptive study of natural variation rather than a novel technological invention, making it highly unlikely to contain patentable subject matter or defensible IP."
    }
   },
   "pi": "Ehud Elnekave",
   "pi_full_name": "Ehud Elnekave",
   "pi_email": "",
   "pi_affiliation": "The Koret School of Veterinary Medicine, Robert H. Smith Faculty of Agriculture, Food and Environment, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "7",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper title is incomplete and lacks a specific molecule, disease link, or assay description; it provides no actionable information for HTS screening.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -758,42 +718,38 @@
   "date": "2026-10-26",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42957175/",
   "source": "PubMed",
-  "score": 6,
-  "summary": "The paper discusses a reflective inquiry into moral formation for health professionals, proposing a revised framework for current and future practitioners. It focuses on ethical education and professional development rather than technical or scientific innovation.",
-  "opportunity": "There is limited direct commercial potential; however, the framework could inform the development of ethics training modules or certification programs for healthcare providers.",
+  "score": 7,
+  "summary": "This paper discusses the necessity of integrating historical awareness and moral resilience into medical education to combat systemic issues like antisemitism and racism. It proposes a revised framework for professional identity formation to help clinicians navigate moral distress and institutional accountability in volatile socio-political climates.",
+  "opportunity": "There is no direct commercial opportunity in this paper as it is a philosophical and pedagogical treatise on medical ethics and professional training.",
   "fields": [
    "Other"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
    "novelty": {
-    "score": 2,
-    "reason": "The paper appears to be a reflective, philosophical discussion on moral formation for health professionals, offering no new empirical data, methods, or theoretical breakthroughs beyond existing ethical literature."
+    "score": 3,
+    "reason": "The paper is a reflective, qualitative reappraisal of existing pedagogical frameworks rather than a presentation of new scientific methodology or a technical breakthrough. While it provides timely socio-political context, it does not introduce a novel mechanism, invention, or paradigm-shifting technical discovery."
    },
    "commercial_potential": {
     "score": 1,
-    "reason": "The title indicates a theoretical or pedagogical inquiry into ethics and moral formation, which lacks a tangible technological, clinical, or industrial application suitable for commercialization."
-   },
-   "market_size": {
-    "score": 1,
-    "reason": "The paper appears to be a philosophical or pedagogical inquiry into moral education rather than a commercial technology or therapeutic product. Consequently, it lacks a quantifiable addressable market or industrial value proposition typical of life-science or deep-tech investments."
+    "reason": "The paper is a philosophical and pedagogical reflection on medical ethics and professional identity formation, lacking any tangible product, platform, or scalable technological innovation. It does not offer a licensable asset or a commercially viable service model."
    },
    "trl": {
-    "score": 1,
-    "reason": "The paper is a philosophical or pedagogical treatise on moral formation rather than a technological or biological innovation. It lacks any physical prototype, clinical tool, or technical application that can be measured on a TRL scale."
+    "score": 2,
+    "reason": "This is a theoretical and philosophical conceptual framework rather than a tangible technology or product. It exists at the earliest stage of intellectual development, focusing on pedagogical and ethical inquiry rather than a validated, scalable intervention."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "The paper discusses moral formation and educational frameworks for health professionals, which are pedagogical or philosophical concepts that lack patentable subject matter or technical defensibility. There is no proprietary technology, molecular entity, or engineering innovation present to protect via intellectual property."
+    "reason": "The paper proposes a pedagogical and philosophical framework for medical education rather than a technical, biological, or digital innovation. As a theoretical framework for 'moral formation,' it lacks patentable subject matter or proprietary technical defensibility required for life-science or deep-tech investment."
    }
   },
   "pi": "Shmuel P Reis",
   "pi_full_name": "Shmuel P Reis",
   "pi_email": "",
   "pi_affiliation": "Digital Medical Technologies, Holon Institute of Technology, Holon, Israel.; Center for Medical Education, School of Medicine, Hebrew University, Jerusalem, Israel.; Clalit Health Services, Haifa and Western Galilee District, Gilon and Misgav Village Clinics, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "6",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper is a philosophical or pedagogical discussion regarding medical ethics/education and contains no specific molecular target, disease link, or biological assay.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -865,9 +821,9 @@
   "date": "2026-10-26",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42935128/",
   "source": "PubMed",
-  "score": 18,
-  "summary": "The research investigates how the body's innate immune system interacts with abnormal cannabinoids when fighting Candida fungal infections. It aims to understand if these compounds can modulate immune responses to enhance or inhibit fungal clearance.",
-  "opportunity": "Developing cannabinoid-based immunomodulatory therapies to manage systemic fungal infections or treat immunocompromised patients.",
+  "score": 25,
+  "summary": "This research investigates how a specific class of non-psychoactive synthetic cannabinoids can modulate the innate immune response to combat invasive Candida infections. It explores the interaction between these abnormal cannabinoids and key immune cells like neutrophils and macrophages to enhance fungal clearance.",
+  "opportunity": "Development of novel non-psychoactive antifungal adjunct therapies that augment the host immune system to treat high-mortality systemic candidiasis.",
   "fields": [
    "Drug Discovery",
    "Immunology",
@@ -876,33 +832,29 @@
   "added_date": "2026-11-02",
   "score_breakdown": {
    "novelty": {
-    "score": 4,
-    "reason": "The study appears to investigate interactions between innate immune responses and cannabinoids in the context of Candida infection, a topic that has been explored in various preclinical settings; it does not present a fundamentally new mechanism or platform, thus offering modest novelty."
+    "score": 7,
+    "reason": "The research introduces a novel class of synthetic, non-psychoactive lipid compounds (Abn-CBDs) with specific regioisomeric configurations to modulate innate immunity, offering a distinct alternative to classical cannabinoid therapies. While the therapeutic target (Candida) is established, the structural novelty of the ligand class provides a potentially protectable and differentiated chemical entity."
    },
    "commercial_potential": {
-    "score": 2,
-    "reason": "The title suggests basic mechanistic research into the interaction between cannabinoids and immunity, which lacks a defined therapeutic target, delivery modality, or clear path to a commercial product."
+    "score": 4,
+    "reason": "While the study identifies a novel mechanism involving non-psychoactive cannabinoids to modulate immunity against fungal infections, the abstract describes fundamental mechanistic research rather than a defined therapeutic candidate, formulation, or delivery platform. The path to a commercial product remains highly speculative without data on toxicity, pharmacokinetics, or specific lead optimization."
    },
    "market_size": {
-    "score": 6,
-    "reason": "The target market—Candida infection treatment using innate immunity and cannabinoid-based therapies—is sizable due to the prevalence of fungal infections, but the niche focus on cannabinoid adjuncts limits immediate addressable demand compared to broader antifungal markets."
-   },
-   "trl": {
-    "score": 4,
-    "reason": "The study appears to be basic mechanistic research on immune response and cannabinoids in a fungal infection model, likely conducted in vitro or in animal models, indicating a laboratory-stage technology with limited evidence of translation to clinical or commercial application."
+    "score": 7,
+    "reason": "The target indication (invasive candidiasis) addresses a high-mortality, critical care niche with significant unmet medical need, though the market is more specialized than broad-spectrum antibiotics. The use of a novel class of synthetic lipid compounds (Abn-CBDs) suggests potential for platform expansion into other fungal or inflammatory indications."
    },
    "ip_strength": {
-    "score": 2,
-    "reason": "The title suggests fundamental biological research on host-pathogen interactions rather than a novel composition of matter or a proprietary therapeutic delivery system. Without a specific molecule or method disclosed, the work appears to be mechanistic academic observation with low inherent patentability."
+    "score": 7,
+    "reason": "The identification of a structurally distinctive class of synthetic lipid compounds (Abn-CBDs) suggests strong potential for composition-of-matter patents and novel chemical entity protection. However, the abstract focuses on biological mechanism rather than specific lead candidates or proprietary formulation data required to confirm high-level defensibility."
    }
   },
   "pi": "Francesca Levi Schaffer",
   "pi_full_name": "Francesca Levi Schaffer",
   "pi_email": "",
   "pi_affiliation": "Pharmacology and Experimental Therapeutics Unit, School of Pharmacy, Institute for Drug Research, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "18",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 2,
   "hts_reason": "The title is descriptive and indicates a study of physiological interactions rather than a specific drug discovery effort; it fails to identify a specific molecule, target, or a scalable assay for HTS.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -1143,43 +1095,44 @@
   "date": "2026-10-21",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42939250/",
   "source": "PubMed",
-  "score": 11,
-  "summary": "The study uses focused ion beam scanning electron microscopy (FIB‑SEM) to map the nanoscale architecture of the layered bone in the pectoral fin spine of the Russian sturgeon, revealing detailed 3D structural organization. It provides insights into the hierarchical design and mechanical properties of this unique biomaterial.",
-  "opportunity": "The high‑resolution 3D imaging technique could be adapted to develop advanced bioinspired composite materials or to improve bone tissue engineering scaffolds, creating a niche market for biomaterials and regenerative medicine solutions.",
+  "score": 12,
+  "summary": "Researchers used advanced 3D electron microscopy to map the nanoscale collagen arrangements in the pectoral fin spines of Russian sturgeons. They discovered that while osteons follow a complex fanning pattern, the outer bone consists of highly aligned, unidirectional fibrils optimized for mechanical loading.",
+  "opportunity": "Understanding these unique hierarchical collagen architectures could inform the development of next-generation bio-inspired composite materials or advanced bone-graft scaffolds for regenerative medicine.",
   "fields": [
    "Materials",
+   "Medical Device",
    "Imaging"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
    "novelty": {
-    "score": 3,
-    "reason": "The research appears to be a descriptive structural characterization study using established imaging techniques (FIB-SEM) on a specific biological specimen, rather than a development of a new methodology or a transformative biological discovery."
+    "score": 4,
+    "reason": "The study provides detailed descriptive characterization of existing biological structures using standard high-resolution imaging, rather than introducing a new biological mechanism or a disruptive technological platform. While it offers valuable anatomical insights into collagen orientation, it follows established methodologies to observe known phenomena."
    },
    "commercial_potential": {
     "score": 2,
-    "reason": "The paper appears to be fundamental basic science focused on biological characterization rather than a technology platform or a therapeutic application. There is no clear indication of a scalable product, diagnostic tool, or industrial process derived from this specific morphological study."
+    "reason": "The paper is a fundamental biological characterization study focused on evolutionary morphology rather than a technological application or a platform for biomimetic engineering. While it provides descriptive structural data, it lacks a clear roadmap for translation into a commercial product, service, or patentable material."
    },
    "market_size": {
     "score": 2,
-    "reason": "The research is a niche, fundamental biophysical study of a specific biological specimen (sturgeon fin spine) with no clear application to a scalable commercial market or industrial sector. The findings appear to be of academic interest in marine biology or histology rather than a platform for broad clinical or industrial demand."
+    "reason": "This is a fundamental evolutionary biology and structural characterization study with no clear path to a commercial product or industrial application. The findings offer academic insight into bone morphogenesis rather than addressing a specific market demand or scalable technology."
    },
    "trl": {
     "score": 2,
-    "reason": "This is a fundamental basic science study focused on descriptive morphological characterization using advanced imaging. It lacks a specific applied device, therapeutic application, or diagnostic utility that would move it toward a commercial technology."
+    "reason": "The study is fundamental basic research focused on characterizing biological microstructures rather than developing a product or technology. It represents early-stage discovery science with no immediate pathway to commercial application or industrial utility."
    },
    "ip_strength": {
     "score": 2,
-    "reason": "The paper describes a fundamental biological characterization of natural tissue using standard imaging techniques (FIB-SEM), which is an observation of nature rather than a novel, patentable composition, method, or device. There is no indication of a proprietary tool, process, or synthetic application that provides industrial or clinical defensibility."
+    "reason": "This is a fundamental biological characterization study that describes natural structures rather than presenting a novel synthetic material, process, or device. While the observations are scientifically valuable, the descriptive nature of the findings lacks the inventive step or industrial application required for strong patentability."
    }
   },
   "pi": "Joshua Milgram",
   "pi_full_name": "Joshua Milgram",
   "pi_email": "",
   "pi_affiliation": "Faculty of Agriculture Food & Environment, Koret School of Veterinary Medicine, Hebrew University Jerusalem, Rehovot 7610001, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "11",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper describes structural characterization of anatomical features in a fish species and lacks a specific drug target, a human disease link, or a functional biochemical/cellular assay suitable for HTS.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -1266,8 +1219,8 @@
   "url": "https://pubmed.ncbi.nlm.nih.gov/42938907/",
   "source": "PubMed",
   "score": 24,
-  "summary": "The study compares a dynamic surface‑guided positioning system (ExacTrac) with traditional tattoo‑based setup for breast cancer radiotherapy, assessing accuracy and preparation time. Results suggest the surface‑guided method may improve setup precision while reducing patient preparation effort.",
-  "opportunity": "A commercial opportunity exists to develop or license advanced surface‑guided positioning systems that enhance radiotherapy accuracy and workflow efficiency for oncology clinics.",
+  "summary": "The study compares a dynamic surface-guided imaging system against traditional permanent tattoo-based methods for positioning patients during breast cancer radiotherapy. It evaluates whether the high-tech surface tracking improves setup precision and reduces the time required for patient preparation.",
+  "opportunity": "Development and clinical integration of non-invasive, surface-guided motion management systems to replace permanent skin markings in oncology workflows.",
   "fields": [
    "Medical Device",
    "Imaging",
@@ -1277,32 +1230,32 @@
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "The paper describes a retrospective clinical comparison of existing technologies (ExacTrac vs. traditional tattooing) rather than the introduction of a new invention or breakthrough methodology. It evaluates clinical performance and workflow efficiency of known tools rather than proposing a novel scientific paradigm."
+    "reason": "The study is a retrospective clinical comparison of two existing technologies rather than the introduction of a new method or device. It evaluates the comparative efficacy of established surface-guided radiotherapy versus traditional tattooing, representing incremental clinical validation rather than scientific novelty."
    },
    "commercial_potential": {
     "score": 4,
-    "reason": "The paper describes a clinical performance comparison of an existing technology (ExacTrac) rather than the development of a new, protectable asset or platform. While it validates clinical utility, the work is descriptive of current workflows rather than presenting a novel commercializable product or IP."
+    "reason": "The paper appears to be a clinical validation study of an existing technology rather than the development of a new, proprietary innovation. While it confirms the utility of ExacTrac, the work itself functions as clinical evidence for a product already on the market rather than a new commercial opportunity."
    },
    "market_size": {
     "score": 6,
-    "reason": "The technology targets a specific clinical workflow within radiation oncology (breast cancer setup), representing a significant but niche segment of the radiotherapy market. While clinically relevant, it addresses a procedural optimization rather than a broad, platform-enabling market expansion."
+    "reason": "The market is limited to a specific clinical niche (breast cancer radiotherapy) and focuses on an incremental workflow improvement rather than a broad platform technology. While the clinical need is established, the addressable market is constrained by existing radiotherapy hardware and specific patient demographics."
    },
    "trl": {
     "score": 9,
-    "reason": "The study evaluates a clinical comparison between two existing technological workflows (surface-guided vs. tattoo-based), indicating the technology is already integrated into clinical practice and near-market/market-ready."
+    "reason": "The paper compares an existing clinical technology (ExacTrac) against a standard care method (tattoos) in a retrospective clinical setting, indicating the technology is already integrated into clinical workflows and undergoing validation for routine use."
    },
    "ip_strength": {
     "score": 2,
-    "reason": "The paper is a retrospective clinical validation study comparing existing technologies (ExacTrac vs. traditional tattooing), which evaluates clinical efficacy rather than novel, patentable hardware or software IP."
+    "reason": "The paper describes a clinical comparative study of existing technologies (ExacTrac vs. tattooing) rather than the introduction of a new, patentable invention. The study validates clinical utility but does not present novel intellectual property or proprietary hardware/software architectures."
    }
   },
   "pi": "Aaron M Allen",
   "pi_full_name": "Aaron M Allen",
   "pi_email": "",
   "pi_affiliation": "Helmsley Cancer Center-Shaare Zedek Medical Center, The Hebrew University of Jerusalem, Shmuel Bait 12, Jerusalem 9103102, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "24",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper focuses on radiotherapy positioning techniques and medical imaging accuracy rather than molecular biology; it identifies no specific molecule or target and provides no biochemical assay for HTS.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -1326,43 +1279,35 @@
   "date": "2026 Oct 14",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42941454/",
   "source": "PubMed",
-  "score": 19,
-  "summary": "This clinical study examines how performing a routine Pringle maneuver—a technique to temporarily restrict blood flow to the liver—during the removal of a recipient's liver impacts surgical outcomes. The research suggests that this standardizing procedure leads to better recovery and graft success for adult liver transplant patients.",
-  "opportunity": "The findings support the development of specialized surgical training platforms or real-time hemodynamic monitoring devices designed to optimize the timing and execution of blood flow restriction during complex transplant surgeries.",
+  "score": 6,
+  "summary": "The study examines how performing the Pringle maneuver—a technique to temporarily restrict blood flow to the liver—routinely during the recipient's surgery affects recovery and graft success in adult liver transplant patients. It suggests that standardized application of this surgical maneuver can lead to better immediate outcomes following the transplant procedure.",
+  "opportunity": "There is a niche market for surgical training platforms, specialized vascular clamping devices, or real-time intraoperative monitoring tools designed to optimize the timing and execution of the Pringle maneuver during complex transplant surgeries.",
   "fields": [
    "Clinical",
    "Medical Device"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "The paper investigates a procedural modification (Pringle maneuver) of an existing surgical technique rather than introducing a novel biological mechanism or a new technology. It represents incremental clinical optimization of established surgical practice rather than a groundbreaking scientific innovation."
-   },
    "commercial_potential": {
     "score": 2,
-    "reason": "This is a clinical observation/observational study regarding a surgical technique rather than a new device, drug, or platform technology. It suggests an optimization of existing surgical practice rather than the creation of a new, licensable, or protectable commercial product."
+    "reason": "This is a clinical observation study regarding a standard surgical technique (the Pringle maneuver) rather than the development of a new device, drug, or proprietary technology. It provides evidence for clinical best practices but does not represent a patentable or licensable product."
    },
    "market_size": {
     "score": 3,
-    "reason": "The study focuses on a specific surgical technique (the Pringle maneuver) within the highly specialized and relatively low-volume niche of adult liver transplantation. While clinically relevant for improving patient outcomes, the market is limited to specialized transplant centers and does not represent a broad-scale therapeutic or device market."
-   },
-   "trl": {
-    "score": 9,
-    "reason": "The paper evaluates a surgical technique (Pringle Maneuver) already in clinical use, meaning the technology is fully deployed in real-world medical practice. The study focuses on optimizing the application of an existing standard of care rather than developing a new prototype."
+    "reason": "The paper addresses a specific surgical technique (Pringle maneuver) within the highly niche and limited segment of adult liver transplantation. The market is constrained by the low volume of transplant recipients and the fact that the intervention is a procedural modification rather than a scalable product or platform."
    },
    "ip_strength": {
-    "score": 2,
-    "reason": "The study describes a surgical technique rather than a novel device or drug, offering limited patentability and defensibility; such procedural improvements are generally difficult to protect under IP law."
+    "score": 1,
+    "reason": "The paper describes a surgical technique (the Pringle maneuver) that is a well-established clinical standard of care, making it neither patentable nor capable of providing proprietary defensibility."
    }
   },
   "pi": "Abed Khalaileh",
   "pi_full_name": "Abed Khalaileh",
   "pi_email": "",
   "pi_affiliation": "Transplantation Unit, Department of Surgery, Hadassah Medical Organization, Hadassah-Hebrew University, Jerusalem 9112001, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "19",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper describes a surgical technique (Pringle maneuver) and clinical outcomes rather than identifying a specific molecular target or providing a biochemical assay suitable for high-throughput screening.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -1993,44 +1938,40 @@
   "date": "2026 Oct 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42929989/",
   "source": "PubMed",
-  "score": 20,
-  "summary": "This study examines how being colonized by multidrug-resistant organisms before versus after a liver transplant affects patient survival and clinical outcomes. It aims to identify if early detection of resistant bacteria can improve postoperative management and transplant success rates.",
-  "opportunity": "Development of rapid, point-of-care diagnostic tools or predictive AI models to screen transplant candidates for resistant pathogens to mitigate post-surgical mortality.",
+  "score": 9,
+  "summary": "This study found that while pre-transplant colonization by multidrug-resistant organisms does not significantly impact survival, infections occurring after a liver transplant are strongly linked to higher mortality and graft failure. The findings highlight that managing post-transplant microbial status is the critical clinical window for improving patient outcomes.",
+  "opportunity": "There is a high-value market for rapid, point-of-care diagnostic tools and targeted antimicrobial prophylactic therapies designed specifically for the post-transplant immunosuppressed window.",
   "fields": [
    "Diagnostics",
    "Clinical",
-   "Software/AI"
+   "Immunology"
   ],
   "added_date": "2026-11-02",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "The study is a retrospective cohort analysis of clinical outcomes, which represents incremental observational data rather than the development of new biological mechanisms, diagnostic technologies, or therapeutic modalities."
-   },
    "commercial_potential": {
     "score": 2,
-    "reason": "This is a retrospective clinical observation study rather than a development of new technology, offering no proprietary intellectual property, diagnostic tool, or therapeutic product to license. Its value is limited to informing clinical protocols rather than creating a scalable commercial entity."
+    "reason": "This is a retrospective clinical cohort study that identifies prognostic correlations rather than developing a novel therapeutic, diagnostic tool, or medical device. While it informs clinical management protocols, it does not represent a proprietary technology or a direct commercial product."
    },
    "market_size": {
-    "score": 5,
-    "reason": "The study targets a specific subset of liver transplant patients with MDR colonization, representing a niche but clinically relevant market; however, the overall addressable market is limited compared to broader therapeutic areas."
+    "score": 4,
+    "reason": "The market is limited to the highly specialized niche of liver transplant recipients, representing a small, low-volume patient population. While the clinical need is high, the total addressable market for interventions targeting this specific complication is restricted by the low incidence of the procedure itself."
    },
    "trl": {
-    "score": 9,
-    "reason": "This study analyzes clinical data from an established medical procedure (liver transplantation), representing a high level of technical readiness as it directly addresses real-world clinical decision-making and patient outcomes. The findings are immediately applicable to standard-of-care practices and surgical risk stratification in existing healthcare infrastructure."
+    "score": 2,
+    "reason": "This is a retrospective clinical observation study used to generate medical knowledge rather than a development of a new technology, device, or therapeutic. It does not advance a technical product toward commercialization, but rather characterizes clinical risk factors."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This is a retrospective cohort study analyzing clinical data patterns rather than a novel therapeutic, diagnostic tool, or biotechnological invention. Observational clinical research of this nature is generally not patentable and lacks inherent intellectual property defensibility."
+    "reason": "This is a retrospective clinical cohort study observing natural disease progression, which lacks any novel therapeutic, diagnostic, or device-based invention capable of patent protection. The findings are observational medical knowledge rather than defensible intellectual property."
    }
   },
   "pi": "Maya Korem",
   "pi_full_name": "Maya Korem",
   "pi_email": "",
   "pi_affiliation": "Department of Clinical Microbiology and Infectious Diseases, Hadassah Medical Center, Jerusalem 91120, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem 91120, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "20",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper is a retrospective clinical cohort study focused on patient outcomes rather than molecular discovery. It lacks a specific molecular target, a new molecule, and a laboratory-based assay suitable for high-throughput screening.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
