@@ -1,249 +1,164 @@
 Loading existing papers from Google Sheet...
-  161 existing papers loaded.
-  Verifying HUJI affiliation for 158 papers via PubMed efetch...
-fetch_pubmed: 62 fetched, 37 new
-fetch_europepmc: 17 fetched, 0 new
+  198 existing papers loaded.
+  Verifying HUJI affiliation for 195 papers via PubMed efetch...
+fetch_pubmed: 37 fetched, 29 new
+fetch_europepmc: 28 fetched, 0 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-37 unique new papers to evaluate.
-Enriching PI contact info for 37 new papers...
+29 unique new papers to evaluate.
+Enriching PI contact info for 29 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/37] Computation or Weight Adaptation? Rethinking the Role of Plasticity in
+  [1/29] Patient-Centered Hospitalization to Improve Inpatient Safety.
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=20 fields=['Software/AI', 'Neuroscience']
-    hts_score=1
-  [2/37] Tissue Doppler S wave velocities are associated with changes in pro-br
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    openai/gpt-oss-20b (groq) succeeded
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=14 fields=['Medical Device', 'Diagnostics', 'Imaging', 'Clinical']
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=16 fields=['Clinical', 'Software/AI']
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
-    hts_score=3
-  [3/37] Physician documented fatigue among adults and children with inflammato
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    score=15 fields=['Clinical', 'Diagnostics', 'Software/AI']
     hts_score=1
-  [4/37] Transcriptional and functional profiling reveals a dynamic continuum o
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=24 fields=['Drug Discovery', 'Genomics', 'Proteomics', 'Clinical']
+  [2/29] Emphysema reprograms neutrophils toward a tumor-promoting phenotype in
+    score=26 fields=['Immunology', 'Clinical', 'Drug Discovery']
+    hts_score=3
+  [3/29] The elusive culprit: a renal neuroendocrine tumor unmasked by ectopic 
+    score=6 fields=['Diagnostics', 'Clinical']
     hts_score=2
-  [5/37] Estimating daytime respiration with steady-state and dynamic Laisk met
-    score=14 fields=['AgriTech', 'Software/AI']
-    hts_score=1
-  [6/37] PHYA and PHYC as Candidate Loci for Flowering Time and Developmental P
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  [4/29] Increasing Support for Humanitarian Aid to Palestinian Civilians Durin
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=24 fields=['AgriTech', 'Genomics']
-    hts_score=3
-  [7/37] Toward a population-level public health approach to support families l
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=18 fields=['Software/AI', 'Clinical', 'Neuroscience', 'Other']
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
     openai/gpt-oss-20b (groq) succeeded
-    hts_score=2
-  [8/37] From a Reflective Inquiry to a Proposed Revised Moral Formation of Cur
-    all 3 candidate(s) cooling down — waiting 30s before retry
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    all 3 candidate(s) cooling down — waiting 3s before retry
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
     openai/gpt-oss-20b (groq) succeeded
-    all 3 candidate(s) cooling down — waiting 50s before retry
-    score=6 fields=['Other']
+    score=11 fields=['Software/AI', 'Other']
     hts_score=1
-  [9/37] Infraoccluded permanent first molars and their effect on dentoalveolar
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=11 fields=['Medical Device', 'Imaging', 'Clinical']
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
+  [5/29] Trajectories and Meaning of Self-Rated Health in Advanced Age: A 30-Ye
+    score=10 fields=['Clinical', 'Software/AI']
     hts_score=1
-  [10/37] Essential Kinase C Zeta in Nonsyndromic Retinitis Pigmentosa.
-    score=19 fields=['Drug Discovery', 'Genomics', 'Neuroscience', 'Clinical']
-    hts_score=7
-  [11/37] Molecular Mechanisms of the Cytotoxicity of an Anti-Cancer Peptide.
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=13 fields=['Drug Discovery', 'Clinical']
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    hts_score=3
-  [12/37] Coercive Control Through Religious Authority: Intimate Partner Violenc
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=5 fields=['Other']
-    hts_score=1
-  [13/37] Policies to address Israel's physician workforce challenges.
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=7 fields=['Clinical', 'Software/AI', 'Other']
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    hts_score=1
-  [14/37] A small modification makes a big difference: rRNA modifications in hem
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=20 fields=['Drug Discovery', 'Diagnostics', 'Genomics', 'Clinical']
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    hts_score=2
-  [15/37] The genomic diversity of 
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=7 fields=['Genomics', 'Drug Discovery', 'Software/AI']
-    hts_score=1
-  [checkpoint: 15/37] writing 176 papers (161 retained + 15 new)...
-Sheet updated: {"status":"ok","rows":177}
-  Archive: 1100 papers total.
-Generated papers_reader.html and papers_data.json with 176 papers and 54 researcher profiles.
-  [16/37] Epigallocatechin-3-Gallate Restores the Pulmonary Keap1-Nrf2-HO-1 Path
-    score=21 fields=['Drug Discovery', 'Immunology', 'Clinical']
-    hts_score=9
-  [17/37] Routine Pringle Maneuver During Recipient Hepatectomy Is Associated wi
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=19 fields=['Clinical', 'Medical Device']
-    hts_score=1
-  [18/37] Modern Solvation Thermodynamics from Macroscopic to Microscopic Approa
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=15 fields=['Drug Discovery', 'Materials', 'Software/AI', 'Synthetic Biology']
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    hts_score=1
-  [19/37] Association Between Health-Related Quality of Life and Ultrasound-Base
-    score=14 fields=['Medical Device', 'Diagnostics', 'Imaging', 'Clinical']
-    hts_score=2
-  [20/37] CDDO-EA Attenuates Acute Seizures and Suppresses Post-Status Epileptic
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=25 fields=['Drug Discovery', 'Neuroscience', 'Clinical']
-    hts_score=7
-  [21/37] GPCRs as Partners of LGR5 Cancer Stem Cells: Opportunities and Challen
+  [6/29] Domain-specific control of silica aggregation by peptides from sorghum
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
-    score=19 fields=['Drug Discovery', 'Genomics', 'Immunology', 'Clinical']
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    hts_score=2
-  [22/37] Efficacy of Pomegranate Seed Oil (PSO) in Its Nanoformulation (GranaGa
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=26 fields=['Materials', 'Synthetic Biology', 'Clean Energy']
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    score=28 fields=['FoodTech', 'Materials', 'Other']
-    hts_score=2
-  [23/37] Nanoscale Characterization of Microscopically Layered Bone in the Russ
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     openai/gpt-oss-20b (groq) succeeded
-    score=11 fields=['Materials', 'Imaging']
-    hts_score=1
-  [24/37] ExacTrac Dynamic Surface-Guided Setup Versus Tattoo-Based Positioning 
+    hts_score=2
+  [7/29] Immortalized intestinal telocytes support stem cell niche function in 
+    score=23 fields=['Drug Discovery', 'Clinical', 'Synthetic Biology']
+    hts_score=3
+  [8/29] Seeing trauma in the Mirror: Childhood sexual abuse and bodily express
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    score=24 fields=['Medical Device', 'Imaging', 'Clinical']
+    score=6 fields=['Software/AI', 'Neuroscience', 'Clinical']
     hts_score=1
-  [25/37] The fight of innate immunity and abnormal cannabinoids against Candida
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+  [9/29] The resource elasticity of control.
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=18 fields=['Drug Discovery', 'Immunology', 'Clinical']
-    hts_score=2
-  [26/37] Molecular glue mediated degradation of cannabinoid receptor 1 for canc
-    score=33 fields=['Drug Discovery', 'Proteomics', 'Clinical']
-    hts_score=9
-  [27/37] Cortex-wide laminar dynamics diverge during learning.
-    score=15 fields=['Neuroscience', 'Software/AI', 'Medical Device']
-    hts_score=1
-  [28/37] Alteromonas macleodii breaches the diatom frustule triggering protopla
-    score=14 fields=['Synthetic Biology', 'AgriTech', 'Materials']
-    hts_score=2
-  [29/37] Neurocognitive characteristics of perceptual feedback processing diffe
-    score=11 fields=['Neuroscience', 'Diagnostics', 'Medical Device', 'Software/AI']
-    hts_score=1
-  [30/37] Association between sperm progressive motility and seminal fluid metab
-    score=15 fields=['AgriTech', 'Diagnostics', 'Proteomics']
-    hts_score=2
-  [checkpoint: 30/37] writing 191 papers (161 retained + 30 new)...
-Sheet updated: {"status":"ok","rows":192}
-  Archive: 1115 papers total.
-Generated papers_reader.html and papers_data.json with 191 papers and 54 researcher profiles.
-  [31/37] "Do not make us feel crazy": From otherness to social responsibility t
-    score=6 fields=['Other']
-    hts_score=1
-  [32/37] AI-Assisted Molecular Review Refines SMO Inhibitor Candidacy in SHH Me
-    score=20 fields=['Drug Discovery', 'Software/AI', 'Neuroscience', 'Clinical']
-    hts_score=9
-  [33/37] Direct Comparison of Two Commonly Used Prenatal Valproate Doses Identi
-    score=13 fields=['Neuroscience', 'Clinical', 'Drug Discovery']
-    hts_score=2
-  [34/37] Detection of Buried Landmines in an Active Minefield Through Bioreport
-    score=33 fields=['Synthetic Biology', 'Imaging', 'Other']
-    hts_score=1
-  [35/37] The Impact of Pre- Versus Post-Transplant Multidrug-Resistant Organism
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=7 fields=['Synthetic Biology', 'Software/AI']
+    hts_score=1
+  [10/29] Perceptual Differences of Dysphagia Related Quality of Life and Functi
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=11 fields=['Clinical', 'Neuroscience', 'Software/AI']
+    hts_score=1
+  [11/29] Microbiota-derived indole-3-propionic acid regulates glucose homeostas
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    score=31 fields=['Drug Discovery', 'Clinical', 'FoodTech']
+    hts_score=7
+  [12/29] Prochiral nanocrystals.
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=28 fields=['Materials', 'Drug Discovery', 'Other']
+    hts_score=1
+  [13/29] Anesthetic Management of Pregnant Patients With Cardiovascular Disease
+    score=16 fields=['Clinical', 'Software/AI']
+    hts_score=1
+  [14/29] Renal Vein and Inferior Vena Cava Thrombosis in Neonates With Adrenal 
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=10 fields=['Medical Device', 'Imaging', 'Clinical', 'Software/AI']
+    hts_score=1
+  [15/29] CT-Defined diagnosis and laparoscopic management of isolated liver and
+    score=5 fields=['Medical Device', 'Imaging', 'Clinical']
+    hts_score=1
+  [checkpoint: 15/29] writing 213 papers (198 retained + 15 new)...
+Sheet updated: {"status":"ok","rows":214}
+  Archive: 1137 papers total.
+Generated papers_reader.html and papers_data.json with 213 papers and 57 researcher profiles.
+  [16/29] A Brief Measure of Situation Characteristics Based on the Lexical Appr
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    score=20 fields=['Diagnostics', 'Clinical', 'Software/AI']
+    score=11 fields=['Software/AI', 'Clinical', 'Other']
     hts_score=1
-  [36/37] S-Adenosylmethionine Depletion as Potential Rate-Limiting Nexus of Red
+  [17/29] Integrating RNA technologies with CAR-T cell therapy: strategies to ov
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=30 fields=['Immunology', 'Genomics', 'Synthetic Biology', 'Clinical']
+    hts_score=2
+  [18/29] Finite vertical windows: seeing only part of the picture in rotating t
+    score=7 fields=['Software/AI', 'Clean Energy', 'Synthetic Biology', 'Other']
+    hts_score=1
+  [19/29] Mind the Academic Gap: Industry Support in the United States for Pedia
     gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    score=14 fields=['Drug Discovery', 'Diagnostics', 'Neuroscience', 'Genomics']
-    hts_score=5
-  [37/37] Assembly of negatively charged gold nanoparticles induced by a negativ
+    gemma-4-31b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
     gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
-    score=14 fields=['Diagnostics', 'Materials', 'FoodTech']
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=7 fields=['Clinical', 'Immunology']
+    hts_score=1
+  [20/29] Severe Hyperkalemia in the Emergency Department: Factors Associated wi
+    score=21 fields=['Clinical', 'Software/AI', 'Diagnostics']
+    hts_score=1
+  [21/29] Negative Affect, but Not Inhibitory Control, Predicts Real-World Smoki
+    gemini-3.1-flash-lite failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=13 fields=['Software/AI', 'Clinical', 'Neuroscience']
+    hts_score=1
+  [22/29] Postoperative Outcomes Following Autologous Breast Reconstruction in P
+    score=18 fields=['Clinical', 'Software/AI']
+    hts_score=2
+  [23/29] Systematic engineering of synthetic minimal promoters for tunable tran
+    score=34 fields=['Synthetic Biology', 'Genomics', 'Drug Discovery', 'Clinical']
+    hts_score=2
+  [24/29] Timing of systemic therapy relative to stereotactic radiosurgery for b
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed (error): 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+    score=12 fields=['Clinical', 'Neuroscience', 'Imaging', 'Software/AI']
+    hts_score=1
+  [25/29] Multimodality Imaging Across the Lifespan in Repaired Tetralogy of Fal
+    score=13 fields=['Imaging', 'Software/AI', 'Clinical', 'Medical Device']
+    hts_score=1
+  [26/29] Bridging Equations and Empathy: Hope at the Heart of Healing.
+    score=5 fields=['Software/AI', 'Clinical', 'Other']
+    hts_score=1
+  [27/29] Restricted and Repetitive Behavior Subtypes Show Distinct Associations
+    score=14 fields=['Software/AI', 'Clinical', 'Neuroscience']
+    hts_score=1
+  [28/29] Genotype-Phenotype Correlation in a Cohort of Israeli Patients With OC
+    score=9 fields=['Genomics', 'Clinical']
+    hts_score=2
+  [29/29] Photoelectric Dominant Imaging in Dual-Energy CT: Clinical Potential f
+    score=31 fields=['Medical Device', 'Diagnostics', 'Imaging', 'Clinical']
     hts_score=1
 
-Kept all 161 existing papers, added 37 new.
-  [checkpoint: final] writing 198 papers (161 retained + 37 new)...
-Sheet updated: {"status":"ok","rows":199}
-  Archive: 1122 papers total.
-Generated papers_reader.html and papers_data.json with 198 papers and 54 researcher profiles.
+Kept all 198 existing papers, added 29 new.
+  [checkpoint: final] writing 227 papers (198 retained + 29 new)...
+Sheet updated: {"status":"ok","rows":228}
+  Archive: 1151 papers total.
+Generated papers_reader.html and papers_data.json with 227 papers and 57 researcher profiles.
 Done.
