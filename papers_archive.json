@@ -9,9 +9,9 @@
   "date": "2026-11-08",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43000094/",
   "source": "PubMed",
-  "score": 16,
-  "summary": "This research explores clinical workflows and patient-centric management strategies to enhance safety protocols within hospital inpatient settings. It focuses on reducing medical errors and improving patient outcomes through structural changes in care delivery.",
-  "opportunity": "Development of hospital management software or clinical decision support systems designed to automate safety protocols and patient monitoring.",
+  "score": 4,
+  "summary": "This paper explores hospital management strategies focused on increasing patient involvement to enhance safety protocols during inpatient stays. It examines how patient-centered care models can reduce medical errors and improve clinical outcomes within hospital settings.",
+  "opportunity": "There is a commercial market for clinical workflow software and patient engagement platforms that integrate patient feedback loops into real-time safety monitoring systems.",
   "fields": [
    "Clinical",
    "Software/AI"
@@ -20,32 +20,20 @@
   "score_breakdown": {
    "novelty": {
     "score": 2,
-    "reason": "The focus on patient-centered care and inpatient safety involves well-established management practices and behavioral frameworks rather than disruptive scientific innovation or novel technology. It represents a incremental improvement in clinical workflows rather than a groundbreaking, protectable, or platform-enabling advancement."
+    "reason": "The title suggests a focus on 'patient-centered care,' which is a well-established paradigm in healthcare quality improvement and lacks evidence of deep-tech or scientific novelty."
    },
    "commercial_potential": {
     "score": 2,
-    "reason": "The paper focuses on clinical workflow and process-oriented patient care rather than a proprietary technology, tool, or diagnostic, offering minimal pathways for intellectual property protection or scalable commercialization."
-   },
-   "market_size": {
-    "score": 9,
-    "reason": "Inpatient safety is a massive, multi-billion dollar global market driven by high-priority regulatory mandates, significant cost-reduction incentives for hospitals, and universal demand for improved clinical outcomes."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "Without an abstract or technical details, this title suggests a qualitative clinical management or workflow study rather than a developed technology or product. It likely represents early-stage academic research or a pilot organizational framework rather than a scalable deep-tech solution."
-   },
-   "ip_strength": {
-    "score": 1,
-    "reason": "The paper describes a care model or process improvement strategy rather than a novel technical, chemical, or mechanical invention. Process-based innovations in clinical care are generally ineligible for patent protection and offer minimal defensibility against competitors."
+    "reason": "The title suggests a healthcare delivery model or organizational process improvement rather than a protectable product, device, or scalable technology. It lacks a clear mechanism for monetization or intellectual property generation."
    }
   },
   "pi": "Ami Schattner",
   "pi_full_name": "Ami Schattner",
   "pi_email": "amischatt@gmail.com.",
   "pi_affiliation": "The Faculty of Medicine, Hebrew University and Hadassah School of Medicine, Jerusalem, Israel. Electronic address: amischatt@gmail.com.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "16",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper focuses on clinical care processes and hospital safety rather than identifying a molecular target, disease-linked protein, or a high-throughput biological assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -454,44 +442,33 @@
   "date": "2026 Nov 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42993200/",
   "source": "PubMed",
-  "score": 11,
-  "summary": "This study analyzes the discrepancies in how patients with dysphagia and their caregivers perceive quality of life and functional health outcomes. It specifically investigates the influence of cognitive status and dysphagia severity on the alignment of these perceptual assessments.",
-  "opportunity": "The research highlights a critical need for patient-centric digital health monitoring platforms that integrate caregiver input and cognitive assessment to better personalize swallowing disorder management and clinical treatment plans.",
+  "score": 4,
+  "summary": "This study examines the gap between how patients and their caregivers perceive the impact of swallowing disorders on quality of life and daily functioning. It specifically investigates whether the severity of the swallowing condition or the patient's cognitive state influences these perceptual discrepancies.",
+  "opportunity": "The findings highlight a need for digital health platforms or clinician-facing software that integrates caregiver observations to improve diagnostic accuracy and personalized care planning for neurodegenerative and geriatric populations.",
   "fields": [
-   "Clinical",
-   "Neuroscience",
-   "Software/AI"
+   "Medical Device",
+   "Diagnostics",
+   "Software/AI",
+   "Clinical"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
-    "score": 2,
-    "reason": "This study focuses on patient-reported outcome measures and psychosocial caregiver dynamics, which represents incremental clinical research rather than a groundbreaking technological or therapeutic innovation. It lacks the inventive step or platform-enabling qualities required for high-scoring deep-tech novelty."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "This study is clinical research focused on patient-caregiver perception alignment rather than a novel therapeutic, diagnostic tool, or technological intervention. It lacks a clear path to commercialization as it does not propose a proprietary product, platform, or licensable IP."
-   },
-   "market_size": {
-    "score": 4,
-    "reason": "While dysphagia affects a significant aging population, this paper focuses on qualitative survey research regarding patient-caregiver perception rather than a scalable therapeutic or diagnostic intervention. The market utility is limited to niche clinical communication tools rather than addressing the core addressable demand of dysphagia treatment or management."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "This study is an observational clinical research paper focused on qualitative quality-of-life assessments, which offers no technological product, diagnostic tool, or intervention to commercialize. It describes psychological and functional patient outcomes rather than developing a TRL-advancing technical solution."
+    "score": 3,
+    "reason": "The study is a clinical observational descriptive study focusing on perceptual concordance rather than the development of a new technology, biomarker, or therapeutic intervention. While it adds incremental clinical knowledge regarding caregiver-patient discrepancies, it lacks the groundbreaking scientific innovation or technical novelty required for a higher score."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This paper is a clinical observational study focused on patient-reported outcomes and psychometrics rather than a technological innovation, providing no basis for patentable intellectual property or defensible proprietary technology."
+    "reason": "The paper describes an observational clinical study based on existing validated survey tools (EAT-10, DHI, MMSE); there is no novel technology, composition, or method disclosed that is patentable or defensible."
    }
   },
   "pi": "Yael Shapira-Galitz",
   "pi_full_name": "Yael Shapira-Galitz",
   "pi_email": "yael@galitz.com.",
   "pi_affiliation": "Hebrew University Faculty of Medicine, Jerusalem, Israel. yael@galitz.com.; Department of Otolaryngology Head and Neck Surgery, Kaplan Medical Center, #1 Pasternak Street, 76100, Rehovot, Israel. yael@galitz.com.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "11",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This paper is a clinical/psychological study on patient-caregiver perception and lacks a molecular target, a defined biochemical disease mechanism, or a pharmacological assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -511,44 +488,36 @@
   "date": "2026 Nov 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42992988/",
   "source": "PubMed",
-  "score": 31,
-  "summary": "Researchers have identified that a gut microbiota metabolite called indole-3-propionic acid (IPA) improves blood sugar regulation by directly altering how liver mitochondria produce energy. This discovery reveals a specific signaling pathway through which the gut microbiome influences systemic metabolic health and diabetes progression.",
-  "opportunity": "This mechanism offers a new target for the development of microbiome-based therapeutics or precision nutritional supplements aimed at treating type 2 diabetes and metabolic syndrome.",
+  "score": 16,
+  "summary": "Researchers discovered that a specific gut bacteria metabolite called indole-3-propionic acid (IPA) can lower blood sugar by altering how the liver processes energy. Unlike traditional treatments, IPA works by redirecting metabolic fuels in the mitochondria rather than relying on insulin or glucagon signaling.",
+  "opportunity": "Development of IPA-based therapeutics or probiotic interventions for the treatment of Type 2 diabetes and metabolic syndrome.",
   "fields": [
    "Drug Discovery",
-   "Clinical",
-   "FoodTech"
+   "Synthetic Biology",
+   "Clinical"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
-   "novelty": {
-    "score": 7,
-    "reason": "The research provides a high-quality mechanistic link between a specific microbial metabolite and metabolic disease, representing a significant advancement in the field of microbiome-gut-liver axis therapeutics. While it builds upon existing knowledge of indole-derivatives, its potential for targeted metabolic interventions is highly relevant for drug development, though it does not yet constitute a broad, transformative technological platform."
-   },
-   "commercial_potential": {
-    "score": 8,
-    "reason": "Indole-3-propionic acid is a well-characterized microbial metabolite with a clear translational pathway into metabolic disease therapeutics or precision-nutrition supplements. The mechanistic focus on hepatic mitochondrial remodeling provides a specific, druggable therapeutic target and a high-potential platform for developing novel therapies for type 2 diabetes and metabolic syndrome."
-   },
    "market_size": {
     "score": 9,
-    "reason": "Metabolic disorders like Type 2 diabetes and NAFLD represent a massive, multi-billion dollar global market, and a microbiota-derived metabolite offers a high-value, platform-level opportunity for novel pharmacological or nutritional interventions."
+    "reason": "The target market encompasses glucose homeostasis and hepatic metabolism, directly addressing type 2 diabetes and metabolic syndrome, which represent some of the largest global healthcare burdens and pharmaceutical markets."
    },
    "trl": {
     "score": 3,
-    "reason": "This study identifies a molecular mechanism for glucose regulation in a pre-clinical model, representing basic research that is far from clinical translation or commercial development. Significant work remains in establishing causality, toxicology, and human efficacy before it can be considered a viable therapeutic candidate."
+    "reason": "The research is at a basic mechanistic stage, utilizing primary hepatocytes and focused screens to identify a metabolic pathway. It lacks in vivo efficacy data, pharmacokinetic studies, or a defined therapeutic delivery strategy required for higher TRL stages."
    },
    "ip_strength": {
     "score": 4,
-    "reason": "The paper describes a biological mechanism involving a naturally occurring metabolite (IPA), which is generally not patentable. Defensibility would rely on specific downstream drug formulations or synthetic analogs, which are not the focus of this mechanistic study."
+    "reason": "The paper identifies a naturally occurring microbial metabolite, which poses significant challenges for composition-of-matter patentability; defensibility would rely heavily on narrow methods-of-use or specific formulation claims rather than a proprietary molecule."
    }
   },
   "pi": "Kfir Sharabi",
   "pi_full_name": "Kfir Sharabi",
   "pi_email": "",
   "pi_affiliation": "The Institute of Biochemistry, Food Science, and Nutrition, The Robert H. Smith Faculty of Agriculture, The Hebrew University of Jerusalem, Rehovot, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "31",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 7,
   "hts_reason": "The paper identifies a specific molecule (indole-3-propionic acid) and a specific disease link (glucose homeostasis/metabolic disease), but the description of an assay suitable for high-throughput screening remains implicit rather than defined.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -563,44 +532,35 @@
   "date": "2026 Nov 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42992501/",
   "source": "PubMed",
-  "score": 28,
-  "summary": "The research focuses on the creation and manipulation of nanocrystals that lack inherent chirality but can be induced to exhibit chiral properties. This work likely explores how symmetry breaking at the nanoscale can be controlled for specific physical or chemical functions.",
-  "opportunity": "Controlling nanocrystal chirality offers significant potential for developing advanced chiral materials for enantiopure drug manufacturing, specialized optical sensors, and next-generation semiconductor components.",
+  "score": 13,
+  "summary": "The paper identifies a previously overlooked structural property called 'prochirality' in achiral nanocrystals, where two different faces of a single crystal are mirror images of each other. This discovery suggests that these crystals can be converted into chiral objects in a single step, offering a more efficient way to create complex nanomaterials.",
+  "opportunity": "The ability to rapidly and predictably transform achiral nanocrystals into chiral ones enables the cost-effective production of specialized materials for asymmetric catalysis and advanced optical sensors.",
   "fields": [
    "Materials",
-   "Drug Discovery",
    "Other"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
-    "score": 9,
-    "reason": "The development of prochiral nanocrystals represents a fundamental paradigm shift in materials science, enabling site-specific chemical reactivity and enantioselective catalysis on a nanometric scale. This platform-enabling technology creates a novel category of chiral building blocks with significant commercial potential in asymmetric synthesis and pharmaceutical manufacturing."
+    "score": 7,
+    "reason": "The paper introduces a novel conceptual framework (prochirality) to a previously overlooked structural property of nanocrystals, offering a new way to categorize and transform achiral materials into chiral ones. While it identifies a missed classification in existing literature, its impact is primarily foundational/theoretical rather than a leap in new material synthesis."
    },
    "commercial_potential": {
     "score": 4,
-    "reason": "While prochiral nanocrystals have interesting applications in asymmetric catalysis and sensing, the lack of specific functional data or a defined problem statement makes it difficult to assess the scalability or market readiness of the technology. It remains a fundamental materials science advancement that requires significant downstream optimization to reach industrial or clinical utility."
-   },
-   "market_size": {
-    "score": 6,
-    "reason": "While prochirality is a foundational challenge in asymmetric catalysis and pharmaceutical manufacturing, the technology is currently at a fundamental material science stage with long-term, unquantified commercial pathing. The potential market value is high due to the pervasiveness of chirality in drug development, but the lack of demonstrated industrial scalability limits its current market-size score."
+    "reason": "The paper introduces a fundamental theoretical framework for prochirality in nanocrystals rather than a specific product or application. While it provides a conceptual basis for future chiral material synthesis, it lacks a demonstrated use-case or a clear path to a commercial product."
    },
    "trl": {
     "score": 2,
-    "reason": "The study of prochiral nanocrystals is fundamental materials science focused on structural symmetry and surface chemistry, placing it firmly at the early benchtop proof-of-concept phase. There is no clear line of sight to a specific industrial or clinical application at this stage of research."
-   },
-   "ip_strength": {
-    "score": 7,
-    "reason": "Prochiral nanocrystals represent a highly specialized materials science platform with significant potential for proprietary control over synthesis and surface modification, though actual defensibility is contingent upon the breadth of the specific composition-of-matter and application-specific patents."
+    "reason": "This is a fundamental theoretical/conceptual paper defining a new structural property (prochirality) rather than demonstrating a specific applied technology. It sits at the earliest stage of scientific discovery, providing a framework that may eventually enable future material design but currently lacks any functional prototype or application data."
    }
   },
   "pi": "David Avnir",
   "pi_full_name": "David Avnir",
   "pi_email": "david.avnir@mail.huji.ac.il.",
   "pi_affiliation": "Institute of Chemistry and Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem 9190401, Israel. david.avnir@mail.huji.ac.il.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "28",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper title refers to a material science topic (nanocrystals) and does not identify a biological target, a disease link, or a high-throughput pharmacological assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -675,45 +635,29 @@
   "date": "2026-11-05",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42989815/",
   "source": "PubMed",
-  "score": 10,
-  "summary": "This study identifies specific ultrasound morphological markers to improve the detection of life-threatening renal vein and inferior vena cava thrombosis in neonates suffering from adrenal hemorrhage. It focuses on using high-resolution gray-scale imaging to identify critical vascular complications that are often missed by standard Doppler techniques.",
-  "opportunity": "There is a commercial opportunity to develop or refine AI-driven automated image analysis software for pediatric ultrasound, specifically designed to detect these subtle vascular clinical markers in neonates.",
+  "score": 1,
+  "summary": "This research identifies specific gray-scale ultrasound patterns, such as renal enlargement and echogenic streaks, that can signal renal vein or vena cava thrombosis in neonates with adrenal hemorrhage. The study suggests that these visual cues are reliable indicators even when traditional Doppler flow detection fails.",
+  "opportunity": "There is potential for developing specialized neonatal ultrasound diagnostic protocols or AI-driven imaging software to detect vascular complications in high-risk infants using standard gray-scale settings.",
   "fields": [
+   "Diagnostics",
    "Medical Device",
    "Imaging",
-   "Clinical",
-   "Software/AI"
+   "Clinical"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "The paper appears to be a clinical case report or observational study focused on refining diagnostic imaging techniques using existing modalities (gray-scale ultrasound) rather than introducing a new technology or fundamental scientific breakthrough. It offers incremental diagnostic optimization for a specific niche condition rather than groundbreaking innovation."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "This appears to be a clinical observational study focused on diagnostic imaging patterns rather than the development of a new medical device, drug, or proprietary diagnostic platform. While it contributes to clinical knowledge, it lacks a direct pathway to a scalable product or licensable technology."
-   },
-   "market_size": {
-    "score": 2,
-    "reason": "This paper addresses a highly specific, rare clinical complication (neonatal renal vein thrombosis secondary to adrenal hemorrhage), representing a very small niche patient population with limited commercial scalability. The addressable market is restricted to specialized neonatal intensive care settings, offering little opportunity for broad industrial or economic impact."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "This is a retrospective clinical observation study analyzing existing diagnostic imaging techniques, offering no new technological development or platform innovation. It serves as a descriptive case report rather than a step toward commercializing a new medical device or therapeutic tool."
-   },
    "ip_strength": {
     "score": 1,
-    "reason": "This paper is a descriptive clinical observation study regarding diagnostic imaging patterns and holds no novel IP, proprietary technology, or defensible technical innovation."
+    "reason": "This is a retrospective clinical observation study documenting specific radiological patterns in a small patient cohort, which lacks any novel device, composition of matter, or proprietary algorithm capable of patent protection."
    }
   },
   "pi": "Ruth Cytter Kuint",
   "pi_full_name": "Ruth Cytter Kuint",
   "pi_email": "",
   "pi_affiliation": "Department of Radiology, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "10",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This is a descriptive clinical/radiological study focusing on diagnostic imaging of anatomical complications; it does not identify a molecular target for screening nor propose a biochemical assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -957,45 +901,37 @@
   "date": "2026-11-05",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42984284/",
   "source": "PubMed",
-  "score": 7,
-  "summary": "This research explores how observing rotating fluid systems through limited physical windows distorts the measurement of underlying turbulence patterns. It establishes a mathematical framework to account for these finite boundaries to prevent misinterpretation of complex flow data.",
-  "opportunity": "This discovery provides critical computational corrections for high-precision fluid dynamics simulations, which are essential for optimizing bioreactors in synthetic biology and precision cooling systems in clean energy hardware.",
+  "score": 5,
+  "summary": "Researchers found that the way we measure turbulence in rotating fluids depends heavily on the vertical depth of the observation window. This means current models might be incorrectly separating 2D and 3D fluid motions due to measurement limitations rather than physical reality.",
+  "opportunity": "Developing high-fidelity fluid dynamics simulation software or specialized sensors that account for resolution-dependent scaling in complex fluid environments.",
   "fields": [
    "Software/AI",
    "Clean Energy",
-   "Synthetic Biology",
+   "Materials",
    "Other"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "This research addresses a specialized fluid dynamics problem regarding observation limitations in rotating turbulence, which constitutes incremental academic progress rather than a platform-enabling or industrial innovation. Its contribution is limited to refining measurement methodology within a niche theoretical framework, lacking clear near-market or commercial application."
-   },
    "commercial_potential": {
-    "score": 1,
-    "reason": "This paper addresses fundamental fluid dynamics and atmospheric physics with no clear application toward a product, service, or licensable technology. It is a niche theoretical study that lacks a defined path to industrial or commercial utility."
-   },
-   "market_size": {
-    "score": 1,
-    "reason": "This paper addresses a fundamental fluid dynamics problem regarding observational constraints in turbulence, which lacks a clear commercial application or identifiable addressable market. It is purely academic basic research with no path to industrial or clinical value."
+    "score": 2,
+    "reason": "This is fundamental fluid dynamics research focused on theoretical modeling of turbulence, lacking a direct application to a specific product, service, or industrial process. While it may inform high-level geophysical or astrophysical models, it offers no clear path to immediate commercialization or proprietary technology licensing."
    },
    "trl": {
     "score": 1,
-    "reason": "This paper addresses fundamental fluid dynamics research in a theoretical or controlled laboratory setting with no clear path to industrial application or commercialization. It is purely foundational physics and does not demonstrate a technology ready for transition out of the academic domain."
+    "reason": "This is fundamental fluid dynamics research focused on theoretical modeling and measurement methodologies in turbulence. It lacks direct application, prototype development, or commercial pathway required for a higher TRL."
    },
    "ip_strength": {
-    "score": 1,
-    "reason": "This paper addresses a fundamental fluid dynamics research problem concerning turbulence modeling and observation windows, which constitutes non-patentable scientific insight rather than an industrial or clinical technology. There is no claim to novel, proprietary composition, device, or method that would offer a competitive commercial moat."
+    "score": 2,
+    "reason": "The paper describes fundamental fluid dynamics research focused on theoretical modeling and measurement methodologies, which lacks the specific industrial application or technical implementation required for patentability. The findings are descriptive of natural phenomena rather than a novel, non-obvious technical invention or tool."
    }
   },
   "pi": "Eran Sharon",
   "pi_full_name": "Eran Sharon",
   "pi_email": "",
   "pi_affiliation": "Racah Institute of Physics, The Hebrew University of Jerusalem , Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "7",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This paper focuses on fluid dynamics and turbulence, failing to identify a biological molecule, a disease target, or a clinical assay suitable for high-throughput screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1121,44 +1057,36 @@
   "date": "2026-11-04",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42980509/",
   "source": "PubMed",
-  "score": 13,
-  "summary": "This study uses real-time monitoring to show that negative emotional states, rather than a lack of willpower or inhibitory control, are the primary drivers of real-world smoking behavior. The findings suggest that interventions targeting emotional regulation may be more effective for smoking cessation than traditional cognitive-behavioral approaches.",
-  "opportunity": "The results highlight a commercial opportunity for developing AI-driven digital health platforms that provide just-in-time, emotion-focused interventions to prevent smoking relapse in high-risk environments.",
+  "score": 8,
+  "summary": "This study used smartphone-based real-time tracking to determine whether emotional states or cognitive control abilities better predict smoking behavior in daily life. The findings show that spikes in negative emotions are a significant predictor of smoking, whereas fluctuations in inhibitory control are not.",
+  "opportunity": "Development of digital therapeutics or AI-driven behavioral intervention apps that trigger real-time support specifically during periods of high negative affect to prevent relapse.",
   "fields": [
    "Software/AI",
-   "Clinical",
-   "Neuroscience"
+   "Neuroscience",
+   "Clinical"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "This study focuses on incremental validation of psychological constructs using established Ecological Momentary Assessment (EMA) methodology, offering minimal advancement over existing literature on addiction and behavioral predictors. It provides an empirical refinement of known phenomena rather than a novel mechanism, therapeutic target, or technological innovation."
-   },
    "commercial_potential": {
     "score": 3,
-    "reason": "This study provides incremental behavioral insight rather than a novel therapeutic or diagnostic platform, making it difficult to translate into a proprietary product or high-value licensable asset. The findings are primarily descriptive and academic, lacking the intervention-ready mechanics required for clear commercial utility in the digital health or pharmaceutical space."
+    "reason": "The study is a behavioral observation paper that identifies psychological correlations rather than developing a proprietary diagnostic tool, therapeutic intervention, or scalable digital health product. While it provides academic insight into smoking triggers, it lacks a clear pathway to a protectable technology or a commercialized service."
    },
    "market_size": {
-    "score": 3,
-    "reason": "While smoking cessation is a high-value global market, this paper is a niche academic study focused on behavioral psychology diagnostics rather than a scalable therapeutic, diagnostic device, or intervention platform. Its narrow scope provides limited commercial utility or addressable market potential compared to translational deep-tech ventures."
-   },
-   "trl": {
-    "score": 3,
-    "reason": "The study is an observational behavioral research paper with no technological innovation or prototype, placing it at an early lab-stage (TRL 3) rather than near-market readiness."
+    "score": 4,
+    "reason": "While the global smoking cessation market is large, this is a basic behavioral science study providing mechanistic insights rather than a commercial product or platform. The findings suggest potential for digital therapeutic targeting, but the research itself does not represent a direct market opportunity."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "The paper describes a behavioral observational study regarding smoking habits, which lacks any novel technology, composition of matter, or proprietary method eligible for intellectual property protection. As an academic investigation into human psychology, there is no underlying innovation or technical defensibility to commercialize."
+    "reason": "The study is a behavioral science observation of psychological correlations and does not involve any novel hardware, chemical entities, or proprietary algorithms capable of patent protection. The findings represent academic knowledge rather than defensible intellectual property."
    }
   },
   "pi": "Neta Yitzhak",
   "pi_full_name": "Neta Yitzhak",
   "pi_email": "",
   "pi_affiliation": "Department of Psychology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "13",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper focuses on behavioral psychology and ecological momentary assessment, lacking a specific molecular target, a defined disease pathology at the cellular level, or a high-throughput assay platform.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1290,45 +1218,33 @@
   "date": "2026-11-02",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42975382/",
   "source": "PubMed",
-  "score": 13,
-  "summary": "This review analyzes the longitudinal use of multiple imaging modalities to monitor patients who have undergone surgical repair for Tetralogy of Fallot, a common congenital heart defect. It evaluates current diagnostic standards and identifies future technological needs for long-term patient management across the lifespan.",
-  "opportunity": "There is a commercial opportunity to develop AI-driven software platforms that aggregate and standardize multi-modal longitudinal cardiac imaging data to improve predictive outcomes for adult congenital heart disease patients.",
+  "score": 5,
+  "summary": "This review examines how advanced imaging techniques like MRI and ultrasound are used to monitor patients with repaired Tetralogy of Fallot for long-term complications. It highlights how specialized imaging helps doctors track heart remodeling and decide when patients need further surgical interventions.",
+  "opportunity": "There is a commercial opening for advanced diagnostic software and automated imaging tools that can quantify subtle changes in cardiac mechanics and fibrosis to predict heart failure in congenital heart disease patients.",
   "fields": [
+   "Diagnostics",
    "Imaging",
    "Software/AI",
-   "Clinical",
-   "Medical Device"
+   "Clinical"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "This paper is a review article summarizing current literature rather than presenting original clinical data, novel technological breakthroughs, or a new diagnostic methodology. It provides a synthesis of existing clinical practice rather than contributing new intellectual property or scientific innovation."
-   },
    "commercial_potential": {
-    "score": 3,
-    "reason": "This paper is a clinical review summarizing existing evidence rather than a primary research study proposing a novel, protectable diagnostic tool or therapeutic intervention. Its value lies in literature synthesis and clinical guidance, which lacks the proprietary intellectual property or clear commercial pathway required for high-potential deep-tech investment."
+    "score": 2,
+    "reason": "This is a state-of-the-art clinical review summarizing existing diagnostic techniques rather than a primary research paper presenting a novel, proprietary technology or device. It serves to consolidate medical knowledge for clinicians rather than offering a new, licensable product or platform."
    },
    "market_size": {
     "score": 3,
-    "reason": "The paper focuses on a specific, niche congenital heart condition (Tetralogy of Fallot) which represents a small patient population rather than a broad, high-growth clinical market. While clinically important, the addressable market for multimodality imaging protocols in this specialized subset lacks the scale to be considered a venture-scale commercial opportunity."
-   },
-   "trl": {
-    "score": 3,
-    "reason": "This paper is a review of existing clinical imaging evidence rather than a report of a new, actionable technology or prototype. It synthesizes current diagnostic methods for a specific patient cohort without introducing or validating a novel commercial-ready solution."
-   },
-   "ip_strength": {
-    "score": 1,
-    "reason": "This paper is a clinical review article summarizing current medical evidence and future directions, rather than presenting a novel, proprietary, or patentable technical invention. It provides an overview of existing diagnostic practices rather than creating new, defensible intellectual property."
+    "reason": "The target market is limited to a specific subset of congenital heart disease patients (rTOF), representing a niche clinical population rather than a broad-based diagnostic or therapeutic market. While clinically vital, the addressable demand is constrained by the prevalence of this specific pathology."
    }
   },
   "pi": "Rachel M Wald",
   "pi_full_name": "Rachel M Wald",
   "pi_email": "",
   "pi_affiliation": "Peter Munk Cardiac Centre and Toronto Adult Congenital Heart Disease Program, Toronto General Hospital and Toronto General Hospital Research Institute, University Health Network, University of Toronto, Toronto, Ontario, Canada; Hadassah University Medical Center, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "13",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This is a clinical review paper focusing on diagnostic imaging modalities for a structural heart condition rather than identifying molecular targets or biochemical assays for drug discovery.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1343,44 +1259,31 @@
   "date": "2026-11-02",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42971672/",
   "source": "PubMed",
-  "score": 5,
-  "summary": "This paper explores the intersection of mathematical modeling and human-centric psychological care to improve patient healing outcomes. It proposes a framework where data-driven medical decisions are integrated with compassionate clinical practice to enhance the overall therapeutic experience.",
-  "opportunity": "The research offers a framework for developing patient-centric digital health platforms that optimize clinical workflows by balancing quantitative biometric data with qualitative psychological patient feedback.",
+  "score": 2,
+  "summary": "The paper appears to be a philosophical or qualitative exploration of the emotional and psychological role of hope in the patient healing process. It lacks technical data or empirical scientific methodologies required for deep-tech assessment.",
+  "opportunity": "There is no immediate commercial opportunity in deep-tech, though it may inform patient experience (PX) frameworks in digital health.",
   "fields": [
-   "Software/AI",
-   "Clinical",
-   "Other"
+   "Other",
+   "Clinical"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
     "score": 1,
-    "reason": "The title suggests a conceptual or philosophical inquiry rather than a technical, empirical, or biotechnological innovation, lacking the necessary evidence of a protectable scientific mechanism or industrial application."
-   },
-   "commercial_potential": {
-    "score": 1,
-    "reason": "The title suggests a philosophical or sociological essay rather than a technical, clinical, or engineering-based discovery. It lacks any identifiable intellectual property, technical specifications, or actionable methodology required for commercial development."
+    "reason": "The title is poetic and metaphorical rather than technical, suggesting a philosophical or literary essay rather than a scientific or technological advancement. Without any technical data or methodology, it provides zero evidence of scientific or industrial novelty."
    },
    "market_size": {
     "score": 1,
-    "reason": "The title suggests a philosophical or humanities-based perspective rather than a technical, clinical, or industrial solution, offering no evidence of a scalable market or addressable commercial demand."
-   },
-   "trl": {
-    "score": 1,
-    "reason": "The title suggests a conceptual or philosophical exploration rather than a technical, experimental, or engineering-based breakthrough, placing it at the earliest ideation stage of research."
-   },
-   "ip_strength": {
-    "score": 1,
-    "reason": "The title suggests a conceptual or philosophical essay rather than a technical, scientific, or technological innovation. There is no disclosed mechanism, composition, or process to protect, offering zero basis for intellectual property or defensibility."
+    "reason": "The title is purely philosophical and lacks any indication of a specific clinical indication, technology, or commercial application. Without a defined product or service, the addressable market cannot be quantified."
    }
   },
   "pi": "Benjamin W Corn",
   "pi_full_name": "Benjamin W Corn",
   "pi_email": "ben.w.corn@gmail.com.",
   "pi_affiliation": "Hebrew University Faculty of Medicine, Institute for the Study of Hope, Dignity & Wellbeing, Ein Kerem Campus, Jerusalem. Electronic address: ben.w.corn@gmail.com.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "5",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The title suggests a philosophical or sociological treatise rather than a biochemical study, failing to identify a specific molecular target, a disease model, or a high-throughput assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1521,9 +1424,9 @@
   "date": "2026-11-02",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42969276/",
   "source": "PubMed",
-  "score": 31,
-  "summary": "This research explores a novel dual-energy CT imaging technique that isolates the photoelectric effect to improve the visualization of mucosal surfaces in the abdomen. By enhancing tissue-specific contrast, this method aims to improve diagnostic accuracy for subtle gastrointestinal and abdominal pathologies.",
-  "opportunity": "This technology represents a high-value software or hardware upgrade for existing CT platforms to improve diagnostic sensitivity for inflammatory and neoplastic diseases without requiring additional ionizing radiation dose.",
+  "score": 21,
+  "summary": "Researchers have demonstrated that photoelectric-dominant (PED) imaging in dual-energy CT significantly improves the visibility of mucosal inflammation in acute abdominal conditions compared to standard imaging methods. This technique provides superior contrast for detecting pathologies like appendicitis and colitis, potentially reducing diagnostic errors.",
+  "opportunity": "There is a high-value opportunity to integrate PED reconstruction algorithms into existing CT hardware and diagnostic software suites to improve clinical accuracy in emergency radiology.",
   "fields": [
    "Medical Device",
    "Diagnostics",
@@ -1533,33 +1436,29 @@
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
-    "score": 4,
-    "reason": "Dual-energy CT (DECT) and photoelectric/Compton decomposition are well-established techniques in radiological imaging, making this application to mucosal enhancement an incremental clinical refinement rather than a breakthrough technological innovation. The research explores specific diagnostic utility within a mature modality, which lacks the transformative novelty required for a platform-enabling designation."
+    "score": 5,
+    "reason": "The study investigates the clinical utility of a known physical phenomenon (photoelectric effect) using existing Dual-Energy CT hardware rather than introducing a new imaging modality or hardware breakthrough. While it provides important clinical validation for a specific reconstruction technique, it is an incremental application of established physics rather than a groundbreaking scientific innovation."
    },
    "commercial_potential": {
     "score": 7,
-    "reason": "This technology represents a clear, high-value feature enhancement for existing high-end CT hardware that can be protected via software-based imaging algorithms and clinical workflow integration. Its reliance on existing dual-energy CT infrastructure makes it a strong candidate for a licensable medical device software (SaMD) upgrade or OEM partnership, though it lacks the broader platform-disrupting potential of a standalone diagnostic modality."
-   },
-   "market_size": {
-    "score": 8,
-    "reason": "Dual-energy CT is an established multi-billion dollar imaging modality, and enhancements to its diagnostic capabilities in abdominal imaging address a massive, high-volume clinical market segment. This technology provides direct, incremental value to major OEMs and radiology departments by improving diagnostic specificity for common and critical abdominal pathologies."
+    "reason": "The technology offers significant incremental value for existing Dual-Energy CT hardware through software-based reconstruction algorithms, making it highly licensable to major imaging OEMs. However, its commercial impact is limited to an algorithmic enhancement rather than a novel hardware platform or a standalone diagnostic tool."
    },
    "trl": {
-    "score": 8,
-    "reason": "Dual-energy CT is a mature, clinically adopted technology, and this paper focuses on optimizing post-processing algorithms for an existing modality, making the path to clinical integration and regulatory clearance highly direct."
+    "score": 6,
+    "reason": "The technology is currently in the clinical validation stage, demonstrating efficacy through retrospective human data, but it is not yet implemented in standard clinical workflow. It sits between a proof-of-concept lab study and a finalized, market-ready software or hardware integration."
    },
    "ip_strength": {
-    "score": 4,
-    "reason": "The paper describes a specific application of established dual-energy CT (DECT) post-processing techniques, which are generally well-covered by existing patents held by major medical imaging OEMs. Developing novel IP in this space is challenging as it involves incremental optimization of existing reconstruction algorithms rather than a foundational platform technology."
+    "score": 3,
+    "reason": "The innovation appears to be a post-processing algorithm or mathematical reconstruction method applied to existing Dual-Energy CT data, which is difficult to protect via patents and highly susceptible to reverse engineering. There is no indication of novel hardware or proprietary material-based technology that would provide a high barrier to entry for competitors."
    }
   },
   "pi": "Naama Lev-Cohain",
   "pi_full_name": "Naama Lev-Cohain",
   "pi_email": "",
   "pi_affiliation": "Department of Radiology, Hadassah Medical Center, The Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "31",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper focuses on medical imaging technology (Dual-Energy CT) rather than molecular targets or drug discovery, and therefore lacks all three elements required for high-throughput screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"

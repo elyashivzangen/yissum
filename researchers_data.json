@@ -17097,7 +17097,7 @@
     "pi_full_name": "Lior Nissim",
     "pi_email": "liorni@ekmd.huji.ac.il",
     "pi_affiliation": "Department of Biochemistry and Molecular Biology, Institute for Medical Research Israel-Canada, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 91120, Israel.",
-    "avg_score": 31.3,
+    "avg_score": 24.3,
     "max_hts_score": 10,
     "paper_count": 3,
     "description": "This researcher specializes in synthetic biology and genetic engineering, focusing on the development of modular tools for precise control over gene expression and cellular behavior. Their work involves creating high-throughput screening platforms for drug discovery and standardizing protocols for the genetic modification of human T cells. By bridging fundamental synthetic biology with practical therapeutic applications, they aim to enhance the safety and efficacy of next-generation cell and gene therapies.",
@@ -17119,9 +17119,9 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/42979757/",
         "journal": "Nucleic acids research",
-        "score": 34,
-        "summary": "This research develops a platform for engineering synthetic DNA sequences that precisely control the activation levels of therapeutic genes in mammalian cells. By creating a modular library of these minimal promoters, the researchers provide a mechanism to fine-tune protein production for more effective and safer genetic therapies.",
-        "opportunity": "This technology enables the development of next-generation gene and cell therapies with high-precision expression control, reducing toxic side effects and increasing the efficacy of complex biological treatments.",
+        "score": 27,
+        "summary": "Researchers have developed a modular system to engineer synthetic minimal promoters that allow for precise, predictable control over how much protein a gene produces in mammalian cells. This approach replaces bulky, unpredictable natural promoters with shorter, synthetic versions that are easier to customize and fit better into viral delivery vectors.",
+        "opportunity": "This technology enables the development of 'precision-dose' gene therapies and cell therapies by allowing developers to tune transgene expression to optimal therapeutic levels while maximizing vector cargo space.",
         "abstract": "Fine-tuning transgene levels is crucial in fundamental and applied research. Native promoters are broadly utilized to regulate transgene expression. However, their large size and structural complexity hinder predictable tuning, constrain compatibility with viral vectors with limited capacity, and increase the risk of homologous recombination. Synthetic promoters are short de novo sequences, typically consisting of an enhancer region, which is positioned upstream of a minimal promoter that determines transcription initiation efficiency. Enhancer optimization typically yields coarse activation shifts, alters response curves, and requires case-by-case optimization. Synthetic minimal promoter architecture enables fine-tuning that is potentially compatible with any enhancer region. In this study, we systematically optimized minimal promoter sequences, core element composition, and regulatory motif sequences. Our findings support a modular model of minimal promoter function in which cis-regulatory elements from different minimal promoters can be mixed, altered, added, or deleted to yield predictable expression outcomes. We shortened and thereby enhanced the efficiency of known minimal promoters, engineered modular tunable minimal promoters, and generated candidate regulatory elements spanning 7-8 nucleotides that drive efficient transcription when combined with artificial ${5^{\\prime}}$ untranslated regions (5'UTRs) that function as an additional regulatory layer. This framework broadens the utility of synthetic promoters for next-generation applications.",
         "fields": [
           "Synthetic Biology",
@@ -17130,30 +17130,26 @@
           "Clinical"
         ],
         "score_breakdown": {
-          "novelty": {
-            "score": 6,
-            "reason": "While the systematic engineering of synthetic promoters is a robust and highly useful bioengineering effort, it represents an incremental optimization of established mammalian synthetic biology toolkits rather than a foundational paradigm shift in gene regulation. It provides high industrial utility for biomanufacturing and cell therapy, but the core methodology aligns with existing principles of promoter design."
-          },
           "commercial_potential": {
-            "score": 9,
-            "reason": "Synthetic promoters are a highly modular, platform-enabling technology essential for the next generation of cell and gene therapies requiring precise, tunable transgene expression. The ability to engineer custom regulatory elements is a high-value, licensable asset that directly addresses significant safety and efficacy bottlenecks in industrial bioproduction and clinical therapeutics."
+            "score": 7,
+            "reason": "The research provides a modular, predictable toolkit that directly addresses a major bottleneck in gene therapy: payload capacity and expression precision. While it is a highly valuable platform-enabling technology for viral vector design, its commercial value is currently dependent on its integration into larger therapeutic pipelines."
           },
           "market_size": {
             "score": 9,
-            "reason": "Tunable gene expression platforms are foundational, high-value enablers for the rapidly expanding cell and gene therapy markets, where precise control over dosage is a critical requirement for safety and efficacy. This technology addresses a massive, universal pain point across all protein-based therapeutic and biomanufacturing sectors, representing a multi-billion dollar addressable market."
+            "reason": "This is a platform-enabling technology with massive addressable demand across gene therapy, synthetic biology, and drug discovery, as precise control of transgene expression is a fundamental bottleneck for nearly all viral-mediated therapeutics."
           },
           "trl": {
             "score": 3,
-            "reason": "This work represents foundational synthetic biology research at the bench-scale, focusing on the characterization of genetic regulatory elements rather than a validated therapeutic product or commercial platform. While it provides a useful tool for gene therapy development, it remains at the early experimental stage requiring further testing in relevant disease models and manufacturing settings."
+            "reason": "The work is at the fundamental research/lab stage, focusing on the systematic engineering and modular design of synthetic promoters rather than a specific clinical application or product. While it provides a platform for future tuning, it lacks validation in therapeutic contexts or a path toward immediate commercialization."
           },
           "ip_strength": {
-            "score": 7,
-            "reason": "Synthetic promoters are highly patentable as composition-of-matter, but the field is crowded with prior art, making broad 'platform' IP claims difficult to secure without narrow, specific sequence-based utility disclosures. The innovation is inherently defensible via sequence patents, but its practical moat depends heavily on the uniqueness of the design algorithm and specific performance metrics achieved."
+            "score": 8,
+            "reason": "The research describes a modular, systematic design platform for synthetic promoters, which provides a strong foundation for a library of proprietary, patentable genetic sequences. This platform-enabling approach offers high defensibility through a combination of sequence patents and the ability to optimize expression for specific therapeutic delivery vehicles."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": 34,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Biochemistry and Molecular Biology, Institute for Medical Research Israel-Canada, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 91120, Israel.",
         "pi_email": "liorni@ekmd.huji.ac.il",
         "hts_score": 2,
@@ -17211,41 +17207,29 @@
         "date": "2024",
         "url": "https://pubmed.ncbi.nlm.nih.gov/38070115/",
         "journal": "Methods in molecular biology (Clifton, N.J.)",
-        "score": 26,
-        "summary": "This paper provides a standardized, comprehensive protocol for isolating, expanding, and genetically modifying tumor-infiltrating lymphocytes (TILs) and peripheral T cells. By detailing both retroviral and mRNA-based delivery methods for payloads like CARs and TCRs, it offers a practical toolkit for the rapid development of next-generation adoptive cell therapies.",
-        "opportunity": "This protocol streamlines the manufacturing workflow for personalized cell-based immunotherapies, offering significant value to biotech firms seeking to reduce R&D bottlenecks and improve the scalability of TIL-based oncology products.",
+        "score": 12,
+        "summary": "The paper provides a detailed technical protocol for extracting, expanding, and genetically engineering T cells and tumor-infiltrating lymphocytes (TILs). It specifically details methods for introducing therapeutic genes like CARs, TCRs, and interleukins using retroviral and mRNA technologies.",
+        "opportunity": "The standardized protocol offers a foundational workflow for cell therapy companies to scale the production of customized, genetically modified immunotherapy products.",
         "abstract": "Genetic modification of tumor-infiltrating lymphocytes (TILs) or circulating T cells has become an important avenue in cancer therapy. Here we describe a comprehensive method for establishing and expanding TIL cultures and genetically modifying them with a gene of interest (GOI) via retroviral transduction or mRNA transfection. The method includes all the important steps starting with TIL extraction from tumors through to the maintenance of the genetically modified TILs. The protocol includes instructions for retroviral transduction and mRNA transfection of circulating T cells or T-cell lines. The GOIs most commonly introduced into the target cells are chimeric antigen receptors (CARs); genetic adjuvants, such as membrane-bound interleukins; and antitumor T-cell receptors (TCRs).",
         "fields": [
           "Immunology",
-          "Clinical",
           "Synthetic Biology",
-          "Genomics"
+          "Genomics",
+          "Clinical"
         ],
         "score_breakdown": {
-          "novelty": {
-            "score": 3,
-            "reason": "This paper describes a standardized protocol for well-established techniques like retroviral transduction and mRNA transfection in T-cells, which are industry standards rather than novel discoveries. It serves as a practical procedural guide rather than a platform-enabling innovation or groundbreaking scientific advancement."
-          },
-          "commercial_potential": {
-            "score": 4,
-            "reason": "While the methodology is relevant to cell therapy manufacturing, it describes a procedural protocol for standard techniques rather than a novel, protectable, or proprietary commercial product or platform. It lacks the IP novelty or competitive differentiation required to achieve a higher score in a commercial investment context."
-          },
           "market_size": {
             "score": 9,
-            "reason": "The paper describes fundamental methodologies for manufacturing CAR-T and TCR-T therapies, which operate within the multi-billion dollar immuno-oncology market that currently faces high demand for scalable and efficient cell-engineering platforms."
-          },
-          "trl": {
-            "score": 8,
-            "reason": "This paper outlines a standardized, highly reproducible protocol for T-cell engineering that is directly applicable to the manufacturing workflows used in clinical-grade CAR-T and TIL therapies. As a fundamental methodology enabling the production of personalized immunotherapies, it represents a critical, platform-ready operational asset for biotech companies currently conducting clinical trials."
+            "reason": "The paper describes a platform-enabling methodology for CAR-T, TCR, and adjuvant-enhanced cell therapies, which addresses the massive and rapidly expanding global oncology market. By optimizing the workflow for both TILs and peripheral T cells, it targets the highest-value segments of the cell and gene therapy sector."
           },
           "ip_strength": {
-            "score": 2,
-            "reason": "This paper describes a standard laboratory protocol for the application of well-established, non-proprietary genetic modification techniques (retroviral transduction and mRNA transfection) rather than disclosing novel, patentable compositions or unique technological breakthroughs. As a methods-focused publication, it lacks the proprietary 'freedom to operate' or unique intellectual property required to create a defensible investment moat."
+            "score": 3,
+            "reason": "The paper describes a standard, comprehensive protocol for existing methodologies (retroviral transduction and mRNA transfection) rather than a novel, proprietary platform or a unique genetic construct. As a procedural workflow for well-known techniques, it lacks the high degree of novelty required for strong, defensible patent protection."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 26,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Faculty of Medicine, The Institute for Medical Research Israel-Canada, The Hebrew University of Jerusalem, Jerusalem, Israel. lior.nissim@mail.huji.ac.il.",
         "pi_email": "lior.nissim@mail.huji.ac.il.",
         "hts_score": 3,
@@ -18884,7 +18868,7 @@
     "pi_full_name": "Mor Nahum",
     "pi_email": "mor.nahum@mail.huji.ac.il.",
     "pi_affiliation": "School of Occupational Therapy, Faculty of Medicine, The Hebrew University, Jerusalem, Israel. Electronic address: mor.nahum@mail.huji.ac.il.",
-    "avg_score": 11.3,
+    "avg_score": 10.7,
     "max_hts_score": 2,
     "paper_count": 11,
     "description": "This researcher focuses on the intersection of cognitive neuroscience and digital health, specifically investigating how brain stimulation and gamified behavioral interventions can treat mental health conditions like depression and ADHD. Their work utilizes advanced neuroimaging and real-time monitoring to map the relationship between executive function, emotional regulation, and neural excitation-inhibition balance. By studying these dynamics, they aim to develop objective, data-driven markers and remote-based therapeutic tools for neurodevelopmental and mood disorders.",
@@ -19311,40 +19295,29 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/42980509/",
         "journal": "Nicotine & tobacco research : official journal of the Society for Research on Nicotine and Tobacco",
-        "score": 13,
-        "summary": "This study uses real-time monitoring to show that negative emotional states, rather than a lack of willpower or inhibitory control, are the primary drivers of real-world smoking behavior. The findings suggest that interventions targeting emotional regulation may be more effective for smoking cessation than traditional cognitive-behavioral approaches.",
-        "opportunity": "The results highlight a commercial opportunity for developing AI-driven digital health platforms that provide just-in-time, emotion-focused interventions to prevent smoking relapse in high-risk environments.",
+        "score": 7,
+        "summary": "This study used smartphone-based real-time tracking to show that fluctuations in negative emotions, rather than lapses in self-control, are the primary drivers of smoking behavior in daily life. The findings suggest that emotional state is a more reliable predictor of substance use than cognitive inhibitory control performance.",
+        "opportunity": "Development of digital therapeutics and mood-tracking mobile apps that use real-time affective state data to provide preemptive, personalized interventions for addiction recovery.",
         "abstract": "Real-world smoking may be shaped by dynamic interactions between transient affective states and cognitive control processes. Ecological momentary assessment studies show that negative affect predicts smoking-related outcomes in daily life, however it is unclear whether momentary fluctuations in performance-based inhibitory control contribute to real-world smoking beyond affective state. Adult light-to-moderate smokers (N = 77; ages 18-65) completed a 10-day ecological momentary assessment protocol on their smartphones, with three prompts per day. At each prompt, participants completed a Stop-Signal Task indexing inhibitory control and reported momentary affect on the Positive and Negative Affect Schedule; 45-105 minutes later they reported their actual cigarette consumption. Multilevel generalized linear mixed-effects models tested whether within-person fluctuations in inhibitory control and negative affect prospectively predicted subsequent smoking. The study and hypotheses were preregistered. Within-person increases in negative affect significantly predicted higher smoking rates at the subsequent assessment interval. Momentary inhibitory control was not significantly associated with subsequent smoking, and Bayesian model comparison favored the model without inhibitory control. Adding baseline psychological distress (Depression Anxiety Stress Scales-21) improved model fit, with higher distress predicting greater overall smoking, but it did not alter the within-person link between negative affect and smoking. Neither negative affect nor inhibitory control predicted craving. In everyday life, transient negative affect is a more proximal predictor of smoking than momentary fluctuations in performance-based inhibitory control. More broadly, the findings highlight the value of intensive longitudinal designs for testing mechanistic models of smoking in naturalistic settings.",
         "fields": [
           "Software/AI",
+          "Neuroscience",
           "Clinical",
-          "Neuroscience"
+          "Other"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 3,
-            "reason": "This study focuses on incremental validation of psychological constructs using established Ecological Momentary Assessment (EMA) methodology, offering minimal advancement over existing literature on addiction and behavioral predictors. It provides an empirical refinement of known phenomena rather than a novel mechanism, therapeutic target, or technological innovation."
-          },
-          "commercial_potential": {
-            "score": 3,
-            "reason": "This study provides incremental behavioral insight rather than a novel therapeutic or diagnostic platform, making it difficult to translate into a proprietary product or high-value licensable asset. The findings are primarily descriptive and academic, lacking the intervention-ready mechanics required for clear commercial utility in the digital health or pharmaceutical space."
+            "reason": "The study applies established psychological constructs (negative affect and inhibitory control) to a known behavioral problem using standard EMA methodologies, offering incremental validation rather than a novel mechanistic or technological breakthrough."
           },
           "market_size": {
-            "score": 3,
-            "reason": "While smoking cessation is a high-value global market, this paper is a niche academic study focused on behavioral psychology diagnostics rather than a scalable therapeutic, diagnostic device, or intervention platform. Its narrow scope provides limited commercial utility or addressable market potential compared to translational deep-tech ventures."
-          },
-          "trl": {
-            "score": 3,
-            "reason": "The study is an observational behavioral research paper with no technological innovation or prototype, placing it at an early lab-stage (TRL 3) rather than near-market readiness."
-          },
-          "ip_strength": {
-            "score": 1,
-            "reason": "The paper describes a behavioral observational study regarding smoking habits, which lacks any novel technology, composition of matter, or proprietary method eligible for intellectual property protection. As an academic investigation into human psychology, there is no underlying innovation or technical defensibility to commercialize."
+            "score": 4,
+            "reason": "The study identifies psychological predictors of smoking, but it is a basic behavioral science paper rather than a product or platform. While the global smoking cessation market is large, this specific research provides fundamental insight rather than a direct commercializable asset with defined market capture."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 13,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "Department of Psychology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 1,
