@@ -17097,7 +17097,7 @@
     "pi_full_name": "Lior Nissim",
     "pi_email": "liorni@ekmd.huji.ac.il",
     "pi_affiliation": "Department of Biochemistry and Molecular Biology, Institute for Medical Research Israel-Canada, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 91120, Israel.",
-    "avg_score": 24.3,
+    "avg_score": 23.0,
     "max_hts_score": 10,
     "paper_count": 3,
     "description": "This researcher specializes in synthetic biology and genetic engineering, focusing on the development of modular tools for precise control over gene expression and cellular behavior. Their work involves creating high-throughput screening platforms for drug discovery and standardizing protocols for the genetic modification of human T cells. By bridging fundamental synthetic biology with practical therapeutic applications, they aim to enhance the safety and efficacy of next-generation cell and gene therapies.",
@@ -17162,39 +17162,40 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40780218/",
         "journal": "Cell reports methods",
-        "score": 34,
-        "summary": "Researchers developed a safe, high-throughput synthetic biology platform that uses designer cells to screen for antiviral drugs without the need for live, dangerous viruses. By providing dual-reporter fluorescence outputs for both drug efficacy and cell toxicity, this pipeline significantly lowers the barrier for laboratories to perform rapid antiviral hit identification.",
-        "opportunity": "This platform offers a scalable, low-cost drug discovery tool that can be rapidly repurposed as a service for pharmaceutical companies to screen libraries against emerging viral proteases.",
+        "score": 30,
+        "summary": "Researchers developed a synthetic biology tool using engineered cells that glow to signal when a viral protease inhibitor is working. This creates a safe, fast, and low-cost way to screen drug candidates without needing live viruses.",
+        "opportunity": "Commercialization of a standardized, platform-as-a-service (PaaS) high-throughput screening assay for rapid antiviral drug discovery across multiple viral targets.",
         "abstract": "A reliable, efficient, high-throughput pipeline to evaluate viral protease inhibitors would enhance antiviral drug discovery. Methods such as crystallography and phenotypic screening are often constrained by complex assay conditions, limited physiological relevance, or live virus handling safety concerns. Proof-of-concept studies previously demonstrated synthetic gene circuits that produce a quantitative reporter upon protease inhibition, enabling functional virus-independent evaluation of viral protease inhibitors in live cells. Using the SARS-CoV-2 3-chymotrypsin-like protease (3CLpro) as a model, we advanced this approach into a high-throughput first-pass qualitative assay (\"hit/no-hit\") to rapidly identify promising drug candidates. Our optimized circuit design was used to produce stable HEK293T and HeLa designer cells that generate two distinct fluorescence outputs, simultaneously reporting protease inhibition and cytotoxicity. The screening pipeline is designed to minimize labor, costs, and false-positive observations, thus enabling versatile, safe, and efficient functional drug screening suitable for any conventional biological laboratory.",
         "fields": [
           "Drug Discovery",
-          "Synthetic Biology"
+          "Synthetic Biology",
+          "Proteomics"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 6,
-            "reason": "While the paper provides a useful methodological refinement for high-throughput screening, it builds upon established synthetic gene circuit concepts rather than introducing a fundamental breakthrough in methodology. Its value lies in practical implementation and optimization for a specific application rather than a paradigm-shifting scientific innovation."
+            "score": 5,
+            "reason": "The research represents an incremental engineering optimization of existing synthetic gene circuit technology rather than the discovery of a fundamentally new biological mechanism. While the dual-reporter designer cell and streamlined pipeline offer improved utility for high-throughput screening, the underlying concept of using synthetic circuits for protease sensing is established prior art."
           },
           "commercial_potential": {
             "score": 8,
-            "reason": "This platform offers a highly scalable, safe, and cost-effective solution to a major bottleneck in drug discovery, providing a clear path to licensing as a high-throughput screening service or product for pharmaceutical partners. Its modular design allows for rapid adaptation to future viral threats, positioning it as a significant, platform-enabling technology in the antiviral development pipeline."
+            "reason": "The work presents a highly scalable, platform-enabling technology that addresses a critical bottleneck in antiviral drug discovery by replacing unsafe live-virus assays with high-throughput designer cells. Its versatility across different proteases and its ability to be deployed in standard labs suggest strong licensing potential to pharmaceutical companies and CROs."
           },
           "market_size": {
-            "score": 8,
-            "reason": "The platform addresses the massive global antiviral drug discovery market by providing a versatile, BSL-1 compatible screening tool for high-value viral protease targets. Its ability to reduce the cost and technical barriers for hit-to-lead development makes it highly relevant for both academic drug discovery and commercial pharma pipelines."
+            "score": 7,
+            "reason": "The platform offers significant value as a high-throughput, safety-enhanced screening tool for the multi-billion dollar antiviral drug discovery market. However, its market size is constrained by its role as a specialized R&D tool rather than a therapeutic product itself."
           },
           "trl": {
-            "score": 6,
-            "reason": "The technology has successfully moved beyond proof-of-concept to a functional, stable cell-based pipeline suitable for standard labs, but it remains a primary screening tool that still requires further validation in drug discovery workflows before reaching clinical or industrial maturity."
+            "score": 4,
+            "reason": "The work represents a laboratory-stage proof-of-concept for a specialized screening tool rather than a drug candidate or a commercial platform. While it optimizes a pipeline for high-throughput use, it remains in the R&D phase of tool development and lacks validation in large-scale industrial or clinical settings."
           },
           "ip_strength": {
             "score": 6,
-            "reason": "The innovation relies on well-understood synthetic gene circuit architectures, which face high hurdles for patentability due to existing prior art in biosensor design and reporter systems. While the specific optimization for SARS-CoV-2 3CLpro has utility, the generalizable method is likely restricted to narrow procedural claims rather than broad platform-level IP."
+            "reason": "The innovation lies in the specific synthetic gene circuit design and 'designer cell' architecture, which offers moderate patentability as a functional screening platform. However, the defensibility is limited by the potential for competitors to engineer similar reporter circuits using alternative genetic motifs or different cell lines."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 34,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Department of Biochemistry and Molecular Biology, Institute for Medical Research Israel-Canada, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 91120, Israel. Electronic address: lior.nissim@mail.huji.ac.il.",
         "pi_email": "lior.nissim@mail.huji.ac.il.",
         "hts_score": 10,

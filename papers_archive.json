@@ -53,9 +53,9 @@
   "date": "2026-11-07",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42996819/",
   "source": "PubMed",
-  "score": 6,
-  "summary": "This paper reports a rare clinical case of a renal neuroendocrine tumor that was identified after presenting with ectopic Cushing syndrome. It highlights the diagnostic challenges associated with identifying hormone-secreting tumors that mimic other metabolic or endocrine disorders.",
-  "opportunity": "The case emphasizes the need for advanced diagnostic algorithms or AI-driven decision support tools to better identify rare endocrine-secreting tumors during standard clinical evaluations.",
+  "score": 5,
+  "summary": "Researchers describe a rare medical case where a kidney tumor secreted a hormone that caused an overproduction of cortisol. The paper highlights the diagnostic challenges in identifying rare neuroendocrine tumors as the source of hormonal imbalances.",
+  "opportunity": "Potential for developing high-sensitivity diagnostic panels or AI-driven differential diagnosis tools to detect rare ectopic hormone-secreting tumors.",
   "fields": [
    "Diagnostics",
    "Clinical"
@@ -64,32 +64,28 @@
   "score_breakdown": {
    "novelty": {
     "score": 2,
-    "reason": "This is a single-patient case report describing a rare clinical presentation rather than a novel scientific discovery, platform technology, or innovative therapeutic approach. It contributes to clinical literature for diagnostic awareness but offers no protectable intellectual property or breakthrough technical innovation."
+    "reason": "This is a clinical case report describing a rare presentation of a known disease entity rather than the introduction of new biological mechanisms, technologies, or therapeutic platforms. While clinically significant for diagnostic awareness, it lacks the scientific innovation or groundbreaking research required for a high novelty score."
    },
    "commercial_potential": {
     "score": 1,
-    "reason": "This is a single-patient case report describing a rare clinical presentation, which offers no novel technology, proprietary methodology, or scalable product opportunity."
+    "reason": "This is a single clinical case report describing a rare medical occurrence, which lacks the novelty, scalability, or technological framework required to develop a commercial product or licensable asset."
    },
    "market_size": {
     "score": 1,
-    "reason": "This paper is a clinical case report of a single, rare patient presentation, which does not represent a scalable market or a commercializable therapeutic platform."
+    "reason": "The paper describes an exceptionally rare case study of a single clinical occurrence, indicating a negligible addressable market size for any potential therapeutic or diagnostic intervention."
    },
    "trl": {
     "score": 1,
-    "reason": "This paper is a clinical case report describing a singular diagnostic finding rather than a technological innovation, methodology, or therapeutic development. It holds no inherent technology readiness as it does not propose or validate a scalable solution."
-   },
-   "ip_strength": {
-    "score": 1,
-    "reason": "This paper is a clinical case report describing a specific patient presentation of a known condition, which contains no novel, non-obvious, or patentable intellectual property."
+    "reason": "This is a clinical case report describing a single patient observation rather than a new technology, diagnostic tool, or therapeutic intervention. It provides medical knowledge but lacks any developmental progress toward a commercialized product or platform."
    }
   },
   "pi": "Simona Grozinsky-Glasberg",
   "pi_full_name": "Simona Grozinsky-Glasberg",
   "pi_email": "",
   "pi_affiliation": "Neuroendocrine Tumor Unit, ENETS Center of Excellence, Division of Medicine, Hadassah Medical Center, Jerusalem 91120, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 9112001, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "6",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 2,
   "hts_reason": "This is a clinical case report describing a patient presentation rather than identifying a novel molecular target for drug screening or providing a scalable assay. It lacks both a druggable molecular target and a methodology suitable for high-throughput screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -105,9 +101,9 @@
   "date": "2026 Nov 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42995464/",
   "source": "PubMed",
-  "score": 11,
-  "summary": "This research explores how ideologically tailored digital messaging can influence public support for humanitarian initiatives in conflict zones. It utilizes behavioral data to analyze the effectiveness of psychological framing in mobilizing specific demographic groups.",
-  "opportunity": "The methodology has commercial potential for AI-driven platforms focused on behavioral analytics, precision marketing, and sentiment analysis for crisis management or public health advocacy.",
+  "score": 18,
+  "summary": "Researchers conducted a digital experiment on Facebook to see if different messaging styles could increase support for humanitarian aid among Jewish Israelis during the Israel-Gaza war. They found that tailoring messages to specific political ideologies—using security arguments for conservatives and moral arguments for liberals—successfully boosted aid support.",
+  "opportunity": "The methodology provides a framework for developing AI-driven psychological intervention tools designed to influence public sentiment or behavior through hyper-personalized, ideologically aligned digital messaging.",
   "fields": [
    "Software/AI",
    "Other"
@@ -115,33 +111,33 @@
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
-    "score": 3,
-    "reason": "The study applies established methodologies from behavioral science and digital marketing to a geopolitical context, representing a incremental application rather than a breakthrough scientific innovation. It lacks the technical or platform-level novelty required to be considered a disruptive advancement in life sciences or deep technology."
+    "score": 4,
+    "reason": "The paper applies established psychological principles of message framing and ideological matching to a new geopolitical context, but the underlying mechanism of 'ideologically tailored messaging' is a well-documented concept in political science and social psychology. While the real-world digital field experiment adds high ecological validity, the core innovation is incremental rather than a groundbreaking shift in theoretical or technological frameworks."
    },
    "commercial_potential": {
-    "score": 2,
-    "reason": "The research focuses on sociopolitical influence and behavioral advocacy, which lacks the clear intellectual property, scalability, or industrial application required for a commercially viable deep-tech or life-science product. It is better suited for public policy or academic discourse than for venture-scale commercialization."
+    "score": 4,
+    "reason": "While the findings offer actionable insights for political campaigning and NGO communication strategies, the work describes a social science framework rather than a proprietary technology, platform, or scalable digital product with high barriers to entry."
    },
    "market_size": {
     "score": 2,
-    "reason": "The target market—humanitarian aid to Palestinian civilians via ideologically tailored social‑media campaigns—is highly specialized and geographically constrained, implying a limited addressable demand and modest market size."
+    "reason": "The research addresses highly specific, transient sociopolitical phenomena during an acute conflict rather than a scalable commercial market. There is no clear path to a mass-market industrial or clinical product with sustained, high-value demand."
    },
    "trl": {
-    "score": 2,
-    "reason": "This study focuses on social science research and opinion-based behavioral intervention rather than a scalable, protectable technology or industrial process. Its methodology is restricted to a specific academic experiment, lacking the technical infrastructure or commercial pathway necessary for a higher TRL rating."
+    "score": 7,
+    "reason": "The research demonstrates a successful field experiment with a large sample size (n=6,105) deployed in a real-world social media environment, proving the scalability and efficacy of the intervention. While not yet a commercial product, it provides a validated, platform-ready framework for immediate application in behavioral influence and humanitarian communication."
    },
    "ip_strength": {
-    "score": 2,
-    "reason": "The work focuses on social‑media strategy rather than a novel technical invention, offering little scope for patent protection or defensibility."
+    "score": 1,
+    "reason": "The paper describes a social science field experiment involving psychological messaging strategies, which are inherently non-patentable and lack technical or industrial defensibility. There is no underlying deep-tech, proprietary algorithm, or hardware innovation that provides a moat against competitors."
    }
   },
   "pi": "Eran Halperin",
   "pi_full_name": "Eran Halperin",
   "pi_email": "",
   "pi_affiliation": "The Hebrew University of Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "11",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper focuses on social media marketing and humanitarian aid policy rather than molecular biology, chemical screening, or drug discovery; it lacks all three required elements.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -161,43 +157,40 @@
   "date": "2026 Nov 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42994813/",
   "source": "PubMed",
-  "score": 10,
-  "summary": "This 30-year study analyzes how self-reported health perceptions evolve as individuals age and identifies the underlying factors that influence these subjective longitudinal assessments. By mapping these trajectories, the research highlights the critical role of self-assessment as a powerful indicator of overall physiological and psychological well-being in the elderly.",
-  "opportunity": "These findings provide a validated patient-reported outcome (PRO) framework that can be integrated into digital health platforms and clinical decision-support AI to personalize geriatric care and interventions.",
+  "score": 9,
+  "summary": "This long-term study tracks the health perceptions of individuals from age 70 to 100, finding that self-rated health is a strong predictor of mortality. The research highlights depression and financial hardship as primary drivers of poor self-perceived health in the oldest old.",
+  "opportunity": "Development of AI-driven predictive analytics and digital health monitoring tools for geriatric care to identify high-risk patients based on subjective health markers and psychological distress.",
   "fields": [
+   "Software/AI",
    "Clinical",
-   "Software/AI"
+   "Neuroscience"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "This study represents incremental observational research in gerontology rather than a novel scientific breakthrough or platform technology. While longitudinal data is valuable for public health, it lacks the technical innovation or transformative potential typically associated with deep-tech investment opportunities."
+    "reason": "The study provides valuable longitudinal data on an aging cohort, but the finding that depression and comorbidities correlate with self-rated health is well-established in existing geriatric literature. It offers incremental epidemiological insight rather than a novel scientific mechanism, platform technology, or groundbreaking methodology."
    },
    "commercial_potential": {
     "score": 2,
-    "reason": "This study is descriptive and observational, lacking the intellectual property potential, therapeutic intervention, or diagnostic utility required to form a scalable commercial product. It provides epidemiological insights that are academically valuable but offer no clear pathway to clinical or industrial application."
+    "reason": "The paper is a longitudinal epidemiological study providing observational insights into aging trends rather than a novel technology, drug, or diagnostic tool. While the data may inform public health policy, it lacks a direct path to a protectable product, service, or licensable deep-tech asset."
    },
    "market_size": {
-    "score": 2,
-    "reason": "This study focuses on longitudinal sociological and gerontological data regarding self-rated health, which lacks direct commercial application or a scalable product-market fit. It serves as descriptive academic research rather than a clinical or industrial innovation with addressable market demand."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "This is an academic observational study focused on sociological and psychological health metrics rather than the development of a commercial technology, platform, or therapeutic intervention. It provides longitudinal data insights but lacks a technological component that could be transitioned toward a market-ready application."
+    "score": 3,
+    "reason": "The paper is a descriptive epidemiological study on a subjective metric (Self-Rated Health) rather than a therapeutic or diagnostic technology with a defined commercial product market. While aging is a massive demographic trend, this research lacks a direct translation into a scalable, monetizable product or platform."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This study is an observational longitudinal analysis of health metrics rather than an invention, process, or technology, meaning it lacks any underlying intellectual property or technical innovation to protect."
+    "reason": "This is an observational epidemiological study providing public health insights; it contains no proprietary technology, novel methods, or patentable inventions that could be defended as intellectual property."
    }
   },
   "pi": "Jochanan Stessman",
   "pi_full_name": "Jochanan Stessman",
   "pi_email": "",
   "pi_affiliation": "The Jerusalem Institute of Aging Research; the Department of Geriatric Rehabilitation; Faculty of Medicine, Hebrew University of Jerusalem, Hadassah Medical Center, Jerusalem, Israel.; Department of Geriatric Rehabilitation and the Center for Palliative Care, Hadassah Medical Center, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "10",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This paper is a longitudinal observational study on psychosocial health metrics and does not identify a molecular target, a disease-specific biological mechanism, or a biochemical assay for high-throughput screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -217,44 +210,39 @@
   "date": "2026 Nov 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42994662/",
   "source": "PubMed",
-  "score": 26,
-  "summary": "Researchers have identified peptides from the sorghum Siliplant1 protein that enable precise, domain-specific control over how silica particles aggregate and form structures. This discovery mimics natural biomineralization processes, allowing for the programmed synthesis of silica-based materials under mild, environmentally friendly conditions.",
-  "opportunity": "These peptides offer a biological platform for the sustainable, low-energy manufacturing of advanced silica-based materials, coatings, and catalyst supports for the construction and specialty chemicals industries.",
+  "score": 17,
+  "summary": "Researchers have identified how specific protein domains in sorghum control the formation and shape of silica aggregates. By manipulating protein structures like beta-sheets and hydroxyl density, they can precisely direct how silica mineralizes.",
+  "opportunity": "This mechanism enables the programmable bio-manufacturing of silica-based nanomaterials for advanced coatings, drug delivery vehicles, or semiconductor precursors.",
   "fields": [
    "Materials",
-   "Synthetic Biology",
-   "Clean Energy"
+   "Synthetic Biology"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
-   "novelty": {
-    "score": 5,
-    "reason": "The research explores a known biological phenomenon (silica accumulation in plants) using specific peptide sequences, which represents an incremental optimization of existing biomineralization knowledge rather than a paradigm-shifting discovery."
-   },
    "commercial_potential": {
     "score": 5,
-    "reason": "While the discovery of specific peptides for silica aggregation has industrial utility in materials science or nanotechnology, the lack of a defined application or platform context limits its immediate commercial valuation. The technology is currently in a fundamental discovery phase with high uncertainty regarding its scalability or specific market fit."
+    "reason": "The work provides a fundamental mechanism for programmable silica synthesis, which has potential in drug delivery or biomaterials, but lacks a clear, target application or a demonstrated commercial prototype."
    },
    "market_size": {
-    "score": 6,
-    "reason": "The ability to control silica aggregation using biomimetic peptides has potential applications in high-value material science, catalysis, and semiconductor manufacturing, but remains an early-stage chemical engineering tool rather than a comprehensive platform with a defined, massive commercial trajectory. Its market addressability is currently limited by the need for integration into existing large-scale industrial manufacturing processes."
+    "score": 3,
+    "reason": "The paper describes fundamental mechanisms of biomineralization in plants, which lacks a clear, immediate commercial application or a defined addressable market. While silica synthesis has niche industrial uses, the current work is basic science rather than a platform for a high-value product."
    },
    "trl": {
     "score": 3,
-    "reason": "This is fundamental research characterizing the bio-molecular mechanisms of silica biomineralization, which currently lacks the material characterization, scalability data, or industrial application validation required for higher readiness levels."
+    "reason": "The research is at a fundamental mechanistic stage, focusing on characterization of domain functions and structural transitions in a controlled lab setting. While it identifies a mechanism for silica control, it lacks the demonstration of a functional application, scale-up potential, or prototype required for higher TRLs."
    },
    "ip_strength": {
-    "score": 7,
-    "reason": "The discovery of novel peptide sequences with specific functional properties offers a clear basis for composition-of-matter patent claims, though the scope of protection is contingent on the breadth of the peptide library and the defined control mechanisms. While highly defensible if sequences are unique and proprietary, the underlying biological mechanism is a discovery of natural function, requiring careful framing to secure strong IP coverage."
+    "score": 6,
+    "reason": "The identification of specific domain combinations (Pep-AB/BC) and the role of beta-sheet scaffolds provides a clear basis for composition-of-matter patents for biomimetic silica templates. However, as a fundamental mechanistic study, it lacks a specific industrial application or a proprietary platform delivery method to reach a higher score."
    }
   },
   "pi": "Rivka Elbaum",
   "pi_full_name": "Rivka Elbaum",
   "pi_email": "rivka.elbaum@mail.huji.ac.il.",
   "pi_affiliation": "The Robert H. Smith Institute of Plant Sciences and Genetics in Agriculture, The Hebrew University of Jerusalem, 7610001, Rehovot, Israel. Electronic address: rivka.elbaum@mail.huji.ac.il.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "26",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 2,
   "hts_reason": "The paper identifies specific peptides from sorghum Siliplant1 that control silica aggregation, but it does not link these peptides to a particular disease or condition, nor does it describe a testable assay or method for measuring their effect.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -278,44 +266,40 @@
   "date": "2026 Nov 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42994593/",
   "source": "PubMed",
-  "score": 23,
-  "summary": "Hebrew University researchers have successfully developed immortalized intestinal telocytes that maintain their specialized function in supporting stem cell niches within laboratory environments. This breakthrough provides a reliable, scalable cell culture system that models the complex microenvironment of the gut, which is essential for studying tissue regeneration and disease.",
-  "opportunity": "These immortalized cell lines serve as high-fidelity, standardized platforms for drug screening and personalized medicine, significantly accelerating the development of therapies for inflammatory bowel diseases and intestinal regenerative medicine.",
+  "score": 19,
+  "summary": "Researchers have developed a way to create immortalized intestinal telocytes that can maintain the environment necessary for stem cells to survive and grow in a lab. This provides a stable, scalable cell source for studying gut regeneration and testing therapies outside the body.",
+  "opportunity": "Commercialization of standardized, immortalized cell lines for high-throughput drug screening and the development of bioengineered intestinal tissues for regenerative medicine.",
   "fields": [
    "Drug Discovery",
-   "Clinical",
-   "Synthetic Biology"
+   "Synthetic Biology",
+   "Clinical"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
     "score": 6,
-    "reason": "While the development of an immortalized telocyte cell line addresses a significant technical hurdle in modeling the intestinal niche, it represents an incremental methodological refinement rather than a fundamental paradigm shift in stem cell biology. Its novelty is constrained to providing a more robust tool for existing organoid research protocols rather than enabling an entirely new therapeutic or diagnostic modality."
+    "reason": "The creation of an immortalized telocyte line provides a valuable tool for niche modeling, but the conceptual approach of immortalizing support cells to study stem cell niches is an established methodology rather than a groundbreaking scientific leap."
    },
    "commercial_potential": {
-    "score": 6,
-    "reason": "This technology provides a valuable research tool for drug discovery and regenerative medicine modeling, but it currently lacks a defined clinical or industrial product path beyond its utility as an in vitro assay component. Its commercial value is limited by the inherent regulatory and scalability hurdles associated with biological niche-support models compared to platform-enabling small molecule or gene editing technologies."
+    "score": 4,
+    "reason": "While providing a valuable tool for basic research into the stem cell niche, the commercial application is limited to a specialized research reagent rather than a direct clinical therapy or a high-demand industrial platform."
    },
    "market_size": {
-    "score": 4,
-    "reason": "While telocytes are relevant to basic stem cell biology and organoid engineering, the current market for specialized niche-supporting cell lines is niche compared to broader therapeutic platforms. The commercial value is limited by the experimental nature of intestinal organoid culture systems rather than addressing a large-scale clinical or industrial pain point."
-   },
-   "trl": {
-    "score": 3,
-    "reason": "This study focuses on the characterization and immortalization of a specific cell type in a controlled laboratory setting, which is a foundational discovery phase. It remains far from commercial or clinical application as it lacks a defined translational model, scaling strategy, or therapeutic/industrial use case."
+    "score": 5,
+    "reason": "The work is a fundamental cell biology discovery focused on a niche component of the stem cell microenvironment, which lacks a direct commercial application without further platform development. While potentially useful for regenerative medicine research tools, the immediate addressable market is limited to basic research reagents rather than a large-scale therapeutic or diagnostic market."
    },
    "ip_strength": {
     "score": 4,
-    "reason": "While the immortalization of a specific cell type is a technical achievement, the underlying method likely relies on established genetic engineering techniques (e.g., hTERT immortalization), limiting the scope of novel composition-of-matter IP. The utility of the resulting cell line is constrained to research and development rather than being a core platform technology or a proprietary therapeutic asset."
+    "reason": "The innovation focuses on cell line immortalization, which is often difficult to protect via patents if the method relies on natural processes or standard genetic engineering, and lacks a clearly defined commercial platform or proprietary therapeutic application in the title."
    }
   },
   "pi": "Michal Shoshkes-Carmel",
   "pi_full_name": "Michal Shoshkes-Carmel",
   "pi_email": "michal.shoshkes@mail.huji.ac.il.",
   "pi_affiliation": "Department of Developmental Biology and Cancer Research, Institute for Medical Research Israel-Canada, Hebrew University Medical School, Jerusalem, Israel. Electronic address: michal.shoshkes@mail.huji.ac.il.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "23",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 3,
   "hts_reason": "The paper focuses on characterizing a cell type (telocytes) rather than identifying a druggable molecular target, and it lacks a direct link to a specific disease pathology. While it describes an in vitro culture method, it does not present a high-throughput compatible assay for a specific molecular target.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -387,43 +371,44 @@
   "date": "2026 Nov 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42993662/",
   "source": "PubMed",
-  "score": 7,
-  "summary": "This research defines a mathematical framework for how biological systems dynamically allocate limited resources to maintain functional control over their environment. It provides a universal quantitative metric for understanding how organisms or engineered biological circuits balance efficiency against robustness under varying environmental pressures.",
-  "opportunity": "The findings offer a predictive design principle for optimizing the resource allocation of synthetic biological circuits, significantly improving the stability and yield of industrial biomanufacturing processes.",
+  "score": 11,
+  "summary": "The research proposes a new framework where the ability to control an environment is not a fixed constant but a variable that changes based on the investment of time, energy, and capital. This 'resource elasticity' suggests that increasing input can expand the boundaries of what is functionally controllable in complex systems.",
+  "opportunity": "This theoretical framework could be applied to optimize resource allocation in complex automated systems, such as closed-loop drug delivery or autonomous precision agriculture, where the cost of control must be balanced against environmental stability.",
   "fields": [
-   "Synthetic Biology",
-   "Software/AI"
+   "Software/AI",
+   "Neuroscience",
+   "Other"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
-    "score": 1,
-    "reason": "Without an abstract or any descriptive content, it is impossible to evaluate the scientific merit or originality of the work. The title is highly ambiguous and provides no indication of the underlying methodology or application."
+    "score": 4,
+    "reason": "The paper proposes a conceptual shift in behavioral theory by framing controllability as a dynamic variable rather than a static environmental property, but it appears to be a theoretical/framework refinement rather than a groundbreaking technological or scientific discovery."
    },
    "commercial_potential": {
-    "score": 3,
-    "reason": "The title \"The resource elasticity of control\" is too abstract and lacks indication of a specific technology, product, or application, making it difficult to gauge commercial viability."
+    "score": 2,
+    "reason": "The paper appears to be a work of theoretical psychology or behavioral economics focusing on abstract concepts of agency and control. It lacks a tangible mechanism, biological target, or engineering application that translates into a product, service, or licensable deep-tech asset."
    },
    "market_size": {
-    "score": 1,
-    "reason": "Without an abstract or content, it is impossible to determine the subject matter, application, or commercial relevance, making the market size indeterminate."
+    "score": 2,
+    "reason": "The paper appears to be a theoretical exploration of cognitive science or behavioral economics rather than a product, therapeutic, or technology with a defined commercial market. There is no evidence of a specific industry application or addressable demand."
    },
    "trl": {
     "score": 1,
-    "reason": "The title suggests a highly theoretical or mathematical framework regarding control theory or economics, indicating fundamental research with no immediate indication of a physical prototype or applied technology."
+    "reason": "This is a theoretical paper in behavioral science/cognitive psychology exploring conceptual frameworks of control. It lacks any applied technology, hardware, or clinical protocol that could be transitioned into a commercial product."
    },
    "ip_strength": {
-    "score": 1,
-    "reason": "The title suggests a theoretical work in economics, social science, or management rather than a tangible biotechnological or deep-tech invention. Without technical specifications or physical mechanisms described, there is no identifiable patentable subject matter or proprietary technology to defend."
+    "score": 2,
+    "reason": "The paper describes a theoretical framework in behavioral science/psychology rather than a tangible technological invention, molecule, or device. There are no specific mechanisms, compositions, or engineering applications described that would lend themselves to patent protection or proprietary defensibility."
    }
   },
   "pi": "Eran Eldar",
   "pi_full_name": "Eran Eldar",
   "pi_email": "",
   "pi_affiliation": "Department of Cognitive Sciences, Hebrew University of Jerusalem, Jerusalem, Israel.; Department of Psychology Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "7",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper title describes a theoretical or systems-level concept rather than a specific molecular target, disease linkage, or screening assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -580,43 +565,40 @@
   "date": "2026 Nov 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42991194/",
   "source": "PubMed",
-  "score": 16,
-  "summary": "This review provides evidence-based protocols for managing anesthesia in pregnant patients with complex cardiovascular conditions, emphasizing patient-specific risk stratification. It serves as a clinical guideline to improve maternal and fetal safety outcomes during high-risk surgical or obstetric procedures.",
-  "opportunity": "The content supports the development of AI-driven clinical decision support systems (CDSS) that provide real-time, lesion-specific anesthetic guidance to clinicians in high-risk obstetric settings.",
+  "score": 6,
+  "summary": "This clinical review provides a framework for managing high-risk pregnant patients who suffer from cardiovascular diseases during labor and delivery. It focuses on translating complex heart lesion physiology into practical anesthetic decisions and risk assessment models.",
+  "opportunity": "The review highlights a clinical need for specialized decision-support tools or remote monitoring systems tailored to high-risk obstetric cardiology management.",
   "fields": [
    "Clinical",
-   "Software/AI"
+   "Software/AI",
+   "Medical Device"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
-    "score": 1,
-    "reason": "This paper is categorized as a clinical review rather than original primary research, meaning it synthesizes existing medical literature rather than introducing new scientific, diagnostic, or therapeutic innovations."
+    "score": 2,
+    "reason": "This is a narrative clinical review intended to synthesize and translate existing guidelines and physiological principles into practical practice, rather than presenting new scientific discoveries, original data, or novel technologies."
    },
    "commercial_potential": {
-    "score": 2,
-    "reason": "This paper is a clinical review article intended for medical education and physician practice guidelines, offering no proprietary technology, intellectual property, or novel product development. It provides clinical guidance rather than a commercial opportunity or scalable technical asset."
+    "score": 1,
+    "reason": "This is a narrative clinical review article intended for medical education and professional guidance, not a primary research paper describing a novel technology, drug, or medical device. It offers clinical decision-making frameworks rather than a patentable or licensable product."
    },
    "market_size": {
     "score": 2,
-    "reason": "This paper is a niche clinical review focused on anesthetic protocols for a very small patient sub-population, representing an extremely narrow and specialized clinical niche rather than a broad, high-value commercial market."
+    "reason": "The paper is a clinical narrative review providing management guidelines rather than a new therapeutic, diagnostic device, or platform technology. It addresses a clinical niche but does not represent a scalable commercial product or a sizable addressable market for investment."
    },
    "trl": {
-    "score": 10,
-    "reason": "This paper is a clinical review focused on standardized anesthetic management protocols for existing high-risk patient populations, representing established medical practice rather than experimental technology. As a practical synthesis of current clinical guidelines, it is fully ready for immediate, real-world application by practitioners."
-   },
-   "ip_strength": {
     "score": 1,
-    "reason": "This is a clinical review article summarizing existing medical knowledge and standard practices rather than presenting a novel, proprietary technology, invention, or composition of matter."
+    "reason": "This is a narrative clinical review of existing medical guidelines and physiological principles, not a new technology, device, or therapeutic intervention. It represents established clinical knowledge rather than a developmental technology with a TRL progression."
    }
   },
   "pi": "Daniel Shatalin",
   "pi_full_name": "Daniel Shatalin",
   "pi_email": "",
   "pi_affiliation": "Department of Anesthesiology, Perioperative Medicine, and Pain Treatment, Shaare Zedek Medical Center, The Hebrew University of Jerusalem, Jerusalem, ISR.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "16",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This is a clinical review article focused on anesthesia management rather than drug discovery, providing no specific molecular targets or screening assays.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -734,44 +716,41 @@
   "date": "2026 Aug 10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42989107/",
   "source": "PubMed",
-  "score": 5,
-  "summary": "This case report details the successful diagnosis and minimally invasive laparoscopic treatment of rare internal injuries, specifically liver damage and hemobilia, following a penetrating trauma. It demonstrates the utility of high-resolution CT imaging in guiding surgical intervention for complex abdominal vascular emergencies.",
-  "opportunity": "The case highlights the growing market demand for AI-driven diagnostic software that can automate the rapid analysis of CT scans to improve triage and surgical planning for trauma patients.",
+  "score": 14,
+  "summary": "This case report demonstrates how multiphasic contrast-enhanced CT imaging can accurately differentiate between biliary bleeding and gastrointestinal injury following penetrating trauma. The study highlights the utility of phase-dependent contrast tracking to guide minimally invasive laparoscopic surgical management.",
+  "opportunity": "Development of advanced AI-driven radiology software capable of automated phase-dependent vascular and biliary tracking to improve trauma triage and surgical planning.",
   "fields": [
-   "Medical Device",
+   "Diagnostics",
    "Imaging",
-   "Clinical"
+   "Clinical",
+   "Software/AI"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
-    "score": 1,
-    "reason": "This is a single-patient case report detailing a standard surgical management approach for a known traumatic injury, offering no novel therapeutic mechanisms, technological innovations, or paradigm-shifting clinical insights."
+    "score": 2,
+    "reason": "This is a clinical case report describing a specific presentation and a standard management approach using existing diagnostic imaging techniques. It lacks the groundbreaking scientific innovation or novel methodological advancement required for a higher novelty score."
    },
    "commercial_potential": {
     "score": 1,
-    "reason": "This is a descriptive case report of a rare clinical event that lacks novel IP, platform potential, or a scalable product application. It provides anecdotal clinical guidance rather than a commercially viable technology or diagnostic innovation."
-   },
-   "market_size": {
-    "score": 1,
-    "reason": "This paper is a singular case report focused on a rare clinical presentation of traumatic injury, which represents a negligible, non-scalable niche with no broad commercial or market utility."
+    "reason": "This is a clinical case report documenting a single patient's management protocol rather than the development of a new technology, diagnostic tool, or therapeutic product. It offers observational medical knowledge but lacks any novel, scalable, or licensable intellectual property."
    },
    "trl": {
-    "score": 1,
-    "reason": "This is a retrospective clinical case report describing a standard medical intervention for a specific trauma instance rather than the development of a novel technology, platform, or product."
+    "score": 10,
+    "reason": "The paper describes a clinical case report involving established diagnostic tools (CT) and surgical techniques (laparoscopy) already in standard medical practice. There is no new technology being developed, so the clinical application is at the highest maturity level."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This is a descriptive clinical case report concerning standard surgical management of trauma; it describes existing medical practices rather than novel, patentable intellectual property or proprietary technology."
+    "reason": "This is a clinical case report describing standard diagnostic imaging (CT) and established surgical procedures (laparoscopy) used to treat a specific patient scenario. There is no novel invention, proprietary technology, or patentable methodology presented that offers defensible intellectual property."
    }
   },
   "pi": "Ronit Grinbaum",
   "pi_full_name": "Ata Maden",
   "pi_email": "atam@hadassah.org.il.",
   "pi_affiliation": "Department of General Surgery, Hadassah Medical Center, Jerusalem, Israel.; Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "5",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This is a clinical case report regarding trauma surgery and lacks a molecular target, a pharmacological disease mechanism, or any high-throughput screening methodology.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -787,9 +766,9 @@
   "date": "2026-11-05",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42987127/",
   "source": "PubMed",
-  "score": 11,
-  "summary": "This paper presents a condensed psychometric instrument called the Situation Six Brief Scale designed to efficiently measure core situational characteristics. By using a lexical approach, the tool provides a standardized framework for assessing environmental contexts in behavioral and psychological studies.",
-  "opportunity": "The scale can be integrated into digital health platforms and AI-driven mental health applications to provide standardized, low-burden contextual data for personalized patient monitoring and behavioral intervention optimization.",
+  "score": 8,
+  "summary": "Researchers have developed a short, 12-item psychological tool called the Situation Six Brief Scale to quickly measure how individuals perceive their environment. This scale evaluates six key situational dimensions like familiarity and stress levels, offering a faster alternative to traditional, lengthy psychological assessments.",
+  "opportunity": "The scale could be integrated into digital mental health platforms or clinical trial software to provide rapid, low-burden longitudinal monitoring of patient psychological states.",
   "fields": [
    "Software/AI",
    "Clinical",
@@ -799,32 +778,24 @@
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "The paper appears to be a psychometric validation study focused on refining an existing measurement scale rather than introducing a fundamentally new scientific paradigm or technological breakthrough. While it provides incremental improvement to personality and situational assessment tools, it lacks the groundbreaking innovation required for a high novelty score in a deep-tech context."
+    "reason": "The work is an incremental improvement focused on efficiency rather than a scientific breakthrough; it simply creates a shorter version of an existing established taxonomy."
    },
    "commercial_potential": {
-    "score": 2,
-    "reason": "This is a psychometric validation study of a personality/situational scale, which lacks a clear path to a high-value deep-tech product or proprietary platform. While potentially useful for academic psychology or basic HR assessments, it lacks the industrial or clinical scalability required for high-impact commercial investment."
-   },
-   "market_size": {
-    "score": 2,
-    "reason": "The paper describes a psychological psychometric tool for measuring situational characteristics, which lacks a clear commercial application or large-scale industrial/clinical market demand in a deep-tech context. Its value is limited to niche academic or psychological research settings rather than a scalable life-science or technology market."
+    "score": 3,
+    "reason": "The paper describes a psychometric validation of a brief survey instrument, which lacks inherent protectability and offers limited standalone commercial value outside of academic research usage."
    },
    "trl": {
     "score": 2,
-    "reason": "This is a psychometric validation study of a psychological measurement tool, which represents fundamental behavioral science rather than a developed technology or product. While the scale may be used in clinical settings, it remains in the basic research/academic validation stage."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The study focuses on a linguistic measurement tool with no obvious novel technical implementation, making it unlikely to yield patentable or defensible IP."
+    "reason": "The work represents fundamental psychometric validation of a new measurement tool in a controlled academic setting, which is characteristic of basic research. It lacks evidence of integration into industrial software, clinical diagnostic pipelines, or commercial psychological assessment platforms."
    }
   },
   "pi": "Shaul Oreg",
   "pi_full_name": "Shaul Oreg",
   "pi_email": "",
   "pi_affiliation": "Hebrew University Business School, The Hebrew University of Jerusalem.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "11",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This paper focuses on psychometric scale validation in the social sciences and does not identify a biological molecule, a disease target, or a molecular assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -847,45 +818,33 @@
   "date": "2026-11-05",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42986451/",
   "source": "PubMed",
-  "score": 30,
-  "summary": "This paper explores integrating RNA-based technologies with CAR-T cell therapy to enhance the safety, efficacy, and control of current cancer immunotherapies. By leveraging RNA mechanisms, researchers aim to overcome hurdles like persistence, solid tumor penetration, and off-target toxicities.",
-  "opportunity": "The development of transient, modular, and programmable RNA-based CAR-T platforms represents a high-value opportunity to improve manufacturing scalability and precision in personalized oncology.",
+  "score": 12,
+  "summary": "This paper reviews how integrating RNA technologies can solve major bottlenecks in current CAR-T cell therapies, such as high costs and limited efficacy in solid tumors. It highlights four strategic areas: non-viral manufacturing, RNA vaccines to boost T-cell activity, RNA interference for cell modulation, and the potential for in vivo cell generation.",
+  "opportunity": "The transition from viral-based to RNA-driven CAR-T manufacturing offers a massive market opportunity for scalable, off-the-shelf cell therapies and decentralized production platforms.",
   "fields": [
    "Immunology",
-   "Genomics",
    "Synthetic Biology",
+   "Genomics",
    "Clinical"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
-    "score": 4,
-    "reason": "This paper is a review article summarizing established integration strategies rather than reporting original, experimental, or groundbreaking research. While the synthesis of RNA and CAR-T technologies is clinically relevant, the work functions as a pedagogical overview of existing state-of-the-art rather than a novel contribution to the field."
-   },
-   "commercial_potential": {
-    "score": 9,
-    "reason": "Integrating RNA technologies with CAR-T represents a high-value platform play that directly addresses manufacturing bottlenecks and safety limitations, offering significant licensing potential for major biopharma firms currently scaling cell therapy pipelines."
+    "score": 3,
+    "reason": "This is a review paper synthesizing existing knowledge rather than presenting primary, original research or a new technological breakthrough. While the topic is clinically relevant, the work itself describes current trends and known strategies rather than introducing a novel scientific discovery or platform."
    },
    "market_size": {
     "score": 9,
-    "reason": "CAR-T cell therapy is a multi-billion dollar segment of the oncology market, and RNA-based platforms offer a high-value, enabling solution to address significant hurdles in scalability, manufacturing costs, and clinical efficacy. By enabling next-generation 'off-the-shelf' and controllable cell therapies, this approach targets an enormous, high-growth addressable market in immuno-oncology."
-   },
-   "trl": {
-    "score": 4,
-    "reason": "This is a review paper synthesizing existing literature rather than presenting original experimental data, placing it in the conceptual phase of technology development. While it discusses clinically relevant CAR-T methodologies, it serves as a landscape analysis rather than a direct advancement of a specific, TRL-mature asset."
-   },
-   "ip_strength": {
-    "score": 4,
-    "reason": "This paper is a review article summarizing existing literature rather than presenting a novel, proprietary invention, making the IP position weak by default. While the underlying RNA-CAR-T technologies discussed may be protectable, this specific publication provides no original intellectual property or unique technical claims."
+    "reason": "The paper targets the expansion of CAR-T therapies from niche hematological indications into the massive solid tumor market and addresses the high-cost manufacturing bottleneck, representing a multi-billion dollar platform opportunity."
    }
   },
   "pi": "Zhanna R Gardanova",
   "pi_full_name": "Zhanna R Gardanova",
   "pi_email": "",
   "pi_affiliation": "Pirogov Russian National Research Medical University, Moscow, Russia.; Hadassah Medical Center, Moscow, Russia.; FSBI National Medical Research Center for Obstetrics, Gynecology and Perinatology named after Academician V.I. Kulakov Ministry of Health of the Russian Federation, Moscow, Russia.; Medical University MGIMO-MED, Moscow, Russia.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "30",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 2,
   "hts_reason": "This is a review paper focusing on broad technological strategies for CAR-T therapy rather than identifying a specific molecular target or a primary screening assay for drug discovery.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -949,43 +908,36 @@
   "date": "2026-11-05",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42984126/",
   "source": "PubMed",
-  "score": 7,
-  "summary": "This study analyzes the disparity in industry financial support between pediatric and adult rheumatology researchers in the United States. It highlights how clinical research funding flows disproportionately toward adult-focused pharmaceutical pipelines compared to pediatric specializations.",
-  "opportunity": "The identified funding gap presents a market opportunity for niche biotech firms and venture builders to focus on pediatric-specific orphan drug development and specialized clinical trial platforms where competition for pharmaceutical partnership is currently lower.",
+  "score": 4,
+  "summary": "This study analyzes the disparity in financial support from the pharmaceutical and medical industries between pediatric and adult rheumatology researchers in the United States. It examines whether differences in industry funding influence the recruitment and academic career paths of physicians in these subspecialties.",
+  "opportunity": "The findings suggest a potential investment or strategic gap in pediatric immunology, indicating that pharmaceutical companies may need to increase targeted R&D funding or physician-led research partnerships to sustain the talent pipeline in pediatric subspecialties.",
   "fields": [
+   "Immunology",
    "Clinical",
-   "Immunology"
+   "Other"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
-   "novelty": {
-    "score": 2,
-    "reason": "This study is an observational analysis of professional demographics and financial disclosures rather than a technological or scientific innovation. It contributes to policy or sociological discourse but provides no novel therapeutic, diagnostic, or platform-enabling methodology."
-   },
-   "commercial_potential": {
-    "score": 1,
-    "reason": "This paper is a bibliometric study focusing on industry funding trends within academic research, rather than the development of a novel therapeutic, diagnostic, or platform technology. It offers no intellectual property, product, or licensable clinical solution, and therefore lacks commercial utility."
-   },
    "market_size": {
     "score": 2,
-    "reason": "The study focuses on a narrow academic comparison within rheumatology, indicating a very limited addressable market and low commercial demand."
+    "reason": "This is a sociological/bibliometric study analyzing physician funding patterns rather than a proposal for a new product, technology, or therapy. It lacks a commercial target market, addressable demand, or revenue-generating potential."
    },
    "trl": {
     "score": 1,
-    "reason": "This paper is a bibliometric study analyzing industry-academia relationships and funding patterns rather than a technological development or therapeutic intervention. It has no TRL as it does not describe a product, platform, or experimental technology."
+    "reason": "This is a socio-economic observational study analyzing industry funding patterns in academia; it does not involve the development of a technology, product, or clinical tool."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This paper is an observational sociological study on academic funding trends and does not contain any novel technology, proprietary methodology, or intellectual property that could be patented or defended."
+    "reason": "This is a sociological/epidemiological study examining industry funding trends and physician recruitment, rather than a paper presenting a new technology, molecule, or platform. It contains no novel technical inventions or proprietary methodologies that would be subject to patent protection."
    }
   },
   "pi": "Sheldon M Stohl",
   "pi_full_name": "Sheldon M Stohl",
   "pi_email": "",
   "pi_affiliation": "Department of Anesthesiology and Critical Care, Hadassah Hebrew University Medical Center, Jerusalem, Israel.; Department of Anesthesiology and Critical Care, Children's Hospital Los Angeles, Los Angeles, California.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "7",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This paper is a policy and descriptive analysis regarding industry funding patterns in rheumatology research; it does not identify a specific molecular target, link a target to a disease mechanism, or describe a screening assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1002,44 +954,41 @@
   "date": "2026-11-04",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42982375/",
   "source": "PubMed",
-  "score": 21,
-  "summary": "This study analyzes clinical data from the Hebrew University of Jerusalem to identify key predictors for dialysis intervention and patient mortality in cases of severe hyperkalemia. The findings provide a framework for better risk-stratification and clinical decision-making when managing high-potassium emergencies.",
-  "opportunity": "The identified risk factors can be integrated into clinical decision-support software or diagnostic algorithms to improve the triage and rapid treatment of hyperkalemic patients in emergency settings.",
+  "score": 8,
+  "summary": "This study analyzes the clinical outcomes and risk factors for non-dialysis patients presenting with life-threatening high potassium levels in the emergency department. It identifies that while ECG abnormalities are common, specific factors like AKI stage and CKD stage are critical drivers for urgent dialysis and mortality.",
+  "opportunity": "There is a commercial opening for real-time electrolyte monitoring sensors and AI-driven clinical decision support tools to predict which hyperkalemia patients will require urgent dialysis.",
   "fields": [
-   "Clinical",
+   "Diagnostics",
+   "Medical Device",
    "Software/AI",
-   "Diagnostics"
+   "Clinical"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
     "score": 2,
-    "reason": "This study performs a standard retrospective analysis of clinical factors associated with a well-understood medical condition, which is a common exercise in clinical literature rather than an innovative or groundbreaking scientific advancement. It contributes to incremental clinical knowledge but lacks the intellectual property or technological novelty required for high-impact investment consideration."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "This paper is a retrospective clinical observation study analyzing existing medical data and offers no novel technology, diagnostic tool, or therapeutic intervention to commercialize. It describes clinical outcomes rather than establishing intellectual property or a scalable platform."
+    "reason": "This is a retrospective observational clinical study that describes established medical phenomena rather than introducing a new therapeutic mechanism, diagnostic technology, or scientific paradigm. The findings add incremental descriptive data to existing clinical knowledge but do not represent a groundbreaking innovation or platform-enabling discovery."
    },
    "market_size": {
-    "score": 7,
-    "reason": "Hyperkalemia is a common, high-acuity clinical condition with significant mortality risks, representing a large addressable patient population in emergency and critical care settings. While the market is substantial, the utility of this specific observational research on dialysis and mortality factors is limited to supporting existing clinical workflows rather than creating a new high-value market segment."
+    "score": 4,
+    "reason": "The study focuses on a very specific clinical niche—non-dialysis-dependent patients with potassium ≥7.0 mmol/L—which represents a relatively small subset of the broader emergency medicine and nephrology markets. While the condition is high-acuity, the addressable patient population for a targeted intervention based on this specific cohort is limited."
    },
    "trl": {
-    "score": 9,
-    "reason": "This study is a retrospective clinical analysis utilizing existing patient data from an emergency department setting, meaning it directly informs established clinical decision-making protocols rather than requiring further technical development. It represents near-market application in evidence-based medicine, as the findings are immediately actionable within current hospital workflows."
+    "score": 1,
+    "reason": "This is a retrospective clinical cohort study providing observational data, which contributes to medical knowledge but does not involve the development of a new technology, device, or therapeutic intervention."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This paper is a retrospective clinical analysis of patient outcomes and contains no novel compositions, devices, or proprietary methodologies that would be eligible for intellectual property protection. It describes existing medical practices rather than creating a protectable innovation."
+    "reason": "This is a retrospective clinical cohort study providing observational epidemiological data, which is inherently non-patentable and lacks any proprietary technology or platform-enabling innovation."
    }
   },
   "pi": "Linda Shavit",
   "pi_full_name": "Alon Bnaya",
   "pi_email": "alonb@szmc.org.il.",
   "pi_affiliation": "Nephrology Unit, The Eisenberg R&D Authority, Shaare Zedek Medical Center; Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "21",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This study is a clinical/observational report on hyperkalemia management and lacks a molecular target, specific disease mechanism, or biochemical assay suitable for high-throughput screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1303,44 +1252,41 @@
   "date": "2026-11-02",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42970011/",
   "source": "PubMed",
-  "score": 14,
-  "summary": "This study analyzes distinct subtypes of restricted and repetitive behaviors in autistic children to better understand their specific impacts on daily life skills. By categorizing these behaviors, the research provides a more granular framework for tailoring behavioral interventions and clinical assessments.",
-  "opportunity": "The findings support the development of precision digital health software and AI-driven diagnostic tools that create personalized therapeutic pathways for neurodevelopmental disorders.",
+  "score": 11,
+  "summary": "Researchers identified three distinct subtypes of repetitive behaviors in autistic children: sameness/ritualistic, stereotypic/self-injurious, and compulsive behaviors. The study demonstrates that these subtypes impact daily living, communication, and socialization skills differently, suggesting that autism interventions should be tailored to specific behavior profiles.",
+  "opportunity": "There is a commercial opportunity for precision digital therapeutics and diagnostic assessment tools that categorize behavioral subtypes to enable personalized neurodevelopmental intervention plans.",
   "fields": [
+   "Neuroscience",
    "Software/AI",
    "Clinical",
-   "Neuroscience"
+   "Diagnostics"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "This study focuses on clinical characterization and behavioral subtyping, which is a common approach in psychiatric research rather than a groundbreaking discovery or novel platform technology. It contributes to incremental clinical understanding of autism phenotypes but lacks the innovative depth or transformative potential characteristic of high-novelty deep-tech research."
-   },
    "commercial_potential": {
-    "score": 2,
-    "reason": "This study is descriptive and observational, lacking the proprietary intervention, diagnostic tool, or platform technology required to translate findings into a scalable commercial product. Its contribution is primarily academic, providing clinical insights rather than an actionable intellectual property asset."
+    "score": 3,
+    "reason": "While the study provides valuable clinical insights for precision psychiatry, it is fundamental observational research that lacks a direct technological, diagnostic, or therapeutic product component. Its commercial value is indirect, potentially informing the design of future digital therapeutics or screening tools rather than offering a licensable asset itself."
    },
    "market_size": {
-    "score": 6,
-    "reason": "While the prevalence of autism is high and diagnostic/therapeutic precision remains a massive market need, this paper focuses on behavioral subtyping rather than a scalable diagnostic platform or novel therapeutic intervention. Its market value is currently limited to clinical trial stratification or targeted behavioral therapy improvements rather than immediate broad-market commercialization."
+    "score": 4,
+    "reason": "While autism is a significant global health area, this is a clinical characterization study rather than a product or platform development, meaning it defines a sub-segment of an existing patient population rather than creating a new market."
    },
    "trl": {
     "score": 2,
-    "reason": "This is a foundational behavioral research study focused on clinical characterization and diagnostic subtyping, which lacks the translational or technical hardware/software components required for commercial application. It serves as descriptive science that informs future clinical protocols rather than a technology ready for implementation."
+    "reason": "This is a basic observational clinical study focused on phenotype characterization. It provides theoretical insights for future intervention design but does not present a developed technology, tool, or validated therapeutic candidate."
    },
    "ip_strength": {
-    "score": 1,
-    "reason": "This paper reports on clinical observations and psychological correlations rather than a novel, patentable technological invention or proprietary method. As an observational study in behavioral science, it lacks the technical novelty or industrial application required for IP protection."
+    "score": 2,
+    "reason": "The paper describes observational clinical research and statistical factor analysis of existing behavioral scales, which constitutes discovery rather than a patentable invention or proprietary technology. While the insights may inform future interventions, the findings themselves lack the structural or technical novelty required for IP protection."
    }
   },
   "pi": "Judah Koller",
   "pi_full_name": "Judah Koller",
   "pi_email": "judah.koller@mail.huji.ac.il.",
   "pi_affiliation": "SeymourFox School of Education, The Hebrew University of Jerusalem, Jerusalem, Israel. judah.koller@mail.huji.ac.il.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "14",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper focuses on clinical behavioral phenotypes in autism rather than identifying a molecular target, disease-linked protein, or biochemical assay suitable for high-throughput screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1365,43 +1311,44 @@
   "date": "2026-11-02",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42969565/",
   "source": "PubMed",
-  "score": 9,
-  "summary": "This study analyzes the relationship between specific genetic mutations and clinical phenotypic outcomes in a cohort of Israeli patients diagnosed with Oculocutaneous Albinism type 1 (OCA1). By mapping these genotype-phenotype variations, the researchers provide essential foundational data for understanding the molecular progression of this rare genetic condition.",
-  "opportunity": "The identified correlation data offers a valuable baseline for developing targeted gene therapies or personalized diagnostic panels for OCA1 patients.",
+  "score": 12,
+  "summary": "This study maps how specific genetic mutations in the TYR gene correlate with various visual impairments in Israeli patients with oculocutaneous albinism. It identifies key founder mutations that drive distinct clinical outcomes, ranging from severe vision loss to milder phenotypes.",
+  "opportunity": "The identification of population-specific founder mutations enables the development of highly targeted genetic diagnostics and personalized gene therapy protocols for rare ophthalmic disorders.",
   "fields": [
    "Genomics",
+   "Diagnostics",
    "Clinical"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
    "novelty": {
-    "score": 2,
-    "reason": "This study is a descriptive clinical analysis of a known genetic condition in a specific population, which represents incremental clinical data rather than a novel therapeutic platform or groundbreaking technological innovation."
+    "score": 3,
+    "reason": "The study is a retrospective clinical characterization of known genetic associations within a specific ethnic cohort rather than the discovery of a new biological mechanism or a novel therapeutic platform. While it provides valuable population-specific data for precision medicine, it represents incremental refinement of existing genotype-phenotype knowledge."
    },
    "commercial_potential": {
-    "score": 2,
-    "reason": "This study is a retrospective clinical observation of genotype-phenotype correlations in a rare condition, which lacks a clear pathway to a proprietary product, therapeutic intervention, or scalable diagnostic platform. It serves primarily as foundational clinical data rather than actionable commercial technology."
+    "score": 3,
+    "reason": "The study is a descriptive clinical characterization of genotype-phenotype correlations in a specific ethnic cohort, which serves more for medical understanding and genetic counseling than for developing a novel product or therapeutic platform. While it identifies specific alleles, it lacks the direct translational mechanism or technology deployment necessary for high commercial value."
    },
    "market_size": {
     "score": 2,
-    "reason": "Oculocutaneous albinism type 1 (OCA1) is a rare genetic condition with a small global patient population, limiting the commercial scale of potential therapeutics. The research focuses on descriptive clinical characterization rather than a platform technology or scalable industrial application."
+    "reason": "The target market is limited to a rare, ultra-orphan genetic condition (OCA1) within a specific ethnic sub-population, representing a very small addressable patient pool. While the study provides essential precision medicine data, the total commercial volume is constrained by the low prevalence of the disease."
    },
    "trl": {
     "score": 2,
-    "reason": "This is a descriptive clinical observational study characterizing patient cohorts, which lacks the translational or therapeutic intervention components required for industrial development or commercial application. It contributes to fundamental medical knowledge but does not represent a technology at a high readiness level."
+    "reason": "This is a fundamental observational clinical study aimed at characterizing disease pathology rather than developing a therapeutic intervention or diagnostic tool. While it provides essential data for future precision medicine, it does not represent a technology or product nearing commercial application."
    },
    "ip_strength": {
-    "score": 1,
-    "reason": "This paper is a clinical observational study characterizing existing genetic conditions and lacks any novel proprietary technology, composition of matter, or unique methodology that could be claimed as intellectual property."
+    "score": 2,
+    "reason": "The paper is a retrospective clinical observational study focused on characterizing genotype-phenotype correlations within a specific population, which constitutes descriptive scientific knowledge rather than patentable intellectual property. While it identifies specific alleles, these are natural genetic variants that lack the non-obvious, inventive step required for robust composition-of-matter or method-of-use patent protection."
    }
   },
   "pi": "Claudia Yahalom",
   "pi_full_name": "Claudia Yahalom",
   "pi_email": "",
   "pi_affiliation": "Department of Ophthalmology, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.; https://orcid.org/0000-0001-7747-3568.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "9",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 2,
   "hts_reason": "The study is a clinical genotype-phenotype observational analysis and does not propose a druggable molecular target or a screening assay for therapeutic development.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1477,45 +1424,41 @@
   "date": "2026-10-24",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42979757/",
   "source": "PubMed",
-  "score": 34,
-  "summary": "This research develops a platform for engineering synthetic DNA sequences that precisely control the activation levels of therapeutic genes in mammalian cells. By creating a modular library of these minimal promoters, the researchers provide a mechanism to fine-tune protein production for more effective and safer genetic therapies.",
-  "opportunity": "This technology enables the development of next-generation gene and cell therapies with high-precision expression control, reducing toxic side effects and increasing the efficacy of complex biological treatments.",
+  "score": 27,
+  "summary": "Researchers have developed a library of small, modular synthetic promoters that allow for precise and predictable control over gene expression in mammalian cells. These compact sequences overcome the limitations of large natural promoters, making them easier to tune and more compatible with viral delivery systems.",
+  "opportunity": "This technology provides a standardized toolkit for precision gene therapy design, enabling more stable and dosage-controlled therapeutic transgene expression within limited-capacity viral vectors.",
   "fields": [
    "Synthetic Biology",
    "Genomics",
    "Drug Discovery",
-   "Clinical"
+   "Vaccines"
   ],
   "added_date": "2026-11-09",
   "score_breakdown": {
-   "novelty": {
-    "score": 6,
-    "reason": "While the systematic engineering of synthetic promoters is a robust and highly useful bioengineering effort, it represents an incremental optimization of established mammalian synthetic biology toolkits rather than a foundational paradigm shift in gene regulation. It provides high industrial utility for biomanufacturing and cell therapy, but the core methodology aligns with existing principles of promoter design."
-   },
    "commercial_potential": {
-    "score": 9,
-    "reason": "Synthetic promoters are a highly modular, platform-enabling technology essential for the next generation of cell and gene therapies requiring precise, tunable transgene expression. The ability to engineer custom regulatory elements is a high-value, licensable asset that directly addresses significant safety and efficacy bottlenecks in industrial bioproduction and clinical therapeutics."
+    "score": 8,
+    "reason": "This research represents a platform-enabling technology that solves a major bottleneck in gene therapy—vector capacity and expression predictability—offering high licensing potential to biopharma companies developing viral-vector-based medicines."
    },
    "market_size": {
-    "score": 9,
-    "reason": "Tunable gene expression platforms are foundational, high-value enablers for the rapidly expanding cell and gene therapy markets, where precise control over dosage is a critical requirement for safety and efficacy. This technology addresses a massive, universal pain point across all protein-based therapeutic and biomanufacturing sectors, representing a multi-billion dollar addressable market."
+    "score": 8,
+    "reason": "This technology represents a platform-enabling tool for gene therapy and synthetic biology, addressing the critical bottleneck of payload capacity in viral vectors and precision in transgene control. The addressable market includes all therapeutic developers utilizing AAV or lentiviral delivery systems, which is a massive and high-value segment of the biotechnology industry."
    },
    "trl": {
-    "score": 3,
-    "reason": "This work represents foundational synthetic biology research at the bench-scale, focusing on the characterization of genetic regulatory elements rather than a validated therapeutic product or commercial platform. While it provides a useful tool for gene therapy development, it remains at the early experimental stage requiring further testing in relevant disease models and manufacturing settings."
+    "score": 4,
+    "reason": "The research is at the fundamental discovery and tool-development stage, demonstrating proof-of-concept for modular promoter design in cell culture. While it offers a platform-enabling logic for synthetic biology, it lacks the in vivo validation or preclinical testing required for higher TRL scores."
    },
    "ip_strength": {
     "score": 7,
-    "reason": "Synthetic promoters are highly patentable as composition-of-matter, but the field is crowded with prior art, making broad 'platform' IP claims difficult to secure without narrow, specific sequence-based utility disclosures. The innovation is inherently defensible via sequence patents, but its practical moat depends heavily on the uniqueness of the design algorithm and specific performance metrics achieved."
+    "reason": "The systematic engineering of a modular, tunable promoter library represents a strong platform technology with high patentability for de novo sequence compositions. However, the IP strength is tempered by the inherent difficulty in defending broad regulatory motifs that may overlap with naturally occurring sequences or existing synthetic biology toolkits."
    }
   },
   "pi": "Lior Nissim",
   "pi_full_name": "Lior Nissim",
   "pi_email": "liorni@ekmd.huji.ac.il",
   "pi_affiliation": "Department of Biochemistry and Molecular Biology, Institute for Medical Research Israel-Canada, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem 91120, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "34",
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 2,
   "hts_reason": "The paper focuses on synthetic biology tools (minimal promoters) rather than a specific therapeutic target or a specific disease indication. While it describes an assay for promoter activity, it lacks a disease-linked molecular target required for an HTS program.",
   "hts_eval_model": "gemini-3.1-flash-lite"
