@@ -4582,65 +4582,6 @@
     "hts_eval_model": "gemma-4-31b-it"
   },
   {
-    "id": "pubmed_42999416",
-    "title": "Emphysema reprograms neutrophils toward a tumor-promoting phenotype in lung cancer.",
-    "authors": [
-      "Mohamad Qaisi",
-      "Merav E Shaul",
-      "Nuha Alsharif",
-      "Naomi Kaisar-Iluz",
-      "Sojod Mahroum",
-      "Osnath Bouhanna",
-      "Yael Volman",
-      "Zvi G Fridlender"
-    ],
-    "journal": "Translational lung cancer research",
-    "date": "2026 Oct 30",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42999416/",
-    "source": "PubMed",
-    "score": 26,
-    "summary": "Hebrew University researchers have discovered that emphysema alters the function of neutrophils, effectively reprogramming them to support lung tumor growth and progression. This finding reveals a crucial link between chronic lung inflammation and cancer, identifying these repurposed immune cells as potential targets for therapeutic intervention.",
-    "opportunity": "This discovery enables the development of novel immunotherapies or companion diagnostics that specifically target or neutralize tumor-promoting neutrophils in high-risk emphysema patients.",
-    "fields": [
-      "Immunology",
-      "Clinical",
-      "Drug Discovery"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 7,
-        "reason": "This research provides a critical mechanistic link between chronic lung disease and oncogenic immune modulation, offering a sophisticated target for immunotherapeutic intervention. While it builds upon established knowledge of the tumor microenvironment, its specific identification of emphysema-induced neutrophil reprogramming represents a high-value, actionable discovery for clinical oncology."
-      },
-      "commercial_potential": {
-        "score": 6,
-        "reason": "While this discovery provides a clear rationale for novel immunotherapies or companion diagnostics in lung cancer, it describes a fundamental biological mechanism rather than a validated therapeutic intervention or platform technology. The path to commercialization would require significant additional investment to identify actionable molecular targets and demonstrate clinical efficacy beyond current standard-of-care treatments."
-      },
-      "market_size": {
-        "score": 8,
-        "reason": "Lung cancer is the leading cause of cancer-related mortality globally, and identifying mechanisms that link chronic conditions like emphysema to tumor progression addresses a massive, high-value clinical market. The potential to therapeutically intervene in this specific neutrophil-driven pathway represents a high-impact diagnostic and therapeutic opportunity for a very large patient population."
-      },
-      "trl": {
-        "score": 2,
-        "reason": "This is a fundamental mechanistic study identifying a biological correlation between emphysema and neutrophil behavior, which is at the early hypothesis-generation stage. It lacks the translational validation, therapeutic intervention models, or proprietary technology components necessary for near-term clinical application."
-      },
-      "ip_strength": {
-        "score": 3,
-        "reason": "The paper identifies a biological mechanism (neutrophil reprogramming) rather than a novel therapeutic molecule, diagnostic device, or engineered platform, making it challenging to secure broad composition-of-matter IP. Defensibility is low because the findings are primarily discovery-based insights that require significant further R&D to translate into a patentable, proprietary therapeutic intervention."
-      }
-    },
-    "pi": "Zvi G Fridlender",
-    "pi_full_name": "Zvi G Fridlender",
-    "pi_email": "",
-    "pi_affiliation": "Institute of Pulmonary Medicine, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-11-09",
-    "hts_score": 3,
-    "hts_reason": "While the paper links emphysema-associated lung cancer to a neutrophil phenotype, it focuses on cellular behavior rather than identifying a specific druggable molecular target or providing a high-throughput assay for such a target.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
     "id": "pubmed_41979352",
     "title": "Harnessing random peptide mixtures to combat multidrug-resistant fungal infections.",
     "authors": [
@@ -12940,6 +12881,49 @@
     "hts_score": 1,
     "hts_reason": "The paper title is incomplete and lacks a specific molecule, disease link, or assay description; it provides no actionable information for HTS screening.",
     "hts_eval_model": "gemma-4-26b-a4b-it"
+  },
+  {
+    "id": "pubmed_42999416",
+    "title": "Emphysema reprograms neutrophils toward a tumor-promoting phenotype in lung cancer.",
+    "authors": [
+      "Mohamad Qaisi",
+      "Merav E Shaul",
+      "Nuha Alsharif",
+      "Naomi Kaisar-Iluz",
+      "Sojod Mahroum",
+      "Osnath Bouhanna",
+      "Yael Volman",
+      "Zvi G Fridlender"
+    ],
+    "journal": "Translational lung cancer research",
+    "date": "2026 Oct 30",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42999416/",
+    "source": "PubMed",
+    "score": 3,
+    "summary": "The research demonstrates that emphysema changes the behavior of neutrophils, shifting them from tumor-fighting cells to ones that promote lung cancer growth. This suggests that the underlying inflammatory environment of COPD creates a fertile ground for malignancy by reprogramming the immune system.",
+    "opportunity": "Development of targeted immunotherapies or small molecules designed to 're-program' neutrophils back to an anti-tumor phenotype specifically for COPD patients with lung cancer.",
+    "fields": [
+      "Immunology",
+      "Drug Discovery",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper focuses on fundamental mechanistic insights into neutrophil reprogramming rather than proposing a specific drug target, diagnostic tool, or therapeutic intervention. There is no clear path to a protectable product or service described in the abstract."
+      }
+    },
+    "pi": "Zvi G Fridlender",
+    "pi_full_name": "Zvi G Fridlender",
+    "pi_email": "",
+    "pi_affiliation": "Institute of Pulmonary Medicine, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "eval_model": "gemma-4-31b-it",
+    "prev_score": 26,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-11-09",
+    "hts_score": 3,
+    "hts_reason": "While the paper links emphysema-associated lung cancer to a neutrophil phenotype, it focuses on cellular behavior rather than identifying a specific druggable molecular target or providing a high-throughput assay for such a target.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42971672",
