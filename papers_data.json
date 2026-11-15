@@ -10040,58 +10040,6 @@
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
-    "id": "pubmed_42979774",
-    "title": "Postoperative Outcomes Following Autologous Breast Reconstruction in Patients Receiving Selective Estrogen Receptor Modulators and Aromatase Inhibitors: A Multicenter Propensity Score-Matched Cohort Study.",
-    "authors": [
-      "Ron Skorochod",
-      "Yoav Gronovich"
-    ],
-    "journal": "Microsurgery",
-    "date": "2026-11-04",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/42979774/",
-    "source": "PubMed",
-    "score": 18,
-    "summary": "This study analyzes how common breast cancer hormone therapies, such as SERMs and aromatase inhibitors, impact surgical recovery and complication rates following autologous breast reconstruction. The findings provide critical clinical evidence to help surgeons and oncologists optimize the timing and safety of reconstructive procedures for post-cancer patients.",
-    "opportunity": "This research informs the development of precision clinical decision-support software that integrates patient medication profiles to predict surgical outcomes and personalize recovery protocols.",
-    "fields": [
-      "Clinical",
-      "Software/AI"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "This study is a retrospective clinical outcomes analysis rather than a novel therapeutic or technological innovation, serving as incremental observational data for existing standard-of-care practices. It lacks the groundbreaking scientific methodology or intellectual property potential required for a high novelty score."
-      },
-      "commercial_potential": {
-        "score": 2,
-        "reason": "This study is a retrospective clinical observation analyzing standard-of-care medication effects rather than a novel technology, therapeutic, or platform, offering no clear path to commercial product development or intellectual property generation."
-      },
-      "market_size": {
-        "score": 3,
-        "reason": "This study focuses on a specific clinical subset of breast cancer patients undergoing a particular surgical procedure, representing a niche procedural niche rather than a broad, high-growth market opportunity. The findings are primarily relevant to surgical risk assessment guidelines rather than a scalable commercial application or platform technology."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "This study uses clinical data from a multicenter, propensity-score-matched cohort, representing a high level of real-world evidence already being applied to refine standard-of-care surgical protocols. It focuses on immediate clinical practice optimization rather than speculative laboratory research."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "This study is a retrospective clinical outcomes analysis rather than a novel technology, composition of matter, or proprietary method, meaning it lacks any underlying intellectual property to protect. It provides medical insight into existing clinical practices rather than creating a patentable invention or defensible technical asset."
-      }
-    },
-    "pi": "Yoav Gronovich",
-    "pi_full_name": "Yoav Gronovich",
-    "pi_email": "",
-    "pi_affiliation": "Department of Plastic, Reconstructive and Aesthetic Surgery, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-11-09",
-    "hts_score": 2,
-    "hts_reason": "This study is a clinical retrospective analysis of postoperative outcomes and does not identify a new molecular target or describe an HTS-compatible assay for drug discovery.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
     "id": "pubmed_42721409",
     "title": "Preliminary Evidence for the Effects of Bilingual ECoLoGiC Treatment for People With Aphasia.",
     "authors": [
@@ -10632,6 +10580,53 @@
     "hts_score": 1,
     "hts_reason": "The paper discusses geophysics and seismology, failing to identify a biological molecule/target, a disease/condition, or a biological assay.",
     "hts_eval_model": "gemma-4-26b-a4b-it"
+  },
+  {
+    "id": "pubmed_42979774",
+    "title": "Postoperative Outcomes Following Autologous Breast Reconstruction in Patients Receiving Selective Estrogen Receptor Modulators and Aromatase Inhibitors: A Multicenter Propensity Score-Matched Cohort Study.",
+    "authors": [
+      "Ron Skorochod",
+      "Yoav Gronovich"
+    ],
+    "journal": "Microsurgery",
+    "date": "2026-11-04",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42979774/",
+    "source": "PubMed",
+    "score": 15,
+    "summary": "This study investigates whether endocrine therapies, specifically SERMs and AIs, negatively impact recovery and complication rates after autologous breast reconstruction. The results suggest that these medications do not significantly increase the risk of postoperative complications like tissue death or infection.",
+    "opportunity": "Clinical data supporting the continuation of endocrine therapy during reconstruction can optimize surgical protocols and reduce the need for costly medication pauses or risk-mitigation interventions.",
+    "fields": [
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The study is a retrospective observational cohort analysis using existing database (TriNetX) records to address a clinical management question rather than introducing a new scientific principle or technology. While clinically useful for refining surgical protocols, it lacks the transformative or groundbreaking innovation required for a high novelty score."
+      },
+      "market_size": {
+        "score": 2,
+        "reason": "This is a retrospective clinical observation study focused on optimizing surgical perioperative management rather than a novel therapeutic, device, or platform technology. The 'market' is limited to clinical decision-making protocols for a specific subset of breast cancer patients, which lacks scalable commercial or industrial value."
+      },
+      "trl": {
+        "score": 9,
+        "reason": "This study evaluates existing, standard-of-care clinical protocols using large-scale real-world data, providing actionable evidence for immediate clinical decision-making in surgical management. It is not a new technology being developed, but rather a high-level validation of how current medical practices impact patient outcomes."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This is a retrospective clinical cohort study analyzing existing standard-of-care drugs; it describes observational data rather than a novel invention, molecule, or technology capable of being patented."
+      }
+    },
+    "pi": "Yoav Gronovich",
+    "pi_full_name": "Yoav Gronovich",
+    "pi_email": "",
+    "pi_affiliation": "Department of Plastic, Reconstructive and Aesthetic Surgery, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": 18,
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-11-09",
+    "hts_score": 2,
+    "hts_reason": "This study is a clinical retrospective analysis of postoperative outcomes and does not identify a new molecular target or describe an HTS-compatible assay for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42933168",
@@ -12918,7 +12913,7 @@
     "pi_email": "",
     "pi_affiliation": "Institute of Pulmonary Medicine, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
     "eval_model": "gemma-4-31b-it",
-    "prev_score": 26,
+    "prev_score": "26",
     "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-11-09",
     "hts_score": 3,
