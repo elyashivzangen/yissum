@@ -15523,7 +15523,7 @@
     "pi_full_name": "Albert Grinshpun",
     "pi_email": "adar.yaacov@mail.huji.ac.il.",
     "pi_affiliation": "Sharett Institute of Oncology, Hadassah-Hebrew University Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 24.2,
+    "avg_score": 22.9,
     "max_hts_score": 4,
     "paper_count": 8,
     "description": "This researcher focuses on precision oncology, specifically investigating how genetic mutations and molecular signatures drive cancer progression and treatment resistance. Their work spans various malignancies, including breast, brain, and colorectal cancers, utilizing liquid biopsies, biomarker discovery, and the evaluation of next-generation therapeutics like antibody-drug conjugates and endocrine degraders.",
@@ -15871,41 +15871,37 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/43019806/",
         "journal": "ESMO open",
-        "score": 30,
-        "summary": "APOBEC3 enzymes generate characteristic mutation patterns in solid tumors, driving both resistance to standard therapies and the emergence of neoantigens that can be targeted by the immune system. The study maps these genomic scars and identifies potential biomarkers and therapeutic strategies to overcome resistance and enhance immunotherapy efficacy.",
-        "opportunity": "Develop companion diagnostics that detect APOBEC3-driven mutation signatures to guide personalized immunotherapy and combination regimens, creating a new niche in precision oncology.",
+        "score": 19,
+        "summary": "The paper discusses how the APOBEC3 enzyme family drives cancer evolution by creating mutations that allow tumors to resist targeted therapies and respond to immunotherapy. It highlights a transition from viewing these mutations as mere side effects to using them as actionable biomarkers for predicting patient outcomes.",
+        "opportunity": "Development of companion diagnostics and precision oncology platforms that monitor APOBEC3 mutational signatures to predict drug resistance and optimize immunotherapy selection.",
         "abstract": "The APOBEC3 family of cytidine deaminases, originally evolved for antiviral defense, functions as a potent source of somatic mutations in human malignancies. Although the genomic footprints of APOBEC3 were deciphered over a decade ago with characteristic mutational signatures (single-base substitution [SBS]2 and SBS13), their clinical significance is only now becoming apparent, shifting from a descriptive hallmark of mutagenesis to a potential predictor of therapy outcomes. Emerging evidence from landmark studies reveals that apolipoprotein B mRNA editing enzyme, catalytic polypeptide-like (APOBEC)-associated mutational signatures are associated with acquired resistance to targeted therapies and are an emerging biomarker of response to immune checkpoint inhibitors (ICIs). Mechanistically, therapy-induced activation of APOBEC3A and APOBEC3B drives the evolution of drug-tolerant persister cells and generates genomic diversity from which resistant clones emerge-a phenomenon demonstrated across epidermal growth factor receptor inhibitor resistance in lung cancer, endocrine therapy resistance in breast cancer, and androgen receptor blockade resistance in prostate cancer. Concurrently, studies have shown that APOBEC mutational signatures are associated with ICI benefit, including in tumor mutational burden-adjusted analyses, most notably in urothelial carcinoma and non-small-cell lung cancer. In this study, we review this emerging paradigm, focusing on the newly established mechanisms and clinical findings. We further address the translational hurdles of detecting APOBEC mutational signatures in clinical practice and emerging therapeutic strategies, including oligonucleotide-based inhibitors and synthetic lethality. Finally, we discuss standardizing APOBEC mutational signature detection for clinical use, including developing liquid biopsy-based dynamic monitoring, and designing prospective trials with APOBEC mutational signature-based stratification.",
         "fields": [
           "Drug Discovery",
-          "Immunology",
           "Diagnostics",
-          "Genomics"
+          "Genomics",
+          "Immunology"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 6,
-            "reason": "While characterizing APOBEC-mediated mutational signatures is a well-established field in cancer genomics, shifting the focus to leveraging these specific genomic scars as therapeutic vulnerabilities represents a significant, though incremental, translational evolution. The research builds on known biological mechanisms rather than introducing a paradigm-shifting discovery, but provides actionable insights for patient stratification and drug development."
+            "score": 4,
+            "reason": "The paper is a review of established knowledge regarding APOBEC3 signatures (SBS2/13) and their known roles in therapy resistance; it synthesizes existing evidence rather than presenting a novel discovery or a new therapeutic platform."
           },
           "commercial_potential": {
             "score": 8,
-            "reason": "APOBEC3 mutation signatures represent highly actionable therapeutic vulnerabilities and biomarkers that are directly applicable to companion diagnostics and targeted combination therapies in oncology. The defined nature of these 'genomic scars' provides a clear, proprietary pathway for developing patient stratification tools and novel precision therapeutics."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "APOBEC3 mutation signatures are pervasive across the majority of solid tumors, representing a massive addressable market for patients experiencing therapy resistance and immune-evasion. The ability to target these specific genomic scars offers a high-value, platform-level opportunity to improve efficacy in large oncology indications."
+            "reason": "The research identifies high-value therapeutic vulnerabilities and actionable biomarkers for both drug resistance and immunotherapy response, offering clear paths for companion diagnostics and novel drug development. It moves beyond descriptive genomics into mechanistic targets that can be leveraged for precision medicine platforms."
           },
           "trl": {
             "score": 3,
-            "reason": "This paper focuses on the mechanistic characterization of mutational signatures and genomic scars, representing foundational translational research rather than a validated therapeutic candidate or diagnostic platform. While it identifies potential vulnerabilities, it remains at the early stage of target discovery rather than preclinical development or clinical validation."
+            "reason": "The paper is a mechanistic review focusing on the biological drivers of therapy resistance and biomarker discovery, remaining firmly in the discovery and preclinical validation phase."
           },
           "ip_strength": {
             "score": 4,
-            "reason": "As a foundational research review on genomic mechanisms, the underlying insights into APOBEC3 are likely considered public domain discovery rather than proprietary compositions of matter or novel therapeutic methods. Defensibility would rely entirely on the ability to develop and patent specific small-molecule inhibitors or proprietary biomarkers derived from these findings, which are not currently outlined."
+            "reason": "The paper is a descriptive review of biological mechanisms and biomarkers rather than a disclosure of a novel, patentable molecule or platform. While it identifies therapeutic vulnerabilities, the intellectual property is based on observed natural phenomena and existing genomic signatures, which are generally difficult to defend without a specific drug or diagnostic tool."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": 30,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem, Israel; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": "adar.yaacov@mail.huji.ac.il.",
         "hts_score": 4,
