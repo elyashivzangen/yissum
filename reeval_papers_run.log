@@ -1,242 +1,91 @@
 Loading existing papers from Google Sheet...
   269 existing papers loaded.
   Verifying HUJI affiliation for 266 papers via PubMed efetch...
-  42 non-Gemma-scored papers to re-evaluate on Gemma.
-  [1/42] re-eval: Response to the Letter to the Editor by Chang et al. regarding: "New-o
+  13 non-Gemma-scored papers to re-evaluate on Gemma.
+  [1/13] re-eval: Ethnic Origin, Self-Efficacy and Challenges in Cancer Information Seek
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (commercial_potential): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (ip_strength): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      re-scored 5 via gemma-4-26b-a4b-it (was 7 via groq:openai/gpt-oss-20b)
+  [2/13] re-eval: Global motion deficits following early visual deprivation reflect impa
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      still no Gemma result — leaving as-is
+  [3/13] re-eval: Gestational surrogacy at a moral crossroads: autonomy, exploitation, a
+    all 2 candidate(s) cooling down — waiting 81s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (novelty): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      re-scored 4 via gemma-4-26b-a4b-it (was 9 via groq:openai/gpt-oss-20b)
+  [4/13] re-eval: Internet-Based Cognitive Behavioral Therapy for Panic Disorder Among A
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (market_size): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      re-scored 4 via gemma-4-26b-a4b-it (was 6 via groq:openai/gpt-oss-20b)
-  [2/42] re-eval: Ethnic Origin, Self-Efficacy and Challenges in Cancer Information Seek
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (novelty): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+  Gemini error (market_size): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+  Gemini error (ip_strength): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      re-scored 4 via gemma-4-26b-a4b-it (was 21 via groq:openai/gpt-oss-20b)
+  [5/13] re-eval: The role of water in the thermal decomposition of HXeCl in the HXeCl-H
+    all 2 candidate(s) cooling down — waiting 85s before retry
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+  Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+      still no Gemma result — leaving as-is
+  [6/13] re-eval: Evolutionary origins and modern rise of allergic diseases: an integrat
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (commercial_potential): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (ip_strength): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      re-scored 6 via gemma-4-26b-a4b-it (was 17 via gemini-3.1-flash-lite)
+  [7/13] re-eval: The nucleus of the lateral olfactory tract is required for learning od
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      still no Gemma result — leaving as-is
+  [8/13] re-eval: Reducing bacterial resistance evolution through antimicrobial peptide 
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (commercial_potential): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      re-scored 20 via gemma-4-26b-a4b-it (was 27 via groq:openai/gpt-oss-20b)
+  [9/13] re-eval: A Bacterial Extracellular Matrix Protein Forms a Supramolecular Metall
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      still no Gemma result — leaving as-is
+  [10/13] re-eval: Trends in the timing of non-implantable bone-conduction hearing rehabi
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      still no Gemma result — leaving as-is
+  [11/13] re-eval: Natural History, Complications and Long-Term Prognosis of Patients wit
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  Gemini error (ip_strength): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+      re-scored 5 via gemma-4-26b-a4b-it (was 8 via gemini-3.1-flash-lite)
+  [12/13] re-eval: Brain-wide pathways for object identity and location are dominated by 
+      re-scored 16 via gemma-4-26b-a4b-it (was 15 via groq:openai/gpt-oss-20b)
+  [13/13] re-eval: Documented non-tobacco nicotine dependence coding and incident age-rel
     gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
   Gemini error (meta): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
       still no Gemma result — leaving as-is
-  [3/42] re-eval: Self-inserted spectacle arm entrapped in an incidental urachal diverti
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (novelty): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (commercial_potential): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 3 via gemma-4-26b-a4b-it (was 6 via groq:openai/gpt-oss-20b)
-  [4/42] re-eval: Terminal digit preference: A potential bias in radiographic and pathol
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 8 via gemma-4-26b-a4b-it (was 9 via gemini-3.1-flash-lite)
-  [5/42] re-eval: Unimodality for Radon Partitions of Random Vectors.
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (novelty): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 3 via gemma-4-26b-a4b-it (was 7 via gemini-3.1-flash-lite)
-  [6/42] re-eval: Model-informed precision dosing of busulfan in Adults: Real world impl
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (ip_strength): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      re-scored 26 via gemma-4-26b-a4b-it (was 25 via gemini-3.1-flash-lite)
-  [7/42] re-eval: Effects of stifle angle and cranial cruciate ligament deficiency on cr
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (commercial_potential): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (ip_strength): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 9 via gemma-4-26b-a4b-it (was 13 via gemini-3.1-flash-lite)
-  [8/42] re-eval: Global motion deficits following early visual deprivation reflect impa
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  [9/42] re-eval: Elastic interactions of mechanically polarizable cells.
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (novelty): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (commercial_potential): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (market_size): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    all 2 candidate(s) cooling down — waiting 46s before retry
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    all 2 candidate(s) cooling down — waiting 42s before retry
-      re-scored 3 via gemma-4-26b-a4b-it (was 16 via groq:openai/gpt-oss-20b)
-  [10/42] re-eval: Mechanism of photoinduced hydrogen atom transfer from nonanoic acid to
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 11 via gemma-4-26b-a4b-it (was 15 via groq:openai/gpt-oss-20b)
-  [11/42] re-eval: Gestational surrogacy at a moral crossroads: autonomy, exploitation, a
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  [12/42] re-eval: How to Prevent Complications During Aquablation. Lessons Learned from 
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 23 via gemma-4-26b-a4b-it (was 30 via groq:openai/gpt-oss-20b)
-  [13/42] re-eval: Admission-Based Risk Adjustment for Internal Medicine Hospital Payment
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (novelty): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (market_size): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (ip_strength): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 4 via gemma-4-26b-a4b-it (was 26 via groq:openai/gpt-oss-20b)
-  [14/42] re-eval: Internet-Based Cognitive Behavioral Therapy for Panic Disorder Among A
-    all 2 candidate(s) cooling down — waiting 76s before retry
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  [15/42] re-eval: Complex linkage disequilibrium and quantitative trait loci in chicken.
-    all 2 candidate(s) cooling down — waiting 12s before retry
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (novelty): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (market_size): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 9 via gemma-4-26b-a4b-it (was 11 via groq:openai/gpt-oss-20b)
-  [16/42] re-eval: The role of water in the thermal decomposition of HXeCl in the HXeCl-H
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  [17/42] re-eval: From posterior scleritis to cavernous sinus thrombosis: an unusual ocu
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (ip_strength): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 5 via gemma-4-26b-a4b-it (was 9 via groq:openai/gpt-oss-20b)
-  [18/42] re-eval: APOBEC3-mediated therapy resistance and immunogenicity in solid tumors
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (novelty): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (commercial_potential): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (market_size): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    all 2 candidate(s) cooling down — waiting 4s before retry
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (trl): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    all 2 candidate(s) cooling down — waiting 55s before retry
-      re-scored 3 via gemma-4-26b-a4b-it (was 30 via groq:openai/gpt-oss-20b)
-  [19/42] re-eval: Atypical Presentation of Extensive Stanford Type A Aortic Dissection I
-      re-scored 5 via gemma-4-26b-a4b-it (was 5 via gemini-3.1-flash-lite)
-  [20/42] re-eval: Resilience and vulnerability factors for post-traumatic symptoms among
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      re-scored 11 via gemma-4-26b-a4b-it (was 12 via groq:openai/gpt-oss-20b)
-  [21/42] re-eval: Scleroedema Preceding Monoclonal Gammopathy by 30 Years.
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 7 via gemma-4-26b-a4b-it (was 7 via groq:openai/gpt-oss-20b)
-  [22/42] re-eval: Did you cite your sources? Why bibliography matters.
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 4 via gemma-4-31b-it (was 5 via gemini-3.1-flash-lite)
-  [23/42] re-eval: From Catheters to Wearables: Advanced Hemodynamic Monitoring and the E
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (ip_strength): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 28 via gemma-4-26b-a4b-it (was 33 via gemini-3.1-flash-lite)
-  [24/42] re-eval: Evolutionary origins and modern rise of allergic diseases: an integrat
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  [25/42] re-eval: UV-induced translation capacity in 
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (novelty): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-  Gemini error (commercial_potential): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-      re-scored 7 via gemma-4-31b-it (was 17 via gemini-3.1-flash-lite)
-  [26/42] re-eval: The nucleus of the lateral olfactory tract is required for learning od
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  [27/42] re-eval: Reducing bacterial resistance evolution through antimicrobial peptide 
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  [28/42] re-eval: A Bacterial Extracellular Matrix Protein Forms a Supramolecular Metall
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  [29/42] re-eval: IBD is associated with species-specific changes in gut microbial gene 
-    all 2 candidate(s) cooling down — waiting 81s before retry
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (novelty): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 17 via gemma-4-26b-a4b-it (was 19 via groq:openai/gpt-oss-20b)
-  [30/42] re-eval: The Two Phenotypes of Renal Failure Associated with Chronic Urinary Re
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 8 via gemma-4-26b-a4b-it (was 15 via gemini-3.1-flash-lite)
-  [31/42] re-eval: Visual Performance and Patient-Reported Visual Function with Multifoca
-      re-scored 22 via gemma-4-26b-a4b-it (was 32 via gemini-3.1-flash-lite)
-  [32/42] re-eval: Trends in the timing of non-implantable bone-conduction hearing rehabi
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  [33/42] re-eval: Natural History, Complications and Long-Term Prognosis of Patients wit
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  [34/42] re-eval: Interpretable Machine Learning Versus G-ROP Criteria for Screening Typ
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 15 via gemma-4-26b-a4b-it (was 24 via groq:openai/gpt-oss-20b)
-  [35/42] re-eval: Curvature Potential Formulation for Thin Elastic Sheets.
-      re-scored 21 via gemma-4-26b-a4b-it (was 15 via gemini-3.1-flash-lite)
-  [36/42] re-eval: A tale of two nails: A retrospective cohort comparison of TFNA and PFN
-      re-scored 22 via gemma-4-26b-a4b-it (was 16 via groq:openai/gpt-oss-20b)
-  [37/42] re-eval: Comparing Erythropoietin, Darbepoetin and No Erythropoiesis-Stimulatin
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (market_size): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (trl): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 5 via gemma-4-26b-a4b-it (was 17 via gemini-3.1-flash-lite)
-  [38/42] re-eval: Ligand-based prediction of novel sweetener candidates.
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (novelty): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 24 via gemma-4-26b-a4b-it (was 29 via gemini-3.1-flash-lite)
-  [39/42] re-eval: Microscale spatial fragmentation promotes bacterial survival under ant
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (ip_strength): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 22 via gemma-4-26b-a4b-it (was 19 via gemini-3.1-flash-lite)
-  [40/42] re-eval: Brain-wide pathways for object identity and location are dominated by 
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  [41/42] re-eval: Sex Differences in Time to Triage in the Emergency Department: A Retro
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (novelty): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (market_size): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      re-scored 5 via gemma-4-26b-a4b-it (was 20 via groq:openai/gpt-oss-20b)
-  [42/42] re-eval: Documented non-tobacco nicotine dependence coding and incident age-rel
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  Re-evaluated 29/42 papers onto Gemma.
+  Re-evaluated 7/13 papers onto Gemma.
 Sheet updated: {"status":"ok","rows":270}
   Archive: 1193 papers total.
 Generated papers_reader.html and papers_data.json with 269 papers and 58 researcher profiles.

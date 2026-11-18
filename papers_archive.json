@@ -63,44 +63,32 @@
   "date": "2026-11-14",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43034253/",
   "source": "PubMed",
-  "score": 7,
-  "summary": "The study examines how older adults from different ethnic backgrounds seek cancer information and how their confidence (self-efficacy) influences this process. It highlights disparities in information access and the need for tailored communication strategies.",
-  "opportunity": "Develop AI-driven, culturally sensitive patient education platforms that improve cancer information accessibility for older, diverse populations.",
+  "score": 5,
+  "summary": "This study explores how older adults' confidence in finding cancer information affects their levels of frustration and effort during the search process. It highlights that ethnic and racial backgrounds significantly influence how self-efficacy mitigates these information-seeking challenges.",
+  "opportunity": "There is a commercial opportunity for AI-driven, culturally personalized health literacy platforms and patient engagement tools designed to reduce information friction for aging populations.",
   "fields": [
-   "Clinical",
    "Software/AI",
+   "Clinical",
    "Other"
   ],
   "added_date": "2026-11-16",
   "score_breakdown": {
    "novelty": {
     "score": 2,
-    "reason": "This study focuses on social science survey data regarding behavioral trends, which lacks the technical innovation, protectable intellectual property, or platform-enabling methodology typically associated with high-impact deep-tech or life-science investment opportunities. It describes an incremental observation of known sociological factors rather than a groundbreaking discovery or proprietary intervention."
-   },
-   "commercial_potential": {
-    "score": 1,
-    "reason": "This study is sociological/observational research focused on information-seeking behavior and does not propose a proprietary technology, therapeutic, or diagnostic product. It lacks an actionable path to commercialization or intellectual property development."
+    "reason": "The study is a descriptive cross-sectional analysis of existing survey data (HINTS) applying established psychological theories to known socio-demographic variables. It lacks the development of new methodologies, biological discoveries, or technological innovations that would constitute groundbreaking scientific novelty."
    },
    "market_size": {
-    "score": 2,
-    "reason": "This research addresses a niche sociological aspect of health literacy in a specific demographic rather than a scalable technological or clinical intervention. It lacks the commercial productization potential or large-scale market addressability required for high-impact investment."
-   },
-   "trl": {
-    "score": 1,
-    "reason": "This is a descriptive social science study focused on behavioral patterns and demographic factors rather than the development of a technological product, service, or clinical intervention. It possesses no hardware, software, or therapeutic component that could be transitioned toward commercial application."
-   },
-   "ip_strength": {
-    "score": 1,
-    "reason": "This is a cross-sectional observational study on human behavior and demographics, which contains no novel technical invention, proprietary technology, or patentable intellectual property."
+    "score": 3,
+    "reason": "The paper describes a behavioral cross-sectional study on information-seeking patterns rather than a scalable product or therapeutic. While the patient population is large, there is no clear commercial application or addressable market for a specific technology or drug."
    }
   },
   "pi": "Dennis Rosenberg",
   "pi_full_name": "Dennis Rosenberg",
   "pi_email": "denrosen2@gmail.com.",
   "pi_affiliation": "The Paul Baerwald School of Social Work and Social Welfare, Hebrew University of Jerusalem, Mount Scopus, Jerusalem, 9190501, Israel. denrosen2@gmail.com.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 7,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This paper focuses on psychosocial factors in cancer information seeking and lacks all three required elements: no specific molecular target, no molecular link to a disease mechanism, and no assay for pharmacological screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -570,43 +558,36 @@
   "date": "2026 Nov 2",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43030678/",
   "source": "PubMed",
-  "score": 8,
-  "summary": "This clinical study investigates the natural history and long-term outcomes of patients suffering from cardiac ascites, a condition characterized by fluid accumulation in the abdomen due to heart failure. The research provides critical baseline data on mortality rates and clinical complications to help standardize prognostic assessment and management strategies for this high-risk patient population.",
-  "opportunity": "The findings support the development of novel predictive digital health tools or clinical decision support software that can leverage cardiac ascites markers to risk-stratify patients and personalize treatment pathways in cardiology.",
+  "score": 5,
+  "summary": "This study examines the clinical progression, complications, and long-term survival rates of patients suffering from fluid accumulation in the abdomen due to heart failure. It provides a detailed longitudinal analysis of how cardiac ascites affects patient prognosis and mortality.",
+  "opportunity": "The data can be used to develop predictive risk-stratification algorithms and specialized monitoring tools for managing advanced heart failure patients.",
   "fields": [
    "Clinical",
+   "Diagnostics",
    "Software/AI"
   ],
   "added_date": "2026-11-16",
   "score_breakdown": {
    "novelty": {
     "score": 2,
-    "reason": "This study focuses on the descriptive natural history of a known clinical condition rather than introducing a new diagnostic, therapeutic, or mechanistic platform. It contributes incremental clinical data rather than groundbreaking scientific innovation."
+    "reason": "This is an observational clinical study describing the natural history and outcomes of a known condition rather than introducing a new therapeutic modality, diagnostic technology, or biological mechanism. It contributes to clinical characterization but lacks the groundbreaking innovation required for a high novelty score."
    },
    "commercial_potential": {
-    "score": 2,
-    "reason": "This is a retrospective clinical observation study focused on disease characterization rather than the development of a therapeutic, diagnostic, or proprietary intervention. It lacks the intellectual property potential or technological innovation required to translate into a commercial product or platform."
+    "score": 1,
+    "reason": "This is an observational clinical study focused on disease natural history and prognosis rather than a novel therapeutic, diagnostic device, or platform technology. It describes a clinical condition but does not present a product, service, or intellectual property capable of commercialization."
    },
    "market_size": {
     "score": 2,
-    "reason": "Cardiac ascites is a niche, secondary complication of advanced heart failure rather than a broad, independent market opportunity. The addressable demand is limited to a small, terminal patient population and does not represent a standalone platform or high-growth clinical market."
-   },
-   "trl": {
-    "score": 1,
-    "reason": "This is a retrospective clinical observational study focused on characterizing disease prognosis rather than developing a new technology, diagnostic tool, or therapeutic intervention. It sits entirely at the foundational knowledge/research stage with no inherent commercial or technological readiness."
-   },
-   "ip_strength": {
-    "score": 1,
-    "reason": "This paper is a retrospective clinical observation study regarding the prognosis of a medical condition rather than an invention, discovery of a novel composition of matter, or a technical platform, providing no IP-protectable subject matter."
+    "reason": "The paper appears to be a clinical observational study of a specific disease complication rather than a product or technology proposition, offering no evidence of a scalable market or addressable demand."
    }
   },
   "pi": "Zvi Ackerman",
   "pi_full_name": "Zvi Ackerman",
   "pi_email": "",
   "pi_affiliation": "Department of Medicine, Hadassah-Hebrew University Medical Center, Mount Scopus Campus and the Hebrew University-Hadassah Medical School, Jerusalem 91240, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 8,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper is a clinical observational study on the prognosis of cardiac ascites and does not identify a molecular target, link a specific molecule to a mechanism of disease, or describe a screening assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -830,43 +811,38 @@
   "date": "2026 Nov 13",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43022606/",
   "source": "PubMed",
-  "score": 9,
-  "summary": "This paper examines the ethical, legal, and social complexities surrounding the practice of gestational surrogacy, focusing on the tension between individual autonomy and systemic exploitation. It evaluates various governance models, including the potential for complete abolition, within the context of reproductive healthcare and human rights.",
-  "opportunity": "The evolving regulatory landscape around surrogacy may increase demand for software-driven platforms that manage complex legal, ethical, and clinical workflows for fertility centers and international family law practitioners.",
+  "score": 4,
+  "summary": "This paper provides a comprehensive ethical and regulatory review of gestational surrogacy, focusing on the tensions between reproductive autonomy and the risk of exploitation. It examines how traditional distinctions between commercial and altruistic models are failing to address modern complexities regarding child welfare and structural inequality.",
+  "opportunity": "The evolving regulatory landscape for surrogacy creates a demand for specialized legal-tech platforms and compliance software to manage international reproductive agreements and ethical governance.",
   "fields": [
-   "Clinical",
    "Other"
   ],
   "added_date": "2026-11-16",
   "score_breakdown": {
-   "novelty": {
-    "score": 2,
-    "reason": "This paper addresses ethical and policy discourse rather than technological innovation or scientific discovery, offering no novel technical IP or platform-enabling methodology. It focuses on philosophical and social debate, which lacks the empirical or industrial novelty required for a high score in a life-science investment context."
-   },
    "commercial_potential": {
-    "score": 2,
-    "reason": "The paper addresses ethical and philosophical issues surrounding gestational surrogacy, which does not directly translate into a protectable technology, product, or service with clear commercial potential."
+    "score": 1,
+    "reason": "This is a qualitative narrative review of ethical and regulatory debates, which does not contain any proprietary technology, clinical data, or scalable biological/engineering innovations capable of being commercialized."
    },
    "market_size": {
-    "score": 2,
-    "reason": "This is a philosophical and legal analysis rather than a technological or therapeutic innovation, meaning it offers no scalable product, platform, or service to capture market value. The subject matter addresses regulatory and ethical discourse rather than addressable market demand for a life-science asset."
+    "score": 1,
+    "reason": "This is a narrative ethical review of surrogacy regulations, not a technical or clinical innovation with a scalable commercial product or addressable market."
    },
    "trl": {
-    "score": 2,
-    "reason": "The paper discusses ethical and philosophical issues surrounding gestational surrogacy, not a technological development, so its technology readiness is minimal."
+    "score": 1,
+    "reason": "This is a theoretical narrative review focused on ethics and regulatory policy rather than the development of a technological product or clinical intervention. It does not advance a technical solution toward commercialization, placing it at the lowest level of technological readiness."
    },
    "ip_strength": {
     "score": 1,
-    "reason": "This paper is a work of ethical and legal philosophy regarding social policy and human rights, which contains no technical innovation, proprietary methodology, or patentable subject matter. It offers zero defensibility in a commercial or industrial context as it does not address a protectable technology."
+    "reason": "The paper is a narrative ethical review of surrogacy laws and morals; it contains no technical innovation, proprietary method, or patentable invention."
    }
   },
   "pi": "Joseph Schenker",
   "pi_full_name": "Joseph Schenker",
   "pi_email": "",
   "pi_affiliation": "Faculty of Medicine, Hebrew University, Jerusalem, Israel.; Departments Obstetrics Gynaecology, Hadassah Medical Centre, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 9,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper is a philosophical and ethical discussion regarding gestational surrogacy and contains no molecular targets, disease models, or bioassay methods suitable for high-throughput screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -984,9 +960,9 @@
   "date": "2026-11-12",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43019539/",
   "source": "PubMed",
-  "score": 21,
-  "summary": "This study evaluates the feasibility and effectiveness of delivering Internet-based Cognitive Behavioral Therapy (iCBT) tailored for Arabic-speaking patients suffering from panic disorder. The results suggest that remote digital interventions can successfully bridge language and cultural barriers to provide mental health care.",
-  "opportunity": "This provides a template for scaling culturally-adapted, digital mental health platforms to reach underserved, non-English speaking global populations through a scalable SaaS-based therapeutic model.",
+  "score": 4,
+  "summary": "This study evaluates the feasibility and effectiveness of a translated internet-based cognitive behavioral therapy (ICBT) program for Arabic-speaking women with panic disorder. Preliminary results show significant reductions in panic symptoms and anxiety sensitivity among those who completed the 16-week program.",
+  "opportunity": "The successful localization of digital therapeutics (DTx) protocols offers a scalable model for expanding mental health software platforms into underserved linguistic and cultural markets.",
   "fields": [
    "Software/AI",
    "Clinical",
@@ -994,34 +970,18 @@
   ],
   "added_date": "2026-11-16",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "Adapting existing Internet-Based Cognitive Behavioral Therapy (ICBT) protocols for a new linguistic demographic is a valuable clinical service improvement but lacks the scientific or technological innovation required to be considered groundbreaking. It represents an incremental application of established psychological methodologies rather than the creation of new therapeutic paradigms or platform-enabling technologies."
-   },
    "commercial_potential": {
     "score": 4,
-    "reason": "While ICBT platforms are established products, this paper reports on a small-scale case series lacking the rigorous clinical validation or proprietary innovation required for high-barrier commercial scalability. The technology is likely a generic digital health application with low defensibility and significant localization hurdles to clear before reaching market viability."
-   },
-   "market_size": {
-    "score": 4,
-    "reason": "While the global mental health digital therapeutics market is expanding, this study focuses on a highly specific, niche intervention (CBT for panic disorder) restricted to a single linguistic demographic, limiting its immediate scalable market potential compared to broader platform-based solutions."
-   },
-   "trl": {
-    "score": 8,
-    "reason": "The intervention utilizes well-validated digital therapeutic protocols (iCBT) that are already clinically established, moving the technology into the implementation and real-world pilot phase for a specific linguistic demographic. It represents a highly deployable, scalable software-as-a-medical-device (SaMD) model nearing direct clinical integration."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The study reports a clinical application of existing CBT methods via an internet platform; it does not introduce a novel technology, algorithm, or device that could be patented or defensible."
+    "reason": "While the study demonstrates the feasibility of localized digital therapeutics, the technology is a translation of existing protocols rather than a novel, protectable platform or proprietary algorithm. The commercial value is limited to a localized service offering rather than a high-moat deep-tech asset."
    }
   },
   "pi": "Jonathan D Huppert",
   "pi_full_name": "Jonathan D Huppert",
   "pi_email": "",
   "pi_affiliation": "Department of Psychology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 21,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This paper is a clinical/psychological study on behavioral therapy and does not identify a specific molecular target, biochemical disease mechanism, or a high-throughput biological assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1449,43 +1409,44 @@
   "date": "2026 Oct 15",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43020780/",
   "source": "PubMed",
-  "score": 15,
-  "summary": "This research reveals that the brain prioritizes internal mental models over direct sensory input when processing object identity and location. These findings demonstrate that neural activity is driven by predictive internal states rather than merely reacting to external stimuli.",
-  "opportunity": "This discovery offers a foundational framework for developing AI architectures and brain-computer interfaces that utilize predictive processing to better replicate or decode human cognitive intent.",
+  "score": 16,
+  "summary": "Researchers discovered that brain activity during object recognition is driven more by internal cognitive strategies (active vs. passive) than by external sensory input. They identified two distinct brain-wide subnetworks, frontal and posterior, that shift based on how the animal approaches a task.",
+  "opportunity": "This research could underpin the development of advanced neural decoding algorithms for brain-computer interfaces (BCIs) by distinguishing between intentional active search and passive sensory reception.",
   "fields": [
+   "Neuroscience",
    "Software/AI",
-   "Neuroscience"
+   "Medical Device"
   ],
   "added_date": "2026-11-16",
   "score_breakdown": {
    "novelty": {
-    "score": 4,
-    "reason": "While this research provides a nuanced characterization of internal versus external sensory processing pathways, it addresses fundamental neuroscience questions rather than developing a protectable, platform-enabling, or industrially applicable technology. Its contribution is primarily academic, offering an incremental improvement in our mapping of brain-wide circuits rather than a paradigm-shifting innovation."
+    "score": 7,
+    "reason": "The paper challenges the classical 'what vs. where' cortical dichotomy by introducing a brain-wide framework driven by internal behavioral strategies. While highly innovative in its shift from sensory-driven to strategy-driven models, it remains a fundamental neuroscience discovery rather than a platform-enabling technology."
    },
    "commercial_potential": {
     "score": 3,
-    "reason": "The paper appears to be basic neuroscience research on brain pathways, with no clear indication of a product, service, or licensable technology, limiting its commercial potential."
+    "reason": "The paper is fundamental basic neuroscience research focused on understanding cognitive mechanisms in mice, which lacks a direct pathway to a commercial product or service. While it provides deep insights into neural subnetworks, it does not present a proprietary technology, therapeutic target, or diagnostic tool suitable for immediate industrial application."
    },
    "market_size": {
     "score": 2,
-    "reason": "This is a fundamental neuroscience paper focusing on internal neural processing strategies for object recognition, which lacks direct clinical or commercial application. While foundational, it offers no immediate path to a scalable product, platform technology, or addressable market segment."
+    "reason": "This is a fundamental basic neuroscience study focused on mapping neural subnetworks in mice, which lacks a direct commercial application or a defined addressable market. While scientifically significant, it does not present a product, platform, or therapeutic target with immediate industrial or clinical value."
    },
    "trl": {
-    "score": 3,
-    "reason": "The study appears to be fundamental neuroscience research focused on mapping neural pathways, which is at the laboratory discovery stage and not yet approaching commercialization or clinical application."
+    "score": 2,
+    "reason": "This is fundamental basic neuroscience research conducted in a mouse model to understand neural subnetworks. It lacks any direct application to clinical tools, diagnostic devices, or commercial neurotechnology platforms."
    },
    "ip_strength": {
-    "score": 3,
-    "reason": "The study appears to be basic neuroscience research on brain pathways, which typically yields limited patentability and defensibility. Without evidence of a novel, industrially applicable technology or clear therapeutic application, the IP strength is modest."
+    "score": 2,
+    "reason": "This is a fundamental neuroscience research paper describing biological mechanisms and cortical subnetworks, which is inherently difficult to patent or defend as proprietary IP. The findings represent scientific knowledge rather than a tangible technology, device, or platform with clear commercial exclusivity."
    }
   },
   "pi": "Ariel Gilad",
   "pi_full_name": "Ariel Gilad",
   "pi_email": "ariel.gilad@mail.huji.ac.il.",
   "pi_affiliation": "Department of Medical Neurobiology, Faculty of Medicine, The Institute for Medical Research Israel-Canada (IMRIC), The Hebrew University of Jerusalem, Jerusalem, Israel. ariel.gilad@mail.huji.ac.il.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 15,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The title indicates a descriptive neuroscience study focused on cognitive strategy and neuroanatomy rather than a specific molecular target, disease linkage, or druggable assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1752,10 +1713,11 @@
   "date": "2026-11-10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43005775/",
   "source": "PubMed",
-  "score": 17,
-  "summary": "This paper proposes that modern allergic diseases are a byproduct of evolutionary mismatches between our ancestral immune systems and the contemporary hygiene-controlled environment. It offers an integrative framework that explains the rapid increase in sensitivities by analyzing how immune regulatory mechanisms have failed to adapt to modern lifestyle stressors.",
-  "opportunity": "The research provides a scientific foundation for developing microbiome-based therapeutics and personalized immunotherapy interventions designed to recalibrate the human immune response to match modern environmental inputs.",
+  "score": 6,
+  "summary": "This paper provides a comprehensive synthesis of why the human immune system has evolved to trigger allergic reactions and how modern environmental changes drive their rising prevalence. It integrates classical evolutionary theories with recent breakthroughs in epithelial biology and type 2 inflammation pathways.",
+  "opportunity": "The integration of evolutionary immunology with recent advances in epithelial biology provides a roadmap for identifying novel therapeutic targets to modulate type 2 inflammation more precisely.",
   "fields": [
+   "Drug Discovery",
    "Immunology",
    "Clinical",
    "Genomics"
@@ -1764,32 +1726,24 @@
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "This paper represents a conceptual synthesis or review rather than a primary discovery or technological innovation. While it provides a valuable intellectual framework, it lacks the empirical novelty or proprietary invention necessary to support a high score for investment-grade innovation."
-   },
-   "commercial_potential": {
-    "score": 3,
-    "reason": "This paper presents a theoretical and evolutionary framework rather than a concrete diagnostic, therapeutic, or platform technology. While it provides valuable context for allergy research, it lacks the actionable intellectual property or direct industrial application required for a higher commercial score."
+    "reason": "The paper is a narrative review that explicitly states it does not propose a new evolutionary theory, but rather synthesizes existing, well-established models. While it provides an integrative framework, it lacks the original discovery or paradigm-shifting methodology required for high novelty."
    },
    "market_size": {
-    "score": 9,
-    "reason": "Allergic diseases represent a massive, globally escalating market affecting over 30% of the population, creating high demand for transformative therapeutics and diagnostics that address underlying evolutionary and immunological mechanisms."
+    "score": 2,
+    "reason": "This is a theoretical narrative review focusing on evolutionary biology and immunological frameworks rather than a specific therapeutic candidate, diagnostic tool, or technology with direct commercial application. While the subject of allergic disease represents a massive market, the paper itself does not propose a product or platform that captures that value."
    },
    "trl": {
     "score": 1,
-    "reason": "This paper provides a theoretical and evolutionary framework rather than a technical invention, method, or therapeutic candidate, placing it at the fundamental discovery stage far from commercial application."
-   },
-   "ip_strength": {
-    "score": 1,
-    "reason": "This paper provides a theoretical and evolutionary framework for allergic diseases rather than a novel technology, therapeutic composition, or diagnostic method, making it inherently unpatentable as prior art and lacking actionable IP."
+    "reason": "This is a narrative review paper synthesizing existing evolutionary theories rather than a report on a specific technology, prototype, or therapeutic candidate. It provides fundamental scientific context but contains no experimental data or technical development to advance a specific TRL."
    }
   },
   "pi": "Oded Shamriz",
   "pi_full_name": "Oded Shamriz",
   "pi_email": "",
   "pi_affiliation": "Allergy and Clinical Immunology Unit, Department of Medicine, Hadassah Medical Organization, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.; The Lautenberg Center for Immunology and Cancer Research, Institute of Medical Research Israel-Canada (IMRIC), Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 17,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 2,
   "hts_reason": "This paper is a review or integrative framework focused on evolutionary history rather than a specific drug target, disease-link, or actionable HTS assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1910,44 +1864,40 @@
   "date": "2026-11-09",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43002076/",
   "source": "PubMed",
-  "score": 27,
-  "summary": "Researchers at Hebrew University of Jerusalem have engineered antimicrobial peptides to minimize the evolution of bacterial resistance, demonstrating that specific chemical modifications can sustain peptide efficacy against resistant strains. The study provides a proof‑of‑concept that such tailored peptides could serve as next‑generation antibiotics with a lower propensity for resistance development.",
-  "opportunity": "The modified peptides represent a promising platform for developing novel antibiotics that remain effective over longer periods, addressing the urgent market need for drugs capable of combating multi‑drug resistant bacteria.",
+  "score": 20,
+  "summary": "Researchers have identified ways to modify antimicrobial peptides, specifically melittin, to prevent bacteria from developing resistance. This study provides a framework for engineering peptides that remain effective even when pathogens attempt to evolve defensive mechanisms.",
+  "opportunity": "Development of next-generation, resistance-proof antimicrobial therapies targeting multi-drug resistant human pathogens.",
   "fields": [
    "Drug Discovery",
-   "Immunology",
-   "Synthetic Biology"
+   "Synthetic Biology",
+   "Proteomics"
   ],
   "added_date": "2026-11-16",
   "score_breakdown": {
    "novelty": {
-    "score": 4,
-    "reason": "Modifying antimicrobial peptides (AMPs) to mitigate resistance is a well-trodden research area, and without specific details on a novel chemical moiety or platform mechanism, it currently reflects incremental improvement rather than a paradigm shift. The novelty score remains moderate until specific data demonstrates a unique, non-obvious engineering strategy that overcomes established cross-resistance pathways."
-   },
-   "commercial_potential": {
-    "score": 6,
-    "reason": "The research targets a high-value clinical need (antibiotic resistance), but without an abstract or specific data, the value is based on the general potential of antimicrobial peptides (AMPs) as a druggable platform."
+    "score": 5,
+    "reason": "While the study addresses a critical challenge in antimicrobial therapy, the approach of using peptide modifications to circumvent resistance is an incremental improvement on a well-established strategy rather than a paradigm-shifting discovery. The use of melittin as a model system is standard practice, suggesting evolutionary rather than revolutionary innovation."
    },
    "market_size": {
-    "score": 7,
-    "reason": "Antimicrobial peptides target a broad, high‑value market of antibiotic‑resistant infections, but the paper lacks concrete data on market penetration or commercial strategy, so the addressable demand is promising yet uncertain."
+    "score": 8,
+    "reason": "The research addresses the massive global market for antimicrobial resistance (AMR) solutions by providing a mechanism to prevent resistance evolution. While the paper focuses on a specific peptide model, the implications for developing durable, long-lasting antimicrobial therapeutics represent a high-value, multi-billion dollar addressable market."
    },
    "trl": {
     "score": 3,
-    "reason": "This research focuses on the fundamental molecular engineering of antimicrobial peptides to mitigate resistance evolution, which is an early-stage discovery effort typical of academic lab settings. It lacks the preclinical data, pharmacokinetic validation, or manufacturing scale-up required to demonstrate clinical viability."
+    "reason": "The research is in the fundamental mechanistic discovery phase, using a model peptide (melittin) to study evolutionary resistance pathways rather than validating a therapeutic candidate in vivo. It represents early-stage laboratory science aimed at understanding biological principles rather than a near-market drug development program."
    },
    "ip_strength": {
-    "score": 7,
-    "reason": "Antimicrobial peptide (AMP) modifications are a highly active, well-trodden IP landscape where defensibility relies on specific chemical substitutions or novel scaffolds rather than broad biological concepts. While highly patentable if the modification confers unique structural or functional advantages, the field is crowded with prior art, necessitating a narrow and precise claims strategy."
+    "score": 4,
+    "reason": "The work focuses on fundamental mechanistic understanding of resistance evolution rather than disclosing specific, novel chemical modifications or a proprietary scaffold. While the findings may inform future design, the abstract suggests a basic science approach to a well-characterized peptide (melittin) which lacks inherent novelty for broad patent protection."
    }
   },
   "pi": "Zvi Hayouka",
   "pi_full_name": "Zvi Hayouka",
   "pi_email": "",
   "pi_affiliation": "Institute of Biochemistry, Food Science and Nutrition, The Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Rehovot, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 27,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 3,
   "hts_reason": "The title suggests a broad strategy (antimicrobial peptide modification) rather than identifying a specific molecular target or a defined high-throughput assay. It lacks the specificity required to initiate an HTS campaign.",
   "hts_eval_model": "gemini-3.1-flash-lite"
