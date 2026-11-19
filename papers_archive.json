@@ -87,7 +87,7 @@
   "pi_email": "denrosen2@gmail.com.",
   "pi_affiliation": "The Paul Baerwald School of Social Work and Social Welfare, Hebrew University of Jerusalem, Mount Scopus, Jerusalem, 9190501, Israel. denrosen2@gmail.com.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 7,
+  "prev_score": "7",
   "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This paper focuses on psychosocial factors in cancer information seeking and lacks all three required elements: no specific molecular target, no molecular link to a disease mechanism, and no assay for pharmacological screening.",
@@ -586,7 +586,7 @@
   "pi_email": "",
   "pi_affiliation": "Department of Medicine, Hadassah-Hebrew University Medical Center, Mount Scopus Campus and the Hebrew University-Hadassah Medical School, Jerusalem 91240, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 8,
+  "prev_score": "8",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper is a clinical observational study on the prognosis of cardiac ascites and does not identify a molecular target, link a specific molecule to a mechanism of disease, or describe a screening assay.",
@@ -841,7 +841,7 @@
   "pi_email": "",
   "pi_affiliation": "Faculty of Medicine, Hebrew University, Jerusalem, Israel.; Departments Obstetrics Gynaecology, Hadassah Medical Centre, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 9,
+  "prev_score": "9",
   "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper is a philosophical and ethical discussion regarding gestational surrogacy and contains no molecular targets, disease models, or bioassay methods suitable for high-throughput screening.",
@@ -980,7 +980,7 @@
   "pi_email": "",
   "pi_affiliation": "Department of Psychology, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 21,
+  "prev_score": "21",
   "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "This paper is a clinical/psychological study on behavioral therapy and does not identify a specific molecular target, biochemical disease mechanism, or a high-throughput biological assay.",
@@ -1047,8 +1047,8 @@
   "url": "https://pubmed.ncbi.nlm.nih.gov/43019020/",
   "source": "PubMed",
   "score": 7,
-  "summary": "This research investigates how water molecules influence the stability and breakdown process of the noble gas compound HXeCl. By modeling these molecular interactions, the study provides fundamental insights into the chemical behavior of rare xenon-based materials.",
-  "opportunity": "The findings contribute to the fundamental understanding of high-energy chemical stability, which could inform the development of specialized noble-gas sensors or advanced inert-environment materials.",
+  "summary": "This research examines how water molecules influence the breaking down of a specific noble-gas compound called HXeCl. The study focuses on the fundamental chemical interactions between water and highly reactive, transient species.",
+  "opportunity": "While highly theoretical, the study provides foundational insights into water-solute interactions that could eventually inform the stabilization of reactive chemical species in specialized high-pressure or extreme-environment applications.",
   "fields": [
    "Materials",
    "Other"
@@ -1056,33 +1056,33 @@
   "added_date": "2026-11-16",
   "score_breakdown": {
    "novelty": {
-    "score": 2,
-    "reason": "This research explores the fundamental physical chemistry of a niche noble-gas molecule, which is of theoretical interest but lacks industrial relevance or scalable application potential. It represents an incremental study of molecular stability rather than a groundbreaking, platform-enabling innovation."
+    "score": 3,
+    "reason": "The research describes a highly specialized study of fundamental chemical kinetics involving a transient noble-gas compound, which offers minimal scientific novelty for broad industrial or clinical application. While it may advance niche understanding of molecular interactions, it does not represent a groundbreaking shift or a platform-enabling discovery in the deep-tech space."
    },
    "commercial_potential": {
     "score": 1,
-    "reason": "This study explores fundamental physical chemistry of noble gas compounds under extreme laboratory conditions, which lacks a clear pathway to practical application, industrial utility, or product development. It is a niche academic investigation into molecular stability rather than a platform-enabling or near-market technology."
+    "reason": "This is fundamental physical chemistry research focused on the molecular dynamics of noble-gas hydrides, which lacks any direct pathway to an industrial product, service, or scalable technology. The study is purely academic and does not demonstrate a clear application in life sciences or deep-tech commercial markets."
    },
    "market_size": {
     "score": 1,
-    "reason": "This paper focuses on the fundamental physical chemistry of noble gas compounds in matrix isolation, which has no discernible commercial application or addressable market. It is purely academic research with no industrial relevance or path to market."
+    "reason": "This is a study of fundamental physical chemistry involving noble-gas hydrides, which lacks any direct industrial application or addressable commercial market. The research is purely academic and does not target a specific consumer or industrial demand segment."
    },
    "trl": {
     "score": 1,
-    "reason": "This study examines the fundamental chemical dynamics of noble gas molecules in cryogenic matrices, which represents highly theoretical, basic research with no current practical or industrial application."
+    "reason": "This is fundamental chemical physics research investigating the stability of noble-gas hydrides at a molecular level. It lacks any immediate industrial or commercial application, placing it at the most basic stage of scientific discovery."
    },
    "ip_strength": {
-    "score": 2,
-    "reason": "This is a fundamental physical chemistry study focused on the molecular dynamics of an unstable van der Waals complex, which lacks industrial application or patentable utility. The research is academic in nature and provides mechanistic insight rather than a defensible technological platform."
+    "score": 1,
+    "reason": "The paper describes fundamental physical chemistry research involving noble-gas hydrides, which lacks industrial application or a clear path to patentable commercial utility. The findings are academic observations of chemical kinetics rather than a proprietary technology or defensible platform."
    }
   },
   "pi": "Robert Benny Gerber",
   "pi_full_name": "Robert Benny Gerber",
   "pi_email": "arie.cohen@mail.huji.ac.il.",
   "pi_affiliation": "Institute of Chemistry and The Fritz Haber Center for Molecular Dynamics, The Hebrew University, Jerusalem, 9190401, Israel. arie.cohen@mail.huji.ac.il.; Department of Chemistry, University of California, Irvine, CA 92697, USA.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 7,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "This paper focuses on the computational/physical chemistry of noble gas compounds and does not identify a biological target, a disease link, or a high-throughput biological assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1445,7 +1445,7 @@
   "pi_email": "ariel.gilad@mail.huji.ac.il.",
   "pi_affiliation": "Department of Medical Neurobiology, Faculty of Medicine, The Institute for Medical Research Israel-Canada (IMRIC), The Hebrew University of Jerusalem, Jerusalem, Israel. ariel.gilad@mail.huji.ac.il.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 15,
+  "prev_score": "15",
   "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The title indicates a descriptive neuroscience study focused on cognitive strategy and neuroanatomy rather than a specific molecular target, disease linkage, or druggable assay.",
@@ -1742,7 +1742,7 @@
   "pi_email": "",
   "pi_affiliation": "Allergy and Clinical Immunology Unit, Department of Medicine, Hadassah Medical Organization, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.; The Lautenberg Center for Immunology and Cancer Research, Institute of Medical Research Israel-Canada (IMRIC), Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 17,
+  "prev_score": "17",
   "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 2,
   "hts_reason": "This paper is a review or integrative framework focused on evolutionary history rather than a specific drug target, disease-link, or actionable HTS assay.",
@@ -1810,43 +1810,27 @@
   "date": "2026-11-09",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43003688/",
   "source": "PubMed",
-  "score": 11,
-  "summary": "Hebrew University researchers identified that the nucleus of the lateral olfactory tract (nLOT) is a critical brain region for learning to avoid food associated with negative experiences. This discovery maps a specific neuro-circuitry pathway that dictates how animals translate olfactory cues into complex behavioral avoidance decisions.",
-  "opportunity": "This discovery provides a novel therapeutic target for developing pharmacological or neuromodulation interventions for eating disorders, olfactory processing pathologies, and obesity-related behavioral conditions.",
+  "score": 3,
+  "summary": "Researchers identified a specific brain region, the NLOT, that is essential for animals to learn to avoid smells associated with food poisoning. This circuit allows animals to associate a scent with sickness, preventing them from eating toxic substances in the future.",
+  "opportunity": "Potential for developing targeted neuromodulation therapies or pharmacological interventions to treat eating disorders or maladaptive olfactory aversions.",
   "fields": [
    "Neuroscience",
-   "Clinical"
+   "Drug Discovery"
   ],
   "added_date": "2026-11-16",
   "score_breakdown": {
-   "novelty": {
-    "score": 4,
-    "reason": "While identifying a specific neural circuit for odor-guided avoidance adds incremental value to systems neuroscience, it represents a standard physiological mapping study rather than a platform-enabling or highly disruptive innovation. The research clarifies existing pathways rather than establishing a novel technological paradigm or therapeutic modality."
-   },
    "commercial_potential": {
-    "score": 2,
-    "reason": "This study focuses on fundamental neurobiology and basic behavioral mapping in an animal model, lacking direct translational utility or a clear path to a therapeutic or commercial product. It provides biological insight rather than a platform technology, diagnostic tool, or intervention candidate."
-   },
-   "market_size": {
-    "score": 2,
-    "reason": "This is fundamental neurobiology research investigating specific brain circuitry in mice, which currently lacks a direct commercial application or a defined path to a scalable clinical or industrial market. While understanding olfactory processing is scientifically valuable, it does not represent an addressable demand or a market-ready platform."
-   },
-   "trl": {
-    "score": 1,
-    "reason": "This is fundamental neurobiological research mapping circuit function in mice, which is far removed from clinical application or commercial technology development. It represents basic scientific inquiry rather than an actionable therapeutic or diagnostic platform."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "This paper reports a fundamental neuroscientific discovery regarding the functional role of a specific brain region in odor-guided behavior, which constitutes non-patentable natural phenomenon/scientific insight. There is no novel composition of matter, method of treatment, or enabling technology described that provides a basis for commercial IP protection."
+    "score": 3,
+    "reason": "This is fundamental basic neuroscience research focused on circuit mapping in mice, which lacks a direct path to a product, service, or licensable therapeutic application. While it provides mechanistic insight into olfactory learning, there is no clear translational framework or technological platform presented."
    }
   },
   "pi": "Dan Rokni",
   "pi_full_name": "Dan Rokni",
   "pi_email": "",
   "pi_affiliation": "Department of Medical Neurobiology, Faculty of Medicine and IMRIC, The Hebrew University of Jerusalem, 9112102 Jerusalem, Israel.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": 11,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 2,
   "hts_reason": "The paper focuses on a neuroanatomical region (nucleus of the lateral olfactory tract) rather than a druggable molecular target. While it links a process to a behavioral condition, it lacks a specific molecular target for screening and a scalable chemical assay.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1896,7 +1880,7 @@
   "pi_email": "",
   "pi_affiliation": "Institute of Biochemistry, Food Science and Nutrition, The Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Rehovot, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 27,
+  "prev_score": "27",
   "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 3,
   "hts_reason": "The title suggests a broad strategy (antimicrobial peptide modification) rather than identifying a specific molecular target or a defined high-throughput assay. It lacks the specificity required to initiate an HTS campaign.",
@@ -1923,44 +1907,28 @@
   "date": "2026-11-09",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43002034/",
   "source": "PubMed",
-  "score": 20,
-  "summary": "Researchers at Hebrew University discovered that a bacterial extracellular matrix protein can self‑assemble into a supramolecular metallogel, a metal‑containing hydrogel with tunable mechanical and chemical properties. This novel biomaterial could serve as a scaffold or delivery vehicle in biomedical and industrial applications.",
-  "opportunity": "The metallogel offers a platform for injectable, biodegradable drug delivery systems or tissue‑engineering scaffolds that can be tailored for specific therapeutic needs.",
+  "score": 2,
+  "summary": "Researchers discovered that a specific protein from Bacillus subtilis can form a strong, structural hydrogel when combined with zinc ions. This process transforms simple protein fibers into 2D nanosheets, mimicking the protective matrix that bacteria use to build biofilms.",
+  "opportunity": "Development of programmable, bio-based supramolecular materials for tissue engineering scaffolds or specialized drug delivery systems.",
   "fields": [
    "Materials",
-   "Drug Discovery",
+   "Synthetic Biology",
    "Medical Device"
   ],
   "added_date": "2026-11-16",
   "score_breakdown": {
-   "novelty": {
-    "score": 7,
-    "reason": "The discovery of a bacterial protein-based metallogel is a highly original bio-inspired materials science innovation that expands the toolkit for sustainable, stimuli-responsive hydrogels. While the biological mechanism is novel, its current stage as a foundational material study rather than a demonstrated application keeps it just below the threshold for immediate industrial platform readiness."
-   },
-   "commercial_potential": {
-    "score": 4,
-    "reason": "While the material properties are scientifically interesting, the paper describes a fundamental biophysical discovery without a clear roadmap for industrial scalability, cost-competitiveness, or specific application-driven functional performance. Without defined use cases in drug delivery, sensing, or filtration, the commercial path remains speculative and early-stage."
-   },
-   "market_size": {
-    "score": 3,
-    "reason": "While metallogels have niche applications in sensing or catalysis, this research is at an early materials-science discovery stage with no clear path to a large, addressable industrial market. The potential demand is currently speculative and lacks the clinical or commercial scalability required for a higher score."
-   },
    "trl": {
     "score": 2,
-    "reason": "This study describes a fundamental materials science discovery regarding the self-assembly properties of a protein, which remains at a very early, bench-scale research phase. It lacks specific industrial applications, scale-up feasibility, or functional validation necessary to transition toward commercial viability."
-   },
-   "ip_strength": {
-    "score": 4,
-    "reason": "While the discovery of a novel supramolecular metallogel is scientifically interesting, it describes a naturally occurring protein structure which presents significant hurdles for composition-of-matter patentability without extensive engineering or modification. The lack of an established industrial application or clear structural optimization limits the current defensibility of the innovation."
+    "reason": "The study is fundamental basic research focused on characterizing a molecular mechanism and morphological transition. It lacks any application-oriented prototyping, scale-up validation, or testing in a functional technological system required for higher TRL stages."
    }
   },
   "pi": "Liraz Chai",
   "pi_full_name": "Liraz Chai",
   "pi_email": "",
   "pi_affiliation": "Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem9190401, Israel.; The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem9190401, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": 20,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The title mentions a specific bacterial extracellular matrix protein, but the paper does not link it to any particular disease or condition, nor does it describe a testable assay or method for measuring its effect.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
