@@ -17028,7 +17028,7 @@
     "pi_full_name": "Dean Nachman",
     "pi_email": "Dean@Hadassah.org.il.",
     "pi_affiliation": "The Heart Institute, Hadassah Medical Center, The Faculty of Medicine, Hebrew University Jerusalem, 9112102, Jerusalem, Israel. Dean@Hadassah.org.il.; Faculty of Medicine, Institute for Research in Military Medicine, The Hebrew University, 9112102, Jerusalem, Israel. Dean@Hadassah.org.il.; Israel Defense Forces Medical Corps, Jerusalem, Israel. Dean@Hadassah.org.il.; Department of Military Medicine and \"Tzameret\", Faculty of Medicine, Hebrew University of Jerusalem, 9112102, Jerusalem, Israel. Dean@Hadassah.org.il.",
-    "avg_score": 26.1,
+    "avg_score": 25.8,
     "max_hts_score": 2,
     "paper_count": 9,
     "description": "This researcher focuses on the intersection of cardiovascular medicine, medical device engineering, and digital health monitoring. Their work spans from high-risk surgical interventions and personalized 3D-printed implants to the development of non-invasive, wearable sensors for continuous hemodynamic and physiological monitoring. They utilize a multidisciplinary approach involving computational modeling, animal studies, and edge-AI to improve patient outcomes in acute and chronic care settings.",
@@ -17422,9 +17422,9 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/43005809/",
         "journal": "Cardiology research and practice",
-        "score": 33,
-        "summary": "This review evaluates the evolution of hemodynamic monitoring from invasive catheter-based methods to non-invasive, sensor-driven wearable technologies. It specifically analyzes how Photoplethysmography (PPG) algorithms are being refined to provide medical-grade cardiovascular data outside of clinical environments.",
-        "opportunity": "The transition toward continuous, PPG-based remote patient monitoring creates significant opportunities for AI-driven clinical decision support software and next-generation wearable sensor hardware.",
+        "score": 30,
+        "summary": "This paper reviews the transition from invasive catheter-based hemodynamic monitoring to noninvasive wearable technologies. It specifically highlights how PPG-based sensors and advanced signal processing can estimate critical vital signs like blood pressure and cardiac output in real-time.",
+        "opportunity": "Development of continuous, noninvasive hemodynamic monitoring wearables for remote patient monitoring and ICU automation represents a high-growth market segment.",
         "abstract": "Advanced hemodynamic monitoring, including cardiac output (CO), stroke volume (SV), and systemic vascular resistance (SVR), is important for the management of cardiogenic shock, postoperative patients, and heart failure. Traditional approaches such as pulmonary artery catheterization (PAC) provide comprehensive hemodynamic assessment but are invasive, costly, and associated with procedure-related risks. This review summarizes established invasive and minimally invasive techniques alongside emerging noninvasive approaches, including pulse contour analysis, bioimpedance, pulse wave transit time, and photoplethysmography (PPG)-based systems. Particular emphasis is placed on PPG-based technologies, which combine pulse wave analysis, pulse wave transit time, and advanced signal processing to estimate blood pressure and flow-related parameters. As a representative case study, the clinical development and evaluation of the Biobeat BB-613WP wearable are described, including preclinical swine hemorrhagic shock models, intensive care and perioperative validation against invasive reference methods, and ambulatory blood pressure monitoring studies. Available evidence suggests that PPG-based wearables can achieve clinically acceptable agreement with invasive reference methods in selected populations while offering the potential for continuous, noninvasive, and ambulatory monitoring. However, the available evidence is limited by small sample sizes, single-center studies, controlled conditions, and limited independent validation. Further multicenter, outcome-oriented studies are required to establish the clinical role of PPG-based devices across diverse patient populations and stages of care.",
         "fields": [
           "Medical Device",
@@ -17435,28 +17435,28 @@
         "score_breakdown": {
           "novelty": {
             "score": 3,
-            "reason": "The paper title indicates a review or perspective piece on established technologies (catheters and PPG) rather than the introduction of a novel scientific breakthrough or proprietary IP. It appears to be an analytical synthesis of existing monitoring methods rather than an innovative technological advancement."
+            "reason": "This is a review paper summarizing established and emerging technologies rather than an original research paper presenting a new discovery or invention. While it discusses advanced PPG-based applications, it functions as a synthesis of existing state-of-the-art knowledge rather than a source of primary scientific novelty."
           },
           "commercial_potential": {
-            "score": 9,
-            "reason": "The transition from invasive catheters to non-invasive PPG-based wearables represents a high-value, platform-enabling shift with clear clinical utility and massive market demand in remote patient monitoring. The technology addresses a well-defined pain point with significant potential for proprietary sensor algorithms, intellectual property, and scalable integration into the established digital health ecosystem."
+            "score": 8,
+            "reason": "The paper moves beyond theoretical review by presenting a concrete case study of the Biobeat BB-613WP, demonstrating a clear pathway from signal processing technology to a validated, near-market wearable medical device. The transition from invasive gold standards to noninvasive PPG-based monitoring addresses a massive, high-value clinical need in ICU and ambulatory settings."
           },
           "market_size": {
-            "score": 9,
-            "reason": "The transition from invasive clinical catheters to non-invasive, continuous PPG-based wearable monitoring addresses a massive, high-growth global market spanning both the clinical diagnostic and consumer health-tracking sectors. The broad applicability of hemodynamic monitoring across cardiovascular disease, preventative health, and hospital-to-home care represents an exceptionally large and actionable total addressable market."
+            "score": 8,
+            "reason": "The technology addresses high-value clinical segments including intensive care, perioperative monitoring, and chronic management of heart failure and cardiogenic shock. Transitioning from invasive gold standards to wearable PPG-based continuous monitoring expands the addressable market from specialized hospital settings to large-scale ambulatory and remote patient monitoring populations."
           },
           "trl": {
-            "score": 9,
-            "reason": "PPG-based hemodynamic monitoring is a well-established, near-market technology that is already integrated into existing commercial wearables and clinical monitoring systems, making the transition from invasive catheters to non-invasive devices a highly actionable commercial shift."
+            "score": 8,
+            "reason": "The paper moves beyond theoretical review by presenting a specific case study (Biobeat BB-613WP) that has undergone preclinical, ICU, and ambulatory validation, indicating a technology that is nearing or entering clinical implementation."
           },
           "ip_strength": {
             "score": 3,
-            "reason": "This paper is a review article summarizing existing literature rather than presenting a novel, proprietary technology with unique claims. As a synthesis of established clinical practice and existing sensor technology, it lacks the specific, defensible technical innovations required for meaningful IP protection."
+            "reason": "The paper is a literature review summarizing established technologies and emerging trends rather than a primary research paper presenting a novel, proprietary invention. While it references the Biobeat device, it provides no new patentable methodology, algorithms, or unique hardware architectures that would constitute defensible IP."
           }
         },
-        "eval_model": "gemini-3.1-flash-lite",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 33,
+        "prev_eval_model": "gemini-3.1-flash-lite",
         "pi_affiliation": "Hadassah Medical Center and Faculty of Medicine Heart Institute Hebrew University of Jerusalem Jerusalem Israel huji.ac.il.; Department of Military Medicine Faculty of Medicine Institute for Research in Military Medicine The Hebrew University of Jerusalem Jerusalem Israel huji.ac.il.",
         "pi_email": "",
         "hts_score": 1,

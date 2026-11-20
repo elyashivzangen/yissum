@@ -10302,59 +10302,6 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
-    "id": "pubmed_43035490",
-    "title": "Documented non-tobacco nicotine dependence coding and incident age-related macular degeneration in a large multicenter electronic health record cohort.",
-    "authors": [
-      "Nir Zontag",
-      "Natan Lishinsky-Fischer",
-      "Jaime Levy"
-    ],
-    "journal": "International journal of retina and vitreous",
-    "date": "2026-08-18",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43035490/",
-    "source": "PubMed",
-    "score": 19,
-    "summary": "This study analyzes electronic health records to determine if there is a statistical link between the use of non-tobacco nicotine products and the development of age-related macular degeneration. It addresses a critical gap in public health data regarding the long-term ocular safety profiles of modern nicotine delivery systems.",
-    "opportunity": "The findings provide essential real-world evidence for regulatory bodies and health insurers to evaluate the longitudinal risk-reward profiles of alternative nicotine products, potentially informing future clinical screening protocols for high-risk users.",
-    "fields": [
-      "Clinical",
-      "Diagnostics"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "This study is an incremental observational analysis leveraging existing electronic health record data to confirm associations already well-established for tobacco-based nicotine. It lacks the groundbreaking innovation or novel mechanistic insight required for a higher novelty score."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "This is an epidemiological observational study identifying a correlation between nicotine use and disease incidence, which does not constitute a proprietary product, therapeutic intervention, or licensable technology. Its commercial utility is limited to informing public health policy or future risk-assessment models rather than providing a scalable commercial solution."
-      },
-      "market_size": {
-        "score": 3,
-        "reason": "The study focuses on a narrow epidemiological association between non-tobacco nicotine use and age-related macular degeneration (AMD), which lacks a clear commercial application or scalable therapeutic intervention. While AMD itself is a large market, this paper is observational research rather than a platform or product, offering limited actionable value for investment."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "The study utilizes real-world data from large-scale electronic health records, which provides high clinical relevance and immediate applicability for population-level risk assessment and public health policymaking. Its methodology is inherently closer to clinical integration than foundational laboratory research, as it leverages existing, validated infrastructure to derive actionable epidemiological insights."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "This study is an observational epidemiological analysis of existing clinical data and does not involve the creation of novel proprietary technology, composition of matter, or unique methodology eligible for patent protection."
-      }
-    },
-    "pi": "Jaime Levy",
-    "pi_full_name": "Jaime Levy",
-    "pi_email": "levjaime@gmail.com.",
-    "pi_affiliation": "Department of Ophthalmology, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Kiryat Hadassah, POB 12000, Jerusalem, 91120, Israel. levjaime@gmail.com.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-11-16",
-    "hts_score": 2,
-    "hts_reason": "The paper describes an epidemiological association between nicotine dependence and age-related macular degeneration using electronic health records, which lacks a specific molecular target and a testable biochemical or cellular assay for high-throughput screening.",
-    "hts_eval_model": "gemma-4-26b-a4b-it"
-  },
-  {
     "id": "pubmed_42758252",
     "title": "Interplay of Charge Trapping, Charge Separation, and Chemical Reactivity in Photocatalytic ZnSe-Based Semiconductor-Metal Hybrid Nanoparticles.",
     "authors": [
@@ -10527,58 +10474,6 @@
     "added_date": "2026-11-09",
     "hts_score": 3,
     "hts_reason": "The paper focuses on characterizing a cell type (telocytes) rather than identifying a druggable molecular target, and it lacks a direct link to a specific disease pathology. While it describes an in vitro culture method, it does not present a high-throughput compatible assay for a specific molecular target.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
-  },
-  {
-    "id": "pubmed_43002857",
-    "title": "Trends in the timing of non-implantable bone-conduction hearing rehabilitation in children with microtia or aural atresia: A 14-year retrospective study.",
-    "authors": [
-      "Ronit Priner",
-      "Devora Brand"
-    ],
-    "journal": "International journal of pediatric otorhinolaryngology",
-    "date": "2026 Nov 6",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43002857/",
-    "source": "PubMed",
-    "score": 18,
-    "summary": "This study analyzes clinical data over 14 years regarding the timing of non-implantable bone-conduction hearing aids for pediatric patients with congenital ear malformations. It highlights evolving clinical practices and suggests a shift toward earlier intervention strategies for pediatric auditory rehabilitation.",
-    "opportunity": "The trend toward earlier intervention creates a market opening for miniaturized, pediatric-specific wearable bone-conduction devices that prioritize ergonomic comfort and long-term developmental compliance.",
-    "fields": [
-      "Medical Device",
-      "Clinical"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 2,
-        "reason": "This study is a retrospective clinical analysis of existing rehabilitation trends rather than the development of a new technology or intervention. It provides retrospective data on established practices, which lacks the scientific innovation or technological breakthrough required for a higher novelty score."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "This is a clinical retrospective analysis of existing standard-of-care practices rather than a novel technology, therapeutic, or diagnostic platform. It provides insights into clinical workflows but does not contain protectable IP or actionable product development opportunities."
-      },
-      "market_size": {
-        "score": 3,
-        "reason": "The study focuses on a highly specific niche population (pediatric patients with microtia or aural atresia), representing a small total addressable market with limited commercial scalability compared to broader audiological interventions."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "The paper analyzes clinical longitudinal data on established non-implantable bone-conduction technologies, which are already commercially available and standard-of-care medical devices. The study focuses on clinical application patterns rather than experimental development, placing it firmly at the near-market/deployed stage."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "This paper is a retrospective clinical outcomes study regarding medical procedure timing rather than a technological innovation, resulting in zero patentable intellectual property or defensible technical barriers."
-      }
-    },
-    "pi": "Devora Brand",
-    "pi_full_name": "Devora Brand",
-    "pi_email": "devorabr@jmc.ac.il.",
-    "pi_affiliation": "Department of Communication Disorders, Jerusalem Multidisciplinary College, Jerusalem, Israel; Hearing and Speech Clinic, Hadassah University Medical Center, Jerusalem, Israel. Electronic address: devorabr@jmc.ac.il.",
-    "eval_model": "gemini-3.1-flash-lite",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-11-16",
-    "hts_score": 1,
-    "hts_reason": "The paper is a retrospective clinical study on hearing rehabilitation timing and lacks a molecular target, a chemical compound, or a biochemical assay suitable for high-throughput screening.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -12406,6 +12301,56 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
+    "id": "pubmed_43035490",
+    "title": "Documented non-tobacco nicotine dependence coding and incident age-related macular degeneration in a large multicenter electronic health record cohort.",
+    "authors": [
+      "Nir Zontag",
+      "Natan Lishinsky-Fischer",
+      "Jaime Levy"
+    ],
+    "journal": "International journal of retina and vitreous",
+    "date": "2026-08-18",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43035490/",
+    "source": "PubMed",
+    "score": 12,
+    "summary": "The study identifies a significant link between non-tobacco nicotine dependence and an increased risk of developing age-related macular degeneration (AMD). By analyzing large-scale electronic health records, researchers demonstrated that nicotine exposure from non-smoking sources is a measurable risk factor for vision loss.",
+    "opportunity": "This data supports the development of specialized screening protocols and predictive risk models for ophthalmology clinics to identify high-risk patients using non-smoking behavioral data.",
+    "fields": [
+      "Clinical",
+      "Diagnostics",
+      "Software/AI"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The study is a retrospective observational cohort analysis using existing EHR data to explore a known physiological risk factor (nicotine) in a new sub-population (non-tobacco users). While clinically relevant for understanding AMD risk, it lacks the groundbreaking methodological innovation or novel biological discovery required for a high novelty score."
+      },
+      "commercial_potential": {
+        "score": 3,
+        "reason": "The paper is an observational epidemiological study that establishes a statistical association rather than developing a novel therapeutic, diagnostic device, or proprietary platform. While it provides clinical insights that could influence risk modeling, it lacks a direct path to a protectable product or licensable technology."
+      },
+      "market_size": {
+        "score": 4,
+        "reason": "The paper is an epidemiological observational study rather than a product or technology, meaning it identifies a risk association rather than defining a commercial market. While the patient population (NTND users and AMD patients) is large, the research itself does not present a scalable therapeutic or diagnostic asset with direct market capture."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This is a retrospective observational cohort study using existing electronic health record data to establish an association, rather than the development of a new therapeutic or diagnostic technology. It provides clinical insights that may inform future preventative strategies, but it does not represent a technological product or platform moving toward commercialization."
+      }
+    },
+    "pi": "Jaime Levy",
+    "pi_full_name": "Jaime Levy",
+    "pi_email": "levjaime@gmail.com.",
+    "pi_affiliation": "Department of Ophthalmology, Hadassah Medical Center, Faculty of Medicine, Hebrew University of Jerusalem, Kiryat Hadassah, POB 12000, Jerusalem, 91120, Israel. levjaime@gmail.com.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "19",
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-11-16",
+    "hts_score": 2,
+    "hts_reason": "The paper describes an epidemiological association between nicotine dependence and age-related macular degeneration using electronic health records, which lacks a specific molecular target and a testable biochemical or cellular assay for high-throughput screening.",
+    "hts_eval_model": "gemma-4-26b-a4b-it"
+  },
+  {
     "id": "pubmed_43025420",
     "title": "Global motion deficits following early visual deprivation reflect impaired attention allocation rather than poor information integration.",
     "authors": [
@@ -12791,6 +12736,42 @@
     "added_date": "2026-11-09",
     "hts_score": 1,
     "hts_reason": "The paper title describes a theoretical or systems-level concept rather than a specific molecular target, disease linkage, or screening assay.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
+    "id": "pubmed_43002857",
+    "title": "Trends in the timing of non-implantable bone-conduction hearing rehabilitation in children with microtia or aural atresia: A 14-year retrospective study.",
+    "authors": [
+      "Ronit Priner",
+      "Devora Brand"
+    ],
+    "journal": "International journal of pediatric otorhinolaryngology",
+    "date": "2026 Nov 6",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43002857/",
+    "source": "PubMed",
+    "score": 10,
+    "summary": "This study analyzes a 14-year trend in children with congenital ear deformities, finding that the time between diagnosis and the start of bone-conduction hearing rehabilitation is decreasing. It highlights the critical need for early intervention to improve speech and developmental outcomes in pediatric patients.",
+    "opportunity": "There is a commercial opening for improved non-implantable pediatric bone-conduction devices and integrated screening-to-treatment software to further reduce the gap between diagnosis and rehabilitation.",
+    "fields": [
+      "Medical Device",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "trl": {
+        "score": 10,
+        "reason": "The study evaluates non-implantable bone-conduction hearing aids, which are established, clinically utilized medical devices already in widespread commercial use. The research focuses on clinical workflow and timing of intervention rather than the development of new hardware."
+      }
+    },
+    "pi": "Devora Brand",
+    "pi_full_name": "Devora Brand",
+    "pi_email": "devorabr@jmc.ac.il.",
+    "pi_affiliation": "Department of Communication Disorders, Jerusalem Multidisciplinary College, Jerusalem, Israel; Hearing and Speech Clinic, Hadassah University Medical Center, Jerusalem, Israel. Electronic address: devorabr@jmc.ac.il.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "18",
+    "prev_eval_model": "gemini-3.1-flash-lite",
+    "added_date": "2026-11-16",
+    "hts_score": 1,
+    "hts_reason": "The paper is a retrospective clinical study on hearing rehabilitation timing and lacks a molecular target, a chemical compound, or a biochemical assay suitable for high-throughput screening.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -13292,7 +13273,7 @@
     "pi_email": "arie.cohen@mail.huji.ac.il.",
     "pi_affiliation": "Institute of Chemistry and The Fritz Haber Center for Molecular Dynamics, The Hebrew University, Jerusalem, 9190401, Israel. arie.cohen@mail.huji.ac.il.; Department of Chemistry, University of California, Irvine, CA 92697, USA.",
     "eval_model": "gemma-4-26b-a4b-it",
-    "prev_score": 7,
+    "prev_score": "7",
     "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-11-16",
     "hts_score": 1,
@@ -14908,7 +14889,7 @@
     "pi_email": "",
     "pi_affiliation": "Department of Medical Neurobiology, Faculty of Medicine and IMRIC, The Hebrew University of Jerusalem, 9112102 Jerusalem, Israel.",
     "eval_model": "gemma-4-31b-it",
-    "prev_score": 11,
+    "prev_score": "11",
     "prev_eval_model": "gemini-3.1-flash-lite",
     "added_date": "2026-11-16",
     "hts_score": 2,
@@ -14998,7 +14979,7 @@
     "pi_email": "",
     "pi_affiliation": "Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem9190401, Israel.; The Center for Nanoscience and Nanotechnology, The Hebrew University of Jerusalem, Jerusalem9190401, Israel.",
     "eval_model": "gemma-4-31b-it",
-    "prev_score": 20,
+    "prev_score": "20",
     "prev_eval_model": "groq:openai/gpt-oss-20b",
     "added_date": "2026-11-16",
     "hts_score": 1,
