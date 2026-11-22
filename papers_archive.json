@@ -359,44 +359,44 @@
   "date": "2026 Nov 13",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43025420/",
   "source": "PubMed",
-  "score": 11,
-  "summary": "This research reveals that visual deprivation during critical developmental periods impairs the brain's ability to allocate attention toward motion rather than its capacity to process visual data. By distinguishing between sensory encoding and cognitive gating, the study provides a deeper understanding of how the brain recovers from early sensory loss.",
-  "opportunity": "These findings enable the development of targeted neuro-rehabilitation software and digital therapeutics designed to retrain attentional mechanisms in patients with sensory-processing disorders or post-operative visual recovery.",
+  "score": 16,
+  "summary": "Researchers found that people who suffered early childhood blindness still possess the basic ability to integrate visual motion signals, but struggle with the attentional focus needed to isolate specific directions. This suggests that early sensory deprivation harms the brain's top-down attentional mechanisms rather than the core sensory processing hardware.",
+  "opportunity": "Development of targeted neuro-rehabilitation software or digital therapeutics designed to restore attentional allocation in patients with early-life sensory or developmental impairments.",
   "fields": [
    "Neuroscience",
-   "Software/AI",
-   "Clinical"
+   "Clinical",
+   "Software/AI"
   ],
   "added_date": "2026-11-16",
   "score_breakdown": {
    "novelty": {
-    "score": 4,
-    "reason": "The research provides a mechanistic refinement of existing knowledge regarding visual development rather than introducing a transformative scientific paradigm or a protectable technology. While it clarifies cognitive processing deficits, it functions as an incremental contribution to developmental neuroscience rather than a platform-enabling or highly disruptive innovation."
+    "score": 6,
+    "reason": "The research provides a significant conceptual shift by decoupling motion integration from attentional allocation, challenging a long-standing paradigm in visual neuroscience. While scientifically impactful for understanding neuroplasticity, it is an incremental refinement of mechanistic understanding rather than a platform-enabling breakthrough."
    },
    "commercial_potential": {
-    "score": 2,
-    "reason": "The paper focuses on basic mechanistic neuroscience regarding visual deprivation and attention, offering fundamental scientific insights rather than a clear pathway to a commercial product or clinical intervention."
+    "score": 3,
+    "reason": "This is a fundamental basic science study focused on cognitive neuroscience mechanisms rather than a therapeutic or diagnostic technology. While it provides insights into neurodevelopment, it lacks a direct pathway to a scalable product, device, or clinical intervention."
    },
    "market_size": {
-    "score": 2,
-    "reason": "This is a fundamental neuroscientific study focusing on visual processing mechanisms in early deprivation, which lacks direct commercial application or a clear path to a scalable clinical product. The research provides academic insight into cognition but does not address a distinct, high-value commercial market segment."
+    "score": 3,
+    "reason": "This is a fundamental basic science paper focused on neurobiological mechanisms of visual attention rather than a specific medical device, drug, or therapeutic intervention. While the underlying science is significant for understanding developmental disorders, it does not define a direct commercial market or addressable demand in its current form."
    },
    "trl": {
     "score": 2,
-    "reason": "This is fundamental neuroscientific research focused on characterizing cognitive mechanisms in sensory deprivation, lacking any applied therapeutic, diagnostic, or commercial technology component."
+    "reason": "This is a fundamental basic science study characterizing neurobiological mechanisms of visual processing in humans. It provides mechanistic insight but lacks a direct technological application, device, or therapeutic intervention currently moving toward clinical validation."
    },
    "ip_strength": {
-    "score": 1,
-    "reason": "This paper presents fundamental neuroscientific research on visual perception and attention mechanisms, which constitutes non-patentable scientific discovery rather than a protectable industrial technology or clinical IP. There is no underlying composition, device, or method that would satisfy the requirements for utility patent protection in a commercial life-science context."
+    "score": 2,
+    "reason": "This is a fundamental basic science study focused on neurobiological mechanisms of attention and vision rather than a technological or pharmaceutical invention. It lacks any patentable assets, proprietary devices, or industrial applications that would constitute intellectual property defensibility."
    }
   },
   "pi": "Ehud Zohary",
   "pi_full_name": "Ehud Zohary",
   "pi_email": "udiz@mail.huji.ac.il.",
   "pi_affiliation": "The Edmond and Lily Safra Center for Brain Sciences, The Hebrew University of Jerusalem, Edmond J. Safra Campus, Jerusalem 9190401, Israel; Department of Neurobiology, The Alexander Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Edmond J. Safra Campus, Jerusalem 9190401, Israel. Electronic address: udiz@mail.huji.ac.il.",
-  "eval_model": "gemini-3.1-flash-lite",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 11,
+  "prev_eval_model": "gemini-3.1-flash-lite",
   "hts_score": 1,
   "hts_reason": "The paper focuses on behavioral psychology and neurobiology related to visual deprivation rather than identifying a druggable molecular target or a biochemical assay suitable for high-throughput screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"

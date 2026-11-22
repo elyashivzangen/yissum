@@ -3,10 +3,10 @@ Loading existing papers from Google Sheet...
   Verifying HUJI affiliation for 266 papers via PubMed efetch...
   1 non-Gemma-scored papers to re-evaluate on Gemma.
   [1/1] re-eval: Global motion deficits following early visual deprivation reflect impa
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-  Gemini error (meta): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-      still no Gemma result — leaving as-is
-  Re-evaluated 0/1 papers onto Gemma.
-  Nothing re-scored (no non-Gemma papers, or Gemma still unavailable).
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+      re-scored 16 via gemma-4-26b-a4b-it (was 11 via gemini-3.1-flash-lite)
+  Re-evaluated 1/1 papers onto Gemma.
+Sheet updated: {"status":"ok","rows":270}
+  Archive: 1193 papers total.
+Generated papers_reader.html and papers_data.json with 269 papers and 58 researcher profiles.
 Re-evaluation complete.
