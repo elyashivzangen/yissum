@@ -1,302 +1,804 @@
 Loading existing papers from Google Sheet...
-  227 existing papers loaded.
-  Verifying HUJI affiliation for 224 papers via PubMed efetch...
-fetch_pubmed: 57 fetched, 42 new
-fetch_europepmc: 30 fetched, 0 new
+  269 existing papers loaded.
+  Verifying HUJI affiliation for 266 papers via PubMed efetch...
+fetch_pubmed: 52 fetched, 29 new
+fetch_europepmc: 25 fetched, 3 new
 fetch_semantic_scholar error: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hebrew+University+of+Jerusalem&fields=title%2Cabstract%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CpublicationDate%2Cauthors.affiliations&limit=50
 
-42 unique new papers to evaluate.
-Enriching PI contact info for 42 new papers...
+32 unique new papers to evaluate.
+Enriching PI contact info for 32 new papers...
 Enriching PI contact for 25 existing papers (backfill)...
-  [1/42] Response to the Letter to the Editor by Chang et al. regarding: "New-o
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+  [1/32] Prediction Accuracy of the Buonsanti Artificial Intelligence Formula.
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     openai/gpt-oss-20b (groq) succeeded
-    score=6 fields=['Immunology', 'Neuroscience', 'Clinical', 'Drug Discovery']
-    hts_score=1
-  [2/42] Documented non-tobacco nicotine dependence coding and incident age-rel
-    score=19 fields=['Clinical', 'Diagnostics']
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    hts_score=2
-  [3/42] Ethnic Origin, Self-Efficacy and Challenges in Cancer Information Seek
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=7 fields=['Clinical', 'Software/AI', 'Other']
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    hts_score=1
-  [4/42] Self-inserted spectacle arm entrapped in an incidental urachal diverti
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 85s before retry
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=14 fields=['Software/AI', 'Drug Discovery', 'Materials']
+    hts_score=1
+  [2/32] Seeing through hypoxia: an oxygen-independent fluorescent reporter rev
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
     gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
     openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=6 fields=['Other']
-    hts_score=1
-  [5/42] Terminal digit preference: A potential bias in radiographic and pathol
-    score=9 fields=['Diagnostics', 'Imaging', 'Software/AI', 'Clinical']
-    hts_score=1
-  [6/42] Unimodality for Radon Partitions of Random Vectors.
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    score=7 fields=['Software/AI']
-    hts_score=1
-  [7/42] Effects of stifle angle and cranial cruciate ligament deficiency on cr
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    score=13 fields=['Medical Device', 'Clinical']
-    hts_score=1
-  [8/42] The Two Phenotypes of Renal Failure Associated with Chronic Urinary Re
-    score=15 fields=['Clinical', 'Diagnostics']
-    hts_score=1
-  [9/42] Visual Performance and Patient-Reported Visual Function with Multifoca
-    score=32 fields=['Medical Device', 'Clinical', 'Imaging']
-    hts_score=1
-  [10/42] Natural History, Complications and Long-Term Prognosis of Patients wit
-    score=8 fields=['Clinical', 'Software/AI']
-    hts_score=1
-  [11/42] Comparing Erythropoietin, Darbepoetin and No Erythropoiesis-Stimulatin
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    score=17 fields=['Clinical']
-    hts_score=3
-  [12/42] Model-informed precision dosing of busulfan in Adults: Real world impl
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    score=25 fields=['Software/AI', 'Clinical']
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     openai/gpt-oss-20b (groq) succeeded
-    hts_score=1
-  [13/42] Global motion deficits following early visual deprivation reflect impa
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    score=23 fields=['Imaging', 'Diagnostics', 'Drug Discovery']
     gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    score=11 fields=['Neuroscience', 'Software/AI', 'Clinical']
-    hts_score=1
-  [14/42] Curvature Potential Formulation for Thin Elastic Sheets.
-    score=15 fields=['Materials', 'Medical Device', 'Software/AI']
-    hts_score=1
-  [15/42] Elastic interactions of mechanically polarizable cells.
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     openai/gpt-oss-20b (groq) succeeded
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    score=16 fields=['Medical Device', 'Synthetic Biology', 'Materials']
-    hts_score=1
-  [checkpoint: 15/42] writing 242 papers (227 retained + 15 new)...
-Sheet updated: {"status":"ok","rows":243}
-  Archive: 1166 papers total.
-Generated papers_reader.html and papers_data.json with 242 papers and 58 researcher profiles.
-  [16/42] Mechanism of photoinduced hydrogen atom transfer from nonanoic acid to
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=15 fields=['Clean Energy', 'Materials']
-    hts_score=1
-  [17/42] Interpretable Machine Learning Versus G-ROP Criteria for Screening Typ
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    score=24 fields=['Diagnostics', 'Software/AI', 'Imaging', 'Clinical']
-    hts_score=2
-  [18/42] Sex Differences in Time to Triage in the Emergency Department: A Retro
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=20 fields=['Clinical', 'Software/AI']
-    hts_score=1
-  [19/42] Gestational surrogacy at a moral crossroads: autonomy, exploitation, a
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=9 fields=['Clinical', 'Other']
-    hts_score=1
-  [20/42] How to Prevent Complications During Aquablation. Lessons Learned from 
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    score=30 fields=['Medical Device', 'Clinical']
-    hts_score=1
-  [21/42] Admission-Based Risk Adjustment for Internal Medicine Hospital Payment
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=26 fields=['Other']
-    hts_score=1
-  [22/42] Microscale spatial fragmentation promotes bacterial survival under ant
-    score=19 fields=['Clinical', 'Synthetic Biology', 'Drug Discovery']
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    hts_score=2
-  [23/42] Brain-wide pathways for object identity and location are dominated by 
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=15 fields=['Software/AI', 'Neuroscience']
-    hts_score=1
-  [24/42] APOBEC3-mediated therapy resistance and immunogenicity in solid tumors
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=30 fields=['Drug Discovery', 'Immunology', 'Diagnostics', 'Genomics']
     hts_score=4
-  [25/42] Internet-Based Cognitive Behavioral Therapy for Panic Disorder Among A
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
+  [3/32] BUILDING ON COMMON GROUND: SMOKING CESSATION INTERVENTIONS IN HOSPITAL
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
     gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
     openai/gpt-oss-20b (groq) succeeded
-    score=21 fields=['Software/AI', 'Clinical', 'Neuroscience']
-    hts_score=1
-  [26/42] Complex linkage disequilibrium and quantitative trait loci in chicken.
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=11 fields=['AgriTech', 'Genomics']
-    hts_score=1
-  [27/42] The role of water in the thermal decomposition of HXeCl in the HXeCl-H
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
-    score=7 fields=['Materials', 'Other']
-    hts_score=1
-  [28/42] From posterior scleritis to cavernous sinus thrombosis: an unusual ocu
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     openai/gpt-oss-20b (groq) succeeded
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    all 3 candidate(s) cooling down — waiting 0s before retry
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 84s before retry
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
     openai/gpt-oss-20b (groq) succeeded
-    score=9 fields=['Clinical', 'Immunology', 'Diagnostics']
-    hts_score=1
-  [29/42] Atypical Presentation of Extensive Stanford Type A Aortic Dissection I
-    score=5 fields=['Software/AI', 'Clinical', 'Diagnostics']
-    hts_score=1
-  [30/42] A tale of two nails: A retrospective cohort comparison of TFNA and PFN
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    score=16 fields=['Clinical', 'Software/AI', 'Other']
     gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
     openai/gpt-oss-20b (groq) succeeded
-    score=16 fields=['Medical Device', 'Clinical']
     hts_score=1
-  [checkpoint: 30/42] writing 257 papers (227 retained + 30 new)...
-Sheet updated: {"status":"ok","rows":258}
-  Archive: 1181 papers total.
-Generated papers_reader.html and papers_data.json with 257 papers and 58 researcher profiles.
-  [31/42] Resilience and vulnerability factors for post-traumatic symptoms among
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    score=12 fields=['Software/AI', 'Clinical', 'Neuroscience']
-    hts_score=1
-  [32/42] Scleroedema Preceding Monoclonal Gammopathy by 30 Years.
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    openai/gpt-oss-20b (groq) succeeded
-    score=7 fields=['Diagnostics', 'Clinical', 'Immunology']
-    hts_score=2
-  [33/42] Did you cite your sources? Why bibliography matters.
-    score=5 fields=['Software/AI', 'Other']
-    hts_score=1
-  [34/42] Ligand-based prediction of novel sweetener candidates.
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+  [4/32] [Direct percutaneous endoscopic jejunostomy using double-balloon enter
     gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    gemma-4-31b-it failed 3x in a row — cooling down 90s
-    score=29 fields=['FoodTech', 'Software/AI']
-    hts_score=3
-  [35/42] From Catheters to Wearables: Advanced Hemodynamic Monitoring and the E
-    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    score=33 fields=['Medical Device', 'Diagnostics', 'Software/AI', 'Clinical']
-    hts_score=1
-  [36/42] Evolutionary origins and modern rise of allergic diseases: an integrat
-    score=17 fields=['Immunology', 'Clinical', 'Genomics']
-    hts_score=2
-  [37/42] UV-induced translation capacity in 
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    score=17 fields=['Synthetic Biology', 'Proteomics', 'Genomics']
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=13 fields=['Medical Device', 'Clinical']
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=1
+  [5/32] Skin cancer in patients with oculocutaneous albinism at a Mediterranea
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 55s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 23s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 64s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
     gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    score=11 fields=['Diagnostics', 'Clinical', 'Immunology', 'Imaging']
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    hts_score=2
+  [6/32] Critique of finasteride safety perspectives The need for improved cont
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=8 fields=['Clinical']
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=2
+  [7/32] Real-World Outcomes of Long-Acting Beta-Agonist Add-On Therapy to Inha
+    all 3 candidate(s) cooling down — waiting 58s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 27s before retry
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 84s before retry
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=20 fields=['Clinical', 'Drug Discovery', 'Medical Device']
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=2
+  [8/32] Time-Dependent Density Functional Theory of Electrons and Quantum Nucl
+    all 3 candidate(s) cooling down — waiting 87s before retry
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 87s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 59s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=18 fields=['Software/AI', 'Quantum', 'Materials']
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
     hts_score=1
-  [38/42] The nucleus of the lateral olfactory tract is required for learning od
-    score=11 fields=['Neuroscience', 'Clinical']
+  [9/32] Stratification Controls Vertical Dynamics and Distribution of Organic 
+    all 3 candidate(s) cooling down — waiting 57s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 28s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=17 fields=['Materials', 'Software/AI', 'Other']
+    all 3 candidate(s) cooling down — waiting 18s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=1
+  [10/32] CASCADE is an agentic AI framework for trustworthy biomarker discovery
+    all 3 candidate(s) cooling down — waiting 28s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 38s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 18s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 28s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 39s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 18s before retry
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=33 fields=['Diagnostics', 'Genomics', 'Software/AI', 'Clinical']
+    hts_score=2
+  [11/32] Precision Treatment for Severe 
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 44s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 42s before retry
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=17 fields=['Drug Discovery', 'Diagnostics', 'Clinical', 'Medical Device']
+    all 3 candidate(s) cooling down — waiting 15s before retry
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=2
+  [12/32] DASH diet adherence is associated with lower ischemic stroke incidence
+    all 3 candidate(s) cooling down — waiting 42s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=12 fields=['FoodTech', 'Clinical', 'Other']
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    hts_score=1
+  [13/32] Factors influencing effectiveness of skin disinfection before venipunc
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 29s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 58s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 29s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=17 fields=['Medical Device', 'Diagnostics', 'Clinical']
+    all 3 candidate(s) cooling down — waiting 58s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=2
+  [14/32] Preclinical progress in the target validation of viroporins: candidate
+    all 3 candidate(s) cooling down — waiting 29s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 58s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 29s before retry
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 29s before retry
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 29s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 58s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=22 fields=['Drug Discovery', 'Immunology']
+    all 3 candidate(s) cooling down — waiting 28s before retry
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=5
+  [15/32] Barriers to accessing ambulatory mental health care for children in Is
+    all 3 candidate(s) cooling down — waiting 29s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=12 fields=['Clinical', 'Software/AI', 'Neuroscience']
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=1
+  [checkpoint: 15/32] writing 284 papers (269 retained + 15 new)...
+Sheet updated: {"status":"ok","rows":285}
+  Archive: 1208 papers total.
+Generated papers_reader.html and papers_data.json with 284 papers and 58 researcher profiles.
+  [16/32] Idiopathic orbital inflammation: a changing disease or a changing labe
+    all 3 candidate(s) cooling down — waiting 11s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 59s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 12s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 15s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 59s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 11s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=15 fields=['Diagnostics', 'Medical Device', 'Clinical']
+    all 3 candidate(s) cooling down — waiting 15s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=2
+  [17/32] Unusual malignant bradycardia in a patient with left bundle branch blo
+    all 3 candidate(s) cooling down — waiting 59s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 11s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 15s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 57s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 11s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 17s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=10 fields=['Medical Device', 'Diagnostics', 'Clinical']
+    all 3 candidate(s) cooling down — waiting 57s before retry
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=1
+  [18/32] Integrating gene drives with established pest controls to mitigate spi
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 84s before retry
+    gemma-4-26b-a4b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 87s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=36 fields=['Synthetic Biology', 'AgriTech']
+    all 3 candidate(s) cooling down — waiting 84s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=2
+  [19/32] Immature platelet fraction and long-term mortality in acute coronary s
+    all 3 candidate(s) cooling down — waiting 3s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 80s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 30s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 28s before retry
+    score=23 fields=['Diagnostics', 'Clinical']
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    hts_score=2
+  [20/32] Light Switchable Plasmon-Exciton Coupling at the Nanoscale via Photore
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    hts_score=2
-  [39/42] Trends in the timing of non-implantable bone-conduction hearing rehabi
-    score=18 fields=['Medical Device', 'Clinical']
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 85s before retry
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=29 fields=['Materials', 'Medical Device', 'Imaging']
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
     hts_score=1
-  [40/42] Reducing bacterial resistance evolution through antimicrobial peptide 
+  [21/32] Normative Distal Radius Radiological Measurements: The Influence of Ag
+    all 3 candidate(s) cooling down — waiting 59s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 28s before retry
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 30s before retry
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=14 fields=['Imaging', 'Medical Device', 'Diagnostics']
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=1
+  [22/32] SGLT2 inhibitor use is associated with more polycythemia vera diagnosi
+    all 3 candidate(s) cooling down — waiting 87s before retry
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 58s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 26s before retry
     gemini-3.1-flash-lite failed (error): The read operation timed out
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=20 fields=['Clinical', 'Diagnostics', 'Drug Discovery']
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=1
+  [23/32] A Painful Intertriginous Rash in a 77-year-old Woman: A Quiz.
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
     gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     openai/gpt-oss-20b (groq) succeeded
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 31s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=8 fields=['Other']
+    all 3 candidate(s) cooling down — waiting 52s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    hts_score=1
+  [24/32] More than a feline disease: Ocular manifestations in five dogs infecte
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 22s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 49s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 12s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=17 fields=['Diagnostics', 'Clinical']
+    all 3 candidate(s) cooling down — waiting 25s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=1
+  [25/32] Association of atrial fibrillation with mortality across quantitativel
+    all 3 candidate(s) cooling down — waiting 47s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 5s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 27s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 54s before retry
     gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
-    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     openai/gpt-oss-20b (groq) succeeded
     gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
-    score=27 fields=['Drug Discovery', 'Immunology', 'Synthetic Biology']
-    hts_score=3
-  [41/42] A Bacterial Extracellular Matrix Protein Forms a Supramolecular Metall
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=19 fields=['Medical Device', 'Diagnostics', 'Clinical']
     gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
-    openai/gpt-oss-20b (groq) succeeded
-    score=20 fields=['Materials', 'Drug Discovery', 'Medical Device']
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
     openai/gpt-oss-20b (groq) succeeded
     hts_score=1
-  [42/42] IBD is associated with species-specific changes in gut microbial gene 
-    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+  [26/32] Laparoscopic Management of Acute Appendicitis During Pregnancy-Does Ap
+    all 3 candidate(s) cooling down — waiting 84s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
     openai/gpt-oss-20b (groq) succeeded
     gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
     gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
     gemma-4-31b-it failed 3x in a row — cooling down 90s
-    score=19 fields=['Diagnostics', 'Genomics', 'Immunology', 'Clinical']
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 73s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 12s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 75s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=16 fields=['Clinical', 'Medical Device', 'Imaging']
+    all 3 candidate(s) cooling down — waiting 12s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=1
+  [27/32] Major depressive disorder involves motivational conflicts in emotion r
+    all 3 candidate(s) cooling down — waiting 57s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 13s before retry
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 43s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=22 fields=['Neuroscience', 'Clinical', 'Software/AI']
+    hts_score=1
+  [28/32] Revisiting the Role of Mouse Mammary Tumor Virus (MMTV) in Breast Canc
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 6s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=18 fields=['Immunology', 'Drug Discovery', 'Diagnostics']
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
     hts_score=2
+  [29/32] The Oral-Systemic Interface in Healthy Longevity: A Narrative Review o
+    all 3 candidate(s) cooling down — waiting 78s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 7s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=18 fields=['Medical', 'Diagnostics', 'Immunology']
+    all 3 candidate(s) cooling down — waiting 30s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=1
+  [30/32] Tyrannical militarism, oil money and other issues in the medicalisatio
+    all 3 candidate(s) cooling down — waiting 23s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 32s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 30s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 24s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 24s before retry
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 0s before retry
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    score=10 fields=['Other']
+    all 3 candidate(s) cooling down — waiting 32s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=1
+  [checkpoint: 30/32] writing 299 papers (269 retained + 30 new)...
+Sheet updated: {"status":"ok","rows":300}
+  Archive: 1223 papers total.
+Generated papers_reader.html and papers_data.json with 299 papers and 58 researcher profiles.
+  [31/32] Precision Treatment for Severe &lt;i&gt;KCNT1&lt;/i&gt; Epileptic Ence
+    all 3 candidate(s) cooling down — waiting 48s before retry
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 3s before retry
+    gemini-3.1-flash-lite failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    all 3 candidate(s) cooling down — waiting 81s before retry
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemini-3.1-flash-lite failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    gemini-3.1-flash-lite failed 3x in a row — cooling down 90s
+    gemma-4-31b-it failed (error): 504 DEADLINE_EXCEEDED. {'error': {'code': 504, 'message': 'Deadline expired before operation could complete.', 'status': 'DEADLINE_EXCEEDED'}}
+    openai/gpt-oss-20b (groq) succeeded
+    score=27 fields=['Drug Discovery', 'Neuroscience', 'Genomics', 'Clinical']
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    gemma-4-31b-it failed 3x in a row — cooling down 90s
+    openai/gpt-oss-20b (groq) succeeded
+    hts_score=9
+  [32/32] Evaluation of combat-related orthopaedic injuries: a comparative study
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    openai/gpt-oss-20b (groq) succeeded
+    gemma-4-26b-a4b-it failed (error): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+    score=10 fields=['Medical Device', 'Clinical', 'Other']
+    hts_score=1
 
-Kept all 227 existing papers, added 42 new.
-  [checkpoint: final] writing 269 papers (227 retained + 42 new)...
-Sheet updated: {"status":"ok","rows":270}
-  Archive: 1193 papers total.
-Generated papers_reader.html and papers_data.json with 269 papers and 58 researcher profiles.
+Kept all 269 existing papers, added 32 new.
+  [checkpoint: final] writing 301 papers (269 retained + 32 new)...
+Sheet updated: {"status":"ok","rows":302}
+  Archive: 1225 papers total.
+Generated papers_reader.html and papers_data.json with 301 papers and 58 researcher profiles.
 Done.
