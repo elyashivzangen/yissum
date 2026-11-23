@@ -2,7 +2,6 @@
  {
   "id": "pubmed_43070880",
   "title": "Prediction Accuracy of the Buonsanti Artificial Intelligence Formula.",
-  "abstract": "",
   "authors": [
    "Nir Sorkin",
    "Rotem Zadok",
@@ -15,9 +14,6 @@
   "date": "2026-11-23",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43070880/",
   "source": "PubMed",
-  "pi": "Adi Abulafia",
-  "pi_affiliation": "Department of Ophthalmology, Shaare Zedek Medical Center and the Hebrew University-Hadassah Medical School, Jerusalem, Israel.",
-  "pi_full_name": "Adi Abulafia",
   "score": 14,
   "summary": "This paper assesses the predictive precision of the Buonsanti AI formula, a specialized computational approach for modeling biological or physical systems. It focuses on quantifying the gap between AI-driven theoretical predictions and empirical experimental results.",
   "opportunity": "Development of high-fidelity predictive modeling software to reduce R&D trial-and-error cycles in drug design or materials science.",
@@ -26,6 +22,7 @@
    "Drug Discovery",
    "Materials"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 1,
@@ -37,7 +34,7 @@
    },
    "market_size": {
     "score": 3,
-    "reason": "The paper’s title suggests a specialized AI formula for prediction accuracy, implying a narrow, niche application with limited addressable market; insufficient information indicates a modest market size."
+    "reason": "The paper's title suggests a specialized AI formula for prediction accuracy, implying a narrow, niche application with limited addressable market; insufficient information indicates a modest market size."
    },
    "trl": {
     "score": 4,
@@ -48,8 +45,13 @@
     "reason": "The paper appears to focus on evaluating an AI formula rather than presenting a novel, patentable technology; without evidence of a unique algorithmic innovation or proprietary data, the IP defensibility is likely limited."
    }
   },
+  "pi": "Adi Abulafia",
+  "pi_full_name": "Adi Abulafia",
+  "pi_email": "",
+  "pi_affiliation": "Department of Ophthalmology, Shaare Zedek Medical Center and the Hebrew University-Hadassah Medical School, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper focuses on an AI formula's predictive accuracy and fails to identify a specific molecule, target, disease, or testable assay.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -57,7 +59,6 @@
  {
   "id": "pubmed_43069012",
   "title": "Seeing through hypoxia: an oxygen-independent fluorescent reporter reveals ferritin regulation and mitochondrial remodeling in Caenorhabditis elegans.",
-  "abstract": "",
   "authors": [
    "Ankit Chatterjee",
    "Binghong Cai",
@@ -69,10 +70,6 @@
   "date": "2026-11-23",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43069012/",
   "source": "PubMed",
-  "pi": "Einav Gross",
-  "pi_affiliation": "Department of Biochemistry and Molecular Biology, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel.",
-  "pi_full_name": "Einav Gross",
-  "pi_email": "einav.gross@mail.huji.ac.il",
   "score": 23,
   "summary": "Researchers at Hebrew University of Jerusalem have engineered a fluorescent reporter that functions independently of oxygen levels, enabling real‑time visualization of ferritin dynamics and mitochondrial remodeling in the model organism Caenorhabditis elegans. This tool allows scientists to study cellular responses to hypoxia without the confounding effects of oxygen‑dependent fluorophores.",
   "opportunity": "The oxygen‑independent reporter can be adapted into a diagnostic imaging agent or high‑throughput screening tool for hypoxia‑associated diseases such as cancer, opening a commercial pathway in medical imaging and drug discovery.",
@@ -81,6 +78,7 @@
    "Diagnostics",
    "Drug Discovery"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 9,
@@ -103,8 +101,13 @@
     "reason": "The innovation appears to be a biological tool/reporter rather than a novel chemical entity or a broad platform technology, limiting its patentability to specific sequences or applications. Without an abstract, it is difficult to determine if the mechanism provides significant freedom to operate or if it is a niche academic discovery."
    }
   },
+  "pi": "Einav Gross",
+  "pi_full_name": "Einav Gross",
+  "pi_email": "einav.gross@mail.huji.ac.il",
+  "pi_affiliation": "Department of Biochemistry and Molecular Biology, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 4,
   "hts_reason": "The paper focuses on a fluorescent reporter that reports on ferritin regulation and mitochondrial remodeling in C. elegans, providing a specific assay (fluorescence imaging) but does not identify a novel molecule or target, nor link it to a specific human disease or condition.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -112,7 +115,6 @@
  {
   "id": "pubmed_43068380",
   "title": "BUILDING ON COMMON GROUND: SMOKING CESSATION INTERVENTIONS IN HOSPITAL SETTINGS IN LOW- AND MIDDLE-INCOME COUNTRIES. A RAPID NARRATIVE REVIEW.",
-  "abstract": "",
   "authors": [
    "Luz Angela Torres-López",
    "Marija Milic",
@@ -121,12 +123,9 @@
    "Yael Bar-Zeev"
   ],
   "journal": "Nicotine & tobacco research : official journal of the Society for Research on Nicotine and Tobacco",
-  "date": "2026-11-22",
+  "date": "2026 Nov 22",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43068380/",
   "source": "PubMed",
-  "pi": "Yael Bar-Zeev",
-  "pi_affiliation": "Braun School of Public Health and Community Medicine, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Yael Bar-Zeev",
   "score": 16,
   "summary": "The paper reviews smoking cessation strategies used in hospital settings across low- and middle-income countries, highlighting gaps and best practices. It emphasizes the need for scalable, culturally adapted interventions to reduce tobacco-related morbidity in resource-limited healthcare environments.",
   "opportunity": "Develop a low-cost, AI-driven digital platform that delivers personalized smoking cessation counseling and monitoring for hospitals in LMICs, integrating with existing health records to improve uptake and outcomes.",
@@ -135,6 +134,7 @@
    "Software/AI",
    "Other"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -157,8 +157,13 @@
     "reason": "This is a narrative review of existing interventions rather than a novel technical invention, offering no patentable intellectual property or proprietary technology."
    }
   },
+  "pi": "Yael Bar-Zeev",
+  "pi_full_name": "Yael Bar-Zeev",
+  "pi_email": "",
+  "pi_affiliation": "Braun School of Public Health and Community Medicine, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The review does not identify a specific new molecule or target, nor does it link a particular target to a disease or describe a testable assay; it merely discusses general smoking cessation interventions.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -166,18 +171,14 @@
  {
   "id": "pubmed_43068369",
   "title": "[Direct percutaneous endoscopic jejunostomy using double-balloon enteroscopy in a patient with Roux-en-Y gastric bypass (RYGB): challenges in feeding tube insertion and management in complex anatomy].",
-  "abstract": "",
   "authors": [
    "Revital Alon",
    "David Hakimian"
   ],
   "journal": "Harefuah",
-  "date": "2026-11-22",
+  "date": "2026 Nov 22",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43068369/",
   "source": "PubMed",
-  "pi": "David Hakimian",
-  "pi_affiliation": "Gastrointestinal Department, Hadassah Medical Center, Jerusalem, Israel, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "David Hakimian",
   "score": 13,
   "summary": "The paper reports a single case of direct percutaneous endoscopic jejunostomy performed with double-balloon enteroscopy in a patient who had undergone Roux-en-Y gastric bypass, highlighting the technical challenges and management strategies for feeding tube placement in altered gastrointestinal anatomy. It provides practical insights into procedural adaptations required for complex post-surgical patients.",
   "opportunity": "Develop a specialized, AI-assisted endoscopic guidance system or modular feeding-tube kit designed for patients with surgically altered GI anatomy, improving safety and success rates of enteral access.",
@@ -185,6 +186,7 @@
    "Medical Device",
    "Clinical"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -207,8 +209,13 @@
     "reason": "The paper describes a single clinical case of a procedural technique; it offers limited novel, patentable concepts and lacks evidence of a broadly protectable platform or technology."
    }
   },
+  "pi": "David Hakimian",
+  "pi_full_name": "David Hakimian",
+  "pi_email": "",
+  "pi_affiliation": "Gastrointestinal Department, Hadassah Medical Center, Jerusalem, Israel, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The article describes a clinical technique for jejunostomy placement; it does not identify a specific molecule or target, nor link it to a disease, and it does not present a biochemical assay suitable for HTS.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -216,7 +223,6 @@
  {
   "id": "pubmed_43068039",
   "title": "Skin cancer in patients with oculocutaneous albinism at a Mediterranean referral center.",
-  "abstract": "",
   "authors": [
    "Michael Cleiman",
    "Claudia Yahalom",
@@ -225,12 +231,9 @@
    "Sivan Sheffer Levi"
   ],
   "journal": "JAAD international",
-  "date": "2026-11-22",
+  "date": "2026 Nov 22",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43068039/",
   "source": "PubMed",
-  "pi": "Sivan Sheffer Levi",
-  "pi_affiliation": "The Faculty of Medicine, Department of Dermatology, Hebrew University of Jerusalem, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Sivan Sheffer Levi",
   "score": 11,
   "summary": "The study examines the incidence, types, and clinical presentation of skin cancers in patients with oculocutaneous albinism treated at a Mediterranean referral center. It highlights the heightened risk and unique diagnostic challenges faced by this population, underscoring the need for specialized screening and prevention strategies.",
   "opportunity": "Develop a targeted, AI‑driven dermatoscopic screening platform tailored for albinism patients to enable earlier detection and reduce morbidity.",
@@ -240,6 +243,7 @@
    "Immunology",
    "Imaging"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -262,8 +266,13 @@
     "reason": "This is a clinical observational study reporting case prevalence in a specific patient population, which lacks novel therapeutic, diagnostic, or technical inventions capable of patent protection or proprietary defensibility."
    }
   },
+  "pi": "Sivan Sheffer Levi",
+  "pi_full_name": "Sivan Sheffer Levi",
+  "pi_email": "",
+  "pi_affiliation": "The Faculty of Medicine, Department of Dermatology, Hebrew University of Jerusalem, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 2,
   "hts_reason": "This study is a descriptive clinical observation of skin cancer prevalence in a specific patient cohort rather than a mechanistic study identifying a druggable target or assay. It lacks both a specific molecular target for screening and a methodology for testing drug-target interactions.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -271,18 +280,14 @@
  {
   "id": "pubmed_43059411",
   "title": "Preclinical progress in the target validation of viroporins: candidates for potential target therapy.",
-  "abstract": "",
   "authors": [
    "Kingshuk Basu",
    "Isaiah T Arkin"
   ],
   "journal": "Expert opinion on therapeutic targets",
-  "date": "2026-11-22",
+  "date": "2026 Nov 22",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43059411/",
   "source": "PubMed",
-  "pi": "Isaiah T Arkin",
-  "pi_affiliation": "Department of Biomedical Engineering, City University of Hong Kong, Kowloon, Hong Kong SAR of the People's Republic of China.; The Alexander Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Isaiah T Arkin",
   "score": 22,
   "summary": "The study focuses on validating viroporins—viral ion channels—as therapeutic targets, advancing preclinical evidence for their role in viral life cycles. It explores potential inhibitors that could disrupt viral replication and pathogenesis.",
   "opportunity": "The findings open a pathway for developing novel antiviral drugs targeting viroporins, offering a new class of therapeutics against a range of viral infections.",
@@ -290,6 +295,7 @@
    "Drug Discovery",
    "Immunology"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 4,
@@ -312,8 +318,13 @@
     "reason": "The paper focuses on preclinical target validation of viroporins, a well-known class of viral proteins; while it may identify specific therapeutic targets, the novelty and patentability are limited, and the work does not present a clear platform or near-market innovation that would confer strong defensibility."
    }
   },
+  "pi": "Isaiah T Arkin",
+  "pi_full_name": "Isaiah T Arkin",
+  "pi_email": "",
+  "pi_affiliation": "Department of Biomedical Engineering, City University of Hong Kong, Kowloon, Hong Kong SAR of the People's Republic of China.; The Alexander Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 5,
   "hts_reason": "The title indicates a focus on viroporins as potential therapeutic targets, but does not name a specific viroporin or viral protein, nor does it explicitly link to a particular disease or describe a concrete assay; the content appears to be a general review of preclinical validation rather than a detailed study of a single target.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -321,24 +332,20 @@
  {
   "id": "pubmed_43067474",
   "title": "Critique of finasteride safety perspectives The need for improved continuing medical education supported by independent scientific evidence free from industry influence.",
-  "abstract": "",
   "authors": [
    "M Brezis"
   ],
   "journal": "Actas dermo-sifiliograficas",
-  "date": "2026-11-21",
+  "date": "2026 Nov 21",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43067474/",
   "source": "PubMed",
-  "pi": "M Brezis",
-  "pi_affiliation": "Braun School of Public Health and Faculty of Medicine Hadassah-Hebrew University Medical Center Jerusalem, Israel. Electronic address: brezis@mail.huji.ac.il.",
-  "pi_full_name": "M Brezis",
-  "pi_email": "brezis@mail.huji.ac.il.",
   "score": 8,
   "summary": "The paper critically examines the safety profile of finasteride, arguing that current medical education lacks sufficient independent evidence free from industry bias. It calls for enhanced continuing medical education to better inform clinicians and patients about potential risks.",
   "opportunity": "Develop an AI-driven, evidence-based decision support platform that aggregates unbiased drug safety data to improve prescriber confidence and patient outcomes.",
   "fields": [
    "Clinical"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 2,
@@ -361,8 +368,13 @@
     "reason": "The paper presents a critique of existing drug safety perspectives rather than a novel invention or technology, offering little basis for patentable or defensible intellectual property."
    }
   },
+  "pi": "M Brezis",
+  "pi_full_name": "M Brezis",
+  "pi_email": "brezis@mail.huji.ac.il.",
+  "pi_affiliation": "Braun School of Public Health and Faculty of Medicine Hadassah-Hebrew University Medical Center Jerusalem, Israel. Electronic address: brezis@mail.huji.ac.il.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 2,
   "hts_reason": "The article discusses finasteride, a known drug, but does not identify a new molecule or target, nor does it link it to a specific disease beyond general use, and it provides no assay or method for testing.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -370,7 +382,6 @@
  {
   "id": "pubmed_43067379",
   "title": "Real-World Outcomes of Long-Acting Beta-Agonist Add-On Therapy to Inhaled Corticosteroids in Preschool Children with Asthma: A Multicenter Retrospective Study.",
-  "abstract": "",
   "authors": [
    "Guy Hazan",
    "Shoham Jellinek",
@@ -378,13 +389,9 @@
    "Alex Gileles-Hillel"
   ],
   "journal": "Chest",
-  "date": "2026-11-21",
+  "date": "2026 Nov 21",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43067379/",
   "source": "PubMed",
-  "pi": "Alex Gileles-Hillel",
-  "pi_affiliation": "Faculty of Medicine, The Hebrew University of Jerusalem, Israel; Pediatric Pulmonology and Sleep Unit & The Wohl Institute for Translational Medicine, Hadassah Medical Center, Jerusalem, Israel. Electronic address: alex.gileles@mail.huji.ac.il.",
-  "pi_full_name": "Alex Gileles-Hillel",
-  "pi_email": "alex.gileles@mail.huji.ac.il.",
   "score": 20,
   "summary": "This study evaluates the real-world effectiveness and safety of adding long‑acting beta‑agonists to inhaled corticosteroids in preschool children with asthma, using data from multiple centers. It provides evidence on clinical outcomes, adherence, and potential adverse events in a pediatric population.",
   "opportunity": "The findings support the development and market expansion of pediatric inhaled bronchodilator therapies and next‑generation inhaler devices tailored for young children.",
@@ -393,6 +400,7 @@
    "Drug Discovery",
    "Medical Device"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 2,
@@ -415,8 +423,13 @@
     "reason": "The study reports clinical outcomes of a therapeutic regimen; it does not describe a novel drug, device, or technology that would be patentable or defensible, so the IP strength is minimal."
    }
   },
+  "pi": "Alex Gileles-Hillel",
+  "pi_full_name": "Alex Gileles-Hillel",
+  "pi_email": "alex.gileles@mail.huji.ac.il.",
+  "pi_affiliation": "Faculty of Medicine, The Hebrew University of Jerusalem, Israel; Pediatric Pulmonology and Sleep Unit & The Wohl Institute for Translational Medicine, Hadassah Medical Center, Jerusalem, Israel. Electronic address: alex.gileles@mail.huji.ac.il.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 2,
   "hts_reason": "The paper does not identify a new specific molecule or target, merely discusses a known long‑acting beta‑agonist; it links the therapy to asthma (the disease), but it does not describe a novel assay or method for testing the target's effect.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -424,7 +437,6 @@
  {
   "id": "pubmed_43065768",
   "title": "CASCADE is an agentic AI framework for trustworthy biomarker discovery in precision oncology.",
-  "abstract": "",
   "authors": [
    "Adar Yaacov",
    "Roni Gillis",
@@ -436,12 +448,9 @@
    "Noam Asna"
   ],
   "journal": "iScience",
-  "date": "2026-11-21",
+  "date": "2026 Nov 21",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43065768/",
   "source": "PubMed",
-  "pi": "Noam Asna",
-  "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Noam Asna",
   "score": 33,
   "summary": "CASCADE is an AI framework that autonomously identifies reliable biomarkers for precision oncology, integrating multi‑omics data and clinical outcomes to guide personalized treatment decisions. It leverages advanced machine learning to streamline biomarker validation, potentially accelerating the development of targeted cancer therapies.",
   "opportunity": "By providing a rapid, trustworthy biomarker discovery pipeline, CASCADE can reduce drug development timelines and lower costs for oncology companies, creating a high‑value software platform for precision medicine.",
@@ -451,6 +460,7 @@
    "Software/AI",
    "Clinical"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 7,
@@ -473,8 +483,13 @@
     "reason": "The paper proposes an AI framework for biomarker discovery, which could be patentable as a novel algorithmic method, but without details on specific technical contributions or prior art, the defensibility is moderate rather than high."
    }
   },
+  "pi": "Noam Asna",
+  "pi_full_name": "Noam Asna",
+  "pi_email": "",
+  "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 2,
   "hts_reason": "The paper describes an AI framework (methodology) rather than identifying a specific molecule or target, and no specific disease or assay is mentioned in the title.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -482,7 +497,6 @@
  {
   "id": "pubmed_43065524",
   "title": "DASH diet adherence is associated with lower ischemic stroke incidence among older women: findings from a sex-specific analysis.",
-  "abstract": "",
   "authors": [
    "Miri Lutski",
    "Carmit Libruder",
@@ -494,13 +508,9 @@
    "Tali Sinai"
   ],
   "journal": "Frontiers in nutrition",
-  "date": "2026-11-21",
+  "date": "2026 Nov 21",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43065524/",
   "source": "PubMed",
-  "pi": "Tali Sinai",
-  "pi_affiliation": "School of Nutritional Sciences, The Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Rehovot, Israel.; Israel Center for Disease Control, Israel Ministry of Health, Ramat Gan, Israel.",
-  "pi_full_name": "Tali Sinai",
-  "pi_email": "tali.sinai@mail.huji.ac.il",
   "score": 12,
   "summary": "The study examines how adherence to the DASH diet correlates with a reduced risk of ischemic stroke specifically in older women. It highlights a sex-specific relationship between dietary patterns and cardiovascular health outcomes in an aging population.",
   "opportunity": "Personalized nutrition platforms and precision wellness apps could leverage these sex-specific dietary insights to provide targeted preventative health interventions for aging female demographics.",
@@ -509,6 +519,7 @@
    "Clinical",
    "Other"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -531,8 +542,13 @@
     "reason": "The study reports observational associations between diet and health outcomes, which are unlikely to be patentable or defensible as a technological innovation."
    }
   },
+  "pi": "Tali Sinai",
+  "pi_full_name": "Tali Sinai",
+  "pi_email": "tali.sinai@mail.huji.ac.il",
+  "pi_affiliation": "School of Nutritional Sciences, The Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Rehovot, Israel.; Israel Center for Disease Control, Israel Ministry of Health, Ramat Gan, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper is an epidemiological study on dietary habits (DASH diet) and stroke risk; it does not identify a specific molecular target, nor does it describe a testable assay for HTS.",
   "hts_eval_model": "gemma-4-31b-it"
@@ -540,7 +556,6 @@
  {
   "id": "pubmed_43065438",
   "title": "Factors influencing effectiveness of skin disinfection before venipuncture.",
-  "abstract": "",
   "authors": [
    "Shmuel Benenson",
    "Ahmad Ahram",
@@ -549,12 +564,9 @@
    "Phillip D Levin"
   ],
   "journal": "Infection prevention in practice",
-  "date": "2026-11-21",
+  "date": "2026 Nov 21",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43065438/",
   "source": "PubMed",
-  "pi": "Phillip D Levin",
-  "pi_affiliation": "Faculty of Medicine, Hebrew University of Jerusalem, Israel.; Department of Intensive Care, Shaare Zedek Medical Center, Jerusalem, Israel.",
-  "pi_full_name": "Phillip D Levin",
   "score": 17,
   "summary": "The study investigates how different skin disinfection methods affect the success of venipuncture, focusing on factors such as antiseptic type, application technique, and timing. Findings aim to optimize protocols to reduce infection risk and improve patient comfort during blood draws.",
   "opportunity": "Develop a next‑generation, user‑friendly antiseptic kit or smart device that automates optimal skin prep for venipuncture, enhancing safety and efficiency in clinical settings.",
@@ -563,6 +575,7 @@
    "Diagnostics",
    "Clinical"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -585,8 +598,13 @@
     "reason": "The study addresses general clinical practice factors rather than a novel device, method, or composition, offering little basis for patentable or defensible IP."
    }
   },
+  "pi": "Phillip D Levin",
+  "pi_full_name": "Phillip D Levin",
+  "pi_email": "",
+  "pi_affiliation": "Faculty of Medicine, Hebrew University of Jerusalem, Israel.; Department of Intensive Care, Shaare Zedek Medical Center, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 2,
   "hts_reason": "The paper does not identify a specific new molecule or target, nor does it link a particular target to a disease; it merely discusses general skin disinfection practices, lacking a testable assay for a defined target.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -594,7 +612,6 @@
  {
   "id": "pubmed_43066025",
   "title": "Stratification Controls Vertical Dynamics and Distribution of Organic Contaminants in Micro-Estuaries.",
-  "abstract": "",
   "authors": [
    "Noam Gridish",
    "Yair Suari",
@@ -613,10 +630,6 @@
   "date": "2026-11-18",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43066025/",
   "source": "PubMed",
-  "pi": "Benny Chefetz",
-  "pi_affiliation": "Department of Soil and Water Sciences, Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, P.O. Box 12, Rehovot 7610001, Israel.; Agricultural Research Organization - Volcani Institute, Rishon LeZion 7505101, Israel.",
-  "pi_full_name": "Benny Chefetz",
-  "pi_email": "benny.chefetz@mail.huji.ac.il",
   "score": 17,
   "summary": "Researchers from Hebrew University of Jerusalem investigated how water stratification in small estuaries influences the vertical movement and concentration of organic pollutants. Their findings reveal that layering of water layers can trap or release contaminants, affecting downstream water quality and ecosystem health.",
   "opportunity": "The study opens avenues for developing advanced stratification‑aware water treatment systems, predictive monitoring tools, and engineered filtration materials to mitigate organic contaminant spread in coastal and estuarine environments.",
@@ -625,6 +638,7 @@
    "Software/AI",
    "Other"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 6,
@@ -647,8 +661,13 @@
     "reason": "The study is fundamental environmental science with no obvious novel technology or method that could be patented; it lacks a clear, defensible IP position."
    }
   },
+  "pi": "Benny Chefetz",
+  "pi_full_name": "Benny Chefetz",
+  "pi_email": "benny.chefetz@mail.huji.ac.il",
+  "pi_affiliation": "Department of Soil and Water Sciences, Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, P.O. Box 12, Rehovot 7610001, Israel.; Agricultural Research Organization - Volcani Institute, Rishon LeZion 7505101, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper focuses on environmental stratification of organic contaminants in micro-estuaries; it does not identify a specific new molecule or target, nor link it to a disease, and no assay or method for testing a biological target is described.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -656,7 +675,6 @@
  {
   "id": "pubmed_43065594",
   "title": "Precision Treatment for Severe ",
-  "abstract": "",
   "authors": [
    "Sara Eyal"
   ],
@@ -664,9 +682,6 @@
   "date": "2026-11-18",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43065594/",
   "source": "PubMed",
-  "pi": "Sara Eyal",
-  "pi_affiliation": "Department of Clinical Pharmacy, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Sara Eyal",
   "score": 17,
   "summary": "The research focuses on developing highly targeted therapeutic interventions for severe medical conditions. It aims to improve patient outcomes by increasing the precision of treatment delivery or action.",
   "opportunity": "Development of next-generation precision medicine platforms or targeted drug delivery systems for high-acuity clinical markets.",
@@ -676,6 +691,7 @@
    "Clinical",
    "Medical Device"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -698,8 +714,13 @@
     "reason": "The title is vague and provides no detail on the specific innovation or its novelty, making it difficult to assess patentability or defensibility; without concrete technical claims or evidence of a unique platform, the IP strength appears limited."
    }
   },
+  "pi": "Sara Eyal",
+  "pi_full_name": "Sara Eyal",
+  "pi_email": "",
+  "pi_affiliation": "Department of Clinical Pharmacy, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 2,
   "hts_reason": "The title and lack of abstract provide no specific molecule or target, no clear disease association, and no assay description, so fewer than two elements are present.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -707,19 +728,15 @@
  {
   "id": "pubmed_43066712",
   "title": "Time-Dependent Density Functional Theory of Electrons and Quantum Nuclei.",
-  "abstract": "",
   "authors": [
    "Chen Li",
    "Ryan Requist",
    "E K U Gross"
   ],
   "journal": "Physical review letters",
-  "date": "2026-11-06",
+  "date": "2026 Nov 6",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43066712/",
   "source": "PubMed",
-  "pi": "E K U Gross",
-  "pi_affiliation": "Fritz Haber Center for Molecular Dynamics, Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem 91904 Israel.",
-  "pi_full_name": "E K U Gross",
   "score": 18,
   "summary": "The paper develops a time-dependent density functional theory framework that treats both electrons and nuclei quantum mechanically, enabling more accurate simulations of dynamic processes in molecular systems. It extends conventional TDDFT by incorporating nuclear quantum effects, potentially improving predictions for photochemical reactions and vibrational dynamics.",
   "opportunity": "A commercial software platform based on this theory could offer superior predictive modeling for drug discovery, materials design, and energy conversion devices, giving companies a competitive edge in simulation accuracy.",
@@ -728,6 +745,7 @@
    "Quantum",
    "Materials"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 7,
@@ -750,8 +768,13 @@
     "reason": "The work is highly theoretical and methodological, offering incremental advances in quantum chemistry that are unlikely to be easily patentable or defensible without a clear industrial application."
    }
   },
+  "pi": "E K U Gross",
+  "pi_full_name": "E K U Gross",
+  "pi_email": "",
+  "pi_affiliation": "Fritz Haber Center for Molecular Dynamics, Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem 91904 Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper discusses a computational method (time-dependent DFT) without identifying a specific new molecule or target, linking it to any disease, or describing a concrete assay for testing it.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -759,7 +782,6 @@
  {
   "id": "pubmed_43058852",
   "title": "Barriers to accessing ambulatory mental health care for children in Israel: a multi-centre cross-sectional and retrospective study.",
-  "abstract": "",
   "authors": [
    "Shlomit Tsafrir",
    "Maya Szczupak",
@@ -769,13 +791,9 @@
    "Yoav Kohn"
   ],
   "journal": "Child and adolescent psychiatry and mental health",
-  "date": "2026-08-25",
+  "date": "2026 Aug 25",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43058852/",
   "source": "PubMed",
-  "pi": "Yoav Kohn",
-  "pi_affiliation": "Department of Child and Adolescent Psychiatry, Jerusalem Mental Health Center, Eitanim Psychiatric Hospital, Jerusalem, Israel.; Hadassah-Hebrew University School of Medicine, Jerusalem, Israel.",
-  "pi_full_name": "Shlomit Tsafrir",
-  "pi_email": "shlomit.ts@moh.gov.il.",
   "score": 12,
   "summary": "This study examines the systemic obstacles preventing children in Israel from receiving necessary outpatient mental health services. It highlights gaps in healthcare access and delivery within the existing psychiatric and psychological frameworks.",
   "opportunity": "Development of AI-driven triage and remote monitoring platforms to optimize resource allocation and reduce wait times in pediatric mental health care.",
@@ -784,6 +802,7 @@
    "Software/AI",
    "Neuroscience"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -806,8 +825,13 @@
     "reason": "The study addresses health service delivery barriers, which is unlikely to involve novel, patentable technology or defensible IP; it is mainly observational and lacks a platform or product that could be protected."
    }
   },
+  "pi": "Yoav Kohn",
+  "pi_full_name": "Shlomit Tsafrir",
+  "pi_email": "shlomit.ts@moh.gov.il.",
+  "pi_affiliation": "Department of Child and Adolescent Psychiatry, Jerusalem Mental Health Center, Eitanim Psychiatric Hospital, Jerusalem, Israel.; Hadassah-Hebrew University School of Medicine, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The study focuses on health service barriers, not on a specific molecule or target, so it lacks both a defined target and a disease-linked assay.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -815,26 +839,22 @@
  {
   "id": "epmc_40473407",
   "title": "Tyrannical militarism, oil money and other issues in the medicalisation of war and politics: a response to Shahvisi.",
-  "abstract": "",
   "authors": [
    "Moshe Porat-Wojakowski",
    "Daniel Elbo Arama",
    "Yechiel Michael Barilan"
   ],
   "journal": "",
-  "date": "2026-11-20",
+  "date": "2026 Nov 20",
   "url": "https://europepmc.org/article/MED/40473407",
   "source": "Europe PMC",
-  "pi": "Daniel Elbo Arama",
-  "pi_affiliation": "Masters Program in Emergency Medicine-Preparedness and Response for Emergencies and Disasters, Ben-Gurion University of the Negev, Beer-Sheva, Southern, Israel.; Institute for Research in Military Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Moshe Porat-Wojakowski",
-  "pi_email": "moshe.wojakowski@mail.huji.ac.il.",
   "score": 10,
   "summary": "The paper appears to be a political commentary on the medicalisation of war, with no scientific data or experimental results presented. It does not provide new research findings or technological developments.",
   "opportunity": "None identified.",
   "fields": [
    "Other"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 2,
@@ -857,8 +877,13 @@
     "reason": "The paper addresses political and sociological issues rather than a technical innovation, offering little basis for patentable or defensible intellectual property."
    }
   },
+  "pi": "Daniel Elbo Arama",
+  "pi_full_name": "Moshe Porat-Wojakowski",
+  "pi_email": "moshe.wojakowski@mail.huji.ac.il.",
+  "pi_affiliation": "Masters Program in Emergency Medicine-Preparedness and Response for Emergencies and Disasters, Ben-Gurion University of the Negev, Beer-Sheva, Southern, Israel.; Institute for Research in Military Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The article discusses political and societal issues rather than identifying a specific molecule or target, linking it to a disease, or describing a testable assay. It lacks the three required elements for HTS collaboration.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -866,7 +891,6 @@
  {
   "id": "pubmed_43058197",
   "title": "Idiopathic orbital inflammation: a changing disease or a changing label?",
-  "abstract": "",
   "authors": [
    "Itay Nitzan",
    "Tehila Shlomov",
@@ -876,10 +900,6 @@
   "date": "2026-11-19",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43058197/",
   "source": "PubMed",
-  "pi": "Zvi Gur",
-  "pi_affiliation": "Department of Ophthalmology, Hadassah-Hebrew University Medical Center, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. zvi.gur@mail.huji.ac.il.",
-  "pi_full_name": "Zvi Gur",
-  "pi_email": "zvi.gur@mail.huji.ac.il.",
   "score": 15,
   "summary": "The paper examines idiopathic orbital inflammation, questioning whether observed changes reflect true disease evolution or shifts in diagnostic labeling. It likely discusses clinical presentation, imaging findings, and treatment outcomes in a cohort from Hebrew University of Jerusalem.",
   "opportunity": "Develop advanced imaging‑guided diagnostic tools or AI‑assisted decision support for orbital inflammatory disorders to improve accuracy and reduce misdiagnosis.",
@@ -888,6 +908,7 @@
    "Medical Device",
    "Clinical"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 4,
@@ -910,8 +931,13 @@
     "reason": "The paper appears to be a clinical review or descriptive study of a disease condition, offering no novel therapeutic or diagnostic technology that would be patentable or defensible. Its content is unlikely to generate strong IP protection, resulting in a low IP strength score."
    }
   },
+  "pi": "Zvi Gur",
+  "pi_full_name": "Zvi Gur",
+  "pi_email": "zvi.gur@mail.huji.ac.il.",
+  "pi_affiliation": "Department of Ophthalmology, Hadassah-Hebrew University Medical Center, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. zvi.gur@mail.huji.ac.il.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 2,
   "hts_reason": "The article appears to be a review or discussion of idiopathic orbital inflammation without identifying a specific new molecule or target, linking it to a disease (orbital inflammation), or describing a testable assay; thus it lacks the required elements for HTS collaboration.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -919,7 +945,6 @@
  {
   "id": "pubmed_43054880",
   "title": "Unusual malignant bradycardia in a patient with left bundle branch block after transcatheter aortic valve replacement.",
-  "abstract": "",
   "authors": [
    "Orr Tomer",
    "Bernard Belhassen"
@@ -928,9 +953,6 @@
   "date": "2026-11-19",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43054880/",
   "source": "PubMed",
-  "pi": "Bernard Belhassen",
-  "pi_affiliation": "Heart Institute, Hadassah Medical Center, Kyriat Hadassah, PO Box 12000, Jerusalem 91120, Israel.; Gray Faculty of Medical and Health Sciences, Tel Aviv University, Tel Aviv 69978, Israel.",
-  "pi_full_name": "Bernard Belhassen",
   "score": 10,
   "summary": "The paper reports a rare case of malignant bradycardia occurring in a patient with a left bundle branch block after undergoing transcatheter aortic valve replacement. It highlights a potential complication of the procedure and suggests the need for careful cardiac monitoring in similar patients.",
   "opportunity": "Developing a specialized monitoring device or software algorithm to detect and predict bradyarrhythmias in patients with conduction abnormalities undergoing transcatheter aortic valve replacement.",
@@ -939,6 +961,7 @@
    "Diagnostics",
    "Clinical"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 2,
@@ -961,8 +984,13 @@
     "reason": "The article is a single clinical case report with no novel technology or method described, offering minimal basis for patentable or defensible intellectual property."
    }
   },
+  "pi": "Bernard Belhassen",
+  "pi_full_name": "Bernard Belhassen",
+  "pi_email": "",
+  "pi_affiliation": "Heart Institute, Hadassah Medical Center, Kyriat Hadassah, PO Box 12000, Jerusalem 91120, Israel.; Gray Faculty of Medical and Health Sciences, Tel Aviv University, Tel Aviv 69978, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The article describes a clinical case without identifying a specific new molecule or target, does not link a novel target to a disease, and does not present any assay or method for testing a target's effect.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -970,7 +998,6 @@
  {
   "id": "pubmed_43051623",
   "title": "Integrating gene drives with established pest controls to mitigate spillover risk.",
-  "abstract": "",
   "authors": [
    "Sviatoslav R Rybnikov",
    "Adam Lampert",
@@ -980,9 +1007,6 @@
   "date": "2026-11-18",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43051623/",
   "source": "PubMed",
-  "pi": "Gili Greenbaum",
-  "pi_affiliation": "Department of Ecology, Evolution, and Behavior, Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Gili Greenbaum",
   "score": 36,
   "summary": "The paper proposes combining gene drive technology with conventional pest management strategies to reduce the risk of unintended spread of engineered organisms. It outlines a framework for integrating genetic control with existing ecological safeguards, aiming to make gene drives safer for field deployment.",
   "opportunity": "A commercial opportunity exists for companies developing integrated pest management platforms that blend gene drives with traditional controls, offering safer, more regulated solutions for agriculture and public health.",
@@ -990,6 +1014,7 @@
    "Synthetic Biology",
    "AgriTech"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 6,
@@ -1012,8 +1037,13 @@
     "reason": "The integration of gene drives with existing pest control methods represents a novel platform that is likely patentable and defensible, offering significant commercial and regulatory relevance, though it may still be early in development and subject to evolving biosafety regulations."
    }
   },
+  "pi": "Gili Greenbaum",
+  "pi_full_name": "Gili Greenbaum",
+  "pi_email": "",
+  "pi_affiliation": "Department of Ecology, Evolution, and Behavior, Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 2,
   "hts_reason": "The paper appears to be a conceptual or review discussion on combining gene drives with existing pest control methods; it does not identify a specific new molecule or target, nor link it to a particular disease, and it does not describe a concrete assay or method for testing a target's effect.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1021,7 +1051,6 @@
  {
   "id": "pubmed_43048498",
   "title": "Normative Distal Radius Radiological Measurements: The Influence of Age, Gender, and Menopause.",
-  "abstract": "",
   "authors": [
    "Maria Oulianski",
    "Omer Ben Yehuda",
@@ -1034,9 +1063,6 @@
   "date": "2026-11-18",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43048498/",
   "source": "PubMed",
-  "pi": "Yoram Weil",
-  "pi_affiliation": "Orthopedic Trauma Unit, Hadassah Hebrew University Hospital, Jerusalem, Israel.",
-  "pi_full_name": "Yoram Weil",
   "score": 14,
   "summary": "The study establishes normative reference values for distal radius radiological measurements, examining how these vary with age, gender, and menopause status. It provides clinicians with a baseline for assessing wrist bone health and diagnosing related conditions.",
   "opportunity": "Develop AI-powered imaging software that automatically applies these normative values to detect early wrist osteopenia or fracture risk in clinical settings.",
@@ -1045,6 +1071,7 @@
    "Medical Device",
    "Diagnostics"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -1067,8 +1094,13 @@
     "reason": "The study provides descriptive normative data on distal radius measurements, which is standard clinical knowledge and unlikely to be patentable or defensible as a unique innovation."
    }
   },
+  "pi": "Yoram Weil",
+  "pi_full_name": "Yoram Weil",
+  "pi_email": "",
+  "pi_affiliation": "Orthopedic Trauma Unit, Hadassah Hebrew University Hospital, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The article does not identify a specific new molecule or target, nor link it to a disease, and it only describes normative measurements rather than a testable assay.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1076,7 +1108,6 @@
  {
   "id": "pubmed_43047476",
   "title": "SGLT2 inhibitor use is associated with more polycythemia vera diagnosis codes but not with ",
-  "abstract": "",
   "authors": [
    "Alena Kirzhner",
    "Martin Ellis",
@@ -1091,9 +1122,6 @@
   "date": "2026-11-18",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43047476/",
   "source": "PubMed",
-  "pi": "Meital Zikry Deitch",
-  "pi_affiliation": "Intensive Care Unit, Kaplan Medical Center, Rehovot and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Meital Zikry Deitch",
   "score": 20,
   "summary": "The study reports an association between SGLT2 inhibitor use and increased diagnosis codes for polycythemia vera, suggesting a potential safety signal. It highlights the need for better monitoring of hematologic side effects in patients on these glucose-lowering drugs.",
   "opportunity": "Develop an AI-driven pharmacovigilance platform that flags rare hematologic adverse events in real-time for clinicians and regulators.",
@@ -1102,6 +1130,7 @@
    "Diagnostics",
    "Drug Discovery"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -1124,8 +1153,13 @@
     "reason": "The study is an observational association analysis with no novel therapeutic, diagnostic, or technological innovation, offering minimal patentable or defensible IP value."
    }
   },
+  "pi": "Meital Zikry Deitch",
+  "pi_full_name": "Meital Zikry Deitch",
+  "pi_email": "",
+  "pi_affiliation": "Intensive Care Unit, Kaplan Medical Center, Rehovot and Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper does not identify a new specific molecule or target beyond the known SGLT2 inhibitor class, it only mentions a disease association (polycythemia vera) but provides no assay or method description, thus fewer than two of the required elements are present.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1133,7 +1167,6 @@
  {
   "id": "pubmed_43048898",
   "title": "Light Switchable Plasmon-Exciton Coupling at the Nanoscale via Photoresponsive Azobenzene Ligands.",
-  "abstract": "",
   "authors": [
    "Tal Binyamin",
    "Sergei Remennik",
@@ -1143,9 +1176,6 @@
   "date": "2026-11-17",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43048898/",
   "source": "PubMed",
-  "pi": "Lioz Etgar",
-  "pi_affiliation": "Institute of Chemistry, The Center for Nanoscience and Nanotechnology, Casali Center for Applied Chemistry, The Hebrew University of Jerusalem, Jerusalem91904, Israel.",
-  "pi_full_name": "Lioz Etgar",
   "score": 29,
   "summary": "Researchers have developed a way to turn the interaction between light-trapping nanoparticles and light-absorbing molecules on and off using a light-sensitive chemical switch. This allows for precise, remote control of energy transfer and optical properties at the nanoscale.",
   "opportunity": "Development of ultra-precise, light-triggered drug delivery systems or high-resolution optical switches for next-generation photonic computing.",
@@ -1154,6 +1184,7 @@
    "Medical Device",
    "Imaging"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 6,
@@ -1176,8 +1207,13 @@
     "reason": "The concept of using photoresponsive azobenzene ligands to control plasmon-exciton coupling at the nanoscale represents a novel, potentially patentable mechanism with broad applicability in nanophotonics and optoelectronics, indicating strong IP defensibility."
    }
   },
+  "pi": "Lioz Etgar",
+  "pi_full_name": "Lioz Etgar",
+  "pi_email": "",
+  "pi_affiliation": "Institute of Chemistry, The Center for Nanoscience and Nanotechnology, Casali Center for Applied Chemistry, The Hebrew University of Jerusalem, Jerusalem91904, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper discusses a photoresponsive azobenzene ligand used to modulate plasmon-exciton coupling at the nanoscale, but it does not identify a specific new therapeutic molecule or target, nor does it link this chemistry to any particular disease or condition, and it focuses on a physical/optical assay rather than a biological screening assay.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1185,7 +1221,6 @@
  {
   "id": "pubmed_43046598",
   "title": "A Painful Intertriginous Rash in a 77-year-old Woman: A Quiz.",
-  "abstract": "",
   "authors": [
    "Hanni Robinson",
    "Itai Shwartz",
@@ -1197,16 +1232,13 @@
   "date": "2026-11-17",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43046598/",
   "source": "PubMed",
-  "pi": "Vered Molho-Pessach",
-  "pi_affiliation": "Department of Dermatology, The Faculty of Medicine, Hebrew University of Jerusalem, Hadassah Medical Center, Jerusalem, Israel.",
-  "pi_full_name": "Itai Shwartz",
-  "pi_email": "shvitaiyoav@gmail.com.",
   "score": 8,
   "summary": "The paper presents a clinical case of a painful intertriginous rash in a 77‑year‑old woman, formatted as a diagnostic quiz for educational purposes. It offers no novel scientific data or therapeutic insights beyond the teaching scenario.",
   "opportunity": "Limited; the case could inform educational software or diagnostic decision‑support tools for dermatology, but offers no direct product development potential.",
   "fields": [
    "Other"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 1,
@@ -1229,8 +1261,13 @@
     "reason": "The article is a clinical case quiz with no novel technology or methodology; it offers no patentable or defensible intellectual property."
    }
   },
+  "pi": "Vered Molho-Pessach",
+  "pi_full_name": "Itai Shwartz",
+  "pi_email": "shvitaiyoav@gmail.com.",
+  "pi_affiliation": "Department of Dermatology, The Faculty of Medicine, Hebrew University of Jerusalem, Hadassah Medical Center, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper is a clinical case quiz describing a patient presentation; it does not identify a specific molecular target, a drug-like molecule, or a biochemical assay suitable for HTS.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -1238,7 +1275,6 @@
  {
   "id": "pubmed_43045353",
   "title": "More than a feline disease: Ocular manifestations in five dogs infected with Toxoplasma gondii.",
-  "abstract": "",
   "authors": [
    "Y Soueid",
    "R Ofri",
@@ -1250,10 +1286,6 @@
   "date": "2026-11-17",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43045353/",
   "source": "PubMed",
-  "pi": "O Pe'er",
-  "pi_affiliation": "The Hebrew University Veterinary Teaching Hospital, Koret School of Veterinary Medicine, The Hebrew University of Jerusalem, Rehovot, Israel. Electronic address: peer.oren@mail.huji.ac.il.",
-  "pi_full_name": "O Pe'er",
-  "pi_email": "peer.oren@mail.huji.ac.il.",
   "score": 17,
   "summary": "The study documents ocular symptoms in five dogs infected with Toxoplasma gondii, highlighting that the parasite can affect canine eyes similarly to feline cases. It suggests that dogs may serve as a model for understanding ocular toxoplasmosis and underscores the need for better diagnostic and monitoring tools in veterinary medicine.",
   "opportunity": "Develop a rapid, point‑of‑care diagnostic kit for detecting Toxoplasma infection in dogs, enabling early treatment and reducing zoonotic transmission risk.",
@@ -1261,6 +1293,7 @@
    "Diagnostics",
    "Clinical"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 5,
@@ -1283,8 +1316,13 @@
     "reason": "The study is a descriptive clinical observation of ocular disease in dogs, offering no novel therapeutic, diagnostic, or technological innovation that would be patentable or defensible."
    }
   },
+  "pi": "O Pe'er",
+  "pi_full_name": "O Pe'er",
+  "pi_email": "peer.oren@mail.huji.ac.il.",
+  "pi_affiliation": "The Hebrew University Veterinary Teaching Hospital, Koret School of Veterinary Medicine, The Hebrew University of Jerusalem, Rehovot, Israel. Electronic address: peer.oren@mail.huji.ac.il.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper does not identify a specific new molecule or target, nor does it link a particular target to a disease; it merely describes ocular manifestations in dogs infected with Toxoplasma gondii, lacking any assay or method for testing a target.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1292,7 +1330,6 @@
  {
   "id": "pubmed_43043613",
   "title": "Association of atrial fibrillation with mortality across quantitatively assessed tricuspid regurgitation severity.",
-  "abstract": "",
   "authors": [
    "Yogev Peri",
    "Ilan Merdler",
@@ -1305,10 +1342,6 @@
   "date": "2026-11-17",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43043613/",
   "source": "PubMed",
-  "pi": "Haitham Abu Khadija",
-  "pi_affiliation": "Heart Center, Kaplan Medical Center, Affiliated with the Hebrew University, Jerusalem, Rehovot, Israel. haitham2048@yahoo.com.",
-  "pi_full_name": "Haitham Abu Khadija",
-  "pi_email": "haitham2048@yahoo.com.",
   "score": 19,
   "summary": "The study investigates how atrial fibrillation correlates with mortality in patients with varying severities of tricuspid regurgitation, using quantitative imaging data. It aims to identify whether AF presence worsens outcomes across the spectrum of TR severity.",
   "opportunity": "Develop a clinical decision-support software that integrates AF status and TR severity to predict mortality risk and guide treatment strategies.",
@@ -1317,6 +1350,7 @@
    "Diagnostics",
    "Clinical"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -1339,8 +1373,13 @@
     "reason": "The study is a retrospective clinical association analysis with no novel therapeutic or device innovation, offering minimal patentable or defensible intellectual property."
    }
   },
+  "pi": "Haitham Abu Khadija",
+  "pi_full_name": "Haitham Abu Khadija",
+  "pi_email": "haitham2048@yahoo.com.",
+  "pi_affiliation": "Heart Center, Kaplan Medical Center, Affiliated with the Hebrew University, Jerusalem, Rehovot, Israel. haitham2048@yahoo.com.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper does not identify a specific new molecule or target; it only discusses atrial fibrillation as a clinical condition linked to mortality in tricuspid regurgitation, and it does not describe any assay or method to test a molecular target.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1348,7 +1387,6 @@
  {
   "id": "pubmed_43042483",
   "title": "Laparoscopic Management of Acute Appendicitis During Pregnancy-Does Appendicitis Severity Affect Neonatal and Maternal Outcomes?",
-  "abstract": "",
   "authors": [
    "Daniel Avrahami",
    "Maayan Bas Lando",
@@ -1361,9 +1399,6 @@
   "date": "2026-11-17",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43042483/",
   "source": "PubMed",
-  "pi": "James Tankel",
-  "pi_affiliation": "Faculty of Medicine, Department of Surgery, The Eisenberg R&D Authority, Shaare Zedek Medical Center, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "James Tankel",
   "score": 16,
   "summary": "This study investigates whether the severity of acute appendicitis influences neonatal and maternal outcomes when treated laparoscopically during pregnancy. It provides clinical evidence on surgical timing and risk stratification for pregnant patients with appendicitis.",
   "opportunity": "Develop advanced laparoscopic instruments or AI‑guided decision support tools that optimize surgical outcomes for pregnant patients with acute appendicitis.",
@@ -1372,6 +1407,7 @@
    "Medical Device",
    "Imaging"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -1394,8 +1430,13 @@
     "reason": "The study reports clinical observations rather than novel technology or methods, offering little basis for patentable or defensible intellectual property."
    }
   },
+  "pi": "James Tankel",
+  "pi_full_name": "James Tankel",
+  "pi_email": "",
+  "pi_affiliation": "Faculty of Medicine, Department of Surgery, The Eisenberg R&D Authority, Shaare Zedek Medical Center, Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The article discusses surgical management of appendicitis in pregnancy and does not identify a specific new molecule or target, nor link it to a disease beyond appendicitis, and it does not describe a testable assay for a molecular target.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1403,7 +1444,6 @@
  {
   "id": "pubmed_43038079",
   "title": "Major depressive disorder involves motivational conflicts in emotion regulation in daily life.",
-  "abstract": "",
   "authors": [
    "Shir Mizrahi Lakan",
    "Danfei Hu",
@@ -1417,9 +1457,6 @@
   "date": "2026-11-16",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43038079/",
   "source": "PubMed",
-  "pi": "Maya Tamir",
-  "pi_affiliation": "Department of Psychology, Hebrew University of Jerusalem.",
-  "pi_full_name": "Maya Tamir",
   "score": 22,
   "summary": "The study investigates how major depressive disorder (MDD) is linked to motivational conflicts during emotion regulation in everyday life. It highlights that individuals with MDD experience heightened internal tension when attempting to regulate emotions, suggesting a neurobehavioral mechanism underlying depressive symptoms.",
   "opportunity": "Develop AI-driven mobile platforms that monitor and mitigate motivational conflicts in real-time to improve depression treatment outcomes.",
@@ -1428,6 +1465,7 @@
    "Clinical",
    "Software/AI"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 4,
@@ -1450,8 +1488,13 @@
     "reason": "The study focuses on psychological mechanisms of depression rather than a novel therapeutic technology or method, offering little basis for patentable or defensible intellectual property."
    }
   },
+  "pi": "Maya Tamir",
+  "pi_full_name": "Maya Tamir",
+  "pi_email": "",
+  "pi_affiliation": "Department of Psychology, Hebrew University of Jerusalem.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The title describes a behavioral/psychological study of motivational conflicts rather than a molecular target, and no specific molecule or biochemical assay is identified.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -1459,7 +1502,6 @@
  {
   "id": "pubmed_43037085",
   "title": "Revisiting the Role of Mouse Mammary Tumor Virus (MMTV) in Breast Cancer Through the Lens of a Signal Peptide.",
-  "abstract": "",
   "authors": [
    "Ori Braitbard",
    "Jacob Hochman"
@@ -1468,9 +1510,6 @@
   "date": "2026-11-16",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43037085/",
   "source": "PubMed",
-  "pi": "Jacob Hochman",
-  "pi_affiliation": "Alexander Silberman Institute of Life Science, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Jacob Hochman",
   "score": 18,
   "summary": "The study investigates how the signal peptide of Mouse Mammary Tumor Virus (MMTV) may influence breast cancer development, offering new insights into viral oncogenesis mechanisms. It suggests that viral proteins could modulate host signaling pathways relevant to tumor progression.",
   "opportunity": "Targeting MMTV-derived signal peptide interactions could lead to novel diagnostic biomarkers or therapeutic interventions for breast cancer.",
@@ -1479,6 +1518,7 @@
    "Drug Discovery",
    "Diagnostics"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -1486,7 +1526,7 @@
    },
    "commercial_potential": {
     "score": 3,
-    "reason": "The study appears to be basic mechanistic research on a viral protein’s role in breast cancer, with no clear indication of a developable product, service, or licensable technology, limiting its immediate commercial potential."
+    "reason": "The study appears to be basic mechanistic research on a viral protein's role in breast cancer, with no clear indication of a developable product, service, or licensable technology, limiting its immediate commercial potential."
    },
    "market_size": {
     "score": 5,
@@ -1501,8 +1541,13 @@
     "reason": "The study appears to be basic research on viral mechanisms in breast cancer, offering limited immediate patentable claims and lacking clear industrial or clinical application that would support strong IP defensibility."
    }
   },
+  "pi": "Jacob Hochman",
+  "pi_full_name": "Jacob Hochman",
+  "pi_email": "",
+  "pi_affiliation": "Alexander Silberman Institute of Life Science, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 2,
   "hts_reason": "The paper does not identify a specific novel molecule or target beyond the general MMTV signal peptide, does not link it to a particular disease beyond the broad association with breast cancer, and does not describe a concrete assay or method for testing the target's effect.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1510,7 +1555,6 @@
  {
   "id": "pubmed_43037004",
   "title": "The Oral-Systemic Interface in Healthy Longevity: A Narrative Review of Inflammaging and Functional Resilience.",
-  "abstract": "",
   "authors": [
    "Guy Tobias",
    "Avi Zini",
@@ -1520,12 +1564,9 @@
    "Jonathan Mann"
   ],
   "journal": "Journal of the American Geriatrics Society",
-  "date": "2026-11-16",
+  "date": "2026 Nov 16",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43037004/",
   "source": "PubMed",
-  "pi": "Jonathan Mann",
-  "pi_affiliation": "Department of Community Dentistry, Hebrew University-Hadassah Faculty of Dental Medicine, Jerusalem, Israel.",
-  "pi_full_name": "Jonathan Mann",
   "score": 18,
   "summary": "The paper reviews how oral health influences systemic inflammation and resilience in aging, highlighting the role of the oral-systemic interface in promoting healthy longevity. It synthesizes evidence linking oral microbiota, inflammatory pathways, and functional outcomes in older adults.",
   "opportunity": "Develop diagnostic tools or therapeutic interventions targeting oral microbiota to reduce systemic inflammaging and improve age-related health outcomes.",
@@ -1534,6 +1575,7 @@
    "Diagnostics",
    "Immunology"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
@@ -1556,8 +1598,13 @@
     "reason": "The paper is a narrative review of existing concepts (inflammaging, functional resilience) without presenting a novel technology, method, or compound, so it offers little basis for patentable or defensible IP."
    }
   },
+  "pi": "Jonathan Mann",
+  "pi_full_name": "Jonathan Mann",
+  "pi_email": "",
+  "pi_affiliation": "Department of Community Dentistry, Hebrew University-Hadassah Faculty of Dental Medicine, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The review does not identify a specific new molecule or target, nor does it link a particular target to a disease or describe a testable assay; it merely discusses general concepts of inflammaging and resilience.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1565,7 +1612,6 @@
  {
   "id": "pubmed_43052073",
   "title": "Immature platelet fraction and long-term mortality in acute coronary syndrome across the body mass index spectrum.",
-  "abstract": "",
   "authors": [
    "Nave Sadan",
    "Louay Taha",
@@ -1585,13 +1631,9 @@
    "Elad Asher"
   ],
   "journal": "Nutrition, metabolism, and cardiovascular diseases : NMCD",
-  "date": "2026-10-20",
+  "date": "2026 Oct 20",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43052073/",
   "source": "PubMed",
-  "pi": "Elad Asher",
-  "pi_affiliation": "Jesselson Heart Center, Shaare Zedek Medical Center, The Eisenberg R&D Authority, and Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
-  "pi_full_name": "Nave Sadan",
-  "pi_email": "navesadan@gmail.com.",
   "score": 23,
   "summary": "The study investigates how the immature platelet fraction (IPF) predicts long‑term mortality in patients with acute coronary syndrome (ACS) across different body mass indices. It suggests that IPF could serve as a prognostic biomarker for cardiovascular risk assessment.",
   "opportunity": "Develop a point‑of‑care diagnostic kit that measures IPF to stratify ACS patients' risk and guide personalized therapy.",
@@ -1599,6 +1641,7 @@
    "Diagnostics",
    "Clinical"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 4,
@@ -1621,8 +1664,13 @@
     "reason": "The paper describes a clinical correlation study between a known biomarker (IPF) and patient outcomes, which is observational research and lacks any novel, patentable invention or proprietary technology."
    }
   },
+  "pi": "Elad Asher",
+  "pi_full_name": "Nave Sadan",
+  "pi_email": "navesadan@gmail.com.",
+  "pi_affiliation": "Jesselson Heart Center, Shaare Zedek Medical Center, The Eisenberg R&D Authority, and Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 2,
   "hts_reason": "The study focuses on a clinical biomarker (immature platelet fraction) rather than a druggable molecular target, and it describes a clinical observational study rather than a molecular assay suitable for high-throughput screening.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -1630,7 +1678,6 @@
  {
   "id": "epmc_40562453",
   "title": "Evaluation of combat-related orthopaedic injuries: a comparative study of two military campaigns.",
-  "abstract": "",
   "authors": [
    "Tal Shachar",
    "E Yaacobi",
@@ -1643,9 +1690,6 @@
   "date": "2026-11-20",
   "url": "https://europepmc.org/article/MED/40562453",
   "source": "Europe PMC",
-  "pi": "O Almog",
-  "pi_affiliation": "Medical Corps, Surgeon General's Headquarters, Israel Defense Forces, Ramat Gan, Israel.; Department of Military Medicine, Hebrew University of Jerusalem Faculty of Medicine, Jerusalem, Israel.",
-  "pi_full_name": "O Almog",
   "score": 10,
   "summary": "This study analyzes and compares types of orthopedic injuries sustained during two different military operations. It provides statistical data on trauma patterns and injury severity in combat environments.",
   "opportunity": "The data could inform the design of specialized orthopedic implants, trauma-response medical devices, or triage prioritization algorithms for emergency medicine.",
@@ -1654,6 +1698,7 @@
    "Clinical",
    "Other"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 2,
@@ -1676,16 +1721,20 @@
     "reason": "This paper is a retrospective clinical comparative study of military injury data and contains no novel compositions, devices, processes, or proprietary technologies eligible for intellectual property protection."
    }
   },
+  "pi": "O Almog",
+  "pi_full_name": "O Almog",
+  "pi_email": "",
+  "pi_affiliation": "Medical Corps, Surgeon General's Headquarters, Israel Defense Forces, Ramat Gan, Israel.; Department of Military Medicine, Hebrew University of Jerusalem Faculty of Medicine, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 1,
   "hts_reason": "The paper describes an epidemiological or comparative clinical study and does not identify a specific molecular target, a specific molecule, or a laboratory assay suitable for high-throughput screening.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
  },
  {
   "id": "epmc_43065594",
-  "title": "Precision Treatment for Severe &lt;i&gt;KCNT1&lt;/i&gt; Epileptic Encephalopathy: Not All Antisense Oligonucleotides are Born Alike.",
-  "abstract": "",
+  "title": "Precision Treatment for Severe <i>KCNT1</i> Epileptic Encephalopathy: Not All Antisense Oligonucleotides are Born Alike.",
   "authors": [
    "Sara Eyal"
   ],
@@ -1693,9 +1742,6 @@
   "date": "2026-11-18",
   "url": "https://europepmc.org/article/MED/43065594",
   "source": "Europe PMC",
-  "pi": "Sara Eyal",
-  "pi_affiliation": "Department of Clinical Pharmacy, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "pi_full_name": "Sara Eyal",
   "score": 27,
   "summary": "The study investigates antisense oligonucleotides (ASOs) as a precision therapy for severe KCNT1 epileptic encephalopathy, a rare genetic neurological disorder. It highlights that not all ASOs perform equally, underscoring the need for tailored design and rigorous preclinical evaluation to achieve effective gene silencing.",
   "opportunity": "Develop a platform for designing and optimizing ASOs specifically for rare neurogenetic disorders, creating a high-value therapeutic pipeline for precision medicine.",
@@ -1705,6 +1751,7 @@
    "Genomics",
    "Clinical"
   ],
+  "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 8,
@@ -1727,8 +1774,13 @@
     "reason": "The study proposes a novel antisense oligonucleotide strategy for a specific genetic epilepsy, suggesting potential for patentable therapeutic methods and delivery platforms, but without detailed data or claims, the defensibility remains moderate."
    }
   },
+  "pi": "Sara Eyal",
+  "pi_full_name": "Sara Eyal",
+  "pi_email": "",
+  "pi_affiliation": "Department of Clinical Pharmacy, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "groq:openai/gpt-oss-20b",
-  "added_date": "2026-11-23",
+  "prev_score": "",
+  "prev_eval_model": "",
   "hts_score": 9,
   "hts_reason": "The paper identifies the specific target KCNT1, links it to severe KCNT1 epileptic encephalopathy, and discusses assays/methods (antisense oligonucleotide screening) to evaluate target modulation.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1746,7 +1798,7 @@
    "Gil Leibowitz"
   ],
   "journal": "Brain, behavior, and immunity",
-  "date": "2026-11-15",
+  "date": "2026 Nov 15",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43035184/",
   "source": "PubMed",
   "score": 4,
@@ -1794,7 +1846,7 @@
    "Dennis Rosenberg"
   ],
   "journal": "Journal of racial and ethnic health disparities",
-  "date": "2026-11-14",
+  "date": "2026 Nov 14",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43034253/",
   "source": "PubMed",
   "score": 5,
@@ -1939,7 +1991,7 @@
    "Moshe White"
   ],
   "journal": "Discrete & computational geometry",
-  "date": "2026 Nov 14",
+  "date": "2026-11-14",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43031669/",
   "source": "PubMed",
   "score": 3,
@@ -1992,7 +2044,7 @@
    "Batia Avni"
   ],
   "journal": "Transplantation and cellular therapy",
-  "date": "2026 Nov 14",
+  "date": "2026-11-14",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43025811/",
   "source": "PubMed",
   "score": 26,
@@ -2440,7 +2492,7 @@
    "Jaime Levy"
   ],
   "journal": "International journal of retina and vitreous",
-  "date": "2026-08-18",
+  "date": "2026-08",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43035490/",
   "source": "PubMed",
   "score": 12,
@@ -2649,7 +2701,7 @@
    "Shuli Brammli-Greenberg"
   ],
   "journal": "Medical care research and review : MCRR",
-  "date": "2026-11-12",
+  "date": "2026 Nov 12",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43021083/",
   "source": "PubMed",
   "score": 4,
@@ -2688,7 +2740,7 @@
    "Jonathan D Huppert"
   ],
   "journal": "JMIR formative research",
-  "date": "2026-11-12",
+  "date": "2026 Nov 12",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43019539/",
   "source": "PubMed",
   "score": 4,
@@ -2728,7 +2780,7 @@
    "Morris Soller"
   ],
   "journal": "Scientific reports",
-  "date": "2026-11-12",
+  "date": "2026 Nov 12",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43019181/",
   "source": "PubMed",
   "score": 9,
@@ -2774,7 +2826,7 @@
    "Robert Benny Gerber"
   ],
   "journal": "Physical chemistry chemical physics : PCCP",
-  "date": "2026-11-12",
+  "date": "2026 Nov 12",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43019020/",
   "source": "PubMed",
   "score": 7,
@@ -2826,7 +2878,7 @@
    "Radgonde Amer"
   ],
   "journal": "Annals of medicine and surgery (2012)",
-  "date": "2026-11-12",
+  "date": "2026 Nov 12",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43017405/",
   "source": "PubMed",
   "score": 5,
@@ -2879,7 +2931,7 @@
    "A Grinshpun"
   ],
   "journal": "ESMO open",
-  "date": "2026-11-11",
+  "date": "2026 Nov 11",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43019806/",
   "source": "PubMed",
   "score": 3,
@@ -2918,7 +2970,7 @@
    "Waseem Mujahed"
   ],
   "journal": "Clinical practice and cases in emergency medicine",
-  "date": "2026-11-11",
+  "date": "2026 Nov 11",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43014363/",
   "source": "PubMed",
   "score": 5,
@@ -3489,7 +3541,7 @@
    "Shay Covo"
   ],
   "journal": "Frontiers in fungal biology",
-  "date": "2026-11-10",
+  "date": "2026 Nov 10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43005227/",
   "source": "PubMed",
   "score": 7,
@@ -3538,7 +3590,7 @@
    "Dan Rokni"
   ],
   "journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
-  "date": "2026-11-09",
+  "date": "2026 Nov 9",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43003688/",
   "source": "PubMed",
   "score": 3,
@@ -3576,7 +3628,7 @@
    "Zvi Hayouka"
   ],
   "journal": "Antimicrobial agents and chemotherapy",
-  "date": "2026-11-09",
+  "date": "2026 Nov 9",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43002076/",
   "source": "PubMed",
   "score": 20,
@@ -3635,7 +3687,7 @@
    "Liraz Chai"
   ],
   "journal": "Biomacromolecules",
-  "date": "2026-11-09",
+  "date": "2026 Nov 9",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43002034/",
   "source": "PubMed",
   "score": 2,
@@ -4414,7 +4466,7 @@
    "Ruth Cytter Kuint"
   ],
   "journal": "Journal of clinical ultrasound : JCU",
-  "date": "2026 Nov 5",
+  "date": "2026-11-05",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42989815/",
   "source": "PubMed",
   "score": 1,
@@ -4458,7 +4510,7 @@
    "Zvi G Fridlender"
   ],
   "journal": "Translational lung cancer research",
-  "date": "2026-10-30",
+  "date": "2026 Oct 30",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42999416/",
   "source": "PubMed",
   "score": 3,
@@ -4547,7 +4599,7 @@
    "Shaul Oreg"
   ],
   "journal": "Journal of personality assessment",
-  "date": "2026 Nov 5",
+  "date": "2026-11-05",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42987127/",
   "source": "PubMed",
   "score": 8,
@@ -4689,7 +4741,7 @@
    "Sheldon M Stohl"
   ],
   "journal": "ACR open rheumatology",
-  "date": "2026-11-05",
+  "date": "2026 Nov 5",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42984126/",
   "source": "PubMed",
   "score": 4,
@@ -4735,7 +4787,7 @@
    "Linda Shavit"
   ],
   "journal": "The American journal of the medical sciences",
-  "date": "2026-11-04",
+  "date": "2026 Nov 4",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42982375/",
   "source": "PubMed",
   "score": 8,
@@ -4787,7 +4839,7 @@
    "Neta Yitzhak"
   ],
   "journal": "Nicotine & tobacco research : official journal of the Society for Research on Nicotine and Tobacco",
-  "date": "2026-11-04",
+  "date": "2026 Nov 4",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42980509/",
   "source": "PubMed",
   "score": 8,
@@ -4832,7 +4884,7 @@
    "Yoav Gronovich"
   ],
   "journal": "Microsurgery",
-  "date": "2026-11-04",
+  "date": "2026 Nov 4",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42979774/",
   "source": "PubMed",
   "score": 15,
@@ -4883,7 +4935,7 @@
    "Tal Falick Michaeli"
   ],
   "journal": "Journal of neuro-oncology",
-  "date": "2026-11-03",
+  "date": "2026 Nov 3",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42975754/",
   "source": "PubMed",
   "score": 12,
@@ -5252,7 +5304,7 @@
    "Ariel Goldstein"
   ],
   "journal": "Cognitive science",
-  "date": "2026 Oct 31",
+  "date": "2026-10-31",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42965894/",
   "source": "PubMed",
   "score": 20,
@@ -5307,7 +5359,7 @@
    "David Leibowitz"
   ],
   "journal": "American heart journal plus : cardiology research and practice",
-  "date": "2026 Oct 31",
+  "date": "2026-10-31",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42965181/",
   "source": "PubMed",
   "score": 21,
@@ -5424,7 +5476,7 @@
    "Aharon Helman"
   ],
   "journal": "Cell reports",
-  "date": "2026-10-30",
+  "date": "2026 Oct 30",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42961903/",
   "source": "PubMed",
   "score": 22,
@@ -5755,7 +5807,7 @@
    "Rachel Nechushtai"
   ],
   "journal": "The journal of physical chemistry. B",
-  "date": "2026-10",
+  "date": "2026 Oct 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42954638/",
   "source": "PubMed",
   "score": 18,
@@ -5800,7 +5852,7 @@
    "Sara Zalcberg"
   ],
   "journal": "Journal of interpersonal violence",
-  "date": "2026 Oct 28",
+  "date": "2026-10-28",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42952130/",
   "source": "PubMed",
   "score": 7,
@@ -5853,7 +5905,7 @@
    "Joseph Mendlovic"
   ],
   "journal": "Israel journal of health policy research",
-  "date": "2026 Oct 28",
+  "date": "2026-10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42947254/",
   "source": "PubMed",
   "score": 7,
@@ -5912,7 +5964,7 @@
    "Ehud Elnekave"
   ],
   "journal": "Microbial genomics",
-  "date": "2026 Oct 27",
+  "date": "2026-10-27",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42944735/",
   "source": "PubMed",
   "score": 4,
@@ -5958,7 +6010,7 @@
    "Shmuel P Reis"
   ],
   "journal": "Rambam Maimonides medical journal",
-  "date": "2026 Oct 26",
+  "date": "2026-10-26",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42957175/",
   "source": "PubMed",
   "score": 7,
@@ -6061,7 +6113,7 @@
    "Francesca Levi Schaffer"
   ],
   "journal": "British journal of pharmacology",
-  "date": "2026 Oct 26",
+  "date": "2026-10-26",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42935128/",
   "source": "PubMed",
   "score": 25,
@@ -6112,7 +6164,7 @@
    "Raphael I Benhamou"
   ],
   "journal": "npj drug discovery",
-  "date": "2026 Oct 26",
+  "date": "2026-10-26",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42934270/",
   "source": "PubMed",
   "score": 33,
@@ -6170,7 +6222,7 @@
    "Merav Ahissar"
   ],
   "journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
-  "date": "2026 Oct 26",
+  "date": "2026-10-26",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42933904/",
   "source": "PubMed",
   "score": 11,
@@ -6225,7 +6277,7 @@
    "Zvi Roth"
   ],
   "journal": "Animal reproduction science",
-  "date": "2026 Oct 26",
+  "date": "2026-10-26",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42933168/",
   "source": "PubMed",
   "score": 15,
@@ -6458,7 +6510,7 @@
    "Aaron M Allen"
   ],
   "journal": "Cancers",
-  "date": "2026 Oct 19",
+  "date": "2026-10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42938907/",
   "source": "PubMed",
   "score": 24,
@@ -6564,7 +6616,7 @@
    "Rifaat Safadi"
   ],
   "journal": "International journal of molecular sciences",
-  "date": "2026 Oct 9",
+  "date": "2026-10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42941725/",
   "source": "PubMed",
   "score": 21,
@@ -6677,7 +6729,7 @@
    "Mordechai Slae"
   ],
   "journal": "Children (Basel, Switzerland)",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42940635/",
   "source": "PubMed",
   "score": 14,
@@ -6733,7 +6785,7 @@
    "Ariel Gilad"
   ],
   "journal": "Nature communications",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42934230/",
   "source": "PubMed",
   "score": 15,
@@ -6790,7 +6842,7 @@
    "Uria Alcolombri"
   ],
   "journal": "Nature communications",
-  "date": "2026-09-26",
+  "date": "2026 Sep 26",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42934212/",
   "source": "PubMed",
   "score": 14,
@@ -6842,7 +6894,7 @@
    "Arieh Ben-Naim"
   ],
   "journal": "Entropy (Basel, Switzerland)",
-  "date": "2026 Sep 24",
+  "date": "2026-09-24",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42940773/",
   "source": "PubMed",
   "score": 15,
@@ -7008,7 +7060,7 @@
    "Rachel Yerushalmi-Rozen"
   ],
   "journal": "Nanoscale",
-  "date": "2026-10",
+  "date": "2026 Oct 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42929797/",
   "source": "PubMed",
   "score": 14,
@@ -7231,7 +7283,7 @@
    "Aharon J Agranat"
   ],
   "journal": "Biosensors",
-  "date": "2026 Sep 25",
+  "date": "2026-09-25",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42930086/",
   "source": "PubMed",
   "score": 33,
@@ -7778,7 +7830,7 @@
    "Abraham J Domb"
   ],
   "journal": "Journal of agricultural and food chemistry",
-  "date": "2026 Oct 7",
+  "date": "2026-10-07",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42915796/",
   "source": "PubMed",
   "score": 25,
@@ -7838,7 +7890,7 @@
    "Yonathan Anahory"
   ],
   "journal": "Nature communications",
-  "date": "2026 Sep 24",
+  "date": "2026-09-24",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42928359/",
   "source": "PubMed",
   "score": 20,
@@ -10578,7 +10630,7 @@
    "Shaden Salameh"
   ],
   "journal": "Journal of clinical medicine",
-  "date": "2026 Sep 25",
+  "date": "2026-09-25",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42881927/",
   "source": "PubMed",
   "score": 20,
@@ -11443,7 +11495,7 @@
    "Pavel Burko"
   ],
   "journal": "European radiology",
-  "date": "2026 Oct 7",
+  "date": "2026-10-07",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42844398/",
   "source": "PubMed",
   "score": 24,
@@ -11618,7 +11670,7 @@
    "Genya Aharon-Hananel"
   ],
   "journal": "Diabetes, obesity & metabolism",
-  "date": "2026 Oct 7",
+  "date": "2026-10-07",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42842950/",
   "source": "PubMed",
   "score": 24,
@@ -11904,7 +11956,7 @@
    "Ori Gidron"
   ],
   "journal": "Chemistry (Weinheim an der Bergstrasse, Germany)",
-  "date": "2026 Oct 6",
+  "date": "2026-10-06",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42839638/",
   "source": "PubMed",
   "score": 16,
@@ -14409,7 +14461,7 @@
    "Elizabeth Dudnik"
   ],
   "journal": "Cancers",
-  "date": "2026-04-14",
+  "date": "2026 Apr 14",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42073571/",
   "source": "PubMed",
   "score": 22,
@@ -15533,7 +15585,7 @@
    "Iris Lavon"
   ],
   "journal": "Neuro-oncology advances",
-  "date": "2026-04-01",
+  "date": "2026 Apr 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41969430/",
   "source": "PubMed",
   "score": 21,
@@ -15855,7 +15907,7 @@
    "David Luria"
   ],
   "journal": "JACC. Clinical electrophysiology",
-  "date": "2026-04-01",
+  "date": "2026 Apr 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41954554/",
   "source": "PubMed",
   "score": 31,
@@ -16360,7 +16412,7 @@
    "Amnon Sharir"
   ],
   "journal": "Dental materials : official publication of the Academy of Dental Materials",
-  "date": "2026-09",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42810937/",
   "source": "PubMed",
   "score": 21,
@@ -17298,7 +17350,7 @@
    "Assaf Friedler"
   ],
   "journal": "Chemical science",
-  "date": "2026 Sep 1",
+  "date": "2026-09-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42827801/",
   "source": "PubMed",
   "score": 22,
@@ -18074,7 +18126,7 @@
    "Michal Lotem"
   ],
   "journal": "",
-  "date": "2026-09-12",
+  "date": "2026 Sep 12",
   "url": "https://europepmc.org/article/MED/42735459",
   "source": "Europe PMC",
   "score": 22,
@@ -23088,7 +23140,7 @@
    "Ori Wald"
   ],
   "journal": "Pharmaceuticals (Basel, Switzerland)",
-  "date": "2026 Jul 2",
+  "date": "2026-07-02",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42515717/",
   "source": "PubMed",
   "score": 27,
@@ -23565,7 +23617,7 @@
    "Zohar Kerem"
   ],
   "journal": "Comprehensive reviews in food science and food safety",
-  "date": "2026 Jul 17",
+  "date": "2026-07-17",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42466521/",
   "source": "PubMed",
   "score": 15,
@@ -25109,7 +25161,7 @@
    "Guy Polturak"
   ],
   "journal": "Methods in molecular biology (Clifton, N.J.)",
-  "date": "2026 Jul 2",
+  "date": "2026-07",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42390744/",
   "source": "PubMed",
   "score": 28,
@@ -26175,7 +26227,7 @@
    "Gil Leibowitz"
   ],
   "journal": "JCI insight",
-  "date": "2026 May 1",
+  "date": "2026-05-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42171606/",
   "source": "PubMed",
   "score": 25,
@@ -28114,7 +28166,7 @@
    "Daphna Nachmani"
   ],
   "journal": "Cell reports",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42667619/",
   "source": "PubMed",
   "score": 21,
@@ -28169,7 +28221,7 @@
    "Jaime Levy"
   ],
   "journal": "Eye (London, England)",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42791273/",
   "source": "PubMed",
   "score": 25,
@@ -28229,7 +28281,7 @@
    "Alena Kirzhner"
   ],
   "journal": "Diabetes & metabolism",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42785671/",
   "source": "PubMed",
   "score": 25,
@@ -28282,7 +28334,7 @@
    "Daphna Shimon"
   ],
   "journal": "",
-  "date": "2026 Sep 26",
+  "date": "2026-09",
   "url": "https://europepmc.org/article/PMC/PMC13614179",
   "source": "Europe PMC",
   "score": 23,
@@ -29110,7 +29162,7 @@
    "Meir Frankel"
   ],
   "journal": "Journal of pain and symptom management",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42785577/",
   "source": "PubMed",
   "score": 17,
@@ -29167,7 +29219,7 @@
    "Morris Nechama"
   ],
   "journal": "iScience",
-  "date": "2026-09",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42741680/",
   "source": "PubMed",
   "score": 22,
@@ -29224,7 +29276,7 @@
    "Elad Gross"
   ],
   "journal": "Faraday discussions",
-  "date": "2026-09",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42093479/",
   "source": "PubMed",
   "score": 22,
@@ -29290,7 +29342,7 @@
    "Ariel Y Goldstein"
   ],
   "journal": "eLife",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42746838/",
   "source": "PubMed",
   "score": 21,
@@ -29353,7 +29405,7 @@
    "Uri Banin"
   ],
   "journal": "Small (Weinheim an der Bergstrasse, Germany)",
-  "date": "2026-09-18",
+  "date": "2026 Sep 18",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42758252/",
   "source": "PubMed",
   "score": 19,
@@ -30035,7 +30087,7 @@
    "Rami I Aqeilan"
   ],
   "journal": "Molecular therapy. Advances",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42422765/",
   "source": "PubMed",
   "score": 31,
@@ -30093,7 +30145,7 @@
    "Rabea Asleh"
   ],
   "journal": "Experimental & molecular medicine",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42711399/",
   "source": "PubMed",
   "score": 22,
@@ -30150,7 +30202,7 @@
    "Sarah Matarasso Greenfeld"
   ],
   "journal": "Haematologica",
-  "date": "2026-09-10",
+  "date": "2026 Sep 10",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42719963/",
   "source": "PubMed",
   "score": 38,
@@ -30211,7 +30263,7 @@
    "Michael Glikson"
   ],
   "journal": "Thrombosis and haemostasis",
-  "date": "2026-09-11",
+  "date": "2026 Sep 11",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42728723/",
   "source": "PubMed",
   "score": 23,
@@ -30277,7 +30329,7 @@
    "A Joseph Foldes"
   ],
   "journal": "Osteoporosis international : a journal established as result of cooperation between the European Foundation for Osteoporosis and the National Osteoporosis Foundation of the USA",
-  "date": "2026-09-08",
+  "date": "2026 Sep 8",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42709184/",
   "source": "PubMed",
   "score": 22,
@@ -30332,7 +30384,7 @@
    "Yossi Paltiel"
   ],
   "journal": "Nanoscale",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42703788/",
   "source": "PubMed",
   "score": 20,
@@ -30503,7 +30555,7 @@
    "Aviva Lerman"
   ],
   "journal": "American journal of speech-language pathology",
-  "date": "2026-09-01",
+  "date": "2026 Sep 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42721409/",
   "source": "PubMed",
   "score": 18,
@@ -30960,7 +31012,7 @@
    "Ilan Rosenshine"
   ],
   "journal": "",
-  "date": "2026 Sep 1",
+  "date": "2026-09-01",
   "url": "https://europepmc.org/article/MED/42678059",
   "source": "Europe PMC",
   "score": 24,
@@ -33229,7 +33281,7 @@
    "Zvi Granot"
   ],
   "journal": "Inflammatory bowel diseases",
-  "date": "2026-08",
+  "date": "2026-08-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42627211/",
   "source": "PubMed",
   "score": 31,
@@ -33285,7 +33337,7 @@
    "Zackaria Nairoukh"
   ],
   "journal": "",
-  "date": "2026-08-17",
+  "date": "2026-08",
   "url": "https://europepmc.org/article/MED/42630607",
   "source": "Europe PMC",
   "score": 29,
@@ -38081,7 +38133,7 @@
    "Uriel Levy"
   ],
   "journal": "Light, science & applications",
-  "date": "2026-07-01",
+  "date": "2026-07",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42493493/",
   "source": "PubMed",
   "score": 32,
@@ -41021,7 +41073,7 @@
    "Chamutal Gur"
   ],
   "journal": "",
-  "date": "2026-05-01",
+  "date": "2026 May 1",
   "url": "https://europepmc.org/article/MED/42098533",
   "source": "Europe PMC",
   "score": 37,
@@ -41084,7 +41136,7 @@
    "Rabea Asleh"
   ],
   "journal": "",
-  "date": "2026-05",
+  "date": "2026 May 1",
   "url": "https://europepmc.org/article/MED/42148620",
   "source": "Europe PMC",
   "score": 31,
@@ -41583,7 +41635,7 @@
    "Tamir Ben-Hur"
   ],
   "journal": "Stem cell reports",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42276062/",
   "source": "PubMed",
   "score": 36,
@@ -41990,7 +42042,7 @@
    "Tawfeeq Shekh-Ahmad"
   ],
   "journal": "Signal transduction and targeted therapy",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42315848/",
   "source": "PubMed",
   "score": 31,
@@ -42112,7 +42164,7 @@
    "Howard Cedar"
   ],
   "journal": "Nature communications",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42265112/",
   "source": "PubMed",
   "score": 26,
@@ -42232,7 +42284,7 @@
    "Uri Banin"
   ],
   "journal": "",
-  "date": "2026 May 1",
+  "date": "2026-05-01",
   "url": "https://europepmc.org/article/MED/42189911",
   "source": "Europe PMC",
   "score": 25,
@@ -42512,7 +42564,7 @@
    "Ora Schueler-Furman"
   ],
   "journal": "Journal of chemical information and modeling",
-  "date": "2026 Jun 1",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42299509/",
   "source": "PubMed",
   "score": 26,
@@ -43165,7 +43217,7 @@
    "Haitham Amal"
   ],
   "journal": "Scientific reports",
-  "date": "2026-06-01",
+  "date": "2026 Jun 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42277197/",
   "source": "PubMed",
   "score": 28,
@@ -43573,7 +43625,7 @@
    "Mattan Hurevich"
   ],
   "journal": "Journal of the American Chemical Society",
-  "date": "2026 Jun 1",
+  "date": "2026-06-01",
   "url": "https://pubmed.ncbi.nlm.nih.gov/42267531/",
   "source": "PubMed",
   "score": 31,
@@ -55692,7 +55744,7 @@
    "Neta Shlezinger"
   ],
   "journal": "mBio",
-  "date": "2026-05",
+  "date": "2026 May 1",
   "url": "https://pubmed.ncbi.nlm.nih.gov/41979352/",
   "source": "PubMed",
   "score": 26,
