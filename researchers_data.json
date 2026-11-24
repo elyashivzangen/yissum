@@ -15589,7 +15589,7 @@
     "pi_full_name": "Gili Greenbaum",
     "pi_email": "gil.g@mail.huji.ac.il.",
     "pi_affiliation": "Department of Ecology, Evolution, and Behavior, Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 26.2,
+    "avg_score": 23.3,
     "max_hts_score": 2,
     "paper_count": 6,
     "description": "The researcher focuses on applying advanced computational and genetic tools to address ecological and evolutionary challenges. Their work spans integrating gene drives with conventional pest control to enhance biosafety, developing network‑based genetic monitoring for landscape fragmentation, and creating predictive models for phenotypic differences using genomic data. Additionally, they build interactive platforms—modelRxiv for model dissemination and DORA for ancient DNA visualization—to democratize access to complex biological models and datasets.",
@@ -15750,40 +15750,24 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39737763/",
         "journal": "Ecology letters",
-        "score": 20,
-        "summary": "Researchers have created modelRxiv, a platform designed to host and interactively display complex biological and ecological models through a unified interface. The system uses large language models to bridge technical gaps, allowing users to explore model parameters without needing to understand the underlying code.",
-        "opportunity": "This technology could be commercialized as a specialized SaaS platform for pharmaceutical and agricultural R&D teams to facilitate collaborative, rapid testing of predictive biological simulations.",
+        "score": 3,
+        "summary": "modelRxiv is an interactive platform that allows researchers to share and run complex biological models without needing to install specific code or software. It uses large language models to ensure compatibility across different programming languages, making scientific models more accessible and reproducible.",
+        "opportunity": "Commercialization as a B2B SaaS platform for pharmaceutical or agricultural companies to standardize and share proprietary simulation models across cross-functional teams.",
         "abstract": "Modelling the dynamics of biological processes is ubiquitous across the ecological and evolutionary disciplines. However, the increasing complexity of these models poses a challenge to the dissemination of model-derived results. Often only a small subset of model results are made available to the scientific community, with further exploration of the parameter space relying on local deployment of code supplied by the authors. This can be technically challenging, owing to the diversity of frameworks and environments in which models are developed. To address this issue, we developed a platform that serves as an interactive repository of biological models, called modelRxiv. To facilitate adding models to modelRxiv, we utilise large-language models (LLMs) to make the platform language-agnostic. The platform provides a unified interface for the analysis of models that do not require any technical understanding of the model implementation, thus improving the accessibility, reproducibility and validation of ecological and evolutionary models.",
         "fields": [
           "Software/AI",
-          "Synthetic Biology",
-          "AgriTech"
+          "AgriTech",
+          "Synthetic Biology"
         ],
         "score_breakdown": {
-          "novelty": {
-            "score": 4,
-            "reason": "The work describes an incremental improvement in scientific workflow and data dissemination rather than a fundamental breakthrough in biological modeling or computational theory. While using LLMs to achieve language-agnosticism is a clever application, the concept of an interactive repository for model visualization is an evolutionary step in existing scientific infrastructure."
-          },
-          "commercial_potential": {
-            "score": 4,
-            "reason": "While the platform addresses a real bottleneck in scientific reproducibility, its primary utility is academic/open-science oriented, making it difficult to establish a high-value, proprietary business model or a clear path to industrial licensing."
-          },
           "market_size": {
-            "score": 5,
-            "reason": "The platform targets a niche academic and research community in ecology and evolutionary biology, which represents a modest but well-defined market; while the potential user base is sizable within academia, it is unlikely to reach the scale of broader life‑science or industrial sectors."
-          },
-          "trl": {
             "score": 3,
-            "reason": "The paper describes the development of a new software platform in a research context, currently at the proof-of-concept or academic prototype stage. While it addresses a valid scientific bottleneck, it lacks the validation, user-base scale, or commercial integration required for higher TRL ratings."
-          },
-          "ip_strength": {
-            "score": 4,
-            "reason": "The platform’s core idea—an interactive, language-agnostic repository for biological models using LLMs—is relatively generic and likely not highly patentable; while there may be some implementation details that could be protected, the overall IP defensibility is modest."
+            "reason": "The target market is limited to a niche academic subset of ecological and evolutionary biologists, representing a low-value tool for research dissemination rather than a high-growth industrial or clinical platform."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-31b-it",
+        "prev_score": 20,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "Department of Ecology, Evolution and Behavior, The Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 1,

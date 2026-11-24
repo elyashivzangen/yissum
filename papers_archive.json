@@ -954,43 +954,26 @@
   "url": "https://pubmed.ncbi.nlm.nih.gov/43054880/",
   "source": "PubMed",
   "score": 10,
-  "summary": "The paper reports a rare case of malignant bradycardia occurring in a patient with a left bundle branch block after undergoing transcatheter aortic valve replacement. It highlights a potential complication of the procedure and suggests the need for careful cardiac monitoring in similar patients.",
-  "opportunity": "Developing a specialized monitoring device or software algorithm to detect and predict bradyarrhythmias in patients with conduction abnormalities undergoing transcatheter aortic valve replacement.",
+  "summary": "This paper describes a clinical case of severe, life-threatening slow heart rate occurring in a patient following a transcatheter aortic valve replacement procedure. It specifically examines the complex interaction between existing left bundle branch block and the new valve implant.",
+  "opportunity": "Improved monitoring algorithms and predictive modeling for post-procedural conduction disturbances in TAVR patients could enhance patient safety and device selection.",
   "fields": [
    "Medical Device",
-   "Diagnostics",
    "Clinical"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
-   "novelty": {
-    "score": 2,
-    "reason": "The paper reports a single, specific clinical observation that does not introduce a new mechanism, technology, or therapeutic approach, offering limited scientific novelty beyond existing case reports."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "The article is a single-patient case report describing an unusual clinical observation, offering minimal direct pathway to a product, service, or licensable technology, thus indicating very limited commercial potential."
-   },
-   "market_size": {
-    "score": 2,
-    "reason": "The paper describes a single rare adverse event after TAVR, targeting an extremely narrow clinical niche with limited prevalence, indicating a very small addressable market."
-   },
    "trl": {
-    "score": 2,
-    "reason": "The paper is a single clinical case report, which represents early-stage clinical observation with no evidence of a developed technology or product, placing it at a low technology readiness level."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The article is a single clinical case report with no novel technology or method described, offering minimal basis for patentable or defensible intellectual property."
+    "score": 10,
+    "reason": "This is a clinical case report describing an outcome using already-marketed medical procedures (TAVR), representing the final stage of real-world clinical application."
    }
   },
   "pi": "Bernard Belhassen",
   "pi_full_name": "Bernard Belhassen",
   "pi_email": "",
   "pi_affiliation": "Heart Institute, Hadassah Medical Center, Kyriat Hadassah, PO Box 12000, Jerusalem 91120, Israel.; Gray Faculty of Medical and Health Sciences, Tel Aviv University, Tel Aviv 69978, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "10",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The article describes a clinical case without identifying a specific new molecule or target, does not link a novel target to a disease, and does not present any assay or method for testing a target's effect.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1457,44 +1440,28 @@
   "date": "2026-11-16",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43038079/",
   "source": "PubMed",
-  "score": 22,
-  "summary": "The study investigates how major depressive disorder (MDD) is linked to motivational conflicts during emotion regulation in everyday life. It highlights that individuals with MDD experience heightened internal tension when attempting to regulate emotions, suggesting a neurobehavioral mechanism underlying depressive symptoms.",
-  "opportunity": "Develop AI-driven mobile platforms that monitor and mitigate motivational conflicts in real-time to improve depression treatment outcomes.",
+  "score": 9,
+  "summary": "The study uses real-time tracking to show that people with major depressive disorder experience conflicting motivations when trying to manage their emotions in daily life. This suggests that depression involves a complex struggle between the desire to feel better and internal barriers to emotion regulation.",
+  "opportunity": "Development of personalized digital therapeutics or AI-driven behavioral health apps that identify and intervene during specific motivational conflicts in real-time.",
   "fields": [
    "Neuroscience",
-   "Clinical",
-   "Software/AI"
+   "Software/AI",
+   "Clinical"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
-   "novelty": {
-    "score": 4,
-    "reason": "The study appears to extend existing knowledge on depression and emotion regulation by focusing on motivational conflicts in daily life, but it does not introduce a fundamentally new theory, methodology, or technology that would be considered groundbreaking."
-   },
-   "commercial_potential": {
-    "score": 3,
-    "reason": "The study appears to be basic neuroscience research on depression mechanisms, with no clear pathway to a product, service, or licensable technology, limiting its commercial potential."
-   },
    "market_size": {
-    "score": 10,
-    "reason": "Major Depressive Disorder is a massive global health burden with high prevalence and significant unmet clinical need, representing a multi-billion dollar market across therapeutics and digital health interventions."
-   },
-   "trl": {
-    "score": 3,
-    "reason": "The study appears to be basic neuroscience research on depressive disorder mechanisms, with no indication of a developed technology or product ready for commercialization; it is at an early lab-stage, far from real-world application."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The study focuses on psychological mechanisms of depression rather than a novel therapeutic technology or method, offering little basis for patentable or defensible intellectual property."
+    "score": 9,
+    "reason": "Major Depressive Disorder is one of the most prevalent psychiatric conditions globally, representing a massive addressable market for improved diagnostic tools and targeted therapeutic interventions."
    }
   },
   "pi": "Maya Tamir",
   "pi_full_name": "Maya Tamir",
   "pi_email": "",
   "pi_affiliation": "Department of Psychology, Hebrew University of Jerusalem.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "22",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The title describes a behavioral/psychological study of motivational conflicts rather than a molecular target, and no specific molecule or biochemical assay is identified.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
