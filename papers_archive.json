@@ -288,43 +288,28 @@
   "date": "2026 Nov 22",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43059411/",
   "source": "PubMed",
-  "score": 22,
-  "summary": "The study focuses on validating viroporins—viral ion channels—as therapeutic targets, advancing preclinical evidence for their role in viral life cycles. It explores potential inhibitors that could disrupt viral replication and pathogenesis.",
-  "opportunity": "The findings open a pathway for developing novel antiviral drugs targeting viroporins, offering a new class of therapeutics against a range of viral infections.",
+  "score": 2,
+  "summary": "This research highlights viroporins, small viral proteins that form ion channels, as untapped targets for antiviral drugs. By targeting these channels instead of common polymerases or proteases, developers can create therapies that are less prone to viral resistance.",
+  "opportunity": "Development of a novel class of broad-spectrum small-molecule inhibitors targeting viroporins to treat diverse viral infections.",
   "fields": [
    "Drug Discovery",
+   "Proteomics",
    "Immunology"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
-   "novelty": {
-    "score": 4,
-    "reason": "The paper focuses on preclinical validation of viroporins as therapeutic targets, a topic that has been explored in virology and drug discovery for years; it does not present a fundamentally new concept or breakthrough methodology, but rather incremental progress in an established research area."
-   },
-   "commercial_potential": {
-    "score": 5,
-    "reason": "The work demonstrates preclinical target validation for viroporins, indicating a potential therapeutic avenue, but it is still early-stage research with no clear product or licensing pathway defined."
-   },
-   "market_size": {
-    "score": 6,
-    "reason": "The target—viroporins—is relevant to a broad class of viral infections, suggesting a sizable therapeutic market, but the specific market size and demand are not clearly defined or quantified in the paper, placing it in the mid-range for market potential."
-   },
    "trl": {
-    "score": 3,
-    "reason": "The work reports preclinical target validation in a laboratory setting, indicating early-stage discovery with no evidence of in vivo efficacy, safety, or clinical translation, placing it at a low TRL (3–4)."
-   },
-   "ip_strength": {
-    "score": 4,
-    "reason": "The paper focuses on preclinical target validation of viroporins, a well-known class of viral proteins; while it may identify specific therapeutic targets, the novelty and patentability are limited, and the work does not present a clear platform or near-market innovation that would confer strong defensibility."
+    "score": 2,
+    "reason": "This is a literature review summarizing existing research rather than a report on a specific drug candidate or proprietary technology. It describes the theoretical potential and preclinical landscape of viroporins but does not present new experimental data or a product nearing clinical trials."
    }
   },
   "pi": "Isaiah T Arkin",
   "pi_full_name": "Isaiah T Arkin",
   "pi_email": "",
   "pi_affiliation": "Department of Biomedical Engineering, City University of Hong Kong, Kowloon, Hong Kong SAR of the People's Republic of China.; The Alexander Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": 22,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 5,
   "hts_reason": "The title indicates a focus on viroporins as potential therapeutic targets, but does not name a specific viroporin or viral protein, nor does it explicitly link to a particular disease or describe a concrete assay; the content appears to be a general review of preclinical validation rather than a detailed study of a single target.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -794,44 +779,32 @@
   "date": "2026 Aug 25",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43058852/",
   "source": "PubMed",
-  "score": 12,
-  "summary": "This study examines the systemic obstacles preventing children in Israel from receiving necessary outpatient mental health services. It highlights gaps in healthcare access and delivery within the existing psychiatric and psychological frameworks.",
-  "opportunity": "Development of AI-driven triage and remote monitoring platforms to optimize resource allocation and reduce wait times in pediatric mental health care.",
+  "score": 4,
+  "summary": "This study identifies significant systemic delays and socio-economic disparities in children's outpatient mental health access in Israel, noting an average 25-month gap between concern and care. It highlights that despite reforms, structural barriers and long wait times remain the primary obstacles for families seeking psychiatric services.",
+  "opportunity": "There is a significant market for digital health platforms and AI-driven triage tools designed to optimize patient intake, automate preliminary screenings, and bridge the gap during long clinical wait times.",
   "fields": [
-   "Clinical",
    "Software/AI",
+   "Clinical",
    "Neuroscience"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
-    "score": 3,
-    "reason": "The study addresses a specific public health issue in a defined population, but it follows a conventional cross-sectional and retrospective design without introducing new methodologies or theoretical frameworks, offering limited scientific novelty."
+    "score": 2,
+    "reason": "The study is a descriptive epidemiological assessment of existing healthcare delivery challenges rather than the introduction of a new technology, methodology, or therapeutic mechanism. It identifies known systemic barriers using standard observational research methods, offering incremental social insight rather than scientific or technical novelty."
    },
    "commercial_potential": {
     "score": 2,
-    "reason": "The study identifies systemic barriers to care but does not propose a specific product, service, or technology that could be commercialized; it is primarily descriptive research with limited direct commercial translation."
-   },
-   "market_size": {
-    "score": 3,
-    "reason": "The study focuses on specific healthcare access barriers within a single national healthcare system (Israel), which limits the immediate addressable market for any derived solution to a localized public health context rather than a global commercial market."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "The paper reports a cross-sectional and retrospective study on barriers to accessing mental health care; it is purely observational research with no technological innovation, so it is at an early laboratory or conceptual stage (TRL 2)."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The study addresses health service delivery barriers, which is unlikely to involve novel, patentable technology or defensible IP; it is mainly observational and lacks a platform or product that could be protected."
+    "reason": "This is a descriptive epidemiological study focused on healthcare access and policy barriers rather than the development of a novel therapeutic, diagnostic, or digital health product. While it identifies market needs, it does not present a proprietary technology or service model capable of direct commercialization."
    }
   },
   "pi": "Yoav Kohn",
   "pi_full_name": "Shlomit Tsafrir",
   "pi_email": "shlomit.ts@moh.gov.il.",
   "pi_affiliation": "Department of Child and Adolescent Psychiatry, Jerusalem Mental Health Center, Eitanim Psychiatric Hospital, Jerusalem, Israel.; Hadassah-Hebrew University School of Medicine, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": 12,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The study focuses on health service barriers, not on a specific molecule or target, so it lacks both a defined target and a disease-linked assay.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -848,42 +821,26 @@
   "date": "2026 Nov 20",
   "url": "https://europepmc.org/article/MED/40473407",
   "source": "Europe PMC",
-  "score": 10,
-  "summary": "The paper appears to be a political commentary on the medicalisation of war, with no scientific data or experimental results presented. It does not provide new research findings or technological developments.",
-  "opportunity": "None identified.",
+  "score": 1,
+  "summary": "This paper provides a socio-political critique regarding the intersection of militarism, oil interests, and the medicalization of warfare and politics. It appears to be a theoretical or sociological commentary rather than a technical scientific study.",
+  "opportunity": "There is no direct commercial opportunity in deep-tech or life sciences derived from this socio-political critique.",
   "fields": [
    "Other"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
-   "novelty": {
-    "score": 2,
-    "reason": "The paper appears to be a political commentary rather than a scientific study, offering no new experimental data or theoretical framework, thus exhibiting minimal scientific novelty."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "The paper discusses sociopolitical issues rather than a specific technology or therapeutic approach, offering little evidence of a clear, protectable product or licensable technology with commercial potential."
-   },
-   "market_size": {
-    "score": 2,
-    "reason": "The paper addresses political and historical issues rather than a specific life‑science product or technology, implying a very limited or non‑existent commercial market."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "The paper discusses political and ethical issues rather than presenting a technological innovation, indicating it is at an early conceptual stage with no experimental or prototype evidence."
-   },
    "ip_strength": {
-    "score": 2,
-    "reason": "The paper addresses political and sociological issues rather than a technical innovation, offering little basis for patentable or defensible intellectual property."
+    "score": 1,
+    "reason": "The title indicates this is a commentary or response piece on socio-political issues rather than a technical innovation, offering no patentable inventions or protectable IP."
    }
   },
   "pi": "Daniel Elbo Arama",
   "pi_full_name": "Moshe Porat-Wojakowski",
   "pi_email": "moshe.wojakowski@mail.huji.ac.il.",
   "pi_affiliation": "Masters Program in Emergency Medicine-Preparedness and Response for Emergencies and Disasters, Ben-Gurion University of the Negev, Beer-Sheva, Southern, Israel.; Institute for Research in Military Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": 10,
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The article discusses political and societal issues rather than identifying a specific molecule or target, linking it to a disease, or describing a testable assay. It lacks the three required elements for HTS collaboration.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
