@@ -14,44 +14,36 @@
   "date": "2026-11-23",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43070880/",
   "source": "PubMed",
-  "score": 14,
-  "summary": "This paper assesses the predictive precision of the Buonsanti AI formula, a specialized computational approach for modeling biological or physical systems. It focuses on quantifying the gap between AI-driven theoretical predictions and empirical experimental results.",
-  "opportunity": "Development of high-fidelity predictive modeling software to reduce R&D trial-and-error cycles in drug design or materials science.",
+  "score": 11,
+  "summary": "Researchers evaluated a new AI-driven formula designed to predict the required power for intraocular lenses during cataract surgery. The study compared the Buonsanti formula against seven industry-standard mathematical models to assess its accuracy and precision in different eye types.",
+  "opportunity": "The development of high-precision predictive algorithms for ophthalmic surgery represents a specialized software play to improve surgical outcomes and reduce refractive errors in the growing global cataract surgery market.",
   "fields": [
+   "Medical Device",
    "Software/AI",
-   "Drug Discovery",
-   "Materials"
+   "Clinical"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
-   "novelty": {
-    "score": 1,
-    "reason": "The provided information lacks any scientific content, methodology, or technical context necessary to assess innovation. Without an abstract or data, there is no evidence of novelty or departure from prior art."
-   },
    "commercial_potential": {
-    "score": 3,
-    "reason": "The title suggests a performance evaluation of an AI formula, but without details on application, market relevance, or protectability, the commercial opportunity is uncertain and likely limited."
+    "score": 4,
+    "reason": "While the formula demonstrates competitive performance, it is an incremental improvement in a highly crowded market dominated by established players like Hill RBF and Barrett. The lack of evidence regarding proprietary IP protection or a scalable software platform limits its standalone commercial viability."
    },
    "market_size": {
-    "score": 3,
-    "reason": "The paper's title suggests a specialized AI formula for prediction accuracy, implying a narrow, niche application with limited addressable market; insufficient information indicates a modest market size."
-   },
-   "trl": {
     "score": 4,
-    "reason": "The paper appears to be at an early research stage with no evidence of prototype development or clinical validation, indicating a technology readiness level around 3–4, far from near‑market application."
+    "reason": "The market is limited to a niche software application within the highly competitive ophthalmic cataract surgery segment, specifically targeting intraocular lens power calculation. While global, the market size is constrained by the existence of established, dominant players like Hill-RBF and Barrett."
    },
    "ip_strength": {
     "score": 3,
-    "reason": "The paper appears to focus on evaluating an AI formula rather than presenting a novel, patentable technology; without evidence of a unique algorithmic innovation or proprietary data, the IP defensibility is likely limited."
+    "reason": "The innovation appears to be a mathematical formula or algorithm based on existing clinical parameters, which is notoriously difficult to patent and easily replicated once published. Furthermore, the study shows it is outperformed by existing established formulas like EVO 2.0, limiting its commercial defensibility."
    }
   },
   "pi": "Adi Abulafia",
   "pi_full_name": "Adi Abulafia",
   "pi_email": "",
   "pi_affiliation": "Department of Ophthalmology, Shaare Zedek Medical Center and the Hebrew University-Hadassah Medical School, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "14",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper focuses on an AI formula's predictive accuracy and fails to identify a specific molecule, target, disease, or testable assay.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -234,45 +226,32 @@
   "date": "2026 Nov 22",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43068039/",
   "source": "PubMed",
-  "score": 11,
-  "summary": "The study examines the incidence, types, and clinical presentation of skin cancers in patients with oculocutaneous albinism treated at a Mediterranean referral center. It highlights the heightened risk and unique diagnostic challenges faced by this population, underscoring the need for specialized screening and prevention strategies.",
-  "opportunity": "Develop a targeted, AI‑driven dermatoscopic screening platform tailored for albinism patients to enable earlier detection and reduce morbidity.",
+  "score": 2,
+  "summary": "This study examines the prevalence and characteristics of skin cancer in patients with oculocutaneous albinism within a specific Mediterranean population. It highlights the high risk of malignancy associated with a lack of melanin and the necessity for specialized dermatological surveillance.",
+  "opportunity": "Development of targeted preventative dermatological screening protocols or specialized prophylactic skincare for high-risk genetic populations.",
   "fields": [
-   "Diagnostics",
    "Clinical",
-   "Immunology",
-   "Imaging"
+   "Diagnostics",
+   "Genomics"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
-    "score": 3,
-    "reason": "The study appears to be an observational, epidemiological assessment of skin cancer incidence in a specific patient group, which is a routine clinical investigation rather than a groundbreaking scientific advance."
+    "score": 1,
+    "reason": "This is a clinical observational study describing a specific patient population at a single center, which represents incremental epidemiological reporting rather than a novel scientific discovery or technological innovation."
    },
    "commercial_potential": {
-    "score": 3,
-    "reason": "The study provides epidemiological data but does not identify a clear product, service, or technology that could be commercialized; its commercial potential is limited to informing clinical practice or public health initiatives."
-   },
-   "market_size": {
-    "score": 2,
-    "reason": "Oculocutaneous albinism is an ultra-rare genetic condition, resulting in a very limited patient population and a correspondingly small addressable market for any specific therapeutic or diagnostic intervention. While clinically significant for the affected individuals, the commercial opportunity is highly restricted compared to broader oncology or dermatology markets."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "The paper reports a clinical observational study on skin cancer incidence in a specific patient population; it provides descriptive data but no new technology or product development, placing it at early TRL (lab/clinical observation)."
-   },
-   "ip_strength": {
     "score": 1,
-    "reason": "This is a clinical observational study reporting case prevalence in a specific patient population, which lacks novel therapeutic, diagnostic, or technical inventions capable of patent protection or proprietary defensibility."
+    "reason": "This is a clinical observational study describing disease prevalence in a specific population, which lacks the inherent IP, technological novelty, or therapeutic intervention required for commercialization."
    }
   },
   "pi": "Sivan Sheffer Levi",
   "pi_full_name": "Sivan Sheffer Levi",
   "pi_email": "",
   "pi_affiliation": "The Faculty of Medicine, Department of Dermatology, Hebrew University of Jerusalem, Hadassah Medical Center, Jerusalem, Israel.; Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "11",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 2,
   "hts_reason": "This study is a descriptive clinical observation of skin cancer prevalence in a specific patient cohort rather than a mechanistic study identifying a druggable target or assay. It lacks both a specific molecular target for screening and a methodology for testing drug-target interactions.",
   "hts_eval_model": "gemini-3.1-flash-lite"
@@ -308,7 +287,7 @@
   "pi_email": "",
   "pi_affiliation": "Department of Biomedical Engineering, City University of Hong Kong, Kowloon, Hong Kong SAR of the People's Republic of China.; The Alexander Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-31b-it",
-  "prev_score": 22,
+  "prev_score": "22",
   "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 5,
   "hts_reason": "The title indicates a focus on viroporins as potential therapeutic targets, but does not name a specific viroporin or viral protein, nor does it explicitly link to a particular disease or describe a concrete assay; the content appears to be a general review of preclinical validation rather than a detailed study of a single target.",
@@ -496,44 +475,28 @@
   "date": "2026 Nov 21",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43065524/",
   "source": "PubMed",
-  "score": 12,
-  "summary": "The study examines how adherence to the DASH diet correlates with a reduced risk of ischemic stroke specifically in older women. It highlights a sex-specific relationship between dietary patterns and cardiovascular health outcomes in an aging population.",
-  "opportunity": "Personalized nutrition platforms and precision wellness apps could leverage these sex-specific dietary insights to provide targeted preventative health interventions for aging female demographics.",
+  "score": 9,
+  "summary": "This study finds that following the DASH diet is linked to a lower risk of ischemic stroke specifically in older women. It utilizes nationwide Israeli health and stroke registry data to demonstrate the protective benefits of dietary patterns in a sex-specific manner.",
+  "opportunity": "The findings support the development of personalized nutrition software or precision dietetics platforms targeting stroke prevention in aging female populations.",
   "fields": [
    "FoodTech",
    "Clinical",
-   "Other"
+   "Software/AI"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "The study reports an association between DASH diet adherence and reduced ischemic stroke risk in older women, which is an incremental extension of existing observational evidence rather than a groundbreaking or platform‑enabling discovery."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "The study is an observational analysis of diet and stroke risk; it does not present a new technology, product, or licensable platform, offering minimal direct commercial opportunity."
-   },
    "market_size": {
-    "score": 3,
-    "reason": "This is an observational epidemiological study rather than a commercial technology or therapeutic product, offering limited direct market potential beyond informing general public health guidelines. The focus on a specific lifestyle correlation in a sub-demographic lacks the scalability or proprietary value typical of a high-growth deep-tech market."
-   },
-   "trl": {
-    "score": 2,
-    "reason": "The study is an observational epidemiological analysis, not a technology or product development effort, placing it at an early basic research stage (TRL 2)."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The study reports observational associations between diet and health outcomes, which are unlikely to be patentable or defensible as a technological innovation."
+    "score": 9,
+    "reason": "The target market encompasses the global aging population and the massive prevalence of ischemic stroke, a leading cause of death and disability worldwide. The demand for dietary interventions and preventative health management in this demographic represents a multi-billion dollar addressable market."
    }
   },
   "pi": "Tali Sinai",
   "pi_full_name": "Tali Sinai",
   "pi_email": "tali.sinai@mail.huji.ac.il",
   "pi_affiliation": "School of Nutritional Sciences, The Robert H. Smith Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, Rehovot, Israel.; Israel Center for Disease Control, Israel Ministry of Health, Ramat Gan, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "12",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper is an epidemiological study on dietary habits (DASH diet) and stroke risk; it does not identify a specific molecular target, nor does it describe a testable assay for HTS.",
   "hts_eval_model": "gemma-4-31b-it"
@@ -615,44 +578,27 @@
   "date": "2026-11-18",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43066025/",
   "source": "PubMed",
-  "score": 17,
-  "summary": "Researchers from Hebrew University of Jerusalem investigated how water stratification in small estuaries influences the vertical movement and concentration of organic pollutants. Their findings reveal that layering of water layers can trap or release contaminants, affecting downstream water quality and ecosystem health.",
-  "opportunity": "The study opens avenues for developing advanced stratification‑aware water treatment systems, predictive monitoring tools, and engineered filtration materials to mitigate organic contaminant spread in coastal and estuarine environments.",
+  "score": 2,
+  "summary": "The study examines how water stratification in small estuaries affects the movement and accumulation of organic pollutants like PFAS and pesticides. It reveals that stratified water columns prevent contaminants from reaching equilibrium, causing them to pool at the surface or linger in deep water.",
+  "opportunity": "Development of precision environmental monitoring sensors and targeted remediation systems for industrial runoff and PFAS cleanup in stratified water bodies.",
   "fields": [
-   "Materials",
-   "Software/AI",
+   "AgriTech",
    "Other"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
-   "novelty": {
-    "score": 6,
-    "reason": "The study addresses a niche but important environmental issue, applying known stratification concepts to micro-estuaries, which offers incremental insight rather than a fundamentally new paradigm."
-   },
-   "commercial_potential": {
-    "score": 2,
-    "reason": "This study focuses on fundamental environmental geochemistry and site-specific hydrodynamics rather than a scalable technology, diagnostic tool, or proprietary process. It offers limited direct application for commercialization beyond potentially niche environmental consulting services."
-   },
-   "market_size": {
-    "score": 3,
-    "reason": "The study focuses on a highly specialized environmental niche (micro-estuaries), implying a limited commercial market and modest demand for related technologies or services."
-   },
-   "trl": {
-    "score": 4,
-    "reason": "The study appears to be fundamental environmental science research focused on understanding contaminant dynamics in micro-estuaries, likely conducted in controlled or natural settings without immediate application or commercialization steps. It is at a laboratory or field observation stage rather than near-market deployment."
-   },
    "ip_strength": {
     "score": 2,
-    "reason": "The study is fundamental environmental science with no obvious novel technology or method that could be patented; it lacks a clear, defensible IP position."
+    "reason": "The paper describes fundamental environmental monitoring and observation of natural processes rather than a novel technology, method, or chemical entity that is patentable. The findings contribute to ecological understanding but do not present a proprietary platform or defensible intellectual property."
    }
   },
   "pi": "Benny Chefetz",
   "pi_full_name": "Benny Chefetz",
   "pi_email": "benny.chefetz@mail.huji.ac.il",
   "pi_affiliation": "Department of Soil and Water Sciences, Faculty of Agriculture, Food and Environment, The Hebrew University of Jerusalem, P.O. Box 12, Rehovot 7610001, Israel.; Agricultural Research Organization - Volcani Institute, Rishon LeZion 7505101, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-31b-it",
+  "prev_score": "17",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper focuses on environmental stratification of organic contaminants in micro-estuaries; it does not identify a specific new molecule or target, nor link it to a disease, and no assay or method for testing a biological target is described.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -803,7 +749,7 @@
   "pi_email": "shlomit.ts@moh.gov.il.",
   "pi_affiliation": "Department of Child and Adolescent Psychiatry, Jerusalem Mental Health Center, Eitanim Psychiatric Hospital, Jerusalem, Israel.; Hadassah-Hebrew University School of Medicine, Jerusalem, Israel.",
   "eval_model": "gemma-4-26b-a4b-it",
-  "prev_score": 12,
+  "prev_score": "12",
   "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The study focuses on health service barriers, not on a specific molecule or target, so it lacks both a defined target and a disease-linked assay.",
@@ -839,7 +785,7 @@
   "pi_email": "moshe.wojakowski@mail.huji.ac.il.",
   "pi_affiliation": "Masters Program in Emergency Medicine-Preparedness and Response for Emergencies and Disasters, Ben-Gurion University of the Negev, Beer-Sheva, Southern, Israel.; Institute for Research in Military Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
   "eval_model": "gemma-4-31b-it",
-  "prev_score": 10,
+  "prev_score": "10",
   "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The article discusses political and societal issues rather than identifying a specific molecule or target, linking it to a disease, or describing a testable assay. It lacks the three required elements for HTS collaboration.",
@@ -857,44 +803,28 @@
   "date": "2026-11-19",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43058197/",
   "source": "PubMed",
-  "score": 15,
-  "summary": "The paper examines idiopathic orbital inflammation, questioning whether observed changes reflect true disease evolution or shifts in diagnostic labeling. It likely discusses clinical presentation, imaging findings, and treatment outcomes in a cohort from Hebrew University of Jerusalem.",
-  "opportunity": "Develop advanced imaging‑guided diagnostic tools or AI‑assisted decision support for orbital inflammatory disorders to improve accuracy and reduce misdiagnosis.",
+  "score": 1,
+  "summary": "The paper examines whether idiopathic orbital inflammation is a distinct biological disease entity or a catch-all clinical label for various underlying inflammatory conditions. It explores the evolving diagnostic landscape and the potential need for more specific classification of orbital inflammatory syndromes.",
+  "opportunity": "Improved diagnostic precision for orbital inflammation could drive the development of targeted immunotherapy protocols and specialized imaging biomarkers.",
   "fields": [
    "Diagnostics",
-   "Medical Device",
+   "Immunology",
    "Clinical"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
-   "novelty": {
-    "score": 4,
-    "reason": "The paper appears to reassess a known clinical entity rather than introducing a fundamentally new concept or technology, indicating modest novelty compared to prior literature."
-   },
    "commercial_potential": {
-    "score": 3,
-    "reason": "The paper appears to be a clinical review or discussion of disease classification rather than a study presenting a new technology, drug, or device, offering limited direct commercial opportunity."
-   },
-   "market_size": {
-    "score": 3,
-    "reason": "Idiopathic orbital inflammation is a rare ophthalmic condition with a limited patient population, indicating a modest market size and addressable demand."
-   },
-   "trl": {
-    "score": 3,
-    "reason": "The paper appears to be a clinical observational study on idiopathic orbital inflammation, which is at a laboratory or early research stage with no indication of a developed technology or product ready for commercialization."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The paper appears to be a clinical review or descriptive study of a disease condition, offering no novel therapeutic or diagnostic technology that would be patentable or defensible. Its content is unlikely to generate strong IP protection, resulting in a low IP strength score."
+    "score": 1,
+    "reason": "This is a clinical review or perspective piece discussing disease classification rather than a technical paper presenting a novel therapeutic, diagnostic tool, or medical device. It lacks any proprietary technology or product-driven utility that could be commercialized or licensed."
    }
   },
   "pi": "Zvi Gur",
   "pi_full_name": "Zvi Gur",
   "pi_email": "zvi.gur@mail.huji.ac.il.",
   "pi_affiliation": "Department of Ophthalmology, Hadassah-Hebrew University Medical Center, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel. zvi.gur@mail.huji.ac.il.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "15",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 2,
   "hts_reason": "The article appears to be a review or discussion of idiopathic orbital inflammation without identifying a specific new molecule or target, linking it to a disease (orbital inflammation), or describing a testable assay; thus it lacks the required elements for HTS collaboration.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1282,44 +1212,33 @@
   "date": "2026-11-17",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43043613/",
   "source": "PubMed",
-  "score": 19,
-  "summary": "The study investigates how atrial fibrillation correlates with mortality in patients with varying severities of tricuspid regurgitation, using quantitative imaging data. It aims to identify whether AF presence worsens outcomes across the spectrum of TR severity.",
-  "opportunity": "Develop a clinical decision-support software that integrates AF status and TR severity to predict mortality risk and guide treatment strategies.",
+  "score": 5,
+  "summary": "The study investigates how atrial fibrillation affects mortality rates in patients with varying degrees of tricuspid regurgitation severity. It found that while atrial fibrillation is not an independent predictor of death across all patients, it significantly increases mortality risk specifically in those with severe tricuspid regurgitation.",
+  "opportunity": "Enhanced risk-stratification algorithms for echocardiography software could use these interaction findings to better predict mortality in patients with comorbid heart rhythm and valve issues.",
   "fields": [
-   "Medical Device",
    "Diagnostics",
-   "Clinical"
+   "Imaging",
+   "Clinical",
+   "Software/AI"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
     "score": 3,
-    "reason": "The study provides a correlation between atrial fibrillation and mortality across tricuspid regurgitation severity, which is an incremental clinical observation rather than a novel mechanistic insight or technological breakthrough."
+    "reason": "The study is a clinical observational cohort analysis that explores a known clinical association rather than introducing a new technology, biological mechanism, or transformative methodology. While it provides granular quantitative data on the AF-TR interaction, it represents incremental clinical knowledge rather than a groundbreaking scientific breakthrough."
    },
    "commercial_potential": {
     "score": 2,
-    "reason": "The study is a retrospective observational analysis with no direct product, service, or technology development, offering limited immediate commercial opportunity."
-   },
-   "market_size": {
-    "score": 8,
-    "reason": "Atrial fibrillation and tricuspid regurgitation are highly prevalent conditions in the aging global population, representing a massive addressable market for diagnostic and therapeutic interventions in heart failure management."
-   },
-   "trl": {
-    "score": 4,
-    "reason": "The study is a clinical observational analysis, not a technology or device development; it is at a basic research stage (lab/clinical data collection) and not near commercialization."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The study is a retrospective clinical association analysis with no novel therapeutic or device innovation, offering minimal patentable or defensible intellectual property."
+    "reason": "This is a clinical observational study establishing statistical associations rather than a development of a new therapeutic, diagnostic device, or proprietary platform. While the data may inform clinical guidelines, it does not represent a tangible product, service, or licensable technology."
    }
   },
   "pi": "Haitham Abu Khadija",
   "pi_full_name": "Haitham Abu Khadija",
   "pi_email": "haitham2048@yahoo.com.",
   "pi_affiliation": "Heart Center, Kaplan Medical Center, Affiliated with the Hebrew University, Jerusalem, Rehovot, Israel. haitham2048@yahoo.com.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "19",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper does not identify a specific new molecule or target; it only discusses atrial fibrillation as a clinical condition linked to mortality in tricuspid regurgitation, and it does not describe any assay or method to test a molecular target.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
