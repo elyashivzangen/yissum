@@ -15589,7 +15589,7 @@
     "pi_full_name": "Gili Greenbaum",
     "pi_email": "gil.g@mail.huji.ac.il.",
     "pi_affiliation": "Department of Ecology, Evolution, and Behavior, Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 20.0,
+    "avg_score": 18.0,
     "max_hts_score": 2,
     "paper_count": 6,
     "description": "The researcher focuses on applying advanced computational and genetic tools to address ecological and evolutionary challenges. Their work spans integrating gene drives with conventional pest control to enhance biosafety, developing network‑based genetic monitoring for landscape fragmentation, and creating predictive models for phenotypic differences using genomic data. Additionally, they build interactive platforms—modelRxiv for model dissemination and DORA for ancient DNA visualization—to democratize access to complex biological models and datasets.",
@@ -15658,40 +15658,29 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/41706903/",
         "journal": "Proceedings of the National Academy of Sciences of the United States of America",
-        "score": 20,
-        "summary": "Researchers developed a new mathematical framework that combines network theory with population genetics to better track how habitat fragmentation affects biodiversity. This tool allows for a more accurate analysis of how isolated populations lose genetic diversity based on real-world migration patterns.",
-        "opportunity": "Development of a specialized SaaS platform for environmental DNA (eDNA) analysis and biodiversity auditing for corporate ESG compliance and governmental conservation planning.",
+        "score": 8,
+        "summary": "Researchers have developed a new mathematical framework that combines network theory with population genetics to better predict how habitat fragmentation impacts genetic diversity. This method allows for a more accurate understanding of how changing connectivity between populations influences genetic health over time.",
+        "opportunity": "The underlying algorithmic framework for modeling complex, heterogeneous networks and temporal genetic shifts could be adapted into software tools for precision breeding in agriculture or monitoring biodiversity for ESG compliance.",
         "abstract": "Habitat fragmentation is one of the most immediate and substantial threats to biodiversity, generating isolated populations with reduced genetic diversity. Genetic monitoring has become essential for detecting fragmentation and tracking its progress. However, the coherent interpretation of genetic monitoring data and understanding the genetic consequences of fragmentation require frameworks that accurately represent real-world complexity. Existing theoretical frameworks typically rely on simplified spatial structures and do not adequately capture the heterogeneous migration patterns of natural populations. Here, we integrate network theory and mathematical population genetics to develop a framework for studying the genetic consequences of fragmentation processes, explicitly accounting for heterogeneous connectivity and temporal dynamics. We apply this framework to examine how different fragmentation processes affect genetic measures commonly used in genetic monitoring. Through analysis of simulated and empirical networks, we find that different fragmentation scenarios produce substantially distinct trajectories in key genetic measures, sometimes exhibiting rapid transitional dynamics. Furthermore, fragmentation can cause deviations from classical theoretical expectations, such as the expected correlation between genetic and geographic distance (isolation-by-distance) or between genetic diversity and connectivity. Finally, we propose and demonstrate detectable early warning signals in genetic monitoring data that precede rapid transitional phases. Our framework thus provides a practical interpretation of genetic monitoring data, and a proof-of-concept that bridges the gap between idealized theoretical models and real-world connectivity dynamics.",
         "fields": [
           "AgriTech",
+          "Genomics",
           "Software/AI",
-          "Genomics"
+          "Other"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 6,
-            "reason": "The paper combines established network theory with population genetics to model fragmentation, offering a more realistic framework than prior simplified models, but the core concepts are incremental extensions rather than a groundbreaking paradigm shift."
-          },
-          "commercial_potential": {
-            "score": 3,
-            "reason": "The paper presents a theoretical and mathematical framework for ecological research rather than a proprietary tool, software, or diagnostic platform with direct commercial application. While valuable for academic conservation biology, it lacks a clear pathway toward a scalable product, service, or licensable technology for industrial or biotech markets."
-          },
-          "market_size": {
-            "score": 3,
-            "reason": "The research addresses academic ecological monitoring rather than a high-value commercial market; the addressable demand is limited to conservation biology and environmental management sectors with typically low budget allocations. There is no clear path to a large-scale industrial or clinical market application."
-          },
-          "trl": {
             "score": 5,
-            "reason": "The paper presents a novel theoretical framework and demonstrates it with simulations and empirical data, indicating a laboratory or proof‑of‑concept stage (TRL 4–5) rather than near‑market readiness."
+            "reason": "The research offers a meaningful methodological refinement by integrating network theory with population genetics to better model spatial heterogeneity, but it functions as an incremental improvement to existing ecological modeling frameworks rather than a paradigm-shifting discovery."
           },
           "ip_strength": {
             "score": 3,
-            "reason": "The paper presents a theoretical framework combining network theory and population genetics, which is unlikely to be highly patentable or defensible as a commercial platform; it offers methodological insights rather than a novel, protectable technology."
+            "reason": "The work describes a theoretical and mathematical framework for genetic monitoring, which is generally considered a scientific method or discovery and is difficult to patent. It lacks a proprietary tool, specific chemical entity, or unique hardware implementation that would provide strong commercial defensibility."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 20,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "Department of Ecology, Evolution and Behavior, The Hebrew University of Jerusalem, Jerusalem 9190401, Israel.",
         "pi_email": "",
         "hts_score": 1,

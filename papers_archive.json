@@ -415,45 +415,41 @@
   "date": "2026 Nov 21",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43065768/",
   "source": "PubMed",
-  "score": 33,
-  "summary": "CASCADE is an AI framework that autonomously identifies reliable biomarkers for precision oncology, integrating multi‑omics data and clinical outcomes to guide personalized treatment decisions. It leverages advanced machine learning to streamline biomarker validation, potentially accelerating the development of targeted cancer therapies.",
-  "opportunity": "By providing a rapid, trustworthy biomarker discovery pipeline, CASCADE can reduce drug development timelines and lower costs for oncology companies, creating a high‑value software platform for precision medicine.",
+  "score": 29,
+  "summary": "CASCADE is an AI framework that uses autonomous agents to perform biomarker discovery while enforcing strict, rule-based validation steps to prevent errors. It ensures scientific reliability by separating the experimental protocol from the AI's execution, making every step auditable and reproducible.",
+  "opportunity": "A high-value B2B SaaS platform for pharmaceutical companies and clinical research organizations to automate reliable, audit-ready genomic data analysis and biomarker validation.",
   "fields": [
-   "Diagnostics",
-   "Genomics",
    "Software/AI",
+   "Genomics",
+   "Diagnostics",
    "Clinical"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
-    "score": 7,
-    "reason": "The paper proposes an agentic AI framework for biomarker discovery, which is a novel integration of AI agency concepts into precision oncology, but the underlying techniques appear to build on existing AI and biomarker methods, so it is innovative yet not entirely groundbreaking."
-   },
-   "commercial_potential": {
-    "score": 7,
-    "reason": "The framework offers a potentially valuable platform for biomarker discovery that could be licensed or integrated into oncology diagnostics, but it is still at the conceptual/early development stage without a clear near‑market product or demonstrated clinical validation."
+    "score": 8,
+    "reason": "The framework introduces a novel 'specification-implementation separation' paradigm that shifts AI agency from uncontrolled black-box execution to a protocol-driven, quantitatively gated validation architecture. This approach represents a significant architectural innovation for solving the reliability and error-propagation problems inherent in autonomous scientific discovery."
    },
    "market_size": {
     "score": 9,
-    "reason": "The oncology diagnostics and personalized medicine market is vast, with billions of dollars in annual spend on biomarker testing and targeted therapies, making the target market for an AI-driven biomarker discovery platform extremely large and valuable."
+    "reason": "The framework addresses a critical bottleneck in the multi-billion dollar precision oncology and drug discovery markets by providing a scalable, trustworthy layer for analyzing massive clinical genomics datasets. As a platform-enabling technology, it has broad applicability across pharmaceutical R&D, clinical trial design, and diagnostic development."
    },
    "trl": {
-    "score": 4,
-    "reason": "The paper presents a novel AI framework for biomarker discovery, but without evidence of prototype deployment or clinical validation, indicating a laboratory research stage rather than near‑market readiness."
+    "score": 6,
+    "reason": "The framework has moved beyond theoretical proof-of-concept by demonstrating successful validation on large-scale, multi-institutional clinical cohorts totaling over 38,000 patients. However, it remains a computational methodology requiring integration into formal clinical decision-support workflows to reach near-market status."
    },
    "ip_strength": {
     "score": 6,
-    "reason": "The paper proposes an AI framework for biomarker discovery, which could be patentable as a novel algorithmic method, but without details on specific technical contributions or prior art, the defensibility is moderate rather than high."
+    "reason": "The innovation lies in a methodological framework and procedural protocol ('specification-implementation separation') rather than a novel biological target or unique chemical entity, making it harder to patent but highly defensible through software 'black box' implementation and workflow integration. While the validation logic is robust, the core IP likely leans towards trade secrets or copyrightable code rather than a strong, broad patent portfolio."
    }
   },
   "pi": "Noam Asna",
   "pi_full_name": "Noam Asna",
   "pi_email": "",
   "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "33",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 2,
   "hts_reason": "The paper describes an AI framework (methodology) rather than identifying a specific molecule or target, and no specific disease or assay is mentioned in the title.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -515,44 +511,28 @@
   "date": "2026 Nov 21",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43065438/",
   "source": "PubMed",
-  "score": 17,
-  "summary": "The study investigates how different skin disinfection methods affect the success of venipuncture, focusing on factors such as antiseptic type, application technique, and timing. Findings aim to optimize protocols to reduce infection risk and improve patient comfort during blood draws.",
-  "opportunity": "Develop a next‑generation, user‑friendly antiseptic kit or smart device that automates optimal skin prep for venipuncture, enhancing safety and efficiency in clinical settings.",
+  "score": 3,
+  "summary": "Researchers found that skin disinfection using 70% isopropyl alcohol is less effective in patients over 65, increasing the risk of blood culture contamination. The study suggests that age-related skin changes and higher bacterial loads contribute to these disinfection failures.",
+  "opportunity": "There is a market opportunity for advanced, age-tailored antimicrobial skin preparation technologies or rapid bedside microbial detection tools to prevent costly blood culture contamination in geriatric populations.",
   "fields": [
    "Medical Device",
-   "Diagnostics",
-   "Clinical"
+   "Clinical",
+   "Diagnostics"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
-   "novelty": {
-    "score": 3,
-    "reason": "The study addresses a well-established clinical practice (skin disinfection before venipuncture) and likely investigates known variables; it does not introduce a fundamentally new concept or technology, so its novelty is limited."
-   },
    "commercial_potential": {
     "score": 3,
-    "reason": "The study is an observational analysis of disinfection practices; it does not present a new product, technology, or clear pathway to licensing, limiting its commercial potential."
-   },
-   "market_size": {
-    "score": 5,
-    "reason": "The study addresses a common clinical practice in healthcare settings, implying a sizable but not exceptionally large market; it improves procedural efficiency rather than introducing a new product, so the addressable demand is moderate."
-   },
-   "trl": {
-    "score": 4,
-    "reason": "The study is a clinical investigation of existing disinfection practices, indicating laboratory or early field testing rather than a near-market product or platform technology."
-   },
-   "ip_strength": {
-    "score": 2,
-    "reason": "The study addresses general clinical practice factors rather than a novel device, method, or composition, offering little basis for patentable or defensible IP."
+    "reason": "The paper is a clinical observational study focused on understanding physiological variables rather than developing a new product or proprietary technology. While the findings suggest a market need for age-specific disinfection protocols or advanced antiseptics, the study itself does not provide a direct path to a new commercial asset."
    }
   },
   "pi": "Phillip D Levin",
   "pi_full_name": "Phillip D Levin",
   "pi_email": "",
   "pi_affiliation": "Faculty of Medicine, Hebrew University of Jerusalem, Israel.; Department of Intensive Care, Shaare Zedek Medical Center, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "17",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 2,
   "hts_reason": "The paper does not identify a specific new molecule or target, nor does it link a particular target to a disease; it merely discusses general skin disinfection practices, lacking a testable assay for a defined target.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
@@ -1102,42 +1082,31 @@
   "date": "2026-11-17",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43046598/",
   "source": "PubMed",
-  "score": 8,
-  "summary": "The paper presents a clinical case of a painful intertriginous rash in a 77‑year‑old woman, formatted as a diagnostic quiz for educational purposes. It offers no novel scientific data or therapeutic insights beyond the teaching scenario.",
-  "opportunity": "Limited; the case could inform educational software or diagnostic decision‑support tools for dermatology, but offers no direct product development potential.",
+  "score": 2,
+  "summary": "This paper presents a clinical case study of a specific dermatological condition involving a painful rash in an elderly patient. It serves as a diagnostic educational tool rather than a presentation of novel research or technology.",
+  "opportunity": "There is no immediate commercial opportunity as this is a clinical case report intended for medical education.",
   "fields": [
-   "Other"
+   "Clinical",
+   "Diagnostics"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
-   "novelty": {
-    "score": 1,
-    "reason": "This is a clinical case report presented as a quiz, which by definition documents an individual patient observation rather than introducing a novel scientific discovery, platform, or innovation."
-   },
    "commercial_potential": {
-    "score": 2,
-    "reason": "The article is a clinical quiz with no indication of a novel technology, product, or licensable solution, offering minimal commercial opportunity."
-   },
-   "market_size": {
-    "score": 2,
-    "reason": "The case report addresses a very specific, rare dermatological condition in an elderly patient, implying a minimal addressable market with limited commercial potential."
+    "score": 1,
+    "reason": "This is a clinical case report/quiz intended for medical education rather than a description of a new technology, therapeutic, or diagnostic tool. It lacks any inherent commercial or scalable intellectual property."
    },
    "trl": {
-    "score": 2,
-    "reason": "The paper is a clinical case report describing a dermatological condition; it represents basic observational data with no development of a technology or product, placing it at an early TRL stage."
-   },
-   "ip_strength": {
     "score": 1,
-    "reason": "The article is a clinical case quiz with no novel technology or methodology; it offers no patentable or defensible intellectual property."
+    "reason": "This is a clinical case report/quiz describing a single patient's diagnosis, which does not involve the development or testing of a new technology or product."
    }
   },
   "pi": "Vered Molho-Pessach",
   "pi_full_name": "Itai Shwartz",
   "pi_email": "shvitaiyoav@gmail.com.",
   "pi_affiliation": "Department of Dermatology, The Faculty of Medicine, Hebrew University of Jerusalem, Hadassah Medical Center, Jerusalem, Israel.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "8",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper is a clinical case quiz describing a patient presentation; it does not identify a specific molecular target, a drug-like molecule, or a biochemical assay suitable for HTS.",
   "hts_eval_model": "gemma-4-26b-a4b-it"
@@ -1156,43 +1125,40 @@
   "date": "2026-11-17",
   "url": "https://pubmed.ncbi.nlm.nih.gov/43045353/",
   "source": "PubMed",
-  "score": 17,
-  "summary": "The study documents ocular symptoms in five dogs infected with Toxoplasma gondii, highlighting that the parasite can affect canine eyes similarly to feline cases. It suggests that dogs may serve as a model for understanding ocular toxoplasmosis and underscores the need for better diagnostic and monitoring tools in veterinary medicine.",
-  "opportunity": "Develop a rapid, point‑of‑care diagnostic kit for detecting Toxoplasma infection in dogs, enabling early treatment and reducing zoonotic transmission risk.",
+  "score": 7,
+  "summary": "This study documents clinical presentations and diagnostic findings of ocular toxoplasmosis in dogs, highlighting a range of symptoms from inflammation to blindness. It underscores the potential for underdiagnosis in canines and identifies common co-morbidities that predispose animals to the infection.",
+  "opportunity": "There is a niche market for specialized veterinary diagnostic kits and companion animal ophthalmic screening tools to identify subclinical or ocular-specific toxoplasmosis infections.",
   "fields": [
    "Diagnostics",
-   "Clinical"
+   "Clinical",
+   "Immunology"
   ],
   "added_date": "2026-11-23",
   "score_breakdown": {
    "novelty": {
-    "score": 5,
-    "reason": "The study extends known ocular pathology of Toxoplasma gondii from felines to canines, but the concept of T. gondii causing ocular disease is already established; the work adds species breadth rather than a groundbreaking mechanism or platform."
+    "score": 2,
+    "reason": "This is a retrospective clinical case series describing observations in a small sample size, which adds descriptive knowledge to veterinary medicine but does not introduce a new mechanism, technology, or groundbreaking scientific concept."
    },
    "commercial_potential": {
-    "score": 3,
-    "reason": "The study reports clinical observations in dogs, offering limited direct translational value; it does not present a clear product, service, or licensable technology with immediate commercial viability."
+    "score": 2,
+    "reason": "This is a small-scale retrospective case series describing clinical observations rather than a novel therapeutic, diagnostic tool, or protectable technology. It provides academic value for veterinary diagnosis but offers no direct path to a scalable commercial product or licensable IP."
    },
    "market_size": {
-    "score": 4,
-    "reason": "The study addresses a specific veterinary ophthalmology niche—ocular toxoplasmosis in dogs—whose market is limited to veterinary diagnostics and treatments, representing a modest but not large addressable demand."
-   },
-   "trl": {
-    "score": 3,
-    "reason": "The study is an observational clinical report describing ocular findings in dogs with T. gondii infection; it does not present a developed technology or product, so its readiness for real-world application is limited to basic scientific insight rather than near-market deployment."
+    "score": 2,
+    "reason": "The paper describes a rare clinical manifestation in a small sample size of five dogs, indicating a niche diagnostic or therapeutic application with very limited addressable market demand."
    },
    "ip_strength": {
-    "score": 2,
-    "reason": "The study is a descriptive clinical observation of ocular disease in dogs, offering no novel therapeutic, diagnostic, or technological innovation that would be patentable or defensible."
+    "score": 1,
+    "reason": "The paper is a clinical case series describing observational medical findings in dogs, which lacks any novel therapeutic, diagnostic, or technological invention capable of being patented or defended."
    }
   },
   "pi": "O Pe'er",
   "pi_full_name": "O Pe'er",
   "pi_email": "peer.oren@mail.huji.ac.il.",
   "pi_affiliation": "The Hebrew University Veterinary Teaching Hospital, Koret School of Veterinary Medicine, The Hebrew University of Jerusalem, Rehovot, Israel. Electronic address: peer.oren@mail.huji.ac.il.",
-  "eval_model": "groq:openai/gpt-oss-20b",
-  "prev_score": "",
-  "prev_eval_model": "",
+  "eval_model": "gemma-4-26b-a4b-it",
+  "prev_score": "17",
+  "prev_eval_model": "groq:openai/gpt-oss-20b",
   "hts_score": 1,
   "hts_reason": "The paper does not identify a specific new molecule or target, nor does it link a particular target to a disease; it merely describes ocular manifestations in dogs infected with Toxoplasma gondii, lacking any assay or method for testing a target.",
   "hts_eval_model": "groq:openai/gpt-oss-20b"
