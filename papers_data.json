@@ -3064,60 +3064,6 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
-    "id": "pubmed_43048898",
-    "title": "Light Switchable Plasmon-Exciton Coupling at the Nanoscale via Photoresponsive Azobenzene Ligands.",
-    "authors": [
-      "Tal Binyamin",
-      "Sergei Remennik",
-      "Lioz Etgar"
-    ],
-    "journal": "Nano letters",
-    "date": "2026-11-17",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43048898/",
-    "source": "PubMed",
-    "score": 29,
-    "summary": "Researchers have developed a way to turn the interaction between light-trapping nanoparticles and light-absorbing molecules on and off using a light-sensitive chemical switch. This allows for precise, remote control of energy transfer and optical properties at the nanoscale.",
-    "opportunity": "Development of ultra-precise, light-triggered drug delivery systems or high-resolution optical switches for next-generation photonic computing.",
-    "fields": [
-      "Materials",
-      "Medical Device",
-      "Imaging"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 6,
-        "reason": "The use of azobenzene as a molecular switch for plasmon-exciton coupling is a well-established mechanism in nanophotonics, representing an incremental advancement rather than a paradigm-shifting breakthrough. While technically elegant, its novelty is limited by the existing body of literature on photoresponsive plasmonic assemblies."
-      },
-      "commercial_potential": {
-        "score": 6,
-        "reason": "The work demonstrates a novel, tunable nanoscale photonic interaction that could enable future optoelectronic or sensing devices, but it remains at a fundamental research stage with no clear immediate product path or licensing strategy."
-      },
-      "market_size": {
-        "score": 4,
-        "reason": "The technology targets niche photonic and plasmonic applications, such as optical switching and sensing, which represent a modest but growing market; however, the work is still at a fundamental research stage with limited immediate commercial traction."
-      },
-      "trl": {
-        "score": 5,
-        "reason": "The study demonstrates a novel lab-scale proof of concept for controllable plasmon-exciton coupling using photoresponsive ligands, but lacks demonstration in realistic device architectures or real-world applications, placing it around TRL 5."
-      },
-      "ip_strength": {
-        "score": 8,
-        "reason": "The concept of using photoresponsive azobenzene ligands to control plasmon-exciton coupling at the nanoscale represents a novel, potentially patentable mechanism with broad applicability in nanophotonics and optoelectronics, indicating strong IP defensibility."
-      }
-    },
-    "pi": "Lioz Etgar",
-    "pi_full_name": "Lioz Etgar",
-    "pi_email": "",
-    "pi_affiliation": "Institute of Chemistry, The Center for Nanoscience and Nanotechnology, Casali Center for Applied Chemistry, The Hebrew University of Jerusalem, Jerusalem91904, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-11-23",
-    "hts_score": 1,
-    "hts_reason": "The paper discusses a photoresponsive azobenzene ligand used to modulate plasmon-exciton coupling at the nanoscale, but it does not identify a specific new therapeutic molecule or target, nor does it link this chemistry to any particular disease or condition, and it focuses on a physical/optical assay rather than a biological screening assay.",
-    "hts_eval_model": "groq:openai/gpt-oss-20b"
-  },
-  {
     "id": "epmc_42630607",
     "title": "Stereocontrolled entry to borylated piperidines <i>via</i> stepwise dearomative carboboration of pyridines.",
     "authors": [
@@ -4116,59 +4062,6 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
-    "id": "epmc_43065594",
-    "title": "Precision Treatment for Severe <i>KCNT1</i> Epileptic Encephalopathy: Not All Antisense Oligonucleotides are Born Alike.",
-    "authors": [
-      "Sara Eyal"
-    ],
-    "journal": "",
-    "date": "2026-11-18",
-    "url": "https://europepmc.org/article/MED/43065594",
-    "source": "Europe PMC",
-    "score": 27,
-    "summary": "The study investigates antisense oligonucleotides (ASOs) as a precision therapy for severe KCNT1 epileptic encephalopathy, a rare genetic neurological disorder. It highlights that not all ASOs perform equally, underscoring the need for tailored design and rigorous preclinical evaluation to achieve effective gene silencing.",
-    "opportunity": "Develop a platform for designing and optimizing ASOs specifically for rare neurogenetic disorders, creating a high-value therapeutic pipeline for precision medicine.",
-    "fields": [
-      "Drug Discovery",
-      "Neuroscience",
-      "Genomics",
-      "Clinical"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 8,
-        "reason": "The paper presents a novel precision therapeutic strategy for KCNT1 epileptic encephalopathy by demonstrating that specific antisense oligonucleotides can differentially modulate disease-relevant targets, indicating a platform-enabling approach that advances beyond existing generic ASO therapies."
-      },
-      "commercial_potential": {
-        "score": 7,
-        "reason": "The study targets a rare but severe neurological disorder with a clear therapeutic need, and antisense oligonucleotides are a well‑established, licensable platform; however, without clinical data or a defined product pipeline, the commercial opportunity remains promising but not yet near‑market."
-      },
-      "market_size": {
-        "score": 3,
-        "reason": "The target market is an ultra-rare genetic disorder (KCNT1-related encephalopathy), resulting in a very small patient population and limited total addressable demand."
-      },
-      "trl": {
-        "score": 3,
-        "reason": "The title suggests a comparative mechanistic or optimization study of Antisense Oligonucleotides (ASOs) rather than a clinical trial report, indicating early-stage preclinical or academic validation."
-      },
-      "ip_strength": {
-        "score": 6,
-        "reason": "The study proposes a novel antisense oligonucleotide strategy for a specific genetic epilepsy, suggesting potential for patentable therapeutic methods and delivery platforms, but without detailed data or claims, the defensibility remains moderate."
-      }
-    },
-    "pi": "Sara Eyal",
-    "pi_full_name": "Sara Eyal",
-    "pi_email": "",
-    "pi_affiliation": "Department of Clinical Pharmacy, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-11-23",
-    "hts_score": 9,
-    "hts_reason": "The paper identifies the specific target KCNT1, links it to severe KCNT1 epileptic encephalopathy, and discusses assays/methods (antisense oligonucleotide screening) to evaluate target modulation.",
-    "hts_eval_model": "groq:openai/gpt-oss-20b"
-  },
-  {
     "id": "pubmed_42010670",
     "title": "Nitric oxide inhibition ameliorates cortical proteomic changes in the Cntnap2",
     "authors": [
@@ -4847,6 +4740,61 @@
     "hts_score": 4,
     "hts_reason": "The paper identifies a specific target (UFMylation) and links it to a disease (neurodegenerative disorders), but does not describe a specific assay or method to test its effect, making it a candidate for further investigation but not ideal for HTS collaboration.",
     "hts_eval_model": "groq:llama-3.1-8b-instant"
+  },
+  {
+    "id": "pubmed_43066712",
+    "title": "Time-Dependent Density Functional Theory of Electrons and Quantum Nuclei.",
+    "authors": [
+      "Chen Li",
+      "Ryan Requist",
+      "E K U Gross"
+    ],
+    "journal": "Physical review letters",
+    "date": "2026 Nov 6",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43066712/",
+    "source": "PubMed",
+    "score": 26,
+    "summary": "This research presents a new mathematical framework for simulating the simultaneous movement of electrons and atomic nuclei, breaking a long-standing simplification used in chemical modeling. By accurately capturing non-adiabatic effects, it allows for more precise simulations of complex chemical processes like proton transfer.",
+    "opportunity": "This theoretical breakthrough provides a foundation for high-fidelity quantum-chemical simulation software capable of predicting highly reactive molecular dynamics that current standard tools miss.",
+    "fields": [
+      "Materials",
+      "Software/AI",
+      "Quantum",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 9,
+        "reason": "The research provides a rigorous, foundational framework that overcomes the long-standing Born-Oppenheimer approximation bottleneck in TDDFT, offering a mathematically complete way to treat coupled electron-nuclear dynamics. This represents a platform-enabling theoretical breakthrough for high-fidelity quantum simulations of chemical reactions and materials."
+      },
+      "commercial_potential": {
+        "score": 4,
+        "reason": "The work provides fundamental theoretical breakthroughs in quantum chemistry, but it remains in the basic science stage without a defined software implementation or specific industrial application. While it could eventually improve the accuracy of drug discovery simulations, the path from this mathematical proof to a commercial product is long and highly indirect."
+      },
+      "market_size": {
+        "score": 7,
+        "reason": "This represents a fundamental scientific advancement in computational chemistry that could significantly enhance the accuracy of molecular simulations for drug discovery and materials science. However, as a theoretical framework, its market impact is indirect and depends on its integration into broader, multi-billion dollar software platforms."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This is fundamental theoretical physics research focused on developing mathematical frameworks and proof of existence for new density functional theory schemes. It is at the earliest stage of scientific discovery (basic research) and lacks any practical implementation, software tool, or applied model suitable for industrial or commercial use."
+      },
+      "ip_strength": {
+        "score": 4,
+        "reason": "While the mathematical proofs and theoretical frameworks are rigorous, the work is fundamental scientific research (TD-DFT theory) that is difficult to patent and offers low direct defensibility without specific software implementations or commercial chemical applications."
+      }
+    },
+    "pi": "E K U Gross",
+    "pi_full_name": "E K U Gross",
+    "pi_email": "",
+    "pi_affiliation": "Fritz Haber Center for Molecular Dynamics, Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem 91904 Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "18",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
+    "added_date": "2026-11-23",
+    "hts_score": 1,
+    "hts_reason": "The paper discusses a computational method (time-dependent DFT) without identifying a specific new molecule or target, linking it to any disease, or describing a concrete assay for testing it.",
+    "hts_eval_model": "groq:openai/gpt-oss-20b"
   },
   {
     "id": "pubmed_42265112",
@@ -7751,128 +7699,6 @@
     "hts_score": 1,
     "hts_reason": "The paper describes a clinical surgical technique (a nomogram for laser eye surgery) rather than identifying a molecular target or a testable biochemical assay for HTS.",
     "hts_eval_model": "gemma-4-26b-a4b-it"
-  },
-  {
-    "id": "pubmed_43069012",
-    "title": "Seeing through hypoxia: an oxygen-independent fluorescent reporter reveals ferritin regulation and mitochondrial remodeling in Caenorhabditis elegans.",
-    "authors": [
-      "Ankit Chatterjee",
-      "Binghong Cai",
-      "Irit Cohen",
-      "Pamela A Padilla",
-      "Einav Gross"
-    ],
-    "journal": "Genetics",
-    "date": "2026-11-23",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43069012/",
-    "source": "PubMed",
-    "score": 23,
-    "summary": "Researchers at Hebrew University of Jerusalem have engineered a fluorescent reporter that functions independently of oxygen levels, enabling real‑time visualization of ferritin dynamics and mitochondrial remodeling in the model organism Caenorhabditis elegans. This tool allows scientists to study cellular responses to hypoxia without the confounding effects of oxygen‑dependent fluorophores.",
-    "opportunity": "The oxygen‑independent reporter can be adapted into a diagnostic imaging agent or high‑throughput screening tool for hypoxia‑associated diseases such as cancer, opening a commercial pathway in medical imaging and drug discovery.",
-    "fields": [
-      "Imaging",
-      "Diagnostics",
-      "Drug Discovery"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 9,
-        "reason": "The development of an oxygen-independent fluorescent reporter that uncovers novel insights into ferritin regulation and mitochondrial remodeling in C. elegans represents a significant methodological breakthrough, offering a new platform for hypoxia research that is likely protectable and broadly applicable."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "The work describes a basic biological tool for academic research in a model organism (C. elegans) rather than a scalable diagnostic or therapeutic platform. While scientifically interesting, it lacks a clear path to industrial application or high-value licensing outside of niche laboratory reagent markets."
-      },
-      "market_size": {
-        "score": 3,
-        "reason": "The technology targets a specialized research niche (C. elegans biology and hypoxia studies) with limited commercial demand, suggesting a modest market size."
-      },
-      "trl": {
-        "score": 4,
-        "reason": "The oxygen‑independent fluorescent reporter is demonstrated in a model organism (C. elegans) and provides new biological insights, but it remains at a basic research stage with no evidence of development toward a commercial product or clinical application."
-      },
-      "ip_strength": {
-        "score": 4,
-        "reason": "The innovation appears to be a biological tool/reporter rather than a novel chemical entity or a broad platform technology, limiting its patentability to specific sequences or applications. Without an abstract, it is difficult to determine if the mechanism provides significant freedom to operate or if it is a niche academic discovery."
-      }
-    },
-    "pi": "Einav Gross",
-    "pi_full_name": "Einav Gross",
-    "pi_email": "einav.gross@mail.huji.ac.il",
-    "pi_affiliation": "Department of Biochemistry and Molecular Biology, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-11-23",
-    "hts_score": 4,
-    "hts_reason": "The paper focuses on a fluorescent reporter that reports on ferritin regulation and mitochondrial remodeling in C. elegans, providing a specific assay (fluorescence imaging) but does not identify a novel molecule or target, nor link it to a specific human disease or condition.",
-    "hts_eval_model": "groq:openai/gpt-oss-20b"
-  },
-  {
-    "id": "pubmed_43052073",
-    "title": "Immature platelet fraction and long-term mortality in acute coronary syndrome across the body mass index spectrum.",
-    "authors": [
-      "Nave Sadan",
-      "Louay Taha",
-      "Dov Gavish",
-      "Mohammad Karmi",
-      "Akiva Brin",
-      "Eyal Ben-Zvi",
-      "Dana Deeb",
-      "Abed Qadan",
-      "Asher Schnur",
-      "Rafel Hitter",
-      "Noam Fink",
-      "Ari Naimark",
-      "Amjad Abu-Salman",
-      "Nethanel Zacks",
-      "Michael Glikson",
-      "Elad Asher"
-    ],
-    "journal": "Nutrition, metabolism, and cardiovascular diseases : NMCD",
-    "date": "2026 Oct 20",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43052073/",
-    "source": "PubMed",
-    "score": 23,
-    "summary": "The study investigates how the immature platelet fraction (IPF) predicts long‑term mortality in patients with acute coronary syndrome (ACS) across different body mass indices. It suggests that IPF could serve as a prognostic biomarker for cardiovascular risk assessment.",
-    "opportunity": "Develop a point‑of‑care diagnostic kit that measures IPF to stratify ACS patients' risk and guide personalized therapy.",
-    "fields": [
-      "Diagnostics",
-      "Clinical"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 4,
-        "reason": "The study explores a known biomarker (IPF) in a specific patient population (ACS across BMI spectrum), which is an incremental clinical association rather than a fundamentally new concept or technology."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "The study identifies a potential prognostic biomarker (immature platelet fraction) for long‑term mortality in acute coronary syndrome, but it does not present a developed product, service, or licensable technology, and the commercial pathway would require extensive validation and regulatory approval, indicating modest commercial potential."
-      },
-      "market_size": {
-        "score": 6,
-        "reason": "The study addresses a specific biomarker in acute coronary syndrome, targeting a well-defined but relatively narrow clinical segment; while the potential market is sizable within cardiology diagnostics, it is not a broad, high-value market."
-      },
-      "trl": {
-        "score": 9,
-        "reason": "The study evaluates the prognostic value of the Immature Platelet Fraction (IPF), a metric already integrated into standard clinical hematology analyzers, meaning the technology is already in the market and ready for immediate clinical application."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "The paper describes a clinical correlation study between a known biomarker (IPF) and patient outcomes, which is observational research and lacks any novel, patentable invention or proprietary technology."
-      }
-    },
-    "pi": "Elad Asher",
-    "pi_full_name": "Nave Sadan",
-    "pi_email": "navesadan@gmail.com.",
-    "pi_affiliation": "Jesselson Heart Center, Shaare Zedek Medical Center, The Eisenberg R&D Authority, and Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-11-23",
-    "hts_score": 2,
-    "hts_reason": "The study focuses on a clinical biomarker (immature platelet fraction) rather than a druggable molecular target, and it describes a clinical observational study rather than a molecular assay suitable for high-throughput screening.",
-    "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
     "id": "pubmed_42728723",
@@ -10929,170 +10755,6 @@
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
-    "id": "pubmed_43037085",
-    "title": "Revisiting the Role of Mouse Mammary Tumor Virus (MMTV) in Breast Cancer Through the Lens of a Signal Peptide.",
-    "authors": [
-      "Ori Braitbard",
-      "Jacob Hochman"
-    ],
-    "journal": "The oncologist",
-    "date": "2026-11-16",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43037085/",
-    "source": "PubMed",
-    "score": 18,
-    "summary": "The study investigates how the signal peptide of Mouse Mammary Tumor Virus (MMTV) may influence breast cancer development, offering new insights into viral oncogenesis mechanisms. It suggests that viral proteins could modulate host signaling pathways relevant to tumor progression.",
-    "opportunity": "Targeting MMTV-derived signal peptide interactions could lead to novel diagnostic biomarkers or therapeutic interventions for breast cancer.",
-    "fields": [
-      "Immunology",
-      "Drug Discovery",
-      "Diagnostics"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "The title suggests an incremental mechanistic study focusing on a known viral agent (MMTV) and a common biological feature (signal peptides) rather than the discovery of a new paradigm or platform technology. Without an abstract, the work appears to be a refinement of existing oncogenic models rather than a groundbreaking innovation."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "The study appears to be basic mechanistic research on a viral protein's role in breast cancer, with no clear indication of a developable product, service, or licensable technology, limiting its immediate commercial potential."
-      },
-      "market_size": {
-        "score": 5,
-        "reason": "The study addresses a fundamental biological mechanism that could inform future breast cancer therapies, but it is early-stage basic research with no immediate product or clear commercial application, so the addressable market is uncertain and likely modest at this point."
-      },
-      "trl": {
-        "score": 4,
-        "reason": "The study appears to be basic mechanistic research on MMTV signal peptides and breast cancer, primarily at the laboratory level with no evidence of preclinical or clinical validation, placing it in the early TRL 3–4 range."
-      },
-      "ip_strength": {
-        "score": 3,
-        "reason": "The study appears to be basic research on viral mechanisms in breast cancer, offering limited immediate patentable claims and lacking clear industrial or clinical application that would support strong IP defensibility."
-      }
-    },
-    "pi": "Jacob Hochman",
-    "pi_full_name": "Jacob Hochman",
-    "pi_email": "",
-    "pi_affiliation": "Alexander Silberman Institute of Life Science, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-11-23",
-    "hts_score": 2,
-    "hts_reason": "The paper does not identify a specific novel molecule or target beyond the general MMTV signal peptide, does not link it to a particular disease beyond the broad association with breast cancer, and does not describe a concrete assay or method for testing the target's effect.",
-    "hts_eval_model": "groq:openai/gpt-oss-20b"
-  },
-  {
-    "id": "pubmed_43037004",
-    "title": "The Oral-Systemic Interface in Healthy Longevity: A Narrative Review of Inflammaging and Functional Resilience.",
-    "authors": [
-      "Guy Tobias",
-      "Avi Zini",
-      "Yuval Vered",
-      "Alexander Khaimov",
-      "Yehuda Zadik",
-      "Jonathan Mann"
-    ],
-    "journal": "Journal of the American Geriatrics Society",
-    "date": "2026 Nov 16",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43037004/",
-    "source": "PubMed",
-    "score": 18,
-    "summary": "The paper reviews how oral health influences systemic inflammation and resilience in aging, highlighting the role of the oral-systemic interface in promoting healthy longevity. It synthesizes evidence linking oral microbiota, inflammatory pathways, and functional outcomes in older adults.",
-    "opportunity": "Develop diagnostic tools or therapeutic interventions targeting oral microbiota to reduce systemic inflammaging and improve age-related health outcomes.",
-    "fields": [
-      "Medical",
-      "Diagnostics",
-      "Immunology"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "The paper is a narrative review summarizing existing knowledge on inflammaging and functional resilience; it does not present new experimental data or novel theoretical frameworks, so its scientific novelty is limited."
-      },
-      "commercial_potential": {
-        "score": 2,
-        "reason": "As a narrative review, this paper synthesizes existing knowledge rather than presenting a novel, protectable invention, drug candidate, or scalable technology. It identifies biological correlations but does not provide a translatable product or a specific technical roadmap for commercialization."
-      },
-      "market_size": {
-        "score": 8,
-        "reason": "The paper addresses the intersection of oral health and systemic aging—a rapidly expanding market driven by an aging global population and growing demand for longevity and preventive health solutions, indicating a large and valuable addressable market."
-      },
-      "trl": {
-        "score": 3,
-        "reason": "The paper is a narrative review synthesizing existing literature on inflammaging and functional resilience; it does not present new experimental data or a prototype, placing it at an early TRL (2–3) where concepts are understood but no tangible technology or product is demonstrated."
-      },
-      "ip_strength": {
-        "score": 2,
-        "reason": "The paper is a narrative review of existing concepts (inflammaging, functional resilience) without presenting a novel technology, method, or compound, so it offers little basis for patentable or defensible IP."
-      }
-    },
-    "pi": "Jonathan Mann",
-    "pi_full_name": "Jonathan Mann",
-    "pi_email": "",
-    "pi_affiliation": "Department of Community Dentistry, Hebrew University-Hadassah Faculty of Dental Medicine, Jerusalem, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-11-23",
-    "hts_score": 1,
-    "hts_reason": "The review does not identify a specific new molecule or target, nor does it link a particular target to a disease or describe a testable assay; it merely discusses general concepts of inflammaging and resilience.",
-    "hts_eval_model": "groq:openai/gpt-oss-20b"
-  },
-  {
-    "id": "pubmed_43066712",
-    "title": "Time-Dependent Density Functional Theory of Electrons and Quantum Nuclei.",
-    "authors": [
-      "Chen Li",
-      "Ryan Requist",
-      "E K U Gross"
-    ],
-    "journal": "Physical review letters",
-    "date": "2026 Nov 6",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43066712/",
-    "source": "PubMed",
-    "score": 18,
-    "summary": "The paper develops a time-dependent density functional theory framework that treats both electrons and nuclei quantum mechanically, enabling more accurate simulations of dynamic processes in molecular systems. It extends conventional TDDFT by incorporating nuclear quantum effects, potentially improving predictions for photochemical reactions and vibrational dynamics.",
-    "opportunity": "A commercial software platform based on this theory could offer superior predictive modeling for drug discovery, materials design, and energy conversion devices, giving companies a competitive edge in simulation accuracy.",
-    "fields": [
-      "Software/AI",
-      "Quantum",
-      "Materials"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 7,
-        "reason": "The paper proposes extending time-dependent density functional theory to include quantum nuclei, a concept that has been explored in limited contexts but remains a relatively novel and potentially impactful theoretical development."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "The paper presents a theoretical extension of TDDFT to include quantum nuclei, which is foundational research with limited immediate product or licensing prospects; commercial potential is modest."
-      },
-      "market_size": {
-        "score": 2,
-        "reason": "The paper addresses a theoretical method in quantum chemistry with no direct indication of a commercial application or a defined target market, suggesting a very limited addressable demand."
-      },
-      "trl": {
-        "score": 3,
-        "reason": "The work presents a theoretical extension of time-dependent density functional theory to include quantum nuclei, which is primarily a computational physics/methodology development. It is at a fundamental research stage with no demonstrated experimental validation or direct path to commercialization, placing it low on the technology readiness scale."
-      },
-      "ip_strength": {
-        "score": 3,
-        "reason": "The work is highly theoretical and methodological, offering incremental advances in quantum chemistry that are unlikely to be easily patentable or defensible without a clear industrial application."
-      }
-    },
-    "pi": "E K U Gross",
-    "pi_full_name": "E K U Gross",
-    "pi_email": "",
-    "pi_affiliation": "Fritz Haber Center for Molecular Dynamics, Institute of Chemistry, The Hebrew University of Jerusalem, Jerusalem 91904 Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-11-23",
-    "hts_score": 1,
-    "hts_reason": "The paper discusses a computational method (time-dependent DFT) without identifying a specific new molecule or target, linking it to any disease, or describing a concrete assay for testing it.",
-    "hts_eval_model": "groq:openai/gpt-oss-20b"
-  },
-  {
     "id": "pubmed_42954638",
     "title": "Molecular Mechanisms of the Cytotoxicity of an Anti-Cancer Peptide.",
     "authors": [
@@ -11630,62 +11292,6 @@
     "hts_eval_model": ""
   },
   {
-    "id": "pubmed_43068380",
-    "title": "BUILDING ON COMMON GROUND: SMOKING CESSATION INTERVENTIONS IN HOSPITAL SETTINGS IN LOW- AND MIDDLE-INCOME COUNTRIES. A RAPID NARRATIVE REVIEW.",
-    "authors": [
-      "Luz Angela Torres-López",
-      "Marija Milic",
-      "Yehuda Neumark",
-      "Adam J Rose",
-      "Yael Bar-Zeev"
-    ],
-    "journal": "Nicotine & tobacco research : official journal of the Society for Research on Nicotine and Tobacco",
-    "date": "2026 Nov 22",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/43068380/",
-    "source": "PubMed",
-    "score": 16,
-    "summary": "The paper reviews smoking cessation strategies used in hospital settings across low- and middle-income countries, highlighting gaps and best practices. It emphasizes the need for scalable, culturally adapted interventions to reduce tobacco-related morbidity in resource-limited healthcare environments.",
-    "opportunity": "Develop a low-cost, AI-driven digital platform that delivers personalized smoking cessation counseling and monitoring for hospitals in LMICs, integrating with existing health records to improve uptake and outcomes.",
-    "fields": [
-      "Clinical",
-      "Software/AI",
-      "Other"
-    ],
-    "score_breakdown": {
-      "novelty": {
-        "score": 3,
-        "reason": "The paper is a rapid narrative review, which primarily synthesizes existing evidence rather than presenting new experimental data or a novel intervention; thus its scientific novelty is limited compared to prior art."
-      },
-      "commercial_potential": {
-        "score": 3,
-        "reason": "The paper is a narrative review summarizing existing interventions; it does not present a new product, service, or licensable technology, so its commercial potential is limited."
-      },
-      "market_size": {
-        "score": 7,
-        "reason": "The paper targets a broad and significant population—smokers in low- and middle-income countries—implying a large addressable market, yet the specific intervention scope and commercial viability are not fully defined, warranting a solid but not top-tier score."
-      },
-      "trl": {
-        "score": 2,
-        "reason": "The paper is a rapid narrative review, synthesizing existing evidence rather than presenting new experimental data or prototype development, indicating an early-stage, conceptual assessment rather than near-market readiness."
-      },
-      "ip_strength": {
-        "score": 1,
-        "reason": "This is a narrative review of existing interventions rather than a novel technical invention, offering no patentable intellectual property or proprietary technology."
-      }
-    },
-    "pi": "Yael Bar-Zeev",
-    "pi_full_name": "Yael Bar-Zeev",
-    "pi_email": "",
-    "pi_affiliation": "Braun School of Public Health and Community Medicine, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "eval_model": "groq:openai/gpt-oss-20b",
-    "prev_score": "",
-    "prev_eval_model": "",
-    "added_date": "2026-11-23",
-    "hts_score": 1,
-    "hts_reason": "The review does not identify a specific new molecule or target, nor does it link a particular target to a disease or describe a testable assay; it merely discusses general smoking cessation interventions.",
-    "hts_eval_model": "groq:openai/gpt-oss-20b"
-  },
-  {
     "id": "pubmed_43042483",
     "title": "Laparoscopic Management of Acute Appendicitis During Pregnancy-Does Appendicitis Severity Affect Neonatal and Maternal Outcomes?",
     "authors": [
@@ -12056,6 +11662,64 @@
     "added_date": "2026-11-09",
     "hts_score": 2,
     "hts_reason": "This study is a clinical retrospective analysis of postoperative outcomes and does not identify a new molecular target or describe an HTS-compatible assay for drug discovery.",
+    "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
+    "id": "pubmed_43052073",
+    "title": "Immature platelet fraction and long-term mortality in acute coronary syndrome across the body mass index spectrum.",
+    "authors": [
+      "Nave Sadan",
+      "Louay Taha",
+      "Dov Gavish",
+      "Mohammad Karmi",
+      "Akiva Brin",
+      "Eyal Ben-Zvi",
+      "Dana Deeb",
+      "Abed Qadan",
+      "Asher Schnur",
+      "Rafel Hitter",
+      "Noam Fink",
+      "Ari Naimark",
+      "Amjad Abu-Salman",
+      "Nethanel Zacks",
+      "Michael Glikson",
+      "Elad Asher"
+    ],
+    "journal": "Nutrition, metabolism, and cardiovascular diseases : NMCD",
+    "date": "2026 Oct 20",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43052073/",
+    "source": "PubMed",
+    "score": 15,
+    "summary": "This study identifies high immature platelet fraction (IPF) as a significant predictor of long-term mortality in patients admitted with acute coronary syndrome. The research demonstrates that IPF serves as a robust marker for mortality risk regardless of a patient's body mass index.",
+    "opportunity": "The findings support the clinical integration of IPF metrics into automated hematology diagnostic workflows to enhance risk stratification for cardiovascular patients.",
+    "fields": [
+      "Diagnostics",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "The study provides incremental clinical validation of an existing hematological parameter (IPF) rather than introducing a new biological mechanism or technological platform. While it offers interesting data on the lack of BMI interaction, the research follows established prognostic modeling methodologies using standard laboratory equipment."
+      },
+      "market_size": {
+        "score": 4,
+        "reason": "While Acute Coronary Syndrome is a high-prevalence clinical area, the biomarker (IPF) offers only marginal incremental value in mortality prediction, limiting its commercial adoption potential as a standalone diagnostic or premium test."
+      },
+      "trl": {
+        "score": 8,
+        "reason": "The technology relies on existing clinical diagnostic hardware (Sysmex XN-2000) to extract a new predictive biomarker, moving it beyond lab-stage into clinical validation. While the clinical utility (C-statistic improvement) is marginal, the implementation path is near-market as it requires no new hardware, only updated software or clinical protocols."
+      }
+    },
+    "pi": "Elad Asher",
+    "pi_full_name": "Nave Sadan",
+    "pi_email": "navesadan@gmail.com.",
+    "pi_affiliation": "Jesselson Heart Center, Shaare Zedek Medical Center, The Eisenberg R&D Authority, and Faculty of Medicine, Hebrew University of Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "23",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
+    "added_date": "2026-11-23",
+    "hts_score": 2,
+    "hts_reason": "The study focuses on a clinical biomarker (immature platelet fraction) rather than a druggable molecular target, and it describes a clinical observational study rather than a molecular assay suitable for high-throughput screening.",
     "hts_eval_model": "gemini-3.1-flash-lite"
   },
   {
@@ -12480,6 +12144,51 @@
     "hts_score": 1,
     "hts_reason": "The paper lacks a specific molecular target and a disease link, focusing instead on a physiological monitoring method (thermal imaging) for plant biology.",
     "hts_eval_model": "gemma-4-26b-a4b-it"
+  },
+  {
+    "id": "pubmed_43069012",
+    "title": "Seeing through hypoxia: an oxygen-independent fluorescent reporter reveals ferritin regulation and mitochondrial remodeling in Caenorhabditis elegans.",
+    "authors": [
+      "Ankit Chatterjee",
+      "Binghong Cai",
+      "Irit Cohen",
+      "Pamela A Padilla",
+      "Einav Gross"
+    ],
+    "journal": "Genetics",
+    "date": "2026-11-23",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43069012/",
+    "source": "PubMed",
+    "score": 14,
+    "summary": "Researchers have developed a new type of fluorescent protein called CeFbFP that functions in low-oxygen environments where standard proteins like mCherry fail. This allows scientists to accurately track protein activity and cellular changes during hypoxia without the interference of oxygen-dependent maturation errors.",
+    "opportunity": "This technology enables high-fidelity real-time imaging for studying ischemic diseases, tumor microenvironments, and metabolic processes where oxygen levels are critically low.",
+    "fields": [
+      "Imaging",
+      "Synthetic Biology",
+      "Diagnostics",
+      "Drug Discovery"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "The development of an oxygen-independent fluorescent reporter (CeFbFP) solves a fundamental technical limitation of GFP-based imaging in hypoxic environments, providing a reliable tool for studying anaerobic metabolism. While FbFPs exist, the optimization for C. elegans and the demonstration of its ability to decouple maturation from oxygen availability offer significant methodological innovation for mitochondrial and hypoxic research."
+      },
+      "ip_strength": {
+        "score": 7,
+        "reason": "The development of a specialized, oxygen-independent fluorescent protein (CeFbFP) represents a potentially patentable biological tool that solves a specific technical limitation in hypoxia research. While it provides strong platform-enabling value for metabolic and disease modeling, its defensibility is limited by the existing landscape of fluorescent protein IP and its status as a specialized research reagent rather than a broad therapeutic platform."
+      }
+    },
+    "pi": "Einav Gross",
+    "pi_full_name": "Einav Gross",
+    "pi_email": "einav.gross@mail.huji.ac.il",
+    "pi_affiliation": "Department of Biochemistry and Molecular Biology, The Hebrew University of Jerusalem, Jerusalem 9112102, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "23",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
+    "added_date": "2026-11-23",
+    "hts_score": 4,
+    "hts_reason": "The paper focuses on a fluorescent reporter that reports on ferritin regulation and mitochondrial remodeling in C. elegans, providing a specific assay (fluorescence imaging) but does not identify a novel molecule or target, nor link it to a specific human disease or condition.",
+    "hts_eval_model": "groq:openai/gpt-oss-20b"
   },
   {
     "id": "pubmed_43048498",
@@ -12920,6 +12629,51 @@
     "added_date": "2026-11-23",
     "hts_score": 1,
     "hts_reason": "The article describes a clinical technique for jejunostomy placement; it does not identify a specific molecule or target, nor link it to a disease, and it does not present a biochemical assay suitable for HTS.",
+    "hts_eval_model": "groq:openai/gpt-oss-20b"
+  },
+  {
+    "id": "epmc_43065594",
+    "title": "Precision Treatment for Severe <i>KCNT1</i> Epileptic Encephalopathy: Not All Antisense Oligonucleotides are Born Alike.",
+    "authors": [
+      "Sara Eyal"
+    ],
+    "journal": "",
+    "date": "2026-11-18",
+    "url": "https://europepmc.org/article/MED/43065594",
+    "source": "Europe PMC",
+    "score": 13,
+    "summary": "Researchers investigated the effectiveness of different antisense oligonucleotides (ASOs) in treating severe epilepsy caused by KCNT1 mutations. The study demonstrates that the specific chemical design of the ASO is critical for effectively reducing toxic potassium channel activity and improving patient outcomes.",
+    "opportunity": "Development of optimized, mutation-specific ASO therapeutics for rare genetic epilepsies with high unmet medical needs.",
+    "fields": [
+      "Drug Discovery",
+      "Neuroscience",
+      "Genomics",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 7,
+        "reason": "The paper addresses a critical nuance in ASO design for a specific genetic epilepsy, suggesting that structural or sequence-specific optimization is required rather than a generic approach. While it advances precision medicine for KCNT1, it appears to be an incremental optimization of an existing modality rather than a fundamental paradigm shift in biotechnology."
+      },
+      "market_size": {
+        "score": 3,
+        "reason": "The target market is limited to a specific, rare genetic subtype of epilepsy (KCNT1-related encephalopathy), representing a very small patient population. While clinically significant, the addressable demand is constrained by the ultra-orphan nature of the disease."
+      },
+      "trl": {
+        "score": 3,
+        "reason": "The title suggests a preclinical or early-stage translational study focused on optimizing antisense oligonucleotide design for a specific genetic epilepsy. Without evidence of human clinical trials, the technology remains in the laboratory/proof-of-concept stage."
+      }
+    },
+    "pi": "Sara Eyal",
+    "pi_full_name": "Sara Eyal",
+    "pi_email": "",
+    "pi_affiliation": "Department of Clinical Pharmacy, School of Pharmacy, Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "27",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
+    "added_date": "2026-11-23",
+    "hts_score": 9,
+    "hts_reason": "The paper identifies the specific target KCNT1, links it to severe KCNT1 epileptic encephalopathy, and discusses assays/methods (antisense oligonucleotide screening) to evaluate target modulation.",
     "hts_eval_model": "groq:openai/gpt-oss-20b"
   },
   {
@@ -13893,6 +13647,48 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
+    "id": "pubmed_43037085",
+    "title": "Revisiting the Role of Mouse Mammary Tumor Virus (MMTV) in Breast Cancer Through the Lens of a Signal Peptide.",
+    "authors": [
+      "Ori Braitbard",
+      "Jacob Hochman"
+    ],
+    "journal": "The oncologist",
+    "date": "2026-11-16",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43037085/",
+    "source": "PubMed",
+    "score": 9,
+    "summary": "This research examines the p14 signal peptide from the Mouse Mammary Tumor Virus as a potential driver and marker for human breast cancer. It highlights the peptide's ability to localize on cell surfaces and interact with key proteins like p53, suggesting it could be used for both detection and treatment.",
+    "opportunity": "Development of targeted immunotherapies and diagnostic biomarkers for a specific subset of breast cancer patients expressing the p14 signal peptide.",
+    "fields": [
+      "Drug Discovery",
+      "Diagnostics",
+      "Immunology",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "commercial_potential": {
+        "score": 4,
+        "reason": "While p14 presents a defined target for immunotherapy and a potential biomarker, the commercial viability is significantly hindered by the scientific controversy surrounding the presence of MMTV/HBRV in human breast cancer populations. The lack of a validated, consistent patient stratification method limits the addressable market and the de-risking required for clinical development."
+      },
+      "ip_strength": {
+        "score": 5,
+        "reason": "The p14 signal peptide is a naturally occurring viral protein, making the core target difficult to patent, though defensibility could be built via novel antibody sequences or specific therapeutic formulations. The controversy regarding MMTV presence in human breast cancer introduces significant regulatory and clinical validation risk for the target's relevance."
+      }
+    },
+    "pi": "Jacob Hochman",
+    "pi_full_name": "Jacob Hochman",
+    "pi_email": "",
+    "pi_affiliation": "Alexander Silberman Institute of Life Science, The Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "18",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
+    "added_date": "2026-11-23",
+    "hts_score": 2,
+    "hts_reason": "The paper does not identify a specific novel molecule or target beyond the general MMTV signal peptide, does not link it to a particular disease beyond the broad association with breast cancer, and does not describe a concrete assay or method for testing the target's effect.",
+    "hts_eval_model": "groq:openai/gpt-oss-20b"
+  },
+  {
     "id": "pubmed_43019181",
     "title": "Complex linkage disequilibrium and quantitative trait loci in chicken.",
     "authors": [
@@ -14749,6 +14545,45 @@
     "hts_eval_model": "gemma-4-26b-a4b-it"
   },
   {
+    "id": "pubmed_43048898",
+    "title": "Light Switchable Plasmon-Exciton Coupling at the Nanoscale via Photoresponsive Azobenzene Ligands.",
+    "authors": [
+      "Tal Binyamin",
+      "Sergei Remennik",
+      "Lioz Etgar"
+    ],
+    "journal": "Nano letters",
+    "date": "2026-11-17",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43048898/",
+    "source": "PubMed",
+    "score": 6,
+    "summary": "Researchers have developed a way to use light to switch the interaction between gold and perovskite nanoparticles on and off. By using light-sensitive molecules, they can control how closely these particles cluster, which in turn regulates how they emit and process light at the nanoscale.",
+    "opportunity": "This technology could enable the development of highly efficient, light-tunable smart coatings, next-generation nanophotonic sensors, or advanced light-harvesting components for optoelectronic devices.",
+    "fields": [
+      "Materials",
+      "Clean Energy",
+      "Imaging",
+      "Quantum"
+    ],
+    "score_breakdown": {
+      "ip_strength": {
+        "score": 6,
+        "reason": "The innovation relies on a well-known chemical mechanism (azobenzene photoisomerization) applied to established materials (gold and perovskites), making the core concept difficult to patent broadly. However, the specific orchestration of ligand-mediated distance control to tune plasmon-exciton coupling represents a potentially defensible niche for optoelectronic device architectures."
+      }
+    },
+    "pi": "Lioz Etgar",
+    "pi_full_name": "Lioz Etgar",
+    "pi_email": "",
+    "pi_affiliation": "Institute of Chemistry, The Center for Nanoscience and Nanotechnology, Casali Center for Applied Chemistry, The Hebrew University of Jerusalem, Jerusalem91904, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "29",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
+    "added_date": "2026-11-23",
+    "hts_score": 1,
+    "hts_reason": "The paper discusses a photoresponsive azobenzene ligand used to modulate plasmon-exciton coupling at the nanoscale, but it does not identify a specific new therapeutic molecule or target, nor does it link this chemistry to any particular disease or condition, and it focuses on a physical/optical assay rather than a biological screening assay.",
+    "hts_eval_model": "groq:openai/gpt-oss-20b"
+  },
+  {
     "id": "pubmed_43005775",
     "title": "Evolutionary origins and modern rise of allergic diseases: an integrative framework.",
     "authors": [
@@ -15105,6 +14940,56 @@
     "added_date": "2026-11-23",
     "hts_score": 1,
     "hts_reason": "The paper does not identify a specific new molecule or target; it only discusses atrial fibrillation as a clinical condition linked to mortality in tricuspid regurgitation, and it does not describe any assay or method to test a molecular target.",
+    "hts_eval_model": "groq:openai/gpt-oss-20b"
+  },
+  {
+    "id": "pubmed_43037004",
+    "title": "The Oral-Systemic Interface in Healthy Longevity: A Narrative Review of Inflammaging and Functional Resilience.",
+    "authors": [
+      "Guy Tobias",
+      "Avi Zini",
+      "Yuval Vered",
+      "Alexander Khaimov",
+      "Yehuda Zadik",
+      "Jonathan Mann"
+    ],
+    "journal": "Journal of the American Geriatrics Society",
+    "date": "2026 Nov 16",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43037004/",
+    "source": "PubMed",
+    "score": 5,
+    "summary": "This review highlights how chronic oral inflammation and functional decline serve as critical indicators for systemic aging, frailty, and mortality. It argues for a shift from simple tooth counts to more objective metrics that capture the complex link between oral health and overall longevity.",
+    "opportunity": "There is a significant market opportunity for developing objective, sensor-based diagnostic tools or AI-driven imaging software to quantify oral functional frailty as a biomarker for systemic aging.",
+    "fields": [
+      "Diagnostics",
+      "Medical Device",
+      "Software/AI",
+      "Clinical"
+    ],
+    "score_breakdown": {
+      "novelty": {
+        "score": 3,
+        "reason": "This is a narrative review that synthesizes existing literature rather than presenting new experimental data, novel mechanisms, or proprietary technologies. While it highlights a relevant clinical shift, it lacks the groundbreaking scientific discovery or technical innovation required for a high novelty score."
+      },
+      "trl": {
+        "score": 1,
+        "reason": "This is a narrative review of existing literature rather than a primary research study presenting a new technology, tool, or therapeutic. It synthesizes current scientific understanding but does not advance a specific technical prototype or product toward commercialization."
+      },
+      "ip_strength": {
+        "score": 1,
+        "reason": "This is a narrative review paper summarizing existing scientific literature rather than a presentation of novel, proprietary technology, datasets, or molecular entities. It contains no original IP, inventions, or patentable methodologies that provide a defensible competitive advantage."
+      }
+    },
+    "pi": "Jonathan Mann",
+    "pi_full_name": "Jonathan Mann",
+    "pi_email": "",
+    "pi_affiliation": "Department of Community Dentistry, Hebrew University-Hadassah Faculty of Dental Medicine, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "18",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
+    "added_date": "2026-11-23",
+    "hts_score": 1,
+    "hts_reason": "The review does not identify a specific new molecule or target, nor does it link a particular target to a disease or describe a testable assay; it merely discusses general concepts of inflammaging and resilience.",
     "hts_eval_model": "groq:openai/gpt-oss-20b"
   },
   {
@@ -15541,6 +15426,50 @@
     "hts_score": 1,
     "hts_reason": "The paper is a clinical observational study on the prognosis of cardiac ascites and does not identify a molecular target, link a specific molecule to a mechanism of disease, or describe a screening assay.",
     "hts_eval_model": "gemini-3.1-flash-lite"
+  },
+  {
+    "id": "pubmed_43068380",
+    "title": "BUILDING ON COMMON GROUND: SMOKING CESSATION INTERVENTIONS IN HOSPITAL SETTINGS IN LOW- AND MIDDLE-INCOME COUNTRIES. A RAPID NARRATIVE REVIEW.",
+    "authors": [
+      "Luz Angela Torres-López",
+      "Marija Milic",
+      "Yehuda Neumark",
+      "Adam J Rose",
+      "Yael Bar-Zeev"
+    ],
+    "journal": "Nicotine & tobacco research : official journal of the Society for Research on Nicotine and Tobacco",
+    "date": "2026 Nov 22",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43068380/",
+    "source": "PubMed",
+    "score": 4,
+    "summary": "This paper reviews various smoking cessation strategies implemented within hospital settings across low- and middle-income countries. It evaluates how counseling, pharmacotherapy, and follow-up programs impact patient outcomes and implementation success in diverse global regions.",
+    "opportunity": "There is a commercial opening for digital health platforms and AI-driven remote monitoring tools designed to deliver scalable, low-cost smoking cessation interventions in resource-limited healthcare settings.",
+    "fields": [
+      "Clinical",
+      "Software/AI",
+      "Other"
+    ],
+    "score_breakdown": {
+      "commercial_potential": {
+        "score": 2,
+        "reason": "This is a narrative review of existing literature rather than the development of a novel technology, drug, or proprietary device. While the insights may inform public health policy, the paper itself does not represent a protectable or licensable commercial asset."
+      },
+      "trl": {
+        "score": 2,
+        "reason": "This is a narrative review of existing literature rather than the development of a new technology or intervention. While it synthesizes existing implementation strategies, it represents the earliest stage of knowledge synthesis rather than a tangible product or technology nearing commercialization."
+      }
+    },
+    "pi": "Yael Bar-Zeev",
+    "pi_full_name": "Yael Bar-Zeev",
+    "pi_email": "",
+    "pi_affiliation": "Braun School of Public Health and Community Medicine, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem, Israel.",
+    "eval_model": "gemma-4-26b-a4b-it",
+    "prev_score": "16",
+    "prev_eval_model": "groq:openai/gpt-oss-20b",
+    "added_date": "2026-11-23",
+    "hts_score": 1,
+    "hts_reason": "The review does not identify a specific new molecule or target, nor does it link a particular target to a disease or describe a testable assay; it merely discusses general smoking cessation interventions.",
+    "hts_eval_model": "groq:openai/gpt-oss-20b"
   },
   {
     "id": "pubmed_43035184",

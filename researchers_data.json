@@ -15589,7 +15589,7 @@
     "pi_full_name": "Gili Greenbaum",
     "pi_email": "gil.g@mail.huji.ac.il.",
     "pi_affiliation": "Department of Ecology, Evolution, and Behavior, Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 18.0,
+    "avg_score": 13.5,
     "max_hts_score": 2,
     "paper_count": 6,
     "description": "The researcher focuses on applying advanced computational and genetic tools to address ecological and evolutionary challenges. Their work spans integrating gene drives with conventional pest control to enhance biosafety, developing network‑based genetic monitoring for landscape fragmentation, and creating predictive models for phenotypic differences using genomic data. Additionally, they build interactive platforms—modelRxiv for model dissemination and DORA for ancient DNA visualization—to democratize access to complex biological models and datasets.",
@@ -15613,39 +15613,33 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/43051623/",
         "journal": "Ecological applications : a publication of the Ecological Society of America",
-        "score": 36,
-        "summary": "The paper proposes combining gene drive technology with conventional pest management strategies to reduce the risk of unintended spread of engineered organisms. It outlines a framework for integrating genetic control with existing ecological safeguards, aiming to make gene drives safer for field deployment.",
-        "opportunity": "A commercial opportunity exists for companies developing integrated pest management platforms that blend gene drives with traditional controls, offering safer, more regulated solutions for agriculture and public health.",
+        "score": 11,
+        "summary": "Researchers have developed a mathematical framework to combine gene drives with traditional pest control methods like pesticides or sterile insect releases. This approach aims to maximize the effectiveness of population eradication while minimizing the ecological risk of the genetic modification spreading to non-target species.",
+        "opportunity": "The development of decision-support software and optimization algorithms for precision biological control in agriculture and vector management.",
         "abstract": "Gene drives are artificial genetic constructs that bias their own inheritance, enabling them to spread through a population and offering a promising way to control disease vectors and invasive species. While gene drives can potentially eradicate target populations, their unintended spillover into nontarget populations poses substantial ecological concerns. Here, we develop a general methodological framework to examine how integrating gene drives with established pest control methods, such as pesticide application and sterile-male release, can mitigate spillover risk. In this framework, we develop an optimal control model that identifies treatment strategies with minimum total costs of eradication, accounting for direct treatment expenditures and potential damage from spillover. We show that pesticides are most cost-effective at the intermediate stage of eradication when gene drives have already slowed population growth but do not yet substantially suppress the population. For sterile-male release, however, we observe two distinct types of optimal strategies, with the optimal choice depending on parameter values: intensive early-stage releases or mild later-stage releases. Using established pest controls also relaxes requirements for gene drive design, favoring milder suppressive effects as the treatment intensifies. Although spillover risk is hard to quantify in real-world contexts, the proposed approach identifies the maximum relative reduction in the spillover risk attainable with a given level of treatment effort.",
         "fields": [
+          "AgriTech",
           "Synthetic Biology",
-          "AgriTech"
+          "Software/AI",
+          "Genomics"
         ],
         "score_breakdown": {
           "novelty": {
             "score": 6,
-            "reason": "The concept of combining gene drives with existing pest control methods to reduce spillover is a logical extension of current technologies, offering incremental innovation rather than a groundbreaking paradigm shift."
-          },
-          "commercial_potential": {
-            "score": 8,
-            "reason": "The paper proposes a platform that combines gene drives with existing pest control methods, offering a clear pathway to develop licensable technologies for agricultural and public health markets, though it remains at the research stage."
-          },
-          "market_size": {
-            "score": 9,
-            "reason": "Gene drives targeting pest species address a vast global agricultural and public health market, with potential to replace or augment existing chemical controls across billions of dollars of crop and vector-borne disease management."
+            "reason": "The research provides a novel mathematical optimization framework for risk mitigation, but it applies existing biological concepts (gene drives, pesticides, sterile-male release) rather than introducing a groundbreaking new genetic technology or mechanism."
           },
           "trl": {
-            "score": 5,
-            "reason": "The paper discusses integrating gene drives with existing pest control methods, indicating experimental or preclinical work, but lacks evidence of field trials or commercialization readiness, placing it around TRL 5 (lab‑to‑prototype stage)."
+            "score": 2,
+            "reason": "This is a theoretical mathematical modeling paper that proposes a framework using optimal control theory rather than experimental or field-tested data. It lacks empirical validation in biological systems, placing it at the very earliest stages of conceptual development."
           },
           "ip_strength": {
-            "score": 8,
-            "reason": "The integration of gene drives with existing pest control methods represents a novel platform that is likely patentable and defensible, offering significant commercial and regulatory relevance, though it may still be early in development and subject to evolving biosafety regulations."
+            "score": 3,
+            "reason": "The paper describes a mathematical/computational framework and optimal control modeling rather than a novel genetic construct or proprietary biological tool. While the methodology is useful for strategic planning, it lacks the patentable biological IP or hardware components required for high defensibility in deep-tech."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 36,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "Department of Ecology, Evolution, and Behavior, Silberman Institute of Life Sciences, The Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 2,
@@ -15693,40 +15687,41 @@
         "date": "2025",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40715205/",
         "journal": "Nature communications",
-        "score": 33,
-        "summary": "The study introduces a method to predict the direction of phenotypic differences—whether one individual's trait exceeds another's or a threshold—using genomic data, achieving over 90% accuracy across diverse populations and species. This relative prediction approach can bypass limitations of absolute phenotype prediction and improve cross-population genetic insights.",
-        "opportunity": "A commercial platform could offer high-accuracy relative phenotype prediction services for personalized medicine, risk stratification, and breeding programs, enhancing decision-making in healthcare and agriculture.",
+        "score": 31,
+        "summary": "Instead of trying to predict exact physical traits from DNA, which is often inaccurate, this method predicts whether one individual will have a higher or lower value for a specific trait than another. This approach achieves over 90% accuracy in determining the direction of phenotypic differences across different populations and species.",
+        "opportunity": "This methodology can be commercialized as a high-accuracy predictive engine for precision medicine, livestock breeding, and crop optimization by shifting the focus from absolute trait prediction to relative risk and performance ranking.",
         "abstract": "Predicting phenotypes from genomes is a major goal in genetics, but for most complex phenotypes, predictions are largely inaccurate. Here, we propose a more achievable alternative: relative prediction of phenotypic differences. Even with incomplete genotype-to-phenotype mapping, we show that it is often straightforward to determine whether an individual's phenotype exceeds a threshold (e.g., of disease risk) or which of two individuals has a greater phenotypic value. We evaluated prediction accuracy on tens of thousands of individuals from the same family, same population, or different species. We found that the direction of a phenotypic difference can often be identified with  >90% accuracy. This approach also helps overcome some limitations in transferring genetic association results across populations. Overall, our approach enables accurate predictions of key information on phenotypes - the direction of phenotypic difference - and suggests that more phenotypic information can be extracted from genomic data than previously appreciated.",
         "fields": [
           "Genomics",
           "Software/AI",
-          "Clinical"
+          "AgriTech",
+          "Drug Discovery"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 6,
-            "reason": "The concept of predicting relative phenotypic differences instead of absolute values is a modest but useful shift, offering incremental novelty over existing genotype‑phenotype prediction methods, but it does not represent a groundbreaking platform or transformative innovation."
+            "score": 8,
+            "reason": "The paper proposes a paradigm shift from absolute to relative phenotypic prediction, offering a novel mathematical framework to bypass the accuracy limitations of traditional genotype-to-phenotype mapping. This approach represents a significant conceptual pivot that could enable new predictive capabilities across diverse populations and species."
           },
           "commercial_potential": {
             "score": 7,
-            "reason": "The methodology offers a high-value platform for precision medicine and comparative genomics, potentially improving the accuracy of disease risk stratification. However, the transition from relative difference prediction to actionable clinical or drug-discovery products requires further validation of specific high-value phenotype targets."
+            "reason": "The methodology offers a high-value platform approach for improving the accuracy of polygenic risk scores and comparative genomics, which is highly licensable to pharmaceutical R&D teams. However, the commercial utility is currently indirect, serving as a computational enhancement tool rather than a standalone clinical diagnostic or therapeutic product."
           },
           "market_size": {
             "score": 9,
-            "reason": "This platform-enabling methodology addresses the massive, multi-billion dollar genomics market by unlocking actionable predictive value from existing datasets, applicable across drug discovery, clinical risk stratification, and personalized medicine."
+            "reason": "This methodology represents a platform-enabling approach to genomic interpretation that significantly expands the addressable market for precision medicine, drug discovery, and polygenic risk scoring. By enabling accurate relative risk assessment across diverse populations, it unlocks massive value in clinical diagnostics and pharmaceutical target identification."
           },
           "trl": {
-            "score": 4,
-            "reason": "The method is a computational approach still in the research phase, demonstrating feasibility on existing datasets but lacking experimental validation or prototype development for real-world deployment."
+            "score": 3,
+            "reason": "The work is at a fundamental research stage, demonstrating proof-of-concept computational methodologies using retrospective population datasets rather than clinical validation or integrated diagnostic workflows. While it offers a novel algorithmic framework, it lacks the practical application or hardware/software integration required for higher TRL scores."
           },
           "ip_strength": {
-            "score": 7,
-            "reason": "The method proposes a novel computational approach to predict phenotypic differences, which is likely patentable and defensible, but it is still an early-stage algorithmic concept without demonstrated industrial application, placing it in the mid-to-high range of IP strength."
+            "score": 4,
+            "reason": "The innovation is a methodological/mathematical approach to analyzing existing genomic data rather than a novel biological target or a proprietary chemical entity, making it difficult to protect via patents. While the algorithm itself might be patentable, its defensibility is low as it relies on statistical principles that are susceptible to rapid academic replication and 'open science' competition."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 33,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "Department of Ecology, Evolution and Behavior, The Hebrew University of Jerusalem, Jerusalem, Israel. gil.g@mail.huji.ac.il.",
         "pi_email": "gil.g@mail.huji.ac.il.",
         "hts_score": 1,
@@ -18160,7 +18155,7 @@
     "pi_full_name": "Noam Asna",
     "pi_email": "",
     "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
-    "avg_score": 29.0,
+    "avg_score": 31.0,
     "max_hts_score": 2,
     "paper_count": 2,
     "description": "The researcher focuses on applying advanced artificial intelligence to oncology, particularly in biomarker discovery and real‑world therapeutic outcomes. Their work combines multi‑omics data integration with machine learning to identify reliable biomarkers for precision cancer treatment, and evaluates the effectiveness of immunotherapies such as pembrolizumab in routine clinical practice.",
@@ -18183,41 +18178,41 @@
         "date": "2026",
         "url": "https://pubmed.ncbi.nlm.nih.gov/43065768/",
         "journal": "iScience",
-        "score": 33,
-        "summary": "CASCADE is an AI framework that autonomously identifies reliable biomarkers for precision oncology, integrating multi‑omics data and clinical outcomes to guide personalized treatment decisions. It leverages advanced machine learning to streamline biomarker validation, potentially accelerating the development of targeted cancer therapies.",
-        "opportunity": "By providing a rapid, trustworthy biomarker discovery pipeline, CASCADE can reduce drug development timelines and lower costs for oncology companies, creating a high‑value software platform for precision medicine.",
+        "score": 37,
+        "summary": "CASCADE is an AI framework that uses autonomous agents to conduct biomarker discovery while enforcing strict, gated validation steps to prevent errors. It ensures scientific reliability by separating the research protocol from the AI's execution, providing human-readable code and decision logs for every step.",
+        "opportunity": "This framework provides a high-integrity software layer for pharmaceutical companies and diagnostic labs to automate large-scale genomic analysis without the risk of AI-driven hallucinations or false discoveries.",
         "abstract": "Autonomous AI agents can now run end-to-end scientific analyses, yet no general method ensures those analyses are correct, and one upstream error can propagate across hundreds of downstream results at machine speed. We present CASCADE, an agentic validation framework built on mandatory, quantitatively gated analytical steps. Its central principle, specification-implementation separation, fixes what must be validated and to what standard while leaving how to the agent, so conclusions depend on the protocol rather than the model executing it. Every analysis is preserved as human-readable code with a complete decision log. Derived from a ∼25,000-patient clinical cancer genomics cohort and applied unmodified across three settings (13,424 patients), CASCADE recovered established signal, reported insufficient power instead of a false result where data were inadequate, and reversed a clinically consequential artifact (hazard ratio 0.84, corrected to 1.25). Findings were replicated in two independent multi-institutional cohorts, and three AI systems reproduced them with high fidelity.",
         "fields": [
-          "Diagnostics",
-          "Genomics",
           "Software/AI",
+          "Genomics",
+          "Diagnostics",
           "Clinical"
         ],
         "score_breakdown": {
           "novelty": {
-            "score": 7,
-            "reason": "The paper proposes an agentic AI framework for biomarker discovery, which is a novel integration of AI agency concepts into precision oncology, but the underlying techniques appear to build on existing AI and biomarker methods, so it is innovative yet not entirely groundbreaking."
+            "score": 8,
+            "reason": "The framework introduces a novel 'specification-implementation separation' paradigm that shifts AI reliability from model-centric to protocol-centric, creating a platform-enabling method for verifiable scientific discovery. Its ability to autonomously identify and correct clinical artifacts via gated validation represents a significant architectural leap over standard end-to-end agentic workflows."
           },
           "commercial_potential": {
-            "score": 7,
-            "reason": "The framework offers a potentially valuable platform for biomarker discovery that could be licensed or integrated into oncology diagnostics, but it is still at the conceptual/early development stage without a clear near‑market product or demonstrated clinical validation."
+            "score": 8,
+            "reason": "CASCADE offers a high-value platform capability by addressing the critical 'black box' and error-propagation risks in AI-driven drug discovery and clinical genomics. Its ability to provide verifiable, code-based audit trails makes it a highly licensable technology for pharmaceutical R&D and precision medicine diagnostics."
           },
           "market_size": {
             "score": 9,
-            "reason": "The oncology diagnostics and personalized medicine market is vast, with billions of dollars in annual spend on biomarker testing and targeted therapies, making the target market for an AI-driven biomarker discovery platform extremely large and valuable."
+            "reason": "The framework addresses a massive, high-value market for precision oncology and drug discovery where the cost of errors in biomarker identification is extreme. As a platform-enabling technology, it scales across any large-scale clinical genomics dataset, positioning it at the center of the multi-billion dollar pharmaceutical R&D and diagnostic workflows."
           },
           "trl": {
-            "score": 4,
-            "reason": "The paper presents a novel AI framework for biomarker discovery, but without evidence of prototype deployment or clinical validation, indicating a laboratory research stage rather than near‑market readiness."
+            "score": 6,
+            "reason": "The framework has transitioned beyond theoretical concept to retrospective validation on large-scale clinical cohorts (>38,000 patients) and shown reproducibility across multiple AI systems, but it lacks prospective clinical trial validation or integration into a real-world clinical workflow."
           },
           "ip_strength": {
             "score": 6,
-            "reason": "The paper proposes an AI framework for biomarker discovery, which could be patentable as a novel algorithmic method, but without details on specific technical contributions or prior art, the defensibility is moderate rather than high."
+            "reason": "The innovation lies in a process-based framework (specification-implementation separation) and a validation protocol rather than a novel molecule or unique hardware, making it harder to patent via traditional means. However, the defensibility is bolstered by the workflow's ability to generate human-readable audit trails and its proven ability to correct clinical artifacts, which creates a strong competitive moat through institutional trust and software-based 'moats' in clinical decision support."
           }
         },
-        "eval_model": "groq:openai/gpt-oss-20b",
-        "prev_score": "",
-        "prev_eval_model": "",
+        "eval_model": "gemma-4-26b-a4b-it",
+        "prev_score": 33,
+        "prev_eval_model": "groq:openai/gpt-oss-20b",
         "pi_affiliation": "Helmsley Cancer Center, Shaare Zedek Medical Center, Jerusalem, Israel.; Faculty of Medicine, The Hebrew University of Jerusalem, Jerusalem, Israel.",
         "pi_email": "",
         "hts_score": 2,
